@@ -115,6 +115,9 @@
             slides.forEach(function (s, k) { if (k !== current) s.querySelectorAll('video').forEach(function (v) { v.pause(); }); });
             try { localStorage.setItem(key, String(current)); } catch (e) {}
             if (focus) stage.focus({ preventScroll: true });
+            // On small screens keep the whole slide window in view.
+            var top = deck.getBoundingClientRect().top;
+            if (focus && (top < 0 || top > window.innerHeight * 0.4)) deck.scrollIntoView({ block: 'start' });
         }
 
         prev.addEventListener('click', function () { show(current - 1, true); });
@@ -136,7 +139,7 @@
             try { start = parseInt(localStorage.getItem(key) || '0', 10) || 0; } catch (e) {}
         }
         show(start, false);
-        if (target) deck.scrollIntoView({ block: 'start' });
+        if (target || window.innerWidth < 760) deck.scrollIntoView({ block: 'start' });
     })();
     </script>
 @endsection
