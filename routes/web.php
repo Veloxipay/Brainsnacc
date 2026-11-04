@@ -1,0 +1,51 @@
+<?php
+
+use App\Http\Controllers\Admin\LessonController as AdminLessonController;
+use App\Http\Controllers\Admin\QuestionController as AdminQuestionController;
+use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LessonController;
+use App\Http\Controllers\ParentController;
+use Illuminate\Support\Facades\Route;
+
+// Login (no public sign-up: the admin creates every account)
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [LoginController::class, 'show'])->name('login');
+    Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:10,1');
+});
+Route::post('/logout', [LoginController::class, 'logout'])->middleware('auth')->name('logout');
+
+Route::middleware('auth')->group(function () {
+    // Sends each person to the right home page for their role
+    Route::get('/', [DashboardController::class, 'home'])->name('home');
+
+    // Student area (admins can look too, to check content)
+    Route::middleware('role:student,admin')->group(function () {
+        Route::get('/dashboard', [DashboardController::class, 'student'])->name('dashboard');
+        Route::get('/course/{subject}', [CourseController::class, 'show'])->name('course');
+        Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lessons.show');
+        Route::post('/lessons/{lesson}/complete', [LessonController::class, 'complete'])->name('lessons.complete');
+        Route::post('/questions/{question}/answer', [LessonController::class, 'answer'])->name('questions.answer');
+    });
+
+    // Parent area
+    Route::get('/family', [ParentController::class, 'index'])->middleware('role:parent,admin')->name('family');
+
+    // Admin area
+    Route::prefix('admin')->name('admin.')->middleware('role:admin')->group(function () {
+        Route::get('/users', [AdminUserController::class, 'index'])->name('users.index');
+        Route::get('/users/create', [AdminUserController::class, 'create'])->name('users.create');
+        Route::post('/users', [AdminUserController::class, 'store'])->name('users.store');
+
+        Route::get('/lessons', [AdminLessonController::class, 'index'])->name('lessons.index');
+        Route::get('/lessons/create', [AdminLessonController::class, 'create'])->name('lessons.create');
+        Route::post('/lessons', [AdminLessonController::class, 'store'])->name('lessons.store');
+        Route::get('/lessons/{lesson}/edit', [AdminLessonController::class, 'edit'])->name('lessons.edit');
+        Route::put('/lessons/{lesson}', [AdminLessonController::class, 'update'])->name('lessons.update');
+
+        Route::post('/lessons/{lesson}/questions', [AdminQuestionController::class, 'store'])->name('questions.store');
+        Route::delete('/questions/{question}', [AdminQuestionController::class, 'destroy'])->name('questions.destroy');
+    });
+});

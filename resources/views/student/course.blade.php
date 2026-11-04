@@ -1,0 +1,62 @@
+@extends('layouts.app')
+@section('title', $subject->name.' course map')
+
+@section('content')
+    <header class="row between">
+        <h1>Course map</h1>
+        <nav class="segmented" aria-label="Subject">
+            @foreach ($subjects as $s)
+                <a href="{{ route('course', [$s, 'level' => $level?->id]) }}"
+                   class="{{ $s->is($subject) ? 'on' : '' }}"
+                   @if ($s->is($subject)) aria-current="page" style="background:{{ $s->color }}" @endif>{{ $s->name }}</a>
+            @endforeach
+        </nav>
+    </header>
+
+    <nav class="chips" aria-label="Level">
+        @foreach ($levels as $l)
+            <a href="{{ route('course', [$subject, 'level' => $l->id]) }}" class="{{ $l->is($level) ? 'on' : '' }}"
+               @if ($l->is($level)) aria-current="page" @endif>{{ $l->name }}</a>
+        @endforeach
+    </nav>
+
+    @forelse ($units as $unit)
+        <h2 style="font-size:22px">{{ $unit->code }} · {{ $unit->title }}</h2>
+
+        @foreach ($unit->modules as $module)
+            @php($lessons = $module->lessons)
+            @php($doneCount = $lessons->whereIn('id', $done)->count())
+            @php($currentId = $lessons->first(fn ($l) => ! $done->contains($l->id))?->id)
+            <section class="card" aria-labelledby="m-{{ $module->id }}">
+                <div class="row between">
+                    <h2 id="m-{{ $module->id }}">{{ $module->title }}</h2>
+                    <span class="muted small">{{ $doneCount }} of {{ $lessons->count() }} lessons done</span>
+                </div>
+
+                @if ($lessons->isEmpty())
+                    <p class="muted small" style="margin:0">Lessons coming soon.</p>
+                @else
+                    <ol class="lesson-list">
+                        @foreach ($lessons as $lesson)
+                            @php($isDone = $done->contains($lesson->id))
+                            @php($isCurrent = $lesson->id === $currentId)
+                            <li class="{{ $isDone ? 'done' : ($isCurrent ? 'current' : '') }}">
+                                @if ($isDone)
+                                    <span class="dot done" aria-label="Done">✓</span>
+                                @else
+                                    <span class="dot {{ $isCurrent ? 'current' : '' }}" aria-label="{{ $isCurrent ? 'Up next' : 'Not started' }}"></span>
+                                @endif
+                                <a href="{{ route('lessons.show', $lesson) }}">{{ $lesson->title }}</a>
+                                <span class="small muted">{{ $isCurrent ? 'Up next' : $lesson->minutes.' min' }}</span>
+                            </li>
+                        @endforeach
+                    </ol>
+                @endif
+            </section>
+        @endforeach
+    @empty
+        <section class="card">
+            <p class="muted" style="margin:0">No {{ $subject->name }} units at this level yet.</p>
+        </section>
+    @endforelse
+@endsection

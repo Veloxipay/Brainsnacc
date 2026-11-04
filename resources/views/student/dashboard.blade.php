@@ -1,0 +1,64 @@
+@extends('layouts.app')
+@section('title', 'Dashboard')
+
+@section('content')
+    <header class="row between">
+        <div>
+            <p class="muted small" style="margin:0">{{ now()->format('l j F') }} · {{ $level?->name }}</p>
+            <h1>Hi {{ \Illuminate\Support\Str::before($student->name, ' ') }}, ready for 20 minutes?</h1>
+        </div>
+    </header>
+
+    @if ($next)
+        @php($nextSubject = $next->module->unit->subject)
+        <section class="card" aria-labelledby="next-h" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:24px">
+            <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:8px">
+                <span class="pill {{ $nextSubject->slug === 'biology' ? 'bio' : '' }}" style="align-self:flex-start">
+                    {{ $nextSubject->name }} · {{ $next->module->unit->code }}
+                </span>
+                <h2 id="next-h" style="font-family:'Space Grotesk',sans-serif;font-size:24px">Up next: {{ $next->title }}</h2>
+                <p class="muted" style="margin:0">{{ $next->summary }} About {{ $next->minutes }} minutes.</p>
+            </div>
+            <a class="btn" href="{{ route('lessons.show', $next) }}">Start lesson</a>
+        </section>
+    @else
+        <section class="card">
+            <h2>Nothing new right now</h2>
+            <p class="muted" style="margin:0">You’ve finished every published lesson at your level. Try the practice questions again, or look at another level in the course map.</p>
+        </section>
+    @endif
+
+    <div class="grid-2">
+        @foreach ($subjects as $row)
+            @php($s = $row['subject'])
+            <section class="card" aria-labelledby="sub-{{ $s->id }}">
+                <div class="row between">
+                    <h2 id="sub-{{ $s->id }}">{{ $s->name }}</h2>
+                    <a class="small" href="{{ route('course', $s) }}">Course map →</a>
+                </div>
+                <div>
+                    <div class="row between small"><span>Lessons done</span><strong>{{ $row['finished'] }} of {{ $row['total'] }} · {{ $row['percent'] }}%</strong></div>
+                    <div class="bar" style="margin-top:6px;background:{{ $s->tint }}"><span style="width:{{ $row['percent'] }}%;background:{{ $s->color }}"></span></div>
+                </div>
+            </section>
+        @endforeach
+    </div>
+
+    <div class="grid-2">
+        <section class="card" aria-labelledby="weak-h">
+            <h2 id="weak-h">Topics to revise</h2>
+            @forelse ($weak as $w)
+                <div class="row between">
+                    <a href="{{ route('lessons.show', $w['lesson']) }}">{{ $w['lesson']->title }}</a>
+                    <span class="bad">{{ $w['score'] }}%</span>
+                </div>
+            @empty
+                <p class="muted small" style="margin:0">Nothing yet. Topics where you score under 60% will show up here.</p>
+            @endforelse
+        </section>
+        <section class="card" aria-labelledby="mis-h">
+            <h2 id="mis-h">Your mistakes this week</h2>
+            <p class="muted small" style="margin:0">{{ $mistakes }} {{ \Illuminate\Support\Str::plural('question', $mistakes) }} answered wrong in the last 7 days. Go back to those lessons and try again.</p>
+        </section>
+    </div>
+@endsection
