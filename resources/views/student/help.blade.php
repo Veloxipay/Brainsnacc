@@ -20,7 +20,13 @@
         <p style="margin:0;font-size:18px;font-weight:600">{{ $question->prompt }}</p>
     </section>
 
-    <h2 class="help-step"><span>1</span> Re-read the key parts of the topic</h2>
+    <h2 class="help-step"><span>1</span> Watch and re-read the key parts of the topic</h2>
+    @if ($lesson->video)
+        <figure class="lesson-video card" style="margin:0">
+            <video controls preload="metadata" playsinline src="{{ asset($lesson->video) }}"></video>
+            <figcaption class="small muted">Watch the short video on this topic again.</figcaption>
+        </figure>
+    @endif
     @if (isset($sections['Think of it like this']))
         <section class="card lesson-body">
             <h3 style="margin-top:0">Think of it like this</h3>
