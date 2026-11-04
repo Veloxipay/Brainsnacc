@@ -67,7 +67,7 @@
                 <p class="muted small" style="margin:0 0 8px">{{ $mistakes }} {{ \Illuminate\Support\Str::plural('question', $mistakes) }} answered wrong in the last 7 days. Open {{ $mistakeLessons->count() === 1 ? 'the lesson' : 'a lesson' }} below and try {{ $mistakes === 1 ? 'it' : 'them' }} again.</p>
                 @foreach ($mistakeLessons as $m)
                     <div class="row between">
-                        <a href="{{ route('lessons.show', $m['lesson']) }}#practice">{{ $m['lesson']->title }} →</a>
+                        <a class="mistake-topic" href="{{ route('lessons.show', $m['lesson']) }}#q{{ $m['first'] }}">{{ $m['lesson']->title }} →</a>
                         <span class="bad small">{{ $m['count'] }} wrong</span>
                     </div>
                 @endforeach

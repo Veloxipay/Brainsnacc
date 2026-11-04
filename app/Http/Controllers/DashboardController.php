@@ -54,7 +54,7 @@ class DashboardController extends Controller
         $mistakes = $wrong->unique('question_id')->count();
         $mistakeLessons = $wrong->unique('question_id')
             ->groupBy(fn ($a) => $a->question->lesson_id)
-            ->map(fn ($rows) => ['lesson' => $rows->first()->question->lesson, 'count' => $rows->count()])
+            ->map(fn ($rows) => ['lesson' => $rows->first()->question->lesson, 'count' => $rows->count(), 'first' => $rows->sortBy(fn ($a) => $a->question->sort ?? $a->question_id)->first()->question_id])
             ->sortByDesc('count')
             ->values();
 
