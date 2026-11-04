@@ -1,0 +1,99 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "unit": "CHM1011",
+  "title": "Chemical kinetics",
+  "summary": "Rate laws, reaction orders and rate constants, integrated rate laws and half-lives, the Arrhenius equation, reaction mechanisms and how catalysts speed reactions up.",
+  "minutes": 40,
+  "body": "Thermodynamics tells you whether a reaction can happen; **chemical kinetics** tells you how fast it happens and by what pathway. Kinetics explains why food lasts longer in the fridge, how long a drug stays active in the body, and why catalytic converters are needed to remove pollutants that would otherwise persist. In CHM1011 you move from VCE's qualitative collision theory to rate equations you can solve and graph.\n\n## Key ideas\n\n### Reaction rate\n\nThe **rate of reaction** is the change in concentration of a reactant or product per unit time, usually in mol L⁻¹ s⁻¹ (M s⁻¹). For a general reaction aA + bB → cC + dD, the rate is defined so it has one value whatever species is followed:\n\n`rate = −(1/a)Δ[A]/Δt = −(1/b)Δ[B]/Δt = (1/c)Δ[C]/Δt = (1/d)Δ[D]/Δt`\n\nThe minus signs make the rate positive, because reactant concentrations fall. Rate usually decreases as a reaction proceeds; the **instantaneous rate** is the gradient of the tangent to a concentration–time curve, and the **initial rate** is the gradient at t = 0.\n\n### Rate laws and order\n\nExperimentally, rate depends on reactant concentrations through a **rate law** (rate equation):\n\n`rate = k[A]^m[B]^n`\n\nk is the **rate constant**, which depends on temperature (and catalyst) but not on concentration. The exponents m and n are the **orders** with respect to A and B, and m + n is the **overall order**. Orders must be found by experiment: they are *not* generally the coefficients in the balanced equation.\n\n- **Zero order** in A: changing [A] has no effect on rate.\n- **First order**: doubling [A] doubles the rate.\n- **Second order**: doubling [A] quadruples the rate.\n\nThe units of k depend on overall order, because rate is always M s⁻¹: zero order M s⁻¹; first order s⁻¹; second order M⁻¹ s⁻¹; third order M⁻² s⁻¹.\n\n### The method of initial rates\n\nRun several experiments, changing one initial concentration at a time, and measure the initial rate. Comparing two experiments where only [A] changes: (rate₂/rate₁) = ([A]₂/[A]₁)^m, so m can be read off (or found with logarithms). Once orders are known, substitute any experiment's data to find k.\n\n### Integrated rate laws\n\nIntegrating the rate law gives concentration as a function of time, useful for predicting how much remains, and for finding order from a single run by testing which plot is linear. For a reaction A → products with rate = k[A]^m:\n\n| Order | Integrated rate law | Linear plot | Gradient | Half-life |\n|---|---|---|---|---|\n| 0 | [A]ₜ = [A]₀ − kt | [A] vs t | −k | [A]₀ / 2k |\n| 1 | ln[A]ₜ = ln[A]₀ − kt | ln[A] vs t | −k | ln 2 / k |\n| 2 | 1/[A]ₜ = 1/[A]₀ + kt | 1/[A] vs t | +k | 1 / (k[A]₀) |\n\nThe **half-life**, t½, is the time for the concentration of a reactant to fall to half its value. Only for **first-order** reactions is t½ independent of starting concentration — so after n half-lives the fraction remaining is (½)ⁿ. Radioactive decay is first order. For zero-order reactions each half-life is shorter than the last; for second-order reactions each is longer (it doubles each time).\n\n### Collision theory and activation energy\n\nParticles must collide to react, and only collisions with enough energy (at least the **activation energy**, Eₐ) and the correct **orientation** are effective. Eₐ is the energy barrier between reactants and the **transition state** (activated complex), the highest-energy arrangement along the reaction pathway. Raising temperature increases collision frequency slightly, but its main effect is to greatly increase the fraction of molecules with energy ≥ Eₐ (shown by the Maxwell–Boltzmann distribution). As a rough guide, for many reactions near room temperature the rate roughly doubles for a 10 °C rise, though this depends on Eₐ.\n\n### The Arrhenius equation\n\nThe temperature dependence of k is given by the **Arrhenius equation**:\n\n`k = A e^(−Eₐ/RT)`\n\nA is the **pre-exponential (frequency) factor**, related to collision frequency and orientation, and e^(−Eₐ/RT) is the fraction of collisions with enough energy. Taking logarithms:\n\n`ln k = ln A − (Eₐ/R)(1/T)`\n\nA plot of ln k against 1/T is a straight line with gradient −Eₐ/R. With two temperatures:\n\n`ln(k₂/k₁) = −(Eₐ/R)(1/T₂ − 1/T₁)`\n\nNotice this has the same form as the Clausius–Clapeyron equation. Again, Eₐ must be in J mol⁻¹ and T in kelvin.\n\n### Reaction mechanisms\n\nMost reactions occur through a sequence of **elementary steps**, which together make up the **reaction mechanism**. An elementary step describes an actual molecular event, so — unlike for overall reactions — its rate law *can* be written from its stoichiometry. Its **molecularity** is the number of particles involved: unimolecular (rate = k[A]), bimolecular (rate = k[A][B] or k[A]²), and rarely termolecular. Species formed in one step and used in a later step are **intermediates**; they do not appear in the overall equation.\n\nThe slowest step is the **rate-determining step**: the overall rate cannot exceed it, just as a queue moves only as fast as its slowest checkpoint. The rate law of the overall reaction matches the rate law of the rate-determining step (provided any intermediates in it are expressed in terms of reactants). A proposed mechanism is acceptable if (1) its steps add to the overall equation and (2) it predicts the experimental rate law. Kinetics can rule a mechanism out but can never prove one is correct.\n\nExample: for `NO₂(g) + CO(g) → NO(g) + CO₂(g)` below about 500 K, rate = k[NO₂]². A consistent mechanism is:\n\n`Step 1 (slow): NO₂(g) + NO₂(g) → NO₃(g) + NO(g)`\n`Step 2 (fast): NO₃(g) + CO(g) → NO₂(g) + CO₂(g)`\n\nStep 1 is rate-determining, giving rate = k₁[NO₂]². CO does not appear because it reacts only after the slow step. NO₃ is an intermediate.\n\n### Catalysis\n\nA **catalyst** increases the rate of a reaction without being consumed overall. It provides an alternative mechanism with a lower activation energy. A catalyst appears in an early step and is regenerated in a later one. It does not change ΔH, ΔG or the equilibrium constant: it speeds up the forward and reverse reactions equally, so equilibrium is reached faster but its position is unchanged. **Homogeneous catalysts** are in the same phase as the reactants (e.g. H⁺ in ester hydrolysis); **heterogeneous catalysts** are in a different phase, usually a solid surface that adsorbs gas molecules and weakens their bonds (e.g. Pt, Pd and Rh in catalytic converters, Fe in the Haber process). **Enzymes** are biological catalysts with highly specific active sites.\n\n## Worked examples\n\n### Example 1: method of initial rates\n\nFor `2NO(g) + O₂(g) → 2NO₂(g)`, the following data were obtained at 25 °C.\n\n| Experiment | [NO]₀ (M) | [O₂]₀ (M) | Initial rate (M s⁻¹) |\n|---|---|---|---|\n| 1 | 0.010 | 0.010 | 7.0 × 10⁻⁶ |\n| 2 | 0.020 | 0.010 | 2.8 × 10⁻⁵ |\n| 3 | 0.010 | 0.020 | 1.4 × 10⁻⁵ |\n\n**Order in NO** (experiments 1 and 2, [O₂] constant): [NO] doubles, rate × (2.8 × 10⁻⁵ / 7.0 × 10⁻⁶) = × 4 = 2², so second order.\n**Order in O₂** (experiments 1 and 3): [O₂] doubles, rate × 2, so first order.\n**Rate law:** rate = k[NO]²[O₂], third order overall.\n**k** from experiment 1: k = 7.0 × 10⁻⁶ M s⁻¹ / [(0.010 M)² × 0.010 M] = **7.0 M⁻² s⁻¹**.\n\n### Example 2: first-order kinetics\n\nN₂O₅ decomposes in a first-order reaction with k = 6.2 × 10⁻⁴ s⁻¹ at 45 °C. Starting at 0.0500 M, find (a) t½, (b) [N₂O₅] after 30.0 min, and (c) the time for 80% to decompose.\n\n(a) t½ = ln 2 / k = 0.693 / 6.2 × 10⁻⁴ s⁻¹ = **1.1 × 10³ s** (about 19 min)\n\n(b) t = 30.0 × 60 = 1800 s. ln[A]ₜ = ln(0.0500) − (6.2 × 10⁻⁴)(1800) = −2.996 − 1.116 = −4.112\n[A]ₜ = e⁻⁴·¹¹² = **0.016 M**\n\n(c) 80% decomposed means 20% remains, so [A]ₜ/[A]₀ = 0.20.\nln(1/0.20) = kt, so t = ln 5 / 6.2 × 10⁻⁴ = 1.609 / 6.2 × 10⁻⁴ = **2.6 × 10³ s** (about 43 min)\n\n### Example 3: second-order kinetics\n\n`2NO₂(g) → 2NO(g) + O₂(g)` is second order in NO₂ with k = 0.54 M⁻¹ s⁻¹ at 300 °C. If [NO₂]₀ = 0.010 M, find the first half-life and [NO₂] after 10.0 min.\n\nt½ = 1/(k[A]₀) = 1/(0.54 × 0.010) = **185 s**\n\n1/[A]ₜ = 1/[A]₀ + kt = 1/0.010 + (0.54)(600) = 100 + 324 = 424 M⁻¹\n[A]ₜ = 1/424 = **2.4 × 10⁻³ M**\n\n### Example 4: activation energy from the Arrhenius equation\n\nA reaction's rate constant doubles when the temperature rises from 25.0 °C to 35.0 °C. Find Eₐ.\n\n`ln(k₂/k₁) = −(Eₐ/R)(1/T₂ − 1/T₁)`\n\nT₁ = 298.15 K, T₂ = 308.15 K; 1/T₂ − 1/T₁ = −1.0884 × 10⁻⁴ K⁻¹\nln 2 = 0.6931 = −(Eₐ / 8.314)(−1.0884 × 10⁻⁴)\nEₐ = (0.6931 × 8.314) / 1.0884 × 10⁻⁴ = 5.29 × 10⁴ J mol⁻¹ = **52.9 kJ mol⁻¹**\n\n## Common mistakes\n\n- Taking orders from the coefficients of the overall balanced equation. Orders come from experiment (or from the rate-determining elementary step).\n- Using t½ = ln 2/k for a reaction that is not first order.\n- Using Eₐ in kJ mol⁻¹ with R = 8.314 J K⁻¹ mol⁻¹, or using °C in the Arrhenius equation.\n- Saying a catalyst shifts the equilibrium or changes ΔH. It lowers Eₐ for both directions equally.\n- Including an intermediate's concentration in the final rate law, or forgetting that intermediates must cancel when steps are added.\n\n## Exam tips\n\n- In initial-rates tables, choose pairs of experiments in which only one concentration changes, and say which pair you used.\n- Always state units for k; they are a quick check that your order is right.\n- For \"which plot is linear\" questions, remember: [A] (zero), ln[A] (first), 1/[A] (second), all against time.\n- For mechanism questions, check both conditions explicitly: steps sum to the overall equation, and the slow step gives the observed rate law.\n\n## Key terms\n\n- **Rate of reaction** — change in concentration per unit time, scaled by stoichiometric coefficient.\n- **Rate law** — equation relating rate to reactant concentrations: rate = k[A]^m[B]^n.\n- **Rate constant (k)** — proportionality constant in the rate law; depends on temperature.\n- **Order** — the exponent of a concentration term in the rate law.\n- **Half-life** — time for a reactant concentration to fall to half its value.\n- **Activation energy** — minimum energy colliding particles need to react.\n- **Transition state** — the highest-energy arrangement along the reaction pathway.\n- **Arrhenius equation** — k = A e^(−Eₐ/RT).\n- **Elementary step** — a single molecular event in a mechanism.\n- **Intermediate** — species formed and then consumed during a mechanism.\n- **Rate-determining step** — the slowest step, which controls the overall rate.\n- **Catalyst** — a substance that increases rate by providing a lower-Eₐ pathway and is regenerated.\n\n## Summary\n\n- Rate laws (rate = k[A]^m[B]^n) and orders are found by experiment, for example by initial rates.\n- Integrated rate laws give linear plots of [A], ln[A] or 1/[A] against time for zero, first and second order.\n- First-order half-life (ln 2/k) is independent of concentration; zero- and second-order half-lives are not.\n- k = A e^(−Eₐ/RT); ln k against 1/T gives a gradient of −Eₐ/R.\n- The rate-determining step of a valid mechanism predicts the experimental rate law.\n- Catalysts lower Eₐ via a new pathway without changing ΔH or the equilibrium position.\n",
+  "questions": [
+    {
+      "prompt": "A reaction has the rate law rate = k[A][B]. What are the units of k if concentration is in M and time in s?",
+      "options": {
+        "A": "s⁻¹",
+        "B": "M s⁻¹",
+        "C": "M⁻² s⁻¹",
+        "D": "M⁻¹ s⁻¹"
+      },
+      "answer": "D",
+      "explanation": "The reaction is second order overall, so k = rate/([A][B]) has units M s⁻¹ / M² = M⁻¹ s⁻¹. A is for first order and is tempting if you look at each reactant separately; C is for third order."
+    },
+    {
+      "prompt": "In a reaction mechanism, the rate-determining step is:",
+      "options": {
+        "A": "the slowest elementary step, which limits the overall rate",
+        "B": "the first step of the mechanism, whatever its speed",
+        "C": "the step with the most negative ΔH",
+        "D": "the fastest step, because it produces the most product"
+      },
+      "answer": "A",
+      "explanation": "The overall reaction cannot go faster than its slowest step. B is tempting because the slow step is often the first, but not always. Step speed depends on activation energy, not ΔH (C)."
+    },
+    {
+      "prompt": "Which statement about adding a catalyst to a reversible reaction is correct?",
+      "options": {
+        "A": "It increases the yield at equilibrium by speeding up the forward reaction only.",
+        "B": "It provides a pathway with lower activation energy, increasing forward and reverse rates equally, so equilibrium is reached faster with no change in K.",
+        "C": "It makes ΔH more negative so the reaction releases more energy.",
+        "D": "It increases the kinetic energy of the reacting particles."
+      },
+      "answer": "B",
+      "explanation": "A catalyst lowers Eₐ for both directions by the same amount, so K, ΔH and ΔG are unchanged. A is the common misconception that catalysts improve yield. D describes raising temperature, not adding a catalyst."
+    },
+    {
+      "prompt": "The reaction NO₂(g) + CO(g) → NO(g) + CO₂(g) is proposed to occur by: Step 1 (slow) NO₂ + NO₂ → NO₃ + NO; Step 2 (fast) NO₃ + CO → NO₂ + CO₂. Which rate law does this mechanism predict?",
+      "options": {
+        "A": "rate = k[NO₂][CO]",
+        "B": "rate = k[NO₃][CO]",
+        "C": "rate = k[NO₂]²",
+        "D": "rate = k[NO₂]²[CO]"
+      },
+      "answer": "C",
+      "explanation": "The rate law follows the slow, rate-determining elementary step, which is bimolecular in NO₂: rate = k[NO₂]². A is tempting because it uses the overall equation's coefficients, which is not valid. B is the fast step and contains an intermediate. CO reacts only after the slow step, so it does not appear."
+    },
+    {
+      "prompt": "For a reaction A → products, a plot of 1/[A] against time is a straight line with positive gradient. Which statement is correct?",
+      "options": {
+        "A": "The reaction is first order and t½ is constant.",
+        "B": "The reaction is zero order and the gradient equals −k.",
+        "C": "The reaction is second order and each successive half-life is longer than the one before.",
+        "D": "The reaction is second order and t½ is independent of [A]₀."
+      },
+      "answer": "C",
+      "explanation": "A linear 1/[A] vs t plot means second order, with gradient k and t½ = 1/(k[A]). As [A] falls, t½ grows. D is the trap of applying the first-order property (constant t½) to a second-order reaction. A first-order reaction would give a linear ln[A] plot."
+    },
+    {
+      "prompt": "A first-order reaction has k = 0.0231 min⁻¹. What fraction of the reactant remains after 60.0 min?",
+      "options": {
+        "A": "0.50",
+        "B": "0.75",
+        "C": "0.0231",
+        "D": "0.25"
+      },
+      "answer": "D",
+      "explanation": "t½ = ln 2/k = 0.693/0.0231 = 30.0 min, so 60.0 min is two half-lives: (½)² = 0.25. Equivalently, e^(−0.0231 × 60.0) = e^(−1.386) = 0.250. B is the fraction that has reacted, not the fraction remaining; A is one half-life."
+    },
+    {
+      "prompt": "A reaction has Eₐ = 75.0 kJ mol⁻¹. By what factor does k increase when the temperature is raised from 300 K to 310 K? (R = 8.314 J K⁻¹ mol⁻¹)",
+      "options": {
+        "A": "2.64",
+        "B": "1.03",
+        "C": "1.00",
+        "D": "10.0"
+      },
+      "answer": "A",
+      "explanation": "ln(k₂/k₁) = −(75 000/8.314)(1/310 − 1/300) = −9021 × (−1.075 × 10⁻⁴) = 0.970, so k₂/k₁ = e⁰·⁹⁷⁰ = 2.64. C (about 1.00) results from leaving Eₐ in kJ mol⁻¹. B is the ratio of the temperatures (310/300), which is not how k depends on T."
+    },
+    {
+      "prompt": "The rate constant of a reaction is 3.46 × 10⁻⁵ s⁻¹ at 298 K and 1.50 × 10⁻³ s⁻¹ at 338 K. What is the activation energy?",
+      "options": {
+        "A": "7.89 kJ mol⁻¹",
+        "B": "9.49 kJ mol⁻¹",
+        "C": "78.9 kJ mol⁻¹",
+        "D": "34.3 kJ mol⁻¹"
+      },
+      "answer": "C",
+      "explanation": "ln(k₂/k₁) = ln(1.50 × 10⁻³ / 3.46 × 10⁻⁵) = ln(43.4) = 3.770. 1/T₂ − 1/T₁ = 1/338 − 1/298 = −3.971 × 10⁻⁴ K⁻¹. Eₐ = 3.770 × 8.314 / 3.971 × 10⁻⁴ = 7.89 × 10⁴ J mol⁻¹ = 78.9 kJ mol⁻¹. A is a factor-of-ten slip in converting J to kJ; D uses log₁₀ instead of the natural log."
+    }
+  ]
+}
