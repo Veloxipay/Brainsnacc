@@ -5,7 +5,7 @@ Self-paced Chemistry and Biology for Year 10, VCE Units 1–4 and University Yea
 ## How the course is organised
 
 ```
-Level  (Year 10 · Year 11 VCE Units 1–2 · Year 12 VCE Units 3–4 · University Year 1)
+Level  (Year 10 · Year 11 VCE Units 1–2 · Year 12 VCE Units 3–4 · University Year 1 (Monash))
   └ Unit     (one per level + subject, e.g. "Unit 3", "Chemistry 1")
       └ Module   (an Area of Study, or a uni topic block)
           └ Lesson   (notes in Markdown, draft or live)
@@ -43,5 +43,5 @@ php artisan test
 
 - AI tutor on each lesson (hints first)
 - Practice exams with marks by topic
-- University Year 1 units matched to the chosen university
+- Lessons for the Monash first-year units (CHM1011, CHM1022, BIO1011, BIO1022)
 - Weekly parent email

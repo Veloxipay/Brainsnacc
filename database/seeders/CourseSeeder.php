@@ -12,7 +12,7 @@ use Illuminate\Database\Seeder;
 /**
  * Sets up the course skeleton. Safe to run more than once.
  * VCE titles follow the VCAA study designs as known at Nov 2026 — check them on the VCAA site.
- * University Year 1 is a placeholder until the university is chosen.
+ * University Year 1 follows Monash University's first-year Chemistry and Biology units.
  */
 class CourseSeeder extends Seeder
 {
@@ -22,7 +22,7 @@ class CourseSeeder extends Seeder
             'y10' => Level::firstOrCreate(['short_name' => 'Year 10'], ['name' => 'Year 10', 'sort' => 1]),
             'y11' => Level::firstOrCreate(['short_name' => 'Year 11'], ['name' => 'Year 11 · VCE Units 1–2', 'sort' => 2]),
             'y12' => Level::firstOrCreate(['short_name' => 'Year 12'], ['name' => 'Year 12 · VCE Units 3–4', 'sort' => 3]),
-            'uni1' => Level::firstOrCreate(['short_name' => 'Uni Year 1'], ['name' => 'University Year 1', 'sort' => 4]),
+            'uni1' => Level::firstOrCreate(['short_name' => 'Uni Year 1'], ['name' => 'University Year 1 · Monash', 'sort' => 4]),
         ];
 
         $chem = Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2456C7', 'tint' => '#E8EEFB']);
@@ -49,8 +49,27 @@ class CourseSeeder extends Seeder
             ]],
             ['y12', $bio, 'Unit 4', 'How does life change and respond to challenges?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
 
-            ['uni1', $chem, 'Chemistry 1', 'First-year Chemistry', ['Module 1']],
-            ['uni1', $bio, 'Biology 1', 'First-year Biology', ['Module 1']],
+            // Monash University first year (unit topics from the Monash handbook — recheck each year)
+            ['uni1', $chem, 'CHM1011', 'Chemistry 1', [
+                'Atomic structure and bonding',
+                'Stoichiometry and intermolecular forces',
+                'Thermodynamics and kinetics',
+                'Equilibria and electrochemistry',
+            ]],
+            ['uni1', $chem, 'CHM1022', 'Chemistry 2', ['Synthetic chemistry']],
+            ['uni1', $bio, 'BIO1011', 'Blueprints for Life', [
+                'Cells: the unit of life',
+                'Cell division, growth and specialised tissues',
+                'Genetics and inheritance',
+                'Energy in living things',
+            ]],
+            ['uni1', $bio, 'BIO1022', 'Life on Earth', [
+                'Ecological interactions',
+                'Diversity of animals, plants and fungi',
+                'Organ systems',
+                'Pathogens and immunity',
+                'Animal behaviour',
+            ]],
         ];
 
         $modules = [];

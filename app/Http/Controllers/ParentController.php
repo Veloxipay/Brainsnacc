@@ -19,7 +19,7 @@ class ParentController extends Controller
             ? User::where('role', User::ROLE_STUDENT)->orderBy('name')->get()
             : $user->children()->orderBy('name')->get();
 
-        $since = now()->startOfWeek();
+        $since = now()->startOfWeek(\Carbon\CarbonInterface::MONDAY);
 
         $rows = $children->map(fn (User $child) => [
             'child' => $child,

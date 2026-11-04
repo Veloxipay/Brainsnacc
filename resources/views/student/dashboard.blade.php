@@ -40,6 +40,9 @@
                     <div class="row between small"><span>Lessons done</span><strong>{{ $row['finished'] }} of {{ $row['total'] }} · {{ $row['percent'] }}%</strong></div>
                     <div class="bar" style="margin-top:6px;background:{{ $s->tint }}"><span style="width:{{ $row['percent'] }}%;background:{{ $s->color }}"></span></div>
                 </div>
+                @if ($row['next'])
+                    <a class="small" href="{{ route('lessons.show', $row['next']) }}">Next: {{ $row['next']->title }} →</a>
+                @endif
             </section>
         @endforeach
     </div>
