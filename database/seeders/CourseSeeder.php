@@ -70,10 +70,17 @@ class CourseSeeder extends Seeder
             ['y10', 'chemistry', 'Year 10', 'Year 10 Chemistry', [
                 ['Atoms and the periodic table', ['Atomic structure', 'Electron configuration', 'The periodic table and its trends', 'Ionic and covalent bonding']],
                 ['Chemical reactions', ['Writing and balancing equations', 'Types of chemical reactions', 'Acids and bases', 'Rates of reaction']],
+                ['Counting atoms: the mole', ['Relative atomic mass and the mole', 'Mole calculations', 'Percentage composition and formulas']],
+                ['Organic chemistry and materials', ['Hydrocarbons and fuels', 'Polymers and plastics', 'Metals and alloys']],
+                ['Chemistry and the environment', ['The carbon cycle and the greenhouse effect', 'Ocean acidification', 'Water quality']],
             ]],
             ['y10', 'biology', 'Year 10', 'Year 10 Biology', [
                 ['Genetics and DNA', ['DNA structure', 'Genes and chromosomes', 'Mitosis and meiosis', 'Inheritance and Punnett squares', 'Pedigree charts']],
                 ['Evolution', ['Variation and natural selection', 'Evidence for evolution', 'Speciation']],
+                ['Cells and body systems', ['Cells and microscopes', 'Moving substances across membranes', 'Body systems working together', 'Homeostasis basics']],
+                ['Ecosystems', ['Food webs and energy flow', 'Nutrient cycles', 'Human impacts on ecosystems']],
+                ['Disease and immunity', ['Pathogens and disease', 'The immune system', 'Vaccines']],
+                ['Biotechnology', ['Genetic engineering', 'DNA technologies and ethics']],
             ]],
 
             // ── Year 11 · VCE Units 1–2 ─────────────────────────────
