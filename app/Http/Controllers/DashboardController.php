@@ -44,13 +44,19 @@ class DashboardController extends Controller
 
         $next = $subjects->pluck('next')->filter()->first();
 
-        // Questions answered wrong in the last 7 days, grouped by lesson so each one links back.
+        // Mistakes list: questions answered wrong in the last 7 days that haven't been tried again yet.
+        // Once a question has been attempted a second time it leaves the list (right or wrong).
         $wrong = QuestionAttempt::where('user_id', $student->id)
-            ->where('is_correct', false)
-            ->where('created_at', '>=', now()->subWeek())
             ->with('question.lesson')
+            ->orderBy('id')
             ->get()
-            ->filter(fn ($a) => $a->question && $a->question->lesson);
+            ->groupBy('question_id')
+            ->filter(fn ($tries) => $tries->count() === 1
+                && ! $tries->first()->is_correct
+                && $tries->first()->created_at >= now()->subWeek())
+            ->map(fn ($tries) => $tries->first())
+            ->filter(fn ($a) => $a->question && $a->question->lesson)
+            ->values();
         $mistakes = $wrong->unique('question_id')->count();
         $mistakeLessons = $wrong->unique('question_id')
             ->groupBy(fn ($a) => $a->question->lesson_id)
