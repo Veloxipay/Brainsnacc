@@ -5,31 +5,110 @@
   "title": "Instrumental analysis: IR, NMR and mass spectrometry",
   "icon": "🔍",
   "scenes": [
-    {"type": "title", "heading": "Instrumental analysis: IR, NMR and mass spectrometry", "sub": "Three clues to crack an unknown molecule", "icon": "🔍",
-     "say": "Chemists rarely identify an organic compound with a single test. Instead, they use instruments that each give a different clue, and put them together like a detective."},
-    {"type": "analogy", "heading": "Think of it like this", "icon": "🎉", "everyday": "Clothes, who they stand with and height help identify a stranger", "icon2": "🔍", "science": "IR, NMR and mass spec each give one clue about a molecule",
-     "breaks": "party clues can be guesses, but spectra are real data, and your structure must fit every piece of it.",
-     "say": "Picture identifying a stranger at a party. One friend says what they're wearing, another who they're standing with, a third how tall they are. IR gives the functional groups, NMR the arrangement of atoms, and mass spec the molar mass."},
-    {"type": "points", "heading": "Infrared (IR) spectroscopy", "icon": "🌈",
-     "points": ["Alcohol O–H: broad, 3200–3600 cm⁻¹", "Acid O–H: very broad, 2500–3300 cm⁻¹", "C=O: strong, sharp, 1650–1750 cm⁻¹", "Fingerprint region: below about 1500 cm⁻¹"],
-     "say": "In IR, each bond absorbs at its own wavenumber, like a guitar string's own note. An alcohol O H gives a broad band, an acid O H an even broader one, and a C double bond O a tall, sharp spike.",
-     "caption": "In IR, each bond absorbs at its own wavenumber, like a guitar string's own note. An alcohol O–H gives a broad band, an acid O–H an even broader one, and a C=O a tall, sharp spike."},
-    {"type": "points", "heading": "NMR spectroscopy", "icon": "🧲",
-     "points": ["Number of signals = number of environments", "Chemical shift (from TMS at 0 ppm): type", "¹H integration: relative number of H", "¹H splitting: the n + 1 rule", "¹³C: one peak per carbon environment"],
-     "say": "In NMR, count the signals to find the number of environments. The chemical shift, measured from TMS at zero, tells you the type. In proton NMR, the peak area gives the relative number of hydrogens, and the splitting tells you about neighbours."},
-    {"type": "equation", "heading": "The n + 1 rule", "equation": "lines = n + 1",
-     "parts": [["n", "H on the ADJACENT carbons"], ["0 → 1", "singlet"], ["2 → 3", "triplet"], ["3 → 4", "quartet"]],
-     "say": "The n plus one rule: count the hydrogens on the neighbouring carbons and add one. In an ethyl group, the C H three sees two neighbours and becomes a triplet. The C H two sees three and becomes a quartet.",
-     "caption": "The n + 1 rule: count the hydrogens on the neighbouring carbons and add one. In an ethyl group, the CH₃ sees two neighbours and becomes a triplet. The CH₂ sees three and becomes a quartet."},
-    {"type": "points", "heading": "Mass spectrometry", "icon": "⚖️",
-     "points": ["M⁺ gives the molar mass", "Small M+1 peak: from ¹³C", "Fragments: only + ions are detected", "Base peak (100%) isn't always M⁺"],
-     "say": "In mass spec, the molecular ion, M plus, gives the molar mass. A small M plus one peak comes from carbon thirteen. Only positive fragments are detected, and the tallest peak, the base peak, isn't always the molecular ion.",
-     "caption": "In mass spec, the molecular ion, M⁺, gives the molar mass. A small M+1 peak comes from ¹³C. Only positive fragments are detected, and the tallest peak, the base peak, isn't always the molecular ion."},
-    {"type": "example", "heading": "Worked example", "question": "C, H, O only. M⁺ = 74. IR: very broad 2500–3300 and 1710 cm⁻¹. ¹H NMR: triplet 3H, quartet 2H, singlet 1H at 11.7 ppm.",
-     "lines": ["IR: very broad O–H + C=O → carboxylic acid", "Triplet + quartet → ethyl group, CH₃CH₂–", "11.7 ppm singlet → the COOH hydrogen", "Answer: propanoic acid, CH₃CH₂COOH (M = 74)"],
-     "say": "A very broad O H with a C double bond O means a carboxylic acid. A triplet and a quartet mean an ethyl group. The singlet at eleven point seven is the acid hydrogen. Put it together: propanoic acid, with a molar mass of seventy-four. It fits.",
-     "caption": "A very broad O–H with a C=O means a carboxylic acid. A triplet and a quartet mean an ethyl group. The singlet at 11.7 ppm is the acid hydrogen. Put it together: propanoic acid, with a molar mass of 74. It fits."},
-    {"type": "recap", "points": ["MS: how heavy? (M⁺)", "IR: which bonds?", "NMR: how is it put together?", "n + 1: count neighbours, add one", "Check your structure against every clue"],
-     "say": "Quick recap. Mass spec tells you how heavy, IR which bonds, and NMR how it's put together. Count neighbours and add one. Always check your structure against every clue. Now try the practice questions!"}
+    {
+      "type": "title",
+      "heading": "Instrumental analysis: IR, NMR and mass spectrometry",
+      "sub": "Three clues to crack an unknown molecule",
+      "icon": "🔍",
+      "say": "Chemists rarely identify an organic compound with one test. They combine clues from infrared spectroscopy, or IR, nuclear magnetic resonance, or NMR, and mass spectrometry, like a detective."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🎉",
+      "everyday": "Clothes, who they stand with and height help identify a stranger",
+      "icon2": "🔍",
+      "science": "IR, NMR and mass spec each give one clue about a molecule",
+      "breaks": "party clues can be guesses, but spectra are real data, and your structure must fit every piece of it.",
+      "say": "Picture identifying a stranger at a party. One friend says what they're wearing, another who they're standing with, a third how tall they are. IR gives the functional groups, NMR the arrangement of atoms, and mass spec the molar mass."
+    },
+    {
+      "type": "points",
+      "heading": "Infrared (IR) spectroscopy",
+      "icon": "🌈",
+      "points": [
+        "Alcohol O–H: broad, 3200–3600 cm⁻¹",
+        "Acid O–H: very broad, 2500–3300 cm⁻¹",
+        "C=O: strong, sharp, 1650–1750 cm⁻¹",
+        "Fingerprint region: below about 1500 cm⁻¹"
+      ],
+      "say": "In IR, each bond absorbs at its own wavenumber, like a guitar string's own note. An alcohol O H gives a broad band, an acid O H an even broader one, and a C double bond O a tall, sharp spike.",
+      "caption": "In IR, each bond absorbs at its own wavenumber, like a guitar string's own note. An alcohol O–H gives a broad band, an acid O–H an even broader one, and a C=O a tall, sharp spike."
+    },
+    {
+      "type": "points",
+      "heading": "NMR spectroscopy",
+      "icon": "🧲",
+      "points": [
+        "Number of signals = number of environments",
+        "Chemical shift (from TMS at 0 ppm): type",
+        "¹H integration: relative number of H",
+        "¹H splitting: the n + 1 rule",
+        "¹³C: one peak per carbon environment"
+      ],
+      "say": "In NMR, count the signals to find the number of environments. The chemical shift, measured from a reference called TMS at zero, tells you the type. In proton NMR, the peak area gives the relative number of hydrogens, and the splitting tells you about neighbours."
+    },
+    {
+      "type": "equation",
+      "heading": "The n + 1 rule",
+      "equation": "lines = n + 1",
+      "parts": [
+        [
+          "n",
+          "H on the ADJACENT carbons"
+        ],
+        [
+          "0 → 1",
+          "singlet"
+        ],
+        [
+          "2 → 3",
+          "triplet"
+        ],
+        [
+          "3 → 4",
+          "quartet"
+        ]
+      ],
+      "say": "The n plus one rule: count the hydrogens on the neighbouring carbons and add one. In an ethyl group, the C H three sees two neighbours and becomes a triplet. The C H two sees three and becomes a quartet.",
+      "caption": "The n + 1 rule: count the hydrogens on the neighbouring carbons and add one. In an ethyl group, the CH₃ sees two neighbours and becomes a triplet. The CH₂ sees three and becomes a quartet."
+    },
+    {
+      "type": "points",
+      "heading": "Mass spectrometry",
+      "icon": "⚖️",
+      "points": [
+        "M⁺ gives the molar mass",
+        "Small M+1 peak: from ¹³C",
+        "Fragments: only + ions are detected",
+        "Base peak (100%) isn't always M⁺"
+      ],
+      "say": "In mass spec, the molecular ion, M plus, gives the molar mass. A small M plus one peak comes from carbon thirteen. Only positive fragments are detected, and the tallest peak, the base peak, isn't always the molecular ion.",
+      "caption": "In mass spec, the molecular ion, M⁺, gives the molar mass. A small M+1 peak comes from ¹³C. Only positive fragments are detected, and the tallest peak, the base peak, isn't always the molecular ion."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "C, H, O only. M⁺ = 74. IR: very broad 2500–3300 and 1710 cm⁻¹. ¹H NMR: triplet 3H, quartet 2H, singlet 1H at 11.7 ppm.",
+      "lines": [
+        "IR: very broad O–H + C=O → carboxylic acid",
+        "Triplet + quartet → ethyl group, CH₃CH₂–",
+        "11.7 ppm singlet → the COOH hydrogen",
+        "Answer: propanoic acid, CH₃CH₂COOH (M = 74)"
+      ],
+      "say": "A very broad O H with a C double bond O means a carboxylic acid. A triplet and a quartet mean an ethyl group. The singlet at eleven point seven is the acid hydrogen. Put it together: propanoic acid, with a molar mass of seventy-four. It fits.",
+      "caption": "A very broad O–H with a C=O means a carboxylic acid. A triplet and a quartet mean an ethyl group. The singlet at 11.7 ppm is the acid hydrogen. Put it together: propanoic acid, with a molar mass of 74. It fits."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "MS: how heavy? (M⁺)",
+        "IR: which bonds?",
+        "NMR: how is it put together?",
+        "n + 1: count neighbours, add one",
+        "Check your structure against every clue"
+      ],
+      "say": "Quick recap. Mass spec tells you how heavy, IR which bonds, and NMR how it's put together. Count neighbours and add one. Always check your structure against every clue. Now try the practice questions!"
+    }
   ]
 }
