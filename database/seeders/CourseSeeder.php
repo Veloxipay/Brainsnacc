@@ -73,6 +73,7 @@ class CourseSeeder extends Seeder
                 ['Counting atoms: the mole', ['Relative atomic mass and the mole', 'Mole calculations', 'Percentage composition and formulas']],
                 ['Organic chemistry and materials', ['Hydrocarbons and fuels', 'Polymers and plastics', 'Metals and alloys']],
                 ['Chemistry and the environment', ['The carbon cycle and the greenhouse effect', 'Ocean acidification', 'Water quality']],
+                ['Revision and exam practice', ['Year 10 Chemistry summary and memory tips', 'Year 10 Chemistry practice test']],
             ]],
             ['y10', 'biology', 'Year 10', 'Year 10 Biology', [
                 ['Genetics and DNA', ['DNA structure', 'Genes and chromosomes', 'Mitosis and meiosis', 'Inheritance and Punnett squares', 'Pedigree charts']],
@@ -81,6 +82,7 @@ class CourseSeeder extends Seeder
                 ['Ecosystems', ['Food webs and energy flow', 'Nutrient cycles', 'Human impacts on ecosystems']],
                 ['Disease and immunity', ['Pathogens and disease', 'The immune system', 'Vaccines']],
                 ['Biotechnology', ['Genetic engineering', 'DNA technologies and ethics']],
+                ['Revision and exam practice', ['Year 10 Biology summary and memory tips', 'Year 10 Biology practice test']],
             ]],
 
             // ── Year 11 · VCE Units 1–2 ─────────────────────────────
@@ -88,41 +90,49 @@ class CourseSeeder extends Seeder
                 ['AoS 1 · How do the chemical structures of materials explain their properties and reactions?', ['Elements and the periodic table', 'Electron configuration and periodic trends', 'Metallic bonding', 'Ionic bonding', 'Covalent bonding and molecular shape', 'Intermolecular forces']],
                 ['AoS 2 · How are materials quantified and classified?', ['The mole and molar mass', 'Empirical and molecular formulas', 'Hydrocarbons and organic families', 'Polymers']],
                 ['AoS 3 · How can chemical knowledge be used to create a more sustainable future?', ['Green chemistry principles', 'Planning your research investigation']],
+                ['Revision and exam practice', ['Significant figures, units and the data book', 'Unit 1 summary and memory tips', 'Unit 1 practice exam']],
             ]],
             ['y11', 'chemistry', 'Unit 2', 'How do chemical reactions shape the natural world?', [
                 ['AoS 1 · How do chemicals interact with water?', ['Properties of water', 'Solubility and precipitation', 'Acids and bases', 'pH calculations', 'Redox reactions']],
                 ['AoS 2 · How are chemicals measured and analysed?', ['Concentration', 'Stoichiometry in solutions', 'Volumetric analysis (titrations)', 'Analysing substances in water']],
                 ['AoS 3 · How do quantitative scientific investigations develop our understanding of chemical reactions?', ['Planning a practical investigation', 'Analysing and reporting results']],
+                ['Revision and exam practice', ['Unit 2 summary and memory tips', 'Unit 2 practice exam']],
             ]],
             ['y11', 'biology', 'Unit 1', 'How do organisms regulate their functions?', [
                 ['AoS 1 · How do cells function?', ['Cell theory and cell types', 'Organelles', 'The plasma membrane and transport', 'The cell cycle', 'Stem cells']],
                 ['AoS 2 · How do plant and animal systems function?', ['Plant systems: water and nutrient transport', 'Animal systems', 'Homeostasis', 'When homeostasis fails']],
                 ['AoS 3 · How do scientific investigations develop understanding of how organisms regulate their functions?', ['Planning your student investigation']],
+                ['Revision and exam practice', ['Command words and how to answer', 'Unit 1 summary and memory tips', 'Unit 1 practice exam']],
             ]],
             ['y11', 'biology', 'Unit 2', 'How does inheritance impact on diversity?', [
                 ['AoS 1 · How is inheritance explained?', ['Chromosomes and karyotypes', 'Genotype and phenotype', 'Meiosis', 'Patterns of inheritance', 'Pedigree charts']],
                 ['AoS 2 · How do inherited adaptations impact on diversity?', ['Reproductive strategies', 'Adaptations', 'Interdependence in ecosystems', 'First Nations knowledge of adaptations']],
                 ['AoS 3 · How do humans use science to explore and communicate contemporary bioethical issues?', ['Approaches to bioethics', 'Planning your research investigation']],
+                ['Revision and exam practice', ['Unit 2 summary and memory tips', 'Unit 2 practice exam']],
             ]],
 
             // ── Year 12 · VCE Units 3–4 ─────────────────────────────
             ['y12', 'chemistry', 'Unit 3', 'How can design and innovation help to optimise chemical processes?', [
                 ['AoS 1 · What are the current and future options for supplying energy?', ['Fuels: fossil and renewable', 'Combustion and thermochemistry', 'Energy calculations and calorimetry', 'Galvanic cells', 'Fuel cells']],
                 ['AoS 2 · How can the rate and yield of chemical reactions be optimised?', ['Rates of reaction', 'Equilibrium', 'Le Chatelier’s principle', 'Electrolysis', 'Rechargeable batteries']],
+                ['Revision and exam practice', ['Unit 3 summary and memory tips', 'Unit 3 practice exam']],
             ]],
             ['y12', 'chemistry', 'Unit 4', 'How are carbon-based compounds designed for purpose?', [
                 ['AoS 1 · How are organic compounds categorised and synthesised?', ['Naming organic compounds', 'Isomers', 'Organic reactions', 'Reaction pathways']],
                 ['AoS 2 · How are organic compounds analysed and used?', ['Instrumental analysis: IR, NMR and mass spectrometry', 'Chromatography', 'Food chemistry: carbohydrates, proteins and fats', 'Vitamins and enzymes in food', 'Energy from food']],
                 ['AoS 3 · How is scientific inquiry used to investigate the sustainable production of energy and/or materials?', ['Planning your practical investigation and poster']],
+                ['Revision and exam practice', ['Unit 4 summary and memory tips', 'Unit 4 practice exam', 'End-of-year exam technique']],
             ]],
             ['y12', 'biology', 'Unit 3', 'How do cells maintain life?', [
                 ['AoS 1 · What is the role of nucleic acids and proteins in maintaining life?', ['Nucleic acids and proteins', 'Gene structure and expression', 'Gene regulation', 'Protein structure and the proteome', 'DNA manipulation techniques', 'Recombinant DNA and genetically modified organisms']],
                 ['AoS 2 · How are biochemical pathways regulated?', ['Enzymes', 'Coenzymes', 'Photosynthesis', 'Cellular respiration', 'Factors affecting photosynthesis and respiration', 'CRISPR and biochemical pathways']],
+                ['Revision and exam practice', ['Unit 3 summary and memory tips', 'Unit 3 practice exam']],
             ]],
             ['y12', 'biology', 'Unit 4', 'How does life change and respond to challenges?', [
                 ['AoS 1 · How do organisms respond to pathogens?', ['Pathogens and the first line of defence', 'The innate immune response', 'Adaptive immunity', 'Vaccines and immunotherapy', 'Emerging diseases']],
                 ['AoS 2 · How are species related over time?', ['Genetic change in populations', 'Speciation', 'Fossil evidence', 'Phylogenetic trees', 'Human evolution']],
                 ['AoS 3 · How is scientific inquiry used to investigate cellular processes and/or biological change?', ['Planning your practical investigation and poster']],
+                ['Revision and exam practice', ['Unit 4 summary and memory tips', 'Unit 4 practice exam', 'End-of-year exam technique']],
             ]],
 
             // ── University Year 1 · Monash ──────────────────────────
@@ -131,15 +141,21 @@ class CourseSeeder extends Seeder
                 ['Stoichiometry and intermolecular forces', ['Stoichiometry', 'Intermolecular forces', 'Physical properties of substances']],
                 ['Thermodynamics and kinetics', ['Enthalpy, entropy and free energy', 'Chemical kinetics']],
                 ['Equilibria and electrochemistry', ['Chemical equilibrium', 'Acid–base equilibria', 'Electrochemistry']],
+                ['Revision and exam practice', ['CHM1011 summary and memory tips', 'CHM1011 practice exam']],
             ]],
             ['uni1', 'chemistry', 'CHM1022', 'Chemistry 2', [
                 ['Synthetic chemistry', ['Organic structure and naming', 'Reaction mechanisms', 'Planning a synthesis']],
+                ['Carbonyl and aromatic chemistry', ['Carbonyl compounds', 'Aromatic compounds']],
+                ['Structure determination', ['Spectroscopy and structure determination']],
+                ['Inorganic chemistry', ['Transition metal chemistry']],
+                ['Revision and exam practice', ['CHM1022 summary and memory tips', 'CHM1022 practice exam']],
             ]],
             ['uni1', 'biology', 'BIO1011', 'Blueprints for Life', [
                 ['Cells: the unit of life', ['Cell structure', 'Biological molecules']],
                 ['Cell division, growth and specialised tissues', ['Mitosis and meiosis', 'Tissues and specialisation', 'Ageing and cell death']],
                 ['Genetics and inheritance', ['Mendelian genetics', 'Molecular genetics']],
                 ['Energy in living things', ['Metabolism and enzymes', 'Cellular respiration and photosynthesis']],
+                ['Revision and exam practice', ['BIO1011 summary and memory tips', 'BIO1011 practice exam']],
             ]],
             ['uni1', 'biology', 'BIO1022', 'Life on Earth', [
                 ['Ecological interactions', ['Populations and communities', 'Interactions that drive evolution']],
@@ -147,6 +163,7 @@ class CourseSeeder extends Seeder
                 ['Organ systems', ['Physiology and homeostasis']],
                 ['Pathogens and immunity', ['Host–pathogen relationships', 'Immunology basics']],
                 ['Animal behaviour', ['Behaviour and ecology']],
+                ['Revision and exam practice', ['BIO1022 summary and memory tips', 'BIO1022 practice exam']],
             ]],
         ];
     }

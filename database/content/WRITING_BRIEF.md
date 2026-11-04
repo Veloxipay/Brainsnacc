@@ -40,8 +40,9 @@ Use this structure with `##` headings:
 3. `## Worked examples` — at least 2 fully worked examples, step by step. For chemistry calculations show the formula, substitution, units and significant figures. For biology, use worked scenarios (e.g. a pedigree, an experiment's results, a data question).
 4. `## Common mistakes` — 3–5 bullet points on traps students fall into.
 5. `## Exam tips` — 2–4 bullets on how this is typically assessed in VCE (or uni) and what earns marks.
-6. `## Key terms` — a glossary list: `- **Term** — definition`.
-7. `## Summary` — 4–6 bullet points.
+6. `## Tips to remember` — 3–6 memory aids that genuinely help this topic stick: mnemonics/acronyms (e.g. "OIL RIG", "An Ox, Red Cat"), rhymes, visual pictures to imagine, everyday analogies, "if you remember one thing…" lines, and quick self-checks. Make them accurate and specific to this lesson (not generic study advice). Where a common mnemonic exists, use it; otherwise invent a clear one and say it is a made-up memory trick.
+7. `## Key terms` — a glossary list: `- **Term** — definition`.
+8. `## Summary` — 4–6 bullet points.
 
 Formatting rules:
 - Markdown only. No HTML tags (they are stripped). No images.
@@ -49,9 +50,17 @@ Formatting rules:
 - Tables are fine (Markdown pipe tables).
 - Use SI units and the VCE data book conventions (e.g. kJ mol⁻¹, standard electrode potentials as in the VCE data book).
 
+## Special lesson types
+
+- **"… summary and memory tips"** lessons: a condensed revision sheet for the whole unit (or year). Body 1,500–2,500 words: one `##` section per module/Area of Study with the must-know facts, formulas and definitions, plus a big `## Tips to remember` section collecting the best memory aids for the unit, then `## Summary`. 12 mixed questions covering the whole unit.
+- **"… practice exam" / "… practice test"** lessons: body = `## How to use this practice exam` (time limit, conditions), `## Topics covered`, then `## Short-answer questions` with 4–6 exam-style written questions (with marks) followed by `## Worked solutions` giving full model answers. Then 20 multiple-choice questions covering the whole unit, exam difficulty, each with a full explanation.
+- **Skills lessons** (e.g. significant figures, command words, exam technique): teach the skill with many worked examples and common mistakes; 8–10 questions.
+
+Keep `summary` under 250 characters. Avoid bare `<` and `>` signs in text where possible (write "less than"/"greater than").
+
 ## Questions
 
-8 multiple-choice questions per lesson, exam style, 4 options (A–D), exactly one correct.
+8 multiple-choice questions per normal lesson (more for the special types above), exam style, 4 options (A–D), exactly one correct.
 - Mix: recall (2), understanding/explain (3), application or calculation (3).
 - Distractors must be plausible common misconceptions, not silly.
 - Spread the correct letters across A, B, C and D.
