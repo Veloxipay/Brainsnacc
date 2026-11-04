@@ -1,0 +1,30 @@
+{
+  "lesson": "uni1/chemistry/chm1022/planning-a-synthesis.json",
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Planning a synthesis",
+  "icon": "🗺️",
+  "scenes": [
+    {"type": "title", "heading": "Planning a synthesis", "sub": "Start at the target and work backwards", "icon": "🗺️",
+     "say": "Every medicine made in a factory comes from a planned synthesis. Chemists don't guess forwards. They work backwards from the target molecule, using the reactions they know as tools."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🍳", "everyday": "Working out a recipe from a dish you tasted at a restaurant", "icon2": "🧪", "science": "Retrosynthesis: what could this target be made from?",
+     "breaks": "you can guess when cooking, but every disconnection must match a real reaction, and synthons like R⁻ never exist on their own.",
+     "say": "Retrosynthesis is like tasting a great dish and working out the recipe. You work backwards: this sauce is probably tomatoes and garlic, which you can buy. In chemistry, you make imaginary disconnections, and ask what each piece could be made from, until you reach cheap starting materials."},
+    {"type": "points", "heading": "Good disconnections", "icon": "✂️",
+     "points": ["Break bonds next to functional groups", "Split near the middle: similar-sized pieces", "Count carbons: need a C–C bond step?", "C–C tools: cyanide (+1 C), Grignard"],
+     "say": "Disconnect next to a functional group, near the middle of the molecule. Count carbons first. If the target has more than your starting material, you need a C C bond-forming step, like cyanide, which adds one carbon, or a Grignard reagent.",
+     "caption": "Disconnect next to a functional group, near the middle of the molecule. Count carbons first. If the target has more than your starting material, you need a C–C bond-forming step, like cyanide, which adds one carbon, or a Grignard reagent."},
+    {"type": "example", "heading": "Worked example: two steps", "question": "Make propanoic acid from 10.0 g of bromoethane. Step yields: 85% and 75%.", "lines": ["Bromoethane + KCN → propanenitrile (85%)", "Acid hydrolysis → propanoic acid (75%)", "n(start) = 10.0 ÷ 108.96 = 0.0918 mol", "Overall: 0.85 × 0.75 = 0.6375", "Mass = 0.0585 mol × 74.08 = 4.33 g"],
+     "say": "Propanoic acid has three carbons, bromoethane has two, so add one with cyanide. Then hydrolyse the nitrile to the acid. Yields multiply as decimals: zero point eight five times zero point seven five is about sixty-four percent. From ten grams, you get four point three three grams of acid.",
+     "caption": "Propanoic acid has three carbons, bromoethane has two, so add one with cyanide. Then hydrolyse the nitrile to the acid. Yields multiply as decimals: 0.85 × 0.75 ≈ 64%. From 10.0 g, you get 4.33 g of acid."},
+    {"type": "steps", "heading": "Protecting groups", "steps": ["Protect: ketone → cyclic acetal", "React: LiAlH₄ reduces the ester", "Deprotect: aqueous acid", "Ketone is back, untouched"],
+     "say": "Sometimes a reagent would attack the wrong group. Then use a protecting group, like masking tape when you paint. Turn the ketone into a cyclic acetal, reduce the ester with lithium aluminium hydride, then peel the tape off with aqueous acid.",
+     "caption": "Sometimes a reagent would attack the wrong group. Then use a protecting group, like masking tape when you paint. Turn the ketone into a cyclic acetal, reduce the ester with LiAlH₄, then peel the tape off with aqueous acid."},
+    {"type": "compare", "heading": "Linear vs convergent", "left": {"title": "Linear", "icon": "➡️", "points": ["Every step in a row", "Yield = product of all steps", "6 steps at 90% → 53%"]},
+     "right": {"title": "Convergent", "icon": "🔀", "points": ["Fragments made in parallel", "Joined near the end", "Yield set by longest sequence"]},
+     "say": "Six steps at ninety percent each give only fifty-three percent overall. A little spills at every step. A convergent synthesis makes fragments in parallel, like splitting up a group assignment, so less is wasted.",
+     "caption": "Six steps at 90% each give only 53% overall. A little spills at every step. A convergent synthesis makes fragments in parallel, like splitting up a group assignment, so less is wasted."},
+    {"type": "recap", "points": ["Work backwards from the target (⇒)", "Disconnect next to functional groups", "Grignards need dry, O–H-free conditions", "NaBH₄ gentle; LiAlH₄ heavy hitter", "Yields multiply as decimals"],
+     "say": "Quick recap. Work backwards from the target. Disconnect next to functional groups. Keep Grignards dry. Protect a group only when you must, because it adds two steps. And yields multiply. Now try the practice questions!"}
+  ]
+}
