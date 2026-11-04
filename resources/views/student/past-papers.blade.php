@@ -71,5 +71,5 @@
         </section>
     @endforeach
 
-    <p class="small muted">Exams and reports © Victorian Curriculum and Assessment Authority (VCAA). Brainsnacc links to them on the VCAA website and does not copy them.</p>
+    <p class="small muted">Exam papers and reports: © Victorian Curriculum and Assessment Authority. For current versions and related content visit <a href="https://www.vcaa.vic.edu.au" target="_blank" rel="noopener">www.vcaa.vic.edu.au</a>. Each link opens the original file on the VCAA website; Brainsnacc does not copy them and is not endorsed by the VCAA.</p>
 @endsection
