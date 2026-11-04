@@ -25,12 +25,13 @@
 
         @foreach ($unit->modules as $module)
             @php($lessons = $module->lessons)
-            @php($doneCount = $lessons->whereIn('id', $done)->count())
-            @php($currentId = $lessons->first(fn ($l) => ! $done->contains($l->id))?->id)
+            @php($ready = $lessons->filter(fn ($l) => $l->isPublished()))
+            @php($doneCount = $ready->whereIn('id', $done)->count())
+            @php($currentId = $ready->first(fn ($l) => ! $done->contains($l->id))?->id)
             <section class="card" aria-labelledby="m-{{ $module->id }}">
                 <div class="row between">
                     <h2 id="m-{{ $module->id }}">{{ $module->title }}</h2>
-                    <span class="muted small">{{ $doneCount }} of {{ $lessons->count() }} lessons done</span>
+                    <span class="muted small">{{ $doneCount }} of {{ $ready->count() }} ready lessons done@if ($lessons->count() > $ready->count()) · {{ $lessons->count() - $ready->count() }} coming soon @endif</span>
                 </div>
 
                 @if ($lessons->isEmpty())
@@ -38,6 +39,14 @@
                 @else
                     <ol class="lesson-list">
                         @foreach ($lessons as $lesson)
+                            @if (! $lesson->isPublished())
+                                <li class="soon">
+                                    <span class="dot" aria-hidden="true"></span>
+                                    <span class="lesson-title">{{ $lesson->title }}</span>
+                                    <span class="small muted">Coming soon</span>
+                                </li>
+                                @continue
+                            @endif
                             @php($isDone = $done->contains($lesson->id))
                             @php($isCurrent = $lesson->id === $currentId)
                             <li class="{{ $isDone ? 'done' : ($isCurrent ? 'current' : '') }}">

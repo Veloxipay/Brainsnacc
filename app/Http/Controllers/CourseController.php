@@ -21,7 +21,7 @@ class CourseController extends Controller
 
         $units = $subject->units()
             ->where('level_id', $level?->id)
-            ->with(['modules.lessons' => fn ($q) => $q->published()])
+            ->with('modules.lessons') // drafts are listed as "Coming soon"
             ->get();
 
         return view('student.course', [

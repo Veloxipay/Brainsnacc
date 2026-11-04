@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\LessonController as AdminLessonController;
 use App\Http\Controllers\Admin\QuestionController as AdminQuestionController;
+use App\Http\Controllers\Admin\StructureController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CourseController;
@@ -38,6 +39,12 @@ Route::middleware('auth')->group(function () {
         Route::get('/users', [AdminUserController::class, 'index'])->name('users.index');
         Route::get('/users/create', [AdminUserController::class, 'create'])->name('users.create');
         Route::post('/users', [AdminUserController::class, 'store'])->name('users.store');
+
+        Route::get('/structure', [StructureController::class, 'index'])->name('structure');
+        Route::post('/units', [StructureController::class, 'storeUnit'])->name('units.store');
+        Route::put('/units/{unit}', [StructureController::class, 'updateUnit'])->name('units.update');
+        Route::post('/units/{unit}/modules', [StructureController::class, 'storeModule'])->name('modules.store');
+        Route::put('/modules/{module}', [StructureController::class, 'updateModule'])->name('modules.update');
 
         Route::get('/lessons', [AdminLessonController::class, 'index'])->name('lessons.index');
         Route::get('/lessons/create', [AdminLessonController::class, 'create'])->name('lessons.create');

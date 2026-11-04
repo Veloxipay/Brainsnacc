@@ -10,93 +10,160 @@ use App\Models\Unit;
 use Illuminate\Database\Seeder;
 
 /**
- * Sets up the course skeleton. Safe to run more than once.
- * VCE titles follow the VCAA study designs as known at Nov 2026 — check them on the VCAA site.
- * University Year 1 follows Monash University's first-year Chemistry and Biology units.
+ * Lays out the whole course: every level, unit, module and lesson title.
+ * New lessons start as drafts ("Coming soon" for students) and go live as they are written.
+ *
+ * Safe to run again: it updates names in place and never overwrites lessons already written.
+ * VCE titles follow the VCAA study designs (Chemistry 2023–2027, Biology 2022–2026) — check the VCAA site.
+ * University Year 1 follows Monash University's first-year units — check the Monash handbook each year.
  */
 class CourseSeeder extends Seeder
 {
     public function run(): void
     {
         $levels = [
-            'y10' => Level::firstOrCreate(['short_name' => 'Year 10'], ['name' => 'Year 10', 'sort' => 1]),
-            'y11' => Level::firstOrCreate(['short_name' => 'Year 11'], ['name' => 'Year 11 · VCE Units 1–2', 'sort' => 2]),
-            'y12' => Level::firstOrCreate(['short_name' => 'Year 12'], ['name' => 'Year 12 · VCE Units 3–4', 'sort' => 3]),
-            'uni1' => Level::firstOrCreate(['short_name' => 'Uni Year 1'], ['name' => 'University Year 1 · Monash', 'sort' => 4]),
+            'y10' => Level::updateOrCreate(['short_name' => 'Year 10'], ['name' => 'Year 10', 'sort' => 1]),
+            'y11' => Level::updateOrCreate(['short_name' => 'Year 11'], ['name' => 'Year 11 · VCE Units 1–2', 'sort' => 2]),
+            'y12' => Level::updateOrCreate(['short_name' => 'Year 12'], ['name' => 'Year 12 · VCE Units 3–4', 'sort' => 3]),
+            'uni1' => Level::updateOrCreate(['short_name' => 'Uni Year 1'], ['name' => 'University Year 1 · Monash', 'sort' => 4]),
         ];
 
-        $chem = Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2456C7', 'tint' => '#E8EEFB']);
-        $bio = Subject::firstOrCreate(['slug' => 'biology'], ['name' => 'Biology', 'color' => '#B4540A', 'tint' => '#FBEEE3']);
-
-        $structure = [
-            // level, subject, code, title, modules
-            ['y10', $chem, 'Year 10', 'Year 10 Chemistry', ['Atoms and the periodic table', 'Chemical reactions']],
-            ['y10', $bio, 'Year 10', 'Year 10 Biology', ['Genetics and DNA', 'Evolution']],
-
-            ['y11', $chem, 'Unit 1', 'How can the diversity of materials be explained?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
-            ['y11', $chem, 'Unit 2', 'How do chemical reactions shape the natural world?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
-            ['y11', $bio, 'Unit 1', 'How do organisms regulate their functions?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
-            ['y11', $bio, 'Unit 2', 'How does inheritance impact on diversity?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
-
-            ['y12', $chem, 'Unit 3', 'How can design and innovation help to optimise chemical processes?', [
-                'AoS 1 · Options for supplying energy',
-                'AoS 2 · Rate and yield of chemical reactions',
-            ]],
-            ['y12', $chem, 'Unit 4', 'How are carbon-based compounds designed for purpose?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
-            ['y12', $bio, 'Unit 3', 'How do cells maintain life?', [
-                'AoS 1 · Nucleic acids and proteins',
-                'AoS 2 · Regulating biochemical pathways',
-            ]],
-            ['y12', $bio, 'Unit 4', 'How does life change and respond to challenges?', ['Area of Study 1', 'Area of Study 2', 'Area of Study 3']],
-
-            // Monash University first year (unit topics from the Monash handbook — recheck each year)
-            ['uni1', $chem, 'CHM1011', 'Chemistry 1', [
-                'Atomic structure and bonding',
-                'Stoichiometry and intermolecular forces',
-                'Thermodynamics and kinetics',
-                'Equilibria and electrochemistry',
-            ]],
-            ['uni1', $chem, 'CHM1022', 'Chemistry 2', ['Synthetic chemistry']],
-            ['uni1', $bio, 'BIO1011', 'Blueprints for Life', [
-                'Cells: the unit of life',
-                'Cell division, growth and specialised tissues',
-                'Genetics and inheritance',
-                'Energy in living things',
-            ]],
-            ['uni1', $bio, 'BIO1022', 'Life on Earth', [
-                'Ecological interactions',
-                'Diversity of animals, plants and fungi',
-                'Organ systems',
-                'Pathogens and immunity',
-                'Animal behaviour',
-            ]],
+        $subjects = [
+            'chemistry' => Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2456C7', 'tint' => '#E8EEFB']),
+            'biology' => Subject::firstOrCreate(['slug' => 'biology'], ['name' => 'Biology', 'color' => '#B4540A', 'tint' => '#FBEEE3']),
         ];
 
-        $modules = [];
-        foreach ($structure as $i => [$levelKey, $subject, $code, $title, $moduleTitles]) {
-            $unit = Unit::firstOrCreate(
-                ['level_id' => $levels[$levelKey]->id, 'subject_id' => $subject->id, 'code' => $code],
-                ['title' => $title, 'sort' => $i],
+        $sortUnit = 0;
+        foreach ($this->curriculum() as [$levelKey, $subjectKey, $code, $unitTitle, $modules]) {
+            $unit = Unit::updateOrCreate(
+                ['level_id' => $levels[$levelKey]->id, 'subject_id' => $subjects[$subjectKey]->id, 'code' => $code],
+                ['title' => $unitTitle, 'sort' => $sortUnit++],
             );
-            foreach ($moduleTitles as $m => $moduleTitle) {
-                $modules["$levelKey.{$subject->slug}.$code.$m"] = Module::firstOrCreate(
-                    ['unit_id' => $unit->id, 'title' => $moduleTitle],
-                    ['sort' => $m],
+
+            foreach ($modules as $m => [$moduleTitle, $lessonTitles]) {
+                // Matched by position, so placeholder names like "Area of Study 1" get renamed in place.
+                $module = Module::updateOrCreate(
+                    ['unit_id' => $unit->id, 'sort' => $m],
+                    ['title' => $moduleTitle],
                 );
+
+                foreach ($lessonTitles as $l => $lessonTitle) {
+                    $lesson = Lesson::firstOrNew(['module_id' => $module->id, 'title' => $lessonTitle]);
+                    if (! $lesson->exists) {
+                        $lesson->fill(['status' => 'draft', 'minutes' => 12]);
+                    }
+                    $lesson->sort = $l + 1;
+                    $lesson->save();
+                }
             }
         }
 
-        $this->galvanicCells($modules['y12.chemistry.Unit 3.0']);
-        $this->enzymes($modules['y12.biology.Unit 3.1']);
+        $this->galvanicCells();
+        $this->enzymes();
     }
 
-    private function galvanicCells(Module $module): void
+    /** [level, subject, unit code, unit title, [[module title, [lesson titles]], …]] */
+    private function curriculum(): array
     {
-        $lesson = Lesson::firstOrCreate(['module_id' => $module->id, 'title' => 'Galvanic cells'], [
+        return [
+            // ── Year 10 ─────────────────────────────────────────────
+            ['y10', 'chemistry', 'Year 10', 'Year 10 Chemistry', [
+                ['Atoms and the periodic table', ['Atomic structure', 'Electron configuration', 'The periodic table and its trends', 'Ionic and covalent bonding']],
+                ['Chemical reactions', ['Writing and balancing equations', 'Types of chemical reactions', 'Acids and bases', 'Rates of reaction']],
+            ]],
+            ['y10', 'biology', 'Year 10', 'Year 10 Biology', [
+                ['Genetics and DNA', ['DNA structure', 'Genes and chromosomes', 'Mitosis and meiosis', 'Inheritance and Punnett squares', 'Pedigree charts']],
+                ['Evolution', ['Variation and natural selection', 'Evidence for evolution', 'Speciation']],
+            ]],
+
+            // ── Year 11 · VCE Units 1–2 ─────────────────────────────
+            ['y11', 'chemistry', 'Unit 1', 'How can the diversity of materials be explained?', [
+                ['AoS 1 · How do the chemical structures of materials explain their properties and reactions?', ['Elements and the periodic table', 'Electron configuration and periodic trends', 'Metallic bonding', 'Ionic bonding', 'Covalent bonding and molecular shape', 'Intermolecular forces']],
+                ['AoS 2 · How are materials quantified and classified?', ['The mole and molar mass', 'Empirical and molecular formulas', 'Hydrocarbons and organic families', 'Polymers']],
+                ['AoS 3 · How can chemical knowledge be used to create a more sustainable future?', ['Green chemistry principles', 'Planning your research investigation']],
+            ]],
+            ['y11', 'chemistry', 'Unit 2', 'How do chemical reactions shape the natural world?', [
+                ['AoS 1 · How do chemicals interact with water?', ['Properties of water', 'Solubility and precipitation', 'Acids and bases', 'pH calculations', 'Redox reactions']],
+                ['AoS 2 · How are chemicals measured and analysed?', ['Concentration', 'Stoichiometry in solutions', 'Volumetric analysis (titrations)', 'Analysing substances in water']],
+                ['AoS 3 · How do quantitative scientific investigations develop our understanding of chemical reactions?', ['Planning a practical investigation', 'Analysing and reporting results']],
+            ]],
+            ['y11', 'biology', 'Unit 1', 'How do organisms regulate their functions?', [
+                ['AoS 1 · How do cells function?', ['Cell theory and cell types', 'Organelles', 'The plasma membrane and transport', 'The cell cycle', 'Stem cells']],
+                ['AoS 2 · How do plant and animal systems function?', ['Plant systems: water and nutrient transport', 'Animal systems', 'Homeostasis', 'When homeostasis fails']],
+                ['AoS 3 · How do scientific investigations develop understanding of how organisms regulate their functions?', ['Planning your student investigation']],
+            ]],
+            ['y11', 'biology', 'Unit 2', 'How does inheritance impact on diversity?', [
+                ['AoS 1 · How is inheritance explained?', ['Chromosomes and karyotypes', 'Genotype and phenotype', 'Meiosis', 'Patterns of inheritance', 'Pedigree charts']],
+                ['AoS 2 · How do inherited adaptations impact on diversity?', ['Reproductive strategies', 'Adaptations', 'Interdependence in ecosystems', 'First Nations knowledge of adaptations']],
+                ['AoS 3 · How do humans use science to explore and communicate contemporary bioethical issues?', ['Approaches to bioethics', 'Planning your research investigation']],
+            ]],
+
+            // ── Year 12 · VCE Units 3–4 ─────────────────────────────
+            ['y12', 'chemistry', 'Unit 3', 'How can design and innovation help to optimise chemical processes?', [
+                ['AoS 1 · What are the current and future options for supplying energy?', ['Fuels: fossil and renewable', 'Combustion and thermochemistry', 'Energy calculations and calorimetry', 'Galvanic cells', 'Fuel cells']],
+                ['AoS 2 · How can the rate and yield of chemical reactions be optimised?', ['Rates of reaction', 'Equilibrium', 'Le Chatelier’s principle', 'Electrolysis', 'Rechargeable batteries']],
+            ]],
+            ['y12', 'chemistry', 'Unit 4', 'How are carbon-based compounds designed for purpose?', [
+                ['AoS 1 · How are organic compounds categorised and synthesised?', ['Naming organic compounds', 'Isomers', 'Organic reactions', 'Reaction pathways']],
+                ['AoS 2 · How are organic compounds analysed and used?', ['Instrumental analysis: IR, NMR and mass spectrometry', 'Chromatography', 'Food chemistry: carbohydrates, proteins and fats', 'Vitamins and enzymes in food', 'Energy from food']],
+                ['AoS 3 · How is scientific inquiry used to investigate the sustainable production of energy and/or materials?', ['Planning your practical investigation and poster']],
+            ]],
+            ['y12', 'biology', 'Unit 3', 'How do cells maintain life?', [
+                ['AoS 1 · What is the role of nucleic acids and proteins in maintaining life?', ['Nucleic acids and proteins', 'Gene structure and expression', 'Gene regulation', 'Protein structure and the proteome', 'DNA manipulation techniques', 'Recombinant DNA and genetically modified organisms']],
+                ['AoS 2 · How are biochemical pathways regulated?', ['Enzymes', 'Coenzymes', 'Photosynthesis', 'Cellular respiration', 'Factors affecting photosynthesis and respiration', 'CRISPR and biochemical pathways']],
+            ]],
+            ['y12', 'biology', 'Unit 4', 'How does life change and respond to challenges?', [
+                ['AoS 1 · How do organisms respond to pathogens?', ['Pathogens and the first line of defence', 'The innate immune response', 'Adaptive immunity', 'Vaccines and immunotherapy', 'Emerging diseases']],
+                ['AoS 2 · How are species related over time?', ['Genetic change in populations', 'Speciation', 'Fossil evidence', 'Phylogenetic trees', 'Human evolution']],
+                ['AoS 3 · How is scientific inquiry used to investigate cellular processes and/or biological change?', ['Planning your practical investigation and poster']],
+            ]],
+
+            // ── University Year 1 · Monash ──────────────────────────
+            ['uni1', 'chemistry', 'CHM1011', 'Chemistry 1', [
+                ['Atomic structure and bonding', ['Atomic structure', 'Electron configuration', 'Chemical bonding', 'Molecular shape']],
+                ['Stoichiometry and intermolecular forces', ['Stoichiometry', 'Intermolecular forces', 'Physical properties of substances']],
+                ['Thermodynamics and kinetics', ['Enthalpy, entropy and free energy', 'Chemical kinetics']],
+                ['Equilibria and electrochemistry', ['Chemical equilibrium', 'Acid–base equilibria', 'Electrochemistry']],
+            ]],
+            ['uni1', 'chemistry', 'CHM1022', 'Chemistry 2', [
+                ['Synthetic chemistry', ['Organic structure and naming', 'Reaction mechanisms', 'Planning a synthesis']],
+            ]],
+            ['uni1', 'biology', 'BIO1011', 'Blueprints for Life', [
+                ['Cells: the unit of life', ['Cell structure', 'Biological molecules']],
+                ['Cell division, growth and specialised tissues', ['Mitosis and meiosis', 'Tissues and specialisation', 'Ageing and cell death']],
+                ['Genetics and inheritance', ['Mendelian genetics', 'Molecular genetics']],
+                ['Energy in living things', ['Metabolism and enzymes', 'Cellular respiration and photosynthesis']],
+            ]],
+            ['uni1', 'biology', 'BIO1022', 'Life on Earth', [
+                ['Ecological interactions', ['Populations and communities', 'Interactions that drive evolution']],
+                ['Diversity of animals, plants and fungi', ['Animal body plans', 'Plants and fungi']],
+                ['Organ systems', ['Physiology and homeostasis']],
+                ['Pathogens and immunity', ['Host–pathogen relationships', 'Immunology basics']],
+                ['Animal behaviour', ['Behaviour and ecology']],
+            ]],
+        ];
+    }
+
+    private function lessonIn(string $levelShort, string $subjectSlug, string $code, string $title): ?Lesson
+    {
+        return Lesson::where('title', $title)
+            ->whereHas('module.unit', fn ($q) => $q->where('code', $code)
+                ->whereHas('level', fn ($l) => $l->where('short_name', $levelShort))
+                ->whereHas('subject', fn ($s) => $s->where('slug', $subjectSlug)))
+            ->first();
+    }
+
+    private function galvanicCells(): void
+    {
+        $lesson = $this->lessonIn('Year 12', 'chemistry', 'Unit 3', 'Galvanic cells');
+        if (! $lesson || $lesson->questions()->exists()) {
+            return;
+        }
+
+        $lesson->update([
             'summary' => 'How a redox reaction can be split in two to make electricity.',
             'minutes' => 12,
             'status' => 'published',
-            'sort' => 1,
             'body' => <<<'MD'
 A **galvanic cell** turns the energy from a redox reaction into electricity. Oxidation happens at one electrode and reduction at the other, so electrons are forced to travel through a wire to get from one to the other.
 
@@ -119,10 +186,6 @@ Write the half-equation at the anode of a zinc–copper cell.
 Zinc is the stronger reducing agent, so it loses electrons and is oxidised. That makes it the anode.
 MD,
         ]);
-
-        if ($lesson->questions()->exists()) {
-            return;
-        }
 
         $lesson->questions()->createMany([
             [
@@ -164,13 +227,17 @@ MD,
         ]);
     }
 
-    private function enzymes(Module $module): void
+    private function enzymes(): void
     {
-        $lesson = Lesson::firstOrCreate(['module_id' => $module->id, 'title' => 'Enzymes'], [
+        $lesson = $this->lessonIn('Year 12', 'biology', 'Unit 3', 'Enzymes');
+        if (! $lesson || $lesson->questions()->exists()) {
+            return;
+        }
+
+        $lesson->update([
             'summary' => 'How enzymes speed up reactions, and what slows them down.',
             'minutes' => 12,
             'status' => 'published',
-            'sort' => 1,
             'body' => <<<'MD'
 **Enzymes** are proteins that act as biological catalysts. They speed up reactions in cells by lowering the **activation energy** — the energy needed to get a reaction started — and they are not used up.
 
@@ -190,10 +257,6 @@ Each enzyme has an **active site** with a specific shape and chemistry. Only sub
 - **Non-competitive inhibitors** bind somewhere else on the enzyme and change the shape of the active site. Adding more substrate doesn't help.
 MD,
         ]);
-
-        if ($lesson->questions()->exists()) {
-            return;
-        }
 
         $lesson->questions()->createMany([
             [

@@ -27,6 +27,7 @@
         @endif
 
         @if ($user->isAdmin())
+            <a href="{{ route('admin.structure') }}" class="{{ request()->routeIs('admin.structure') ? 'active' : '' }}">Course structure</a>
             <a href="{{ route('admin.lessons.index') }}" class="{{ request()->routeIs('admin.lessons.*') ? 'active' : '' }}">Lessons</a>
             <a href="{{ route('admin.users.index') }}" class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">Accounts</a>
         @endif

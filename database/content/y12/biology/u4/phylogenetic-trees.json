@@ -1,0 +1,99 @@
+{
+  "level": "Year 12",
+  "subject": "biology",
+  "unit": "Unit 4",
+  "title": "Phylogenetic trees",
+  "summary": "How structural and molecular evidence reveal relationships between species, and how to build and read phylogenetic trees from sequence-difference data.",
+  "minutes": 30,
+  "body": "A phylogenetic tree is a branching diagram that shows how species are related through shared ancestors. Biologists build these trees from evidence in body structures and, increasingly, from DNA and protein sequences. The same methods are used to trace disease outbreaks, identify species for conservation and work out where crops and pets came from.\n\n## Key ideas\n\n### Structural morphology: evidence from body form\n\n**Comparative anatomy** compares the structures of different organisms to find evidence of common ancestry.\n\n- **Homologous structures** have the *same basic structure* and origin because they were inherited from a common ancestor, even if they now have different functions. The forelimbs of humans, whales, bats and cats all have one upper arm bone, two forearm bones, wrist bones and digits, used for grasping, swimming, flying and walking. This pattern is the result of **divergent evolution**, where related species become different as they adapt to different environments.\n- **Analogous structures** have the *same function* but *different* structures and origins. The wings of a bird and an insect both allow flight, but a bird wing is built on bones while an insect wing is a thin sheet of cuticle. They arise by **convergent evolution**: unrelated species face similar selection pressures and evolve similar solutions. Analogous structures are **not** evidence of close relationship.\n- **Vestigial structures** are reduced structures that have little or no function now but were functional in ancestors. Examples include the tiny pelvic bones of whales, the human tailbone (coccyx), and the small wings of flightless birds such as emus. They show that a species descended from ancestors in which the structure was used.\n\n### Molecular homology: evidence from DNA and proteins\n\nAll living things use DNA, the same four bases, and almost the same genetic code. This alone points to a single common origin of life. **Molecular homology** compares the actual sequences:\n\n- **DNA sequence comparisons** – the nucleotide sequence of a gene (or a whole genome) is lined up between species and the number of differences is counted.\n- **Amino acid sequence comparisons** – the sequence of a widely shared protein, such as **cytochrome c** (used in cellular respiration) or haemoglobin, is compared.\n- **Mitochondrial DNA (mtDNA)** is often used for closely related species because it is inherited from the mother only, does not recombine, and mutates relatively quickly.\n\nThe key logic: mutations build up over time at a roughly steady rate. After two lineages split, each collects its own mutations. So **the fewer differences between two species' sequences, the more recently they shared a common ancestor and the more closely related they are**.\n\nThe idea that differences accumulate at a fairly constant rate is called the **molecular clock**. If the rate is known (calibrated using fossils of known age), the number of differences can estimate *when* two lineages diverged.\n\nDNA comparisons usually show more differences than amino acid comparisons for the same gene, because the genetic code is **degenerate**: some base changes do not change the amino acid (silent mutations).\n\nMolecular evidence has advantages over structural evidence: it is objective and countable, it can compare organisms that look nothing alike (such as fungi and plants), and it is not misled by convergent evolution.\n\n### Reading a phylogenetic tree\n\nA **phylogenetic tree** shows proposed evolutionary relationships. Its parts:\n\n- **Tips (terminal branches)** – the species or groups being compared, often living species.\n- **Node** – a branching point. Each node represents the **most recent common ancestor** of everything that branches from it.\n- **Root** – the base of the tree, the common ancestor of all groups shown.\n- **Branch length** – in some trees, longer branches mean more time or more genetic change; in others length has no meaning. Check the axis or key.\n- **Outgroup** – a species more distantly related than all the others, used to anchor the tree.\n\n**How to judge relatedness:** two species are more closely related if they share a **more recent common ancestor**, that is, a node closer to the tips. Do *not* judge by how close the names are printed along the tips. Branches can rotate around a node like a mobile without changing the meaning.\n\nA **clade** is a group made up of a common ancestor and **all** of its descendants. On a tree, you can cut a single branch and everything that falls off is a clade. A group that leaves out some descendants is not a clade.\n\n### Building a tree from sequence data\n\n1. Count the number of differences between each pair of species and record them in a table (a **distance matrix**).\n2. Find the pair with the **fewest** differences; they are joined first, by the most recent node.\n3. Find the species with the next fewest differences to that pair, and join it to the pair by an earlier node.\n4. Continue until all species are joined. The species with the most differences to all the others joins at the base (it is the outgroup).\n\n## Worked examples\n\n### Worked example 1: counting DNA differences and building a tree\n\nPart of a gene in four species:\n\n| Species | Sequence |\n|---|---|\n| P | ATGCCGTAGCTAAGTCCGAT |\n| Q | ATGCCGTAGCTTAGTCCGAT |\n| R | ATGCAGTAGCTTAGACCGTT |\n| S | TTGCAGTACCTTGGACCGTA |\n\n**Step 1 – compare each pair base by base.**\n\n| | P | Q | R | S |\n|---|---|---|---|---|\n| **P** | – | 1 | 4 | 8 |\n| **Q** | | – | 3 | 7 |\n| **R** | | | – | 4 |\n\n**Step 2 – fewest differences:** P and Q (1). They share the most recent common ancestor.\n\n**Step 3 – next closest:** R differs from Q by 3 and P by 4, fewer than S does (7 and 8). So R joins the P–Q pair at an earlier node.\n\n**Step 4 – most different overall:** S joins last at the root.\n\nThe tree shape in bracket form is **(((P, Q), R), S)**: P and Q branch most recently; R branched off before that; S branched off earliest. P, Q and R together, with their common ancestor, form a clade.\n\n### Worked example 2: amino acid data\n\nApproximate numbers of amino acid differences in cytochrome c compared with humans:\n\n| Species | Differences from humans |\n|---|---|\n| Chimpanzee | 0 |\n| Rhesus monkey | 1 |\n| Dog | 11 |\n| Yeast | 44 |\n\n**Interpretation:** chimpanzees share the most recent common ancestor with humans of these species, followed by rhesus monkeys, then dogs; yeast is the most distantly related. Notice that 0 differences does *not* mean chimps and humans are the same species: cytochrome c is a small, highly conserved protein, so other genes would show differences. This is why scientists compare many genes, not just one.\n\n### Worked example 3: homologous or analogous?\n\n*A dolphin's flipper and a shark's fin are both used for swimming and have similar streamlined shapes. Inside, the dolphin flipper contains a humerus, radius, ulna and finger bones like a human arm; the shark fin is supported by cartilage rods.*\n\nThe *overall shape* is the result of **convergent evolution**: similar selection pressure (moving through water) in unrelated lineages, so the flipper and fin are **analogous**. The dolphin flipper is **homologous** with the human arm because of the shared bone pattern inherited from a common mammalian ancestor.\n\n## Common mistakes\n\n- Treating analogous structures as evidence of close relationship. Only homologous structures indicate shared ancestry.\n- Reading relatedness from tip order rather than from how recently two species share a node.\n- Thinking one living species evolved *from* another living species (for example \"humans evolved from chimpanzees\"). Both descend from a shared ancestor.\n- Counting a group as a clade when it leaves out some descendants of the common ancestor.\n- Forgetting that DNA data often shows more differences than protein data because of silent mutations.\n\n## Exam tips\n\n- Expect data tables of sequence differences: state the comparison clearly (\"species A and B have only 2 differences, the fewest, so they share the most recent common ancestor\").\n- When you draw a tree, label the tips and make sure the pair with fewest differences branches most recently.\n- Be ready to define homologous, analogous and vestigial structures *and* give an example of each.\n- Know why molecular evidence can be more reliable than structural evidence: objective, quantifiable, not affected by convergent evolution.\n\n## Key terms\n\n- **Homologous structures** — structures with the same basic plan inherited from a common ancestor, possibly with different functions.\n- **Analogous structures** — structures with similar function but different structure and origin.\n- **Vestigial structure** — a reduced structure with little or no current function, functional in ancestors.\n- **Divergent evolution** — related species becoming different as they adapt to different environments.\n- **Convergent evolution** — unrelated species evolving similar features under similar selection pressures.\n- **Molecular homology** — similarity in DNA or protein sequences due to shared ancestry.\n- **Molecular clock** — using a steady rate of sequence change to estimate when lineages diverged.\n- **Phylogenetic tree** — a branching diagram showing evolutionary relationships.\n- **Node** — a branch point representing a common ancestor.\n- **Clade** — a common ancestor and all of its descendants.\n\n## Summary\n\n- Homologous structures show common ancestry; analogous structures show convergent evolution; vestigial structures show ancestry from organisms that used them.\n- Fewer DNA or amino acid differences means a more recent common ancestor and a closer relationship.\n- The molecular clock uses the rate of sequence change to estimate divergence times.\n- On a phylogenetic tree, nodes are common ancestors; relatedness is judged by the most recent shared node.\n- A clade includes an ancestor and all its descendants.\n- Trees are built by joining the pair with the fewest differences first, then adding the others in order.\n",
+  "questions": [
+    {
+      "prompt": "The forelimbs of humans, bats and whales have the same arrangement of bones but different functions. These are best described as",
+      "options": {
+        "A": "analogous structures resulting from convergent evolution.",
+        "B": "vestigial structures with no function.",
+        "C": "homologous structures resulting from divergent evolution.",
+        "D": "analogous structures resulting from divergent evolution."
+      },
+      "answer": "C",
+      "explanation": "Same structure from a common ancestor, adapted for different functions, defines homologous structures produced by divergent evolution. Option A is tempting, but analogous structures share function, not the underlying bone pattern."
+    },
+    {
+      "prompt": "Which of the following is an example of a vestigial structure?",
+      "options": {
+        "A": "The small pelvic bones found in whales",
+        "B": "The wing of a bat",
+        "C": "The eye of an octopus",
+        "D": "The beak of a finch"
+      },
+      "answer": "A",
+      "explanation": "Whale pelvic bones are reduced remnants of the hip bones that land-dwelling ancestors used for walking. The bat wing (B) is tempting because it is a modified limb, but it is fully functional, so it is homologous, not vestigial."
+    },
+    {
+      "prompt": "On a phylogenetic tree, a node represents",
+      "options": {
+        "A": "a living species.",
+        "B": "a species that went extinct without descendants.",
+        "C": "the point at which a mutation occurred.",
+        "D": "the most recent common ancestor of the lineages that branch from it."
+      },
+      "answer": "D",
+      "explanation": "Each branching point stands for the most recent common ancestor of the groups that split there. Option A is tempting because tips are labelled with living species, but tips, not nodes, represent the species compared."
+    },
+    {
+      "prompt": "Why do DNA sequence comparisons between two species often show more differences than amino acid comparisons of the same protein?",
+      "options": {
+        "A": "DNA mutates only in non-coding regions.",
+        "B": "Some base changes do not change the amino acid because the genetic code is degenerate.",
+        "C": "Amino acids mutate more slowly than proteins.",
+        "D": "Proteins contain more information than DNA."
+      },
+      "answer": "B",
+      "explanation": "Because several codons code for the same amino acid, a base substitution can be silent, so DNA differences can exist without protein differences. Option A is tempting, but mutations occur throughout DNA including coding regions."
+    },
+    {
+      "prompt": "The number of base differences in a gene between species is: W–X 2, W–Y 9, W–Z 12, X–Y 8, X–Z 11, Y–Z 10. Which species is most likely to be the outgroup?",
+      "options": {
+        "A": "W",
+        "B": "X",
+        "C": "Y",
+        "D": "Z"
+      },
+      "answer": "D",
+      "explanation": "Z has the most differences from every other species (12, 11 and 10), so it diverged earliest and is the outgroup. Y is tempting because it differs a lot from W and X, but Y is closer to them (8–9) than Z is."
+    },
+    {
+      "prompt": "Using the same data (W–X 2, W–Y 9, W–Z 12, X–Y 8, X–Z 11, Y–Z 10), which tree shape is best supported?",
+      "options": {
+        "A": "(((W, X), Y), Z)",
+        "B": "(((W, Y), X), Z)",
+        "C": "(((X, Z), W), Y)",
+        "D": "((W, Z), (X, Y))"
+      },
+      "answer": "A",
+      "explanation": "W and X have the fewest differences (2) so they branch most recently; Y is next closest (8–9); Z is most distant. Option B is tempting if you pair W with Y, but W–Y has 9 differences compared with only 2 for W–X."
+    },
+    {
+      "prompt": "The wings of a bird and a butterfly both allow flight but have very different internal structures. What does this suggest?",
+      "options": {
+        "A": "Birds and butterflies are closely related.",
+        "B": "The wings are homologous structures.",
+        "C": "Similar selection pressures produced similar functions in unrelated lineages.",
+        "D": "Butterflies evolved from birds."
+      },
+      "answer": "C",
+      "explanation": "These are analogous structures produced by convergent evolution: unrelated groups evolving similar solutions to flight. Option A is tempting because the structures look similar in use, but similar function without similar structure does not indicate close relationship."
+    },
+    {
+      "prompt": "On a tree, species J and K share a node that is more recent than the node they each share with species L. Which statement is correct?",
+      "options": {
+        "A": "L is the ancestor of J and K.",
+        "B": "J and K are more closely related to each other than either is to L.",
+        "C": "J evolved from K.",
+        "D": "J, K and L do not share any common ancestor."
+      },
+      "answer": "B",
+      "explanation": "Sharing a more recent common ancestor means J and K are more closely related to each other than to L. Option A is tempting, but L is a living tip species, not an ancestor; all three share an older ancestor at the deeper node."
+    }
+  ]
+}
