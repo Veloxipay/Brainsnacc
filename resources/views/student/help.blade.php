@@ -21,6 +21,12 @@
     </section>
 
     <h2 class="help-step"><span>1</span> Re-read the key parts of the topic</h2>
+    @if (isset($sections['Think of it like this']))
+        <section class="card lesson-body">
+            <h3 style="margin-top:0">Think of it like this</h3>
+            {!! $sections['Think of it like this'] !!}
+        </section>
+    @endif
     @if (isset($sections['Common mistakes']))
         <section class="card lesson-body">
             <h3 style="margin-top:0">Common mistakes</h3>

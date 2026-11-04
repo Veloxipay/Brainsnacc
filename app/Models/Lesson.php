@@ -48,7 +48,7 @@ class Lesson extends Model
         $out = [];
         for ($i = 1; $i < count($parts) - 1; $i += 2) {
             $heading = trim($parts[$i]);
-            if (in_array($heading, ['Key ideas', 'Common mistakes', 'Tips to remember'], true)) {
+            if (in_array($heading, ['Think of it like this', 'Key ideas', 'Common mistakes', 'Tips to remember'], true)) {
                 $out[$heading] = Str::markdown(trim($parts[$i + 1]), ['html_input' => 'strip', 'allow_unsafe_links' => false]);
             }
         }
