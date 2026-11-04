@@ -5,29 +5,108 @@
   "title": "Genes and chromosomes",
   "icon": "🧬",
   "scenes": [
-    {"type": "title", "heading": "Genes and chromosomes", "sub": "How do two metres of DNA fit inside one nucleus?", "icon": "🧬",
-     "say": "Your DNA holds roughly twenty thousand genes. They're packed into chromosomes, so each cell can store about two metres of DNA inside a nucleus far too small to see.",
-     "caption": "Your DNA holds roughly 20,000 genes. They're packed into chromosomes, so each cell can store about 2 metres of DNA inside a nucleus far too small to see."},
-    {"type": "analogy", "heading": "Think of it like this", "icon": "📖", "everyday": "A cookbook, a recipe, its page, and versions of that recipe", "icon2": "🧬", "science": "A chromosome, a gene, its locus, and its alleles",
-     "breaks": "cells read genes automatically, and a gene usually codes for one protein, not a whole meal.",
-     "say": "Think of a chromosome as a cookbook. A gene is one recipe, and its locus is the page number. Different versions of that recipe, like a cake with or without nuts, are alleles."},
-    {"type": "points", "heading": "Chromosomes", "icon": "🧶",
-     "points": ["DNA wrapped around histone proteins", "Coiled tightly just before division", "Two sister chromatids joined at a centromere", "Count centromeres, not arms"],
-     "say": "A chromosome is one long DNA molecule wrapped around histone proteins, like a hose wound on a reel. Before a cell divides, the DNA has been copied, so each chromosome is two identical sister chromatids joined at the centromere. One X shape is still one chromosome."},
-    {"type": "compare", "heading": "Homologous pairs vs sister chromatids", "left": {"title": "Homologous pair", "icon": "👫", "points": ["One from Mum, one from Dad", "Same genes, same loci", "May carry different alleles"]},
-     "right": {"title": "Sister chromatids", "icon": "🔁", "points": ["Made when DNA is copied", "Identical copies", "Joined at the centromere"]},
-     "say": "Don't mix these up. Homologous chromosomes come one from Mum and one from Dad. They carry the same genes, but maybe different alleles. Sister chromatids are identical copies made when DNA is copied."},
-    {"type": "points", "heading": "46 = 23 pairs", "icon": "🔢",
-     "points": ["Pairs 1 to 22: autosomes", "Pair 23: sex chromosomes, XX or XY", "Body cells are diploid: 2n = 46", "Gametes are haploid: n = 23", "Karyotype shows numbers, not alleles"],
-     "say": "Human body cells have forty-six chromosomes in twenty-three pairs. Twenty-two pairs are autosomes, and the last pair is the sex chromosomes, XX or XY. Body cells are diploid. Sperm and eggs are haploid, with twenty-three. A karyotype shows chromosome number and shape, but not alleles.",
-     "caption": "Human body cells have 46 chromosomes in 23 pairs. 22 pairs are autosomes, and the last pair is the sex chromosomes, XX or XY. Body cells are diploid. Sperm and eggs are haploid, with 23. A karyotype shows chromosome number and shape, but not alleles."},
-    {"type": "steps", "heading": "DNA → mRNA → protein", "steps": ["Transcription: gene copied into mRNA", "mRNA uses U instead of T", "Translation at a ribosome", "Read in triplets: 1 per amino acid"],
-     "say": "To make a protein, the gene is first copied into mRNA in the nucleus. That's transcription, and RNA uses U instead of T. Then a ribosome reads the mRNA three bases at a time and joins the matching amino acids. That's translation."},
-    {"type": "example", "heading": "Worked example", "question": "A gene section is 18 bases long. How many amino acids does it code for? What mRNA pairs with DNA triplet TAC?", "lines": ["One amino acid per triplet of 3 bases", "18 ÷ 3 = 6 amino acids", "T → A, A → U, C → G", "TAC becomes AUG"],
-     "say": "A gene section is eighteen bases long. Eighteen divided by three gives six amino acids. And for the DNA triplet T A C, the mRNA uses U for T's partner, so it becomes A U G.",
-     "caption": "A gene section is 18 bases long. 18 ÷ 3 gives 6 amino acids. And for the DNA triplet TAC, the mRNA uses U, so it becomes AUG."},
-    {"type": "recap", "points": ["Chromosomes: DNA wrapped around histones", "Genes sit at fixed loci", "Alleles are versions of a gene", "Body cells 46, gametes 23", "DNA → mRNA → protein, read in threes"],
-     "say": "Quick recap. Chromosomes are DNA wrapped around histones. Genes sit at fixed loci, and alleles are different versions. Body cells have forty-six chromosomes and gametes twenty-three. Now try the practice questions!",
-     "caption": "Quick recap. Chromosomes are DNA wrapped around histones. Genes sit at fixed loci, and alleles are different versions. Body cells have 46 chromosomes and gametes 23. Now try the practice questions!"}
+    {
+      "type": "title",
+      "heading": "Genes and chromosomes",
+      "sub": "How do two metres of DNA fit inside one nucleus?",
+      "icon": "🧬",
+      "say": "Your DNA holds roughly twenty thousand genes. They're packed into chromosomes, so each cell can store about two metres of DNA inside a nucleus far too small to see.",
+      "caption": "Your DNA holds roughly 20,000 genes. They're packed into chromosomes, so each cell can store about 2 metres of DNA inside a nucleus far too small to see."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "📖",
+      "everyday": "A cookbook, a recipe, its page, and versions of that recipe",
+      "icon2": "🧬",
+      "science": "A chromosome, a gene, its locus, and its alleles",
+      "breaks": "cells read genes automatically, and a gene usually codes for one protein, not a whole meal.",
+      "say": "Think of a chromosome as a cookbook. A gene is one recipe, and its locus is the page number. Different versions of that recipe, like a cake with or without nuts, are alleles."
+    },
+    {
+      "type": "points",
+      "heading": "Chromosomes",
+      "icon": "🧶",
+      "points": [
+        "DNA wrapped around histone proteins",
+        "Coiled tightly just before division",
+        "Two sister chromatids joined at a centromere",
+        "Count centromeres, not arms"
+      ],
+      "say": "A chromosome is one long DNA molecule wrapped around histone proteins, like a hose wound on a reel. Before a cell divides, the DNA has been copied, so each chromosome is two identical sister chromatids joined at the centromere. One X shape is still one chromosome."
+    },
+    {
+      "type": "compare",
+      "heading": "Homologous pairs vs sister chromatids",
+      "left": {
+        "title": "Homologous pair",
+        "icon": "👫",
+        "points": [
+          "One from Mum, one from Dad",
+          "Same genes, same loci",
+          "May carry different alleles"
+        ]
+      },
+      "right": {
+        "title": "Sister chromatids",
+        "icon": "🔁",
+        "points": [
+          "Made when DNA is copied",
+          "Identical copies",
+          "Joined at the centromere"
+        ]
+      },
+      "say": "Don't mix these up. Homologous chromosomes come one from Mum and one from Dad. They carry the same genes, but maybe different alleles. Sister chromatids are identical copies made when DNA is copied."
+    },
+    {
+      "type": "points",
+      "heading": "46 = 23 pairs",
+      "icon": "🔢",
+      "points": [
+        "Pairs 1 to 22: autosomes",
+        "Pair 23: sex chromosomes, XX or XY",
+        "Body cells are diploid: 2n = 46",
+        "Gametes are haploid: n = 23",
+        "Karyotype shows numbers, not alleles"
+      ],
+      "say": "Human body cells have forty-six chromosomes in twenty-three pairs. Twenty-two pairs are autosomes, and the last pair is the sex chromosomes, XX or XY. Body cells are diploid. Sperm and eggs are haploid, with twenty-three. A karyotype shows chromosome number and shape, but not alleles.",
+      "caption": "Human body cells have 46 chromosomes in 23 pairs. 22 pairs are autosomes, and the last pair is the sex chromosomes, XX or XY. Body cells are diploid. Sperm and eggs are haploid, with 23. A karyotype shows chromosome number and shape, but not alleles."
+    },
+    {
+      "type": "steps",
+      "heading": "DNA → mRNA → protein",
+      "steps": [
+        "Transcription: gene copied into mRNA",
+        "mRNA uses U instead of T",
+        "Translation at a ribosome",
+        "Read in triplets: 1 per amino acid"
+      ],
+      "say": "To make a protein, the gene is first copied into mRNA in the nucleus. That's transcription, and RNA uses U instead of T. Then a ribosome reads the mRNA three bases at a time and joins the matching amino acids. That's translation."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "A gene section is 18 bases long. How many amino acids does it code for? What mRNA pairs with DNA triplet TAC?",
+      "lines": [
+        "One amino acid per triplet of 3 bases",
+        "18 ÷ 3 = 6 amino acids",
+        "T → A, A → U, C → G",
+        "TAC becomes AUG"
+      ],
+      "say": "A gene section is eighteen bases long. Eighteen divided by three gives six amino acids. And mRNA pairs with the DNA template, using U instead of T. So the DNA triplet T A C becomes A U G in the mRNA.",
+      "caption": "A gene section is 18 bases long. 18 ÷ 3 gives 6 amino acids. And mRNA pairs with the DNA template, using U instead of T. So the DNA triplet TAC becomes AUG in the mRNA."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Chromosomes: DNA wrapped around histones",
+        "Genes sit at fixed loci",
+        "Alleles are versions of a gene",
+        "Body cells 46, gametes 23",
+        "DNA → mRNA → protein, read in threes"
+      ],
+      "say": "Quick recap. Chromosomes are DNA wrapped around histones. Genes sit at fixed loci, and alleles are different versions. Body cells have forty-six chromosomes and gametes twenty-three. Now try the practice questions!",
+      "caption": "Quick recap. Chromosomes are DNA wrapped around histones. Genes sit at fixed loci, and alleles are different versions. Body cells have 46 chromosomes and gametes 23. Now try the practice questions!"
+    }
   ]
 }
