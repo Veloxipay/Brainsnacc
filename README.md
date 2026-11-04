@@ -1,4 +1,4 @@
-# StudyLab
+# Brainsnacc
 
 Self-paced Chemistry and Biology for Year 10, VCE Units 1–4 and University Year 1. Built for family use first.
 
@@ -28,7 +28,7 @@ There is no public sign-up: the admin creates every account.
 
 1. Create a new application from this repo (branch `main`).
 2. Attach a **database** (MySQL or Postgres). Don't use SQLite on Cloud — its files are wiped on each deploy.
-3. Add environment variables: `APP_NAME=StudyLab`, `SEED_ADMIN_NAME`, `SEED_ADMIN_EMAIL`, `SEED_ADMIN_PASSWORD`.
+3. Add environment variables: `APP_NAME=Brainsnacc`, `SEED_ADMIN_NAME`, `SEED_ADMIN_EMAIL`, `SEED_ADMIN_PASSWORD`.
 4. Deploy commands: `php artisan migrate --force`.
 5. Run once from the Cloud commands screen: `php artisan db:seed --force` — creates the levels, subjects, units, two sample lessons and the admin login. Safe to re-run.
 
