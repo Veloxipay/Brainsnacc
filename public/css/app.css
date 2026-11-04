@@ -172,3 +172,16 @@ details.card summary { list-style-position: inside; }
   .deck-top, .deck-stage, .deck.is-deck .deck-bar { padding-left: 16px; padding-right: 16px; }
   .deck.is-deck .deck-stage { height: calc(100vh - 220px); }
 }
+
+/* Past exams */
+.pp-list { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.pp-row { display: grid; grid-template-columns: minmax(180px, 1.2fr) minmax(200px, 1fr) auto; align-items: center; gap: 10px 16px; padding: 12px 16px; border-top: 1px solid var(--line); }
+.pp-row:first-child { border-top: 0; }
+.pp-row.is-done { background: var(--good-tint); }
+.pp-name { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.pp-links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.pp-form { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+.pp-form input[type=number] { padding: 6px 8px; border: 1px solid var(--line-strong); border-radius: 8px; font: inherit; }
+.btn.small { padding: 6px 12px; min-height: 0; font-size: 14px; }
+.linklike { background: none; border: 0; padding: 0; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; }
+@media (max-width: 760px) { .pp-row { grid-template-columns: 1fr; } .pp-form { justify-content: flex-start; } }

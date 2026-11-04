@@ -9,6 +9,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LessonController;
 use App\Http\Controllers\ParentController;
+use App\Http\Controllers\PastPaperController;
 use Illuminate\Support\Facades\Route;
 
 // Login (no public sign-up: the admin creates every account)
@@ -30,6 +31,8 @@ Route::middleware('auth')->group(function () {
         Route::post('/lessons/{lesson}/complete', [LessonController::class, 'complete'])->name('lessons.complete');
         Route::post('/questions/{question}/answer', [LessonController::class, 'answer'])->name('questions.answer');
         Route::get('/questions/{question}/help', [LessonController::class, 'help'])->name('questions.help');
+        Route::get('/past-papers', [PastPaperController::class, 'index'])->name('past-papers');
+        Route::post('/past-papers', [PastPaperController::class, 'update'])->name('past-papers.update');
     });
 
     // Parent area
