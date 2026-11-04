@@ -31,7 +31,7 @@
             <section class="card" aria-labelledby="m-{{ $module->id }}">
                 <div class="row between">
                     <h2 id="m-{{ $module->id }}">{{ $module->title }}</h2>
-                    <span class="muted small">{{ $doneCount }} of {{ $ready->count() }} ready lessons done@if ($lessons->count() > $ready->count()) · {{ $lessons->count() - $ready->count() }} coming soon @endif</span>
+                    <span class="muted small">{{ $doneCount }} of {{ $ready->count() }} ready lessons done @if ($lessons->count() > $ready->count()) · {{ $lessons->count() - $ready->count() }} coming soon @endif</span>
                 </div>
 
                 @if ($lessons->isEmpty())
