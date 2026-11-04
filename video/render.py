@@ -319,9 +319,12 @@ def render(script_path, stills=False):
                               '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '80k', '-ar', '44100', '-ac', '1', tmp], stdin=subprocess.PIPE)
         last = None
         for k in range(n):
-            t = k / FPS
-            im, d = base(ctx); fn(im, d, t, T, scene, ctx); caption(d, cap); progress(d, (i + t / T) / total, ctx['colors'][0])
-            p.stdin.write(im.tobytes())
+            # Draw 10 new pictures a second and repeat each one 3 times: same 30 fps video, a third of the work.
+            if k % 3 == 0 or last is None:
+                t = k / FPS
+                im, d = base(ctx); fn(im, d, t, T, scene, ctx); caption(d, cap); progress(d, (i + t / T) / total, ctx['colors'][0])
+                last = im.tobytes()
+            p.stdin.write(last)
         p.stdin.close()
         if p.wait() != 0: raise SystemExit('ffmpeg failed on scene %d' % i)
         os.replace(tmp, part); files.append(part)
