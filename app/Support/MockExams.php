@@ -28,6 +28,8 @@ class MockExams
 
                     return $e;
                 })
+                // Only show complete papers in the official format (a half-written file stays hidden).
+                ->filter(fn ($e) => [$e['marks_a'], $e['marks_b']] === (['chemistry' => [30, 90], 'biology' => [40, 80]][$e['subject'] ?? ''] ?? null))
                 ->sortBy(fn ($e) => [$e['subject'], $e['slug']])
                 ->keyBy('slug');
         });
