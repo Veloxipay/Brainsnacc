@@ -36,37 +36,7 @@
         <h2 id="practice" style="font-size:22px">Practice questions</h2>
 
         @foreach ($lesson->questions as $i => $question)
-            @php($mine = $result && $result['question_id'] === $question->id ? $result : null)
-            <section class="card" id="q{{ $question->id }}" aria-labelledby="qp{{ $question->id }}">
-                <span class="pill {{ $subject->slug === 'biology' ? 'bio' : '' }}" style="align-self:flex-start">Question {{ $i + 1 }} · {{ $question->marks }} {{ \Illuminate\Support\Str::plural('mark', $question->marks) }}</span>
-                <p id="qp{{ $question->id }}" style="margin:0;font-size:18px;font-weight:600">{{ $question->prompt }}</p>
-
-                <form method="POST" action="{{ route('questions.answer', $question) }}" style="display:flex;flex-direction:column;gap:10px">
-                    @csrf
-                    <fieldset style="border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
-                        <legend class="small muted" style="margin-bottom:8px">Choose one answer</legend>
-                        @foreach ($question->options ?? [] as $letter => $text)
-                            @php($state = $mine ? ($letter === $question->answer ? 'correct' : ($letter === $mine['answer'] ? 'wrong' : '')) : '')
-                            <label class="option {{ $state }}" style="font-weight:400;margin:0">
-                                <input type="radio" name="answer" value="{{ $letter }}" @checked($mine && $mine['answer'] === $letter) required>
-                                <strong>{{ $letter }}</strong>
-                                <span style="flex:1">{{ $text }}</span>
-                                @if ($state === 'correct')<span class="good small">Correct</span>@endif
-                                @if ($state === 'wrong')<span class="bad small">Your answer</span>@endif
-                            </label>
-                        @endforeach
-                    </fieldset>
-
-                    @if ($mine)
-                        <div class="feedback {{ $mine['correct'] ? 'right' : 'wrong' }}" role="status">
-                            <strong>{{ $mine['correct'] ? 'Correct!' : 'Not quite.' }}</strong>
-                            @if ($question->explanation)<div>{{ $question->explanation }}</div>@endif
-                        </div>
-                    @endif
-
-                    <div><button class="btn" type="submit">{{ $mine ? 'Try again' : 'Check answer' }}</button></div>
-                </form>
-            </section>
+            @include('student._question', ['question' => $question, 'label' => 'Question '.($i + 1), 'subject' => $subject, 'result' => $result])
         @endforeach
     @endif
 

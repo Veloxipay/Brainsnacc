@@ -44,23 +44,35 @@ class DashboardController extends Controller
 
         $next = $subjects->pluck('next')->filter()->first();
 
-        // Mistakes list: questions answered wrong in the last 7 days that haven't been tried again yet.
-        // Once a question has been attempted a second time it leaves the list (right or wrong).
-        $wrong = QuestionAttempt::where('user_id', $student->id)
+        // Mistakes list: questions whose most recent try was wrong. A question leaves once it is answered right.
+        // After two wrong tries in a row the link goes to the help page (topic recap + extra questions).
+        $mistakeRows = QuestionAttempt::where('user_id', $student->id)
             ->with('question.lesson')
-            ->orderBy('id')
+            ->orderByDesc('id')
             ->get()
             ->groupBy('question_id')
-            ->filter(fn ($tries) => $tries->count() === 1
-                && ! $tries->first()->is_correct
-                && $tries->first()->created_at >= now()->subWeek())
-            ->map(fn ($tries) => $tries->first())
-            ->filter(fn ($a) => $a->question && $a->question->lesson)
+            ->filter(fn ($tries) => ! $tries->first()->is_correct && $tries->first()->question && $tries->first()->question->lesson)
+            ->map(function ($tries) {
+                $wrongInARow = $tries->search(fn ($t) => $t->is_correct);
+
+                return ['question' => $tries->first()->question, 'wrong' => $wrongInARow === false ? $tries->count() : $wrongInARow];
+            })
             ->values();
-        $mistakes = $wrong->unique('question_id')->count();
-        $mistakeLessons = $wrong->unique('question_id')
-            ->groupBy(fn ($a) => $a->question->lesson_id)
-            ->map(fn ($rows) => ['lesson' => $rows->first()->question->lesson, 'count' => $rows->count(), 'first' => $rows->sortBy(fn ($a) => $a->question->sort ?? $a->question_id)->first()->question_id])
+        $mistakes = $mistakeRows->count();
+        $mistakeLessons = $mistakeRows
+            ->groupBy(fn ($row) => $row['question']->lesson_id)
+            ->map(function ($rows) {
+                $first = $rows->sortBy(fn ($r) => [$r['question']->sort, $r['question']->id])->first();
+
+                return [
+                    'lesson' => $first['question']->lesson,
+                    'count' => $rows->count(),
+                    'url' => $first['wrong'] >= 2
+                        ? route('questions.help', $first['question'])
+                        : route('lessons.show', $first['question']->lesson_id).'#q'.$first['question']->id,
+                    'needsHelp' => $first['wrong'] >= 2,
+                ];
+            })
             ->sortByDesc('count')
             ->values();
 

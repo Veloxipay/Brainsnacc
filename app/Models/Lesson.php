@@ -40,4 +40,19 @@ class Lesson extends Model
             'allow_unsafe_links' => false,
         ]);
     }
+
+    /** The short sections worth re-reading when a question goes wrong, as HTML keyed by heading. */
+    public function helpSections(): array
+    {
+        $parts = preg_split('/^## +(.+)$/m', (string) $this->body, -1, PREG_SPLIT_DELIM_CAPTURE);
+        $out = [];
+        for ($i = 1; $i < count($parts) - 1; $i += 2) {
+            $heading = trim($parts[$i]);
+            if (in_array($heading, ['Key ideas', 'Common mistakes', 'Tips to remember'], true)) {
+                $out[$heading] = Str::markdown(trim($parts[$i + 1]), ['html_input' => 'strip', 'allow_unsafe_links' => false]);
+            }
+        }
+
+        return $out;
+    }
 }

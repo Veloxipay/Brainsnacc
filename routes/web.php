@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lessons.show');
         Route::post('/lessons/{lesson}/complete', [LessonController::class, 'complete'])->name('lessons.complete');
         Route::post('/questions/{question}/answer', [LessonController::class, 'answer'])->name('questions.answer');
+        Route::get('/questions/{question}/help', [LessonController::class, 'help'])->name('questions.help');
     });
 
     // Parent area

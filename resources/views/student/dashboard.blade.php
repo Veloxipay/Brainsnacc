@@ -60,15 +60,15 @@
             @endforelse
         </section>
         <section class="card" aria-labelledby="mis-h">
-            <h2 id="mis-h">Your mistakes this week</h2>
+            <h2 id="mis-h">Mistakes to fix</h2>
             @if ($mistakes === 0)
                 <p class="muted small" style="margin:0">No mistakes left to fix. Nice work!</p>
             @else
-                <p class="muted small" style="margin:0 0 8px">{{ $mistakes }} {{ \Illuminate\Support\Str::plural('question', $mistakes) }} answered wrong this week and not tried again yet. Open {{ $mistakeLessons->count() === 1 ? 'the lesson' : 'a lesson' }} below and try {{ $mistakes === 1 ? 'it' : 'them' }} again.</p>
+                <p class="muted small" style="margin:0 0 8px">{{ $mistakes }} {{ \Illuminate\Support\Str::plural('question', $mistakes) }} to get right. Click a topic to try again — {{ $mistakes === 1 ? 'it leaves' : 'each one leaves' }} this list once you get it right.</p>
                 @foreach ($mistakeLessons as $m)
                     <div class="row between">
-                        <a class="mistake-topic" href="{{ route('lessons.show', $m['lesson']) }}#q{{ $m['first'] }}">{{ $m['lesson']->title }} →</a>
-                        <span class="bad small">{{ $m['count'] }} wrong</span>
+                        <a class="mistake-topic" href="{{ $m['url'] }}">{{ $m['lesson']->title }} →</a>
+                        <span class="bad small">{{ $m['count'] }} to fix{{ $m['needsHelp'] ? ' · go over topic' : '' }}</span>
                     </div>
                 @endforeach
             @endif
