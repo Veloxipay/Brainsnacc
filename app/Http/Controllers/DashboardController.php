@@ -44,11 +44,19 @@ class DashboardController extends Controller
 
         $next = $subjects->pluck('next')->filter()->first();
 
-        $mistakes = QuestionAttempt::where('user_id', $student->id)
+        // Questions answered wrong in the last 7 days, grouped by lesson so each one links back.
+        $wrong = QuestionAttempt::where('user_id', $student->id)
             ->where('is_correct', false)
             ->where('created_at', '>=', now()->subWeek())
-            ->distinct()
-            ->count('question_id');
+            ->with('question.lesson')
+            ->get()
+            ->filter(fn ($a) => $a->question && $a->question->lesson);
+        $mistakes = $wrong->unique('question_id')->count();
+        $mistakeLessons = $wrong->unique('question_id')
+            ->groupBy(fn ($a) => $a->question->lesson_id)
+            ->map(fn ($rows) => ['lesson' => $rows->first()->question->lesson, 'count' => $rows->count()])
+            ->sortByDesc('count')
+            ->values();
 
         return view('student.dashboard', [
             'student' => $student,
@@ -57,6 +65,7 @@ class DashboardController extends Controller
             'next' => $next,
             'weak' => Progress::weakLessons($student),
             'mistakes' => $mistakes,
+            'mistakeLessons' => $mistakeLessons,
         ]);
     }
 }

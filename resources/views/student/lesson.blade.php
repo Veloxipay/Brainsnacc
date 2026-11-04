@@ -33,7 +33,7 @@
     </article>
 
     @if ($lesson->questions->isNotEmpty())
-        <h2 style="font-size:22px">Practice questions</h2>
+        <h2 id="practice" style="font-size:22px">Practice questions</h2>
 
         @foreach ($lesson->questions as $i => $question)
             @php($mine = $result && $result['question_id'] === $question->id ? $result : null)
