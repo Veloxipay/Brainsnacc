@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $email = env('SEED_ADMIN_EMAIL');
         $password = env('SEED_ADMIN_PASSWORD');
 
-        if ($email && $password) {
+        // Only when there is no admin yet, so changing the admin's email later never creates a second admin.
+        if ($email && $password && ! User::where('role', User::ROLE_ADMIN)->exists()) {
             User::firstOrCreate(
                 ['email' => $email],
                 ['name' => env('SEED_ADMIN_NAME', 'Admin'), 'password' => $password, 'role' => User::ROLE_ADMIN],

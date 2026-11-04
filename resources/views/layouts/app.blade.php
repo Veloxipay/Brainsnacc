@@ -46,7 +46,8 @@
             <a href="{{ route('admin.users.index') }}" class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">Accounts</a>
         @endif
 
-        <div class="who">Signed in as {{ $user->name }}@if ($user->level) · {{ $user->level->short_name }}@endif</div>
+        <a href="{{ route('account') }}" class="{{ request()->routeIs('account') ? 'active' : '' }}" style="margin-top:auto">My account</a>
+        <div class="who" style="margin-top:0">Signed in as {{ $user->name }}@if ($user->level) · {{ $user->level->short_name }}@endif</div>
         <form method="POST" action="{{ route('logout') }}">
             @csrf
             <button type="submit">Log out</button>

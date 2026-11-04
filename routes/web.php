@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\LessonController as AdminLessonController;
 use App\Http\Controllers\Admin\QuestionController as AdminQuestionController;
 use App\Http\Controllers\Admin\StructureController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
@@ -21,6 +22,8 @@ Route::middleware('guest')->group(function () {
 Route::post('/logout', [LoginController::class, 'logout'])->middleware('auth')->name('logout');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/account', [AccountController::class, 'edit'])->name('account');
+    Route::put('/account', [AccountController::class, 'update'])->name('account.update');
     // Sends each person to the right home page for their role
     Route::get('/', [DashboardController::class, 'home'])->name('home');
 
