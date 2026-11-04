@@ -206,3 +206,8 @@ fieldset.mx-q { border: 1px solid var(--line); }
 .mx-mine { white-space: pre-wrap; background: var(--ground); border-radius: 10px; padding: 10px 12px; min-height: 44px; }
 .mx-model { background: var(--good-tint); border-radius: 10px; padding: 10px 12px; }
 @media (max-width: 760px) { .mx-compare { grid-template-columns: 1fr; } }
+
+/* Side panel stays in view while the page scrolls (no long empty column next to long pages) */
+@media (min-width: 761px) {
+  .nav { position: sticky; top: 0; align-self: flex-start; height: 100vh; overflow-y: auto; box-sizing: border-box; }
+}
