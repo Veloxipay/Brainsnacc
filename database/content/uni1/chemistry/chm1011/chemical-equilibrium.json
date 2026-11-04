@@ -1,0 +1,99 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "unit": "CHM1011",
+  "title": "Chemical equilibrium",
+  "summary": "Equilibrium constants Kc and Kp, the reaction quotient, ICE-table calculations (quadratic and small-x), Le Chatelier's principle and the link ΔG° = −RT ln K.",
+  "minutes": 40,
+  "body": "Most reactions do not simply run to completion: they settle into a mixture of reactants and products whose composition is fixed by an equilibrium constant. In first-year chemistry you move beyond describing equilibrium qualitatively to calculating it — solving ICE tables (including ones that need the quadratic formula), converting between Kc and Kp, and linking K to the thermodynamic quantity ΔG°. These tools underpin everything from industrial ammonia synthesis to acid–base chemistry and electrochemistry later in this module.\n\n## Key ideas\n\n### Dynamic equilibrium and the equilibrium constant\n\nAt **dynamic equilibrium** the forward and reverse reactions occur at equal rates, so the concentrations of all species stay constant even though reaction continues at the molecular level. For a general reaction\n\n`aA + bB ⇌ cC + dD`\n\nthe **equilibrium constant** in terms of concentration is\n\nKc = [C]ᶜ[D]ᵈ / ([A]ᵃ[B]ᵇ)\n\nwhere square brackets mean equilibrium molar concentrations (mol L⁻¹). Key features:\n\n- Pure solids and pure liquids (including water as a solvent) do not appear, because their **activity** (effective concentration relative to a standard state) is 1.\n- Strictly, K is dimensionless because each term is a concentration divided by the standard concentration c° = 1 mol L⁻¹. In practice we write the numbers and often omit units.\n- K depends only on temperature. Changing concentrations, pressure or adding a catalyst does not change K.\n- The size of K tells you the position of equilibrium: K ≫ 1 means products dominate; K ≪ 1 means reactants dominate; K near 1 means significant amounts of both.\n\n### Manipulating K\n\nBecause K is built from the balanced equation, changing the equation changes K in predictable ways:\n\n| Change to equation | Effect on K |\n|---|---|\n| Reverse the reaction | K becomes 1/K |\n| Multiply all coefficients by n | K becomes Kⁿ |\n| Add two reactions | Multiply their K values |\n\nFor example, if `2SO₂(g) + O₂(g) ⇌ 2SO₃(g)` has constant K, then `SO₃(g) ⇌ SO₂(g) + ½O₂(g)` has constant K^(−1/2).\n\n### Kp and its relationship to Kc\n\nFor gas-phase reactions it is often more natural to use partial pressures. The **partial pressure** of a gas is the pressure it would exert if it alone occupied the container. The constant written with partial pressures (in bar, relative to p° = 1 bar) is **Kp**:\n\nKp = (p_C)ᶜ(p_D)ᵈ / ((p_A)ᵃ(p_B)ᵇ)\n\nUsing the ideal gas law, p = (n/V)RT = cRT, so each pressure equals the concentration multiplied by RT. Substituting gives\n\nKp = Kc(RT)^Δn\n\nwhere **Δn** is the change in the number of moles of gas (moles of gaseous products minus moles of gaseous reactants). When pressures are in bar and concentrations in mol L⁻¹, use R = 0.08314 L bar K⁻¹ mol⁻¹. If Δn = 0, Kp = Kc.\n\n### The reaction quotient Q\n\nThe **reaction quotient Q** has exactly the same form as K but uses the concentrations (or pressures) at any moment, not necessarily at equilibrium. Comparing Q with K tells you which way the reaction must go:\n\n- Q < K: too few products, so the net reaction proceeds forward.\n- Q > K: too many products, so the net reaction proceeds in reverse.\n- Q = K: the system is at equilibrium.\n\n### ICE tables\n\nAn **ICE table** (Initial, Change, Equilibrium) organises an equilibrium calculation. You let x represent the change in one species, use the stoichiometry to express the other changes, then substitute the equilibrium row into the K expression and solve for x.\n\n- If the equation becomes a quadratic (ax² + bx + c = 0), solve with x = (−b ± √(b² − 4ac)) / 2a and reject any root that is negative or that would make a concentration negative.\n- If K is very small compared with the initial concentrations, x will be tiny, and you can use the **small-x approximation**: replace (c₀ − x) by c₀. This avoids the quadratic. Always check afterwards that x is less than about 5% of c₀; if not, solve exactly.\n\n### Le Chatelier's principle\n\n**Le Chatelier's principle** says that when a system at equilibrium is disturbed, the net reaction shifts in the direction that partly counteracts the disturbance. In terms of Q and K:\n\n- **Adding a reactant** lowers Q below K, so the reaction shifts forward. K is unchanged.\n- **Decreasing the volume** of a gas mixture raises all partial pressures by the same factor. Q changes unless Δn = 0, and the system shifts toward the side with fewer moles of gas.\n- **Adding an inert gas at constant volume** does not change any partial pressure, so there is no shift.\n- **Changing temperature** is different: it changes K itself. For an **exothermic** reaction (ΔH° < 0), raising the temperature lowers K; for an **endothermic** reaction, raising the temperature raises K. The quantitative form is the **van 't Hoff equation**, ln(K₂/K₁) = −(ΔH°/R)(1/T₂ − 1/T₁).\n- **A catalyst** speeds up the forward and reverse reactions equally, so equilibrium is reached faster but its position and K are unchanged.\n\n### Linking K to thermodynamics\n\nThe **standard Gibbs energy change** ΔG° is related to K by\n\nΔG° = −RT ln K\n\nwith R = 8.314 J K⁻¹ mol⁻¹ and T in kelvin. A negative ΔG° gives K > 1 (products favoured); a positive ΔG° gives K < 1. More generally ΔG = ΔG° + RT ln Q, so at equilibrium (ΔG = 0, Q = K) you recover the equation above. This is why K and ΔG° carry the same information: one is just the logarithmic version of the other. For gas reactions the K in this equation is Kp (pressures in bar); for solutions it is Kc.\n\n## Worked examples\n\n### Example 1: Converting Kc to Kp\n\nFor `N₂O₄(g) ⇌ 2NO₂(g)`, Kc = 4.6 × 10⁻³ at 298 K. Find Kp.\n\n1. Δn = 2 − 1 = +1.\n2. Kp = Kc(RT)^Δn = (4.6 × 10⁻³)(0.08314 × 298)¹\n3. RT = 24.78, so Kp = 4.6 × 10⁻³ × 24.78 = 0.114\n4. Answer to 2 significant figures: **Kp = 0.11**.\n\nKp is larger than Kc here because Δn is positive and RT > 1.\n\n### Example 2: ICE table requiring the quadratic formula\n\nFor `H₂(g) + I₂(g) ⇌ 2HI(g)`, Kc = 50.0 at a certain temperature. A flask initially contains [H₂] = 0.200 M and [I₂] = 0.100 M and no HI. Find the equilibrium concentrations.\n\n| | H₂ | I₂ | HI |\n|---|---|---|---|\n| I | 0.200 | 0.100 | 0 |\n| C | −x | −x | +2x |\n| E | 0.200 − x | 0.100 − x | 2x |\n\n1. Substitute: 50.0 = (2x)² / ((0.200 − x)(0.100 − x))\n2. Expand: 4x² = 50.0(0.0200 − 0.300x + x²) = 1.00 − 15.0x + 50.0x²\n3. Rearrange: 46.0x² − 15.0x + 1.00 = 0\n4. Quadratic formula: x = (15.0 ± √(225 − 184)) / 92.0 = (15.0 ± 6.40) / 92.0\n5. Roots: x = 0.0934 or x = 0.233. The second root would make [I₂] negative, so reject it.\n6. Equilibrium: [H₂] = 0.107 M, [I₂] = 0.0066 M, [HI] = 0.187 M.\n7. Check: (0.187)² / (0.107 × 0.0066) ≈ 50. ✓\n\nThe small-x approximation would fail badly here because K is not small.\n\n### Example 3: Small-x approximation\n\nFor `N₂(g) + O₂(g) ⇌ 2NO(g)`, Kc = 1.0 × 10⁻⁶ at a high temperature. Initially [N₂] = [O₂] = 0.40 M. Find [NO] at equilibrium.\n\n1. ICE: [N₂] = [O₂] = 0.40 − x, [NO] = 2x.\n2. Kc = (2x)² / (0.40 − x)². Because K is tiny, assume 0.40 − x ≈ 0.40.\n3. 4x² / 0.16 = 1.0 × 10⁻⁶, so x² = 4.0 × 10⁻⁸ and x = 2.0 × 10⁻⁴ M.\n4. Check: x / 0.40 = 0.05%, far below 5%, so the approximation is valid.\n5. **[NO] = 2x = 4.0 × 10⁻⁴ M**.\n\n### Example 4: From ΔG° to K\n\nFor `N₂(g) + 3H₂(g) ⇌ 2NH₃(g)`, ΔG° = −32.9 kJ mol⁻¹ at 298 K. Find K.\n\n1. Rearrange: ln K = −ΔG° / RT\n2. Convert to joules: ΔG° = −32 900 J mol⁻¹\n3. ln K = 32 900 / (8.314 × 298) = 13.28\n4. K = e^13.28 = **5.8 × 10⁵** (this is Kp, as pressures in bar are the standard state for gases).\n\nSo at 298 K ammonia formation is strongly favoured thermodynamically; the industrial problem is the slow rate, which is why a catalyst and higher temperature are used — even though higher temperature lowers K for this exothermic reaction.\n\n## Common mistakes\n\n- Including pure solids, pure liquids or the solvent water in K expressions.\n- Using the wrong R: 0.08314 L bar K⁻¹ mol⁻¹ for Kp = Kc(RT)^Δn, but 8.314 J K⁻¹ mol⁻¹ for ΔG° = −RT ln K. Also forgetting to convert kJ to J.\n- Counting all species (including solids and liquids) when working out Δn — only gases count.\n- Using the small-x approximation without checking the 5% rule, or keeping a quadratic root that gives a negative concentration.\n- Saying a pressure or concentration change alters K. Only temperature changes K.\n\n## Exam tips\n\n- Set out ICE tables clearly with units in the heading; markers award method marks for a correct table and K expression even if the algebra slips.\n- Always state and justify any approximation (\"K is small so x ≪ 0.40; check: 0.05% < 5%\").\n- For Le Chatelier questions, explain using Q versus K, not just \"the system opposes the change\" — this is the explanation expected at university level.\n- Carry unrounded values through multistep calculations and round only the final answer to the correct significant figures.\n\n## Key terms\n\n- **Dynamic equilibrium** — state where forward and reverse rates are equal, so composition is constant.\n- **Equilibrium constant (K)** — ratio of product to reactant activities at equilibrium, each raised to its stoichiometric coefficient.\n- **Activity** — effective concentration relative to a standard state; 1 for pure solids and liquids.\n- **Kp** — equilibrium constant written with partial pressures in bar.\n- **Partial pressure** — pressure one gas in a mixture would exert if it alone filled the container.\n- **Δn** — moles of gaseous products minus moles of gaseous reactants.\n- **Reaction quotient (Q)** — the K expression evaluated with non-equilibrium amounts.\n- **ICE table** — Initial, Change, Equilibrium table for solving equilibrium problems.\n- **Small-x approximation** — neglecting x relative to an initial concentration when K is small; valid if x < 5% of that concentration.\n- **Le Chatelier's principle** — a disturbed equilibrium shifts to partly counteract the disturbance.\n- **Van 't Hoff equation** — relates how K changes with temperature to ΔH°.\n- **Standard Gibbs energy change (ΔG°)** — Gibbs energy change under standard conditions; ΔG° = −RT ln K.\n\n## Summary\n\n- K is fixed at a given temperature; only temperature changes it. Solids and pure liquids are left out of K.\n- Kp = Kc(RT)^Δn, with Δn counting moles of gas only and R = 0.08314 L bar K⁻¹ mol⁻¹.\n- Comparing Q with K predicts the direction of net reaction.\n- ICE tables solve equilibrium problems; use the quadratic formula when needed, or the small-x approximation when K is small, then check the 5% rule.\n- Le Chatelier shifts can be explained by Q moving away from K; temperature shifts work by changing K itself.\n- ΔG° = −RT ln K links thermodynamics and equilibrium: negative ΔG° means K > 1.\n",
+  "questions": [
+    {
+      "prompt": "For the reaction CaCO₃(s) ⇌ CaO(s) + CO₂(g), which expression correctly gives Kc?",
+      "options": {
+        "A": "Kc = [CaO][CO₂] / [CaCO₃]",
+        "B": "Kc = [CO₂]",
+        "C": "Kc = [CaCO₃] / [CaO][CO₂]",
+        "D": "Kc = 1 / [CO₂]"
+      },
+      "answer": "B",
+      "explanation": "Pure solids have an activity of 1, so CaCO₃ and CaO are left out, leaving Kc = [CO₂]. Option A is tempting because it follows the products-over-reactants pattern, but it wrongly includes the solids."
+    },
+    {
+      "prompt": "In the relationship Kp = Kc(RT)^Δn, what does Δn represent?",
+      "options": {
+        "A": "The number of electrons transferred in the reaction",
+        "B": "The total moles of all species in the balanced equation",
+        "C": "Moles of gaseous reactants minus moles of gaseous products",
+        "D": "Moles of gaseous products minus moles of gaseous reactants"
+      },
+      "answer": "D",
+      "explanation": "Δn is moles of gaseous products minus moles of gaseous reactants, because only gases contribute pressure terms. Option C has the subtraction the wrong way round, which flips the sign of Δn and gives the wrong answer."
+    },
+    {
+      "prompt": "At a certain moment in a reaction mixture, Q = 3.5 × 10² while K = 1.2 × 10². What happens next?",
+      "options": {
+        "A": "Net reaction proceeds in the reverse direction until Q = K",
+        "B": "Net reaction proceeds in the forward direction until Q = K",
+        "C": "K increases until it equals Q",
+        "D": "Nothing; the system is already at equilibrium"
+      },
+      "answer": "A",
+      "explanation": "Q > K means there are too many products relative to equilibrium, so the net reaction runs in reverse, lowering Q until it equals K. Option B is the common reversal of the rule. K cannot change unless temperature changes, so C is wrong."
+    },
+    {
+      "prompt": "Argon is added to an equilibrium mixture of 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) in a rigid sealed container at constant temperature. What is the effect?",
+      "options": {
+        "A": "Equilibrium shifts right because total pressure has increased",
+        "B": "Equilibrium shifts left because the gases are diluted",
+        "C": "No shift, because the partial pressures of SO₂, O₂ and SO₃ are unchanged",
+        "D": "K increases because the total pressure increases"
+      },
+      "answer": "C",
+      "explanation": "At constant volume, adding an inert gas does not change the partial pressure (or concentration) of any reacting gas, so Q still equals K and there is no shift. Option A is tempting because total pressure rises, but it is the partial pressures of the reacting gases that matter."
+    },
+    {
+      "prompt": "For an exothermic reaction at equilibrium, the temperature is increased. Which statement is correct?",
+      "options": {
+        "A": "K is unchanged but the equilibrium shifts left",
+        "B": "K decreases, so the equilibrium mixture contains a smaller proportion of products",
+        "C": "K increases because the rate of reaction increases",
+        "D": "K decreases, but the yield of products increases because the reaction is faster"
+      },
+      "answer": "B",
+      "explanation": "For an exothermic reaction (ΔH° < 0) the van 't Hoff equation shows K falls as T rises, so the equilibrium mixture has fewer products. Option A is tempting, but a temperature change alters K itself, unlike concentration or pressure changes. Rate and K are separate ideas, so C and D are wrong."
+    },
+    {
+      "prompt": "The reaction 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) has equilibrium constant K. What is the equilibrium constant for SO₃(g) ⇌ SO₂(g) + ½O₂(g) at the same temperature?",
+      "options": {
+        "A": "1/(2K)",
+        "B": "−K/2",
+        "C": "K^(1/2)",
+        "D": "K^(−1/2)"
+      },
+      "answer": "D",
+      "explanation": "Reversing the reaction gives 1/K, and halving the coefficients takes the square root, so the new constant is (1/K)^(1/2) = K^(−1/2). Option C forgets the reversal; option A wrongly divides by 2 instead of taking a square root."
+    },
+    {
+      "prompt": "A reaction has ΔG° = +22.8 kJ mol⁻¹ at 298 K. What is the value of K at this temperature? (R = 8.314 J K⁻¹ mol⁻¹)",
+      "options": {
+        "A": "1.0 × 10⁻⁴",
+        "B": "1.0 × 10⁴",
+        "C": "0.991",
+        "D": "9.6 × 10⁻³"
+      },
+      "answer": "A",
+      "explanation": "ln K = −ΔG°/RT = −22 800 / (8.314 × 298) = −9.20, so K = e^−9.20 = 1.0 × 10⁻⁴. A positive ΔG° must give K < 1. Option B comes from dropping the minus sign. Option C comes from forgetting to convert kJ to J (ln K = −0.0092)."
+    },
+    {
+      "prompt": "For A(aq) ⇌ B(aq) + C(aq), Kc = 1.6 × 10⁻⁵. If the initial concentration of A is 0.10 M (no B or C present), what is the equilibrium concentration of B?",
+      "options": {
+        "A": "1.6 × 10⁻⁶ M",
+        "B": "4.0 × 10⁻³ M",
+        "C": "1.3 × 10⁻³ M",
+        "D": "1.6 × 10⁻⁴ M"
+      },
+      "answer": "C",
+      "explanation": "x²/(0.10 − x) = 1.6 × 10⁻⁵. Since K is small, 0.10 − x ≈ 0.10, so x² = 1.6 × 10⁻⁶ and x = 1.3 × 10⁻³ M. Check: 1.3% of 0.10, below 5%. Option A is x² rather than x (forgetting the square root); option B is √K, forgetting to multiply by 0.10."
+    }
+  ]
+}
