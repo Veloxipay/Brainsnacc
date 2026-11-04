@@ -2,23 +2,10 @@
 @section('title', $subject->name.' course map')
 
 @section('content')
-    <header class="row between">
-        <h1>Course map</h1>
-        <nav class="segmented" aria-label="Subject">
-            @foreach ($subjects as $s)
-                <a href="{{ route('course', [$s, 'level' => $level?->id]) }}"
-                   class="{{ $s->is($subject) ? 'on' : '' }}"
-                   @if ($s->is($subject)) aria-current="page" style="background:{{ $s->color }}" @endif>{{ $s->name }}</a>
-            @endforeach
-        </nav>
+    <header>
+        <p class="small muted" style="margin:0 0 4px">{{ $level?->name }}</p>
+        <h1 style="margin:0"><span class="nav-dot" style="background:{{ $subject->color }};width:14px;height:14px"></span> {{ $subject->name }} course map</h1>
     </header>
-
-    <nav class="chips" aria-label="Level">
-        @foreach ($levels as $l)
-            <a href="{{ route('course', [$subject, 'level' => $l->id]) }}" class="{{ $l->is($level) ? 'on' : '' }}"
-               @if ($l->is($level)) aria-current="page" @endif>{{ $l->name }}</a>
-        @endforeach
-    </nav>
 
     @forelse ($units as $unit)
         <h2 style="font-size:22px">{{ $unit->code }} · {{ $unit->title }}</h2>

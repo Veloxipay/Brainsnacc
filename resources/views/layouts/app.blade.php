@@ -16,9 +16,22 @@
 
         @if ($user->isStudent() || $user->isAdmin())
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
-            @foreach (\App\Models\Subject::orderBy('name')->get() as $navSubject)
-                <a href="{{ route('course', $navSubject) }}"
-                   class="{{ request()->routeIs('course') && request()->route('subject')?->is($navSubject) ? 'active' : '' }}">{{ $navSubject->name }}</a>
+            @php($navLevels = \App\Models\Level::orderBy('sort')->with(['units' => fn ($q) => $q->with('subject')])->get())
+            @php($navLevelId = request()->routeIs('course') ? (int) (request()->query('level') ?: ($user->level_id ?: $navLevels->first()?->id)) : null)
+            @php($navSubjectSlug = request()->routeIs('course') ? request()->route('subject')?->slug : null)
+            <div class="nav-section">Courses</div>
+            @foreach ($navLevels as $navLevel)
+                @php($navSubjects = $navLevel->units->pluck('subject')->filter()->unique('id')->sortBy('name'))
+                @continue($navSubjects->isEmpty())
+                <div class="nav-level {{ $navLevel->id == $navLevelId ? 'open' : '' }}">
+                    {{ $navLevel->name }} @if ($user->level_id == $navLevel->id)<span class="nav-mine">Your year</span>@endif
+                </div>
+                @foreach ($navSubjects as $navSubject)
+                    <a class="nav-sub {{ $navLevel->id == $navLevelId && $navSubjectSlug === $navSubject->slug ? 'active' : '' }}"
+                       href="{{ route('course', [$navSubject, 'level' => $navLevel->id]) }}">
+                        <span class="nav-dot" style="background:{{ $navSubject->color }}"></span>{{ $navSubject->name }}
+                    </a>
+                @endforeach
             @endforeach
         @endif
 
