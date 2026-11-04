@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\File;
  *   "questions": [{"prompt": "...", "options": {"A": "...", "B": "..."}, "answer": "B", "explanation": "..."}]
  * }
  *
- * A lesson is only filled once (when it has no notes yet), so edits made in the admin screens are never overwritten.
+ * A lesson is filled when it has no notes yet, or when its file has changed since it was last loaded.
+ * Lessons edited by hand in the admin screens (content_hash = null with notes present) are never overwritten.
  */
 class LessonContentSeeder extends Seeder
 {
@@ -53,17 +54,21 @@ class LessonContentSeeder extends Seeder
                 continue;
             }
 
-            if (filled($lesson->body)) {
-                continue; // already written — keep any edits
+            $hash = hash('sha256', $file->getContents());
+
+            if (filled($lesson->body) && ($lesson->content_hash === null || $lesson->content_hash === $hash)) {
+                continue; // hand-edited, or this exact version is already loaded
             }
 
-            DB::transaction(function () use ($lesson, $data) {
+            DB::transaction(function () use ($lesson, $data, $hash) {
                 $lesson->update([
                     'summary' => $data['summary'] ?? null,
                     'minutes' => (int) ($data['minutes'] ?? 15),
                     'body' => $data['body'],
+                    'content_hash' => $hash,
                     'status' => 'published',
                 ]);
+                $lesson->questions()->delete(); // replaced by the file's questions
 
                 foreach (array_values($data['questions'] ?? []) as $i => $q) {
                     if (empty($q['prompt']) || empty($q['options']) || empty($q['answer'])) {

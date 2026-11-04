@@ -56,7 +56,8 @@ class LessonController extends Controller
 
     public function update(Request $request, Lesson $lesson): RedirectResponse
     {
-        $lesson->update($this->validated($request));
+        // A hand edit means lesson files no longer replace this lesson.
+        $lesson->update($this->validated($request) + ['content_hash' => null]);
 
         return redirect()->route('admin.lessons.edit', $lesson)->with('status', 'Lesson saved.');
     }

@@ -39,6 +39,8 @@ class QuestionController extends Controller
             'sort' => $lesson->questions()->max('sort') + 1,
         ]);
 
+        $lesson->update(['content_hash' => null]); // hand-edited: keep it
+
         return redirect()->to(route('admin.lessons.edit', $lesson).'#questions')->with('status', 'Question added.');
     }
 
@@ -46,6 +48,7 @@ class QuestionController extends Controller
     {
         $lessonId = $question->lesson_id;
         $question->delete();
+        $question->lesson()->update(['content_hash' => null]); // hand-edited: keep it
 
         return redirect()->to(route('admin.lessons.edit', $lessonId).'#questions')->with('status', 'Question removed.');
     }
