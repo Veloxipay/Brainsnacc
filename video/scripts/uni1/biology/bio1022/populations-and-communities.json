@@ -1,0 +1,31 @@
+{
+  "lesson": "uni1/biology/bio1022/populations-and-communities.json",
+  "level": "Uni Year 1",
+  "subject": "biology",
+  "title": "Populations and communities",
+  "icon": "🌏",
+  "scenes": [
+    {"type": "title", "heading": "Populations and communities", "sub": "Why do some populations explode and others crash?", "icon": "🌏",
+     "say": "Why do some populations explode, others hold steady, and others crash? Simple models of population growth help us predict these patterns, from fisheries to mouse plagues."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🏠", "everyday": "A house party fills fastest when it's about half full", "icon2": "🐟", "science": "Logistic growth is fastest at N = K/2",
+     "breaks": "Guests don't breed, and real populations respond with a delay, so they often overshoot K and crash or oscillate.",
+     "say": "Think of a house party. Early on, each guest texts friends, so numbers climb fast. As the house gets crowded, fewer new people come, until it's full. It grows fastest when it's about half full. That's logistic growth, levelling off at carrying capacity, K."},
+    {"type": "compare", "heading": "J for Jump, S for Stop", "left": {"title": "Exponential", "icon": "📈", "points": ["dN/dt = rN", "Resources unlimited", "J-shaped curve"]},
+     "right": {"title": "Logistic", "icon": "🎯", "points": ["dN/dt = rN(K − N)/K", "Levels off at K", "S-shaped; fastest at K/2"]},
+     "say": "J for jump, S for stop. Exponential growth jumps up in a J-shape while resources are unlimited. Logistic growth adds an empty seats fraction, K minus N over K, so it bends into an S and stops at carrying capacity.",
+     "caption": "J for Jump, S for Stop. Exponential growth jumps up in a J-shape while resources are unlimited. Logistic growth adds an 'empty seats' fraction, (K − N)/K, so it bends into an S and stops at carrying capacity."},
+    {"type": "example", "heading": "Wallabies on an island", "question": "r = 0.4 per year and K = 1000. What is dN/dt when N = 200?", "lines": ["dN/dt = rN(K − N)/K", "= 0.4 × 200 × (1000 − 200)/1000", "= 80 × 0.8", "= 64 wallabies per year"],
+     "say": "Wallabies on an island have r of zero point four per year and a carrying capacity of one thousand. When there are two hundred, zero point four times two hundred is eighty. Multiply by the empty seats, zero point eight: sixty-four wallabies per year.",
+     "caption": "Wallabies on an island have r = 0.4 per year and K = 1000. When N = 200, 0.4 × 200 = 80. Multiply by the empty seats, 0.8: 64 wallabies per year."},
+    {"type": "compare", "heading": "What limits a population?", "left": {"title": "Density-dependent", "icon": "🦠", "points": ["Depends on crowding", "Competition, disease, predation", "Regulates near K"]},
+     "right": {"title": "Density-independent", "icon": "🔥", "points": ["Same proportion at any density", "Flood, frost, bushfire", "Can't hold a steady size"]},
+     "say": "Density-dependent factors depend on crowding: competition, disease and predation. They create the carrying capacity. Density-independent factors, like a flood or bushfire, hit the same proportion whatever the density."},
+    {"type": "equation", "heading": "Simpson's index", "equation": "D = 1 − Σn(n − 1) ÷ N(N − 1)", "parts": [["n", "individuals of each species"], ["N", "total individuals"], ["D", "chance two picks differ (0 to 1)"]],
+     "say": "Imagine picking two lollies from a bag. Simpson's index is the chance they're different species. Two sites can both have four species, but the one with even numbers scores about zero point seven seven, while one dominated by a single species scores only zero point one five.",
+     "caption": "Imagine picking two lollies from a bag. Simpson's index is the chance they're different species. Two sites can both have four species, but the one with even numbers scores about 0.77, while one dominated by a single species scores only 0.15."},
+    {"type": "points", "heading": "Communities change", "icon": "🌱", "points": ["Primary succession: from bare rock", "Secondary succession: from bare soil", "Keystone species: big effect, few numbers", "r: rapid and many; K: care and few"],
+     "say": "Communities change through succession. Primary succession starts from bare rock, with pioneers like lichens. Secondary succession starts from bare soil, like after a bushfire, so it's faster. And keystone species have effects far bigger than their numbers."},
+    {"type": "recap", "points": ["r = b − d", "Exponential: J; logistic: S, stops at K", "Fastest growth at K/2", "Simpson's index rewards evenness", "Primary: bare rock; secondary: bare soil"],
+     "say": "Quick recap. Exponential growth is a J, logistic growth is an S that stops at K. Growth is fastest at half of K. Simpson's index rewards evenness, not just richness. And succession starts from bare rock or bare soil. Now try the practice questions!"}
+  ]
+}
