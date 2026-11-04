@@ -19,7 +19,7 @@
             @php($navLevels = \App\Models\Level::orderBy('sort')->with(['units' => fn ($q) => $q->with('subject')])->get())
             @php($navLevelId = request()->routeIs('course') ? (int) (request()->query('level') ?: ($user->level_id ?: $navLevels->first()?->id)) : null)
             @php($navSubjectSlug = request()->routeIs('course') ? request()->route('subject')?->slug : null)
-            <a href="{{ route('past-papers') }}" class="{{ request()->routeIs('past-papers') ? 'active' : '' }}">Past VCE exams</a>
+            <a href="{{ route('past-papers') }}" class="{{ request()->routeIs('past-papers') ? 'active' : '' }}">VCE exams</a>
             <div class="nav-section">Courses</div>
             @foreach ($navLevels as $navLevel)
                 @php($navSubjects = $navLevel->units->pluck('subject')->filter()->unique('id')->sortBy('name'))

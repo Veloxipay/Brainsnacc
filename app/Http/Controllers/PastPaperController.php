@@ -24,6 +24,8 @@ class PastPaperController extends Controller
             'papers' => config('past_papers'),
             'subjects' => Subject::whereIn('slug', array_keys(config('past_papers')))->orderBy('name')->get()->keyBy('slug'),
             'done' => $done,
+            'mockExams' => \App\Support\MockExams::all(),
+            'mockAttempts' => \App\Models\MockExamAttempt::where('user_id', $request->user()->id)->whereNotNull('submitted_at')->get()->groupBy('exam'),
         ]);
     }
 

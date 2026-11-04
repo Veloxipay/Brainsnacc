@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LessonController;
+use App\Http\Controllers\MockExamController;
 use App\Http\Controllers\ParentController;
 use App\Http\Controllers\PastPaperController;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +34,11 @@ Route::middleware('auth')->group(function () {
         Route::get('/questions/{question}/help', [LessonController::class, 'help'])->name('questions.help');
         Route::get('/past-papers', [PastPaperController::class, 'index'])->name('past-papers');
         Route::post('/past-papers', [PastPaperController::class, 'update'])->name('past-papers.update');
+        Route::get('/practice-exams/{slug}', [MockExamController::class, 'show'])->name('mock-exams.show');
+        Route::post('/practice-exams/{slug}/start', [MockExamController::class, 'start'])->name('mock-exams.start');
+        Route::get('/practice-exams/sitting/{attempt}', [MockExamController::class, 'attempt'])->name('mock-exams.attempt');
+        Route::post('/practice-exams/sitting/{attempt}/submit', [MockExamController::class, 'submit'])->name('mock-exams.submit');
+        Route::post('/practice-exams/sitting/{attempt}/mark', [MockExamController::class, 'mark'])->name('mock-exams.mark');
     });
 
     // Parent area

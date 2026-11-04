@@ -3,9 +3,30 @@
 
 @section('content')
     <header>
-        <h1 style="margin:0 0 6px">Past VCE exams</h1>
+        <h1 style="margin:0 0 6px">VCE exams</h1>
         <p class="muted" style="margin:0">Real Year 12 (Units 3 and 4) exams from the last 10 years, with the examiners’ reports that show what earned marks. The files open on the official VCAA website.</p>
     </header>
+
+    @if ($mockExams->isNotEmpty())
+        <section class="card" aria-labelledby="mx-h">
+            <h2 id="mx-h" style="margin:0;font-size:22px">Brainsnacc practice exams (sit them here)</h2>
+            <p class="muted small" style="margin:0">Original questions written by Brainsnacc in the exact VCE exam format: 15 minutes reading, 2 hours 30 minutes writing, Section A multiple choice and Section B written answers, 120 marks. Sit them on screen with a timer; Section A marks itself and you mark Section B with the marking guide.</p>
+            <div class="pp-list">
+                @foreach ($mockExams as $mx)
+                    @php($tries = $mockAttempts[$mx['slug']] ?? collect())
+                    @php($best = $tries->whereNotNull('score_b')->map(fn ($t) => $t->score_a + $t->score_b)->max())
+                    <div class="pp-row">
+                        <div class="pp-name"><strong>{{ $mx['title'] }}</strong></div>
+                        <div class="small muted">{{ count($mx['section_a']) }} multiple choice · {{ count($mx['section_b']) }} written questions · {{ $mx['total'] }} marks</div>
+                        <div class="pp-form">
+                            @if ($best !== null)<span class="good small">Best: {{ $best }}/{{ $mx['total'] }}</span>@endif
+                            <a class="btn small" href="{{ route('mock-exams.show', $mx['slug']) }}">{{ $tries->isEmpty() ? 'Sit exam' : 'Open' }}</a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </section>
+    @endif
 
     <section class="card">
         <h2 style="margin:0;font-size:20px">How to use them</h2>

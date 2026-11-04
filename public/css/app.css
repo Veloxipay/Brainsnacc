@@ -185,3 +185,24 @@ details.card summary { list-style-position: inside; }
 .btn.small { padding: 6px 12px; min-height: 0; font-size: 14px; }
 .linklike { background: none; border: 0; padding: 0; color: inherit; text-decoration: underline; cursor: pointer; font: inherit; }
 @media (max-width: 760px) { .pp-row { grid-template-columns: 1fr; } .pp-form { justify-content: flex-start; } }
+
+/* Practice exams */
+.mx-facts { display: flex; flex-wrap: wrap; gap: 12px; }
+.mx-facts > div { background: var(--ground); border-radius: 12px; padding: 12px 16px; display: flex; flex-direction: column; min-width: 120px; }
+.mx-facts strong { font-size: 20px; }
+.mx-facts span { font-size: 13px; color: var(--muted); }
+.mx-timer { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; margin-bottom: 16px; box-shadow: 0 4px 14px rgba(17, 24, 39, .06); }
+.mx-timer [data-clock] { font-variant-numeric: tabular-nums; font-size: 22px; font-weight: 700; }
+.mx-timer [data-clock].bad { color: var(--bad, #B42318); }
+.mx-timer [data-handin] { margin-left: auto; }
+.mx-section { font-size: 22px; margin: 24px 0 8px; }
+.mx-q { margin-bottom: 14px; }
+fieldset.mx-q { border: 1px solid var(--line); }
+.mx-q summary { cursor: pointer; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.mx-part { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px dashed var(--line); }
+.mx-part textarea { width: 100%; box-sizing: border-box; font: inherit; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 10px; resize: vertical; }
+.mx-part textarea:disabled { background: var(--ground); }
+.mx-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.mx-mine { white-space: pre-wrap; background: var(--ground); border-radius: 10px; padding: 10px 12px; min-height: 44px; }
+.mx-model { background: var(--good-tint); border-radius: 10px; padding: 10px 12px; }
+@media (max-width: 760px) { .mx-compare { grid-template-columns: 1fr; } }
