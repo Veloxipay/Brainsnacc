@@ -1,0 +1,32 @@
+{
+  "lesson": "y11/chemistry/u2/ph-calculations.json",
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "pH calculations",
+  "icon": "🧪",
+  "scenes": [
+    {"type": "title", "heading": "pH calculations", "sub": "One number for how acidic or basic a solution is", "icon": "🧪",
+     "say": "Pools, soils, blood and oceans are all checked using pH. It's one handy number, but a small change in pH means a big change in acidity. Let's learn to calculate it."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "💲", "everyday": "$0.1, $0.01, $0.001: each extra zero is ten times smaller", "icon2": "🧪", "science": "0.1 M, 0.01 M, 0.001 M H₃O⁺ give pH 1, 2, 3",
+     "breaks": "counting zeros only works for exact powers of ten; 0.050 M needs a calculator and gives pH 1.30.",
+     "say": "Think of prices like ten cents, one cent, a tenth of a cent. Each extra zero makes the amount ten times smaller. pH roughly counts the zeros. Zero point one molar hydronium is pH one, zero point zero one is pH two, and so on. So each pH step is a tenfold change.",
+     "caption": "Think of prices like $0.1, $0.01, $0.001. Each extra zero makes the amount ten times smaller. pH roughly counts the zeros. 0.1 M H₃O⁺ is pH 1, 0.01 M is pH 2, and so on. So each pH step is a tenfold change."},
+    {"type": "equation", "heading": "The pH formula", "equation": "pH = −log₁₀[H₃O⁺]", "parts": [["[H₃O⁺]", "hydronium concentration (M)"], ["Minus sign", "more H₃O⁺ means LOWER pH"], ["Reverse", "[H₃O⁺] = 10⁻ᵖᴴ"]],
+     "say": "pH equals minus log base ten of the hydronium concentration. The minus sign flips it like a seesaw: more hydronium means a lower pH. To go backwards, the concentration is ten to the power of minus pH."},
+    {"type": "equation", "heading": "Water's seesaw", "equation": "Kw = [H₃O⁺][OH⁻] = 1.00 × 10⁻¹⁴", "parts": [["Kw", "ionisation constant of water"], ["At 25 °C", "true for every aqueous solution"], ["Neutral", "[H₃O⁺] = [OH⁻] = 1.0 × 10⁻⁷ M"]],
+     "say": "Water self-ionises a tiny bit. At twenty-five degrees, hydronium times hydroxide always equals one point zero zero times ten to the minus fourteen. If one goes up, the other comes down. In neutral water, both are one times ten to the minus seven, giving pH seven.",
+     "caption": "Water self-ionises a tiny bit. At 25 °C, [H₃O⁺] × [OH⁻] always equals 1.00 × 10⁻¹⁴. If one goes up, the other comes down. In neutral water, both are 1.0 × 10⁻⁷ M, giving pH 7."},
+    {"type": "example", "heading": "Worked example", "question": "Calculate the pH of 0.050 M nitric acid.", "lines": ["HNO₃ is strong and monoprotic", "[H₃O⁺] = 0.050 M", "pH = −log₁₀(0.050)", "pH = 1.30"],
+     "say": "Nitric acid is strong and gives one proton, so the hydronium concentration is zero point zero five zero molar. Minus log of that is one point three zero. Notice: two sig figs in the concentration gives two decimal places in the pH.",
+     "caption": "Nitric acid is strong and gives one proton, so [H₃O⁺] = 0.050 M. −log₁₀(0.050) = 1.30. Notice: two sig figs in the concentration gives two decimal places in the pH."},
+    {"type": "steps", "heading": "pH of a strong base", "steps": ["Find [OH⁻] (Ba(OH)₂ gives 2 OH⁻)", "[H₃O⁺] = 1.00 × 10⁻¹⁴ ÷ [OH⁻]", "pH = −log₁₀[H₃O⁺]"],
+     "say": "Bases take a detour. First find the hydroxide concentration, remembering barium hydroxide gives two hydroxides. Then divide K w by it to get hydronium. Then take minus log. Never call minus log of hydroxide the pH.",
+     "caption": "Bases take a detour. First find [OH⁻], remembering Ba(OH)₂ gives two OH⁻. Then divide Kw by it to get [H₃O⁺]. Then take −log₁₀. Never call −log₁₀[OH⁻] the pH."},
+    {"type": "points", "heading": "Dilution", "icon": "💧",
+     "points": ["Moles stay the same: c₁V₁ = c₂V₂", "Dilute a strong acid 10 times: pH up by 1", "Acids move towards 7 from below", "Never crosses pH 7"],
+     "say": "When you dilute, the moles stay the same. Diluting a strong acid ten times raises its pH by one. Keep diluting and the pH walks towards seven, but never crosses it."},
+    {"type": "recap", "points": ["pH = −log₁₀[H₃O⁺]", "Each pH unit = tenfold change", "Kw = 1.00 × 10⁻¹⁴ at 25 °C", "Bases: find [OH⁻] first, then use Kw"],
+     "say": "Quick recap. pH is minus log of hydronium concentration. Each pH unit is a tenfold change. K w links hydronium and hydroxide. For bases, find hydroxide first, then use K w. Now try the practice questions!",
+     "caption": "Quick recap. pH is −log₁₀[H₃O⁺]. Each pH unit is a tenfold change. Kw links [H₃O⁺] and [OH⁻]. For bases, find [OH⁻] first, then use Kw. Now try the practice questions!"}
+  ]
+}
