@@ -67,7 +67,7 @@ class LessonController extends Controller
         return $request->validate([
             'module_id' => ['required', 'exists:modules,id'],
             'title' => ['required', 'string', 'max:255'],
-            'summary' => ['nullable', 'string', 'max:255'],
+            'summary' => ['nullable', 'string', 'max:1000'],
             'body' => ['nullable', 'string'],
             'minutes' => ['required', 'integer', 'min:1', 'max:240'],
             'status' => ['required', Rule::in(['draft', 'published'])],

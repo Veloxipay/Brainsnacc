@@ -32,6 +32,7 @@ class LessonContentSeeder extends Seeder
         }
 
         $loaded = 0;
+        $failed = 0;
         foreach (File::allFiles($dir) as $file) {
             if ($file->getExtension() !== 'json') {
                 continue;
@@ -60,6 +61,7 @@ class LessonContentSeeder extends Seeder
                 continue; // hand-edited, or this exact version is already loaded
             }
 
+            try {
             DB::transaction(function () use ($lesson, $data, $hash) {
                 $lesson->update([
                     'summary' => $data['summary'] ?? null,
@@ -84,10 +86,16 @@ class LessonContentSeeder extends Seeder
                     ]);
                 }
             });
+            } catch (\Throwable $e) {
+                // One bad file must never stop the other lessons from loading.
+                $failed++;
+                $this->command?->error('Could not load '.$file->getRelativePathname().': '.\Illuminate\Support\Str::limit($e->getMessage(), 200));
+                continue;
+            }
 
             $loaded++;
         }
 
-        $this->command?->info("Lessons loaded: {$loaded}");
+        $this->command?->info("Lessons loaded: {$loaded}".($failed ? " · failed: {$failed}" : ''));
     }
 }
