@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 
 class Lesson extends Model
 {
-    protected $fillable = ['module_id', 'title', 'summary', 'body', 'content_hash', 'minutes', 'status', 'sort'];
+    protected $fillable = ['module_id', 'title', 'summary', 'body', 'video', 'content_hash', 'minutes', 'status', 'sort'];
 
     public function module(): BelongsTo
     {

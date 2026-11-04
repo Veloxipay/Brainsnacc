@@ -17,6 +17,12 @@
 
     <article class="card" style="padding:32px">
         <h1>{{ $lesson->title }}</h1>
+        @if ($lesson->video)
+            <figure class="lesson-video">
+                <video controls preload="metadata" playsinline src="{{ asset($lesson->video) }}"></video>
+                <figcaption class="small muted">Watch first: a short video explainer with a real-life analogy.</figcaption>
+            </figure>
+        @endif
         <div class="lesson-body">{!! $lesson->bodyHtml() !!}</div>
 
         <div class="row between">

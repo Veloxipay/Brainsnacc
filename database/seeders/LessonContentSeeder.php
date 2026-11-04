@@ -67,6 +67,7 @@ class LessonContentSeeder extends Seeder
                     'summary' => $data['summary'] ?? null,
                     'minutes' => (int) ($data['minutes'] ?? 15),
                     'body' => $data['body'],
+                    'video' => $data['video'] ?? null,
                     'content_hash' => $hash,
                     'status' => 'published',
                 ]);
