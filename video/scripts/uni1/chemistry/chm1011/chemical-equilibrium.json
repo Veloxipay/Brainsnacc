@@ -1,0 +1,29 @@
+{
+  "lesson": "uni1/chemistry/chm1011/chemical-equilibrium.json",
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Chemical equilibrium",
+  "icon": "⚖️",
+  "scenes": [
+    {"type": "title", "heading": "Chemical equilibrium", "sub": "Most reactions don't finish. They settle.", "icon": "⚖️",
+     "say": "Most reactions don't simply run to completion. They settle into a mixture of reactants and products. The equilibrium constant tells you exactly where they settle, and now you'll learn to calculate it."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🏠", "everyday": "At a party, people keep moving between the kitchen and dance floor", "icon2": "⚖️", "science": "At dynamic equilibrium, forward and reverse rates are equal",
+     "breaks": "K isn't a simple head count: each concentration is raised to the power of its coefficient.",
+     "say": "Dynamic equilibrium is like a house party. People keep wandering between the kitchen and the dance floor, but the numbers in each room stop changing. Nobody has stopped moving. The forward and reverse reactions just run at equal rates. A big K means almost everyone's on the dance floor: products dominate."},
+    {"type": "points", "heading": "The equilibrium constant", "icon": "🧪",
+     "points": ["Kc = products over reactants, powers = coefficients", "Leave out solids, pure liquids and solvent water", "Only temperature changes K", "Kp = Kc(RT)^Δn, Δn counts gas moles only"],
+     "say": "K is products over reactants, with each concentration raised to the power of its coefficient. Leave out solids, pure liquids and solvent water. Only temperature can change K. For gases, K p equals K c times R T to the power of delta n, where delta n counts moles of gas only.",
+     "caption": "K is products over reactants, with each concentration raised to the power of its coefficient. Leave out solids, pure liquids and solvent water. Only temperature can change K. For gases, Kp = Kc(RT)^Δn, where Δn counts moles of gas only."},
+    {"type": "compare", "heading": "Q vs K", "left": {"title": "Q < K", "icon": "➡️", "points": ["Too few products", "Net reaction goes forward"]},
+     "right": {"title": "Q > K", "icon": "⬅️", "points": ["Too many products", "Net reaction goes in reverse"]},
+     "say": "Q has the same form as K, but uses the concentrations right now. Q is the snapshot, K is the destination. If Q is less than K, go forward. If Q is greater than K, go back. If they're equal, you're at equilibrium."},
+    {"type": "example", "heading": "Worked example: small-x approximation", "question": "N₂ + O₂ ⇌ 2NO, Kc = 1.0 × 10⁻⁶. Start with [N₂] = [O₂] = 0.40 M. Find [NO].", "lines": ["ICE: 0.40 − x, 0.40 − x, 2x", "K tiny, so 0.40 − x ≈ 0.40", "4x² ÷ 0.16 = 1.0 × 10⁻⁶ → x = 2.0 × 10⁻⁴", "Check: x is 0.05% of 0.40, under 5% ✓", "[NO] = 2x = 4.0 × 10⁻⁴ M"],
+     "say": "Set up an ICE table: initial, change, equilibrium. K is tiny, so x is tiny, and you can treat zero point four minus x as just zero point four. Solving gives x equals two times ten to the minus four. Always check x is under five percent. Here it is, so N O is four times ten to the minus four molar.",
+     "caption": "Set up an ICE table: Initial, Change, Equilibrium. K is tiny, so x is tiny, and 0.40 − x ≈ 0.40. Solving gives x = 2.0 × 10⁻⁴. Always check x is under 5%. Here it is, so [NO] = 4.0 × 10⁻⁴ M."},
+    {"type": "equation", "heading": "Linking K to free energy", "equation": "ΔG° = −RT ln K", "parts": [["ΔG°", "standard Gibbs energy change (J mol⁻¹)"], ["R", "8.314 J K⁻¹ mol⁻¹"], ["T", "temperature (K)"], ["K", "equilibrium constant"]],
+     "say": "Equilibrium links straight to thermodynamics. Delta G standard equals minus R T times the natural log of K. A negative delta G standard means K is greater than one, so products are favoured. Remember to convert kilojoules to joules.",
+     "caption": "Equilibrium links straight to thermodynamics: ΔG° = −RT ln K. A negative ΔG° means K > 1, so products are favoured. Remember to convert kJ to J."},
+    {"type": "recap", "points": ["Only temperature changes K", "Q < K: forward; Q > K: reverse", "Small-x? Check x is under 5% of c₀", "Catalysts reach equilibrium faster, same K", "Negative ΔG° ↔ K > 1"],
+     "say": "Quick recap. Only temperature changes K. Compare Q with K to find the direction. Check the five percent rule after a small x approximation. Catalysts speed things up but don't change K. Now try the practice questions!"}
+  ]
+}

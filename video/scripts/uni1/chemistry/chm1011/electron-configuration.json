@@ -1,0 +1,31 @@
+{
+  "lesson": "uni1/chemistry/chm1011/electron-configuration.json",
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Electron configuration",
+  "icon": "🏨",
+  "scenes": [
+    {"type": "title", "heading": "Electron configuration", "sub": "Where do the electrons go, and why do the trends happen?", "icon": "🏨",
+     "say": "Why are sodium and potassium so reactive? Why does atomic size shrink across a period? It all comes down to which orbitals the electrons occupy, and how strongly the nucleus holds them."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🏨", "everyday": "Hotel guests book the cheapest room first, not the lowest floor", "icon2": "⚛️", "science": "Electrons fill the lowest-energy orbital first: 4s before 3d",
+     "breaks": "hotel prices stay fixed, but orbital energies shift as electrons are added. Once 3d fills, it drops below 4s.",
+     "say": "Filling orbitals is like booking hotel rooms by price, not by floor. Guests take the cheapest room first. There's a quirk: one room on floor four, the four s, is cheaper than floor three's d wing. That's the Aufbau principle. And each room holds at most two guests with opposite spins.",
+     "caption": "Filling orbitals is like booking hotel rooms by price, not by floor. Guests take the cheapest room first. There's a quirk: the 4s room is cheaper than floor 3's d wing. That's the Aufbau principle. Each room holds at most two guests with opposite spins."},
+    {"type": "points", "heading": "Three rules for configurations", "icon": "📋",
+     "points": ["Aufbau: fill lowest energy first (n + l rule)", "Pauli: max 2 electrons per orbital, opposite spins", "Hund: one per orbital, parallel spins, then pair", "Exceptions: Cr [Ar] 3d⁵ 4s¹, Cu [Ar] 3d¹⁰ 4s¹"],
+     "say": "Three rules build every configuration. Aufbau: fill the lowest energy first. Pauli: two electrons per orbital, with opposite spins. Hund: like bus seats, take an empty orbital before pairing up. Watch for the two rebels, chromium and copper, which prefer a half-full or full d subshell."},
+    {"type": "compare", "heading": "Transition metal ions: 4s first in, first out", "left": {"title": "Fe atom", "icon": "🧲", "points": ["[Ar] 3d⁶ 4s²", "4s filled before 3d"]},
+     "right": {"title": "Fe²⁺ and Fe³⁺", "icon": "⚡", "points": ["Fe²⁺ = [Ar] 3d⁶", "Fe³⁺ = [Ar] 3d⁵", "4s electrons removed first"]},
+     "say": "For transition metal ions, four s is first in, first out. Once three d has electrons, it drops below four s in energy. So iron loses its two four s electrons first, giving iron two plus as argon three d six, and iron three plus as argon three d five.",
+     "caption": "For transition metal ions, 4s is first in, first out. Once 3d has electrons, it drops below 4s in energy. So Fe loses its two 4s electrons first: Fe²⁺ is [Ar] 3d⁶ and Fe³⁺ is [Ar] 3d⁵."},
+    {"type": "equation", "heading": "Effective nuclear charge", "equation": "Z_eff = Z − S", "parts": [["Z_eff", "net pull felt by the electron"], ["Z", "atomic number (protons)"], ["S", "shielding constant (Slater's rules)"]],
+     "say": "An outer electron doesn't feel the full nuclear charge, because core electrons shield it. Effective nuclear charge is Z minus S, the shielding constant. Core electrons shield well, but electrons in the same shell barely shield at all.",
+     "caption": "An outer electron doesn't feel the full nuclear charge, because core electrons shield it. Z_eff = Z − S. Core electrons shield well, but electrons in the same shell barely shield at all."},
+    {"type": "example", "heading": "Worked example: Slater's rules", "question": "Find Z_eff for the valence electron of Na (Z = 11).", "lines": ["Group: (1s²)(2s² 2p⁶)(3s¹)", "n = 2 shell: 8 × 0.85 = 6.80", "n = 1 shell: 2 × 1.00 = 2.00", "S = 8.80", "Z_eff = 11 − 8.80 = 2.20"],
+     "say": "For sodium's outer electron, the eight electrons in shell two contribute zero point eight five each, and the two in shell one contribute one each. That gives S equals eight point eight, so Z eff is two point two. Chlorine's is six point one, which is why chlorine is smaller and holds its electrons tighter.",
+     "caption": "For Na's outer electron, the 8 electrons in shell 2 contribute 0.85 each, and the 2 in shell 1 contribute 1.00 each. S = 8.80, so Z_eff = 2.20. Cl's is 6.10, which is why Cl is smaller and holds its electrons tighter."},
+    {"type": "recap", "points": ["Aufbau, Pauli and Hund build configurations", "Cr and Cu: half-full or full d", "Transition metals lose 4s before 3d", "Across a period Z_eff rises: radius falls", "Dips: Be beats B, N beats O"],
+     "say": "Quick recap. Aufbau, Pauli and Hund build configurations. Transition metals lose four s first. Across a period Z eff rises, so radius falls and ionisation energy rises. And remember the dips: beryllium beats boron, nitrogen beats oxygen. Now try the practice questions!",
+     "caption": "Quick recap. Aufbau, Pauli and Hund build configurations. Transition metals lose 4s first. Across a period Z_eff rises, so radius falls and ionisation energy rises. Remember the dips: Be beats B, N beats O. Now try the practice questions!"}
+  ]
+}

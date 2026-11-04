@@ -1,0 +1,31 @@
+{
+  "lesson": "y12/biology/u3/dna-manipulation-techniques.json",
+  "level": "Year 12",
+  "subject": "biology",
+  "title": "DNA manipulation techniques",
+  "icon": "🧬",
+  "scenes": [
+    {"type": "title", "heading": "DNA manipulation techniques", "sub": "Cut, paste, copy and sort DNA", "icon": "🧬",
+     "say": "How do scientists solve crimes from a single hair, or get bacteria to make human insulin? They cut DNA at exact places, join pieces, make millions of copies, and sort fragments by size. Let's see how."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "📱", "everyday": "Find, cut and paste when you edit text on your phone", "icon2": "🧬", "science": "Restriction enzymes find and cut a site; DNA ligase pastes",
+     "breaks": "your phone can search any phrase, but each restriction enzyme only recognises its own short sequence (usually 4–8 base pairs).",
+     "say": "Think of find, cut and paste on your phone. A restriction enzyme searches DNA for one exact recognition site and cuts there every time. DNA ligase is the paste and save. It seals the backbone so the join is permanent."},
+    {"type": "compare", "heading": "Sticky vs blunt ends", "left": {"title": "Sticky ends", "icon": "🧲", "points": ["Staggered cut leaves overhangs", "e.g. EcoRI: G^AATTC", "Matching ends base-pair", "Joining is more efficient"]},
+     "right": {"title": "Blunt ends", "icon": "🧱", "points": ["Straight cut, no overhang", "e.g. SmaI: CCC^GGG", "Join to any blunt end", "Joining is less efficient"]},
+     "say": "A staggered cut leaves sticky ends: short overhangs that base-pair like Velcro. Cut two samples with the same enzyme and their sticky ends match. A straight cut leaves blunt ends, which can join any blunt end, but less efficiently."},
+    {"type": "steps", "heading": "PCR: hot, cold, warm", "steps": ["Denature at about 95 °C", "Anneal primers at about 55 °C", "Extend with Taq at about 72 °C", "Copies double every cycle"],
+     "say": "PCR copies a target section of DNA. Remember hot, cold, warm. Heat to about ninety-five degrees to split the strands. Cool to about fifty-five so primers stick. Warm to seventy-two so Taq polymerase builds new strands. Each cycle doubles the copies.",
+     "caption": "PCR copies a target section of DNA. Remember hot, cold, warm. Heat to about 95 °C to split the strands. Cool to about 55 °C so primers stick. Warm to 72 °C so Taq polymerase builds new strands. Each cycle doubles the copies."},
+    {"type": "example", "heading": "Worked example", "question": "Starting with 3 copies of a target, how many copies are present after 10 cycles of PCR?", "lines": ["Copies = start × 2ⁿ", "= 3 × 2¹⁰", "= 3 × 1024", "= 3072 copies"],
+     "say": "Start with three copies and run ten cycles. Copies equal three times two to the power of ten. That's three times one thousand and twenty-four, which gives three thousand and seventy-two copies.",
+     "caption": "Start with 3 copies and run 10 cycles. Copies = 3 × 2¹⁰. That's 3 × 1024, which gives 3072 copies."},
+    {"type": "points", "heading": "Gel electrophoresis", "icon": "⚡",
+     "points": ["DNA is negative, so it runs to the positive end", "Small fragments travel further", "Large fragments stay near the wells", "Compare bands with a DNA ladder"],
+     "say": "Gel electrophoresis sorts DNA by size. DNA is negatively charged, so it runs to the positive electrode. Run to red! Small fragments slip through the gel and travel further. Compare your bands with a DNA ladder to estimate their size."},
+    {"type": "points", "heading": "CRISPR and DNA profiling", "icon": "🔑",
+     "points": ["CRISPR: bacterial defence against viruses", "Guide RNA leads Cas9 to cut a chosen gene", "Profiling compares short tandem repeats", "One STR band from each parent"],
+     "say": "CRISPR began as a bacterial defence. Scientists now design a guide RNA to lead Cas9 to cut any gene they choose. DNA profiling compares short tandem repeats, which vary between people. You get one version from each parent, so a child's bands must all come from the mother or father."},
+    {"type": "recap", "points": ["Restriction enzymes cut at recognition sites", "Ligase seals the backbone", "PCR: 95, 55, 72 °C, doubling each cycle", "Gels: small fragments travel furthest", "STR profiles identify people"],
+     "say": "Quick recap. Restriction enzymes cut, ligase pastes. PCR doubles DNA every cycle. Gels sort fragments by size, with small ones travelling furthest. And STR profiles identify people. Now try the practice questions!"}
+  ]
+}

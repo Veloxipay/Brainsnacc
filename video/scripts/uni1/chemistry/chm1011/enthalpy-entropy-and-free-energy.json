@@ -1,0 +1,32 @@
+{
+  "lesson": "uni1/chemistry/chm1011/enthalpy-entropy-and-free-energy.json",
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Enthalpy, entropy and free energy",
+  "icon": "🔥",
+  "scenes": [
+    {"type": "title", "heading": "Enthalpy, entropy and free energy", "sub": "Will a reaction happen by itself?", "icon": "🔥",
+     "say": "Thermodynamics answers two big questions. How much energy is transferred? And will a reaction happen by itself? Enthalpy answers the first. Entropy and Gibbs free energy answer the second."},
+    {"type": "points", "heading": "Enthalpy and Hess's law", "icon": "🧪",
+     "points": ["First law: ΔU = q + w", "At constant pressure: ΔH = q_p", "Hess's law: H is a state function", "ΔrH° = ΣνΔfH°(products) − ΣνΔfH°(reactants)", "ΔfH° of an element in its standard state = 0"],
+     "say": "The first law says delta U equals q plus w. At constant pressure, delta H is the heat exchanged. Because enthalpy is a state function, like altitude on a hike, Hess's law lets you add steps. Use products minus reactants, times the coefficients. And an element in its standard state has a formation enthalpy of zero.",
+     "caption": "The first law says ΔU = q + w. At constant pressure, ΔH is the heat exchanged. Because H is a state function, like altitude on a hike, Hess's law lets you add steps. Use products minus reactants, times the coefficients. An element in its standard state has ΔfH° = 0."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🏖️", "everyday": "People spread out on an empty beach instead of sharing one towel", "icon2": "🔥", "science": "Energy spreads into more microstates: entropy, S = k ln W",
+     "breaks": "entropy is about how energy is spread, not just where particles sit, and you must count the surroundings too.",
+     "say": "Entropy is like people spreading out on a beach. Nobody forces them. There are just far more ways to be spread out than bunched up. Gases have far more microstates than liquids or solids, so making more moles of gas usually gives a positive delta S. The second law says the entropy of the universe increases in any spontaneous process.",
+     "caption": "Entropy is like people spreading out on a beach. There are just far more ways to be spread out than bunched up. Gases have far more microstates than liquids or solids, so making more moles of gas usually gives a positive ΔS. The second law: the entropy of the universe increases in any spontaneous process."},
+    {"type": "equation", "heading": "Gibbs free energy", "equation": "ΔG = ΔH − TΔS", "parts": [["ΔG", "< 0 spontaneous; = 0 equilibrium"], ["ΔH", "enthalpy change (kJ mol⁻¹)"], ["T", "temperature (K)"], ["ΔS", "entropy change (÷ 1000 for kJ)"]],
+     "say": "Gibbs free energy combines them: delta G equals delta H minus T delta S. Negative delta G means spontaneous, and zero means equilibrium. Watch your units: divide delta S by one thousand before combining it with delta H in kilojoules.",
+     "caption": "Gibbs free energy combines them: ΔG = ΔH − TΔS. Negative ΔG means spontaneous, and zero means equilibrium. Watch your units: divide ΔS by 1000 before combining it with ΔH in kJ."},
+    {"type": "example", "heading": "Worked example: decomposing CaCO₃", "question": "CaCO₃ → CaO + CO₂ has ΔH° = +178.3 kJ mol⁻¹ and ΔS° = +160.6 J K⁻¹ mol⁻¹. Is it spontaneous at 298 K?", "lines": ["ΔG° = 178.3 − (298.15)(0.1606)", "ΔG° = +130.4 kJ mol⁻¹: not spontaneous", "Crossover T = ΔH° ÷ ΔS°", "T = 178 300 ÷ 160.6 = 1110 K (about 837 °C)"],
+     "say": "At room temperature, delta G is plus one hundred and thirty point four kilojoules per mole, so it's not spontaneous. The crossover temperature is delta H over delta S: about one thousand one hundred and ten kelvin. That's why lime kilns run near nine hundred degrees.",
+     "caption": "At 298 K, ΔG° = +130.4 kJ mol⁻¹, so it's not spontaneous. The crossover temperature is ΔH°/ΔS°: about 1110 K. That's why lime kilns run near 900 °C."},
+    {"type": "compare", "heading": "When does temperature decide?", "left": {"title": "Signs disagree", "icon": "🎯", "points": ["−ΔH, +ΔS: spontaneous at all T", "+ΔH, −ΔS: never spontaneous"]},
+     "right": {"title": "Signs agree", "icon": "🌡️", "points": ["Both negative: spontaneous at low T", "Both positive: spontaneous at high T", "Switch at T = ΔH ÷ ΔS"]},
+     "say": "Negative delta H with positive delta S always wins, and the reverse never does. When the signs agree, temperature decides. Both negative works at low temperature, like freezing water. Both positive works at high temperature, like melting ice.",
+     "caption": "Negative ΔH with positive ΔS always wins, and the reverse never does. When the signs agree, temperature decides. Both negative works at low T, like freezing water. Both positive works at high T, like melting ice."},
+    {"type": "recap", "points": ["Hess's law works because H is a state function", "More moles of gas → ΔS positive", "ΔG = ΔH − TΔS; ΔG < 0 is spontaneous", "Crossover temperature: T = ΔH ÷ ΔS", "Spontaneous doesn't mean fast"],
+     "say": "Quick recap. Hess's law works because enthalpy is a state function. More gas usually means positive delta S. Negative delta G is spontaneous. But spontaneous doesn't mean fast: diamond turning into graphite is immeasurably slow. Now try the practice questions!",
+     "caption": "Quick recap. Hess's law works because H is a state function. More gas usually means positive ΔS. Negative ΔG is spontaneous. But spontaneous doesn't mean fast: diamond turning into graphite is immeasurably slow. Now try the practice questions!"}
+  ]
+}

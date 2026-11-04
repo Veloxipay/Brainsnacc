@@ -1,0 +1,124 @@
+{
+  "lesson": "uni1/biology/bio1011/mendelian-genetics.json",
+  "level": "Uni Year 1",
+  "subject": "biology",
+  "title": "Mendelian genetics",
+  "icon": "🌱",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Mendelian genetics",
+      "sub": "Predicting inheritance, and testing it with statistics",
+      "icon": "🌱",
+      "say": "Mendel's pea plants showed that genes are passed on following predictable rules. Let's apply them, test real data, and see where simple ratios break down."
+    },
+    {
+      "type": "points",
+      "heading": "Mendel's two laws",
+      "icon": "🧬",
+      "points": [
+        "Segregation: two alleles split into gametes",
+        "Rr × Rr → 3 dominant : 1 recessive",
+        "Independent assortment: genes shuffle apart",
+        "RrYy × RrYy → 9 : 3 : 3 : 1",
+        "9:3:3:1 is just (3:1) × (3:1)"
+      ],
+      "say": "Segregation splits partners: the two alleles of a gene go to different gametes, giving three to one in a monohybrid cross. Independent assortment shuffles the deck: different genes are dealt out independently, giving nine, three, three, one. That's just two three to one ratios multiplied together."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🪙",
+      "everyday": "Is the coin at the footy toss dodgy? 54 heads in 100 is normal",
+      "icon2": "📊",
+      "science": "Chi-square asks: is the gap between O and E just chance?",
+      "breaks": "A small χ² never proves the hypothesis is right; it only shows the data are consistent with it. Always use raw counts.",
+      "say": "Flip a fair coin a hundred times and fifty-four heads is normal wobble. But eighty heads makes you suspicious. The chi-square test asks the same about a cross: is the gap between observed and expected counts just chance?",
+      "caption": "Flip a fair coin 100 times and 54 heads is normal wobble. But 80 heads makes you suspicious. The χ² test asks the same about a cross: is the gap between observed and expected counts just chance?"
+    },
+    {
+      "type": "equation",
+      "heading": "The chi-square test",
+      "equation": "χ² = Σ (O − E)² ÷ E",
+      "parts": [
+        [
+          "O",
+          "observed count (raw numbers)"
+        ],
+        [
+          "E",
+          "expected count from the ratio"
+        ],
+        [
+          "df",
+          "number of classes − 1"
+        ],
+        [
+          "p = 0.05",
+          "df 3: critical value 7.81"
+        ]
+      ],
+      "say": "Chi-square is the sum of O minus E, squared, over E. Degrees of freedom are classes minus one. Small chi-square, fits. Big chi-square, quits: reject the null hypothesis.",
+      "caption": "χ² is the sum of (O − E)² over E. Degrees of freedom are classes − 1. Small χ², fits. Big χ², quits: reject the null hypothesis."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "556 seeds: 315, 108, 101 and 32 in the four classes. Do they fit 9 : 3 : 3 : 1?",
+      "lines": [
+        "H₀: fits 9 : 3 : 3 : 1",
+        "E: 312.75, 104.25, 104.25, 34.75",
+        "χ² = 0.47; df = 3; critical value 7.81",
+        "0.47 < 7.81: fail to reject H₀"
+      ],
+      "say": "Five hundred and fifty-six seeds fall into four classes. Work out expected counts from the nine, three, three, one ratio. Chi-square comes to zero point four seven. With three degrees of freedom, the critical value is seven point eight one. It's smaller, so we fail to reject the null hypothesis.",
+      "caption": "556 seeds fall into four classes. Work out expected counts from the 9 : 3 : 3 : 1 ratio. χ² comes to 0.47. With 3 degrees of freedom, the critical value is 7.81. It's smaller, so we fail to reject H₀."
+    },
+    {
+      "type": "points",
+      "heading": "Linkage",
+      "icon": "🧱",
+      "points": [
+        "Genes on one chromosome are inherited together",
+        "Test cross: the big two are the parents",
+        "RF = recombinants ÷ total × 100%",
+        "1% RF = 1 map unit; never above 50%"
+      ],
+      "say": "Linked genes sit on the same chromosome. In a test cross, the big two classes are the parents and the small two are recombinants. Recombination frequency is recombinants over total, times one hundred. One percent is one map unit, and it never passes fifty percent."
+    },
+    {
+      "type": "compare",
+      "heading": "Two twists",
+      "left": {
+        "title": "X-linked recessive",
+        "icon": "👦",
+        "points": [
+          "Males have one X (hemizygous)",
+          "Far more common in males",
+          "Mum to son, never Dad to son"
+        ]
+      },
+      "right": {
+        "title": "Epistasis",
+        "icon": "🐕",
+        "points": [
+          "One gene masks another",
+          "Labradors: ee dogs are yellow",
+          "9 : 3 : 4, still adds to 16"
+        ]
+      },
+      "say": "Two twists. X-linked recessive traits, like colour blindness, are far more common in males, who have only one X. They pass mum to son, never dad to son. In epistasis, one gene masks another: in Labradors, double recessive e dogs are yellow, giving nine, three, four."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Monohybrid 3 : 1; dihybrid 9 : 3 : 3 : 1",
+        "χ² = Σ (O − E)² ÷ E, df = classes − 1",
+        "Linked: RF % = map units, max 50%",
+        "X-linked: mum to son",
+        "Ratios adding to 16, like 9:3:4: epistasis"
+      ],
+      "say": "Recap. Three to one, and nine, three, three, one. Chi-square tests the fit. Recombination frequency gives map distance. X-linked traits go mum to son. And a modified ratio that still adds to sixteen means epistasis. Now try the practice questions!"
+    }
+  ]
+}

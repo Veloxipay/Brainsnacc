@@ -1,0 +1,31 @@
+{
+  "lesson": "uni1/chemistry/chm1011/electrochemistry.json",
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Electrochemistry",
+  "icon": "🔋",
+  "scenes": [
+    {"type": "title", "heading": "Electrochemistry", "sub": "Turning chemical reactions into electricity, and back", "icon": "🔋",
+     "say": "Every phone battery, fuel cell and rusty car runs on the same ideas: redox half-reactions and electrode potentials. Let's connect cell voltage to energy, and learn to calculate it in real conditions."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🪢", "everyday": "Two tug-of-war teams pulling on the same rope", "icon2": "🔋", "science": "The half-cell with the more positive E° is reduced: the cathode",
+     "breaks": "E° values aren't absolute strengths. They're all measured against the standard hydrogen electrode at 0.00 V.",
+     "say": "A galvanic cell is like a tug-of-war for electrons. Each half-cell pulls with its standard reduction potential. The stronger team wins and is reduced at the cathode. The weaker team is oxidised at the anode. Copper, at plus zero point three four volts, easily out-pulls zinc, at minus zero point seven six.",
+     "caption": "A galvanic cell is like a tug-of-war for electrons. Each half-cell pulls with its E°. The stronger team wins and is reduced at the cathode. The weaker team is oxidised at the anode. Copper (+0.34 V) easily out-pulls zinc (−0.76 V)."},
+    {"type": "compare", "heading": "Galvanic vs electrolytic", "left": {"title": "Galvanic cell", "icon": "🔋", "points": ["Spontaneous, ΔG < 0", "Makes electrical energy", "Anode is negative"]},
+     "right": {"title": "Electrolytic cell", "icon": "🔌", "points": ["Non-spontaneous, ΔG > 0", "Driven by a power supply", "Anode is positive (PANIC)"]},
+     "say": "In every cell, oxidation is at the anode and reduction at the cathode. An Ox, Red Cat. Only the signs change. A galvanic cell runs spontaneously, and its anode is negative. An electrolytic cell is driven by a power supply, and its anode is positive.",
+     "caption": "In every cell, oxidation is at the anode and reduction at the cathode: An Ox, Red Cat. Only the signs change. A galvanic cell runs spontaneously, and its anode is negative. An electrolytic cell is driven by a power supply, and its anode is positive."},
+    {"type": "example", "heading": "Worked example: the Daniell cell", "question": "Zn + Cu²⁺ → Zn²⁺ + Cu. Find E°cell and ΔG°.", "lines": ["E°cell = E°(cathode) − E°(anode)", "E°cell = 0.34 − (−0.76) = +1.10 V", "n = 2 electrons", "ΔG° = −nFE° = −2 × 96 485 × 1.10", "ΔG° = −212 kJ mol⁻¹"],
+     "say": "Cell potential is cathode minus anode: zero point three four minus negative zero point seven six gives plus one point one zero volts. Two electrons move, so delta G standard equals minus n F E: minus two hundred and twelve kilojoules per mole. And never double E standard when you double a half-equation.",
+     "caption": "E°cell = cathode − anode: 0.34 − (−0.76) = +1.10 V. Two electrons move, so ΔG° = −nFE° = −212 kJ mol⁻¹. Never double E° when you double a half-equation."},
+    {"type": "equation", "heading": "The Nernst equation (25 °C)", "equation": "E = E° − (0.05916/n) log₁₀ Q", "parts": [["E", "cell potential now (V)"], ["E°", "standard cell potential (V)"], ["n", "moles of electrons"], ["Q", "reaction quotient"]],
+     "say": "Real cells rarely run at standard concentrations. The Nernst equation corrects for this. As a battery runs, Q rises towards K, so E falls. When Q equals K, E is zero and the battery is flat.",
+     "caption": "Real cells rarely run at standard concentrations. The Nernst equation corrects for this. As a battery runs, Q rises towards K, so E falls. When Q = K, E = 0 and the battery is flat."},
+    {"type": "steps", "heading": "Electrolysis: how much product?", "steps": ["Charge: Q = I × t (t in seconds)", "Moles of electrons = Q ÷ F", "Use the half-equation ratio", "Mass = moles × M"],
+     "say": "For electrolysis, follow the chain. Current times time gives charge. Divide by the Faraday constant to get moles of electrons. Use the half-equation ratio. Two amps for thirty minutes through copper sulfate deposits one point one nine grams of copper.",
+     "caption": "For electrolysis, follow the chain. I × t gives charge. Divide by F to get moles of electrons. Use the half-equation ratio. 2.00 A for 30.0 min through CuSO₄ deposits 1.19 g of copper."},
+    {"type": "recap", "points": ["An Ox, Red Cat in every cell", "E°cell = E°(cathode) − E°(anode)", "ΔG° = −nFE°cell", "Battery runs flat when Q = K", "Q = It, then ÷ F for mol e⁻"],
+     "say": "Quick recap. Anode oxidation, cathode reduction, always. Cell potential is cathode minus anode. Delta G standard equals minus n F E. And Q equals I t, divided by F. Now try the practice questions!",
+     "caption": "Quick recap. Anode oxidation, cathode reduction, always. E°cell = cathode − anode. ΔG° = −nFE°. And Q = It, divided by F. Now try the practice questions!"}
+  ]
+}

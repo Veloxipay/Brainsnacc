@@ -1,0 +1,31 @@
+{
+  "lesson": "uni1/chemistry/chm1011/chemical-kinetics.json",
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Chemical kinetics",
+  "icon": "⏱️",
+  "scenes": [
+    {"type": "title", "heading": "Chemical kinetics", "sub": "Not whether it happens, but how fast", "icon": "⏱️",
+     "say": "Thermodynamics tells you whether a reaction can happen. Kinetics tells you how fast, and by what pathway. It's why food lasts longer in the fridge, and how doctors decide how often you take a medicine."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🏃", "everyday": "Only athletes who clear the high-jump bar reach the other side", "icon2": "🔥", "science": "Only collisions with energy ≥ Eₐ and the right orientation react",
+     "breaks": "a catalyst doesn't lower the same bar. It provides a whole new mechanism, and lowers the barrier for the reverse reaction too.",
+     "say": "Activation energy is like a high-jump bar. Only collisions with enough energy and the right orientation get over it. Raising the temperature is like giving every athlete a better run-up, so many more clear the bar. A catalyst offers a different route with a lower bar.",
+     "caption": "Activation energy, Eₐ, is like a high-jump bar. Only collisions with enough energy and the right orientation get over it. Raising the temperature is like a better run-up, so many more clear the bar. A catalyst offers a different route with a lower bar."},
+    {"type": "points", "heading": "Rate laws", "icon": "🧪",
+     "points": ["rate = k[A]^m[B]^n", "Orders come from experiment, not the equation", "Double [A]: ×1 zero, ×2 first, ×4 second order", "Units of k change with overall order"],
+     "say": "A rate law says rate equals k times the concentrations raised to their orders. Those orders come from the lab, not the balanced equation. Double a concentration: if the rate stays the same, it's zero order. If it doubles, first order. If it quadruples, second order."},
+    {"type": "example", "heading": "Worked example: initial rates", "question": "2NO + O₂ → 2NO₂. Doubling [NO] makes the rate ×4. Doubling [O₂] makes it ×2. Exp 1: 0.010 M each, rate 7.0 × 10⁻⁶ M s⁻¹.", "lines": ["[NO] doubled, rate × 4 = 2²: second order", "[O₂] doubled, rate × 2: first order", "rate = k[NO]²[O₂]", "k = 7.0 × 10⁻⁶ ÷ (0.010² × 0.010)", "k = 7.0 M⁻² s⁻¹"],
+     "say": "Doubling nitric oxide quadruples the rate, so it's second order in N O. Doubling oxygen doubles the rate, so it's first order in oxygen. Substitute experiment one into the rate law, and k comes out at seven point zero per molar squared per second.",
+     "caption": "Doubling [NO] quadruples the rate, so it's second order in NO. Doubling [O₂] doubles the rate, so it's first order in O₂. Substitute experiment 1, and k = 7.0 M⁻² s⁻¹."},
+    {"type": "compare", "heading": "Zero, first and second order plots", "left": {"title": "Straight-line plots", "icon": "📈", "points": ["Zero: [A] vs t (gradient −k)", "First: ln[A] vs t (gradient −k)", "Second: 1/[A] vs t (gradient +k)"]},
+     "right": {"title": "Half-lives", "icon": "🍿", "points": ["First order: t½ = ln 2 ÷ k, constant", "Zero order: each one gets shorter", "Second order: each one gets longer"]},
+     "say": "Zero is plain, first is natural log, second flips it. Those are the straight-line plots. First order is like popcorn popping. Every kernel has the same chance each second, so the half-life is always the same: natural log of two over k.",
+     "caption": "Zero is plain, first is ln, second flips it. Those are the straight-line plots. First order is like popcorn popping. Every kernel has the same chance each second, so the half-life is always the same: t½ = ln 2 ÷ k."},
+    {"type": "equation", "heading": "The Arrhenius equation", "equation": "k = A e^(−Eₐ/RT)", "parts": [["k", "rate constant"], ["A", "frequency factor"], ["Eₐ", "activation energy (J mol⁻¹)"], ["T", "temperature (K)"]],
+     "say": "The Arrhenius equation shows how k depends on temperature. A plot of natural log k against one over T has a gradient of minus E a over R. If k doubles from twenty-five to thirty-five degrees, E a is fifty-two point nine kilojoules per mole.",
+     "caption": "The Arrhenius equation shows how k depends on temperature. A plot of ln k against 1/T has a gradient of −Eₐ/R. If k doubles from 25.0 °C to 35.0 °C, Eₐ = 52.9 kJ mol⁻¹."},
+    {"type": "recap", "points": ["Orders come from the lab, not the equation", "Only first order has a constant half-life", "ln k vs 1/T: gradient = −Eₐ/R", "Slowest step sets the rate law", "Catalysts lower Eₐ; ΔH and K unchanged"],
+     "say": "Quick recap. Orders come from experiment. Only first order has a steady half-life. The slowest step sets the pace, like the slowest checkpoint in a queue. And catalysts lower activation energy without changing delta H or K. Now try the practice questions!",
+     "caption": "Quick recap. Orders come from experiment. Only first order has a steady half-life. The slowest step sets the pace, like the slowest checkpoint in a queue. Catalysts lower Eₐ without changing ΔH or K. Now try the practice questions!"}
+  ]
+}

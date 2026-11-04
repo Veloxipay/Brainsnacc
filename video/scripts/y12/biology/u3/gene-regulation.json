@@ -1,0 +1,30 @@
+{
+  "lesson": "y12/biology/u3/gene-regulation.json",
+  "level": "Year 12",
+  "subject": "biology",
+  "title": "Gene regulation",
+  "icon": "🔑",
+  "scenes": [
+    {"type": "title", "heading": "Gene regulation", "sub": "Same genes, very different cells. How?", "icon": "🔑",
+     "say": "Almost every cell in your body has the same genes, yet a liver cell and a nerve cell make very different proteins. How? Cells control which genes are switched on, when, and how much."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "📱", "everyday": "One shared streaming library, but each person watches different shows", "icon2": "🧬", "science": "Every cell has the same genes, but expresses different ones",
+     "breaks": "people choose shows on purpose; cells have no decision-maker, just molecules like repressors binding (or not) to DNA.",
+     "say": "Think of a family sharing one streaming account. Everyone has the same library, but each person watches different shows. Every cell has the same genes, but plays different ones. Regulatory genes are like the parental controls. Structural genes are the shows themselves."},
+    {"type": "points", "heading": "Why regulate genes?", "icon": "🎯",
+     "points": ["Saves energy and materials", "Responds to the environment", "Lets cells specialise", "Controls development"],
+     "say": "Making proteins uses lots of ATP, nucleotides and amino acids, so regulation saves resources. It also lets cells respond to their surroundings, specialise into muscle or skin, and develop in the right order."},
+    {"type": "points", "heading": "The trp operon", "icon": "🦠",
+     "points": ["Five structural genes for making tryptophan", "One promoter: where RNA polymerase binds", "Operator: where the repressor can bind", "trpR gene (outside) makes the repressor"],
+     "say": "In E. coli, the trp operon is five structural genes for making the amino acid tryptophan, controlled by one promoter and one operator. The promoter is the parking spot for RNA polymerase. The operator is the boom gate. A separate gene, trp R, makes the repressor all the time, but it's inactive on its own.",
+     "caption": "In E. coli, the trp operon is five structural genes for making the amino acid tryptophan, controlled by one promoter and one operator. The promoter is the parking spot for RNA polymerase. The operator is the boom gate. A separate gene, trpR, makes the repressor all the time, but it's inactive on its own."},
+    {"type": "steps", "heading": "High tryptophan: switch off", "steps": ["Tryptophan binds the repressor", "Repressor changes shape, now active", "Repressor binds the operator", "RNA polymerase is blocked"],
+     "say": "When tryptophan is high, it binds the repressor and changes its shape. The active repressor binds the operator and blocks RNA polymerase, so no enzymes are made. Think T, R, O, B. More product means less production: negative feedback in a repressible operon."},
+    {"type": "compare", "heading": "Attenuation", "left": {"title": "High tryptophan", "icon": "⚡", "points": ["Ribosome speeds over region 2", "Regions 3–4 pair: terminator", "Transcription stops"]},
+     "right": {"title": "Low tryptophan", "icon": "⏸️", "points": ["Ribosome stalls on region 1", "Regions 2–3 pair: anti-terminator", "Transcription continues"]},
+     "say": "Attenuation adds fine control. With high tryptophan, the ribosome speeds along, regions three and four pair into a terminator hairpin, and transcription stops. With low tryptophan, the ribosome stalls, regions two and three pair instead, and transcription carries on. Stall means go on, speed means stop."},
+    {"type": "example", "heading": "Worked example", "question": "A trpR mutation means the repressor can't bind tryptophan. With plenty of tryptophan, are the enzymes made?", "lines": ["Tryptophan normally activates the repressor", "Here it can't bind, so repressor stays inactive", "Operator is free; RNA polymerase not blocked", "Answer: enzymes still made, wasting energy"],
+     "say": "If the repressor can't bind tryptophan, it stays inactive and can't bind the operator. RNA polymerase isn't blocked, so the enzymes are still made, though attenuation would reduce it a little. That wastes energy."},
+    {"type": "recap", "points": ["Regulation saves energy and allows specialisation", "Structural vs regulatory genes", "High trp: repressor binds the operator", "Attenuation: 3–4 terminator stops transcription"],
+     "say": "Quick recap. Regulation saves energy and lets cells specialise. High tryptophan activates the repressor, which blocks the operator. Attenuation fine-tunes it. Now try the practice questions!"}
+  ]
+}
