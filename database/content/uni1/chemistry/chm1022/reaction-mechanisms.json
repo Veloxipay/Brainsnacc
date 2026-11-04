@@ -1,0 +1,99 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "unit": "CHM1022",
+  "title": "Reaction mechanisms",
+  "summary": "Curly-arrow notation, nucleophiles and electrophiles, SN1 versus SN2, E1 versus E2, Markovnikov electrophilic addition to alkenes, and nucleophilic addition to carbonyls.",
+  "minutes": 45,
+  "body": "A reaction mechanism is the step-by-step story of which bonds break and form, and in what order, as reactants become products. Knowing mechanisms turns organic chemistry from memorising thousands of reactions into applying a few patterns: electron-rich species attack electron-poor ones. This lesson covers curly-arrow notation and the core first-year mechanisms — substitution, elimination, and addition to alkenes and carbonyls — described in words since diagrams cannot be shown here.\n\n## Key ideas\n\n### Curly arrows\n\nA **curly arrow** shows the movement of a *pair* of electrons. Its tail starts at the electrons (a lone pair or a bond) and its head points to where they end up (an atom, forming a lone pair, or between two atoms, forming a new bond). A half-headed \"fish-hook\" arrow shows a single electron and is used for radical reactions.\n\nRules to follow:\n\n- Arrows always start from electrons, never from a positive charge or a nucleus.\n- Each arrow either makes a bond, breaks a bond, or both.\n- Check that no atom ends up with too many electrons — if an arrow makes a new bond to a carbon that already has four bonds, another arrow must break one of its existing bonds.\n- Charges must balance: the total charge is the same on both sides of every step.\n\n**Heterolytic bond cleavage** gives both bonding electrons to one atom, forming ions; this is what a single curly arrow from a bond to an atom shows. **Homolytic cleavage** gives one electron to each atom, forming radicals.\n\n### Nucleophiles and electrophiles\n\nA **nucleophile** (\"nucleus-loving\") is an electron-pair donor: it has a lone pair or a π bond and attacks an electron-poor centre. Examples: OH⁻, CN⁻, H₂O, NH₃, Br⁻, alkenes. A **nucleophile is a Lewis base.**\n\nAn **electrophile** (\"electron-loving\") is an electron-pair acceptor: it has a positive or partial positive charge, often an atom attached to an electronegative atom. Examples: H⁺, carbocations, the δ+ carbon in C–Br or C=O. **An electrophile is a Lewis acid.**\n\nA **leaving group** is the atom or group that departs with the bonding electron pair. Good leaving groups are weak bases that are stable on their own: I⁻ > Br⁻ > Cl⁻ ≫ F⁻, and water (from a protonated alcohol). OH⁻ is a poor leaving group, which is why alcohols are usually protonated or converted first.\n\n### Carbocation stability\n\nA **carbocation** is a carbon with only three bonds and a positive charge. Its stability order is\n\ntertiary (3°) > secondary (2°) > primary (1°) > methyl\n\nbecause alkyl groups donate electron density by **hyperconjugation** and the inductive effect, spreading the positive charge. Carbocation stability controls SN1, E1 and Markovnikov addition.\n\n### SN2: bimolecular nucleophilic substitution\n\nIn **SN2**, the nucleophile attacks the δ+ carbon from the side opposite the leaving group (**backside attack**) while the leaving group departs — all in one concerted step.\n\nIn words: one curly arrow goes from the nucleophile's lone pair to the δ+ carbon; a second goes from the C–leaving group bond to the leaving group. The transition state has the nucleophile and leaving group partly bonded on opposite sides of carbon, with the three other groups flattened into a plane.\n\n`OH⁻(aq) + CH₃CH₂Br(l) → CH₃CH₂OH(aq) + Br⁻(aq)`\n\n- Rate = k[substrate][nucleophile] (second order overall, hence \"2\").\n- Fastest for methyl and 1° substrates; very slow for 3° because the bulky groups block backside attack (**steric hindrance**).\n- Favoured by strong, negatively charged nucleophiles and **polar aprotic solvents** (e.g. acetone, DMSO), which do not hydrogen-bond strongly to the nucleophile.\n- At a stereocentre, SN2 gives **inversion of configuration** (an umbrella flipping inside out).\n\n### SN1: unimolecular nucleophilic substitution\n\nIn **SN1**, the leaving group leaves first to form a carbocation (the slow, rate-determining step), then the nucleophile attacks the carbocation.\n\nIn words: step 1, a curly arrow from the C–Br bond to Br produces a flat carbocation and Br⁻. Step 2, a curly arrow from the nucleophile's lone pair to the positive carbon forms the new bond. If the nucleophile is water, a third step removes H⁺ from the oxygen.\n\n- Rate = k[substrate] (first order; the nucleophile is not involved in the slow step).\n- Favoured for 3° (and some 2°) substrates, which form stable carbocations.\n- Favoured by weak, neutral nucleophiles and **polar protic solvents** (water, alcohols), which stabilise the ions formed.\n- Because the carbocation is planar, the nucleophile can attack either face; a stereocentre gives a mixture of both configurations (largely **racemisation**).\n\n### E2 and E1: elimination\n\nElimination reactions remove H and a leaving group from adjacent carbons to form an alkene. The H is on the **β-carbon** — the carbon next to the one carrying the leaving group (the α-carbon).\n\n**E2** is concerted: a base removes the β-H while the C=C forms and the leaving group departs. In words: one arrow from the base's lone pair to the β-H; one from the C–H bond into the C–C region to form the π bond; one from the C–leaving group bond to the leaving group. Rate = k[substrate][base]. The H and leaving group are normally **anti-periplanar** (on opposite sides, in the same plane). E2 is favoured by strong, bulky bases (e.g. potassium tert-butoxide) and heat.\n\n**E1** goes through the same carbocation as SN1, after which a weak base removes a β-H. Rate = k[substrate]. E1 competes with SN1 and is favoured by heat.\n\nBoth usually give the more substituted (more stable) alkene as the major product — **Zaitsev's rule**. A very bulky base can instead favour the less substituted alkene.\n\n### Choosing between SN1, SN2, E1 and E2\n\n| Substrate | Strong nucleophile / weak base (e.g. I⁻, CN⁻) | Strong base (e.g. OH⁻, RO⁻) | Weak nucleophile / weak base (H₂O, ROH) |\n|---|---|---|---|\n| Methyl, 1° | SN2 | SN2 (E2 if base is bulky) | Very slow |\n| 2° | SN2 | E2 mainly | SN1/E1 (slow) |\n| 3° | SN1/E1 (no SN2) | E2 | SN1/E1 |\n\nHigher temperature favours elimination over substitution, because elimination produces more molecules and so has a more positive entropy change.\n\n### Electrophilic addition to alkenes\n\nThe C=C π bond is electron rich, so alkenes act as nucleophiles towards electrophiles such as HBr.\n\nIn words: step 1, a curly arrow from the π bond to the H of H–Br, with a second arrow from the H–Br bond to Br, gives a carbocation and Br⁻. Step 2, an arrow from a Br⁻ lone pair to the carbocation forms the C–Br bond.\n\n**Markovnikov's rule**: H adds to the alkene carbon that already has more hydrogens, so that the more stable carbocation forms. The mechanistic reason is carbocation stability — the rule is a consequence, not a cause.\n\n`CH₃CH=CH₂(g) + HBr(g) → CH₃CHBrCH₃(l)`\n\nHere H adds to C1, giving a 2° carbocation at C2 (rather than a 1° cation at C1), so the major product is 2-bromopropane. Acid-catalysed hydration (H₂O with H₂SO₄ or H₃PO₄) follows the same pattern, giving the Markovnikov alcohol. Addition of Br₂ goes through a cyclic **bromonium ion**, and the second Br⁻ attacks from the opposite face, giving **anti addition**.\n\n### Nucleophilic addition to carbonyls\n\nThe C=O carbon is δ+ because oxygen is more electronegative, and the π bond is easily pushed onto oxygen. Nucleophiles attack the carbonyl carbon.\n\nIn words: step 1, an arrow from the nucleophile's lone pair to the carbonyl carbon, and an arrow from the C=O π bond onto oxygen, giving a tetrahedral **alkoxide** intermediate (O⁻). Step 2, the O⁻ is protonated by acid or solvent to give an alcohol.\n\nExamples: NaBH₄ (a hydride source, H⁻) reduces aldehydes to 1° alcohols and ketones to 2° alcohols; HCN with catalytic CN⁻ forms a **cyanohydrin**; Grignard reagents (RMgBr, a source of carbanion-like R⁻) form new C–C bonds. Aldehydes react faster than ketones because they are less sterically hindered and their carbonyl carbon is less stabilised by electron-donating alkyl groups. Attack on a flat carbonyl from either face creates a new stereocentre as a racemic mixture.\n\n## Worked examples\n\n### Example 1: Predicting the mechanism and product\n\nPredict the main product when (R)-2-bromobutane reacts with NaCN in DMSO.\n\n1. Substrate: 2° bromide. Reagent: CN⁻, a strong nucleophile but weak base. Solvent: polar aprotic. All point to SN2.\n2. SN2 means backside attack and inversion.\n3. Product: 2-methylbutanenitrile, with the stereocentre inverted. The priority order changes (CN replaces Br), so check the label: at C2 the groups are now CN > CH₂CH₃ > CH₃ > H, with the same ranking pattern as before, so inversion gives **(S)-2-methylbutanenitrile**.\n4. Rate = k[2-bromobutane][CN⁻]; doubling [CN⁻] doubles the rate.\n\n### Example 2: Kinetics distinguishes SN1 from SN2\n\n2-bromo-2-methylpropane is heated in water. Doubling [substrate] doubles the rate; adding more OH⁻ has no effect on the rate. Explain.\n\n1. The rate depends only on substrate concentration: rate = k[(CH₃)₃CBr], first order.\n2. This fits SN1: the slow step is loss of Br⁻ to form the 3° carbocation (CH₃)₃C⁺, which does not involve the nucleophile.\n3. Water then attacks the carbocation; loss of H⁺ gives 2-methylpropan-2-ol.\n4. On heating, some 2-methylpropene also forms by E1, from loss of a β-H from the same carbocation.\n\n### Example 3: Markovnikov addition\n\nPredict the major product of 2-methylpropene, (CH₃)₂C=CH₂, with HBr.\n\n1. Protonation can occur at CH₂ (giving the 3° cation (CH₃)₃C⁺) or at the other carbon (giving a 1° cation).\n2. The 3° carbocation is much more stable, so it forms.\n3. Br⁻ attacks it: product is **2-bromo-2-methylpropane**.\n\n## Common mistakes\n\n- Drawing arrows from H⁺ or from a positive charge. Arrows start from electrons — a lone pair or a bond.\n- Claiming SN2 at a tertiary carbon. Steric hindrance prevents backside attack.\n- Saying the nucleophile appears in the SN1 rate equation, or that SN1 gives inversion.\n- Stating Markovnikov's rule as the reason for regiochemistry without mentioning carbocation stability.\n- Confusing nucleophilicity with basicity: CN⁻ and I⁻ are good nucleophiles but weak bases, so they substitute rather than eliminate.\n\n## Exam tips\n\n- Expect \"suggest the mechanism\" questions that give substrate, reagent, solvent and temperature: work through each in turn, as in the table.\n- Mechanism marks are usually given for each correct arrow (start and end points), intermediates with correct charges, and the final product.\n- Rate data questions test whether you can link a rate law to the molecularity of the slow step.\n- State stereochemical outcomes (inversion, racemisation, anti addition) explicitly when a stereocentre is involved.\n\n## Key terms\n\n- **Curly arrow** — shows movement of an electron pair from a source to a destination.\n- **Heterolytic cleavage** — bond breaking in which one atom takes both electrons.\n- **Nucleophile** — electron-pair donor that attacks an electron-poor centre (Lewis base).\n- **Electrophile** — electron-pair acceptor (Lewis acid).\n- **Leaving group** — group that departs with the bonding pair; best when a weak base.\n- **Carbocation** — positively charged carbon with three bonds; stability 3° > 2° > 1°.\n- **SN2** — concerted substitution with backside attack and inversion; rate = k[substrate][Nu].\n- **SN1** — two-step substitution via a carbocation; rate = k[substrate].\n- **E2 / E1** — concerted / carbocation-based elimination forming an alkene.\n- **Zaitsev's rule** — elimination usually gives the more substituted alkene.\n- **Markovnikov's rule** — in HX addition, H adds to the carbon with more H, giving the more stable carbocation.\n- **Nucleophilic addition** — nucleophile adds to a C=O carbon, giving a tetrahedral alkoxide that is then protonated.\n\n## Summary\n\n- Curly arrows show electron pairs moving from nucleophiles (electron-rich) to electrophiles (electron-poor).\n- SN2: one step, backside attack, inversion, best for 1° substrates and strong nucleophiles.\n- SN1: carbocation intermediate, first-order kinetics, racemisation, best for 3° substrates in protic solvents.\n- E2 and E1 form alkenes; strong bases and heat favour elimination; Zaitsev product is usually major.\n- Electrophilic addition to alkenes goes via the more stable carbocation (Markovnikov).\n- Nucleophiles add to the δ+ carbon of C=O, forming an alkoxide that is protonated to an alcohol.\n",
+  "questions": [
+    {
+      "prompt": "In curly-arrow notation, what does a full (double-headed) curly arrow represent?",
+      "options": {
+        "A": "Movement of one electron",
+        "B": "Movement of a proton",
+        "C": "Movement of a pair of electrons",
+        "D": "Movement of a positive charge"
+      },
+      "answer": "C",
+      "explanation": "A full curly arrow shows a pair of electrons moving from a lone pair or bond. Option A describes a fish-hook (half-headed) arrow used in radical reactions. Arrows never show protons or positive charges moving, though a proton may be transferred as a result."
+    },
+    {
+      "prompt": "Which species is acting as an electrophile?",
+      "options": {
+        "A": "The δ+ carbon of a C=O group attacked by NaBH₄",
+        "B": "The OH⁻ ion in the hydrolysis of bromoethane",
+        "C": "The π bond of ethene reacting with HBr",
+        "D": "The nitrogen atom of NH₃ reacting with CH₃Cl"
+      },
+      "answer": "A",
+      "explanation": "The carbonyl carbon is electron-poor and accepts an electron pair from hydride, so it is the electrophile. Option C is tempting because ethene is the substrate, but its π bond donates electrons, so ethene acts as the nucleophile towards HBr."
+    },
+    {
+      "prompt": "Why does 2-bromo-2-methylpropane not undergo SN2 reactions at a useful rate?",
+      "options": {
+        "A": "Bromide is a poor leaving group",
+        "B": "The three methyl groups block backside attack on the carbon",
+        "C": "The C–Br bond is non-polar",
+        "D": "Tertiary carbocations are unstable"
+      },
+      "answer": "B",
+      "explanation": "SN2 requires the nucleophile to approach the carbon from the side opposite the leaving group; three methyl groups cause severe steric hindrance. Option D is wrong on two counts: tertiary carbocations are the most stable, and SN2 involves no carbocation at all."
+    },
+    {
+      "prompt": "A substitution reaction obeys rate = k[RBr] and an optically pure substrate gives a nearly racemic product. Which mechanism and intermediate are consistent with this?",
+      "options": {
+        "A": "SN2, with a five-coordinate intermediate",
+        "B": "E2, with an alkene intermediate",
+        "C": "SN2, with inversion of configuration",
+        "D": "SN1, with a planar carbocation intermediate"
+      },
+      "answer": "D",
+      "explanation": "First-order kinetics shows only the substrate is involved in the slow step, and the planar carbocation can be attacked from either face, giving racemisation. Option C is tempting because SN2 is a substitution, but SN2 is second order and gives inversion, not racemisation."
+    },
+    {
+      "prompt": "What is the major product of the reaction of propene with HBr in the absence of peroxides?",
+      "options": {
+        "A": "1-bromopropane, because Br adds to the less hindered end",
+        "B": "2-bromopropane, because the reaction proceeds via the more stable secondary carbocation",
+        "C": "1,2-dibromopropane",
+        "D": "A 1:1 mixture of 1- and 2-bromopropane"
+      },
+      "answer": "B",
+      "explanation": "H⁺ adds to C1 so that the positive charge sits on C2, a secondary carbocation, which Br⁻ then attacks. Option A is the anti-Markovnikov product, which forms only by a radical mechanism with peroxides present. Option C is the product of Br₂, not HBr."
+    },
+    {
+      "prompt": "Which conditions most favour E2 elimination of 2-bromobutane over substitution?",
+      "options": {
+        "A": "NaI in acetone at room temperature",
+        "B": "Water at room temperature",
+        "C": "Potassium tert-butoxide in tert-butanol, heated",
+        "D": "NaCN in DMSO"
+      },
+      "answer": "C",
+      "explanation": "A strong, bulky base removes a β-H readily but is too hindered to act as a nucleophile at carbon, and heat favours elimination. Options A and D use good nucleophiles that are weak bases, which favour SN2. Water (B) is a weak nucleophile and base, giving slow SN1/E1."
+    },
+    {
+      "prompt": "Ethanal (CH₃CHO) is treated with NaBH₄ and then dilute acid. What is formed and by what type of mechanism?",
+      "options": {
+        "A": "Ethanol, by nucleophilic addition of hydride to the carbonyl carbon",
+        "B": "Ethanoic acid, by oxidation",
+        "C": "Ethanol, by electrophilic addition of H⁺ to the C=O",
+        "D": "Propan-2-ol, by nucleophilic substitution"
+      },
+      "answer": "A",
+      "explanation": "Hydride (H⁻) from NaBH₄ attacks the δ+ carbonyl carbon, forming an alkoxide, which acid protonates to give ethanol, a primary alcohol. Option C is tempting because acid is used, but the key bond-forming step is nucleophilic attack by hydride, not electrophilic addition."
+    },
+    {
+      "prompt": "(S)-2-iodobutane reacts with NaOH under SN2 conditions. What is the configuration of the butan-2-ol formed?",
+      "options": {
+        "A": "(S), because SN2 retains configuration",
+        "B": "A racemic mixture, because the intermediate is planar",
+        "C": "No stereocentre is present in the product",
+        "D": "(R), because backside attack inverts the stereocentre and the priority pattern is unchanged"
+      },
+      "answer": "D",
+      "explanation": "SN2 inverts the stereocentre. OH replaces I as the highest-priority group (O outranks C), so priorities 1–4 keep the same positions in the ranking and the inversion changes S to R. Option B describes SN1. C2 in butan-2-ol is still a stereocentre, so C is wrong."
+    }
+  ]
+}
