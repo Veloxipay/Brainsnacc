@@ -27,7 +27,7 @@ def font(weight, size):
 
 BG = (247, 248, 251); INK = (20, 27, 45); MUTED = (95, 106, 125); NAVY = (17, 24, 39)
 WHITE = (255, 255, 255); LINE = (222, 227, 236); RED = (200, 60, 52); GREEN = (40, 140, 80)
-SUBJECT = {'chemistry': ((36, 86, 199), (232, 238, 251)), 'biology': ((180, 84, 10), (251, 238, 227)), 'maths': ((91, 62, 214), (240, 236, 254))}
+SUBJECT = {'chemistry': ((36, 86, 199), (232, 238, 251)), 'biology': ((180, 84, 10), (251, 238, 227)), 'maths': ((91, 62, 214), (240, 236, 254)), 'selective': ((15, 138, 126), (227, 245, 242))}
 
 def ease(t): t = max(0.0, min(1.0, t)); return t * t * (3 - 2 * t)
 
@@ -404,7 +404,7 @@ def render(script_path, stills=False):
     total = sum(1 for _ in sc['scenes'])
     for i, scene in enumerate(sc['scenes']):
         fn = SCENES[scene['type']]
-        if subject == 'maths' and scene['type'] == 'example':
+        if subject in ('maths', 'selective') and scene['type'] == 'example':
             fn = s_board
         wav, dur = tts(spoken(scene.get('say_as', scene['say'])))
         T = dur + 0.9

@@ -150,3 +150,51 @@ web = D.save(s, 'y7/maths/angles-and-parallel-lines-q3')   # → 'diagrams/y7/ma
 - Maths notation: Unicode (x², 10⁻³, √50, ½, π, ×, ÷, −, ≈, °). Write inequalities in words where possible. No HTML, no LaTeX.
 - When a question contains a linear equation in one unknown, write it plainly (e.g. "Solve 2(3x − 4) = 10.") — the app offers to work it line by line in the tutor.
 - Check every number by calculating it in Python, including wrong options and worked examples.
+
+## Year 7 Maths · Advanced (selective / accelerated stream)
+
+Same rules as the Maths section above (headings, 12 questions 3/3/3/3, steps, mistakes, diagrams for visual topics), with `"unit": "Year 7 Advanced"` and files in `database/content/y7/maths-advanced/`. Who it's for: a strong Year 7 student in a selective or accelerated class who has already done the normal Year 7 lesson on this topic. So:
+
+- "Before you start" names the normal Year 7 lesson(s) it builds on.
+- Go deeper, not just bigger numbers: multi-step problems, "explain why", unfamiliar contexts, working backwards, some Year 8 ideas (e.g. circles, trapeziums, inequalities, expanding and factorising, recurring decimals as fractions).
+- Questions lean harder: easy here ≈ a normal Year 7 medium.
+- Tests ("Advanced N · Test 1/2"): 15 questions — 2 easy, 5 medium, 5 hard, 3 challenge; each lesson of the chapter tested; the two tests use different questions.
+
+## Selective entry exam prep (Victoria)
+
+For Year 7 students preparing early for the Victorian selective entry high school test (sat in Year 8 for Year 9 entry). The real test has five sections: Mathematics, Quantitative reasoning, Verbal reasoning, Reading comprehension (multiple choice, about 30 minutes each) and Written expression. Write everything yourself — **never copy or closely imitate questions from any past paper, Edutest, ACER or commercial practice book**. Files: `database/content/y7/selective/`, `"level": "Year 7"`, `"subject": "selective"`, `"unit": "Selective"`. Australian spelling. Check with `python3 database/content/check_maths.py <file>` (it handles these too).
+
+### Lessons
+
+Each lesson teaches one question type and how to beat it. 700–1,800 words, these `##` sections in order:
+
+1. A 2–3 sentence opening (no heading): what this question type looks like and why it's in the test.
+2. `## What you will learn`
+3. `## How these questions work` — the usual shapes of the question, with a small example of each.
+4. `## Strategies` — numbered, step-by-step methods (e.g. "Find the relationship in the first pair, say it as a sentence, then test it on each option").
+5. `## Worked examples` — at least 3, `### Example 1`…, easy → hard, each with the question, the thinking in numbered steps, the answer, and why the tempting wrong option is wrong.
+6. `## Common traps`
+7. `## Tips to remember`
+8. `## Key terms`
+9. `## Summary`
+
+12 questions in the test style, 3 easy / 3 medium / 3 hard / 3 challenge, with `steps` (the reasoning) and `mistakes` (which trap gives each wrong option). The "How the selective maths test works", "What quantitative/verbal reasoning tests" and "Reading test strategies" lessons explain the section (timing, pacing, guessing, skipping) and still use this format.
+
+- **Mathematics**: problem-solving maths up to about Year 8 level, worded and multi-step, no calculator. Diagrams for geometry/measurement/data (see Diagrams).
+- **Quantitative reasoning**: number sequences, number grids, symbol/operation puzzles, comparing quantities, shape patterns, quick table/graph reading. Use diagrams for grids and shape patterns (`D.svg`, `D.poly`, `D.text`; a number grid can also be a Markdown table in the prompt).
+- **Verbal reasoning**: analogies, odd one out, synonyms/antonyms, letter series and codes, hidden words, logical deduction. Use everyday vocabulary a strong 12–13 year old could know; one clearly best answer.
+- **Reading comprehension**: lesson examples use short original passages written by you (fiction, non-fiction, a poem, a simple visual text described in words). In lesson questions, put a short passage (up to ~150 words) in the prompt itself (max 1,200 characters).
+- **Written expression**: how the writing task is marked, planning, creative and persuasive writing, vocabulary and sentences, editing. Include short model paragraphs. Questions are multiple choice about craft (which opening is strongest, which sentence fixes the error, which plan fits the prompt). "Writing practice prompts" gives 8 original prompts (4 creative, 4 persuasive) with a planning checklist and one full model response.
+
+### Practice tests (`kind` = test, 30 minutes)
+
+Titles like "Mathematics · Test 2". Real-test size and mix (the checker enforces it):
+
+| Section | Questions | easy / medium / hard / challenge |
+|---|---|---|
+| Mathematics | 30 | 6 / 10 / 10 / 4 |
+| Quantitative reasoning | 35 | 7 / 12 / 11 / 5 |
+| Verbal reasoning | 40 | 8 / 14 / 12 / 6 |
+| Reading comprehension | 30 | 6 / 10 / 10 / 4 |
+
+Each question's `topic` = one of the section's lesson titles (from `chapter_lessons`), every listed lesson covered. The three tests in a section use different questions. Body for Mathematics/QR/VR tests: 60–150 words of instructions. **Reading tests**: the body holds the passages (900–1,700 words): 3–4 original texts, each headed `## Passage A — <title>` (include one poem), and every question names its passage ("In Passage B, the word 'brittle' means…").

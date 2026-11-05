@@ -14,6 +14,9 @@ LEVELS = ['easy', 'medium', 'hard', 'challenge']
 LESSON_HEADINGS = ['## Learning objective', '## Before you start', '## Think of it like this', '## Key ideas',
                    '## Worked examples', '## Common mistakes', '## Tips to remember', '## Key terms', '## Summary']
 REVIEW_HEADINGS = ['## How to use this', '## Topics covered', '## Short-answer questions', '## Worked solutions']
+# Selective entry prep lessons teach a question type and how to beat it.
+SELECTIVE_HEADINGS = ['## What you will learn', '## How these questions work', '## Strategies', '## Worked examples',
+                      '## Common traps', '## Tips to remember', '## Key terms', '## Summary']
 
 # Topics that are hard to learn without pictures: lessons need diagrams in the notes, questions and video.
 VISUAL_CHAPTERS = ['geometry', 'measurement', 'pythagoras', 'angle', 'transformations', 'linear relationships', 'statistics',
@@ -41,7 +44,7 @@ def check_diagram(path_web, alt, where):
     return p
 
 
-def check_question(q, i, need_topic, topics):
+def check_question(q, i, need_topic, topics, max_prompt=600):
     p = []
     tag = f'question {i + 1}'
     for k in ('difficulty', 'prompt', 'options', 'answer', 'explanation', 'steps', 'mistakes'):
@@ -67,7 +70,7 @@ def check_question(q, i, need_topic, topics):
         p.append(f'{tag}: each mistake note must say which step goes wrong and how to fix it')
     if q.get('diagram'):
         p += check_diagram(q['diagram'], q.get('diagram_alt'), tag)
-    if len(q['prompt']) > 600:
+    if len(q['prompt']) > max_prompt:
         p.append(f'{tag}: prompt too long')
     if need_topic:
         if q.get('topic') not in topics:
@@ -85,7 +88,8 @@ def check(path, manifest):
     entry = next((m for m in manifest if m['path'] == rel or path.endswith(m['path'])), None)
     if not entry:
         return [f'this path is not in the manifest — check the file name ({rel})']
-    for k, v in (('level', entry['year']), ('subject', 'maths'), ('unit', entry['year']), ('title', entry['title'])):
+    selective = entry.get('subject', 'maths') == 'selective'
+    for k, v in (('level', entry['year']), ('subject', entry.get('subject', 'maths')), ('unit', entry.get('unit', entry['year'])), ('title', entry['title'])):
         if d.get(k) != v:
             p.append(f'"{k}" must be exactly {v!r} (got {d.get(k)!r})')
     if not d.get('summary') or len(d['summary']) > 250:
@@ -102,9 +106,12 @@ def check(path, manifest):
     if is_test:
         if d.get('kind') != 'test':
             p.append('"kind" must be "test"')
-        counts = {'easy': 4, 'medium': 5, 'hard': 4, 'challenge': 2}
-        need = 15
+        counts = entry.get('counts', {'easy': 4, 'medium': 5, 'hard': 4, 'challenge': 2})
+        need = sum(counts.values())
         topics = entry['chapter_lessons']
+        lo, hi = entry.get('test_body_words', (60, 150))
+        if not lo <= len(body.split()) <= hi:
+            p.append(f'test body has {len(body.split())} words; aim for {lo}–{hi}')
     else:
         if d.get('kind', 'lesson') != 'lesson':
             p.append('"kind" must be "lesson" or left out')
@@ -112,7 +119,7 @@ def check(path, manifest):
         need = 20 if review else 12
         topics = []
         words = len(body.split())
-        heads = REVIEW_HEADINGS if review else (['## Tips to remember', '## Summary'] if summary_lesson else LESSON_HEADINGS)
+        heads = REVIEW_HEADINGS if review else (['## Tips to remember', '## Summary'] if summary_lesson else (SELECTIVE_HEADINGS if selective else LESSON_HEADINGS))
         for h in heads:
             if not re.search('^' + re.escape(h), body, re.M):
                 p.append(f'body is missing the section "{h}"')
@@ -128,7 +135,7 @@ def check(path, manifest):
     for alt, src in images:
         p += check_diagram(src, alt, 'body image')
     with_diagram = sum(1 for q in qs if q.get('diagram'))
-    if is_visual(entry) and not review and not summary_lesson:
+    if not selective and is_visual(entry) and not review and not summary_lesson:
         if is_test and with_diagram < 5:
             p.append(f'this is a visual topic: at least 5 test questions need a diagram (has {with_diagram})')
         if not is_test and len(images) < 2:
@@ -141,7 +148,7 @@ def check(path, manifest):
     if have != counts:
         p.append(f'question levels must be {counts} (have {have})')
     for i, q in enumerate(qs):
-        p += check_question(q, i, is_test, topics)
+        p += check_question(q, i, is_test, topics, 1200 if selective else 600)
     letters = [q.get('answer') for q in qs]
     for L in 'ABCD':
         if letters.count(L) < max(1, need // 6):
