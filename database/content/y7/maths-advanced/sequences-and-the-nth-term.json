@@ -1,275 +1,276 @@
 {
-  "level": "Year 7",
-  "subject": "maths",
-  "unit": "Year 7 Advanced",
-  "title": "Sequences and the nth term",
-  "summary": "Find and use the nth term of increasing and decreasing arithmetic sequences, test whether a number is a term, and recognise geometric and square-number sequences.",
-  "minutes": 30,
-  "body": "A **sequence** is a list of numbers that follows a rule — like the seats in each row of a theatre, the cost of a phone plan month by month, or the number of tiles in a growing pattern. In Year 7 you found position rules for patterns. Now you will write them in algebra as the **nth term**, use them to jump straight to any term, decide whether a number belongs to a sequence, and meet sequences that multiply instead of add.\n\n## Learning objective\n\nBy the end of this lesson you can find and use the nth term of an arithmetic sequence (increasing or decreasing), test whether a number is a term, solve problems with growing patterns, and recognise geometric and square-number sequences.\n\n## Before you start\n\nThis builds on **Number patterns and rules (Year 7)** and **Substitution (Year 7)**.\n\nWarm-up (answers below):\n\n1. Write the first three terms of the rule \"3 × position + 2\".\n2. Work out 4n − 3 when n = 5.\n\nAnswers: 1. 5, 8, 11  2. 17\n\n## Think of it like this\n\n### A taxi meter\n\nA taxi charges a fixed amount to get in, then the same amount for every kilometre. The fare after n kilometres is (cost per km) × n + (a starting amount). An arithmetic sequence works the same way: the **common difference** is the cost per kilometre, and the nth term formula tells you the fare for any trip without adding kilometre by kilometre.\n\n*Where the analogy breaks down:* a taxi's flag fall is the fare at 0 km, but in a sequence the constant in the formula is the \"zeroth term\" — the number *before* the first term, which is not in the list at all.\n\n## Key ideas\n\n### Arithmetic sequences and the nth term\n\nAn **arithmetic sequence** goes up or down by the same amount each time — the **common difference** (d). We write Tₙ for the **nth term**, the term in position n.\n\nFor 7, 11, 15, 19, …: d = 4. Every step adds 4, so the rule starts with 4n. Compare: when n = 1, 4n = 4, but T₁ = 7 — we need to add 3. So **Tₙ = 4n + 3**.\n\nA quick way to find the constant: go **one step backwards** from the first term. 7 − 4 = 3 (the \"zeroth term\"). So:\n\n**Tₙ = d × n + (first term − d)**\n\n### Decreasing sequences\n\nIf the sequence goes down, d is negative. For 60, 54, 48, …: d = −6 and the zeroth term is 60 + 6 = 66, so Tₙ = 66 − 6n. Check: T₁ = 66 − 6 = 60 ✓.\n\n### Finding the position, and \"is it a term?\"\n\nSet the rule equal to the value and solve (a Year 8 skill). For Tₙ = 7n − 2:\n\n- Is 166 a term? 7n − 2 = 166, so 7n = 168, n = 24. Yes, it is T₂₄.\n- Is 150 a term? 7n − 2 = 150, so 7n = 152, n = 21.7…, not a whole number. **No.**\n\nA position must be a positive whole number.\n\n### Growing patterns\n\nMatchstick squares in a row use 4, 7, 10, … matches: the first square needs 4, and each new square shares a side, so adds 3. Tₙ = 3n + 1. Thinking about *why* the rule works (1 starting match, then 3 per square) helps you check it.\n\n### Other sequences\n\n- **Geometric sequence:** multiply by the same number (the **common ratio**) each time: 3, 6, 12, 24, … (× 2). Tₙ = 3 × 2ⁿ⁻¹, so T₁₀ = 3 × 2⁹ = 1536. These grow much faster than arithmetic sequences.\n- **Square numbers:** 1, 4, 9, 16, 25, … have Tₙ = n². The differences (3, 5, 7, 9, …) are not constant, so it is not arithmetic. Related sequences such as n² + 1 (2, 5, 10, 17, …) shift every term.\n\nAlways test: same difference → arithmetic; same ratio → geometric; differences going up by 2 → think of n².\n\n## Worked examples\n\n### Example 1\n\nFind the nth term of 7, 11, 15, 19, … and use it to find T₅₀.\n\nStep 1: common difference d = 11 − 7 = 4 — so the rule starts with 4n.\nStep 2: zeroth term: 7 − 4 = 3 — one step back from T₁.\nStep 3: Tₙ = 4n + 3.\nStep 4: T₅₀ = 4 × 50 + 3 = **203**.\n\nCheck: T₁ = 4 + 3 = 7 ✓\n\n### Example 2\n\nThe sequence 5, 12, 19, … has Tₙ = 7n − 2. Is 150 a term? Is 166?\n\nStep 1: set 7n − 2 = 150, so 7n = 152 — add 2 to both sides.\nStep 2: 152 ÷ 7 = 21.7…, not whole, so **150 is not a term**.\nStep 3: set 7n − 2 = 166, so 7n = 168, n = 24 — a whole number, so **166 is the 24th term**.\n\n### Example 3\n\nThe sequence 60, 54, 48, … keeps going. What is the first negative term?\n\nStep 1: d = −6 and the zeroth term is 60 + 6 = 66, so Tₙ = 66 − 6n.\nStep 2: T₁₁ = 66 − 66 = 0, which is not negative — zero is neither positive nor negative.\nStep 3: T₁₂ = 66 − 72 = **−6**, the first negative term.\n\n### Example 4\n\nSquares made of matchsticks in a row use 4, 7, 10, … matches. How many squares can you make with exactly 100 matches?\n\nStep 1: d = 3 and the zeroth term is 4 − 3 = 1, so Tₙ = 3n + 1.\nStep 2: 3n + 1 = 100, so 3n = 99 — subtract 1.\nStep 3: n = **33 squares**.\n\nCheck: 3 × 33 + 1 = 100 ✓\n\n## Common mistakes\n\n- **Using the first term as the constant.** For 7, 11, 15, … the rule is not 4n + 7. Fix: the constant is the term *before* the first one (7 − 4 = 3); always check T₁.\n- **Swapping d and the constant.** \"Add 4 each time, starting at 7\" is not n + 4. Fix: the difference multiplies n.\n- **Getting the sign wrong in decreasing sequences.** Fix: if it goes down, the n part is subtracted (66 − 6n), and the zeroth term is *bigger* than T₁.\n- **Accepting a non-whole position.** If n is a decimal, the number is not in the sequence.\n- **Giving the position when the value is asked (or the reverse).** Fix: n is *where* a term is; Tₙ is *what* it is.\n\n## Tips to remember\n\n- **\"Difference times n, then step back to zero.\"** (A made-up memory trick.) Multiply n by the difference, then use the term before T₁ as the constant.\n- **The taxi meter:** cost per km × distance + starting amount.\n- **Always test T₁ and T₂** in your rule before using it.\n- **\"Is it a term?\" → solve, then ask \"is n a whole number?\"**\n- **Adding → arithmetic (steady), multiplying → geometric (explodes).**\n\n## Key terms\n\n- **Sequence** — an ordered list of numbers that follows a rule.\n- **Term** — one number in a sequence; Tₙ is the term in position n.\n- **nth term** — a formula that gives any term from its position n.\n- **Arithmetic sequence** — a sequence with a common difference between terms.\n- **Common difference** — the amount added each time (negative if the sequence decreases).\n- **Geometric sequence** — a sequence where each term is multiplied by the same number, the **common ratio**.\n\n## Summary\n\n- Arithmetic sequence: Tₙ = d × n + (first term − d).\n- Check your rule with T₁ and T₂.\n- Decreasing sequences have a negative difference: Tₙ = 66 − 6n.\n- To test a number, solve Tₙ = number; it is a term only if n is a positive whole number.\n- Geometric sequences multiply by a common ratio; square numbers follow n².\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "Find the nth term of the sequence 5, 8, 11, 14, …",
-      "options": {
-        "A": "Tₙ = 3n + 5",
-        "B": "Tₙ = n + 3",
-        "C": "Tₙ = 2n + 3",
-        "D": "Tₙ = 3n + 2"
-      },
-      "answer": "D",
-      "explanation": "d = 3, and the zeroth term is 5 − 3 = 2, so Tₙ = 3n + 2 (check T₁ = 5 ✓). 3n + 5 uses the first term as the constant, which gives T₁ = 8.",
-      "steps": [
-        "Common difference: 8 − 5 = 3, so the rule starts with 3n.",
-        "Zeroth term: one step back from 5 is 5 − 3 = 2.",
-        "Tₙ = 3n + 2 (check: T₁ = 3 + 2 = 5 ✓)."
-      ],
-      "mistakes": {
-        "A": "Step 2: the constant is the term BEFORE the first one (5 − 3), not the first term.",
-        "B": "Step 1: the difference multiplies n — the rule starts with 3n, not n.",
-        "C": "Step 1: the difference is 3, not 2. Check T₂: 2 × 2 + 3 = 7, not 8."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "A sequence has nth term Tₙ = 6n − 4. Find T₂₀.",
-      "options": {
-        "A": "124",
-        "B": "116",
-        "C": "616",
-        "D": "96"
-      },
-      "answer": "B",
-      "explanation": "Substitute n = 20: 6 × 20 − 4 = 120 − 4 = 116. 616 comes from writing 6n as \"620\".",
-      "steps": [
-        "Replace n with 20: T₂₀ = 6 × 20 − 4.",
-        "6 × 20 = 120 (6n means 6 × n).",
-        "120 − 4 = 116."
-      ],
-      "mistakes": {
-        "A": "Step 3: the rule subtracts 4, it does not add it.",
-        "C": "Step 2: 6n means 6 × n, not the digits 6 and 20 side by side.",
-        "D": "Step 2: multiply first, then subtract — 6 × 20 − 4 is not 6 × (20 − 4)."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Write the next two terms of 3, 12, 48, …",
-      "options": {
-        "A": "84, 120",
-        "B": "96, 192",
-        "C": "192, 768",
-        "D": "57, 66"
-      },
-      "answer": "C",
-      "explanation": "Each term is multiplied by 4 (common ratio 4): 48 × 4 = 192 and 192 × 4 = 768. 84, 120 wrongly assumes it keeps adding 36.",
-      "steps": [
-        "Check for a common difference: 12 − 3 = 9 but 48 − 12 = 36 — not the same, so not arithmetic.",
-        "Check for a common ratio: 12 ÷ 3 = 4 and 48 ÷ 12 = 4, so multiply by 4.",
-        "48 × 4 = 192 and 192 × 4 = 768."
-      ],
-      "mistakes": {
-        "A": "Step 1: the differences are not constant, so you cannot keep adding 36. Look for a ratio.",
-        "B": "Step 2: the ratio is 4 (12 ÷ 3), not 2.",
-        "D": "Step 1: the differences are 9 then 36, so adding 9 each time doesn't fit."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Which term of the sequence Tₙ = 4n + 9 is equal to 101?",
-      "options": {
-        "A": "the 23rd term",
-        "B": "the 413th term",
-        "C": "the 27.5th term",
-        "D": "the 92nd term"
-      },
-      "answer": "A",
-      "explanation": "Solve 4n + 9 = 101: 4n = 92, so n = 23. 413 comes from substituting 101 as n instead of setting the rule equal to 101.",
-      "steps": [
-        "Set the rule equal to the value: 4n + 9 = 101.",
-        "Subtract 9 from both sides: 4n = 92.",
-        "Divide by 4: n = 23, so it is the 23rd term."
-      ],
-      "mistakes": {
-        "B": "Step 1: 101 is the VALUE of the term, not n. Set 4n + 9 = 101 and solve.",
-        "C": "Step 2: undo + 9 by subtracting 9, not adding it. (A position can't be 27.5 anyway.)",
-        "D": "Step 3: 4n = 92, so you still need to divide by 4."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Find the nth term of 50, 47, 44, 41, …",
-      "options": {
-        "A": "Tₙ = 50 − 3n",
-        "B": "Tₙ = 3n + 47",
-        "C": "Tₙ = 53 − 3n",
-        "D": "Tₙ = 47 − 3n"
-      },
-      "answer": "C",
-      "explanation": "d = −3, and the zeroth term is 50 + 3 = 53, so Tₙ = 53 − 3n (T₁ = 50 ✓). 50 − 3n gives T₁ = 47.",
-      "steps": [
-        "The sequence goes down by 3, so d = −3 and the rule has − 3n.",
-        "Zeroth term: one step back from 50 is 50 + 3 = 53.",
-        "Tₙ = 53 − 3n (check: T₁ = 53 − 3 = 50 ✓)."
-      ],
-      "mistakes": {
-        "A": "Step 2: the constant is the term before T₁, which is 50 + 3, not 50. Check: your rule gives T₁ = 47.",
-        "B": "Step 1: the sequence decreases, so the n part must be subtracted.",
-        "D": "Step 2: going one step BACK from a decreasing sequence makes the number bigger (50 + 3), not smaller."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Is 200 a term of the sequence 7, 13, 19, 25, …?",
-      "options": {
-        "A": "Yes, it is the 33rd term",
-        "B": "No, because 6n + 1 = 200 gives n ≈ 33.17, which is not a whole number",
-        "C": "Yes, it is the 34th term",
-        "D": "Yes, because 200 is even"
-      },
-      "answer": "B",
-      "explanation": "Tₙ = 6n + 1. Solving 6n + 1 = 200 gives 6n = 199, n ≈ 33.17 — not whole, so 200 is not a term. T₃₃ = 199 and T₃₄ = 205.",
-      "steps": [
-        "d = 6, zeroth term 7 − 6 = 1, so Tₙ = 6n + 1.",
-        "Set 6n + 1 = 200: 6n = 199, n = 199 ÷ 6 ≈ 33.17.",
-        "n is not a whole number, so 200 is not a term."
-      ],
-      "mistakes": {
-        "A": "Step 3: T₃₃ = 6 × 33 + 1 = 199, not 200 — you rounded n.",
-        "C": "Step 3: T₃₄ = 6 × 34 + 1 = 205, not 200 — you rounded n up.",
-        "D": "Step 1: every term here is odd (6n is even, plus 1), so being even actually rules it out."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Triangles are made from matchsticks in a row, sharing sides. 1 triangle uses 3 matches, 2 triangles use 5, and 3 triangles use 7. How many triangles can be made with exactly 85 matches?",
-      "options": {
-        "A": "28",
-        "B": "43",
-        "C": "42",
-        "D": "171"
-      },
-      "answer": "C",
-      "explanation": "Tₙ = 2n + 1 (1 starting match, then 2 per triangle). 2n + 1 = 85 gives n = 42. 28 treats every triangle as using 3 separate matches.",
-      "steps": [
-        "d = 2 and the zeroth term is 3 − 2 = 1, so matches = 2n + 1.",
-        "Set 2n + 1 = 85: 2n = 84.",
-        "n = 42 triangles (check: 2 × 42 + 1 = 85 ✓)."
-      ],
-      "mistakes": {
-        "A": "Step 1: the triangles share sides, so each new one only needs 2 more matches, not 3.",
-        "B": "Step 2: subtract the 1 starting match before halving: 85 ÷ 2 rounded up ignores it.",
-        "D": "Step 2: 85 is the number of matches (the term value), not n. Solve 2n + 1 = 85."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Sequence A is 3, 8, 13, … and sequence B is 75, 71, 67, … In which position do the two sequences have the same value?",
-      "options": {
-        "A": "43",
-        "B": "81",
-        "C": "77",
-        "D": "9"
-      },
-      "answer": "D",
-      "explanation": "A: Tₙ = 5n − 2. B: Tₙ = 79 − 4n. Set equal: 5n − 2 = 79 − 4n, so 9n = 81 and n = 9 (both are 43 there). 43 is the value, not the position.",
-      "steps": [
-        "A: d = 5, zeroth term −2, so Tₙ = 5n − 2. B: d = −4, zeroth term 79, so Tₙ = 79 − 4n.",
-        "Set them equal: 5n − 2 = 79 − 4n. Add 4n and 2 to both sides: 9n = 81.",
-        "n = 9 (check: A₉ = 43 and B₉ = 43 ✓), so position 9."
-      ],
-      "mistakes": {
-        "A": "Step 3: 43 is the value the two sequences share, not its position.",
-        "B": "Step 2: 9n = 81, so you still need to divide by 9.",
-        "C": "Step 2: adding 4n to both sides gives 9n, not n. Then add 2: 9n = 81."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The sequence 120, 113, 106, … continues. What is its first negative term?",
-      "options": {
-        "A": "−6",
-        "B": "1",
-        "C": "19",
-        "D": "−7"
-      },
-      "answer": "A",
-      "explanation": "Tₙ = 127 − 7n. T₁₈ = 1 (still positive) and T₁₉ = 127 − 133 = −6, the first negative term. 1 is the last positive term.",
-      "steps": [
-        "d = −7, zeroth term 120 + 7 = 127, so Tₙ = 127 − 7n.",
-        "Find where it crosses 0: 127 ÷ 7 ≈ 18.1, so T₁₈ = 1 and T₁₉ is next.",
-        "T₁₉ = 127 − 133 = −6."
-      ],
-      "mistakes": {
-        "B": "Step 2: 1 is the last POSITIVE term — take one more step.",
-        "C": "Step 3: 19 is the position of the term — the question asks for its value.",
-        "D": "Step 3: the terms are not multiples of 7 — subtract 7 from the last positive term, 1."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In the sequence 5, 10, 20, 40, …, what is the first term greater than 1000?",
-      "options": {
-        "A": "640",
-        "B": "2560",
-        "C": "1024",
-        "D": "1280"
-      },
-      "answer": "D",
-      "explanation": "Each term doubles: 5, 10, 20, 40, 80, 160, 320, 640, 1280, … The first term above 1000 is 1280. 1024 is a power of 2, but the sequence starts at 5, not 1.",
-      "steps": [
-        "The common ratio is 2, so Tₙ = 5 × 2ⁿ⁻¹.",
-        "Keep doubling: 80, 160, 320, 640, 1280.",
-        "640 is under 1000, so the first term over 1000 is 1280."
-      ],
-      "mistakes": {
-        "A": "Step 3: 640 is still less than 1000 — double once more.",
-        "B": "Step 3: 2560 is over 1000, but 1280 comes before it.",
-        "C": "Step 1: 1024 = 2¹⁰ belongs to 1, 2, 4, 8, … — this sequence starts at 5."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Find the 20th term of the sequence 2, 5, 10, 17, 26, …",
-      "options": {
-        "A": "400",
-        "B": "401",
-        "C": "441",
-        "D": "59"
-      },
-      "answer": "B",
-      "explanation": "Each term is one more than a square number: Tₙ = n² + 1. T₂₀ = 400 + 1 = 401. 59 wrongly assumes the difference stays at 3.",
-      "steps": [
-        "The differences are 3, 5, 7, 9 — they grow by 2, so think of square numbers.",
-        "Compare with 1, 4, 9, 16, 25: each term is one more, so Tₙ = n² + 1.",
-        "T₂₀ = 20² + 1 = 400 + 1 = 401."
-      ],
-      "mistakes": {
-        "A": "Step 3: you forgot to add the 1 — each term is ONE MORE than a square.",
-        "C": "Step 2: 441 = 21². Check T₁: the rule is n² + 1, which gives 2 ✓.",
-        "D": "Step 1: the differences are not constant, so you cannot keep adding 3."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "How many terms of the sequence Tₙ = 4n + 1 lie between 100 and 200?",
-      "options": {
-        "A": "24",
-        "B": "100",
-        "C": "26",
-        "D": "25"
-      },
-      "answer": "D",
-      "explanation": "The first term over 100 is T₂₅ = 101 and the last under 200 is T₄₉ = 197. From n = 25 to n = 49 is 49 − 25 + 1 = 25 terms. 24 forgets to count both ends.",
-      "steps": [
-        "First term over 100: 4n + 1 = 101 when n = 25.",
-        "Last term under 200: T₄₉ = 197 (T₅₀ = 201 is too big).",
-        "Positions 25 to 49 inclusive: 49 − 25 + 1 = 25 terms."
-      ],
-      "mistakes": {
-        "A": "Step 3: 49 − 25 counts the gaps; add 1 to include both ends.",
-        "B": "Step 1: 200 − 100 counts every whole number — but the terms go up in 4s.",
-        "C": "Step 2: T₅₀ = 201 is more than 200, so stop at T₄₉."
-      }
-    }
-  ]
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7 Advanced",
+ "title": "Sequences and the nth term",
+ "summary": "Find and use the nth term of increasing and decreasing arithmetic sequences, test whether a number is a term, and recognise geometric and square-number sequences.",
+ "minutes": 30,
+ "video": "videos/y7/maths-advanced/sequences-and-the-nth-term.mp4",
+ "body": "A **sequence** is a list of numbers that follows a rule — like the seats in each row of a theatre, the cost of a phone plan month by month, or the number of tiles in a growing pattern. In Year 7 you found position rules for patterns. Now you will write them in algebra as the **nth term**, use them to jump straight to any term, decide whether a number belongs to a sequence, and meet sequences that multiply instead of add.\n\n## Learning objective\n\nBy the end of this lesson you can find and use the nth term of an arithmetic sequence (increasing or decreasing), test whether a number is a term, solve problems with growing patterns, and recognise geometric and square-number sequences.\n\n## Before you start\n\nThis builds on **Number patterns and rules (Year 7)** and **Substitution (Year 7)**.\n\nWarm-up (answers below):\n\n1. Write the first three terms of the rule \"3 × position + 2\".\n2. Work out 4n − 3 when n = 5.\n\nAnswers: 1. 5, 8, 11  2. 17\n\n## Think of it like this\n\n### A taxi meter\n\nA taxi charges a fixed amount to get in, then the same amount for every kilometre. The fare after n kilometres is (cost per km) × n + (a starting amount). An arithmetic sequence works the same way: the **common difference** is the cost per kilometre, and the nth term formula tells you the fare for any trip without adding kilometre by kilometre.\n\n*Where the analogy breaks down:* a taxi's flag fall is the fare at 0 km, but in a sequence the constant in the formula is the \"zeroth term\" — the number *before* the first term, which is not in the list at all.\n\n## Key ideas\n\n### Arithmetic sequences and the nth term\n\nAn **arithmetic sequence** goes up or down by the same amount each time — the **common difference** (d). We write Tₙ for the **nth term**, the term in position n.\n\nFor 7, 11, 15, 19, …: d = 4. Every step adds 4, so the rule starts with 4n. Compare: when n = 1, 4n = 4, but T₁ = 7 — we need to add 3. So **Tₙ = 4n + 3**.\n\nA quick way to find the constant: go **one step backwards** from the first term. 7 − 4 = 3 (the \"zeroth term\"). So:\n\n**Tₙ = d × n + (first term − d)**\n\n### Decreasing sequences\n\nIf the sequence goes down, d is negative. For 60, 54, 48, …: d = −6 and the zeroth term is 60 + 6 = 66, so Tₙ = 66 − 6n. Check: T₁ = 66 − 6 = 60 ✓.\n\n### Finding the position, and \"is it a term?\"\n\nSet the rule equal to the value and solve (a Year 8 skill). For Tₙ = 7n − 2:\n\n- Is 166 a term? 7n − 2 = 166, so 7n = 168, n = 24. Yes, it is T₂₄.\n- Is 150 a term? 7n − 2 = 150, so 7n = 152, n = 21.7…, not a whole number. **No.**\n\nA position must be a positive whole number.\n\n### Growing patterns\n\nMatchstick squares in a row use 4, 7, 10, … matches: the first square needs 4, and each new square shares a side, so adds 3. Tₙ = 3n + 1. Thinking about *why* the rule works (1 starting match, then 3 per square) helps you check it.\n\n### Other sequences\n\n- **Geometric sequence:** multiply by the same number (the **common ratio**) each time: 3, 6, 12, 24, … (× 2). Tₙ = 3 × 2ⁿ⁻¹, so T₁₀ = 3 × 2⁹ = 1536. These grow much faster than arithmetic sequences.\n- **Square numbers:** 1, 4, 9, 16, 25, … have Tₙ = n². The differences (3, 5, 7, 9, …) are not constant, so it is not arithmetic. Related sequences such as n² + 1 (2, 5, 10, 17, …) shift every term.\n\nAlways test: same difference → arithmetic; same ratio → geometric; differences going up by 2 → think of n².\n\n## Worked examples\n\n### Example 1\n\nFind the nth term of 7, 11, 15, 19, … and use it to find T₅₀.\n\nStep 1: common difference d = 11 − 7 = 4 — so the rule starts with 4n.\nStep 2: zeroth term: 7 − 4 = 3 — one step back from T₁.\nStep 3: Tₙ = 4n + 3.\nStep 4: T₅₀ = 4 × 50 + 3 = **203**.\n\nCheck: T₁ = 4 + 3 = 7 ✓\n\n### Example 2\n\nThe sequence 5, 12, 19, … has Tₙ = 7n − 2. Is 150 a term? Is 166?\n\nStep 1: set 7n − 2 = 150, so 7n = 152 — add 2 to both sides.\nStep 2: 152 ÷ 7 = 21.7…, not whole, so **150 is not a term**.\nStep 3: set 7n − 2 = 166, so 7n = 168, n = 24 — a whole number, so **166 is the 24th term**.\n\n### Example 3\n\nThe sequence 60, 54, 48, … keeps going. What is the first negative term?\n\nStep 1: d = −6 and the zeroth term is 60 + 6 = 66, so Tₙ = 66 − 6n.\nStep 2: T₁₁ = 66 − 66 = 0, which is not negative — zero is neither positive nor negative.\nStep 3: T₁₂ = 66 − 72 = **−6**, the first negative term.\n\n### Example 4\n\nSquares made of matchsticks in a row use 4, 7, 10, … matches. How many squares can you make with exactly 100 matches?\n\nStep 1: d = 3 and the zeroth term is 4 − 3 = 1, so Tₙ = 3n + 1.\nStep 2: 3n + 1 = 100, so 3n = 99 — subtract 1.\nStep 3: n = **33 squares**.\n\nCheck: 3 × 33 + 1 = 100 ✓\n\n## Common mistakes\n\n- **Using the first term as the constant.** For 7, 11, 15, … the rule is not 4n + 7. Fix: the constant is the term *before* the first one (7 − 4 = 3); always check T₁.\n- **Swapping d and the constant.** \"Add 4 each time, starting at 7\" is not n + 4. Fix: the difference multiplies n.\n- **Getting the sign wrong in decreasing sequences.** Fix: if it goes down, the n part is subtracted (66 − 6n), and the zeroth term is *bigger* than T₁.\n- **Accepting a non-whole position.** If n is a decimal, the number is not in the sequence.\n- **Giving the position when the value is asked (or the reverse).** Fix: n is *where* a term is; Tₙ is *what* it is.\n\n## Tips to remember\n\n- **\"Difference times n, then step back to zero.\"** (A made-up memory trick.) Multiply n by the difference, then use the term before T₁ as the constant.\n- **The taxi meter:** cost per km × distance + starting amount.\n- **Always test T₁ and T₂** in your rule before using it.\n- **\"Is it a term?\" → solve, then ask \"is n a whole number?\"**\n- **Adding → arithmetic (steady), multiplying → geometric (explodes).**\n\n## Key terms\n\n- **Sequence** — an ordered list of numbers that follows a rule.\n- **Term** — one number in a sequence; Tₙ is the term in position n.\n- **nth term** — a formula that gives any term from its position n.\n- **Arithmetic sequence** — a sequence with a common difference between terms.\n- **Common difference** — the amount added each time (negative if the sequence decreases).\n- **Geometric sequence** — a sequence where each term is multiplied by the same number, the **common ratio**.\n\n## Summary\n\n- Arithmetic sequence: Tₙ = d × n + (first term − d).\n- Check your rule with T₁ and T₂.\n- Decreasing sequences have a negative difference: Tₙ = 66 − 6n.\n- To test a number, solve Tₙ = number; it is a term only if n is a positive whole number.\n- Geometric sequences multiply by a common ratio; square numbers follow n².\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Find the nth term of the sequence 5, 8, 11, 14, …",
+   "options": {
+    "A": "Tₙ = 3n + 5",
+    "B": "Tₙ = n + 3",
+    "C": "Tₙ = 2n + 3",
+    "D": "Tₙ = 3n + 2"
+   },
+   "answer": "D",
+   "explanation": "d = 3, and the zeroth term is 5 − 3 = 2, so Tₙ = 3n + 2 (check T₁ = 5 ✓). 3n + 5 uses the first term as the constant, which gives T₁ = 8.",
+   "steps": [
+    "Common difference: 8 − 5 = 3, so the rule starts with 3n.",
+    "Zeroth term: one step back from 5 is 5 − 3 = 2.",
+    "Tₙ = 3n + 2 (check: T₁ = 3 + 2 = 5 ✓)."
+   ],
+   "mistakes": {
+    "A": "Step 2: the constant is the term BEFORE the first one (5 − 3), not the first term.",
+    "B": "Step 1: the difference multiplies n — the rule starts with 3n, not n.",
+    "C": "Step 1: the difference is 3, not 2. Check T₂: 2 × 2 + 3 = 7, not 8."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A sequence has nth term Tₙ = 6n − 4. Find T₂₀.",
+   "options": {
+    "A": "124",
+    "B": "116",
+    "C": "616",
+    "D": "96"
+   },
+   "answer": "B",
+   "explanation": "Substitute n = 20: 6 × 20 − 4 = 120 − 4 = 116. 616 comes from writing 6n as \"620\".",
+   "steps": [
+    "Replace n with 20: T₂₀ = 6 × 20 − 4.",
+    "6 × 20 = 120 (6n means 6 × n).",
+    "120 − 4 = 116."
+   ],
+   "mistakes": {
+    "A": "Step 3: the rule subtracts 4, it does not add it.",
+    "C": "Step 2: 6n means 6 × n, not the digits 6 and 20 side by side.",
+    "D": "Step 2: multiply first, then subtract — 6 × 20 − 4 is not 6 × (20 − 4)."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Write the next two terms of 3, 12, 48, …",
+   "options": {
+    "A": "84, 120",
+    "B": "96, 192",
+    "C": "192, 768",
+    "D": "57, 66"
+   },
+   "answer": "C",
+   "explanation": "Each term is multiplied by 4 (common ratio 4): 48 × 4 = 192 and 192 × 4 = 768. 84, 120 wrongly assumes it keeps adding 36.",
+   "steps": [
+    "Check for a common difference: 12 − 3 = 9 but 48 − 12 = 36 — not the same, so not arithmetic.",
+    "Check for a common ratio: 12 ÷ 3 = 4 and 48 ÷ 12 = 4, so multiply by 4.",
+    "48 × 4 = 192 and 192 × 4 = 768."
+   ],
+   "mistakes": {
+    "A": "Step 1: the differences are not constant, so you cannot keep adding 36. Look for a ratio.",
+    "B": "Step 2: the ratio is 4 (12 ÷ 3), not 2.",
+    "D": "Step 1: the differences are 9 then 36, so adding 9 each time doesn't fit."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Which term of the sequence Tₙ = 4n + 9 is equal to 101?",
+   "options": {
+    "A": "the 23rd term",
+    "B": "the 413th term",
+    "C": "the 27.5th term",
+    "D": "the 92nd term"
+   },
+   "answer": "A",
+   "explanation": "Solve 4n + 9 = 101: 4n = 92, so n = 23. 413 comes from substituting 101 as n instead of setting the rule equal to 101.",
+   "steps": [
+    "Set the rule equal to the value: 4n + 9 = 101.",
+    "Subtract 9 from both sides: 4n = 92.",
+    "Divide by 4: n = 23, so it is the 23rd term."
+   ],
+   "mistakes": {
+    "B": "Step 1: 101 is the VALUE of the term, not n. Set 4n + 9 = 101 and solve.",
+    "C": "Step 2: undo + 9 by subtracting 9, not adding it. (A position can't be 27.5 anyway.)",
+    "D": "Step 3: 4n = 92, so you still need to divide by 4."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Find the nth term of 50, 47, 44, 41, …",
+   "options": {
+    "A": "Tₙ = 50 − 3n",
+    "B": "Tₙ = 3n + 47",
+    "C": "Tₙ = 53 − 3n",
+    "D": "Tₙ = 47 − 3n"
+   },
+   "answer": "C",
+   "explanation": "d = −3, and the zeroth term is 50 + 3 = 53, so Tₙ = 53 − 3n (T₁ = 50 ✓). 50 − 3n gives T₁ = 47.",
+   "steps": [
+    "The sequence goes down by 3, so d = −3 and the rule has − 3n.",
+    "Zeroth term: one step back from 50 is 50 + 3 = 53.",
+    "Tₙ = 53 − 3n (check: T₁ = 53 − 3 = 50 ✓)."
+   ],
+   "mistakes": {
+    "A": "Step 2: the constant is the term before T₁, which is 50 + 3, not 50. Check: your rule gives T₁ = 47.",
+    "B": "Step 1: the sequence decreases, so the n part must be subtracted.",
+    "D": "Step 2: going one step BACK from a decreasing sequence makes the number bigger (50 + 3), not smaller."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Is 200 a term of the sequence 7, 13, 19, 25, …?",
+   "options": {
+    "A": "Yes, it is the 33rd term",
+    "B": "No, because 6n + 1 = 200 gives n ≈ 33.17, which is not a whole number",
+    "C": "Yes, it is the 34th term",
+    "D": "Yes, because 200 is even"
+   },
+   "answer": "B",
+   "explanation": "Tₙ = 6n + 1. Solving 6n + 1 = 200 gives 6n = 199, n ≈ 33.17 — not whole, so 200 is not a term. T₃₃ = 199 and T₃₄ = 205.",
+   "steps": [
+    "d = 6, zeroth term 7 − 6 = 1, so Tₙ = 6n + 1.",
+    "Set 6n + 1 = 200: 6n = 199, n = 199 ÷ 6 ≈ 33.17.",
+    "n is not a whole number, so 200 is not a term."
+   ],
+   "mistakes": {
+    "A": "Step 3: T₃₃ = 6 × 33 + 1 = 199, not 200 — you rounded n.",
+    "C": "Step 3: T₃₄ = 6 × 34 + 1 = 205, not 200 — you rounded n up.",
+    "D": "Step 1: every term here is odd (6n is even, plus 1), so being even actually rules it out."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Triangles are made from matchsticks in a row, sharing sides. 1 triangle uses 3 matches, 2 triangles use 5, and 3 triangles use 7. How many triangles can be made with exactly 85 matches?",
+   "options": {
+    "A": "28",
+    "B": "43",
+    "C": "42",
+    "D": "171"
+   },
+   "answer": "C",
+   "explanation": "Tₙ = 2n + 1 (1 starting match, then 2 per triangle). 2n + 1 = 85 gives n = 42. 28 treats every triangle as using 3 separate matches.",
+   "steps": [
+    "d = 2 and the zeroth term is 3 − 2 = 1, so matches = 2n + 1.",
+    "Set 2n + 1 = 85: 2n = 84.",
+    "n = 42 triangles (check: 2 × 42 + 1 = 85 ✓)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the triangles share sides, so each new one only needs 2 more matches, not 3.",
+    "B": "Step 2: subtract the 1 starting match before halving: 85 ÷ 2 rounded up ignores it.",
+    "D": "Step 2: 85 is the number of matches (the term value), not n. Solve 2n + 1 = 85."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Sequence A is 3, 8, 13, … and sequence B is 75, 71, 67, … In which position do the two sequences have the same value?",
+   "options": {
+    "A": "43",
+    "B": "81",
+    "C": "77",
+    "D": "9"
+   },
+   "answer": "D",
+   "explanation": "A: Tₙ = 5n − 2. B: Tₙ = 79 − 4n. Set equal: 5n − 2 = 79 − 4n, so 9n = 81 and n = 9 (both are 43 there). 43 is the value, not the position.",
+   "steps": [
+    "A: d = 5, zeroth term −2, so Tₙ = 5n − 2. B: d = −4, zeroth term 79, so Tₙ = 79 − 4n.",
+    "Set them equal: 5n − 2 = 79 − 4n. Add 4n and 2 to both sides: 9n = 81.",
+    "n = 9 (check: A₉ = 43 and B₉ = 43 ✓), so position 9."
+   ],
+   "mistakes": {
+    "A": "Step 3: 43 is the value the two sequences share, not its position.",
+    "B": "Step 2: 9n = 81, so you still need to divide by 9.",
+    "C": "Step 2: adding 4n to both sides gives 9n, not n. Then add 2: 9n = 81."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The sequence 120, 113, 106, … continues. What is its first negative term?",
+   "options": {
+    "A": "−6",
+    "B": "1",
+    "C": "19",
+    "D": "−7"
+   },
+   "answer": "A",
+   "explanation": "Tₙ = 127 − 7n. T₁₈ = 1 (still positive) and T₁₉ = 127 − 133 = −6, the first negative term. 1 is the last positive term.",
+   "steps": [
+    "d = −7, zeroth term 120 + 7 = 127, so Tₙ = 127 − 7n.",
+    "Find where it crosses 0: 127 ÷ 7 ≈ 18.1, so T₁₈ = 1 and T₁₉ is next.",
+    "T₁₉ = 127 − 133 = −6."
+   ],
+   "mistakes": {
+    "B": "Step 2: 1 is the last POSITIVE term — take one more step.",
+    "C": "Step 3: 19 is the position of the term — the question asks for its value.",
+    "D": "Step 3: the terms are not multiples of 7 — subtract 7 from the last positive term, 1."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In the sequence 5, 10, 20, 40, …, what is the first term greater than 1000?",
+   "options": {
+    "A": "640",
+    "B": "2560",
+    "C": "1024",
+    "D": "1280"
+   },
+   "answer": "D",
+   "explanation": "Each term doubles: 5, 10, 20, 40, 80, 160, 320, 640, 1280, … The first term above 1000 is 1280. 1024 is a power of 2, but the sequence starts at 5, not 1.",
+   "steps": [
+    "The common ratio is 2, so Tₙ = 5 × 2ⁿ⁻¹.",
+    "Keep doubling: 80, 160, 320, 640, 1280.",
+    "640 is under 1000, so the first term over 1000 is 1280."
+   ],
+   "mistakes": {
+    "A": "Step 3: 640 is still less than 1000 — double once more.",
+    "B": "Step 3: 2560 is over 1000, but 1280 comes before it.",
+    "C": "Step 1: 1024 = 2¹⁰ belongs to 1, 2, 4, 8, … — this sequence starts at 5."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Find the 20th term of the sequence 2, 5, 10, 17, 26, …",
+   "options": {
+    "A": "400",
+    "B": "401",
+    "C": "441",
+    "D": "59"
+   },
+   "answer": "B",
+   "explanation": "Each term is one more than a square number: Tₙ = n² + 1. T₂₀ = 400 + 1 = 401. 59 wrongly assumes the difference stays at 3.",
+   "steps": [
+    "The differences are 3, 5, 7, 9 — they grow by 2, so think of square numbers.",
+    "Compare with 1, 4, 9, 16, 25: each term is one more, so Tₙ = n² + 1.",
+    "T₂₀ = 20² + 1 = 400 + 1 = 401."
+   ],
+   "mistakes": {
+    "A": "Step 3: you forgot to add the 1 — each term is ONE MORE than a square.",
+    "C": "Step 2: 441 = 21². Check T₁: the rule is n² + 1, which gives 2 ✓.",
+    "D": "Step 1: the differences are not constant, so you cannot keep adding 3."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "How many terms of the sequence Tₙ = 4n + 1 lie between 100 and 200?",
+   "options": {
+    "A": "24",
+    "B": "100",
+    "C": "26",
+    "D": "25"
+   },
+   "answer": "D",
+   "explanation": "The first term over 100 is T₂₅ = 101 and the last under 200 is T₄₉ = 197. From n = 25 to n = 49 is 49 − 25 + 1 = 25 terms. 24 forgets to count both ends.",
+   "steps": [
+    "First term over 100: 4n + 1 = 101 when n = 25.",
+    "Last term under 200: T₄₉ = 197 (T₅₀ = 201 is too big).",
+    "Positions 25 to 49 inclusive: 49 − 25 + 1 = 25 terms."
+   ],
+   "mistakes": {
+    "A": "Step 3: 49 − 25 counts the gaps; add 1 to include both ends.",
+    "B": "Step 1: 200 − 100 counts every whole number — but the terms go up in 4s.",
+    "C": "Step 2: T₅₀ = 201 is more than 200, so stop at T₄₉."
+   }
+  }
+ ]
 }

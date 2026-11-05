@@ -1,275 +1,276 @@
 {
-  "level": "Year 7",
-  "subject": "maths",
-  "unit": "Year 7 Advanced",
-  "title": "Algorithms for number problems",
-  "summary": "Use Euclid's algorithm for the HCF, test primes up to the square root, convert to and from binary, trace loops, and run algorithms backwards.",
-  "minutes": 30,
-  "body": "Computers don't \"see\" that 84 and 36 share a factor of 12 — they follow an **algorithm**: exact steps that always work. Some of the most famous number algorithms are over 2000 years old, and they still run inside phones and banking apps today. In this lesson you'll learn algorithms for highest common factors, testing primes, binary numbers and repeated processes — and how to trace them carefully.\n\n## Learning objective\n\nBy the end of this lesson you can use Euclid's algorithm to find an HCF, test whether a number is prime efficiently, convert between decimal and binary, trace loops with a table, and run an algorithm backwards.\n\n## Before you start\n\nThis builds on \"Algorithms and flowcharts (Year 7)\", \"Loops and decisions in algorithms (Year 7)\", \"Highest common factor and lowest common multiple (Year 7)\" and \"Primes and prime factorisation (Year 7)\".\n\nWarm-up:\n1. What is the remainder when 50 is divided by 8?\n2. What is the highest common factor of 12 and 18?\n\nAnswers: 1. 2 (50 = 6 × 8 + 2)  2. 6\n\n## Think of it like this\n\n### Cutting tiles for a floor\n\nYou want to tile a 84 cm by 36 cm floor with the biggest square tiles that fit exactly. Lay 36 cm squares along the 84 cm side: two fit, leaving a 12 cm strip. Now tile that 36 by 12 strip with 12 cm squares: three fit exactly, with nothing left over. So 12 cm tiles cover the whole floor — and 12 is the HCF of 84 and 36. That's Euclid's algorithm.\n\n*Where the analogy breaks down:* real tiles have grout gaps and you can cut them; the algorithm works with exact whole numbers and never cuts anything.\n\n## Key ideas\n\n### What makes a good number algorithm\n\nAn algorithm must be **exact** (no guessing), **finite** (it must stop) and **efficient** (no wasted steps). Two algorithms can give the same answer while one takes far fewer steps — choosing the faster one is a big part of computing.\n\n### Euclid's algorithm for the HCF\n\n1. Divide the bigger number by the smaller and find the **remainder**.\n2. If the remainder is 0, the smaller number is the HCF. Stop.\n3. Otherwise replace the bigger number with the smaller one, and the smaller one with the remainder. Go back to step 1.\n\nIt works because any number that divides both a and b also divides the remainder, so the HCF never changes while the numbers shrink.\n\n![Flowchart of Euclid's algorithm: Start, input a and b, divide a by b and find the remainder r; if r = 0 output b as the HCF and stop; otherwise replace a with b and b with r and divide again](/diagrams/y7/maths-advanced/algorithms-for-number-problems-euclid.svg)\n\n### Testing for primes efficiently\n\nTo test whether n is prime, you only need to try dividing by the **primes up to √n**. If n = a × b, one of a or b must be no bigger than √n, so a bigger factor always has a smaller partner you would already have found. To test 221: √221 is about 14.9, so try 2, 3, 5, 7, 11, 13 — and 13 × 17 = 221, so it is not prime.\n\n### Binary: repeated division by 2\n\nComputers store numbers in **binary** (base 2), using only the digits 0 and 1. The place values are 1, 2, 4, 8, 16, 32, … (each double the last). To convert a number to binary: divide by 2 again and again, write down each remainder, and stop at 0. Then **read the remainders from the bottom up**.\n\n### Loops and trace tables\n\nMany number algorithms repeat a step until a condition is met. A **trace table** records the value of each variable after every pass through the loop, so you can count the steps and see exactly when it stops.\n\n### Running an algorithm backwards\n\nTo find the input from the output, **undo each step in reverse order** using inverse operations (undo \"× 2\" with \"÷ 2\", undo \"− 1\" with \"+ 1\").\n\n## Worked examples\n\n### Example 1\n\nUse Euclid's algorithm to find the HCF of 84 and 36.\n\nStep 1: 84 ÷ 36 = 2 remainder 12, because 84 = 2 × 36 + 12 — divide the bigger by the smaller.\nStep 2: The remainder isn't 0, so now use 36 and 12 — replace the pair.\nStep 3: 36 ÷ 12 = 3 remainder 0 — the remainder is 0, so stop.\nAnswer: the HCF is 12.\nCheck: 84 = 12 × 7 and 36 = 12 × 3, and 7 and 3 share no factor. ✓\n\n### Example 2\n\nConvert 45 to binary.\n\n| Division | Quotient | Remainder |\n|---|---|---|\n| 45 ÷ 2 | 22 | 1 |\n| 22 ÷ 2 | 11 | 0 |\n| 11 ÷ 2 | 5 | 1 |\n| 5 ÷ 2 | 2 | 1 |\n| 2 ÷ 2 | 1 | 0 |\n| 1 ÷ 2 | 0 | 1 |\n\nStep 1: Divide by 2 repeatedly until the quotient is 0, writing each remainder — see the table.\nStep 2: Read the remainders from the bottom up: 101101 — the last remainder is the biggest place value.\nAnswer: 45 = 101101 in binary.\nCheck: 32 + 8 + 4 + 1 = 45. ✓\n\n### Example 3\n\nIs 323 prime?\n\nStep 1: √323 is about 17.97 (17² = 289 and 18² = 324), so test the primes up to 17 — no bigger divisor is needed.\nStep 2: 2, 3, 5, 7, 11 and 13 don't divide 323 — each leaves a remainder.\nStep 3: 323 ÷ 17 = 19 exactly.\nAnswer: No — 323 = 17 × 19.\n\n### Example 4\n\nStart with 1. Repeat: double the number, until it is greater than 1000. How many times is the loop run?\n\n| Pass | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Number | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 |\n\nStep 1: Trace the loop in a table — one column per pass.\nStep 2: After pass 9 the number is 512, which is not greater than 1000, so the loop runs again.\nStep 3: After pass 10 it is 1024, which is greater than 1000, so the loop stops.\nAnswer: 10 times.\n\n## Common mistakes\n\n- **Stopping Euclid's algorithm too early** and giving a remainder that isn't 0 as the answer. Fix: keep going until a remainder is 0; the answer is the last divisor.\n- **Reading binary remainders top-down.** Fix: the first remainder is the ones place, so it goes on the right — read from the bottom up.\n- **Testing too few (or too many) divisors for primes.** Fix: test every prime up to √n — no more, no fewer.\n- **Off-by-one errors in loops:** counting the starting value as a step, or stopping one pass early. Fix: use a trace table and check the stopping condition after every pass.\n- **Undoing steps in the wrong order** when working backwards. Fix: reverse the order AND the operations.\n\n## Tips to remember\n\n- **Euclid: \"Divide, remainder, swap, repeat\"** (a made-up chant) until the remainder is 0.\n- **Primes: \"Stop at the square root.\"** Past √n, any factor has a smaller partner you've already tried.\n- **Binary: \"Read it from the floor up\"** (made-up) — the bottom remainder is the biggest place.\n- **Binary place values double:** 1, 2, 4, 8, 16, 32, 64… Six binary digits reach up to 32 + 16 + 8 + 4 + 2 + 1 = 63.\n- **Backwards = reverse order, opposite operations** — like taking off socks and shoes.\n\n## Key terms\n\n- **Algorithm** — a finite list of exact steps that solves a problem.\n- **Remainder** — what is left over after dividing one whole number by another.\n- **Euclid's algorithm** — a method for the HCF that repeatedly replaces the pair of numbers with the smaller number and the remainder.\n- **Binary** — the base-2 number system, which uses only the digits 0 and 1.\n- **Trace table** — a table showing the values of variables after each step of an algorithm.\n- **Efficient** — getting the right answer in as few steps as possible.\n\n## Summary\n\n- Euclid's algorithm: divide, take the remainder, replace the pair, repeat; the last non-zero divisor is the HCF.\n- To test if n is prime, try the primes up to √n.\n- To write a number in binary, divide by 2 repeatedly and read the remainders from the bottom up.\n- Trace loops with a table and check the stopping rule after every pass.\n- Run algorithms backwards by undoing each step in reverse order.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "Use Euclid's algorithm to find the highest common factor of 48 and 18.",
-      "options": {
-        "A": "12",
-        "B": "6",
-        "C": "2",
-        "D": "144"
-      },
-      "answer": "B",
-      "explanation": "48 = 2 × 18 + 12, 18 = 1 × 12 + 6, 12 = 2 × 6 + 0, so the HCF is 6. 12 is only the first remainder — the algorithm hasn't finished.",
-      "steps": [
-        "48 ÷ 18 = 2 remainder 12.",
-        "18 ÷ 12 = 1 remainder 6.",
-        "12 ÷ 6 = 2 remainder 0, so the HCF is 6."
-      ],
-      "mistakes": {
-        "A": "Step 1: 12 is a remainder that isn't 0 — keep going.",
-        "C": "Step 3: 2 is a common factor, but not the highest. Finish the algorithm.",
-        "D": "Step 3: 144 is the lowest common MULTIPLE. The HCF divides both numbers."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Is 91 a prime number?",
-      "options": {
-        "A": "Yes — no number up to 9 divides it",
-        "B": "No — 91 = 3 × 31",
-        "C": "No — 91 = 7 × 13",
-        "D": "Yes — it is odd and doesn't end in 5"
-      },
-      "answer": "C",
-      "explanation": "√91 is about 9.5, so test 2, 3, 5 and 7: 91 ÷ 7 = 13, so 91 = 7 × 13 is not prime. 3 × 31 is 93, not 91.",
-      "steps": [
-        "√91 is between 9 and 10, so test the primes 2, 3, 5 and 7.",
-        "2, 3 and 5 don't divide 91.",
-        "91 ÷ 7 = 13 exactly, so 91 = 7 × 13 — not prime."
-      ],
-      "mistakes": {
-        "A": "Step 3: check 7 carefully — 7 × 13 = 91.",
-        "B": "Step 2: 3 × 31 = 93, and 9 + 1 = 10 is not a multiple of 3, so 3 doesn't divide 91.",
-        "D": "Step 1: being odd and not ending in 5 only rules out 2 and 5. Keep testing up to √91."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Write 13 in binary.",
-      "options": {
-        "A": "1011",
-        "B": "1100",
-        "C": "110",
-        "D": "1101"
-      },
-      "answer": "D",
-      "explanation": "13 ÷ 2 = 6 r 1, 6 ÷ 2 = 3 r 0, 3 ÷ 2 = 1 r 1, 1 ÷ 2 = 0 r 1. Reading from the bottom up gives 1101 (8 + 4 + 1 = 13). 1011 reads the remainders top-down.",
-      "steps": [
-        "Divide by 2 repeatedly: remainders 1, 0, 1, 1 (from 13, 6, 3, 1).",
-        "Read the remainders from the bottom up: 1101.",
-        "Check: 8 + 4 + 0 + 1 = 13 ✓"
-      ],
-      "mistakes": {
-        "A": "Step 2: read the remainders from the bottom up — the first remainder is the ones digit.",
-        "B": "Step 1: 1100 is 12 — you lost the remainder 1 from the first division.",
-        "C": "Step 1: you dropped the first remainder. Write down every remainder, including the first."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "What is the binary number 110110 in our usual (decimal) numbers?",
-      "options": {
-        "A": "54",
-        "B": "27",
-        "C": "4",
-        "D": "108"
-      },
-      "answer": "A",
-      "explanation": "Place values from the right are 1, 2, 4, 8, 16, 32: 32 + 16 + 4 + 2 = 54. 27 reads the digits in the wrong direction.",
-      "steps": [
-        "Place values from the right: 1, 2, 4, 8, 16, 32.",
-        "The 1s are in the 32, 16, 4 and 2 places.",
-        "32 + 16 + 4 + 2 = 54."
-      ],
-      "mistakes": {
-        "B": "Step 1: the rightmost digit is the ones place — you read the number backwards.",
-        "C": "Step 3: counting the 1s isn't enough — add their place values.",
-        "D": "Step 1: six digits go up to the 32 place, not 64. Start with 1 on the right."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Start with 3. Repeat: double the number, until it is greater than 500. How many times is the number doubled?",
-      "options": {
-        "A": "7",
-        "B": "9",
-        "C": "768",
-        "D": "8"
-      },
-      "answer": "D",
-      "explanation": "3 → 6 → 12 → 24 → 48 → 96 → 192 → 384 → 768: that is 8 doublings, and 768 is the first number greater than 500. 7 stops at 384, which isn't greater than 500 yet.",
-      "steps": [
-        "Trace: 6, 12, 24, 48, 96, 192, 384 after 7 doublings.",
-        "384 is not greater than 500, so double again: 768.",
-        "768 is greater than 500, so the loop stops after 8 doublings."
-      ],
-      "mistakes": {
-        "A": "Step 2: 384 is not greater than 500, so the loop runs once more.",
-        "B": "Step 1: the starting 3 is not a doubling — count only the doubling steps.",
-        "C": "Step 3: 768 is the final number. The question asks how many doublings."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Use Euclid's algorithm to find the highest common factor of 252 and 198.",
-      "options": {
-        "A": "54",
-        "B": "36",
-        "C": "18",
-        "D": "9"
-      },
-      "answer": "C",
-      "explanation": "252 = 1 × 198 + 54; 198 = 3 × 54 + 36; 54 = 1 × 36 + 18; 36 = 2 × 18 + 0. The HCF is 18. 36 stops one line too early.",
-      "steps": [
-        "252 ÷ 198 = 1 r 54, then 198 ÷ 54 = 3 r 36.",
-        "54 ÷ 36 = 1 r 18.",
-        "36 ÷ 18 = 2 r 0, so the HCF is 18."
-      ],
-      "mistakes": {
-        "A": "Step 1: 54 is the first remainder — keep going until a remainder is 0.",
-        "B": "Step 2: 36 is still a non-zero remainder — do another division.",
-        "D": "Step 3: 9 divides both, but it isn't the highest. Finish the algorithm."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Kim tests whether 323 is prime. She divides it by 2, 3, 5, 7, 11 and 13, finds that none of them divide it exactly, and says 323 is prime. What is wrong?",
-      "options": {
-        "A": "Nothing — 323 is prime",
-        "B": "She must also try 17, and 323 = 17 × 19",
-        "C": "She must try every number up to 161",
-        "D": "She should also have tried 9 and 15"
-      },
-      "answer": "B",
-      "explanation": "√323 is about 17.97, so she must test all primes up to 17. 323 ÷ 17 = 19, so it is not prime. Testing 9 or 15 is pointless — they aren't prime, and 3 and 5 already failed.",
-      "steps": [
-        "17² = 289 and 18² = 324, so √323 is just under 18.",
-        "Test every prime up to 17 — Kim missed 17.",
-        "323 ÷ 17 = 19, so 323 = 17 × 19 is not prime."
-      ],
-      "mistakes": {
-        "A": "Step 2: Kim stopped at 13, but the primes up to √323 include 17.",
-        "C": "Step 1: you only need to go up to √323 — about 18, not 161.",
-        "D": "Step 2: 9 and 15 aren't prime; if they divided 323, then 3 or 5 would have too."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "An algorithm says: if the number is even, halve it; if it is odd, subtract 1. Repeat until you reach 1. Starting at 45, how many steps does it take?",
-      "options": {
-        "A": "8",
-        "B": "7",
-        "C": "9",
-        "D": "5"
-      },
-      "answer": "A",
-      "explanation": "45 → 44 → 22 → 11 → 10 → 5 → 4 → 2 → 1 is 8 steps. 7 forgets the last step from 2 to 1.",
-      "steps": [
-        "45 is odd → 44; even → 22; even → 11.",
-        "11 is odd → 10; even → 5; odd → 4.",
-        "4 → 2 → 1. Count the arrows: 8 steps."
-      ],
-      "mistakes": {
-        "B": "Step 3: 2 → 1 is a step too — count every arrow.",
-        "C": "Step 1: 45 is the start, not a step. Count only the changes.",
-        "D": "Step 2: you counted only the halving steps. Subtracting 1 also counts."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Adding the digits of a number again and again until one digit is left gives the remainder when the number is divided by 9 (with 9 meaning a remainder of 0). What is the remainder when 987 654 is divided by 9?",
-      "options": {
-        "A": "39",
-        "B": "0",
-        "C": "3",
-        "D": "12"
-      },
-      "answer": "C",
-      "explanation": "Digit sum: 9 + 8 + 7 + 6 + 5 + 4 = 39, then 3 + 9 = 12, then 1 + 2 = 3. So the remainder is 3. Check: 987 654 = 9 × 109 739 + 3. 39 stops after the first round.",
-      "steps": [
-        "First round: 9 + 8 + 7 + 6 + 5 + 4 = 39.",
-        "Second round: 3 + 9 = 12.",
-        "Third round: 1 + 2 = 3, one digit, so the remainder is 3."
-      ],
-      "mistakes": {
-        "A": "Step 2: 39 has two digits — keep adding.",
-        "B": "Step 1: containing a 9 doesn't make a number divisible by 9 — add all the digits.",
-        "D": "Step 3: 12 still has two digits — add again."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "What is the largest number that can be written using 6 binary digits?",
-      "options": {
-        "A": "64",
-        "B": "63",
-        "C": "32",
-        "D": "111 111"
-      },
-      "answer": "B",
-      "explanation": "The biggest is 111111 in binary = 32 + 16 + 8 + 4 + 2 + 1 = 63. 64 would need a 7th digit (1000000).",
-      "steps": [
-        "The biggest 6-digit binary number is 111111.",
-        "Place values: 32, 16, 8, 4, 2, 1.",
-        "32 + 16 + 8 + 4 + 2 + 1 = 63."
-      ],
-      "mistakes": {
-        "A": "Step 1: 64 is 1000000 in binary — that has 7 digits.",
-        "C": "Step 3: 32 is just the first place value — add all the 1s.",
-        "D": "Step 3: 111111 is binary. Convert it to a normal number."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "An algorithm takes a number and repeats this 3 times: double it, then subtract 1. The output is 33. What was the input?",
-      "options": {
-        "A": "4.125",
-        "B": "5.875",
-        "C": "3.25",
-        "D": "5"
-      },
-      "answer": "D",
-      "explanation": "Undo in reverse order: add 1, then halve, three times: 33 → 17 → 9 → 5. Check: 5 → 9 → 17 → 33. 5.875 undoes the steps in the wrong order (halving before adding 1).",
-      "steps": [
-        "Undo \"double, then subtract 1\" by \"add 1, then halve\".",
-        "33 + 1 = 34 → 17; 17 + 1 = 18 → 9.",
-        "9 + 1 = 10 → 5. Check: 5 → 9 → 17 → 33 ✓"
-      ],
-      "mistakes": {
-        "A": "Step 1: you only undid the doubling — also undo \"subtract 1\" by adding 1.",
-        "B": "Step 1: undo in reverse order — add 1 FIRST, then halve.",
-        "C": "Step 1: the opposite of subtracting 1 is adding 1, not subtracting it again."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In the land of Numeria, coins are worth 1, 3 and 4 cents. A \"greedy\" algorithm makes an amount by always taking the biggest coin that still fits. To make 6 cents, how many coins does the greedy algorithm use, and what is the fewest coins possible?",
-      "options": {
-        "A": "Greedy uses 2; the fewest is 2",
-        "B": "Greedy uses 3; the fewest is 2",
-        "C": "Greedy uses 3; the fewest is 3",
-        "D": "Greedy uses 6; the fewest is 2"
-      },
-      "answer": "B",
-      "explanation": "Greedy takes 4, then 1, then 1: 3 coins. But 3 + 3 makes 6 with only 2 coins. Greedy is fast, but here it isn't the best.",
-      "steps": [
-        "Greedy: the biggest coin that fits 6 is 4, leaving 2.",
-        "Then 1 and 1: greedy uses 4 + 1 + 1 = 3 coins.",
-        "Try other ways: 3 + 3 = 6 uses only 2 coins — so the fewest is 2."
-      ],
-      "mistakes": {
-        "A": "Step 2: greedy takes the 4 first, so it needs 4 + 1 + 1.",
-        "C": "Step 3: look for a better way than greedy — try two 3c coins.",
-        "D": "Step 1: greedy starts with the BIGGEST coin, not the 1c coin."
-      }
-    }
-  ]
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7 Advanced",
+ "title": "Algorithms for number problems",
+ "summary": "Use Euclid's algorithm for the HCF, test primes up to the square root, convert to and from binary, trace loops, and run algorithms backwards.",
+ "minutes": 30,
+ "video": "videos/y7/maths-advanced/algorithms-for-number-problems.mp4",
+ "body": "Computers don't \"see\" that 84 and 36 share a factor of 12 — they follow an **algorithm**: exact steps that always work. Some of the most famous number algorithms are over 2000 years old, and they still run inside phones and banking apps today. In this lesson you'll learn algorithms for highest common factors, testing primes, binary numbers and repeated processes — and how to trace them carefully.\n\n## Learning objective\n\nBy the end of this lesson you can use Euclid's algorithm to find an HCF, test whether a number is prime efficiently, convert between decimal and binary, trace loops with a table, and run an algorithm backwards.\n\n## Before you start\n\nThis builds on \"Algorithms and flowcharts (Year 7)\", \"Loops and decisions in algorithms (Year 7)\", \"Highest common factor and lowest common multiple (Year 7)\" and \"Primes and prime factorisation (Year 7)\".\n\nWarm-up:\n1. What is the remainder when 50 is divided by 8?\n2. What is the highest common factor of 12 and 18?\n\nAnswers: 1. 2 (50 = 6 × 8 + 2)  2. 6\n\n## Think of it like this\n\n### Cutting tiles for a floor\n\nYou want to tile a 84 cm by 36 cm floor with the biggest square tiles that fit exactly. Lay 36 cm squares along the 84 cm side: two fit, leaving a 12 cm strip. Now tile that 36 by 12 strip with 12 cm squares: three fit exactly, with nothing left over. So 12 cm tiles cover the whole floor — and 12 is the HCF of 84 and 36. That's Euclid's algorithm.\n\n*Where the analogy breaks down:* real tiles have grout gaps and you can cut them; the algorithm works with exact whole numbers and never cuts anything.\n\n## Key ideas\n\n### What makes a good number algorithm\n\nAn algorithm must be **exact** (no guessing), **finite** (it must stop) and **efficient** (no wasted steps). Two algorithms can give the same answer while one takes far fewer steps — choosing the faster one is a big part of computing.\n\n### Euclid's algorithm for the HCF\n\n1. Divide the bigger number by the smaller and find the **remainder**.\n2. If the remainder is 0, the smaller number is the HCF. Stop.\n3. Otherwise replace the bigger number with the smaller one, and the smaller one with the remainder. Go back to step 1.\n\nIt works because any number that divides both a and b also divides the remainder, so the HCF never changes while the numbers shrink.\n\n![Flowchart of Euclid's algorithm: Start, input a and b, divide a by b and find the remainder r; if r = 0 output b as the HCF and stop; otherwise replace a with b and b with r and divide again](/diagrams/y7/maths-advanced/algorithms-for-number-problems-euclid.svg)\n\n### Testing for primes efficiently\n\nTo test whether n is prime, you only need to try dividing by the **primes up to √n**. If n = a × b, one of a or b must be no bigger than √n, so a bigger factor always has a smaller partner you would already have found. To test 221: √221 is about 14.9, so try 2, 3, 5, 7, 11, 13 — and 13 × 17 = 221, so it is not prime.\n\n### Binary: repeated division by 2\n\nComputers store numbers in **binary** (base 2), using only the digits 0 and 1. The place values are 1, 2, 4, 8, 16, 32, … (each double the last). To convert a number to binary: divide by 2 again and again, write down each remainder, and stop at 0. Then **read the remainders from the bottom up**.\n\n### Loops and trace tables\n\nMany number algorithms repeat a step until a condition is met. A **trace table** records the value of each variable after every pass through the loop, so you can count the steps and see exactly when it stops.\n\n### Running an algorithm backwards\n\nTo find the input from the output, **undo each step in reverse order** using inverse operations (undo \"× 2\" with \"÷ 2\", undo \"− 1\" with \"+ 1\").\n\n## Worked examples\n\n### Example 1\n\nUse Euclid's algorithm to find the HCF of 84 and 36.\n\nStep 1: 84 ÷ 36 = 2 remainder 12, because 84 = 2 × 36 + 12 — divide the bigger by the smaller.\nStep 2: The remainder isn't 0, so now use 36 and 12 — replace the pair.\nStep 3: 36 ÷ 12 = 3 remainder 0 — the remainder is 0, so stop.\nAnswer: the HCF is 12.\nCheck: 84 = 12 × 7 and 36 = 12 × 3, and 7 and 3 share no factor. ✓\n\n### Example 2\n\nConvert 45 to binary.\n\n| Division | Quotient | Remainder |\n|---|---|---|\n| 45 ÷ 2 | 22 | 1 |\n| 22 ÷ 2 | 11 | 0 |\n| 11 ÷ 2 | 5 | 1 |\n| 5 ÷ 2 | 2 | 1 |\n| 2 ÷ 2 | 1 | 0 |\n| 1 ÷ 2 | 0 | 1 |\n\nStep 1: Divide by 2 repeatedly until the quotient is 0, writing each remainder — see the table.\nStep 2: Read the remainders from the bottom up: 101101 — the last remainder is the biggest place value.\nAnswer: 45 = 101101 in binary.\nCheck: 32 + 8 + 4 + 1 = 45. ✓\n\n### Example 3\n\nIs 323 prime?\n\nStep 1: √323 is about 17.97 (17² = 289 and 18² = 324), so test the primes up to 17 — no bigger divisor is needed.\nStep 2: 2, 3, 5, 7, 11 and 13 don't divide 323 — each leaves a remainder.\nStep 3: 323 ÷ 17 = 19 exactly.\nAnswer: No — 323 = 17 × 19.\n\n### Example 4\n\nStart with 1. Repeat: double the number, until it is greater than 1000. How many times is the loop run?\n\n| Pass | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Number | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 | 512 | 1024 |\n\nStep 1: Trace the loop in a table — one column per pass.\nStep 2: After pass 9 the number is 512, which is not greater than 1000, so the loop runs again.\nStep 3: After pass 10 it is 1024, which is greater than 1000, so the loop stops.\nAnswer: 10 times.\n\n## Common mistakes\n\n- **Stopping Euclid's algorithm too early** and giving a remainder that isn't 0 as the answer. Fix: keep going until a remainder is 0; the answer is the last divisor.\n- **Reading binary remainders top-down.** Fix: the first remainder is the ones place, so it goes on the right — read from the bottom up.\n- **Testing too few (or too many) divisors for primes.** Fix: test every prime up to √n — no more, no fewer.\n- **Off-by-one errors in loops:** counting the starting value as a step, or stopping one pass early. Fix: use a trace table and check the stopping condition after every pass.\n- **Undoing steps in the wrong order** when working backwards. Fix: reverse the order AND the operations.\n\n## Tips to remember\n\n- **Euclid: \"Divide, remainder, swap, repeat\"** (a made-up chant) until the remainder is 0.\n- **Primes: \"Stop at the square root.\"** Past √n, any factor has a smaller partner you've already tried.\n- **Binary: \"Read it from the floor up\"** (made-up) — the bottom remainder is the biggest place.\n- **Binary place values double:** 1, 2, 4, 8, 16, 32, 64… Six binary digits reach up to 32 + 16 + 8 + 4 + 2 + 1 = 63.\n- **Backwards = reverse order, opposite operations** — like taking off socks and shoes.\n\n## Key terms\n\n- **Algorithm** — a finite list of exact steps that solves a problem.\n- **Remainder** — what is left over after dividing one whole number by another.\n- **Euclid's algorithm** — a method for the HCF that repeatedly replaces the pair of numbers with the smaller number and the remainder.\n- **Binary** — the base-2 number system, which uses only the digits 0 and 1.\n- **Trace table** — a table showing the values of variables after each step of an algorithm.\n- **Efficient** — getting the right answer in as few steps as possible.\n\n## Summary\n\n- Euclid's algorithm: divide, take the remainder, replace the pair, repeat; the last non-zero divisor is the HCF.\n- To test if n is prime, try the primes up to √n.\n- To write a number in binary, divide by 2 repeatedly and read the remainders from the bottom up.\n- Trace loops with a table and check the stopping rule after every pass.\n- Run algorithms backwards by undoing each step in reverse order.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Use Euclid's algorithm to find the highest common factor of 48 and 18.",
+   "options": {
+    "A": "12",
+    "B": "6",
+    "C": "2",
+    "D": "144"
+   },
+   "answer": "B",
+   "explanation": "48 = 2 × 18 + 12, 18 = 1 × 12 + 6, 12 = 2 × 6 + 0, so the HCF is 6. 12 is only the first remainder — the algorithm hasn't finished.",
+   "steps": [
+    "48 ÷ 18 = 2 remainder 12.",
+    "18 ÷ 12 = 1 remainder 6.",
+    "12 ÷ 6 = 2 remainder 0, so the HCF is 6."
+   ],
+   "mistakes": {
+    "A": "Step 1: 12 is a remainder that isn't 0 — keep going.",
+    "C": "Step 3: 2 is a common factor, but not the highest. Finish the algorithm.",
+    "D": "Step 3: 144 is the lowest common MULTIPLE. The HCF divides both numbers."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Is 91 a prime number?",
+   "options": {
+    "A": "Yes — no number up to 9 divides it",
+    "B": "No — 91 = 3 × 31",
+    "C": "No — 91 = 7 × 13",
+    "D": "Yes — it is odd and doesn't end in 5"
+   },
+   "answer": "C",
+   "explanation": "√91 is about 9.5, so test 2, 3, 5 and 7: 91 ÷ 7 = 13, so 91 = 7 × 13 is not prime. 3 × 31 is 93, not 91.",
+   "steps": [
+    "√91 is between 9 and 10, so test the primes 2, 3, 5 and 7.",
+    "2, 3 and 5 don't divide 91.",
+    "91 ÷ 7 = 13 exactly, so 91 = 7 × 13 — not prime."
+   ],
+   "mistakes": {
+    "A": "Step 3: check 7 carefully — 7 × 13 = 91.",
+    "B": "Step 2: 3 × 31 = 93, and 9 + 1 = 10 is not a multiple of 3, so 3 doesn't divide 91.",
+    "D": "Step 1: being odd and not ending in 5 only rules out 2 and 5. Keep testing up to √91."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Write 13 in binary.",
+   "options": {
+    "A": "1011",
+    "B": "1100",
+    "C": "110",
+    "D": "1101"
+   },
+   "answer": "D",
+   "explanation": "13 ÷ 2 = 6 r 1, 6 ÷ 2 = 3 r 0, 3 ÷ 2 = 1 r 1, 1 ÷ 2 = 0 r 1. Reading from the bottom up gives 1101 (8 + 4 + 1 = 13). 1011 reads the remainders top-down.",
+   "steps": [
+    "Divide by 2 repeatedly: remainders 1, 0, 1, 1 (from 13, 6, 3, 1).",
+    "Read the remainders from the bottom up: 1101.",
+    "Check: 8 + 4 + 0 + 1 = 13 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 2: read the remainders from the bottom up — the first remainder is the ones digit.",
+    "B": "Step 1: 1100 is 12 — you lost the remainder 1 from the first division.",
+    "C": "Step 1: you dropped the first remainder. Write down every remainder, including the first."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "What is the binary number 110110 in our usual (decimal) numbers?",
+   "options": {
+    "A": "54",
+    "B": "27",
+    "C": "4",
+    "D": "108"
+   },
+   "answer": "A",
+   "explanation": "Place values from the right are 1, 2, 4, 8, 16, 32: 32 + 16 + 4 + 2 = 54. 27 reads the digits in the wrong direction.",
+   "steps": [
+    "Place values from the right: 1, 2, 4, 8, 16, 32.",
+    "The 1s are in the 32, 16, 4 and 2 places.",
+    "32 + 16 + 4 + 2 = 54."
+   ],
+   "mistakes": {
+    "B": "Step 1: the rightmost digit is the ones place — you read the number backwards.",
+    "C": "Step 3: counting the 1s isn't enough — add their place values.",
+    "D": "Step 1: six digits go up to the 32 place, not 64. Start with 1 on the right."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Start with 3. Repeat: double the number, until it is greater than 500. How many times is the number doubled?",
+   "options": {
+    "A": "7",
+    "B": "9",
+    "C": "768",
+    "D": "8"
+   },
+   "answer": "D",
+   "explanation": "3 → 6 → 12 → 24 → 48 → 96 → 192 → 384 → 768: that is 8 doublings, and 768 is the first number greater than 500. 7 stops at 384, which isn't greater than 500 yet.",
+   "steps": [
+    "Trace: 6, 12, 24, 48, 96, 192, 384 after 7 doublings.",
+    "384 is not greater than 500, so double again: 768.",
+    "768 is greater than 500, so the loop stops after 8 doublings."
+   ],
+   "mistakes": {
+    "A": "Step 2: 384 is not greater than 500, so the loop runs once more.",
+    "B": "Step 1: the starting 3 is not a doubling — count only the doubling steps.",
+    "C": "Step 3: 768 is the final number. The question asks how many doublings."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Use Euclid's algorithm to find the highest common factor of 252 and 198.",
+   "options": {
+    "A": "54",
+    "B": "36",
+    "C": "18",
+    "D": "9"
+   },
+   "answer": "C",
+   "explanation": "252 = 1 × 198 + 54; 198 = 3 × 54 + 36; 54 = 1 × 36 + 18; 36 = 2 × 18 + 0. The HCF is 18. 36 stops one line too early.",
+   "steps": [
+    "252 ÷ 198 = 1 r 54, then 198 ÷ 54 = 3 r 36.",
+    "54 ÷ 36 = 1 r 18.",
+    "36 ÷ 18 = 2 r 0, so the HCF is 18."
+   ],
+   "mistakes": {
+    "A": "Step 1: 54 is the first remainder — keep going until a remainder is 0.",
+    "B": "Step 2: 36 is still a non-zero remainder — do another division.",
+    "D": "Step 3: 9 divides both, but it isn't the highest. Finish the algorithm."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Kim tests whether 323 is prime. She divides it by 2, 3, 5, 7, 11 and 13, finds that none of them divide it exactly, and says 323 is prime. What is wrong?",
+   "options": {
+    "A": "Nothing — 323 is prime",
+    "B": "She must also try 17, and 323 = 17 × 19",
+    "C": "She must try every number up to 161",
+    "D": "She should also have tried 9 and 15"
+   },
+   "answer": "B",
+   "explanation": "√323 is about 17.97, so she must test all primes up to 17. 323 ÷ 17 = 19, so it is not prime. Testing 9 or 15 is pointless — they aren't prime, and 3 and 5 already failed.",
+   "steps": [
+    "17² = 289 and 18² = 324, so √323 is just under 18.",
+    "Test every prime up to 17 — Kim missed 17.",
+    "323 ÷ 17 = 19, so 323 = 17 × 19 is not prime."
+   ],
+   "mistakes": {
+    "A": "Step 2: Kim stopped at 13, but the primes up to √323 include 17.",
+    "C": "Step 1: you only need to go up to √323 — about 18, not 161.",
+    "D": "Step 2: 9 and 15 aren't prime; if they divided 323, then 3 or 5 would have too."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "An algorithm says: if the number is even, halve it; if it is odd, subtract 1. Repeat until you reach 1. Starting at 45, how many steps does it take?",
+   "options": {
+    "A": "8",
+    "B": "7",
+    "C": "9",
+    "D": "5"
+   },
+   "answer": "A",
+   "explanation": "45 → 44 → 22 → 11 → 10 → 5 → 4 → 2 → 1 is 8 steps. 7 forgets the last step from 2 to 1.",
+   "steps": [
+    "45 is odd → 44; even → 22; even → 11.",
+    "11 is odd → 10; even → 5; odd → 4.",
+    "4 → 2 → 1. Count the arrows: 8 steps."
+   ],
+   "mistakes": {
+    "B": "Step 3: 2 → 1 is a step too — count every arrow.",
+    "C": "Step 1: 45 is the start, not a step. Count only the changes.",
+    "D": "Step 2: you counted only the halving steps. Subtracting 1 also counts."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Adding the digits of a number again and again until one digit is left gives the remainder when the number is divided by 9 (with 9 meaning a remainder of 0). What is the remainder when 987 654 is divided by 9?",
+   "options": {
+    "A": "39",
+    "B": "0",
+    "C": "3",
+    "D": "12"
+   },
+   "answer": "C",
+   "explanation": "Digit sum: 9 + 8 + 7 + 6 + 5 + 4 = 39, then 3 + 9 = 12, then 1 + 2 = 3. So the remainder is 3. Check: 987 654 = 9 × 109 739 + 3. 39 stops after the first round.",
+   "steps": [
+    "First round: 9 + 8 + 7 + 6 + 5 + 4 = 39.",
+    "Second round: 3 + 9 = 12.",
+    "Third round: 1 + 2 = 3, one digit, so the remainder is 3."
+   ],
+   "mistakes": {
+    "A": "Step 2: 39 has two digits — keep adding.",
+    "B": "Step 1: containing a 9 doesn't make a number divisible by 9 — add all the digits.",
+    "D": "Step 3: 12 still has two digits — add again."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "What is the largest number that can be written using 6 binary digits?",
+   "options": {
+    "A": "64",
+    "B": "63",
+    "C": "32",
+    "D": "111 111"
+   },
+   "answer": "B",
+   "explanation": "The biggest is 111111 in binary = 32 + 16 + 8 + 4 + 2 + 1 = 63. 64 would need a 7th digit (1000000).",
+   "steps": [
+    "The biggest 6-digit binary number is 111111.",
+    "Place values: 32, 16, 8, 4, 2, 1.",
+    "32 + 16 + 8 + 4 + 2 + 1 = 63."
+   ],
+   "mistakes": {
+    "A": "Step 1: 64 is 1000000 in binary — that has 7 digits.",
+    "C": "Step 3: 32 is just the first place value — add all the 1s.",
+    "D": "Step 3: 111111 is binary. Convert it to a normal number."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "An algorithm takes a number and repeats this 3 times: double it, then subtract 1. The output is 33. What was the input?",
+   "options": {
+    "A": "4.125",
+    "B": "5.875",
+    "C": "3.25",
+    "D": "5"
+   },
+   "answer": "D",
+   "explanation": "Undo in reverse order: add 1, then halve, three times: 33 → 17 → 9 → 5. Check: 5 → 9 → 17 → 33. 5.875 undoes the steps in the wrong order (halving before adding 1).",
+   "steps": [
+    "Undo \"double, then subtract 1\" by \"add 1, then halve\".",
+    "33 + 1 = 34 → 17; 17 + 1 = 18 → 9.",
+    "9 + 1 = 10 → 5. Check: 5 → 9 → 17 → 33 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 1: you only undid the doubling — also undo \"subtract 1\" by adding 1.",
+    "B": "Step 1: undo in reverse order — add 1 FIRST, then halve.",
+    "C": "Step 1: the opposite of subtracting 1 is adding 1, not subtracting it again."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In the land of Numeria, coins are worth 1, 3 and 4 cents. A \"greedy\" algorithm makes an amount by always taking the biggest coin that still fits. To make 6 cents, how many coins does the greedy algorithm use, and what is the fewest coins possible?",
+   "options": {
+    "A": "Greedy uses 2; the fewest is 2",
+    "B": "Greedy uses 3; the fewest is 2",
+    "C": "Greedy uses 3; the fewest is 3",
+    "D": "Greedy uses 6; the fewest is 2"
+   },
+   "answer": "B",
+   "explanation": "Greedy takes 4, then 1, then 1: 3 coins. But 3 + 3 makes 6 with only 2 coins. Greedy is fast, but here it isn't the best.",
+   "steps": [
+    "Greedy: the biggest coin that fits 6 is 4, leaving 2.",
+    "Then 1 and 1: greedy uses 4 + 1 + 1 = 3 coins.",
+    "Try other ways: 3 + 3 = 6 uses only 2 coins — so the fewest is 2."
+   ],
+   "mistakes": {
+    "A": "Step 2: greedy takes the 4 first, so it needs 4 + 1 + 1.",
+    "C": "Step 3: look for a better way than greedy — try two 3c coins.",
+    "D": "Step 1: greedy starts with the BIGGEST coin, not the 1c coin."
+   }
+  }
+ ]
 }

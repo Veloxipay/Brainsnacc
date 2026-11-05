@@ -1,276 +1,277 @@
 {
-  "level": "Year 7",
-  "subject": "maths",
-  "unit": "Year 7 Advanced",
-  "title": "Divisibility rules and digit puzzles",
-  "summary": "Test numbers for divisibility by 2 to 12, combine tests with co-prime factors, explain why the digit-sum test works, and solve missing-digit puzzles.",
-  "minutes": 30,
-  "body": "Divisibility tests let you tell whether one number divides another without doing the division. They are the secret behind simplifying fractions fast, checking long calculations, and solving the \"find the missing digit\" puzzles that turn up in maths competitions and selective-entry tests. This lesson adds new tests (for 7, 8, 11 and 12), shows how to combine them, and explains *why* the digit-sum test works.\n\n## Learning objective\n\nBy the end of this lesson you can test numbers for divisibility by 2–12, combine tests correctly, explain why the digit-sum tests work, and use the tests to solve missing-digit puzzles.\n\n## Before you start\n\nThis builds on **Factors and multiples (Year 7)** (the tests for 2, 3, 4, 5, 6, 9 and 10) and **Primes and prime factorisation (Year 7)**.\n\nWarm-up (answers below):\n\n1. Is 2341 divisible by 3?\n2. Is 516 divisible by 6?\n\nAnswers: 1. No — the digit sum is 10, which is not a multiple of 3.  2. Yes — it is even, and its digit sum 12 is a multiple of 3.\n\n## Think of it like this\n\n### A bouncer checking ID\n\nA bouncer at a door doesn't need your whole life story — just one quick check of your ID card. A divisibility test is a quick check on *part* of the number (the last digits, or the digit sum) instead of the whole division. Some doors need two checks: to get into \"divisible by 12\" you must pass the check for 3 *and* the check for 4.\n\n*Where the analogy breaks down:* a bouncer might be fooled by a fake ID, but a correct divisibility test is never wrong — it works for every whole number, because of how place value works.\n\n## Key ideas\n\n### The tests you know, plus new ones\n\n| Divisible by | Test |\n|---|---|\n| 2, 5, 10 | look at the last digit |\n| 4 | the last **two** digits make a multiple of 4 |\n| **8** | the last **three** digits make a multiple of 8 |\n| 3, 9 | the **digit sum** is a multiple of 3 (or 9) |\n| 6 | passes the tests for 2 **and** 3 |\n| **11** | the **alternating sum** of the digits is 0 or a multiple of 11 |\n| **12** | passes the tests for 3 **and** 4 |\n| **7** | double the last digit, subtract it from the rest; the result is a multiple of 7 |\n\n**Why the last-digits tests work:** 1000 is a multiple of 8 (1000 = 8 × 125), so thousands never affect divisibility by 8 — only the last three digits matter. In the same way, 100 is a multiple of 4, so only the last two digits matter for 4.\n\n**The alternating sum** means: start from the ones digit, then take away the tens digit, add the hundreds digit, and so on. For 9581: 1 − 8 + 5 − 9 = −11, a multiple of 11, so 9581 is divisible by 11 (9581 = 11 × 871).\n\n**The test for 7** on 532: 53 − 2 × 2 = 49 = 7 × 7, so 532 is divisible by 7. If the result is still big, repeat the test.\n\n### Why the digit-sum test works\n\nWrite a 3-digit number with digits a, b, c as 100a + 10b + c. Since 100 = 99 + 1 and 10 = 9 + 1:\n\n100a + 10b + c = 99a + 9b + (a + b + c)\n\nThe part 99a + 9b is always a multiple of 9 (and of 3). So the whole number is a multiple of 9 exactly when the **digit sum** a + b + c is. For example, 345 = 99 × 3 + 9 × 4 + 12.\n\n### Combining tests: be careful\n\nTo test for a number like 12, split it into factors that share no common factor except 1 (**co-prime** factors): 12 = 3 × 4. Then the number must pass *both* tests.\n\nDo **not** use 12 = 2 × 6. The number 18 is divisible by 2 and by 6, but not by 12 — because 2 and 6 share the factor 2. In the same way, \"divisible by 4 and by 6\" only guarantees divisible by 12 (their LCM), not by 24.\n\n### Missing-digit puzzles\n\nA missing-digit puzzle gives a number like 4_32 and a divisibility fact. Use the test as a condition, then list every digit (0 to 9) that fits. Remember that 0 is a digit, and there can be more than one answer.\n\n## Worked examples\n\n### Example 1\n\nIs 7128 divisible by 8? By 11?\n\nStep 1: for 8, look at the last three digits: 128 — because 1000 is a multiple of 8.\nStep 2: 128 ÷ 8 = 16 exactly, so 7128 **is** divisible by 8.\nStep 3: for 11, alternate from the right: 8 − 2 + 1 − 7 = 0 — a zero result passes the test.\nStep 4: so 7128 **is** divisible by 11 as well.\n\nCheck: 7128 ÷ 11 = 648 ✓\n\n### Example 2\n\nThe number 4_32 is divisible by 9. What could the missing digit be?\n\nStep 1: the digit sum must be a multiple of 9 — test for 9.\nStep 2: 4 + 3 + 2 = 9, so the digit sum is 9 + the missing digit.\nStep 3: 9 + d is a multiple of 9 when d = 0 or d = 9 — d must be a single digit.\nStep 4: the missing digit is **0 or 9** (4032 or 4932).\n\nCheck: 4032 ÷ 9 = 448 and 4932 ÷ 9 = 548 ✓\n\n### Example 3\n\n52_6 is divisible by 12. Find the missing digit.\n\nStep 1: 12 = 3 × 4 (co-prime), so it must pass both tests.\nStep 2: test for 4: the last two digits \"_6\" must be a multiple of 4: 16, 36, 56, 76 or 96 — so the digit is 1, 3, 5, 7 or 9.\nStep 3: test for 3: 5 + 2 + 6 = 13, so 13 + the digit must be a multiple of 3 — digit 2, 5 or 8.\nStep 4: the only digit in both lists is **5**, giving 5256.\n\nCheck: 5256 ÷ 12 = 438 ✓\n\n### Example 4\n\nA number is divisible by 4 and by 6. Must it be divisible by 24?\n\nStep 1: try a small example — one counterexample is enough to say no.\nStep 2: 12 is divisible by 4 and by 6, but 12 ÷ 24 is not a whole number.\nStep 3: so **no** — 4 and 6 share the factor 2, so you only get the LCM, 12.\n\n## Common mistakes\n\n- **Using the 4-test for 8.** Looking at only two digits: 2620 ends in 20 (a multiple of 4), but 620 ÷ 8 is not exact. Fix: 8 needs the last *three* digits.\n- **Combining factors that overlap.** \"Divisible by 2 and 6\" does not mean divisible by 12. Fix: split into co-prime factors (3 × 4, or 2 × 9 for 18, or 3 × 5 for 15).\n- **Forgetting 0 and missing answers.** In 4_32, 0 also works. Fix: test every digit 0–9 and list all that fit.\n- **Adding all the digits for 11.** The 11-test alternates: subtract, add, subtract. Fix: mark the digits + − + − from the right.\n- **Thinking \"ends in 7\" means divisible by 7.** 517 ends in 7 but is not a multiple of 7. Fix: use the double-and-subtract test.\n\n## Tips to remember\n\n- **\"Two digits for 4, three digits for 8.\"** Powers of 2 go with the number of end digits: 2 → 1 digit, 4 → 2 digits, 8 → 3 digits.\n- **\"Sum for 3 and 9, swing for 11.\"** (A made-up memory trick.) Add the digits for 3 and 9; swing + − + − for 11.\n- **Co-prime partners:** 6 = 2 × 3, 12 = 3 × 4, 15 = 3 × 5, 18 = 2 × 9 — partners must share no factor.\n- **Fun fact to self-check:** 1001 = 7 × 11 × 13, so any 3-digit number written twice (like 452452) is divisible by 7, 11 and 13.\n- **One counterexample beats a hundred examples** when the question asks \"must it be…?\".\n\n## Key terms\n\n- **Divisible** — can be divided exactly, with no remainder.\n- **Divisibility test** — a quick check that shows whether a number is divisible by another without dividing.\n- **Digit sum** — the total of a number's digits.\n- **Alternating sum** — adding and subtracting the digits in turn, starting from the ones digit.\n- **Co-prime** — two numbers whose only common factor is 1 (like 3 and 4).\n- **Counterexample** — one example that shows a statement is false.\n\n## Summary\n\n- Last digits: 1 for 2, 5, 10; 2 for 4; 3 for 8.\n- Digit sum for 3 and 9 — it works because 10, 100, 1000 … are each 1 more than a multiple of 9.\n- Alternating sum for 11; double-and-subtract for 7.\n- Combine tests only with co-prime factors (12 = 3 × 4, not 2 × 6).\n- In missing-digit puzzles, test every digit 0–9 and give all that work.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "Which of these numbers is divisible by 8?",
-      "options": {
-        "A": "5124",
-        "B": "3816",
-        "C": "2620",
-        "D": "7348"
-      },
-      "answer": "B",
-      "explanation": "The last three digits of 3816 are 816, and 816 ÷ 8 = 102 exactly. 7348 ends in 48, a multiple of 8, but you need the last three digits: 348 ÷ 8 = 43.5.",
-      "steps": [
-        "For 8, test the last three digits, because 1000 is a multiple of 8.",
-        "Check: 124 ÷ 8 = 15.5, 816 ÷ 8 = 102, 620 ÷ 8 = 77.5, 348 ÷ 8 = 43.5.",
-        "Only 816 works, so 3816 is divisible by 8."
-      ],
-      "mistakes": {
-        "A": "Step 1: 24 is a multiple of 8, but you must test the last THREE digits — 124 ÷ 8 is not exact.",
-        "C": "Step 1: 20 passes the test for 4, not 8. Test 620 ÷ 8.",
-        "D": "Step 1: 48 is a multiple of 8, but the test for 8 uses three digits — 348 ÷ 8 is not exact."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Which of these numbers is divisible by 11?",
-      "options": {
-        "A": "4758",
-        "B": "7485",
-        "C": "4785",
-        "D": "4578"
-      },
-      "answer": "C",
-      "explanation": "Alternating sum of 4785 from the right: 5 − 8 + 7 − 4 = 0, so it passes. All four use the digits 4, 5, 7, 8, so the digit sum (24) can’t tell them apart — the order matters for 11.",
-      "steps": [
-        "For 11, find the alternating sum: start at the ones digit, then − + − across the digits.",
-        "4758: 8 − 5 + 7 − 4 = 6. 7485: 5 − 8 + 4 − 7 = −6. 4785: 5 − 8 + 7 − 4 = 0. 4578: 8 − 7 + 5 − 4 = 2.",
-        "Only 4785 gives 0 (a multiple of 11), so 4785 is divisible by 11."
-      ],
-      "mistakes": {
-        "A": "Step 2: the alternating sum of 4758 is 6, not 0 or a multiple of 11. The digit order matters.",
-        "B": "Step 2: the alternating sum of 7485 is −6, which is not a multiple of 11.",
-        "D": "Step 2: the alternating sum of 4578 is 2. Adding all the digits (24) is the test for 3, not 11."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "The number 5_31 is divisible by 9. Which digit could go in the gap?",
-      "options": {
-        "A": "3",
-        "B": "6",
-        "C": "1",
-        "D": "9"
-      },
-      "answer": "D",
-      "explanation": "The digits 5, 3, 1 add to 9, so the gap must make the digit sum a multiple of 9: 9 + 9 = 18 works. 3 only makes the digit sum 12, a multiple of 3.",
-      "steps": [
-        "For 9, the digit sum must be a multiple of 9.",
-        "5 + 3 + 1 = 9, so the digit sum is 9 + the missing digit.",
-        "Of the options, only 9 gives a multiple of 9 (18), so the digit is 9."
-      ],
-      "mistakes": {
-        "A": "Step 1: a digit sum of 12 passes the test for 3, not for 9.",
-        "B": "Step 3: 9 + 6 = 15, which is not a multiple of 9.",
-        "C": "Step 3: 9 + 1 = 10 is not a multiple of 9 — a sum ending in 0 is the test for 10, not 9."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Which digit goes in the gap so that 8_4 is divisible by 36?",
-      "options": {
-        "A": "3",
-        "B": "2",
-        "C": "0",
-        "D": "6"
-      },
-      "answer": "D",
-      "explanation": "36 = 4 × 9 (co-prime). Digit sum 12 + d must be a multiple of 9, so d = 6; and 64 is a multiple of 4. 2 passes the test for 4 only.",
-      "steps": [
-        "Split 36 into co-prime factors: 36 = 4 × 9, so test for 4 AND 9.",
-        "Test for 9: 8 + 4 = 12, so 12 + d must be a multiple of 9 — only d = 6 works.",
-        "Test for 4: the last two digits 64 ÷ 4 = 16 ✓, so the digit is 6."
-      ],
-      "mistakes": {
-        "A": "Step 2: 834 has digit sum 15 — that passes the test for 3, not 9 (and 34 is not a multiple of 4).",
-        "B": "Step 2: 824 passes the test for 4, but its digit sum 14 is not a multiple of 9.",
-        "C": "Step 1: 804 passes the tests for 3 and 4 (that is 12), but 36 needs 4 and 9."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A number is divisible by both 4 and 6. Must it be divisible by 24?",
-      "options": {
-        "A": "Yes, because 4 × 6 = 24",
-        "B": "No — for example, 12 is divisible by 4 and 6 but not by 24",
-        "C": "Yes, as long as the number is even",
-        "D": "No — a number can’t be divisible by both 4 and 6"
-      },
-      "answer": "B",
-      "explanation": "4 and 6 share the factor 2, so you only get their LCM, 12. The counterexample 12 shows \"yes\" is wrong. Multiplying 4 × 6 only works for co-prime factors.",
-      "steps": [
-        "Look for one counterexample — one is enough to show \"must\" is false.",
-        "Try 12: 12 ÷ 4 = 3 and 12 ÷ 6 = 2, but 12 ÷ 24 is not whole.",
-        "So the answer is no, as 12 shows."
-      ],
-      "mistakes": {
-        "A": "Step 1: multiplying works only for co-prime factors. 4 and 6 share a 2, so test a small example.",
-        "C": "Step 2: 12 is even and divisible by 4 and 6, yet not by 24.",
-        "D": "Step 2: 12, 24 and 36 are all divisible by 4 and by 6."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Use the double-and-subtract test to decide which number is divisible by 7.",
-      "options": {
-        "A": "476",
-        "B": "517",
-        "C": "520",
-        "D": "452"
-      },
-      "answer": "A",
-      "explanation": "476: 47 − 2 × 6 = 35 = 5 × 7, so it is divisible by 7. 452 looks right only if you ADD: 45 + 4 = 49.",
-      "steps": [
-        "Double the last digit and subtract it from the rest of the number.",
-        "476: 47 − 12 = 35. 517: 51 − 14 = 37. 520: 52 − 0 = 52. 452: 45 − 4 = 41.",
-        "Only 35 is a multiple of 7, so 476 is divisible by 7."
-      ],
-      "mistakes": {
-        "B": "Step 2: 51 − 14 = 37 is not a multiple of 7. Ending in 7 does not make a number divisible by 7.",
-        "C": "Step 2: 52 − 0 = 52 is not a multiple of 7. A digit sum of 7 is not a test for 7.",
-        "D": "Step 1: you must SUBTRACT the doubled digit: 45 − 4 = 41, not 45 + 4."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The 5-digit number 2a46b is divisible by 45 (a and b are digits). What are the possible values of a?",
-      "options": {
-        "A": "6 only",
-        "B": "1 only",
-        "C": "1 or 6",
-        "D": "0, 3, 6 or 9"
-      },
-      "answer": "C",
-      "explanation": "45 = 5 × 9. For 5, b = 0 or 5. If b = 0, the digit sum is 12 + a, so a = 6; if b = 5, it is 17 + a, so a = 1. \"6 only\" forgets b can be 5.",
-      "steps": [
-        "45 = 5 × 9 (co-prime), so test for 5 and for 9.",
-        "For 5, b is 0 or 5.",
-        "b = 0: 2 + a + 4 + 6 + 0 = 12 + a, a multiple of 9 when a = 6.",
-        "b = 5: 17 + a is a multiple of 9 when a = 1. So a = 1 or 6."
-      ],
-      "mistakes": {
-        "A": "Step 2: b can be 5 as well as 0 — check that case too.",
-        "B": "Step 2: b can also be 0 — check that case too.",
-        "D": "Step 3: those make the digit sum a multiple of 3, but 45 needs a multiple of 9."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "What is the smallest number greater than 1000 that is divisible by 3, 4 and 5?",
-      "options": {
-        "A": "1005",
-        "B": "1020",
-        "C": "1040",
-        "D": "1002"
-      },
-      "answer": "B",
-      "explanation": "Divisible by 3, 4 and 5 means divisible by their LCM, 60. The first multiple of 60 after 1000 is 17 × 60 = 1020. 1005 fails the test for 4.",
-      "steps": [
-        "3, 4 and 5 are co-prime, so the number must be a multiple of 3 × 4 × 5 = 60.",
-        "1000 ÷ 60 = 16 remainder 40, so the next multiple is 17 × 60.",
-        "17 × 60 = 1020."
-      ],
-      "mistakes": {
-        "A": "Step 1: 1005 passes for 3 and 5, but 05 is not a multiple of 4.",
-        "C": "Step 1: 1040 passes for 4 and 5, but its digit sum 5 is not a multiple of 3.",
-        "D": "Step 1: 1002 passes for 3, but it fails for 4 (02) and 5 (ends in 2)."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "I am an odd 3-digit number. I am divisible by 5 and by 11, and my digits add up to 12. What number am I?",
-      "options": {
-        "A": "660",
-        "B": "561",
-        "C": "345",
-        "D": "165"
-      },
-      "answer": "D",
-      "explanation": "165: ends in 5 (divisible by 5, odd), 5 − 6 + 1 = 0 (divisible by 11), 1 + 6 + 5 = 12. 660 fits everything except being odd.",
-      "steps": [
-        "Divisible by 5 and 11 means a multiple of 55.",
-        "Odd multiples of 55 end in 5: 165, 275, 385, 495, 605, 715, 825, 935.",
-        "Digit sums: only 1 + 6 + 5 = 12, so the number is 165."
-      ],
-      "mistakes": {
-        "A": "Step 2: 660 is even — the number must be odd.",
-        "B": "Step 1: 561 is divisible by 11 but ends in 1, so not by 5.",
-        "C": "Step 1: 345 is divisible by 5, but 5 − 4 + 3 = 4, so not by 11."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A 3-digit number with digits a, b, c can be written as 100a + 10b + c = 99a + 9b + (a + b + c). Why does this prove the digit-sum test for 9?",
-      "options": {
-        "A": "Because 99a + 9b is always a multiple of 9, so the number is a multiple of 9 exactly when a + b + c is",
-        "B": "Because a + b + c is always a multiple of 9",
-        "C": "Because 100a + 10b + c is always a multiple of 9",
-        "D": "Because 99 and 9 are both odd numbers"
-      },
-      "answer": "A",
-      "explanation": "99a + 9b = 9(11a + b) is always a multiple of 9, so whether the whole number is a multiple of 9 depends only on the leftover a + b + c. The digit sum is NOT always a multiple of 9 (e.g. 345 has digit sum 12).",
-      "steps": [
-        "99 = 9 × 11 and 9 = 9 × 1, so 99a + 9b = 9 × (11a + b), always a multiple of 9.",
-        "The number = (a multiple of 9) + (a + b + c).",
-        "So it is a multiple of 9 exactly when the digit sum a + b + c is — the first option."
-      ],
-      "mistakes": {
-        "B": "Step 2: the digit sum is often not a multiple of 9 (345 has digit sum 12). The point is that ONLY the digit sum decides.",
-        "C": "Step 2: most numbers are not multiples of 9 — the proof shows WHEN they are.",
-        "D": "Step 1: being odd has nothing to do with it; what matters is that 99 and 9 are multiples of 9."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "How many whole numbers from 1 to 100 are divisible by 6 but NOT by 4?",
-      "options": {
-        "A": "16",
-        "B": "12",
-        "C": "8",
-        "D": "9"
-      },
-      "answer": "C",
-      "explanation": "There are 16 multiples of 6 up to 100. Those also divisible by 4 are the multiples of LCM(6, 4) = 12: there are 8. So 16 − 8 = 8. 12 comes from removing multiples of 24 instead of 12.",
-      "steps": [
-        "Multiples of 6 up to 100: 100 ÷ 6 = 16 remainder 4, so 16 of them.",
-        "Numbers divisible by 6 and 4 are multiples of the LCM, 12: 100 ÷ 12 = 8 remainder 4, so 8 of them.",
-        "16 − 8 = 8 numbers."
-      ],
-      "mistakes": {
-        "A": "Step 2: you forgot to remove the multiples of 6 that are also divisible by 4.",
-        "B": "Step 2: divisible by 6 and 4 means divisible by 12 (the LCM), not 24.",
-        "D": "Step 1: there are 16 multiples of 6 up to 100 (16 × 6 = 96); 17 × 6 = 102 is too big."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Every 4-digit palindrome (a number that reads the same both ways, like 3443 or 7117) is divisible by which number?",
-      "options": {
-        "A": "3",
-        "B": "7",
-        "C": "9",
-        "D": "11"
-      },
-      "answer": "D",
-      "explanation": "For a palindrome abba, the alternating sum is a − b + b − a = 0, so it is always divisible by 11. 3443 has digit sum 14, so 3 and 9 fail.",
-      "steps": [
-        "Write the palindrome with digits a, b, b, a.",
-        "Alternating sum from the right: a − b + b − a = 0.",
-        "0 passes the test for 11, so every one is divisible by 11."
-      ],
-      "mistakes": {
-        "A": "Step 1: test an example: 3443 has digit sum 14, which is not a multiple of 3.",
-        "B": "Step 1: test an example: 3443: 344 − 6 = 338, which is not a multiple of 7.",
-        "C": "Step 1: test an example: 7117 has digit sum 16, not a multiple of 9."
-      }
-    }
-  ]
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7 Advanced",
+ "title": "Divisibility rules and digit puzzles",
+ "summary": "Test numbers for divisibility by 2 to 12, combine tests with co-prime factors, explain why the digit-sum test works, and solve missing-digit puzzles.",
+ "minutes": 30,
+ "video": "videos/y7/maths-advanced/divisibility-rules-and-digit-puzzles.mp4",
+ "body": "Divisibility tests let you tell whether one number divides another without doing the division. They are the secret behind simplifying fractions fast, checking long calculations, and solving the \"find the missing digit\" puzzles that turn up in maths competitions and selective-entry tests. This lesson adds new tests (for 7, 8, 11 and 12), shows how to combine them, and explains *why* the digit-sum test works.\n\n## Learning objective\n\nBy the end of this lesson you can test numbers for divisibility by 2–12, combine tests correctly, explain why the digit-sum tests work, and use the tests to solve missing-digit puzzles.\n\n## Before you start\n\nThis builds on **Factors and multiples (Year 7)** (the tests for 2, 3, 4, 5, 6, 9 and 10) and **Primes and prime factorisation (Year 7)**.\n\nWarm-up (answers below):\n\n1. Is 2341 divisible by 3?\n2. Is 516 divisible by 6?\n\nAnswers: 1. No — the digit sum is 10, which is not a multiple of 3.  2. Yes — it is even, and its digit sum 12 is a multiple of 3.\n\n## Think of it like this\n\n### A bouncer checking ID\n\nA bouncer at a door doesn't need your whole life story — just one quick check of your ID card. A divisibility test is a quick check on *part* of the number (the last digits, or the digit sum) instead of the whole division. Some doors need two checks: to get into \"divisible by 12\" you must pass the check for 3 *and* the check for 4.\n\n*Where the analogy breaks down:* a bouncer might be fooled by a fake ID, but a correct divisibility test is never wrong — it works for every whole number, because of how place value works.\n\n## Key ideas\n\n### The tests you know, plus new ones\n\n| Divisible by | Test |\n|---|---|\n| 2, 5, 10 | look at the last digit |\n| 4 | the last **two** digits make a multiple of 4 |\n| **8** | the last **three** digits make a multiple of 8 |\n| 3, 9 | the **digit sum** is a multiple of 3 (or 9) |\n| 6 | passes the tests for 2 **and** 3 |\n| **11** | the **alternating sum** of the digits is 0 or a multiple of 11 |\n| **12** | passes the tests for 3 **and** 4 |\n| **7** | double the last digit, subtract it from the rest; the result is a multiple of 7 |\n\n**Why the last-digits tests work:** 1000 is a multiple of 8 (1000 = 8 × 125), so thousands never affect divisibility by 8 — only the last three digits matter. In the same way, 100 is a multiple of 4, so only the last two digits matter for 4.\n\n**The alternating sum** means: start from the ones digit, then take away the tens digit, add the hundreds digit, and so on. For 9581: 1 − 8 + 5 − 9 = −11, a multiple of 11, so 9581 is divisible by 11 (9581 = 11 × 871).\n\n**The test for 7** on 532: 53 − 2 × 2 = 49 = 7 × 7, so 532 is divisible by 7. If the result is still big, repeat the test.\n\n### Why the digit-sum test works\n\nWrite a 3-digit number with digits a, b, c as 100a + 10b + c. Since 100 = 99 + 1 and 10 = 9 + 1:\n\n100a + 10b + c = 99a + 9b + (a + b + c)\n\nThe part 99a + 9b is always a multiple of 9 (and of 3). So the whole number is a multiple of 9 exactly when the **digit sum** a + b + c is. For example, 345 = 99 × 3 + 9 × 4 + 12.\n\n### Combining tests: be careful\n\nTo test for a number like 12, split it into factors that share no common factor except 1 (**co-prime** factors): 12 = 3 × 4. Then the number must pass *both* tests.\n\nDo **not** use 12 = 2 × 6. The number 18 is divisible by 2 and by 6, but not by 12 — because 2 and 6 share the factor 2. In the same way, \"divisible by 4 and by 6\" only guarantees divisible by 12 (their LCM), not by 24.\n\n### Missing-digit puzzles\n\nA missing-digit puzzle gives a number like 4_32 and a divisibility fact. Use the test as a condition, then list every digit (0 to 9) that fits. Remember that 0 is a digit, and there can be more than one answer.\n\n## Worked examples\n\n### Example 1\n\nIs 7128 divisible by 8? By 11?\n\nStep 1: for 8, look at the last three digits: 128 — because 1000 is a multiple of 8.\nStep 2: 128 ÷ 8 = 16 exactly, so 7128 **is** divisible by 8.\nStep 3: for 11, alternate from the right: 8 − 2 + 1 − 7 = 0 — a zero result passes the test.\nStep 4: so 7128 **is** divisible by 11 as well.\n\nCheck: 7128 ÷ 11 = 648 ✓\n\n### Example 2\n\nThe number 4_32 is divisible by 9. What could the missing digit be?\n\nStep 1: the digit sum must be a multiple of 9 — test for 9.\nStep 2: 4 + 3 + 2 = 9, so the digit sum is 9 + the missing digit.\nStep 3: 9 + d is a multiple of 9 when d = 0 or d = 9 — d must be a single digit.\nStep 4: the missing digit is **0 or 9** (4032 or 4932).\n\nCheck: 4032 ÷ 9 = 448 and 4932 ÷ 9 = 548 ✓\n\n### Example 3\n\n52_6 is divisible by 12. Find the missing digit.\n\nStep 1: 12 = 3 × 4 (co-prime), so it must pass both tests.\nStep 2: test for 4: the last two digits \"_6\" must be a multiple of 4: 16, 36, 56, 76 or 96 — so the digit is 1, 3, 5, 7 or 9.\nStep 3: test for 3: 5 + 2 + 6 = 13, so 13 + the digit must be a multiple of 3 — digit 2, 5 or 8.\nStep 4: the only digit in both lists is **5**, giving 5256.\n\nCheck: 5256 ÷ 12 = 438 ✓\n\n### Example 4\n\nA number is divisible by 4 and by 6. Must it be divisible by 24?\n\nStep 1: try a small example — one counterexample is enough to say no.\nStep 2: 12 is divisible by 4 and by 6, but 12 ÷ 24 is not a whole number.\nStep 3: so **no** — 4 and 6 share the factor 2, so you only get the LCM, 12.\n\n## Common mistakes\n\n- **Using the 4-test for 8.** Looking at only two digits: 2620 ends in 20 (a multiple of 4), but 620 ÷ 8 is not exact. Fix: 8 needs the last *three* digits.\n- **Combining factors that overlap.** \"Divisible by 2 and 6\" does not mean divisible by 12. Fix: split into co-prime factors (3 × 4, or 2 × 9 for 18, or 3 × 5 for 15).\n- **Forgetting 0 and missing answers.** In 4_32, 0 also works. Fix: test every digit 0–9 and list all that fit.\n- **Adding all the digits for 11.** The 11-test alternates: subtract, add, subtract. Fix: mark the digits + − + − from the right.\n- **Thinking \"ends in 7\" means divisible by 7.** 517 ends in 7 but is not a multiple of 7. Fix: use the double-and-subtract test.\n\n## Tips to remember\n\n- **\"Two digits for 4, three digits for 8.\"** Powers of 2 go with the number of end digits: 2 → 1 digit, 4 → 2 digits, 8 → 3 digits.\n- **\"Sum for 3 and 9, swing for 11.\"** (A made-up memory trick.) Add the digits for 3 and 9; swing + − + − for 11.\n- **Co-prime partners:** 6 = 2 × 3, 12 = 3 × 4, 15 = 3 × 5, 18 = 2 × 9 — partners must share no factor.\n- **Fun fact to self-check:** 1001 = 7 × 11 × 13, so any 3-digit number written twice (like 452452) is divisible by 7, 11 and 13.\n- **One counterexample beats a hundred examples** when the question asks \"must it be…?\".\n\n## Key terms\n\n- **Divisible** — can be divided exactly, with no remainder.\n- **Divisibility test** — a quick check that shows whether a number is divisible by another without dividing.\n- **Digit sum** — the total of a number's digits.\n- **Alternating sum** — adding and subtracting the digits in turn, starting from the ones digit.\n- **Co-prime** — two numbers whose only common factor is 1 (like 3 and 4).\n- **Counterexample** — one example that shows a statement is false.\n\n## Summary\n\n- Last digits: 1 for 2, 5, 10; 2 for 4; 3 for 8.\n- Digit sum for 3 and 9 — it works because 10, 100, 1000 … are each 1 more than a multiple of 9.\n- Alternating sum for 11; double-and-subtract for 7.\n- Combine tests only with co-prime factors (12 = 3 × 4, not 2 × 6).\n- In missing-digit puzzles, test every digit 0–9 and give all that work.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Which of these numbers is divisible by 8?",
+   "options": {
+    "A": "5124",
+    "B": "3816",
+    "C": "2620",
+    "D": "7348"
+   },
+   "answer": "B",
+   "explanation": "The last three digits of 3816 are 816, and 816 ÷ 8 = 102 exactly. 7348 ends in 48, a multiple of 8, but you need the last three digits: 348 ÷ 8 = 43.5.",
+   "steps": [
+    "For 8, test the last three digits, because 1000 is a multiple of 8.",
+    "Check: 124 ÷ 8 = 15.5, 816 ÷ 8 = 102, 620 ÷ 8 = 77.5, 348 ÷ 8 = 43.5.",
+    "Only 816 works, so 3816 is divisible by 8."
+   ],
+   "mistakes": {
+    "A": "Step 1: 24 is a multiple of 8, but you must test the last THREE digits — 124 ÷ 8 is not exact.",
+    "C": "Step 1: 20 passes the test for 4, not 8. Test 620 ÷ 8.",
+    "D": "Step 1: 48 is a multiple of 8, but the test for 8 uses three digits — 348 ÷ 8 is not exact."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Which of these numbers is divisible by 11?",
+   "options": {
+    "A": "4758",
+    "B": "7485",
+    "C": "4785",
+    "D": "4578"
+   },
+   "answer": "C",
+   "explanation": "Alternating sum of 4785 from the right: 5 − 8 + 7 − 4 = 0, so it passes. All four use the digits 4, 5, 7, 8, so the digit sum (24) can’t tell them apart — the order matters for 11.",
+   "steps": [
+    "For 11, find the alternating sum: start at the ones digit, then − + − across the digits.",
+    "4758: 8 − 5 + 7 − 4 = 6. 7485: 5 − 8 + 4 − 7 = −6. 4785: 5 − 8 + 7 − 4 = 0. 4578: 8 − 7 + 5 − 4 = 2.",
+    "Only 4785 gives 0 (a multiple of 11), so 4785 is divisible by 11."
+   ],
+   "mistakes": {
+    "A": "Step 2: the alternating sum of 4758 is 6, not 0 or a multiple of 11. The digit order matters.",
+    "B": "Step 2: the alternating sum of 7485 is −6, which is not a multiple of 11.",
+    "D": "Step 2: the alternating sum of 4578 is 2. Adding all the digits (24) is the test for 3, not 11."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The number 5_31 is divisible by 9. Which digit could go in the gap?",
+   "options": {
+    "A": "3",
+    "B": "6",
+    "C": "1",
+    "D": "9"
+   },
+   "answer": "D",
+   "explanation": "The digits 5, 3, 1 add to 9, so the gap must make the digit sum a multiple of 9: 9 + 9 = 18 works. 3 only makes the digit sum 12, a multiple of 3.",
+   "steps": [
+    "For 9, the digit sum must be a multiple of 9.",
+    "5 + 3 + 1 = 9, so the digit sum is 9 + the missing digit.",
+    "Of the options, only 9 gives a multiple of 9 (18), so the digit is 9."
+   ],
+   "mistakes": {
+    "A": "Step 1: a digit sum of 12 passes the test for 3, not for 9.",
+    "B": "Step 3: 9 + 6 = 15, which is not a multiple of 9.",
+    "C": "Step 3: 9 + 1 = 10 is not a multiple of 9 — a sum ending in 0 is the test for 10, not 9."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Which digit goes in the gap so that 8_4 is divisible by 36?",
+   "options": {
+    "A": "3",
+    "B": "2",
+    "C": "0",
+    "D": "6"
+   },
+   "answer": "D",
+   "explanation": "36 = 4 × 9 (co-prime). Digit sum 12 + d must be a multiple of 9, so d = 6; and 64 is a multiple of 4. 2 passes the test for 4 only.",
+   "steps": [
+    "Split 36 into co-prime factors: 36 = 4 × 9, so test for 4 AND 9.",
+    "Test for 9: 8 + 4 = 12, so 12 + d must be a multiple of 9 — only d = 6 works.",
+    "Test for 4: the last two digits 64 ÷ 4 = 16 ✓, so the digit is 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: 834 has digit sum 15 — that passes the test for 3, not 9 (and 34 is not a multiple of 4).",
+    "B": "Step 2: 824 passes the test for 4, but its digit sum 14 is not a multiple of 9.",
+    "C": "Step 1: 804 passes the tests for 3 and 4 (that is 12), but 36 needs 4 and 9."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A number is divisible by both 4 and 6. Must it be divisible by 24?",
+   "options": {
+    "A": "Yes, because 4 × 6 = 24",
+    "B": "No — for example, 12 is divisible by 4 and 6 but not by 24",
+    "C": "Yes, as long as the number is even",
+    "D": "No — a number can’t be divisible by both 4 and 6"
+   },
+   "answer": "B",
+   "explanation": "4 and 6 share the factor 2, so you only get their LCM, 12. The counterexample 12 shows \"yes\" is wrong. Multiplying 4 × 6 only works for co-prime factors.",
+   "steps": [
+    "Look for one counterexample — one is enough to show \"must\" is false.",
+    "Try 12: 12 ÷ 4 = 3 and 12 ÷ 6 = 2, but 12 ÷ 24 is not whole.",
+    "So the answer is no, as 12 shows."
+   ],
+   "mistakes": {
+    "A": "Step 1: multiplying works only for co-prime factors. 4 and 6 share a 2, so test a small example.",
+    "C": "Step 2: 12 is even and divisible by 4 and 6, yet not by 24.",
+    "D": "Step 2: 12, 24 and 36 are all divisible by 4 and by 6."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Use the double-and-subtract test to decide which number is divisible by 7.",
+   "options": {
+    "A": "476",
+    "B": "517",
+    "C": "520",
+    "D": "452"
+   },
+   "answer": "A",
+   "explanation": "476: 47 − 2 × 6 = 35 = 5 × 7, so it is divisible by 7. 452 looks right only if you ADD: 45 + 4 = 49.",
+   "steps": [
+    "Double the last digit and subtract it from the rest of the number.",
+    "476: 47 − 12 = 35. 517: 51 − 14 = 37. 520: 52 − 0 = 52. 452: 45 − 4 = 41.",
+    "Only 35 is a multiple of 7, so 476 is divisible by 7."
+   ],
+   "mistakes": {
+    "B": "Step 2: 51 − 14 = 37 is not a multiple of 7. Ending in 7 does not make a number divisible by 7.",
+    "C": "Step 2: 52 − 0 = 52 is not a multiple of 7. A digit sum of 7 is not a test for 7.",
+    "D": "Step 1: you must SUBTRACT the doubled digit: 45 − 4 = 41, not 45 + 4."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The 5-digit number 2a46b is divisible by 45 (a and b are digits). What are the possible values of a?",
+   "options": {
+    "A": "6 only",
+    "B": "1 only",
+    "C": "1 or 6",
+    "D": "0, 3, 6 or 9"
+   },
+   "answer": "C",
+   "explanation": "45 = 5 × 9. For 5, b = 0 or 5. If b = 0, the digit sum is 12 + a, so a = 6; if b = 5, it is 17 + a, so a = 1. \"6 only\" forgets b can be 5.",
+   "steps": [
+    "45 = 5 × 9 (co-prime), so test for 5 and for 9.",
+    "For 5, b is 0 or 5.",
+    "b = 0: 2 + a + 4 + 6 + 0 = 12 + a, a multiple of 9 when a = 6.",
+    "b = 5: 17 + a is a multiple of 9 when a = 1. So a = 1 or 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: b can be 5 as well as 0 — check that case too.",
+    "B": "Step 2: b can also be 0 — check that case too.",
+    "D": "Step 3: those make the digit sum a multiple of 3, but 45 needs a multiple of 9."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "What is the smallest number greater than 1000 that is divisible by 3, 4 and 5?",
+   "options": {
+    "A": "1005",
+    "B": "1020",
+    "C": "1040",
+    "D": "1002"
+   },
+   "answer": "B",
+   "explanation": "Divisible by 3, 4 and 5 means divisible by their LCM, 60. The first multiple of 60 after 1000 is 17 × 60 = 1020. 1005 fails the test for 4.",
+   "steps": [
+    "3, 4 and 5 are co-prime, so the number must be a multiple of 3 × 4 × 5 = 60.",
+    "1000 ÷ 60 = 16 remainder 40, so the next multiple is 17 × 60.",
+    "17 × 60 = 1020."
+   ],
+   "mistakes": {
+    "A": "Step 1: 1005 passes for 3 and 5, but 05 is not a multiple of 4.",
+    "C": "Step 1: 1040 passes for 4 and 5, but its digit sum 5 is not a multiple of 3.",
+    "D": "Step 1: 1002 passes for 3, but it fails for 4 (02) and 5 (ends in 2)."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "I am an odd 3-digit number. I am divisible by 5 and by 11, and my digits add up to 12. What number am I?",
+   "options": {
+    "A": "660",
+    "B": "561",
+    "C": "345",
+    "D": "165"
+   },
+   "answer": "D",
+   "explanation": "165: ends in 5 (divisible by 5, odd), 5 − 6 + 1 = 0 (divisible by 11), 1 + 6 + 5 = 12. 660 fits everything except being odd.",
+   "steps": [
+    "Divisible by 5 and 11 means a multiple of 55.",
+    "Odd multiples of 55 end in 5: 165, 275, 385, 495, 605, 715, 825, 935.",
+    "Digit sums: only 1 + 6 + 5 = 12, so the number is 165."
+   ],
+   "mistakes": {
+    "A": "Step 2: 660 is even — the number must be odd.",
+    "B": "Step 1: 561 is divisible by 11 but ends in 1, so not by 5.",
+    "C": "Step 1: 345 is divisible by 5, but 5 − 4 + 3 = 4, so not by 11."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A 3-digit number with digits a, b, c can be written as 100a + 10b + c = 99a + 9b + (a + b + c). Why does this prove the digit-sum test for 9?",
+   "options": {
+    "A": "Because 99a + 9b is always a multiple of 9, so the number is a multiple of 9 exactly when a + b + c is",
+    "B": "Because a + b + c is always a multiple of 9",
+    "C": "Because 100a + 10b + c is always a multiple of 9",
+    "D": "Because 99 and 9 are both odd numbers"
+   },
+   "answer": "A",
+   "explanation": "99a + 9b = 9(11a + b) is always a multiple of 9, so whether the whole number is a multiple of 9 depends only on the leftover a + b + c. The digit sum is NOT always a multiple of 9 (e.g. 345 has digit sum 12).",
+   "steps": [
+    "99 = 9 × 11 and 9 = 9 × 1, so 99a + 9b = 9 × (11a + b), always a multiple of 9.",
+    "The number = (a multiple of 9) + (a + b + c).",
+    "So it is a multiple of 9 exactly when the digit sum a + b + c is — the first option."
+   ],
+   "mistakes": {
+    "B": "Step 2: the digit sum is often not a multiple of 9 (345 has digit sum 12). The point is that ONLY the digit sum decides.",
+    "C": "Step 2: most numbers are not multiples of 9 — the proof shows WHEN they are.",
+    "D": "Step 1: being odd has nothing to do with it; what matters is that 99 and 9 are multiples of 9."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "How many whole numbers from 1 to 100 are divisible by 6 but NOT by 4?",
+   "options": {
+    "A": "16",
+    "B": "12",
+    "C": "8",
+    "D": "9"
+   },
+   "answer": "C",
+   "explanation": "There are 16 multiples of 6 up to 100. Those also divisible by 4 are the multiples of LCM(6, 4) = 12: there are 8. So 16 − 8 = 8. 12 comes from removing multiples of 24 instead of 12.",
+   "steps": [
+    "Multiples of 6 up to 100: 100 ÷ 6 = 16 remainder 4, so 16 of them.",
+    "Numbers divisible by 6 and 4 are multiples of the LCM, 12: 100 ÷ 12 = 8 remainder 4, so 8 of them.",
+    "16 − 8 = 8 numbers."
+   ],
+   "mistakes": {
+    "A": "Step 2: you forgot to remove the multiples of 6 that are also divisible by 4.",
+    "B": "Step 2: divisible by 6 and 4 means divisible by 12 (the LCM), not 24.",
+    "D": "Step 1: there are 16 multiples of 6 up to 100 (16 × 6 = 96); 17 × 6 = 102 is too big."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Every 4-digit palindrome (a number that reads the same both ways, like 3443 or 7117) is divisible by which number?",
+   "options": {
+    "A": "3",
+    "B": "7",
+    "C": "9",
+    "D": "11"
+   },
+   "answer": "D",
+   "explanation": "For a palindrome abba, the alternating sum is a − b + b − a = 0, so it is always divisible by 11. 3443 has digit sum 14, so 3 and 9 fail.",
+   "steps": [
+    "Write the palindrome with digits a, b, b, a.",
+    "Alternating sum from the right: a − b + b − a = 0.",
+    "0 passes the test for 11, so every one is divisible by 11."
+   ],
+   "mistakes": {
+    "A": "Step 1: test an example: 3443 has digit sum 14, which is not a multiple of 3.",
+    "B": "Step 1: test an example: 3443: 344 − 6 = 338, which is not a multiple of 7.",
+    "C": "Step 1: test an example: 7117 has digit sum 16, not a multiple of 9."
+   }
+  }
+ ]
 }
