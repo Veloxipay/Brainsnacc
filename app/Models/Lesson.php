@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 
 class Lesson extends Model
 {
-    protected $fillable = ['module_id', 'title', 'summary', 'body', 'video', 'content_hash', 'minutes', 'status', 'sort'];
+    protected $fillable = ['module_id', 'title', 'kind', 'summary', 'body', 'video', 'content_hash', 'minutes', 'status', 'sort'];
 
     public function module(): BelongsTo
     {
@@ -25,6 +25,11 @@ class Lesson extends Model
     public function scopePublished(Builder $query): Builder
     {
         return $query->where('status', 'published');
+    }
+
+    public function isTest(): bool
+    {
+        return $this->kind === 'test';
     }
 
     public function isPublished(): bool

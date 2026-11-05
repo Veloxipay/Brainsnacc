@@ -27,6 +27,23 @@
         @endforeach
     </div>
 
+    @if ($tests->isNotEmpty())
+        <section class="card">
+            <h2 style="margin:0;font-size:20px">Chapter tests</h2>
+            <p class="small muted" style="margin:0">Done on their own, no hints. Weakest topic shown for each.</p>
+            <ul class="skill-list">
+                @foreach ($tests as $t)
+                    @php($weak = collect($t->by_topic)->sortBy(fn ($v) => $v[0] / max(1, $v[1]))->keys()->first())
+                    <li>
+                        <div style="flex:1 1 220px"><strong>{{ $t->lesson->module->unit->level->short_name }} · {{ $t->lesson->module->title }} · {{ $t->lesson->title }}</strong>
+                            <div class="small muted">{{ $t->created_at->timezone('Australia/Melbourne')->format('j M') }}@if ($weak && $t->score < $t->total) · work on: {{ $weak }}@endif</div></div>
+                        <span class="score-pill {{ $t->percent() >= 75 ? 'good' : ($t->percent() >= 60 ? 'ok' : 'low') }}">{{ $t->score }}/{{ $t->total }}</span>
+                    </li>
+                @endforeach
+            </ul>
+        </section>
+    @endif
+
     @if ($skillRecords->isNotEmpty())
         <section class="card">
             <h2 style="margin:0;font-size:20px">Maths tutor skills</h2>

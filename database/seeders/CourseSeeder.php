@@ -46,6 +46,12 @@ class CourseSeeder extends Seeder
             );
 
             foreach ($modules as $m => [$moduleTitle, $lessonTitles]) {
+                // Every Maths chapter ends with 4 chapter tests (15 questions each, no hints).
+                if ($subjectKey === 'maths' && preg_match('/^(\d+) · /', $moduleTitle, $ch)) {
+                    foreach (range(1, 4) as $t) {
+                        $lessonTitles[] = self::testTitle((int) $ch[1], $t);
+                    }
+                }
                 // Matched by position, so placeholder names like "Area of Study 1" get renamed in place.
                 $module = Module::updateOrCreate(
                     ['unit_id' => $unit->id, 'sort' => $m],
@@ -60,6 +66,10 @@ class CourseSeeder extends Seeder
                         ?? Lesson::firstOrNew(['module_id' => $module->id, 'title' => $lessonTitle]);
                     if (! $lesson->exists) {
                         $lesson->fill(['status' => 'draft', 'minutes' => 12]);
+                    }
+                    if (str_contains($lessonTitle, ' · Test ')) {
+                        $lesson->kind = 'test';
+                        $lesson->minutes = 25;
                     }
                     $lesson->module_id = $module->id;
                     $lesson->sort = $l + 1;
@@ -82,7 +92,9 @@ class CourseSeeder extends Seeder
      */
     private function tidyMaths(Unit $unit, array $modules): void
     {
-        $titles = collect($modules)->flatMap(fn ($m) => $m[1]);
+        $titles = collect($modules)->flatMap(fn ($m) => $m[1])
+            ->merge(collect($modules)->filter(fn ($m) => preg_match('/^\d+ · /', $m[0]))
+                ->flatMap(fn ($m) => array_map(fn ($t) => self::testTitle((int) $m[0], $t), range(1, 4))));
 
         Lesson::whereHas('module', fn ($q) => $q->where('unit_id', $unit->id))
             ->whereNotIn('title', $titles)
@@ -95,6 +107,12 @@ class CourseSeeder extends Seeder
         Module::where('unit_id', $unit->id)->where('sort', '>=', count($modules))
             ->whereDoesntHave('lessons')
             ->delete();
+    }
+
+    /** "Chapter 6 · Test 2" — unique within a year, so files can find it. */
+    public static function testTitle(int $chapter, int $n): string
+    {
+        return "Chapter {$chapter} · Test {$n}";
     }
 
     /** [level, subject, unit code, unit title, [[module title, [lesson titles]], …]] */

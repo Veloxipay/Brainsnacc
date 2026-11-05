@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS = 1280, 720, 30
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-VOICE = os.environ.get('PIPER_VOICE', '/tmp/claude-0/-home-claude/05cbc3e5-d97d-5f1e-b9a8-cf30b9813690/scratchpad/tts/en-us-lessac-medium/en-us-lessac-medium.onnx')
+VOICE = os.environ.get('PIPER_VOICE', '/tmp/claude-0/-home-claude/f0099c76-9e7c-5ee5-b95d-1b7646ef1e8c/scratchpad/tts/en-us-lessac-medium.onnx')
 CACHE = os.environ.get('VIDEO_CACHE', os.path.join(tempfile.gettempdir(), 'brainsnacc-video-cache'))
 
 FONT = '/usr/share/fonts/opentype/inter/Inter-%s.otf'
@@ -27,7 +27,7 @@ def font(weight, size):
 
 BG = (247, 248, 251); INK = (20, 27, 45); MUTED = (95, 106, 125); NAVY = (17, 24, 39)
 WHITE = (255, 255, 255); LINE = (222, 227, 236); RED = (200, 60, 52); GREEN = (40, 140, 80)
-SUBJECT = {'chemistry': ((36, 86, 199), (232, 238, 251)), 'biology': ((180, 84, 10), (251, 238, 227))}
+SUBJECT = {'chemistry': ((36, 86, 199), (232, 238, 251)), 'biology': ((180, 84, 10), (251, 238, 227)), 'maths': ((91, 62, 214), (240, 236, 254))}
 
 def ease(t): t = max(0.0, min(1.0, t)); return t * t * (3 - 2 * t)
 

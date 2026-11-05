@@ -72,6 +72,7 @@ class LessonContentSeeder extends Seeder
                     'minutes' => (int) ($data['minutes'] ?? 15),
                     'body' => $data['body'],
                     'video' => $data['video'] ?? null,
+                    'kind' => ($data['kind'] ?? 'lesson') === 'test' ? 'test' : 'lesson',
                     'content_hash' => $hash,
                     'status' => 'published',
                 ]);
@@ -94,6 +95,7 @@ class LessonContentSeeder extends Seeder
                     $lesson->questions()->create([
                         'type' => 'mcq',
                         'difficulty' => in_array($q['difficulty'] ?? null, $levels, true) ? $q['difficulty'] : null,
+                        'topic' => isset($q['topic']) ? mb_substr((string) $q['topic'], 0, 190) : null,
                         'prompt' => $q['prompt'],
                         'options' => $q['options'],
                         'answer' => strtoupper($q['answer']),

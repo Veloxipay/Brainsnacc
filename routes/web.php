@@ -14,6 +14,7 @@ use App\Http\Controllers\LessonController;
 use App\Http\Controllers\MockExamController;
 use App\Http\Controllers\ParentController;
 use App\Http\Controllers\PastPaperController;
+use App\Http\Controllers\TestController;
 use App\Http\Controllers\TutorController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,6 +48,11 @@ Route::middleware('auth')->group(function () {
         Route::post('/questions/{question}/explain', [LessonController::class, 'explainQuestion'])->middleware('throttle:20,1')->name('questions.explain');
         Route::post('/questions/{question}/steps', [LessonController::class, 'steps'])->middleware('throttle:20,1')->name('questions.steps');
         Route::get('/questions/{question}/help', [LessonController::class, 'help'])->name('questions.help');
+        // Chapter tests
+        Route::get('/tests/{lesson}', [TestController::class, 'show'])->name('tests.show');
+        Route::post('/tests/{lesson}', [TestController::class, 'submit'])->middleware('throttle:20,1')->name('tests.submit');
+        Route::get('/tests/{lesson}/results/{attempt}', [TestController::class, 'result'])->name('tests.result');
+
         // Maths tutor
         Route::prefix('tutor')->name('tutor.')->group(function () {
             Route::get('/', [TutorController::class, 'home'])->name('home');

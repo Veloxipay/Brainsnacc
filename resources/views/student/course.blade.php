@@ -29,7 +29,7 @@
                             @if (! $lesson->isPublished())
                                 <li class="soon">
                                     <span class="dot" aria-hidden="true"></span>
-                                    <span class="lesson-title">{{ $lesson->title }}</span>
+                                    <span class="lesson-title">{{ $lesson->title }}@if ($lesson->kind === 'test') <span class="pill maths" style="font-size:11px">Test</span>@endif</span>
                                     <span class="small muted">Coming soon</span>
                                 </li>
                                 @continue
@@ -42,7 +42,7 @@
                                 @else
                                     <span class="dot {{ $isCurrent ? 'current' : '' }}" aria-label="{{ $isCurrent ? 'Up next' : 'Not started' }}"></span>
                                 @endif
-                                <a href="{{ route('lessons.show', $lesson) }}">{{ $lesson->title }}</a>
+                                <a href="{{ route('lessons.show', $lesson) }}">{{ $lesson->title }}@if ($lesson->kind === 'test') <span class="pill maths" style="font-size:11px">Test</span>@endif</a>
                                 <span class="small muted">{{ $isCurrent ? 'Up next' : $lesson->minutes.' min' }}</span>
                             </li>
                         @endforeach

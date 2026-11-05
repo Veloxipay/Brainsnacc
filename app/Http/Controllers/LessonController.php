@@ -15,8 +15,11 @@ use Illuminate\View\View;
 
 class LessonController extends Controller
 {
-    public function show(Request $request, Lesson $lesson): View
+    public function show(Request $request, Lesson $lesson): View|RedirectResponse
     {
+        if ($lesson->isTest()) {
+            return redirect()->route('tests.show', $lesson);
+        }
         // Students only see published lessons; the admin can preview drafts.
         abort_unless($lesson->isPublished() || $request->user()->isAdmin(), 404);
 
