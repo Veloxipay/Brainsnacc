@@ -92,7 +92,7 @@ class UserController extends Controller
         }
         $user->name = $data['name'];
         $user->username = $data['username'];
-        $user->email = $data['email'] ?: null;
+        $user->email = ($data['email'] ?? null) ?: null;
         $user->level_id = $user->role === User::ROLE_STUDENT ? ($data['level_id'] ?? null) : null;
 
         $temporary = null;
