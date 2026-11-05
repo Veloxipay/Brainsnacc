@@ -168,4 +168,14 @@ class TutorMathTest extends TestCase
             }
         }
     }
+
+    public function test_reading_strips_question_numbers_but_not_decimals(): void
+    {
+        foreach (['0.5x + 4 = 10' => '0.5', 'Q4) 2x = 8' => '4', '4. 2x = 8' => '4', '4a) 2x = 8' => '4', 'Solve: 0.5x + 4 = 10' => '12', '3x+7=31' => '8'] as $typed => $x) {
+            $r = \App\Tutor\Tutor::read($typed);
+            $this->assertTrue($r['ok'], $typed);
+        }
+        $this->assertSame('12', (string) \App\Tutor\Tutor::read('0.5x + 4 = 10')['equation']->solution()['x']);
+        $this->assertSame('4', (string) \App\Tutor\Tutor::read('4. 2x = 8')['equation']->solution()['x']);
+    }
 }

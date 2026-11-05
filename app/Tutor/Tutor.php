@@ -55,7 +55,7 @@ final class Tutor
      */
     public static function read(string $typed): array
     {
-        $text = trim(preg_replace('/^\s*(q(uestion)?\s*\d+[.):]?|\d+[.)]|solve( for [a-z])?:?|find [a-z]( if)?:?)\s*/i', '', $typed));
+        $text = trim(preg_replace('/^\s*(q(uestion)?\s*\d+[a-z]?[.):]?\s+|\d+[a-z]?[.)]\s+|solve( for [a-z])?:?\s*|find [a-z]( if)?:?\s*)/i', '', $typed));
         try {
             $eq = Equation::parse($text);
             $sol = $eq->solution();
