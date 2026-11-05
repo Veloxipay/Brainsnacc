@@ -322,6 +322,12 @@ TXT;
                 default => 'The student pressed "Explain it differently" — they did not understand the usual explanation. Explain the next step another way.',
             };
 
+        // Without the AI tutor, a free-typed question can't be read — say so honestly
+        // instead of replying with an explanation that doesn't match what was asked.
+        if ($kind === 'ask' && ! $this->ai->enabled()) {
+            return ['I can\'t read typed questions yet, sorry. I can: give a hint, show a worked example, explain the next step another way, or give you a harder, easier or new question. Try typing one of those (e.g. "harder question" or "give me a hint"), or use the buttons. '.$why, 'code'];
+        }
+
         $text = $this->ai->complete('explain', $system, [['type' => 'text', 'text' => $prompt]], $s->user, 350);
         $answer = $s->solutionValue();
         if ($text !== null && preg_match('/\b'.preg_quote($from->var).'\s*=\s*('.preg_quote((string) $answer, '/').'|'.preg_quote($answer->toAscii(), '/').')(?![\d\/]|\.\d)/u', $text) && ! $s->isSolved()) {

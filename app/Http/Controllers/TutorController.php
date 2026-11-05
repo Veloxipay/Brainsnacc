@@ -116,9 +116,64 @@ class TutorController extends Controller
         if ($session->isIndependent() && $data['kind'] !== 'stuck') {
             $data['kind'] = 'stuck';
         }
+        // A typed question: understand the common requests (harder / easier / another / hint ...)
+        // so the reply always matches what was asked, even without the AI tutor.
+        if ($data['kind'] === 'ask') {
+            $intent = self::intent((string) $data['message']);
+            if (in_array($intent, ['harder', 'easier', 'another'], true)) {
+                return $this->switchLevel($request, $session, $intent);
+            }
+            if ($intent !== null) {
+                $data['kind'] = $intent;
+            }
+        }
         $this->tutor->help($session, $data['kind'], $data['message'] ?? null);
 
         return redirect()->to(route('tutor.show', $session).'#latest');
+    }
+
+    /** Equation skills from easiest to hardest. */
+    private const LADDER = ['EQ.ONE_STEP', 'EQ.TWO_STEP', 'EQ.BRACKETS', 'EQ.BOTH_SIDES', 'EQ.FRACTIONS'];
+
+    /** What a typed request is asking for, or null if it's a real maths question. */
+    public static function intent(string $text): ?string
+    {
+        $t = mb_strtolower($text);
+
+        return match (true) {
+            (bool) preg_match('/\b(easier|easy|simpler|simple|too hard|basic|go back)\b/', $t) => 'easier',
+            (bool) preg_match('/(harder|hard|difficult|challeng|tough|advanced|next level|level up|more complex)/', $t) => 'harder',
+            (bool) preg_match('/(another|new question|next question|different question|more question|more practice|one more|again)/', $t) => 'another',
+            (bool) preg_match('/(answer is|the answer|what is (the )?(x|y|answer)|tell me the answer|give me the answer)/', $t) => 'hint',
+            (bool) preg_match('/(example|show me how|worked|similar)/', $t) => 'example',
+            (bool) preg_match('/(hint|clue|stuck|help|what (do|should) i do|next step|how do i|where do i start)/', $t) => 'hint',
+            (bool) preg_match('/(why|explain|don.?t understand|do not understand|confus|what does .* mean)/', $t) => 'explain',
+            default => null,
+        };
+    }
+
+    private function switchLevel(Request $request, TutorSession $session, string $intent): RedirectResponse
+    {
+        $ladder = array_values(array_intersect(self::LADDER, Skills::equationSkills()));
+        $at = array_search($session->skill_code, $ladder, true);
+        $at = $at === false ? 0 : $at;
+        $to = match ($intent) {
+            'harder' => min(count($ladder) - 1, $at + 1),
+            'easier' => max(0, $at - 1),
+            default => $at,
+        };
+        $skill = $ladder[$to];
+        $new = $this->tutor->practice($request->user(), $skill, $session->isIndependent() ? 'independent' : 'guided');
+        $name = Skills::name($skill);
+        $message = match (true) {
+            $intent === 'harder' && $to === $at => "You're already on the hardest kind ({$name}) — here's another tough one.",
+            $intent === 'harder' => "Here's a harder one: {$name}.",
+            $intent === 'easier' && $to === $at => "This is the first level ({$name}) — here's another one to practise.",
+            $intent === 'easier' => "Here's an easier one: {$name}.",
+            default => "Here's a new question: {$name}.",
+        };
+
+        return redirect()->route('tutor.show', $new)->with('status', $message);
     }
 
     /** After solving: a fresh question of the same kind, to do with no help. */
