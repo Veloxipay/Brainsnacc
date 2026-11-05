@@ -85,4 +85,13 @@ class ChapterTestTest extends TestCase
         DB::table('student_supervisors')->insert(['supervisor_id' => $parent->id, 'student_id' => $u->id, 'created_at' => now(), 'updated_at' => now()]);
         $this->actingAs($parent)->get(route('family.students.show', $u))->assertSee('Chapter tests')->assertSee('0/15');
     }
+
+    public function test_selective_reading_test_shows_passages_and_a_timer(): void
+    {
+        $this->seed(\Database\Seeders\LessonContentSeeder::class);
+        $test = Lesson::where('title', 'Reading comprehension · Test 1')->firstOrFail();
+        $student = User::factory()->create(['role' => User::ROLE_STUDENT, 'level_id' => Level::where('short_name', 'Year 7')->value('id')]);
+        $this->actingAs($student)->get(route('tests.show', $test))
+            ->assertOk()->assertSee('exam-timer', false)->assertSee('Passage A')->assertSee('30 minutes');
+    }
 }
