@@ -15,8 +15,15 @@ class UserController extends Controller
 {
     public function index(): View
     {
+        $all = User::with(['level', 'supervisors', 'students'])
+            ->withMax('attempts', 'created_at')
+            ->withCount('completedLessons')
+            ->orderBy('name')
+            ->get();
+
         return view('admin.users.index', [
-            'users' => User::with(['level', 'parentUser'])->orderBy('role')->orderBy('name')->get(),
+            'users' => $all,
+            'counts' => $all->countBy('role'),
         ]);
     }
 

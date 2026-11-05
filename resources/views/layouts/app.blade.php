@@ -19,7 +19,20 @@
         </div>
         <div class="nav-links" id="nav-links">
 
+        {{-- Admin and parent/teacher links first, so a long course list never pushes them out of sight --}}
+        @if ($user->isAdmin())
+            <div class="nav-section" style="padding-top:4px">Admin</div>
+            <a href="{{ route('admin.users.index') }}" class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">Accounts</a>
+            <a href="{{ route('family') }}" class="{{ request()->routeIs('family') || request()->routeIs('family.students.show') ? 'active' : '' }}">Student progress</a>
+            <a href="{{ route('admin.lessons.index') }}" class="{{ request()->routeIs('admin.lessons.*') ? 'active' : '' }}">Lessons</a>
+            <a href="{{ route('admin.structure') }}" class="{{ request()->routeIs('admin.structure') ? 'active' : '' }}">Course structure</a>
+        @elseif ($user->isSupervisor())
+            <a href="{{ route('family') }}" class="{{ request()->routeIs('family') || request()->routeIs('family.students.show') ? 'active' : '' }}">{{ $user->isTeacher() ? 'My students' : 'My children' }}</a>
+            <a href="{{ route('family.students.create') }}" class="{{ request()->routeIs('family.students.create') ? 'active' : '' }}">+ Add a student</a>
+        @endif
+
         @if ($user->isStudent() || $user->isAdmin())
+            @if ($user->isAdmin())<div class="nav-section">Student view</div>@endif
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
             <a href="{{ route('tutor.home') }}" class="{{ request()->routeIs('tutor.*') ? 'active' : '' }}">Maths tutor</a>
             @php($navLevels = \App\Models\Level::orderBy('sort')->with(['units' => fn ($q) => $q->with('subject')])->get())
@@ -40,17 +53,6 @@
                     </a>
                 @endforeach
             @endforeach
-        @endif
-
-        @if ($user->isSupervisor() || $user->isAdmin())
-            <a href="{{ route('family') }}" class="{{ request()->routeIs('family*') ? 'active' : '' }}">{{ $user->isAdmin() ? 'All students' : ($user->isTeacher() ? 'My students' : 'My children') }}</a>
-            <a href="{{ route('family.students.create') }}" class="{{ request()->routeIs('family.students.create') ? 'active' : '' }}">+ Add a student</a>
-        @endif
-
-        @if ($user->isAdmin())
-            <a href="{{ route('admin.structure') }}" class="{{ request()->routeIs('admin.structure') ? 'active' : '' }}">Course structure</a>
-            <a href="{{ route('admin.lessons.index') }}" class="{{ request()->routeIs('admin.lessons.*') ? 'active' : '' }}">Lessons</a>
-            <a href="{{ route('admin.users.index') }}" class="{{ request()->routeIs('admin.users.*') ? 'active' : '' }}">Accounts</a>
         @endif
 
         <a href="{{ route('account') }}" class="{{ request()->routeIs('account') ? 'active' : '' }}" style="margin-top:auto">My account</a>

@@ -353,3 +353,16 @@ textarea.eq-input { resize: vertical; line-height: 1.5; }
 .q-hints { display: flex; flex-direction: column; gap: 8px; }
 .level-suggest { background: #FFF4DB; border: 1px solid #E3B341; border-radius: 12px; padding: 12px 14px; }
 .level-suggest a { font-weight: 600; margin-left: 6px; }
+
+/* Admin accounts list */
+.acct-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+.acct-tools input[type=search] { flex: 1 1 240px; max-width: 360px; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 10px; font: inherit; }
+.acct-tools .segmented { display: flex; flex-wrap: wrap; gap: 6px; }
+.acct-tools .segmented button { border: 1px solid var(--line-strong); background: #fff; border-radius: 999px; padding: 7px 14px; font: inherit; font-weight: 600; cursor: pointer; color: var(--ink); }
+.acct-tools .segmented button.on { background: var(--chem); border-color: var(--chem); color: #fff; }
+.role-pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; background: var(--ground); }
+.role-pill.role-student { background: var(--chem-tint); color: var(--chem-dark); }
+.role-pill.role-parent { background: var(--bio-tint); color: #9A4E05; }
+.role-pill.role-teacher { background: #EFEAFE; color: #5B3FD0; }
+.role-pill.role-admin { background: #14213D; color: #fff; }
+tr[hidden] { display: none; }
