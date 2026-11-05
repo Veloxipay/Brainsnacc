@@ -17,20 +17,25 @@ class LoginController extends Controller
 
     public function login(Request $request): RedirectResponse
     {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
+        $data = $request->validate([
+            'login' => ['required', 'string', 'max:255'],
             'password' => ['required'],
-        ]);
+        ], ['login.required' => 'Type your username or email.']);
 
-        if (Auth::attempt($credentials, $request->boolean('remember'))) {
+        // Username (e.g. "mahek") or email both work.
+        $login = trim($data['login']);
+        $field = str_contains($login, '@') ? 'email' : 'username';
+        $value = $field === 'username' ? strtolower($login) : $login;
+
+        if (Auth::attempt([$field => $value, 'password' => $data['password']], $request->boolean('remember'))) {
             $request->session()->regenerate();
 
             return redirect()->intended(route('home'));
         }
 
         return back()
-            ->withErrors(['email' => 'That email and password don’t match.'])
-            ->onlyInput('email');
+            ->withErrors(['login' => 'That username or email and password don’t match.'])
+            ->onlyInput('login');
     }
 
     public function logout(Request $request): RedirectResponse

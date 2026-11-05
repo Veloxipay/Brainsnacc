@@ -22,6 +22,12 @@ use Illuminate\View\View;
  */
 class ParentController extends Controller
 {
+    private const MESSAGES = [
+        'username.unique' => 'That username is taken. Try adding a number, e.g. mahek2.',
+        'username.regex' => 'Usernames can only use lower-case letters, numbers, dots, dashes and underscores (no spaces).',
+        'email.unique' => 'That email already has an account.',
+    ];
+
     private function students(User $user)
     {
         return $user->isAdmin()
@@ -70,12 +76,14 @@ class ParentController extends Controller
 
     public function store(Request $request): RedirectResponse
     {
+        $request->merge(['username' => strtolower(trim((string) $request->input('username')))]);
         $data = $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email', 'max:255', 'unique:users,email'],
+            'username' => array_merge(User::usernameRules(), ['required']),
+            'email' => ['nullable', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'confirmed', Password::min(8)],
             'level_id' => ['required', 'exists:levels,id'],
-        ], ['email.unique' => 'That email already has an account.']);
+        ], self::MESSAGES);
 
         $student = User::create($data + ['role' => User::ROLE_STUDENT]);
         $me = $request->user();
@@ -83,7 +91,7 @@ class ParentController extends Controller
             $me->students()->attach($student->id);
         }
 
-        return redirect()->route('family')->with('status', "Account created for {$student->name}. They can log in with {$student->email} and the password you set.");
+        return redirect()->route('family')->with('status', "Account created for {$student->name}. They log in with the username “{$student->username}” and the password you set.");
     }
 
     public function show(Request $request, User $student): View
@@ -122,14 +130,19 @@ class ParentController extends Controller
     public function update(Request $request, User $student): RedirectResponse
     {
         $student = $this->ownStudent($request, $student);
+        $request->merge(['username' => strtolower(trim((string) $request->input('username'))) ?: null]);
         $data = $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email', 'max:255', Rule::unique('users', 'email')->ignore($student->id)],
+            'username' => User::usernameRules($student->id),
+            'email' => ['nullable', 'email', 'max:255', Rule::unique('users', 'email')->ignore($student->id)],
             'level_id' => ['required', 'exists:levels,id'],
             'password' => ['nullable', 'confirmed', Password::min(8)],
-        ]);
+        ], self::MESSAGES);
         if (empty($data['password'])) {
             unset($data['password']);
+        }
+        if (empty($data['username']) && empty($data['email'])) {
+            return back()->withErrors(['username' => 'Give the student a username or an email, so they can log in.'])->withInput();
         }
         $student->update($data);
 

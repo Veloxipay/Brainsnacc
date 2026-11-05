@@ -20,8 +20,8 @@
         @endif
 
         <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus autocomplete="username">
+            <label for="login">Username or email</label>
+            <input id="login" type="text" name="login" value="{{ old('login') }}" required autofocus autocomplete="username" autocapitalize="none" spellcheck="false">
         </div>
         <div class="field">
             <label for="password">Password</label>

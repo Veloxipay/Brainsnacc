@@ -20,7 +20,7 @@ class User extends Authenticatable
     public const ROLE_STUDENT = 'student';
     public const ROLE_TEACHER = 'teacher';
 
-    protected $fillable = ['name', 'email', 'password', 'role', 'parent_id', 'level_id'];
+    protected $fillable = ['name', 'username', 'email', 'password', 'role', 'parent_id', 'level_id'];
 
     protected $hidden = ['password', 'remember_token'];
 
@@ -30,6 +30,18 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /** What this person types to log in: their username if they have one, otherwise their email. */
+    public function loginName(): string
+    {
+        return $this->username ?: (string) $this->email;
+    }
+
+    /** Rules for a username: 3-30 letters, numbers, dots, dashes or underscores. */
+    public static function usernameRules(?int $ignoreId = null): array
+    {
+        return ['nullable', 'string', 'min:3', 'max:30', 'regex:/^[a-z0-9._-]+$/', \Illuminate\Validation\Rule::unique('users', 'username')->ignore($ignoreId)];
     }
 
     public function isAdmin(): bool

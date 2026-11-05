@@ -10,9 +10,12 @@
             <label>Student’s name
                 <input name="name" value="{{ old('name') }}" required autocomplete="off">
             </label>
-            <label>Login email
-                <input type="email" name="email" value="{{ old('email') }}" required autocomplete="off">
-                <span class="small muted">The student logs in with this. It must be an email nobody else uses on Brainsnacc.</span>
+            <label>Username (for logging in)
+                <input name="username" value="{{ old('username') }}" required minlength="3" maxlength="30" pattern="[a-z0-9._\-]+" autocapitalize="none" spellcheck="false" placeholder="e.g. mahek" data-username>
+                <span class="small muted">Short and easy: lower-case letters and numbers, no spaces. The student types this to log in.</span>
+            </label>
+            <label>Email <span class="small muted">(optional)</span>
+                <input type="email" name="email" value="{{ old('email') }}" autocomplete="off">
             </label>
             <label>Year level
                 <select name="level_id" required>
@@ -28,8 +31,16 @@
             <label>Type the password again
                 <input type="password" name="password_confirmation" required minlength="8" autocomplete="new-password">
             </label>
-            <span class="small muted">Give the student their email and password. They can change the password later under “My account”.</span>
+            <span class="small muted">Give the student their username and password. They can change the password later under “My account”.</span>
             <div><button class="btn" type="submit">Create student account</button></div>
         </form>
     </section>
+    <script>
+        // Suggest a username from the first name, e.g. "Mahek Dhawan" -> "mahek".
+        (function () {
+            var name = document.querySelector('input[name=name]'), user = document.querySelector('[data-username]'), touched = !!user.value;
+            user.addEventListener('input', function () { touched = true; user.value = user.value.toLowerCase().replace(/[^a-z0-9._-]/g, ''); });
+            name.addEventListener('input', function () { if (!touched) user.value = (name.value.trim().split(/\s+/)[0] || '').toLowerCase().replace(/[^a-z0-9]/g, ''); });
+        })();
+    </script>
 @endsection

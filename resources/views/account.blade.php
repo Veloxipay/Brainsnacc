@@ -10,9 +10,13 @@
             <label>Name
                 <input type="text" name="name" value="{{ old('name', $user->name) }}" required autocomplete="name">
             </label>
-            <label>Login email
-                <input type="email" name="email" value="{{ old('email', $user->email) }}" required autocomplete="email">
+            <label>Username <span class="small muted">(short login name, optional)</span>
+                <input name="username" value="{{ old('username', $user->username) }}" minlength="3" maxlength="30" pattern="[a-z0-9._\-]+" autocapitalize="none" spellcheck="false" placeholder="e.g. puneet">
             </label>
+            <label>Email
+                <input type="email" name="email" value="{{ old('email', $user->email) }}" @unless ($user->isStudent()) required @endunless autocomplete="email">
+            </label>
+            <span class="small muted">You can log in with either your username or your email.</span>
             <fieldset style="border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:flex;flex-direction:column;gap:12px">
                 <legend class="small muted">New password (leave blank to keep your current one)</legend>
                 <label>New password

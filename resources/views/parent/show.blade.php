@@ -6,7 +6,7 @@
     <header class="row between">
         <div>
             <h1 style="margin:0">{{ $student->name }}</h1>
-            <p class="muted" style="margin:0">{{ $student->level?->name ?? 'No year level set' }} · logs in with {{ $student->email }}</p>
+            <p class="muted" style="margin:0">{{ $student->level?->name ?? 'No year level set' }} · logs in with <strong>{{ $student->loginName() }}</strong></p>
         </div>
         <div class="score-big">
             <span class="small muted">Average score</span>
@@ -71,12 +71,13 @@
     @endif
 
     <details class="card">
-        <summary style="cursor:pointer;font-weight:600">Edit account (name, year level, login email, password)</summary>
+        <summary style="cursor:pointer;font-weight:600">Edit account (name, username, year level, password)</summary>
         <form method="POST" action="{{ route('family.students.update', $student) }}" style="display:flex;flex-direction:column;gap:12px;max-width:520px;margin-top:12px">
             @csrf
             @method('PUT')
             <label>Name <input name="name" value="{{ old('name', $student->name) }}" required></label>
-            <label>Login email <input type="email" name="email" value="{{ old('email', $student->email) }}" required></label>
+            <label>Username <input name="username" value="{{ old('username', $student->username) }}" minlength="3" maxlength="30" pattern="[a-z0-9._\-]+" autocapitalize="none" spellcheck="false" placeholder="e.g. mahek"></label>
+            <label>Email <span class="small muted">(optional)</span> <input type="email" name="email" value="{{ old('email', $student->email) }}"></label>
             <label>Year level
                 <select name="level_id" required>
                     @foreach ($levels as $level)
