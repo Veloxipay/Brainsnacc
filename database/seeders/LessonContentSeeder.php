@@ -38,7 +38,7 @@ class LessonContentSeeder extends Seeder
         $loaded = 0;
         $failed = 0;
         foreach (File::allFiles($dir) as $file) {
-            if ($file->getExtension() !== 'json' || str_starts_with($file->getRelativePathname(), 'mock-exams')) {
+            if ($file->getExtension() !== 'json' || str_starts_with($file->getRelativePathname(), 'mock-exams') || $file->getFilename() === 'maths-manifest.json') {
                 continue; // practice exams are read straight from their files, not loaded as lessons
             }
 
