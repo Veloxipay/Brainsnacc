@@ -15,6 +15,9 @@
         <img class="auth-logo" src="{{ asset('img/logo.svg') }}" alt="{{ config('app.name') }}" width="260" height="66">
         <p class="muted" style="margin:0">Maths from Year 7, plus Chemistry and Biology from Year 10 to University Year 1.</p>
 
+        @if (session('status'))
+            <div class="flash" role="status">{{ session('status') }}</div>
+        @endif
         @if ($errors->any())
             <div class="errors" role="alert">{{ $errors->first() }}</div>
         @endif
@@ -27,6 +30,7 @@
             <label for="password">Password</label>
             <input id="password" type="password" name="password" required autocomplete="current-password">
         </div>
+        <p class="small" style="margin:-6px 0 0;text-align:right"><a href="{{ route('password.request') }}">Forgot password?</a></p>
         <label style="display:flex;gap:8px;align-items:center;font-weight:400">
             <input type="checkbox" name="remember" value="1"> Keep me signed in
         </label>
