@@ -24,7 +24,7 @@
         <div class="table-scroll">
             <table class="progress-table">
                 <thead>
-                    <tr><th>Name</th><th>Logs in with</th><th>Role</th><th>Year</th><th>Linked to</th><th>Lessons done</th><th>Last active</th><th>Joined</th></tr>
+                    <tr><th>Name</th><th>Logs in with</th><th>Role</th><th>Year</th><th>Linked to</th><th>Lessons done</th><th>Last active</th><th>Joined</th><th></th></tr>
                 </thead>
                 <tbody>
                 @foreach ($users as $u)
@@ -53,6 +53,7 @@
                         <td class="small">{{ $u->isStudent() ? $u->completed_lessons_count : '—' }}</td>
                         <td class="small">{{ $u->attempts_max_created_at ? \Carbon\Carbon::parse($u->attempts_max_created_at)->diffForHumans() : ($u->isStudent() ? 'Not started' : '—') }}</td>
                         <td class="small">{{ $u->created_at?->timezone('Australia/Melbourne')->format('j M Y') }}</td>
+                        <td><a class="btn secondary small" href="{{ route('admin.users.edit', $u) }}">Edit / reset password</a></td>
                     </tr>
                 @endforeach
                 </tbody>
