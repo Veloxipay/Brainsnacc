@@ -14,6 +14,7 @@ use App\Http\Controllers\LessonController;
 use App\Http\Controllers\MockExamController;
 use App\Http\Controllers\ParentController;
 use App\Http\Controllers\PastPaperController;
+use App\Http\Controllers\TutorController;
 use Illuminate\Support\Facades\Route;
 
 // Login and public sign-up (parents, teachers and students)
@@ -44,6 +45,20 @@ Route::middleware('auth')->group(function () {
         Route::post('/questions/{question}/answer', [LessonController::class, 'answer'])->name('questions.answer');
         Route::post('/questions/{question}/steps', [LessonController::class, 'steps'])->middleware('throttle:20,1')->name('questions.steps');
         Route::get('/questions/{question}/help', [LessonController::class, 'help'])->name('questions.help');
+        // Maths tutor
+        Route::prefix('tutor')->name('tutor.')->group(function () {
+            Route::get('/', [TutorController::class, 'home'])->name('home');
+            Route::post('/read', [TutorController::class, 'read'])->middleware('throttle:30,1')->name('read');
+            Route::get('/confirm', [TutorController::class, 'confirm'])->name('confirm');
+            Route::post('/sessions', [TutorController::class, 'store'])->middleware('throttle:30,1')->name('store');
+            Route::get('/practice/{skill}', [TutorController::class, 'practice'])->middleware('throttle:30,1')->name('practice');
+            Route::get('/sessions/{session}', [TutorController::class, 'show'])->name('show');
+            Route::post('/sessions/{session}/lines', [TutorController::class, 'lines'])->middleware('throttle:60,1')->name('lines');
+            Route::post('/sessions/{session}/help', [TutorController::class, 'help'])->middleware('throttle:30,1')->name('help');
+            Route::post('/sessions/{session}/next', [TutorController::class, 'next'])->middleware('throttle:30,1')->name('next');
+            Route::post('/checks/{check}', [TutorController::class, 'check'])->middleware('throttle:30,1')->name('check');
+            Route::get('/progress', [TutorController::class, 'progress'])->name('progress');
+        });
         Route::get('/past-papers', [PastPaperController::class, 'index'])->name('past-papers');
         Route::post('/past-papers', [PastPaperController::class, 'update'])->name('past-papers.update');
         Route::get('/practice-exams/{slug}', [MockExamController::class, 'show'])->name('mock-exams.show');

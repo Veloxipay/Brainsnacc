@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(CourseSeeder::class);
         $this->call(LessonContentSeeder::class);
+        $this->call(SkillSeeder::class);
 
         // The first admin account comes from environment settings,
         // so no password is ever stored in the code.

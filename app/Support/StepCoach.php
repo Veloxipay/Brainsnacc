@@ -3,8 +3,7 @@
 namespace App\Support;
 
 use App\Models\Question;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
+use App\Support\Ai\AiModel;
 use Illuminate\Support\Str;
 
 /**
@@ -49,8 +48,7 @@ class StepCoach
 
     private static function askAi(Question $question, string $answer, string $studentSteps): ?string
     {
-        $key = config('services.anthropic.key');
-        if (! $key) {
+        if (! app(AiModel::class)->enabled()) {
             return null;
         }
 
@@ -91,26 +89,8 @@ TXT;
             .(($note = $question->mistakeFor($answer)) ? "Usual mistake behind that choice: {$note}\n" : '')
             ."\nThe student's steps:\n<<<\n".Str::limit($studentSteps, 2000)."\n>>>";
 
-        try {
-            $response = Http::withHeaders([
-                'x-api-key' => $key,
-                'anthropic-version' => '2023-06-01',
-            ])->timeout(25)->post('https://api.anthropic.com/v1/messages', [
-                'model' => config('services.anthropic.model'),
-                'max_tokens' => 400,
-                'system' => $system,
-                'messages' => [['role' => 'user', 'content' => $user]],
-            ]);
+        $text = app(AiModel::class)->complete('step-check', $system, [['type' => 'text', 'text' => $user]], auth()->user());
 
-            $text = trim((string) $response->json('content.0.text'));
-            if ($response->successful() && $text !== '') {
-                return $text;
-            }
-            Log::warning('Step checker: AI reply not usable', ['status' => $response->status()]);
-        } catch (\Throwable $e) {
-            Log::warning('Step checker: AI call failed', ['error' => $e->getMessage()]);
-        }
-
-        return null;
+        return $text;
     }
 }

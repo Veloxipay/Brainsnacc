@@ -13,10 +13,15 @@
 <div class="shell">
     @php($user = auth()->user())
     <nav class="nav" aria-label="Main">
-        <a class="brand" href="{{ route('home') }}"><img src="{{ asset('img/logo-light.svg') }}" alt="{{ config('app.name') }}" width="180" height="46"></a>
+        <div class="nav-top">
+            <a class="brand" href="{{ route('home') }}"><img src="{{ asset('img/logo-light.svg') }}" alt="{{ config('app.name') }}" width="180" height="46"></a>
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-links" onclick="var n=this.closest('.nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'));this.textContent=n.classList.contains('open')?'Close':'Menu'">Menu</button>
+        </div>
+        <div class="nav-links" id="nav-links">
 
         @if ($user->isStudent() || $user->isAdmin())
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>
+            <a href="{{ route('tutor.home') }}" class="{{ request()->routeIs('tutor.*') ? 'active' : '' }}">Maths tutor</a>
             @php($navLevels = \App\Models\Level::orderBy('sort')->with(['units' => fn ($q) => $q->with('subject')])->get())
             @php($navLevelId = request()->routeIs('course') ? (int) (request()->query('level') ?: ($user->level_id ?: $navLevels->first()?->id)) : null)
             @php($navSubjectSlug = request()->routeIs('course') ? request()->route('subject')?->slug : null)
@@ -54,6 +59,7 @@
             @csrf
             <button type="submit">Log out</button>
         </form>
+        </div>
     </nav>
 
     <main class="main">

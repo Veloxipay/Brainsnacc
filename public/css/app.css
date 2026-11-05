@@ -289,3 +289,60 @@ h1 { color: #14213D; }
 .steps-form textarea { width: 100%; box-sizing: border-box; font: inherit; padding: 12px; border-radius: 10px; border: 1px solid var(--line); min-height: 110px; }
 .steps-mine { white-space: pre-line; background: #fff; border-radius: 8px; padding: 10px 12px; margin-top: 4px; font-size: 15px; }
 .steps-feedback { white-space: pre-line; margin-top: 10px; }
+
+/* Maths tutor */
+.eq { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 17px; letter-spacing: .01em; }
+.eq-big { font-size: 26px; font-weight: 600; color: #14213D; overflow-wrap: anywhere; }
+.eq-input { width: 100%; box-sizing: border-box; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 20px; padding: 12px 14px; min-height: 52px; border-radius: 10px; border: 1px solid var(--line-strong); background: #fff; }
+.eq-input:focus { outline: 3px solid var(--maths-tint); border-color: var(--maths); }
+textarea.eq-input { resize: vertical; line-height: 1.5; }
+.tutor-form { display: flex; flex-direction: column; gap: 10px; }
+.math-keys { display: flex; flex-wrap: wrap; gap: 6px; }
+.math-key { min-width: 48px; min-height: 48px; border-radius: 10px; border: 1px solid var(--line); background: var(--maths-tint); color: #2C1F7A; font: 600 20px ui-monospace, Menlo, monospace; cursor: pointer; }
+.math-key:focus-visible { outline: 3px solid var(--maths); }
+.feed { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.feed-line { border-left: 4px solid var(--line-strong); padding: 6px 0 6px 12px; }
+.feed-line.line-correct { border-left-color: var(--good); }
+.feed-line.line-wrong { border-left-color: var(--bad); }
+.feed-line.line-unreadable { border-left-color: #C88A00; }
+.line-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; }
+.line-mark { font-weight: 700; width: 18px; }
+.line-correct .line-mark, .line-correct .line-status { color: var(--good); }
+.line-wrong .line-mark, .line-wrong .line-status { color: var(--bad); }
+.line-unreadable .line-mark, .line-unreadable .line-status { color: #8A5A00; }
+.tutor-says { white-space: pre-line; background: var(--maths-tint); border-radius: 12px; padding: 12px 14px; margin-top: 8px; line-height: 1.55; }
+.you-asked { margin-bottom: 4px; }
+.feed-check { border: 1px dashed var(--maths); border-radius: 12px; padding: 12px; }
+.help-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.help-buttons form { margin: 0; }
+.skill-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.skill-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; }
+.state { font-size: 13px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #EEF1F5; color: #44505F; }
+.state-developing { background: #FFF4DB; color: #8A5A00; }
+.state-independent { background: var(--good-tint); color: var(--good); }
+.state-remembered { background: var(--good); color: #fff; }
+.state-needs_foundations { background: #FDECEC; color: #A3261F; }
+.tutor-continue { text-decoration: none; color: inherit; gap: 4px; border-color: var(--maths); }
+.pill.solo { background: #14213D; color: #fff; }
+.tutor-result { border: 2px solid var(--good); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 640px) {
+    .main { padding: 20px 16px; }
+    .eq-big { font-size: 22px; }
+    .help-buttons .btn { width: 100%; }
+    .help-buttons form { flex: 1 1 100%; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* Collapsible menu on phones: brand + Menu button, links open on tap */
+.nav-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.nav-links { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.nav-toggle { display: none; min-height: 44px; padding: 8px 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,.3); background: transparent; color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+@media (max-width: 760px) {
+    .nav { padding: 12px 16px; flex-basis: 100%; }
+    .nav .brand { padding: 0; }
+    .nav .brand img { max-width: 150px; }
+    .nav-toggle { display: inline-flex; align-items: center; }
+    .nav-links { display: none; padding-top: 12px; }
+    .nav.open .nav-links { display: flex; }
+}

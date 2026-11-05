@@ -9,6 +9,11 @@
         </div>
     </header>
 
+    <a class="card tutor-continue" href="{{ route('tutor.home') }}" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:16px">
+        <span style="flex:1 1 260px"><strong>Stuck on maths homework?</strong><br><span class="small muted">Type the equation, work it line by line, and I'll show you exactly where it goes wrong.</span></span>
+        <span class="btn secondary">Open the Maths tutor</span>
+    </a>
+
     @if ($next)
         @php($nextSubject = $next->module->unit->subject)
         <section class="card" aria-labelledby="next-h" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:24px">
