@@ -13,7 +13,7 @@
         @php($nextSubject = $next->module->unit->subject)
         <section class="card" aria-labelledby="next-h" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:24px">
             <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:8px">
-                <span class="pill {{ $nextSubject->slug === 'biology' ? 'bio' : '' }}" style="align-self:flex-start">
+                <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths'][$nextSubject->slug] ?? '' }}" style="align-self:flex-start">
                     {{ $nextSubject->name }} · {{ $next->module->unit->code }}
                 </span>
                 <h2 id="next-h" style="font-family:'Space Grotesk',sans-serif;font-size:24px">Up next: {{ $next->title }}</h2>

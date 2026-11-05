@@ -13,6 +13,14 @@ use Illuminate\Support\Collection;
 /** Progress numbers shared by the student and parent pages. */
 class Progress
 {
+    /** Subjects taught at this level (e.g. Year 7–9 only have Maths). All subjects if no level is set. */
+    public static function subjectsAt(?Level $level): Collection
+    {
+        return Subject::orderBy('name')
+            ->when($level, fn ($q) => $q->whereHas('units', fn ($u) => $u->where('level_id', $level->id)))
+            ->get();
+    }
+
     /** Published lessons for one subject at one level. */
     public static function lessonsFor(Subject $subject, ?Level $level): Collection
     {

@@ -29,7 +29,7 @@ class DashboardController extends Controller
         $level = $student->level ?? Level::orderBy('sort')->first();
         $done = Progress::completedIds($student);
 
-        $subjects = Subject::orderBy('name')->get()->map(function (Subject $subject) use ($level, $done) {
+        $subjects = Progress::subjectsAt($level)->map(function (Subject $subject) use ($level, $done) {
             $lessons = Progress::lessonsFor($subject, $level);
             $finished = $lessons->whereIn('id', $done)->count();
 

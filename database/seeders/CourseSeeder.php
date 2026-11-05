@@ -14,6 +14,7 @@ use Illuminate\Database\Seeder;
  * New lessons start as drafts ("Coming soon" for students) and go live as they are written.
  *
  * Safe to run again: it updates names in place and never overwrites lessons already written.
+ * Maths (Years 7–10) follows the Victorian Curriculum Mathematics 2.0 strands: number, algebra, measurement, space, statistics, probability.
  * VCE titles follow the VCAA study designs (Chemistry 2023–2027, Biology 2022–2026) — check the VCAA site.
  * University Year 1 follows Monash University's first-year units — check the Monash handbook each year.
  */
@@ -22,15 +23,19 @@ class CourseSeeder extends Seeder
     public function run(): void
     {
         $levels = [
-            'y10' => Level::updateOrCreate(['short_name' => 'Year 10'], ['name' => 'Year 10', 'sort' => 1]),
-            'y11' => Level::updateOrCreate(['short_name' => 'Year 11'], ['name' => 'Year 11 · VCE Units 1–2', 'sort' => 2]),
-            'y12' => Level::updateOrCreate(['short_name' => 'Year 12'], ['name' => 'Year 12 · VCE Units 3–4', 'sort' => 3]),
-            'uni1' => Level::updateOrCreate(['short_name' => 'Uni Year 1'], ['name' => 'University Year 1 · Monash', 'sort' => 4]),
+            'y7' => Level::updateOrCreate(['short_name' => 'Year 7'], ['name' => 'Year 7', 'sort' => 1]),
+            'y8' => Level::updateOrCreate(['short_name' => 'Year 8'], ['name' => 'Year 8', 'sort' => 2]),
+            'y9' => Level::updateOrCreate(['short_name' => 'Year 9'], ['name' => 'Year 9', 'sort' => 3]),
+            'y10' => Level::updateOrCreate(['short_name' => 'Year 10'], ['name' => 'Year 10', 'sort' => 4]),
+            'y11' => Level::updateOrCreate(['short_name' => 'Year 11'], ['name' => 'Year 11 · VCE Units 1–2', 'sort' => 5]),
+            'y12' => Level::updateOrCreate(['short_name' => 'Year 12'], ['name' => 'Year 12 · VCE Units 3–4', 'sort' => 6]),
+            'uni1' => Level::updateOrCreate(['short_name' => 'Uni Year 1'], ['name' => 'University Year 1 · Monash', 'sort' => 7]),
         ];
 
         $subjects = [
             'chemistry' => Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2F6BEA', 'tint' => '#E8F0FE']),
             'biology' => Subject::firstOrCreate(['slug' => 'biology'], ['name' => 'Biology', 'color' => '#E07A12', 'tint' => '#FFF1E3']),
+            'maths' => Subject::firstOrCreate(['slug' => 'maths'], ['name' => 'Maths', 'color' => '#7B5CF0', 'tint' => '#F0ECFE']),
         ];
 
         $sortUnit = 0;
@@ -83,6 +88,41 @@ class CourseSeeder extends Seeder
                 ['Disease and immunity', ['Pathogens and disease', 'The immune system', 'Vaccines']],
                 ['Biotechnology', ['Genetic engineering', 'DNA technologies and ethics']],
                 ['Revision and exam practice', ['Year 10 Biology summary and memory tips', 'Year 10 Biology practice test']],
+            ]],
+
+            // ── Maths · Years 7–10 (Victorian Curriculum Mathematics 2.0) ──
+            ['y7', 'maths', 'Year 7', 'Year 7 Maths', [
+                ['Number', ['Place value, rounding and estimation', 'Primes, factors, multiples and index notation', 'Square numbers and square roots', 'Integers: positive and negative numbers', 'Fractions', 'Decimals', 'Percentages', 'Ratios']],
+                ['Algebra', ['Variables and algebraic expressions', 'Substitution and simplifying', 'Solving simple equations', 'The Cartesian plane and graphing patterns']],
+                ['Measurement', ['Units of measurement', 'Perimeter and area', 'Volume of rectangular prisms', 'Angles and parallel lines']],
+                ['Space', ['Triangles and quadrilaterals', 'Transformations and symmetry', '3D shapes and nets']],
+                ['Statistics and probability', ['Collecting and displaying data', 'Mean, median, mode and range', 'Chance and probability']],
+                ['Revision and challenge', ['Year 7 Maths summary and memory tips', 'Year 7 Maths challenge']],
+            ]],
+            ['y8', 'maths', 'Year 8', 'Year 8 Maths', [
+                ['Number', ['Index laws', 'Rational and irrational numbers', 'Percentage increase and decrease', 'Profit, loss and discounts', 'Ratios and rates']],
+                ['Algebra', ['Expanding brackets', 'Factorising with common factors', 'Solving linear equations', 'Linear graphs and gradient']],
+                ['Measurement', ['Converting units of area and volume', 'Circles: circumference and area', 'Area of composite shapes', 'Volume of prisms and cylinders', 'Time and time zones']],
+                ['Space', ['Congruent triangles', 'Properties of quadrilaterals']],
+                ['Statistics and probability', ['Samples and populations', 'Comparing data sets', 'Venn diagrams and two-way tables']],
+                ['Revision and challenge', ['Year 8 Maths summary and memory tips', 'Year 8 Maths challenge']],
+            ]],
+            ['y9', 'maths', 'Year 9', 'Year 9 Maths', [
+                ['Number', ['Index laws with zero and negative powers', 'Scientific notation', 'Simple interest']],
+                ['Algebra', ['Expanding binomial products', 'Gradient, midpoint and distance', 'Straight-line graphs: y = mx + c', 'Graphs of simple non-linear relations']],
+                ['Measurement', ['Pythagoras’ theorem', 'Introduction to trigonometry', 'Surface area of prisms and cylinders', 'Small and large units of measurement']],
+                ['Space', ['Similar triangles and enlargements']],
+                ['Statistics and probability', ['Histograms and stem-and-leaf plots', 'Shape of data distributions', 'Two-step chance experiments']],
+                ['Revision and challenge', ['Year 9 Maths summary and memory tips', 'Year 9 Maths challenge']],
+            ]],
+            ['y10', 'maths', 'Year 10', 'Year 10 Maths', [
+                ['Number and finance', ['Compound interest', 'Surds and fractional indices']],
+                ['Algebra', ['Factorising quadratic expressions', 'Solving quadratic equations', 'Graphing parabolas', 'Simultaneous linear equations', 'Linear inequalities', 'Exponential growth and decay']],
+                ['Measurement', ['Trigonometry: finding sides and angles', 'Bearings and angles of elevation', 'Surface area and volume of pyramids, cones and spheres']],
+                ['Space', ['Geometric proofs and circle properties']],
+                ['Statistics', ['Box plots and the five-number summary', 'Scatterplots and bivariate data', 'Evaluating statistical reports']],
+                ['Probability', ['Conditional probability and independence']],
+                ['Revision and challenge', ['Year 10 Maths summary and memory tips', 'Year 10 Maths challenge']],
             ]],
 
             // ── Year 11 · VCE Units 1–2 ─────────────────────────────

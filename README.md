@@ -1,11 +1,11 @@
 # Brainsnacc
 
-Self-paced Chemistry and Biology for Year 10, VCE Units 1–4 and University Year 1. Built for family use first.
+Self-paced Maths for Years 7–10 (Victorian Curriculum 2.0), plus Chemistry and Biology for Year 10, VCE Units 1–4 and University Year 1. Built for family use first.
 
 ## How the course is organised
 
 ```
-Level  (Year 10 · Year 11 VCE Units 1–2 · Year 12 VCE Units 3–4 · University Year 1 (Monash))
+Level  (Year 7 · Year 8 · Year 9 · Year 10 · Year 11 VCE Units 1–2 · Year 12 VCE Units 3–4 · University Year 1 (Monash))
   └ Unit     (one per level + subject, e.g. "Unit 3", "Chemistry 1")
       └ Module   (an Area of Study, or a uni topic block)
           └ Lesson   (notes in Markdown, draft or live)

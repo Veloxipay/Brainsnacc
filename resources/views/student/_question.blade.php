@@ -6,7 +6,7 @@
 @php($mine = isset($result) && $result && $result['question_id'] === $question->id ? $result : null)
 @php($reveal = $mine && ($mine['correct'] || ($mine['reveal'] ?? false)))
 <section class="card" id="q{{ $question->id }}" aria-labelledby="qp{{ $question->id }}">
-    <span class="pill {{ $subject->slug === 'biology' ? 'bio' : '' }}" style="align-self:flex-start">{{ $label }} · {{ $question->marks }} {{ \Illuminate\Support\Str::plural('mark', $question->marks) }}</span>
+    <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths'][$subject->slug] ?? '' }}" style="align-self:flex-start">{{ $label }} · {{ $question->marks }} {{ \Illuminate\Support\Str::plural('mark', $question->marks) }}</span>
     <p id="qp{{ $question->id }}" style="margin:0;font-size:18px;font-weight:600">{{ $question->prompt }}</p>
 
     <form method="POST" action="{{ route('questions.answer', $question) }}" style="display:flex;flex-direction:column;gap:10px">

@@ -98,7 +98,7 @@ class ParentController extends Controller
     {
         $student = $this->ownStudent($request, $student);
         $done = Progress::completedIds($student);
-        $subjects = Subject::orderBy('name')->get()->map(function (Subject $sub) use ($student, $done) {
+        $subjects = Progress::subjectsAt($student->level)->map(function (Subject $sub) use ($student, $done) {
             $lessons = Progress::lessonsFor($sub, $student->level);
 
             return [

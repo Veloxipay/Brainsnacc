@@ -72,3 +72,14 @@ Keep `summary` under 250 characters. Avoid bare `<` and `>` signs in text where 
 - Stick to established science and the scope of the VCE study design (Chemistry 2023–2027, Biology 2022–2026) or the Monash unit.
 - Do not invent statistics, dates, quotes or sources. If unsure of a detail, leave it out.
 - Write everything in your own words — do not copy textbook or website text.
+
+## Maths lessons (Years 7–10)
+
+Maths follows the Victorian Curriculum Mathematics 2.0 for the year level given. Use `"subject": "maths"` and `"unit": "Year 7"` (etc., same as the level). Write for a 12–16 year old.
+
+- `## Worked examples` is the heart of a maths lesson: at least 4, from easy to harder, every step on its own line with a short reason ("Subtract 7 from both sides").
+- Use Unicode for maths: x², 10⁻³, √50, ∛8, ½, ⅓, π, ×, ÷, −, ≈, °. Write inequalities in words in the body where possible ("x is less than −4"), or inside backticks.
+- Use a worked check at the end of solving questions (substitute back in).
+- `## Tips to remember` can include BIDMAS, SOH CAH TOA, "same base: multiply → add the powers", etc.
+- **"… Maths challenge"** lessons follow the practice-test layout: `## How to use this challenge`, `## Topics covered`, `## Short-answer questions`, `## Worked solutions`, `## Challenge tips`, then 20 multiple-choice questions spread across every strand of the year.
+- Check every number by actually calculating it (run it in Python), including the numbers in wrong options.

@@ -14,7 +14,7 @@
         @csrf
         <img class="auth-logo" src="{{ asset('img/logo.svg') }}" alt="{{ config('app.name') }}" width="260" height="66">
         <h1 style="font-size:24px">Create your account</h1>
-        <p class="muted" style="margin:0">Chemistry and Biology, Year 10 to University Year 1.</p>
+        <p class="muted" style="margin:0">Maths from Year 7, plus Chemistry and Biology from Year 10 to University Year 1.</p>
 
         @if ($errors->any())
             <div class="errors" role="alert">@foreach ($errors->all() as $e)<div>{{ $e }}</div>@endforeach</div>
