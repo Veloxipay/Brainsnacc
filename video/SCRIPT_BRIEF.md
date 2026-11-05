@@ -51,3 +51,8 @@ Scene types (keep to the limits — the checker enforces them):
 Skills lessons (exam technique, command words, investigations, significant figures): same format; use `steps`, `points`, `compare` and an `example`; the analogy can be about study habits.
 
 When done, reply with the number of scripts written and any lesson you skipped.
+
+
+## Maths videos (Years 7–10)
+
+Same format, with `"level": "Year 7"` (… `"Year 10"`), `"subject": "maths"` and `"lesson"` = the lesson's path under `database/content/` (e.g. `y8/maths/ratios.json`). Take the analogy from `## Think of it like this`, use `example` scenes for worked examples (each line one step; last line the answer) and `equation` scenes for rules (e.g. `a × (b + c) = ab + ac`). In `say`, write maths as it is spoken ("three x plus seven equals thirty-one", "x squared"); put the symbols in `caption`.

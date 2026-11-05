@@ -73,43 +73,63 @@ Keep `summary` under 250 characters. Avoid bare `<` and `>` signs in text where 
 - Do not invent statistics, dates, quotes or sources. If unsure of a detail, leave it out.
 - Write everything in your own words — do not copy textbook or website text.
 
-## Maths lessons (Years 7–10)
+## Maths lessons and chapter tests (Years 7–10)
 
-Maths follows the Victorian Curriculum Mathematics 2.0. Each year is organised as 11 chapters (the chapter names in CourseSeeder) plus a semester review after Chapter 5 and at the end. The lesson titles inside each chapter are our own breakdown — never call them official textbook sections, and write all text, examples and questions from scratch (do not copy or imitate any textbook's exercises). Use `"subject": "maths"` and `"unit": "Year 7"` (etc., same as the level). Write for a 12–16 year old, in very simple steps.
+Maths follows the Victorian Curriculum Mathematics 2.0. Each year has 11 chapters (the module names in CourseSeeder), a semester review after Chapter 5 and one at the end, and **4 chapter tests at the end of every chapter**. Lesson titles are our own breakdown — never call them official textbook sections, and write every word, example and question from scratch (never copy or imitate a textbook's exercises). Write for a 12–16 year old, in very simple steps. Australian spelling.
 
-Body structure for a normal Maths lesson (replaces the general structure above):
+**Exact titles, levels and file paths** are in `database/content/maths-manifest.json` (fields: `year`, `module`, `title`, `kind`, `path`, `chapter_lessons`). Write each file at its `path`. Copy `level` (= `year`), `unit` (= `year`) and `title` exactly. `"subject": "maths"`.
 
-1. 2–3 sentence opening: what this is and where it's used in real life.
+**Check every file** with `python3 database/content/check_maths.py <file>` until it prints `OK`. The checker only checks structure — you must also work out every number in Python (answers, wrong options, worked examples).
+
+### A normal lesson (`kind` = lesson)
+
+Body 700–1,800 words, these `##` sections in order:
+
+1. A 2–3 sentence opening: what it is and where it's used in real life (no heading).
 2. `## Learning objective` — one sentence: "By the end of this lesson you can …".
-3. `## Before you start` — the skills this builds on, each linked by name to the earlier lesson (e.g. "Adding and subtracting integers (Year 7)"), with a 2-question warm-up.
-4. `## Key ideas` — short explanation with `###` sub-sections; bold every new term.
-5. `## Worked examples` — 3 or more, easy → hard. Every step on its own numbered line with a short reason ("Step 2: subtract 7 from both sides — to get 3x on its own"). Finish with a check.
-6. `## Common mistakes` — the misconceptions behind the wrong options, with the fix.
-7. `## Tips to remember`, `## Key terms`, `## Summary` — as above.
+3. `## Before you start` — the earlier skills this needs (name the earlier lesson, e.g. "Adding and subtracting integers (Year 7)") and a 2-question warm-up with answers.
+4. `## Think of it like this` — one everyday analogy (`### <the analogy>`), then a line in italics starting *Where the analogy breaks down:*.
+5. `## Key ideas` — short explanation in `###` parts; bold each new term.
+6. `## Worked examples` — at least 3, easy → hard, each headed `### Example 1`, `### Example 2`…: the question, then numbered steps, each with its reason ("Step 2: subtract 7 from both sides — to get 3x on its own"), ending with a check where possible.
+7. `## Common mistakes` — 3–5 bullets: the mistake, why it happens, the fix.
+8. `## Tips to remember` — 3–6 memory aids specific to the topic (say when a trick is made up).
+9. `## Key terms` — `- **Term** — definition`.
+10. `## Summary` — 4–6 bullets.
 
-Maths notation: Unicode (x², 10⁻³, √50, ∛8, ½, π, ×, ÷, −, ≈, °). Write inequalities in words where possible ("x is less than −4").
+12 questions: **3 easy, 3 medium, 3 hard, 3 challenge**. Easy = one skill, small numbers; medium = two steps or a small twist; hard = several steps, negatives/fractions, or a worded problem; challenge = unfamiliar context, reasoning, or combining two ideas.
 
-Maths questions: 12 per lesson — **3 easy, 3 medium, 3 hard, 3 challenge** (the app sorts them easy → challenge). Each question has:
+### "… summary and memory tips" lessons
+
+Condensed revision for the whole year: one `##` section per chapter (must-know facts, rules, one tiny example each), a big `## Tips to remember`, then `## Summary`. 1,200–2,800 words. 12 mixed questions, 3 per level, spread across the year.
+
+### "Year N Semester 1 review" lessons
+
+Practice-test layout covering Chapters 1–5: `## How to use this review`, `## Topics covered`, `## Short-answer questions` (5, with marks), `## Worked solutions`. 20 questions: 5 per level.
+
+### Chapter tests (`kind` = test; titles "Chapter N · Test k")
+
+`"kind": "test"`, a short body (60–150 words: what it covers, "about 25 minutes, no notes, no calculator unless the question says"), `"minutes": 25`, and **15 questions: 4 easy, 5 medium, 4 hard, 2 challenge**. Every question has `"topic"` = the title of the chapter lesson it tests, copied exactly from `chapter_lessons`; every lesson in the chapter is tested at least once. The four tests of a chapter test the same skills with **different questions** (new numbers and contexts) — the checker refuses repeats. Tests are done with no hints, so the wording must be completely clear on its own.
+
+### Every question (lessons and tests)
 
 ```json
 {
   "difficulty": "easy",
+  "topic": "Solving two-step equations",
   "prompt": "Solve 3x + 7 = 31.",
   "options": {"A": "x = 8", "B": "x = 12.7", "C": "x = 24", "D": "x = 10"},
   "answer": "A",
   "explanation": "One or two sentences: why A is right and why the most tempting wrong answer is wrong.",
   "steps": ["Subtract 7 from both sides: 3x = 24.", "Divide both sides by 3: x = 8.", "Check: 3 × 8 + 7 = 31 ✓"],
-  "mistakes": {
-    "B": "Step 1: you added 7 instead of subtracting it (3x = 38).",
-    "C": "Step 2: 3x = 24 isn't finished — divide both sides by 3.",
-    "D": "Step 1: 31 − 7 = 24, not 30."
-  }
+  "mistakes": {"B": "Step 1: you added 7 instead of subtracting it, then divided by 3.", "C": "Step 2: 3x = 24 isn't finished — divide both sides by 3.", "D": "Step 1: 31 − 7 = 24, not 30."}
 }
 ```
 
-- `steps`: short numbered-in-order steps, each with the reason. These are shown once the student gets it right (or after a second wrong try).
-- `mistakes`: one note for EVERY wrong option, saying which step goes wrong to give that answer and how to fix it — without giving the final answer. Every wrong option must be a real, common mistake.
-- Levels: easy = one skill, small numbers; medium = two steps or a small twist; hard = several steps, negatives/fractions, or a worded problem; challenge = unfamiliar context, reasoning, or combining two topics.
-- When a student gets a question wrong, they are asked "What steps did you follow?" and their steps are checked against `steps` and `mistakes`, so these must be accurate.
-- **"Year N Semester 1 review"** and **"… Maths challenge"** lessons use the practice-test layout (`## How to use this challenge`, `## Topics covered`, `## Short-answer questions`, `## Worked solutions`, `## Challenge tips`) with 20 questions, 5 at each level.
-- Check every number by actually calculating it (run it in Python), including the numbers in the wrong options.
+(`topic` is only needed in chapter tests.)
+
+- `steps`: short steps in order, each with its reason. Shown as free hints one at a time, never the last one — so the last step must be the one that gives the answer.
+- `mistakes`: a note for EVERY wrong option saying which step goes wrong to give that answer and how to fix it, without stating the right answer. Each wrong option must be a real, common mistake.
+- Spread the correct letters across A–D. 4 options, all different.
+- Maths notation: Unicode (x², 10⁻³, √50, ½, π, ×, ÷, −, ≈, °). Write inequalities in words where possible. No HTML, no LaTeX.
+- When a question contains a linear equation in one unknown, write it plainly (e.g. "Solve 2(3x − 4) = 10.") — the app offers to work it line by line in the tutor.
+- Check every number by calculating it in Python, including wrong options and worked examples.
