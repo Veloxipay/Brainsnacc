@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Lesson;
 use App\Models\Question;
 use App\Models\QuestionAttempt;
+use App\Models\StepCheck;
+use App\Support\StepCoach;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -95,6 +97,45 @@ class LessonController extends Controller
         return redirect()
             ->to(route('lessons.show', $question->lesson_id).'#q'.$question->id)
             ->with('result', $result);
+    }
+
+    /**
+     * After a wrong answer: the student writes the steps they followed,
+     * and gets told which step went wrong and how to fix it (never the final answer).
+     */
+    public function steps(Request $request, Question $question): RedirectResponse
+    {
+        abort_unless($question->lesson->isPublished() || $request->user()->isAdmin(), 404);
+
+        $data = $request->validate([
+            'answer' => ['required', 'string', Rule::in(array_keys($question->options ?? []))],
+            'steps' => ['required', 'string', 'min:3', 'max:2000'],
+            'help' => ['nullable', 'integer', 'exists:questions,id'],
+        ], [
+            'steps.required' => 'Write the steps you followed first.',
+        ]);
+        abort_if($question->isCorrect($data['answer']), 422);
+
+        $check = StepCoach::check($question, $data['answer'], $data['steps']);
+        StepCheck::create([
+            'user_id' => $request->user()->id,
+            'question_id' => $question->id,
+            'answer' => strtoupper($data['answer']),
+            'student_steps' => $data['steps'],
+            'feedback' => $check['feedback'],
+            'source' => $check['source'],
+        ]);
+
+        $flash = [
+            'result' => ['question_id' => $question->id, 'answer' => strtoupper($data['answer']), 'correct' => false, 'reveal' => false],
+            'stepcheck' => ['question_id' => $question->id, 'steps' => $data['steps'], 'feedback' => $check['feedback']],
+        ];
+
+        $to = ! empty($data['help'])
+            ? route('questions.help', $data['help']).'#q'.$question->id
+            : route('lessons.show', $question->lesson_id).'#q'.$question->id;
+
+        return redirect()->to($to)->with($flash);
     }
 
     /**

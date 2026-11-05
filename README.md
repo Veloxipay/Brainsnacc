@@ -32,6 +32,14 @@ There is no public sign-up: the admin creates every account.
 4. Deploy commands: `php artisan migrate --force`.
 5. Run once from the Cloud commands screen: `php artisan db:seed --force` — creates the levels, subjects, units, two sample lessons and the admin login. Safe to re-run.
 
+## Maths: question levels and the step checker
+
+Maths questions come in four levels (Easy, Medium, Hard, Challenge), each with worked steps and a note for every wrong option.
+When a student gets a question wrong, they're asked "What steps did you follow?". They type their working, and Brainsnacc points to the step that went wrong and how to fix it, without giving away the answer.
+
+- With `ANTHROPIC_API_KEY` set in Laravel Cloud, Claude reads the student's own steps (model: `ANTHROPIC_MODEL`, default `claude-haiku-5-5`).
+- Without a key, the student gets the built-in note for the wrong answer they picked.
+
 ## Running tests
 
 ```

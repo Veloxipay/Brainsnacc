@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    // AI step checker: reads a student's working after a wrong answer and finds the step that went wrong.
+    // Without a key, students get the built-in guide for the answer they picked instead.
+    'anthropic' => [
+        'key' => env('ANTHROPIC_API_KEY'),
+        'model' => env('ANTHROPIC_MODEL', 'claude-haiku-5-5'),
+    ],
+
 ];

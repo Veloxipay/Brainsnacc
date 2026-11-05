@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Lesson;
+use App\Models\Question;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -16,7 +17,10 @@ use Illuminate\Support\Facades\File;
  *   "title": "Galvanic cells",           // must match the lesson title in CourseSeeder
  *   "summary": "...", "minutes": 15,
  *   "body": "Markdown notes…",
- *   "questions": [{"prompt": "...", "options": {"A": "...", "B": "..."}, "answer": "B", "explanation": "..."}]
+ *   "questions": [{"prompt": "...", "options": {"A": "...", "B": "..."}, "answer": "B", "explanation": "...",
+ *                  "difficulty": "easy|medium|hard|challenge",          // optional
+ *                  "steps": ["Step 1 — reason", "Step 2 — reason"],      // optional: the worked steps
+ *                  "mistakes": {"A": "Step 2: …", "C": "…"}}]            // optional: what goes wrong for each wrong option
  * }
  *
  * A lesson is filled when it has no notes yet, or when its file has changed since it was last loaded.
@@ -73,16 +77,29 @@ class LessonContentSeeder extends Seeder
                 ]);
                 $lesson->questions()->delete(); // replaced by the file's questions
 
-                foreach (array_values($data['questions'] ?? []) as $i => $q) {
+                // Easy questions first, then medium, hard and challenge (file order kept within a level).
+                $levels = array_keys(Question::LEVELS);
+                $questions = collect(array_values($data['questions'] ?? []))
+                    ->sortBy(function ($q, $i) use ($levels) {
+                        $rank = array_search($q['difficulty'] ?? 'medium', $levels, true);
+
+                        return [$rank === false ? 1 : $rank, $i];
+                    })
+                    ->values();
+
+                foreach ($questions as $i => $q) {
                     if (empty($q['prompt']) || empty($q['options']) || empty($q['answer'])) {
                         continue;
                     }
                     $lesson->questions()->create([
                         'type' => 'mcq',
+                        'difficulty' => in_array($q['difficulty'] ?? null, $levels, true) ? $q['difficulty'] : null,
                         'prompt' => $q['prompt'],
                         'options' => $q['options'],
                         'answer' => strtoupper($q['answer']),
                         'explanation' => $q['explanation'] ?? null,
+                        'steps' => ! empty($q['steps']) ? array_values($q['steps']) : null,
+                        'mistakes' => ! empty($q['mistakes']) ? array_change_key_case($q['mistakes'], CASE_UPPER) : null,
                         'sort' => $i + 1,
                     ]);
                 }

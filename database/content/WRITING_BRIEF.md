@@ -75,11 +75,41 @@ Keep `summary` under 250 characters. Avoid bare `<` and `>` signs in text where 
 
 ## Maths lessons (Years 7–10)
 
-Maths follows the Victorian Curriculum Mathematics 2.0 for the year level given. Use `"subject": "maths"` and `"unit": "Year 7"` (etc., same as the level). Write for a 12–16 year old.
+Maths follows the Victorian Curriculum Mathematics 2.0. Each year is organised as 11 chapters (the chapter names in CourseSeeder) plus a semester review after Chapter 5 and at the end. The lesson titles inside each chapter are our own breakdown — never call them official textbook sections, and write all text, examples and questions from scratch (do not copy or imitate any textbook's exercises). Use `"subject": "maths"` and `"unit": "Year 7"` (etc., same as the level). Write for a 12–16 year old, in very simple steps.
 
-- `## Worked examples` is the heart of a maths lesson: at least 4, from easy to harder, every step on its own line with a short reason ("Subtract 7 from both sides").
-- Use Unicode for maths: x², 10⁻³, √50, ∛8, ½, ⅓, π, ×, ÷, −, ≈, °. Write inequalities in words in the body where possible ("x is less than −4"), or inside backticks.
-- Use a worked check at the end of solving questions (substitute back in).
-- `## Tips to remember` can include BIDMAS, SOH CAH TOA, "same base: multiply → add the powers", etc.
-- **"… Maths challenge"** lessons follow the practice-test layout: `## How to use this challenge`, `## Topics covered`, `## Short-answer questions`, `## Worked solutions`, `## Challenge tips`, then 20 multiple-choice questions spread across every strand of the year.
-- Check every number by actually calculating it (run it in Python), including the numbers in wrong options.
+Body structure for a normal Maths lesson (replaces the general structure above):
+
+1. 2–3 sentence opening: what this is and where it's used in real life.
+2. `## Learning objective` — one sentence: "By the end of this lesson you can …".
+3. `## Before you start` — the skills this builds on, each linked by name to the earlier lesson (e.g. "Adding and subtracting integers (Year 7)"), with a 2-question warm-up.
+4. `## Key ideas` — short explanation with `###` sub-sections; bold every new term.
+5. `## Worked examples` — 3 or more, easy → hard. Every step on its own numbered line with a short reason ("Step 2: subtract 7 from both sides — to get 3x on its own"). Finish with a check.
+6. `## Common mistakes` — the misconceptions behind the wrong options, with the fix.
+7. `## Tips to remember`, `## Key terms`, `## Summary` — as above.
+
+Maths notation: Unicode (x², 10⁻³, √50, ∛8, ½, π, ×, ÷, −, ≈, °). Write inequalities in words where possible ("x is less than −4").
+
+Maths questions: 12 per lesson — **3 easy, 3 medium, 3 hard, 3 challenge** (the app sorts them easy → challenge). Each question has:
+
+```json
+{
+  "difficulty": "easy",
+  "prompt": "Solve 3x + 7 = 31.",
+  "options": {"A": "x = 8", "B": "x = 12.7", "C": "x = 24", "D": "x = 10"},
+  "answer": "A",
+  "explanation": "One or two sentences: why A is right and why the most tempting wrong answer is wrong.",
+  "steps": ["Subtract 7 from both sides: 3x = 24.", "Divide both sides by 3: x = 8.", "Check: 3 × 8 + 7 = 31 ✓"],
+  "mistakes": {
+    "B": "Step 1: you added 7 instead of subtracting it (3x = 38).",
+    "C": "Step 2: 3x = 24 isn't finished — divide both sides by 3.",
+    "D": "Step 1: 31 − 7 = 24, not 30."
+  }
+}
+```
+
+- `steps`: short numbered-in-order steps, each with the reason. These are shown once the student gets it right (or after a second wrong try).
+- `mistakes`: one note for EVERY wrong option, saying which step goes wrong to give that answer and how to fix it — without giving the final answer. Every wrong option must be a real, common mistake.
+- Levels: easy = one skill, small numbers; medium = two steps or a small twist; hard = several steps, negatives/fractions, or a worded problem; challenge = unfamiliar context, reasoning, or combining two topics.
+- When a student gets a question wrong, they are asked "What steps did you follow?" and their steps are checked against `steps` and `mistakes`, so these must be accurate.
+- **"Year N Semester 1 review"** and **"… Maths challenge"** lessons use the practice-test layout (`## How to use this challenge`, `## Topics covered`, `## Short-answer questions`, `## Worked solutions`, `## Challenge tips`) with 20 questions, 5 at each level.
+- Check every number by actually calculating it (run it in Python), including the numbers in the wrong options.

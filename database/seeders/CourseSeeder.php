@@ -53,18 +53,48 @@ class CourseSeeder extends Seeder
                 );
 
                 foreach ($lessonTitles as $l => $lessonTitle) {
-                    $lesson = Lesson::firstOrNew(['module_id' => $module->id, 'title' => $lessonTitle]);
+                    // A written lesson keeps its notes even if it now sits in a different module.
+                    $lesson = ($subjectKey === 'maths'
+                        ? Lesson::where('title', $lessonTitle)->whereHas('module', fn ($q) => $q->where('unit_id', $unit->id))->first()
+                        : null)
+                        ?? Lesson::firstOrNew(['module_id' => $module->id, 'title' => $lessonTitle]);
                     if (! $lesson->exists) {
                         $lesson->fill(['status' => 'draft', 'minutes' => 12]);
                     }
+                    $lesson->module_id = $module->id;
                     $lesson->sort = $l + 1;
                     $lesson->save();
                 }
+            }
+
+            if ($subjectKey === 'maths') {
+                $this->tidyMaths($unit, $modules);
             }
         }
 
         $this->galvanicCells();
         $this->enzymes();
+    }
+
+    /**
+     * The Maths map was reorganised into chapters. Remove old placeholder lessons that were never written,
+     * and empty modules past the end of the list. Written lessons and anything with student progress are kept.
+     */
+    private function tidyMaths(Unit $unit, array $modules): void
+    {
+        $titles = collect($modules)->flatMap(fn ($m) => $m[1]);
+
+        Lesson::whereHas('module', fn ($q) => $q->where('unit_id', $unit->id))
+            ->whereNotIn('title', $titles)
+            ->where('status', 'draft')
+            ->where(fn ($q) => $q->whereNull('body')->orWhere('body', ''))
+            ->whereDoesntHave('questions')
+            ->get()
+            ->each->delete();
+
+        Module::where('unit_id', $unit->id)->where('sort', '>=', count($modules))
+            ->whereDoesntHave('lessons')
+            ->delete();
     }
 
     /** [level, subject, unit code, unit title, [[module title, [lesson titles]], …]] */
@@ -90,39 +120,68 @@ class CourseSeeder extends Seeder
                 ['Revision and exam practice', ['Year 10 Biology summary and memory tips', 'Year 10 Biology practice test']],
             ]],
 
-            // ── Maths · Years 7–10 (Victorian Curriculum Mathematics 2.0) ──
+            // ── Maths · Years 7–10 ─────────────────────────────────
+            // Modules follow a common 11-chapter Year 7–10 sequence for the Victorian Curriculum 2.0,
+            // with a semester review after Chapter 5 and at the end. Lesson titles are our own breakdown.
             ['y7', 'maths', 'Year 7', 'Year 7 Maths', [
-                ['Number', ['Place value, rounding and estimation', 'Primes, factors, multiples and index notation', 'Square numbers and square roots', 'Integers: positive and negative numbers', 'Fractions', 'Decimals', 'Percentages', 'Ratios']],
-                ['Algebra', ['Variables and algebraic expressions', 'Substitution and simplifying', 'Solving simple equations', 'The Cartesian plane and graphing patterns']],
-                ['Measurement', ['Units of measurement', 'Perimeter and area', 'Volume of rectangular prisms', 'Angles and parallel lines']],
-                ['Space', ['Triangles and quadrilaterals', 'Transformations and symmetry', '3D shapes and nets']],
-                ['Statistics and probability', ['Collecting and displaying data', 'Mean, median, mode and range', 'Chance and probability']],
-                ['Revision and challenge', ['Year 7 Maths summary and memory tips', 'Year 7 Maths challenge']],
+                ['1 · Computations with positive integers', ['Place value and our number system', 'Adding and subtracting whole numbers', 'Multiplying and dividing whole numbers', 'Rounding and estimating', 'Order of operations (BIDMAS)']],
+                ['2 · Number properties and patterns', ['Factors and multiples', 'Highest common factor and lowest common multiple', 'Primes and prime factorisation', 'Index notation, squares and square roots', 'Number patterns and rules']],
+                ['3 · Fractions and percentages', ['Equivalent fractions and simplifying', 'Mixed numbers and improper fractions', 'Adding and subtracting fractions', 'Multiplying and dividing fractions', 'Fractions, decimals and percentages', 'Percentage of a quantity', 'Introduction to ratios']],
+                ['4 · Algebraic techniques', ['Variables and algebraic expressions', 'Substitution', 'Like terms and simplifying', 'Multiplying and dividing terms', 'Using the distributive law']],
+                ['5 · Decimals', ['Place value in decimals', 'Rounding decimals', 'Adding and subtracting decimals', 'Multiplying and dividing decimals', 'Terminating and recurring decimals']],
+                ['Semester 1 review', ['Year 7 Semester 1 review']],
+                ['6 · Negative numbers', ['Integers on the number line', 'Adding and subtracting integers', 'Multiplying and dividing integers', 'Order of operations with integers', 'The Cartesian plane']],
+                ['7 · Geometry', ['Measuring and classifying angles', 'Angles at a point and vertically opposite angles', 'Angles and parallel lines', 'Triangles', 'Quadrilaterals', 'Transformations and symmetry', '3D shapes and nets']],
+                ['8 · Statistics and probability', ['Collecting and classifying data', 'Displaying data', 'Mean, median, mode and range', 'Chance and the probability scale', 'Experiments and relative frequency']],
+                ['9 · Equations', ['Introduction to equations', 'Solving equations by backtracking', 'Solving two-step equations', 'Using formulas', 'Solving worded problems with equations']],
+                ['10 · Measurement', ['Units and converting', 'Perimeter', 'Area of rectangles, triangles and parallelograms', 'Volume of rectangular prisms', 'Capacity and mass']],
+                ['11 · Algorithmic thinking', ['Algorithms and flowcharts', 'Loops and decisions in algorithms']],
+                ['Semester 2 review', ['Year 7 Maths summary and memory tips', 'Year 7 Maths challenge']],
             ]],
             ['y8', 'maths', 'Year 8', 'Year 8 Maths', [
-                ['Number', ['Index laws', 'Rational and irrational numbers', 'Percentage increase and decrease', 'Profit, loss and discounts', 'Ratios and rates']],
-                ['Algebra', ['Expanding brackets', 'Factorising with common factors', 'Solving linear equations', 'Linear graphs and gradient']],
-                ['Measurement', ['Converting units of area and volume', 'Circles: circumference and area', 'Area of composite shapes', 'Volume of prisms and cylinders', 'Time and time zones']],
-                ['Space', ['Congruent triangles', 'Properties of quadrilaterals']],
-                ['Statistics and probability', ['Samples and populations', 'Comparing data sets', 'Venn diagrams and two-way tables']],
-                ['Revision and challenge', ['Year 8 Maths summary and memory tips', 'Year 8 Maths challenge']],
+                ['1 · Computations with integers', ['Adding and subtracting integers', 'Multiplying and dividing integers', 'Order of operations with integers', 'Substituting integers into expressions']],
+                ['2 · Angle relationships and properties of geometrical figures', ['Angles and parallel lines', 'Angle sums of triangles', 'Properties of quadrilaterals', 'Interior angles of polygons', 'Exterior angles']],
+                ['3 · Fractions, decimals and percentages', ['Operations with fractions', 'Rational and irrational numbers', 'Converting fractions, decimals and percentages', 'Percentage increase and decrease', 'Profit, loss and discounts']],
+                ['4 · Measurement and Pythagoras’ theorem', ['Converting units of length, area and volume', 'Area of composite shapes', 'Circles: circumference and area', 'Volume of prisms and cylinders', 'Time and time zones', 'Pythagoras’ theorem', 'Finding a shorter side']],
+                ['5 · Algebraic techniques and index laws', ['Like terms and simplifying', 'Expanding brackets', 'Factorising with common factors', 'Simple algebraic fractions', 'Index laws for multiplying and dividing', 'Power of a power and the zero index']],
+                ['Semester 1 review', ['Year 8 Semester 1 review']],
+                ['6 · Ratios and rates', ['Ratios', 'Dividing a quantity in a ratio', 'Scale drawings', 'Rates', 'Speed, distance and time']],
+                ['7 · Equations and inequalities', ['Solving linear equations', 'Equations with brackets', 'Pronumerals on both sides', 'Solving worded problems', 'Inequalities on a number line', 'Solving linear inequalities']],
+                ['8 · Probability and statistics', ['Samples and populations', 'Comparing data sets', 'Probability and complementary events', 'Venn diagrams and two-way tables', 'Experimental probability']],
+                ['9 · Linear relationships', ['Plotting points and graphs', 'Linear graphs from rules', 'Gradient', 'Gradient and y-intercept', 'Using graphs to solve problems']],
+                ['10 · Transformations and congruence', ['Translations, reflections and rotations', 'Congruent figures', 'Congruence tests for triangles', 'Using congruence in quadrilaterals']],
+                ['11 · Algorithmic thinking', ['Algorithms with variables and loops', 'Testing number patterns with algorithms']],
+                ['Semester 2 review', ['Year 8 Maths summary and memory tips', 'Year 8 Maths challenge']],
             ]],
             ['y9', 'maths', 'Year 9', 'Year 9 Maths', [
-                ['Number', ['Index laws with zero and negative powers', 'Scientific notation', 'Simple interest']],
-                ['Algebra', ['Expanding binomial products', 'Gradient, midpoint and distance', 'Straight-line graphs: y = mx + c', 'Graphs of simple non-linear relations']],
-                ['Measurement', ['Pythagoras’ theorem', 'Introduction to trigonometry', 'Surface area of prisms and cylinders', 'Small and large units of measurement']],
-                ['Space', ['Similar triangles and enlargements']],
-                ['Statistics and probability', ['Histograms and stem-and-leaf plots', 'Shape of data distributions', 'Two-step chance experiments']],
-                ['Revision and challenge', ['Year 9 Maths summary and memory tips', 'Year 9 Maths challenge']],
+                ['1 · Reviewing number and financial mathematics', ['Integers, fractions and decimals review', 'Rounding and significant figures', 'Percentages and money', 'Income and wages', 'Simple interest', 'Introduction to compound interest']],
+                ['2 · Expressions and linear equations', ['Simplifying and expanding expressions', 'Solving linear equations', 'Pronumerals on both sides and brackets', 'Using formulas', 'Solving linear inequalities']],
+                ['3 · Pythagoras’ theorem and trigonometry', ['Pythagoras’ theorem review', 'Pythagoras in 3D', 'Trigonometric ratios', 'Finding side lengths with trigonometry', 'Finding angles with trigonometry', 'Angles of elevation and depression']],
+                ['4 · Linear relationships', ['Graphing straight lines', 'Gradient', 'y = mx + c', 'Finding the equation of a line', 'Midpoint and distance', 'Parallel and perpendicular lines']],
+                ['5 · Measurement', ['Perimeter and circles', 'Area of composite shapes and sectors', 'Surface area of prisms and cylinders', 'Volume of prisms and cylinders', 'Very small and very large units']],
+                ['Semester 1 review', ['Year 9 Semester 1 review']],
+                ['6 · Indices and surds', ['Index laws review', 'Zero and negative indices', 'Scientific notation', 'Introduction to surds', 'Simplifying surds']],
+                ['7 · Geometry', ['Angle properties review', 'Congruent triangles', 'Enlargements and similar figures', 'Similar triangles', 'Solving problems with similar triangles']],
+                ['8 · Algebraic techniques', ['Expanding binomial products', 'Perfect squares and difference of two squares', 'Factorising by common factors', 'Factorising quadratic trinomials', 'Simplifying algebraic fractions']],
+                ['9 · Probability and statistics', ['Histograms and stem-and-leaf plots', 'Shape of data distributions', 'Measures of centre and spread', 'Two-step chance experiments', 'Tree diagrams']],
+                ['10 · Introduction to quadratic equations and graphs', ['Solving quadratic equations', 'Graphs of parabolas', 'Sketching simple parabolas', 'Graphs of other non-linear relations']],
+                ['11 · Algorithmic thinking', ['Algorithms for solving equations', 'Simulating chance with algorithms']],
+                ['Semester 2 review', ['Year 9 Maths summary and memory tips', 'Year 9 Maths challenge']],
             ]],
             ['y10', 'maths', 'Year 10', 'Year 10 Maths', [
-                ['Number and finance', ['Compound interest', 'Surds and fractional indices']],
-                ['Algebra', ['Factorising quadratic expressions', 'Solving quadratic equations', 'Graphing parabolas', 'Simultaneous linear equations', 'Linear inequalities', 'Exponential growth and decay']],
-                ['Measurement', ['Trigonometry: finding sides and angles', 'Bearings and angles of elevation', 'Surface area and volume of pyramids, cones and spheres']],
-                ['Space', ['Geometric proofs and circle properties']],
-                ['Statistics', ['Box plots and the five-number summary', 'Scatterplots and bivariate data', 'Evaluating statistical reports']],
-                ['Probability', ['Conditional probability and independence']],
-                ['Revision and challenge', ['Year 10 Maths summary and memory tips', 'Year 10 Maths challenge']],
+                ['1 · Algebra, equations and linear relationships', ['Algebraic expressions and expanding', 'Linear equations and inequalities', 'Graphing straight lines', 'Finding the equation of a line', 'Simultaneous equations by substitution', 'Simultaneous equations by elimination', 'Problem solving with simultaneous equations']],
+                ['2 · Geometry and networks', ['Geometric proofs and congruence', 'Similar triangles', 'Circle properties: angles and chords', 'Networks: vertices, edges and degree', 'Paths, trails and circuits', 'Shortest paths']],
+                ['3 · Indices, exponentials and logarithms', ['Negative and fractional indices', 'Scientific notation and significant figures', 'Exponential growth and decay', 'Compound interest', 'Introduction to logarithms', 'Solving exponential equations']],
+                ['4 · Measurement and surds', ['Simplifying surds', 'Operations with surds', 'Rationalising the denominator', 'Surface area of pyramids and cones', 'Volume of pyramids and cones', 'Spheres: surface area and volume']],
+                ['5 · Quadratic expressions and equations', ['Expanding and special products', 'Factorising monic quadratics', 'Factorising non-monic quadratics', 'Completing the square', 'Solving quadratic equations', 'The quadratic formula and the discriminant']],
+                ['Semester 1 review', ['Year 10 Semester 1 review']],
+                ['6 · Trigonometry', ['Trigonometric ratios review', 'Finding sides and angles', 'Angles of elevation and depression', 'Bearings', 'Trigonometry in 3D', 'The sine and cosine rules (extension)']],
+                ['7 · Parabolas and rates of change', ['Parabolas in turning point form', 'Sketching parabolas from factorised form', 'Using the discriminant with graphs', 'Average rate of change', 'Applications of parabolas']],
+                ['8 · Probability and counting techniques', ['Probability review', 'Venn diagrams and two-way tables', 'Conditional probability', 'Independent events', 'Tree diagrams with and without replacement', 'Counting techniques']],
+                ['9 · Statistics', ['Collecting data and sampling', 'Box plots and the five-number summary', 'Standard deviation', 'Scatterplots and lines of best fit', 'Time-series data', 'Evaluating statistical reports']],
+                ['10 · Polynomials, functions and graphs', ['Introducing polynomials', 'Dividing polynomials', 'The factor and remainder theorems', 'Functions and function notation', 'Circles and hyperbolas', 'Exponential graphs', 'Transforming graphs']],
+                ['11 · Algorithmic thinking', ['Searching and sorting algorithms', 'Iteration and approximation with algorithms']],
+                ['Semester 2 review', ['Year 10 Maths summary and memory tips', 'Year 10 Maths challenge']],
             ]],
 
             // ── Year 11 · VCE Units 1–2 ─────────────────────────────
