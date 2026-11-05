@@ -61,7 +61,7 @@ class TutorController extends Controller
     {
         $data = $request->validate([
             'read_as' => ['required', 'string', 'max:200'],
-            'source' => ['nullable', Rule::in(['homework', 'photo'])],
+            'source' => ['nullable', Rule::in(['homework', 'photo', 'lesson'])],
         ]);
         $read = Tutor::read($data['read_as']);
         abort_unless($read['ok'], 422);

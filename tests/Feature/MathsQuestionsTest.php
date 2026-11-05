@@ -70,4 +70,75 @@ class MathsQuestionsTest extends TestCase
         $this->actingAs($this->year8())->post(route('questions.steps', $q), ['answer' => $q->answer, 'steps' => 'my steps'])
             ->assertStatus(422);
     }
+
+    public function test_hints_are_free_never_show_the_last_step_and_mark_the_answer_as_helped(): void
+    {
+        $student = $this->year8();
+        $lesson = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail();
+        $q = $lesson->questions->first(fn ($q) => count($q->steps ?? []) === 3);
+        $this->actingAs($student);
+        foreach (range(1, 4) as $i) {
+            $this->post(route('questions.hint', $q))->assertRedirect();
+        }
+        $page = $this->get(route('lessons.show', $lesson))->assertSee($q->steps[0])->assertSee($q->steps[1]);
+        $page->assertDontSee($q->steps[2]);
+        $page->assertSee('the last step is yours');
+
+        $this->post(route('questions.answer', $q), ['answer' => $q->answer]);
+        $this->assertSame(2, \App\Models\QuestionAttempt::latest('id')->value('help_used'));
+        $q2 = $lesson->questions->firstWhere('id', '!=', $q->id);
+        $this->post(route('questions.answer', $q2), ['answer' => $q2->answer]);
+        $this->assertSame(0, \App\Models\QuestionAttempt::latest('id')->value('help_used'));
+    }
+
+    public function test_explain_the_question_works_without_ai_and_counts_as_help(): void
+    {
+        $student = $this->year8();
+        $lesson = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail();
+        $q = $lesson->questions->first();
+        $this->actingAs($student)->post(route('questions.explain', $q));
+        $this->get(route('lessons.show', $lesson))->assertSee('What this question is asking');
+        $this->post(route('questions.answer', $q), ['answer' => $q->answer]);
+        $this->assertSame(1, \App\Models\QuestionAttempt::latest('id')->value('help_used'));
+    }
+
+    public function test_equation_questions_link_to_the_tutor(): void
+    {
+        $y7 = User::factory()->create(['role' => User::ROLE_STUDENT, 'level_id' => Level::where('short_name', 'Year 7')->value('id')]);
+        $lesson = Lesson::where('title', 'Year 7 Maths challenge')->firstOrFail();
+        $this->actingAs($y7)->get(route('lessons.show', $lesson))->assertSee('Work it out line by line');
+        $q = $lesson->questions->first(fn ($q) => str_contains($q->prompt, 'x/3'));
+        $this->assertSame('x/3 − 2 = 5', \App\Support\QuestionHelp::tutorEquation($q));
+    }
+
+    public function test_two_right_on_your_own_suggests_the_next_level(): void
+    {
+        $student = $this->year8();
+        $lesson = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail();
+        $easy = $lesson->questions->where('difficulty', 'easy')->values();
+        $this->actingAs($student)->post(route('questions.answer', $easy[0]), ['answer' => $easy[0]->answer]);
+        $this->post(route('questions.answer', $easy[1]), ['answer' => $easy[1]->answer])
+            ->assertSessionHas("result", function ($r) { return str_contains($r["suggest"]["text"] ?? "", "Medium"); });
+    }
+
+    public function test_parent_sees_unaided_accuracy(): void
+    {
+        $parent = User::factory()->create(['role' => User::ROLE_PARENT]);
+        $child = $this->year8();
+        \Illuminate\Support\Facades\DB::table('student_supervisors')->insert(['supervisor_id' => $parent->id, 'student_id' => $child->id, 'created_at' => now(), 'updated_at' => now()]);
+        $q = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail()->questions->first();
+        \App\Models\QuestionAttempt::create(['user_id' => $child->id, 'question_id' => $q->id, 'answer' => $q->answer, 'is_correct' => true, 'help_used' => 0]);
+        $this->actingAs($parent)->get(route('family.students.show', $child))->assertOk()->assertSee('Without hints: 100%');
+    }
+
+    public function test_two_wrong_at_a_level_suggests_an_easier_one(): void
+    {
+        $student = $this->year8();
+        $lesson = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail();
+        $hard = $lesson->questions->where('difficulty', 'hard')->values();
+        $wrong = fn ($q) => collect(array_keys($q->options))->first(fn ($l) => $l !== $q->answer);
+        $this->actingAs($student)->post(route('questions.answer', $hard[0]), ['answer' => $wrong($hard[0])]);
+        $this->post(route('questions.answer', $hard[1]), ['answer' => $wrong($hard[1])])
+            ->assertSessionHas('result', fn ($r) => str_contains($r['suggest']['text'] ?? '', 'Medium one first'));
+    }
 }

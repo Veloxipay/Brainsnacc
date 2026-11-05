@@ -11,6 +11,7 @@
         <div class="score-big">
             <span class="small muted">Average score</span>
             <strong>{{ $accuracy !== null ? $accuracy.'%' : '—' }}</strong>
+            @if ($unaided !== null)<span class="small muted">Without hints: {{ $unaided }}%</span>@endif
         </div>
     </header>
 
@@ -25,6 +26,22 @@
             </section>
         @endforeach
     </div>
+
+    @if ($skillRecords->isNotEmpty())
+        <section class="card">
+            <h2 style="margin:0;font-size:20px">Maths tutor skills</h2>
+            <p class="small muted" style="margin:0">From questions worked line by line in the tutor. "On their own" means no hints, steps or corrections.</p>
+            <ul class="skill-list">
+                @foreach ($skillRecords as $r)
+                    <li>
+                        <strong style="flex:1 1 200px">{{ \App\Tutor\Skills::name($r->skill_code) }}</strong>
+                        <span class="small muted">{{ $r->unaided_successes }} on their own · {{ $r->assisted_successes }} with help</span>
+                        <span class="state state-{{ $r->state }}">{{ $r->label() }}</span>
+                    </li>
+                @endforeach
+            </ul>
+        </section>
+    @endif
 
     <section class="card">
         <h2 style="margin:0;font-size:20px">Study days (last 4 weeks)</h2>

@@ -42,10 +42,13 @@ class Progress
         return $student->completedLessons()->pluck('lessons.id');
     }
 
-    /** Share of questions answered correctly, as a whole percent (null if none answered). */
-    public static function accuracy(User $student, ?int $lessonId = null, ?CarbonInterface $since = null): ?int
+    /** Share of questions answered correctly, as a whole percent (null if none answered). $unaidedOnly: only answers given with no hints. */
+    public static function accuracy(User $student, ?int $lessonId = null, ?CarbonInterface $since = null, bool $unaidedOnly = false): ?int
     {
         $query = QuestionAttempt::where('user_id', $student->id);
+        if ($unaidedOnly) {
+            $query->where('help_used', 0);
+        }
 
         if ($lessonId) {
             $query->whereHas('question', fn ($q) => $q->where('lesson_id', $lessonId));

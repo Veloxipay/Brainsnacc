@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class QuestionAttempt extends Model
 {
-    protected $fillable = ['user_id', 'question_id', 'answer', 'is_correct'];
+    protected $fillable = ['user_id', 'question_id', 'answer', 'is_correct', 'help_used'];
 
     protected function casts(): array
     {

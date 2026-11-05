@@ -43,6 +43,8 @@ Route::middleware('auth')->group(function () {
         Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lessons.show');
         Route::post('/lessons/{lesson}/complete', [LessonController::class, 'complete'])->name('lessons.complete');
         Route::post('/questions/{question}/answer', [LessonController::class, 'answer'])->name('questions.answer');
+        Route::post('/questions/{question}/hint', [LessonController::class, 'hint'])->middleware('throttle:60,1')->name('questions.hint');
+        Route::post('/questions/{question}/explain', [LessonController::class, 'explainQuestion'])->middleware('throttle:20,1')->name('questions.explain');
         Route::post('/questions/{question}/steps', [LessonController::class, 'steps'])->middleware('throttle:20,1')->name('questions.steps');
         Route::get('/questions/{question}/help', [LessonController::class, 'help'])->name('questions.help');
         // Maths tutor

@@ -6,6 +6,7 @@ use App\Models\Lesson;
 use App\Models\Question;
 use App\Models\QuestionAttempt;
 use App\Models\StepCheck;
+use App\Support\QuestionHelp;
 use App\Support\StepCoach;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -65,7 +66,11 @@ class LessonController extends Controller
             'question_id' => $question->id,
             'answer' => $data['answer'],
             'is_correct' => $correct,
+            'help_used' => min(255, QuestionHelp::used($question)),
         ]);
+        if ($correct) {
+            QuestionHelp::forget($question);
+        }
 
         // Wrong tries in a row since this question was last answered right.
         $wrongInARow = 0;
@@ -77,6 +82,9 @@ class LessonController extends Controller
         }
 
         $result = ['question_id' => $question->id, 'answer' => $data['answer'], 'correct' => $correct, 'reveal' => false];
+        if (empty($data['help'])) {
+            $result['suggest'] = $this->levelSuggestion($question, $user, $correct);
+        }
 
         // Answered on a help page: stay there. Show the answer after a second wrong try.
         if (! empty($data['help'])) {
@@ -97,6 +105,71 @@ class LessonController extends Controller
         return redirect()
             ->to(route('lessons.show', $question->lesson_id).'#q'.$question->id)
             ->with('result', $result);
+    }
+
+    /** Penalty-free hint: reveal the next worked step (never the last one). */
+    public function hint(Request $request, Question $question): RedirectResponse
+    {
+        abort_unless($question->lesson->isPublished() || $request->user()->isAdmin(), 404);
+        QuestionHelp::addHint($question);
+
+        return $this->backToQuestion($request, $question);
+    }
+
+    /** "I don't understand the question": what it asks, in simpler words — never the answer. */
+    public function explainQuestion(Request $request, Question $question): RedirectResponse
+    {
+        abort_unless($question->lesson->isPublished() || $request->user()->isAdmin(), 404);
+        QuestionHelp::explain($question);
+
+        return $this->backToQuestion($request, $question);
+    }
+
+    private function backToQuestion(Request $request, Question $question): RedirectResponse
+    {
+        $help = $request->integer('help');
+
+        return redirect()->to(($help ? route('questions.help', $help) : route('lessons.show', $question->lesson_id)).'#q'.$question->id);
+    }
+
+    /**
+     * Adaptive difficulty: two right on your own at a level → suggest the next level up;
+     * two different questions wrong at a level → suggest an easier one first.
+     *
+     * @return array{text:string,target:int}|null
+     */
+    private function levelSuggestion(Question $question, $user, bool $correct): ?array
+    {
+        $levels = array_keys(Question::LEVELS);
+        $at = array_search($question->difficulty, $levels, true);
+        if ($at === false) {
+            return null;
+        }
+        $questions = $question->lesson->questions()->get();
+        $latest = QuestionAttempt::where('user_id', $user->id)->whereIn('question_id', $questions->pluck('id'))
+            ->orderByDesc('id')->get()->unique('question_id')->keyBy('question_id');
+        $sameLevel = $questions->where('difficulty', $question->difficulty)->pluck('id');
+        $doneRight = fn ($q) => ($latest[$q->id] ?? null)?->is_correct;
+
+        if ($correct) {
+            $unaidedRight = $latest->whereIn('question_id', $sameLevel)->filter(fn ($a) => $a->is_correct && $a->help_used === 0)->count();
+            $up = $levels[$at + 1] ?? null;
+            $target = $up ? $questions->where('difficulty', $up)->first(fn ($q) => ! $doneRight($q)) : null;
+            if ($unaidedRight >= 2 && $target) {
+                return ['text' => 'That\'s '.$unaidedRight.' '.Question::LEVELS[$question->difficulty].' questions right on your own. Ready for a '.Question::LEVELS[$up].' one?', 'target' => $target->id];
+            }
+
+            return null;
+        }
+
+        $wrongHere = $latest->whereIn('question_id', $sameLevel)->filter(fn ($a) => ! $a->is_correct)->count();
+        $down = $at > 0 ? $levels[$at - 1] : null;
+        $target = $down ? $questions->where('difficulty', $down)->first(fn ($q) => ! $doneRight($q)) : null;
+        if ($wrongHere >= 2 && $target) {
+            return ['text' => 'These '.Question::LEVELS[$question->difficulty].' ones are tricky. Try a '.Question::LEVELS[$down].' one first, then come back.', 'target' => $target->id];
+        }
+
+        return null;
     }
 
     /**

@@ -119,6 +119,8 @@ class ParentController extends Controller
             'student' => $student,
             'subjects' => $subjects,
             'accuracy' => Progress::accuracy($student),
+            'unaided' => Progress::accuracy($student, null, null, true),
+            'skillRecords' => \App\Models\SkillRecord::where('user_id', $student->id)->get(),
             'weak' => Progress::weakLessons($student, 6),
             'recent' => $recent,
             'days' => $days,

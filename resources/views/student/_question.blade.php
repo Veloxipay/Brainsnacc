@@ -8,6 +8,9 @@
 @php($check = session('stepcheck'))
 @php($check = $check && $check['question_id'] === $question->id ? $check : null)
 @php($level = $question->levelLabel())
+@php($qhelp = \App\Support\QuestionHelp::state($question))
+@php($maxHints = \App\Support\QuestionHelp::maxHints($question))
+@php($tutorEq = $subject->slug === 'maths' ? \App\Support\QuestionHelp::tutorEquation($question) : null)
 <section class="card" id="q{{ $question->id }}" aria-labelledby="qp{{ $question->id }}">
     <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths'][$subject->slug] ?? '' }}" style="align-self:flex-start">{{ $label }}@if ($level) · <span class="level level-{{ $question->difficulty }}">{{ $level }}</span>@endif · {{ $question->marks }} {{ \Illuminate\Support\Str::plural('mark', $question->marks) }}</span>
     <p id="qp{{ $question->id }}" style="margin:0;font-size:18px;font-weight:600">{{ $question->prompt }}</p>
@@ -53,6 +56,60 @@
 
         <div><button class="btn" type="submit">{{ $mine ? 'Try again' : 'Check answer' }}</button></div>
     </form>
+
+    @if ($mine && ! empty($mine['suggest']))
+        <div class="level-suggest" role="status">
+            {{ $mine['suggest']['text'] }}
+            <a href="{{ route('lessons.show', $question->lesson_id) }}#q{{ $mine['suggest']['target'] }}">Go to it →</a>
+        </div>
+    @endif
+
+    @unless ($mine && $reveal)
+        @if ($qhelp['hints'] > 0 || $qhelp['explain'])
+            <div class="q-hints" aria-live="polite">
+                @if ($qhelp['explain'])
+                    <div class="tutor-says"><strong>What this question is asking:</strong> {{ $qhelp['explain'] }}</div>
+                @endif
+                @if ($qhelp['hints'] > 0)
+                    <ol class="steps-list">
+                        @foreach (array_slice($question->steps ?? [], 0, $qhelp['hints']) as $hint)
+                            <li>{{ $hint }}</li>
+                        @endforeach
+                    </ol>
+                    @if ($qhelp['hints'] >= $maxHints)
+                        <div class="small muted">That's all the hints — the last step is yours.</div>
+                    @endif
+                @endif
+            </div>
+        @endif
+        <div class="q-help-row">
+            @if ($qhelp['hints'] < $maxHints)
+                <form method="POST" action="{{ route('questions.hint', $question) }}">
+                    @csrf
+                    @isset($help)<input type="hidden" name="help" value="{{ $help }}">@endisset
+                    <button class="btn secondary small" type="submit">{{ $qhelp['hints'] ? 'Next hint' : 'Show a hint' }}</button>
+                </form>
+            @endif
+            @unless ($qhelp['explain'])
+                <form method="POST" action="{{ route('questions.explain', $question) }}">
+                    @csrf
+                    @isset($help)<input type="hidden" name="help" value="{{ $help }}">@endisset
+                    <button class="btn secondary small" type="submit">I don't understand the question</button>
+                </form>
+            @endunless
+            @if ($tutorEq)
+                <form method="POST" action="{{ route('tutor.store') }}">
+                    @csrf
+                    <input type="hidden" name="read_as" value="{{ $tutorEq }}">
+                    <input type="hidden" name="source" value="lesson">
+                    <button class="btn secondary small" type="submit">Work it out line by line</button>
+                </form>
+            @endif
+        </div>
+        @if ($maxHints > 0 || $qhelp['explain'])
+            <div class="small muted">Hints are free. Answers given after a hint count as "with help" — try the next one without.</div>
+        @endif
+    @endunless
 
     @if ($mine && ! $mine['correct'] && ! $reveal)
         <form method="POST" action="{{ route('questions.steps', $question) }}" class="steps-form">
