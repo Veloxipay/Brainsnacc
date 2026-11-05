@@ -42,7 +42,11 @@ class ChapterTestTest extends TestCase
 
     public function test_course_map_lists_four_tests_per_chapter(): void
     {
-        $this->assertSame(176, Lesson::where('kind', 'test')->count());
+        $this->assertSame(176, Lesson::where('kind', 'test')->where('title', 'like', 'Chapter % · Test %')->count());
+        $this->assertSame(22, Lesson::where('kind', 'test')->where('title', 'like', 'Advanced % · Test %')->count());
+        $selective = Lesson::where('kind', 'test')->whereHas('module.unit.subject', fn ($q) => $q->where('slug', 'selective'));
+        $this->assertSame(12, (clone $selective)->count());
+        $this->assertSame([30], (clone $selective)->pluck('minutes')->unique()->values()->all());
         $this->actingAs($this->student())->get(route('course', ['subject' => 'maths', 'level' => Level::where('short_name', 'Year 8')->value('id')]))
             ->assertSee('Chapter 6 · Test 1')->assertSee('Chapter 6 · Test 4');
     }

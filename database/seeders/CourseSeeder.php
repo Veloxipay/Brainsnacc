@@ -36,6 +36,7 @@ class CourseSeeder extends Seeder
             'chemistry' => Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2F6BEA', 'tint' => '#E8F0FE']),
             'biology' => Subject::firstOrCreate(['slug' => 'biology'], ['name' => 'Biology', 'color' => '#E07A12', 'tint' => '#FFF1E3']),
             'maths' => Subject::firstOrCreate(['slug' => 'maths'], ['name' => 'Maths', 'color' => '#7B5CF0', 'tint' => '#F0ECFE']),
+            'selective' => Subject::firstOrCreate(['slug' => 'selective'], ['name' => 'Selective Entry', 'color' => '#0F8A7E', 'tint' => '#E3F5F2']),
         ];
 
         $sortUnit = 0;
@@ -69,7 +70,8 @@ class CourseSeeder extends Seeder
                     }
                     if (str_contains($lessonTitle, ' · Test ')) {
                         $lesson->kind = 'test';
-                        $lesson->minutes = 25;
+                        // Selective practice tests copy the real exam: 30 minutes a section.
+                        $lesson->minutes = $subjectKey === 'selective' ? 30 : 25;
                     }
                     $lesson->module_id = $module->id;
                     $lesson->sort = $l + 1;
@@ -110,6 +112,18 @@ class CourseSeeder extends Seeder
     }
 
     /** "Chapter 6 · Test 2" — unique within a year, so files can find it. */
+    /** Adds "Advanced N · Test 1" and "… Test 2" to the end of each advanced chapter. */
+    private static function withTests(array $modules): array
+    {
+        foreach ($modules as &$m) {
+            preg_match('/^Advanced (\d+) · /', $m[0], $ch);
+            $m[1][] = "Advanced {$ch[1]} · Test 1";
+            $m[1][] = "Advanced {$ch[1]} · Test 2";
+        }
+
+        return $modules;
+    }
+
     public static function testTitle(int $chapter, int $n): string
     {
         return "Chapter {$chapter} · Test {$n}";
@@ -155,6 +169,34 @@ class CourseSeeder extends Seeder
                 ['10 · Measurement', ['Units and converting', 'Perimeter', 'Area of rectangles, triangles and parallelograms', 'Volume of rectangular prisms', 'Capacity and mass']],
                 ['11 · Algorithmic thinking', ['Algorithms and flowcharts', 'Loops and decisions in algorithms']],
                 ['Semester 2 review', ['Year 7 Maths summary and memory tips', 'Year 7 Maths challenge']],
+            ]],
+            // Advanced stream for students in selective / accelerated classes: the same 11 chapters taken
+            // deeper, with harder problems and some Year 8 ideas. Two tests a chapter.
+            ['y7', 'maths', 'Year 7 Advanced', 'Year 7 Maths · Advanced', self::withTests([
+                ['Advanced 1 · Computations with positive integers', ['Mental strategies and number tricks', 'Divisibility rules and digit puzzles', 'Multi-step problems with whole numbers']],
+                ['Advanced 2 · Number properties and patterns', ['HCF and LCM in problems', 'Powers and roots extended', 'Sequences and the nth term']],
+                ['Advanced 3 · Fractions and percentages', ['Fraction problem solving', 'Percentage increase, decrease and discounts', 'Ratios and rates in problems']],
+                ['Advanced 4 · Algebraic techniques', ['Forming expressions from words and patterns', 'Expanding and factorising', 'Index laws with algebra']],
+                ['Advanced 5 · Decimals', ['Converting recurring decimals to fractions', 'Estimation and significant figures', 'Decimal problems with money and measurement']],
+                ['Advanced 6 · Negative numbers', ['Integers with powers and brackets', 'Midpoints, lengths and shapes on the Cartesian plane', 'Directed number problems']],
+                ['Advanced 7 · Geometry', ['Angle chasing', 'Angles in polygons', 'Geometric reasoning and proof']],
+                ['Advanced 8 · Statistics and probability', ['Comparing data sets', 'Two-step chance experiments', 'Venn diagrams and two-way tables']],
+                ['Advanced 9 · Equations', ['Equations with unknowns on both sides', 'Equations with brackets and fractions', 'Inequalities on a number line']],
+                ['Advanced 10 · Measurement', ['Area of composite shapes and trapeziums', 'Circles: circumference and area', 'Volume and surface area of prisms']],
+                ['Advanced 11 · Algorithmic thinking', ['Logic puzzles and systematic counting', 'Algorithms for number problems']],
+            ])],
+
+            // ── Selective entry exam prep (Victoria) ──────────────
+            // Practice for the selective high school entry test (sat in Year 8 for Year 9 entry), started early
+            // in Year 7. Sections copy the real test: Mathematics, Quantitative reasoning, Verbal reasoning,
+            // Reading comprehension and Written expression. Our own questions; never copied from past papers.
+            ['y7', 'selective', 'Selective', 'Selective entry exam prep', [
+                ['Mathematics', ['How the selective maths test works', 'Number and place value problems', 'Fraction, decimal and percentage problems', 'Ratio, rates and speed', 'Algebra and pattern problems', 'Geometry and measurement problems', 'Data, chance and logic problems', 'Speed and accuracy strategies']],
+                ['Quantitative reasoning', ['What quantitative reasoning tests', 'Number sequences', 'Number grids and matrices', 'Symbol and operation puzzles', 'Comparing quantities', 'Shape and spatial patterns', 'Reading tables and graphs quickly']],
+                ['Verbal reasoning', ['What verbal reasoning tests', 'Analogies', 'Odd one out and classification', 'Synonyms, antonyms and word meaning', 'Letter series and codes', 'Hidden words and word building', 'Logical deduction']],
+                ['Reading comprehension', ['Reading test strategies', 'Main idea and purpose', 'Inference', 'Vocabulary in context', 'Tone, language and persuasion', 'Poetry and visual texts']],
+                ['Written expression', ['How the writing task is marked', 'Planning in five minutes', 'Creative writing', 'Persuasive writing', 'Powerful vocabulary and sentences', 'Editing and proofreading', 'Writing practice prompts']],
+                ['Practice tests', ['Mathematics · Test 1', 'Mathematics · Test 2', 'Mathematics · Test 3', 'Quantitative reasoning · Test 1', 'Quantitative reasoning · Test 2', 'Quantitative reasoning · Test 3', 'Verbal reasoning · Test 1', 'Verbal reasoning · Test 2', 'Verbal reasoning · Test 3', 'Reading comprehension · Test 1', 'Reading comprehension · Test 2', 'Reading comprehension · Test 3']],
             ]],
             ['y8', 'maths', 'Year 8', 'Year 8 Maths', [
                 ['1 · Computations with integers', ['Adding and subtracting integers', 'Multiplying and dividing integers', 'Order of operations with integers', 'Substituting integers into expressions']],

@@ -16,7 +16,7 @@
     </header>
 
     <section class="card help-question">
-        <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths'][$subject->slug] ?? '' }}" style="align-self:flex-start">The question you’re fixing</span>
+        <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths', 'selective' => 'sel'][$subject->slug] ?? '' }}" style="align-self:flex-start">The question you’re fixing</span>
         <p style="margin:0;font-size:18px;font-weight:600">{{ $question->prompt }}</p>
     </section>
 

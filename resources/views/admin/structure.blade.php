@@ -36,7 +36,7 @@
             <section class="card" aria-label="{{ $unit->subject->name }} {{ $unit->code }}">
                 <form method="POST" action="{{ route('admin.units.update', $unit) }}" class="row" style="align-items:flex-end">
                     @csrf @method('PUT')
-                    <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths'][$unit->subject->slug] ?? '' }}">{{ $unit->subject->name }}</span>
+                    <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths', 'selective' => 'sel'][$unit->subject->slug] ?? '' }}">{{ $unit->subject->name }}</span>
                     <div class="field" style="flex:0 1 140px"><label for="uc{{ $unit->id }}">Code</label><input id="uc{{ $unit->id }}" type="text" name="code" value="{{ $unit->code }}" required></div>
                     <div class="field" style="flex:1 1 320px"><label for="ut{{ $unit->id }}">Unit title</label><input id="ut{{ $unit->id }}" type="text" name="title" value="{{ $unit->title }}" required></div>
                     <div class="field" style="flex:0 1 90px"><label for="us{{ $unit->id }}">Order</label><input id="us{{ $unit->id }}" type="number" min="0" name="sort" value="{{ $unit->sort }}" required></div>
