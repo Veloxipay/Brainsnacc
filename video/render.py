@@ -263,12 +263,38 @@ def hand(size):
 
 BOARD = (252, 252, 247); CHALK = (31, 41, 55)
 
+_hand_cmap = None
+def hand_runs(s):
+    """Split text into runs: handwriting font where it has the glyph, a symbol font (✓, √, π, →…) where it doesn't."""
+    global _hand_cmap
+    if _hand_cmap is None:
+        try:
+            from fontTools.ttLib import TTFont
+            _hand_cmap = set(TTFont(HAND).getBestCmap())
+        except Exception:
+            _hand_cmap = set(range(32, 127))
+    runs = []
+    for ch in s:
+        ok = ord(ch) in _hand_cmap or ch == ' '
+        if runs and runs[-1][1] == ok: runs[-1][0] += ch
+        else: runs.append([ch, ok])
+    return runs
+
+def hand_width(d, s, size):
+    sym = ImageFont.truetype(SYMBOL, int(size * 0.85))
+    return sum(d.textlength(t, font=hand(size) if ok else sym) for t, ok in hand_runs(s))
+
 def write_line(im, xy, s, size, color, frac):
     """Draw text as if being written: reveal it left to right, with a pen at the tip."""
     if frac <= 0: return
-    f = hand(size)
-    tmp = Image.new('RGBA', (int(ImageDraw.Draw(im).textlength(s, font=f)) + 20, int(size * 1.6)), (0, 0, 0, 0))
-    ImageDraw.Draw(tmp).text((4, 0), s, font=f, fill=color)
+    f = hand(size); sym = ImageFont.truetype(SYMBOL, int(size * 0.85))
+    probe = ImageDraw.Draw(im)
+    tmp = Image.new('RGBA', (int(hand_width(probe, s, size)) + 20, int(size * 1.6)), (0, 0, 0, 0))
+    td = ImageDraw.Draw(tmp); x = 4
+    for t, ok in hand_runs(s):
+        if ok: td.text((x, 0), t, font=f, fill=color)
+        else: td.text((x, int(size * 0.24)), t, font=sym, fill=color)
+        x += td.textlength(t, font=f if ok else sym)
     w = max(1, int(tmp.width * min(1, frac)))
     im.paste(tmp.crop((0, 0, w, tmp.height)), (int(xy[0]), int(xy[1])), tmp.crop((0, 0, w, tmp.height)))
     if frac < 1:
@@ -289,7 +315,7 @@ def s_board(im, d, t, T, sc, ctx):
     lines = sc.get('lines', [])[:5]
     n = max(1, len(lines))
     size = 54 if n <= 3 else (48 if n == 4 else 42)
-    while size > 30 and max((d.textlength(ln, font=hand(size)) for ln in lines), default=0) > W - 260:
+    while size > 30 and max((hand_width(d, ln, size) for ln in lines), default=0) > W - 260:
         size -= 2
     gap = min(int(size * 1.35), (BOTTOM - y) // n)
     ts = times(n, T, lead=1.0, tail=0.8)
