@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sign up · {{ config('app.name') }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 <div class="login">
     <form method="POST" action="{{ route('register') }}" class="card" style="max-width:480px">
         @csrf
-        <h1>Join {{ config('app.name') }}</h1>
+        <img class="auth-logo" src="{{ asset('img/logo.svg') }}" alt="{{ config('app.name') }}" width="260" height="66">
+        <h1 style="font-size:24px">Create your account</h1>
         <p class="muted" style="margin:0">Chemistry and Biology, Year 10 to University Year 1.</p>
 
         @if ($errors->any())

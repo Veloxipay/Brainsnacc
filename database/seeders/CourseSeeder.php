@@ -29,8 +29,8 @@ class CourseSeeder extends Seeder
         ];
 
         $subjects = [
-            'chemistry' => Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2456C7', 'tint' => '#E8EEFB']),
-            'biology' => Subject::firstOrCreate(['slug' => 'biology'], ['name' => 'Biology', 'color' => '#B4540A', 'tint' => '#FBEEE3']),
+            'chemistry' => Subject::firstOrCreate(['slug' => 'chemistry'], ['name' => 'Chemistry', 'color' => '#2F6BEA', 'tint' => '#E8F0FE']),
+            'biology' => Subject::firstOrCreate(['slug' => 'biology'], ['name' => 'Biology', 'color' => '#E07A12', 'tint' => '#FFF1E3']),
         ];
 
         $sortUnit = 0;

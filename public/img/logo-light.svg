@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 120" role="img" aria-label="Brainsnacc">
+  <g>  <defs>
+    <!-- bite taken out of the top-right -->
+    <mask id="bite-d">
+      <rect width="120" height="120" fill="#fff"/>
+      <circle cx="106" cy="20" r="16" fill="#000"/>
+      <circle cx="117" cy="42" r="13" fill="#000"/>
+      <circle cx="86" cy="5" r="13" fill="#000"/>
+    </mask>
+    <clipPath id="left-d"><rect x="0" y="0" width="60" height="120"/></clipPath>
+    <clipPath id="right-d"><rect x="60" y="0" width="60" height="120"/></clipPath>
+    <g id="brain-d">
+      <circle cx="38" cy="40" r="24"/>
+      <circle cx="62" cy="30" r="24"/>
+      <circle cx="84" cy="42" r="24"/>
+      <circle cx="28" cy="64" r="22"/>
+      <circle cx="94" cy="66" r="22"/>
+      <circle cx="46" cy="76" r="26"/>
+      <circle cx="76" cy="78" r="26"/>
+      <rect x="40" y="40" width="40" height="40"/>
+    </g>
+  </defs>
+  <g mask="url(#bite-d)">
+    <use href="#brain-d" fill="#2F6BEA" clip-path="url(#left-d)"/>
+    <use href="#brain-d" fill="#F08A24" clip-path="url(#right-d)"/>
+    <!-- folds -->
+    <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9">
+      <path d="M60 14 C56 30 64 44 58 58 C52 72 62 86 60 104"/>
+      <path d="M22 52 C30 48 38 54 36 62"/>
+      <path d="M30 82 C38 76 46 82 46 90"/>
+      <path d="M40 30 C46 36 44 44 38 46"/>
+      <path d="M98 56 C90 52 82 58 84 66"/>
+      <path d="M90 86 C82 80 74 86 74 94"/>
+      <path d="M78 30 C72 36 74 44 80 46"/>
+    </g>
+    <!-- crumbs / sesame dots for the snack -->
+    <g fill="#fff" opacity=".85">
+      <circle cx="30" cy="38" r="2.2"/><circle cx="48" cy="62" r="2.2"/><circle cx="92" cy="74" r="2.2"/><circle cx="70" cy="64" r="2.2"/>
+    </g>
+  </g>
+  <!-- crumbs falling from the bite -->
+  <g fill="#F08A24">
+    <circle cx="114" cy="62" r="3.2"/><circle cx="108" cy="71" r="2.2"/><circle cx="116" cy="74" r="1.8"/>
+  </g>
+</g>
+  <text x="132" y="80" font-family="'Space Grotesk', 'Inter', Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1" textLength="326" lengthAdjust="spacingAndGlyphs"><tspan fill="#FFFFFF">Brain</tspan><tspan fill="#FFB25C">snacc</tspan></text>
+</svg>

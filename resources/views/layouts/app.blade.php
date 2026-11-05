@@ -6,13 +6,14 @@
     <title>@yield('title', 'Brainsnacc') · {{ config('app.name') }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ asset('favicon.svg') }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 <div class="shell">
     @php($user = auth()->user())
     <nav class="nav" aria-label="Main">
-        <div class="brand">{{ config('app.name') }}</div>
+        <a class="brand" href="{{ route('home') }}"><img src="{{ asset('img/logo-light.svg') }}" alt="{{ config('app.name') }}" width="180" height="46"></a>
 
         @if ($user->isStudent() || $user->isAdmin())
             <a href="{{ route('dashboard') }}" class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">Dashboard</a>

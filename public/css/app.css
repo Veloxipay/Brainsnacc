@@ -1,19 +1,24 @@
 /* Brainsnacc — matches the approved screen designs (course map look). */
 :root {
-  --ground: #F5F6F8;
+  --ground: #F4F6FB;
   --surface: #FFFFFF;
   --line: #E3E6EB;
   --line-strong: #C9D1DC;
   --ink: #141A22;
   --muted: #5B6573;
-  --nav: #141A22;
-  --nav-active: #2A3340;
-  --nav-text: #C9D1DC;
-  --chem: #2456C7;
-  --chem-tint: #E8EEFB;
-  --chem-dark: #1A3F94;
-  --bio: #B4540A;
-  --bio-tint: #FBEEE3;
+  --nav: #14213D;
+  --nav-active: rgba(255, 255, 255, .12);
+  --nav-text: #D4DCEC;
+  --chem: #2F6BEA;
+  --chem-tint: #E8F0FE;
+  --chem-dark: #1E4FC2;
+  --bio: #E07A12;
+  --bio-tint: #FFF1E3;
+  --brand-blue: #2F6BEA;
+  --brand-orange: #F08A24;
+  --brand-purple: #7B5CF0;
+  --brand-teal: #14B8A6;
+  --brand-pink: #EC4899;
   --good: #1F7A4D;
   --good-tint: #E7F4EC;
   --bad: #B42318;
@@ -238,3 +243,33 @@ fieldset.mx-q { border: 1px solid var(--line); }
 .heat-cell.lvl-1 { background: #C9DBFA; border-color: #C9DBFA; }
 .heat-cell.lvl-2 { background: #7FA7EE; border-color: #7FA7EE; }
 .heat-cell.lvl-3 { background: #2456C7; border-color: #2456C7; }
+
+/* ---------- Brainsnacc colours (matches the logo) ---------- */
+.nav { background: linear-gradient(180deg, #1B2C6B 0%, #14213D 55%, #111827 100%); }
+.nav .brand { display: block; padding: 0 8px 22px; }
+.nav .brand img { display: block; width: 100%; max-width: 190px; height: auto; }
+.nav a.active { background: var(--nav-active); box-shadow: inset 3px 0 0 var(--brand-orange); }
+.nav .nav-mine { background: var(--brand-orange); color: #fff; }
+h1 { color: #14213D; }
+.card { box-shadow: 0 1px 2px rgba(20, 33, 61, .04), 0 6px 18px rgba(20, 33, 61, .05); }
+.btn { background: linear-gradient(135deg, var(--brand-blue), var(--brand-purple)); box-shadow: 0 4px 12px rgba(47, 107, 234, .25); transition: transform .08s ease, box-shadow .15s ease; }
+.btn:hover { color: #fff; box-shadow: 0 6px 16px rgba(91, 75, 224, .35); transform: translateY(-1px); }
+.btn.secondary { box-shadow: none; transform: none; }
+.flash { background: linear-gradient(90deg, #E7F7F1, #EAF2FF); border-color: var(--brand-teal); }
+.pill { background: var(--chem-tint); color: var(--chem-dark); }
+.pill.bio { background: var(--bio-tint); color: #9A4E05; }
+.bar { background: #E8EDF7; }
+.bar > span { background: linear-gradient(90deg, var(--brand-blue), var(--brand-purple)); }
+.deck-progress span { background: linear-gradient(90deg, var(--brand-blue), var(--brand-orange)); }
+.help-step span { background: linear-gradient(135deg, var(--brand-orange), var(--brand-pink)); }
+.mistake-topic { background: #FFF1E3; color: #9A4E05; }
+.mistake-topic:hover { background: #FFE2C4; }
+/* Log-in and sign-up pages: colourful background */
+.login { background:
+    radial-gradient(circle at 15% 20%, rgba(47, 107, 234, .22), transparent 40%),
+    radial-gradient(circle at 85% 15%, rgba(240, 138, 36, .25), transparent 38%),
+    radial-gradient(circle at 70% 85%, rgba(123, 92, 240, .18), transparent 42%),
+    radial-gradient(circle at 20% 90%, rgba(20, 184, 166, .16), transparent 40%),
+    #F4F6FB; }
+.login .card { border: 0; box-shadow: 0 20px 50px rgba(20, 33, 61, .14); }
+.auth-logo { display: block; width: 240px; max-width: 100%; height: auto; margin: 0 0 4px; }
