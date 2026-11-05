@@ -1,296 +1,297 @@
 {
-  "level": "Year 7",
-  "subject": "maths",
-  "unit": "Year 7 Advanced",
-  "title": "Angles in polygons",
-  "summary": "Finding the angle sum of any polygon with (n − 2) × 180°, the angles of regular polygons, exterior angles that add to 360°, and working back to the number of sides.",
-  "minutes": 30,
-  "body": "A **polygon** is a closed shape made of straight sides — a triangle, a stop sign (octagon), a honeycomb cell (hexagon). Once you know how to split any polygon into triangles, you can work out the angles of every polygon, which tile designers, engineers and game programmers use whenever they fit shapes together.\n\n## Learning objective\n\nBy the end of this lesson you can find the angle sum of any polygon, find each angle of a regular polygon, use the fact that exterior angles add to 360°, and work backwards from an angle to the number of sides.\n\n## Before you start\n\nThis lesson builds on Triangles (Year 7) and Quadrilaterals (Year 7): the angles of a triangle add to 180° and the angles of a quadrilateral add to 360°. You also need angles on a straight line from Angles at a point and vertically opposite angles (Year 7).\n\n**Warm-up**\n\n1. Three angles of a quadrilateral are 85°, 100° and 95°. Find the fourth.\n2. Two angles on a straight line: one is 135°. Find the other.\n\n*Answers:* 1. 360 − 85 − 100 − 95 = 80° 2. 180 − 135 = 45°\n\n## Think of it like this\n\n### A walk around the park\n\nImagine walking around the edge of a park shaped like a polygon. At each corner you turn left a little. When you arrive back at the start and face the way you began, you have turned exactly one full turn — 360° — no matter how many corners the park has. Each little turn is an **exterior angle**.\n\n*Where the analogy breaks down:* if the park has a corner that points inwards (a \"dent\"), you turn right there instead of left, so that turn counts as negative. The 360° rule in this lesson is for **convex** polygons, where every corner points outwards.\n\n## Key ideas\n\n### Names and words\n\nA polygon with n sides has n **vertices** (corners) and n **interior angles**. Names: pentagon (5), hexagon (6), heptagon (7), octagon (8), nonagon (9), decagon (10), dodecagon (12). A **regular polygon** has all sides equal AND all angles equal.\n\n### Split it into triangles\n\nPick one vertex and draw every **diagonal** from it. A pentagon splits into 3 triangles, a hexagon into 4. In general, an n-sided polygon splits into **n − 2 triangles**, and the angles of those triangles make up exactly the interior angles of the polygon.\n\n![A pentagon ABCDE with dashed diagonals from A to C and from A to D, splitting it into three triangles](/diagrams/y7/maths-advanced/angles-in-polygons-split.svg)\n\nSo the **angle sum** of an n-sided polygon is:\n\n`S = (n − 2) × 180°`\n\n| Sides n | 3 | 4 | 5 | 6 | 7 | 8 | 10 |\n|---|---|---|---|---|---|---|---|\n| Angle sum | 180° | 360° | 540° | 720° | 900° | 1080° | 1440° |\n\n### Regular polygons\n\nAll angles of a regular polygon are equal, so each interior angle = angle sum ÷ n. For a regular hexagon: 720 ÷ 6 = 120°.\n\n### Exterior angles add to 360°\n\nExtend one side past a vertex. The angle between the extension and the next side is the **exterior angle**. At every vertex, interior + exterior = 180° (straight line). Walking around the shape, the exterior angles are your turns, so for any convex polygon **the exterior angles add to 360°**. For a regular polygon each exterior angle is 360° ÷ n.\n\n![A regular hexagon with one side extended; at that vertex the interior angle is 120° and the exterior angle between the extension and the next side is 60°](/diagrams/y7/maths-advanced/angles-in-polygons-ext.svg)\n\n### Working backwards\n\nThe exterior angle is the quickest route back to n: **n = 360 ÷ exterior angle**. If an interior angle is given, first find exterior = 180 − interior. If 360 ÷ exterior is not a whole number, no regular polygon has that angle.\n\n## Worked examples\n\n### Example 1\n\nA pentagon has angles 100°, 115°, 120°, 95° and x. Find x.\n\n![A pentagon with interior angles 100°, 115°, 120°, 95° and x](/diagrams/y7/maths-advanced/angles-in-polygons-ex1.svg)\n\nStep 1: Angle sum of a pentagon = (5 − 2) × 180 = 540° — 3 triangles.\nStep 2: The known angles add to 100 + 115 + 120 + 95 = 430°.\nStep 3: x = 540 − 430 = 110°.\nCheck: 430 + 110 = 540 ✓\n\n### Example 2\n\nFind each interior angle of a regular octagon in two ways.\n\n![A regular octagon with one interior angle marked with a question mark](/diagrams/y7/maths-advanced/angles-in-polygons-ex2.svg)\n\nStep 1 (angle sum): (8 − 2) × 180 = 1080°, and 1080 ÷ 8 = 135°.\nStep 2 (exterior angles): each exterior angle = 360 ÷ 8 = 45°, so the interior angle = 180 − 45 = 135°.\nBoth methods agree: 135° ✓\n\n### Example 3\n\nEach interior angle of a regular polygon is 156°. How many sides does it have?\n\n![Part of a regular polygon showing an interior angle of 156° and the exterior angle beside it marked with a question mark](/diagrams/y7/maths-advanced/angles-in-polygons-ex3.svg)\n\nStep 1: Exterior angle = 180 − 156 = 24° (straight line).\nStep 2: Exterior angles add to 360°, so n = 360 ÷ 24 = 15.\nCheck: (15 − 2) × 180 = 2340, and 2340 ÷ 15 = 156 ✓\n\n### Example 4\n\nThe angles of a pentagon are x°, (x + 10)°, (x + 20)°, (x + 30)° and (x + 40)°. Find the largest angle.\n\n![A pentagon with interior angles labelled x°, (x + 20)°, (x + 40)°, (x + 10)° and (x + 30)°](/diagrams/y7/maths-advanced/angles-in-polygons-ex4.svg)\n\nStep 1: The angles add to 540°: 5x + 100 = 540.\nStep 2: Subtract 100 from both sides — to get 5x on its own: 5x = 440.\nStep 3: Divide by 5: x = 88.\nStep 4: Largest angle = 88 + 40 = 128°.\nCheck: 88 + 98 + 108 + 118 + 128 = 540 ✓\n\n## Common mistakes\n\n- **Using n × 180 instead of (n − 2) × 180.** It feels natural to give each side a triangle. Fix: picture the diagonals from one vertex — there are always 2 fewer triangles than sides.\n- **Mixing up interior and exterior angles.** Fix: interior is inside the shape; exterior is on the straight line with it, so they add to 180°.\n- **Dividing 360 by the interior angle to find n.** Fix: only the exterior angles add to 360°, so turn an interior angle into an exterior angle first.\n- **Dividing an irregular polygon's angle sum by n.** Fix: only regular polygons have equal angles.\n\n## Tips to remember\n\n- **\"Two fewer triangles\":** an n-gon splits into n − 2 triangles, so S = (n − 2) × 180°.\n- **\"Walk the park, turn 360\":** the exterior angles of any convex polygon are the turns of one lap, so they always add to 360°. (Made-up memory trick.)\n- **Inside + outside = 180:** interior and exterior angles at the same vertex sit on a straight line.\n- **The quick route to n:** n = 360 ÷ exterior angle. If it is not a whole number, that regular polygon cannot exist.\n- **Self-check:** a regular polygon's interior angle grows as n grows (60°, 90°, 108°, 120°, …) but never reaches 180°.\n\n## Key terms\n\n- **Polygon** — a closed shape with three or more straight sides.\n- **Regular polygon** — a polygon with all sides equal and all angles equal.\n- **Diagonal** — a line joining two vertices that are not next to each other.\n- **Angle sum** — the total of the interior angles: (n − 2) × 180°.\n- **Exterior angle** — the angle between one side and the extension of the next side; interior + exterior = 180°.\n- **Convex** — a polygon with every interior angle less than 180°.\n\n## Summary\n\n- An n-sided polygon splits into n − 2 triangles, so its angle sum is (n − 2) × 180°.\n- Each interior angle of a regular polygon = angle sum ÷ n.\n- The exterior angles of a convex polygon add to 360°; for a regular polygon each is 360° ÷ n.\n- Interior + exterior = 180° at every vertex.\n- To find the number of sides, use n = 360 ÷ exterior angle.",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "What is the sum of the interior angles of the heptagon (7 sides) shown?",
-      "options": {
-        "A": "1260°",
-        "B": "1080°",
-        "C": "900°",
-        "D": "720°"
-      },
-      "answer": "C",
-      "explanation": "Angle sum = (7 − 2) × 180 = 900°. 1260° comes from using 7 triangles instead of 5.",
-      "steps": [
-        "Diagonals from one vertex split a 7-sided polygon into 7 − 2 = 5 triangles.",
-        "Angle sum = 5 × 180 = 900°."
-      ],
-      "mistakes": {
-        "A": "Step 1: a 7-sided polygon splits into 7 − 2 = 5 triangles, not 7.",
-        "B": "Step 1: use n − 2 triangles, not n − 1: a heptagon gives 5 triangles.",
-        "D": "Step 1: 4 triangles is for a hexagon. A heptagon splits into 7 − 2 = 5 triangles."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q1.svg",
-      "diagram_alt": "An irregular seven-sided polygon (heptagon) with no angles marked"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "The diagram shows a regular hexagon. Find x, the size of one interior angle.",
-      "options": {
-        "A": "120°",
-        "B": "60°",
-        "C": "720°",
-        "D": "108°"
-      },
-      "answer": "A",
-      "explanation": "Angle sum = 4 × 180 = 720°, and 720 ÷ 6 = 120°. 60° is the exterior angle, not the interior angle.",
-      "steps": [
-        "Angle sum of a hexagon = (6 − 2) × 180 = 720°.",
-        "A regular hexagon has 6 equal angles.",
-        "x = 720 ÷ 6 = 120°."
-      ],
-      "mistakes": {
-        "B": "Step 3: 60° is the exterior angle (360 ÷ 6). The interior angle is 180 − 60.",
-        "C": "Step 2: 720° is the total of all six angles — divide by 6.",
-        "D": "Step 1: 108° is the angle of a regular pentagon. A hexagon has 6 sides: (6 − 2) × 180."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q2.svg",
-      "diagram_alt": "A regular hexagon with one interior angle labelled x"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "A pentagon has angles 125°, 90°, 108°, 102° and x, as shown. Find x.",
-      "options": {
-        "A": "295°",
-        "B": "65°",
-        "C": "108°",
-        "D": "115°"
-      },
-      "answer": "D",
-      "explanation": "Angle sum = 540°, the known angles total 425°, so x = 115°. 295° comes from using the hexagon total of 720°.",
-      "steps": [
-        "Angle sum of a pentagon = (5 − 2) × 180 = 540°.",
-        "Known angles: 125 + 90 + 108 + 102 = 425°.",
-        "x = 540 − 425 = 115°."
-      ],
-      "mistakes": {
-        "A": "Step 1: 720° is the angle sum of a hexagon. A pentagon has (5 − 2) × 180 = 540°.",
-        "B": "Step 3: 65° is the exterior angle. x is the interior angle: 540 − 425.",
-        "C": "Step 3: the pentagon is not regular, so its angles are not all 108°. Subtract the known angles from 540°."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q3.svg",
-      "diagram_alt": "A pentagon with interior angles 125°, a right angle (90°), 108°, 102° and x"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The diagram shows part of a regular polygon. Each exterior angle is 40°. How many sides does the polygon have?",
-      "options": {
-        "A": "140",
-        "B": "9",
-        "C": "18",
-        "D": "7"
-      },
-      "answer": "B",
-      "explanation": "Exterior angles add to 360°, so n = 360 ÷ 40 = 9. 140 is the interior angle, not a number of sides.",
-      "steps": [
-        "The exterior angles of a polygon add to 360°.",
-        "Each exterior angle is 40°, so n = 360 ÷ 40 = 9 sides."
-      ],
-      "mistakes": {
-        "A": "Step 2: 140° is the interior angle (180 − 40), not the number of sides.",
-        "C": "Step 1: the exterior angles add to 360°, not 720°.",
-        "D": "Step 2: n = 360 ÷ 40 exactly — do not subtract 2 (that belongs in the angle-sum formula)."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q4.svg",
-      "diagram_alt": "Part of a regular polygon: four vertices joined by three sides, with one side extended and the exterior angle of 40° marked"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Each interior angle of a regular polygon is 150°, as shown. How many sides does it have?",
-      "options": {
-        "A": "30",
-        "B": "2.4",
-        "C": "12",
-        "D": "14"
-      },
-      "answer": "C",
-      "explanation": "Exterior angle = 180 − 150 = 30°, so n = 360 ÷ 30 = 12. 2.4 comes from dividing 360 by the interior angle.",
-      "steps": [
-        "Exterior angle = 180 − 150 = 30° (straight line).",
-        "Exterior angles add to 360°, so n = 360 ÷ 30 = 12. Check: (12 − 2) × 180 ÷ 12 = 150 ✓"
-      ],
-      "mistakes": {
-        "A": "Step 2: 30° is the exterior angle. The number of sides is 360 ÷ 30.",
-        "B": "Step 2: divide 360 by the EXTERIOR angle, not the interior angle. Find 180 − 150 first.",
-        "D": "Step 2: n = 360 ÷ 30 exactly — do not add 2."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q5.svg",
-      "diagram_alt": "Part of a regular polygon: four vertices joined by three sides, with one interior angle of 150° marked"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The angles of the hexagon are 2x°, 3x°, 4x°, 2x°, 3x° and 4x°. Find the largest angle.",
-      "options": {
-        "A": "160°",
-        "B": "40°",
-        "C": "120°",
-        "D": "80°"
-      },
-      "answer": "A",
-      "explanation": "The angles add to 720°: 18x = 720, so x = 40 and the largest angle is 4 × 40 = 160°. 40 is x, not an angle.",
-      "steps": [
-        "Angle sum of a hexagon = (6 − 2) × 180 = 720°.",
-        "2x + 3x + 4x + 2x + 3x + 4x = 18x = 720, so x = 40.",
-        "Largest angle = 4x = 160°."
-      ],
-      "mistakes": {
-        "B": "Step 3: x = 40 is not an angle of the hexagon — the largest angle is 4x.",
-        "C": "Step 1: 540° is the angle sum of a pentagon. A hexagon has (6 − 2) × 180 = 720°.",
-        "D": "Step 1: 360° is the angle sum of a quadrilateral. A hexagon has 720°."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q6.svg",
-      "diagram_alt": "A hexagon with interior angles labelled 2x°, 3x°, 4x°, 2x°, 3x° and 4x° in order around the shape"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "ABCDE is a regular pentagon and the diagonal AC is drawn. Find x, the size of ∠ACD.",
-      "options": {
-        "A": "36°",
-        "B": "108°",
-        "C": "60°",
-        "D": "72°"
-      },
-      "answer": "D",
-      "explanation": "Each angle is 108°; triangle ABC is isosceles (AB = BC) so ∠BCA = 36° and x = 108 − 36 = 72°. 36° is the part cut off, not x.",
-      "steps": [
-        "Each interior angle of a regular pentagon = 540 ÷ 5 = 108°.",
-        "AB = BC, so triangle ABC is isosceles: ∠BCA = (180 − 108) ÷ 2 = 36°.",
-        "x = ∠BCD − ∠BCA = 108 − 36 = 72°."
-      ],
-      "mistakes": {
-        "A": "Step 3: 36° is ∠BCA. x is the rest of the pentagon angle at C: 108 − 36.",
-        "B": "Step 1: 108° is the whole angle BCD. The diagonal AC cuts part of it off.",
-        "C": "Step 2: triangle ABC is isosceles but not equilateral — its angle at B is 108°, so its other angles are (180 − 108) ÷ 2."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q7.svg",
-      "diagram_alt": "A regular pentagon ABCDE with the diagonal AC drawn; the angle ACD at vertex C is labelled x"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A regular octagon and a square share a side, as shown. Find x, the angle between them at the shared vertex.",
-      "options": {
-        "A": "225°",
-        "B": "135°",
-        "C": "45°",
-        "D": "180°"
-      },
-      "answer": "B",
-      "explanation": "The octagon angle (135°), square angle (90°) and x meet at a point: x = 360 − 135 − 90 = 135°. 225° is the angle the shapes fill, not the gap.",
-      "steps": [
-        "Each angle of a regular octagon = (8 − 2) × 180 ÷ 8 = 135°.",
-        "Each angle of a square = 90°.",
-        "Angles at a point add to 360°: x = 360 − 135 − 90 = 135°."
-      ],
-      "mistakes": {
-        "A": "Step 3: 135 + 90 = 225 is the space the two shapes take up. x is what is LEFT of 360°.",
-        "C": "Step 3: 135 − 90 uses no angle rule. The three angles meet at a point, so they add to 360°.",
-        "D": "Step 3: the angles meet at a point (360°), not on a straight line (180°)."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q8.svg",
-      "diagram_alt": "A regular octagon and a square sharing one side; at the lower shared vertex, the angle outside both shapes is labelled x"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The exterior angles of a pentagon are 70°, 80°, 60°, x and 2x, as shown. Find x.",
-      "options": {
-        "A": "x = 50",
-        "B": "x = 110",
-        "C": "x = 150",
-        "D": "x = 100"
-      },
-      "answer": "A",
-      "explanation": "Exterior angles add to 360°: 210 + 3x = 360, so 3x = 150 and x = 50. 110 comes from using the interior sum 540°.",
-      "steps": [
-        "The exterior angles of any convex polygon add to 360°.",
-        "70 + 80 + 60 + x + 2x = 360, so 210 + 3x = 360.",
-        "3x = 150, so x = 50. Check: 70 + 80 + 60 + 50 + 100 = 360 ✓"
-      ],
-      "mistakes": {
-        "B": "Step 1: 540° is the INTERIOR angle sum. Exterior angles add to 360°.",
-        "C": "Step 2: 150 is 3x. Divide by 3 to find x.",
-        "D": "Step 3: 100 is 2x, the last exterior angle. The question asks for x."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q9.svg",
-      "diagram_alt": "A pentagon with each side extended; the five exterior angles are 70°, 80°, 60°, x and 2x"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In a regular polygon, each interior angle is 4 times the exterior angle, as shown. How many sides does it have?",
-      "options": {
-        "A": "8",
-        "B": "36",
-        "C": "10",
-        "D": "144"
-      },
-      "answer": "C",
-      "explanation": "Interior + exterior = 180°, so 5e = 180, e = 36° and n = 360 ÷ 36 = 10. 8 comes from wrongly using e = 180 ÷ 4.",
-      "steps": [
-        "Interior + exterior = 180° (straight line): 4e + e = 180.",
-        "5e = 180, so e = 36°.",
-        "n = 360 ÷ 36 = 10 sides."
-      ],
-      "mistakes": {
-        "A": "Step 1: the interior and exterior angles add to 180°, so 4e + e = 180 — e is not 180 ÷ 4.",
-        "B": "Step 2: 36° is the exterior angle e. The number of sides is 360 ÷ 36.",
-        "D": "Step 2: 144° is the interior angle. Use the exterior angle to find n."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q10.svg",
-      "diagram_alt": "Part of a regular polygon with one side extended; the interior angle is labelled 4e and the exterior angle beside it is labelled e"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Could a regular polygon have interior angles of 130°, like the corner shown?",
-      "options": {
-        "A": "Yes — it would have 7 sides",
-        "B": "No — the exterior angle would be 50°, and 360 ÷ 50 = 7.2 is not a whole number",
-        "C": "Yes — every angle less than 180° works",
-        "D": "No — interior angles of regular polygons are always multiples of 30°"
-      },
-      "answer": "B",
-      "explanation": "The exterior angle would be 50°, and 360 ÷ 50 = 7.2 sides, which is impossible. A regular heptagon has 128.6° angles, so \"7 sides\" is wrong.",
-      "steps": [
-        "Exterior angle = 180 − 130 = 50°.",
-        "Number of sides would be 360 ÷ 50 = 7.2.",
-        "A polygon must have a whole number of sides, so no regular polygon has 130° angles."
-      ],
-      "mistakes": {
-        "A": "Step 2: 360 ÷ 50 = 7.2, not 7. A regular heptagon has angles of 900 ÷ 7 ≈ 128.6°, not 130°.",
-        "C": "Step 2: the exterior angles must fit exactly into 360°, so the number of sides must be a whole number. Test 360 ÷ 50.",
-        "D": "Step 1: that is false — a regular pentagon has 108° angles. Use the exterior angle test instead."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q11.svg",
-      "diagram_alt": "A corner made by two lines meeting at 130°, with one line extended to show the exterior angle e"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A square, a regular hexagon and a third regular polygon fit around a point with no gaps. The gap for the third polygon is x, as shown. How many sides does the third polygon have?",
-      "options": {
-        "A": "150",
-        "B": "30",
-        "C": "2.4",
-        "D": "12"
-      },
-      "answer": "D",
-      "explanation": "x = 360 − 90 − 120 = 150°, so the third polygon has exterior angle 30° and 360 ÷ 30 = 12 sides. 150 is its angle, not its number of sides.",
-      "steps": [
-        "Square angle = 90°; regular hexagon angle = 120°.",
-        "x = 360 − 90 − 120 = 150° (angles at a point).",
-        "Exterior angle = 180 − 150 = 30°, so n = 360 ÷ 30 = 12."
-      ],
-      "mistakes": {
-        "A": "Step 2: 150° is x, the angle of the third polygon. Use it to find the number of sides.",
-        "B": "Step 3: 30° is the exterior angle of the third polygon. Number of sides = 360 ÷ 30.",
-        "C": "Step 3: divide 360 by the EXTERIOR angle (180 − 150), not by the interior angle."
-      },
-      "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q12.svg",
-      "diagram_alt": "A square and a regular hexagon sharing a side; at the lower shared vertex the gap between them is labelled x"
-    }
-  ]
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7 Advanced",
+ "title": "Angles in polygons",
+ "summary": "Finding the angle sum of any polygon with (n − 2) × 180°, the angles of regular polygons, exterior angles that add to 360°, and working back to the number of sides.",
+ "minutes": 30,
+ "video": "videos/y7/maths-advanced/angles-in-polygons.mp4",
+ "body": "A **polygon** is a closed shape made of straight sides — a triangle, a stop sign (octagon), a honeycomb cell (hexagon). Once you know how to split any polygon into triangles, you can work out the angles of every polygon, which tile designers, engineers and game programmers use whenever they fit shapes together.\n\n## Learning objective\n\nBy the end of this lesson you can find the angle sum of any polygon, find each angle of a regular polygon, use the fact that exterior angles add to 360°, and work backwards from an angle to the number of sides.\n\n## Before you start\n\nThis lesson builds on Triangles (Year 7) and Quadrilaterals (Year 7): the angles of a triangle add to 180° and the angles of a quadrilateral add to 360°. You also need angles on a straight line from Angles at a point and vertically opposite angles (Year 7).\n\n**Warm-up**\n\n1. Three angles of a quadrilateral are 85°, 100° and 95°. Find the fourth.\n2. Two angles on a straight line: one is 135°. Find the other.\n\n*Answers:* 1. 360 − 85 − 100 − 95 = 80° 2. 180 − 135 = 45°\n\n## Think of it like this\n\n### A walk around the park\n\nImagine walking around the edge of a park shaped like a polygon. At each corner you turn left a little. When you arrive back at the start and face the way you began, you have turned exactly one full turn — 360° — no matter how many corners the park has. Each little turn is an **exterior angle**.\n\n*Where the analogy breaks down:* if the park has a corner that points inwards (a \"dent\"), you turn right there instead of left, so that turn counts as negative. The 360° rule in this lesson is for **convex** polygons, where every corner points outwards.\n\n## Key ideas\n\n### Names and words\n\nA polygon with n sides has n **vertices** (corners) and n **interior angles**. Names: pentagon (5), hexagon (6), heptagon (7), octagon (8), nonagon (9), decagon (10), dodecagon (12). A **regular polygon** has all sides equal AND all angles equal.\n\n### Split it into triangles\n\nPick one vertex and draw every **diagonal** from it. A pentagon splits into 3 triangles, a hexagon into 4. In general, an n-sided polygon splits into **n − 2 triangles**, and the angles of those triangles make up exactly the interior angles of the polygon.\n\n![A pentagon ABCDE with dashed diagonals from A to C and from A to D, splitting it into three triangles](/diagrams/y7/maths-advanced/angles-in-polygons-split.svg)\n\nSo the **angle sum** of an n-sided polygon is:\n\n`S = (n − 2) × 180°`\n\n| Sides n | 3 | 4 | 5 | 6 | 7 | 8 | 10 |\n|---|---|---|---|---|---|---|---|\n| Angle sum | 180° | 360° | 540° | 720° | 900° | 1080° | 1440° |\n\n### Regular polygons\n\nAll angles of a regular polygon are equal, so each interior angle = angle sum ÷ n. For a regular hexagon: 720 ÷ 6 = 120°.\n\n### Exterior angles add to 360°\n\nExtend one side past a vertex. The angle between the extension and the next side is the **exterior angle**. At every vertex, interior + exterior = 180° (straight line). Walking around the shape, the exterior angles are your turns, so for any convex polygon **the exterior angles add to 360°**. For a regular polygon each exterior angle is 360° ÷ n.\n\n![A regular hexagon with one side extended; at that vertex the interior angle is 120° and the exterior angle between the extension and the next side is 60°](/diagrams/y7/maths-advanced/angles-in-polygons-ext.svg)\n\n### Working backwards\n\nThe exterior angle is the quickest route back to n: **n = 360 ÷ exterior angle**. If an interior angle is given, first find exterior = 180 − interior. If 360 ÷ exterior is not a whole number, no regular polygon has that angle.\n\n## Worked examples\n\n### Example 1\n\nA pentagon has angles 100°, 115°, 120°, 95° and x. Find x.\n\n![A pentagon with interior angles 100°, 115°, 120°, 95° and x](/diagrams/y7/maths-advanced/angles-in-polygons-ex1.svg)\n\nStep 1: Angle sum of a pentagon = (5 − 2) × 180 = 540° — 3 triangles.\nStep 2: The known angles add to 100 + 115 + 120 + 95 = 430°.\nStep 3: x = 540 − 430 = 110°.\nCheck: 430 + 110 = 540 ✓\n\n### Example 2\n\nFind each interior angle of a regular octagon in two ways.\n\n![A regular octagon with one interior angle marked with a question mark](/diagrams/y7/maths-advanced/angles-in-polygons-ex2.svg)\n\nStep 1 (angle sum): (8 − 2) × 180 = 1080°, and 1080 ÷ 8 = 135°.\nStep 2 (exterior angles): each exterior angle = 360 ÷ 8 = 45°, so the interior angle = 180 − 45 = 135°.\nBoth methods agree: 135° ✓\n\n### Example 3\n\nEach interior angle of a regular polygon is 156°. How many sides does it have?\n\n![Part of a regular polygon showing an interior angle of 156° and the exterior angle beside it marked with a question mark](/diagrams/y7/maths-advanced/angles-in-polygons-ex3.svg)\n\nStep 1: Exterior angle = 180 − 156 = 24° (straight line).\nStep 2: Exterior angles add to 360°, so n = 360 ÷ 24 = 15.\nCheck: (15 − 2) × 180 = 2340, and 2340 ÷ 15 = 156 ✓\n\n### Example 4\n\nThe angles of a pentagon are x°, (x + 10)°, (x + 20)°, (x + 30)° and (x + 40)°. Find the largest angle.\n\n![A pentagon with interior angles labelled x°, (x + 20)°, (x + 40)°, (x + 10)° and (x + 30)°](/diagrams/y7/maths-advanced/angles-in-polygons-ex4.svg)\n\nStep 1: The angles add to 540°: 5x + 100 = 540.\nStep 2: Subtract 100 from both sides — to get 5x on its own: 5x = 440.\nStep 3: Divide by 5: x = 88.\nStep 4: Largest angle = 88 + 40 = 128°.\nCheck: 88 + 98 + 108 + 118 + 128 = 540 ✓\n\n## Common mistakes\n\n- **Using n × 180 instead of (n − 2) × 180.** It feels natural to give each side a triangle. Fix: picture the diagonals from one vertex — there are always 2 fewer triangles than sides.\n- **Mixing up interior and exterior angles.** Fix: interior is inside the shape; exterior is on the straight line with it, so they add to 180°.\n- **Dividing 360 by the interior angle to find n.** Fix: only the exterior angles add to 360°, so turn an interior angle into an exterior angle first.\n- **Dividing an irregular polygon's angle sum by n.** Fix: only regular polygons have equal angles.\n\n## Tips to remember\n\n- **\"Two fewer triangles\":** an n-gon splits into n − 2 triangles, so S = (n − 2) × 180°.\n- **\"Walk the park, turn 360\":** the exterior angles of any convex polygon are the turns of one lap, so they always add to 360°. (Made-up memory trick.)\n- **Inside + outside = 180:** interior and exterior angles at the same vertex sit on a straight line.\n- **The quick route to n:** n = 360 ÷ exterior angle. If it is not a whole number, that regular polygon cannot exist.\n- **Self-check:** a regular polygon's interior angle grows as n grows (60°, 90°, 108°, 120°, …) but never reaches 180°.\n\n## Key terms\n\n- **Polygon** — a closed shape with three or more straight sides.\n- **Regular polygon** — a polygon with all sides equal and all angles equal.\n- **Diagonal** — a line joining two vertices that are not next to each other.\n- **Angle sum** — the total of the interior angles: (n − 2) × 180°.\n- **Exterior angle** — the angle between one side and the extension of the next side; interior + exterior = 180°.\n- **Convex** — a polygon with every interior angle less than 180°.\n\n## Summary\n\n- An n-sided polygon splits into n − 2 triangles, so its angle sum is (n − 2) × 180°.\n- Each interior angle of a regular polygon = angle sum ÷ n.\n- The exterior angles of a convex polygon add to 360°; for a regular polygon each is 360° ÷ n.\n- Interior + exterior = 180° at every vertex.\n- To find the number of sides, use n = 360 ÷ exterior angle.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "What is the sum of the interior angles of the heptagon (7 sides) shown?",
+   "options": {
+    "A": "1260°",
+    "B": "1080°",
+    "C": "900°",
+    "D": "720°"
+   },
+   "answer": "C",
+   "explanation": "Angle sum = (7 − 2) × 180 = 900°. 1260° comes from using 7 triangles instead of 5.",
+   "steps": [
+    "Diagonals from one vertex split a 7-sided polygon into 7 − 2 = 5 triangles.",
+    "Angle sum = 5 × 180 = 900°."
+   ],
+   "mistakes": {
+    "A": "Step 1: a 7-sided polygon splits into 7 − 2 = 5 triangles, not 7.",
+    "B": "Step 1: use n − 2 triangles, not n − 1: a heptagon gives 5 triangles.",
+    "D": "Step 1: 4 triangles is for a hexagon. A heptagon splits into 7 − 2 = 5 triangles."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q1.svg",
+   "diagram_alt": "An irregular seven-sided polygon (heptagon) with no angles marked"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The diagram shows a regular hexagon. Find x, the size of one interior angle.",
+   "options": {
+    "A": "120°",
+    "B": "60°",
+    "C": "720°",
+    "D": "108°"
+   },
+   "answer": "A",
+   "explanation": "Angle sum = 4 × 180 = 720°, and 720 ÷ 6 = 120°. 60° is the exterior angle, not the interior angle.",
+   "steps": [
+    "Angle sum of a hexagon = (6 − 2) × 180 = 720°.",
+    "A regular hexagon has 6 equal angles.",
+    "x = 720 ÷ 6 = 120°."
+   ],
+   "mistakes": {
+    "B": "Step 3: 60° is the exterior angle (360 ÷ 6). The interior angle is 180 − 60.",
+    "C": "Step 2: 720° is the total of all six angles — divide by 6.",
+    "D": "Step 1: 108° is the angle of a regular pentagon. A hexagon has 6 sides: (6 − 2) × 180."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q2.svg",
+   "diagram_alt": "A regular hexagon with one interior angle labelled x"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A pentagon has angles 125°, 90°, 108°, 102° and x, as shown. Find x.",
+   "options": {
+    "A": "295°",
+    "B": "65°",
+    "C": "108°",
+    "D": "115°"
+   },
+   "answer": "D",
+   "explanation": "Angle sum = 540°, the known angles total 425°, so x = 115°. 295° comes from using the hexagon total of 720°.",
+   "steps": [
+    "Angle sum of a pentagon = (5 − 2) × 180 = 540°.",
+    "Known angles: 125 + 90 + 108 + 102 = 425°.",
+    "x = 540 − 425 = 115°."
+   ],
+   "mistakes": {
+    "A": "Step 1: 720° is the angle sum of a hexagon. A pentagon has (5 − 2) × 180 = 540°.",
+    "B": "Step 3: 65° is the exterior angle. x is the interior angle: 540 − 425.",
+    "C": "Step 3: the pentagon is not regular, so its angles are not all 108°. Subtract the known angles from 540°."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q3.svg",
+   "diagram_alt": "A pentagon with interior angles 125°, a right angle (90°), 108°, 102° and x"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The diagram shows part of a regular polygon. Each exterior angle is 40°. How many sides does the polygon have?",
+   "options": {
+    "A": "140",
+    "B": "9",
+    "C": "18",
+    "D": "7"
+   },
+   "answer": "B",
+   "explanation": "Exterior angles add to 360°, so n = 360 ÷ 40 = 9. 140 is the interior angle, not a number of sides.",
+   "steps": [
+    "The exterior angles of a polygon add to 360°.",
+    "Each exterior angle is 40°, so n = 360 ÷ 40 = 9 sides."
+   ],
+   "mistakes": {
+    "A": "Step 2: 140° is the interior angle (180 − 40), not the number of sides.",
+    "C": "Step 1: the exterior angles add to 360°, not 720°.",
+    "D": "Step 2: n = 360 ÷ 40 exactly — do not subtract 2 (that belongs in the angle-sum formula)."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q4.svg",
+   "diagram_alt": "Part of a regular polygon: four vertices joined by three sides, with one side extended and the exterior angle of 40° marked"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Each interior angle of a regular polygon is 150°, as shown. How many sides does it have?",
+   "options": {
+    "A": "30",
+    "B": "2.4",
+    "C": "12",
+    "D": "14"
+   },
+   "answer": "C",
+   "explanation": "Exterior angle = 180 − 150 = 30°, so n = 360 ÷ 30 = 12. 2.4 comes from dividing 360 by the interior angle.",
+   "steps": [
+    "Exterior angle = 180 − 150 = 30° (straight line).",
+    "Exterior angles add to 360°, so n = 360 ÷ 30 = 12. Check: (12 − 2) × 180 ÷ 12 = 150 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 2: 30° is the exterior angle. The number of sides is 360 ÷ 30.",
+    "B": "Step 2: divide 360 by the EXTERIOR angle, not the interior angle. Find 180 − 150 first.",
+    "D": "Step 2: n = 360 ÷ 30 exactly — do not add 2."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q5.svg",
+   "diagram_alt": "Part of a regular polygon: four vertices joined by three sides, with one interior angle of 150° marked"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The angles of the hexagon are 2x°, 3x°, 4x°, 2x°, 3x° and 4x°. Find the largest angle.",
+   "options": {
+    "A": "160°",
+    "B": "40°",
+    "C": "120°",
+    "D": "80°"
+   },
+   "answer": "A",
+   "explanation": "The angles add to 720°: 18x = 720, so x = 40 and the largest angle is 4 × 40 = 160°. 40 is x, not an angle.",
+   "steps": [
+    "Angle sum of a hexagon = (6 − 2) × 180 = 720°.",
+    "2x + 3x + 4x + 2x + 3x + 4x = 18x = 720, so x = 40.",
+    "Largest angle = 4x = 160°."
+   ],
+   "mistakes": {
+    "B": "Step 3: x = 40 is not an angle of the hexagon — the largest angle is 4x.",
+    "C": "Step 1: 540° is the angle sum of a pentagon. A hexagon has (6 − 2) × 180 = 720°.",
+    "D": "Step 1: 360° is the angle sum of a quadrilateral. A hexagon has 720°."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q6.svg",
+   "diagram_alt": "A hexagon with interior angles labelled 2x°, 3x°, 4x°, 2x°, 3x° and 4x° in order around the shape"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "ABCDE is a regular pentagon and the diagonal AC is drawn. Find x, the size of ∠ACD.",
+   "options": {
+    "A": "36°",
+    "B": "108°",
+    "C": "60°",
+    "D": "72°"
+   },
+   "answer": "D",
+   "explanation": "Each angle is 108°; triangle ABC is isosceles (AB = BC) so ∠BCA = 36° and x = 108 − 36 = 72°. 36° is the part cut off, not x.",
+   "steps": [
+    "Each interior angle of a regular pentagon = 540 ÷ 5 = 108°.",
+    "AB = BC, so triangle ABC is isosceles: ∠BCA = (180 − 108) ÷ 2 = 36°.",
+    "x = ∠BCD − ∠BCA = 108 − 36 = 72°."
+   ],
+   "mistakes": {
+    "A": "Step 3: 36° is ∠BCA. x is the rest of the pentagon angle at C: 108 − 36.",
+    "B": "Step 1: 108° is the whole angle BCD. The diagonal AC cuts part of it off.",
+    "C": "Step 2: triangle ABC is isosceles but not equilateral — its angle at B is 108°, so its other angles are (180 − 108) ÷ 2."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q7.svg",
+   "diagram_alt": "A regular pentagon ABCDE with the diagonal AC drawn; the angle ACD at vertex C is labelled x"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A regular octagon and a square share a side, as shown. Find x, the angle between them at the shared vertex.",
+   "options": {
+    "A": "225°",
+    "B": "135°",
+    "C": "45°",
+    "D": "180°"
+   },
+   "answer": "B",
+   "explanation": "The octagon angle (135°), square angle (90°) and x meet at a point: x = 360 − 135 − 90 = 135°. 225° is the angle the shapes fill, not the gap.",
+   "steps": [
+    "Each angle of a regular octagon = (8 − 2) × 180 ÷ 8 = 135°.",
+    "Each angle of a square = 90°.",
+    "Angles at a point add to 360°: x = 360 − 135 − 90 = 135°."
+   ],
+   "mistakes": {
+    "A": "Step 3: 135 + 90 = 225 is the space the two shapes take up. x is what is LEFT of 360°.",
+    "C": "Step 3: 135 − 90 uses no angle rule. The three angles meet at a point, so they add to 360°.",
+    "D": "Step 3: the angles meet at a point (360°), not on a straight line (180°)."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q8.svg",
+   "diagram_alt": "A regular octagon and a square sharing one side; at the lower shared vertex, the angle outside both shapes is labelled x"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The exterior angles of a pentagon are 70°, 80°, 60°, x and 2x, as shown. Find x.",
+   "options": {
+    "A": "x = 50",
+    "B": "x = 110",
+    "C": "x = 150",
+    "D": "x = 100"
+   },
+   "answer": "A",
+   "explanation": "Exterior angles add to 360°: 210 + 3x = 360, so 3x = 150 and x = 50. 110 comes from using the interior sum 540°.",
+   "steps": [
+    "The exterior angles of any convex polygon add to 360°.",
+    "70 + 80 + 60 + x + 2x = 360, so 210 + 3x = 360.",
+    "3x = 150, so x = 50. Check: 70 + 80 + 60 + 50 + 100 = 360 ✓"
+   ],
+   "mistakes": {
+    "B": "Step 1: 540° is the INTERIOR angle sum. Exterior angles add to 360°.",
+    "C": "Step 2: 150 is 3x. Divide by 3 to find x.",
+    "D": "Step 3: 100 is 2x, the last exterior angle. The question asks for x."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q9.svg",
+   "diagram_alt": "A pentagon with each side extended; the five exterior angles are 70°, 80°, 60°, x and 2x"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In a regular polygon, each interior angle is 4 times the exterior angle, as shown. How many sides does it have?",
+   "options": {
+    "A": "8",
+    "B": "36",
+    "C": "10",
+    "D": "144"
+   },
+   "answer": "C",
+   "explanation": "Interior + exterior = 180°, so 5e = 180, e = 36° and n = 360 ÷ 36 = 10. 8 comes from wrongly using e = 180 ÷ 4.",
+   "steps": [
+    "Interior + exterior = 180° (straight line): 4e + e = 180.",
+    "5e = 180, so e = 36°.",
+    "n = 360 ÷ 36 = 10 sides."
+   ],
+   "mistakes": {
+    "A": "Step 1: the interior and exterior angles add to 180°, so 4e + e = 180 — e is not 180 ÷ 4.",
+    "B": "Step 2: 36° is the exterior angle e. The number of sides is 360 ÷ 36.",
+    "D": "Step 2: 144° is the interior angle. Use the exterior angle to find n."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q10.svg",
+   "diagram_alt": "Part of a regular polygon with one side extended; the interior angle is labelled 4e and the exterior angle beside it is labelled e"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Could a regular polygon have interior angles of 130°, like the corner shown?",
+   "options": {
+    "A": "Yes — it would have 7 sides",
+    "B": "No — the exterior angle would be 50°, and 360 ÷ 50 = 7.2 is not a whole number",
+    "C": "Yes — every angle less than 180° works",
+    "D": "No — interior angles of regular polygons are always multiples of 30°"
+   },
+   "answer": "B",
+   "explanation": "The exterior angle would be 50°, and 360 ÷ 50 = 7.2 sides, which is impossible. A regular heptagon has 128.6° angles, so \"7 sides\" is wrong.",
+   "steps": [
+    "Exterior angle = 180 − 130 = 50°.",
+    "Number of sides would be 360 ÷ 50 = 7.2.",
+    "A polygon must have a whole number of sides, so no regular polygon has 130° angles."
+   ],
+   "mistakes": {
+    "A": "Step 2: 360 ÷ 50 = 7.2, not 7. A regular heptagon has angles of 900 ÷ 7 ≈ 128.6°, not 130°.",
+    "C": "Step 2: the exterior angles must fit exactly into 360°, so the number of sides must be a whole number. Test 360 ÷ 50.",
+    "D": "Step 1: that is false — a regular pentagon has 108° angles. Use the exterior angle test instead."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q11.svg",
+   "diagram_alt": "A corner made by two lines meeting at 130°, with one line extended to show the exterior angle e"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A square, a regular hexagon and a third regular polygon fit around a point with no gaps. The gap for the third polygon is x, as shown. How many sides does the third polygon have?",
+   "options": {
+    "A": "150",
+    "B": "30",
+    "C": "2.4",
+    "D": "12"
+   },
+   "answer": "D",
+   "explanation": "x = 360 − 90 − 120 = 150°, so the third polygon has exterior angle 30° and 360 ÷ 30 = 12 sides. 150 is its angle, not its number of sides.",
+   "steps": [
+    "Square angle = 90°; regular hexagon angle = 120°.",
+    "x = 360 − 90 − 120 = 150° (angles at a point).",
+    "Exterior angle = 180 − 150 = 30°, so n = 360 ÷ 30 = 12."
+   ],
+   "mistakes": {
+    "A": "Step 2: 150° is x, the angle of the third polygon. Use it to find the number of sides.",
+    "B": "Step 3: 30° is the exterior angle of the third polygon. Number of sides = 360 ÷ 30.",
+    "C": "Step 3: divide 360 by the EXTERIOR angle (180 − 150), not by the interior angle."
+   },
+   "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-q12.svg",
+   "diagram_alt": "A square and a regular hexagon sharing a side; at the lower shared vertex the gap between them is labelled x"
+  }
+ ]
 }

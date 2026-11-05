@@ -1,279 +1,280 @@
 {
-  "level": "Year 7",
-  "subject": "maths",
-  "unit": "Year 7 Advanced",
-  "title": "Logic puzzles and systematic counting",
-  "summary": "List outcomes systematically, use the multiplication principle with restrictions, count pairs and grid routes without double counting, and solve logic puzzles.",
-  "minutes": 30,
-  "body": "How many different lunch combos can a canteen offer? How many games are needed if every team plays every other team once? Who sits where, if Ava won't sit next to Ben? These questions are solved by **counting systematically** and **reasoning logically** — the same thinking that programmers use to make sure an algorithm checks every case and misses nothing.\n\n## Learning objective\n\nBy the end of this lesson you can list outcomes in an organised way, use the multiplication principle (including with restrictions), count pairs and routes without double counting, and solve logic puzzles by elimination.\n\n## Before you start\n\nThis builds on \"Algorithms and flowcharts (Year 7)\" and \"Loops and decisions in algorithms (Year 7)\" — following clear steps and decisions in order. You also need quick multiplication.\n\nWarm-up:\n1. What is 5 × 4 × 3?\n2. List all the two-letter \"words\" you can make from the letters X and Y if letters can repeat.\n\nAnswers: 1. 60  2. XX, XY, YX, YY (4 words)\n\n## Think of it like this\n\n### A combination lock\n\nA bike lock has dials. If you check codes randomly, you will repeat some and miss others. A thief with a system starts at 000, then 001, 002 … like an odometer, so every code appears exactly once. Systematic counting is that odometer: fix the first choice, run through all the later choices, then move the first choice on by one.\n\n*Where the analogy breaks down:* on a lock every dial has the same digits, but in many counting problems the choices change as you go (for example, a digit already used can't be used again).\n\n## Key ideas\n\n### Systematic listing\n\nTo list outcomes without missing any, **fix the first position and vary the others**, in order. For two-digit numbers from the digits 1, 2, 3 (no repeats): 12, 13, then 21, 23, then 31, 32 — six numbers. A **tree diagram** or a table does the same job.\n\n### The multiplication principle\n\nIf one choice can be made in m ways and a second, separate choice in n ways, the two together can be made in **m × n** ways. This is the **multiplication principle**. Three choices: multiply three numbers.\n\n### Restrictions go first\n\nWhen some positions have a rule (it must be even, it can't start with 0), fill the **restricted positions first**, then the free ones. To make even three-digit numbers from 1, 2, 3, 4 without repeats: the last digit must be 2 or 4 (2 ways), then the first digit has 3 ways left and the middle digit 2 ways: 2 × 3 × 2 = 12.\n\n### Pairs: avoid double counting\n\nWhen order doesn't matter, like handshakes or games between teams, \"Ana shakes Ben's hand\" is the same as \"Ben shakes Ana's hand\". With n people, each shakes n − 1 hands, but that counts every handshake twice, so there are **n × (n − 1) ÷ 2** handshakes.\n\n### Counting routes by adding\n\nOn a street grid where you may only move right or up, the number of shortest routes to a corner equals the routes to the corner on its left **plus** the routes to the corner below it. Write the numbers on the grid as you go.\n\n![A 2 by 2 street grid from A at the bottom-left to B at the top-right; each corner shows its number of shortest routes: 1, 1, 1 along the edges, 2 and 3 inside, and 6 at B](/diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-paths.svg)\n\n### Logic puzzles\n\nIn a logic puzzle every clue removes possibilities. Draw a **logic grid** (people down the side, options across the top), put ✗ where a clue rules something out and ✓ when only one option is left — then cross out the rest of that row and column. Always look for the most powerful clue first. Some puzzles involve statements that may be true or false: test each possibility (**case by case**) and keep the one that fits every condition.\n\n## Worked examples\n\n### Example 1\n\nA café offers 3 drinks, 4 sandwiches and 2 desserts. A meal deal is one of each. How many different meal deals are there?\n\nStep 1: The three choices are separate — choosing a drink doesn't change the sandwich options.\nStep 2: Multiply: 3 × 4 × 2 = 24 — the multiplication principle.\nAnswer: 24 meal deals.\n\n### Example 2\n\nIn how many ways can you make 20c using 5c, 10c and 20c coins?\n\nStep 1: Start with the biggest coin — it keeps the list organised. One 20c coin: 1 way.\nStep 2: No 20c, two 10c coins: 10 + 10.\nStep 3: One 10c coin: 10 + 5 + 5. No 10c coins: 5 + 5 + 5 + 5.\nAnswer: 4 ways.\nCheck: each line uses one fewer of the bigger coin, so nothing was skipped. ✓\n\n### Example 3\n\nSix players each play one game against every other player. How many games are played?\n\nStep 1: Each player plays 5 others: 6 × 5 = 30 — but this counts each game twice (once for each player).\nStep 2: Halve it: 30 ÷ 2 = 15 — remove the double count.\nAnswer: 15 games.\n\n### Example 4\n\nMia, Noah and Oli each like a different fruit: apple, banana or cherry. Noah's fruit is yellow. Mia doesn't like apples. Who likes which fruit?\n\nStep 1: Clue 1 — only the banana is yellow, so Noah ✓ banana. Cross out banana for Mia and Oli.\nStep 2: Clue 2 — Mia ✗ apple. Mia can't have banana either, so Mia ✓ cherry.\nStep 3: Only apple is left, so Oli ✓ apple.\n\n| | Apple | Banana | Cherry |\n|---|---|---|---|\n| Mia | ✗ | ✗ | ✓ |\n| Noah | ✗ | ✓ | ✗ |\n| Oli | ✓ | ✗ | ✗ |\n\nAnswer: Mia — cherry, Noah — banana, Oli — apple.\n\n## Common mistakes\n\n- **Adding instead of multiplying** separate choices (3 drinks and 4 sandwiches is not 7 meals). Fix: picture each drink paired with every sandwich.\n- **Double counting pairs** in handshake or game problems. Fix: if swapping the two people gives the same thing, divide by 2.\n- **Ignoring a restriction** or filling it last. Fix: deal with the restricted position first.\n- **Listing randomly** and missing a case. Fix: use a fixed order (biggest to smallest, or like an odometer).\n- **Using a clue only once.** Fix: after every ✓, go back and re-check all the clues.\n\n## Tips to remember\n\n- **\"AND means times\"** (a common rule of thumb): a drink AND a sandwich → multiply.\n- **Odometer order:** fix the first, roll through the rest.\n- **\"Fussy first\":** fill the position with a rule before the free ones (a made-up phrase).\n- **Handshakes halve:** n × (n − 1) ÷ 2.\n- **Grid routes add up:** each corner = left neighbour + lower neighbour.\n\n## Key terms\n\n- **Systematic list** — a list made in a fixed order so that nothing is missed or repeated.\n- **Multiplication principle** — if choices are made one after another, multiply the number of ways for each.\n- **Restriction** — a rule that limits the choices for one position.\n- **Logic grid** — a table used to track which options each clue rules in or out.\n- **Case by case** — checking each possibility separately to see which one fits all the facts.\n\n## Summary\n\n- List systematically: fix one choice and run through all the others in order.\n- Multiply the numbers of ways for separate choices; do restricted positions first.\n- For pairs where order doesn't matter, divide by 2.\n- Count grid routes by adding the numbers from the left and below.\n- Solve logic puzzles with a grid and elimination; test cases one at a time.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "A canteen sells 4 different drinks and 3 different snacks. A combo is one drink and one snack. How many different combos are there?",
-      "options": {
-        "A": "7",
-        "B": "12",
-        "C": "64",
-        "D": "81"
-      },
-      "answer": "B",
-      "explanation": "Each of the 4 drinks can go with each of the 3 snacks: 4 × 3 = 12. Adding to get 7 counts the items, not the pairs.",
-      "steps": [
-        "The two choices are separate, so use the multiplication principle.",
-        "Each drink pairs with 3 snacks.",
-        "4 × 3 = 12 combos."
-      ],
-      "mistakes": {
-        "A": "Step 1: 4 + 3 counts items. Each drink goes with every snack, so multiply.",
-        "C": "Step 3: 4³ means three choices of 4 — there are only two choices, 4 and 3.",
-        "D": "Step 3: 3⁴ is not the rule — multiply the number of ways for each choice."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "How many two-digit numbers can be made from the digits 2, 5 and 8 if each digit is used at most once in a number?",
-      "options": {
-        "A": "9",
-        "B": "3",
-        "C": "6",
-        "D": "5"
-      },
-      "answer": "C",
-      "explanation": "List them: 25, 28, 52, 58, 82, 85 — six numbers (3 choices for the first digit × 2 for the second). 9 allows repeats like 22.",
-      "steps": [
-        "Fix the first digit as 2: 25, 28.",
-        "Then 5: 52, 58. Then 8: 82, 85.",
-        "That is 6 numbers (3 × 2 = 6)."
-      ],
-      "mistakes": {
-        "A": "Step 1: 3 × 3 allows numbers like 22 — digits can't repeat here.",
-        "B": "Step 1: 25 and 52 are different numbers — order matters.",
-        "D": "Step 2: one was missed. Fix each first digit in turn and list both endings."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Amy is taller than Ben. Ben is taller than Cal. Dee is shorter than Cal. Who is the shortest?",
-      "options": {
-        "A": "Dee",
-        "B": "Cal",
-        "C": "Ben",
-        "D": "Amy"
-      },
-      "answer": "A",
-      "explanation": "The order from tallest is Amy, Ben, Cal, Dee, so Dee is shortest. Cal would be the answer only if you ignored the last clue.",
-      "steps": [
-        "Clues 1 and 2: Amy, then Ben, then Cal (tallest to shortest).",
-        "Clue 3: Dee is shorter than Cal, so Dee goes after Cal.",
-        "Order: Amy, Ben, Cal, Dee — Dee is the shortest."
-      ],
-      "mistakes": {
-        "B": "Step 2: the last clue puts Dee below Cal.",
-        "C": "Step 1: Ben is taller than Cal, so Ben is not at the bottom.",
-        "D": "Step 1: \"taller than\" puts Amy at the TOP, not the bottom."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Eight friends meet, and each friend shakes hands once with every other friend. How many handshakes are there?",
-      "options": {
-        "A": "56",
-        "B": "64",
-        "C": "7",
-        "D": "28"
-      },
-      "answer": "D",
-      "explanation": "Each friend shakes 7 hands: 8 × 7 = 56, but every handshake is counted twice, so 56 ÷ 2 = 28. 56 forgets that A-with-B is the same as B-with-A.",
-      "steps": [
-        "Each friend shakes hands with the other 7.",
-        "8 × 7 = 56 counts every handshake twice (once for each person).",
-        "56 ÷ 2 = 28 handshakes."
-      ],
-      "mistakes": {
-        "A": "Step 3: each handshake was counted twice — halve.",
-        "B": "Step 1: nobody shakes their own hand, so each person shakes 7, not 8.",
-        "C": "Step 2: 7 is one person's handshakes. Count everyone's, then halve."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Using the digits 1, 2, 3 and 4, each at most once, how many EVEN three-digit numbers can be made?",
-      "options": {
-        "A": "24",
-        "B": "12",
-        "C": "6",
-        "D": "32"
-      },
-      "answer": "B",
-      "explanation": "The last digit must be 2 or 4 (2 ways). Then 3 digits are left for the first place and 2 for the middle: 2 × 3 × 2 = 12. 24 counts odd numbers too.",
-      "steps": [
-        "Restriction first: the last digit is 2 or 4 — 2 ways.",
-        "First digit: 3 digits left. Middle digit: 2 left.",
-        "2 × 3 × 2 = 12."
-      ],
-      "mistakes": {
-        "A": "Step 1: 4 × 3 × 2 counts all numbers, including odd ones. Deal with the \"even\" rule first.",
-        "C": "Step 1: the last digit can be 2 OR 4 — two ways, not one.",
-        "D": "Step 2: digits can't repeat, so the choices shrink to 3, then 2."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "In how many different ways can you make 30c using any number of 5c, 10c and 20c coins? (The order of the coins doesn't matter.)",
-      "options": {
-        "A": "6",
-        "B": "4",
-        "C": "2",
-        "D": "5"
-      },
-      "answer": "A",
-      "explanation": "With a 20c: 20+10, 20+5+5 (2 ways). Without: 10+10+10, 10+10+5+5, 10+5+5+5+5, six 5c coins (4 ways). Total 6. Answering 5 usually misses the all-5c way.",
-      "steps": [
-        "Start with the biggest coin. One 20c: 20 + 10 or 20 + 5 + 5 — 2 ways.",
-        "No 20c, use 10c coins: 10+10+10, 10+10+5+5, 10+5+5+5+5 — 3 ways.",
-        "No 20c or 10c: six 5c coins — 1 way. Total 2 + 3 + 1 = 6."
-      ],
-      "mistakes": {
-        "B": "Step 1: you left out the ways that use a 20c coin.",
-        "C": "Step 2: you only counted the ways with a 20c coin. Also list the ways without it.",
-        "D": "Step 3: don't forget the way that uses only 5c coins."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Ella, Finn, Gus and Hana each play a different sport: tennis, soccer, swimming or netball. Finn's sport doesn't use a ball. Gus plays a team sport, but not netball. Hana doesn't play netball. Who plays netball?",
-      "options": {
-        "A": "Hana",
-        "B": "Gus",
-        "C": "Ella",
-        "D": "Finn"
-      },
-      "answer": "C",
-      "explanation": "Finn swims (the only sport without a ball). Gus plays soccer (the only team sport left that isn't netball). Hana doesn't play netball, so she plays tennis, leaving netball for Ella.",
-      "steps": [
-        "Clue 1: swimming is the only sport without a ball, so Finn swims.",
-        "Clue 2: the team sports are soccer and netball; Gus doesn't play netball, so Gus plays soccer.",
-        "Clue 3: Hana can't play netball, so she plays tennis — and Ella plays netball."
-      ],
-      "mistakes": {
-        "A": "Step 3: the last clue says Hana does NOT play netball.",
-        "B": "Step 2: Gus plays a team sport but not netball.",
-        "D": "Step 1: netball uses a ball, and Finn's sport doesn't."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "How many squares of any size are there in the 3 by 3 grid in the diagram?",
-      "options": {
-        "A": "9",
-        "B": "10",
-        "C": "36",
-        "D": "14"
-      },
-      "answer": "D",
-      "explanation": "1 by 1: 9. 2 by 2: 4. 3 by 3: 1. Total 9 + 4 + 1 = 14. Answering 10 misses the four 2 by 2 squares.",
-      "steps": [
-        "Count by size, smallest first. 1 by 1 squares: 3 × 3 = 9.",
-        "2 by 2 squares: 2 × 2 = 4 positions. 3 by 3: 1.",
-        "Total: 9 + 4 + 1 = 14."
-      ],
-      "mistakes": {
-        "A": "Step 2: bigger squares are made from several small ones — count them too.",
-        "B": "Step 2: you missed the four 2 by 2 squares.",
-        "C": "Step 1: 36 counts every rectangle, including non-square ones. Count only squares."
-      },
-      "diagram": "diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-q8.svg",
-      "diagram_alt": "A 3 by 3 grid made of 9 small squares"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "One of Ari, Bea and Cy broke a vase. Ari says, \"Bea did it.\" Bea says, \"I didn't do it.\" Cy says, \"I didn't do it.\" Exactly ONE of them is telling the truth. Who broke the vase?",
-      "options": {
-        "A": "Ari",
-        "B": "Bea",
-        "C": "Cy",
-        "D": "It is impossible to tell"
-      },
-      "answer": "C",
-      "explanation": "Test each case. If Ari did it, Bea and Cy are both truthful (2 truths). If Bea did it, Ari and Cy are truthful (2). If Cy did it, only Bea is truthful (1). So Cy did it. Choosing Bea means believing Ari, but then two people tell the truth.",
-      "steps": [
-        "Case Ari: Ari lies, Bea true, Cy true — 2 truths ✗.",
-        "Case Bea: Ari true, Bea lies, Cy true — 2 truths ✗.",
-        "Case Cy: Ari lies, Bea true, Cy lies — exactly 1 truth ✓. Cy broke it."
-      ],
-      "mistakes": {
-        "A": "Step 1: if Ari did it, two people are telling the truth. Count the true statements.",
-        "B": "Step 2: if Bea did it, both Ari and Cy are telling the truth — that's two.",
-        "D": "Step 3: test every case — exactly one fits the rule."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "You walk along the streets in the diagram from A to B, moving only right or up. How many different shortest routes are there?",
-      "options": {
-        "A": "10",
-        "B": "6",
-        "C": "5",
-        "D": "32"
-      },
-      "answer": "A",
-      "explanation": "Write the number of routes at each corner, adding left + below. Bottom row and left column are all 1s; the next rows give 1, 2, 3, 4 and 1, 3, 6, 10. So there are 10 routes. 32 counts 2 choices at every step, but you must make exactly 3 rights and 2 ups.",
-      "steps": [
-        "Every corner on the bottom row or left side has 1 route.",
-        "Middle row: 1, 1 + 1 = 2, 2 + 1 = 3, 3 + 1 = 4.",
-        "Top row: 1, 1 + 2 = 3, 3 + 3 = 6, 6 + 4 = 10 routes to B."
-      ],
-      "mistakes": {
-        "B": "Step 2: routes are not 3 × 2 — add the numbers from the left and below at each corner.",
-        "C": "Step 1: 5 is the number of moves in one route, not the number of routes.",
-        "D": "Step 1: not every list of 5 moves works — you need exactly 3 rights and 2 ups. Add corner by corner."
-      },
-      "diagram": "diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-q10.svg",
-      "diagram_alt": "A street grid 3 blocks wide and 2 blocks high, with A at the bottom-left corner and B at the top-right corner"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A, B and C are whole numbers. A + B = 10, B + C = 13 and A + C = 11. What is B?",
-      "options": {
-        "A": "4",
-        "B": "6",
-        "C": "7",
-        "D": "17"
-      },
-      "answer": "B",
-      "explanation": "Adding all three equations gives 2(A + B + C) = 34, so A + B + C = 17. Then B = 17 − (A + C) = 17 − 11 = 6. Check: A = 4, C = 7. 17 is the total, not B.",
-      "steps": [
-        "Add all three equations: 2A + 2B + 2C = 34.",
-        "Halve: A + B + C = 17.",
-        "B = 17 − (A + C) = 17 − 11 = 6. Check: A = 4, C = 7 ✓"
-      ],
-      "mistakes": {
-        "A": "Step 3: 4 is A. To find B, subtract A + C from the total.",
-        "C": "Step 3: 7 is C. To find B, subtract A + C = 11 from 17.",
-        "D": "Step 2: 17 is A + B + C. Subtract to find B."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Four friends, including Jo and Kim, sit in a row of 4 seats. Jo and Kim must sit next to each other. How many seating orders are possible?",
-      "options": {
-        "A": "24",
-        "B": "6",
-        "C": "3",
-        "D": "12"
-      },
-      "answer": "D",
-      "explanation": "Treat Jo and Kim as one block: the block and the other 2 friends can be ordered in 3 × 2 × 1 = 6 ways, and Jo and Kim can swap inside the block: 6 × 2 = 12. 6 forgets the swap.",
-      "steps": [
-        "Glue Jo and Kim into one block: now there are 3 things to arrange.",
-        "3 things in a row: 3 × 2 × 1 = 6 ways.",
-        "Jo-Kim or Kim-Jo inside the block: 6 × 2 = 12."
-      ],
-      "mistakes": {
-        "A": "Step 1: 4 × 3 × 2 × 1 ignores the rule that Jo and Kim sit together.",
-        "B": "Step 3: Jo and Kim can swap seats inside their block — double it.",
-        "C": "Step 2: 3 is only where the pair can sit. Also arrange everyone else and swap the pair."
-      }
-    }
-  ]
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7 Advanced",
+ "title": "Logic puzzles and systematic counting",
+ "summary": "List outcomes systematically, use the multiplication principle with restrictions, count pairs and grid routes without double counting, and solve logic puzzles.",
+ "minutes": 30,
+ "video": "videos/y7/maths-advanced/logic-puzzles-and-systematic-counting.mp4",
+ "body": "How many different lunch combos can a canteen offer? How many games are needed if every team plays every other team once? Who sits where, if Ava won't sit next to Ben? These questions are solved by **counting systematically** and **reasoning logically** — the same thinking that programmers use to make sure an algorithm checks every case and misses nothing.\n\n## Learning objective\n\nBy the end of this lesson you can list outcomes in an organised way, use the multiplication principle (including with restrictions), count pairs and routes without double counting, and solve logic puzzles by elimination.\n\n## Before you start\n\nThis builds on \"Algorithms and flowcharts (Year 7)\" and \"Loops and decisions in algorithms (Year 7)\" — following clear steps and decisions in order. You also need quick multiplication.\n\nWarm-up:\n1. What is 5 × 4 × 3?\n2. List all the two-letter \"words\" you can make from the letters X and Y if letters can repeat.\n\nAnswers: 1. 60  2. XX, XY, YX, YY (4 words)\n\n## Think of it like this\n\n### A combination lock\n\nA bike lock has dials. If you check codes randomly, you will repeat some and miss others. A thief with a system starts at 000, then 001, 002 … like an odometer, so every code appears exactly once. Systematic counting is that odometer: fix the first choice, run through all the later choices, then move the first choice on by one.\n\n*Where the analogy breaks down:* on a lock every dial has the same digits, but in many counting problems the choices change as you go (for example, a digit already used can't be used again).\n\n## Key ideas\n\n### Systematic listing\n\nTo list outcomes without missing any, **fix the first position and vary the others**, in order. For two-digit numbers from the digits 1, 2, 3 (no repeats): 12, 13, then 21, 23, then 31, 32 — six numbers. A **tree diagram** or a table does the same job.\n\n### The multiplication principle\n\nIf one choice can be made in m ways and a second, separate choice in n ways, the two together can be made in **m × n** ways. This is the **multiplication principle**. Three choices: multiply three numbers.\n\n### Restrictions go first\n\nWhen some positions have a rule (it must be even, it can't start with 0), fill the **restricted positions first**, then the free ones. To make even three-digit numbers from 1, 2, 3, 4 without repeats: the last digit must be 2 or 4 (2 ways), then the first digit has 3 ways left and the middle digit 2 ways: 2 × 3 × 2 = 12.\n\n### Pairs: avoid double counting\n\nWhen order doesn't matter, like handshakes or games between teams, \"Ana shakes Ben's hand\" is the same as \"Ben shakes Ana's hand\". With n people, each shakes n − 1 hands, but that counts every handshake twice, so there are **n × (n − 1) ÷ 2** handshakes.\n\n### Counting routes by adding\n\nOn a street grid where you may only move right or up, the number of shortest routes to a corner equals the routes to the corner on its left **plus** the routes to the corner below it. Write the numbers on the grid as you go.\n\n![A 2 by 2 street grid from A at the bottom-left to B at the top-right; each corner shows its number of shortest routes: 1, 1, 1 along the edges, 2 and 3 inside, and 6 at B](/diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-paths.svg)\n\n### Logic puzzles\n\nIn a logic puzzle every clue removes possibilities. Draw a **logic grid** (people down the side, options across the top), put ✗ where a clue rules something out and ✓ when only one option is left — then cross out the rest of that row and column. Always look for the most powerful clue first. Some puzzles involve statements that may be true or false: test each possibility (**case by case**) and keep the one that fits every condition.\n\n## Worked examples\n\n### Example 1\n\nA café offers 3 drinks, 4 sandwiches and 2 desserts. A meal deal is one of each. How many different meal deals are there?\n\nStep 1: The three choices are separate — choosing a drink doesn't change the sandwich options.\nStep 2: Multiply: 3 × 4 × 2 = 24 — the multiplication principle.\nAnswer: 24 meal deals.\n\n### Example 2\n\nIn how many ways can you make 20c using 5c, 10c and 20c coins?\n\nStep 1: Start with the biggest coin — it keeps the list organised. One 20c coin: 1 way.\nStep 2: No 20c, two 10c coins: 10 + 10.\nStep 3: One 10c coin: 10 + 5 + 5. No 10c coins: 5 + 5 + 5 + 5.\nAnswer: 4 ways.\nCheck: each line uses one fewer of the bigger coin, so nothing was skipped. ✓\n\n### Example 3\n\nSix players each play one game against every other player. How many games are played?\n\nStep 1: Each player plays 5 others: 6 × 5 = 30 — but this counts each game twice (once for each player).\nStep 2: Halve it: 30 ÷ 2 = 15 — remove the double count.\nAnswer: 15 games.\n\n### Example 4\n\nMia, Noah and Oli each like a different fruit: apple, banana or cherry. Noah's fruit is yellow. Mia doesn't like apples. Who likes which fruit?\n\nStep 1: Clue 1 — only the banana is yellow, so Noah ✓ banana. Cross out banana for Mia and Oli.\nStep 2: Clue 2 — Mia ✗ apple. Mia can't have banana either, so Mia ✓ cherry.\nStep 3: Only apple is left, so Oli ✓ apple.\n\n| | Apple | Banana | Cherry |\n|---|---|---|---|\n| Mia | ✗ | ✗ | ✓ |\n| Noah | ✗ | ✓ | ✗ |\n| Oli | ✓ | ✗ | ✗ |\n\nAnswer: Mia — cherry, Noah — banana, Oli — apple.\n\n## Common mistakes\n\n- **Adding instead of multiplying** separate choices (3 drinks and 4 sandwiches is not 7 meals). Fix: picture each drink paired with every sandwich.\n- **Double counting pairs** in handshake or game problems. Fix: if swapping the two people gives the same thing, divide by 2.\n- **Ignoring a restriction** or filling it last. Fix: deal with the restricted position first.\n- **Listing randomly** and missing a case. Fix: use a fixed order (biggest to smallest, or like an odometer).\n- **Using a clue only once.** Fix: after every ✓, go back and re-check all the clues.\n\n## Tips to remember\n\n- **\"AND means times\"** (a common rule of thumb): a drink AND a sandwich → multiply.\n- **Odometer order:** fix the first, roll through the rest.\n- **\"Fussy first\":** fill the position with a rule before the free ones (a made-up phrase).\n- **Handshakes halve:** n × (n − 1) ÷ 2.\n- **Grid routes add up:** each corner = left neighbour + lower neighbour.\n\n## Key terms\n\n- **Systematic list** — a list made in a fixed order so that nothing is missed or repeated.\n- **Multiplication principle** — if choices are made one after another, multiply the number of ways for each.\n- **Restriction** — a rule that limits the choices for one position.\n- **Logic grid** — a table used to track which options each clue rules in or out.\n- **Case by case** — checking each possibility separately to see which one fits all the facts.\n\n## Summary\n\n- List systematically: fix one choice and run through all the others in order.\n- Multiply the numbers of ways for separate choices; do restricted positions first.\n- For pairs where order doesn't matter, divide by 2.\n- Count grid routes by adding the numbers from the left and below.\n- Solve logic puzzles with a grid and elimination; test cases one at a time.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "A canteen sells 4 different drinks and 3 different snacks. A combo is one drink and one snack. How many different combos are there?",
+   "options": {
+    "A": "7",
+    "B": "12",
+    "C": "64",
+    "D": "81"
+   },
+   "answer": "B",
+   "explanation": "Each of the 4 drinks can go with each of the 3 snacks: 4 × 3 = 12. Adding to get 7 counts the items, not the pairs.",
+   "steps": [
+    "The two choices are separate, so use the multiplication principle.",
+    "Each drink pairs with 3 snacks.",
+    "4 × 3 = 12 combos."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4 + 3 counts items. Each drink goes with every snack, so multiply.",
+    "C": "Step 3: 4³ means three choices of 4 — there are only two choices, 4 and 3.",
+    "D": "Step 3: 3⁴ is not the rule — multiply the number of ways for each choice."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "How many two-digit numbers can be made from the digits 2, 5 and 8 if each digit is used at most once in a number?",
+   "options": {
+    "A": "9",
+    "B": "3",
+    "C": "6",
+    "D": "5"
+   },
+   "answer": "C",
+   "explanation": "List them: 25, 28, 52, 58, 82, 85 — six numbers (3 choices for the first digit × 2 for the second). 9 allows repeats like 22.",
+   "steps": [
+    "Fix the first digit as 2: 25, 28.",
+    "Then 5: 52, 58. Then 8: 82, 85.",
+    "That is 6 numbers (3 × 2 = 6)."
+   ],
+   "mistakes": {
+    "A": "Step 1: 3 × 3 allows numbers like 22 — digits can't repeat here.",
+    "B": "Step 1: 25 and 52 are different numbers — order matters.",
+    "D": "Step 2: one was missed. Fix each first digit in turn and list both endings."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Amy is taller than Ben. Ben is taller than Cal. Dee is shorter than Cal. Who is the shortest?",
+   "options": {
+    "A": "Dee",
+    "B": "Cal",
+    "C": "Ben",
+    "D": "Amy"
+   },
+   "answer": "A",
+   "explanation": "The order from tallest is Amy, Ben, Cal, Dee, so Dee is shortest. Cal would be the answer only if you ignored the last clue.",
+   "steps": [
+    "Clues 1 and 2: Amy, then Ben, then Cal (tallest to shortest).",
+    "Clue 3: Dee is shorter than Cal, so Dee goes after Cal.",
+    "Order: Amy, Ben, Cal, Dee — Dee is the shortest."
+   ],
+   "mistakes": {
+    "B": "Step 2: the last clue puts Dee below Cal.",
+    "C": "Step 1: Ben is taller than Cal, so Ben is not at the bottom.",
+    "D": "Step 1: \"taller than\" puts Amy at the TOP, not the bottom."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Eight friends meet, and each friend shakes hands once with every other friend. How many handshakes are there?",
+   "options": {
+    "A": "56",
+    "B": "64",
+    "C": "7",
+    "D": "28"
+   },
+   "answer": "D",
+   "explanation": "Each friend shakes 7 hands: 8 × 7 = 56, but every handshake is counted twice, so 56 ÷ 2 = 28. 56 forgets that A-with-B is the same as B-with-A.",
+   "steps": [
+    "Each friend shakes hands with the other 7.",
+    "8 × 7 = 56 counts every handshake twice (once for each person).",
+    "56 ÷ 2 = 28 handshakes."
+   ],
+   "mistakes": {
+    "A": "Step 3: each handshake was counted twice — halve.",
+    "B": "Step 1: nobody shakes their own hand, so each person shakes 7, not 8.",
+    "C": "Step 2: 7 is one person's handshakes. Count everyone's, then halve."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Using the digits 1, 2, 3 and 4, each at most once, how many EVEN three-digit numbers can be made?",
+   "options": {
+    "A": "24",
+    "B": "12",
+    "C": "6",
+    "D": "32"
+   },
+   "answer": "B",
+   "explanation": "The last digit must be 2 or 4 (2 ways). Then 3 digits are left for the first place and 2 for the middle: 2 × 3 × 2 = 12. 24 counts odd numbers too.",
+   "steps": [
+    "Restriction first: the last digit is 2 or 4 — 2 ways.",
+    "First digit: 3 digits left. Middle digit: 2 left.",
+    "2 × 3 × 2 = 12."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4 × 3 × 2 counts all numbers, including odd ones. Deal with the \"even\" rule first.",
+    "C": "Step 1: the last digit can be 2 OR 4 — two ways, not one.",
+    "D": "Step 2: digits can't repeat, so the choices shrink to 3, then 2."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In how many different ways can you make 30c using any number of 5c, 10c and 20c coins? (The order of the coins doesn't matter.)",
+   "options": {
+    "A": "6",
+    "B": "4",
+    "C": "2",
+    "D": "5"
+   },
+   "answer": "A",
+   "explanation": "With a 20c: 20+10, 20+5+5 (2 ways). Without: 10+10+10, 10+10+5+5, 10+5+5+5+5, six 5c coins (4 ways). Total 6. Answering 5 usually misses the all-5c way.",
+   "steps": [
+    "Start with the biggest coin. One 20c: 20 + 10 or 20 + 5 + 5 — 2 ways.",
+    "No 20c, use 10c coins: 10+10+10, 10+10+5+5, 10+5+5+5+5 — 3 ways.",
+    "No 20c or 10c: six 5c coins — 1 way. Total 2 + 3 + 1 = 6."
+   ],
+   "mistakes": {
+    "B": "Step 1: you left out the ways that use a 20c coin.",
+    "C": "Step 2: you only counted the ways with a 20c coin. Also list the ways without it.",
+    "D": "Step 3: don't forget the way that uses only 5c coins."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Ella, Finn, Gus and Hana each play a different sport: tennis, soccer, swimming or netball. Finn's sport doesn't use a ball. Gus plays a team sport, but not netball. Hana doesn't play netball. Who plays netball?",
+   "options": {
+    "A": "Hana",
+    "B": "Gus",
+    "C": "Ella",
+    "D": "Finn"
+   },
+   "answer": "C",
+   "explanation": "Finn swims (the only sport without a ball). Gus plays soccer (the only team sport left that isn't netball). Hana doesn't play netball, so she plays tennis, leaving netball for Ella.",
+   "steps": [
+    "Clue 1: swimming is the only sport without a ball, so Finn swims.",
+    "Clue 2: the team sports are soccer and netball; Gus doesn't play netball, so Gus plays soccer.",
+    "Clue 3: Hana can't play netball, so she plays tennis — and Ella plays netball."
+   ],
+   "mistakes": {
+    "A": "Step 3: the last clue says Hana does NOT play netball.",
+    "B": "Step 2: Gus plays a team sport but not netball.",
+    "D": "Step 1: netball uses a ball, and Finn's sport doesn't."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "How many squares of any size are there in the 3 by 3 grid in the diagram?",
+   "options": {
+    "A": "9",
+    "B": "10",
+    "C": "36",
+    "D": "14"
+   },
+   "answer": "D",
+   "explanation": "1 by 1: 9. 2 by 2: 4. 3 by 3: 1. Total 9 + 4 + 1 = 14. Answering 10 misses the four 2 by 2 squares.",
+   "steps": [
+    "Count by size, smallest first. 1 by 1 squares: 3 × 3 = 9.",
+    "2 by 2 squares: 2 × 2 = 4 positions. 3 by 3: 1.",
+    "Total: 9 + 4 + 1 = 14."
+   ],
+   "mistakes": {
+    "A": "Step 2: bigger squares are made from several small ones — count them too.",
+    "B": "Step 2: you missed the four 2 by 2 squares.",
+    "C": "Step 1: 36 counts every rectangle, including non-square ones. Count only squares."
+   },
+   "diagram": "diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-q8.svg",
+   "diagram_alt": "A 3 by 3 grid made of 9 small squares"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "One of Ari, Bea and Cy broke a vase. Ari says, \"Bea did it.\" Bea says, \"I didn't do it.\" Cy says, \"I didn't do it.\" Exactly ONE of them is telling the truth. Who broke the vase?",
+   "options": {
+    "A": "Ari",
+    "B": "Bea",
+    "C": "Cy",
+    "D": "It is impossible to tell"
+   },
+   "answer": "C",
+   "explanation": "Test each case. If Ari did it, Bea and Cy are both truthful (2 truths). If Bea did it, Ari and Cy are truthful (2). If Cy did it, only Bea is truthful (1). So Cy did it. Choosing Bea means believing Ari, but then two people tell the truth.",
+   "steps": [
+    "Case Ari: Ari lies, Bea true, Cy true — 2 truths ✗.",
+    "Case Bea: Ari true, Bea lies, Cy true — 2 truths ✗.",
+    "Case Cy: Ari lies, Bea true, Cy lies — exactly 1 truth ✓. Cy broke it."
+   ],
+   "mistakes": {
+    "A": "Step 1: if Ari did it, two people are telling the truth. Count the true statements.",
+    "B": "Step 2: if Bea did it, both Ari and Cy are telling the truth — that's two.",
+    "D": "Step 3: test every case — exactly one fits the rule."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "You walk along the streets in the diagram from A to B, moving only right or up. How many different shortest routes are there?",
+   "options": {
+    "A": "10",
+    "B": "6",
+    "C": "5",
+    "D": "32"
+   },
+   "answer": "A",
+   "explanation": "Write the number of routes at each corner, adding left + below. Bottom row and left column are all 1s; the next rows give 1, 2, 3, 4 and 1, 3, 6, 10. So there are 10 routes. 32 counts 2 choices at every step, but you must make exactly 3 rights and 2 ups.",
+   "steps": [
+    "Every corner on the bottom row or left side has 1 route.",
+    "Middle row: 1, 1 + 1 = 2, 2 + 1 = 3, 3 + 1 = 4.",
+    "Top row: 1, 1 + 2 = 3, 3 + 3 = 6, 6 + 4 = 10 routes to B."
+   ],
+   "mistakes": {
+    "B": "Step 2: routes are not 3 × 2 — add the numbers from the left and below at each corner.",
+    "C": "Step 1: 5 is the number of moves in one route, not the number of routes.",
+    "D": "Step 1: not every list of 5 moves works — you need exactly 3 rights and 2 ups. Add corner by corner."
+   },
+   "diagram": "diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-q10.svg",
+   "diagram_alt": "A street grid 3 blocks wide and 2 blocks high, with A at the bottom-left corner and B at the top-right corner"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A, B and C are whole numbers. A + B = 10, B + C = 13 and A + C = 11. What is B?",
+   "options": {
+    "A": "4",
+    "B": "6",
+    "C": "7",
+    "D": "17"
+   },
+   "answer": "B",
+   "explanation": "Adding all three equations gives 2(A + B + C) = 34, so A + B + C = 17. Then B = 17 − (A + C) = 17 − 11 = 6. Check: A = 4, C = 7. 17 is the total, not B.",
+   "steps": [
+    "Add all three equations: 2A + 2B + 2C = 34.",
+    "Halve: A + B + C = 17.",
+    "B = 17 − (A + C) = 17 − 11 = 6. Check: A = 4, C = 7 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 3: 4 is A. To find B, subtract A + C from the total.",
+    "C": "Step 3: 7 is C. To find B, subtract A + C = 11 from 17.",
+    "D": "Step 2: 17 is A + B + C. Subtract to find B."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Four friends, including Jo and Kim, sit in a row of 4 seats. Jo and Kim must sit next to each other. How many seating orders are possible?",
+   "options": {
+    "A": "24",
+    "B": "6",
+    "C": "3",
+    "D": "12"
+   },
+   "answer": "D",
+   "explanation": "Treat Jo and Kim as one block: the block and the other 2 friends can be ordered in 3 × 2 × 1 = 6 ways, and Jo and Kim can swap inside the block: 6 × 2 = 12. 6 forgets the swap.",
+   "steps": [
+    "Glue Jo and Kim into one block: now there are 3 things to arrange.",
+    "3 things in a row: 3 × 2 × 1 = 6 ways.",
+    "Jo-Kim or Kim-Jo inside the block: 6 × 2 = 12."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4 × 3 × 2 × 1 ignores the rule that Jo and Kim sit together.",
+    "B": "Step 3: Jo and Kim can swap seats inside their block — double it.",
+    "C": "Step 2: 3 is only where the pair can sit. Also arrange everyone else and swap the pair."
+   }
+  }
+ ]
 }

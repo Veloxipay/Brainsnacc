@@ -1,282 +1,283 @@
 {
-  "level": "Year 7",
-  "subject": "maths",
-  "unit": "Year 7 Advanced",
-  "title": "Two-step chance experiments",
-  "summary": "List the outcomes of two-step chance experiments with tables and tree diagrams, find probabilities by counting, and compare picking with and without replacement.",
-  "minutes": 40,
-  "body": "Roll two dice in a board game, toss a coin and then spin a spinner, or pick two raffle tickets from a hat — each of these is a chance experiment with **two steps**. The trick is to list every possible result in an organised way, so you never miss one or count one twice. Game designers do exactly this to make sure their games are fair.\n\n## Learning objective\n\nBy the end of this lesson you can list the sample space of a two-step experiment with a table or a tree diagram, find probabilities by counting equally likely outcomes, and explain how \"with replacement\" and \"without replacement\" change the answer.\n\n## Before you start\n\nThis lesson builds on *Chance and the probability scale (Year 7)* and *Experiments and relative frequency (Year 7)*. You need P(event) = number of favourable outcomes ÷ total number of equally likely outcomes, and P(not A) = 1 − P(A).\n\n**Warm-up**\n\n1. A fair die is rolled. What is P(number greater than 4)? *(Answer: 5 and 6 work, so 2/6 = 1/3)*\n2. If P(rain) = 0.3, what is P(no rain)? *(Answer: 1 − 0.3 = 0.7)*\n\n## Think of it like this\n\n### Ordering at a café\n\nA café offers a toastie (ham, cheese or tomato) with a drink (juice or milk). To count every possible order, you pick the toastie first, then for EACH toastie you pick a drink: 3 × 2 = 6 different orders. A two-step experiment works the same way — every first result branches into every second result.\n\n*Where the analogy breaks down:* in a café you choose what you like, but in a chance experiment every outcome must be **equally likely** before you can just count them.\n\n## Key ideas\n\n### Sample space for two steps\n\nA **two-step experiment** is made of two chance actions, one after the other (or together, like two dice). Each **outcome** is a pair, such as (H, 4). The **sample space** is the list of all possible outcomes. If step 1 has m outcomes and step 2 has n outcomes, there are **m × n** outcomes in total.\n\nOrder matters: (H, T) and (T, H) are different outcomes. Getting \"one head and one tail\" can happen in two ways.\n\n### Tree diagrams\n\nA **tree diagram** draws step 1 as branches, then adds the step 2 branches onto the end of EACH first branch. Every path from left to right is one outcome. The fraction on a branch is the probability of that branch.\n\n![A tree diagram. A coin gives H or T, each with probability 1/2. From each, a spinner gives R, B or G, each with probability 1/3. The six outcomes listed at the ends are HR, HB, HG, TR, TB and TG](/diagrams/y7/maths-advanced/two-step-chance-experiments-tree.svg)\n\n### Tables (grids)\n\nWhen both steps have several outcomes — like two dice — a **table** (also called an array or grid) is neater. Put step 1 down the side, step 2 across the top, and fill each cell with the outcome or the result you care about (such as the total).\n\n### Counting the probability\n\nIf every outcome is equally likely:\n\n`P(event) = number of outcomes in the event ÷ total number of outcomes`\n\nShortcut along a tree: multiply the probabilities along a path. For heads then blue: 1/2 × 1/3 = 1/6.\n\n### With and without replacement\n\nTaking an item from a bag, then putting it back before the second pick, is **with replacement** — the second pick is exactly like the first. **Without replacement** means the item stays out, so there is one fewer item for the second pick, and you cannot pick the same item twice.\n\n### \"At least one\" — use the complement\n\n\"At least one six\" includes one six or two sixes. It is often quicker to count the opposite (no sixes at all) and subtract from 1.\n\n## Worked examples\n\n### Example 1\n\nA coin is tossed, then a spinner with three equal sections — red, blue and green — is spun. Find P(head and blue) and P(head and not red).\n\nStep 1: draw the tree (above) — 2 × 3 = 6 equally likely outcomes: HR, HB, HG, TR, TB, TG.\nStep 2: head and blue is just HB: P = **1/6**. Check with the shortcut: 1/2 × 1/3 = 1/6 ✓\nStep 3: head and not red: HB and HG, so P = 2/6 = **1/3**.\n\n### Example 2\n\nTwo fair dice are rolled and the numbers are added. Find P(total of 7), P(total of 10 or more) and P(a double).\n\n![A 6 by 6 table. The first die (1 to 6) runs down the side and the second die (1 to 6) runs across the top. Each cell shows the total. The six cells with a total of 7 are shaded: 1 and 6, 2 and 5, 3 and 4, 4 and 3, 5 and 2, 6 and 1](/diagrams/y7/maths-advanced/two-step-chance-experiments-grid.svg)\n\nStep 1: the table has 6 × 6 = 36 equally likely cells.\nStep 2: a total of 7 appears 6 times (shaded), so P = 6/36 = **1/6**.\nStep 3: 10 or more: 10 appears 3 times, 11 twice, 12 once — 6 cells, so P = 6/36 = **1/6**.\nStep 4: doubles run down the diagonal (1 and 1, …, 6 and 6) — 6 cells, so P = **1/6**.\n\n### Example 3\n\nA bag holds 2 red marbles and 1 green marble. Two marbles are taken out. Find P(both red) (a) with replacement and (b) without replacement.\n\nStep 1: name the marbles R1, R2 and G so that every outcome is equally likely.\nStep 2: (a) with replacement there are 3 × 3 = 9 outcomes. Both red: R1R1, R1R2, R2R1, R2R2 — 4 outcomes, so P = **4/9**.\nStep 3: (b) without replacement the second pick has only 2 marbles left: 3 × 2 = 6 outcomes — R1R2, R1G, R2R1, R2G, GR1, GR2.\nStep 4: both red: R1R2 and R2R1, so P = 2/6 = **1/3**.\nCheck: 1/3 is smaller than 4/9, which makes sense — once a red is taken out, there are fewer reds left.\n\n### Example 4\n\nTwo dice are rolled. Find P(at least one six).\n\nStep 1: count the opposite — no six on either die. Each die has 5 non-sixes, so 5 × 5 = 25 outcomes.\nStep 2: P(no six) = 25/36.\nStep 3: P(at least one six) = 1 − 25/36 = **11/36**.\nCheck by counting the table: 6 cells in the \"6\" row, 6 in the \"6\" column, but (6, 6) was counted twice: 6 + 6 − 1 = 11 ✓\n\n## Common mistakes\n\n- **Adding instead of multiplying the number of outcomes.** A coin and a die give 2 × 6 = 12 outcomes, not 2 + 6 = 8. Fix: every first outcome pairs with every second outcome.\n- **Treating \"one head and one tail\" as one outcome.** HT and TH are different. Fix: list ordered pairs.\n- **Counting totals as equally likely.** The totals 2 to 12 are NOT equally likely (7 is the most common). Fix: count cells in the table, not totals.\n- **Forgetting the item is gone without replacement.** Fix: the second step has one fewer item.\n- **Double-counting in \"at least one\".** Fix: use 1 − P(none), or subtract the overlap.\n\n## Tips to remember\n\n- **\"Branch from every branch.\"** Each step 1 result gets the full set of step 2 branches. (A made-up memory trick.)\n- **Multiply to count, then divide to find P.** m × n outcomes, then favourable ÷ total.\n- **Name identical items.** Call two red marbles R1 and R2 so the outcomes stay equally likely.\n- **\"At least one\" means \"1 minus none\".**\n- **Seven is heaven.** With two dice, 7 is the most likely total (6 ways out of 36).\n\n## Key terms\n\n- **Two-step experiment** — a chance experiment made of two actions, such as tossing a coin then rolling a die.\n- **Outcome** — one possible result; for two steps, a pair like (H, 4).\n- **Sample space** — the list of all possible outcomes.\n- **Tree diagram** — a branching diagram where each path is one outcome.\n- **Table (array)** — a grid listing every outcome of two steps.\n- **With replacement** — the item is put back before the next pick.\n- **Without replacement** — the item is not put back, so the next pick has one fewer choice.\n\n## Summary\n\n- Step 1 with m outcomes and step 2 with n outcomes give m × n outcomes.\n- Use a tree diagram for a few branches and a table for two dice or similar.\n- If outcomes are equally likely, P = favourable ÷ total; along a tree you can multiply.\n- Without replacement, the second step has one fewer item, which changes the probabilities.\n- For \"at least one\", work out 1 − P(none).\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "A coin is tossed and a normal six-sided die is rolled. How many different outcomes are in the sample space?",
-      "options": {
-        "A": "12",
-        "B": "8",
-        "C": "6",
-        "D": "36"
-      },
-      "answer": "A",
-      "explanation": "Each of the 2 coin results pairs with each of the 6 numbers: 2 × 6 = 12 outcomes, from (H, 1) to (T, 6). Adding (2 + 6 = 8) misses most of the pairs.",
-      "steps": [
-        "The coin has 2 outcomes and the die has 6 outcomes.",
-        "Every coin result pairs with every die result, so the total is 2 × 6 = 12."
-      ],
-      "mistakes": {
-        "B": "Step 2: you added 2 + 6. Each of the 2 coin results pairs with each of the 6 die results, so multiply.",
-        "C": "Step 1: 6 is only the die. Each die number can come with a head or a tail.",
-        "D": "Step 2: 6 × 6 = 36 is for two dice. A coin has only 2 outcomes."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "The tree diagram shows a coin being tossed twice. What is the probability of getting exactly one head?",
-      "options": {
-        "A": "1/4",
-        "B": "1/3",
-        "C": "1/2",
-        "D": "3/4"
-      },
-      "answer": "C",
-      "explanation": "The four equally likely outcomes are HH, HT, TH and TT; exactly one head is HT or TH, so 2/4 = 1/2. Choosing 1/4 forgets that TH also counts.",
-      "steps": [
-        "Read the ends of the tree: HH, HT, TH, TT — 4 equally likely outcomes.",
-        "Exactly one head: HT and TH — 2 outcomes.",
-        "P = 2/4 = 1/2."
-      ],
-      "mistakes": {
-        "A": "Step 2: HT is not the only way — TH also has exactly one head.",
-        "B": "Step 1: there are 4 equally likely outcomes, not 3. HT and TH are different outcomes.",
-        "D": "Step 2: 3/4 is \"at least one head\", which also includes HH. Exactly one head means one H and one T."
-      },
-      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q2.svg",
-      "diagram_alt": "A tree diagram for tossing a coin twice. The first toss branches to H and T with probability 1/2 each; each of those branches again to H and T with probability 1/2. The outcomes are HH, HT, TH and TT."
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "The spinner has four equal sections numbered 1, 2, 3 and 4. It is spun twice. What is the probability of getting 4 both times?",
-      "options": {
-        "A": "1/2",
-        "B": "1/4",
-        "C": "2/16",
-        "D": "1/16"
-      },
-      "answer": "D",
-      "explanation": "Two spins give 4 × 4 = 16 equally likely outcomes, and only (4, 4) works: 1/16 (or 1/4 × 1/4). Adding the chances gives 1/2, which is far too big.",
-      "steps": [
-        "Two spins: 4 × 4 = 16 equally likely outcomes.",
-        "Only one outcome is (4, 4), so P = 1/16 (check: 1/4 × 1/4 = 1/16)."
-      ],
-      "mistakes": {
-        "A": "Step 2: you added 1/4 + 1/4. For \"this AND that\" on a tree, multiply along the path.",
-        "B": "Step 1: 1/4 is the chance for one spin. Two spins give 4 × 4 = 16 outcomes.",
-        "C": "Step 2: (4, 4) is only one outcome — it cannot be counted twice."
-      },
-      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q3.svg",
-      "diagram_alt": "A spinner divided into four equal sections labelled 1, 2, 3 and 4."
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Two fair dice are rolled and the numbers are added. The table shows every total. What is the probability of a total of 8?",
-      "options": {
-        "A": "1/11",
-        "B": "5/36",
-        "C": "1/6",
-        "D": "8/36"
-      },
-      "answer": "B",
-      "explanation": "The total 8 appears in 5 of the 36 equally likely cells (2 and 6, 3 and 5, 4 and 4, 5 and 3, 6 and 2), so P = 5/36. Using 1/11 wrongly treats every total as equally likely.",
-      "steps": [
-        "The table has 6 × 6 = 36 equally likely cells.",
-        "Count the cells showing 8: (2, 6), (3, 5), (4, 4), (5, 3), (6, 2) — 5 cells.",
-        "P(total of 8) = 5/36."
-      ],
-      "mistakes": {
-        "A": "Step 1: the 11 totals from 2 to 12 are not equally likely. Count the 36 cells instead.",
-        "C": "Step 2: 1/6 (6 cells) is the chance of a total of 7. Count only the cells showing 8.",
-        "D": "Step 2: the total 8 does not appear 8 times. Count the cells that show 8."
-      },
-      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q4.svg",
-      "diagram_alt": "A 6 by 6 table with the first die (1 to 6) down the side and the second die (1 to 6) across the top; each cell shows the total of the two dice, from 2 up to 12."
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Three cards show the digits 1, 2 and 3. Two cards are drawn without replacement: the first is the tens digit and the second is the units digit. What is the probability that the two-digit number is even?",
-      "options": {
-        "A": "1/3",
-        "B": "1/2",
-        "C": "2/3",
-        "D": "1/6"
-      },
-      "answer": "A",
-      "explanation": "The six numbers are 12, 13, 21, 23, 31 and 32. Only 12 and 32 are even, so P = 2/6 = 1/3. Guessing 1/2 ignores that only one of the three digits is even.",
-      "steps": [
-        "Without replacement there are 3 × 2 = 6 numbers: 12, 13, 21, 23, 31, 32.",
-        "Even numbers end in 2: 12 and 32 — 2 numbers.",
-        "P(even) = 2/6 = 1/3."
-      ],
-      "mistakes": {
-        "B": "Step 2: numbers are not automatically half even here. List all 6 numbers and count the even ones.",
-        "C": "Step 2: you counted the odd numbers (13, 21, 23, 31). Even numbers end in 2.",
-        "D": "Step 2: 32 is not the only even number — 12 also ends in 2."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "On the spinner, the red section (R) is half of the circle, and blue (B) and green (G) are a quarter each. The spinner is spun twice. What is the probability of red both times?",
-      "options": {
-        "A": "1/9",
-        "B": "1/3",
-        "C": "1/4",
-        "D": "1"
-      },
-      "answer": "C",
-      "explanation": "P(red) = 1/2 on each spin, so P(red, red) = 1/2 × 1/2 = 1/4. (Or split the spinner into four equal quarters R, R, B, G: 4 of the 16 outcomes are red-red.) 1/9 wrongly treats the colours as equally likely.",
-      "steps": [
-        "Red is half of the spinner, so P(red) = 1/2 on each spin.",
-        "Red AND red: multiply along the path, 1/2 × 1/2 = 1/4."
-      ],
-      "mistakes": {
-        "A": "Step 1: the three colours are not equally likely — red covers half the circle.",
-        "B": "Step 1: red is not 1 out of 3 equally likely colours; it is half the spinner.",
-        "D": "Step 2: you added 1/2 + 1/2. For red AND red, multiply."
-      },
-      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q6.svg",
-      "diagram_alt": "A spinner where red (R) is half of the circle, and blue (B) and green (G) are each a quarter."
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Two fair dice are rolled. What is the probability of getting at least one six?",
-      "options": {
-        "A": "1/3",
-        "B": "1/36",
-        "C": "5/18",
-        "D": "11/36"
-      },
-      "answer": "D",
-      "explanation": "No six on either die: 5 × 5 = 25 of 36 outcomes, so P(at least one six) = 1 − 25/36 = 11/36. Adding 1/6 + 1/6 counts double six twice.",
-      "steps": [
-        "Count the opposite: no six on either die gives 5 × 5 = 25 outcomes out of 36.",
-        "P(no six) = 25/36.",
-        "P(at least one six) = 1 − 25/36 = 11/36."
-      ],
-      "mistakes": {
-        "A": "Step 3: you added 1/6 + 1/6 = 12/36, which counts (6, 6) twice.",
-        "B": "Step 3: 1/36 is two sixes. \"At least one\" also includes exactly one six.",
-        "C": "Step 3: you left out (6, 6). Two sixes still counts as \"at least one\"."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A bag holds 3 red and 2 blue counters. Two counters are taken out one after the other, without replacement. What is the probability that both are blue?",
-      "options": {
-        "A": "4/25",
-        "B": "1/10",
-        "C": "3/10",
-        "D": "1/5"
-      },
-      "answer": "B",
-      "explanation": "Ordered outcomes: 5 × 4 = 20; blue then blue: B1B2 and B2B1, so 2/20 = 1/10. (Also 2/5 × 1/4 = 2/20.) 4/25 is the answer only if the first counter is put back.",
-      "steps": [
-        "Without replacement: 5 choices then 4 choices = 20 ordered outcomes.",
-        "Both blue: B1 then B2, or B2 then B1 — 2 outcomes.",
-        "P(both blue) = 2/20 = 1/10."
-      ],
-      "mistakes": {
-        "A": "Step 1: 4/25 is with replacement. Without replacement there are only 4 counters left for the second pick.",
-        "C": "Step 3: 3/10 is the chance that both are red. Count the blue-blue outcomes.",
-        "D": "Step 3: you counted B1B2 and B2B1 (2 outcomes) but compared them with 10 unordered pairs. Use ordered outcomes for both: 2 out of 20."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Two fair dice are rolled and the two numbers are multiplied. What is the probability that the product is odd?",
-      "options": {
-        "A": "1/4",
-        "B": "1/2",
-        "C": "3/4",
-        "D": "1/12"
-      },
-      "answer": "A",
-      "explanation": "A product is odd only when both numbers are odd: 3 × 3 = 9 of the 36 outcomes, so P = 9/36 = 1/4. Guessing 1/2 forgets that a single even number makes the product even.",
-      "steps": [
-        "A product is odd only if BOTH numbers are odd (1, 3 or 5).",
-        "Both odd: 3 × 3 = 9 outcomes out of 6 × 6 = 36.",
-        "P(odd product) = 9/36 = 1/4."
-      ],
-      "mistakes": {
-        "B": "Step 1: odd and even products are not equally likely — one even number makes the whole product even.",
-        "C": "Step 3: 3/4 is the chance the product is EVEN. Odd needs both numbers odd.",
-        "D": "Step 2: you only counted doubles (1×1, 3×3, 5×5). Pairs like (1, 3) and (5, 1) are odd too."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Sam and Kim roll two dice and add the numbers. Sam wins if the total is 6, 7 or 8. Kim wins with any other total. Which statement is correct?",
-      "options": {
-        "A": "Sam is less likely to win: Sam has 3 of the 11 totals, so P(Sam wins) = 3/11.",
-        "B": "Sam is more likely to win, because 6, 7 and 8 are the most common totals.",
-        "C": "Kim is more likely to win: 20 chances in 36 compared with Sam's 16.",
-        "D": "The game is fair, because each player can win."
-      },
-      "answer": "C",
-      "explanation": "Totals of 6, 7 and 8 fill 5 + 6 + 5 = 16 of the 36 cells, so Kim's totals fill 20: P(Kim) = 20/36 = 5/9, more than half. 7 being the most common total is not enough to give Sam the advantage.",
-      "steps": [
-        "Use the 36-cell table of totals.",
-        "Total 6: 5 cells; total 7: 6 cells; total 8: 5 cells — Sam has 16 cells.",
-        "Kim has 36 − 16 = 20 cells, so Kim is more likely to win (20/36 compared with 16/36)."
-      ],
-      "mistakes": {
-        "A": "Step 1: the totals are not equally likely. Count cells in the 36-cell table.",
-        "B": "Step 3: 6, 7 and 8 are common, but together they fill only 16 of 36 cells — the other totals fill 20.",
-        "D": "Step 3: fair means equal chances. Compare 16 out of 36 with 20 out of 36."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A bag holds 1 red counter and some blue counters. A counter is taken, put back, and then a second counter is taken. The probability that both are red is 1/16. How many blue counters are in the bag?",
-      "options": {
-        "A": "15",
-        "B": "3",
-        "C": "4",
-        "D": "16"
-      },
-      "answer": "B",
-      "explanation": "With replacement, P(both red) = P(red) × P(red) = 1/16, so P(red) = 1/4. One red out of 4 counters means 3 blue. Answering 15 treats 1/16 as the chance for a single pick.",
-      "steps": [
-        "With replacement, P(both red) = P(red) × P(red).",
-        "Which fraction times itself gives 1/16? 1/4 × 1/4 = 1/16, so P(red) = 1/4.",
-        "1 red out of 4 counters in total, so there are 4 − 1 = 3 blue counters."
-      ],
-      "mistakes": {
-        "A": "Step 2: 1/16 is for two picks. Find P(red) for one pick first — it is the number that multiplies by itself to give 1/16.",
-        "C": "Step 3: 4 is the total number of counters. Subtract the 1 red counter.",
-        "D": "Step 2: 16 is the number of two-pick outcomes, not the number of counters."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The tree diagram shows a spinner (P, Q or R, equally likely) followed by a coin toss. Sam says P(Q or a head) = 1/3 + 1/2 = 5/6. What is the correct probability of getting Q or a head (or both)?",
-      "options": {
-        "A": "5/6",
-        "B": "1/6",
-        "C": "1/2",
-        "D": "2/3"
-      },
-      "answer": "D",
-      "explanation": "The outcomes with Q or a head are PH, QH, QT and RH: 4 of 6, so 2/3. Sam's 5/6 counts QH twice.",
-      "steps": [
-        "There are 3 × 2 = 6 equally likely outcomes: PH, PT, QH, QT, RH, RT.",
-        "Q or a head (or both): PH, QH, QT, RH — 4 outcomes, with QH counted once.",
-        "P = 4/6 = 2/3."
-      ],
-      "mistakes": {
-        "A": "Step 3: adding 1/3 + 1/2 counts the outcome QH twice — once for Q and once for the head.",
-        "B": "Step 2: 1/6 is Q AND a head (only QH). \"Or\" includes every outcome with Q, a head, or both.",
-        "C": "Step 2: you counted only the head outcomes (PH, QH, RH). QT also has Q."
-      },
-      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q12.svg",
-      "diagram_alt": "A tree diagram. The spinner gives P, Q or R, each with probability 1/3. Each then branches to H or T with probability 1/2. The outcomes are PH, PT, QH, QT, RH and RT."
-    }
-  ]
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7 Advanced",
+ "title": "Two-step chance experiments",
+ "summary": "List the outcomes of two-step chance experiments with tables and tree diagrams, find probabilities by counting, and compare picking with and without replacement.",
+ "minutes": 40,
+ "video": "videos/y7/maths-advanced/two-step-chance-experiments.mp4",
+ "body": "Roll two dice in a board game, toss a coin and then spin a spinner, or pick two raffle tickets from a hat — each of these is a chance experiment with **two steps**. The trick is to list every possible result in an organised way, so you never miss one or count one twice. Game designers do exactly this to make sure their games are fair.\n\n## Learning objective\n\nBy the end of this lesson you can list the sample space of a two-step experiment with a table or a tree diagram, find probabilities by counting equally likely outcomes, and explain how \"with replacement\" and \"without replacement\" change the answer.\n\n## Before you start\n\nThis lesson builds on *Chance and the probability scale (Year 7)* and *Experiments and relative frequency (Year 7)*. You need P(event) = number of favourable outcomes ÷ total number of equally likely outcomes, and P(not A) = 1 − P(A).\n\n**Warm-up**\n\n1. A fair die is rolled. What is P(number greater than 4)? *(Answer: 5 and 6 work, so 2/6 = 1/3)*\n2. If P(rain) = 0.3, what is P(no rain)? *(Answer: 1 − 0.3 = 0.7)*\n\n## Think of it like this\n\n### Ordering at a café\n\nA café offers a toastie (ham, cheese or tomato) with a drink (juice or milk). To count every possible order, you pick the toastie first, then for EACH toastie you pick a drink: 3 × 2 = 6 different orders. A two-step experiment works the same way — every first result branches into every second result.\n\n*Where the analogy breaks down:* in a café you choose what you like, but in a chance experiment every outcome must be **equally likely** before you can just count them.\n\n## Key ideas\n\n### Sample space for two steps\n\nA **two-step experiment** is made of two chance actions, one after the other (or together, like two dice). Each **outcome** is a pair, such as (H, 4). The **sample space** is the list of all possible outcomes. If step 1 has m outcomes and step 2 has n outcomes, there are **m × n** outcomes in total.\n\nOrder matters: (H, T) and (T, H) are different outcomes. Getting \"one head and one tail\" can happen in two ways.\n\n### Tree diagrams\n\nA **tree diagram** draws step 1 as branches, then adds the step 2 branches onto the end of EACH first branch. Every path from left to right is one outcome. The fraction on a branch is the probability of that branch.\n\n![A tree diagram. A coin gives H or T, each with probability 1/2. From each, a spinner gives R, B or G, each with probability 1/3. The six outcomes listed at the ends are HR, HB, HG, TR, TB and TG](/diagrams/y7/maths-advanced/two-step-chance-experiments-tree.svg)\n\n### Tables (grids)\n\nWhen both steps have several outcomes — like two dice — a **table** (also called an array or grid) is neater. Put step 1 down the side, step 2 across the top, and fill each cell with the outcome or the result you care about (such as the total).\n\n### Counting the probability\n\nIf every outcome is equally likely:\n\n`P(event) = number of outcomes in the event ÷ total number of outcomes`\n\nShortcut along a tree: multiply the probabilities along a path. For heads then blue: 1/2 × 1/3 = 1/6.\n\n### With and without replacement\n\nTaking an item from a bag, then putting it back before the second pick, is **with replacement** — the second pick is exactly like the first. **Without replacement** means the item stays out, so there is one fewer item for the second pick, and you cannot pick the same item twice.\n\n### \"At least one\" — use the complement\n\n\"At least one six\" includes one six or two sixes. It is often quicker to count the opposite (no sixes at all) and subtract from 1.\n\n## Worked examples\n\n### Example 1\n\nA coin is tossed, then a spinner with three equal sections — red, blue and green — is spun. Find P(head and blue) and P(head and not red).\n\nStep 1: draw the tree (above) — 2 × 3 = 6 equally likely outcomes: HR, HB, HG, TR, TB, TG.\nStep 2: head and blue is just HB: P = **1/6**. Check with the shortcut: 1/2 × 1/3 = 1/6 ✓\nStep 3: head and not red: HB and HG, so P = 2/6 = **1/3**.\n\n### Example 2\n\nTwo fair dice are rolled and the numbers are added. Find P(total of 7), P(total of 10 or more) and P(a double).\n\n![A 6 by 6 table. The first die (1 to 6) runs down the side and the second die (1 to 6) runs across the top. Each cell shows the total. The six cells with a total of 7 are shaded: 1 and 6, 2 and 5, 3 and 4, 4 and 3, 5 and 2, 6 and 1](/diagrams/y7/maths-advanced/two-step-chance-experiments-grid.svg)\n\nStep 1: the table has 6 × 6 = 36 equally likely cells.\nStep 2: a total of 7 appears 6 times (shaded), so P = 6/36 = **1/6**.\nStep 3: 10 or more: 10 appears 3 times, 11 twice, 12 once — 6 cells, so P = 6/36 = **1/6**.\nStep 4: doubles run down the diagonal (1 and 1, …, 6 and 6) — 6 cells, so P = **1/6**.\n\n### Example 3\n\nA bag holds 2 red marbles and 1 green marble. Two marbles are taken out. Find P(both red) (a) with replacement and (b) without replacement.\n\nStep 1: name the marbles R1, R2 and G so that every outcome is equally likely.\nStep 2: (a) with replacement there are 3 × 3 = 9 outcomes. Both red: R1R1, R1R2, R2R1, R2R2 — 4 outcomes, so P = **4/9**.\nStep 3: (b) without replacement the second pick has only 2 marbles left: 3 × 2 = 6 outcomes — R1R2, R1G, R2R1, R2G, GR1, GR2.\nStep 4: both red: R1R2 and R2R1, so P = 2/6 = **1/3**.\nCheck: 1/3 is smaller than 4/9, which makes sense — once a red is taken out, there are fewer reds left.\n\n### Example 4\n\nTwo dice are rolled. Find P(at least one six).\n\nStep 1: count the opposite — no six on either die. Each die has 5 non-sixes, so 5 × 5 = 25 outcomes.\nStep 2: P(no six) = 25/36.\nStep 3: P(at least one six) = 1 − 25/36 = **11/36**.\nCheck by counting the table: 6 cells in the \"6\" row, 6 in the \"6\" column, but (6, 6) was counted twice: 6 + 6 − 1 = 11 ✓\n\n## Common mistakes\n\n- **Adding instead of multiplying the number of outcomes.** A coin and a die give 2 × 6 = 12 outcomes, not 2 + 6 = 8. Fix: every first outcome pairs with every second outcome.\n- **Treating \"one head and one tail\" as one outcome.** HT and TH are different. Fix: list ordered pairs.\n- **Counting totals as equally likely.** The totals 2 to 12 are NOT equally likely (7 is the most common). Fix: count cells in the table, not totals.\n- **Forgetting the item is gone without replacement.** Fix: the second step has one fewer item.\n- **Double-counting in \"at least one\".** Fix: use 1 − P(none), or subtract the overlap.\n\n## Tips to remember\n\n- **\"Branch from every branch.\"** Each step 1 result gets the full set of step 2 branches. (A made-up memory trick.)\n- **Multiply to count, then divide to find P.** m × n outcomes, then favourable ÷ total.\n- **Name identical items.** Call two red marbles R1 and R2 so the outcomes stay equally likely.\n- **\"At least one\" means \"1 minus none\".**\n- **Seven is heaven.** With two dice, 7 is the most likely total (6 ways out of 36).\n\n## Key terms\n\n- **Two-step experiment** — a chance experiment made of two actions, such as tossing a coin then rolling a die.\n- **Outcome** — one possible result; for two steps, a pair like (H, 4).\n- **Sample space** — the list of all possible outcomes.\n- **Tree diagram** — a branching diagram where each path is one outcome.\n- **Table (array)** — a grid listing every outcome of two steps.\n- **With replacement** — the item is put back before the next pick.\n- **Without replacement** — the item is not put back, so the next pick has one fewer choice.\n\n## Summary\n\n- Step 1 with m outcomes and step 2 with n outcomes give m × n outcomes.\n- Use a tree diagram for a few branches and a table for two dice or similar.\n- If outcomes are equally likely, P = favourable ÷ total; along a tree you can multiply.\n- Without replacement, the second step has one fewer item, which changes the probabilities.\n- For \"at least one\", work out 1 − P(none).\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "A coin is tossed and a normal six-sided die is rolled. How many different outcomes are in the sample space?",
+   "options": {
+    "A": "12",
+    "B": "8",
+    "C": "6",
+    "D": "36"
+   },
+   "answer": "A",
+   "explanation": "Each of the 2 coin results pairs with each of the 6 numbers: 2 × 6 = 12 outcomes, from (H, 1) to (T, 6). Adding (2 + 6 = 8) misses most of the pairs.",
+   "steps": [
+    "The coin has 2 outcomes and the die has 6 outcomes.",
+    "Every coin result pairs with every die result, so the total is 2 × 6 = 12."
+   ],
+   "mistakes": {
+    "B": "Step 2: you added 2 + 6. Each of the 2 coin results pairs with each of the 6 die results, so multiply.",
+    "C": "Step 1: 6 is only the die. Each die number can come with a head or a tail.",
+    "D": "Step 2: 6 × 6 = 36 is for two dice. A coin has only 2 outcomes."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The tree diagram shows a coin being tossed twice. What is the probability of getting exactly one head?",
+   "options": {
+    "A": "1/4",
+    "B": "1/3",
+    "C": "1/2",
+    "D": "3/4"
+   },
+   "answer": "C",
+   "explanation": "The four equally likely outcomes are HH, HT, TH and TT; exactly one head is HT or TH, so 2/4 = 1/2. Choosing 1/4 forgets that TH also counts.",
+   "steps": [
+    "Read the ends of the tree: HH, HT, TH, TT — 4 equally likely outcomes.",
+    "Exactly one head: HT and TH — 2 outcomes.",
+    "P = 2/4 = 1/2."
+   ],
+   "mistakes": {
+    "A": "Step 2: HT is not the only way — TH also has exactly one head.",
+    "B": "Step 1: there are 4 equally likely outcomes, not 3. HT and TH are different outcomes.",
+    "D": "Step 2: 3/4 is \"at least one head\", which also includes HH. Exactly one head means one H and one T."
+   },
+   "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q2.svg",
+   "diagram_alt": "A tree diagram for tossing a coin twice. The first toss branches to H and T with probability 1/2 each; each of those branches again to H and T with probability 1/2. The outcomes are HH, HT, TH and TT."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The spinner has four equal sections numbered 1, 2, 3 and 4. It is spun twice. What is the probability of getting 4 both times?",
+   "options": {
+    "A": "1/2",
+    "B": "1/4",
+    "C": "2/16",
+    "D": "1/16"
+   },
+   "answer": "D",
+   "explanation": "Two spins give 4 × 4 = 16 equally likely outcomes, and only (4, 4) works: 1/16 (or 1/4 × 1/4). Adding the chances gives 1/2, which is far too big.",
+   "steps": [
+    "Two spins: 4 × 4 = 16 equally likely outcomes.",
+    "Only one outcome is (4, 4), so P = 1/16 (check: 1/4 × 1/4 = 1/16)."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 1/4 + 1/4. For \"this AND that\" on a tree, multiply along the path.",
+    "B": "Step 1: 1/4 is the chance for one spin. Two spins give 4 × 4 = 16 outcomes.",
+    "C": "Step 2: (4, 4) is only one outcome — it cannot be counted twice."
+   },
+   "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q3.svg",
+   "diagram_alt": "A spinner divided into four equal sections labelled 1, 2, 3 and 4."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Two fair dice are rolled and the numbers are added. The table shows every total. What is the probability of a total of 8?",
+   "options": {
+    "A": "1/11",
+    "B": "5/36",
+    "C": "1/6",
+    "D": "8/36"
+   },
+   "answer": "B",
+   "explanation": "The total 8 appears in 5 of the 36 equally likely cells (2 and 6, 3 and 5, 4 and 4, 5 and 3, 6 and 2), so P = 5/36. Using 1/11 wrongly treats every total as equally likely.",
+   "steps": [
+    "The table has 6 × 6 = 36 equally likely cells.",
+    "Count the cells showing 8: (2, 6), (3, 5), (4, 4), (5, 3), (6, 2) — 5 cells.",
+    "P(total of 8) = 5/36."
+   ],
+   "mistakes": {
+    "A": "Step 1: the 11 totals from 2 to 12 are not equally likely. Count the 36 cells instead.",
+    "C": "Step 2: 1/6 (6 cells) is the chance of a total of 7. Count only the cells showing 8.",
+    "D": "Step 2: the total 8 does not appear 8 times. Count the cells that show 8."
+   },
+   "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q4.svg",
+   "diagram_alt": "A 6 by 6 table with the first die (1 to 6) down the side and the second die (1 to 6) across the top; each cell shows the total of the two dice, from 2 up to 12."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Three cards show the digits 1, 2 and 3. Two cards are drawn without replacement: the first is the tens digit and the second is the units digit. What is the probability that the two-digit number is even?",
+   "options": {
+    "A": "1/3",
+    "B": "1/2",
+    "C": "2/3",
+    "D": "1/6"
+   },
+   "answer": "A",
+   "explanation": "The six numbers are 12, 13, 21, 23, 31 and 32. Only 12 and 32 are even, so P = 2/6 = 1/3. Guessing 1/2 ignores that only one of the three digits is even.",
+   "steps": [
+    "Without replacement there are 3 × 2 = 6 numbers: 12, 13, 21, 23, 31, 32.",
+    "Even numbers end in 2: 12 and 32 — 2 numbers.",
+    "P(even) = 2/6 = 1/3."
+   ],
+   "mistakes": {
+    "B": "Step 2: numbers are not automatically half even here. List all 6 numbers and count the even ones.",
+    "C": "Step 2: you counted the odd numbers (13, 21, 23, 31). Even numbers end in 2.",
+    "D": "Step 2: 32 is not the only even number — 12 also ends in 2."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "On the spinner, the red section (R) is half of the circle, and blue (B) and green (G) are a quarter each. The spinner is spun twice. What is the probability of red both times?",
+   "options": {
+    "A": "1/9",
+    "B": "1/3",
+    "C": "1/4",
+    "D": "1"
+   },
+   "answer": "C",
+   "explanation": "P(red) = 1/2 on each spin, so P(red, red) = 1/2 × 1/2 = 1/4. (Or split the spinner into four equal quarters R, R, B, G: 4 of the 16 outcomes are red-red.) 1/9 wrongly treats the colours as equally likely.",
+   "steps": [
+    "Red is half of the spinner, so P(red) = 1/2 on each spin.",
+    "Red AND red: multiply along the path, 1/2 × 1/2 = 1/4."
+   ],
+   "mistakes": {
+    "A": "Step 1: the three colours are not equally likely — red covers half the circle.",
+    "B": "Step 1: red is not 1 out of 3 equally likely colours; it is half the spinner.",
+    "D": "Step 2: you added 1/2 + 1/2. For red AND red, multiply."
+   },
+   "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q6.svg",
+   "diagram_alt": "A spinner where red (R) is half of the circle, and blue (B) and green (G) are each a quarter."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Two fair dice are rolled. What is the probability of getting at least one six?",
+   "options": {
+    "A": "1/3",
+    "B": "1/36",
+    "C": "5/18",
+    "D": "11/36"
+   },
+   "answer": "D",
+   "explanation": "No six on either die: 5 × 5 = 25 of 36 outcomes, so P(at least one six) = 1 − 25/36 = 11/36. Adding 1/6 + 1/6 counts double six twice.",
+   "steps": [
+    "Count the opposite: no six on either die gives 5 × 5 = 25 outcomes out of 36.",
+    "P(no six) = 25/36.",
+    "P(at least one six) = 1 − 25/36 = 11/36."
+   ],
+   "mistakes": {
+    "A": "Step 3: you added 1/6 + 1/6 = 12/36, which counts (6, 6) twice.",
+    "B": "Step 3: 1/36 is two sixes. \"At least one\" also includes exactly one six.",
+    "C": "Step 3: you left out (6, 6). Two sixes still counts as \"at least one\"."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A bag holds 3 red and 2 blue counters. Two counters are taken out one after the other, without replacement. What is the probability that both are blue?",
+   "options": {
+    "A": "4/25",
+    "B": "1/10",
+    "C": "3/10",
+    "D": "1/5"
+   },
+   "answer": "B",
+   "explanation": "Ordered outcomes: 5 × 4 = 20; blue then blue: B1B2 and B2B1, so 2/20 = 1/10. (Also 2/5 × 1/4 = 2/20.) 4/25 is the answer only if the first counter is put back.",
+   "steps": [
+    "Without replacement: 5 choices then 4 choices = 20 ordered outcomes.",
+    "Both blue: B1 then B2, or B2 then B1 — 2 outcomes.",
+    "P(both blue) = 2/20 = 1/10."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4/25 is with replacement. Without replacement there are only 4 counters left for the second pick.",
+    "C": "Step 3: 3/10 is the chance that both are red. Count the blue-blue outcomes.",
+    "D": "Step 3: you counted B1B2 and B2B1 (2 outcomes) but compared them with 10 unordered pairs. Use ordered outcomes for both: 2 out of 20."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Two fair dice are rolled and the two numbers are multiplied. What is the probability that the product is odd?",
+   "options": {
+    "A": "1/4",
+    "B": "1/2",
+    "C": "3/4",
+    "D": "1/12"
+   },
+   "answer": "A",
+   "explanation": "A product is odd only when both numbers are odd: 3 × 3 = 9 of the 36 outcomes, so P = 9/36 = 1/4. Guessing 1/2 forgets that a single even number makes the product even.",
+   "steps": [
+    "A product is odd only if BOTH numbers are odd (1, 3 or 5).",
+    "Both odd: 3 × 3 = 9 outcomes out of 6 × 6 = 36.",
+    "P(odd product) = 9/36 = 1/4."
+   ],
+   "mistakes": {
+    "B": "Step 1: odd and even products are not equally likely — one even number makes the whole product even.",
+    "C": "Step 3: 3/4 is the chance the product is EVEN. Odd needs both numbers odd.",
+    "D": "Step 2: you only counted doubles (1×1, 3×3, 5×5). Pairs like (1, 3) and (5, 1) are odd too."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Sam and Kim roll two dice and add the numbers. Sam wins if the total is 6, 7 or 8. Kim wins with any other total. Which statement is correct?",
+   "options": {
+    "A": "Sam is less likely to win: Sam has 3 of the 11 totals, so P(Sam wins) = 3/11.",
+    "B": "Sam is more likely to win, because 6, 7 and 8 are the most common totals.",
+    "C": "Kim is more likely to win: 20 chances in 36 compared with Sam's 16.",
+    "D": "The game is fair, because each player can win."
+   },
+   "answer": "C",
+   "explanation": "Totals of 6, 7 and 8 fill 5 + 6 + 5 = 16 of the 36 cells, so Kim's totals fill 20: P(Kim) = 20/36 = 5/9, more than half. 7 being the most common total is not enough to give Sam the advantage.",
+   "steps": [
+    "Use the 36-cell table of totals.",
+    "Total 6: 5 cells; total 7: 6 cells; total 8: 5 cells — Sam has 16 cells.",
+    "Kim has 36 − 16 = 20 cells, so Kim is more likely to win (20/36 compared with 16/36)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the totals are not equally likely. Count cells in the 36-cell table.",
+    "B": "Step 3: 6, 7 and 8 are common, but together they fill only 16 of 36 cells — the other totals fill 20.",
+    "D": "Step 3: fair means equal chances. Compare 16 out of 36 with 20 out of 36."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A bag holds 1 red counter and some blue counters. A counter is taken, put back, and then a second counter is taken. The probability that both are red is 1/16. How many blue counters are in the bag?",
+   "options": {
+    "A": "15",
+    "B": "3",
+    "C": "4",
+    "D": "16"
+   },
+   "answer": "B",
+   "explanation": "With replacement, P(both red) = P(red) × P(red) = 1/16, so P(red) = 1/4. One red out of 4 counters means 3 blue. Answering 15 treats 1/16 as the chance for a single pick.",
+   "steps": [
+    "With replacement, P(both red) = P(red) × P(red).",
+    "Which fraction times itself gives 1/16? 1/4 × 1/4 = 1/16, so P(red) = 1/4.",
+    "1 red out of 4 counters in total, so there are 4 − 1 = 3 blue counters."
+   ],
+   "mistakes": {
+    "A": "Step 2: 1/16 is for two picks. Find P(red) for one pick first — it is the number that multiplies by itself to give 1/16.",
+    "C": "Step 3: 4 is the total number of counters. Subtract the 1 red counter.",
+    "D": "Step 2: 16 is the number of two-pick outcomes, not the number of counters."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The tree diagram shows a spinner (P, Q or R, equally likely) followed by a coin toss. Sam says P(Q or a head) = 1/3 + 1/2 = 5/6. What is the correct probability of getting Q or a head (or both)?",
+   "options": {
+    "A": "5/6",
+    "B": "1/6",
+    "C": "1/2",
+    "D": "2/3"
+   },
+   "answer": "D",
+   "explanation": "The outcomes with Q or a head are PH, QH, QT and RH: 4 of 6, so 2/3. Sam's 5/6 counts QH twice.",
+   "steps": [
+    "There are 3 × 2 = 6 equally likely outcomes: PH, PT, QH, QT, RH, RT.",
+    "Q or a head (or both): PH, QH, QT, RH — 4 outcomes, with QH counted once.",
+    "P = 4/6 = 2/3."
+   ],
+   "mistakes": {
+    "A": "Step 3: adding 1/3 + 1/2 counts the outcome QH twice — once for Q and once for the head.",
+    "B": "Step 2: 1/6 is Q AND a head (only QH). \"Or\" includes every outcome with Q, a head, or both.",
+    "C": "Step 2: you counted only the head outcomes (PH, QH, RH). QT also has Q."
+   },
+   "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-q12.svg",
+   "diagram_alt": "A tree diagram. The spinner gives P, Q or R, each with probability 1/3. Each then branches to H or T with probability 1/2. The outcomes are PH, PT, QH, QT, RH and RT."
+  }
+ ]
 }

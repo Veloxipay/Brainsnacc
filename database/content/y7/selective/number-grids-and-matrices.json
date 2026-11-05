@@ -1,294 +1,295 @@
 {
-  "level": "Year 7",
-  "subject": "selective",
-  "unit": "Selective",
-  "title": "Number grids and matrices",
-  "summary": "How to find the rule in number grids by testing rows and columns, and how to solve number pyramids, magic squares and hidden multiplication grids.",
-  "minutes": 25,
-  "body": "Number grid questions (sometimes called **matrices**) arrange numbers in rows and columns, in a pyramid, or in a square, with one or two numbers missing. A single rule links the numbers, and your job is to find it and fill the gap. They appear in quantitative reasoning because they test whether you can check a rule in two directions at once.\n\n## What you will learn\n\nBy the end of this lesson you can find the rule in a number grid by testing rows, then columns, then other shapes, and you can solve pyramids, magic squares and hidden multiplication grids.\n\n## How these questions work\n\n### Row rules\nThe same rule works across every row. A common one is \"first + second = third\", but it might be subtraction, multiplication or a two-step rule.\n\n| | | |\n|---|---|---|\n| 2 | 5 | 10 |\n| 3 | 4 | 12 |\n| 6 | 4 | ? |\n\nHere first × second = third (2 × 5 = 10, 3 × 4 = 12), so ? = 24.\n\n### Column rules\nThe same rule works down every column instead. If the rows make no sense, turn your head and read the columns.\n\n### Number pyramids\nEach brick is the **sum of the two bricks directly underneath it**. You may be asked for the top, a brick in the middle, or a brick on the bottom.\n\n### Magic squares\nEvery row, column and both diagonals add to the same **magic total**. Find the total from any complete line, then fill the gaps one at a time.\n\n### Hidden multiplication grids\nEach number inside the grid is a row number × a column number, but the row and column numbers are hidden. The trick: compare the numbers *by multiplying*, not by adding.\n\n## Strategies\n\n### Strategy 1: Rows, then columns, then the rest\n1. Look at the first complete **row**. Try +, −, × and ÷ between the first two numbers to make the third.\n2. **Test** the rule on every other complete row.\n3. If no row rule works, do the same with the **columns**.\n4. If neither works, look at diagonals, or at rules with two steps (such as \"first × second − 1\").\n5. **Undo** the rule carefully to find the missing number, then check it by putting it back in.\n\n### Strategy 2: Pyramids\n1. Fill in every brick you can, working **upwards** (add the two bricks below).\n2. If the missing brick is below a known one, **subtract**: the unknown brick = brick above − its neighbour.\n3. If you get stuck, call the missing brick a letter (say n) and write each brick in terms of n.\n\n### Strategy 3: Magic squares\n1. Find a complete row, column or diagonal and add it — that is the magic total.\n2. Look for a line with only **one** gap, and fill it: gap = total − the other two.\n3. Repeat until you reach the box the question asks about. Never assume the total is 15.\n\n## Worked examples\n\n### Example 1\nFind the missing number.\n\n![A 3 by 3 number grid. Row 1: 5, 2, 3. Row 2: 9, 4, 5. Row 3: 12, ?, 4.](diagrams/y7/selective/number-grids-and-matrices-ex1.svg)\n\n1. Row 1: 5 + 2 = 7, not 3. Try subtraction: 5 − 2 = 3 ✓. Rule: first − second = third.\n2. Test on row 2: 9 − 4 = 5 ✓.\n3. Row 3: 12 − ? = 4, so ? = 12 − 4 = **8**. Check: 12 − 8 = 4 ✓.\n\n*Tempting wrong answer:* 16, from adding 12 + 4. To undo \"12 − ? = 4\", subtract 4 from 12.\n\n### Example 2\nIn this pyramid, each brick is the sum of the two bricks under it. Find the top brick.\n\n![A number pyramid. Bottom row: 3, 8, 2. Middle row: two empty bricks. Top: ?.](diagrams/y7/selective/number-grids-and-matrices-ex2.svg)\n\n1. Middle row: 3 + 8 = 11 and 8 + 2 = 10 — add the two bricks under each one.\n2. Top: 11 + 10 = **21**.\n\n*Tempting wrong answer:* 13, from adding the bottom row (3 + 8 + 2). The middle brick 8 is used twice, because both middle bricks sit on it.\n\n### Example 3\nIn this magic square, every row, column and diagonal adds to the same total. Find the missing number.\n\n![A 3 by 3 magic square. Row 1: 4, ?, 6. Row 2: 9, 7, blank. Row 3: 8, blank, 10.](diagrams/y7/selective/number-grids-and-matrices-ex3.svg)\n\n1. Find a complete line: the left column 4 + 9 + 8 = 21. The magic total is 21.\n2. The top row has one gap: ? = 21 − 4 − 6 = **11**.\n3. Check with the diagonal: 4 + 7 + 10 = 21 ✓, so the total is right.\n\n*Tempting wrong answer:* 5, from assuming the total is 15 (like the famous square using 1 to 9). Always work the total out.\n\n### Example 4\nEach number inside the grid is a hidden row number × a hidden column number. All the hidden numbers are whole numbers. Find ?.\n\n![A multiplication grid with hidden headings. Inside: top row 15 and 21, bottom row 10 and ?.](diagrams/y7/selective/number-grids-and-matrices-ex4.svg)\n\n1. Going across the top row, 15 becomes 21. In a multiplication grid the two rows are in the **same ratio**: the bottom row is the top row × (10 ÷ 15) = × 2/3.\n2. So ? = 21 × 2/3 = **14**.\n3. Check with real headings: columns 5 and 7, rows 3 and 2. Then 3 × 5 = 15, 3 × 7 = 21, 2 × 5 = 10 and 2 × 7 = 14 ✓.\n\n*Tempting wrong answer:* 16, from \"15 goes up by 6 to 21, so 10 goes up by 6 to 16\". Multiplication grids grow by multiplying, not adding.\n\n## Common traps\n\n- **Using a column pattern when the rule is across the rows** (or the other way round). A rule must work on every complete row (or column), not just look neat in one line.\n- **Adding everything in sight** instead of undoing the rule. If the rule is a + b = c and you know a and c, then b = c − a.\n- **Counting the middle brick once** in pyramids. Bottom middle bricks feed two bricks above, so they count twice in the top.\n- **Assuming a magic total of 15.** Only one famous square has that total. Work it out from a full line.\n- **Finding the wrong box.** In grids with several gaps, re-read which box has the \"?\".\n\n## Tips to remember\n\n- **\"Rows, columns, corners\"** (a made-up memory trick) — the order to check: rows first, then columns, then diagonals and two-step rules.\n- **Pyramid picture:** imagine each brick being held up by the two below — it weighs exactly what they weigh together.\n- **Magic square motto:** \"Find a full line, find the total, fill one gap at a time.\"\n- **Multiplication grids scale, they don't step:** compare with ÷ and ×, not with + and −.\n- **Put it back:** always put your answer into the grid and check the rule works on that row too.\n\n## Key terms\n\n- **Matrix** — numbers arranged in rows and columns (here, the same as a number grid).\n- **Row** — a line of numbers going across.\n- **Column** — a line of numbers going down.\n- **Number pyramid** — bricks in rows where each brick equals the sum of the two below it.\n- **Magic square** — a square grid where every row, column and diagonal has the same total.\n- **Magic total** — the sum of each line in a magic square.\n- **Ratio** — how many times bigger one number is than another.\n\n## Summary\n\n- Find a rule in one complete row, then test it on every other row; if that fails, try columns.\n- Undo the rule carefully to find the gap, and check by putting your answer back.\n- In pyramids, add upwards and subtract downwards; the bottom middle brick counts twice at the top.\n- In magic squares, find the total from a complete line, then fill gaps one line at a time.\n- In hidden multiplication grids, compare numbers by multiplying, not adding.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "The same rule works across every row of the grid. What is the missing number?",
-      "options": {
-        "A": "1",
-        "B": "21",
-        "C": "9",
-        "D": "8"
-      },
-      "answer": "C",
-      "explanation": "In each row the first two numbers add to the third, so 6 + 9 = 15. The column 5, 3, 1 looks neat but 6 + 1 is not 15.",
-      "steps": [
-        "Row 1: 2 + 5 = 7, so the rule could be \"first + second = third\".",
-        "Test on row 2: 4 + 3 = 7 ✓.",
-        "Row 3: 6 + ? = 15, so ? = 15 − 6 = 9."
-      ],
-      "mistakes": {
-        "A": "Trap — using a column pattern: 5, 3, 1 goes down by 2, but the rule must work across every row. Check: 6 + 1 is not 15.",
-        "B": "Step 3 goes wrong: you added 6 + 15. Undo the rule: the missing number is 15 − 6.",
-        "D": "Step 3 goes wrong: 15 − 6 is 9, not 8. Check by adding back."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q1.svg",
-      "diagram_alt": "A 3 by 3 number grid. Row 1: 2, 5, 7. Row 2: 4, 3, 7. Row 3: 6, ?, 15."
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "In this magic square, every row, column and diagonal adds to the same total. What is the missing number?",
-      "options": {
-        "A": "4",
-        "B": "9",
-        "C": "16",
-        "D": "20"
-      },
-      "answer": "A",
-      "explanation": "The magic total is 24, so the gap is 24 − 12 − 8 = 4. 16 subtracts only the 8.",
-      "steps": [
-        "Find a complete line: the top row 5 + 10 + 9 = 24. The magic total is 24.",
-        "The middle row has one gap: ? = 24 − 12 − 8 = 4."
-      ],
-      "mistakes": {
-        "B": "Trap — copying: 9 is the number above the gap. Find the magic total and subtract.",
-        "C": "Step 2 goes wrong: you subtracted only the 8. Take away both 12 and 8 from the total.",
-        "D": "Step 2 goes wrong: 12 + 8 = 20 is the part you already have. Subtract it from the total."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q2.svg",
-      "diagram_alt": "A 3 by 3 magic square. Row 1: 5, 10, 9. Row 2: 12, 8, ?. Row 3: 7, 6, 11."
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "In this number pyramid, each brick is the sum of the two bricks directly under it. What number goes in the top brick?",
-      "options": {
-        "A": "13",
-        "B": "19",
-        "C": "11",
-        "D": "24"
-      },
-      "answer": "B",
-      "explanation": "The middle bricks are 8 and 11, so the top is 19. 13 adds the bottom row once each, but the 6 counts twice.",
-      "steps": [
-        "Middle row: 2 + 6 = 8 and 6 + 5 = 11.",
-        "Top brick: 8 + 11 = 19."
-      ],
-      "mistakes": {
-        "A": "Trap — counting the middle brick once: adding 2 + 6 + 5 misses that 6 holds up both middle bricks. Fill the middle row first.",
-        "C": "Step 2 is missing: 11 is the right-hand middle brick. Add both middle bricks to get the top.",
-        "D": "Step 2 goes wrong: you added the end brick 5 as well. The top is only the two middle bricks added."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q3.svg",
-      "diagram_alt": "A number pyramid. Bottom row: 2, 6, 5. Middle row: two empty bricks. Top brick: ?."
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Each row of the grid follows the same rule. Which number replaces the ?",
-      "options": {
-        "A": "18",
-        "B": "63",
-        "C": "24",
-        "D": "7"
-      },
-      "answer": "D",
-      "explanation": "Each row multiplies: 3 × 7 = 21. 18 assumes adding, which already fails on row 1.",
-      "steps": [
-        "Row 1: 2 + 3 = 5 (no), 2 × 3 = 6 ✓. Rule: first × second = third.",
-        "Test on row 2: 4 × 5 = 20 ✓.",
-        "Row 3: 3 × ? = 21, so ? = 21 ÷ 3 = 7."
-      ],
-      "mistakes": {
-        "A": "Step 1 goes wrong: you assumed the rule was adding (3 + ? = 21). Test addition on row 1: 2 + 3 is 5, not 6.",
-        "B": "Step 3 goes wrong: you multiplied 3 × 21. To undo \"3 × ? = 21\", divide 21 by 3.",
-        "C": "Step 3 goes wrong: you added 3 + 21. Undo multiplication by dividing."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q4.svg",
-      "diagram_alt": "A 3 by 3 number grid. Row 1: 2, 3, 6. Row 2: 4, 5, 20. Row 3: 3, ?, 21."
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The same rule works down every column of this grid (the rows do not follow a rule). What is the missing number?",
-      "options": {
-        "A": "14",
-        "B": "8",
-        "C": "12",
-        "D": "26"
-      },
-      "answer": "B",
-      "explanation": "Down each column, top × 2 + middle = bottom, so 12 + 8 = 20. 14 uses \"top + middle\", which fails on column 1.",
-      "steps": [
-        "Column 1: 3, 4, 10. Adding gives 7, so try \"top × 2 + middle\": 3 × 2 + 4 = 10 ✓.",
-        "Test on column 2: 5 × 2 + 1 = 11 ✓.",
-        "Column 3: 6 × 2 + ? = 20, so 12 + ? = 20 and ? = 8."
-      ],
-      "mistakes": {
-        "A": "Step 1 goes wrong: you used \"top + middle = bottom\". Test it on column 1: 3 + 4 is 7, not 10.",
-        "C": "Step 3 is missing: 6 × 2 = 12 is only part of the rule. You still need the number that, added to 12, makes 20.",
-        "D": "Step 3 goes wrong: you added 20 + 6. To undo the rule, subtract."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q5.svg",
-      "diagram_alt": "A 3 by 3 number grid. Column 1 (top to bottom): 3, 4, 10. Column 2: 5, 1, 11. Column 3: 6, ?, 20."
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "In this number pyramid, each brick is the sum of the two bricks directly under it. What is the missing number?",
-      "options": {
-        "A": "4",
-        "B": "14",
-        "C": "7",
-        "D": "17"
-      },
-      "answer": "C",
-      "explanation": "13 = 6 + 7 and 17 = 7 + 10, so the missing brick is 7. 4 subtracts two bricks in the same row, which are not linked.",
-      "steps": [
-        "The brick 13 sits on 6 and the missing brick: 6 + ? = 13, so ? = 7.",
-        "Check with the brick 17: 7 + 10 = 17 ✓, and 13 + 17 = 30 ✓. The answer is 7."
-      ],
-      "mistakes": {
-        "A": "Step 1 goes wrong: you worked out 17 − 13 (two bricks side by side). Use a brick and the one below it: 13 − 6.",
-        "B": "Step 1 goes wrong: you took 6 and 10 away from the top brick 30. The bottom bricks sit under the middle row, not directly under the top.",
-        "D": "Trap — copying: 17 is the brick above. The missing brick is part of it, so subtract."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q6.svg",
-      "diagram_alt": "A number pyramid. Top brick: 30. Middle row: 13, 17. Bottom row: 6, ?, 10."
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Find the rule that links the three numbers in each row, then use it to find the missing number.",
-      "options": {
-        "A": "5",
-        "B": "23",
-        "C": "0",
-        "D": "30"
-      },
-      "answer": "A",
-      "explanation": "The rule is first × second − 1, so 6 × 5 − 1 = 29. 23 uses adding, which fails on row 1.",
-      "steps": [
-        "Row 1: 3 × 4 = 12, and 12 − 1 = 11. Rule: first × second − 1 = third.",
-        "Test on row 2: 5 × 2 − 1 = 9 ✓.",
-        "Row 3: 6 × ? − 1 = 29, so 6 × ? = 30 and ? = 5."
-      ],
-      "mistakes": {
-        "B": "Step 1 goes wrong: you assumed an adding rule (6 + ? = 29). Test it on row 1: 3 + 4 is 7, not 11.",
-        "C": "Trap — using a column pattern: 4, 2, 0 goes down by 2, but the rule must work across the rows. Check: 6 × 0 − 1 is not 29.",
-        "D": "Step 3 goes wrong: 30 is 6 × 5, the number before you subtract 1. The question asks for the missing number in the middle."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q7.svg",
-      "diagram_alt": "A 3 by 3 number grid. Row 1: 3, 4, 11. Row 2: 5, 2, 9. Row 3: 6, ?, 29."
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "In this magic square, every row, column and diagonal adds to the same total. Some boxes are empty. What number goes in the box marked ?",
-      "options": {
-        "A": "9",
-        "B": "3",
-        "C": "14",
-        "D": "1"
-      },
-      "answer": "D",
-      "explanation": "The diagonal gives a total of 15, so the top row needs 15 − 8 − 6 = 1. 9 is the right number for a different box.",
-      "steps": [
-        "The only complete line is the diagonal 8, 5, 2: 8 + 5 + 2 = 15. The magic total is 15.",
-        "Top row: 8 + ? + 6 = 15, so ? = 15 − 14 = 1."
-      ],
-      "mistakes": {
-        "A": "Trap — finding the wrong box: 9 belongs in the bottom-middle box. Re-read which box has the \"?\".",
-        "B": "Trap — finding the wrong box: 3 belongs in the middle-left box. The \"?\" is in the top row.",
-        "C": "Step 2 is missing: 8 + 6 = 14 is what the top row already has. Subtract it from the magic total."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q8.svg",
-      "diagram_alt": "A 3 by 3 magic square with gaps. Row 1: 8, ?, 6. Row 2: empty, 5, empty. Row 3: 4, empty, 2."
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The same rule works across every row. The bottom row has two numbers missing: an empty box and a box marked ?. What number goes in the box marked ?",
-      "options": {
-        "A": "6",
-        "B": "5",
-        "C": "15",
-        "D": "10"
-      },
-      "answer": "B",
-      "explanation": "Each row is n, n², n + n². 5 + 25 = 30, so ? = 5. 6 fails because 6 + 36 = 42.",
-      "steps": [
-        "Row 1: 2, 4, 6. Row 2: 3, 9, 12. The middle is the left number squared (2² = 4, 3² = 9).",
-        "The right is left + middle: 2 + 4 = 6 ✓, 3 + 9 = 12 ✓.",
-        "Bottom row: ? + ?² = 30. Try 5: 5 + 25 = 30 ✓. So ? = 5."
-      ],
-      "mistakes": {
-        "A": "Step 3 goes wrong: 6 × 6 = 36 and 36 − 6 = 30, but the rule ADDS: left + middle = right. 6 + 36 = 42.",
-        "C": "Trap — wrong rule: halving 30 assumes right = left × 2, but row 1 gives 2 → 6.",
-        "D": "Step 2 goes wrong: \"right = left × 3\" works in row 1 but not row 2 (3 × 3 is not 12). Test every row."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q9.svg",
-      "diagram_alt": "A 3 by 3 number grid. Row 1: 2, 4, 6. Row 2: 3, 9, 12. Row 3: ?, empty box, 30."
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In this number pyramid, each brick is the sum of the two bricks directly under it. The middle row is empty. What is the missing number on the bottom row?",
-      "options": {
-        "A": "9",
-        "B": "18",
-        "C": "6",
-        "D": "32"
-      },
-      "answer": "A",
-      "explanation": "The top is 2 + 5 + two lots of n, so 2n = 18 and n = 9. 18 forgets that n is counted twice.",
-      "steps": [
-        "Call the missing brick n. Middle row: 2 + n and n + 5.",
-        "Top: (2 + n) + (n + 5) = 7 + 2n = 25, so 2n = 18.",
-        "n = 18 ÷ 2 = 9. Check: 11 + 14 = 25 ✓."
-      ],
-      "mistakes": {
-        "B": "Step 2 goes wrong: the middle bottom brick holds up BOTH middle bricks, so it counts twice in the top. Divide by 2.",
-        "C": "Step 2 goes wrong: you divided 18 by 3. The middle brick appears twice, so divide by 2.",
-        "D": "Step 2 goes wrong: you added 25 + 7. Take the end bricks away from the top."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q10.svg",
-      "diagram_alt": "A number pyramid. Top brick: 25. Middle row: two empty bricks. Bottom row: 2, ?, 5."
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "This is a magic square: each row, each column and both diagonals have the same total. Two boxes are empty and one is marked ?. Which number belongs in the ? box?",
-      "options": {
-        "A": "11",
-        "B": "10",
-        "C": "4",
-        "D": "17"
-      },
-      "answer": "C",
-      "explanation": "The diagonal 8, 7, 6 gives the total 21, so the top-left box is 21 − 9 − 8 = 4. 11 and 10 are right for the other empty boxes.",
-      "steps": [
-        "No row or column is complete, but the diagonal from top-right to bottom-left is: 8 + 7 + 6 = 21. The magic total is 21.",
-        "Top row: ? + 9 + 8 = 21, so ? = 21 − 17 = 4."
-      ],
-      "mistakes": {
-        "A": "Trap — finding the wrong box: 11 belongs in the empty middle-left box. The \"?\" is the top-left box.",
-        "B": "Trap — finding the wrong box: 10 belongs in the empty bottom-right box. Re-read which box has the \"?\".",
-        "D": "Step 2 is missing: 9 + 8 = 17 is what the top row already has. Subtract it from the magic total."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q11.svg",
-      "diagram_alt": "A 3 by 3 magic square with gaps. Row 1: ?, 9, 8. Row 2: empty, 7, 3. Row 3: 6, 5, empty."
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In this multiplication grid, each number inside is a hidden row number × a hidden column number. The hidden numbers are all whole numbers. What is the missing number?",
-      "options": {
-        "A": "26",
-        "B": "24",
-        "C": "36",
-        "D": "30"
-      },
-      "answer": "D",
-      "explanation": "The bottom row is 1.5 times the top row, so ? = 20 × 1.5 = 30. 26 adds instead of multiplying.",
-      "steps": [
-        "Both bottom numbers use the same row number, so the bottom row is the top row × (18 ÷ 12) = × 1.5.",
-        "So ? = 20 × 1.5 = 30.",
-        "Check with real headings: rows 2 and 3, columns 6 and 10: 2 × 6 = 12, 2 × 10 = 20, 3 × 6 = 18, 3 × 10 = 30 ✓."
-      ],
-      "mistakes": {
-        "A": "Trap — adding instead of scaling: 12 to 20 is \"+ 8\" and 12 to 18 is \"+ 6\", but multiplication grids grow by multiplying. Compare with ÷.",
-        "B": "Step 1 goes wrong: you doubled 12. The bottom row is 18 ÷ 12 = 1.5 times the top row.",
-        "C": "Step 2 goes wrong: you doubled 18. Multiply the top-right number (20) by 1.5 instead."
-      },
-      "diagram": "diagrams/y7/selective/number-grids-and-matrices-q12.svg",
-      "diagram_alt": "A multiplication grid with the row and column headings hidden. Inside: top row 12 and 20, bottom row 18 and ?."
-    }
-  ]
+ "level": "Year 7",
+ "subject": "selective",
+ "unit": "Selective",
+ "title": "Number grids and matrices",
+ "summary": "How to find the rule in number grids by testing rows and columns, and how to solve number pyramids, magic squares and hidden multiplication grids.",
+ "minutes": 25,
+ "video": "videos/y7/selective/number-grids-and-matrices.mp4",
+ "body": "Number grid questions (sometimes called **matrices**) arrange numbers in rows and columns, in a pyramid, or in a square, with one or two numbers missing. A single rule links the numbers, and your job is to find it and fill the gap. They appear in quantitative reasoning because they test whether you can check a rule in two directions at once.\n\n## What you will learn\n\nBy the end of this lesson you can find the rule in a number grid by testing rows, then columns, then other shapes, and you can solve pyramids, magic squares and hidden multiplication grids.\n\n## How these questions work\n\n### Row rules\nThe same rule works across every row. A common one is \"first + second = third\", but it might be subtraction, multiplication or a two-step rule.\n\n| | | |\n|---|---|---|\n| 2 | 5 | 10 |\n| 3 | 4 | 12 |\n| 6 | 4 | ? |\n\nHere first × second = third (2 × 5 = 10, 3 × 4 = 12), so ? = 24.\n\n### Column rules\nThe same rule works down every column instead. If the rows make no sense, turn your head and read the columns.\n\n### Number pyramids\nEach brick is the **sum of the two bricks directly underneath it**. You may be asked for the top, a brick in the middle, or a brick on the bottom.\n\n### Magic squares\nEvery row, column and both diagonals add to the same **magic total**. Find the total from any complete line, then fill the gaps one at a time.\n\n### Hidden multiplication grids\nEach number inside the grid is a row number × a column number, but the row and column numbers are hidden. The trick: compare the numbers *by multiplying*, not by adding.\n\n## Strategies\n\n### Strategy 1: Rows, then columns, then the rest\n1. Look at the first complete **row**. Try +, −, × and ÷ between the first two numbers to make the third.\n2. **Test** the rule on every other complete row.\n3. If no row rule works, do the same with the **columns**.\n4. If neither works, look at diagonals, or at rules with two steps (such as \"first × second − 1\").\n5. **Undo** the rule carefully to find the missing number, then check it by putting it back in.\n\n### Strategy 2: Pyramids\n1. Fill in every brick you can, working **upwards** (add the two bricks below).\n2. If the missing brick is below a known one, **subtract**: the unknown brick = brick above − its neighbour.\n3. If you get stuck, call the missing brick a letter (say n) and write each brick in terms of n.\n\n### Strategy 3: Magic squares\n1. Find a complete row, column or diagonal and add it — that is the magic total.\n2. Look for a line with only **one** gap, and fill it: gap = total − the other two.\n3. Repeat until you reach the box the question asks about. Never assume the total is 15.\n\n## Worked examples\n\n### Example 1\nFind the missing number.\n\n![A 3 by 3 number grid. Row 1: 5, 2, 3. Row 2: 9, 4, 5. Row 3: 12, ?, 4.](diagrams/y7/selective/number-grids-and-matrices-ex1.svg)\n\n1. Row 1: 5 + 2 = 7, not 3. Try subtraction: 5 − 2 = 3 ✓. Rule: first − second = third.\n2. Test on row 2: 9 − 4 = 5 ✓.\n3. Row 3: 12 − ? = 4, so ? = 12 − 4 = **8**. Check: 12 − 8 = 4 ✓.\n\n*Tempting wrong answer:* 16, from adding 12 + 4. To undo \"12 − ? = 4\", subtract 4 from 12.\n\n### Example 2\nIn this pyramid, each brick is the sum of the two bricks under it. Find the top brick.\n\n![A number pyramid. Bottom row: 3, 8, 2. Middle row: two empty bricks. Top: ?.](diagrams/y7/selective/number-grids-and-matrices-ex2.svg)\n\n1. Middle row: 3 + 8 = 11 and 8 + 2 = 10 — add the two bricks under each one.\n2. Top: 11 + 10 = **21**.\n\n*Tempting wrong answer:* 13, from adding the bottom row (3 + 8 + 2). The middle brick 8 is used twice, because both middle bricks sit on it.\n\n### Example 3\nIn this magic square, every row, column and diagonal adds to the same total. Find the missing number.\n\n![A 3 by 3 magic square. Row 1: 4, ?, 6. Row 2: 9, 7, blank. Row 3: 8, blank, 10.](diagrams/y7/selective/number-grids-and-matrices-ex3.svg)\n\n1. Find a complete line: the left column 4 + 9 + 8 = 21. The magic total is 21.\n2. The top row has one gap: ? = 21 − 4 − 6 = **11**.\n3. Check with the diagonal: 4 + 7 + 10 = 21 ✓, so the total is right.\n\n*Tempting wrong answer:* 5, from assuming the total is 15 (like the famous square using 1 to 9). Always work the total out.\n\n### Example 4\nEach number inside the grid is a hidden row number × a hidden column number. All the hidden numbers are whole numbers. Find ?.\n\n![A multiplication grid with hidden headings. Inside: top row 15 and 21, bottom row 10 and ?.](diagrams/y7/selective/number-grids-and-matrices-ex4.svg)\n\n1. Going across the top row, 15 becomes 21. In a multiplication grid the two rows are in the **same ratio**: the bottom row is the top row × (10 ÷ 15) = × 2/3.\n2. So ? = 21 × 2/3 = **14**.\n3. Check with real headings: columns 5 and 7, rows 3 and 2. Then 3 × 5 = 15, 3 × 7 = 21, 2 × 5 = 10 and 2 × 7 = 14 ✓.\n\n*Tempting wrong answer:* 16, from \"15 goes up by 6 to 21, so 10 goes up by 6 to 16\". Multiplication grids grow by multiplying, not adding.\n\n## Common traps\n\n- **Using a column pattern when the rule is across the rows** (or the other way round). A rule must work on every complete row (or column), not just look neat in one line.\n- **Adding everything in sight** instead of undoing the rule. If the rule is a + b = c and you know a and c, then b = c − a.\n- **Counting the middle brick once** in pyramids. Bottom middle bricks feed two bricks above, so they count twice in the top.\n- **Assuming a magic total of 15.** Only one famous square has that total. Work it out from a full line.\n- **Finding the wrong box.** In grids with several gaps, re-read which box has the \"?\".\n\n## Tips to remember\n\n- **\"Rows, columns, corners\"** (a made-up memory trick) — the order to check: rows first, then columns, then diagonals and two-step rules.\n- **Pyramid picture:** imagine each brick being held up by the two below — it weighs exactly what they weigh together.\n- **Magic square motto:** \"Find a full line, find the total, fill one gap at a time.\"\n- **Multiplication grids scale, they don't step:** compare with ÷ and ×, not with + and −.\n- **Put it back:** always put your answer into the grid and check the rule works on that row too.\n\n## Key terms\n\n- **Matrix** — numbers arranged in rows and columns (here, the same as a number grid).\n- **Row** — a line of numbers going across.\n- **Column** — a line of numbers going down.\n- **Number pyramid** — bricks in rows where each brick equals the sum of the two below it.\n- **Magic square** — a square grid where every row, column and diagonal has the same total.\n- **Magic total** — the sum of each line in a magic square.\n- **Ratio** — how many times bigger one number is than another.\n\n## Summary\n\n- Find a rule in one complete row, then test it on every other row; if that fails, try columns.\n- Undo the rule carefully to find the gap, and check by putting your answer back.\n- In pyramids, add upwards and subtract downwards; the bottom middle brick counts twice at the top.\n- In magic squares, find the total from a complete line, then fill gaps one line at a time.\n- In hidden multiplication grids, compare numbers by multiplying, not adding.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The same rule works across every row of the grid. What is the missing number?",
+   "options": {
+    "A": "1",
+    "B": "21",
+    "C": "9",
+    "D": "8"
+   },
+   "answer": "C",
+   "explanation": "In each row the first two numbers add to the third, so 6 + 9 = 15. The column 5, 3, 1 looks neat but 6 + 1 is not 15.",
+   "steps": [
+    "Row 1: 2 + 5 = 7, so the rule could be \"first + second = third\".",
+    "Test on row 2: 4 + 3 = 7 ✓.",
+    "Row 3: 6 + ? = 15, so ? = 15 − 6 = 9."
+   ],
+   "mistakes": {
+    "A": "Trap — using a column pattern: 5, 3, 1 goes down by 2, but the rule must work across every row. Check: 6 + 1 is not 15.",
+    "B": "Step 3 goes wrong: you added 6 + 15. Undo the rule: the missing number is 15 − 6.",
+    "D": "Step 3 goes wrong: 15 − 6 is 9, not 8. Check by adding back."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q1.svg",
+   "diagram_alt": "A 3 by 3 number grid. Row 1: 2, 5, 7. Row 2: 4, 3, 7. Row 3: 6, ?, 15."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "In this magic square, every row, column and diagonal adds to the same total. What is the missing number?",
+   "options": {
+    "A": "4",
+    "B": "9",
+    "C": "16",
+    "D": "20"
+   },
+   "answer": "A",
+   "explanation": "The magic total is 24, so the gap is 24 − 12 − 8 = 4. 16 subtracts only the 8.",
+   "steps": [
+    "Find a complete line: the top row 5 + 10 + 9 = 24. The magic total is 24.",
+    "The middle row has one gap: ? = 24 − 12 − 8 = 4."
+   ],
+   "mistakes": {
+    "B": "Trap — copying: 9 is the number above the gap. Find the magic total and subtract.",
+    "C": "Step 2 goes wrong: you subtracted only the 8. Take away both 12 and 8 from the total.",
+    "D": "Step 2 goes wrong: 12 + 8 = 20 is the part you already have. Subtract it from the total."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q2.svg",
+   "diagram_alt": "A 3 by 3 magic square. Row 1: 5, 10, 9. Row 2: 12, 8, ?. Row 3: 7, 6, 11."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "In this number pyramid, each brick is the sum of the two bricks directly under it. What number goes in the top brick?",
+   "options": {
+    "A": "13",
+    "B": "19",
+    "C": "11",
+    "D": "24"
+   },
+   "answer": "B",
+   "explanation": "The middle bricks are 8 and 11, so the top is 19. 13 adds the bottom row once each, but the 6 counts twice.",
+   "steps": [
+    "Middle row: 2 + 6 = 8 and 6 + 5 = 11.",
+    "Top brick: 8 + 11 = 19."
+   ],
+   "mistakes": {
+    "A": "Trap — counting the middle brick once: adding 2 + 6 + 5 misses that 6 holds up both middle bricks. Fill the middle row first.",
+    "C": "Step 2 is missing: 11 is the right-hand middle brick. Add both middle bricks to get the top.",
+    "D": "Step 2 goes wrong: you added the end brick 5 as well. The top is only the two middle bricks added."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q3.svg",
+   "diagram_alt": "A number pyramid. Bottom row: 2, 6, 5. Middle row: two empty bricks. Top brick: ?."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Each row of the grid follows the same rule. Which number replaces the ?",
+   "options": {
+    "A": "18",
+    "B": "63",
+    "C": "24",
+    "D": "7"
+   },
+   "answer": "D",
+   "explanation": "Each row multiplies: 3 × 7 = 21. 18 assumes adding, which already fails on row 1.",
+   "steps": [
+    "Row 1: 2 + 3 = 5 (no), 2 × 3 = 6 ✓. Rule: first × second = third.",
+    "Test on row 2: 4 × 5 = 20 ✓.",
+    "Row 3: 3 × ? = 21, so ? = 21 ÷ 3 = 7."
+   ],
+   "mistakes": {
+    "A": "Step 1 goes wrong: you assumed the rule was adding (3 + ? = 21). Test addition on row 1: 2 + 3 is 5, not 6.",
+    "B": "Step 3 goes wrong: you multiplied 3 × 21. To undo \"3 × ? = 21\", divide 21 by 3.",
+    "C": "Step 3 goes wrong: you added 3 + 21. Undo multiplication by dividing."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q4.svg",
+   "diagram_alt": "A 3 by 3 number grid. Row 1: 2, 3, 6. Row 2: 4, 5, 20. Row 3: 3, ?, 21."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The same rule works down every column of this grid (the rows do not follow a rule). What is the missing number?",
+   "options": {
+    "A": "14",
+    "B": "8",
+    "C": "12",
+    "D": "26"
+   },
+   "answer": "B",
+   "explanation": "Down each column, top × 2 + middle = bottom, so 12 + 8 = 20. 14 uses \"top + middle\", which fails on column 1.",
+   "steps": [
+    "Column 1: 3, 4, 10. Adding gives 7, so try \"top × 2 + middle\": 3 × 2 + 4 = 10 ✓.",
+    "Test on column 2: 5 × 2 + 1 = 11 ✓.",
+    "Column 3: 6 × 2 + ? = 20, so 12 + ? = 20 and ? = 8."
+   ],
+   "mistakes": {
+    "A": "Step 1 goes wrong: you used \"top + middle = bottom\". Test it on column 1: 3 + 4 is 7, not 10.",
+    "C": "Step 3 is missing: 6 × 2 = 12 is only part of the rule. You still need the number that, added to 12, makes 20.",
+    "D": "Step 3 goes wrong: you added 20 + 6. To undo the rule, subtract."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q5.svg",
+   "diagram_alt": "A 3 by 3 number grid. Column 1 (top to bottom): 3, 4, 10. Column 2: 5, 1, 11. Column 3: 6, ?, 20."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In this number pyramid, each brick is the sum of the two bricks directly under it. What is the missing number?",
+   "options": {
+    "A": "4",
+    "B": "14",
+    "C": "7",
+    "D": "17"
+   },
+   "answer": "C",
+   "explanation": "13 = 6 + 7 and 17 = 7 + 10, so the missing brick is 7. 4 subtracts two bricks in the same row, which are not linked.",
+   "steps": [
+    "The brick 13 sits on 6 and the missing brick: 6 + ? = 13, so ? = 7.",
+    "Check with the brick 17: 7 + 10 = 17 ✓, and 13 + 17 = 30 ✓. The answer is 7."
+   ],
+   "mistakes": {
+    "A": "Step 1 goes wrong: you worked out 17 − 13 (two bricks side by side). Use a brick and the one below it: 13 − 6.",
+    "B": "Step 1 goes wrong: you took 6 and 10 away from the top brick 30. The bottom bricks sit under the middle row, not directly under the top.",
+    "D": "Trap — copying: 17 is the brick above. The missing brick is part of it, so subtract."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q6.svg",
+   "diagram_alt": "A number pyramid. Top brick: 30. Middle row: 13, 17. Bottom row: 6, ?, 10."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Find the rule that links the three numbers in each row, then use it to find the missing number.",
+   "options": {
+    "A": "5",
+    "B": "23",
+    "C": "0",
+    "D": "30"
+   },
+   "answer": "A",
+   "explanation": "The rule is first × second − 1, so 6 × 5 − 1 = 29. 23 uses adding, which fails on row 1.",
+   "steps": [
+    "Row 1: 3 × 4 = 12, and 12 − 1 = 11. Rule: first × second − 1 = third.",
+    "Test on row 2: 5 × 2 − 1 = 9 ✓.",
+    "Row 3: 6 × ? − 1 = 29, so 6 × ? = 30 and ? = 5."
+   ],
+   "mistakes": {
+    "B": "Step 1 goes wrong: you assumed an adding rule (6 + ? = 29). Test it on row 1: 3 + 4 is 7, not 11.",
+    "C": "Trap — using a column pattern: 4, 2, 0 goes down by 2, but the rule must work across the rows. Check: 6 × 0 − 1 is not 29.",
+    "D": "Step 3 goes wrong: 30 is 6 × 5, the number before you subtract 1. The question asks for the missing number in the middle."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q7.svg",
+   "diagram_alt": "A 3 by 3 number grid. Row 1: 3, 4, 11. Row 2: 5, 2, 9. Row 3: 6, ?, 29."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "In this magic square, every row, column and diagonal adds to the same total. Some boxes are empty. What number goes in the box marked ?",
+   "options": {
+    "A": "9",
+    "B": "3",
+    "C": "14",
+    "D": "1"
+   },
+   "answer": "D",
+   "explanation": "The diagonal gives a total of 15, so the top row needs 15 − 8 − 6 = 1. 9 is the right number for a different box.",
+   "steps": [
+    "The only complete line is the diagonal 8, 5, 2: 8 + 5 + 2 = 15. The magic total is 15.",
+    "Top row: 8 + ? + 6 = 15, so ? = 15 − 14 = 1."
+   ],
+   "mistakes": {
+    "A": "Trap — finding the wrong box: 9 belongs in the bottom-middle box. Re-read which box has the \"?\".",
+    "B": "Trap — finding the wrong box: 3 belongs in the middle-left box. The \"?\" is in the top row.",
+    "C": "Step 2 is missing: 8 + 6 = 14 is what the top row already has. Subtract it from the magic total."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q8.svg",
+   "diagram_alt": "A 3 by 3 magic square with gaps. Row 1: 8, ?, 6. Row 2: empty, 5, empty. Row 3: 4, empty, 2."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The same rule works across every row. The bottom row has two numbers missing: an empty box and a box marked ?. What number goes in the box marked ?",
+   "options": {
+    "A": "6",
+    "B": "5",
+    "C": "15",
+    "D": "10"
+   },
+   "answer": "B",
+   "explanation": "Each row is n, n², n + n². 5 + 25 = 30, so ? = 5. 6 fails because 6 + 36 = 42.",
+   "steps": [
+    "Row 1: 2, 4, 6. Row 2: 3, 9, 12. The middle is the left number squared (2² = 4, 3² = 9).",
+    "The right is left + middle: 2 + 4 = 6 ✓, 3 + 9 = 12 ✓.",
+    "Bottom row: ? + ?² = 30. Try 5: 5 + 25 = 30 ✓. So ? = 5."
+   ],
+   "mistakes": {
+    "A": "Step 3 goes wrong: 6 × 6 = 36 and 36 − 6 = 30, but the rule ADDS: left + middle = right. 6 + 36 = 42.",
+    "C": "Trap — wrong rule: halving 30 assumes right = left × 2, but row 1 gives 2 → 6.",
+    "D": "Step 2 goes wrong: \"right = left × 3\" works in row 1 but not row 2 (3 × 3 is not 12). Test every row."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q9.svg",
+   "diagram_alt": "A 3 by 3 number grid. Row 1: 2, 4, 6. Row 2: 3, 9, 12. Row 3: ?, empty box, 30."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In this number pyramid, each brick is the sum of the two bricks directly under it. The middle row is empty. What is the missing number on the bottom row?",
+   "options": {
+    "A": "9",
+    "B": "18",
+    "C": "6",
+    "D": "32"
+   },
+   "answer": "A",
+   "explanation": "The top is 2 + 5 + two lots of n, so 2n = 18 and n = 9. 18 forgets that n is counted twice.",
+   "steps": [
+    "Call the missing brick n. Middle row: 2 + n and n + 5.",
+    "Top: (2 + n) + (n + 5) = 7 + 2n = 25, so 2n = 18.",
+    "n = 18 ÷ 2 = 9. Check: 11 + 14 = 25 ✓."
+   ],
+   "mistakes": {
+    "B": "Step 2 goes wrong: the middle bottom brick holds up BOTH middle bricks, so it counts twice in the top. Divide by 2.",
+    "C": "Step 2 goes wrong: you divided 18 by 3. The middle brick appears twice, so divide by 2.",
+    "D": "Step 2 goes wrong: you added 25 + 7. Take the end bricks away from the top."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q10.svg",
+   "diagram_alt": "A number pyramid. Top brick: 25. Middle row: two empty bricks. Bottom row: 2, ?, 5."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "This is a magic square: each row, each column and both diagonals have the same total. Two boxes are empty and one is marked ?. Which number belongs in the ? box?",
+   "options": {
+    "A": "11",
+    "B": "10",
+    "C": "4",
+    "D": "17"
+   },
+   "answer": "C",
+   "explanation": "The diagonal 8, 7, 6 gives the total 21, so the top-left box is 21 − 9 − 8 = 4. 11 and 10 are right for the other empty boxes.",
+   "steps": [
+    "No row or column is complete, but the diagonal from top-right to bottom-left is: 8 + 7 + 6 = 21. The magic total is 21.",
+    "Top row: ? + 9 + 8 = 21, so ? = 21 − 17 = 4."
+   ],
+   "mistakes": {
+    "A": "Trap — finding the wrong box: 11 belongs in the empty middle-left box. The \"?\" is the top-left box.",
+    "B": "Trap — finding the wrong box: 10 belongs in the empty bottom-right box. Re-read which box has the \"?\".",
+    "D": "Step 2 is missing: 9 + 8 = 17 is what the top row already has. Subtract it from the magic total."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q11.svg",
+   "diagram_alt": "A 3 by 3 magic square with gaps. Row 1: ?, 9, 8. Row 2: empty, 7, 3. Row 3: 6, 5, empty."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In this multiplication grid, each number inside is a hidden row number × a hidden column number. The hidden numbers are all whole numbers. What is the missing number?",
+   "options": {
+    "A": "26",
+    "B": "24",
+    "C": "36",
+    "D": "30"
+   },
+   "answer": "D",
+   "explanation": "The bottom row is 1.5 times the top row, so ? = 20 × 1.5 = 30. 26 adds instead of multiplying.",
+   "steps": [
+    "Both bottom numbers use the same row number, so the bottom row is the top row × (18 ÷ 12) = × 1.5.",
+    "So ? = 20 × 1.5 = 30.",
+    "Check with real headings: rows 2 and 3, columns 6 and 10: 2 × 6 = 12, 2 × 10 = 20, 3 × 6 = 18, 3 × 10 = 30 ✓."
+   ],
+   "mistakes": {
+    "A": "Trap — adding instead of scaling: 12 to 20 is \"+ 8\" and 12 to 18 is \"+ 6\", but multiplication grids grow by multiplying. Compare with ÷.",
+    "B": "Step 1 goes wrong: you doubled 12. The bottom row is 18 ÷ 12 = 1.5 times the top row.",
+    "C": "Step 2 goes wrong: you doubled 18. Multiply the top-right number (20) by 1.5 instead."
+   },
+   "diagram": "diagrams/y7/selective/number-grids-and-matrices-q12.svg",
+   "diagram_alt": "A multiplication grid with the row and column headings hidden. Inside: top row 12 and 20, bottom row 18 and ?."
+  }
+ ]
 }
