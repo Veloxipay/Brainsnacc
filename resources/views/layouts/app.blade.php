@@ -36,8 +36,9 @@
             @endforeach
         @endif
 
-        @if ($user->isParent() || $user->isAdmin())
-            <a href="{{ route('family') }}" class="{{ request()->routeIs('family') ? 'active' : '' }}">{{ $user->isAdmin() ? 'Parent view' : 'My children' }}</a>
+        @if ($user->isSupervisor() || $user->isAdmin())
+            <a href="{{ route('family') }}" class="{{ request()->routeIs('family*') ? 'active' : '' }}">{{ $user->isAdmin() ? 'All students' : ($user->isTeacher() ? 'My students' : 'My children') }}</a>
+            <a href="{{ route('family.students.create') }}" class="{{ request()->routeIs('family.students.create') ? 'active' : '' }}">+ Add a student</a>
         @endif
 
         @if ($user->isAdmin())

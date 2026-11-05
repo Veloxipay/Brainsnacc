@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\StructureController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LessonController;
@@ -14,10 +15,12 @@ use App\Http\Controllers\ParentController;
 use App\Http\Controllers\PastPaperController;
 use Illuminate\Support\Facades\Route;
 
-// Login (no public sign-up: the admin creates every account)
+// Login and public sign-up (parents, teachers and students)
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'show'])->name('login');
     Route::post('/login', [LoginController::class, 'login'])->middleware('throttle:10,1');
+    Route::get('/register', [RegisterController::class, 'show'])->name('register');
+    Route::post('/register', [RegisterController::class, 'store'])->middleware('throttle:5,1');
 });
 Route::post('/logout', [LoginController::class, 'logout'])->middleware('auth')->name('logout');
 
@@ -44,8 +47,15 @@ Route::middleware('auth')->group(function () {
         Route::post('/practice-exams/sitting/{attempt}/mark', [MockExamController::class, 'mark'])->name('mock-exams.mark');
     });
 
-    // Parent area
-    Route::get('/family', [ParentController::class, 'index'])->middleware('role:parent,admin')->name('family');
+    // Parent and teacher area
+    Route::middleware('role:parent,teacher,admin')->group(function () {
+        Route::get('/family', [ParentController::class, 'index'])->name('family');
+        Route::get('/family/students/create', [ParentController::class, 'create'])->name('family.students.create');
+        Route::post('/family/students', [ParentController::class, 'store'])->name('family.students.store');
+        Route::get('/family/students/{student}', [ParentController::class, 'show'])->name('family.students.show');
+        Route::put('/family/students/{student}', [ParentController::class, 'update'])->name('family.students.update');
+        Route::delete('/family/students/{student}', [ParentController::class, 'destroy'])->name('family.students.destroy');
+    });
 
     // Admin area
     Route::prefix('admin')->name('admin.')->middleware('role:admin')->group(function () {

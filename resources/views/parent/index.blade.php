@@ -1,41 +1,69 @@
 @extends('layouts.app')
-@section('title', 'My children')
+@section('title', $me->isTeacher() ? 'My students' : ($me->isAdmin() ? 'All students' : 'My children'))
 
 @section('content')
-    <header>
-        <p class="muted small" style="margin:0">This week · from {{ $since->format('l j F') }}</p>
-        <h1>How they’re going</h1>
+    <header class="row between">
+        <div>
+            <p class="muted small" style="margin:0">This week runs from {{ $since->format('l j F') }}</p>
+            <h1 style="margin:0">{{ $me->isTeacher() ? 'My students' : ($me->isAdmin() ? 'All students' : 'My children') }}</h1>
+        </div>
+        <a class="btn" href="{{ route('family.students.create') }}">+ Add a student</a>
     </header>
 
-    @forelse ($rows as $row)
-        @php($child = $row['child'])
-        <section class="card" aria-labelledby="c-{{ $child->id }}">
-            <div class="row between">
-                <h2 id="c-{{ $child->id }}" style="font-size:22px">{{ $child->name }}</h2>
-                <span class="muted small">{{ $child->level?->name }}</span>
-            </div>
-
-            <div class="grid-4">
-                <div><div class="muted small">Lessons finished</div><div class="big-number">{{ $row['lessonsThisWeek'] }}</div></div>
-                <div><div class="muted small">Questions answered</div><div class="big-number">{{ $row['questionsThisWeek'] }}</div></div>
-                <div><div class="muted small">Average score</div><div class="big-number">{{ $row['accuracy'] !== null ? $row['accuracy'].'%' : '—' }}</div></div>
-                <div><div class="muted small">Days studied</div><div class="big-number">{{ $row['daysThisWeek'] }} of 7</div></div>
-            </div>
-
-            <div>
-                <h3 style="font-size:16px;margin:0 0 8px">Needs more work</h3>
-                @forelse ($row['weak'] as $w)
-                    <div class="row between"><span>{{ $w['lesson']->title }}</span><span class="bad">{{ $w['score'] }}%</span></div>
-                @empty
-                    <p class="muted small" style="margin:0">Nothing flagged. Topics under 60% will show here.</p>
-                @endforelse
-            </div>
-        </section>
-    @empty
+    @if ($rows->isEmpty())
         <section class="card">
-            <p class="muted" style="margin:0">No children linked to your account yet.</p>
+            <h2 style="margin:0;font-size:20px">No students yet</h2>
+            <p class="muted" style="margin:0">Create an account for each {{ $me->isTeacher() ? 'student' : 'child' }}. You choose their login email and password, and their progress shows up here.</p>
+            <div><a class="btn" href="{{ route('family.students.create') }}">Add your first student</a></div>
         </section>
-    @endforelse
-
-    <p class="muted small" style="margin:0">Tutor chats stay private to your child.</p>
+    @else
+        <section class="card" style="padding:0;overflow:hidden">
+            <div class="table-scroll">
+                <table class="progress-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Student</th>
+                            <th scope="col">Course progress</th>
+                            <th scope="col">This week</th>
+                            <th scope="col">Average score</th>
+                            <th scope="col">Last active</th>
+                            <th scope="col">Needs work</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($rows as $row)
+                            @php($s = $row['student'])
+                            <tr>
+                                <td>
+                                    <a href="{{ route('family.students.show', $s) }}" style="font-weight:600">{{ $s->name }}</a>
+                                    <div class="small muted">{{ $s->level?->short_name ?? 'No year set' }}</div>
+                                </td>
+                                <td style="min-width:170px">
+                                    <div class="small">{{ $row['lessonsDone'] }} of {{ $row['lessonsTotal'] }} lessons · {{ $row['percent'] }}%</div>
+                                    <div class="bar" style="margin-top:6px"><span style="width:{{ $row['percent'] }}%"></span></div>
+                                </td>
+                                <td class="small">{{ $row['lessonsThisWeek'] }} {{ \Illuminate\Support\Str::plural('lesson', $row['lessonsThisWeek']) }}<br>{{ $row['questionsThisWeek'] }} questions</td>
+                                <td>
+                                    @if ($row['accuracy'] === null)
+                                        <span class="muted">—</span>
+                                    @else
+                                        <span class="score-pill {{ $row['accuracy'] >= 75 ? 'good' : ($row['accuracy'] >= 60 ? 'ok' : 'low') }}">{{ $row['accuracy'] }}%</span>
+                                    @endif
+                                </td>
+                                <td class="small">{{ $row['lastActive'] ? $row['lastActive']->diffForHumans() : 'Not started' }}</td>
+                                <td class="small">
+                                    @forelse ($row['weak'] as $w)
+                                        <div>{{ $w['lesson']->title }} <span class="bad">{{ $w['score'] }}%</span></div>
+                                    @empty
+                                        <span class="muted">Nothing flagged</span>
+                                    @endforelse
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <p class="muted small" style="margin:0">Click a name to see full progress, change their year level or reset their password.</p>
+    @endif
 @endsection

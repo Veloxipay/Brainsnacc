@@ -18,6 +18,7 @@ class User extends Authenticatable
     public const ROLE_ADMIN = 'admin';
     public const ROLE_PARENT = 'parent';
     public const ROLE_STUDENT = 'student';
+    public const ROLE_TEACHER = 'teacher';
 
     protected $fillable = ['name', 'email', 'password', 'role', 'parent_id', 'level_id'];
 
@@ -46,6 +47,17 @@ class User extends Authenticatable
         return $this->role === self::ROLE_STUDENT;
     }
 
+    public function isTeacher(): bool
+    {
+        return $this->role === self::ROLE_TEACHER;
+    }
+
+    /** Parents and teachers look after students. */
+    public function isSupervisor(): bool
+    {
+        return $this->isParent() || $this->isTeacher();
+    }
+
     public function level(): BelongsTo
     {
         return $this->belongsTo(Level::class);
@@ -56,9 +68,22 @@ class User extends Authenticatable
         return $this->belongsTo(User::class, 'parent_id');
     }
 
-    public function children(): HasMany
+    /** Students this parent or teacher looks after. */
+    public function students(): BelongsToMany
     {
-        return $this->hasMany(User::class, 'parent_id');
+        return $this->belongsToMany(User::class, 'student_supervisors', 'supervisor_id', 'student_id')->withTimestamps();
+    }
+
+    /** Parents and teachers who look after this student. */
+    public function supervisors(): BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'student_supervisors', 'student_id', 'supervisor_id')->withTimestamps();
+    }
+
+    /** Old name kept so existing code keeps working. */
+    public function children(): BelongsToMany
+    {
+        return $this->students();
     }
 
     public function completedLessons(): BelongsToMany

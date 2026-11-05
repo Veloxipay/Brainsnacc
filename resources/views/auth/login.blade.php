@@ -30,6 +30,7 @@
             <input type="checkbox" name="remember" value="1"> Keep me signed in
         </label>
         <button type="submit" class="btn">Log in</button>
+        <p class="small muted" style="margin:0">New here? <a href="{{ route('register') }}">Create an account</a> — for parents, teachers and students.</p>
     </form>
 </div>
 </body>

@@ -211,3 +211,30 @@ fieldset.mx-q { border: 1px solid var(--line); }
 @media (min-width: 761px) {
   .nav { position: sticky; top: 0; align-self: flex-start; height: 100vh; overflow-y: auto; box-sizing: border-box; }
 }
+
+/* Sign-up: choose parent / teacher / student */
+.role-pick { border: 0; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.role-pick legend { font-weight: 600; margin-bottom: 6px; }
+.role-pick label { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--line-strong); border-radius: 12px; cursor: pointer; font-weight: 400; }
+.role-pick label:has(input:checked) { border: 2px solid var(--chem); background: var(--chem-tint); }
+.role-pick label > span { display: flex; flex-direction: column; }
+.role-pick input { margin-top: 3px; accent-color: var(--chem); }
+
+/* Parent / teacher progress */
+.table-scroll { overflow-x: auto; }
+.progress-table { width: 100%; border-collapse: collapse; }
+.progress-table th { text-align: left; font-size: 13px; color: var(--muted); font-weight: 600; padding: 12px 16px; background: var(--ground); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.progress-table td { padding: 14px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.progress-table tr:last-child td { border-bottom: 0; }
+.progress-table tbody tr:hover { background: #FAFBFD; }
+.score-pill { display: inline-block; padding: 3px 10px; border-radius: 999px; font-weight: 700; font-size: 14px; }
+.score-pill.good { background: var(--good-tint); color: var(--good); }
+.score-pill.ok { background: #FFF4DB; color: #8A5A00; }
+.score-pill.low { background: #FDECEC; color: #A3261F; }
+.score-big { display: flex; flex-direction: column; align-items: flex-end; }
+.score-big strong { font-size: 32px; line-height: 1.1; }
+.heat { display: grid; grid-template-columns: repeat(14, 1fr); gap: 6px; max-width: 520px; }
+.heat-cell { aspect-ratio: 1; border-radius: 4px; background: var(--ground); border: 1px solid var(--line); }
+.heat-cell.lvl-1 { background: #C9DBFA; border-color: #C9DBFA; }
+.heat-cell.lvl-2 { background: #7FA7EE; border-color: #7FA7EE; }
+.heat-cell.lvl-3 { background: #2456C7; border-color: #2456C7; }

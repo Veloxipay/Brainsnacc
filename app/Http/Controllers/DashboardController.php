@@ -18,7 +18,7 @@ class DashboardController extends Controller
 
         return match (true) {
             $user->isAdmin() => redirect()->route('admin.lessons.index'),
-            $user->isParent() => redirect()->route('family'),
+            $user->isSupervisor() => redirect()->route('family'),
             default => redirect()->route('dashboard'),
         };
     }

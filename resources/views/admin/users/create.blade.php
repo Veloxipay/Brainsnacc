@@ -18,6 +18,7 @@
                 <select id="role" name="role">
                     <option value="student" @selected(old('role', 'student') === 'student')>Student</option>
                     <option value="parent" @selected(old('role') === 'parent')>Parent</option>
+                    <option value="teacher" @selected(old('role') === 'teacher')>Teacher</option>
                 </select>
             </div>
             <div class="field">
