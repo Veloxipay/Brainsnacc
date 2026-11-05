@@ -249,8 +249,108 @@ def s_recap(im, d, t, T, sc, ctx):
     if a > 0:
         para(d, (W // 2, BOTTOM - 46), sc.get('closing', 'Now try the practice questions!'), 'Bold', 32, W - 300, acc, 1, anchor='m')
 
+
+# ---------- maths: handwriting board and drawn diagrams ----------
+HAND = os.path.join(ROOT, 'video', 'fonts', 'Caveat.ttf')
+_hand = {}
+def hand(size):
+    if size not in _hand:
+        f = ImageFont.truetype(HAND, size)
+        try: f.set_variation_by_axes([600])
+        except Exception: pass
+        _hand[size] = f
+    return _hand[size]
+
+BOARD = (252, 252, 247); CHALK = (31, 41, 55)
+
+def write_line(im, xy, s, size, color, frac):
+    """Draw text as if being written: reveal it left to right, with a pen at the tip."""
+    if frac <= 0: return
+    f = hand(size)
+    tmp = Image.new('RGBA', (int(ImageDraw.Draw(im).textlength(s, font=f)) + 20, int(size * 1.6)), (0, 0, 0, 0))
+    ImageDraw.Draw(tmp).text((4, 0), s, font=f, fill=color)
+    w = max(1, int(tmp.width * min(1, frac)))
+    im.paste(tmp.crop((0, 0, w, tmp.height)), (int(xy[0]), int(xy[1])), tmp.crop((0, 0, w, tmp.height)))
+    if frac < 1:
+        d = ImageDraw.Draw(im); px, py = xy[0] + w, xy[1] + size * 0.75
+        d.line([(px, py), (px + 16, py - 34)], fill=(91, 62, 214), width=6)
+        d.ellipse([px - 4, py - 4, px + 4, py + 4], fill=(91, 62, 214))
+
+def s_board(im, d, t, T, sc, ctx):
+    """A worked example written on a whiteboard, line by line, as the teacher talks."""
+    acc, tint = ctx['colors']
+    heading(d, sc.get('heading', 'Worked example'), acc)
+    d.rounded_rectangle([70, TOP - 6, W - 70, BOTTOM + 4], 18, fill=BOARD, outline=(214, 211, 199), width=3)
+    q = sc.get('question', '')
+    y = TOP + 10
+    if q:
+        y = para(d, (100, y), q, 'SemiBold', 26, W - 220, INK, 2) + 8
+        d.line([(100, y), (W - 100, y)], fill=(225, 222, 210), width=2); y += 10
+    lines = sc.get('lines', [])[:5]
+    n = max(1, len(lines))
+    size = 54 if n <= 3 else (48 if n == 4 else 42)
+    while size > 30 and max((d.textlength(ln, font=hand(size)) for ln in lines), default=0) > W - 260:
+        size -= 2
+    gap = min(int(size * 1.35), (BOTTOM - y) // n)
+    ts = times(n, T, lead=1.0, tail=0.8)
+    for i, ln in enumerate(lines):
+        dur = max(0.9, min(2.2, len(ln) / 18))
+        frac = (t - ts[i]) / dur
+        last = i == len(lines) - 1
+        write_line(im, (110, y + i * gap), ln, size, (21, 128, 61) if last else CHALK, frac)
+
+_layers = {}
+def diagram_layers(path, width):
+    """The diagram as images, one per drawing step (lines first, then angles and labels)."""
+    key = (path, width)
+    if key in _layers: return _layers[key]
+    import cairosvg, io
+    src = open(os.path.join(ROOT, 'public', path)).read()
+    steps = sorted({int(x) for x in re.findall(r'data-step="(\d)"', src)}) or [1]
+    out = []
+    for k in steps:
+        layer = re.sub(r'<(\w+)\b[^>]*data-step="(\d)"[^>]*?(?:/>|>.*?</\1>)',
+                       lambda m: m.group(0) if int(m.group(2)) == k else '', src, flags=re.S)
+        layer = layer.replace('<rect width="100%" height="100%" fill="#FFFFFF"/>', '')
+        png = cairosvg.svg2png(bytestring=layer.encode(), output_width=width)
+        out.append(Image.open(io.BytesIO(png)).convert('RGBA'))
+    _layers[key] = out
+    return out
+
+def s_diagram(im, d, t, T, sc, ctx):
+    """A diagram drawn in stages (shape, then angles and labels), with up to 3 short notes."""
+    acc, tint = ctx['colors']
+    heading(d, sc.get('heading', ''), acc)
+    notes = sc.get('notes', [])[:3]
+    width = 600 if notes else 760
+    layers = diagram_layers(sc['diagram'], width)
+    h = layers[0].height
+    scale = min(1, (BOTTOM - TOP + 4) / h)
+    if scale < 1:
+        layers = [l.resize((int(l.width * scale), int(l.height * scale)), Image.LANCZOS) for l in layers]
+    lw, lh = layers[0].size
+    x0 = 80 if notes else (W - lw) // 2
+    y0 = TOP - 6 + ((BOTTOM - TOP + 10) - lh) // 2
+    d.rounded_rectangle([x0 - 10, y0 - 10, x0 + lw + 10, y0 + lh + 10], 16, fill=WHITE, outline=LINE, width=2)
+    k = len(layers)
+    ts = times(k + len(notes), T, lead=0.3)
+    for i, layer in enumerate(layers):
+        frac = (t - ts[i]) / 1.4
+        if frac <= 0: continue
+        w = max(1, int(lw * min(1, ease(frac))))
+        piece = layer.crop((0, 0, w, lh))
+        im.paste(piece, (x0, y0), piece)
+    for j, note in enumerate(notes):
+        a = appear(t, ts[k + j])
+        if a <= 0: continue
+        yy = TOP + 20 + j * 120
+        box = slide((x0 + lw + 40, yy, W - 70, yy + 100), a, 14)
+        card(d, box, tint if j == len(notes) - 1 else WHITE, tint if j == len(notes) - 1 else LINE, 14)
+        para(d, (box[0] + 20, box[1] + 16), note, 'SemiBold', 25, box[2] - box[0] - 40, INK, 3)
+
 SCENES = {'title': s_title, 'points': s_points, 'analogy': s_analogy, 'equation': s_equation,
-          'example': s_example, 'compare': s_compare, 'steps': s_steps, 'recap': s_recap}
+          'example': s_example, 'compare': s_compare, 'steps': s_steps, 'recap': s_recap,
+          'board': s_board, 'diagram': s_diagram}
 
 # ---------- frame ----------
 def base(ctx):
@@ -304,6 +404,8 @@ def render(script_path, stills=False):
     total = sum(1 for _ in sc['scenes'])
     for i, scene in enumerate(sc['scenes']):
         fn = SCENES[scene['type']]
+        if subject == 'maths' and scene['type'] == 'example':
+            fn = s_board
         wav, dur = tts(spoken(scene.get('say_as', scene['say'])))
         T = dur + 0.9
         cap = scene.get('caption', scene['say'])

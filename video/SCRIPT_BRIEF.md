@@ -56,3 +56,14 @@ When done, reply with the number of scripts written and any lesson you skipped.
 ## Maths videos (Years 7–10)
 
 Same format, with `"level": "Year 7"` (… `"Year 10"`), `"subject": "maths"` and `"lesson"` = the lesson's path under `database/content/` (e.g. `y8/maths/ratios.json`). Take the analogy from `## Think of it like this`, use `example` scenes for worked examples (each line one step; last line the answer) and `equation` scenes for rules (e.g. `a × (b + c) = ab + ac`). In `say`, write maths as it is spoken ("three x plus seven equals thirty-one", "x squared"); put the symbols in `caption`.
+
+**Maths `example` scenes are drawn on a whiteboard in handwriting**, line by line, as if the teacher is writing — keep each `lines` entry to one short step.
+
+**Diagram scenes** — for every visual topic, at least one (usually 2–3): the drawing appears in stages (shape first, then angles and labels) while the narrator explains.
+
+```json
+{"type": "diagram", "heading": "Corresponding angles are equal", "diagram": "diagrams/y7/maths/angles-and-parallel-lines-1.svg",
+ "notes": ["Find the F shape", "Both angles 65°"], "say": "Here are two parallel lines… ", "caption": "Corresponding angles are equal"}
+```
+
+`diagram` = a file made with `video/diagrams.py` (see the Diagrams part of WRITING_BRIEF.md; you can reuse the lesson's diagrams). `heading` ≤ 50 characters, up to 3 `notes` of ≤ 60 characters. Describe what is being drawn in `say` ("first the two parallel lines, then the angle of sixty-five degrees…").

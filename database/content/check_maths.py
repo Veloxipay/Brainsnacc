@@ -6,11 +6,39 @@ Prints OK <file> or a list of problems. Exit code 1 if any file has problems.
 Checks structure only; every number must still be worked out (see WRITING_BRIEF.md, Maths section).
 """
 import json, re, sys, os, glob
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "video"))
+from diagrams import check_svg
+PUBLIC = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "public")
 
 LEVELS = ['easy', 'medium', 'hard', 'challenge']
 LESSON_HEADINGS = ['## Learning objective', '## Before you start', '## Think of it like this', '## Key ideas',
                    '## Worked examples', '## Common mistakes', '## Tips to remember', '## Key terms', '## Summary']
 REVIEW_HEADINGS = ['## How to use this', '## Topics covered', '## Short-answer questions', '## Worked solutions']
+
+# Topics that are hard to learn without pictures: lessons need diagrams in the notes, questions and video.
+VISUAL_CHAPTERS = ['geometry', 'measurement', 'pythagoras', 'angle', 'transformations', 'linear relationships', 'statistics',
+                   'probability', 'trigonometry', 'parabolas', 'networks', 'quadratic equations and graphs', 'functions and graphs']
+VISUAL_LESSONS = ['cartesian', 'number line', 'inequalit', 'graph', 'scale drawing', 'data', 'venn', 'tree', 'circle', 'area',
+                  'volume', 'perimeter', 'angle', 'triangle', 'shape', 'net', 'symmetr', 'gradient', 'midpoint', 'distance',
+                  'similar', 'congruen', 'bearing', 'elevation', 'parabola', 'plot', 'histogram', 'box plot', 'scatter']
+
+
+def is_visual(entry):
+    m = entry['module'].lower(); t = entry['title'].lower()
+    return any(k in m for k in VISUAL_CHAPTERS) or any(k in t for k in VISUAL_LESSONS)
+
+
+def check_diagram(path_web, alt, where):
+    p = []
+    if not re.match(r'^/?diagrams/[a-z0-9/_-]+\.svg$', path_web or ''):
+        return [f'{where}: diagram path must look like diagrams/y7/maths/name.svg (got {path_web!r})']
+    full = os.path.join(PUBLIC, path_web.lstrip('/'))
+    if not os.path.exists(full):
+        return [f'{where}: diagram file not found: public/{path_web.lstrip("/")}']
+    p += [f'{where}: {x}' for x in check_svg(full)]
+    if not alt or len(alt.strip()) < 10:
+        p.append(f'{where}: describe the diagram in words (alt text, 10+ characters) for students using screen readers')
+    return p
 
 
 def check_question(q, i, need_topic, topics):
@@ -37,6 +65,8 @@ def check_question(q, i, need_topic, topics):
         p.append(f'{tag}: mistakes must have one note for each wrong option {wrong}')
     elif any(len(str(v).strip()) < 15 for v in q['mistakes'].values()):
         p.append(f'{tag}: each mistake note must say which step goes wrong and how to fix it')
+    if q.get('diagram'):
+        p += check_diagram(q['diagram'], q.get('diagram_alt'), tag)
     if len(q['prompt']) > 600:
         p.append(f'{tag}: prompt too long')
     if need_topic:
@@ -94,6 +124,17 @@ def check(path, manifest):
     if '<' in body.replace('<-', '') and re.search(r'<[a-zA-Z/]', body):
         p.append('body contains HTML tags — use Markdown only')
 
+    images = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', body)
+    for alt, src in images:
+        p += check_diagram(src, alt, 'body image')
+    with_diagram = sum(1 for q in qs if q.get('diagram'))
+    if is_visual(entry) and not review and not summary_lesson:
+        if is_test and with_diagram < 5:
+            p.append(f'this is a visual topic: at least 5 test questions need a diagram (has {with_diagram})')
+        if not is_test and len(images) < 2:
+            p.append(f'this is a visual topic: the notes need at least 2 diagrams (has {len(images)}) — e.g. in Key ideas and Worked examples')
+        if not is_test and with_diagram < 4:
+            p.append(f'this is a visual topic: at least 4 questions need a diagram (has {with_diagram})')
     if len(qs) != need:
         p.append(f'needs exactly {need} questions (has {len(qs)})')
     have = {lvl: sum(1 for q in qs if q.get('difficulty') == lvl) for lvl in LEVELS}

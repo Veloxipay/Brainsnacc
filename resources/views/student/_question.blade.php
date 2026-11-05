@@ -14,6 +14,7 @@
 <section class="card" id="q{{ $question->id }}" aria-labelledby="qp{{ $question->id }}">
     <span class="pill {{ ['biology' => 'bio', 'maths' => 'maths'][$subject->slug] ?? '' }}" style="align-self:flex-start">{{ $label }}@if ($level) · <span class="level level-{{ $question->difficulty }}">{{ $level }}</span>@endif · {{ $question->marks }} {{ \Illuminate\Support\Str::plural('mark', $question->marks) }}</span>
     <p id="qp{{ $question->id }}" style="margin:0;font-size:18px;font-weight:600">{{ $question->prompt }}</p>
+    @include('student._diagram', ['question' => $question])
 
     <form method="POST" action="{{ route('questions.answer', $question) }}" style="display:flex;flex-direction:column;gap:10px">
         @csrf

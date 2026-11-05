@@ -97,6 +97,8 @@ class LessonContentSeeder extends Seeder
                         'difficulty' => in_array($q['difficulty'] ?? null, $levels, true) ? $q['difficulty'] : null,
                         'topic' => isset($q['topic']) ? mb_substr((string) $q['topic'], 0, 190) : null,
                         'prompt' => $q['prompt'],
+                        'diagram' => isset($q['diagram']) && preg_match('#^diagrams/[a-z0-9/_-]+\.svg$#', $q['diagram']) ? $q['diagram'] : null,
+                        'diagram_alt' => isset($q['diagram_alt']) ? mb_substr((string) $q['diagram_alt'], 0, 300) : null,
                         'options' => $q['options'],
                         'answer' => strtoupper($q['answer']),
                         'explanation' => $q['explanation'] ?? null,

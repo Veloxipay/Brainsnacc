@@ -141,4 +141,14 @@ class MathsQuestionsTest extends TestCase
         $this->post(route('questions.answer', $hard[1]), ['answer' => $wrong($hard[1])])
             ->assertSessionHas('result', fn ($r) => str_contains($r['suggest']['text'] ?? '', 'Medium one first'));
     }
+
+    public function test_question_diagram_is_shown_with_its_description(): void
+    {
+        $lesson = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail();
+        $q = $lesson->questions->first();
+        $q->update(['diagram' => 'diagrams/test/angle.svg', 'diagram_alt' => 'An angle of 65 degrees marked x']);
+
+        $this->actingAs($this->year8())->get(route('lessons.show', $lesson))
+            ->assertOk()->assertSee('diagrams/test/angle.svg', false)->assertSee('An angle of 65 degrees marked x');
+    }
 }

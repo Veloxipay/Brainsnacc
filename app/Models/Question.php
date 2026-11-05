@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Question extends Model
 {
-    protected $fillable = ['lesson_id', 'type', 'difficulty', 'topic', 'prompt', 'options', 'answer', 'explanation', 'steps', 'mistakes', 'marks', 'sort'];
+    protected $fillable = ['lesson_id', 'type', 'difficulty', 'topic', 'prompt', 'diagram', 'diagram_alt', 'options', 'answer', 'explanation', 'steps', 'mistakes', 'marks', 'sort'];
 
     /** Question levels, easiest first. */
     public const LEVELS = ['easy' => 'Easy', 'medium' => 'Medium', 'hard' => 'Hard', 'challenge' => 'Challenge'];

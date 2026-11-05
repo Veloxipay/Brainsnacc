@@ -110,6 +110,23 @@ Practice-test layout covering Chapters 1–5: `## How to use this review`, `## T
 
 `"kind": "test"`, a short body (60–150 words: what it covers, "about 25 minutes, no notes, no calculator unless the question says"), `"minutes": 25`, and **15 questions: 4 easy, 5 medium, 4 hard, 2 challenge**. Every question has `"topic"` = the title of the chapter lesson it tests, copied exactly from `chapter_lessons`; every lesson in the chapter is tested at least once. The four tests of a chapter test the same skills with **different questions** (new numbers and contexts) — the checker refuses repeats. Tests are done with no hints, so the wording must be completely clear on its own.
 
+### Diagrams (geometry, measurement, graphs, data, probability — anything visual)
+
+Students must SEE the shape, angle or graph. Draw diagrams with `video/diagrams.py` (read its top docstring for every function). Everything is drawn to scale.
+
+```python
+import sys; sys.path.insert(0, 'video'); import diagrams as D
+s = D.parallel_lines(65, labels={('top', 'tr'): '65°', ('bottom', 'bl'): 'x'})
+D.preview(s, '/tmp/check.png')          # then LOOK at the PNG (Read it) — fix anything that overlaps or is wrong
+web = D.save(s, 'y7/maths/angles-and-parallel-lines-q3')   # → 'diagrams/y7/maths/angles-and-parallel-lines-q3.svg'
+```
+
+- Name files `<lesson-or-test file name>-<something short>` so they never clash with another lesson's.
+- In a **question**: add `"diagram": "diagrams/y7/maths/….svg"` and `"diagram_alt": "a sentence describing what the diagram shows, including the numbers"`. The prompt can then say "Find x in the diagram." The diagram must not give away the answer (label the unknown `x` or `?`).
+- In the **lesson body**: `![Two parallel lines cut by a transversal, with a 65° angle marked](/diagrams/y7/maths/….svg)` — in Key ideas (to show each new idea) and in Worked examples.
+- Visual topics (geometry, measurement, angles, Pythagoras, trig, transformations, Cartesian plane and graphs, number lines and inequalities, statistics and probability, networks, scale drawings): the checker requires **at least 2 diagrams in the notes and 4 diagram questions per lesson, and 5 diagram questions per chapter test**. Other topics may use diagrams wherever they help (e.g. number lines for integers, bar models for fractions as a `composite`/`polygon`).
+- A diagram is part of the answer's correctness: check every label matches the numbers in the prompt and steps.
+
 ### Every question (lessons and tests)
 
 ```json

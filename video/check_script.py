@@ -2,7 +2,7 @@
 import json, sys, glob, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIMITS = {'points': ('points', 5, 64), 'recap': ('points', 5, 60), 'example': ('lines', 5, 58), 'steps': ('steps', 5, 44)}
-TYPES = {'title', 'points', 'analogy', 'equation', 'example', 'compare', 'steps', 'recap'}
+TYPES = {'title', 'points', 'analogy', 'equation', 'example', 'compare', 'steps', 'recap', 'diagram'}
 def check(path):
     p = []
     try: s = json.load(open(path))
@@ -44,6 +44,11 @@ def check(path):
                 for pt in sd.get('points', []):
                     if len(pt) > 46: p.append(f'scene {i}: {side} point over 46 chars')
                 if len(sd.get('points', [])) > 4: p.append(f'scene {i}: {side} max 4 points')
+        if t == 'diagram':
+            dg = x.get('diagram', '')
+            if not dg.startswith('diagrams/') or not os.path.exists(os.path.join(ROOT, 'public', dg)): p.append(f'scene {i}: diagram file not found: {dg}')
+            if len(x.get('notes', [])) > 3 or any(len(n) > 60 for n in x.get('notes', [])): p.append(f'scene {i}: notes: max 3, each 60 chars')
+            if not x.get('heading') or len(x['heading']) > 50: p.append(f'scene {i}: diagram heading missing or over 50 chars')
         if t == 'title' and len(x.get('heading', s['title'])) > 60: p.append('title heading over 60 chars')
         if t == 'example' and len(x.get('question', '')) > 130: p.append(f'scene {i}: question over 130 chars')
         cap = x.get('caption', x.get('say', ''))

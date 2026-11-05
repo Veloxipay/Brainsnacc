@@ -28,6 +28,7 @@
                 <legend class="visually-hidden">Question {{ $i + 1 }}</legend>
                 <span class="pill maths" style="align-self:flex-start">Question {{ $i + 1 }} of {{ $lesson->questions->count() }}@if ($q->levelLabel()) · <span class="level level-{{ $q->difficulty }}">{{ $q->levelLabel() }}</span>@endif</span>
                 <p style="margin:0;font-size:18px;font-weight:600">{{ $q->prompt }}</p>
+                @include('student._diagram', ['question' => $q])
                 @foreach ($q->options ?? [] as $letter => $text)
                     <label class="option" style="font-weight:400;margin:0">
                         <input type="radio" name="answers[{{ $q->id }}]" value="{{ $letter }}">

@@ -41,6 +41,7 @@
                 <li class="feed-line {{ $right ? 'line-correct' : 'line-wrong' }}">
                     <div class="small muted">Question {{ $i + 1 }}@if ($q->levelLabel()) · {{ $q->levelLabel() }}@endif @if ($q->topic) · {{ $q->topic }}@endif</div>
                     <div style="font-weight:600">{{ $q->prompt }}</div>
+                @include('student._diagram', ['question' => $q])
                     <div class="line-row">
                         <span class="line-mark" aria-hidden="true">{{ $right ? '✓' : '✗' }}</span>
                         <span class="small line-status">
