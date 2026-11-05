@@ -1,45 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Brainsnacc logo">
   <defs>
-    <!-- bite taken out of the top-right -->
+    <!-- bite taken out of the top-right corner -->
     <mask id="bite">
       <rect width="120" height="120" fill="#fff"/>
-      <circle cx="106" cy="20" r="16" fill="#000"/>
-      <circle cx="117" cy="42" r="13" fill="#000"/>
-      <circle cx="86" cy="5" r="13" fill="#000"/>
+      <circle cx="105" cy="31" r="12" fill="#000"/>
+      <circle cx="114" cy="47" r="10" fill="#000"/>
+      <circle cx="94" cy="21" r="8" fill="#000"/>
     </mask>
-    <clipPath id="left"><rect x="0" y="0" width="60" height="120"/></clipPath>
-    <clipPath id="right"><rect x="60" y="0" width="60" height="120"/></clipPath>
-    <g id="brain">
-      <circle cx="38" cy="40" r="24"/>
-      <circle cx="62" cy="30" r="24"/>
-      <circle cx="84" cy="42" r="24"/>
-      <circle cx="28" cy="64" r="22"/>
-      <circle cx="94" cy="66" r="22"/>
-      <circle cx="46" cy="76" r="26"/>
-      <circle cx="76" cy="78" r="26"/>
-      <rect x="40" y="40" width="40" height="40"/>
-    </g>
   </defs>
   <g mask="url(#bite)">
-    <use href="#brain" fill="#2F6BEA" clip-path="url(#left)"/>
-    <use href="#brain" fill="#F08A24" clip-path="url(#right)"/>
-    <!-- folds -->
-    <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9">
-      <path d="M60 14 C56 30 64 44 58 58 C52 72 62 86 60 104"/>
-      <path d="M22 52 C30 48 38 54 36 62"/>
-      <path d="M30 82 C38 76 46 82 46 90"/>
-      <path d="M40 30 C46 36 44 44 38 46"/>
-      <path d="M98 56 C90 52 82 58 84 66"/>
-      <path d="M90 86 C82 80 74 86 74 94"/>
-      <path d="M78 30 C72 36 74 44 80 46"/>
+    <!-- book covers peeking out under the pages -->
+    <path d="M60 104 L8 96 L8 34 L14 33 L14 92 L60 99 Z" fill="#1E4FC2"/>
+    <path d="M60 104 L112 96 L112 34 L106 33 L106 92 L60 99 Z" fill="#C4620A"/>
+    <!-- left page = left half of the brain (bumpy top like brain folds) -->
+    <path d="M60 98 L14 91 L14 46
+             C14 34 22 26 30 30
+             C30 18 44 14 50 22
+             C54 16 60 18 60 24 Z" fill="#2F6BEA"/>
+    <!-- right page = right half of the brain -->
+    <path d="M60 98 L106 91 L106 46
+             C106 34 98 26 90 30
+             C90 18 76 14 70 22
+             C66 16 60 18 60 24 Z" fill="#F08A24"/>
+    <!-- brain folds drawn like lines of writing -->
+    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" opacity=".92">
+      <path d="M22 50 C28 45 34 53 40 48 C44 45 48 49 52 47"/>
+      <path d="M22 64 C28 59 34 67 40 62 C44 59 48 63 52 61"/>
+      <path d="M22 78 C28 73 34 81 40 76 C44 73 48 77 52 75"/>
+      <path d="M68 47 C72 49 76 45 80 48 C86 53 92 45 98 50"/>
+      <path d="M68 61 C72 63 76 59 80 62 C86 67 92 59 98 64"/>
+      <path d="M68 75 C72 77 76 73 80 76 C86 81 92 73 98 78"/>
     </g>
-    <!-- crumbs / sesame dots for the snack -->
-    <g fill="#fff" opacity=".85">
-      <circle cx="30" cy="38" r="2.2"/><circle cx="48" cy="62" r="2.2"/><circle cx="92" cy="74" r="2.2"/><circle cx="70" cy="64" r="2.2"/>
-    </g>
+    <!-- spine -->
+    <path d="M60 24 L60 99" stroke="#14213D" stroke-width="3" stroke-linecap="round" opacity=".55"/>
   </g>
   <!-- crumbs falling from the bite -->
   <g fill="#F08A24">
-    <circle cx="114" cy="62" r="3.2"/><circle cx="108" cy="71" r="2.2"/><circle cx="116" cy="74" r="1.8"/>
+    <circle cx="114" cy="60" r="3.2"/><circle cx="108" cy="69" r="2.2"/><circle cx="116" cy="72" r="1.8"/>
   </g>
 </svg>
