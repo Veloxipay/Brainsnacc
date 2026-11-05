@@ -280,25 +280,27 @@ def hand_runs(s):
         else: runs.append([ch, ok])
     return runs
 
+_stroke = None
+def stroke_font():
+    global _stroke
+    if _stroke is None:
+        from strokefont import StrokeFont
+        _stroke = StrokeFont('EMSCasualHand')
+    return _stroke
+
 def hand_width(d, s, size):
-    sym = ImageFont.truetype(SYMBOL, int(size * 0.85))
-    return sum(d.textlength(t, font=hand(size) if ok else sym) for t, ok in hand_runs(s))
+    return stroke_font().layout(s, size)[1]
 
 def write_line(im, xy, s, size, color, frac):
-    """Draw text as if being written: reveal it left to right, with a pen at the tip."""
+    """Write text the way a pen does: each letter traced stroke by stroke, with the pen at the tip."""
     if frac <= 0: return
-    f = hand(size); sym = ImageFont.truetype(SYMBOL, int(size * 0.85))
-    probe = ImageDraw.Draw(im)
-    tmp = Image.new('RGBA', (int(hand_width(probe, s, size)) + 20, int(size * 1.6)), (0, 0, 0, 0))
-    td = ImageDraw.Draw(tmp); x = 4
-    for t, ok in hand_runs(s):
-        if ok: td.text((x, 0), t, font=f, fill=color)
-        else: td.text((x, int(size * 0.24)), t, font=sym, fill=color)
-        x += td.textlength(t, font=f if ok else sym)
-    w = max(1, int(tmp.width * min(1, frac)))
-    im.paste(tmp.crop((0, 0, w, tmp.height)), (int(xy[0]), int(xy[1])), tmp.crop((0, 0, w, tmp.height)))
-    if frac < 1:
-        d = ImageDraw.Draw(im); px, py = xy[0] + w, xy[1] + size * 0.75
+    import strokefont
+    d = ImageDraw.Draw(im)
+    laid = stroke_font().layout(s, size)
+    base = (int(xy[0]) + 4, int(xy[1] + size * 0.95))
+    tip = strokefont.draw(d, base, laid, frac, color, max(3, int(size / 11)), ImageFont.truetype(SYMBOL, int(size * 0.8)), size)
+    if tip:
+        px, py = tip
         d.line([(px, py), (px + 16, py - 34)], fill=(91, 62, 214), width=6)
         d.ellipse([px - 4, py - 4, px + 4, py + 4], fill=(91, 62, 214))
 
@@ -320,52 +322,48 @@ def s_board(im, d, t, T, sc, ctx):
     gap = min(int(size * 1.35), (BOTTOM - y) // n)
     ts = times(n, T, lead=1.0, tail=0.8)
     for i, ln in enumerate(lines):
-        dur = max(0.9, min(2.2, len(ln) / 18))
+        dur = max(1.0, min(2.8, len(ln) / 13))
         frac = (t - ts[i]) / dur
         last = i == len(lines) - 1
         write_line(im, (110, y + i * gap), ln, size, (21, 128, 61) if last else CHALK, frac)
 
-_layers = {}
-def diagram_layers(path, width):
-    """The diagram as images, one per drawing step (lines first, then angles and labels)."""
-    key = (path, width)
-    if key in _layers: return _layers[key]
-    import cairosvg, io
-    src = open(os.path.join(ROOT, 'public', path)).read()
-    steps = sorted({int(x) for x in re.findall(r'data-step="(\d)"', src)}) or [1]
-    out = []
-    for k in steps:
-        layer = re.sub(r'<(\w+)\b[^>]*data-step="(\d)"[^>]*?(?:/>|>.*?</\1>)',
-                       lambda m: m.group(0) if int(m.group(2)) == k else '', src, flags=re.S)
-        layer = layer.replace('<rect width="100%" height="100%" fill="#FFFFFF"/>', '')
-        png = cairosvg.svg2png(bytestring=layer.encode(), output_width=width)
-        out.append(Image.open(io.BytesIO(png)).convert('RGBA'))
-    _layers[key] = out
-    return out
+_sketches = {}
+def sketch_frame(path, width, progress):
+    """The diagram part-way through being drawn by hand (progress: {step: 0..1})."""
+    from sketch import Sketch
+    if path not in _sketches:
+        _sketches[path] = (Sketch(open(os.path.join(ROOT, 'public', path)).read()), {})
+    sk, cache = _sketches[path]
+    key = (width,) + tuple(round(progress.get(st, 0) * 60) for st in sk.steps)
+    if key not in cache:
+        cache[key] = sk.png({st: k / 60 for st, k in zip(sk.steps, key[1:])}, width)
+    return sk.steps, cache[key]
 
 def s_diagram(im, d, t, T, sc, ctx):
-    """A diagram drawn in stages (shape, then angles and labels), with up to 3 short notes."""
+    """A diagram drawn by hand, line by line: the shape first, then angles and labels, with up to 3 short notes."""
     acc, tint = ctx['colors']
     heading(d, sc.get('heading', ''), acc)
     notes = sc.get('notes', [])[:3]
     width = 600 if notes else 760
-    layers = diagram_layers(sc['diagram'], width)
-    h = layers[0].height
+    steps, first = sketch_frame(sc['diagram'], width, {})
+    h = first.height
     scale = min(1, (BOTTOM - TOP + 4) / h)
-    if scale < 1:
-        layers = [l.resize((int(l.width * scale), int(l.height * scale)), Image.LANCZOS) for l in layers]
-    lw, lh = layers[0].size
+    lw, lh = int(first.width * scale), int(h * scale)
     x0 = 80 if notes else (W - lw) // 2
     y0 = TOP - 6 + ((BOTTOM - TOP + 10) - lh) // 2
     d.rounded_rectangle([x0 - 10, y0 - 10, x0 + lw + 10, y0 + lh + 10], 16, fill=WHITE, outline=LINE, width=2)
-    k = len(layers)
+    k = len(steps)
     ts = times(k + len(notes), T, lead=0.3)
-    for i, layer in enumerate(layers):
-        frac = (t - ts[i]) / 1.4
-        if frac <= 0: continue
-        w = max(1, int(lw * min(1, ease(frac))))
-        piece = layer.crop((0, 0, w, lh))
-        im.paste(piece, (x0, y0), piece)
+    # Each step is drawn over the time until the next one starts (at least 1.5 s, at most 4 s).
+    progress = {}
+    for i, st in enumerate(steps):
+        nxt = ts[i + 1] if i + 1 < len(ts) else T - 0.5
+        dur = max(1.5, min(4.0, (nxt - ts[i]) * 0.85))
+        progress[st] = max(0.0, min(1.0, (t - ts[i]) / dur))
+    _, frame = sketch_frame(sc['diagram'], width, progress)
+    if scale < 1:
+        frame = frame.resize((lw, lh), Image.LANCZOS)
+    im.paste(frame, (x0, y0), frame)
     for j, note in enumerate(notes):
         a = appear(t, ts[k + j])
         if a <= 0: continue
