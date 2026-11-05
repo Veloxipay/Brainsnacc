@@ -1,0 +1,357 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7",
+  "title": "Chapter 9 · Test 2",
+  "kind": "test",
+  "summary": "A 15-question chapter test on equations: checking solutions, backtracking, two-step equations, formulas and worded problems.",
+  "minutes": 25,
+  "body": "This test covers Chapter 9, Equations: what an equation is and how to check a solution, solving equations by backtracking, solving two-step equations with the balance method, using formulas, and turning worded problems into equations.\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes, no calculator unless the question says.\n- **Questions:** 15 multiple-choice questions — 4 Easy, 5 Medium, 4 Hard and 2 Challenge.\n\nWrite your working on paper. A quick check — substituting your answer back into the equation — will catch most slips. If you get one wrong, look at which step went wrong, then go back to that lesson.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Introduction to equations",
+      "prompt": "Is x = 4 a solution of 3x + 2 = 14?",
+      "options": {
+        "A": "No, because 3 × 4 + 2 = 18",
+        "B": "Yes, because 3 × 4 + 2 = 14",
+        "C": "No, because 34 + 2 = 36",
+        "D": "No, because 3 + 4 + 2 = 9"
+      },
+      "answer": "B",
+      "explanation": "3x means 3 × x, so the left side is 3 × 4 + 2 = 12 + 2 = 14, which equals the right side. Writing 34 forgets the hidden × sign.",
+      "steps": [
+        "Substitute x = 4 into the left side: 3 × 4 + 2.",
+        "Multiply first: 12 + 2 = 14.",
+        "LHS = 14 = RHS, so yes, x = 4 is a solution."
+      ],
+      "mistakes": {
+        "A": "Step 2: you added 4 + 2 first. Multiply first: 3 × 4 = 12, then add 2.",
+        "C": "Step 1: 3x means 3 × x. When you substitute 4, write 3 × 4, not 34.",
+        "D": "Step 1: 3x means 3 × x, not 3 + x."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Solving equations by backtracking",
+      "prompt": "Solve x/7 = 6.",
+      "options": {
+        "A": "x = 13",
+        "B": "x = 6/7",
+        "C": "x = −1",
+        "D": "x = 42"
+      },
+      "answer": "D",
+      "explanation": "x was divided by 7, so backtrack by multiplying: 6 × 7 = 42. Dividing again (6/7) repeats the operation instead of undoing it.",
+      "steps": [
+        "Flowchart: x →(÷ 7)→ 6.",
+        "Undo ÷ 7 with × 7: 6 × 7 = 42.",
+        "Check: 42 ÷ 7 = 6 ✓, so x = 42."
+      ],
+      "mistakes": {
+        "A": "Step 2: the inverse of ÷ 7 is × 7. Multiply 6 by 7 — don't add 7.",
+        "B": "Step 2: you divided again. To undo ÷ 7, multiply by 7.",
+        "C": "Step 2: the inverse of ÷ 7 is × 7, not − 7."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Solving two-step equations",
+      "prompt": "Solve 4x + 3 = 27.",
+      "options": {
+        "A": "x = 6",
+        "B": "x = 7.5",
+        "C": "x = 24",
+        "D": "x = 3.75"
+      },
+      "answer": "A",
+      "explanation": "Subtract 3 from both sides (4x = 24), then divide by 4: x = 6. 24 is 4x, not x.",
+      "steps": [
+        "Subtract 3 from both sides — to remove the + 3: 4x = 24.",
+        "Divide both sides by 4 — to get x on its own: x = 6.",
+        "Check: 4 × 6 + 3 = 27 ✓"
+      ],
+      "mistakes": {
+        "B": "Step 1: to remove + 3, subtract 3 from both sides — don't add 3.",
+        "C": "Step 2: 4x = 24 isn't finished. Divide both sides by 4.",
+        "D": "Step 1: you divided by 4 first. Remove the + 3 first, then divide by 4."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Using formulas",
+      "prompt": "The perimeter of an equilateral triangle is P = 3s, where s is the side length. Find P when s = 11 cm.",
+      "options": {
+        "A": "14 cm",
+        "B": "311 cm",
+        "C": "33 cm",
+        "D": "3⅔ cm"
+      },
+      "answer": "C",
+      "explanation": "3s means 3 × s, so P = 3 × 11 = 33 cm. A triangle with three 11 cm sides has perimeter 11 + 11 + 11 = 33 cm.",
+      "steps": [
+        "Write in the multiplication sign: P = 3 × s.",
+        "Substitute s = 11: P = 3 × 11.",
+        "Multiply: P = 33, so the perimeter is 33 cm."
+      ],
+      "mistakes": {
+        "A": "Step 1: 3s means 3 × s, so multiply 3 by 11 — don't add.",
+        "B": "Step 1: put the × sign back in when you substitute: 3s becomes 3 × 11, not 311.",
+        "D": "Step 2: 3s means 3 × s. You divided 11 by 3 instead of multiplying."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Introduction to equations",
+      "prompt": "Noah is solving 6n − 4 = 50 by guess, check and improve. He tries n = 8 and gets 6 × 8 − 4 = 44. What should he do next?",
+      "options": {
+        "A": "Try a bigger value of n, because 44 is less than 50",
+        "B": "Try a smaller value of n, because 44 is less than 50",
+        "C": "Stop — n = 8 is the solution because 44 is close to 50",
+        "D": "Try n = 14, because 50 − 44 = 6 and 8 + 6 = 14"
+      },
+      "answer": "A",
+      "explanation": "44 is less than 50, so n = 8 is too small and Noah should try a bigger value. (n = 9 works: 6 × 9 − 4 = 50.) A guess that is only close is not a solution.",
+      "steps": [
+        "Compare: the LHS is 44 but the RHS is 50, so they are not equal yet.",
+        "44 is too small, and a bigger n makes 6n − 4 bigger.",
+        "So Noah should try a bigger value of n (n = 9 gives exactly 50)."
+      ],
+      "mistakes": {
+        "B": "Step 2: 44 is too small, and making n smaller makes 6n − 4 even smaller. Go bigger.",
+        "C": "Step 1: a solution must make both sides exactly equal. 44 ≠ 50, so keep improving.",
+        "D": "Step 2: each extra 1 in n adds 6 to 6n − 4, so a gap of 6 needs n to go up by 1, not by 6."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving equations by backtracking",
+      "prompt": "Solve 3(x + 4) = 33.",
+      "options": {
+        "A": "x = 11",
+        "B": "x = 15",
+        "C": "x = 9⅔",
+        "D": "x = 7"
+      },
+      "answer": "D",
+      "explanation": "Backtrack: undo × 3 first (33 ÷ 3 = 11), then undo + 4 (11 − 4 = 7). Subtracting 4 first gives 9⅔, which is the wrong order.",
+      "steps": [
+        "Flowchart (brackets first): x →(+ 4)→ x + 4 →(× 3)→ 33.",
+        "Undo × 3: 33 ÷ 3 = 11.",
+        "Undo + 4: 11 − 4 = 7, so x = 7. Check: 3 × (7 + 4) = 33 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 3: 11 is x + 4, not x. Subtract 4 to finish.",
+        "B": "Step 3: the inverse of + 4 is − 4. Subtract 4 from 11 — don't add it.",
+        "C": "Step 2: the bracket is worked out first, so × 3 is the last step. Divide by 3 first, then subtract 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving two-step equations",
+      "prompt": "Solve x/6 − 2 = 4.",
+      "options": {
+        "A": "x = 12",
+        "B": "x = 36",
+        "C": "x = 1",
+        "D": "x = 22"
+      },
+      "answer": "B",
+      "explanation": "Add 2 to both sides (x/6 = 6), then multiply by 6: x = 36. Dividing 6 by 6 instead gives 1, which doesn't check.",
+      "steps": [
+        "Add 2 to both sides — to cancel the − 2: x/6 = 6.",
+        "Multiply both sides by 6 — because multiplying undoes dividing: x = 36.",
+        "Check: 36 ÷ 6 − 2 = 6 − 2 = 4 ✓, so x = 36."
+      ],
+      "mistakes": {
+        "A": "Step 1: to remove − 2, add 2 to both sides — don't subtract 2.",
+        "C": "Step 2: to undo ÷ 6, multiply both sides by 6 — don't divide again.",
+        "D": "Step 1: you multiplied by 6 before removing the − 2. Add 2 first, then multiply by 6."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Using formulas",
+      "prompt": "The area of a triangle is A = ½ × b × h. Find A when b = 10 cm and h = 7 cm.",
+      "options": {
+        "A": "70 cm²",
+        "B": "17 cm²",
+        "C": "35 cm²",
+        "D": "8.5 cm²"
+      },
+      "answer": "C",
+      "explanation": "A = ½ × 10 × 7 = ½ × 70 = 35 cm². Forgetting the ½ gives 70 cm², the area of the whole rectangle around the triangle.",
+      "steps": [
+        "Substitute: A = ½ × 10 × 7.",
+        "Multiply: 10 × 7 = 70.",
+        "Halve: A = 35, so the area is 35 cm²."
+      ],
+      "mistakes": {
+        "A": "Step 3: you found b × h but forgot the ½. Halve 70.",
+        "B": "Step 2: b × h means multiply b and h, not add them.",
+        "D": "Step 2: you added 10 + 7 and halved it. Multiply b × h, then halve."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving worded problems with equations",
+      "prompt": "A number is divided by 4, and then 3 is added. The result is 10. What was the number?",
+      "options": {
+        "A": "28",
+        "B": "52",
+        "C": "37",
+        "D": "7"
+      },
+      "answer": "A",
+      "explanation": "The equation is n/4 + 3 = 10. Subtract 3 (n/4 = 7), then multiply by 4: n = 28. 7 is a quarter of the number, not the number.",
+      "steps": [
+        "Let n be the number.",
+        "Write the equation: n/4 + 3 = 10.",
+        "Subtract 3: n/4 = 7. Multiply by 4: n = 28. Check: 28 ÷ 4 + 3 = 10 ✓"
+      ],
+      "mistakes": {
+        "B": "Step 3: to remove + 3, subtract 3 from 10 — don't add 3.",
+        "C": "Step 3: undo the last operation first. Subtract 3 before multiplying by 4.",
+        "D": "Step 4: n/4 = 7 isn't finished. Multiply by 4 to find n."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Introduction to equations",
+      "prompt": "Which value of x is a solution of 20 − 3x = 5?",
+      "options": {
+        "A": "x = −5",
+        "B": "x = 5",
+        "C": "x = 15",
+        "D": "x = 8⅓"
+      },
+      "answer": "B",
+      "explanation": "Substitute x = 5: 20 − 3 × 5 = 20 − 15 = 5, which equals the right side. x = 15 is the value of 3x, not x.",
+      "steps": [
+        "Ask: 20 minus what makes 5? So 3x = 15.",
+        "3 × what makes 15? That gives x = 5.",
+        "Check: 20 − 3 × 5 = 20 − 15 = 5 ✓, so x = 5."
+      ],
+      "mistakes": {
+        "A": "Step 2: 20 − 3 × (−5) = 20 + 15 = 35, not 5. Take care with the signs.",
+        "C": "Step 2: 15 is 3x, not x. Then 20 − 3 × 15 = −25, which is not 5.",
+        "D": "Step 1: 20 − 3x = 5 means 3x is taken away from 20, so 3x = 20 − 5 — don't add 20 + 5."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving equations by backtracking",
+      "prompt": "Solve (x + 5)/4 = 6.",
+      "options": {
+        "A": "x = 4",
+        "B": "x = 29",
+        "C": "x = 19",
+        "D": "x = 1"
+      },
+      "answer": "C",
+      "explanation": "x had 5 added, then the result was divided by 4. Backtrack: 6 × 4 = 24, then 24 − 5 = 19. Subtracting 5 first gives the wrong order.",
+      "steps": [
+        "Flowchart: x →(+ 5)→ x + 5 →(÷ 4)→ 6.",
+        "Undo ÷ 4: 6 × 4 = 24.",
+        "Undo + 5: 24 − 5 = 19, so x = 19. Check: (19 + 5) ÷ 4 = 6 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 2: the whole of x + 5 was divided by 4, so ÷ 4 is the last operation. Multiply by 4 first, then subtract 5.",
+        "B": "Step 3: the inverse of + 5 is − 5. Subtract 5 from 24 — don't add it.",
+        "D": "Step 2: you skipped undoing ÷ 4. Multiply 6 by 4 before subtracting 5."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving two-step equations",
+      "prompt": "Solve 5x + 12 = −8.",
+      "options": {
+        "A": "x = 4",
+        "B": "x = −20",
+        "C": "x = 0.8",
+        "D": "x = −4"
+      },
+      "answer": "D",
+      "explanation": "Subtract 12 from both sides: 5x = −8 − 12 = −20. Divide by 5: x = −4. Losing the negative sign gives 4, which doesn't check.",
+      "steps": [
+        "Subtract 12 from both sides — to remove the + 12: 5x = −8 − 12 = −20.",
+        "Divide both sides by 5: x = −20 ÷ 5.",
+        "x = −4. Check: 5 × (−4) + 12 = −20 + 12 = −8 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: −8 − 12 is −20, not 20. Keep the negative sign.",
+        "B": "Step 2: 5x = −20 isn't finished. Divide both sides by 5.",
+        "C": "Step 1: to remove + 12, subtract 12 from both sides — don't add 12."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving worded problems with equations",
+      "prompt": "A rectangle's length is twice its width. Its perimeter is 54 cm. What is its width?",
+      "options": {
+        "A": "9 cm",
+        "B": "18 cm",
+        "C": "13.5 cm",
+        "D": "27 cm"
+      },
+      "answer": "A",
+      "explanation": "Let the width be w, so the length is 2w. The perimeter is w + 2w + w + 2w = 6w = 54, so w = 9 cm. 18 cm is the length.",
+      "steps": [
+        "Let w = the width in cm; the length is 2w.",
+        "Perimeter: w + 2w + w + 2w = 6w, so 6w = 54.",
+        "Divide both sides by 6: w = 9. The width is 9 cm (check: 2 × 9 + 2 × 18 = 54 ✓)."
+      ],
+      "mistakes": {
+        "B": "Step 4: 18 cm is the length (2w). The question asks for the width, w.",
+        "C": "Step 1: 54 ÷ 4 treats the shape as a square. The length is twice the width, so use w and 2w.",
+        "D": "Step 2: 54 ÷ 2 = 27 is the length plus the width together, not the width."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Using formulas",
+      "prompt": "Tables in a row seat people using the formula c = 2t + 2, where c is the number of chairs and t is the number of tables. How many tables are needed for 30 chairs?",
+      "options": {
+        "A": "62",
+        "B": "14",
+        "C": "16",
+        "D": "28"
+      },
+      "answer": "B",
+      "explanation": "Substitute c = 30: 30 = 2t + 2. Subtract 2 (2t = 28), then divide by 2: t = 14. Putting 30 in for t answers a different question (chairs for 30 tables).",
+      "steps": [
+        "30 chairs means c = 30: 30 = 2t + 2.",
+        "Subtract 2 from both sides: 28 = 2t.",
+        "Divide both sides by 2: t = 14. Check: 2 × 14 + 2 = 30 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: 30 is the number of chairs, so substitute c = 30, not t = 30.",
+        "C": "Step 2: to remove + 2, subtract 2 from 30 — don't add 2.",
+        "D": "Step 3: 2t = 28 isn't finished. Divide both sides by 2."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Solving worded problems with equations",
+      "prompt": "Sophie has three times as many stickers as Ava. If Sophie gives Ava 10 stickers, they will both have the same number. How many stickers does Ava have now?",
+      "options": {
+        "A": "10",
+        "B": "5",
+        "C": "20",
+        "D": "30"
+      },
+      "answer": "A",
+      "explanation": "Let Ava have a, so Sophie has 3a. After the swap: 3a − 10 = a + 10, so 2a = 20 and a = 10. They then have 20 each, but Ava has 10 now.",
+      "steps": [
+        "Let Ava have a stickers, so Sophie has 3a.",
+        "After the swap they are equal: 3a − 10 = a + 10.",
+        "Take a from both sides: 2a − 10 = 10. Add 10: 2a = 20. Divide by 2: a = 10. Ava has 10 now (check: 30 − 10 = 20 and 10 + 10 = 20 ✓)."
+      ],
+      "mistakes": {
+        "B": "Step 2: giving 10 stickers moves the gap by 20 (Sophie loses 10 and Ava gains 10). Write 3a − 10 = a + 10.",
+        "C": "Step 4: 20 is how many each girl has after the swap. The question asks how many Ava has now.",
+        "D": "Step 4: 30 is Sophie's number now (3a). The question asks for Ava's."
+      }
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7",
+  "title": "Chapter 9 · Test 1",
+  "kind": "test",
+  "summary": "A 15-question chapter test on equations: checking solutions, backtracking, two-step equations, formulas and worded problems.",
+  "minutes": 25,
+  "body": "This test covers Chapter 9, Equations: what an equation is and how to check a solution, solving equations by backtracking, solving two-step equations with the balance method, using formulas, and turning worded problems into equations.\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes, no calculator unless the question says.\n- **Questions:** 15 multiple-choice questions — 4 Easy, 5 Medium, 4 Hard and 2 Challenge.\n\nWrite your working on paper. A quick check — substituting your answer back into the equation — will catch most slips. If you get one wrong, look at which step went wrong, then go back to that lesson.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Introduction to equations",
+      "prompt": "Which value of m is a solution of 3m = 24?",
+      "options": {
+        "A": "m = 21",
+        "B": "m = 8",
+        "C": "m = 27",
+        "D": "m = 72"
+      },
+      "answer": "B",
+      "explanation": "3m means 3 × m, so ask: 3 times what makes 24? That is 8, because 3 × 8 = 24. 72 comes from multiplying instead of dividing.",
+      "steps": [
+        "3m means 3 × m, so ask: \"3 times what number makes 24?\"",
+        "Undo × 3 by dividing: 24 ÷ 3 = 8.",
+        "Check: 3 × 8 = 24 ✓, so m = 8."
+      ],
+      "mistakes": {
+        "A": "Step 1: 3m means 3 × m, so divide 24 by 3 — don't subtract 3.",
+        "C": "Step 1: 3m means 3 × m, so undo it by dividing by 3, not by adding 3.",
+        "D": "Step 1: you multiplied 24 by 3. To undo × 3, divide by 3 instead."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Solving equations by backtracking",
+      "prompt": "Solve x − 12 = 25.",
+      "options": {
+        "A": "x = 37",
+        "B": "x = 13",
+        "C": "x = −13",
+        "D": "x = 25"
+      },
+      "answer": "A",
+      "explanation": "12 was subtracted from x, so backtrack by adding 12: 25 + 12 = 37. Subtracting 12 again (giving 13) does the same operation instead of the inverse.",
+      "steps": [
+        "Flowchart: x →(− 12)→ 25.",
+        "Backtrack with the inverse of − 12, which is + 12: 25 + 12 = 37.",
+        "Check: 37 − 12 = 25 ✓, so x = 37."
+      ],
+      "mistakes": {
+        "B": "Step 2: the inverse of − 12 is + 12, so add 12 to 25 — don't subtract it.",
+        "C": "Step 2: you worked out 12 − 25. Undo − 12 by adding 12 to 25.",
+        "D": "Step 2: you haven't undone the − 12 yet. Add 12 to 25 to finish."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Solving two-step equations",
+      "prompt": "Solve 2x + 5 = 19.",
+      "options": {
+        "A": "x = 12",
+        "B": "x = 14",
+        "C": "x = 7",
+        "D": "x = 4.5"
+      },
+      "answer": "C",
+      "explanation": "Subtract 5 from both sides (2x = 14), then divide by 2 to get x = 7. 14 is only 2x, not x.",
+      "steps": [
+        "Subtract 5 from both sides — to remove the + 5: 2x = 14.",
+        "Divide both sides by 2 — to get x on its own: x = 7.",
+        "Check: 2 × 7 + 5 = 19 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: subtract 5 from both sides to remove the + 5 — don't add it.",
+        "B": "Step 2: 2x = 14 isn't finished. Divide both sides by 2 to get x on its own.",
+        "D": "Step 1: you divided by 2 first. Remove the + 5 first, then divide by 2."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Using formulas",
+      "prompt": "The cost, in dollars, of n movie tickets is C = 15n. Find C when n = 4.",
+      "options": {
+        "A": "$19",
+        "B": "$154",
+        "C": "$3.75",
+        "D": "$60"
+      },
+      "answer": "D",
+      "explanation": "15n means 15 × n, so C = 15 × 4 = 60 dollars. Writing the 4 next to the 15 to make 154 forgets the hidden × sign.",
+      "steps": [
+        "Write in the multiplication sign: C = 15 × n.",
+        "Substitute n = 4: C = 15 × 4.",
+        "Multiply: C = 60, so the tickets cost $60."
+      ],
+      "mistakes": {
+        "A": "Step 1: 15n means 15 × n, so multiply 15 by 4 — don't add them.",
+        "B": "Step 1: when you substitute, put a × sign in: 15n becomes 15 × 4, not the digits 154.",
+        "C": "Step 2: 15n means 15 × n. You divided 15 by 4 instead of multiplying."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Introduction to equations",
+      "prompt": "Which equation means \"a number is multiplied by 5, then 4 is subtracted, and the result is 26\"?",
+      "options": {
+        "A": "5(n − 4) = 26",
+        "B": "5n − 4 = 26",
+        "C": "4n − 5 = 26",
+        "D": "5n + 4 = 26"
+      },
+      "answer": "B",
+      "explanation": "Multiply the number by 5 to get 5n, then subtract 4 to get 5n − 4, and set it equal to 26. 5(n − 4) would subtract 4 before multiplying.",
+      "steps": [
+        "Let n be the number.",
+        "\"Multiplied by 5\" gives 5n; \"then 4 is subtracted\" gives 5n − 4.",
+        "\"The result is 26\" gives = 26, so the equation is 5n − 4 = 26."
+      ],
+      "mistakes": {
+        "A": "Step 1: the brackets mean 4 is taken away first. The words say multiply by 5 first, then subtract 4.",
+        "C": "Step 1: check which number does which job — the number is multiplied by 5, and 4 is subtracted.",
+        "D": "Step 2: \"4 is subtracted\" means − 4, not + 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving equations by backtracking",
+      "prompt": "Solve x/3 + 5 = 12.",
+      "options": {
+        "A": "x = 21",
+        "B": "x = 31",
+        "C": "x = 7",
+        "D": "x = 51"
+      },
+      "answer": "A",
+      "explanation": "Backtrack: 12 − 5 = 7, then 7 × 3 = 21. Multiplying 12 by 3 first gives 31, because the operations were undone in the wrong order.",
+      "steps": [
+        "Flowchart: x →(÷ 3)→ x/3 →(+ 5)→ 12.",
+        "Undo + 5 first: 12 − 5 = 7.",
+        "Undo ÷ 3 by multiplying: 7 × 3 = 21, so x = 21. Check: 21 ÷ 3 + 5 = 12 ✓"
+      ],
+      "mistakes": {
+        "B": "Step 2: you undid ÷ 3 first. Undo the last operation (+ 5) first, then multiply by 3.",
+        "C": "Step 3: x/3 = 7 isn't finished. Undo the ÷ 3 by multiplying by 3.",
+        "D": "Step 2: the inverse of + 5 is − 5. Subtract 5 from 12 — don't add it."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving two-step equations",
+      "prompt": "Solve 5x − 8 = 27.",
+      "options": {
+        "A": "x = 3.8",
+        "B": "x = 35",
+        "C": "x = 13.4",
+        "D": "x = 7"
+      },
+      "answer": "D",
+      "explanation": "Add 8 to both sides (5x = 35), then divide by 5: x = 7. Subtracting 8 instead gives 5x = 19 and x = 3.8, which doesn't check.",
+      "steps": [
+        "Add 8 to both sides — to cancel the − 8: 5x = 35.",
+        "Divide both sides by 5 — to get x on its own: x = 7.",
+        "Check: 5 × 7 − 8 = 35 − 8 = 27 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: to remove − 8, add 8 to both sides — don't subtract 8.",
+        "B": "Step 2: 5x = 35 isn't finished. Divide both sides by 5.",
+        "C": "Step 1: you divided by 5 before dealing with the − 8. Add 8 first, then divide by 5."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Using formulas",
+      "prompt": "A plumber charges C = 60 + 45h dollars, where h is the number of hours. Find the cost of a 3-hour job.",
+      "options": {
+        "A": "$315",
+        "B": "$108",
+        "C": "$195",
+        "D": "$135"
+      },
+      "answer": "C",
+      "explanation": "Multiply first: 45 × 3 = 135, then add 60 to get $195. Adding 60 + 45 first and then multiplying gives $315, which breaks the order of operations.",
+      "steps": [
+        "Substitute h = 3: C = 60 + 45 × 3.",
+        "Multiply first: 45 × 3 = 135.",
+        "Add: C = 60 + 135 = 195, so the job costs $195."
+      ],
+      "mistakes": {
+        "A": "Step 2: you added 60 + 45 first. Order of operations: multiply 45 × 3 first, then add 60.",
+        "B": "Step 1: 45h means 45 × h, so multiply 45 by 3 — don't add 3.",
+        "D": "Step 3: you found 45 × 3 but forgot to add the 60 call-out fee."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving worded problems with equations",
+      "prompt": "Six more than three times a number is 42. What is the number?",
+      "options": {
+        "A": "36",
+        "B": "12",
+        "C": "16",
+        "D": "8"
+      },
+      "answer": "B",
+      "explanation": "The equation is 3n + 6 = 42. Subtract 6 (3n = 36), then divide by 3: n = 12. 36 is three times the number, not the number.",
+      "steps": [
+        "Let n be the number. Three times it is 3n; six more is 3n + 6, so 3n + 6 = 42.",
+        "Subtract 6 from both sides: 3n = 36.",
+        "Divide both sides by 3: n = 12. Check: 3 × 12 + 6 = 42 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 3: 3n = 36 isn't finished. Divide both sides by 3 to find n.",
+        "C": "Step 3: to remove + 6, subtract 6 from both sides — don't add 6.",
+        "D": "Step 2: \"six more than three times a number\" is 3n + 6, not 3(n + 6). Multiply the number by 3 first."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Introduction to equations",
+      "prompt": "For which equation is m = −3 a solution?",
+      "options": {
+        "A": "2m + 10 = 4",
+        "B": "2m + 10 = 16",
+        "C": "10 − 2m = 4",
+        "D": "m − 10 = 7"
+      },
+      "answer": "A",
+      "explanation": "Substitute m = −3: 2 × (−3) + 10 = −6 + 10 = 4, which matches the right side. In 10 − 2m, subtracting −6 gives 16, not 4.",
+      "steps": [
+        "Substitute m = −3 into each left side, keeping the negative sign.",
+        "2 × (−3) + 10 = −6 + 10 = 4. The others: 2m + 10 gives 4 (not 16), 10 − 2m gives 16 (not 4), and m − 10 gives −13 (not 7).",
+        "Only 2m + 10 = 4 has LHS = RHS, so that is the equation."
+      ],
+      "mistakes": {
+        "B": "Step 1: you substituted m = 3, not m = −3. Keep the negative sign: 2 × (−3) = −6.",
+        "C": "Step 2: 2 × (−3) = −6, and 10 − (−6) = 16, not 4. Subtracting a negative means adding.",
+        "D": "Step 2: −3 − 10 is −13. You worked out 10 − 3 instead."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving equations by backtracking",
+      "prompt": "Solve 4(x − 3) = 36.",
+      "options": {
+        "A": "x = 6",
+        "B": "x = 9.75",
+        "C": "x = 9",
+        "D": "x = 12"
+      },
+      "answer": "D",
+      "explanation": "Brackets first means x had 3 taken away and then was multiplied by 4. Backtrack: 36 ÷ 4 = 9, then 9 + 3 = 12. Stopping at 9 forgets to undo the − 3.",
+      "steps": [
+        "Flowchart: x →(− 3)→ x − 3 →(× 4)→ 36.",
+        "Undo × 4 first: 36 ÷ 4 = 9.",
+        "Undo − 3 by adding 3: 9 + 3 = 12, so x = 12. Check: 4 × (12 − 3) = 36 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 3: the inverse of − 3 is + 3. After dividing by 4, add 3 — don't subtract it.",
+        "B": "Step 2: the bracket is done first, so × 4 is the last operation. Divide by 4 first, then add 3.",
+        "C": "Step 3: 9 is x − 3, not x. Add 3 to finish."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving two-step equations",
+      "prompt": "Solve 3x + 20 = 5.",
+      "options": {
+        "A": "x = 5",
+        "B": "x = −15",
+        "C": "x = −5",
+        "D": "x = 8⅓"
+      },
+      "answer": "C",
+      "explanation": "Subtract 20 from both sides: 3x = 5 − 20 = −15. Divide by 3: x = −5. Answers can be negative — dropping the sign gives 5, which doesn't check.",
+      "steps": [
+        "Subtract 20 from both sides — to remove the + 20: 3x = 5 − 20 = −15.",
+        "Divide both sides by 3: x = −15 ÷ 3.",
+        "x = −5. Check: 3 × (−5) + 20 = −15 + 20 = 5 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: 5 − 20 is −15, not 15. Keep the negative sign.",
+        "B": "Step 2: 3x = −15 isn't finished. Divide both sides by 3.",
+        "D": "Step 1: to remove + 20, subtract 20 from both sides — don't add it."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving worded problems with equations",
+      "prompt": "A rope 50 m long is cut into two pieces. One piece is 8 m longer than the other. How long is the shorter piece?",
+      "options": {
+        "A": "29 m",
+        "B": "25 m",
+        "C": "42 m",
+        "D": "21 m"
+      },
+      "answer": "D",
+      "explanation": "Let the shorter piece be s m, so the longer is s + 8. Then 2s + 8 = 50, 2s = 42 and s = 21. 29 m is the longer piece.",
+      "steps": [
+        "Let s = the shorter piece in metres; the longer piece is s + 8.",
+        "Together: s + s + 8 = 50, so 2s + 8 = 50.",
+        "Subtract 8: 2s = 42. Divide by 2: s = 21. The shorter piece is 21 m (check: 21 + 29 = 50 ✓)."
+      ],
+      "mistakes": {
+        "A": "Step 4: 29 m is the longer piece. The question asks for the shorter piece, s.",
+        "B": "Step 2: 50 ÷ 2 splits the rope into equal pieces, but one piece is 8 m longer. Write s + (s + 8) = 50.",
+        "C": "Step 3: 2s = 42 isn't finished. Divide both sides by 2 to find s."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Using formulas",
+      "prompt": "Hiring a hall costs C = 200 + 12p dollars, where p is the number of people. Jade's budget is exactly $680. Use the formula to find how many people she can invite.",
+      "options": {
+        "A": "40",
+        "B": "56⅔",
+        "C": "480",
+        "D": "73⅓"
+      },
+      "answer": "A",
+      "explanation": "Substitute C = 680: 680 = 200 + 12p. Subtract 200 (480 = 12p), then divide by 12: p = 40. Forgetting the $200 fee gives 56⅔, which isn't even a whole number of people, which would cost too much.",
+      "steps": [
+        "Substitute C = 680: 680 = 200 + 12p.",
+        "Subtract 200 from both sides: 480 = 12p.",
+        "Divide both sides by 12: p = 40. Check: 200 + 12 × 40 = 680 ✓"
+      ],
+      "mistakes": {
+        "B": "Step 2: you divided 680 by 12 without taking off the $200 fixed fee first. Subtract 200 first.",
+        "C": "Step 3: 12p = 480 isn't finished. Divide both sides by 12.",
+        "D": "Step 2: to remove + 200, subtract 200 from 680 — don't add it."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Solving worded problems with equations",
+      "prompt": "Three consecutive even numbers add up to 78. What is the largest of the three?",
+      "options": {
+        "A": "24",
+        "B": "26",
+        "C": "28",
+        "D": "27"
+      },
+      "answer": "C",
+      "explanation": "Let the numbers be n, n + 2 and n + 4. Then 3n + 6 = 78, so n = 24 and the numbers are 24, 26, 28. The largest is 28; 26 is only the middle one.",
+      "steps": [
+        "Let the numbers be n, n + 2 and n + 4 (even numbers go up by 2).",
+        "Add them: 3n + 6 = 78. Subtract 6: 3n = 72. Divide by 3: n = 24.",
+        "The numbers are 24, 26 and 28 (sum 78 ✓), so the largest is 28."
+      ],
+      "mistakes": {
+        "A": "Step 4: 24 is the smallest number, n. The largest is n + 4.",
+        "B": "Step 4: 78 ÷ 3 = 26 is the middle number. The largest is 2 more than that.",
+        "D": "Step 1: consecutive even numbers go up by 2 (n, n + 2, n + 4), not by 1. 25, 26, 27 aren't all even."
+      }
+    }
+  ]
+}

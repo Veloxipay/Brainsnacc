@@ -1,0 +1,98 @@
+{
+  "lesson": "y7/maths/solving-equations-by-backtracking.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Solving equations by backtracking",
+  "icon": "🔙",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Solving equations by backtracking",
+      "sub": "Work backwards to find the starting number",
+      "icon": "🔙",
+      "say": "If you know where you ended up and every step you took, you can always find where you started. That's the idea behind backtracking."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "👟",
+      "everyday": "Socks on, then shoes. Take shoes off first, then socks.",
+      "icon2": "🔢",
+      "science": "The last operation done to x is the first one you undo",
+      "breaks": "with clothes you just take things off; in maths each operation has its own opposite that you must choose.",
+      "say": "You put your socks on, then your shoes. At night you take your shoes off first, then your socks. Backtracking is the same: the last thing done to x is the first thing you undo."
+    },
+    {
+      "type": "compare",
+      "heading": "Inverse operations",
+      "left": {
+        "title": "Operation",
+        "icon": "➡️",
+        "points": [
+          "+ 5",
+          "− 5",
+          "× 3",
+          "÷ 3"
+        ]
+      },
+      "right": {
+        "title": "Undo it with",
+        "icon": "⬅️",
+        "points": [
+          "− 5",
+          "+ 5",
+          "÷ 3",
+          "× 3"
+        ]
+      },
+      "say": "Each operation has an inverse that undoes it. Adding is undone by subtracting, and multiplying is undone by dividing. These pairs are partners."
+    },
+    {
+      "type": "steps",
+      "heading": "How to backtrack",
+      "steps": [
+        "Build the flowchart from x",
+        "Start at the answer on the right",
+        "Undo the last operation first",
+        "Check by substituting"
+      ],
+      "say": "First, build a flowchart from x using the order of operations. Then start at the answer and work backwards, undoing the last operation first. Finally, check your answer."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "Solve 3x + 5 = 26.",
+      "lines": [
+        "Flowchart: x → × 3 → + 5 → 26",
+        "Undo + 5: 26 − 5 = 21",
+        "Undo × 3: 21 ÷ 3 = 7",
+        "x = 7"
+      ],
+      "say": "Solve three x plus five equals twenty-six. The flowchart is times three, then plus five. Undo plus five: twenty-six minus five is twenty-one. Undo times three: twenty-one divided by three is seven. So x equals seven.",
+      "caption": "Solve 3x + 5 = 26. The flowchart is × 3, then + 5. Undo + 5: 26 − 5 = 21. Undo × 3: 21 ÷ 3 = 7. So x = 7."
+    },
+    {
+      "type": "example",
+      "heading": "Brackets go first",
+      "question": "Solve 2(x + 6) = 30.",
+      "lines": [
+        "Flowchart: x → + 6 → × 2 → 30",
+        "Undo × 2: 30 ÷ 2 = 15",
+        "Undo + 6: 15 − 6 = 9",
+        "x = 9"
+      ],
+      "say": "With brackets, the inside happens first. For two lots of x plus six equals thirty, the flowchart is plus six, then times two. So undo times two first: fifteen. Then subtract six: x equals nine.",
+      "caption": "With brackets, the inside happens first. For 2(x + 6) = 30, the flowchart is + 6, then × 2. So undo × 2 first: 15. Then subtract 6: x = 9."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "+ and − undo each other",
+        "× and ÷ undo each other",
+        "Last on, first off",
+        "Always check your answer"
+      ],
+      "say": "Quick recap. Use inverse operations, undo the last step first, and always check by substituting. Now try the practice questions!"
+    }
+  ]
+}

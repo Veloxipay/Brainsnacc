@@ -1,0 +1,357 @@
+{
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7",
+ "title": "Chapter 11 · Test 1",
+ "kind": "test",
+ "summary": "Chapter 11 test: follow and reverse algorithms and flowcharts, and trace loops and decisions (15 questions).",
+ "minutes": 25,
+ "body": "This test checks Chapter 11, Algorithmic thinking: following algorithms written as steps or flowcharts, knowing what each flowchart shape is for, running algorithms backwards to find the input, and tracing loops and decisions.\n\n## How to do this test\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says.\n- **Questions:** 15 multiple-choice questions — 4 Easy, 5 Medium, 4 Hard and 2 Challenge.\n- **Tip:** write a small trace table on paper for every loop, so you don't lose your place.\n\nWhen you finish, look at any question you got wrong and find the step where your working changed.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "In a flowchart, which shape is used for Start and End?",
+   "options": {
+    "A": "Diamond",
+    "B": "Rectangle",
+    "C": "Oval",
+    "D": "Parallelogram"
+   },
+   "answer": "C",
+   "explanation": "Start and End always go in an oval (a shape with rounded ends). A diamond is only for yes/no decisions.",
+   "steps": [
+    "Each flowchart shape has one job.",
+    "Diamond = decision, rectangle = process, parallelogram = input or output.",
+    "That leaves the oval, which is used for Start and End."
+   ],
+   "mistakes": {
+    "A": "Step 2: a diamond asks a yes/no question — it is the decision shape.",
+    "B": "Step 2: a rectangle shows an action, such as 'Add 7'.",
+    "D": "Step 2: a parallelogram (slanted box) is for input or output."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "Follow this algorithm. Step 1: input 5. Step 2: multiply by 3. Step 3: add 8. Step 4: output the result. What is the output?",
+   "options": {
+    "A": "39",
+    "B": "23",
+    "C": "15",
+    "D": "40"
+   },
+   "answer": "B",
+   "explanation": "5 × 3 = 15, then 15 + 8 = 23. 39 comes from adding 8 first, but the algorithm says multiply first.",
+   "steps": [
+    "Start with the input: 5.",
+    "Step 2 says multiply by 3: 5 × 3 = 15.",
+    "Step 3 says add 8: 15 + 8 = 23, so the output is 23."
+   ],
+   "mistakes": {
+    "A": "Step 2: do the steps in the order given — multiply by 3 first, then add 8.",
+    "C": "Step 3: you stopped too early. Step 3 still has to be done.",
+    "D": "Step 2: multiply by 3, not by 8. The 8 is added in Step 3."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with 3. Repeat 4 times: add 5. What is the output?",
+   "options": {
+    "A": "18",
+    "B": "20",
+    "C": "28",
+    "D": "23"
+   },
+   "answer": "D",
+   "explanation": "Adding 5 four times: 3 → 8 → 13 → 18 → 23. 18 comes from only doing the loop 3 times.",
+   "steps": [
+    "Iteration 1: 3 + 5 = 8.",
+    "Iteration 2: 8 + 5 = 13. Iteration 3: 13 + 5 = 18.",
+    "Iteration 4: 18 + 5 = 23. The loop has run 4 times, so the output is 23."
+   ],
+   "mistakes": {
+    "A": "Step 3: that's only 3 iterations. Do one more.",
+    "B": "Step 1: 4 × 5 = 20 is how much was added. Start from 3, not 0.",
+    "C": "Step 3: that's 5 iterations. Stop after 4."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "An algorithm says: input a temperature. If the temperature is at least 25, output 'Hot'. Otherwise, output 'Mild'. What is the output when the temperature is 25?",
+   "options": {
+    "A": "Hot",
+    "B": "Mild",
+    "C": "Hot and Mild",
+    "D": "Nothing is output"
+   },
+   "answer": "A",
+   "explanation": "'At least 25' includes 25 itself, so the condition is true and the output is 'Hot'. 'Mild' would be right if the rule said 'greater than 25'.",
+   "steps": [
+    "Check the condition: is 25 at least 25?",
+    "'At least' includes the number itself, so yes.",
+    "Follow only the Yes path: output 'Hot'."
+   ],
+   "mistakes": {
+    "B": "Step 2: 'at least 25' includes 25. Only 'greater than 25' would leave 25 out.",
+    "C": "Step 3: a decision follows only one path, never both.",
+    "D": "Step 3: both paths end with an output, so something is always output."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "A flowchart reads: Start → Input x → Subtract 3 → Multiply by 4 → Output → End. What is the output when x = 10?",
+   "options": {
+    "A": "−2",
+    "B": "37",
+    "C": "28",
+    "D": "7"
+   },
+   "answer": "C",
+   "explanation": "The flowchart makes you subtract first: 10 − 3 = 7, then 7 × 4 = 28. −2 comes from using BIDMAS (10 − 3 × 4) instead of following the arrows.",
+   "steps": [
+    "Input x = 10.",
+    "Follow the first arrow — subtract 3: 10 − 3 = 7.",
+    "Follow the next arrow — multiply by 4: 7 × 4 = 28. Output 28."
+   ],
+   "mistakes": {
+    "A": "Step 2: follow the arrows in order. Subtract 3 first, then multiply — don't use BIDMAS on the steps.",
+    "B": "Step 2: you multiplied first. The flowchart says subtract 3 before multiplying.",
+    "D": "Step 3: you stopped early. Multiply by 4 as well."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm multiplies the input by 6 and then adds 5. The output is 47. What was the input?",
+   "options": {
+    "A": "7",
+    "B": "42",
+    "C": "287",
+    "D": "8⅔"
+   },
+   "answer": "A",
+   "explanation": "Undo the steps from last to first: 47 − 5 = 42, then 42 ÷ 6 = 7. Check: 7 × 6 + 5 = 47 ✓. 42 forgets to undo the multiply.",
+   "steps": [
+    "The steps forwards are × 6, then + 5.",
+    "Undo the last step first: the opposite of + 5 is − 5, so 47 − 5 = 42.",
+    "Undo × 6 by dividing: 42 ÷ 6 = 7. The input was 7."
+   ],
+   "mistakes": {
+    "B": "Step 3: you still need to undo the × 6 by dividing by 6.",
+    "C": "Step 2: you ran the algorithm forwards on 47. To find the input, do the opposite steps.",
+    "D": "Step 2: the opposite of + 5 is − 5, not + 5."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with n = 2. Repeat: add 7 to n, until n is greater than 40. What is the final value of n?",
+   "options": {
+    "A": "37",
+    "B": "44",
+    "C": "40",
+    "D": "51"
+   },
+   "answer": "B",
+   "explanation": "The values go 9, 16, 23, 30, 37, 44. 37 is not greater than 40, so the loop runs again to 44, which is greater than 40, so it stops.",
+   "steps": [
+    "Add 7 each time: 9, 16, 23, 30, 37.",
+    "37 is not greater than 40, so loop again: 37 + 7 = 44.",
+    "44 is greater than 40, so stop. The final value is 44."
+   ],
+   "mistakes": {
+    "A": "Step 2: 37 is not greater than 40, so the loop must run again.",
+    "C": "Step 1: adding 7 from 2 never lands on 40. List the values one at a time.",
+    "D": "Step 3: stop as soon as n is greater than 40. 44 already is."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with x = 1. Repeat 3 times: double x, then add 3. What is the output?",
+   "options": {
+    "A": "50",
+    "B": "13",
+    "C": "11",
+    "D": "29"
+   },
+   "answer": "D",
+   "explanation": "Each iteration doubles first, then adds 3: 1 → 5 → 13 → 29. 50 comes from adding 3 before doubling.",
+   "steps": [
+    "Iteration 1: 1 × 2 = 2, then 2 + 3 = 5.",
+    "Iteration 2: 5 × 2 = 10, then 10 + 3 = 13.",
+    "Iteration 3: 13 × 2 = 26, then 26 + 3 = 29. Output 29."
+   ],
+   "mistakes": {
+    "A": "Step 1: double first, then add 3 — not the other way round.",
+    "B": "Step 3: that's only 2 iterations. The loop runs 3 times.",
+    "C": "Steps 1–3: both actions happen inside the loop every time. Don't double 3 times and then add 3 just once."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "Which of these steps is NOT clear enough to be part of an algorithm?",
+   "options": {
+    "A": "Add 7 to the number.",
+    "B": "Multiply the number by a big number.",
+    "C": "Divide the number by 2.",
+    "D": "If the number is even, output 'Yes'."
+   },
+   "answer": "B",
+   "explanation": "Every step in an algorithm must have only one meaning. 'A big number' could be 100 or a million, so different people would get different answers.",
+   "steps": [
+    "A good algorithm's steps must be unambiguous — only one meaning.",
+    "Check each step: would everyone do exactly the same thing?",
+    "'A big number' could mean many different numbers, so that step is not clear."
+   ],
+   "mistakes": {
+    "A": "Step 2: 'Add 7' means exactly one thing, so it is clear.",
+    "C": "Step 2: 'Divide by 2' means exactly one thing, so it is clear.",
+    "D": "Step 2: a decision is fine — 'even' has one exact meaning, so this step is clear."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm uses two stored numbers, a and b. Start with a = 3 and b = 7. Step 1: replace a with b − a. Step 2: replace b with a × b (using the new a). Step 3: output a + b. What is the output?",
+   "options": {
+    "A": "25",
+    "B": "28",
+    "C": "32",
+    "D": "11"
+   },
+   "answer": "C",
+   "explanation": "Step 1 makes a = 7 − 3 = 4. Step 2 uses the new a: b = 4 × 7 = 28. Then a + b = 4 + 28 = 32. 25 comes from using the old a (3) in Step 2.",
+   "steps": [
+    "Step 1: a = b − a = 7 − 3 = 4.",
+    "Step 2: use the new a: b = 4 × 7 = 28.",
+    "Step 3: output a + b = 4 + 28 = 32."
+   ],
+   "mistakes": {
+    "A": "Step 2: use the new value a = 4, not the old a = 3.",
+    "B": "Step 3: output a + b, not just b.",
+    "D": "Step 2: you skipped it — b must change before you add."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm does three steps to its input: add 9, then divide by 2, then subtract 4. The output is 11. What was the input?",
+   "options": {
+    "A": "21",
+    "B": "8",
+    "C": "30",
+    "D": "6"
+   },
+   "answer": "A",
+   "explanation": "Undo from last to first: 11 + 4 = 15, 15 × 2 = 30, 30 − 9 = 21. Check: (21 + 9) ÷ 2 − 4 = 11 ✓. 8 comes from undoing the steps in the wrong order.",
+   "steps": [
+    "Undo the last step (− 4): 11 + 4 = 15.",
+    "Undo the middle step (÷ 2): 15 × 2 = 30.",
+    "Undo the first step (+ 9): 30 − 9 = 21. The input was 21."
+   ],
+   "mistakes": {
+    "B": "Step 1: undo the LAST step first (− 4), not the first step (+ 9).",
+    "C": "Step 3: you still need to undo the + 9 by subtracting 9.",
+    "D": "Step 1: you ran the algorithm forwards on 11. Use the opposite operations, last step first."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with 12. Repeat until the number is 1: if it is even, halve it; otherwise, multiply by 3 and add 1. How many iterations does it take to reach 1?",
+   "options": {
+    "A": "9",
+    "B": "10",
+    "C": "8",
+    "D": "16"
+   },
+   "answer": "A",
+   "explanation": "The numbers go 12, 6, 3, 10, 5, 16, 8, 4, 2, 1. That is 10 numbers but only 9 moves, so 9 iterations. 10 counts the starting number as an iteration.",
+   "steps": [
+    "12 → 6 → 3 (halve, halve), then 3 is odd: 3 × 3 + 1 = 10.",
+    "10 → 5, then 5 is odd: 5 × 3 + 1 = 16.",
+    "16 → 8 → 4 → 2 → 1. Count the moves, not the numbers: 9 iterations."
+   ],
+   "mistakes": {
+    "B": "Step 3: you counted the numbers in the list. The starting 12 is not an iteration — count the moves.",
+    "C": "Step 3: keep going until you actually reach 1, not 2.",
+    "D": "Step 3: 16 is the biggest number reached, not the number of iterations."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Ava has $25 saved and adds $12 at the end of each week. Her algorithm: repeat — add 12 to savings and add 1 to weeks — until savings are at least $100. How many weeks does it take?",
+   "options": {
+    "A": "6",
+    "B": "9",
+    "C": "109",
+    "D": "7"
+   },
+   "answer": "D",
+   "explanation": "Savings go 37, 49, 61, 73, 85, 97, 109. After 6 weeks she has $97, which is not yet $100, so she needs a 7th week ($109).",
+   "steps": [
+    "Add 12 each week: 37, 49, 61, 73, 85, 97 after 6 weeks.",
+    "$97 is not at least $100, so loop again: 97 + 12 = 109.",
+    "$109 is at least $100, so stop. Weeks = 7."
+   ],
+   "mistakes": {
+    "A": "Step 2: after 6 weeks she has $97 — still under $100, so one more week is needed.",
+    "B": "Step 1: she starts with $25, not $0. Starting from $0 takes 9 weeks, but her $25 gives her a head start.",
+    "C": "Step 3: $109 is her savings. The question asks for the number of weeks."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "Leo's algorithm: input any number, double it, add 10, divide by 2, then subtract the number you started with. What do you notice about the output, whatever the input?",
+   "options": {
+    "A": "It is always the same as the input.",
+    "B": "It is always 10.",
+    "C": "It is always 5.",
+    "D": "It is always double the input."
+   },
+   "answer": "C",
+   "explanation": "Try 3: 6, 16, 8, then 8 − 3 = 5. Try 10: 20, 30, 15, then 15 − 10 = 5. Halving undoes the doubling and halves the 10, leaving the input + 5; subtracting the input leaves 5.",
+   "steps": [
+    "Test an input, say 3: 3 × 2 = 6, 6 + 10 = 16, 16 ÷ 2 = 8, 8 − 3 = 5.",
+    "Test another, say 10: 20, 30, 15, then 15 − 10 = 5.",
+    "Halving undoes the doubling and turns + 10 into + 5, then the input is taken away — so the output is always 5."
+   ],
+   "mistakes": {
+    "A": "Step 3: the last step subtracts the starting number, so the input is removed.",
+    "B": "Step 1: the 10 is also divided by 2, so only 5 is left.",
+    "D": "Step 3: dividing by 2 undoes the doubling."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "One of these loops is an infinite loop (it never stops). Which one?",
+   "options": {
+    "A": "Start n = 3. Repeat: add 4 to n, until n equals 27.",
+    "B": "Start n = 3. Repeat: add 4 to n, until n equals 25.",
+    "C": "Start n = 100. Repeat: halve n, until n is less than 1.",
+    "D": "Start n = 1. Repeat: add 3 to n, until n is greater than 50."
+   },
+   "answer": "B",
+   "explanation": "Adding 4 to 3 gives 7, 11, 15, 19, 23, 27, … — it jumps from 23 to 27 and never equals 25, so loop B is an infinite loop. Loop A does reach 27.",
+   "steps": [
+    "Ask: can each stopping condition ever become true?",
+    "List B's values: 7, 11, 15, 19, 23, 27, … — they skip 25.",
+    "B's condition is never true, so B never stops. The others all reach their condition."
+   ],
+   "mistakes": {
+    "A": "Step 2: 3 + 4 × 6 = 27, so loop A stops after 6 iterations.",
+    "C": "Step 2: halving 100 keeps getting smaller and eventually goes below 1, so it stops.",
+    "D": "Step 2: adding 3 again and again eventually passes 50, so it stops."
+   }
+  }
+ ]
+}

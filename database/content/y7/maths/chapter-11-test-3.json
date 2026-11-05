@@ -1,0 +1,357 @@
+{
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7",
+ "title": "Chapter 11 · Test 3",
+ "kind": "test",
+ "summary": "A third Chapter 11 test with new questions on algorithms, flowcharts, loops and decisions (15 questions).",
+ "minutes": 25,
+ "body": "This test checks Chapter 11, Algorithmic thinking: following algorithms written as steps or flowcharts, knowing what each flowchart shape is for, running algorithms backwards to find the input, and tracing loops and decisions.\n\n## How to do this test\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says.\n- **Questions:** 15 multiple-choice questions — 4 Easy, 5 Medium, 4 Hard and 2 Challenge.\n- **Tip:** write a small trace table on paper for every loop, so you don't lose your place.\n\nWhen you finish, look at any question you got wrong and find the step where your working changed.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "In a flowchart, what does a rectangle show?",
+   "options": {
+    "A": "A decision",
+    "B": "Start or End",
+    "C": "A process (an action)",
+    "D": "Input or output"
+   },
+   "answer": "C",
+   "explanation": "A rectangle shows an action, such as 'Add 7' or 'Multiply by 2'. A decision uses a diamond instead.",
+   "steps": [
+    "Each flowchart shape has one job.",
+    "Oval = start/end, parallelogram = input/output, diamond = decision.",
+    "The rectangle is used for a process — an action step."
+   ],
+   "mistakes": {
+    "A": "Step 2: decisions go in a diamond.",
+    "B": "Step 2: Start and End go in an oval.",
+    "D": "Step 2: input and output go in a parallelogram."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "Follow this algorithm. Step 1: input 12. Step 2: divide by 3. Step 3: add 6. Step 4: output the result. What is the output?",
+   "options": {
+    "A": "10",
+    "B": "6",
+    "C": "4",
+    "D": "42"
+   },
+   "answer": "A",
+   "explanation": "12 ÷ 3 = 4, then 4 + 6 = 10. 6 comes from adding 6 first and then dividing, which is the wrong order.",
+   "steps": [
+    "Start with the input: 12.",
+    "Step 2 says divide by 3: 12 ÷ 3 = 4.",
+    "Step 3 says add 6: 4 + 6 = 10. Output 10."
+   ],
+   "mistakes": {
+    "B": "Step 2: do the steps in order — divide by 3 first, then add 6.",
+    "C": "Step 3: you stopped early. Add 6 as well.",
+    "D": "Step 2: divide by 3, don't multiply."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "An algorithm says: input a number. If the number is greater than 20, output 'Big'. Otherwise, output 'Small'. What is the output when the number is 20?",
+   "options": {
+    "A": "Big",
+    "B": "Small",
+    "C": "Big and Small",
+    "D": "Nothing is output"
+   },
+   "answer": "B",
+   "explanation": "'Greater than 20' does not include 20 itself, so the condition is false and the output is 'Small'.",
+   "steps": [
+    "Check the condition: is 20 greater than 20?",
+    "No — 20 is equal to 20, not greater.",
+    "Follow only the 'otherwise' path: output 'Small'."
+   ],
+   "mistakes": {
+    "A": "Step 2: 'greater than 20' leaves out 20. Only 'at least 20' would include it.",
+    "C": "Step 3: a decision follows only one path, never both.",
+    "D": "Step 3: both paths end with an output, so something is always output."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with 50. Repeat 4 times: subtract 6. What is the output?",
+   "options": {
+    "A": "32",
+    "B": "24",
+    "C": "20",
+    "D": "26"
+   },
+   "answer": "D",
+   "explanation": "Subtracting 6 four times: 50 → 44 → 38 → 32 → 26. 32 comes from only doing the loop 3 times.",
+   "steps": [
+    "Iteration 1: 50 − 6 = 44. Iteration 2: 44 − 6 = 38.",
+    "Iteration 3: 38 − 6 = 32.",
+    "Iteration 4: 32 − 6 = 26. Output 26."
+   ],
+   "mistakes": {
+    "A": "Step 3: that's only 3 iterations. Do one more.",
+    "B": "Step 1: 4 × 6 = 24 is how much was taken away. Subtract it from 50.",
+    "C": "Step 3: that's 5 iterations. Stop after 4."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "A flowchart says: Input n. Is n even? If Yes, halve it. If No, add 1 and then halve it. Then output the result. What is the output when n = 18?",
+   "options": {
+    "A": "9.5",
+    "B": "36",
+    "C": "9",
+    "D": "19"
+   },
+   "answer": "C",
+   "explanation": "18 is even, so follow the Yes arrow: 18 ÷ 2 = 9. 9.5 comes from following the No arrow (18 + 1 = 19, then halve).",
+   "steps": [
+    "Answer the question: is 18 even? Yes.",
+    "Follow only the Yes arrow: halve it.",
+    "18 ÷ 2 = 9. Output 9."
+   ],
+   "mistakes": {
+    "A": "Step 1: 18 is even, so follow the Yes arrow, not No.",
+    "B": "Step 2: halve means divide by 2, not multiply by 2.",
+    "D": "Step 1: 18 is even, so don't add 1 — just halve it."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "A flowchart reads: Start → Input x → Multiply by 3 → Subtract 10 → Output → End. What is the output when x = 2?",
+   "options": {
+    "A": "−24",
+    "B": "−4",
+    "C": "6",
+    "D": "4"
+   },
+   "answer": "B",
+   "explanation": "2 × 3 = 6, then 6 − 10 = −4. 4 comes from working out 10 − 6 instead of 6 − 10.",
+   "steps": [
+    "Input x = 2.",
+    "Multiply by 3: 2 × 3 = 6.",
+    "Subtract 10: 6 − 10 = −4. Output −4."
+   ],
+   "mistakes": {
+    "A": "Step 2: follow the arrows in order — multiply first, then subtract.",
+    "C": "Step 3: you stopped early. Subtract 10 as well.",
+    "D": "Step 3: 6 − 10 is negative. Count back 10 from 6 on a number line."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm subtracts 9 from the input and then multiplies by 2. The output is 12. What was the input?",
+   "options": {
+    "A": "15",
+    "B": "10.5",
+    "C": "6",
+    "D": "33"
+   },
+   "answer": "A",
+   "explanation": "Undo from last to first: 12 ÷ 2 = 6, then 6 + 9 = 15. Check: (15 − 9) × 2 = 12 ✓. 6 forgets to undo the − 9.",
+   "steps": [
+    "The steps forwards are − 9, then × 2.",
+    "Undo the last step first: the opposite of × 2 is ÷ 2, so 12 ÷ 2 = 6.",
+    "Undo − 9 by adding 9: 6 + 9 = 15. The input was 15."
+   ],
+   "mistakes": {
+    "B": "Step 2: undo the LAST step (× 2) first. You started by undoing the − 9.",
+    "C": "Step 3: you still need to undo the − 9 by adding 9.",
+    "D": "Step 2: the opposite of × 2 is ÷ 2, not × 2 again."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with n = 1. Repeat: add 9 to n, until n is at least 46. How many times does the loop run?",
+   "options": {
+    "A": "6",
+    "B": "4",
+    "C": "46",
+    "D": "5"
+   },
+   "answer": "D",
+   "explanation": "The values go 10, 19, 28, 37, 46. 46 is at least 46, so the loop stops after 5 iterations.",
+   "steps": [
+    "Add 9 each time: 10, 19, 28, 37 (4 iterations).",
+    "37 is not at least 46, so loop again: 37 + 9 = 46 (iteration 5).",
+    "46 is at least 46 ('at least' includes 46), so stop. The loop ran 5 times."
+   ],
+   "mistakes": {
+    "A": "Step 3: 'at least 46' includes 46, so the loop stops at 46.",
+    "B": "Step 2: 37 is not at least 46, so the loop must run again.",
+    "C": "Step 3: 46 is the final value of n. The question asks how many times the loop ran."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with x = 10. Repeat 3 times: subtract 2 from x, then double x. What is the output?",
+   "options": {
+    "A": "66",
+    "B": "28",
+    "C": "52",
+    "D": "4"
+   },
+   "answer": "C",
+   "explanation": "Each iteration subtracts first, then doubles: 10 → 16 → 28 → 52. 66 comes from doubling before subtracting.",
+   "steps": [
+    "Iteration 1: 10 − 2 = 8, then 8 × 2 = 16.",
+    "Iteration 2: 16 − 2 = 14, then 14 × 2 = 28.",
+    "Iteration 3: 28 − 2 = 26, then 26 × 2 = 52. Output 52."
+   ],
+   "mistakes": {
+    "A": "Step 1: subtract 2 first, then double — not the other way round.",
+    "B": "Step 3: that's only 2 iterations. The loop runs 3 times.",
+    "D": "Steps 1–3: both actions happen in every iteration. Don't forget to double."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm uses two stored numbers, x and y. Start with x = 6 and y = 2. Step 1: replace x with x × y. Step 2: replace y with x − y (using the new x). Step 3: replace x with x − y (using the new y). Step 4: output x and y. What is the output?",
+   "options": {
+    "A": "x = 8, y = 4",
+    "B": "x = 2, y = 10",
+    "C": "x = 12, y = 10",
+    "D": "x = −2, y = 10"
+   },
+   "answer": "B",
+   "explanation": "Step 1: x = 6 × 2 = 12. Step 2: y = 12 − 2 = 10. Step 3: x = 12 − 10 = 2. 'x = 8, y = 4' comes from using the old values instead of the new ones.",
+   "steps": [
+    "Step 1: x = 6 × 2 = 12.",
+    "Step 2: use the new x: y = 12 − 2 = 10.",
+    "Step 3: use the new y: x = 12 − 10 = 2. Output x = 2, y = 10."
+   ],
+   "mistakes": {
+    "A": "Step 2: use the new value x = 12, not the old x = 6.",
+    "C": "Step 3: you skipped it — x changes again at the end.",
+    "D": "Step 3: x − y means 12 − 10, not 10 − 12."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with total = 0. For each whole number from 1 to 12: if the number is a multiple of 3, add it to the total; otherwise, do nothing. What is the final total?",
+   "options": {
+    "A": "30",
+    "B": "78",
+    "C": "18",
+    "D": "4"
+   },
+   "answer": "A",
+   "explanation": "The multiples of 3 from 1 to 12 are 3, 6, 9 and 12. Their total is 3 + 6 + 9 + 12 = 30. 78 adds every number from 1 to 12.",
+   "steps": [
+    "Go through 1 to 12 and pick out the multiples of 3: 3, 6, 9, 12.",
+    "Only these numbers pass the decision, so only these are added.",
+    "0 + 3 + 6 + 9 + 12 = 30."
+   ],
+   "mistakes": {
+    "B": "Step 2: only add a number when it is a multiple of 3. Otherwise do nothing.",
+    "C": "Step 1: 'from 1 to 12' includes 12, and 12 is a multiple of 3.",
+    "D": "Step 3: 4 is how many numbers were added. Add the numbers themselves."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with n = 3 and count = 0. Repeat: double n and add 1 to count, until n is greater than 100. What are the final values?",
+   "options": {
+    "A": "n = 96, count = 5",
+    "B": "n = 192, count = 7",
+    "C": "n = 384, count = 7",
+    "D": "n = 192, count = 6"
+   },
+   "answer": "D",
+   "explanation": "n goes 6, 12, 24, 48, 96, 192 as count goes up to 6. 96 is not greater than 100, so the loop runs once more to 192.",
+   "steps": [
+    "Trace: count 1 → 6, count 2 → 12, count 3 → 24, count 4 → 48, count 5 → 96.",
+    "96 is not greater than 100, so loop again: n = 192, count = 6.",
+    "192 is greater than 100, so stop: n = 192, count = 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: 96 is not greater than 100, so the loop runs again.",
+    "B": "Step 1: count starts at 0 and only goes up when the loop runs — don't count the start.",
+    "C": "Step 3: stop as soon as n is greater than 100. 192 already is."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "A shop's delivery algorithm: if the order is at least $60, delivery is free. Otherwise, if the order is at least $30, delivery costs $5. Otherwise, delivery costs $9. What are the delivery costs for orders of $60, $30 and $29, in that order?",
+   "options": {
+    "A": "$5, $9, $9",
+    "B": "$5, $5, $9",
+    "C": "Free, Free, $9",
+    "D": "Free, $5, $9"
+   },
+   "answer": "D",
+   "explanation": "$60 is at least $60 → free. $30 is not at least $60 but is at least $30 → $5. $29 fails both → $9. '$5, $9, $9' treats 'at least' as if it left out the boundary.",
+   "steps": [
+    "$60: is it at least $60? Yes ('at least' includes 60) → free.",
+    "$30: not at least $60, so check the next question — at least $30? Yes → $5.",
+    "$29: fails both questions → $9. So: free, $5, $9."
+   ],
+   "mistakes": {
+    "A": "Steps 1–2: 'at least' includes the number itself, so $60 and $30 pass their questions.",
+    "B": "Step 1: $60 is at least $60, so delivery is free.",
+    "C": "Step 2: $30 is not at least $60, so it isn't free — go to the next question."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "Flowchart P says: add 3, then multiply by 4. Which flowchart always gives the same output as P, whatever number goes in?",
+   "options": {
+    "A": "Multiply by 4, then add 3.",
+    "B": "Multiply by 4, then add 12.",
+    "C": "Add 12, then multiply by 4.",
+    "D": "Add 4, then multiply by 3."
+   },
+   "answer": "B",
+   "explanation": "In P the 3 gets multiplied by 4 too, giving an extra 12. Test 5: P gives (5 + 3) × 4 = 32, and B gives 5 × 4 + 12 = 32 ✓. A gives only 23.",
+   "steps": [
+    "Test P with an input, say 5: 5 + 3 = 8, then 8 × 4 = 32.",
+    "Test B: 5 × 4 = 20, then 20 + 12 = 32 ✓. Try 1 as well: P gives 16, B gives 16 ✓.",
+    "In P, the + 3 is multiplied by 4, so it becomes + 12 — B always matches P."
+   ],
+   "mistakes": {
+    "A": "Step 2: A gives 5 × 4 + 3 = 23. In P the 3 is multiplied by 4 too.",
+    "C": "Step 2: C gives (5 + 12) × 4 = 68 — the 12 has been multiplied by 4 again.",
+    "D": "Step 2: D gives (5 + 4) × 3 = 27. The numbers have been swapped."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Which loop runs exactly 5 times?",
+   "options": {
+    "A": "Start n = 0. Repeat: add 2 to n, until n equals 10.",
+    "B": "Start n = 0. Repeat: add 2 to n, until n is greater than 10.",
+    "C": "Start n = 1. Repeat: add 2 to n, until n equals 10.",
+    "D": "Start n = 0. Repeat: add 2 to n, until n is at least 8."
+   },
+   "answer": "A",
+   "explanation": "In A, n goes 2, 4, 6, 8, 10 — it equals 10 after 5 iterations. B runs 6 times (to 12), C never stops (odd numbers skip 10), and D runs 4 times.",
+   "steps": [
+    "Trace each loop and count the iterations.",
+    "A: 2, 4, 6, 8, 10 — n equals 10 after 5 iterations ✓.",
+    "Check the others: B reaches 12 after 6, C gives 3, 5, 7, 9, 11, … and never equals 10, D stops at 8 after 4. Only A runs exactly 5 times."
+   ],
+   "mistakes": {
+    "B": "Step 3: 10 is not greater than 10, so B runs once more to 12 — that's 6 times.",
+    "C": "Step 3: starting at 1 and adding 2 gives only odd numbers, so n never equals 10. It never stops.",
+    "D": "Step 3: 8 is at least 8, so D stops after 4 iterations (2, 4, 6, 8)."
+   }
+  }
+ ]
+}

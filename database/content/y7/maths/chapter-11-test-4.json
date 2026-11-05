@@ -1,0 +1,357 @@
+{
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7",
+ "title": "Chapter 11 · Test 4",
+ "kind": "test",
+ "summary": "A fourth Chapter 11 test with new questions on algorithms, flowcharts, loops and decisions (15 questions).",
+ "minutes": 25,
+ "body": "This test checks Chapter 11, Algorithmic thinking: following algorithms written as steps or flowcharts, knowing what each flowchart shape is for, running algorithms backwards to find the input, and tracing loops and decisions.\n\n## How to do this test\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says.\n- **Questions:** 15 multiple-choice questions — 4 Easy, 5 Medium, 4 Hard and 2 Challenge.\n- **Tip:** write a small trace table on paper for every loop, so you don't lose your place.\n\nWhen you finish, look at any question you got wrong and find the step where your working changed.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "What is the value that goes into an algorithm called?",
+   "options": {
+    "A": "The output",
+    "B": "The input",
+    "C": "The process",
+    "D": "An iteration"
+   },
+   "answer": "B",
+   "explanation": "The value that goes in is the input. The output is the value that comes out at the end.",
+   "steps": [
+    "Most algorithms follow Input → Process → Output.",
+    "The input goes in, the process changes it, and the output comes out.",
+    "So the value that goes in is the input."
+   ],
+   "mistakes": {
+    "A": "Step 2: the output is what comes OUT at the end.",
+    "C": "Step 2: the process is the steps that change the value.",
+    "D": "Step 2: an iteration is one time through a loop."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "A flowchart reads: Start → Input x → Add 11 → Multiply by 2 → Output → End. What is the output when x = 4?",
+   "options": {
+    "A": "26",
+    "B": "19",
+    "C": "30",
+    "D": "15"
+   },
+   "answer": "C",
+   "explanation": "The flowchart makes you add first: 4 + 11 = 15, then 15 × 2 = 30. 26 comes from using BIDMAS (4 + 11 × 2) instead of following the arrows.",
+   "steps": [
+    "Input x = 4.",
+    "Follow the first arrow — add 11: 4 + 11 = 15.",
+    "Follow the next arrow — multiply by 2: 15 × 2 = 30. Output 30."
+   ],
+   "mistakes": {
+    "A": "Step 2: follow the arrows in order — add first, then multiply. Don't use BIDMAS.",
+    "B": "Step 2: you multiplied 4 by 2 first. Add 11 before multiplying.",
+    "D": "Step 3: you stopped early. Multiply by 2 as well."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with 60. Repeat 6 times: subtract 7. What is the output?",
+   "options": {
+    "A": "18",
+    "B": "25",
+    "C": "42",
+    "D": "11"
+   },
+   "answer": "A",
+   "explanation": "Subtracting 7 six times takes away 42 altogether: 60 → 53 → 46 → 39 → 32 → 25 → 18. 25 comes from only doing the loop 5 times.",
+   "steps": [
+    "Iterations 1–3: 60 → 53 → 46 → 39.",
+    "Iterations 4–5: 39 → 32 → 25.",
+    "Iteration 6: 25 − 7 = 18. Output 18."
+   ],
+   "mistakes": {
+    "B": "Step 3: that's only 5 iterations. Do one more.",
+    "C": "Step 1: 6 × 7 = 42 is how much was taken away. Subtract it from 60.",
+    "D": "Step 3: that's 7 iterations. Stop after 6."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Which kind of loop repeats a fixed number of times, such as 'Repeat 5 times'?",
+   "options": {
+    "A": "A conditional loop",
+    "B": "An infinite loop",
+    "C": "A decision",
+    "D": "A counted loop"
+   },
+   "answer": "D",
+   "explanation": "A counted loop repeats a set number of times, so you know in advance how many times it runs. A conditional loop repeats until a condition is met.",
+   "steps": [
+    "There are two kinds of loop: counted and conditional.",
+    "A conditional loop repeats until something becomes true — you don't know the number in advance.",
+    "'Repeat 5 times' has a fixed number, so it is a counted loop."
+   ],
+   "mistakes": {
+    "A": "Step 2: a conditional loop repeats until a condition is met, not a set number of times.",
+    "B": "Step 3: an infinite loop never stops. 'Repeat 5 times' stops after 5.",
+    "C": "Step 1: a decision is a yes/no question, not a loop."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm divides the input by 5 and then subtracts 6. The output is 5. What was the input?",
+   "options": {
+    "A": "11",
+    "B": "31",
+    "C": "−5",
+    "D": "55"
+   },
+   "answer": "D",
+   "explanation": "Undo from last to first: 5 + 6 = 11, then 11 × 5 = 55. Check: 55 ÷ 5 − 6 = 5 ✓. 11 forgets to undo the ÷ 5.",
+   "steps": [
+    "The steps forwards are ÷ 5, then − 6.",
+    "Undo the last step first: the opposite of − 6 is + 6, so 5 + 6 = 11.",
+    "Undo ÷ 5 by multiplying: 11 × 5 = 55. The input was 55."
+   ],
+   "mistakes": {
+    "A": "Step 3: you still need to undo the ÷ 5 by multiplying by 5.",
+    "B": "Step 2: undo the LAST step (− 6) first. You started by undoing the ÷ 5.",
+    "C": "Step 2: you ran the algorithm forwards on 5. Use the opposite steps instead."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "Follow this algorithm. Step 1: input 20. Step 2: divide by 4. Step 3: add 3. Step 4: multiply by 2. Step 5: output the result. What is the output?",
+   "options": {
+    "A": "11",
+    "B": "16",
+    "C": "8",
+    "D": "11.5"
+   },
+   "answer": "B",
+   "explanation": "20 ÷ 4 = 5, 5 + 3 = 8, 8 × 2 = 16. 11 comes from using BIDMAS on Steps 3 and 4 (5 + 3 × 2).",
+   "steps": [
+    "Step 2: 20 ÷ 4 = 5.",
+    "Step 3: 5 + 3 = 8.",
+    "Step 4: 8 × 2 = 16. Output 16."
+   ],
+   "mistakes": {
+    "A": "Step 3: do the steps in order — add 3 completely before multiplying by 2.",
+    "C": "Step 4: you stopped early. Multiply by 2 as well.",
+    "D": "Step 2: do the steps in the order given. Divide by 4 first, not last."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with n = 4. Repeat: double n, until n is greater than 60. How many times does the loop run?",
+   "options": {
+    "A": "3",
+    "B": "5",
+    "C": "4",
+    "D": "64"
+   },
+   "answer": "C",
+   "explanation": "The values go 8, 16, 32, 64. 32 is not greater than 60, so the loop runs a 4th time to 64, then stops.",
+   "steps": [
+    "Double each time: 8, 16, 32 (3 iterations).",
+    "32 is not greater than 60, so loop again: 64 (iteration 4).",
+    "64 is greater than 60, so stop. The loop ran 4 times."
+   ],
+   "mistakes": {
+    "A": "Step 2: 32 is not greater than 60, so the loop must run again.",
+    "B": "Step 1: the starting value 4 is not an iteration. Only count the doublings.",
+    "D": "Step 3: 64 is the final value of n. The question asks how many times the loop ran."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with product = 1. For each number n = 1, 2, 3, 4 in turn: multiply product by n. What is the final product?",
+   "options": {
+    "A": "24",
+    "B": "10",
+    "C": "11",
+    "D": "6"
+   },
+   "answer": "A",
+   "explanation": "product goes 1 × 1 = 1, 1 × 2 = 2, 2 × 3 = 6, 6 × 4 = 24. 10 comes from adding the numbers instead of multiplying.",
+   "steps": [
+    "n = 1: 1 × 1 = 1. n = 2: 1 × 2 = 2.",
+    "n = 3: 2 × 3 = 6.",
+    "n = 4: 6 × 4 = 24. The final product is 24."
+   ],
+   "mistakes": {
+    "B": "Step 1: the loop multiplies by n — you added 1 + 2 + 3 + 4.",
+    "C": "Step 1: the loop multiplies by n — you added the numbers onto the starting 1.",
+    "D": "Step 3: you stopped after n = 3. The loop also uses n = 4."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "A flowchart says: Input n. Is n greater than 15? If Yes, subtract 4. If No, multiply by 2. Then output the result. What is the output when n = 15?",
+   "options": {
+    "A": "11",
+    "B": "22",
+    "C": "26",
+    "D": "30"
+   },
+   "answer": "D",
+   "explanation": "15 is not greater than 15 (it's equal), so follow the No arrow: 15 × 2 = 30. 11 comes from following the Yes arrow.",
+   "steps": [
+    "Answer the question: is 15 greater than 15? No — it's equal.",
+    "Follow only the No arrow: multiply by 2.",
+    "15 × 2 = 30. Output 30."
+   ],
+   "mistakes": {
+    "A": "Step 1: 'greater than 15' leaves out 15, so follow the No arrow.",
+    "B": "Step 2: follow only one arrow. You subtracted 4 and then multiplied by 2.",
+    "C": "Step 2: follow only one arrow. You multiplied by 2 and then subtracted 4."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm uses two stored numbers, a and b. Start with a = 5 and b = 9. Step 1: replace a with a + b. Step 2: replace b with a − b (using the new a). Step 3: replace a with a − b (using the new b). Step 4: output a and b. What is the output?",
+   "options": {
+    "A": "a = 9, b = 5",
+    "B": "a = 18, b = −4",
+    "C": "a = 14, b = 5",
+    "D": "a = −9, b = 5"
+   },
+   "answer": "A",
+   "explanation": "Step 1: a = 5 + 9 = 14. Step 2: b = 14 − 9 = 5. Step 3: a = 14 − 5 = 9. The two numbers have swapped! 'a = 18, b = −4' comes from using the old a in Step 2.",
+   "steps": [
+    "Step 1: a = 5 + 9 = 14.",
+    "Step 2: use the new a: b = 14 − 9 = 5.",
+    "Step 3: use the new b: a = 14 − 5 = 9. Output a = 9, b = 5."
+   ],
+   "mistakes": {
+    "B": "Step 2: use the new value a = 14, not the old a = 5.",
+    "C": "Step 3: you skipped it — a changes again at the end.",
+    "D": "Step 3: a − b means 14 − 5, not 5 − 14."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "An algorithm does three steps to its input: divide by 3, then subtract 2, then multiply by 4. The output is 20. What was the input?",
+   "options": {
+    "A": "9",
+    "B": "7",
+    "C": "21",
+    "D": "15.5"
+   },
+   "answer": "C",
+   "explanation": "Undo from last to first: 20 ÷ 4 = 5, 5 + 2 = 7, 7 × 3 = 21. Check: (21 ÷ 3 − 2) × 4 = 20 ✓. 7 forgets to undo the first step.",
+   "steps": [
+    "Undo the last step (× 4): 20 ÷ 4 = 5.",
+    "Undo the middle step (− 2): 5 + 2 = 7.",
+    "Undo the first step (÷ 3): 7 × 3 = 21. The input was 21."
+   ],
+   "mistakes": {
+    "A": "Step 2: the opposite of − 2 is + 2. You subtracted 2 again.",
+    "B": "Step 3: you still need to undo the ÷ 3 by multiplying by 3.",
+    "D": "Step 1: undo the LAST step (× 4) first. You started with the first step."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Start with 81. Repeat until the number is less than 10: if it is even, halve it; otherwise, subtract 1. What is the final number?",
+   "options": {
+    "A": "4",
+    "B": "5",
+    "C": "10",
+    "D": "40.5"
+   },
+   "answer": "B",
+   "explanation": "81 → 80 → 40 → 20 → 10 → 5. 10 is not less than 10, so the loop runs again: 10 is even, so it becomes 5, which is less than 10.",
+   "steps": [
+    "81 is odd → 80. Then halve: 40 → 20 → 10.",
+    "10 is not less than 10, so loop again: 10 is even → 5.",
+    "5 is less than 10, so stop. The final number is 5."
+   ],
+   "mistakes": {
+    "A": "Step 3: 5 is already less than 10, so stop. Don't do another iteration.",
+    "C": "Step 2: 10 is not less than 10 — the loop must run again.",
+    "D": "Step 1: 81 is odd, so subtract 1 — don't halve it."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "A water tank holds 500 L and 35 L is used each day. The algorithm: repeat — subtract 35 from the water and add 1 to days — until the water is less than 100 L. How many days does it take?",
+   "options": {
+    "A": "12",
+    "B": "11",
+    "C": "14",
+    "D": "13"
+   },
+   "answer": "A",
+   "explanation": "After 11 days the tank has 500 − 385 = 115 L, which is not less than 100. After 12 days it has 80 L, so the loop stops at 12.",
+   "steps": [
+    "After d days the water is 500 − 35 × d.",
+    "After 11 days: 500 − 385 = 115 L — not less than 100, so loop again.",
+    "After 12 days: 115 − 35 = 80 L — less than 100, so stop. It takes 12 days."
+   ],
+   "mistakes": {
+    "B": "Step 2: 115 L is not less than 100 L, so one more day is needed.",
+    "C": "Step 1: 500 ÷ 35 is about 14 days until the tank is nearly empty. The loop stops when it drops under 100 L.",
+    "D": "Step 3: stop as soon as the water is less than 100 L. 80 L already is."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Algorithms and flowcharts",
+   "prompt": "A flowchart says: Input n. Is n even? If Yes, halve it. If No, add 1. Then output the result. Which whole-number inputs give an output of 7?",
+   "options": {
+    "A": "6 only",
+    "B": "14 and 6",
+    "C": "3.5 only",
+    "D": "14 only"
+   },
+   "answer": "D",
+   "explanation": "14 is even, so it is halved to 7 ✓. 6 + 1 would be 7, but 6 is even, so it goes down the Yes arrow and gives 3. Only 14 works.",
+   "steps": [
+    "Yes arrow: an even number halved gives 7, so n = 14. 14 is even ✓.",
+    "No arrow: an odd number plus 1 gives 7, so n = 6. But 6 is even, so it would go down the Yes arrow (6 ÷ 2 = 3) ✗.",
+    "Only 14 gives an output of 7."
+   ],
+   "mistakes": {
+    "A": "Step 2: 6 is even, so it follows the Yes arrow and outputs 3, not 7.",
+    "B": "Step 2: check which arrow each input really takes. 6 is even, so it is halved, not increased by 1.",
+    "C": "Step 1: you halved 7 instead of undoing the halving. The number that halves to 7 is found by doubling 7 — and 3.5 is not a whole number anyway."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Loops and decisions in algorithms",
+   "prompt": "Which algorithm outputs exactly the numbers 1, 4, 9, 16, 25?",
+   "options": {
+    "A": "Set n = 1. Repeat: add 1 to n, then output n × n, until n is greater than 5.",
+    "B": "Set n = 1. Repeat 4 times: output n × n, then add 1 to n.",
+    "C": "Set n = 1. Repeat: output n × n, then add 1 to n, until n is greater than 5.",
+    "D": "Set n = 1. Repeat: output n × 2, then add 1 to n, until n is greater than 5."
+   },
+   "answer": "C",
+   "explanation": "C outputs 1 × 1, 2 × 2, 3 × 3, 4 × 4, 5 × 5 = 1, 4, 9, 16, 25, then n becomes 6 and it stops. A adds 1 before outputting, so it starts at 4 and ends at 36.",
+   "steps": [
+    "Trace each algorithm and write down what it outputs.",
+    "C: output 1, n = 2; output 4, n = 3; output 9, n = 4; output 16, n = 5; output 25, n = 6.",
+    "n = 6 is greater than 5, so C stops. C outputs exactly 1, 4, 9, 16, 25."
+   ],
+   "mistakes": {
+    "A": "Step 2: A adds 1 before outputting, so it outputs 4, 9, 16, 25, 36.",
+    "B": "Step 2: 4 times only gives four outputs: 1, 4, 9, 16.",
+    "D": "Step 2: n × 2 doubles n, giving 2, 4, 6, 8, 10. Squaring needs n × n."
+   }
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+  "lesson": "y7/maths/loops-and-decisions-in-algorithms.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Loops and decisions in algorithms",
+  "icon": "🔁",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Loops and decisions in algorithms",
+      "sub": "How a short algorithm does lots of work",
+      "icon": "🔁",
+      "say": "If it's raining, take an umbrella. Keep stirring until the sauce is thick. Real algorithms make decisions and repeat steps. Let's see how."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🌊",
+      "everyday": "Swim a lap. Done 10 laps? If not, swim again.",
+      "icon2": "🔁",
+      "science": "A loop repeats steps until its stopping condition is met",
+      "breaks": "a tired swimmer can lose count. An algorithm never does: it checks the condition exactly, every time.",
+      "say": "Picture a swimming coach: swim a lap, have you done ten laps yet? If not, swim another. The lap is the step that repeats, the question is the decision, and counting laps tells you when to stop. Unlike a tired swimmer, an algorithm never loses count."
+    },
+    {
+      "type": "points",
+      "heading": "Three building blocks",
+      "icon": "🧱",
+      "points": [
+        "Sequence: steps one after another",
+        "Decision: if … then … otherwise",
+        "Loop: repeat steps",
+        "'Greater than 30' leaves out 30",
+        "'At least 30' includes 30"
+      ],
+      "say": "Every algorithm is built from three things: sequence, decisions and loops. A decision checks a condition that is true or false. Read it carefully. Greater than thirty leaves out thirty, but at least thirty includes it."
+    },
+    {
+      "type": "compare",
+      "heading": "Two kinds of loop",
+      "left": {
+        "title": "Counted loop",
+        "icon": "🔢",
+        "points": [
+          "Repeat 3 times",
+          "You know how many runs"
+        ]
+      },
+      "right": {
+        "title": "Conditional loop",
+        "icon": "🎯",
+        "points": [
+          "Repeat until n is over 100",
+          "Trace it to find how many"
+        ]
+      },
+      "say": "A counted loop repeats a fixed number of times, like repeat three times. A conditional loop repeats until something is true, like until n is greater than one hundred. You find out how many times it runs by tracing it."
+    },
+    {
+      "type": "example",
+      "heading": "Counted loop",
+      "question": "Start with x = 4. Repeat 3 times: add 5, then double. Output x.",
+      "lines": [
+        "Run 1: 4 + 5 = 9, 9 × 2 = 18",
+        "Run 2: 18 + 5 = 23, 23 × 2 = 46",
+        "Run 3: 46 + 5 = 51, 51 × 2 = 102",
+        "Output: 102"
+      ],
+      "say": "Start with four. Run one: add five to get nine, double to get eighteen. Run two: twenty-three, then forty-six. Run three: fifty-one, then one hundred and two. Three runs done, so the output is one hundred and two.",
+      "caption": "Start with 4. Run 1: 9, then 18. Run 2: 23, then 46. Run 3: 51, then 102. Three runs done, so the output is 102."
+    },
+    {
+      "type": "example",
+      "heading": "Conditional loop",
+      "question": "Start n = 1, count = 0. Repeat: n × 3, count + 1, until n is greater than 100.",
+      "lines": [
+        "n: 3, 9, 27, 81 — keep going",
+        "81 × 3 = 243, count = 5",
+        "243 is greater than 100: stop",
+        "Output: n = 243, count = 5"
+      ],
+      "say": "Start with n equals one. Multiply by three each time and count. Three, nine, twenty-seven, eighty-one: none is greater than one hundred, so keep going. Eighty-one times three is two hundred and forty-three. That's past one hundred, so stop. The count is five.",
+      "caption": "Start with n = 1. Multiply by 3 each time and count. 3, 9, 27, 81: none is greater than 100, so keep going. 81 × 3 = 243. That's past 100, so stop. The count is 5."
+    },
+    {
+      "type": "points",
+      "heading": "Loops that never stop",
+      "icon": "⚡",
+      "points": [
+        "Infinite loop: the condition is never met",
+        "Start 7, add 2, stop at 20? Never!",
+        "7, 9, 11 … all odd, so 20 is skipped",
+        "Always ask: can it ever be true?"
+      ],
+      "say": "Watch out for infinite loops. Start at seven, add two each time, and stop when the number equals twenty. It never stops, because seven, nine, eleven are all odd and skip right over twenty. Always ask: can the stopping condition ever be true?"
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Sequence, decisions, loops",
+        "At least includes the number; greater than doesn't",
+        "Loop, then look at the condition",
+        "Use a trace table and a counter"
+      ],
+      "say": "Quick recap. Algorithms use sequence, decisions and loops. At least includes the number, greater than doesn't. In a repeat until loop, do the steps, then look at the condition. Use a trace table and a counter. Now try the practice questions!"
+    }
+  ]
+}

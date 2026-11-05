@@ -1,0 +1,272 @@
+{
+ "level": "Year 7",
+ "subject": "maths",
+ "unit": "Year 7",
+ "title": "Solving equations by backtracking",
+ "summary": "Learn to draw a flowchart for an equation and solve it by backtracking: undoing each operation in reverse order with inverse operations.",
+ "minutes": 25,
+ "video": "videos/y7/maths/solving-equations-by-backtracking.mp4",
+ "body": "**Backtracking** is a way of solving an equation by working backwards. You draw how the equation was built up from x, then undo each step in reverse order. It's the same thinking you use to retrace your steps when you've lost your keys: go back the way you came.\n\n## Learning objective\n\nBy the end of this lesson you can draw a flowchart for an equation and use backtracking with inverse operations to solve one- and two-step equations.\n\n## Before you start\n\nYou need these earlier skills:\n\n- **Introduction to equations (Year 7)** — what an equation and its solution are, and how to check a solution.\n- **Order of operations (BIDMAS) (Year 7)** — which operation happens first.\n\nWarm-up (answers below):\n\n1. What number multiplied by 4 gives 36?\n2. Work out 50 − 18.\n\nAnswers: 1. 36 ÷ 4 = 9. 2. 50 − 18 = 32.\n\n## Think of it like this\n\n### Getting dressed and undressed\n\nIn the morning you put on socks first, then shoes. At night you undo it in reverse: shoes off first, then socks. You don't try to take your socks off while your shoes are still on! Backtracking works the same way: whatever was done to x last gets undone first.\n\n*Where the analogy breaks down:* with clothes you just \"take off\"; in maths each step has its own opposite operation, so you must choose the right one (for example, × is undone by ÷).\n\n## Key ideas\n\n### Inverse operations\n\nAn **inverse operation** undoes another operation.\n\n| Operation | Inverse (undo) |\n|---|---|\n| + 5 | − 5 |\n| − 5 | + 5 |\n| × 3 | ÷ 3 |\n| ÷ 3 | × 3 |\n\nIf you add 5 and then subtract 5, you're back where you started.\n\n### Building a flowchart\n\nA **flowchart** shows how an equation is built from x, one operation at a time, following the order of operations. For 2x + 3 = 17:\n\n`x  →(× 2)→  2x  →(+ 3)→  2x + 3`\n\nStart with x, multiply by 2, then add 3. The result is 17.\n\n### Backtracking\n\nTo **backtrack**, start from the answer (17) at the right-hand end and move left, using the inverse of each operation:\n\n`17  →(− 3)→  14  →(÷ 2)→  7`\n\nSo x = 7. Check: 2 × 7 + 3 = 14 + 3 = 17 ✓\n\nThe order matters. The last thing done to x (+ 3) is the first thing you undo.\n\n### Fractions and brackets\n\n- x/4 means x ÷ 4, so the flowchart step is \"÷ 4\" and its inverse is \"× 4\".\n- Brackets are done first. In 2(x + 6), you add 6 first, then multiply by 2. So when backtracking, divide by 2 first, then subtract 6.\n\n## Worked examples\n\n### Example 1\n\nSolve x + 14 = 31.\n\nStep 1: build the flowchart — x →(+ 14)→ 31.\nStep 2: backtrack from 31 using the inverse of + 14, which is − 14 — 31 − 14 = 17.\nStep 3: write the answer — x = 17.\n\nCheck: 17 + 14 = 31 ✓\n\n### Example 2\n\nSolve 3x + 5 = 26.\n\nStep 1: build the flowchart — x →(× 3)→ 3x →(+ 5)→ 26. Multiply comes first by the order of operations.\nStep 2: undo the last step first: + 5 becomes − 5 — 26 − 5 = 21.\nStep 3: undo × 3 with ÷ 3 — 21 ÷ 3 = 7.\nStep 4: write the answer — x = 7.\n\nCheck: 3 × 7 + 5 = 21 + 5 = 26 ✓\n\n### Example 3\n\nSolve x/4 − 3 = 5.\n\nStep 1: build the flowchart — x →(÷ 4)→ x/4 →(− 3)→ 5.\nStep 2: undo − 3 with + 3 — 5 + 3 = 8.\nStep 3: undo ÷ 4 with × 4 — 8 × 4 = 32.\nStep 4: write the answer — x = 32.\n\nCheck: 32 ÷ 4 − 3 = 8 − 3 = 5 ✓\n\n### Example 4\n\nSolve 2(x + 6) = 30.\n\nStep 1: build the flowchart — brackets first, so x →(+ 6)→ x + 6 →(× 2)→ 30.\nStep 2: undo × 2 with ÷ 2 — 30 ÷ 2 = 15.\nStep 3: undo + 6 with − 6 — 15 − 6 = 9.\nStep 4: write the answer — x = 9.\n\nCheck: 2 × (9 + 6) = 2 × 15 = 30 ✓\n\n## Common mistakes\n\n- **Undoing in the wrong order.** For 3x + 5 = 26, dividing by 3 first gives a messy wrong answer. This happens when you undo things left to right. Fix: undo the LAST operation first — work from right to left along the flowchart.\n- **Using the same operation instead of the inverse.** Adding 5 again instead of subtracting it. Fix: write the inverse above each arrow before you calculate.\n- **Getting the flowchart order wrong.** In 3x + 5 the × comes before the +, even though \"+ 5\" is written last. Fix: follow BIDMAS when building the flowchart.\n- **Forgetting that brackets go first.** In 2(x + 6), the + 6 happens before the × 2. Fix: put the bracket operation first in the flowchart.\n- **Not checking.** Fix: substitute your answer into the original equation — it takes ten seconds.\n\n## Tips to remember\n\n- **Socks and shoes:** last on, first off. Undo the last operation first.\n- **Opposite pairs:** + and − are partners; × and ÷ are partners. Each one cancels the other.\n- **Made-up memory trick — \"Build left, solve right-to-left.\"** Draw the flowchart forwards from x, then walk back from the answer.\n- **Write the undo arrows.** Put the inverse operation on each backward arrow before you do any working out.\n- **If you remember one thing:** backtracking is just the flowchart run in reverse.\n\n## Key terms\n\n- **Backtracking** — solving an equation by starting at the answer and undoing each operation in reverse order.\n- **Inverse operation** — the operation that undoes another (+ and −, × and ÷).\n- **Flowchart** — a diagram showing the operations applied to x, in order.\n- **Solution** — the value of x that makes the equation true.\n\n## Summary\n\n- Build a flowchart from x using the order of operations.\n- Backtrack from the answer, using inverse operations.\n- Undo the last operation first.\n- With brackets, the operation inside the brackets happens first, so it is undone last.\n- Always check by substituting your answer into the original equation.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "What is the inverse operation of \"multiply by 6\"?",
+   "options": {
+    "A": "Divide by 6",
+    "B": "Subtract 6",
+    "C": "Add 6",
+    "D": "Multiply by 6"
+   },
+   "answer": "A",
+   "explanation": "Dividing by 6 undoes multiplying by 6 (e.g. 5 × 6 = 30, then 30 ÷ 6 = 5). Subtracting 6 is the tempting answer, but it undoes adding 6.",
+   "steps": [
+    "× and ÷ are inverse partners.",
+    "So multiplying by 6 is undone by dividing by 6."
+   ],
+   "mistakes": {
+    "B": "Step 1: subtracting undoes adding, not multiplying. The partner of × is ÷.",
+    "C": "Step 1: adding is the inverse of subtracting. Multiplying is undone by the other operation in its pair.",
+    "D": "Step 1: doing the same thing again doesn't undo it — it makes the number even bigger."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Solve x + 19 = 42.",
+   "options": {
+    "A": "x = 61",
+    "B": "x = 37",
+    "C": "x = 23",
+    "D": "x = 19"
+   },
+   "answer": "C",
+   "explanation": "Backtrack: 42 − 19 = 23, and 23 + 19 = 42 ✓. x = 61 comes from adding 19 instead of using the inverse.",
+   "steps": [
+    "Flowchart: x →(+ 19)→ 42.",
+    "Undo + 19 with − 19: 42 − 19 = 23, so x = 23."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 19. The inverse of + 19 is − 19.",
+    "B": "Step 2: in the ones column you did 9 − 2 instead of trading a ten. Try 42 − 20, then add 1 back.",
+    "D": "Step 1: 19 is the number added to x, not x itself. Backtrack from 42."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Solve x ÷ 6 = 9.",
+   "options": {
+    "A": "x = 1.5",
+    "B": "x = 3",
+    "C": "x = 15",
+    "D": "x = 54"
+   },
+   "answer": "D",
+   "explanation": "Undo ÷ 6 by multiplying: 9 × 6 = 54, and 54 ÷ 6 = 9 ✓. x = 1.5 comes from dividing again.",
+   "steps": [
+    "Flowchart: x →(÷ 6)→ 9.",
+    "Undo ÷ 6 with × 6: 9 × 6 = 54, so x = 54."
+   ],
+   "mistakes": {
+    "A": "Step 2: the inverse of ÷ 6 is × 6, not ÷ 6 again.",
+    "B": "Step 2: the inverse of ÷ 6 is × 6, not − 6.",
+    "C": "Step 2: the inverse of ÷ 6 is × 6, not + 6."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Solve 5x + 8 = 38.",
+   "options": {
+    "A": "x = 9.2",
+    "B": "x = 6",
+    "C": "x = 25",
+    "D": "x = −0.4"
+   },
+   "answer": "B",
+   "explanation": "38 − 8 = 30, then 30 ÷ 5 = 6. Check: 5 × 6 + 8 = 38 ✓. Dividing first (38 ÷ 5) undoes things in the wrong order.",
+   "steps": [
+    "Flowchart: x →(× 5)→ →(+ 8)→ 38.",
+    "Undo + 8 first: 38 − 8 = 30.",
+    "Undo × 5: 30 ÷ 5 = 6, so x = 6. Check: 5 × 6 + 8 = 38 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 1: the inverse of + 8 is − 8. You added 8 to 38.",
+    "C": "Step 2: 5x means 5 × x, so undo it by dividing by 5, not subtracting 5.",
+    "D": "Step 1: undo the last operation (+ 8) first. You divided by 5 before subtracting 8."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Solve x/3 − 4 = 7.",
+   "options": {
+    "A": "x = 33",
+    "B": "x = 9",
+    "C": "x = 25",
+    "D": "x = 11/3"
+   },
+   "answer": "A",
+   "explanation": "7 + 4 = 11, then 11 × 3 = 33. Check: 33 ÷ 3 − 4 = 11 − 4 = 7 ✓. 25 comes from undoing the steps in the wrong order.",
+   "steps": [
+    "Flowchart: x →(÷ 3)→ →(− 4)→ 7.",
+    "Undo − 4 first: 7 + 4 = 11.",
+    "Undo ÷ 3: 11 × 3 = 33, so x = 33."
+   ],
+   "mistakes": {
+    "B": "Step 1: the inverse of − 4 is + 4. You subtracted 4 again.",
+    "C": "Step 1: undo − 4 first (+ 4), then × 3. You multiplied by 3 before adding 4.",
+    "D": "Step 2: x/3 means x ÷ 3, so undo it by multiplying by 3, not dividing."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Which flowchart correctly shows how 4(x − 2) is built from x?",
+   "options": {
+    "A": "x → × 4 → − 2",
+    "B": "x → + 2 → × 4",
+    "C": "x → − 2 → × 4",
+    "D": "x → ÷ 4 → − 2"
+   },
+   "answer": "C",
+   "explanation": "Brackets first: subtract 2, then multiply by 4. \"× 4 then − 2\" would build 4x − 2, which is different.",
+   "steps": [
+    "Brackets are worked out first, so x − 2 comes first.",
+    "Then the whole bracket is multiplied by 4: x → − 2 → × 4."
+   ],
+   "mistakes": {
+    "A": "Step 1: brackets come first, so − 2 happens before × 4.",
+    "B": "Step 1: the bracket says x − 2, so the operation is − 2, not + 2.",
+    "D": "Step 1: the 4 outside the bracket means multiply, and it happens after the bracket."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Solve 3(x + 5) = 54.",
+   "options": {
+    "A": "x = 23",
+    "B": "x = 49/3",
+    "C": "x = 157",
+    "D": "x = 13"
+   },
+   "answer": "D",
+   "explanation": "54 ÷ 3 = 18, then 18 − 5 = 13. Check: 3 × (13 + 5) = 3 × 18 = 54 ✓. Subtracting 5 first undoes the steps in the wrong order.",
+   "steps": [
+    "Flowchart: x →(+ 5)→ →(× 3)→ 54.",
+    "Undo × 3 first: 54 ÷ 3 = 18.",
+    "Undo + 5: 18 − 5 = 13, so x = 13."
+   ],
+   "mistakes": {
+    "A": "Step 2: the inverse of + 5 is − 5. You added 5 to 18.",
+    "B": "Step 1: the × 3 was done last (after the bracket), so undo it first: divide by 3 before subtracting 5.",
+    "C": "Step 1: undo × 3 by dividing by 3, not multiplying."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Solve 4x + 9 = 1.",
+   "options": {
+    "A": "x = 2.5",
+    "B": "x = −2",
+    "C": "x = 2",
+    "D": "x = −32"
+   },
+   "answer": "B",
+   "explanation": "1 − 9 = −8, then −8 ÷ 4 = −2. Check: 4 × (−2) + 9 = −8 + 9 = 1 ✓. x = 2 comes from subtracting the wrong way round.",
+   "steps": [
+    "Undo + 9 first: 1 − 9 = −8.",
+    "Undo × 4: −8 ÷ 4 = −2, so x = −2. Check: 4 × (−2) + 9 = 1 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 1: the inverse of + 9 is − 9. You added 9 to 1.",
+    "C": "Step 1: you worked out 9 − 1 instead of 1 − 9. Keep the order: start from 1 and subtract 9.",
+    "D": "Step 2: undo × 4 by dividing by 4, not multiplying."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Solve (x − 1)/2 = 10.",
+   "options": {
+    "A": "x = 21",
+    "B": "x = 22",
+    "C": "x = 19",
+    "D": "x = 6"
+   },
+   "answer": "A",
+   "explanation": "10 × 2 = 20, then 20 + 1 = 21. Check: (21 − 1) ÷ 2 = 10 ✓. 19 comes from subtracting 1 instead of adding it back.",
+   "steps": [
+    "Flowchart: x →(− 1)→ →(÷ 2)→ 10.",
+    "Undo ÷ 2 first: 10 × 2 = 20.",
+    "Undo − 1: 20 + 1 = 21, so x = 21."
+   ],
+   "mistakes": {
+    "B": "Step 2: the inverse of − 1 is + 1, and it is done last. You added 1 before multiplying by 2.",
+    "C": "Step 2: the inverse of − 1 is + 1. You subtracted 1 again.",
+    "D": "Step 1: the inverse of ÷ 2 is × 2. You divided 10 by 2, then added 1."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Mia thinks of a number. She adds 7, multiplies the result by 3, then subtracts 4. She gets 32. What number did she start with?",
+   "options": {
+    "A": "19",
+    "B": "77",
+    "C": "5",
+    "D": "101"
+   },
+   "answer": "C",
+   "explanation": "Backtrack: 32 + 4 = 36, 36 ÷ 3 = 12, 12 − 7 = 5. Check: (5 + 7) × 3 − 4 = 32 ✓. 19 comes from adding 7 at the end instead of subtracting.",
+   "steps": [
+    "Flowchart: n →(+ 7)→ →(× 3)→ →(− 4)→ 32.",
+    "Undo − 4: 32 + 4 = 36.",
+    "Undo × 3: 36 ÷ 3 = 12.",
+    "Undo + 7: 12 − 7 = 5. She started with 5."
+   ],
+   "mistakes": {
+    "A": "Step 3: the inverse of + 7 is − 7. You added 7 to 12 instead of subtracting it.",
+    "B": "Steps 1 and 2: use inverse operations — + 4 to undo − 4, and ÷ 3 to undo × 3.",
+    "D": "Step 2: the inverse of × 3 is ÷ 3. You multiplied 36 by 3."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Solve x/5 + 3 = 3.4.",
+   "options": {
+    "A": "x = 14",
+    "B": "x = 32",
+    "C": "x = 0.08",
+    "D": "x = 2"
+   },
+   "answer": "D",
+   "explanation": "3.4 − 3 = 0.4, then 0.4 × 5 = 2. Check: 2 ÷ 5 + 3 = 0.4 + 3 = 3.4 ✓. 14 comes from undoing the steps in the wrong order.",
+   "steps": [
+    "Flowchart: x →(÷ 5)→ →(+ 3)→ 3.4.",
+    "Undo + 3: 3.4 − 3 = 0.4.",
+    "Undo ÷ 5: 0.4 × 5 = 2, so x = 2."
+   ],
+   "mistakes": {
+    "A": "Step 1: undo + 3 first. You multiplied 3.4 by 5 before subtracting 3.",
+    "B": "Step 1: the inverse of + 3 is − 3. You added 3 to 3.4.",
+    "C": "Step 2: x/5 means x ÷ 5, so undo it by multiplying by 5, not dividing."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Sam solved 2x + 3 = 11 like this: \"11 ÷ 2 = 5.5, then 5.5 − 3 = 2.5, so x = 2.5.\" What should the answer be?",
+   "options": {
+    "A": "x = 2.5, because Sam is correct",
+    "B": "x = 4, because + 3 must be undone before ÷ 2",
+    "C": "x = 8, because 11 − 3 = 8",
+    "D": "x = 5.5, because 11 ÷ 2 = 5.5"
+   },
+   "answer": "B",
+   "explanation": "In 2x + 3, x is multiplied by 2 first and then 3 is added, so backtracking undoes + 3 first: 11 − 3 = 8, 8 ÷ 2 = 4. Sam's 2.5 fails the check: 2 × 2.5 + 3 = 8.",
+   "steps": [
+    "Flowchart: x →(× 2)→ →(+ 3)→ 11. The last step is + 3.",
+    "Undo + 3 first: 11 − 3 = 8.",
+    "Then undo × 2: 8 ÷ 2 = 4, so x = 4 — Sam undid them in the wrong order."
+   ],
+   "mistakes": {
+    "A": "Step 1: check Sam's answer: 2 × 2.5 + 3 = 8, not 11, so Sam is wrong. He undid the steps in the wrong order.",
+    "C": "Step 2: 8 is 2x, not x. After subtracting 3 you still need to undo the × 2.",
+    "D": "Step 1: 5.5 is only Sam's first step. Also, the + 3 must be undone before dividing by 2."
+   }
+  }
+ ]
+}
