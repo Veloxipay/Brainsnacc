@@ -1,0 +1,104 @@
+{
+  "lesson": "y7/maths-advanced/sequences-and-the-nth-term.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Sequences and the nth term",
+  "icon": "🔢",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Sequences and the nth term",
+      "sub": "Find the 50th term without writing 50 terms",
+      "icon": "🔢",
+      "say": "Seven, eleven, fifteen, nineteen. What is the fiftieth term? You could write fifty numbers, or you could use one formula. In this video you will learn to find the n th term, and use it to answer harder questions about sequences."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🚗",
+      "everyday": "Taxi fare = cost per km × distance + starting amount",
+      "icon2": "🔢",
+      "science": "Tₙ = d × n + zeroth term",
+      "breaks": "The constant is the \"zeroth term\", the number before the first term — it is not in the list.",
+      "say": "A taxi fare is the cost per kilometre times the distance, plus a starting amount. An arithmetic sequence is the same. The common difference is like the cost per kilometre, and the constant is like the starting amount: the term just before the first one.",
+      "caption": "Tₙ = d × n + (zeroth term)"
+    },
+    {
+      "type": "equation",
+      "heading": "The nth term",
+      "equation": "Tₙ = d × n + (T₁ − d)",
+      "parts": [
+        [
+          "Tₙ",
+          "the term in position n"
+        ],
+        [
+          "d",
+          "the common difference"
+        ],
+        [
+          "T₁ − d",
+          "the zeroth term"
+        ]
+      ],
+      "say": "The n th term equals the common difference times n, plus the zeroth term. You find the zeroth term by stepping back once from the first term: the first term minus the difference."
+    },
+    {
+      "type": "example",
+      "heading": "Find the rule, then T₅₀",
+      "question": "Find the nth term of 7, 11, 15, 19, … and T₅₀.",
+      "lines": [
+        "d = 4 → 4n",
+        "Step back: 7 − 4 = 3",
+        "Tₙ = 4n + 3",
+        "T₅₀ = 4 × 50 + 3 = 203"
+      ],
+      "say": "The difference is four, so start with four n. Step back from seven: seven minus four is three. So the n th term is four n plus three. The fiftieth term is four times fifty plus three, which is two hundred and three."
+    },
+    {
+      "type": "example",
+      "heading": "Is it a term?",
+      "question": "Tₙ = 7n − 2. Is 150 a term? Is 166?",
+      "lines": [
+        "7n − 2 = 150 → 7n = 152",
+        "n ≈ 21.7, not whole: no",
+        "7n − 2 = 166 → 7n = 168",
+        "n = 24: yes, T₂₄"
+      ],
+      "say": "To test a number, set the rule equal to it and solve. Seven n minus two equals one hundred and fifty gives n about twenty-one point seven. That is not a whole number, so no. For one hundred and sixty-six, n is twenty-four, so it is the twenty-fourth term."
+    },
+    {
+      "type": "compare",
+      "heading": "Adding or multiplying?",
+      "left": {
+        "title": "Arithmetic",
+        "icon": "➕",
+        "points": [
+          "Same difference each time",
+          "7, 11, 15, 19 …",
+          "Tₙ = 4n + 3"
+        ]
+      },
+      "right": {
+        "title": "Geometric",
+        "icon": "✖️",
+        "points": [
+          "Same ratio each time",
+          "3, 6, 12, 24 …",
+          "Tₙ = 3 × 2ⁿ⁻¹"
+        ]
+      },
+      "say": "Arithmetic sequences add the same difference each time and grow steadily. Geometric sequences multiply by the same ratio and grow very fast. Three, six, twelve, twenty-four doubles each time."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Tₙ = difference × n + zeroth term",
+        "Check your rule with T₁ and T₂",
+        "Is it a term? Solve; n must be whole",
+        "Going down? Subtract the n part"
+      ],
+      "say": "Remember: the n th term is the difference times n, plus the zeroth term. Always check with the first two terms. To test a number, solve, and n must be a whole number. And decreasing sequences subtract the n part. Now try the practice questions!"
+    }
+  ]
+}

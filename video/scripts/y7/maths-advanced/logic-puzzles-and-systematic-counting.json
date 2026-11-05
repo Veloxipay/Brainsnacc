@@ -1,0 +1,85 @@
+{
+  "lesson": "y7/maths-advanced/logic-puzzles-and-systematic-counting.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Logic puzzles and systematic counting",
+  "icon": "🧩",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Logic puzzles and systematic counting",
+      "sub": "Count every case once — no more, no less",
+      "icon": "🧩",
+      "say": "How many lunch combos can a canteen offer? How many games if every team plays every other team? Let's learn to count without missing anything, and to crack logic puzzles."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🔑",
+      "everyday": "Try lock codes like an odometer: 000, 001, 002 …",
+      "icon2": "🧩",
+      "science": "Systematic listing: fix the first choice, run through all the rest",
+      "breaks": "On a lock every dial has the same digits; in many problems choices shrink as you go.",
+      "say": "Imagine trying every code on a bike lock. Guess randomly and you'll repeat some and miss others. Go in order, zero zero zero, zero zero one, like an odometer, and you hit every code exactly once. That's systematic counting.",
+      "caption": "Guess lock codes randomly and you repeat some and miss others. Go in order — 000, 001, 002 — like an odometer, and you hit every code exactly once."
+    },
+    {
+      "type": "points",
+      "heading": "The multiplication principle",
+      "icon": "🥪",
+      "points": [
+        "Separate choices? Multiply the ways",
+        "3 drinks, 4 sandwiches, 2 desserts",
+        "3 × 4 × 2 = 24 meal deals",
+        "Fill restricted positions first"
+      ],
+      "say": "If choices are separate, multiply. Three drinks, four sandwiches and two desserts give three times four times two, twenty-four meal deals. And if a position has a rule, like the number must be even, fill that position first."
+    },
+    {
+      "type": "example",
+      "heading": "Avoid double counting",
+      "question": "Six players each play every other player once. How many games?",
+      "lines": [
+        "Each plays 5 others: 6 × 5 = 30",
+        "Each game counted twice",
+        "30 ÷ 2 = 15",
+        "15 games"
+      ],
+      "say": "Six players each play every other player once. Each player plays five games, so six times five is thirty. But that counts every game twice, once for each player. So halve it: fifteen games.",
+      "caption": "Six players: each plays 5 games, 6 × 5 = 30. Every game was counted twice, so halve it: 15 games."
+    },
+    {
+      "type": "diagram",
+      "heading": "Counting routes by adding",
+      "diagram": "diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-paths.svg",
+      "notes": [
+        "Move only right or up",
+        "Each corner = left + below",
+        "6 routes from A to B"
+      ],
+      "say": "Here is a street grid. You can only walk right or up. First the streets are drawn, then the numbers. Every corner along the edges has just one route. Each other corner adds the routes from its left and from below: one plus one is two, then three, three, and six routes to B."
+    },
+    {
+      "type": "steps",
+      "heading": "Cracking a logic puzzle",
+      "steps": [
+        "Draw a logic grid",
+        "Use the strongest clue first",
+        "Mark ✗ and ✓",
+        "Re-check every clue after a ✓"
+      ],
+      "say": "For logic puzzles, draw a grid. Use the most powerful clue first. Put crosses where a clue rules something out, and a tick when only one option is left. After every tick, go back through all the clues again."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "List in a fixed order",
+        "AND means multiply",
+        "Restrictions first",
+        "Pairs: divide by 2",
+        "Grid routes: add left + below"
+      ],
+      "say": "Quick recap. List in a fixed order. Separate choices multiply. Do the restricted position first. For pairs, divide by two. And for grid routes, add as you go. Now try the practice questions!"
+    }
+  ]
+}

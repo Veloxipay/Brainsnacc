@@ -1,0 +1,102 @@
+{
+  "lesson": "y7/maths-advanced/comparing-data-sets.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Comparing data sets",
+  "icon": "📊",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Comparing data sets",
+      "sub": "Same average, totally different story",
+      "icon": "📊",
+      "say": "Two basketball players both average fifteen points a game. Are they the same kind of player? Not even close. Let's find out how to compare two whole sets of data properly."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🚗",
+      "icon2": "📊",
+      "everyday": "Pick the bus you can rely on, not just the one that is fast on average",
+      "science": "Compare centre (typical value) AND spread (how much it varies)",
+      "breaks": "A bigger spread is not always worse. It just means the values are less consistent.",
+      "say": "Imagine two buses. One is usually fast but sometimes forty minutes late. The other is a little slower but always on time. For an exam, you would pick the reliable one. Comparing data is the same: you need the typical value, and how much it varies."
+    },
+    {
+      "type": "diagram",
+      "heading": "Same centre, different spread",
+      "diagram": "diagrams/y7/maths-advanced/comparing-data-sets-players.svg",
+      "notes": [
+        "Both: mean 15, median 15",
+        "Mia range 4, Zara range 18"
+      ],
+      "say": "Here are parallel dot plots on one shared scale. First Mia's dots, bunched around fifteen. Then Zara's, spread from six to twenty-four. Both have a mean and median of fifteen, but Mia's range is four and Zara's is eighteen. Mia is far more consistent."
+    },
+    {
+      "type": "diagram",
+      "heading": "An outlier drags the mean",
+      "diagram": "diagrams/y7/maths-advanced/comparing-data-sets-cafes.svg",
+      "notes": [
+        "Café A: mean 8, median 4.5",
+        "Café B: mean 7, median 7",
+        "Outlier? Use the median"
+      ],
+      "say": "Now waiting times at two cafés. Café A has one awful wait of twenty-six minutes. That outlier drags its mean up to eight, so the mean says Café B is quicker. But the medians are four and a half and seven, so on a typical day Café A is quicker.",
+      "caption": "Now waiting times at two cafés. Café A has one awful wait of 26 minutes. That outlier drags its mean up to 8, so the mean says Café B is quicker. But the medians are 4.5 and 7, so on a typical day Café A is quicker."
+    },
+    {
+      "type": "equation",
+      "heading": "Working backwards",
+      "equation": "total = mean × number of values",
+      "parts": [
+        [
+          "mean",
+          "the average"
+        ],
+        [
+          "number of values",
+          "how many there are"
+        ],
+        [
+          "total",
+          "all values added"
+        ]
+      ],
+      "say": "Here is a powerful trick. Because the mean is the total divided by the number of values, the total is the mean times the number of values. Rebuild the total first, and missing values become easy."
+    },
+    {
+      "type": "example",
+      "heading": "Hitting a target mean",
+      "question": "Mean of 5 tests is 72. What 6th score makes the mean 75?",
+      "lines": [
+        "Total so far = 72 × 5 = 360",
+        "Total needed = 75 × 6 = 450",
+        "6th score = 450 − 360",
+        "Answer: 90"
+      ],
+      "say": "Liam averages seventy-two over five tests. His total so far is seventy-two times five, three hundred and sixty. For a mean of seventy-five over six tests he needs four hundred and fifty. So the sixth test must be ninety.",
+      "caption": "Liam averages 72 over 5 tests. His total so far is 72 × 5 = 360. For a mean of 75 over 6 tests he needs 450. So the 6th test must be 90."
+    },
+    {
+      "type": "points",
+      "heading": "Watch out",
+      "icon": "⚠️",
+      "points": [
+        "Back-to-back plots: left leaves read outwards",
+        "Different-sized groups: compare means, not totals",
+        "Never just average two means"
+      ],
+      "say": "Three traps. On a back-to-back stem and leaf plot, the left leaves get bigger as they move away from the stem. When groups are different sizes, compare means or medians, not totals. And to combine two groups, add their totals, never just average the two means."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Always compare centre AND spread",
+        "Same scale for side-by-side plots",
+        "Outlier? Use the median",
+        "total = mean × number of values"
+      ],
+      "say": "Quick recap. Always compare a centre and a spread. Use the same scale for both groups. If there is an outlier, the median is the fairer typical value. And total equals mean times the number of values. Now try the practice questions!"
+    }
+  ]
+}

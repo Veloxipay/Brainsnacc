@@ -1,0 +1,367 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 8 · Test 2",
+  "kind": "test",
+  "summary": "A second 15-question test on comparing data sets, two-step chance experiments, and Venn diagrams and two-way tables.",
+  "minutes": 25,
+  "body": "This second test covers Advanced 8: comparing data sets (centre, spread, outliers and working backwards from the mean), two-step chance experiments (tables, tree diagrams, with and without replacement) and Venn diagrams and two-way tables.\n\nThere are 15 multiple-choice questions. Allow about 25 minutes, with no notes and no calculator unless the question says. Show your working on paper — many questions need two or three steps. Read every diagram and table carefully: check the scale, the totals and exactly which group the question is asking about. When you finish, check each answer makes sense in context.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "Using the Venn diagram (ξ = 30), how many items are in A or B (or both)?",
+      "options": {
+        "A": "19",
+        "B": "31",
+        "C": "5",
+        "D": "25"
+      },
+      "answer": "D",
+      "explanation": "A or B = only A + both + only B = 10 + 6 + 9 = 25. Leaving out the overlap gives 19.",
+      "steps": [
+        "\"A or B\" means inside at least one circle.",
+        "Add the three regions inside the circles: 10 + 6 + 9 = 25."
+      ],
+      "mistakes": {
+        "A": "Step 2: you left out the 6 in the overlap. \"Or\" includes items in both sets.",
+        "B": "Step 2: you added the circle totals (16 + 15), which counts the overlap twice.",
+        "C": "Step 2: 5 is the number in neither set — the opposite of what is asked."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-2-q1.svg",
+      "diagram_alt": "A Venn diagram with ξ = 30. Only A: 10. A and B: 6. Only B: 9. Neither: 5."
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Comparing data sets",
+      "prompt": "Team X scored 5, 7, 8, 8, 12 points in five games. Team Y scored 2, 6, 8, 11, 13. Which statement is correct?",
+      "options": {
+        "A": "Team Y is better, because its highest score is bigger.",
+        "B": "The medians are equal, but Team X is more consistent.",
+        "C": "Team X is better, because its range is smaller.",
+        "D": "The teams are exactly the same, because their medians are equal."
+      },
+      "answer": "B",
+      "explanation": "Both medians are 8, so the teams are equal on a typical game; Team X's range (7) is smaller than Team Y's (11), so X is more consistent. A smaller range does not mean \"better\".",
+      "steps": [
+        "Medians: both middle values are 8.",
+        "Ranges: X = 12 − 5 = 7, Y = 13 − 2 = 11.",
+        "Same median, and X has the smaller range, so X is more consistent."
+      ],
+      "mistakes": {
+        "A": "Step 1: one high score does not make a team better on average — compare the medians.",
+        "C": "Step 2: a smaller range means more consistent, not a higher typical score. The medians are equal.",
+        "D": "Step 2: the ranges (7 and 11) are different, so the teams are not the same."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Two-step chance experiments",
+      "prompt": "The spinner has three equal sections numbered 1, 2 and 3. It is spun twice and the two numbers are added. What is the probability that the total is 4?",
+      "options": {
+        "A": "1/3",
+        "B": "1/5",
+        "C": "2/9",
+        "D": "1/9"
+      },
+      "answer": "A",
+      "explanation": "There are 3 × 3 = 9 outcomes, and (1, 3), (2, 2) and (3, 1) total 4: 3/9 = 1/3. Treating the totals as equally likely gives 1/5.",
+      "steps": [
+        "Two spins: 3 × 3 = 9 equally likely outcomes.",
+        "Total of 4: (1, 3), (2, 2), (3, 1) — 3 outcomes.",
+        "P = 3/9 = 1/3."
+      ],
+      "mistakes": {
+        "B": "Step 1: the five totals 2 to 6 are not equally likely. List the 9 outcomes instead.",
+        "C": "Step 2: you missed (2, 2). There are three ways to make 4.",
+        "D": "Step 2: (1, 3) and (3, 1) are different outcomes, and (2, 2) works too."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-2-q3.svg",
+      "diagram_alt": "A spinner divided into three equal sections labelled 1, 2 and 3."
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Comparing data sets",
+      "prompt": "The dot plots show Group 1 and Group 2. How much bigger is the median of Group 2 than the median of Group 1?",
+      "options": {
+        "A": "2",
+        "B": "0",
+        "C": "1.5",
+        "D": "7.5"
+      },
+      "answer": "C",
+      "explanation": "Each group has 6 values, so the median is the average of the 3rd and 4th: Group 1 (6 + 6) ÷ 2 = 6, Group 2 (7 + 8) ÷ 2 = 7.5. The difference is 1.5.",
+      "steps": [
+        "Each group has 6 values, so the median is the average of the 3rd and 4th values.",
+        "Group 1: 3, 5, 6, 6, 7, 9 → median 6. Group 2: 4, 6, 7, 8, 8, 10 → median (7 + 8) ÷ 2 = 7.5.",
+        "Difference = 7.5 − 6 = 1.5."
+      ],
+      "mistakes": {
+        "A": "Step 3: 2 is the difference between the modes (8 and 6). Use the medians.",
+        "B": "Step 3: 0 is the difference between the ranges (both 6). Use the medians.",
+        "D": "Step 3: 7.5 is the median of Group 2 on its own. Subtract the median of Group 1."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-2-q4.svg",
+      "diagram_alt": "Parallel dot plots from 0 to 10. Group 1: dots at 3, 5, 6, 6, 7 and 9. Group 2: dots at 4, 6, 7, 8, 8 and 10."
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The table shows 50 families:\n\n| | Pet | No pet | Total |\n|---|---|---|---|\n| **House** | 26 | 8 | 34 |\n| **Apartment** | 6 | 10 | 16 |\n| **Total** | 32 | 18 | 50 |\n\nOne family is chosen at random from all 50. What is the probability that it lives in an apartment and has no pet?",
+      "options": {
+        "A": "5/8",
+        "B": "5/9",
+        "C": "8/25",
+        "D": "1/5"
+      },
+      "answer": "D",
+      "explanation": "Apartment and no pet is one cell: 10. Out of all 50 families, P = 10/50 = 1/5. Dividing by 16 would only be right if we knew the family lived in an apartment.",
+      "steps": [
+        "\"Apartment and no pet\" is the cell where that row and column meet: 10.",
+        "Out of all 50 families: P = 10/50 = 1/5."
+      ],
+      "mistakes": {
+        "A": "Step 2: you divided by the apartment total (16). The family is chosen from all 50.",
+        "B": "Step 2: you divided by the \"no pet\" total (18). The family is chosen from all 50.",
+        "C": "Step 1: 16/50 is every apartment family. \"And no pet\" narrows it to one cell."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Two-step chance experiments",
+      "prompt": "A captain and a vice-captain are chosen from 5 players. The same player cannot be both. How many different ways can this be done?",
+      "options": {
+        "A": "20",
+        "B": "25",
+        "C": "10",
+        "D": "9"
+      },
+      "answer": "A",
+      "explanation": "This is \"without replacement\": 5 choices for captain, then 4 for vice-captain, so 5 × 4 = 20. 25 would allow one person to hold both jobs.",
+      "steps": [
+        "Captain: 5 choices.",
+        "Vice-captain: only 4 players left (without replacement).",
+        "Total = 5 × 4 = 20 ordered choices."
+      ],
+      "mistakes": {
+        "B": "Step 2: 5 × 5 allows the same player to be captain and vice-captain. Only 4 players are left for vice-captain.",
+        "C": "Step 3: 10 counts pairs without order. Captain Ana with vice Ben is different from captain Ben with vice Ana.",
+        "D": "Step 2: you added 5 + 4. Each captain choice pairs with each vice-captain choice, so multiply."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Comparing data sets",
+      "prompt": "In a class, 12 boys have a mean score of 15 and 18 girls have a mean score of 20. What is the mean score of the whole class of 30?",
+      "options": {
+        "A": "17.5",
+        "B": "18",
+        "C": "17",
+        "D": "270"
+      },
+      "answer": "B",
+      "explanation": "Totals: 12 × 15 = 180 and 18 × 20 = 360, so 540 ÷ 30 = 18. Averaging the means (17.5) ignores the different group sizes.",
+      "steps": [
+        "Boys' total = 12 × 15 = 180. Girls' total = 18 × 20 = 360.",
+        "Class total = 180 + 360 = 540.",
+        "Class mean = 540 ÷ 30 = 18."
+      ],
+      "mistakes": {
+        "A": "Step 3: you averaged the two means. There are more girls, so their total counts for more.",
+        "C": "Step 1: you multiplied the wrong pairs (12 × 20 and 18 × 15). The 12 boys have the mean of 15.",
+        "D": "Step 3: divide the combined total by the number of students (30), not by 2."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "In a group of 45, 25 are in set A, 20 are in set B and 8 are in neither, as shown in the Venn diagram. A person is chosen at random. What is the probability that they are in A only?",
+      "options": {
+        "A": "5/9",
+        "B": "8/45",
+        "C": "17/45",
+        "D": "4/15"
+      },
+      "answer": "C",
+      "explanation": "(25 − x) + x + (20 − x) + 8 = 45 gives x = 8, so A only = 25 − 8 = 17 and P = 17/45. Using 25 counts the overlap too.",
+      "steps": [
+        "Add the regions: (25 − x) + x + (20 − x) + 8 = 45, so 53 − x = 45 and x = 8.",
+        "A only = 25 − 8 = 17.",
+        "P(A only) = 17/45."
+      ],
+      "mistakes": {
+        "A": "Step 3: 25/45 is all of A, including the overlap. \"A only\" leaves the overlap out.",
+        "B": "Step 3: 8 is the overlap (and also the number in neither). \"A only\" is the part of A outside B.",
+        "D": "Step 3: 12/45 is B only. Use the A side of the diagram."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-2-q8.svg",
+      "diagram_alt": "A Venn diagram with ξ = 45. Only A is labelled 25 − x, the overlap is x, only B is 20 − x, and 8 are outside both circles."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Two-step chance experiments",
+      "prompt": "A bag holds 3 red (R) and 2 blue (B) counters. Two are taken without replacement, as shown in the tree diagram. What is the probability that at least one counter is blue?",
+      "options": {
+        "A": "3/10",
+        "B": "2/5",
+        "C": "16/25",
+        "D": "7/10"
+      },
+      "answer": "D",
+      "explanation": "P(no blue) = P(RR) = 3/5 × 2/4 = 6/20 = 3/10, so P(at least one blue) = 1 − 3/10 = 7/10. Answering 3/10 stops at the opposite event.",
+      "steps": [
+        "\"At least one blue\" is the opposite of \"both red\".",
+        "P(RR) = 3/5 × 2/4 = 6/20 = 3/10 (multiply along the path).",
+        "P(at least one blue) = 1 − 3/10 = 7/10."
+      ],
+      "mistakes": {
+        "A": "Step 2: 3/10 is P(both red) — the opposite of what is asked. Subtract it from 1.",
+        "B": "Step 1: 2/5 is only \"the first counter is blue\". At least one blue also includes RB.",
+        "C": "Step 2: you used 3/5 × 3/5, which is with replacement. The tree shows 2/4 on the second red branch."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-2-q9.svg",
+      "diagram_alt": "A tree diagram for two picks without replacement. First pick: R 3/5, B 2/5. After R: R 2/4, B 2/4. After B: R 3/4, B 1/4. Outcomes RR, RB, BR, BB."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Comparing data sets",
+      "prompt": "The back-to-back stem-and-leaf plot shows how long (in minutes) 7 morning and 7 evening trips took:\n\n| Morning leaves | Stem | Evening leaves |\n|---|---|---|\n| 8 5 2 | 1 | 4 6 |\n| 9 4 3 1 | 2 | 2 5 7 |\n| | 3 | 3 6 |\n\nKey: 2 | 5 means 25 for Evening, and 1 | 2 means 21 for Morning.\n\nHow many minutes longer is the evening median than the morning median?",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "4.4",
+        "D": "25"
+      },
+      "answer": "A",
+      "explanation": "Morning in order: 12, 15, 18, 21, 23, 24, 29 → median 21. Evening: 14, 16, 22, 25, 27, 33, 36 → median 25. 25 − 21 = 4.",
+      "steps": [
+        "Morning (left leaves read outwards from the stem): 12, 15, 18, 21, 23, 24, 29 — the 4th of 7 is 21.",
+        "Evening: 14, 16, 22, 25, 27, 33, 36 — the 4th of 7 is 25.",
+        "Difference = 25 − 21 = 4 minutes."
+      ],
+      "mistakes": {
+        "B": "Step 3: 5 is the difference between the ranges (22 − 17). Use the medians.",
+        "C": "Step 3: about 4.4 is the difference between the means. Use the middle (4th) values.",
+        "D": "Step 2: 25 is the evening median on its own. Subtract the morning median."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "In a class, 17 students like only art, 9 like both art and music, 20 like music altogether and 4 like neither. How many students are in the class?",
+      "options": {
+        "A": "50",
+        "B": "37",
+        "C": "41",
+        "D": "32"
+      },
+      "answer": "C",
+      "explanation": "Music only = 20 − 9 = 11, so the class is 17 + 9 + 11 + 4 = 41. Adding 20 directly (50) counts the 9 twice.",
+      "steps": [
+        "The four regions are: art only, both, music only and neither.",
+        "Music only = 20 − 9 = 11 (the 20 includes the 9 who like both).",
+        "Class = 17 + 9 + 11 + 4 = 41."
+      ],
+      "mistakes": {
+        "A": "Step 2: 20 already includes the 9 who like both. Use music only = 20 − 9.",
+        "B": "Step 3: you forgot the 4 students who like neither. They are still in the class.",
+        "D": "Step 3: you left out the 9 who like both."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Two-step chance experiments",
+      "prompt": "Two fair dice are rolled and the numbers are added. What is the probability that the total is a multiple of 3?",
+      "options": {
+        "A": "11/36",
+        "B": "1/3",
+        "C": "4/11",
+        "D": "3/11"
+      },
+      "answer": "B",
+      "explanation": "Totals 3, 6, 9 and 12 fill 2 + 5 + 4 + 1 = 12 of the 36 cells: 12/36 = 1/3. Forgetting 12 gives 11/36.",
+      "steps": [
+        "Possible multiples of 3: 3, 6, 9 and 12.",
+        "Cells: total 3 → 2, total 6 → 5, total 9 → 4, total 12 → 1. That is 12 cells.",
+        "P = 12/36 = 1/3."
+      ],
+      "mistakes": {
+        "A": "Step 2: you forgot the total 12, which is also a multiple of 3.",
+        "C": "Step 1: the totals 2 to 12 are not equally likely. Count cells in the 36-cell table.",
+        "D": "Step 1: the totals are not equally likely, and 12 is a multiple of 3 too."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Comparing data sets",
+      "prompt": "Five numbers have a mean of 10. One of the numbers is increased, and the mean becomes 12. By how much was that number increased?",
+      "options": {
+        "A": "2",
+        "B": "12",
+        "C": "60",
+        "D": "10"
+      },
+      "answer": "D",
+      "explanation": "Old total 10 × 5 = 50; new total 12 × 5 = 60. Only one number changed, so it went up by 60 − 50 = 10. Choosing 2 forgets that the increase is shared among 5 numbers.",
+      "steps": [
+        "Old total = 10 × 5 = 50.",
+        "New total = 12 × 5 = 60.",
+        "Only one number changed, so it increased by 60 − 50 = 10."
+      ],
+      "mistakes": {
+        "A": "Step 3: 2 is how much the mean went up. The total went up by 2 for each of the 5 numbers.",
+        "B": "Step 3: 12 is the new mean, not the change in one number.",
+        "C": "Step 2: 60 is the new total. Subtract the old total (50)."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Two-step chance experiments",
+      "prompt": "A coin is tossed three times. What is the probability of getting at least two heads?",
+      "options": {
+        "A": "1/2",
+        "B": "3/8",
+        "C": "1/8",
+        "D": "7/8"
+      },
+      "answer": "A",
+      "explanation": "There are 2 × 2 × 2 = 8 outcomes. At least two heads: HHT, HTH, THH and HHH — 4 outcomes, so 4/8 = 1/2. 3/8 forgets HHH.",
+      "steps": [
+        "Three tosses give 2 × 2 × 2 = 8 outcomes: HHH, HHT, HTH, HTT, THH, THT, TTH, TTT.",
+        "At least two heads: HHH, HHT, HTH, THH — 4 outcomes.",
+        "P = 4/8 = 1/2."
+      ],
+      "mistakes": {
+        "B": "Step 2: 3/8 is exactly two heads. \"At least two\" also includes HHH.",
+        "C": "Step 2: 1/8 is three heads only. \"At least two\" also includes exactly two heads.",
+        "D": "Step 2: 7/8 is \"at least one head\". You need two or more."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The Venn diagram shows 36 people. The number in A only is twice the number in B only. 5 are in both and 7 are in neither. A person is chosen at random. What is the probability that they are in set A?",
+      "options": {
+        "A": "4/9",
+        "B": "29/36",
+        "C": "7/12",
+        "D": "5/36"
+      },
+      "answer": "C",
+      "explanation": "2y + 5 + y + 7 = 36 gives 3y = 24, so y = 8. A = 16 + 5 = 21, and P = 21/36 = 7/12. Using 16 forgets the overlap.",
+      "steps": [
+        "Add the regions: 2y + 5 + y + 7 = 36, so 3y + 12 = 36.",
+        "3y = 24, so y = 8 and A only = 16.",
+        "Set A = 16 + 5 = 21, so P = 21/36 = 7/12."
+      ],
+      "mistakes": {
+        "A": "Step 3: 16/36 is A only. Set A also includes the 5 people in both.",
+        "B": "Step 3: 29 is A or B. Leave out the people in B only.",
+        "D": "Step 3: 5 is the overlap only. Set A is A only plus the overlap."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-2-q15.svg",
+      "diagram_alt": "A Venn diagram with ξ = 36. A only is labelled 2y, the overlap is 5, B only is y, and 7 are outside both circles."
+    }
+  ]
+}

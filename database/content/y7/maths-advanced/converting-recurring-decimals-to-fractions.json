@@ -1,0 +1,270 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Converting recurring decimals to fractions",
+  "summary": "Turn any recurring decimal into an exact fraction using the shift-and-subtract method, including decimals with a non-repeating start and a whole number part.",
+  "minutes": 30,
+  "body": "Your calculator says 5/11 = 0.454545… In the normal Year 7 lesson you went from a fraction to a recurring decimal by dividing. This lesson goes the other way: you start with a recurring decimal and find the exact fraction it came from. It is a favourite in selective tests and Year 8 extension work, and it uses a neat bit of algebra that makes the endless digits disappear.\n\n## Learning objective\n\nBy the end of this lesson you can convert any recurring decimal (including ones with a non-repeating start or a whole number part) into a fraction in simplest form, and explain why the method works.\n\n## Before you start\n\nThis builds on **Terminating and recurring decimals (Year 7)** (dot notation), **Equivalent fractions and simplifying (Year 7)**, **Mixed numbers and improper fractions (Year 7)**, and the idea of using a letter for an unknown from **Variables and algebraic expressions (Year 7)**.\n\nWarm-up:\n1. Simplify 45/99.\n2. Write 0.625 as a fraction in simplest form.\n\n*Answers:* 1. 5/11 (divide top and bottom by 9). 2. 625/1000 = 5/8 (divide by 125).\n\n## Think of it like this\n\n### Two identical trains, one carriage apart\n\nPicture two endless trains of carriages, each carriage painted with the same digits in the same order. If you slide one train along by exactly one full pattern and lay it on top of the other, every carriage lines up with a matching carriage, forever. Subtract one train from the other and all those endless carriages cancel, leaving just the bit at the front.\n\n*Where the analogy breaks down:* real trains end somewhere, so the last carriages wouldn't match. A recurring decimal truly never ends, which is exactly why every digit after the point cancels perfectly.\n\n## Key ideas\n\n### Multiply to shift, subtract to cancel\n\nCall the decimal x. Multiplying by 10 moves every digit one place to the left; multiplying by 100 moves them two places. If you shift by **exactly one full block of the repeating pattern**, the digits after the point are the same as before. Subtracting then cancels the endless tail.\n\nFor x = 0.4̇5̇ = 0.454545…:\n- The block \"45\" has 2 digits, so multiply by 100: 100x = 45.454545…\n- Subtract: 100x − x = 45.454545… − 0.454545… = 45\n- So 99x = 45, and x = 45/99 = 5/11.\n\n### The nines shortcut\n\nWhen the repeat starts **straight after the point**, the method always gives the same pattern:\n\n- one repeating digit → put it over 9: 0.7̇ = 7/9\n- two repeating digits → over 99: 0.3̇6̇ = 36/99 = 4/11\n- three repeating digits → over 999: 0.1̇23̇ = 123/999 = 41/333\n\nThe number of 9s equals the number of digits in the repeating block. Always simplify at the end.\n\n### When the repeat starts later\n\nIn 0.83̇ = 0.8333… the 8 does not repeat. A **non-repeating part** needs one extra move: first multiply so the repeat starts right after the point, then multiply again to shift by one block.\n\n- 10x = 8.333…  (now the 3s start straight after the point)\n- 100x = 83.333…  (shifted by one more block)\n- 100x − 10x = 83 − 8 = 75, so 90x = 75 and x = 75/90 = 5/6.\n\n### Whole number parts\n\nFor 2.1̇5̇ you can either split off the whole number (2 + 15/99) or use the same multiply-and-subtract method on the whole thing. Both give the same answer.\n\n### A surprising fact: 0.9̇ = 1\n\nUsing the shortcut, 0.9̇ = 9/9 = 1. Another way to see it: 1/3 = 0.3̇, and 3 × 1/3 = 1, while 3 × 0.333… = 0.999… They are two ways of writing the same number — there is no number in between them.\n\n## Worked examples\n\n### Example 1\n\nWrite 0.7̇ as a fraction.\n\nStep 1: let x = 0.777… — give the decimal a name so you can work with it.\nStep 2: the block is one digit, so multiply by 10: 10x = 7.777… — this shifts the pattern by one block.\nStep 3: subtract: 10x − x = 7.777… − 0.777… = 7, so 9x = 7 — the tails cancel.\nStep 4: divide by 9: x = 7/9.\n\nCheck: 7 ÷ 9 = 0.777… ✓\n\n### Example 2\n\nWrite 0.3̇6̇ as a fraction in simplest form.\n\nStep 1: let x = 0.363636… — the block \"36\" has 2 digits.\nStep 2: multiply by 100: 100x = 36.363636… — shift by one full block.\nStep 3: subtract: 99x = 36 — the tails cancel.\nStep 4: x = 36/99. Simplify by dividing top and bottom by 9: x = 4/11.\n\nCheck: 4 ÷ 11 = 0.3636… ✓\n\n### Example 3\n\nWrite 0.83̇ as a fraction in simplest form.\n\nStep 1: let x = 0.8333… — only the 3 repeats.\nStep 2: 10x = 8.333… — now the repeat starts straight after the point.\nStep 3: 100x = 83.333… — shift by one more block (one digit).\nStep 4: 100x − 10x = 83.333… − 8.333… = 75, so 90x = 75 — the tails cancel.\nStep 5: x = 75/90 = 5/6 (divide top and bottom by 15).\n\nCheck: 5 ÷ 6 = 0.8333… ✓\n\n### Example 4\n\nWrite 2.1̇5̇ as an improper fraction in simplest form.\n\nStep 1: split it: 2.151515… = 2 + 0.151515… — deal with the whole number separately.\nStep 2: 0.151515… has a 2-digit block, so it equals 15/99 = 5/33 — the nines shortcut, then simplify by 3.\nStep 3: 2 + 5/33 = 66/33 + 5/33 = 71/33 — write 2 as 66/33.\n\nCheck with algebra: 100x − x = 215.1515… − 2.1515… = 213, so x = 213/99 = 71/33 ✓\n\n## Common mistakes\n\n- **Treating it as terminating.** Writing 0.7̇ as 7/10. That is 0.7 exactly, which is smaller. Fix: a repeating block goes over 9s, not over 10s.\n- **Wrong number of 9s.** Writing 0.3̇6̇ as 36/9. Fix: count the digits in the repeating block — two digits means 99.\n- **Using the shortcut when the repeat starts late.** Writing 0.83̇ as 83/99. Fix: when there is a non-repeating part, use the two-multiplication method (here 90x = 75).\n- **Forgetting to simplify.** 36/99 is correct but not finished. Fix: look for common factors such as 3, 9 and 11.\n- **Multiplying by the wrong power of 10.** For a 2-digit block, 10x − x leaves a tail behind. Fix: shift by one whole block (10 for one digit, 100 for two, 1000 for three).\n\n## Tips to remember\n\n- **\"Shift a block, subtract, the tail is gone\"** (made-up trick): multiply by 10, 100 or 1000 to move exactly one repeating block, then subtract.\n- **Count the dots' block, count the 9s:** 1 repeating digit → 9, 2 → 99, 3 → 999.\n- **Ninths and ninety-ninths are your friends:** 1/9 = 0.1̇, 1/99 = 0.0̇1̇, 1/999 = 0.0̇01̇.\n- **Late start? Put a 0 on the 9s:** with one non-repeating digit and one repeating digit, the denominator is 90 (as in 0.8333… = 75/90).\n- **Always check by dividing** your fraction back out — it should give the same pattern.\n\n## Key terms\n\n- **Recurring decimal** — a decimal in which a digit or block of digits repeats forever.\n- **Repeating block** — the group of digits that repeats, such as 45 in 0.454545…\n- **Non-repeating part** — digits after the point that come before the repeat starts, such as 8 in 0.8333…\n- **Rational number** — any number that can be written as a fraction of two integers; every recurring decimal is rational.\n- **Simplest form** — a fraction whose numerator and denominator have no common factor except 1.\n\n## Summary\n\n- Let x be the decimal, multiply by a power of 10 to shift one full repeating block, then subtract to cancel the endless tail.\n- If the repeat starts right after the point: the block over the same number of 9s.\n- If there is a non-repeating part, multiply twice (for example 100x − 10x) before subtracting.\n- Handle whole number parts separately or include them in the subtraction.\n- 0.9̇ is exactly 1. Always simplify and check by dividing.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "Write 0.5̇ as a fraction.",
+      "options": {
+        "A": "5/99",
+        "B": "1/2",
+        "C": "5/9",
+        "D": "9/5"
+      },
+      "answer": "C",
+      "explanation": "One repeating digit goes over 9, so 0.5̇ = 5/9. Writing 1/2 treats it as 0.5, which stops — but 0.555… is bigger than 0.5.",
+      "steps": [
+        "Let x = 0.555… The block has one digit, so multiply by 10: 10x = 5.555… — this shifts one block.",
+        "Subtract: 10x − x = 5, so 9x = 5 and x = 5/9."
+      ],
+      "mistakes": {
+        "A": "Step 2: the repeating block is only one digit, so the denominator has one 9, not two.",
+        "B": "Step 1: 1/2 = 0.5 exactly, which stops. The 5 keeps repeating, so it is a little more than 0.5 — use 9 as the denominator.",
+        "D": "Step 2: the fraction is upside down — 9/5 is bigger than 1. The repeating digit goes on top."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Write 0.2̇7̇ as a fraction in simplest form.",
+      "options": {
+        "A": "3/11",
+        "B": "27/100",
+        "C": "3/10",
+        "D": "2/7"
+      },
+      "answer": "A",
+      "explanation": "A two-digit block goes over 99: 27/99, and dividing by 9 gives 3/11. The tempting 27/100 is 0.27, which stops.",
+      "steps": [
+        "The block \"27\" has 2 digits and starts straight after the point, so x = 27/99 — the nines shortcut.",
+        "Divide top and bottom by 9: 27/99 = 3/11."
+      ],
+      "mistakes": {
+        "B": "Step 1: 27/100 = 0.27, which stops. The 27 repeats, so the block goes over 99, not 100.",
+        "C": "Step 1: you used 90 as the denominator (27/90 = 3/10). The repeat starts straight after the point, so use 99.",
+        "D": "Step 1: the digits are not a numerator and denominator. Put the repeating block 27 over 99, then simplify."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Which fraction is equal to 0.0̇9̇ (that is, 0.090909…)?",
+      "options": {
+        "A": "9/100",
+        "B": "1/10",
+        "C": "1/9",
+        "D": "1/11"
+      },
+      "answer": "D",
+      "explanation": "The repeating block is 09 (two digits), so 0.0909… = 9/99 = 1/11. 1/9 is tempting but gives 0.111…",
+      "steps": [
+        "The block is \"09\" — two digits — so x = 09/99 = 9/99.",
+        "Divide top and bottom by 9: 9/99 = 1/11."
+      ],
+      "mistakes": {
+        "A": "Step 1: 9/100 = 0.09, which stops. The block 09 repeats, so it goes over 99.",
+        "B": "Step 1: you used 90 (9/90 = 1/10). The block 09 starts straight after the point, so use 99.",
+        "C": "Step 1: 1/9 = 0.111… The repeating block is two digits (0 and 9), so it needs two 9s."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Write 0.16̇ (that is, 0.1666…) as a fraction in simplest form.",
+      "options": {
+        "A": "16/99",
+        "B": "1/6",
+        "C": "8/45",
+        "D": "4/25"
+      },
+      "answer": "B",
+      "explanation": "10x = 1.666… and 100x = 16.666…, so 90x = 15 and x = 15/90 = 1/6. 16/99 would be 0.161616…, a different number.",
+      "steps": [
+        "Let x = 0.1666… Multiply by 10: 10x = 1.666… — now the 6s start straight after the point.",
+        "Multiply by 100: 100x = 16.666… — shifted one more block.",
+        "Subtract: 100x − 10x = 15, so 90x = 15 and x = 15/90 = 1/6."
+      ],
+      "mistakes": {
+        "A": "Step 1: only the 6 repeats, not \"16\". With a non-repeating 1 first, the nines shortcut does not work — use 100x − 10x.",
+        "C": "Step 3: 100x − 10x is 16.666… − 1.666… = 15, not 16. Subtract the whole numbers carefully.",
+        "D": "Step 1: 4/25 = 0.16 exactly, which stops. The 6 keeps repeating, so you need the subtraction method."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Write 1.3̇ as an improper fraction in simplest form.",
+      "options": {
+        "A": "13/9",
+        "B": "13/10",
+        "C": "133/99",
+        "D": "4/3"
+      },
+      "answer": "D",
+      "explanation": "1.333… = 1 + 3/9 = 1 + 1/3 = 4/3. Putting 13 over 9 gives 1.444…, a different number.",
+      "steps": [
+        "Split off the whole number: 1.333… = 1 + 0.333… — deal with the whole part separately.",
+        "0.333… = 3/9 = 1/3 — one repeating digit over 9.",
+        "1 + 1/3 = 3/3 + 1/3 = 4/3."
+      ],
+      "mistakes": {
+        "A": "Step 1: 13/9 = 1.444… The 1 is a whole number, so split it off: 1 + 3/9.",
+        "B": "Step 2: 13/10 = 1.3 exactly, which stops. The 3 repeats, so its fraction is 3/9, not 3/10.",
+        "C": "Step 2: the block is one digit (3), not two. 133/99 = 1.343434…"
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Let x = 0.4̇5̇ = 0.454545… Which equation is the best next step to write x as a fraction?",
+      "options": {
+        "A": "100x = 45",
+        "B": "90x = 45",
+        "C": "99x = 45",
+        "D": "9x = 4.5"
+      },
+      "answer": "C",
+      "explanation": "100x = 45.4545… and x = 0.4545…, so subtracting gives 99x = 45 exactly. 100x = 45 forgets that 100x still has the endless tail.",
+      "steps": [
+        "The block \"45\" has 2 digits, so multiply by 100: 100x = 45.4545… — this shifts one full block.",
+        "Subtract x: 100x − x = 45.4545… − 0.4545… = 45, so 99x = 45."
+      ],
+      "mistakes": {
+        "A": "Step 2: 100x = 45.4545…, not 45. You still have to subtract x to cancel the tail.",
+        "B": "Step 1: 90 is used when one digit comes before the repeat. Here the repeat starts straight after the point, so subtract x from 100x.",
+        "D": "Step 1: multiplying by 10 shifts only half a block. 10x − x = 4.0909…, not 4.5. Shift a whole two-digit block."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Write 0.13̇ (that is, 0.1333…) as a fraction in simplest form.",
+      "options": {
+        "A": "13/90",
+        "B": "2/15",
+        "C": "13/99",
+        "D": "4/33"
+      },
+      "answer": "B",
+      "explanation": "100x − 10x = 13.333… − 1.333… = 12, so 90x = 12 and x = 12/90 = 2/15. 13/90 forgets to subtract the 1 from 10x.",
+      "steps": [
+        "Let x = 0.1333… Then 10x = 1.333… and 100x = 13.333… — two shifts because the 1 does not repeat.",
+        "Subtract: 100x − 10x = 12, so 90x = 12.",
+        "x = 12/90 = 2/15 (divide top and bottom by 6)."
+      ],
+      "mistakes": {
+        "A": "Step 3: 100x − 10x = 13.333… − 1.333… = 12, not 13. Subtract the whole number parts.",
+        "C": "Step 1: only the 3 repeats. 13/99 = 0.131313…; with a non-repeating digit first, use 100x − 10x.",
+        "D": "Step 3: you got 12 correctly but put it over 99. 100x − 10x is 90x, so divide by 90."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Work out 0.3̇ + 0.4̇5̇. Give the answer as a fraction in simplest form.",
+      "options": {
+        "A": "26/33",
+        "B": "3/7",
+        "C": "3/4",
+        "D": "83/110"
+      },
+      "answer": "A",
+      "explanation": "0.333… = 1/3 and 0.4545… = 5/11, so the sum is 11/33 + 15/33 = 26/33 (= 0.7878…). Adding tops and bottoms (3/7) is not how fractions add.",
+      "steps": [
+        "Convert each: 0.333… = 3/9 = 1/3 and 0.4545… = 45/99 = 5/11.",
+        "Common denominator 33: 1/3 = 11/33 and 5/11 = 15/33.",
+        "Add: 11/33 + 15/33 = 26/33."
+      ],
+      "mistakes": {
+        "B": "Step 2: you added the tops (1 + 5) and the bottoms (3 + 11). Use a common denominator of 33.",
+        "C": "Step 1: 0.3 + 0.45 = 0.75 treats both decimals as stopping. Convert each recurring decimal to a fraction first.",
+        "D": "Step 1: 0.3̇ is 1/3, not 3/10. A repeating digit goes over 9."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Write 2.0̇3̇ (that is, 2.030303…) as an improper fraction in simplest form.",
+      "options": {
+        "A": "203/100",
+        "B": "7/3",
+        "C": "61/30",
+        "D": "67/33"
+      },
+      "answer": "D",
+      "explanation": "2.0303… = 2 + 3/99 = 2 + 1/33 = 67/33. Using 2 + 3/9 treats the block as just \"3\", which gives 2.333…",
+      "steps": [
+        "Split off the whole number: 2 + 0.030303…",
+        "The block \"03\" has 2 digits: 0.0303… = 3/99 = 1/33.",
+        "2 + 1/33 = 66/33 + 1/33 = 67/33."
+      ],
+      "mistakes": {
+        "A": "Step 2: 203/100 = 2.03 exactly, which stops. The block 03 repeats, so it goes over 99.",
+        "B": "Step 2: the block is \"03\" — two digits — not just 3. 2 + 3/9 = 2.333…",
+        "C": "Step 2: the repeat starts straight after the point, so use 99, not 90. 61/30 = 2.0333…"
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Ava says 0.9̇ = 0.999… is \"just less than 1\". Which argument correctly shows that 0.9̇ is exactly equal to 1?",
+      "options": {
+        "A": "0.999… rounds to 1, so it equals 1",
+        "B": "1/3 = 0.3̇, so multiplying both by 3 gives 1 = 0.9̇",
+        "C": "0.999… = 9/10, which is close to 1",
+        "D": "There is a smallest number between 0.999… and 1, so they are equal"
+      },
+      "answer": "B",
+      "explanation": "3 × 1/3 = 1 and 3 × 0.333… = 0.999…, so they are the same number. (The nines shortcut agrees: 0.9̇ = 9/9.) Rounding only shows they are close, not equal.",
+      "steps": [
+        "Start from a fact you trust: 1/3 = 0.333…",
+        "Multiply both sides by 3: 3 × 1/3 = 1 and 3 × 0.333… = 0.999…",
+        "Equal things times 3 are still equal, so 1 = 0.999… exactly."
+      ],
+      "mistakes": {
+        "A": "Step 2: rounding gives an approximation, not equality — 0.98 also rounds to 1. You need an exact argument.",
+        "C": "Step 1: 9/10 = 0.9 exactly. A repeating 9 goes over 9, not 10.",
+        "D": "Step 2: if there were any number between them they would be different. The argument is that there is no gap at all."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Let x = 0.1̇8̇. Write x as a fraction, then work out 11x.",
+      "options": {
+        "A": "1.98",
+        "B": "2.2",
+        "C": "2",
+        "D": "2/11"
+      },
+      "answer": "C",
+      "explanation": "0.1818… = 18/99 = 2/11, so 11x = 2 exactly. Using 0.18 gives 1.98, which is close but wrong.",
+      "steps": [
+        "The block \"18\" has 2 digits: x = 18/99 = 2/11.",
+        "Multiply by 11: 11 × 2/11 = 2."
+      ],
+      "mistakes": {
+        "A": "Step 1: 1.98 = 0.18 × 11 treats x as 0.18, which stops. Convert the recurring decimal first.",
+        "B": "Step 1: 18/90 = 1/5 uses 90, but the repeat starts right after the point, so use 99.",
+        "D": "Step 2: 2/11 is x itself. You still need to multiply by 11."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Work out 0.3̇ × 0.6̇. Give the answer as a recurring decimal.",
+      "options": {
+        "A": "0.2̇",
+        "B": "0.18",
+        "C": "0.1̇8̇",
+        "D": "0.2"
+      },
+      "answer": "A",
+      "explanation": "0.333… × 0.666… = 1/3 × 2/3 = 2/9 = 0.222… = 0.2̇. Multiplying 0.3 × 0.6 = 0.18 ignores all the digits after the first.",
+      "steps": [
+        "Convert: 0.333… = 1/3 and 0.666… = 2/3.",
+        "Multiply: 1/3 × 2/3 = 2/9.",
+        "2 ÷ 9 = 0.222… = 0.2̇."
+      ],
+      "mistakes": {
+        "B": "Step 1: 0.3 × 0.6 = 0.18 treats both decimals as stopping. Convert to 1/3 and 2/3 first.",
+        "C": "Step 3: 2/9 has one 9 in its denominator, so only one digit repeats. 0.1818… = 2/11.",
+        "D": "Step 3: 0.2 stops; 2/9 = 2 ÷ 9 keeps giving 2s forever. Show the repeat with a dot."
+      }
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Geometric reasoning and proof",
+  "summary": "Writing short geometric proofs with a reason for every step: vertically opposite angles, the triangle angle sum, the exterior angle rule, testing for parallel lines and using counterexamples.",
+  "minutes": 30,
+  "body": "In earlier lessons you used angle rules. In this lesson you **prove** them: you show, with a chain of reasons, that a rule must be true for every possible diagram, not just the one on the page. Proof is what makes maths different from guessing — a proved fact can be trusted forever, and every engineer, programmer and scientist relies on facts like these.\n\n## Learning objective\n\nBy the end of this lesson you can write a short geometric proof with a reason for every step, prove the triangle angle sum and the exterior angle rule, test whether lines are parallel, and use a counterexample to show a claim is false.\n\n## Before you start\n\nThis lesson builds on Angles and parallel lines (Year 7) and Triangles (Year 7), and on Angle chasing from this chapter.\n\n**Warm-up**\n\n1. Two straight lines cross and one angle is 72°. Find the other three angles.\n2. A triangle has interior angles 35° and 80°. Find the exterior angle next to the third angle.\n\n*Answers:* 1. 108°, 72°, 108° 2. 35 + 80 = 115°\n\n## Think of it like this\n\n### Building a case in court\n\nA lawyer cannot just say \"my client is innocent — trust me\". Every claim must be backed by evidence, and each piece of evidence leads to the next. A proof is the same: every statement needs a reason, and \"it looks like it in the diagram\" is not a reason.\n\n*Where the analogy breaks down:* a jury only needs to be convinced \"beyond reasonable doubt\". A maths proof must leave **no** doubt at all — it must work for every possible triangle or pair of lines, not just most of them.\n\n## Key ideas\n\n### Why measuring is not enough\n\nIf you measure the angles of one triangle and get 180°, you have checked **one** triangle. There are infinitely many triangles. A **proof** uses letters (a, b, x…) instead of numbers, so the argument works for all of them at once.\n\n### The shape of a proof\n\n1. **Given:** what you are told (e.g. AB ∥ CD).\n2. **To prove:** the statement you want to reach.\n3. **Proof:** a list of statements, each with a reason in brackets, ending with the statement you wanted.\n\nEach reason must be a definition, something you were given, or a rule that has already been proved. Using the thing you are trying to prove as a reason is called **circular reasoning**, and it proves nothing.\n\n### A first proof: vertically opposite angles are equal\n\n![Two straight lines crossing at a point; three of the angles around the point are labelled a (right), b (top) and c (left)](/diagrams/y7/maths-advanced/geometric-reasoning-and-proof-vo.svg)\n\nTo prove: a = c.\n- a + b = 180° (angles on a straight line)\n- c + b = 180° (angles on a straight line)\n- So a = 180 − b and c = 180 − b, which means a = c. ∎\n\nThe symbol ∎ (or the words \"as required\") marks the end of a proof.\n\n### Converses: testing for parallel lines\n\nThe parallel-line rules say: *if* the lines are parallel, *then* alternate angles are equal. The **converse** swaps the \"if\" and \"then\": *if* alternate angles are equal, *then* the lines are parallel. For these rules the converses are also true, so you can **prove** two lines are parallel by showing corresponding or alternate angles are equal, or co-interior angles add to 180°. Careful: the converse of a true statement is not always true.\n\n### Counterexamples\n\nTo show a claim is **false**, you need only one example where it fails — a **counterexample**. Claim: \"a quadrilateral with four equal sides must be a square.\" The rhombus below has four equal sides but angles of 60° and 120°, so the claim is false.\n\n![A rhombus ABCD with tick marks showing all four sides equal; angle A is 60° and angle B is 120°](/diagrams/y7/maths-advanced/geometric-reasoning-and-proof-rhombus.svg)\n\nOne counterexample destroys a claim, but a thousand examples that work do not prove it.\n\n## Worked examples\n\n### Example 1\n\nProve that the angles of any triangle add to 180°.\n\n![Triangle ABC with a line DE through A parallel to BC; at A the angles are b (between AD and AB), a (inside the triangle) and c (between AC and AE); the angles of the triangle at B and C are b and c](/diagrams/y7/maths-advanced/geometric-reasoning-and-proof-ex1.svg)\n\nGiven: triangle ABC with angles a, b and c at A, B and C.\nStep 1: Draw DE through A, parallel to BC — a construction line.\nStep 2: ∠DAB = b (alternate angles, DE ∥ BC).\nStep 3: ∠EAC = c (alternate angles, DE ∥ BC).\nStep 4: b + a + c = 180° (angles on the straight line DE).\nSo the angles of the triangle add to 180°. ∎\n\n### Example 2\n\nProve that an exterior angle of a triangle equals the sum of the two interior opposite angles.\n\n![Triangle ABC with angles a at A, b at B and c at C; side BC is extended to D and the exterior angle ACD is d](/diagrams/y7/maths-advanced/geometric-reasoning-and-proof-ex2.svg)\n\nTo prove: d = a + b.\nStep 1: c + d = 180° (angles on a straight line), so d = 180 − c.\nStep 2: a + b + c = 180° (angle sum of triangle, proved in Example 1), so a + b = 180 − c.\nStep 3: d and a + b both equal 180 − c, so d = a + b. ∎\n\n### Example 3 (a Year 8 idea: circles)\n\nAB is a diameter of a circle with centre O, and C is any point on the circle. Prove that ∠ACB = 90°.\n\n![A circle with centre O and diameter AB; C is a point on the circle joined to A, B and O; angles OAC and OCA are both x, and angles OCB and OBC are both y](/diagrams/y7/maths-advanced/geometric-reasoning-and-proof-ex3.svg)\n\nStep 1: OA = OC = OB (all radii of the circle).\nStep 2: Triangle AOC is isosceles, so ∠OAC = ∠OCA = x (isosceles triangle).\nStep 3: Triangle BOC is isosceles, so ∠OBC = ∠OCB = y (isosceles triangle).\nStep 4: In triangle ABC: x + (x + y) + y = 180 (angle sum of triangle), so 2x + 2y = 180 and x + y = 90.\nStep 5: ∠ACB = x + y = 90°. ∎\n\n### Example 4\n\nA transversal crosses lines AB and CD. Two co-interior angles are 106° and 74°. Prove AB ∥ CD.\n\n![Lines AB and CD cut by a transversal, without parallel marks; between the lines on the right of the transversal the angle at AB is 106° and the angle at CD is 74°](/diagrams/y7/maths-advanced/geometric-reasoning-and-proof-ex4.svg)\n\nStep 1: The two angles are between the lines on the same side of the transversal, so they are co-interior.\nStep 2: 106 + 74 = 180.\nStep 3: Co-interior angles add to 180°, so AB ∥ CD (converse of the co-interior rule). ∎\n\n## Common mistakes\n\n- **Using the diagram as a reason.** \"It looks like 90°\" or \"they look parallel\" proves nothing. Fix: give a rule for every step.\n- **Circular reasoning.** Using alternate angles to prove lines are parallel, then using those parallel lines as your evidence. Fix: only use facts that you were given or that are already proved.\n- **Thinking examples prove a rule.** Checking three triangles is not a proof. Fix: use letters so the argument covers every case.\n- **Giving the wrong reason.** \"Corresponding\" when the angles are alternate loses marks even with the right number. Fix: trace the F, Z or C shape before you write the reason.\n\n## Tips to remember\n\n- **\"No step without a reason\":** every line of a proof ends with a reason in brackets. (Made-up memory trick.)\n- **Given → To prove → Proof:** write the three headings first, then fill in the chain.\n- **Letters for all, numbers for one:** a proof with letters covers every case; a numerical example checks just one.\n- **One bad apple:** a single counterexample proves a claim false.\n- **Stuck? Build a bridge:** a construction line, often a parallel line, connects angles that seem unrelated.\n\n## Key terms\n\n- **Proof** — a chain of statements, each with a reason, showing that something must always be true.\n- **Circular reasoning** — using the statement you are trying to prove as one of your reasons.\n- **Converse** — a statement with its \"if\" and \"then\" parts swapped.\n- **Counterexample** — one example that shows a general claim is false.\n- **Construction line** — an extra line drawn to help a proof.\n\n## Summary\n\n- A proof uses letters and a reason for every step, so it works for every case.\n- Vertically opposite angles, the triangle angle sum and the exterior angle rule can all be proved from straight lines and parallel lines.\n- Converses of the parallel-line rules let you prove that lines are parallel.\n- One counterexample is enough to show that a claim is false.\n- An angle in a semicircle is always 90°, proved with isosceles triangles.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "In the diagram, AB ∥ CD. Which reason shows that ∠ABC = ∠DCB?",
+      "options": {
+        "A": "Corresponding angles, AB ∥ CD",
+        "B": "Alternate angles, AB ∥ CD",
+        "C": "Co-interior angles, AB ∥ CD",
+        "D": "Vertically opposite angles"
+      },
+      "answer": "B",
+      "explanation": "The angles are between the parallel lines, on opposite sides of BC, making a Z, so they are alternate angles. Corresponding angles would make an F.",
+      "steps": [
+        "Both angles are between the parallel lines AB and CD.",
+        "They are on opposite sides of the transversal BC and make a Z shape.",
+        "So the reason is: alternate angles, AB ∥ CD."
+      ],
+      "mistakes": {
+        "A": "Step 2: corresponding angles make an F shape. These two angles make a Z.",
+        "C": "Step 2: co-interior angles are on the SAME side of BC and add to 180°. These are on opposite sides.",
+        "D": "Step 1: vertically opposite angles are at the same point where two lines cross. These angles are at different points, B and C."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q1.svg",
+      "diagram_alt": "Parallel lines AB (top) and CD (bottom) joined by the line BC to make a Z shape; the angles ABC and DCB are marked"
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "To prove that a = c in the diagram, Mia writes \"a + b = 180°\". Which reason should she write?",
+      "options": {
+        "A": "Angles at a point add to 180°",
+        "B": "Vertically opposite angles are equal",
+        "C": "Co-interior angles add to 180°",
+        "D": "Angles on a straight line add to 180°"
+      },
+      "answer": "D",
+      "explanation": "a and b sit side by side on one straight line, so they add to 180°. \"Vertically opposite angles are equal\" is the thing being proved, so using it would be circular.",
+      "steps": [
+        "a and b are next to each other on one of the straight lines.",
+        "Angles on a straight line add to 180°, so that is the reason."
+      ],
+      "mistakes": {
+        "A": "Step 1: angles at a point add to 360°, not 180°. a and b sit together on one straight line.",
+        "B": "Step 2: that is what Mia is trying to prove, so she cannot use it as a reason (circular reasoning).",
+        "C": "Step 1: co-interior angles need parallel lines. There are no parallel lines here, just one straight line."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q2.svg",
+      "diagram_alt": "Two straight lines crossing at a point; the angle on the right is a, the angle at the top is b and the angle on the left is c"
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "The diagram shows triangle ABC with side BC extended to D. Which two facts together prove that ∠ACD = ∠A + ∠B?",
+      "options": {
+        "A": "Angles in a triangle add to 180°, and angles on a straight line add to 180°",
+        "B": "Alternate angles are equal, and vertically opposite angles are equal",
+        "C": "Angles at a point add to 360°, and isosceles base angles are equal",
+        "D": "Co-interior angles add to 180°, and corresponding angles are equal"
+      },
+      "answer": "A",
+      "explanation": "Both ∠ACD and ∠A + ∠B equal 180° − ∠ACB: one from the straight line, the other from the triangle sum. The parallel-line rules do not apply because there are no parallel lines.",
+      "steps": [
+        "∠ACB + ∠ACD = 180° (angles on a straight line).",
+        "∠A + ∠B + ∠ACB = 180° (angles in a triangle).",
+        "Both ∠ACD and ∠A + ∠B equal 180° − ∠ACB, so the two facts needed are the triangle sum and the straight line."
+      ],
+      "mistakes": {
+        "B": "Step 1: there are no parallel lines or crossing lines in this diagram. Use the triangle and the straight line BD.",
+        "C": "Step 1: the triangle is not isosceles, and the angles do not go all the way around a point.",
+        "D": "Step 1: co-interior and corresponding angles need parallel lines, and there are none here."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q3.svg",
+      "diagram_alt": "Triangle ABC with side BC extended to D; the angles at A and B and the exterior angle ACD are marked"
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "In the diagram, DE ∥ BC, ∠DAB = 54° and ∠EAC = 63°. Which statement about ∠ACB is correct?",
+      "options": {
+        "A": "∠ACB = 63° (corresponding angles, DE ∥ BC)",
+        "B": "∠ACB = 117° (co-interior angles, DE ∥ BC)",
+        "C": "∠ACB = 63° (alternate angles, DE ∥ BC)",
+        "D": "∠ACB = 54° (alternate angles, DE ∥ BC)"
+      },
+      "answer": "C",
+      "explanation": "∠EAC and ∠ACB lie on opposite sides of AC between the parallel lines (a Z), so they are equal alternate angles: 63°. The corresponding-angle option has the right number but the wrong reason.",
+      "steps": [
+        "∠EAC and ∠ACB are both on the line AC, between DE and BC, on opposite sides of AC.",
+        "They make a Z shape, so they are alternate angles.",
+        "So ∠ACB = 63° (alternate angles, DE ∥ BC)."
+      ],
+      "mistakes": {
+        "A": "Step 2: the number is right but the reason is wrong — ∠EAC and ∠ACB make a Z, so they are alternate, not corresponding.",
+        "B": "Step 1: ∠EAC and ∠ACB are on opposite sides of AC, so they are alternate (equal), not co-interior.",
+        "D": "Step 1: 54° pairs with ∠ABC through line AB. ∠ACB pairs with the angle on the same line AC, which is 63°."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q4.svg",
+      "diagram_alt": "Triangle ABC with a line DE through A parallel to BC; angle DAB is 54°, angle EAC is 63°, and angle ACB is marked with a question mark"
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "AB ∥ CD. Sam finds the angles a, b and c in the diagram. Step 1: a = 115° (alternate angles, AB ∥ CD). Step 2: b = 115° (vertically opposite to a). Step 3: c = 115° (co-interior angles are equal). Which statement is correct?",
+      "options": {
+        "A": "Step 1 is wrong — a and the 115° angle are not alternate",
+        "B": "Step 2 is wrong — a and b are not vertically opposite",
+        "C": "Step 3 is wrong — co-interior angles add to 180°, so c = 65°",
+        "D": "There is no error"
+      },
+      "answer": "C",
+      "explanation": "c and the 115° angle are between the lines on the same side (a C shape), so they add to 180° and c = 65°. Steps 1 and 2 are correct.",
+      "steps": [
+        "Step 1: a and the 115° angle make a Z, so a = 115° is correct.",
+        "Step 2: a and b are vertically opposite, so b = 115° is correct.",
+        "Step 3: c and the 115° angle are co-interior, which add to 180°, so c = 180 − 115 = 65°. Step 3 is the error."
+      ],
+      "mistakes": {
+        "A": "Step 1 is fine: a and the 115° angle are between the parallel lines on opposite sides of the transversal, a Z shape.",
+        "B": "Step 2 is fine: a and b are across from each other where the lines cross.",
+        "D": "Check Step 3: co-interior angles add to 180°, they are not equal. Look at whether c and 115° look the same size."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q5.svg",
+      "diagram_alt": "Parallel lines AB and CD cut by a transversal; at AB the angle below the line on the right is 115°; at CD the angle above the line on the left is a, below on the right is b, and above on the right is c"
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Two straight lines cross. Two vertically opposite angles are (2x + 10)° and (3x − 20)°, and y is next to them, as shown. Find y.",
+      "options": {
+        "A": "y = 110",
+        "B": "y = 70",
+        "C": "y = 30",
+        "D": "y = 94"
+      },
+      "answer": "A",
+      "explanation": "Vertically opposite angles are equal: 2x + 10 = 3x − 20, so x = 30 and each angle is 70°. Then y = 180 − 70 = 110. 70 is the angle, not y.",
+      "steps": [
+        "Vertically opposite angles are equal: 2x + 10 = 3x − 20.",
+        "Subtract 2x and add 20 to both sides: x = 30, so each of those angles is 2 × 30 + 10 = 70°.",
+        "y = 180 − 70 = 110 (angles on a straight line)."
+      ],
+      "mistakes": {
+        "B": "Step 3: 70° is the size of the vertically opposite angles. y is on a straight line with one of them: 180 − 70.",
+        "C": "Step 2: 30 is x, not an angle in the diagram. Find 2x + 10 first, then y.",
+        "D": "Step 1: vertically opposite angles are EQUAL — they do not add to 180°."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q6.svg",
+      "diagram_alt": "Two straight lines crossing; the angle on the right is (2x + 10)°, the angle on the left is (3x − 20)°, and the angle at the top is y"
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "In the diagram, p and q are co-interior angles between lines AB and CD. Which pair of sizes would prove that AB ∥ CD?",
+      "options": {
+        "A": "p = 70°, q = 70°",
+        "B": "p = 100°, q = 90°",
+        "C": "p = 115°, q = 75°",
+        "D": "p = 110°, q = 70°"
+      },
+      "answer": "D",
+      "explanation": "By the converse of the co-interior rule, the lines are parallel exactly when p + q = 180°, and only 110 + 70 = 180. 70° and 70° are equal, which is the test for alternate angles, not co-interior ones.",
+      "steps": [
+        "p and q are between the lines, on the same side of the transversal, so they are co-interior.",
+        "The lines are parallel if co-interior angles add to 180° (converse of the co-interior rule).",
+        "Only 110 + 70 = 180, so p = 110°, q = 70° proves AB ∥ CD."
+      ],
+      "mistakes": {
+        "A": "Step 2: co-interior angles of parallel lines ADD to 180°. Equal co-interior angles only happen if both are 90°.",
+        "B": "Step 2: 100 + 90 = 190, not 180, so these lines would not be parallel.",
+        "C": "Step 2: 115 + 75 = 190, not 180. Add carefully."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q7.svg",
+      "diagram_alt": "Lines AB and CD, without parallel marks, cut by a transversal; between the lines on the right of the transversal, the angle at AB is p and the angle at CD is q"
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "In triangle ABC, ∠A = 50° and side BC is extended to D with ∠ACD = 115°. What can you prove?",
+      "options": {
+        "A": "AB = BC",
+        "B": "AB = AC",
+        "C": "AC = BC",
+        "D": "All three sides are equal"
+      },
+      "answer": "B",
+      "explanation": "∠ACB = 65° and ∠B = 180 − 50 − 65 = 65°, so the angles at B and C are equal and the sides opposite them, AC and AB, are equal. AB = BC would need ∠A = ∠C.",
+      "steps": [
+        "∠ACB = 180 − 115 = 65° (angles on a straight line).",
+        "∠ABC = 180 − 50 − 65 = 65° (angle sum of triangle), so ∠B = ∠C.",
+        "Sides opposite equal angles are equal: ∠B is opposite AC and ∠C is opposite AB, so AB = AC."
+      ],
+      "mistakes": {
+        "A": "Step 3: equal sides are opposite the equal angles. ∠B and ∠C are equal, and they are opposite AC and AB.",
+        "C": "Step 3: the equal angles are at B and C, so the equal sides are the ones opposite them, AC and AB.",
+        "D": "Step 2: the angles are 50°, 65° and 65°, not all 60°, so the triangle is not equilateral."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q8.svg",
+      "diagram_alt": "Triangle ABC with angle A of 50°; side BC is extended to D and the exterior angle ACD is 115°"
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Tom claims: \"Every exterior angle of a triangle is obtuse.\" (The diagram shows what an exterior angle is.) Which triangle is a counterexample?",
+      "options": {
+        "A": "A triangle with angles 50°, 60° and 70°",
+        "B": "A triangle with angles 45°, 65° and 70°",
+        "C": "A triangle with angles 35°, 40° and 105°",
+        "D": "A triangle with angles 60°, 60° and 60°"
+      },
+      "answer": "C",
+      "explanation": "At the 105° corner the exterior angle is 180 − 105 = 75°, which is acute, so Tom is wrong. The other triangles have only acute angles, so all their exterior angles are obtuse.",
+      "steps": [
+        "Each exterior angle = 180° − the interior angle next to it, so it is acute only when the interior angle is obtuse.",
+        "Look for a triangle with an obtuse angle: only 35°, 40°, 105° has one.",
+        "Its exterior angle there is 180 − 105 = 75°, which is not obtuse, so it is a counterexample."
+      ],
+      "mistakes": {
+        "A": "Step 2: its exterior angles are 130°, 120° and 110° — all obtuse, so it agrees with Tom.",
+        "B": "Step 2: its exterior angles are 135°, 115° and 110° — all obtuse, so it agrees with Tom.",
+        "D": "Step 2: every exterior angle is 120°, which is obtuse, so it agrees with Tom."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q9.svg",
+      "diagram_alt": "Triangle ABC with side BC extended to D; the angle ACD outside the triangle is labelled exterior angle"
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "AB is a diameter of the circle with centre O, and C is on the circle. ∠CAB = 34°. Find x, the size of ∠ABC.",
+      "options": {
+        "A": "56°",
+        "B": "34°",
+        "C": "112°",
+        "D": "146°"
+      },
+      "answer": "A",
+      "explanation": "An angle in a semicircle is 90°, so ∠ACB = 90° and x = 180 − 90 − 34 = 56°. 146° comes from forgetting the right angle at C.",
+      "steps": [
+        "AB is a diameter, so ∠ACB = 90° (angle in a semicircle, proved with two isosceles triangles).",
+        "x = 180 − 90 − 34 = 56° (angle sum of triangle ABC)."
+      ],
+      "mistakes": {
+        "B": "Step 2: triangle ABC is not isosceles (CA ≠ CB). Use the 90° angle at C.",
+        "C": "Step 1: 112° is ∠AOC in isosceles triangle AOC (180 − 34 − 34). x is the angle at B.",
+        "D": "Step 2: you forgot the 90° angle at C — the triangle has three angles."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q10.svg",
+      "diagram_alt": "A circle with centre O and diameter AB; point C on the circle is joined to A, B and O; angle CAB is 34° and angle ABC is labelled x"
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Each side of triangle ABC is extended to make the exterior angles x, y and z shown. Which statement is true for EVERY triangle?",
+      "options": {
+        "A": "x + y + z = 180°",
+        "B": "x + y + z = 360°",
+        "C": "x + y = z",
+        "D": "x = y = z = 120°"
+      },
+      "answer": "B",
+      "explanation": "x + y + z = (180 − A) + (180 − B) + (180 − C) = 540 − 180 = 360°. 180° is the interior total, not the exterior total.",
+      "steps": [
+        "At each vertex, interior + exterior = 180°, so x = 180 − ∠A, y = 180 − ∠B, z = 180 − ∠C.",
+        "Add: x + y + z = 540 − (∠A + ∠B + ∠C).",
+        "∠A + ∠B + ∠C = 180°, so x + y + z = 540 − 180 = 360°."
+      ],
+      "mistakes": {
+        "A": "Step 2: 180° is the total of the INTERIOR angles. Each exterior angle is 180° minus an interior angle.",
+        "C": "Step 1: an exterior angle equals the sum of two INTERIOR opposite angles, not two other exterior angles.",
+        "D": "Step 3: that is only true for an equilateral triangle. The question asks what is true for every triangle."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q11.svg",
+      "diagram_alt": "Triangle ABC with each side extended in turn; the exterior angles are x at A, y at B and z at C"
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "To prove that the bend angle AEC equals ∠BAE + ∠DCE, Ana draws EF through E parallel to AB. Next she needs EF ∥ CD. Which reason is correct?",
+      "options": {
+        "A": "EF was drawn through E",
+        "B": "Alternate angles FEC and DCE are equal",
+        "C": "Co-interior angles add to 180°",
+        "D": "EF ∥ AB and AB ∥ CD, and two lines parallel to the same line are parallel to each other"
+      },
+      "answer": "D",
+      "explanation": "EF and CD are both parallel to AB, so they are parallel to each other. Using alternate angles FEC and DCE would be circular, because that step needs EF ∥ CD first.",
+      "steps": [
+        "Ana drew EF ∥ AB (given by her construction).",
+        "AB ∥ CD (given in the question).",
+        "Two lines parallel to the same line are parallel to each other, so EF ∥ CD."
+      ],
+      "mistakes": {
+        "A": "Step 1: drawing a line through a point does not make it parallel to anything. Ana chose EF ∥ AB; use that.",
+        "B": "Step 2: that is circular — you may only say these angles are equal AFTER you know EF ∥ CD.",
+        "C": "Step 2: no co-interior angles are known here, and that rule also needs EF ∥ CD first."
+      },
+      "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-q12.svg",
+      "diagram_alt": "Parallel lines AB and CD with a bent line from A to E to C; a dashed line through E, with F marked on it, is parallel to AB; the angles at A, C and E are marked"
+    }
+  ]
+}

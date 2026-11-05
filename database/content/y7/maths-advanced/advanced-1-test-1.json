@@ -1,0 +1,358 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 1 · Test 1",
+  "kind": "test",
+  "summary": "Advanced 1 Test 1: 15 questions on mental strategies, divisibility rules and digit puzzles, and multi-step problems with whole numbers.",
+  "minutes": 25,
+  "body": "This is Test 1 for Advanced 1, Computations with positive integers. It covers mental strategies and number tricks, divisibility rules and digit puzzles, and multi-step problems with whole numbers.\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says. Work on paper and show your thinking.\n- **Questions:** 15 multiple-choice questions — 2 Easy, 5 Medium, 5 Hard and 3 Challenge.\n\nRead every question carefully. If you get one wrong, go back to the lesson it comes from and redo its worked examples before trying the other test.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Mental strategies and number tricks",
+      "prompt": "Use compensating to work out 199 + 346.",
+      "options": {
+        "A": "547",
+        "B": "546",
+        "C": "545",
+        "D": "535"
+      },
+      "answer": "C",
+      "explanation": "199 is 1 less than 200: 200 + 346 = 546, then take off the extra 1 to get 545. 547 adjusts the wrong way.",
+      "steps": [
+        "Round 199 up to 200 — it is 1 away.",
+        "200 + 346 = 546.",
+        "You added 1 too many, so take 1 off: 545."
+      ],
+      "mistakes": {
+        "A": "Step 3: you rounded up, so take the 1 off, not add it.",
+        "B": "Step 3: you forgot to undo the change from 199 to 200.",
+        "D": "If you used columns, you forgot to carry the 1 from 9 + 6 = 15."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Mental strategies and number tricks",
+      "prompt": "Work out 16 × 25 mentally.",
+      "options": {
+        "A": "400",
+        "B": "1600",
+        "C": "64",
+        "D": "40"
+      },
+      "answer": "A",
+      "explanation": "× 25 = × 100 ÷ 4: 1600 ÷ 4 = 400. 1600 forgets to divide by 4.",
+      "steps": [
+        "× 25 is × 100 then ÷ 4, because 25 = 100 ÷ 4.",
+        "16 × 100 = 1600.",
+        "1600 ÷ 4 = 400."
+      ],
+      "mistakes": {
+        "B": "Step 3: you multiplied by 100 but did not divide by 4.",
+        "C": "Step 3: you multiplied 16 by 4 instead of dividing 1600 by 4.",
+        "D": "Step 2: you divided by 4 then multiplied by 10 — it should be 100."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Mental strategies and number tricks",
+      "prompt": "61 and 59 are both 1 away from 60. Work out 61 × 59.",
+      "options": {
+        "A": "3601",
+        "B": "3600",
+        "C": "3009",
+        "D": "3599"
+      },
+      "answer": "D",
+      "explanation": "(60 + 1)(60 − 1) = 60² − 1² = 3600 − 1 = 3599. 3601 adds 1² instead of subtracting.",
+      "steps": [
+        "Use (a + b)(a − b) = a² − b² with a = 60 and b = 1.",
+        "60² = 3600 and 1² = 1.",
+        "3600 − 1 = 3599."
+      ],
+      "mistakes": {
+        "A": "Step 3: the rule is a² MINUS b².",
+        "B": "Step 3: you forgot to subtract 1².",
+        "C": "Step 1: 60 × 50 + 1 × 9 misses the cross parts — use the a² − b² pattern."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Mental strategies and number tricks",
+      "prompt": "Use pairing to work out 2 + 4 + 6 + … + 100 (all the even numbers from 2 to 100).",
+      "options": {
+        "A": "5100",
+        "B": "2550",
+        "C": "2500",
+        "D": "5050"
+      },
+      "answer": "B",
+      "explanation": "There are 50 even numbers, making 25 pairs that each add to 2 + 100 = 102: 25 × 102 = 2550. 5100 counts 50 pairs instead of 25.",
+      "steps": [
+        "Pair first and last: 2 + 100 = 102, 4 + 98 = 102, …",
+        "There are 100 ÷ 2 = 50 even numbers, so 25 pairs.",
+        "25 × 102 = 2550."
+      ],
+      "mistakes": {
+        "A": "Step 2: 50 numbers make 25 pairs, not 50.",
+        "C": "Step 1: each pair adds to 102, not 100.",
+        "D": "Step 2: 5050 is the sum of ALL numbers from 1 to 100 — here only the even ones are added."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Divisibility rules and digit puzzles",
+      "prompt": "Which of these numbers is divisible by 12?",
+      "options": {
+        "A": "3412",
+        "B": "2130",
+        "C": "2316",
+        "D": "4326"
+      },
+      "answer": "C",
+      "explanation": "12 = 3 × 4. 2316: 16 is a multiple of 4 and 2 + 3 + 1 + 6 = 12 is a multiple of 3, so it passes both. 4326 passes the tests for 2 and 6, but 26 is not a multiple of 4.",
+      "steps": [
+        "Use co-prime factors: 12 = 3 × 4, so test for 3 AND 4.",
+        "Test for 4 (last two digits): 12 ✓, 30 ✗, 16 ✓, 26 ✗.",
+        "Test for 3 on 3412 (sum 10 ✗) and 2316 (sum 12 ✓), so 2316 is divisible by 12."
+      ],
+      "mistakes": {
+        "A": "Step 3: 3412 passes the test for 4, but its digit sum 10 fails the test for 3.",
+        "B": "Step 2: 2130 passes the test for 3, but 30 is not a multiple of 4.",
+        "D": "Step 1: passing 2 and 6 is not enough — they overlap. 26 is not a multiple of 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Divisibility rules and digit puzzles",
+      "prompt": "The number 3_75 is divisible by 3. Which digits could go in the gap?",
+      "options": {
+        "A": "3, 6 or 9",
+        "B": "0 or 9",
+        "C": "3 only",
+        "D": "0, 3, 6 or 9"
+      },
+      "answer": "D",
+      "explanation": "3 + 7 + 5 = 15, so 15 + d must be a multiple of 3: d = 0, 3, 6 or 9. \"3, 6 or 9\" forgets that 0 is a digit.",
+      "steps": [
+        "For 3, the digit sum must be a multiple of 3.",
+        "3 + 7 + 5 = 15, so the digit sum is 15 + d.",
+        "Test every digit 0–9: 15, 18, 21, 24 work, so d = 0, 3, 6 or 9."
+      ],
+      "mistakes": {
+        "A": "Step 3: 0 is a digit too — 3075 has digit sum 15.",
+        "B": "Step 1: you used the test for 9. The question asks about 3.",
+        "C": "Step 3: test every digit from 0 to 9 — there is more than one answer."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Divisibility rules and digit puzzles",
+      "prompt": "The 4-digit number 7a8b is divisible by 36 (a and b are digits). What is the largest number it could be?",
+      "options": {
+        "A": "7488",
+        "B": "7884",
+        "C": "7380",
+        "D": "7983"
+      },
+      "answer": "B",
+      "explanation": "36 = 4 × 9. For 4, \"8b\" must be a multiple of 4, so b = 0, 4 or 8. For 9, 15 + a + b is a multiple of 9. This gives 7380, 7884 and 7488; the largest is 7884.",
+      "steps": [
+        "36 = 4 × 9 (co-prime): test for 4 and 9.",
+        "For 4: 80, 84 and 88 are multiples of 4, so b = 0, 4 or 8.",
+        "For 9: 7 + 8 = 15, so a + b = 3 or 12. b = 0 → a = 3; b = 4 → a = 8; b = 8 → a = 4.",
+        "The numbers are 7380, 7884 and 7488; the largest is 7884."
+      ],
+      "mistakes": {
+        "A": "Step 4: 7488 works, but it is not the largest — compare all the options you found.",
+        "C": "Step 4: 7380 is the smallest one that works, not the largest.",
+        "D": "Step 2: 7983 passes the test for 9, but 83 is not a multiple of 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Divisibility rules and digit puzzles",
+      "prompt": "Which digit makes 4_3 divisible by 11?",
+      "options": {
+        "A": "2",
+        "B": "5",
+        "C": "7",
+        "D": "1"
+      },
+      "answer": "C",
+      "explanation": "Alternating sum from the right: 3 − d + 4 = 7 − d, which must be 0 (or 11), so d = 7: 473 = 11 × 43. 2 makes the digit sum 9, which is the test for 9.",
+      "steps": [
+        "Use the alternating sum from the ones digit: 3 − d + 4.",
+        "3 + 4 − d = 7 − d, which must be 0 or a multiple of 11.",
+        "7 − d = 0 when d = 7."
+      ],
+      "mistakes": {
+        "A": "Step 1: 4 + 2 + 3 = 9 is the digit sum — that is the test for 9, not 11.",
+        "B": "Step 1: 4 + 5 + 3 = 12 is a digit sum test for 3. For 11, alternate the signs.",
+        "D": "Step 2: the outer digits are both added (3 + 4), not subtracted (4 − 3)."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "A baker makes 350 cupcakes and packs them in boxes of 12. How many FULL boxes can she fill?",
+      "options": {
+        "A": "30",
+        "B": "29",
+        "C": "2",
+        "D": "4200"
+      },
+      "answer": "B",
+      "explanation": "350 ÷ 12 = 29 remainder 2. Only complete boxes count, so round down to 29. 30 would need 360 cupcakes.",
+      "steps": [
+        "Divide: 350 ÷ 12 = 29 remainder 2.",
+        "The question asks for FULL boxes, so the 2 left over do not fill a box.",
+        "Round down: 29 full boxes."
+      ],
+      "mistakes": {
+        "A": "Step 2: a 30th box would only have 2 cupcakes — it is not full. Round down here.",
+        "C": "Step 3: 2 is the number of cupcakes left over, not boxes.",
+        "D": "Step 1: you multiplied instead of dividing."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "I think of a number. I divide it by 3, add 14, then double the result. I get 50. What was my number?",
+      "options": {
+        "A": "117",
+        "B": "11",
+        "C": "68",
+        "D": "33"
+      },
+      "answer": "D",
+      "explanation": "Undo in reverse order: 50 ÷ 2 = 25, 25 − 14 = 11, 11 × 3 = 33. 11 forgets to undo the \"divide by 3\".",
+      "steps": [
+        "Undo \"double\": 50 ÷ 2 = 25.",
+        "Undo \"add 14\": 25 − 14 = 11.",
+        "Undo \"divide by 3\": 11 × 3 = 33."
+      ],
+      "mistakes": {
+        "A": "Step 2: undo adding 14 by SUBTRACTING 14.",
+        "B": "Step 3: you still need to undo the \"divide by 3\".",
+        "C": "Step 1: undo the steps in reverse order, starting with the last one (doubling)."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "Plan A costs $35 a month. Plan B costs $20 a month plus a $90 sign-up fee. Over 12 months, which plan is cheaper and by how much?",
+      "options": {
+        "A": "B, by $90",
+        "B": "B, by $180",
+        "C": "B, by $15",
+        "D": "A, by $90"
+      },
+      "answer": "A",
+      "explanation": "A: 12 × 35 = $420. B: 12 × 20 + 90 = $330. B is cheaper by $90. \"B, by $180\" forgets the sign-up fee.",
+      "steps": [
+        "Plan A for 12 months: 12 × 35 = $420.",
+        "Plan B: 12 × 20 + 90 = 240 + 90 = $330.",
+        "B is cheaper by 420 − 330 = $90."
+      ],
+      "mistakes": {
+        "B": "Step 2: add the $90 sign-up fee to Plan B.",
+        "C": "Step 1: $15 is the difference for one month — use all 12 months and the fee.",
+        "D": "Step 3: $330 is less than $420, so B is the cheaper plan."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "Ana, Ben and Cy share $170. Ben gets $20 more than Ana, and Cy gets $10 more than Ben. How much does Cy get?",
+      "options": {
+        "A": "$40",
+        "B": "$60",
+        "C": "$50",
+        "D": "$70"
+      },
+      "answer": "D",
+      "explanation": "Ben = Ana + 20 and Cy = Ana + 30, so 3 × Ana + 50 = 170, Ana = $40, Ben = $60, Cy = $70. $60 is Ben's share.",
+      "steps": [
+        "Compare everyone to Ana: Ben = Ana + 20, Cy = Ben + 10 = Ana + 30.",
+        "Remove the extras: 170 − 20 − 30 = 120, so Ana = 120 ÷ 3 = $40.",
+        "Cy = 40 + 30 = $70."
+      ],
+      "mistakes": {
+        "A": "Step 3: $40 is Ana's share — Cy gets $30 more than Ana.",
+        "B": "Step 3: $60 is Ben's share — Cy gets $10 more than Ben.",
+        "C": "Step 2: remove Cy's extra too: he has $30 more than Ana, not $20."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "A printer prints 24 pages per minute. How many minutes will it take to print 30 copies of a 36-page booklet?",
+      "options": {
+        "A": "45",
+        "B": "1080",
+        "C": "25 920",
+        "D": "30"
+      },
+      "answer": "A",
+      "explanation": "Total pages = 30 × 36 = 1080; time = 1080 ÷ 24 = 45 minutes. 1080 is the number of pages, not minutes.",
+      "steps": [
+        "Total pages: 30 × 36 = 1080.",
+        "Time = total pages ÷ pages per minute.",
+        "1080 ÷ 24 = 45 minutes."
+      ],
+      "mistakes": {
+        "B": "Step 2: 1080 is the number of pages — divide by 24 to get minutes.",
+        "C": "Step 2: divide by the printing rate, do not multiply.",
+        "D": "Step 1: each booklet has 36 pages, which takes more than 1 minute to print."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "Adult tickets cost $8 and child tickets cost $5. A cinema sold 40 tickets for $263. How many adult tickets were sold?",
+      "options": {
+        "A": "19",
+        "B": "33",
+        "C": "63",
+        "D": "21"
+      },
+      "answer": "D",
+      "explanation": "If all 40 were child tickets, they would bring in $200. Each adult ticket adds $3 more, and 263 − 200 = 63, so 63 ÷ 3 = 21 adults. 19 is the number of child tickets.",
+      "steps": [
+        "Imagine all 40 are child tickets: 40 × 5 = $200.",
+        "The extra is 263 − 200 = $63, and each adult ticket adds 8 − 5 = $3.",
+        "63 ÷ 3 = 21 adult tickets (check: 21 × 8 + 19 × 5 = 263 ✓)."
+      ],
+      "mistakes": {
+        "A": "Step 3: 19 is the number of child tickets (40 − 21).",
+        "B": "Step 1: 263 ÷ 8 assumes all tickets are adult — but there were 40 tickets.",
+        "C": "Step 3: $63 is the extra money — each adult ticket only adds $3."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Multi-step problems with whole numbers",
+      "prompt": "What is the smallest whole number greater than 2 that leaves a remainder of 2 when divided by 4, by 6 and by 9?",
+      "options": {
+        "A": "36",
+        "B": "38",
+        "C": "218",
+        "D": "21"
+      },
+      "answer": "B",
+      "explanation": "The number is 2 more than a common multiple of 4, 6 and 9. The LCM is 36, so the answer is 38. 218 uses the product 4 × 6 × 9 = 216, which is a common multiple but not the lowest.",
+      "steps": [
+        "The number minus 2 must be a common multiple of 4, 6 and 9.",
+        "The LCM of 4, 6 and 9 is 36 (36 ÷ 4 = 9, 36 ÷ 6 = 6, 36 ÷ 9 = 4).",
+        "Add the remainder: 36 + 2 = 38."
+      ],
+      "mistakes": {
+        "A": "Step 3: 36 leaves no remainder — add the 2 back on.",
+        "C": "Step 2: 4 × 6 × 9 = 216 is a common multiple, but not the lowest.",
+        "D": "Step 2: you added the numbers; you need their lowest common multiple."
+      }
+    }
+  ]
+}

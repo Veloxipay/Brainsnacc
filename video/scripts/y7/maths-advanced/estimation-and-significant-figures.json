@@ -1,0 +1,96 @@
+{
+  "lesson": "y7/maths-advanced/estimation-and-significant-figures.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Estimation and significant figures",
+  "icon": "🎯",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Estimation and significant figures",
+      "sub": "How many digits actually matter?",
+      "icon": "🎯",
+      "say": "A calculator says a pizza slice costs two dollars eight five seven one four two eight. Nobody needs all those digits! Today you will learn which digits matter, and how to estimate any calculation in your head.",
+      "caption": "A calculator says a pizza slice costs $2.857142857. Nobody needs all those digits! Today you will learn which digits matter, and how to estimate any calculation in your head."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "📏",
+      "everyday": "A friend is \"about 150 cm\" or \"about 1.5 m\" tall",
+      "icon2": "🎯",
+      "science": "Same important digits, 1 and 5: those are the significant figures",
+      "breaks": "Everyday \"about\" is loose. Significant figures have exact rules for which digits count and how to round.",
+      "say": "You might say a friend is about one hundred and fifty centimetres, or about one point five metres. Either way the important digits are one and five. The zero and the decimal point just show the size. The analogy breaks down because everyday talk is loose, while significant figures have exact rules."
+    },
+    {
+      "type": "points",
+      "heading": "Which digits count?",
+      "icon": "🔍",
+      "points": [
+        "Start at the first non-zero digit",
+        "Zeros in between count: 4.08 has 3",
+        "Leading zeros don't: 0.0063 has 2",
+        "Trailing zeros after the point count: 2.50 has 3"
+      ],
+      "say": "Start counting at the first digit that is not zero. Zeros in between always count, so four point zero eight has three. Zeros in front never count, so zero point zero zero six three has two. And a zero at the end after the point counts, because someone chose to write it."
+    },
+    {
+      "type": "example",
+      "heading": "Rounding to significant figures",
+      "question": "Round 4386 to 2 s.f., then 0.007052 to 3 s.f.",
+      "lines": [
+        "4386: keep 4, 3; next digit 8",
+        "Round up: 4400",
+        "0.007052: keep 7, 0, 5",
+        "Next digit 2: 0.00705"
+      ],
+      "say": "Round four thousand three hundred and eighty-six to two significant figures. Keep four and three; the next digit is eight, so round up, and put zeros back: four thousand four hundred. For zero point zero zero seven zero five two, keep seven, zero, five. The next digit is two, so leave it.",
+      "caption": "Round 4386 to 2 s.f. Keep 4 and 3; the next digit is 8, so round up and put zeros back: 4400. For 0.007052, keep 7, 0, 5. The next digit is 2, so leave it: 0.00705."
+    },
+    {
+      "type": "example",
+      "heading": "Estimate with 1 s.f.",
+      "question": "Estimate 48.7 × 0.312 ÷ 5.89",
+      "lines": [
+        "≈ 50 × 0.3 ÷ 6",
+        "50 × 0.3 = 15",
+        "15 ÷ 6 = 2.5"
+      ],
+      "say": "To estimate, round every number to one significant figure: fifty times zero point three divided by six. Fifty times zero point three is fifteen, and fifteen divided by six is two point five. The calculator gives about two point five eight, so that checks out.",
+      "caption": "Round every number to 1 s.f.: 50 × 0.3 ÷ 6. 50 × 0.3 = 15, and 15 ÷ 6 = 2.5. The calculator gives about 2.58, so that checks out."
+    },
+    {
+      "type": "compare",
+      "heading": "Too big or too small?",
+      "left": {
+        "title": "Estimate gets bigger",
+        "icon": "⬆️",
+        "points": [
+          "Multiplied number rounded up",
+          "Divisor rounded down"
+        ]
+      },
+      "right": {
+        "title": "Estimate gets smaller",
+        "icon": "⬇️",
+        "points": [
+          "Multiplied number rounded down",
+          "Divisor rounded up"
+        ]
+      },
+      "say": "Is your estimate too big or too small? Rounding a number you multiply up makes it bigger. Rounding the number you divide by down also makes it bigger, because you share among less. If the roundings push different ways, you cannot tell without checking."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Count from the first non-zero digit",
+        "Zeros in between count; in front don't",
+        "Keep the size with place-holder zeros",
+        "Estimate: 1 s.f. each, then mental maths",
+        "Divide by small, answer grows"
+      ],
+      "say": "Quick recap. Count significant figures from the first non-zero digit. Zeros in between count; zeros in front do not. After rounding, keep the size with place-holder zeros. To estimate, round everything to one significant figure. And remember, dividing by a small decimal makes the answer grow. Now try the practice questions!"
+    }
+  ]
+}

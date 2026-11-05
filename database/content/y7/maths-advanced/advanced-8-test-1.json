@@ -1,0 +1,368 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 8 · Test 1",
+  "kind": "test",
+  "summary": "A 15-question test on comparing data sets, two-step chance experiments, and Venn diagrams and two-way tables.",
+  "minutes": 25,
+  "body": "This test covers Advanced 8: comparing data sets (centre, spread, outliers and working backwards from the mean), two-step chance experiments (tables, tree diagrams, with and without replacement) and Venn diagrams and two-way tables.\n\nThere are 15 multiple-choice questions. Allow about 25 minutes, with no notes and no calculator unless the question says. Show your working on paper — many questions need two or three steps. Read every diagram and table carefully: check the scale, the totals and exactly which group the question is asking about. When you finish, check each answer makes sense in context.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Comparing data sets",
+      "prompt": "The dot plots show Set P and Set Q. What is the difference between the range of Set Q and the range of Set P?",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "8",
+        "D": "11"
+      },
+      "answer": "A",
+      "explanation": "Range of Q = 9 − 1 = 8 and range of P = 6 − 3 = 3, so the difference is 8 − 3 = 5. Answering 8 stops after one range.",
+      "steps": [
+        "Range = highest − lowest. Set P: 6 − 3 = 3. Set Q: 9 − 1 = 8.",
+        "Difference = 8 − 3 = 5."
+      ],
+      "mistakes": {
+        "B": "Step 1: 3 is the range of Set P on its own. Find both ranges, then subtract.",
+        "C": "Step 1: 8 is the range of Set Q on its own. Subtract the range of Set P.",
+        "D": "Step 2: you added the ranges (8 + 3). \"Difference\" means subtract."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q1.svg",
+      "diagram_alt": "Parallel dot plots from 0 to 10. Set P: dots at 3, 4, 4, 5, 5 and 6. Set Q: dots at 1, 3, 4, 6, 8 and 9."
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Two-step chance experiments",
+      "prompt": "A spinner with 3 equal sections is spun and a six-sided die is rolled. How many outcomes are in the sample space?",
+      "options": {
+        "A": "9",
+        "B": "3",
+        "C": "18",
+        "D": "36"
+      },
+      "answer": "C",
+      "explanation": "Every one of the 3 spinner results pairs with every one of the 6 die results: 3 × 6 = 18. Adding (9) misses most pairs.",
+      "steps": [
+        "The spinner has 3 outcomes and the die has 6.",
+        "Total outcomes = 3 × 6 = 18."
+      ],
+      "mistakes": {
+        "A": "Step 2: you added 3 + 6. Each spinner result pairs with all 6 die results, so multiply.",
+        "B": "Step 1: 3 is only the spinner. Each section can come with any of the 6 die numbers.",
+        "D": "Step 2: 36 is for two dice. The spinner has 3 outcomes, not 6."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "Using the Venn diagram (ξ = 35), find the probability that a randomly chosen item is NOT in set B.",
+      "options": {
+        "A": "9/35",
+        "B": "18/35",
+        "C": "17/35",
+        "D": "12/35"
+      },
+      "answer": "B",
+      "explanation": "Not in B = only A + neither = 12 + 6 = 18, so P = 18/35 (also 1 − 17/35). Forgetting the 6 in neither gives 12/35.",
+      "steps": [
+        "\"Not B\" means everything outside circle B: the only A region and the neither region.",
+        "12 + 6 = 18.",
+        "P(not B) = 18/35."
+      ],
+      "mistakes": {
+        "A": "Step 1: 9 is \"only B\", which is inside B. \"Not B\" is everything outside circle B.",
+        "C": "Step 1: 17 (9 + 8) is all of B. \"Not B\" is the opposite.",
+        "D": "Step 2: you counted only A but forgot the 6 items in neither set — they are also not in B."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q3.svg",
+      "diagram_alt": "A Venn diagram with ξ = 35. Only A: 12. A and B: 8. Only B: 9. Neither: 6."
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Comparing data sets",
+      "prompt": "Seven numbers have a mean of 12. Six of them are 10, 14, 9, 15, 11 and 8. What is the seventh number?",
+      "options": {
+        "A": "12",
+        "B": "11.2",
+        "C": "84",
+        "D": "17"
+      },
+      "answer": "D",
+      "explanation": "Total needed = 12 × 7 = 84. The six known numbers add to 67, so the seventh is 84 − 67 = 17. Guessing 12 assumes the missing number equals the mean.",
+      "steps": [
+        "Total of all seven = mean × count = 12 × 7 = 84.",
+        "Add the six known numbers: 10 + 14 + 9 + 15 + 11 + 8 = 67.",
+        "Seventh number = 84 − 67 = 17."
+      ],
+      "mistakes": {
+        "A": "Step 3: 12 is the mean, not the missing number. Use the total of all seven.",
+        "B": "Step 2: you found the mean of the six known numbers. Find the total needed first: 12 × 7.",
+        "C": "Step 3: 84 is the total of all seven numbers. Subtract the six you know."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Two-step chance experiments",
+      "prompt": "Two dice are rolled. The table shows the difference (larger number minus smaller number) for every outcome. What is the probability that the difference is 2?",
+      "options": {
+        "A": "2/9",
+        "B": "1/6",
+        "C": "1/9",
+        "D": "5/18"
+      },
+      "answer": "A",
+      "explanation": "A difference of 2 appears in 8 of the 36 cells, so P = 8/36 = 2/9. 1/6 wrongly treats the differences 0 to 5 as equally likely.",
+      "steps": [
+        "The table has 36 equally likely cells.",
+        "Count the cells showing 2: 4 above the diagonal and 4 below — 8 cells.",
+        "P = 8/36 = 2/9."
+      ],
+      "mistakes": {
+        "B": "Step 1: the six differences 0 to 5 are not equally likely. Count cells in the table.",
+        "C": "Step 2: you counted the 2s on only one side of the diagonal. There are 4 above and 4 below.",
+        "D": "Step 2: 10 cells show a difference of 1. Count the cells showing 2."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q5.svg",
+      "diagram_alt": "A 6 by 6 table with the first die (1 to 6) down the side and the second die (1 to 6) across the top. Each cell shows the difference between the two numbers, from 0 on the diagonal up to 5 in two corners."
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The table shows 58 students:\n\n| | Owns a phone | No phone | Total |\n|---|---|---|---|\n| **Year 7** | 21 | ? | 28 |\n| **Year 8** | ? | 3 | 30 |\n\nOne of the 58 students is chosen at random. What is the probability that the student owns a phone?",
+      "options": {
+        "A": "3/4",
+        "B": "9/10",
+        "C": "24/29",
+        "D": "5/29"
+      },
+      "answer": "C",
+      "explanation": "Year 8 phone owners = 30 − 3 = 27, so 21 + 27 = 48 of 58 own a phone: 48/58 = 24/29. Using one row only (3/4) ignores the other year level.",
+      "steps": [
+        "Missing cell: Year 8 with a phone = 30 − 3 = 27.",
+        "Phone owners altogether = 21 + 27 = 48 out of 58.",
+        "P = 48/58 = 24/29."
+      ],
+      "mistakes": {
+        "A": "Step 1: 21/28 is for Year 7 only. The student comes from all 58.",
+        "B": "Step 1: 27/30 is for Year 8 only. Add the phone owners from both rows.",
+        "D": "Step 2: 10/58 is the probability of NO phone (7 + 3). The question asks about owning one."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Comparing data sets",
+      "prompt": "The back-to-back stem-and-leaf plot shows the scores of two groups:\n\n| Group A leaves | Stem | Group B leaves |\n|---|---|---|\n| | 2 | 6 |\n| 8 5 1 | 3 | 3 |\n| 7 4 2 | 4 | 0 1 |\n| | 5 | 2 8 |\n\nKey: 3 | 3 means 33 for Group B, and 1 | 3 means 31 for Group A.\n\nHow much bigger is the range of Group B than the range of Group A?",
+      "options": {
+        "A": "32",
+        "B": "16",
+        "C": "11",
+        "D": "5"
+      },
+      "answer": "B",
+      "explanation": "Group A: 31 to 47, range 16. Group B: 26 to 58, range 32. 32 − 16 = 16. The answer 32 forgets to compare with Group A.",
+      "steps": [
+        "Group A (read the left leaves outwards): 31, 35, 38, 42, 44, 47 — range 47 − 31 = 16.",
+        "Group B: 26, 33, 40, 41, 52, 58 — range 58 − 26 = 32.",
+        "Difference = 32 − 16 = 16."
+      ],
+      "mistakes": {
+        "A": "Step 2: 32 is Group B's range on its own. Subtract Group A's range.",
+        "C": "Step 2: you compared only the largest scores (58 − 47). Range needs largest minus smallest for each group.",
+        "D": "Step 2: you compared only the smallest scores (31 − 26). Range needs largest minus smallest for each group."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Two-step chance experiments",
+      "prompt": "A bag holds 4 red and 2 green counters. Two counters are taken out one after the other, without replacement. What is the probability that they are different colours?",
+      "options": {
+        "A": "4/15",
+        "B": "4/9",
+        "C": "7/15",
+        "D": "8/15"
+      },
+      "answer": "D",
+      "explanation": "Ordered outcomes: 6 × 5 = 30. Red then green: 4 × 2 = 8; green then red: 2 × 4 = 8. So 16/30 = 8/15. Forgetting green-then-red gives 4/15.",
+      "steps": [
+        "Without replacement: 6 × 5 = 30 ordered outcomes.",
+        "Red then green: 4 × 2 = 8. Green then red: 2 × 4 = 8.",
+        "P(different colours) = 16/30 = 8/15."
+      ],
+      "mistakes": {
+        "A": "Step 2: you only counted red then green. Green then red is also \"different colours\".",
+        "B": "Step 1: 4/9 is with replacement. Without replacement only 5 counters are left for the second pick.",
+        "C": "Step 3: 7/15 is the chance they are the SAME colour. Different colours is the rest."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "In a group of 50, 30 are in set A, 24 are in set B and 5 are in neither, as shown in the Venn diagram. A person is chosen at random. What is the probability that they are in B only?",
+      "options": {
+        "A": "3/10",
+        "B": "12/25",
+        "C": "9/50",
+        "D": "21/50"
+      },
+      "answer": "A",
+      "explanation": "(30 − x) + x + (24 − x) + 5 = 50 gives x = 9, so B only = 24 − 9 = 15 and P = 15/50 = 3/10. Using 24 counts the overlap too.",
+      "steps": [
+        "Add the regions: (30 − x) + x + (24 − x) + 5 = 50, so 59 − x = 50 and x = 9.",
+        "B only = 24 − 9 = 15.",
+        "P(B only) = 15/50 = 3/10."
+      ],
+      "mistakes": {
+        "B": "Step 3: 24 is all of B, including the overlap. \"B only\" leaves out the overlap.",
+        "C": "Step 3: 9 is the overlap (A and B). \"B only\" is the region of B outside A.",
+        "D": "Step 3: 21 is A only. Use the other side of the diagram."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q9.svg",
+      "diagram_alt": "A Venn diagram with ξ = 50. Only A is labelled 30 − x, the overlap is x, only B is 24 − x, and 5 are outside both circles."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Comparing data sets",
+      "prompt": "The dot plots show Set A and Set B. The value 31 in Set B is an outlier. If it is removed, by how much does the mean of Set B fall?",
+      "options": {
+        "A": "21",
+        "B": "0",
+        "C": "3",
+        "D": "4.4"
+      },
+      "answer": "C",
+      "explanation": "With 31: 91 ÷ 7 = 13. Without: 60 ÷ 6 = 10. The mean falls by 3. The median (10) does not change, which is why 0 is tempting — but the question asks about the mean.",
+      "steps": [
+        "Set B is 8, 9, 10, 10, 11, 12, 31: total 91, mean 91 ÷ 7 = 13.",
+        "Without 31: total 60, mean 60 ÷ 6 = 10.",
+        "The mean falls by 13 − 10 = 3."
+      ],
+      "mistakes": {
+        "A": "Step 3: 21 is how far the outlier is from the new mean. Find both means and subtract.",
+        "B": "Step 3: the median stays at 10, but the mean does change — it used the 31.",
+        "D": "Step 2: you worked out 31 ÷ 7. Find the mean with and without the outlier, then subtract."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q10.svg",
+      "diagram_alt": "Parallel dot plots from 5 to 32. Set A: dots at 9, 10, 11, 11, 12, 13 and 14. Set B: dots at 8, 9, 10, 10, 11 and 12, and one far away at 31."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Two-step chance experiments",
+      "prompt": "A counter is taken from a bag, its colour is noted and it is put back, then a second counter is taken. The tree diagram shows the probabilities of red (R) and blue (B). What is the probability that the two counters are different colours?",
+      "options": {
+        "A": "6/25",
+        "B": "12/25",
+        "C": "13/25",
+        "D": "1"
+      },
+      "answer": "B",
+      "explanation": "RB: 2/5 × 3/5 = 6/25 and BR: 3/5 × 2/5 = 6/25, so 12/25. Counting only RB gives 6/25.",
+      "steps": [
+        "Different colours = RB or BR.",
+        "Multiply along each path: RB = 2/5 × 3/5 = 6/25, BR = 3/5 × 2/5 = 6/25.",
+        "Add the two paths: 6/25 + 6/25 = 12/25."
+      ],
+      "mistakes": {
+        "A": "Step 2: you only counted red then blue. Blue then red is also \"different colours\".",
+        "C": "Step 3: 13/25 is the chance of the SAME colour (RR or BB).",
+        "D": "Step 1: you added 2/5 + 3/5. Multiply along each path, then add the paths you want."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q11.svg",
+      "diagram_alt": "A tree diagram with two picks. Each pick branches to R with probability 2/5 and B with probability 3/5. The outcomes are RR, RB, BR and BB."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The table shows 60 students:\n\n| | Instrument | No instrument | Total |\n|---|---|---|---|\n| **Year 7** | 9 | 21 | 30 |\n| **Year 8** | 11 | 19 | 30 |\n| **Total** | 20 | 40 | 60 |\n\nA student who plays an instrument is chosen at random. What is the probability that the student is in Year 8?",
+      "options": {
+        "A": "11/60",
+        "B": "11/30",
+        "C": "1/2",
+        "D": "11/20"
+      },
+      "answer": "D",
+      "explanation": "Only the 20 instrument players could be chosen, and 11 of them are in Year 8: 11/20. Dividing by 60 ignores the fact that the student plays an instrument.",
+      "steps": [
+        "The student plays an instrument, so only that column counts: 20 students.",
+        "11 of those 20 are in Year 8, so P = 11/20."
+      ],
+      "mistakes": {
+        "A": "Step 1: we know the student plays an instrument, so only the 20 in that column could be chosen — not all 60.",
+        "B": "Step 1: you divided by the Year 8 total. The student was chosen from the instrument players.",
+        "C": "Step 2: half the students are in Year 8, but not half of the instrument players."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Comparing data sets",
+      "prompt": "Ella's mean score over 4 games is 18. After 2 more games, her mean over all 6 games is 20. Her scores in the 2 new games differ by 4. What was her higher score of the two?",
+      "options": {
+        "A": "24",
+        "B": "22",
+        "C": "26",
+        "D": "28"
+      },
+      "answer": "C",
+      "explanation": "Old total 18 × 4 = 72; new total 20 × 6 = 120; the two games add to 48. Two numbers 4 apart that add to 48 are 22 and 26. 24 + 4 = 28 puts them 8 apart.",
+      "steps": [
+        "Old total = 18 × 4 = 72. New total = 20 × 6 = 120.",
+        "The two new games add to 120 − 72 = 48.",
+        "Two numbers that add to 48 and differ by 4: 22 and 26 (22 + 26 = 48). The higher is 26."
+      ],
+      "mistakes": {
+        "A": "Step 3: 24 is the mean of the two new games. They differ by 4, so one is 2 above 24 and the other 2 below.",
+        "B": "Step 3: 22 is the lower of the two new scores. The question asks for the higher one.",
+        "D": "Step 3: you added 4 to the average (24 + 4). The two scores are 4 apart, so each is 2 from the average."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Two-step chance experiments",
+      "prompt": "Two fair dice are rolled and the numbers are added. What is the probability that the total is a prime number?",
+      "options": {
+        "A": "5/12",
+        "B": "5/11",
+        "C": "7/18",
+        "D": "1/3"
+      },
+      "answer": "A",
+      "explanation": "Prime totals are 2, 3, 5, 7 and 11, which fill 1 + 2 + 4 + 6 + 2 = 15 of the 36 cells: 15/36 = 5/12. 5/11 wrongly treats the totals as equally likely.",
+      "steps": [
+        "The prime totals possible are 2, 3, 5, 7 and 11.",
+        "Cells: total 2 → 1, total 3 → 2, total 5 → 4, total 7 → 6, total 11 → 2. That is 15 cells.",
+        "P = 15/36 = 5/12."
+      ],
+      "mistakes": {
+        "B": "Step 1: the 11 totals from 2 to 12 are not equally likely. Count cells in the 36-cell table.",
+        "C": "Step 1: 14/36 leaves out the total 2 — but 2 is a prime number.",
+        "D": "Step 1: 12/36 counts only 3, 5 and 7. The totals 2 and 11 are prime too."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "In the Venn diagram, 40 people are sorted into sets A and B. The number in A only is three times the number in both. 10 are in B only and 6 are in neither. How many people are in set A?",
+      "options": {
+        "A": "18",
+        "B": "24",
+        "C": "6",
+        "D": "34"
+      },
+      "answer": "B",
+      "explanation": "3x + x + 10 + 6 = 40 gives 4x = 24, so x = 6. A = A only + both = 18 + 6 = 24. Stopping at 18 forgets the overlap.",
+      "steps": [
+        "Add the regions: 3x + x + 10 + 6 = 40, so 4x + 16 = 40.",
+        "4x = 24, so x = 6 and A only = 3 × 6 = 18.",
+        "Set A = A only + both = 18 + 6 = 24."
+      ],
+      "mistakes": {
+        "A": "Step 3: 18 is A only. Set A also includes the people in both.",
+        "C": "Step 3: 6 is x, the overlap. Use it to find all of circle A.",
+        "D": "Step 3: 34 is A or B. Leave out the 10 in B only."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-8-test-1-q15.svg",
+      "diagram_alt": "A Venn diagram with ξ = 40. A only is labelled 3x, the overlap is x, B only is 10, and 6 are outside both circles."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "lesson": "y7/maths-advanced/two-step-chance-experiments.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Two-step chance experiments",
+  "icon": "🎲",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Two-step chance experiments",
+      "sub": "Why is 7 the luckiest total with two dice?",
+      "icon": "🎲",
+      "say": "Roll two dice. Why does seven turn up more than any other total? To answer that, you need to list every outcome of a two-step experiment, without missing any or counting any twice."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🍳",
+      "icon2": "🎲",
+      "everyday": "3 toasties × 2 drinks = 6 different café orders",
+      "science": "Step 1 with m outcomes, step 2 with n outcomes: m × n outcomes",
+      "breaks": "At a café you choose. In a chance experiment, outcomes must be equally likely before you count them.",
+      "say": "At a café you choose a toastie, ham, cheese or tomato, and then a drink, juice or milk. For each toastie there are two drinks, so there are three times two, six orders. Two-step experiments work the same way: every first result pairs with every second result."
+    },
+    {
+      "type": "diagram",
+      "heading": "A tree diagram",
+      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-tree.svg",
+      "notes": [
+        "Coin, then a 3-colour spinner",
+        "2 × 3 = 6 outcomes",
+        "P(head and blue) = 1/6"
+      ],
+      "say": "Here is a tree diagram. First the coin: heads or tails. Then from each of those, three branches for the spinner: red, blue or green. Every path is one outcome, so there are six. Heads and blue is one path out of six.",
+      "caption": "Here is a tree diagram. First the coin: heads or tails. Then from each of those, three branches for the spinner: red, blue or green. Every path is one outcome, so there are 6. Heads and blue is 1 path out of 6."
+    },
+    {
+      "type": "diagram",
+      "heading": "Two dice: use a table",
+      "diagram": "diagrams/y7/maths-advanced/two-step-chance-experiments-grid.svg",
+      "notes": [
+        "36 equally likely cells",
+        "Total of 7: 6 cells",
+        "P(7) = 6/36 = 1/6"
+      ],
+      "say": "For two dice, a table is neater. First die down the side, second die across the top, and each cell shows the total. There are thirty-six cells. Seven appears six times, more than any other total, so the chance of seven is one sixth.",
+      "caption": "For two dice, a table is neater. First die down the side, second die across the top, and each cell shows the total. There are 36 cells. 7 appears 6 times, more than any other total, so P(7) = 1/6."
+    },
+    {
+      "type": "compare",
+      "heading": "Two red marbles and one green",
+      "left": {
+        "title": "With replacement",
+        "icon": "🔄",
+        "points": [
+          "Marble goes back in",
+          "3 × 3 = 9 outcomes",
+          "P(both red) = 4/9"
+        ]
+      },
+      "right": {
+        "title": "Without replacement",
+        "icon": "🔑",
+        "points": [
+          "Marble stays out",
+          "3 × 2 = 6 outcomes",
+          "P(both red) = 2/6 = 1/3"
+        ]
+      },
+      "say": "A bag has two red marbles and one green. With replacement, the first marble goes back, so there are nine outcomes and four are red-red: four ninths. Without replacement, only two marbles are left for the second pick: six outcomes, two red-red, so one third.",
+      "caption": "A bag has 2 red marbles and 1 green. With replacement, the first marble goes back, so there are 9 outcomes and 4 are red-red: 4/9. Without replacement, only 2 marbles are left for the second pick: 6 outcomes, 2 red-red, so 1/3."
+    },
+    {
+      "type": "example",
+      "heading": "At least one six",
+      "question": "Two dice are rolled. Find P(at least one six).",
+      "lines": [
+        "Opposite: no six at all",
+        "No six: 5 × 5 = 25 outcomes",
+        "P(no six) = 25/36",
+        "P(at least one) = 1 − 25/36",
+        "Answer: 11/36"
+      ],
+      "say": "What is the chance of at least one six with two dice? Count the opposite: no six at all. Each die has five non-sixes, so twenty-five outcomes. One minus twenty-five thirty-sixths gives eleven thirty-sixths.",
+      "caption": "What is the chance of at least one six with two dice? Count the opposite: no six at all. Each die has 5 non-sixes, so 25 outcomes. 1 − 25/36 = 11/36."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "m × n outcomes for two steps",
+        "HT and TH are different outcomes",
+        "P = favourable ÷ total",
+        "Without replacement: one fewer left",
+        "At least one = 1 − P(none)"
+      ],
+      "say": "Quick recap. Two steps give m times n outcomes. Order matters, so heads-tails and tails-heads are different. Probability is favourable over total. Without replacement, there is one fewer item for the second pick. And at least one means one minus none. Now try the practice questions!"
+    }
+  ]
+}

@@ -1,0 +1,357 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 2 · Test 1",
+  "kind": "test",
+  "summary": "Advanced 2 Test 1: 15 questions on HCF and LCM in problems, powers and roots, and sequences and the nth term.",
+  "minutes": 25,
+  "body": "This is Test 1 for Advanced 2, Number properties and patterns. It covers HCF and LCM in problems, powers and roots, and sequences and the nth term.\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says. Work on paper and show your thinking.\n- **Questions:** 15 multiple-choice questions — 2 Easy, 5 Medium, 5 Hard and 3 Challenge.\n\nRead every question carefully. If you get one wrong, go back to the lesson it comes from and redo its worked examples before trying the other test.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Powers and roots extended",
+      "prompt": "Simplify 7⁸ ÷ 7³.",
+      "options": {
+        "A": "7¹¹",
+        "B": "1⁵",
+        "C": "7²⁴",
+        "D": "7⁵"
+      },
+      "answer": "D",
+      "explanation": "Same base, dividing → subtract the indices: 8 − 3 = 5, so 7⁵. 7¹¹ adds the indices, which is the rule for multiplying.",
+      "steps": [
+        "The bases are both 7 and we are dividing.",
+        "Dividing powers → subtract the indices: 8 − 3 = 5.",
+        "The base stays 7: 7⁵."
+      ],
+      "mistakes": {
+        "A": "Step 2: adding indices is for multiplying. For dividing, subtract.",
+        "B": "Step 3: the base stays 7 — do not divide the bases.",
+        "C": "Step 2: multiplying indices is for a power of a power. For dividing, subtract."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Sequences and the nth term",
+      "prompt": "Find the nth term of 9, 14, 19, 24, …",
+      "options": {
+        "A": "Tₙ = 5n + 4",
+        "B": "Tₙ = 5n + 9",
+        "C": "Tₙ = n + 5",
+        "D": "Tₙ = 4n + 5"
+      },
+      "answer": "A",
+      "explanation": "d = 5 and the zeroth term is 9 − 5 = 4, so Tₙ = 5n + 4 (T₁ = 9 ✓). 5n + 9 uses the first term as the constant and gives T₁ = 14.",
+      "steps": [
+        "Common difference: 14 − 9 = 5, so the rule starts with 5n.",
+        "Zeroth term: 9 − 5 = 4.",
+        "Tₙ = 5n + 4 (check: T₁ = 9 ✓, T₂ = 14 ✓)."
+      ],
+      "mistakes": {
+        "B": "Step 2: the constant is the term BEFORE the first one, not the first term.",
+        "C": "Step 1: the difference multiplies n — start with 5n.",
+        "D": "Step 1: you swapped the difference and the constant. Check: 4 × 2 + 5 = 13, not 14."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "HCF and LCM in problems",
+      "prompt": "Find the LCM of 48 and 180.",
+      "options": {
+        "A": "8640",
+        "B": "720",
+        "C": "12",
+        "D": "240"
+      },
+      "answer": "B",
+      "explanation": "48 = 2⁴ × 3 and 180 = 2² × 3² × 5. LCM = every prime at its highest power: 2⁴ × 3² × 5 = 720. 8640 is the product, which is too big because they share factors.",
+      "steps": [
+        "Prime factorise: 48 = 2⁴ × 3, 180 = 2² × 3² × 5.",
+        "LCM: every prime at its highest power: 2⁴, 3², 5.",
+        "2⁴ × 3² × 5 = 16 × 9 × 5 = 720."
+      ],
+      "mistakes": {
+        "A": "Step 2: 48 × 180 is a common multiple, but not the lowest — they share the factor 12.",
+        "C": "Step 2: 12 is the HCF (lowest powers of the common primes).",
+        "D": "Step 2: use the HIGHEST power of 3, which is 3², not 3¹."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "HCF and LCM in problems",
+      "prompt": "Two ribbons are 72 cm and 120 cm long. Both are cut into pieces of the same length, as long as possible, with nothing wasted. How many pieces are there altogether?",
+      "options": {
+        "A": "24",
+        "B": "16",
+        "C": "8",
+        "D": "360"
+      },
+      "answer": "C",
+      "explanation": "Piece length = HCF(72, 120) = 24 cm. 72 ÷ 24 = 3 and 120 ÷ 24 = 5, so 8 pieces. 24 is the length of each piece.",
+      "steps": [
+        "Longest equal pieces with no waste → HCF(72, 120).",
+        "72 = 2³ × 3², 120 = 2³ × 3 × 5, so HCF = 2³ × 3 = 24 cm.",
+        "Pieces: 72 ÷ 24 + 120 ÷ 24 = 3 + 5 = 8."
+      ],
+      "mistakes": {
+        "A": "Step 3: 24 cm is the length of each piece — now count the pieces.",
+        "B": "Step 2: 12 cm is a common factor but not the highest, so the pieces are not as long as possible.",
+        "D": "Step 1: 360 is the LCM. The piece must fit INTO both lengths, so use the HCF."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Powers and roots extended",
+      "prompt": "Find ∛(2⁶ × 5³).",
+      "options": {
+        "A": "8000",
+        "B": "40",
+        "C": "320",
+        "D": "20"
+      },
+      "answer": "D",
+      "explanation": "To take a cube root, divide every index by 3: 2² × 5¹ = 4 × 5 = 20. 40 halves the index of 2, which is the rule for a square root.",
+      "steps": [
+        "For a cube root, divide every index by 3.",
+        "2⁶ → 2² and 5³ → 5¹.",
+        "2² × 5 = 4 × 5 = 20."
+      ],
+      "mistakes": {
+        "A": "Step 1: 8000 is 2⁶ × 5³ itself — you still need to take the cube root.",
+        "B": "Step 2: 2⁶ → 2³ is halving (square root). For a cube root, divide by 3.",
+        "C": "Step 2: take the cube root of EVERY factor — 2⁶ becomes 2²."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Sequences and the nth term",
+      "prompt": "Which of these numbers is a term of the sequence Tₙ = 4n + 3?",
+      "options": {
+        "A": "97",
+        "B": "100",
+        "C": "95",
+        "D": "90"
+      },
+      "answer": "C",
+      "explanation": "4n + 3 = 95 gives 4n = 92, n = 23, a whole number. For 97, 4n = 94 and n = 23.5, which is not a whole number.",
+      "steps": [
+        "Set 4n + 3 equal to each option and solve for n.",
+        "95: 4n = 92, n = 23. 97: n = 23.5. 100: n = 24.25. 90: n = 21.75.",
+        "Only 95 gives a whole n, so 95 is a term (T₂₃)."
+      ],
+      "mistakes": {
+        "A": "Step 2: 97 − 3 = 94, and 94 ÷ 4 = 23.5 — not a whole number.",
+        "B": "Step 2: 100 − 3 = 97, and 97 ÷ 4 is not whole.",
+        "D": "Step 2: 90 − 3 = 87, and 87 ÷ 4 is not whole (all terms here are odd)."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Powers and roots extended",
+      "prompt": "Which statement about √60 is true?",
+      "options": {
+        "A": "It is between 7 and 8, closer to 8",
+        "B": "It is between 7 and 8, closer to 7",
+        "C": "It is 30",
+        "D": "It is between 6 and 7"
+      },
+      "answer": "A",
+      "explanation": "7² = 49 and 8² = 64, so √60 is between 7 and 8. 60 is 4 away from 64 but 11 away from 49, so it is closer to 8 (about 7.75).",
+      "steps": [
+        "Find squares either side: 7² = 49 and 8² = 64.",
+        "49 < 60 < 64, so √60 is between 7 and 8.",
+        "60 is much nearer 64 than 49, so √60 is closer to 8."
+      ],
+      "mistakes": {
+        "B": "Step 3: 60 is only 4 below 64 but 11 above 49, so it is closer to 8.",
+        "C": "Step 1: a square root is not half of the number. 30² = 900.",
+        "D": "Step 1: 7² = 49 is less than 60, so √60 is more than 7."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "HCF and LCM in problems",
+      "prompt": "Three bus routes leave the same stop every 12, 20 and 45 minutes. All three leave together at 6:00 am. When do they next all leave together?",
+      "options": {
+        "A": "7:00 am",
+        "B": "6:01 am",
+        "C": "9:00 am",
+        "D": "12:00 noon"
+      },
+      "answer": "C",
+      "explanation": "LCM(12, 20, 45) = 2² × 3² × 5 = 180 minutes = 3 hours, so 9:00 am. 7:00 am is the LCM of 12 and 20 only.",
+      "steps": [
+        "\"All together again\" → LCM of 12, 20 and 45.",
+        "12 = 2² × 3, 20 = 2² × 5, 45 = 3² × 5, so LCM = 2² × 3² × 5 = 180 minutes.",
+        "180 minutes = 3 hours, so 9:00 am."
+      ],
+      "mistakes": {
+        "A": "Step 2: 60 is the LCM of 12 and 20 only — 45 does not divide 60.",
+        "B": "Step 1: 1 is the HCF. \"Together again\" needs the LCM.",
+        "D": "Step 3: 12:00 noon is 360 minutes later — they meet earlier, after 180 minutes."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Sequences and the nth term",
+      "prompt": "A tank holds 500 L and loses 35 L each day. On which day does it first hold less than 100 L at the end of the day?",
+      "options": {
+        "A": "Day 12",
+        "B": "Day 11",
+        "C": "Day 14",
+        "D": "Day 3"
+      },
+      "answer": "A",
+      "explanation": "Amount after day n: Tₙ = 500 − 35n. T₁₁ = 115 L (not yet under 100) and T₁₂ = 80 L, so day 12.",
+      "steps": [
+        "After n days the tank holds Tₙ = 500 − 35n litres.",
+        "T₁₁ = 500 − 385 = 115 L, still 100 L or more.",
+        "T₁₂ = 500 − 420 = 80 L, which is less than 100 L, so day 12."
+      ],
+      "mistakes": {
+        "B": "Step 2: on day 11 it still holds 115 L — go one more day.",
+        "C": "Step 1: 500 ÷ 35 ≈ 14 is when it is nearly EMPTY, not below 100 L.",
+        "D": "Step 1: 100 ÷ 35 ≈ 3 uses the wrong amount — start from 500 L."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Powers and roots extended",
+      "prompt": "What is the last digit of 7⁹⁹?",
+      "options": {
+        "A": "7",
+        "B": "9",
+        "C": "3",
+        "D": "1"
+      },
+      "answer": "C",
+      "explanation": "Last digits of powers of 7 repeat 7, 9, 3, 1. 99 = 4 × 24 + 3, so 7⁹⁹ ends like 7³, which is 3.",
+      "steps": [
+        "Last digits of 7¹, 7², 7³, 7⁴ are 7, 9, 3, 1, then repeat.",
+        "99 ÷ 4 = 24 remainder 3.",
+        "Remainder 3 → same as 7³, which ends in 3."
+      ],
+      "mistakes": {
+        "A": "Step 3: remainder 3 matches the 3rd place in the cycle, not the 1st.",
+        "B": "Step 3: 9 is the 2nd place — the remainder is 3.",
+        "D": "Step 2: 99 is not a multiple of 4 — find the remainder."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "HCF and LCM in problems",
+      "prompt": "Two numbers multiply to give 1350. Their HCF is 15. What is their LCM?",
+      "options": {
+        "A": "20 250",
+        "B": "90",
+        "C": "1335",
+        "D": "675"
+      },
+      "answer": "B",
+      "explanation": "HCF × LCM = product, so LCM = 1350 ÷ 15 = 90 (e.g. 30 and 45). 20 250 multiplies instead of dividing.",
+      "steps": [
+        "For two numbers, HCF × LCM = product of the numbers.",
+        "So LCM = product ÷ HCF = 1350 ÷ 15.",
+        "1350 ÷ 15 = 90."
+      ],
+      "mistakes": {
+        "A": "Step 2: divide the product by the HCF, don't multiply.",
+        "C": "Step 2: the rule uses multiplying and dividing, not subtracting.",
+        "D": "Step 2: divide by the HCF (15), not by 2."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Sequences and the nth term",
+      "prompt": "Hexagons are made from matchsticks in a row, each new hexagon sharing one side with the last. 1 hexagon uses 6 matches, 2 use 11, 3 use 16. How many matches are needed for 30 hexagons?",
+      "options": {
+        "A": "180",
+        "B": "150",
+        "C": "156",
+        "D": "151"
+      },
+      "answer": "D",
+      "explanation": "d = 5 and the zeroth term is 6 − 5 = 1, so Tₙ = 5n + 1 and T₃₀ = 151. 180 counts 6 separate matches for every hexagon.",
+      "steps": [
+        "Each new hexagon shares a side, so adds 5 matches: d = 5.",
+        "Zeroth term: 6 − 5 = 1, so Tₙ = 5n + 1.",
+        "T₃₀ = 5 × 30 + 1 = 151."
+      ],
+      "mistakes": {
+        "A": "Step 1: the hexagons share sides, so each new one adds 5 matches, not 6.",
+        "B": "Step 2: you forgot the constant — check T₁: 5 × 1 = 5, not 6.",
+        "C": "Step 2: the constant is the zeroth term (6 − 5 = 1), not the first term 6."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "HCF and LCM in problems",
+      "prompt": "What is the smallest 4-digit number that is divisible by 12, 18 and 30?",
+      "options": {
+        "A": "1020",
+        "B": "1080",
+        "C": "1008",
+        "D": "1440"
+      },
+      "answer": "B",
+      "explanation": "LCM(12, 18, 30) = 2² × 3² × 5 = 180. The multiples of 180 are 900, 1080, … so the smallest 4-digit one is 1080. 1440 also works but is not the smallest.",
+      "steps": [
+        "Divisible by all three → a multiple of LCM(12, 18, 30).",
+        "12 = 2² × 3, 18 = 2 × 3², 30 = 2 × 3 × 5, so LCM = 2² × 3² × 5 = 180.",
+        "Multiples of 180: 900 (3 digits), then 1080 — the smallest 4-digit one."
+      ],
+      "mistakes": {
+        "A": "Step 2: 1020 is a multiple of 60 (12 and 30), but 1020 ÷ 18 is not whole.",
+        "C": "Step 2: 1008 is a multiple of 36 (12 and 18), but 1008 ÷ 30 is not whole.",
+        "D": "1440 is divisible by all three, but it is not the smallest — check 1080."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Powers and roots extended",
+      "prompt": "Put 2⁶⁰, 3⁴⁰ and 5²⁰ in order from smallest to largest.",
+      "options": {
+        "A": "2⁶⁰, 3⁴⁰, 5²⁰",
+        "B": "5²⁰, 3⁴⁰, 2⁶⁰",
+        "C": "3⁴⁰, 2⁶⁰, 5²⁰",
+        "D": "5²⁰, 2⁶⁰, 3⁴⁰"
+      },
+      "answer": "D",
+      "explanation": "Make the indices the same: 2⁶⁰ = (2³)²⁰ = 8²⁰ and 3⁴⁰ = (3²)²⁰ = 9²⁰. Compare 5²⁰, 8²⁰ and 9²⁰: the order is 5²⁰, 2⁶⁰, 3⁴⁰.",
+      "steps": [
+        "Rewrite with the same index 20 using a power of a power.",
+        "2⁶⁰ = (2³)²⁰ = 8²⁰ and 3⁴⁰ = (3²)²⁰ = 9²⁰.",
+        "Compare 5²⁰ < 8²⁰ < 9²⁰, so the order is 5²⁰, 2⁶⁰, 3⁴⁰."
+      ],
+      "mistakes": {
+        "A": "Step 1: a smaller base does not mean a smaller number — the indices are different. Make them the same first.",
+        "B": "Step 3: 9²⁰ (that is 3⁴⁰) is bigger than 8²⁰ (that is 2⁶⁰).",
+        "C": "Step 1: you ordered by the size of the index alone. Rewrite with the same index first."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Sequences and the nth term",
+      "prompt": "The numbers 11 and 23 appear in both sequences 3, 7, 11, 15, … and 5, 11, 17, 23, … What is the THIRD number that appears in both?",
+      "options": {
+        "A": "23",
+        "B": "35",
+        "C": "47",
+        "D": "12"
+      },
+      "answer": "B",
+      "explanation": "Common terms go up by LCM(4, 6) = 12: 11, 23, 35, … so the third is 35. 23 is the second.",
+      "steps": [
+        "The first sequence goes up in 4s and the second in 6s.",
+        "Once they share a number, they share another every LCM(4, 6) = 12.",
+        "Common terms: 11, 23, 35 — the third is 35."
+      ],
+      "mistakes": {
+        "A": "Step 3: 23 is the second common number — add 12 once more.",
+        "C": "Step 3: 47 is the fourth common number.",
+        "D": "Step 2: 12 is the gap between common numbers, not a number in either sequence."
+      }
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 5 · Test 1",
+  "kind": "test",
+  "summary": "A 25-minute test on Advanced 5 · Decimals: recurring decimals as fractions, significant figures and estimation, and multi-step money and measurement problems.",
+  "minutes": 25,
+  "body": "This test covers Advanced 5 · Decimals: converting recurring decimals to fractions, estimation and significant figures, and decimal problems with money and measurement.\n\n## How to do this test\n\n- Allow about 25 minutes.\n- No notes and no calculator unless the question says.\n- There are 15 questions: 2 easy, 5 medium, 5 hard and 3 challenge.\n- Write the repeating block out in full before converting, count significant figures from the first non-zero digit, and estimate before you trust any answer.\n- When you finish, read the worked steps for any question you got wrong, then go back to that lesson.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Converting recurring decimals to fractions",
+      "prompt": "Write 0.8̇ as a fraction.",
+      "options": {
+        "A": "4/5",
+        "B": "8/9",
+        "C": "8/99",
+        "D": "9/8"
+      },
+      "answer": "B",
+      "explanation": "One repeating digit goes over 9: 0.888… = 8/9. 4/5 is 0.8 exactly, which is a little smaller.",
+      "steps": [
+        "Let x = 0.888… and multiply by 10: 10x = 8.888…",
+        "Subtract: 9x = 8, so x = 8/9."
+      ],
+      "mistakes": {
+        "A": "Step 1: 4/5 = 0.8, which stops. The 8 repeats forever, so put it over 9.",
+        "C": "Step 1: only one digit repeats, so use one 9, not two.",
+        "D": "Step 1: the fraction is upside down — 9/8 is more than 1. The repeating digit goes on top."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Estimation and significant figures",
+      "prompt": "How many significant figures does 30.07 have?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "4"
+      },
+      "answer": "D",
+      "explanation": "Start at the 3: 3, 0, 0, 7 — four figures, because zeros between non-zero digits always count. Answering 2 ignores those zeros.",
+      "steps": [
+        "The first non-zero digit is 3, so start counting there.",
+        "Count every digit from 3 to 7: 3, 0, 0, 7. Zeros in between count, so 4 significant figures."
+      ],
+      "mistakes": {
+        "A": "Step 2: zeros between non-zero digits are significant. Count the two zeros between the 3 and the 7.",
+        "B": "Step 2: the zero just after the point is not a leading zero here — it comes after the 3, so it counts.",
+        "C": "Step 2: count digits only, not the decimal point. 30.07 has four digits."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Converting recurring decimals to fractions",
+      "prompt": "Write 0.5̇4̇ as a fraction in simplest form.",
+      "options": {
+        "A": "27/50",
+        "B": "3/5",
+        "C": "6/11",
+        "D": "6"
+      },
+      "answer": "C",
+      "explanation": "0.5454… = 54/99, and dividing by 9 gives 6/11. 27/50 is 0.54 exactly, which stops.",
+      "steps": [
+        "The block \"54\" has two digits and starts right after the point, so x = 54/99.",
+        "Divide top and bottom by 9: 6/11."
+      ],
+      "mistakes": {
+        "A": "Step 1: 27/50 = 0.54, which stops. The block 54 repeats, so use 99.",
+        "B": "Step 1: you used 90 (54/90 = 3/5). The repeat starts straight after the point, so use 99.",
+        "D": "Step 1: a two-digit block needs two 9s (99), not one. 54/9 = 6 is far too big."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Converting recurring decimals to fractions",
+      "prompt": "Write 0.58̇ (that is, 0.5888…) as a fraction.",
+      "options": {
+        "A": "53/90",
+        "B": "58/99",
+        "C": "29/45",
+        "D": "53/99"
+      },
+      "answer": "A",
+      "explanation": "10x = 5.888… and 100x = 58.888…, so 90x = 53 and x = 53/90. 58/99 would give 0.5858…, a different decimal.",
+      "steps": [
+        "Let x = 0.5888… Then 10x = 5.888… (the 8s now start straight after the point).",
+        "100x = 58.888… (shifted one more block).",
+        "Subtract: 100x − 10x = 53, so 90x = 53 and x = 53/90."
+      ],
+      "mistakes": {
+        "B": "Step 1: only the 8 repeats, so the shortcut over 99 doesn't work. 58/99 = 0.585858…",
+        "C": "Step 3: 100x − 10x = 58.888… − 5.888… = 53, not 58. Subtract the whole numbers too.",
+        "D": "Step 3: 100x − 10x is 90x, so divide by 90, not 99."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Estimation and significant figures",
+      "prompt": "Round 0.03096 to 2 significant figures.",
+      "options": {
+        "A": "0.030",
+        "B": "0.031",
+        "C": "0.03",
+        "D": "0.0310"
+      },
+      "answer": "B",
+      "explanation": "The first significant figure is 3; keep 3 and 0, and the next digit 9 rounds the 0 up: 0.031. 0.030 ignores the 9.",
+      "steps": [
+        "Leading zeros don't count; the first significant figure is 3. Keep 3 and 0.",
+        "The next digit is 9, so round up: 0.030 becomes 0.031."
+      ],
+      "mistakes": {
+        "A": "Step 2: you chopped instead of rounding. The next digit is 9, so round the 0 up to 1.",
+        "C": "Step 1: that is only 1 significant figure. Keep two: the 3 and the 0 after it.",
+        "D": "Step 1: 0.0310 has 3 significant figures (3, 1, 0). Stop after two."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Estimation and significant figures",
+      "prompt": "Estimate 0.487 × 3190 by rounding each number to 1 significant figure.",
+      "options": {
+        "A": "150",
+        "B": "15 000",
+        "C": "1500",
+        "D": "1600"
+      },
+      "answer": "C",
+      "explanation": "0.487 ≈ 0.5 and 3190 ≈ 3000, so the estimate is half of 3000 = 1500 (the exact answer is about 1554). 150 is a place-value slip.",
+      "steps": [
+        "Round to 1 s.f.: 0.487 ≈ 0.5 and 3190 ≈ 3000.",
+        "0.5 × 3000 = half of 3000 = 1500."
+      ],
+      "mistakes": {
+        "A": "Step 2: 0.5 × 3000 is half of 3000, which is 1500. Check the place value.",
+        "B": "Step 2: multiplying by 0.5 halves a number; it can't make it bigger.",
+        "D": "Step 1: you rounded 3190 to 3200 (2 significant figures). Round each number to 1 significant figure: 3000."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Decimal problems with money and measurement",
+      "prompt": "Washing powder costs $9.80 for a 2 kg box or $16.45 for a 3.5 kg box. Which is the better buy?",
+      "options": {
+        "A": "2 kg box: it costs less",
+        "B": "2 kg box: $4.90 per kg",
+        "C": "They are the same value",
+        "D": "3.5 kg box: $4.70 per kg"
+      },
+      "answer": "D",
+      "explanation": "2 kg: 9.80 ÷ 2 = $4.90 per kg. 3.5 kg: 16.45 ÷ 3.5 = $4.70 per kg. The bigger box is cheaper per kilogram.",
+      "steps": [
+        "2 kg box: 9.80 ÷ 2 = $4.90 per kg.",
+        "3.5 kg box: 16.45 ÷ 3.5 = 164.5 ÷ 35 = $4.70 per kg.",
+        "The lower unit price wins: the 3.5 kg box."
+      ],
+      "mistakes": {
+        "A": "Step 1: compare price per kilogram, not the total price.",
+        "B": "Step 3: $4.90 per kg is the HIGHER unit price. The better buy has the lower unit price.",
+        "C": "Step 2: 16.45 ÷ 3.5 = 4.70, not 4.90. Work out each unit price carefully."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Converting recurring decimals to fractions",
+      "prompt": "Write 3.1̇2̇ (that is, 3.121212…) as an improper fraction in simplest form.",
+      "options": {
+        "A": "103/33",
+        "B": "78/25",
+        "C": "104/33",
+        "D": "47/15"
+      },
+      "answer": "A",
+      "explanation": "3.1212… = 3 + 12/99 = 3 + 4/33 = 99/33 + 4/33 = 103/33. Putting 312 over 99 wrongly treats the 3 as part of the repeat.",
+      "steps": [
+        "Split off the whole number: 3 + 0.1212…",
+        "0.1212… = 12/99 = 4/33.",
+        "3 + 4/33 = 99/33 + 4/33 = 103/33."
+      ],
+      "mistakes": {
+        "B": "Step 2: 78/25 = 3.12, which stops. The block 12 repeats, so it goes over 99.",
+        "C": "Step 2: you put 312 over 99, but the 3 is a whole number and doesn't repeat. Split it off first.",
+        "D": "Step 2: the repeat starts right after the point, so use 99, not 90."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Estimation and significant figures",
+      "prompt": "Estimate (19.6 × 0.0512) ÷ 0.47 by rounding each number to 1 significant figure.",
+      "options": {
+        "A": "0.5",
+        "B": "0.2",
+        "C": "2",
+        "D": "20"
+      },
+      "answer": "C",
+      "explanation": "20 × 0.05 = 1, and 1 ÷ 0.5 = 2 (the exact answer is about 2.14). 0.5 comes from multiplying by 0.5 instead of dividing.",
+      "steps": [
+        "Round: 19.6 ≈ 20, 0.0512 ≈ 0.05, 0.47 ≈ 0.5.",
+        "Top: 20 × 0.05 = 1.",
+        "Divide: 1 ÷ 0.5 = 2."
+      ],
+      "mistakes": {
+        "A": "Step 3: you multiplied by 0.5 instead of dividing. Dividing by 0.5 doubles.",
+        "B": "Step 2: 20 × 0.05 = 1, not 0.1. Check the decimal places.",
+        "D": "Step 1: 0.47 rounds to 0.5, not 0.05. Check the decimal places."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Estimation and significant figures",
+      "prompt": "A number rounds to 0.40 when rounded to 2 significant figures. Which of these could it be?",
+      "options": {
+        "A": "0.394",
+        "B": "0.405",
+        "C": "0.35",
+        "D": "0.396"
+      },
+      "answer": "D",
+      "explanation": "Numbers from 0.395 up to (not including) 0.405 round to 0.40. 0.396 is in that range. 0.405 rounds up to 0.41.",
+      "steps": [
+        "0.40 to 2 s.f. means the hundredths digit is the last one kept.",
+        "Numbers from 0.395 up to just below 0.405 round to 0.40.",
+        "Only 0.396 is in that range."
+      ],
+      "mistakes": {
+        "A": "Step 2: 0.394 to 2 s.f. is 0.39 — the next digit is 4, so it rounds down.",
+        "B": "Step 2: 0.405 to 2 s.f. is 0.41 — the next digit is 5, so it rounds up.",
+        "C": "Step 1: 0.35 already has 2 significant figures, and it is 0.35, not 0.40."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Decimal problems with money and measurement",
+      "prompt": "The walls of a room have a total area of 38.4 m². One litre of paint covers 12 m², and the walls need two coats. Paint is sold only in 2 L tins costing $34.95 each. What is the cost of the paint?",
+      "options": {
+        "A": "$104.85",
+        "B": "$69.90",
+        "C": "$139.80",
+        "D": "$244.65"
+      },
+      "answer": "C",
+      "explanation": "Two coats: 76.8 m² ÷ 12 = 6.4 L. That is 3.2 tins, so buy 4 tins: 4 × 34.95 = $139.80. Buying 3 tins would leave the walls unfinished.",
+      "steps": [
+        "Two coats: 38.4 × 2 = 76.8 m² to cover.",
+        "Paint needed: 76.8 ÷ 12 = 6.4 L.",
+        "Tins: 6.4 ÷ 2 = 3.2, so buy 4 whole tins.",
+        "Cost: 4 × 34.95 = $139.80."
+      ],
+      "mistakes": {
+        "A": "Step 3: 6.4 L needs 3.2 tins, and you can't buy part of a tin. Round UP to make sure there is enough.",
+        "B": "Step 1: you painted one coat only. Two coats need twice the area.",
+        "D": "Step 3: each tin holds 2 L, so 6.4 L is 3.2 tins, not 6.4 tins."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Decimal problems with money and measurement",
+      "prompt": "Zara buys 3 drinks that all cost the same, and a sandwich for $7.80. She pays with a $20 note and gets $3.50 change. How much is one drink?",
+      "options": {
+        "A": "$2.90",
+        "B": "$5.50",
+        "C": "$4.07",
+        "D": "$8.70"
+      },
+      "answer": "A",
+      "explanation": "Spent: 20 − 3.50 = 16.50. Drinks: 16.50 − 7.80 = 8.70. One drink: 8.70 ÷ 3 = $2.90. $5.50 forgets the sandwich.",
+      "steps": [
+        "Money spent: 20.00 − 3.50 = $16.50.",
+        "Take away the sandwich: 16.50 − 7.80 = $8.70 for 3 drinks.",
+        "One drink: 8.70 ÷ 3 = $2.90."
+      ],
+      "mistakes": {
+        "B": "Step 2: you shared all $16.50 among the drinks. Take away the sandwich first.",
+        "C": "Step 1: you forgot the change. Zara didn't spend the whole $20.",
+        "D": "Step 3: $8.70 is for all 3 drinks. Divide by 3 for one drink."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Converting recurring decimals to fractions",
+      "prompt": "Which is bigger, 0.4̇5̇ or 0.45̇, and by how much? (Use fractions.)",
+      "options": {
+        "A": "0.4̇5̇, by 1/990",
+        "B": "0.45̇, by 1/990",
+        "C": "They are equal",
+        "D": "0.45̇, by 1/90"
+      },
+      "answer": "B",
+      "explanation": "0.4545… = 5/11 = 450/990 and 0.4555… = 41/90 = 451/990, so 0.4555… is bigger by 1/990. They are not equal: the third digits are 4 and 5.",
+      "steps": [
+        "Write the digits: 0.4̇5̇ = 0.454545… and 0.45̇ = 0.455555…",
+        "0.454545… = 45/99 = 5/11.",
+        "0.4555…: 100x − 10x = 45.555… − 4.555… = 41, so x = 41/90.",
+        "Common denominator 990: 5/11 = 450/990 and 41/90 = 451/990, so 0.45̇ is bigger by 1/990."
+      ],
+      "mistakes": {
+        "A": "Step 3: write out the digits: 0.4545… and 0.4555… — compare the third decimal place.",
+        "C": "Step 1: the dots are on different digits. 0.4545… repeats \"45\"; 0.4555… repeats only the 5.",
+        "D": "Step 4: 41/90 − 5/11 needs a common denominator of 990: 451/990 − 450/990."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Estimation and significant figures",
+      "prompt": "Estimate 2.7 × 0.0461 ÷ 0.33 by rounding each number to 1 significant figure. Is the estimate bigger or smaller than the exact answer?",
+      "options": {
+        "A": "0.5, bigger than the exact answer",
+        "B": "0.5, smaller than the exact answer",
+        "C": "0.05, bigger than the exact answer",
+        "D": "0.045, bigger than the exact answer"
+      },
+      "answer": "A",
+      "explanation": "3 × 0.05 ÷ 0.3 = 0.15 ÷ 0.3 = 0.5. Both multiplied numbers were rounded up and the divisor was rounded down, so the estimate is too big (exact ≈ 0.377).",
+      "steps": [
+        "Round: 2.7 ≈ 3, 0.0461 ≈ 0.05, 0.33 ≈ 0.3.",
+        "3 × 0.05 = 0.15, and 0.15 ÷ 0.3 = 1.5 ÷ 3 = 0.5.",
+        "2.7 and 0.0461 went up and 0.33 went down, so every rounding made the answer bigger."
+      ],
+      "mistakes": {
+        "B": "Step 3: rounding the divisor 0.33 DOWN to 0.3 makes the answer bigger, and 2.7 and 0.0461 were both rounded up.",
+        "C": "Step 2: 3 × 0.05 = 0.15, not 0.015. Check the decimal places.",
+        "D": "Step 2: you multiplied by 0.3 instead of dividing. Dividing by 0.3 makes the answer bigger."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Decimal problems with money and measurement",
+      "prompt": "A 1.2 km walking track has a marker post every 75 m, with one post at the start and one at the end. How many marker posts are there?",
+      "options": {
+        "A": "16",
+        "B": "15",
+        "C": "160",
+        "D": "17"
+      },
+      "answer": "D",
+      "explanation": "1.2 km = 1200 m and 1200 ÷ 75 = 16 gaps. Posts at both ends means 16 + 1 = 17 posts. 16 counts the gaps, not the posts.",
+      "steps": [
+        "Convert: 1.2 km = 1200 m.",
+        "Gaps: 1200 ÷ 75 = 16.",
+        "With a post at both ends, posts = gaps + 1 = 17."
+      ],
+      "mistakes": {
+        "A": "Step 3: 16 is the number of gaps. With a post at both ends there is one more post than gaps.",
+        "B": "Step 3: you took one away instead of adding one. Count the posts on a small example, like 2 gaps.",
+        "C": "Step 1: 1.2 km is 1200 m, not 12 000 m. Convert carefully before dividing."
+      }
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 11 · Test 1",
+  "kind": "test",
+  "summary": "A 15-question test on systematic counting, logic puzzles and number algorithms such as Euclid's algorithm, prime tests and binary.",
+  "minutes": 25,
+  "body": "This test covers Advanced 11 · Algorithmic thinking: systematic listing, the multiplication principle, counting pairs and grid routes, logic puzzles, Euclid's algorithm, testing for primes, binary numbers, tracing loops and running algorithms backwards. It has 15 questions and takes about 25 minutes. Work with no notes and no calculator. Jot down lists, trace tables and logic grids on scrap paper — careful, organised working is the best way to avoid missing a case.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "Tom has 5 T-shirts and 3 pairs of shorts. An outfit is one T-shirt and one pair of shorts. How many different outfits can he make?",
+      "options": {
+        "A": "8",
+        "B": "15",
+        "C": "25",
+        "D": "9"
+      },
+      "answer": "B",
+      "explanation": "Each of the 5 T-shirts goes with each of the 3 pairs of shorts: 5 × 3 = 15. 8 adds the items instead of pairing them.",
+      "steps": [
+        "The two choices are separate, so multiply.",
+        "Each T-shirt can be worn with 3 pairs of shorts.",
+        "5 × 3 = 15 outfits."
+      ],
+      "mistakes": {
+        "A": "Step 1: 5 + 3 counts clothes, not outfits — multiply.",
+        "C": "Step 3: 5 × 5 uses the T-shirts twice. Multiply T-shirts by shorts.",
+        "D": "Step 3: 3 × 3 uses the shorts twice. Multiply T-shirts by shorts."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for number problems",
+      "prompt": "Use Euclid's algorithm to find the highest common factor of 60 and 24.",
+      "options": {
+        "A": "12",
+        "B": "6",
+        "C": "120",
+        "D": "2"
+      },
+      "answer": "A",
+      "explanation": "60 = 2 × 24 + 12 and 24 = 2 × 12 + 0, so the HCF is 12. 6 is a common factor, but not the highest.",
+      "steps": [
+        "60 ÷ 24 = 2 remainder 12.",
+        "Now divide 24 by 12: remainder 0.",
+        "The remainder is 0, so the HCF is 12."
+      ],
+      "mistakes": {
+        "B": "Step 3: 6 divides both, but the algorithm gives a higher one — finish it.",
+        "C": "Step 3: 120 is the lowest common multiple, not the HCF.",
+        "D": "Step 3: 2 is a common factor, but not the highest."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "In a competition, 10 teams each play every other team exactly once. How many games are played?",
+      "options": {
+        "A": "90",
+        "B": "100",
+        "C": "45",
+        "D": "9"
+      },
+      "answer": "C",
+      "explanation": "Each team plays 9 games: 10 × 9 = 90, but each game involves two teams and was counted twice, so 90 ÷ 2 = 45.",
+      "steps": [
+        "Each team plays the other 9 teams.",
+        "10 × 9 = 90 counts every game twice.",
+        "90 ÷ 2 = 45 games."
+      ],
+      "mistakes": {
+        "A": "Step 3: each game was counted once for each team — halve.",
+        "B": "Step 1: a team doesn't play itself, so it plays 9, not 10.",
+        "D": "Step 2: 9 is one team's games. Count all teams, then halve."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for number problems",
+      "prompt": "Write 19 in binary.",
+      "options": {
+        "A": "11001",
+        "B": "1001",
+        "C": "10001",
+        "D": "10011"
+      },
+      "answer": "D",
+      "explanation": "19 ÷ 2 = 9 r 1, 9 ÷ 2 = 4 r 1, 4 ÷ 2 = 2 r 0, 2 ÷ 2 = 1 r 0, 1 ÷ 2 = 0 r 1. Reading up gives 10011 (16 + 2 + 1). 11001 reads the remainders top-down.",
+      "steps": [
+        "Divide by 2 repeatedly: remainders 1, 1, 0, 0, 1.",
+        "Read the remainders from the bottom up: 10011.",
+        "Check: 16 + 2 + 1 = 19 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 2: read from the bottom up — the first remainder is the ones digit.",
+        "B": "Step 1: you lost the first remainder. Write down every remainder.",
+        "C": "Step 1: 10001 is 16 + 1 = 17 — the 2s digit is missing."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "How many three-digit numbers can be made from the digits 0, 1, 2 and 3 if no digit is repeated? (A number can't start with 0.)",
+      "options": {
+        "A": "18",
+        "B": "24",
+        "C": "64",
+        "D": "9"
+      },
+      "answer": "A",
+      "explanation": "First digit: 3 choices (not 0). Then 3 digits are left for the middle (0 is now allowed) and 2 for the last: 3 × 3 × 2 = 18. 24 forgets that 0 can't go first.",
+      "steps": [
+        "Restricted position first: the first digit can be 1, 2 or 3 — 3 ways.",
+        "Middle digit: 3 digits left (including 0). Last digit: 2 left.",
+        "3 × 3 × 2 = 18."
+      ],
+      "mistakes": {
+        "B": "Step 1: 4 × 3 × 2 includes numbers like 012, which aren't three-digit numbers.",
+        "C": "Step 2: digits can't repeat, so the choices shrink.",
+        "D": "Step 2: there are three places to fill — multiply by the choices for the last digit too."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for number problems",
+      "prompt": "What is the smallest prime number that divides 143?",
+      "options": {
+        "A": "7",
+        "B": "13",
+        "C": "11",
+        "D": "143 is prime, so no smaller prime divides it"
+      },
+      "answer": "C",
+      "explanation": "√143 is about 12, so test 2, 3, 5, 7 and 11: 143 ÷ 11 = 13. So 11 is the smallest prime factor. 13 is a factor, but it is bigger than 11.",
+      "steps": [
+        "√143 is just under 12 (12² = 144), so test primes up to 11.",
+        "2, 3, 5 and 7 leave remainders (7 × 20 = 140, remainder 3).",
+        "143 ÷ 11 = 13, so the smallest prime factor is 11."
+      ],
+      "mistakes": {
+        "A": "Step 2: 7 × 20 = 140, so 143 ÷ 7 leaves remainder 3.",
+        "B": "Step 3: 13 is a factor, but 11 is a smaller one.",
+        "D": "Step 1: keep testing up to √143 — 11 divides it."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for number problems",
+      "prompt": "Start with 100. Repeat: subtract 7, until the number is less than 10. What is the final number?",
+      "options": {
+        "A": "2",
+        "B": "9",
+        "C": "16",
+        "D": "13"
+      },
+      "answer": "B",
+      "explanation": "100 − 7 × 13 = 9, which is less than 10, so the loop stops. After 12 subtractions the number is 16, which is not yet less than 10.",
+      "steps": [
+        "Each pass takes away 7: 93, 86, 79, …",
+        "After 12 passes: 100 − 84 = 16, still not less than 10.",
+        "Pass 13: 16 − 7 = 9, which is less than 10, so stop at 9."
+      ],
+      "mistakes": {
+        "A": "Step 3: the loop stops as soon as the number is less than 10 — you subtracted once too many.",
+        "C": "Step 2: 16 is not less than 10, so the loop runs again.",
+        "D": "Step 3: 13 is the number of passes. The question asks for the final number."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "Zoe, Yan and Xia each own one pet: a rabbit, a parrot or a goldfish. Zoe's pet has no legs. Yan is allergic to feathers. Who owns the parrot?",
+      "options": {
+        "A": "Zoe",
+        "B": "Yan",
+        "C": "It cannot be worked out",
+        "D": "Xia"
+      },
+      "answer": "D",
+      "explanation": "Only the goldfish has no legs, so Zoe has the goldfish. Yan can't have the parrot (feathers), so Yan has the rabbit. That leaves the parrot for Xia.",
+      "steps": [
+        "Clue 1: the goldfish is the only pet without legs, so Zoe ✓ goldfish.",
+        "Clue 2: parrots have feathers, so Yan ✗ parrot — Yan ✓ rabbit.",
+        "Only the parrot is left, so Xia owns the parrot."
+      ],
+      "mistakes": {
+        "A": "Step 1: Zoe's pet has no legs, and a parrot has legs.",
+        "B": "Step 2: Yan is allergic to feathers, and parrots have feathers.",
+        "C": "Step 3: use both clues, then fill in the only option left."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "A star is hidden under exactly one of three cards. Card 1 says, \"The star is under this card.\" Card 2 says, \"The star is not under this card.\" Card 3 says, \"The star is not under card 1.\" Exactly one card is telling the truth. Where is the star?",
+      "options": {
+        "A": "Under card 2",
+        "B": "Under card 1",
+        "C": "Under card 3",
+        "D": "It cannot be worked out"
+      },
+      "answer": "A",
+      "explanation": "Star under card 1: cards 1 and 2 are true (2 truths). Under card 2: only card 3 is true (1 truth) ✓. Under card 3: cards 2 and 3 are true (2 truths). So it's under card 2.",
+      "steps": [
+        "Case card 1: card 1 true, card 2 true, card 3 false — 2 truths ✗.",
+        "Case card 3: card 1 false, card 2 true, card 3 true — 2 truths ✗.",
+        "Case card 2: card 1 false, card 2 false, card 3 true — exactly 1 truth ✓."
+      ],
+      "mistakes": {
+        "B": "Step 1: if it were under card 1, two cards would be telling the truth.",
+        "C": "Step 2: if it were under card 3, cards 2 and 3 would both be true.",
+        "D": "Step 3: test each case — exactly one fits."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for number problems",
+      "prompt": "Use Euclid's algorithm to find the highest common factor of 391 and 299.",
+      "options": {
+        "A": "92",
+        "B": "23",
+        "C": "1",
+        "D": "13"
+      },
+      "answer": "B",
+      "explanation": "391 = 1 × 299 + 92; 299 = 3 × 92 + 23; 92 = 4 × 23 + 0. The HCF is 23. 92 is just the first remainder.",
+      "steps": [
+        "391 ÷ 299 = 1 remainder 92.",
+        "299 ÷ 92 = 3 remainder 23.",
+        "92 ÷ 23 = 4 remainder 0, so the HCF is 23."
+      ],
+      "mistakes": {
+        "A": "Step 1: 92 is a remainder that isn't 0 — keep going.",
+        "C": "Step 3: they do share a factor — the algorithm ends with a remainder of 0 at 23.",
+        "D": "Step 3: 13 divides 299 (13 × 23) but not 391. Finish the algorithm."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for number problems",
+      "prompt": "Repeatedly adding the digits of a number until one digit is left gives its remainder when divided by 9 (a final 9 means a remainder of 0). What is the remainder when 123 456 789 is divided by 9?",
+      "options": {
+        "A": "45",
+        "B": "9",
+        "C": "0",
+        "D": "1"
+      },
+      "answer": "C",
+      "explanation": "Digit sum: 1 + 2 + … + 9 = 45, then 4 + 5 = 9. A final 9 means the remainder is 0 — 123 456 789 is a multiple of 9. A remainder can never be 9 when dividing by 9.",
+      "steps": [
+        "Add the digits: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45.",
+        "Add again: 4 + 5 = 9.",
+        "A final 9 means a remainder of 0."
+      ],
+      "mistakes": {
+        "A": "Step 2: 45 has two digits — keep adding.",
+        "B": "Step 3: remainders when dividing by 9 go from 0 to 8, so a final 9 means 0.",
+        "D": "Step 1: the digits 1 to 9 add to 45 — re-add them carefully."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "You walk along the streets in the diagram from A to B, moving only right or up. How many different shortest routes are there?",
+      "options": {
+        "A": "20",
+        "B": "9",
+        "C": "64",
+        "D": "6"
+      },
+      "answer": "A",
+      "explanation": "Add left + below at each corner: rows 1, 1, 1, 1 / 1, 2, 3, 4 / 1, 3, 6, 10 / 1, 4, 10, 20. So there are 20 routes. 64 gives 2 choices at every step, but you need exactly 3 rights and 3 ups.",
+      "steps": [
+        "Every corner on the bottom edge and left edge has 1 route.",
+        "Second row: 1, 2, 3, 4. Third row: 1, 3, 6, 10.",
+        "Top row: 1, 4, 10, 20 — so 20 routes to B."
+      ],
+      "mistakes": {
+        "B": "Step 2: routes aren't 3 × 3 — add the numbers from the left and below at each corner.",
+        "C": "Step 1: not every list of 6 moves works — you need exactly 3 rights and 3 ups.",
+        "D": "Step 1: 6 is the number of moves in one route, not the number of routes."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-11-test-1-q12.svg",
+      "diagram_alt": "A street grid 3 blocks wide and 3 blocks high, with A at the bottom-left corner and B at the top-right corner"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "How many different ways can the five letters of MATHS be arranged if the arrangement must start with a vowel?",
+      "options": {
+        "A": "120",
+        "B": "48",
+        "C": "5",
+        "D": "24"
+      },
+      "answer": "D",
+      "explanation": "MATHS has only one vowel, A, so A must go first. The other 4 letters can be arranged in 4 × 3 × 2 × 1 = 24 ways. 120 ignores the rule.",
+      "steps": [
+        "The only vowel in MATHS is A, so the first letter must be A — 1 way.",
+        "The remaining 4 letters fill the other places: 4 × 3 × 2 × 1.",
+        "1 × 24 = 24 arrangements."
+      ],
+      "mistakes": {
+        "A": "Step 1: 5 × 4 × 3 × 2 × 1 ignores the rule about starting with a vowel.",
+        "B": "Step 1: M, T, H and S are consonants — there is only one vowel.",
+        "C": "Step 2: after placing A, the other 4 letters can be arranged in many orders — multiply."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for number problems",
+      "prompt": "An algorithm takes a number and repeats this 3 times: double it, then add 3. The output is 61. What was the input?",
+      "options": {
+        "A": "13",
+        "B": "7.625",
+        "C": "5",
+        "D": "2.375"
+      },
+      "answer": "C",
+      "explanation": "Undo in reverse order — subtract 3, then halve — three times: 61 → 29 → 13 → 5. Check: 5 → 13 → 29 → 61. 13 undoes only two of the three passes.",
+      "steps": [
+        "Undo \"double, then add 3\" with \"subtract 3, then halve\".",
+        "61 − 3 = 58 → 29; 29 − 3 = 26 → 13.",
+        "13 − 3 = 10 → 5. Check: 5 → 13 → 29 → 61 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 3: the steps were repeated 3 times — undo all three.",
+        "B": "Step 1: you only undid the doubling (61 ÷ 8). Undo the \"add 3\" too.",
+        "D": "Step 1: undo in reverse order — subtract 3 FIRST, then halve."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for number problems",
+      "prompt": "Start with 1. Repeat: double the number, until it is greater than one million. How many doublings are needed?",
+      "options": {
+        "A": "19",
+        "B": "21",
+        "C": "6",
+        "D": "20"
+      },
+      "answer": "D",
+      "explanation": "2¹⁰ = 1024, so 2²⁰ = 1024 × 1024 = 1 048 576, which is just over a million, while 2¹⁹ = 524 288 is not. So 20 doublings. 19 stops before passing a million.",
+      "steps": [
+        "After 10 doublings: 2¹⁰ = 1024 (about a thousand).",
+        "After 19 doublings: 524 288 — not yet over a million.",
+        "After 20 doublings: 1 048 576, greater than one million — 20 doublings."
+      ],
+      "mistakes": {
+        "A": "Step 2: 524 288 is less than a million, so the loop runs again.",
+        "B": "Step 3: the starting 1 is not a doubling — count only the doublings.",
+        "C": "Step 1: 6 is the number of zeros in a million, not the number of doublings."
+      }
+    }
+  ]
+}

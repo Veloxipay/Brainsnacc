@@ -1,0 +1,86 @@
+{
+  "lesson": "y7/maths-advanced/algorithms-for-number-problems.json",
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Algorithms for number problems",
+  "icon": "🔢",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Algorithms for number problems",
+      "sub": "Exact steps that always work",
+      "icon": "🔢",
+      "say": "How does a computer find the highest common factor of two numbers, or check if a number is prime? It follows an algorithm. Some of these are over two thousand years old."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🧱",
+      "everyday": "Tile an 84 cm by 36 cm floor with the biggest squares that fit exactly",
+      "icon2": "🔢",
+      "science": "Euclid's algorithm: the leftover strip shrinks until it fits — that's the HCF",
+      "breaks": "Real tiles have gaps and can be cut; the algorithm uses exact whole numbers.",
+      "say": "Tile an eighty-four by thirty-six floor with squares. Two thirty-six squares fit, leaving a twelve centimetre strip. Twelve centimetre squares fit that strip exactly. So twelve is the highest common factor."
+    },
+    {
+      "type": "diagram",
+      "heading": "Euclid's algorithm",
+      "diagram": "diagrams/y7/maths-advanced/algorithms-for-number-problems-euclid.svg",
+      "notes": [
+        "Divide, find the remainder",
+        "Remainder 0? The divisor is the HCF",
+        "If not, swap and repeat"
+      ],
+      "say": "Here is the flowchart. Divide the bigger number by the smaller and find the remainder. If the remainder is zero, the smaller number is the H C F. If not, swap: the smaller number and the remainder become the new pair, and divide again."
+    },
+    {
+      "type": "example",
+      "heading": "HCF of 84 and 36",
+      "question": "Use Euclid's algorithm to find the HCF of 84 and 36.",
+      "lines": [
+        "84 = 2 × 36 + 12",
+        "36 = 3 × 12 + 0",
+        "Remainder 0, so stop",
+        "HCF = 12"
+      ],
+      "say": "Eighty-four is two lots of thirty-six, remainder twelve. Thirty-six is three lots of twelve, remainder zero. So we stop: the H C F is twelve.",
+      "caption": "84 = 2 × 36 + 12. 36 = 3 × 12 + 0. The remainder is 0, so the HCF is 12."
+    },
+    {
+      "type": "points",
+      "heading": "Testing for primes",
+      "icon": "🔍",
+      "points": [
+        "Only try primes up to √n",
+        "√323 ≈ 17.97: try 2 up to 17",
+        "323 ÷ 17 = 19",
+        "So 323 is not prime"
+      ],
+      "say": "To test if a number is prime, you only need to try primes up to its square root. The square root of three hundred and twenty-three is just under eighteen, so try primes up to seventeen. Seventeen times nineteen is three hundred and twenty-three, so it is not prime."
+    },
+    {
+      "type": "example",
+      "heading": "Convert 45 to binary",
+      "question": "Write 45 in binary by dividing by 2 again and again.",
+      "lines": [
+        "45 → 22 r1, 22 → 11 r0",
+        "11 → 5 r1, 5 → 2 r1",
+        "2 → 1 r0, 1 → 0 r1",
+        "Read up: 101101"
+      ],
+      "say": "To write forty-five in binary, divide by two again and again and keep the remainders: one, zero, one, one, zero, one. Read them from the bottom up: one zero one one zero one. Check: thirty-two plus eight plus four plus one is forty-five.",
+      "caption": "Divide 45 by 2 again and again. Remainders: 1, 0, 1, 1, 0, 1. Read from the bottom up: 101101. Check: 32 + 8 + 4 + 1 = 45."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Euclid: divide, remainder, swap, repeat",
+        "Primes: test up to √n",
+        "Binary: divide by 2, read up",
+        "Trace loops with a table",
+        "Backwards: reverse order and operations"
+      ],
+      "say": "Quick recap. Euclid: divide, remainder, swap, repeat. For primes, test up to the square root. For binary, divide by two and read the remainders upwards. Trace loops with a table, and undo steps in reverse order. Now try the practice questions!"
+    }
+  ]
+}

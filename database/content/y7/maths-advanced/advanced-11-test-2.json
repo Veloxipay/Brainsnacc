@@ -1,0 +1,359 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 11 · Test 2",
+  "kind": "test",
+  "summary": "A 15-question test on systematic counting, logic puzzles and number algorithms such as Euclid's algorithm, prime tests and binary.",
+  "minutes": 25,
+  "body": "This test covers Advanced 11 · Algorithmic thinking: systematic listing, the multiplication principle, counting pairs and grid routes, logic puzzles, Euclid's algorithm, testing for primes, binary numbers, tracing loops and running algorithms backwards. It has 15 questions and takes about 25 minutes. Work with no notes and no calculator. Jot down lists, trace tables and logic grids on scrap paper — careful, organised working is the best way to avoid missing a case.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for number problems",
+      "prompt": "Use Euclid's algorithm to find the highest common factor of 56 and 21.",
+      "options": {
+        "A": "14",
+        "B": "7",
+        "C": "168",
+        "D": "1"
+      },
+      "answer": "B",
+      "explanation": "56 = 2 × 21 + 14; 21 = 1 × 14 + 7; 14 = 2 × 7 + 0. The HCF is 7. 14 is only the first remainder.",
+      "steps": [
+        "56 ÷ 21 = 2 remainder 14.",
+        "21 ÷ 14 = 1 remainder 7.",
+        "14 ÷ 7 = 2 remainder 0, so the HCF is 7."
+      ],
+      "mistakes": {
+        "A": "Step 1: 14 is a non-zero remainder — keep going.",
+        "C": "Step 3: 168 is the lowest common multiple, not the HCF.",
+        "D": "Step 3: 56 and 21 do share a factor bigger than 1 — finish the algorithm."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "A code is one letter from A, B, C or D, followed by one digit from 0 to 9. How many different codes are there?",
+      "options": {
+        "A": "14",
+        "B": "36",
+        "C": "10 000",
+        "D": "40"
+      },
+      "answer": "D",
+      "explanation": "4 letters × 10 digits = 40 codes. 36 forgets that 0 is a digit too.",
+      "steps": [
+        "Letter: 4 choices.",
+        "Digit: 0 to 9 is 10 choices.",
+        "4 × 10 = 40 codes."
+      ],
+      "mistakes": {
+        "A": "Step 3: each letter pairs with every digit — multiply, don't add.",
+        "B": "Step 2: 0 to 9 is ten digits, not nine.",
+        "C": "Step 3: there are only two places to fill, so multiply 4 × 10."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "In a game you can score 1, 2 or 3 points at a time. In how many ways can you score exactly 6 points, if the order doesn't matter?",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "7",
+        "D": "3"
+      },
+      "answer": "C",
+      "explanation": "Start with the biggest scores: 3+3, 3+2+1, 3+1+1+1, 2+2+2, 2+2+1+1, 2+1+1+1+1, 1+1+1+1+1+1 — 7 ways. Answering 6 usually misses the all-1s way.",
+      "steps": [
+        "Using 3s: 3+3, 3+2+1, 3+1+1+1 — 3 ways.",
+        "No 3s, using 2s: 2+2+2, 2+2+1+1, 2+1+1+1+1 — 3 ways.",
+        "Only 1s: 1+1+1+1+1+1 — 1 way. Total 3 + 3 + 1 = 7."
+      ],
+      "mistakes": {
+        "A": "Step 3: don't forget scoring 1 point six times.",
+        "B": "Step 2: list the ways with 2s carefully — fix the number of 2s, then fill with 1s.",
+        "D": "Step 1: mixing different scores, like 3 + 2 + 1, also counts."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "Seven teams each play every other team exactly once. How many games are played?",
+      "options": {
+        "A": "21",
+        "B": "42",
+        "C": "49",
+        "D": "6"
+      },
+      "answer": "A",
+      "explanation": "7 × 6 = 42 counts each game twice (once for each team), so 42 ÷ 2 = 21 games.",
+      "steps": [
+        "Each team plays the other 6 teams.",
+        "7 × 6 = 42 counts every game twice.",
+        "42 ÷ 2 = 21 games."
+      ],
+      "mistakes": {
+        "B": "Step 3: each game was counted twice — halve.",
+        "C": "Step 1: a team doesn't play itself — it plays 6 others, not 7.",
+        "D": "Step 2: 6 is one team's games. Count all teams, then halve."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for number problems",
+      "prompt": "What is the binary number 101011 in our usual (decimal) numbers?",
+      "options": {
+        "A": "53",
+        "B": "4",
+        "C": "86",
+        "D": "43"
+      },
+      "answer": "D",
+      "explanation": "Place values from the right: 1, 2, 4, 8, 16, 32. The 1s are in the 32, 8, 2 and 1 places: 32 + 8 + 2 + 1 = 43. 53 reads the digits backwards.",
+      "steps": [
+        "Place values from the right: 1, 2, 4, 8, 16, 32.",
+        "The 1s sit in the 32, 8, 2 and 1 places.",
+        "32 + 8 + 2 + 1 = 43."
+      ],
+      "mistakes": {
+        "A": "Step 1: the rightmost digit is the ones place — you read it backwards.",
+        "B": "Step 3: add the place values of the 1s, don't just count them.",
+        "C": "Step 1: six digits only go up to the 32 place. Start at 1 on the right."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for number problems",
+      "prompt": "Lee wants to test whether 187 is prime. What is the shortest list of divisors she must try to be sure?",
+      "options": {
+        "A": "2, 3, 5, 7",
+        "B": "2, 3, 5, 7, 11, 13",
+        "C": "Every whole number from 2 to 93",
+        "D": "2, 3, 5, 7, 11, 13, 17, 19"
+      },
+      "answer": "B",
+      "explanation": "13² = 169 and 14² = 196, so √187 is between 13 and 14: she must try the primes up to 13. (In fact 187 = 11 × 17.) Stopping at 7 isn't enough, because 11 and 13 are still below √187.",
+      "steps": [
+        "Find √187: 13² = 169 and 14² = 196, so it is between 13 and 14.",
+        "Any factor pair has a member no bigger than √187.",
+        "So try the primes up to 13: 2, 3, 5, 7, 11, 13."
+      ],
+      "mistakes": {
+        "A": "Step 1: √187 is more than 13, so 11 and 13 must be tested too.",
+        "C": "Step 2: going to half of 187 works but wastes steps — stop at √187.",
+        "D": "Step 1: 17 and 19 are bigger than √187, so they aren't needed."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for number problems",
+      "prompt": "Start with total = 0 and n = 1. Repeat: add n to the total, then add 2 to n, until the total is greater than 50. What is the final total?",
+      "options": {
+        "A": "49",
+        "B": "81",
+        "C": "64",
+        "D": "8"
+      },
+      "answer": "C",
+      "explanation": "The totals go 1, 4, 9, 16, 25, 36, 49, 64. 49 is not greater than 50, so the loop runs once more and stops at 64.",
+      "steps": [
+        "Trace: total 1 (n becomes 3), 4 (n = 5), 9, 16, 25 …",
+        "… 36, then 49 — not greater than 50, so keep going.",
+        "Add 15: total = 64, greater than 50, so stop."
+      ],
+      "mistakes": {
+        "A": "Step 2: 49 is not greater than 50, so the loop runs again.",
+        "B": "Step 3: the loop stops as soon as the total passes 50 — you ran it once too many.",
+        "D": "Step 3: 8 is the number of passes. The question asks for the total."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "Four runners finish a race with no ties. Raj finished before Sam but after Tia. Uma finished last. Who came second?",
+      "options": {
+        "A": "Raj",
+        "B": "Tia",
+        "C": "Sam",
+        "D": "Uma"
+      },
+      "answer": "A",
+      "explanation": "Tia is before Raj, and Raj is before Sam, so the order of those three is Tia, Raj, Sam. Uma is last. So the order is Tia, Raj, Sam, Uma and Raj is second.",
+      "steps": [
+        "Clue 1: Tia comes before Raj, and Raj comes before Sam.",
+        "So those three finish in the order Tia, Raj, Sam.",
+        "Uma is last, so the full order is Tia, Raj, Sam, Uma — Raj is second."
+      ],
+      "mistakes": {
+        "B": "Step 2: Tia finished before Raj, so Tia is first.",
+        "C": "Step 2: Raj finished before Sam, so Sam is third.",
+        "D": "Step 3: the clues say Uma finished last."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "Five friends, including Ana, sit in a row of 5 seats. Ana must sit in one of the two end seats. How many seating orders are possible?",
+      "options": {
+        "A": "120",
+        "B": "24",
+        "C": "10",
+        "D": "48"
+      },
+      "answer": "D",
+      "explanation": "Ana has 2 choices of seat (either end); the other 4 friends fill the rest in 4 × 3 × 2 × 1 = 24 ways. 2 × 24 = 48. 24 only uses one end.",
+      "steps": [
+        "Restriction first: Ana sits at the left end or the right end — 2 ways.",
+        "The other 4 friends: 4 × 3 × 2 × 1 = 24 ways.",
+        "2 × 24 = 48."
+      ],
+      "mistakes": {
+        "A": "Step 1: 5 × 4 × 3 × 2 × 1 ignores the rule about Ana.",
+        "B": "Step 1: Ana can sit at EITHER end — two choices.",
+        "C": "Step 2: the other 4 friends can be arranged in many orders — multiply 4 × 3 × 2 × 1."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for number problems",
+      "prompt": "Use Euclid's algorithm to find the highest common factor of 1001 and 357.",
+      "options": {
+        "A": "287",
+        "B": "7",
+        "C": "70",
+        "D": "1"
+      },
+      "answer": "B",
+      "explanation": "1001 = 2 × 357 + 287; 357 = 1 × 287 + 70; 287 = 4 × 70 + 7; 70 = 10 × 7 + 0. The HCF is 7. 70 is still a non-zero remainder.",
+      "steps": [
+        "1001 ÷ 357 = 2 remainder 287.",
+        "357 ÷ 287 = 1 remainder 70, then 287 ÷ 70 = 4 remainder 7.",
+        "70 ÷ 7 = 10 remainder 0, so the HCF is 7."
+      ],
+      "mistakes": {
+        "A": "Step 1: 287 is the first remainder — keep going.",
+        "C": "Step 2: 70 is not the last step — divide 287 by 70.",
+        "D": "Step 3: they do share a factor bigger than 1 — the remainder reaches 0 at 7."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for number problems",
+      "prompt": "Repeatedly adding the digits of a number until one digit is left gives its remainder when divided by 9 (a final 9 means a remainder of 0). What is the remainder when 2 468 135 is divided by 9?",
+      "options": {
+        "A": "2",
+        "B": "29",
+        "C": "11",
+        "D": "0"
+      },
+      "answer": "A",
+      "explanation": "2 + 4 + 6 + 8 + 1 + 3 + 5 = 29, then 2 + 9 = 11, then 1 + 1 = 2. The remainder is 2. 29 stops after the first round.",
+      "steps": [
+        "First round: 2 + 4 + 6 + 8 + 1 + 3 + 5 = 29.",
+        "Second round: 2 + 9 = 11.",
+        "Third round: 1 + 1 = 2 — one digit, so the remainder is 2."
+      ],
+      "mistakes": {
+        "B": "Step 2: 29 has two digits — keep adding.",
+        "C": "Step 3: 11 still has two digits — add again.",
+        "D": "Step 3: the final digit is 2, not 9, so the remainder isn't 0."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "You walk along the streets in the diagram from A to B, moving only right or up, and you must pass through corner P. How many different shortest routes are there?",
+      "options": {
+        "A": "10",
+        "B": "5",
+        "C": "6",
+        "D": "3"
+      },
+      "answer": "C",
+      "explanation": "A to P (1 right, 1 up): 2 routes. P to B (2 right, 1 up): 3 routes. Each first half can join each second half: 2 × 3 = 6. 10 counts all routes, including ones that miss P.",
+      "steps": [
+        "A to P is 1 block right and 1 up: 2 routes.",
+        "P to B is 2 blocks right and 1 up: 3 routes.",
+        "Multiply: 2 × 3 = 6 routes through P."
+      ],
+      "mistakes": {
+        "A": "Step 1: 10 counts every route — only routes through P are allowed.",
+        "B": "Step 3: each first half can be followed by each second half — multiply, don't add.",
+        "D": "Step 1: you only counted P to B. Include the routes from A to P too."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-11-test-2-q12.svg",
+      "diagram_alt": "A street grid 3 blocks wide and 2 blocks high, with A at the bottom-left, B at the top-right, and corner P one block right and one block up from A"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Logic puzzles and systematic counting",
+      "prompt": "How many three-digit numbers have digits that add up to 5? (For example, 203 works because 2 + 0 + 3 = 5.)",
+      "options": {
+        "A": "21",
+        "B": "15",
+        "C": "6",
+        "D": "5"
+      },
+      "answer": "B",
+      "explanation": "Fix the first digit. First digit 1: the other two add to 4, which has 5 ways (04, 13, 22, 31, 40). Then 4, 3, 2 and 1 ways for first digits 2, 3, 4, 5. Total 5 + 4 + 3 + 2 + 1 = 15. 21 includes \"numbers\" starting with 0.",
+      "steps": [
+        "First digit 1: last two digits add to 4 — 04, 13, 22, 31, 40 — 5 ways.",
+        "First digit 2: 4 ways; 3: 3 ways; 4: 2 ways; 5: 1 way (500).",
+        "Total: 5 + 4 + 3 + 2 + 1 = 15."
+      ],
+      "mistakes": {
+        "A": "Step 1: a three-digit number can't start with 0 — don't count 0 as a first digit.",
+        "C": "Step 1: digits can be 0, like 104 and 500 — include them.",
+        "D": "Step 2: 5 is just the choices for the first digit. Count the endings for each."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for number problems",
+      "prompt": "How many binary digits are needed to write the number 100 in binary?",
+      "options": {
+        "A": "6",
+        "B": "3",
+        "C": "8",
+        "D": "7"
+      },
+      "answer": "D",
+      "explanation": "Binary place values are 1, 2, 4, 8, 16, 32, 64, 128. 100 is at least 64 but less than 128, so its biggest place is 64 — the 7th place. 100 = 1100100 in binary (64 + 32 + 4).",
+      "steps": [
+        "Binary place values: 1, 2, 4, 8, 16, 32, 64, 128.",
+        "64 ≤ 100 < 128, so the biggest place needed is 64.",
+        "1, 2, 4, 8, 16, 32, 64 is 7 places: 100 = 1100100."
+      ],
+      "mistakes": {
+        "A": "Step 3: count the ones place too — 1 up to 64 is 7 places.",
+        "B": "Step 1: 3 is the number of digits in base ten. Binary uses many more.",
+        "C": "Step 2: 128 is bigger than 100, so that place isn't needed."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for number problems",
+      "prompt": "An algorithm says: if the number is even, halve it; if it is odd, multiply it by 3 and add 1. After 3 steps the output is 4. Which of these could NOT have been the input?",
+      "options": {
+        "A": "32",
+        "B": "5",
+        "C": "3",
+        "D": "4"
+      },
+      "answer": "C",
+      "explanation": "Trace each: 32 → 16 → 8 → 4 ✓; 5 → 16 → 8 → 4 ✓; 4 → 2 → 1 → 4 ✓; 3 → 10 → 5 → 16 ✗. So 3 could not be the input.",
+      "steps": [
+        "Trace 32 and 5: 32 → 16 → 8 → 4 and 5 → 16 → 8 → 4 — both give 4.",
+        "Trace 4: 4 → 2 → 1 → 4 — it also gives 4.",
+        "Trace 3: 3 → 10 → 5 → 16 — not 4, so 3 could NOT be the input."
+      ],
+      "mistakes": {
+        "A": "Step 1: trace 32 — 32 → 16 → 8 → 4, so it works.",
+        "B": "Step 1: trace 5 — 5 is odd, so 5 → 16 → 8 → 4. It works.",
+        "D": "Step 2: trace 4 — 4 → 2 → 1 → 4. It loops back to 4, so it works."
+      }
+    }
+  ]
+}

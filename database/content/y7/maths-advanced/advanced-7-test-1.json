@@ -1,0 +1,382 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "unit": "Year 7 Advanced",
+  "title": "Advanced 7 · Test 1",
+  "kind": "test",
+  "summary": "A 15-question test on angle chasing, angles in polygons and geometric reasoning and proof, with a diagram for every angle question.",
+  "minutes": 25,
+  "body": "This test covers all of Advanced 7 · Geometry: angle chasing, angles in polygons, and geometric reasoning and proof.\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator. Use scrap paper — copy the diagram and write each angle you find onto it.\n- **Questions:** 15 multiple-choice questions — 2 Easy, 5 Medium, 5 Hard and 3 Challenge.\n\nEvery diagram is drawn to scale, but always work angles out with rules and reasons rather than by measuring. If you get a question wrong, Brainsnacc will show you which step went wrong, so you know which lesson to revisit.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Angle chasing",
+      "prompt": "In triangle ABC, AB = AC and each base angle is 52°. Find x, the size of ∠BAC.",
+      "options": {
+        "A": "76°",
+        "B": "128°",
+        "C": "52°",
+        "D": "104°"
+      },
+      "answer": "A",
+      "explanation": "The base angles are both 52°, so x = 180 − 52 − 52 = 76°. 104° is the sum of the base angles, not the apex.",
+      "steps": [
+        "AB = AC, so ∠ABC = ∠ACB = 52° (isosceles triangle).",
+        "x = 180 − 52 − 52 = 76° (angle sum of triangle)."
+      ],
+      "mistakes": {
+        "B": "Step 2: 180 − 52 uses only one base angle. Subtract BOTH base angles from 180°.",
+        "C": "Step 1: the equal angles are the two base angles at B and C. The apex angle at A is different.",
+        "D": "Step 2: 52 + 52 = 104 is the total of the base angles. x is what is left: 180 − 104."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q1.svg",
+      "diagram_alt": "Isosceles triangle ABC with AB equal to AC marked by ticks; both base angles are 52° and angle A is labelled x"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Angles in polygons",
+      "prompt": "What is the sum of the interior angles of the octagon shown?",
+      "options": {
+        "A": "1440°",
+        "B": "1080°",
+        "C": "1260°",
+        "D": "900°"
+      },
+      "answer": "B",
+      "explanation": "Angle sum = (8 − 2) × 180 = 1080°. 1440° comes from using 8 triangles instead of 6.",
+      "steps": [
+        "Diagonals from one vertex split an 8-sided polygon into 8 − 2 = 6 triangles.",
+        "Angle sum = 6 × 180 = 1080°."
+      ],
+      "mistakes": {
+        "A": "Step 1: an 8-sided polygon splits into 8 − 2 = 6 triangles, not 8.",
+        "C": "Step 1: use n − 2 triangles, not n − 1: an octagon gives 6 triangles.",
+        "D": "Step 1: 5 triangles is for a heptagon. An octagon splits into 8 − 2 = 6 triangles."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q2.svg",
+      "diagram_alt": "An irregular eight-sided polygon (octagon) with no angles marked"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Angle chasing",
+      "prompt": "AB ∥ CD. ∠BAE = 34° and ∠DCE = 52°. Find x, the size of ∠AEC.",
+      "options": {
+        "A": "94°",
+        "B": "18°",
+        "C": "86°",
+        "D": "274°"
+      },
+      "answer": "C",
+      "explanation": "A line through E parallel to AB splits x into two alternate angles, 34° and 52°, so x = 86°. 94° comes from wrongly subtracting from 180°.",
+      "steps": [
+        "Draw a construction line through E parallel to AB and CD.",
+        "It splits x into 34° (alternate to ∠BAE) and 52° (alternate to ∠DCE).",
+        "x = 34 + 52 = 86°."
+      ],
+      "mistakes": {
+        "A": "Step 3: the bend angle is the SUM of the two angles — do not subtract it from 180°.",
+        "B": "Step 3: the two parts of the bend angle add together; do not find their difference.",
+        "D": "Step 3: x is the angle inside the bend, less than 180°. 274° is the reflex angle outside."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q3.svg",
+      "diagram_alt": "Parallel lines AB and CD with a bent line from A to E to C between them; angle BAE is 34°, angle DCE is 52° and angle AEC is x"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Angle chasing",
+      "prompt": "In triangle ABC, ∠A = 58° and side BC is extended to D with ∠ACD = 131°. Find x, the size of ∠ABC.",
+      "options": {
+        "A": "49°",
+        "B": "189°",
+        "C": "107°",
+        "D": "73°"
+      },
+      "answer": "D",
+      "explanation": "The exterior angle equals the sum of the interior opposite angles: 131 = 58 + x, so x = 73°. 49° is ∠ACB, not ∠ABC.",
+      "steps": [
+        "Exterior angle ∠ACD = ∠A + ∠B (exterior angle of triangle).",
+        "131 = 58 + x, so x = 131 − 58 = 73°. Check: ∠ACB = 49° and 58 + 73 + 49 = 180 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: 49° is ∠ACB, the angle at C. x is the angle at B.",
+        "B": "Step 2: the exterior angle is the SUM of ∠A and ∠B, so subtract: x = 131 − 58.",
+        "C": "Step 2: 107° would be the exterior angle at B. x is the interior angle at B."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q4.svg",
+      "diagram_alt": "Triangle ABC with angle A of 58°, angle B labelled x, and side BC extended to D with exterior angle ACD of 131°"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Angles in polygons",
+      "prompt": "The diagram shows a regular decagon (10 sides). Find x, the size of one interior angle.",
+      "options": {
+        "A": "144°",
+        "B": "36°",
+        "C": "1440°",
+        "D": "162°"
+      },
+      "answer": "A",
+      "explanation": "Angle sum = 8 × 180 = 1440°, and 1440 ÷ 10 = 144°. 36° is the exterior angle, not the interior angle.",
+      "steps": [
+        "Angle sum = (10 − 2) × 180 = 1440°.",
+        "A regular decagon has 10 equal angles.",
+        "x = 1440 ÷ 10 = 144°. Check: exterior 360 ÷ 10 = 36° and 180 − 36 = 144 ✓"
+      ],
+      "mistakes": {
+        "B": "Step 3: 36° is the exterior angle (360 ÷ 10). The interior angle is 180 − 36.",
+        "C": "Step 2: 1440° is the total of all ten angles — divide by 10.",
+        "D": "Step 1: the angle sum uses n − 2 = 8 triangles, not 9: (10 − 2) × 180 = 1440."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q5.svg",
+      "diagram_alt": "A regular decagon with one interior angle labelled x"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Geometric reasoning and proof",
+      "prompt": "In the diagram, AB ∥ CD. Which reason proves that x = y?",
+      "options": {
+        "A": "Alternate angles, AB ∥ CD",
+        "B": "Corresponding angles, AB ∥ CD",
+        "C": "Co-interior angles, AB ∥ CD",
+        "D": "Vertically opposite angles"
+      },
+      "answer": "B",
+      "explanation": "x and y are in the same position at each crossing (above the line, right of the transversal), an F shape, so they are corresponding angles. They are not alternate because x is not between the lines.",
+      "steps": [
+        "x and y are both above their line and on the right of the transversal — the same position at each crossing.",
+        "That is an F shape, so the reason is: corresponding angles, AB ∥ CD."
+      ],
+      "mistakes": {
+        "A": "Step 2: alternate angles are both BETWEEN the parallel lines in a Z. Here x is above AB and y is above CD — an F shape.",
+        "C": "Step 2: co-interior angles add to 180°; they are not the reason two angles are equal.",
+        "D": "Step 1: vertically opposite angles are at the same crossing point. x and y are at different crossings."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q6.svg",
+      "diagram_alt": "Parallel lines AB and CD cut by a transversal; at AB the angle above the line on the right of the transversal is x, and at CD the angle above the line on the right is y"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Geometric reasoning and proof",
+      "prompt": "In triangle ABC, AB = AC, as shown by the tick marks. Which pair of angles must be equal?",
+      "options": {
+        "A": "∠BAC and ∠ABC",
+        "B": "∠BAC and ∠ACB",
+        "C": "∠ABC and ∠ACB",
+        "D": "All three angles"
+      },
+      "answer": "C",
+      "explanation": "The angle opposite AB is ∠ACB and the angle opposite AC is ∠ABC, so these base angles are equal. ∠BAC is between the equal sides and can be any size.",
+      "steps": [
+        "AB = AC, so the triangle is isosceles.",
+        "The angle opposite side AB is ∠ACB, and the angle opposite side AC is ∠ABC.",
+        "Angles opposite equal sides are equal, so ∠ABC = ∠ACB."
+      ],
+      "mistakes": {
+        "A": "Step 2: equal angles sit OPPOSITE the equal sides. ∠BAC is between the equal sides, not opposite one.",
+        "B": "Step 2: ∠BAC is between the two equal sides, so it is not one of the equal pair.",
+        "D": "Step 1: only two sides are equal, so the triangle is isosceles, not equilateral."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q7.svg",
+      "diagram_alt": "Triangle ABC with tick marks on sides AB and AC showing they are equal"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Angle chasing",
+      "prompt": "Three straight lines meet at a point. Above the horizontal line, the angles are x, 2x and 3x. Find the angle marked ?.",
+      "options": {
+        "A": "30°",
+        "B": "120°",
+        "C": "90°",
+        "D": "60°"
+      },
+      "answer": "D",
+      "explanation": "x + 2x + 3x = 180, so x = 30, and the ? angle is vertically opposite 2x = 60°. 120° comes from adding to 360° instead of 180°.",
+      "steps": [
+        "x, 2x and 3x sit on one side of the horizontal line, so x + 2x + 3x = 180 (angles on a straight line).",
+        "6x = 180, so x = 30.",
+        "The ? angle is vertically opposite 2x, so it is 2 × 30 = 60° (vertically opposite)."
+      ],
+      "mistakes": {
+        "A": "Step 2: 30° is x. The ? angle is vertically opposite 2x.",
+        "B": "Step 1: x, 2x and 3x lie on one side of a straight line, so they add to 180°, not 360°.",
+        "C": "Step 3: 90° is 3x. Check which angle is directly opposite the ? angle — it is 2x."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q8.svg",
+      "diagram_alt": "Three straight lines crossing at one point; above the horizontal line the angles are x, 2x and 3x from right to left; below, the angle directly opposite 2x is marked with a question mark"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Angles in polygons",
+      "prompt": "Each exterior angle of a regular polygon is 24°, as shown. What is the sum of its interior angles?",
+      "options": {
+        "A": "2340°",
+        "B": "2700°",
+        "C": "156°",
+        "D": "2520°"
+      },
+      "answer": "A",
+      "explanation": "n = 360 ÷ 24 = 15 sides, so the angle sum is (15 − 2) × 180 = 2340°. 156° is one interior angle, not the sum.",
+      "steps": [
+        "Number of sides n = 360 ÷ 24 = 15.",
+        "Angle sum = (15 − 2) × 180 = 13 × 180 = 2340°."
+      ],
+      "mistakes": {
+        "B": "Step 2: use (n − 2) × 180 with n = 15, not n × 180.",
+        "C": "Step 2: 156° is ONE interior angle. The question asks for the sum of all of them.",
+        "D": "Step 2: use n − 2 = 13 triangles, not n − 1 = 14."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q9.svg",
+      "diagram_alt": "Part of a regular polygon: four vertices joined by three sides, with one side extended and the exterior angle of 24° marked"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Angles in polygons",
+      "prompt": "ABCDE is a regular pentagon and ABP is an equilateral triangle inside it. Find x, the size of ∠AEP.",
+      "options": {
+        "A": "48°",
+        "B": "66°",
+        "C": "132°",
+        "D": "54°"
+      },
+      "answer": "B",
+      "explanation": "∠EAP = 108 − 60 = 48°, and AE = AB = AP so triangle AEP is isosceles: x = (180 − 48) ÷ 2 = 66°. 48° is the angle at A, not at E.",
+      "steps": [
+        "Each angle of a regular pentagon = 540 ÷ 5 = 108°, and each angle of an equilateral triangle = 60°.",
+        "∠EAP = 108 − 60 = 48°.",
+        "AE = AB = AP, so triangle AEP is isosceles: x = (180 − 48) ÷ 2 = 66°."
+      ],
+      "mistakes": {
+        "A": "Step 2: 48° is ∠EAP, the angle at A. x is at E — use isosceles triangle AEP.",
+        "C": "Step 3: 180 − 48 = 132 is the total of the two equal angles in triangle AEP — halve it.",
+        "D": "Step 2: halving 108° does not give any angle here. First find ∠EAP = 108 − 60."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q10.svg",
+      "diagram_alt": "A regular pentagon ABCDE with an equilateral triangle ABP drawn inside on side AB; P is joined to E and angle AEP is labelled x"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Geometric reasoning and proof",
+      "prompt": "In the diagram, p and q are alternate angles between lines AB and CD. Which pair of sizes would prove that AB ∥ CD?",
+      "options": {
+        "A": "p = 75°, q = 105°",
+        "B": "p = 80°, q = 100°",
+        "C": "p = 75°, q = 75°",
+        "D": "p = 110°, q = 70°"
+      },
+      "answer": "C",
+      "explanation": "By the converse of the alternate-angle rule, the lines are parallel when p = q, so 75° and 75° proves it. The pairs that add to 180° would be the test for co-interior angles.",
+      "steps": [
+        "p and q are between the lines, on opposite sides of the transversal: alternate angles.",
+        "If alternate angles are equal, the lines are parallel (converse of the alternate-angle rule).",
+        "Only p = 75°, q = 75° has equal angles."
+      ],
+      "mistakes": {
+        "A": "Step 2: adding to 180° is the test for CO-INTERIOR angles. Alternate angles must be equal.",
+        "B": "Step 2: alternate angles of parallel lines are equal, not supplementary.",
+        "D": "Step 2: p and q are alternate, so they must be equal for the lines to be parallel."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q11.svg",
+      "diagram_alt": "Lines AB and CD, without parallel marks, cut by a transversal; at AB the angle below the line on the right of the transversal is p, and at CD the angle above the line on the left is q"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Angle chasing",
+      "prompt": "AB ∥ DC and BD = BC. ∠ABD = 48°. Find x, the size of ∠DBC.",
+      "options": {
+        "A": "48°",
+        "B": "132°",
+        "C": "66°",
+        "D": "84°"
+      },
+      "answer": "D",
+      "explanation": "∠BDC = 48° (alternate), ∠BCD = 48° (isosceles, BD = BC), so x = 180 − 96 = 84°. 66° wrongly treats 48° as the apex angle.",
+      "steps": [
+        "∠BDC = ∠ABD = 48° (alternate angles, AB ∥ DC).",
+        "BD = BC, so ∠BCD = ∠BDC = 48° (isosceles triangle).",
+        "x = 180 − 48 − 48 = 84° (angle sum of triangle)."
+      ],
+      "mistakes": {
+        "A": "Step 1: 48° is ∠BDC (alternate to ∠ABD). x is the angle at B inside the triangle.",
+        "B": "Step 3: subtract BOTH base angles: 180 − 48 − 48.",
+        "C": "Step 2: the 48° angles are the BASE angles of triangle BDC, not the apex. x = 180 − 2 × 48."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q12.svg",
+      "diagram_alt": "Parallel lines with A and B on the top line and D and C on the bottom line; triangle BDC has BD equal to BC (ticks); angle ABD is 48° and angle DBC is x"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Angles in polygons",
+      "prompt": "In a regular polygon, each interior angle i is 140° more than each exterior angle e. How many sides does it have?",
+      "options": {
+        "A": "18",
+        "B": "20",
+        "C": "9",
+        "D": "160"
+      },
+      "answer": "A",
+      "explanation": "i + e = 180 and i − e = 140, so 2e = 40, e = 20° and n = 360 ÷ 20 = 18. 9 comes from taking e = 40° instead of halving.",
+      "steps": [
+        "i + e = 180 (straight line) and i − e = 140 (given).",
+        "Subtract: 2e = 40, so e = 20° (and i = 160°).",
+        "n = 360 ÷ 20 = 18 sides."
+      ],
+      "mistakes": {
+        "B": "Step 2: 20° is the exterior angle e. The number of sides is 360 ÷ 20.",
+        "C": "Step 2: 180 − 140 = 40 is 2e, not e. Subtracting i − e = 140 from i + e = 180 leaves 2e = 40, so halve it.",
+        "D": "Step 2: 160° is the interior angle i. Use the exterior angle to count sides."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q13.svg",
+      "diagram_alt": "Part of a regular polygon with one side extended; the interior angle is labelled i and the exterior angle is labelled e"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Geometric reasoning and proof",
+      "prompt": "ABCD is a parallelogram (AB ∥ DC and AD ∥ BC). Which argument proves that ∠A = ∠C?",
+      "options": {
+        "A": "∠A = ∠C because they are vertically opposite angles",
+        "B": "∠A + ∠B = 180° (co-interior, AD ∥ BC) and ∠B + ∠C = 180° (co-interior, AB ∥ DC), so ∠A = ∠C",
+        "C": "∠A = ∠C because they are alternate angles, AB ∥ DC",
+        "D": "∠A + ∠C = 180° (co-interior), so they are equal"
+      },
+      "answer": "B",
+      "explanation": "Both ∠A and ∠C equal 180° − ∠B, using two different pairs of co-interior angles. ∠A and ∠C are opposite corners, not alternate or vertically opposite angles.",
+      "steps": [
+        "AD ∥ BC with transversal AB: ∠A + ∠B = 180° (co-interior).",
+        "AB ∥ DC with transversal BC: ∠B + ∠C = 180° (co-interior).",
+        "So ∠A = 180 − ∠B = ∠C. ∎"
+      ],
+      "mistakes": {
+        "A": "Step 1: vertically opposite angles are at ONE crossing point. ∠A and ∠C are at different corners.",
+        "C": "Step 1: alternate angles lie on a transversal between two parallel lines. ∠A and ∠C are not on the same transversal.",
+        "D": "Step 2: adding to 180° does not make two angles equal, and ∠A and ∠C are not co-interior."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q14.svg",
+      "diagram_alt": "Parallelogram ABCD with arrows showing AB parallel to DC and AD parallel to BC; the angles at A, B and C are marked"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Angle chasing",
+      "prompt": "Two mirrors meet at 70°. A light beam hits mirror 1 and bounces off at 30° to it, as shown, then hits mirror 2. Find x, the angle between the beam and mirror 2.",
+      "options": {
+        "A": "40°",
+        "B": "30°",
+        "C": "80°",
+        "D": "100°"
+      },
+      "answer": "C",
+      "explanation": "The beam and the two mirrors make a triangle with angles 70°, 30° and x, so x = 180 − 70 − 30 = 80°. 40° (70 − 30) uses no rule.",
+      "steps": [
+        "The reflected beam, mirror 1 and mirror 2 form a triangle.",
+        "Its angles are 70° (between the mirrors), 30° (beam and mirror 1) and x.",
+        "x = 180 − 70 − 30 = 80° (angle sum of triangle)."
+      ],
+      "mistakes": {
+        "A": "Step 2: 70 − 30 uses no angle rule. The beam and the two mirrors form a triangle.",
+        "B": "Step 2: the beam does not meet mirror 2 at the same angle as mirror 1. Use the triangle formed by the beam and the mirrors.",
+        "D": "Step 2: 100° is the sum of the two known angles. x is what is left of 180°."
+      },
+      "diagram": "diagrams/y7/maths-advanced/advanced-7-test-1-q15.svg",
+      "diagram_alt": "Two mirrors meeting at a point with an angle of 70° between them; a beam reflects off mirror 1, making 30° with it on both sides, and travels to mirror 2, where the angle between the beam and mirror 2 is x"
+    }
+  ]
+}
