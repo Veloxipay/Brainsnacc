@@ -11,7 +11,7 @@ use App\Models\User;
 interface AiModel
 {
     /**
-     * @param  list<array>  $content  message blocks: ['type' => 'text', 'text' => …] or ['type' => 'image', 'mime' => …, 'data' => base64]
+     * @param  list<array>  $content  message blocks: ['type' => 'text', 'text' => …] or ['type' => 'image', 'mime' => …, 'data' => base64] or ['type' => 'document', 'data' => base64 PDF]
      */
     public function complete(string $purpose, string $system, array $content, ?User $user = null, int $maxTokens = 400): ?string;
 

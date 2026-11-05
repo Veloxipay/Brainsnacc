@@ -60,6 +60,8 @@ Route::middleware('auth')->group(function () {
             Route::post('/sessions/{session}/next', [TutorController::class, 'next'])->middleware('throttle:30,1')->name('next');
             Route::post('/checks/{check}', [TutorController::class, 'check'])->middleware('throttle:30,1')->name('check');
             Route::get('/progress', [TutorController::class, 'progress'])->name('progress');
+            Route::get('/photo', [TutorController::class, 'photo'])->name('photo');
+            Route::post('/photo', [TutorController::class, 'readPhoto'])->middleware('throttle:10,1')->name('photo.read');
         });
         Route::get('/past-papers', [PastPaperController::class, 'index'])->name('past-papers');
         Route::post('/past-papers', [PastPaperController::class, 'update'])->name('past-papers.update');

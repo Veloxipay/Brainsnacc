@@ -25,9 +25,11 @@ class AnthropicModel implements AiModel
         }
 
         $model = config('services.anthropic.model');
-        $blocks = array_map(fn ($b) => $b['type'] === 'image'
-            ? ['type' => 'image', 'source' => ['type' => 'base64', 'media_type' => $b['mime'], 'data' => $b['data']]]
-            : ['type' => 'text', 'text' => $b['text']], $content);
+        $blocks = array_map(fn ($b) => match ($b['type']) {
+            'image' => ['type' => 'image', 'source' => ['type' => 'base64', 'media_type' => $b['mime'], 'data' => $b['data']]],
+            'document' => ['type' => 'document', 'source' => ['type' => 'base64', 'media_type' => 'application/pdf', 'data' => $b['data']]],
+            default => ['type' => 'text', 'text' => $b['text']],
+        }, $content);
 
         $call = new AiCall(['user_id' => $user?->id, 'purpose' => $purpose, 'provider' => 'anthropic', 'model' => $model]);
         $started = microtime(true);

@@ -6,6 +6,7 @@ use App\Models\SkillRecord;
 use App\Models\TutorCheck;
 use App\Models\TutorSession;
 use App\Tutor\Mastery;
+use App\Tutor\PhotoReader;
 use App\Tutor\Skills;
 use App\Tutor\Tutor;
 use Illuminate\Http\RedirectResponse;
@@ -140,6 +141,38 @@ class TutorController extends Controller
 
         return redirect()->to(route('tutor.show', $check->tutor_session_id).'#latest')
             ->with('check_result', $result + ['id' => $check->id]);
+    }
+
+    public function photo(PhotoReader $reader): View
+    {
+        return view('tutor.photo', ['enabled' => $reader->enabled(), 'found' => session('photo_questions')]);
+    }
+
+    /** Read the questions off a photo or PDF. The file is never stored — only what the student confirms. */
+    public function readPhoto(Request $request, PhotoReader $reader): RedirectResponse
+    {
+        $request->validate([
+            'photo' => ['required', 'file', 'mimes:jpg,jpeg,png,webp,gif,pdf', 'max:'.config('tutor.photo_max_kb')],
+        ], [
+            'photo.required' => 'Choose a photo first.',
+            'photo.mimes' => 'Use a photo (JPG, PNG, WEBP) or a PDF.',
+            'photo.max' => 'That file is too big. Try a smaller photo.',
+        ]);
+        if (! $reader->enabled()) {
+            return back()->withErrors(['photo' => 'Reading photos isn\'t switched on yet. Type the question instead.']);
+        }
+        $file = $request->file('photo');
+        $mime = $file->getMimeType() === 'application/pdf' ? 'application/pdf' : ($file->getMimeType() ?: 'image/jpeg');
+        $result = $reader->read(file_get_contents($file->getRealPath()), $mime, $request->user());
+        @unlink($file->getRealPath()); // not kept
+
+        if (! $result['ok']) {
+            return back()->withErrors(['photo' => $result['error']]);
+        }
+
+        session(['photo_questions' => $result['questions']]); // kept until the next photo, so the student can try each question
+
+        return redirect()->route('tutor.photo');
     }
 
     public function progress(Request $request): View
