@@ -10,8 +10,8 @@ Artisan::command('inspire', function () {
 /*
  * Get back into the admin account (e.g. after forgetting the password).
  * Run in the Laravel Cloud console:  php artisan brainsnacc:admin
- * It shows the admin accounts, then asks for the login email and a new password
- * (typed by you, hidden, never stored in the code).
+ * It shows the admin accounts, asks for the login email, and prints a one-off temporary
+ * password (never stored in the code). Change it straight away under My account.
  */
 Artisan::command('brainsnacc:admin', function () {
     $admins = App\Models\User::where('role', App\Models\User::ROLE_ADMIN)->orderBy('id')->get(['id', 'name', 'username', 'email']);
@@ -28,13 +28,8 @@ Artisan::command('brainsnacc:admin', function () {
     if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return $this->error('That is not a valid email. Nothing was changed.');
     }
-    $password = (string) $this->secret('New password (at least 10 characters, letters and numbers; hidden as you type)');
-    if (strlen($password) < 10 || ! preg_match('/[A-Za-z]/', $password) || ! preg_match('/\d/', $password)) {
-        return $this->error('Password too short or missing letters/numbers. Nothing was changed.');
-    }
-    if ($password !== (string) $this->secret('Type the new password again')) {
-        return $this->error('The two passwords did not match. Nothing was changed.');
-    }
+    // The web console can't take hidden typing, so make a one-off temporary password instead.
+    $password = Illuminate\Support\Str::password(14, symbols: false);
 
     // Use the admin with that email, otherwise the first admin (its email is updated).
     $user = $admins->firstWhere('email', $email) ?? $admins->first() ?? new App\Models\User(['name' => 'Admin']);
@@ -46,5 +41,9 @@ Artisan::command('brainsnacc:admin', function () {
     $user->role = App\Models\User::ROLE_ADMIN;
     $user->save();
 
-    $this->info("Done. Log in at /login with {$email} and your new password.");
-})->purpose('Show the admin login and set a new admin password');
+    $this->newLine();
+    $this->info('Done. Log in at https://brainsnacc.com.au/login with:');
+    $this->line("   Email:              {$email}");
+    $this->line("   Temporary password: {$password}");
+    $this->warn('Straight after logging in, open "My account" and set your own password. Then clear this console.');
+})->purpose('Show the admin login and give it a temporary password');
