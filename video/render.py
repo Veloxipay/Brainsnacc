@@ -279,13 +279,13 @@ def spoken(s):
     for a, b in SPOKEN: s = re.sub(a, b, s) if a.startswith('(') else s.replace(a, b)
     return s
 
-def tts(text, length_scale=1.05):
+def tts(text, length_scale=1.3):
     os.makedirs(CACHE, exist_ok=True)
     key = hashlib.sha1((VOICE + str(length_scale) + text).encode()).hexdigest()[:16]
     wav = os.path.join(CACHE, key + '.wav')
     if not os.path.exists(wav):
         tmp = wav + '.tmp.wav'
-        subprocess.run([sys.executable, '-m', 'piper', '-m', VOICE, '-f', tmp, '--length-scale', str(length_scale), '--sentence-silence', '0.25'],
+        subprocess.run([sys.executable, '-m', 'piper', '-m', VOICE, '-f', tmp, '--length-scale', str(length_scale), '--sentence-silence', '0.5'],
                        input=text.encode(), check=True, capture_output=True)
         os.replace(tmp, wav)
     with wave.open(wav) as w: return wav, w.getnframes() / w.getframerate()
