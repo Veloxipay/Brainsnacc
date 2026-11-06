@@ -1,278 +1,279 @@
 {
-  "level": "Year 8",
-  "subject": "maths",
-  "unit": "Year 8",
-  "title": "Experimental probability",
-  "summary": "Learn to find experimental probabilities from frequency tables and two-step experiments, combine results, design simulations, and compare experiments with theory.",
-  "minutes": 40,
-  "body": "What is the chance a bottle cap lands top up, a new medicine works, or a footballer kicks a goal from 40 metres? There’s no neat list of equally likely outcomes for these, so we run experiments and use the results. In Year 7 you met relative frequency; this lesson goes further — two-step experiments, combining results, running **simulations** and using experimental data to make decisions.\n\n## Learning objective\n\nBy the end of this lesson you can calculate experimental probabilities from frequency tables (including two-step experiments), combine results from several trials, design a simple simulation, and compare experimental and theoretical probabilities to judge whether something might be biased.\n\n## Before you start\n\nThis builds on *Experiments and relative frequency (Year 7)* (relative frequency, expected number = probability × trials) and on two-dice and two-coin sample spaces from *Probability and complementary events (Year 8)*.\n\n**Warm-up**\n\n1. A coin landed heads 18 times in 40 tosses. Find the relative frequency of heads. *(Answer: 18/40 = 9/20 = 0.45)*\n2. How many 6s would you expect in 90 rolls of a fair die? *(Answer: 1/6 × 90 = 15)*\n\n## Think of it like this\n\n### Taste-testing a new recipe\n\nA café tries a new muffin. Instead of guessing whether customers will like it, they offer it to lots of people and count how many buy it again. After 10 customers they have a rough idea; after 500 they are fairly confident. Experimental probability works the same way: you learn the chance by watching what actually happens, and more trials make you more confident.\n\n*Where the analogy breaks down:* customers’ tastes can change over time, but in a probability experiment we assume the chance stays the same on every trial.\n\n## Key ideas\n\n### Experimental probability\n\nThe **experimental probability** (relative frequency) of an event is:\n\n`experimental P = number of times the event happened ÷ number of trials`\n\nWhen an event is made of several outcomes, add their frequencies first. For “a die shows more than 4”, add the frequencies of 5 and 6.\n\n### Two-step experiments\n\nTossing two coins or rolling two dice is a **two-step experiment**. Before comparing with theory, list the equally likely outcomes. For two coins they are HH, HT, TH, TT, so:\n\n| Result | Two heads | One of each | Two tails |\n|---|---|---|---|\n| Theoretical P | 1/4 | 2/4 = 1/2 | 1/4 |\n\n“One of each” is twice as likely as two heads, because it can happen two ways.\n\n![Tree diagram for tossing two coins: the first coin branches to H and T, each with probability 1/2, and each of those branches to H and T again, giving the outcomes HH, HT, TH and TT](/diagrams/y8/maths/experimental-probability-tree.svg)\n\n\n### Combining results\n\nIf several people test the same object, add all their successes and all their trials:\n\n`combined estimate = total successes ÷ total trials`\n\nThe combined estimate is more reliable than any single group’s, because it uses more trials. With a running total, use the latest (largest) total — don’t add the running totals together.\n\n### Simulations\n\nA **simulation** uses a simple random device to copy a real situation that would be slow or hard to repeat. The device must have the same probability as the real event:\n\n- probability 1/2 → a coin\n- probability 1/6 → a die\n- probability 1/4 → a spinner with 4 equal sections (1 section for success)\n- probability 0.3 → random digits 0–9, where 0, 1, 2 mean success\n\n### Comparing with theory\n\nIf the experimental probability is far from the theoretical probability *after many trials*, the object may be **biased**. With only a few trials, a big difference can happen just by chance, so it is weak evidence.\n\n### Using data for the right group\n\nWhen data is split into groups (like a two-way table), use the experimental probability for the group you are predicting. Children and adults may behave differently.\n\n## Worked examples\n\n### Example 1\n\nTwo coins were tossed 100 times: two heads 22, one of each 53, two tails 25. Compare with theory.\n\n![Column graph of 100 tosses of two coins: two heads 22, one of each 53, two tails 25](/diagrams/y8/maths/experimental-probability-ex1.svg)\n\n\nStep 1: list the equally likely outcomes — HH, HT, TH, TT — so “one of each” has P = 2/4 = 1/2.\nStep 2: expected numbers — two heads 1/4 × 100 = **25**, one of each 1/2 × 100 = **50**, two tails **25**.\nStep 3: observed 22, 53 and 25 — all close to 25, 50 and 25.\nStep 4: conclusion — the results fit fair coins well.\nCheck: 22 + 53 + 25 = 100 ✓\n\n### Example 2\n\nFour groups each flipped a bottle cap 25 times. Top up: 9, 12, 8 and 11 times. Find each group’s estimate and the best overall estimate.\n\nStep 1: group estimates — 9/25 = 0.36, 12/25 = 0.48, 8/25 = 0.32, 11/25 = 0.44. They vary because 25 trials is small.\nStep 2: combine — total top up = 9 + 12 + 8 + 11 = 40; total flips = 4 × 25 = 100.\nStep 3: best estimate = 40/100 = **0.4** — it uses all 100 trials.\n\n### Example 3\n\nDesign a simulation to estimate the probability that a family with 3 children has at least 2 girls (assume girls and boys are equally likely).\n\nStep 1: one child is girl or boy with P = 1/2 each — so use a coin: heads = girl, tails = boy.\nStep 2: one trial = toss 3 coins (one for each child) and record the number of heads.\nStep 3: repeat many times, e.g. 40 trials. Suppose “at least 2 heads” happens 21 times.\nStep 4: experimental P = 21/40 = **0.525**.\nCheck with theory: of the 8 outcomes GGG, GGB, GBG, BGG, GBB, BGB, BBG, BBB, 4 have at least 2 girls, so P = 1/2 = 0.5. The simulation is close ✓\n\n### Example 4\n\nA spinner with four equal sections numbered 1 to 4 was spun 200 times: 1 → 46, 2 → 38, 3 → 72, 4 → 44. Find the experimental P(3) and P(less than 3), and say whether the spinner looks fair.\n\n![Column graph of 200 spins: 1 came up 46 times, 2 came up 38 times, 3 came up 72 times and 4 came up 44 times](/diagrams/y8/maths/experimental-probability-ex4.svg)\n\n\nStep 1: P(3) = 72/200 = **0.36**.\nStep 2: less than 3 means 1 or 2: 46 + 38 = 84, so P = 84/200 = **0.42**.\nStep 3: a fair spinner would give each number about 1/4 × 200 = 50 times.\nStep 4: 3 came up 72 times — far above 50 after 200 spins — so the spinner may be **biased towards 3**. Spin it more to be surer.\nStep 5: prediction — in 500 more spins, expect about 0.36 × 500 = **180** threes.\n\n## Common mistakes\n\n- **Treating two-step results as equally likely.** “Two heads, two tails, one of each” are not 1/3 each. Fix: list every outcome (HT and TH are different).\n- **Using one group’s result when more data is available.** Fix: add all successes and all trials.\n- **Adding running totals.** A running total already includes the earlier results. Fix: use the latest total.\n- **A simulation with the wrong probability.** A coin can’t simulate a 1 in 4 chance. Fix: match the device’s probability to the real one.\n- **Calling something biased after a few trials.** Fix: look for a big difference after many trials.\n\n## Tips to remember\n\n- **“Count it, then divide by the tries.”** Experimental P = successes ÷ trials. (A made-up memory trick.)\n- **Pool the data.** Combined results beat any single group.\n- **HT ≠ TH.** In two-step experiments, order matters when listing outcomes.\n- **Match the device to the chance.** Coin = 1/2, die = 1/6, four-section spinner = 1/4.\n- **Big samples, big trust.** Only judge fairness after many trials.\n\n## Key terms\n\n- **Experimental probability** — number of times an event happened ÷ number of trials (also called relative frequency).\n- **Theoretical probability** — the probability worked out from equally likely outcomes.\n- **Two-step experiment** — an experiment with two parts, such as tossing two coins.\n- **Simulation** — using a random device such as a coin, die or spinner to copy a real situation.\n- **Biased** — not fair; some outcomes happen more often than they should.\n- **Expected number** — probability × number of trials.\n\n## Summary\n\n- Experimental probability = number of successes ÷ number of trials.\n- In two-step experiments, list all the equally likely outcomes before comparing with theory.\n- Combine results by adding all the successes and all the trials; more trials give a better estimate.\n- A simulation uses a device with the same probability as the real event.\n- Compare experimental and theoretical probabilities to judge fairness, but only after many trials.",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "A paper cup is tossed 50 times. The column graph shows how it landed. What is the experimental probability that it lands upside down?",
-      "options": {
-        "A": "0.74",
-        "B": "0.35",
-        "C": "0.26",
-        "D": "13"
-      },
-      "answer": "C",
-      "explanation": "Experimental probability = 13 ÷ 50 = 0.26. Dividing 13 by 37 compares the two results with each other instead of with all 50 tosses.",
-      "steps": [
-        "Upside down happened 13 times in 50 trials.",
-        "Experimental probability = 13 ÷ 50 = 0.26."
-      ],
-      "mistakes": {
-        "A": "Step 1: 37/50 = 0.74 is the experimental probability of landing on its side. Use the 13 upside-down results.",
-        "B": "Step 2: 13 ÷ 37 compares upside down with on its side. Divide by the total number of tosses, 50.",
-        "D": "Step 2: 13 is the frequency. Experimental probability is the frequency divided by the number of trials."
-      },
-      "diagram": "diagrams/y8/maths/experimental-probability-q1.svg",
-      "diagram_alt": "Column graph of 50 tosses of a paper cup: on its side 37, upside down 13"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "In an experiment, the experimental probability that a seed sprouts is 0.15. About how many seeds would you expect NOT to sprout out of 300 seeds?",
-      "options": {
-        "A": "45",
-        "B": "255",
-        "C": "15",
-        "D": "285"
-      },
-      "answer": "B",
-      "explanation": "Expected to sprout = 0.15 × 300 = 45, so not sprouting ≈ 300 − 45 = 255 (or 0.85 × 300 = 255). Answering 45 gives the seeds that DO sprout.",
-      "steps": [
-        "Expected to sprout = 0.15 × 300 = 45.",
-        "Expected NOT to sprout = 300 − 45 = 255."
-      ],
-      "mistakes": {
-        "A": "Step 1: 45 is the number expected to sprout. The question asks how many will NOT sprout.",
-        "C": "Step 1: you found 0.15 × 100. Multiply by the 300 seeds.",
-        "D": "Step 2: you subtracted 15 from 300. First work out how many sprout from 300 seeds (0.15 × 300 = 45), then subtract that."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Which experiment would give the most reliable estimate of the probability that a thumbtack lands point up?",
-      "options": {
-        "A": "Dropping it 500 times and recording the results",
-        "B": "Dropping it 5 times and recording the results",
-        "C": "Assuming it is 1/2, because there are two ways it can land",
-        "D": "Dropping it 50 times, but only counting the drops that land point up"
-      },
-      "answer": "A",
-      "explanation": "A thumbtack is not symmetrical, so there is no theoretical answer — you must experiment, and more trials give a more reliable estimate. Assuming 1/2 only works when the outcomes are equally likely.",
-      "steps": [
-        "A thumbtack has no equally likely outcomes, so you need an experiment.",
-        "The more trials, the closer the experimental probability usually gets to the true value — choose 500 drops."
-      ],
-      "mistakes": {
-        "B": "Step 1: 5 trials is very few, so the result could be far from the true probability. More trials are more reliable.",
-        "C": "Step 1: the two ways are not equally likely for a thumbtack, so you can’t use theory. Do an experiment.",
-        "D": "Step 2: you need the number of drops as well as the point-up results, so you can divide by the number of trials."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Two coins were tossed 80 times. The column graph shows the results. Compared with theory, how many times would you expect “one head and one tail”?",
-      "options": {
-        "A": "Expected 27, because there are three possible results",
-        "B": "Expected 20, because one head and one tail is 1 out of 4 outcomes",
-        "C": "Expected 42, because that is what happened",
-        "D": "Expected 40, so 42 is close to theory"
-      },
-      "answer": "D",
-      "explanation": "HT and TH give one of each, so P = 2/4 = 1/2, and 1/2 × 80 = 40. 42 is close. Thinking the three results are equally likely gives about 27, which is wrong.",
-      "steps": [
-        "Outcomes for two coins: HH, HT, TH, TT. One of each is HT or TH — 2 of 4, so P = 1/2.",
-        "Expected number = 1/2 × 80 = 40, and the 42 observed is close to this."
-      ],
-      "mistakes": {
-        "A": "Step 1: the three results are not equally likely. List HH, HT, TH, TT — one of each happens in 2 of the 4.",
-        "B": "Step 1: one of each happens in TWO outcomes, HT and TH, so it is 2 out of 4.",
-        "C": "Step 2: the expected number comes from theory: probability × trials. Then compare it with the 42 that happened."
-      },
-      "diagram": "diagrams/y8/maths/experimental-probability-q4.svg",
-      "diagram_alt": "Column graph of 80 tosses of two coins: two heads 17, one head and one tail 42, two tails 21"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Four groups each spin the same spinner 30 times. The column graph shows how many times each group’s spinner landed on blue. Using all the results together, what is the best estimate of P(blue)?",
-      "options": {
-        "A": "13/30",
-        "B": "1/3",
-        "C": "7/30",
-        "D": "4/3"
-      },
-      "answer": "B",
-      "explanation": "All together: 7 + 11 + 9 + 13 = 40 blues in 4 × 30 = 120 spins, so 40/120 = 1/3. Picking one group’s result (like 13/30) uses fewer trials, so it is less reliable.",
-      "steps": [
-        "Total blues: 7 + 11 + 9 + 13 = 40.",
-        "Total spins: 4 × 30 = 120.",
-        "Best estimate: 40/120 = 1/3."
-      ],
-      "mistakes": {
-        "A": "Step 1: 13/30 uses only the group with the most blues. Combine every group’s results for the best estimate.",
-        "C": "Step 1: 7/30 uses only one group. Add up all the blues and all the spins.",
-        "D": "Step 2: 40 blues out of 120 spins, not 40 out of 30 — a probability can’t be more than 1."
-      },
-      "diagram": "diagrams/y8/maths/experimental-probability-q5.svg",
-      "diagram_alt": "Column graph of the number of blues each group got in 30 spins: Group 1 got 7, Group 2 got 11, Group 3 got 9 and Group 4 got 13"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A basketballer scores 1 in every 4 free throws. Which is a good way to simulate one of her free throws?",
-      "options": {
-        "A": "Toss a coin; heads means “score”",
-        "B": "Roll a die; 1 means “score”",
-        "C": "Spin a spinner with 4 equal sections; 3 sections mean “score”",
-        "D": "Spin a spinner with 4 equal sections; 1 section means “score”"
-      },
-      "answer": "D",
-      "explanation": "A simulation must give the same probability as the real event: one section out of four equal sections gives exactly 1/4. A coin gives 1/2, which is too high.",
-      "steps": [
-        "Her probability of scoring is 1/4.",
-        "A spinner with 4 equal sections, with 1 section for “score”, gives exactly 1/4."
-      ],
-      "mistakes": {
-        "A": "Step 1: a coin gives a 1/2 chance, but she scores with probability 1/4. Match the probability.",
-        "B": "Step 1: a die gives P(1) = 1/6, not 1/4. Choose a device with a 1 in 4 chance.",
-        "C": "Step 2: that gives a 3/4 chance of scoring. She scores only 1 time in 4."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A die was rolled 120 times, with the results shown in the column graph. What is the experimental probability of rolling a number greater than 4, and how does it compare with the theoretical probability?",
-      "options": {
-        "A": "13/24, a bit more than the theoretical 1/2",
-        "B": "22/120, much less than the theoretical 1/3",
-        "C": "41/120, very close to the theoretical 1/3 (40/120)",
-        "D": "41/120, much more than the theoretical 1/6"
-      },
-      "answer": "C",
-      "explanation": "Greater than 4 means 5 or 6: 19 + 22 = 41, so 41/120 ≈ 0.34. Theory: 2/6 = 1/3 = 40/120. These are very close. Including 4 gives 65/120 = 13/24, which answers “4 or more”.",
-      "steps": [
-        "Greater than 4 means 5 or 6: frequency 19 + 22 = 41, so experimental P = 41/120.",
-        "Theoretical P = 2/6 = 1/3, which is 40/120.",
-        "41/120 is very close to 40/120."
-      ],
-      "mistakes": {
-        "A": "Step 1: “greater than 4” is only 5 and 6. You also included 4.",
-        "B": "Step 1: you used only the 6s. Greater than 4 means 5 or 6, so add 19 and 22.",
-        "D": "Step 2: two numbers (5 and 6) are greater than 4, so the theoretical probability is 2/6 = 1/3, not 1/6."
-      },
-      "diagram": "diagrams/y8/maths/experimental-probability-q7.svg",
-      "diagram_alt": "Column graph of 120 rolls of a die: 1 came up 18 times, 2 came up 22, 3 came up 15, 4 came up 24, 5 came up 19 and 6 came up 22"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Ella spins a spinner and keeps a running total. After 20 spins she has 9 reds; after 100 spins, 31 reds; after 400 spins, 102 reds. Using the best estimate, about how many reds should she expect in 1000 spins?",
-      "options": {
-        "A": "255",
-        "B": "450",
-        "C": "310",
-        "D": "142"
-      },
-      "answer": "A",
-      "explanation": "The best estimate uses the most trials: 102/400 = 0.255, so expect 0.255 × 1000 = 255 reds. Using the first 20 spins (0.45) gives 450 — far less reliable.",
-      "steps": [
-        "Running totals: the 400-spin figure includes all the earlier spins and is the most reliable.",
-        "Best estimate: P(red) ≈ 102 ÷ 400 = 0.255.",
-        "Expected reds in 1000 spins ≈ 0.255 × 1000 = 255."
-      ],
-      "mistakes": {
-        "B": "Step 1: 9/20 = 0.45 is based on only 20 spins. Use the estimate from the most trials.",
-        "C": "Step 1: 31/100 = 0.31 is based on 100 spins. The 400-spin result is more reliable.",
-        "D": "Step 1: 9 + 31 + 102 double counts — these are running totals, so the 102 already includes the earlier reds. Use 102 out of 400."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A café recorded 200 customers: 120 adults (54 bought dessert) and 80 children (52 bought dessert). Tomorrow a school group of 60 children is booked. Based on this data, about how many of them would you expect to buy dessert?",
-      "options": {
-        "A": "27",
-        "B": "31.8",
-        "C": "39",
-        "D": "52"
-      },
-      "answer": "C",
-      "explanation": "Children’s experimental probability = 52/80 = 0.65, so expect 0.65 × 60 = 39. Using everyone’s rate (0.53) ignores that children buy dessert more often than adults.",
-      "steps": [
-        "Use the data for the right group — children: 52 out of 80.",
-        "Experimental P(dessert) for children = 52 ÷ 80 = 0.65.",
-        "Expected = 0.65 × 60 = 39 children."
-      ],
-      "mistakes": {
-        "A": "Step 1: 54/120 = 0.45 is the rate for adults. The group is children, so use the children’s rate.",
-        "B": "Step 1: 106/200 = 0.53 mixes adults and children. Use only the children’s results.",
-        "D": "Step 2: 52 is how many children bought dessert last time out of 80. Find the rate, then multiply by 60."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Sam simulates families with 3 children by tossing 3 coins (heads = girl). In 50 trials he gets “at least 2 girls” 27 times. Assuming a girl and a boy are equally likely, how many times would theory predict “at least 2 girls” in 50 trials?",
-      "options": {
-        "A": "25",
-        "B": "18.75",
-        "C": "6.25",
-        "D": "27"
-      },
-      "answer": "A",
-      "explanation": "Of the 8 outcomes, GGB, GBG, BGG and GGG have at least 2 girls: 4/8 = 1/2, so theory predicts 1/2 × 50 = 25. Sam’s 27 is close. Using 3/8 counts only exactly 2 girls.",
-      "steps": [
-        "List the 8 equally likely outcomes for 3 children: GGG, GGB, GBG, BGG, GBB, BGB, BBG, BBB.",
-        "At least 2 girls: GGG, GGB, GBG, BGG — 4 outcomes, so P = 4/8 = 1/2.",
-        "Theory predicts 1/2 × 50 = 25."
-      ],
-      "mistakes": {
-        "B": "Step 2: 3/8 is the probability of EXACTLY 2 girls. “At least 2” also includes 3 girls.",
-        "C": "Step 2: 1/8 is the probability of 3 girls only. “At least 2” also includes the outcomes with exactly 2 girls.",
-        "D": "Step 3: 27 is what the simulation gave. Theory is the probability × 50."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A bag holds 10 counters, some red and the rest white. Lily draws a counter, records its colour and puts it back. She does this 80 times and gets red 31 times. What is the best estimate of the number of red counters in the bag?",
-      "options": {
-        "A": "31",
-        "B": "6",
-        "C": "3",
-        "D": "4"
-      },
-      "answer": "D",
-      "explanation": "Experimental P(red) = 31/80 ≈ 0.39, so about 0.39 × 10 ≈ 3.9 red counters — best estimate 4. Answering 6 estimates the white counters instead.",
-      "steps": [
-        "Experimental P(red) = 31 ÷ 80 ≈ 0.39.",
-        "If P(red) ≈ 0.39, the fraction of red counters is about 0.39, so red ≈ 0.39 × 10 ≈ 3.9.",
-        "Counters are whole, so the best estimate is 4 red counters."
-      ],
-      "mistakes": {
-        "A": "Step 2: 31 is the number of red draws, not red counters. There are only 10 counters in the bag.",
-        "B": "Step 1: 49 out of 80 were white. 6 is the estimate for the white counters.",
-        "C": "Step 3: you rounded down (or dropped the decimal). Round 31/80 × 10 to the NEAREST whole number."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Jai rolls a die 60 times and gets 16 sixes. Mai rolls the same die 600 times and gets 160 sixes. Which statement is best?",
-      "options": {
-        "A": "Jai’s and Mai’s results give equally strong evidence, because both are 4/15",
-        "B": "Mai’s results give much stronger evidence that the die is biased towards 6",
-        "C": "Neither shows anything, because a die always gives 1/6",
-        "D": "Jai’s results give stronger evidence, because he found bias with fewer rolls"
-      },
-      "answer": "B",
-      "explanation": "Both relative frequencies are 4/15 ≈ 0.27, more than 1/6 ≈ 0.17. With 60 rolls (16 vs 10 expected) that could be chance, but 160 sixes where 100 are expected in 600 rolls is very unlikely for a fair die. More trials means stronger evidence.",
-      "steps": [
-        "Both relative frequencies: 16/60 = 160/600 = 4/15 ≈ 0.27; a fair die gives 1/6 ≈ 0.17.",
-        "Expected sixes: 10 in 60 rolls and 100 in 600 rolls.",
-        "6 extra sixes in 60 rolls could easily be chance, but 60 extra in 600 rolls is very unlikely — Mai’s evidence is much stronger."
-      ],
-      "mistakes": {
-        "A": "Step 2: the fractions are equal, but Mai did 10 times as many trials. More trials give stronger evidence.",
-        "C": "Step 1: 1/6 is the probability for a FAIR die. Experiments are how we check whether a die is fair.",
-        "D": "Step 2: small numbers of trials vary a lot by chance. Fewer rolls gives weaker evidence, not stronger."
-      }
-    }
-  ]
+ "level": "Year 8",
+ "subject": "maths",
+ "unit": "Year 8",
+ "title": "Experimental probability",
+ "summary": "Learn to find experimental probabilities from frequency tables and two-step experiments, combine results, design simulations, and compare experiments with theory.",
+ "minutes": 40,
+ "video": "videos/y8/maths/experimental-probability.mp4",
+ "body": "What is the chance a bottle cap lands top up, a new medicine works, or a footballer kicks a goal from 40 metres? There’s no neat list of equally likely outcomes for these, so we run experiments and use the results. In Year 7 you met relative frequency; this lesson goes further — two-step experiments, combining results, running **simulations** and using experimental data to make decisions.\n\n## Learning objective\n\nBy the end of this lesson you can calculate experimental probabilities from frequency tables (including two-step experiments), combine results from several trials, design a simple simulation, and compare experimental and theoretical probabilities to judge whether something might be biased.\n\n## Before you start\n\nThis builds on *Experiments and relative frequency (Year 7)* (relative frequency, expected number = probability × trials) and on two-dice and two-coin sample spaces from *Probability and complementary events (Year 8)*.\n\n**Warm-up**\n\n1. A coin landed heads 18 times in 40 tosses. Find the relative frequency of heads. *(Answer: 18/40 = 9/20 = 0.45)*\n2. How many 6s would you expect in 90 rolls of a fair die? *(Answer: 1/6 × 90 = 15)*\n\n## Think of it like this\n\n### Taste-testing a new recipe\n\nA café tries a new muffin. Instead of guessing whether customers will like it, they offer it to lots of people and count how many buy it again. After 10 customers they have a rough idea; after 500 they are fairly confident. Experimental probability works the same way: you learn the chance by watching what actually happens, and more trials make you more confident.\n\n*Where the analogy breaks down:* customers’ tastes can change over time, but in a probability experiment we assume the chance stays the same on every trial.\n\n## Key ideas\n\n### Experimental probability\n\nThe **experimental probability** (relative frequency) of an event is:\n\n`experimental P = number of times the event happened ÷ number of trials`\n\nWhen an event is made of several outcomes, add their frequencies first. For “a die shows more than 4”, add the frequencies of 5 and 6.\n\n### Two-step experiments\n\nTossing two coins or rolling two dice is a **two-step experiment**. Before comparing with theory, list the equally likely outcomes. For two coins they are HH, HT, TH, TT, so:\n\n| Result | Two heads | One of each | Two tails |\n|---|---|---|---|\n| Theoretical P | 1/4 | 2/4 = 1/2 | 1/4 |\n\n“One of each” is twice as likely as two heads, because it can happen two ways.\n\n![Tree diagram for tossing two coins: the first coin branches to H and T, each with probability 1/2, and each of those branches to H and T again, giving the outcomes HH, HT, TH and TT](/diagrams/y8/maths/experimental-probability-tree.svg)\n\n\n### Combining results\n\nIf several people test the same object, add all their successes and all their trials:\n\n`combined estimate = total successes ÷ total trials`\n\nThe combined estimate is more reliable than any single group’s, because it uses more trials. With a running total, use the latest (largest) total — don’t add the running totals together.\n\n### Simulations\n\nA **simulation** uses a simple random device to copy a real situation that would be slow or hard to repeat. The device must have the same probability as the real event:\n\n- probability 1/2 → a coin\n- probability 1/6 → a die\n- probability 1/4 → a spinner with 4 equal sections (1 section for success)\n- probability 0.3 → random digits 0–9, where 0, 1, 2 mean success\n\n### Comparing with theory\n\nIf the experimental probability is far from the theoretical probability *after many trials*, the object may be **biased**. With only a few trials, a big difference can happen just by chance, so it is weak evidence.\n\n### Using data for the right group\n\nWhen data is split into groups (like a two-way table), use the experimental probability for the group you are predicting. Children and adults may behave differently.\n\n## Worked examples\n\n### Example 1\n\nTwo coins were tossed 100 times: two heads 22, one of each 53, two tails 25. Compare with theory.\n\n![Column graph of 100 tosses of two coins: two heads 22, one of each 53, two tails 25](/diagrams/y8/maths/experimental-probability-ex1.svg)\n\n\nStep 1: list the equally likely outcomes — HH, HT, TH, TT — so “one of each” has P = 2/4 = 1/2.\nStep 2: expected numbers — two heads 1/4 × 100 = **25**, one of each 1/2 × 100 = **50**, two tails **25**.\nStep 3: observed 22, 53 and 25 — all close to 25, 50 and 25.\nStep 4: conclusion — the results fit fair coins well.\nCheck: 22 + 53 + 25 = 100 ✓\n\n### Example 2\n\nFour groups each flipped a bottle cap 25 times. Top up: 9, 12, 8 and 11 times. Find each group’s estimate and the best overall estimate.\n\nStep 1: group estimates — 9/25 = 0.36, 12/25 = 0.48, 8/25 = 0.32, 11/25 = 0.44. They vary because 25 trials is small.\nStep 2: combine — total top up = 9 + 12 + 8 + 11 = 40; total flips = 4 × 25 = 100.\nStep 3: best estimate = 40/100 = **0.4** — it uses all 100 trials.\n\n### Example 3\n\nDesign a simulation to estimate the probability that a family with 3 children has at least 2 girls (assume girls and boys are equally likely).\n\nStep 1: one child is girl or boy with P = 1/2 each — so use a coin: heads = girl, tails = boy.\nStep 2: one trial = toss 3 coins (one for each child) and record the number of heads.\nStep 3: repeat many times, e.g. 40 trials. Suppose “at least 2 heads” happens 21 times.\nStep 4: experimental P = 21/40 = **0.525**.\nCheck with theory: of the 8 outcomes GGG, GGB, GBG, BGG, GBB, BGB, BBG, BBB, 4 have at least 2 girls, so P = 1/2 = 0.5. The simulation is close ✓\n\n### Example 4\n\nA spinner with four equal sections numbered 1 to 4 was spun 200 times: 1 → 46, 2 → 38, 3 → 72, 4 → 44. Find the experimental P(3) and P(less than 3), and say whether the spinner looks fair.\n\n![Column graph of 200 spins: 1 came up 46 times, 2 came up 38 times, 3 came up 72 times and 4 came up 44 times](/diagrams/y8/maths/experimental-probability-ex4.svg)\n\n\nStep 1: P(3) = 72/200 = **0.36**.\nStep 2: less than 3 means 1 or 2: 46 + 38 = 84, so P = 84/200 = **0.42**.\nStep 3: a fair spinner would give each number about 1/4 × 200 = 50 times.\nStep 4: 3 came up 72 times — far above 50 after 200 spins — so the spinner may be **biased towards 3**. Spin it more to be surer.\nStep 5: prediction — in 500 more spins, expect about 0.36 × 500 = **180** threes.\n\n## Common mistakes\n\n- **Treating two-step results as equally likely.** “Two heads, two tails, one of each” are not 1/3 each. Fix: list every outcome (HT and TH are different).\n- **Using one group’s result when more data is available.** Fix: add all successes and all trials.\n- **Adding running totals.** A running total already includes the earlier results. Fix: use the latest total.\n- **A simulation with the wrong probability.** A coin can’t simulate a 1 in 4 chance. Fix: match the device’s probability to the real one.\n- **Calling something biased after a few trials.** Fix: look for a big difference after many trials.\n\n## Tips to remember\n\n- **“Count it, then divide by the tries.”** Experimental P = successes ÷ trials. (A made-up memory trick.)\n- **Pool the data.** Combined results beat any single group.\n- **HT ≠ TH.** In two-step experiments, order matters when listing outcomes.\n- **Match the device to the chance.** Coin = 1/2, die = 1/6, four-section spinner = 1/4.\n- **Big samples, big trust.** Only judge fairness after many trials.\n\n## Key terms\n\n- **Experimental probability** — number of times an event happened ÷ number of trials (also called relative frequency).\n- **Theoretical probability** — the probability worked out from equally likely outcomes.\n- **Two-step experiment** — an experiment with two parts, such as tossing two coins.\n- **Simulation** — using a random device such as a coin, die or spinner to copy a real situation.\n- **Biased** — not fair; some outcomes happen more often than they should.\n- **Expected number** — probability × number of trials.\n\n## Summary\n\n- Experimental probability = number of successes ÷ number of trials.\n- In two-step experiments, list all the equally likely outcomes before comparing with theory.\n- Combine results by adding all the successes and all the trials; more trials give a better estimate.\n- A simulation uses a device with the same probability as the real event.\n- Compare experimental and theoretical probabilities to judge fairness, but only after many trials.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "A paper cup is tossed 50 times. The column graph shows how it landed. What is the experimental probability that it lands upside down?",
+   "options": {
+    "A": "0.74",
+    "B": "0.35",
+    "C": "0.26",
+    "D": "13"
+   },
+   "answer": "C",
+   "explanation": "Experimental probability = 13 ÷ 50 = 0.26. Dividing 13 by 37 compares the two results with each other instead of with all 50 tosses.",
+   "steps": [
+    "Upside down happened 13 times in 50 trials.",
+    "Experimental probability = 13 ÷ 50 = 0.26."
+   ],
+   "mistakes": {
+    "A": "Step 1: 37/50 = 0.74 is the experimental probability of landing on its side. Use the 13 upside-down results.",
+    "B": "Step 2: 13 ÷ 37 compares upside down with on its side. Divide by the total number of tosses, 50.",
+    "D": "Step 2: 13 is the frequency. Experimental probability is the frequency divided by the number of trials."
+   },
+   "diagram": "diagrams/y8/maths/experimental-probability-q1.svg",
+   "diagram_alt": "Column graph of 50 tosses of a paper cup: on its side 37, upside down 13"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "In an experiment, the experimental probability that a seed sprouts is 0.15. About how many seeds would you expect NOT to sprout out of 300 seeds?",
+   "options": {
+    "A": "45",
+    "B": "255",
+    "C": "15",
+    "D": "285"
+   },
+   "answer": "B",
+   "explanation": "Expected to sprout = 0.15 × 300 = 45, so not sprouting ≈ 300 − 45 = 255 (or 0.85 × 300 = 255). Answering 45 gives the seeds that DO sprout.",
+   "steps": [
+    "Expected to sprout = 0.15 × 300 = 45.",
+    "Expected NOT to sprout = 300 − 45 = 255."
+   ],
+   "mistakes": {
+    "A": "Step 1: 45 is the number expected to sprout. The question asks how many will NOT sprout.",
+    "C": "Step 1: you found 0.15 × 100. Multiply by the 300 seeds.",
+    "D": "Step 2: you subtracted 15 from 300. First work out how many sprout from 300 seeds (0.15 × 300 = 45), then subtract that."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Which experiment would give the most reliable estimate of the probability that a thumbtack lands point up?",
+   "options": {
+    "A": "Dropping it 500 times and recording the results",
+    "B": "Dropping it 5 times and recording the results",
+    "C": "Assuming it is 1/2, because there are two ways it can land",
+    "D": "Dropping it 50 times, but only counting the drops that land point up"
+   },
+   "answer": "A",
+   "explanation": "A thumbtack is not symmetrical, so there is no theoretical answer — you must experiment, and more trials give a more reliable estimate. Assuming 1/2 only works when the outcomes are equally likely.",
+   "steps": [
+    "A thumbtack has no equally likely outcomes, so you need an experiment.",
+    "The more trials, the closer the experimental probability usually gets to the true value — choose 500 drops."
+   ],
+   "mistakes": {
+    "B": "Step 1: 5 trials is very few, so the result could be far from the true probability. More trials are more reliable.",
+    "C": "Step 1: the two ways are not equally likely for a thumbtack, so you can’t use theory. Do an experiment.",
+    "D": "Step 2: you need the number of drops as well as the point-up results, so you can divide by the number of trials."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Two coins were tossed 80 times. The column graph shows the results. Compared with theory, how many times would you expect “one head and one tail”?",
+   "options": {
+    "A": "Expected 27, because there are three possible results",
+    "B": "Expected 20, because one head and one tail is 1 out of 4 outcomes",
+    "C": "Expected 42, because that is what happened",
+    "D": "Expected 40, so 42 is close to theory"
+   },
+   "answer": "D",
+   "explanation": "HT and TH give one of each, so P = 2/4 = 1/2, and 1/2 × 80 = 40. 42 is close. Thinking the three results are equally likely gives about 27, which is wrong.",
+   "steps": [
+    "Outcomes for two coins: HH, HT, TH, TT. One of each is HT or TH — 2 of 4, so P = 1/2.",
+    "Expected number = 1/2 × 80 = 40, and the 42 observed is close to this."
+   ],
+   "mistakes": {
+    "A": "Step 1: the three results are not equally likely. List HH, HT, TH, TT — one of each happens in 2 of the 4.",
+    "B": "Step 1: one of each happens in TWO outcomes, HT and TH, so it is 2 out of 4.",
+    "C": "Step 2: the expected number comes from theory: probability × trials. Then compare it with the 42 that happened."
+   },
+   "diagram": "diagrams/y8/maths/experimental-probability-q4.svg",
+   "diagram_alt": "Column graph of 80 tosses of two coins: two heads 17, one head and one tail 42, two tails 21"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Four groups each spin the same spinner 30 times. The column graph shows how many times each group’s spinner landed on blue. Using all the results together, what is the best estimate of P(blue)?",
+   "options": {
+    "A": "13/30",
+    "B": "1/3",
+    "C": "7/30",
+    "D": "4/3"
+   },
+   "answer": "B",
+   "explanation": "All together: 7 + 11 + 9 + 13 = 40 blues in 4 × 30 = 120 spins, so 40/120 = 1/3. Picking one group’s result (like 13/30) uses fewer trials, so it is less reliable.",
+   "steps": [
+    "Total blues: 7 + 11 + 9 + 13 = 40.",
+    "Total spins: 4 × 30 = 120.",
+    "Best estimate: 40/120 = 1/3."
+   ],
+   "mistakes": {
+    "A": "Step 1: 13/30 uses only the group with the most blues. Combine every group’s results for the best estimate.",
+    "C": "Step 1: 7/30 uses only one group. Add up all the blues and all the spins.",
+    "D": "Step 2: 40 blues out of 120 spins, not 40 out of 30 — a probability can’t be more than 1."
+   },
+   "diagram": "diagrams/y8/maths/experimental-probability-q5.svg",
+   "diagram_alt": "Column graph of the number of blues each group got in 30 spins: Group 1 got 7, Group 2 got 11, Group 3 got 9 and Group 4 got 13"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A basketballer scores 1 in every 4 free throws. Which is a good way to simulate one of her free throws?",
+   "options": {
+    "A": "Toss a coin; heads means “score”",
+    "B": "Roll a die; 1 means “score”",
+    "C": "Spin a spinner with 4 equal sections; 3 sections mean “score”",
+    "D": "Spin a spinner with 4 equal sections; 1 section means “score”"
+   },
+   "answer": "D",
+   "explanation": "A simulation must give the same probability as the real event: one section out of four equal sections gives exactly 1/4. A coin gives 1/2, which is too high.",
+   "steps": [
+    "Her probability of scoring is 1/4.",
+    "A spinner with 4 equal sections, with 1 section for “score”, gives exactly 1/4."
+   ],
+   "mistakes": {
+    "A": "Step 1: a coin gives a 1/2 chance, but she scores with probability 1/4. Match the probability.",
+    "B": "Step 1: a die gives P(1) = 1/6, not 1/4. Choose a device with a 1 in 4 chance.",
+    "C": "Step 2: that gives a 3/4 chance of scoring. She scores only 1 time in 4."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A die was rolled 120 times, with the results shown in the column graph. What is the experimental probability of rolling a number greater than 4, and how does it compare with the theoretical probability?",
+   "options": {
+    "A": "13/24, a bit more than the theoretical 1/2",
+    "B": "22/120, much less than the theoretical 1/3",
+    "C": "41/120, very close to the theoretical 1/3 (40/120)",
+    "D": "41/120, much more than the theoretical 1/6"
+   },
+   "answer": "C",
+   "explanation": "Greater than 4 means 5 or 6: 19 + 22 = 41, so 41/120 ≈ 0.34. Theory: 2/6 = 1/3 = 40/120. These are very close. Including 4 gives 65/120 = 13/24, which answers “4 or more”.",
+   "steps": [
+    "Greater than 4 means 5 or 6: frequency 19 + 22 = 41, so experimental P = 41/120.",
+    "Theoretical P = 2/6 = 1/3, which is 40/120.",
+    "41/120 is very close to 40/120."
+   ],
+   "mistakes": {
+    "A": "Step 1: “greater than 4” is only 5 and 6. You also included 4.",
+    "B": "Step 1: you used only the 6s. Greater than 4 means 5 or 6, so add 19 and 22.",
+    "D": "Step 2: two numbers (5 and 6) are greater than 4, so the theoretical probability is 2/6 = 1/3, not 1/6."
+   },
+   "diagram": "diagrams/y8/maths/experimental-probability-q7.svg",
+   "diagram_alt": "Column graph of 120 rolls of a die: 1 came up 18 times, 2 came up 22, 3 came up 15, 4 came up 24, 5 came up 19 and 6 came up 22"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Ella spins a spinner and keeps a running total. After 20 spins she has 9 reds; after 100 spins, 31 reds; after 400 spins, 102 reds. Using the best estimate, about how many reds should she expect in 1000 spins?",
+   "options": {
+    "A": "255",
+    "B": "450",
+    "C": "310",
+    "D": "142"
+   },
+   "answer": "A",
+   "explanation": "The best estimate uses the most trials: 102/400 = 0.255, so expect 0.255 × 1000 = 255 reds. Using the first 20 spins (0.45) gives 450 — far less reliable.",
+   "steps": [
+    "Running totals: the 400-spin figure includes all the earlier spins and is the most reliable.",
+    "Best estimate: P(red) ≈ 102 ÷ 400 = 0.255.",
+    "Expected reds in 1000 spins ≈ 0.255 × 1000 = 255."
+   ],
+   "mistakes": {
+    "B": "Step 1: 9/20 = 0.45 is based on only 20 spins. Use the estimate from the most trials.",
+    "C": "Step 1: 31/100 = 0.31 is based on 100 spins. The 400-spin result is more reliable.",
+    "D": "Step 1: 9 + 31 + 102 double counts — these are running totals, so the 102 already includes the earlier reds. Use 102 out of 400."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A café recorded 200 customers: 120 adults (54 bought dessert) and 80 children (52 bought dessert). Tomorrow a school group of 60 children is booked. Based on this data, about how many of them would you expect to buy dessert?",
+   "options": {
+    "A": "27",
+    "B": "31.8",
+    "C": "39",
+    "D": "52"
+   },
+   "answer": "C",
+   "explanation": "Children’s experimental probability = 52/80 = 0.65, so expect 0.65 × 60 = 39. Using everyone’s rate (0.53) ignores that children buy dessert more often than adults.",
+   "steps": [
+    "Use the data for the right group — children: 52 out of 80.",
+    "Experimental P(dessert) for children = 52 ÷ 80 = 0.65.",
+    "Expected = 0.65 × 60 = 39 children."
+   ],
+   "mistakes": {
+    "A": "Step 1: 54/120 = 0.45 is the rate for adults. The group is children, so use the children’s rate.",
+    "B": "Step 1: 106/200 = 0.53 mixes adults and children. Use only the children’s results.",
+    "D": "Step 2: 52 is how many children bought dessert last time out of 80. Find the rate, then multiply by 60."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Sam simulates families with 3 children by tossing 3 coins (heads = girl). In 50 trials he gets “at least 2 girls” 27 times. Assuming a girl and a boy are equally likely, how many times would theory predict “at least 2 girls” in 50 trials?",
+   "options": {
+    "A": "25",
+    "B": "18.75",
+    "C": "6.25",
+    "D": "27"
+   },
+   "answer": "A",
+   "explanation": "Of the 8 outcomes, GGB, GBG, BGG and GGG have at least 2 girls: 4/8 = 1/2, so theory predicts 1/2 × 50 = 25. Sam’s 27 is close. Using 3/8 counts only exactly 2 girls.",
+   "steps": [
+    "List the 8 equally likely outcomes for 3 children: GGG, GGB, GBG, BGG, GBB, BGB, BBG, BBB.",
+    "At least 2 girls: GGG, GGB, GBG, BGG — 4 outcomes, so P = 4/8 = 1/2.",
+    "Theory predicts 1/2 × 50 = 25."
+   ],
+   "mistakes": {
+    "B": "Step 2: 3/8 is the probability of EXACTLY 2 girls. “At least 2” also includes 3 girls.",
+    "C": "Step 2: 1/8 is the probability of 3 girls only. “At least 2” also includes the outcomes with exactly 2 girls.",
+    "D": "Step 3: 27 is what the simulation gave. Theory is the probability × 50."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A bag holds 10 counters, some red and the rest white. Lily draws a counter, records its colour and puts it back. She does this 80 times and gets red 31 times. What is the best estimate of the number of red counters in the bag?",
+   "options": {
+    "A": "31",
+    "B": "6",
+    "C": "3",
+    "D": "4"
+   },
+   "answer": "D",
+   "explanation": "Experimental P(red) = 31/80 ≈ 0.39, so about 0.39 × 10 ≈ 3.9 red counters — best estimate 4. Answering 6 estimates the white counters instead.",
+   "steps": [
+    "Experimental P(red) = 31 ÷ 80 ≈ 0.39.",
+    "If P(red) ≈ 0.39, the fraction of red counters is about 0.39, so red ≈ 0.39 × 10 ≈ 3.9.",
+    "Counters are whole, so the best estimate is 4 red counters."
+   ],
+   "mistakes": {
+    "A": "Step 2: 31 is the number of red draws, not red counters. There are only 10 counters in the bag.",
+    "B": "Step 1: 49 out of 80 were white. 6 is the estimate for the white counters.",
+    "C": "Step 3: you rounded down (or dropped the decimal). Round 31/80 × 10 to the NEAREST whole number."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Jai rolls a die 60 times and gets 16 sixes. Mai rolls the same die 600 times and gets 160 sixes. Which statement is best?",
+   "options": {
+    "A": "Jai’s and Mai’s results give equally strong evidence, because both are 4/15",
+    "B": "Mai’s results give much stronger evidence that the die is biased towards 6",
+    "C": "Neither shows anything, because a die always gives 1/6",
+    "D": "Jai’s results give stronger evidence, because he found bias with fewer rolls"
+   },
+   "answer": "B",
+   "explanation": "Both relative frequencies are 4/15 ≈ 0.27, more than 1/6 ≈ 0.17. With 60 rolls (16 vs 10 expected) that could be chance, but 160 sixes where 100 are expected in 600 rolls is very unlikely for a fair die. More trials means stronger evidence.",
+   "steps": [
+    "Both relative frequencies: 16/60 = 160/600 = 4/15 ≈ 0.27; a fair die gives 1/6 ≈ 0.17.",
+    "Expected sixes: 10 in 60 rolls and 100 in 600 rolls.",
+    "6 extra sixes in 60 rolls could easily be chance, but 60 extra in 600 rolls is very unlikely — Mai’s evidence is much stronger."
+   ],
+   "mistakes": {
+    "A": "Step 2: the fractions are equal, but Mai did 10 times as many trials. More trials give stronger evidence.",
+    "C": "Step 1: 1/6 is the probability for a FAIR die. Experiments are how we check whether a die is fair.",
+    "D": "Step 2: small numbers of trials vary a lot by chance. Fewer rolls gives weaker evidence, not stronger."
+   }
+  }
+ ]
 }

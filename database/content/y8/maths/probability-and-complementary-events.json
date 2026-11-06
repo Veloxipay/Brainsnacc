@@ -1,280 +1,281 @@
 {
-  "level": "Year 8",
-  "subject": "maths",
-  "unit": "Year 8",
-  "title": "Probability and complementary events",
-  "summary": "Learn to use complements, mutually exclusive events and the fact that probabilities add to 1 to find probabilities, including “at least”, “or” and two-dice problems.",
-  "minutes": 40,
-  "body": "A weather app says there is a 30% chance of rain. What is the chance it stays dry? You already know the answer is 70% — and that quick “one minus” idea is one of the most useful tools in probability. In this lesson you’ll use it for harder events, combine events with “or”, and learn when probabilities can simply be added.\n\n## Learning objective\n\nBy the end of this lesson you can describe events using “not”, “or” and “and”, recognise complementary and mutually exclusive events, and use the facts that complementary probabilities add to 1 and that all the outcomes’ probabilities add to 1.\n\n## Before you start\n\nYou need sample spaces and P(event) = favourable ÷ total from *Chance and the probability scale (Year 7)*, and adding fractions from *Operations with fractions (Year 8)*.\n\n**Warm-up**\n\n1. Find 1 − 2/5. *(Answer: 3/5)*\n2. Find 1 − 0.36. *(Answer: 0.64)*\n\n## Think of it like this\n\n### A light switch\n\nA light is either on or off — never both, and never anything else. If you know the chance it’s on, you instantly know the chance it’s off: they share the whole 100% between them. An event and its **complement** are like “on” and “off”.\n\n*Where the analogy breaks down:* a switch has only two states, but most experiments have many outcomes. The complement of “rolling a 6” is not one outcome — it is five outcomes (1, 2, 3, 4 and 5) grouped together.\n\n## Key ideas\n\n### Complementary events\n\nThe **complement** of event A is everything in the sample space that is NOT in A. It is written **not A** (some books write A′ or Aᶜ). An event and its complement are **complementary events**: exactly one of them must happen, so\n\n`P(A) + P(not A) = 1`, which gives `P(not A) = 1 − P(A)`\n\n![A bar from 0 to 1 split into two parts: P(A) = 0.3 shaded and P(not A) = 0.7 unshaded; together they make the whole bar, 1](/diagrams/y8/maths/probability-and-complementary-events-bar.svg)\n\nWatch the boundaries: on a die, the complement of “less than 3” = {1, 2} is “3 or more” = {3, 4, 5, 6}.\n\n### “At least” and “at most”\n\nThese phrases often have a much smaller complement:\n\n- The complement of “**at least** 2” (2 or more) is “less than 2”.\n- The complement of “**at most** 4” (4 or fewer) is “more than 4”.\n\nWhen an event has many outcomes, count the complement instead and subtract from 1.\n\n### Mutually exclusive events\n\nTwo events are **mutually exclusive** if they cannot happen at the same time. Rolling a 2 and rolling a 5 on one die are mutually exclusive. Rolling an even number and rolling a number greater than 3 are NOT, because 4 and 6 are in both.\n\nFor mutually exclusive events,\n\n`P(A or B) = P(A) + P(B)`\n\nComplementary events are always mutually exclusive, but mutually exclusive events aren’t always complementary (red and blue counters can’t both be picked, but there might be green ones too).\n\n### All the probabilities add to 1\n\nIf a list of events is mutually exclusive and covers every outcome, their probabilities add to 1. This lets you find a missing probability in a table.\n\n### “And” and “or” in words\n\n- “A **or** B” means A happens, or B happens, or both.\n- “A **and** B” means both happen at the same time.\n- For two dice, a grid of all 6 × 6 = 36 outcomes is the sample space.\n\n## Worked examples\n\n### Example 1\n\nA card is drawn from cards numbered 1 to 20. A is the event “a multiple of 3”. Find P(A) and P(not A).\n\nStep 1: list A — 3, 6, 9, 12, 15, 18 — so 6 outcomes out of 20.\nStep 2: P(A) = 6/20 = **3/10**.\nStep 3: P(not A) = 1 − 3/10 = **7/10** — the complement rule.\nCheck: 20 − 6 = 14 numbers aren’t multiples of 3, and 14/20 = 7/10 ✓\n\n### Example 2\n\nA spinner lands on red, blue, green or yellow. Find the missing probability, then find P(not blue) and P(red or green).\n\n![A spinner drawn to scale: red 0.25, blue 0.4, yellow 0.15 and green marked with a question mark](/diagrams/y8/maths/probability-and-complementary-events-ex2.svg)\n\n\n| Colour | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Probability | 0.25 | 0.4 | ? | 0.15 |\n\nStep 1: all the probabilities add to 1, so P(green) = 1 − (0.25 + 0.4 + 0.15) = 1 − 0.8 = **0.2**.\nStep 2: P(not blue) = 1 − 0.4 = **0.6**.\nStep 3: red and green are mutually exclusive, so P(red or green) = 0.25 + 0.2 = **0.45**.\n\n### Example 3\n\nA fair die is rolled. Find P(at least 2) and P(not at most 4).\n\nStep 1: the complement of “at least 2” is “rolling a 1” — only 1 outcome, so it’s quicker.\nStep 2: P(at least 2) = 1 − 1/6 = **5/6**.\nStep 3: “at most 4” = {1, 2, 3, 4}, so P(at most 4) = 4/6.\nStep 4: P(not at most 4) = 1 − 4/6 = 2/6 = **1/3** — this is rolling a 5 or a 6.\n\n### Example 4\n\nTwo fair dice are rolled and the numbers are added. Find the probability that the total is NOT 7.\n\n![A 6 by 6 grid of the totals of two dice, from 2 to 12; the six cells with a total of 7 lie on one diagonal and are shaded](/diagrams/y8/maths/probability-and-complementary-events-ex4.svg)\n\n\nStep 1: the sample space is a 6 × 6 grid — **36** equally likely outcomes.\nStep 2: totals of 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — **6** outcomes.\nStep 3: P(total of 7) = 6/36 = 1/6.\nStep 4: P(not 7) = 1 − 1/6 = **5/6**.\nCheck: counting the other 30 outcomes directly gives 30/36 = 5/6 ✓\n\n## Common mistakes\n\n- **Getting the boundary wrong.** The complement of “greater than 3” is “3 or less”, not “less than 3”. Fix: list the outcomes in the event, then list everything left over.\n- **Adding events that overlap.** “Even or greater than 3” on a die is not 3/6 + 3/6 = 1. Fix: only add when the events are mutually exclusive; otherwise list the outcomes and count each once.\n- **Stopping one step early.** After finding P(red or blue), some students forget to subtract from 1 when the question asked for “neither”. Fix: reread what the question asks for.\n- **Multiplying for “or”.** Fix: for mutually exclusive events, “or” means add.\n\n## Tips to remember\n\n- **“Not means one minus.”** P(not A) = 1 − P(A). (A made-up memory trick.)\n- **On or off.** An event and its complement share the whole 1 between them, like a light switch.\n- **Count the small side.** If the event is big (“at least 2”), count its complement instead.\n- **Can they happen together?** If no, they’re mutually exclusive and you may add.\n- **Whole table = 1.** All outcome probabilities add to 1 — use it to fill gaps.\n\n## Key terms\n\n- **Complement (not A)** — all the outcomes not in event A.\n- **Complementary events** — an event and its complement; their probabilities add to 1.\n- **Mutually exclusive** — events that cannot happen at the same time.\n- **At least** — that number or more.\n- **At most** — that number or fewer.\n- **A or B** — A happens, B happens, or both happen.\n\n## Summary\n\n- P(not A) = 1 − P(A), because an event and its complement cover everything.\n- For “at least” or “at most” questions, it is often easier to find the complement.\n- Mutually exclusive events can’t happen together; for them, P(A or B) = P(A) + P(B).\n- The probabilities of all the outcomes of an experiment add to 1.\n- Use a grid of 36 outcomes for questions about two dice.",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "The probability that a light globe is faulty is 0.08. What is the probability that it is NOT faulty?",
-      "options": {
-        "A": "0.08",
-        "B": "0.2",
-        "C": "1.08",
-        "D": "0.92"
-      },
-      "answer": "D",
-      "explanation": "Faulty and not faulty are complementary, so P(not faulty) = 1 − 0.08 = 0.92. Writing 0.2 comes from treating 0.08 as 0.8.",
-      "steps": [
-        "“Faulty” and “not faulty” are complementary — together they cover every outcome.",
-        "P(not faulty) = 1 − 0.08 = 0.92."
-      ],
-      "mistakes": {
-        "A": "Step 1: 0.08 is the probability it IS faulty. The complement is 1 minus this.",
-        "B": "Step 2: check the subtraction with decimals: 1.00 − 0.08, not 1 − 0.8.",
-        "C": "Step 2: subtract, don’t add. P(not A) = 1 − P(A), and a probability can’t be more than 1."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "A single card is drawn from cards numbered 1 to 10. Which pair of events are mutually exclusive?",
-      "options": {
-        "A": "“an even number” and “a number greater than 5”",
-        "B": "“an even number” and “an odd number”",
-        "C": "“a multiple of 3” and “an odd number”",
-        "D": "“a number less than 4” and “a prime number”"
-      },
-      "answer": "B",
-      "explanation": "Mutually exclusive means the events can’t happen together. No number is both even and odd. In each other pair there is a card that fits both events (for example 6 is even and greater than 5).",
-      "steps": [
-        "Mutually exclusive events cannot happen at the same time — look for a card that fits both.",
-        "No number from 1 to 10 is both even and odd, so those two events are mutually exclusive."
-      ],
-      "mistakes": {
-        "A": "Step 2: 6, 8 and 10 are even AND greater than 5, so both can happen at once.",
-        "C": "Step 2: 3 and 9 are multiples of 3 AND odd, so both can happen at once.",
-        "D": "Step 2: 2 and 3 are less than 4 AND prime, so both can happen at once."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "A fair six-sided die is rolled. What is the complement of the event “rolling a number less than 3”?",
-      "options": {
-        "A": "Rolling a number greater than 3",
-        "B": "Rolling a 1 or a 2",
-        "C": "Rolling a number greater than or equal to 3",
-        "D": "Rolling a 6"
-      },
-      "answer": "C",
-      "explanation": "The event is {1, 2}, so the complement is everything else: {3, 4, 5, 6} — the numbers greater than or equal to 3. “Greater than 3” is tempting but leaves out 3.",
-      "steps": [
-        "The event “less than 3” is {1, 2}.",
-        "The complement is every other outcome: {3, 4, 5, 6}, which is “3 or more”."
-      ],
-      "mistakes": {
-        "A": "Step 2: 3 itself is not less than 3, so it belongs in the complement. Include 3.",
-        "B": "Step 1: 1 and 2 ARE the event (less than 3). The complement is everything else.",
-        "D": "Step 2: the complement includes every outcome not in the event — that is 3, 4, 5 and 6, not just 6."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A student gets to school by exactly one of these: car, bus, bike or walking. The diagram shows P(car) = 0.35, P(bike) = 0.2 and P(walk) = 0.1. What is P(bus)?",
-      "options": {
-        "A": "0.35",
-        "B": "0.65",
-        "C": "0.7",
-        "D": "0.25"
-      },
-      "answer": "A",
-      "explanation": "The four ways are mutually exclusive and cover every outcome, so they add to 1: P(bus) = 1 − (0.35 + 0.2 + 0.1) = 1 − 0.65 = 0.35. Stopping at 0.65 gives the total of the others, not P(bus).",
-      "steps": [
-        "The probabilities of all the possible outcomes add to 1.",
-        "Add the known ones: 0.35 + 0.2 + 0.1 = 0.65.",
-        "P(bus) = 1 − 0.65 = 0.35."
-      ],
-      "mistakes": {
-        "B": "Step 1: 0.65 is the total of the three given probabilities. Subtract it from 1.",
-        "C": "Step 2: 1 − 0.3 only takes away bike and walk. Subtract car as well.",
-        "D": "Step 2: all four probabilities must add to exactly 1 — the answer is not just a quarter."
-      },
-      "diagram": "diagrams/y8/maths/probability-and-complementary-events-q4.svg",
-      "diagram_alt": "A circle split into four parts: car 0.35, bike 0.2, walk 0.1 and bus marked with a question mark"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The bag in the diagram has 5 red, 4 blue, 8 green and 3 yellow counters. One counter is chosen at random. What is P(red or blue)?",
-      "options": {
-        "A": "9/20",
-        "B": "9/17",
-        "C": "1/20",
-        "D": "11/20"
-      },
-      "answer": "A",
-      "explanation": "Red and blue are mutually exclusive, so P(red or blue) = 5/20 + 4/20 = 9/20. Answering 11/20 gives the complement (green or yellow).",
-      "steps": [
-        "Total counters: 5 + 4 + 8 + 3 = 20.",
-        "A counter can’t be red and blue at once, so add: P(red or blue) = 5/20 + 4/20.",
-        "P(red or blue) = 9/20."
-      ],
-      "mistakes": {
-        "B": "Step 1: the total is all the counters: 5 + 4 + 8 + 3 = 20, not 17.",
-        "C": "Step 2: you multiplied 5/20 by 4/20. For “or” with mutually exclusive events, add the probabilities.",
-        "D": "Step 3: 11/20 is P(green or yellow) — the complement. You want red or blue."
-      },
-      "diagram": "diagrams/y8/maths/probability-and-complementary-events-q5.svg",
-      "diagram_alt": "A bag of 20 counters: 5 red (R), 4 blue (B), 8 green (G) and 3 yellow (Y)"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The 11 letters of the word PROBABILITY are written on cards, one letter per card. One card is picked at random. What is the probability that it is NOT a vowel (A, E, I, O, U)?",
-      "options": {
-        "A": "4/11",
-        "B": "8/11",
-        "C": "7/11",
-        "D": "6/11"
-      },
-      "answer": "C",
-      "explanation": "The vowels are O, A, I, I — 4 cards — so P(not a vowel) = 1 − 4/11 = 7/11. Counting the I only once gives 8/11.",
-      "steps": [
-        "Vowel cards: O, A, I, I — 4 cards out of 11 (count both I’s).",
-        "P(vowel) = 4/11.",
-        "P(not a vowel) = 1 − 4/11 = 7/11."
-      ],
-      "mistakes": {
-        "A": "Step 2: 4/11 is the probability of a vowel (O, A, I, I). Subtract it from 1.",
-        "B": "Step 1: count the vowels again — O, A, I and I make 4, including both I’s.",
-        "D": "Step 1: Y is not in the vowel list (A, E, I, O, U), so don’t count it as a vowel."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Two fair dice are rolled. The grid shows all the possible outcomes. What is the probability that the two numbers are NOT the same?",
-      "options": {
-        "A": "1/6",
-        "B": "1/2",
-        "C": "35/36",
-        "D": "5/6"
-      },
-      "answer": "D",
-      "explanation": "There are 36 equally likely outcomes and 6 doubles, so P(double) = 6/36 = 1/6 and P(not a double) = 1 − 1/6 = 5/6. Answering 35/36 counts only one double.",
-      "steps": [
-        "Two dice have 6 × 6 = 36 equally likely outcomes.",
-        "Doubles: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) — 6 outcomes, so P(double) = 6/36 = 1/6.",
-        "P(not a double) = 1 − 1/6 = 5/6."
-      ],
-      "mistakes": {
-        "A": "Step 2: 6/36 = 1/6 is the probability of a double. You want the complement.",
-        "B": "Step 1: “same” and “not same” are not equally likely. List all 6 × 6 = 36 outcomes and count the doubles.",
-        "C": "Step 1: there are 6 doubles (1-1, 2-2, … 6-6), not just one."
-      },
-      "diagram": "diagrams/y8/maths/probability-and-complementary-events-q7.svg",
-      "diagram_alt": "A 6 by 6 grid listing all 36 outcomes for two dice, from 1,1 to 6,6, with nothing shaded"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A game has only three results: win, draw or lose. P(win) = 1/4 and P(draw) = 1/3. What is P(lose)?",
-      "options": {
-        "A": "7/12",
-        "B": "5/12",
-        "C": "1/12",
-        "D": "5/7"
-      },
-      "answer": "B",
-      "explanation": "P(win or draw) = 3/12 + 4/12 = 7/12, so P(lose) = 1 − 7/12 = 5/12. Stopping at 7/12 gives P(win or draw), not P(lose).",
-      "steps": [
-        "Win, draw and lose are mutually exclusive and cover everything, so they add to 1.",
-        "P(win or draw) = 1/4 + 1/3 = 3/12 + 4/12 = 7/12.",
-        "P(lose) = 1 − 7/12 = 5/12."
-      ],
-      "mistakes": {
-        "A": "Step 2: 7/12 is P(win or draw). Subtract it from 1 to get P(lose).",
-        "C": "Step 2: you multiplied 1/4 × 1/3. The three results are mutually exclusive, so add the two then subtract from 1.",
-        "D": "Step 2: you added the tops and the bottoms (1/4 + 1/3 = 2/7), then did 1 − 2/7. Use a common denominator: 3/12 + 4/12."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Raffle tickets are numbered 1 to 50. One ticket is drawn. What is the probability that the number does NOT contain the digit 3?",
-      "options": {
-        "A": "7/25",
-        "B": "18/25",
-        "C": "9/10",
-        "D": "7/10"
-      },
-      "answer": "B",
-      "explanation": "Tickets with a 3: 3, 13, 23, 43 and 30–39, which is 4 + 10 = 14 tickets. So P(no 3) = 1 − 14/50 = 36/50 = 18/25. Counting only numbers that end in 3 misses 30–39.",
-      "steps": [
-        "List tickets containing a 3: 3, 13, 23, 43 (4 tickets) and 30, 31, …, 39 (10 tickets). 33 is in the second list only.",
-        "That is 14 tickets, so P(contains a 3) = 14/50.",
-        "P(no 3) = 1 − 14/50 = 36/50 = 18/25."
-      ],
-      "mistakes": {
-        "A": "Step 2: 14/50 = 7/25 is the probability that the number DOES contain a 3. Subtract from 1.",
-        "C": "Step 1: you only counted numbers ending in 3. Also count 30 to 39, which start with 3 (count 33 once).",
-        "D": "Step 1: you counted 33 twice (once for ending in 3 and once in 30–39). It is one ticket, so count it once."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Two fair dice are rolled and the numbers are added. The grid shows every total. What is the probability that the total is at least 4?",
-      "options": {
-        "A": "1/12",
-        "B": "5/6",
-        "C": "11/12",
-        "D": "9/11"
-      },
-      "answer": "C",
-      "explanation": "The complement of “at least 4” is “2 or 3”: (1,1), (1,2), (2,1) — 3 outcomes. So P = 1 − 3/36 = 33/36 = 11/12. Answering 5/6 wrongly puts a total of 4 in the complement.",
-      "steps": [
-        "There are 36 equally likely outcomes. The complement of “at least 4” is a total of 2 or 3.",
-        "Total 2: (1,1). Total 3: (1,2), (2,1). That is 3 outcomes, so P(2 or 3) = 3/36 = 1/12.",
-        "P(at least 4) = 1 − 1/12 = 11/12."
-      ],
-      "mistakes": {
-        "A": "Step 2: 3/36 = 1/12 is the probability of a total of 2 or 3. Subtract it from 1.",
-        "B": "Step 1: “at least 4” includes a total of 4. The complement is only totals 2 and 3.",
-        "D": "Step 1: totals 2 to 12 are not equally likely, so you can’t use 9 out of 11 totals. Use the 36 outcomes."
-      },
-      "diagram": "diagrams/y8/maths/probability-and-complementary-events-q10.svg",
-      "diagram_alt": "A 6 by 6 grid showing the total of two dice for each of the 36 outcomes, from 2 to 12, with nothing shaded"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A bag holds only red, blue and green marbles. P(red) = 1/3 and P(blue) = 1/4. There are 10 green marbles. How many marbles are in the bag altogether?",
-      "options": {
-        "A": "24",
-        "B": "12",
-        "C": "10",
-        "D": "120"
-      },
-      "answer": "A",
-      "explanation": "P(green) = 1 − 1/3 − 1/4 = 5/12. If 5/12 of the bag is 10 marbles, then 1/12 is 2, so the bag has 24. Check: 8 red + 6 blue + 10 green = 24 ✓",
-      "steps": [
-        "P(green) = 1 − (1/3 + 1/4) = 1 − 7/12 = 5/12.",
-        "5/12 of the marbles is 10, so 1/12 of the marbles is 10 ÷ 5 = 2.",
-        "Total = 12 × 2 = 24 marbles."
-      ],
-      "mistakes": {
-        "B": "Step 2: 12 is the common denominator, not the number of marbles. 5/12 of the bag is 10 marbles, so 1/12 is 2 marbles.",
-        "C": "Step 2: 10 is only the green marbles. They make up 5/12 of the bag, so the whole bag is bigger.",
-        "D": "Step 2: 10 green marbles are 5/12 of the bag, not 1/12. Divide 10 by 5 first to find 1/12 of the bag."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Events A and B are mutually exclusive. P(A) = 0.3 and P(not B) = 0.55. What is the probability that neither A nor B happens?",
-      "options": {
-        "A": "0.15",
-        "B": "0.45",
-        "C": "0.385",
-        "D": "0.25"
-      },
-      "answer": "D",
-      "explanation": "P(B) = 1 − 0.55 = 0.45. A and B can’t both happen, so P(A or B) = 0.3 + 0.45 = 0.75, and P(neither) = 1 − 0.75 = 0.25. Using 0.55 as P(B) gives 0.15.",
-      "steps": [
-        "P(B) = 1 − P(not B) = 1 − 0.55 = 0.45.",
-        "A and B are mutually exclusive, so P(A or B) = 0.3 + 0.45 = 0.75.",
-        "“Neither” is the complement of “A or B”: 1 − 0.75 = 0.25."
-      ],
-      "mistakes": {
-        "A": "Step 1: 0.55 is P(not B), not P(B). First find P(B) = 1 − 0.55.",
-        "B": "Step 1: 0.45 is P(B). Keep going: add P(A), then subtract from 1.",
-        "C": "Step 2: you multiplied 0.7 × 0.55. For mutually exclusive events, add P(A) and P(B), then take the complement."
-      }
-    }
-  ]
+ "level": "Year 8",
+ "subject": "maths",
+ "unit": "Year 8",
+ "title": "Probability and complementary events",
+ "summary": "Learn to use complements, mutually exclusive events and the fact that probabilities add to 1 to find probabilities, including “at least”, “or” and two-dice problems.",
+ "minutes": 40,
+ "video": "videos/y8/maths/probability-and-complementary-events.mp4",
+ "body": "A weather app says there is a 30% chance of rain. What is the chance it stays dry? You already know the answer is 70% — and that quick “one minus” idea is one of the most useful tools in probability. In this lesson you’ll use it for harder events, combine events with “or”, and learn when probabilities can simply be added.\n\n## Learning objective\n\nBy the end of this lesson you can describe events using “not”, “or” and “and”, recognise complementary and mutually exclusive events, and use the facts that complementary probabilities add to 1 and that all the outcomes’ probabilities add to 1.\n\n## Before you start\n\nYou need sample spaces and P(event) = favourable ÷ total from *Chance and the probability scale (Year 7)*, and adding fractions from *Operations with fractions (Year 8)*.\n\n**Warm-up**\n\n1. Find 1 − 2/5. *(Answer: 3/5)*\n2. Find 1 − 0.36. *(Answer: 0.64)*\n\n## Think of it like this\n\n### A light switch\n\nA light is either on or off — never both, and never anything else. If you know the chance it’s on, you instantly know the chance it’s off: they share the whole 100% between them. An event and its **complement** are like “on” and “off”.\n\n*Where the analogy breaks down:* a switch has only two states, but most experiments have many outcomes. The complement of “rolling a 6” is not one outcome — it is five outcomes (1, 2, 3, 4 and 5) grouped together.\n\n## Key ideas\n\n### Complementary events\n\nThe **complement** of event A is everything in the sample space that is NOT in A. It is written **not A** (some books write A′ or Aᶜ). An event and its complement are **complementary events**: exactly one of them must happen, so\n\n`P(A) + P(not A) = 1`, which gives `P(not A) = 1 − P(A)`\n\n![A bar from 0 to 1 split into two parts: P(A) = 0.3 shaded and P(not A) = 0.7 unshaded; together they make the whole bar, 1](/diagrams/y8/maths/probability-and-complementary-events-bar.svg)\n\nWatch the boundaries: on a die, the complement of “less than 3” = {1, 2} is “3 or more” = {3, 4, 5, 6}.\n\n### “At least” and “at most”\n\nThese phrases often have a much smaller complement:\n\n- The complement of “**at least** 2” (2 or more) is “less than 2”.\n- The complement of “**at most** 4” (4 or fewer) is “more than 4”.\n\nWhen an event has many outcomes, count the complement instead and subtract from 1.\n\n### Mutually exclusive events\n\nTwo events are **mutually exclusive** if they cannot happen at the same time. Rolling a 2 and rolling a 5 on one die are mutually exclusive. Rolling an even number and rolling a number greater than 3 are NOT, because 4 and 6 are in both.\n\nFor mutually exclusive events,\n\n`P(A or B) = P(A) + P(B)`\n\nComplementary events are always mutually exclusive, but mutually exclusive events aren’t always complementary (red and blue counters can’t both be picked, but there might be green ones too).\n\n### All the probabilities add to 1\n\nIf a list of events is mutually exclusive and covers every outcome, their probabilities add to 1. This lets you find a missing probability in a table.\n\n### “And” and “or” in words\n\n- “A **or** B” means A happens, or B happens, or both.\n- “A **and** B” means both happen at the same time.\n- For two dice, a grid of all 6 × 6 = 36 outcomes is the sample space.\n\n## Worked examples\n\n### Example 1\n\nA card is drawn from cards numbered 1 to 20. A is the event “a multiple of 3”. Find P(A) and P(not A).\n\nStep 1: list A — 3, 6, 9, 12, 15, 18 — so 6 outcomes out of 20.\nStep 2: P(A) = 6/20 = **3/10**.\nStep 3: P(not A) = 1 − 3/10 = **7/10** — the complement rule.\nCheck: 20 − 6 = 14 numbers aren’t multiples of 3, and 14/20 = 7/10 ✓\n\n### Example 2\n\nA spinner lands on red, blue, green or yellow. Find the missing probability, then find P(not blue) and P(red or green).\n\n![A spinner drawn to scale: red 0.25, blue 0.4, yellow 0.15 and green marked with a question mark](/diagrams/y8/maths/probability-and-complementary-events-ex2.svg)\n\n\n| Colour | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Probability | 0.25 | 0.4 | ? | 0.15 |\n\nStep 1: all the probabilities add to 1, so P(green) = 1 − (0.25 + 0.4 + 0.15) = 1 − 0.8 = **0.2**.\nStep 2: P(not blue) = 1 − 0.4 = **0.6**.\nStep 3: red and green are mutually exclusive, so P(red or green) = 0.25 + 0.2 = **0.45**.\n\n### Example 3\n\nA fair die is rolled. Find P(at least 2) and P(not at most 4).\n\nStep 1: the complement of “at least 2” is “rolling a 1” — only 1 outcome, so it’s quicker.\nStep 2: P(at least 2) = 1 − 1/6 = **5/6**.\nStep 3: “at most 4” = {1, 2, 3, 4}, so P(at most 4) = 4/6.\nStep 4: P(not at most 4) = 1 − 4/6 = 2/6 = **1/3** — this is rolling a 5 or a 6.\n\n### Example 4\n\nTwo fair dice are rolled and the numbers are added. Find the probability that the total is NOT 7.\n\n![A 6 by 6 grid of the totals of two dice, from 2 to 12; the six cells with a total of 7 lie on one diagonal and are shaded](/diagrams/y8/maths/probability-and-complementary-events-ex4.svg)\n\n\nStep 1: the sample space is a 6 × 6 grid — **36** equally likely outcomes.\nStep 2: totals of 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — **6** outcomes.\nStep 3: P(total of 7) = 6/36 = 1/6.\nStep 4: P(not 7) = 1 − 1/6 = **5/6**.\nCheck: counting the other 30 outcomes directly gives 30/36 = 5/6 ✓\n\n## Common mistakes\n\n- **Getting the boundary wrong.** The complement of “greater than 3” is “3 or less”, not “less than 3”. Fix: list the outcomes in the event, then list everything left over.\n- **Adding events that overlap.** “Even or greater than 3” on a die is not 3/6 + 3/6 = 1. Fix: only add when the events are mutually exclusive; otherwise list the outcomes and count each once.\n- **Stopping one step early.** After finding P(red or blue), some students forget to subtract from 1 when the question asked for “neither”. Fix: reread what the question asks for.\n- **Multiplying for “or”.** Fix: for mutually exclusive events, “or” means add.\n\n## Tips to remember\n\n- **“Not means one minus.”** P(not A) = 1 − P(A). (A made-up memory trick.)\n- **On or off.** An event and its complement share the whole 1 between them, like a light switch.\n- **Count the small side.** If the event is big (“at least 2”), count its complement instead.\n- **Can they happen together?** If no, they’re mutually exclusive and you may add.\n- **Whole table = 1.** All outcome probabilities add to 1 — use it to fill gaps.\n\n## Key terms\n\n- **Complement (not A)** — all the outcomes not in event A.\n- **Complementary events** — an event and its complement; their probabilities add to 1.\n- **Mutually exclusive** — events that cannot happen at the same time.\n- **At least** — that number or more.\n- **At most** — that number or fewer.\n- **A or B** — A happens, B happens, or both happen.\n\n## Summary\n\n- P(not A) = 1 − P(A), because an event and its complement cover everything.\n- For “at least” or “at most” questions, it is often easier to find the complement.\n- Mutually exclusive events can’t happen together; for them, P(A or B) = P(A) + P(B).\n- The probabilities of all the outcomes of an experiment add to 1.\n- Use a grid of 36 outcomes for questions about two dice.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The probability that a light globe is faulty is 0.08. What is the probability that it is NOT faulty?",
+   "options": {
+    "A": "0.08",
+    "B": "0.2",
+    "C": "1.08",
+    "D": "0.92"
+   },
+   "answer": "D",
+   "explanation": "Faulty and not faulty are complementary, so P(not faulty) = 1 − 0.08 = 0.92. Writing 0.2 comes from treating 0.08 as 0.8.",
+   "steps": [
+    "“Faulty” and “not faulty” are complementary — together they cover every outcome.",
+    "P(not faulty) = 1 − 0.08 = 0.92."
+   ],
+   "mistakes": {
+    "A": "Step 1: 0.08 is the probability it IS faulty. The complement is 1 minus this.",
+    "B": "Step 2: check the subtraction with decimals: 1.00 − 0.08, not 1 − 0.8.",
+    "C": "Step 2: subtract, don’t add. P(not A) = 1 − P(A), and a probability can’t be more than 1."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A single card is drawn from cards numbered 1 to 10. Which pair of events are mutually exclusive?",
+   "options": {
+    "A": "“an even number” and “a number greater than 5”",
+    "B": "“an even number” and “an odd number”",
+    "C": "“a multiple of 3” and “an odd number”",
+    "D": "“a number less than 4” and “a prime number”"
+   },
+   "answer": "B",
+   "explanation": "Mutually exclusive means the events can’t happen together. No number is both even and odd. In each other pair there is a card that fits both events (for example 6 is even and greater than 5).",
+   "steps": [
+    "Mutually exclusive events cannot happen at the same time — look for a card that fits both.",
+    "No number from 1 to 10 is both even and odd, so those two events are mutually exclusive."
+   ],
+   "mistakes": {
+    "A": "Step 2: 6, 8 and 10 are even AND greater than 5, so both can happen at once.",
+    "C": "Step 2: 3 and 9 are multiples of 3 AND odd, so both can happen at once.",
+    "D": "Step 2: 2 and 3 are less than 4 AND prime, so both can happen at once."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A fair six-sided die is rolled. What is the complement of the event “rolling a number less than 3”?",
+   "options": {
+    "A": "Rolling a number greater than 3",
+    "B": "Rolling a 1 or a 2",
+    "C": "Rolling a number greater than or equal to 3",
+    "D": "Rolling a 6"
+   },
+   "answer": "C",
+   "explanation": "The event is {1, 2}, so the complement is everything else: {3, 4, 5, 6} — the numbers greater than or equal to 3. “Greater than 3” is tempting but leaves out 3.",
+   "steps": [
+    "The event “less than 3” is {1, 2}.",
+    "The complement is every other outcome: {3, 4, 5, 6}, which is “3 or more”."
+   ],
+   "mistakes": {
+    "A": "Step 2: 3 itself is not less than 3, so it belongs in the complement. Include 3.",
+    "B": "Step 1: 1 and 2 ARE the event (less than 3). The complement is everything else.",
+    "D": "Step 2: the complement includes every outcome not in the event — that is 3, 4, 5 and 6, not just 6."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A student gets to school by exactly one of these: car, bus, bike or walking. The diagram shows P(car) = 0.35, P(bike) = 0.2 and P(walk) = 0.1. What is P(bus)?",
+   "options": {
+    "A": "0.35",
+    "B": "0.65",
+    "C": "0.7",
+    "D": "0.25"
+   },
+   "answer": "A",
+   "explanation": "The four ways are mutually exclusive and cover every outcome, so they add to 1: P(bus) = 1 − (0.35 + 0.2 + 0.1) = 1 − 0.65 = 0.35. Stopping at 0.65 gives the total of the others, not P(bus).",
+   "steps": [
+    "The probabilities of all the possible outcomes add to 1.",
+    "Add the known ones: 0.35 + 0.2 + 0.1 = 0.65.",
+    "P(bus) = 1 − 0.65 = 0.35."
+   ],
+   "mistakes": {
+    "B": "Step 1: 0.65 is the total of the three given probabilities. Subtract it from 1.",
+    "C": "Step 2: 1 − 0.3 only takes away bike and walk. Subtract car as well.",
+    "D": "Step 2: all four probabilities must add to exactly 1 — the answer is not just a quarter."
+   },
+   "diagram": "diagrams/y8/maths/probability-and-complementary-events-q4.svg",
+   "diagram_alt": "A circle split into four parts: car 0.35, bike 0.2, walk 0.1 and bus marked with a question mark"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The bag in the diagram has 5 red, 4 blue, 8 green and 3 yellow counters. One counter is chosen at random. What is P(red or blue)?",
+   "options": {
+    "A": "9/20",
+    "B": "9/17",
+    "C": "1/20",
+    "D": "11/20"
+   },
+   "answer": "A",
+   "explanation": "Red and blue are mutually exclusive, so P(red or blue) = 5/20 + 4/20 = 9/20. Answering 11/20 gives the complement (green or yellow).",
+   "steps": [
+    "Total counters: 5 + 4 + 8 + 3 = 20.",
+    "A counter can’t be red and blue at once, so add: P(red or blue) = 5/20 + 4/20.",
+    "P(red or blue) = 9/20."
+   ],
+   "mistakes": {
+    "B": "Step 1: the total is all the counters: 5 + 4 + 8 + 3 = 20, not 17.",
+    "C": "Step 2: you multiplied 5/20 by 4/20. For “or” with mutually exclusive events, add the probabilities.",
+    "D": "Step 3: 11/20 is P(green or yellow) — the complement. You want red or blue."
+   },
+   "diagram": "diagrams/y8/maths/probability-and-complementary-events-q5.svg",
+   "diagram_alt": "A bag of 20 counters: 5 red (R), 4 blue (B), 8 green (G) and 3 yellow (Y)"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The 11 letters of the word PROBABILITY are written on cards, one letter per card. One card is picked at random. What is the probability that it is NOT a vowel (A, E, I, O, U)?",
+   "options": {
+    "A": "4/11",
+    "B": "8/11",
+    "C": "7/11",
+    "D": "6/11"
+   },
+   "answer": "C",
+   "explanation": "The vowels are O, A, I, I — 4 cards — so P(not a vowel) = 1 − 4/11 = 7/11. Counting the I only once gives 8/11.",
+   "steps": [
+    "Vowel cards: O, A, I, I — 4 cards out of 11 (count both I’s).",
+    "P(vowel) = 4/11.",
+    "P(not a vowel) = 1 − 4/11 = 7/11."
+   ],
+   "mistakes": {
+    "A": "Step 2: 4/11 is the probability of a vowel (O, A, I, I). Subtract it from 1.",
+    "B": "Step 1: count the vowels again — O, A, I and I make 4, including both I’s.",
+    "D": "Step 1: Y is not in the vowel list (A, E, I, O, U), so don’t count it as a vowel."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Two fair dice are rolled. The grid shows all the possible outcomes. What is the probability that the two numbers are NOT the same?",
+   "options": {
+    "A": "1/6",
+    "B": "1/2",
+    "C": "35/36",
+    "D": "5/6"
+   },
+   "answer": "D",
+   "explanation": "There are 36 equally likely outcomes and 6 doubles, so P(double) = 6/36 = 1/6 and P(not a double) = 1 − 1/6 = 5/6. Answering 35/36 counts only one double.",
+   "steps": [
+    "Two dice have 6 × 6 = 36 equally likely outcomes.",
+    "Doubles: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) — 6 outcomes, so P(double) = 6/36 = 1/6.",
+    "P(not a double) = 1 − 1/6 = 5/6."
+   ],
+   "mistakes": {
+    "A": "Step 2: 6/36 = 1/6 is the probability of a double. You want the complement.",
+    "B": "Step 1: “same” and “not same” are not equally likely. List all 6 × 6 = 36 outcomes and count the doubles.",
+    "C": "Step 1: there are 6 doubles (1-1, 2-2, … 6-6), not just one."
+   },
+   "diagram": "diagrams/y8/maths/probability-and-complementary-events-q7.svg",
+   "diagram_alt": "A 6 by 6 grid listing all 36 outcomes for two dice, from 1,1 to 6,6, with nothing shaded"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A game has only three results: win, draw or lose. P(win) = 1/4 and P(draw) = 1/3. What is P(lose)?",
+   "options": {
+    "A": "7/12",
+    "B": "5/12",
+    "C": "1/12",
+    "D": "5/7"
+   },
+   "answer": "B",
+   "explanation": "P(win or draw) = 3/12 + 4/12 = 7/12, so P(lose) = 1 − 7/12 = 5/12. Stopping at 7/12 gives P(win or draw), not P(lose).",
+   "steps": [
+    "Win, draw and lose are mutually exclusive and cover everything, so they add to 1.",
+    "P(win or draw) = 1/4 + 1/3 = 3/12 + 4/12 = 7/12.",
+    "P(lose) = 1 − 7/12 = 5/12."
+   ],
+   "mistakes": {
+    "A": "Step 2: 7/12 is P(win or draw). Subtract it from 1 to get P(lose).",
+    "C": "Step 2: you multiplied 1/4 × 1/3. The three results are mutually exclusive, so add the two then subtract from 1.",
+    "D": "Step 2: you added the tops and the bottoms (1/4 + 1/3 = 2/7), then did 1 − 2/7. Use a common denominator: 3/12 + 4/12."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Raffle tickets are numbered 1 to 50. One ticket is drawn. What is the probability that the number does NOT contain the digit 3?",
+   "options": {
+    "A": "7/25",
+    "B": "18/25",
+    "C": "9/10",
+    "D": "7/10"
+   },
+   "answer": "B",
+   "explanation": "Tickets with a 3: 3, 13, 23, 43 and 30–39, which is 4 + 10 = 14 tickets. So P(no 3) = 1 − 14/50 = 36/50 = 18/25. Counting only numbers that end in 3 misses 30–39.",
+   "steps": [
+    "List tickets containing a 3: 3, 13, 23, 43 (4 tickets) and 30, 31, …, 39 (10 tickets). 33 is in the second list only.",
+    "That is 14 tickets, so P(contains a 3) = 14/50.",
+    "P(no 3) = 1 − 14/50 = 36/50 = 18/25."
+   ],
+   "mistakes": {
+    "A": "Step 2: 14/50 = 7/25 is the probability that the number DOES contain a 3. Subtract from 1.",
+    "C": "Step 1: you only counted numbers ending in 3. Also count 30 to 39, which start with 3 (count 33 once).",
+    "D": "Step 1: you counted 33 twice (once for ending in 3 and once in 30–39). It is one ticket, so count it once."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Two fair dice are rolled and the numbers are added. The grid shows every total. What is the probability that the total is at least 4?",
+   "options": {
+    "A": "1/12",
+    "B": "5/6",
+    "C": "11/12",
+    "D": "9/11"
+   },
+   "answer": "C",
+   "explanation": "The complement of “at least 4” is “2 or 3”: (1,1), (1,2), (2,1) — 3 outcomes. So P = 1 − 3/36 = 33/36 = 11/12. Answering 5/6 wrongly puts a total of 4 in the complement.",
+   "steps": [
+    "There are 36 equally likely outcomes. The complement of “at least 4” is a total of 2 or 3.",
+    "Total 2: (1,1). Total 3: (1,2), (2,1). That is 3 outcomes, so P(2 or 3) = 3/36 = 1/12.",
+    "P(at least 4) = 1 − 1/12 = 11/12."
+   ],
+   "mistakes": {
+    "A": "Step 2: 3/36 = 1/12 is the probability of a total of 2 or 3. Subtract it from 1.",
+    "B": "Step 1: “at least 4” includes a total of 4. The complement is only totals 2 and 3.",
+    "D": "Step 1: totals 2 to 12 are not equally likely, so you can’t use 9 out of 11 totals. Use the 36 outcomes."
+   },
+   "diagram": "diagrams/y8/maths/probability-and-complementary-events-q10.svg",
+   "diagram_alt": "A 6 by 6 grid showing the total of two dice for each of the 36 outcomes, from 2 to 12, with nothing shaded"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A bag holds only red, blue and green marbles. P(red) = 1/3 and P(blue) = 1/4. There are 10 green marbles. How many marbles are in the bag altogether?",
+   "options": {
+    "A": "24",
+    "B": "12",
+    "C": "10",
+    "D": "120"
+   },
+   "answer": "A",
+   "explanation": "P(green) = 1 − 1/3 − 1/4 = 5/12. If 5/12 of the bag is 10 marbles, then 1/12 is 2, so the bag has 24. Check: 8 red + 6 blue + 10 green = 24 ✓",
+   "steps": [
+    "P(green) = 1 − (1/3 + 1/4) = 1 − 7/12 = 5/12.",
+    "5/12 of the marbles is 10, so 1/12 of the marbles is 10 ÷ 5 = 2.",
+    "Total = 12 × 2 = 24 marbles."
+   ],
+   "mistakes": {
+    "B": "Step 2: 12 is the common denominator, not the number of marbles. 5/12 of the bag is 10 marbles, so 1/12 is 2 marbles.",
+    "C": "Step 2: 10 is only the green marbles. They make up 5/12 of the bag, so the whole bag is bigger.",
+    "D": "Step 2: 10 green marbles are 5/12 of the bag, not 1/12. Divide 10 by 5 first to find 1/12 of the bag."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Events A and B are mutually exclusive. P(A) = 0.3 and P(not B) = 0.55. What is the probability that neither A nor B happens?",
+   "options": {
+    "A": "0.15",
+    "B": "0.45",
+    "C": "0.385",
+    "D": "0.25"
+   },
+   "answer": "D",
+   "explanation": "P(B) = 1 − 0.55 = 0.45. A and B can’t both happen, so P(A or B) = 0.3 + 0.45 = 0.75, and P(neither) = 1 − 0.75 = 0.25. Using 0.55 as P(B) gives 0.15.",
+   "steps": [
+    "P(B) = 1 − P(not B) = 1 − 0.55 = 0.45.",
+    "A and B are mutually exclusive, so P(A or B) = 0.3 + 0.45 = 0.75.",
+    "“Neither” is the complement of “A or B”: 1 − 0.75 = 0.25."
+   ],
+   "mistakes": {
+    "A": "Step 1: 0.55 is P(not B), not P(B). First find P(B) = 1 − 0.55.",
+    "B": "Step 1: 0.45 is P(B). Keep going: add P(A), then subtract from 1.",
+    "C": "Step 2: you multiplied 0.7 × 0.55. For mutually exclusive events, add P(A) and P(B), then take the complement."
+   }
+  }
+ ]
 }

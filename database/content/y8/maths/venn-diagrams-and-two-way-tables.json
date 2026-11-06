@@ -1,279 +1,280 @@
 {
-  "level": "Year 8",
-  "subject": "maths",
-  "unit": "Year 8",
-  "title": "Venn diagrams and two-way tables",
-  "summary": "Learn to draw and read Venn diagrams and two-way tables, use “and”, “or”, “not” and “only”, switch between the two, and find probabilities from them.",
-  "minutes": 45,
-  "body": "Suppose 15 students in your class play sport, 12 play music and 5 do both. How many students do something? If you just add 15 + 12 you count those 5 students twice! **Venn diagrams** and **two-way tables** are two simple pictures that sort data into groups without double counting. They are used in surveys, medical testing and anywhere people are sorted by two features at once.\n\n## Learning objective\n\nBy the end of this lesson you can draw and read Venn diagrams and two-way tables, use “and”, “or”, “not” and “only” correctly, change between the two displays, and use them to find probabilities.\n\n## Before you start\n\nYou need P(event) = favourable ÷ total and complements from *Probability and complementary events (Year 8)*, and frequency tables from *Collecting and classifying data (Year 7)*.\n\n**Warm-up**\n\n1. Simplify 6/30. *(Answer: 1/5)*\n2. If P(A) = 1/5, find P(not A). *(Answer: 4/5)*\n\n## Think of it like this\n\n### Sorting socks into two hoops\n\nPut two hula hoops on the floor so they overlap. One hoop is for striped socks, the other for blue socks. A blue striped sock goes in the overlap. A plain red sock goes outside both hoops. Every sock ends up in exactly one place — so nothing is counted twice.\n\n*Where the analogy breaks down:* in a Venn diagram we usually write the *number* of things in each region, not the things themselves, and one region (outside both circles) still sits inside the box that holds everything.\n\n## Key ideas\n\n### Venn diagrams\n\nA **Venn diagram** has a rectangle for the whole sample space (everyone or everything), with a circle for each event. Two overlapping circles make **four regions**:\n\n- **A only** — in A but not B\n- **A and B** — the overlap (in both)\n- **B only** — in B but not A\n- **neither** — outside both circles, but inside the rectangle\n\nThe four regions add to the total. The whole circle A = A only + both.\n\n![A Venn diagram: a rectangle containing two overlapping circles A and B, with the four regions labelled A only, A and B (the overlap), B only, and neither (outside both circles)](/diagrams/y8/maths/venn-diagrams-and-two-way-tables-regions.svg)\n\n### And, or, not, only\n\n- **A and B** (written A ∩ B, the **intersection**): the overlap only.\n- **A or B** (written A ∪ B, the **union**): everything inside either circle, including the overlap.\n- **not A**: everything outside circle A.\n- **A only**: in A but not in B.\n- **exactly one**: A only plus B only.\n\nBecause the overlap is inside both circles, `number in A or B = number in A + number in B − number in both`.\n\n### Two-way tables\n\nA **two-way table** sorts data by two features, one along the rows and one along the columns, with totals at the end of each row and column.\n\n|  | Tablet | No tablet | Total |\n|---|---|---|---|\n| **Phone** | both | phone only | all with phone |\n| **No phone** | tablet only | neither | all without phone |\n| **Total** | all with tablet | all without tablet | grand total |\n\nEach inside cell matches one region of a Venn diagram. Rows and columns must add up to their totals, which lets you fill in missing cells.\n\n### Probabilities from the displays\n\nP = number in the region ÷ total. Be careful about *which* total:\n\n- “A person is chosen at random” — divide by the grand total.\n- “A Year 8 student is chosen” — you already know they are in Year 8, so divide by the Year 8 total only.\n\n## Worked examples\n\n### Example 1\n\nThe numbers 1 to 12 are sorted into a Venn diagram with A = even numbers and B = multiples of 3. Fill in each region, then find P(A and B), P(A or B) and P(A only) for a number chosen at random.\n\nStep 1: both even and a multiple of 3 — **6, 12** go in the overlap.\nStep 2: A only — 2, 4, 8, 10. B only — 3, 9.\nStep 3: neither — 1, 5, 7, 11 (they go outside both circles but inside the rectangle).\nStep 4: P(A and B) = 2/12 = **1/6**; P(A or B) = (4 + 2 + 2)/12 = 8/12 = **2/3**; P(A only) = 4/12 = **1/3**.\n\n![Venn diagram of the numbers 1 to 12: A (even) only holds 2, 4, 8, 10; the overlap holds 6 and 12; B (multiple of 3) only holds 3 and 9; outside both are 1, 5, 7, 11](/diagrams/y8/maths/venn-diagrams-and-two-way-tables-ex1.svg)\n\nCheck: 4 + 2 + 2 + 4 = 12 ✓\n\n### Example 2\n\nIn a class of 28, 15 play sport, 12 play music and 5 do both. Draw a Venn diagram and find the probability that a random student does neither.\n\nStep 1: put the 5 in the overlap first — always start in the middle.\nStep 2: sport only = 15 − 5 = **10**; music only = 12 − 5 = **7**.\nStep 3: neither = 28 − (10 + 5 + 7) = **6**.\nStep 4: P(neither) = 6/28 = **3/14**.\n\n![Venn diagram for 28 students: sport only 10, both 5, music only 7, neither 6](/diagrams/y8/maths/venn-diagrams-and-two-way-tables-ex2.svg)\n\nCheck: sport or music = 15 + 12 − 5 = 22, and 28 − 22 = 6 ✓\n\n### Example 3\n\n60 students were asked if they own a phone.\n\n|  | Phone | No phone | Total |\n|---|---|---|---|\n| **Year 7** | 18 | 12 | 30 |\n| **Year 8** | 24 | 6 | 30 |\n| **Total** | 42 | 18 | 60 |\n\nFind (a) P(a random student is a Year 8 with a phone), (b) P(a random student owns a phone), (c) P(a Year 8 student, chosen at random, owns a phone).\n\nStep 1: (a) the cell “Year 8, Phone” is 24, out of everyone (60): 24/60 = **2/5**.\nStep 2: (b) the “Phone” column total is 42: 42/60 = **7/10**.\nStep 3: (c) we only choose from Year 8, so use that row: 24/30 = **4/5**.\nCheck: the rows add to 30 + 30 = 60 and the columns to 42 + 18 = 60 ✓\n\n### Example 4\n\nTurn the Venn diagram from Example 2 into a two-way table.\n\nStep 1: sport and music = both = **5**; sport, no music = sport only = **10**.\nStep 2: music, no sport = music only = **7**; no sport, no music = neither = **6**.\nStep 3: totals — sport row 15, no-sport row 13; music column 12, no-music column 16; grand total 28.\n\n|  | Music | No music | Total |\n|---|---|---|---|\n| **Sport** | 5 | 10 | 15 |\n| **No sport** | 7 | 6 | 13 |\n| **Total** | 12 | 16 | 28 |\n\n## Common mistakes\n\n- **Putting the full circle total in “A only”.** If 15 play sport and 5 do both, sport only is 10, not 15. Fix: fill the overlap first, then subtract.\n- **Counting the overlap twice for “or”.** Fix: A or B = A + B − both.\n- **Forgetting “neither”.** The people outside both circles still count in the total. Fix: check all four regions add to the total.\n- **Dividing by the wrong total.** “A Year 8 student is chosen” means divide by the Year 8 total, not by everyone. Fix: ask “who am I choosing from?”\n- **Mixing up “or” and “and”.** Fix: “and” is only the overlap; “or” is everything in either circle.\n\n## Tips to remember\n\n- **Middle first.** Always fill the overlap before anything else.\n- **“And” is the overlap; “or” is the lot.** (A made-up memory trick.)\n- **Four regions, one total.** A only + both + B only + neither = everyone.\n- **Who am I choosing from?** That group’s total goes on the bottom of the fraction.\n- **Each cell is a region.** Two-way table cells match Venn regions one for one.\n\n## Key terms\n\n- **Venn diagram** — overlapping circles inside a rectangle that sort items into groups.\n- **Intersection (A and B, A ∩ B)** — items in both A and B.\n- **Union (A or B, A ∪ B)** — items in A, in B or in both.\n- **A only** — items in A but not in B.\n- **Two-way table** — a table sorting data by two features, with row and column totals.\n- **Region** — one part of a Venn diagram, such as “A only” or “neither”.\n\n## Summary\n\n- A Venn diagram with two circles has four regions: A only, both, B only and neither.\n- “And” is the overlap; “or” is everything in either circle; number in A or B = A + B − both.\n- A two-way table shows the same four groups as cells, with row and column totals.\n- Probability = number in the region ÷ the total of the group you are choosing from.\n- Fill in the overlap first, then use subtraction and totals to complete the rest.",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "The Venn diagram shows which of 20 students own a dog and which own a cat. How many students own a dog?",
-      "options": {
-        "A": "11",
-        "B": "8",
-        "C": "3",
-        "D": "16"
-      },
-      "answer": "A",
-      "explanation": "Everyone inside the Dog circle owns a dog: 8 (dog only) + 3 (both) = 11. Answering 8 forgets the students in the overlap, who own a dog as well as a cat.",
-      "steps": [
-        "The Dog circle is made of two parts: dog only (8) and the overlap, both (3).",
-        "Students who own a dog = 8 + 3 = 11."
-      ],
-      "mistakes": {
-        "B": "Step 1: 8 is the students who own a dog but NOT a cat. Add the overlap too — those students also own a dog.",
-        "C": "Step 1: 3 is only the students who own both. The whole Dog circle includes the “dog only” part as well.",
-        "D": "Step 1: 8 + 3 + 5 adds the whole of both circles. Only the Dog circle counts: dog only plus both."
-      },
-      "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q1.svg",
-      "diagram_alt": "Venn diagram for 20 students: dog only 8, both dog and cat 3, cat only 5, neither 4"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "A two-way table shows 40 people at a cinema.\nAdults: popcorn 9, no popcorn 11.\nChildren: popcorn 14, no popcorn 6.\nOne person is chosen at random. What is the probability that the person is a child with popcorn?",
-      "options": {
-        "A": "14/20",
-        "B": "23/40",
-        "C": "7/20",
-        "D": "9/40"
-      },
-      "answer": "C",
-      "explanation": "Children with popcorn = 14 out of all 40 people, so P = 14/40 = 7/20. Writing 14/20 divides by the number of children instead of everyone.",
-      "steps": [
-        "Find the cell for “child” AND “popcorn”: 14.",
-        "The total is everyone at the cinema: 9 + 11 + 14 + 6 = 40.",
-        "P = 14/40 = 7/20."
-      ],
-      "mistakes": {
-        "A": "Step 2: 20 is just the number of children. The person is chosen from all 40 people, so divide by 40.",
-        "B": "Step 1: 23 is everyone with popcorn (adults and children). You only want children with popcorn.",
-        "D": "Step 1: 9 is the adults with popcorn. Find the cell in the Children row and the popcorn column."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "In a Venn diagram, circle T is “plays tennis” and circle S is “swims”. Where would you write a student who swims but does not play tennis?",
-      "options": {
-        "A": "In the overlap of T and S",
-        "B": "Inside S but outside T",
-        "C": "Inside T but outside S",
-        "D": "Outside both circles"
-      },
-      "answer": "B",
-      "explanation": "The student is in S (swims) but not in T (tennis), so they go in the part of S that doesn’t overlap T. The overlap is only for students who do both.",
-      "steps": [
-        "The student swims, so they go inside circle S.",
-        "They don’t play tennis, so not in the overlap — the part of S outside T."
-      ],
-      "mistakes": {
-        "A": "Step 2: the overlap is for students who do BOTH. This student does not play tennis.",
-        "C": "Step 1: these are swapped — T is tennis. The student swims, so they belong inside S.",
-        "D": "Step 1: outside both is for students who do neither. This student swims, so they go inside S."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "In a group of 30 students, 12 play netball, 9 play basketball and 4 play both, as shown in the Venn diagram. How many students play neither sport?",
-      "options": {
-        "A": "9",
-        "B": "5",
-        "C": "17",
-        "D": "13"
-      },
-      "answer": "D",
-      "explanation": "Netball or basketball (or both) = 12 + 9 − 4 = 17, because the 4 were counted in both groups. So neither = 30 − 17 = 13. Answering 9 counts the both-sports students twice.",
-      "steps": [
-        "The 4 who play both are inside the 12 AND inside the 9, so at least one sport = 12 + 9 − 4 = 17.",
-        "Neither = 30 − 17 = 13."
-      ],
-      "mistakes": {
-        "A": "Step 1: 12 + 9 = 21 counts the 4 students who play both twice. Subtract them once: 12 + 9 − 4.",
-        "B": "Step 1: you added the 4 instead of subtracting it. The “both” students are already inside the 12 and the 9.",
-        "C": "Step 2: 17 is the number who play at least one sport. Subtract this from 30."
-      },
-      "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q4.svg",
-      "diagram_alt": "Venn diagram for 30 students: circles Netball (12 students) and Basketball (9 students) overlap, with 4 in the overlap; the other regions are marked with question marks"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A two-way table shows how 60 students get to school.\nYear 7: walk 14, other 16.\nYear 8: walk 9, other 21.\nA Year 8 student is chosen at random. What is the probability that they walk?",
-      "options": {
-        "A": "3/20",
-        "B": "9/23",
-        "C": "23/60",
-        "D": "3/10"
-      },
-      "answer": "D",
-      "explanation": "We already know the student is in Year 8, so only the Year 8 row counts: 9 walk out of 9 + 21 = 30, so P = 9/30 = 3/10. Dividing by 60 ignores that we chose from Year 8 only.",
-      "steps": [
-        "“A Year 8 student is chosen” means only the Year 8 row matters.",
-        "Year 8 total: 9 + 21 = 30; of these, 9 walk.",
-        "P = 9/30 = 3/10."
-      ],
-      "mistakes": {
-        "A": "Step 2: 9/60 divides by all 60 students. The student is chosen from Year 8 only, so divide by the Year 8 total.",
-        "B": "Step 2: 23 is everyone who walks. The student is chosen from the Year 8s, so the total is the Year 8 row.",
-        "C": "Step 1: 23/60 is the chance that any student walks. Look only at the Year 8 row."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A number is chosen at random from 1 to 15. A is “a multiple of 3” and B is “a multiple of 5”. What is P(A or B)?",
-      "options": {
-        "A": "8/15",
-        "B": "7/15",
-        "C": "1/15",
-        "D": "1/3"
-      },
-      "answer": "B",
-      "explanation": "A = {3, 6, 9, 12, 15}, B = {5, 10, 15}. The union is {3, 5, 6, 9, 10, 12, 15} — 7 numbers — so P(A or B) = 7/15. Answering 8/15 counts 15 twice.",
-      "steps": [
-        "A = {3, 6, 9, 12, 15}; B = {5, 10, 15}. The overlap is {15}.",
-        "A or B = {3, 5, 6, 9, 10, 12, 15}: 5 + 3 − 1 = 7 numbers.",
-        "P(A or B) = 7/15."
-      ],
-      "mistakes": {
-        "A": "Step 2: 15 is a multiple of both 3 and 5, so it is only one number. Count it once: 5 + 3 − 1.",
-        "C": "Step 2: 1/15 is P(A and B) — just the number 15 in the overlap. “Or” includes everything in either circle.",
-        "D": "Step 2: 5/15 = 1/3 counts only the multiples of 3. “A or B” also includes the multiples of 5."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "There are 50 people at a café: 32 adults and 18 teenagers. Altogether 22 people ordered coffee, and 4 of these were teenagers. One person is chosen at random. What is the probability that the person is an adult who did NOT order coffee?",
-      "options": {
-        "A": "7/16",
-        "B": "9/25",
-        "C": "7/25",
-        "D": "1/2"
-      },
-      "answer": "C",
-      "explanation": "Adults with coffee = 22 − 4 = 18, so adults without coffee = 32 − 18 = 14. P = 14/50 = 7/25. Answering 9/25 uses the adults who did order coffee.",
-      "steps": [
-        "Adults with coffee = 22 − 4 = 18.",
-        "Adults without coffee = 32 − 18 = 14.",
-        "Divide by everyone: P = 14/50 = 7/25."
-      ],
-      "mistakes": {
-        "A": "Step 4: 14/32 is out of the adults only. The person is chosen from all 50 people.",
-        "B": "Step 2: 18/50 is adults who DID order coffee. Subtract them from all 32 adults.",
-        "D": "Step 3: 14/28 divides by everyone with no coffee. The person is chosen from all 50."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A sports club has 40 members. 25 run, 18 cycle, and 7 do neither. A member is chosen at random. What is the probability that they run but do NOT cycle?",
-      "options": {
-        "A": "3/8",
-        "B": "5/8",
-        "C": "1/4",
-        "D": "9/20"
-      },
-      "answer": "A",
-      "explanation": "40 − 7 = 33 do at least one, so both = 25 + 18 − 33 = 10. Run only = 25 − 10 = 15, so P = 15/40 = 3/8. Answering 5/8 forgets to remove the 10 who also cycle.",
-      "steps": [
-        "At least one activity: 40 − 7 = 33.",
-        "Both: 25 + 18 − 33 = 10 (the overlap was counted twice in 25 + 18).",
-        "Run only: 25 − 10 = 15, so P = 15/40 = 3/8."
-      ],
-      "mistakes": {
-        "B": "Step 3: 25/40 includes the members who run AND cycle. Take the “both” group out of the 25 runners.",
-        "C": "Step 2: 10 is the number who do both. You want runners who do not cycle: 25 − 10.",
-        "D": "Step 3: 18 is the cyclists. You want the runners who are outside the cycle circle."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The Venn diagram shows 36 students and whether they own a phone and a tablet. In a two-way table with rows “phone / no phone” and columns “tablet / no tablet”, what goes in the cell “no phone, tablet”?",
-      "options": {
-        "A": "5",
-        "B": "9",
-        "C": "14",
-        "D": "13"
-      },
-      "answer": "A",
-      "explanation": "“No phone, tablet” means inside the tablet circle but outside the phone circle — the “tablet only” region, which is 5. The overlap (9) is students who have both.",
-      "steps": [
-        "“No phone” means outside the phone circle; “tablet” means inside the tablet circle.",
-        "That region is tablet only, so the cell is 5."
-      ],
-      "mistakes": {
-        "B": "Step 2: 9 students have a phone AND a tablet. You want students with a tablet but NO phone.",
-        "C": "Step 2: 14 is phone only — they have a phone and no tablet. The cell is the opposite.",
-        "D": "Step 2: 13 is everyone with no phone (5 + 8). The cell only wants those of them who have a tablet."
-      },
-      "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q9.svg",
-      "diagram_alt": "Venn diagram for 36 students: phone only 14, both phone and tablet 9, tablet only 5, neither 8"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The Venn diagram shows 50 students and which of French and Japanese they study. How many students study French?",
-      "options": {
-        "A": "11",
-        "B": "28",
-        "C": "17",
-        "D": "19"
-      },
-      "answer": "C",
-      "explanation": "x + 6 + 2x + 11 = 50, so 3x + 17 = 50, 3x = 33, x = 11. French = x + 6 = 17. Answering 11 forgets that the 6 in the overlap also study French.",
-      "steps": [
-        "All four regions add to 50: x + 6 + 2x + 11 = 50, so 3x + 17 = 50.",
-        "Solve: 3x = 33, so x = 11.",
-        "French students = French only + both = 11 + 6 = 17."
-      ],
-      "mistakes": {
-        "A": "Step 3: 11 is x — the French-only students. Add the 6 who study both.",
-        "B": "Step 3: 2x + 6 = 28 is the number who study Japanese. French is x + 6.",
-        "D": "Step 1: all four regions must add to 50, including the 6 in the overlap. You left the 6 out, so x came out as 13."
-      },
-      "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q10.svg",
-      "diagram_alt": "Venn diagram for 50 students: French only x, both French and Japanese 6, Japanese only 2x, neither 11"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In a group of 80 people, 35 wear glasses. 12 people are left-handed, and 7 of these wear glasses. A left-handed person is chosen at random. What is the probability that they wear glasses?",
-      "options": {
-        "A": "1/5",
-        "B": "7/80",
-        "C": "3/20",
-        "D": "7/12"
-      },
-      "answer": "D",
-      "explanation": "We only choose from the 12 left-handed people, and 7 of them wear glasses, so P = 7/12. The tempting 7/35 = 1/5 answers the reverse question (choosing from people with glasses).",
-      "steps": [
-        "The person is chosen from the left-handed people only: 12 people.",
-        "Of those 12, 7 wear glasses.",
-        "P = 7/12."
-      ],
-      "mistakes": {
-        "A": "Step 2: 7/35 is the chance a glasses-wearer is left-handed. Here we start with the left-handed people, so divide by 12.",
-        "B": "Step 2: 7/80 divides by everyone. We already know the person is left-handed, so only the 12 left-handers count.",
-        "C": "Step 1: 12/80 is the chance that any person is left-handed. The question already tells you they are."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "In a survey of 60 people, 34 like apples, 28 like bananas and 9 like neither. One person is chosen at random. What is the probability that they like exactly one of the two fruits?",
-      "options": {
-        "A": "17/20",
-        "B": "2/3",
-        "C": "49/60",
-        "D": "11/60"
-      },
-      "answer": "B",
-      "explanation": "At least one = 60 − 9 = 51, so both = 34 + 28 − 51 = 11. Exactly one = 51 − 11 = 40, and 40/60 = 2/3. Answering 17/20 still includes the 11 who like both.",
-      "steps": [
-        "At least one fruit: 60 − 9 = 51.",
-        "Both: 34 + 28 − 51 = 11.",
-        "Exactly one: 51 − 11 = 40, so P = 40/60 = 2/3."
-      ],
-      "mistakes": {
-        "A": "Step 3: 51/60 is people who like at least one fruit — it still includes those who like both. Take away the 11 who like both.",
-        "C": "Step 3: 49/60 is everyone who does NOT like both — it includes the 9 who like neither. Exactly one means apples only or bananas only.",
-        "D": "Step 3: 11 is the people who like both fruits. “Exactly one” means one but not both."
-      }
-    }
-  ]
+ "level": "Year 8",
+ "subject": "maths",
+ "unit": "Year 8",
+ "title": "Venn diagrams and two-way tables",
+ "summary": "Learn to draw and read Venn diagrams and two-way tables, use “and”, “or”, “not” and “only”, switch between the two, and find probabilities from them.",
+ "minutes": 45,
+ "video": "videos/y8/maths/venn-diagrams-and-two-way-tables.mp4",
+ "body": "Suppose 15 students in your class play sport, 12 play music and 5 do both. How many students do something? If you just add 15 + 12 you count those 5 students twice! **Venn diagrams** and **two-way tables** are two simple pictures that sort data into groups without double counting. They are used in surveys, medical testing and anywhere people are sorted by two features at once.\n\n## Learning objective\n\nBy the end of this lesson you can draw and read Venn diagrams and two-way tables, use “and”, “or”, “not” and “only” correctly, change between the two displays, and use them to find probabilities.\n\n## Before you start\n\nYou need P(event) = favourable ÷ total and complements from *Probability and complementary events (Year 8)*, and frequency tables from *Collecting and classifying data (Year 7)*.\n\n**Warm-up**\n\n1. Simplify 6/30. *(Answer: 1/5)*\n2. If P(A) = 1/5, find P(not A). *(Answer: 4/5)*\n\n## Think of it like this\n\n### Sorting socks into two hoops\n\nPut two hula hoops on the floor so they overlap. One hoop is for striped socks, the other for blue socks. A blue striped sock goes in the overlap. A plain red sock goes outside both hoops. Every sock ends up in exactly one place — so nothing is counted twice.\n\n*Where the analogy breaks down:* in a Venn diagram we usually write the *number* of things in each region, not the things themselves, and one region (outside both circles) still sits inside the box that holds everything.\n\n## Key ideas\n\n### Venn diagrams\n\nA **Venn diagram** has a rectangle for the whole sample space (everyone or everything), with a circle for each event. Two overlapping circles make **four regions**:\n\n- **A only** — in A but not B\n- **A and B** — the overlap (in both)\n- **B only** — in B but not A\n- **neither** — outside both circles, but inside the rectangle\n\nThe four regions add to the total. The whole circle A = A only + both.\n\n![A Venn diagram: a rectangle containing two overlapping circles A and B, with the four regions labelled A only, A and B (the overlap), B only, and neither (outside both circles)](/diagrams/y8/maths/venn-diagrams-and-two-way-tables-regions.svg)\n\n### And, or, not, only\n\n- **A and B** (written A ∩ B, the **intersection**): the overlap only.\n- **A or B** (written A ∪ B, the **union**): everything inside either circle, including the overlap.\n- **not A**: everything outside circle A.\n- **A only**: in A but not in B.\n- **exactly one**: A only plus B only.\n\nBecause the overlap is inside both circles, `number in A or B = number in A + number in B − number in both`.\n\n### Two-way tables\n\nA **two-way table** sorts data by two features, one along the rows and one along the columns, with totals at the end of each row and column.\n\n|  | Tablet | No tablet | Total |\n|---|---|---|---|\n| **Phone** | both | phone only | all with phone |\n| **No phone** | tablet only | neither | all without phone |\n| **Total** | all with tablet | all without tablet | grand total |\n\nEach inside cell matches one region of a Venn diagram. Rows and columns must add up to their totals, which lets you fill in missing cells.\n\n### Probabilities from the displays\n\nP = number in the region ÷ total. Be careful about *which* total:\n\n- “A person is chosen at random” — divide by the grand total.\n- “A Year 8 student is chosen” — you already know they are in Year 8, so divide by the Year 8 total only.\n\n## Worked examples\n\n### Example 1\n\nThe numbers 1 to 12 are sorted into a Venn diagram with A = even numbers and B = multiples of 3. Fill in each region, then find P(A and B), P(A or B) and P(A only) for a number chosen at random.\n\nStep 1: both even and a multiple of 3 — **6, 12** go in the overlap.\nStep 2: A only — 2, 4, 8, 10. B only — 3, 9.\nStep 3: neither — 1, 5, 7, 11 (they go outside both circles but inside the rectangle).\nStep 4: P(A and B) = 2/12 = **1/6**; P(A or B) = (4 + 2 + 2)/12 = 8/12 = **2/3**; P(A only) = 4/12 = **1/3**.\n\n![Venn diagram of the numbers 1 to 12: A (even) only holds 2, 4, 8, 10; the overlap holds 6 and 12; B (multiple of 3) only holds 3 and 9; outside both are 1, 5, 7, 11](/diagrams/y8/maths/venn-diagrams-and-two-way-tables-ex1.svg)\n\nCheck: 4 + 2 + 2 + 4 = 12 ✓\n\n### Example 2\n\nIn a class of 28, 15 play sport, 12 play music and 5 do both. Draw a Venn diagram and find the probability that a random student does neither.\n\nStep 1: put the 5 in the overlap first — always start in the middle.\nStep 2: sport only = 15 − 5 = **10**; music only = 12 − 5 = **7**.\nStep 3: neither = 28 − (10 + 5 + 7) = **6**.\nStep 4: P(neither) = 6/28 = **3/14**.\n\n![Venn diagram for 28 students: sport only 10, both 5, music only 7, neither 6](/diagrams/y8/maths/venn-diagrams-and-two-way-tables-ex2.svg)\n\nCheck: sport or music = 15 + 12 − 5 = 22, and 28 − 22 = 6 ✓\n\n### Example 3\n\n60 students were asked if they own a phone.\n\n|  | Phone | No phone | Total |\n|---|---|---|---|\n| **Year 7** | 18 | 12 | 30 |\n| **Year 8** | 24 | 6 | 30 |\n| **Total** | 42 | 18 | 60 |\n\nFind (a) P(a random student is a Year 8 with a phone), (b) P(a random student owns a phone), (c) P(a Year 8 student, chosen at random, owns a phone).\n\nStep 1: (a) the cell “Year 8, Phone” is 24, out of everyone (60): 24/60 = **2/5**.\nStep 2: (b) the “Phone” column total is 42: 42/60 = **7/10**.\nStep 3: (c) we only choose from Year 8, so use that row: 24/30 = **4/5**.\nCheck: the rows add to 30 + 30 = 60 and the columns to 42 + 18 = 60 ✓\n\n### Example 4\n\nTurn the Venn diagram from Example 2 into a two-way table.\n\nStep 1: sport and music = both = **5**; sport, no music = sport only = **10**.\nStep 2: music, no sport = music only = **7**; no sport, no music = neither = **6**.\nStep 3: totals — sport row 15, no-sport row 13; music column 12, no-music column 16; grand total 28.\n\n|  | Music | No music | Total |\n|---|---|---|---|\n| **Sport** | 5 | 10 | 15 |\n| **No sport** | 7 | 6 | 13 |\n| **Total** | 12 | 16 | 28 |\n\n## Common mistakes\n\n- **Putting the full circle total in “A only”.** If 15 play sport and 5 do both, sport only is 10, not 15. Fix: fill the overlap first, then subtract.\n- **Counting the overlap twice for “or”.** Fix: A or B = A + B − both.\n- **Forgetting “neither”.** The people outside both circles still count in the total. Fix: check all four regions add to the total.\n- **Dividing by the wrong total.** “A Year 8 student is chosen” means divide by the Year 8 total, not by everyone. Fix: ask “who am I choosing from?”\n- **Mixing up “or” and “and”.** Fix: “and” is only the overlap; “or” is everything in either circle.\n\n## Tips to remember\n\n- **Middle first.** Always fill the overlap before anything else.\n- **“And” is the overlap; “or” is the lot.** (A made-up memory trick.)\n- **Four regions, one total.** A only + both + B only + neither = everyone.\n- **Who am I choosing from?** That group’s total goes on the bottom of the fraction.\n- **Each cell is a region.** Two-way table cells match Venn regions one for one.\n\n## Key terms\n\n- **Venn diagram** — overlapping circles inside a rectangle that sort items into groups.\n- **Intersection (A and B, A ∩ B)** — items in both A and B.\n- **Union (A or B, A ∪ B)** — items in A, in B or in both.\n- **A only** — items in A but not in B.\n- **Two-way table** — a table sorting data by two features, with row and column totals.\n- **Region** — one part of a Venn diagram, such as “A only” or “neither”.\n\n## Summary\n\n- A Venn diagram with two circles has four regions: A only, both, B only and neither.\n- “And” is the overlap; “or” is everything in either circle; number in A or B = A + B − both.\n- A two-way table shows the same four groups as cells, with row and column totals.\n- Probability = number in the region ÷ the total of the group you are choosing from.\n- Fill in the overlap first, then use subtraction and totals to complete the rest.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The Venn diagram shows which of 20 students own a dog and which own a cat. How many students own a dog?",
+   "options": {
+    "A": "11",
+    "B": "8",
+    "C": "3",
+    "D": "16"
+   },
+   "answer": "A",
+   "explanation": "Everyone inside the Dog circle owns a dog: 8 (dog only) + 3 (both) = 11. Answering 8 forgets the students in the overlap, who own a dog as well as a cat.",
+   "steps": [
+    "The Dog circle is made of two parts: dog only (8) and the overlap, both (3).",
+    "Students who own a dog = 8 + 3 = 11."
+   ],
+   "mistakes": {
+    "B": "Step 1: 8 is the students who own a dog but NOT a cat. Add the overlap too — those students also own a dog.",
+    "C": "Step 1: 3 is only the students who own both. The whole Dog circle includes the “dog only” part as well.",
+    "D": "Step 1: 8 + 3 + 5 adds the whole of both circles. Only the Dog circle counts: dog only plus both."
+   },
+   "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q1.svg",
+   "diagram_alt": "Venn diagram for 20 students: dog only 8, both dog and cat 3, cat only 5, neither 4"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A two-way table shows 40 people at a cinema.\nAdults: popcorn 9, no popcorn 11.\nChildren: popcorn 14, no popcorn 6.\nOne person is chosen at random. What is the probability that the person is a child with popcorn?",
+   "options": {
+    "A": "14/20",
+    "B": "23/40",
+    "C": "7/20",
+    "D": "9/40"
+   },
+   "answer": "C",
+   "explanation": "Children with popcorn = 14 out of all 40 people, so P = 14/40 = 7/20. Writing 14/20 divides by the number of children instead of everyone.",
+   "steps": [
+    "Find the cell for “child” AND “popcorn”: 14.",
+    "The total is everyone at the cinema: 9 + 11 + 14 + 6 = 40.",
+    "P = 14/40 = 7/20."
+   ],
+   "mistakes": {
+    "A": "Step 2: 20 is just the number of children. The person is chosen from all 40 people, so divide by 40.",
+    "B": "Step 1: 23 is everyone with popcorn (adults and children). You only want children with popcorn.",
+    "D": "Step 1: 9 is the adults with popcorn. Find the cell in the Children row and the popcorn column."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "In a Venn diagram, circle T is “plays tennis” and circle S is “swims”. Where would you write a student who swims but does not play tennis?",
+   "options": {
+    "A": "In the overlap of T and S",
+    "B": "Inside S but outside T",
+    "C": "Inside T but outside S",
+    "D": "Outside both circles"
+   },
+   "answer": "B",
+   "explanation": "The student is in S (swims) but not in T (tennis), so they go in the part of S that doesn’t overlap T. The overlap is only for students who do both.",
+   "steps": [
+    "The student swims, so they go inside circle S.",
+    "They don’t play tennis, so not in the overlap — the part of S outside T."
+   ],
+   "mistakes": {
+    "A": "Step 2: the overlap is for students who do BOTH. This student does not play tennis.",
+    "C": "Step 1: these are swapped — T is tennis. The student swims, so they belong inside S.",
+    "D": "Step 1: outside both is for students who do neither. This student swims, so they go inside S."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In a group of 30 students, 12 play netball, 9 play basketball and 4 play both, as shown in the Venn diagram. How many students play neither sport?",
+   "options": {
+    "A": "9",
+    "B": "5",
+    "C": "17",
+    "D": "13"
+   },
+   "answer": "D",
+   "explanation": "Netball or basketball (or both) = 12 + 9 − 4 = 17, because the 4 were counted in both groups. So neither = 30 − 17 = 13. Answering 9 counts the both-sports students twice.",
+   "steps": [
+    "The 4 who play both are inside the 12 AND inside the 9, so at least one sport = 12 + 9 − 4 = 17.",
+    "Neither = 30 − 17 = 13."
+   ],
+   "mistakes": {
+    "A": "Step 1: 12 + 9 = 21 counts the 4 students who play both twice. Subtract them once: 12 + 9 − 4.",
+    "B": "Step 1: you added the 4 instead of subtracting it. The “both” students are already inside the 12 and the 9.",
+    "C": "Step 2: 17 is the number who play at least one sport. Subtract this from 30."
+   },
+   "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q4.svg",
+   "diagram_alt": "Venn diagram for 30 students: circles Netball (12 students) and Basketball (9 students) overlap, with 4 in the overlap; the other regions are marked with question marks"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A two-way table shows how 60 students get to school.\nYear 7: walk 14, other 16.\nYear 8: walk 9, other 21.\nA Year 8 student is chosen at random. What is the probability that they walk?",
+   "options": {
+    "A": "3/20",
+    "B": "9/23",
+    "C": "23/60",
+    "D": "3/10"
+   },
+   "answer": "D",
+   "explanation": "We already know the student is in Year 8, so only the Year 8 row counts: 9 walk out of 9 + 21 = 30, so P = 9/30 = 3/10. Dividing by 60 ignores that we chose from Year 8 only.",
+   "steps": [
+    "“A Year 8 student is chosen” means only the Year 8 row matters.",
+    "Year 8 total: 9 + 21 = 30; of these, 9 walk.",
+    "P = 9/30 = 3/10."
+   ],
+   "mistakes": {
+    "A": "Step 2: 9/60 divides by all 60 students. The student is chosen from Year 8 only, so divide by the Year 8 total.",
+    "B": "Step 2: 23 is everyone who walks. The student is chosen from the Year 8s, so the total is the Year 8 row.",
+    "C": "Step 1: 23/60 is the chance that any student walks. Look only at the Year 8 row."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A number is chosen at random from 1 to 15. A is “a multiple of 3” and B is “a multiple of 5”. What is P(A or B)?",
+   "options": {
+    "A": "8/15",
+    "B": "7/15",
+    "C": "1/15",
+    "D": "1/3"
+   },
+   "answer": "B",
+   "explanation": "A = {3, 6, 9, 12, 15}, B = {5, 10, 15}. The union is {3, 5, 6, 9, 10, 12, 15} — 7 numbers — so P(A or B) = 7/15. Answering 8/15 counts 15 twice.",
+   "steps": [
+    "A = {3, 6, 9, 12, 15}; B = {5, 10, 15}. The overlap is {15}.",
+    "A or B = {3, 5, 6, 9, 10, 12, 15}: 5 + 3 − 1 = 7 numbers.",
+    "P(A or B) = 7/15."
+   ],
+   "mistakes": {
+    "A": "Step 2: 15 is a multiple of both 3 and 5, so it is only one number. Count it once: 5 + 3 − 1.",
+    "C": "Step 2: 1/15 is P(A and B) — just the number 15 in the overlap. “Or” includes everything in either circle.",
+    "D": "Step 2: 5/15 = 1/3 counts only the multiples of 3. “A or B” also includes the multiples of 5."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "There are 50 people at a café: 32 adults and 18 teenagers. Altogether 22 people ordered coffee, and 4 of these were teenagers. One person is chosen at random. What is the probability that the person is an adult who did NOT order coffee?",
+   "options": {
+    "A": "7/16",
+    "B": "9/25",
+    "C": "7/25",
+    "D": "1/2"
+   },
+   "answer": "C",
+   "explanation": "Adults with coffee = 22 − 4 = 18, so adults without coffee = 32 − 18 = 14. P = 14/50 = 7/25. Answering 9/25 uses the adults who did order coffee.",
+   "steps": [
+    "Adults with coffee = 22 − 4 = 18.",
+    "Adults without coffee = 32 − 18 = 14.",
+    "Divide by everyone: P = 14/50 = 7/25."
+   ],
+   "mistakes": {
+    "A": "Step 4: 14/32 is out of the adults only. The person is chosen from all 50 people.",
+    "B": "Step 2: 18/50 is adults who DID order coffee. Subtract them from all 32 adults.",
+    "D": "Step 3: 14/28 divides by everyone with no coffee. The person is chosen from all 50."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A sports club has 40 members. 25 run, 18 cycle, and 7 do neither. A member is chosen at random. What is the probability that they run but do NOT cycle?",
+   "options": {
+    "A": "3/8",
+    "B": "5/8",
+    "C": "1/4",
+    "D": "9/20"
+   },
+   "answer": "A",
+   "explanation": "40 − 7 = 33 do at least one, so both = 25 + 18 − 33 = 10. Run only = 25 − 10 = 15, so P = 15/40 = 3/8. Answering 5/8 forgets to remove the 10 who also cycle.",
+   "steps": [
+    "At least one activity: 40 − 7 = 33.",
+    "Both: 25 + 18 − 33 = 10 (the overlap was counted twice in 25 + 18).",
+    "Run only: 25 − 10 = 15, so P = 15/40 = 3/8."
+   ],
+   "mistakes": {
+    "B": "Step 3: 25/40 includes the members who run AND cycle. Take the “both” group out of the 25 runners.",
+    "C": "Step 2: 10 is the number who do both. You want runners who do not cycle: 25 − 10.",
+    "D": "Step 3: 18 is the cyclists. You want the runners who are outside the cycle circle."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The Venn diagram shows 36 students and whether they own a phone and a tablet. In a two-way table with rows “phone / no phone” and columns “tablet / no tablet”, what goes in the cell “no phone, tablet”?",
+   "options": {
+    "A": "5",
+    "B": "9",
+    "C": "14",
+    "D": "13"
+   },
+   "answer": "A",
+   "explanation": "“No phone, tablet” means inside the tablet circle but outside the phone circle — the “tablet only” region, which is 5. The overlap (9) is students who have both.",
+   "steps": [
+    "“No phone” means outside the phone circle; “tablet” means inside the tablet circle.",
+    "That region is tablet only, so the cell is 5."
+   ],
+   "mistakes": {
+    "B": "Step 2: 9 students have a phone AND a tablet. You want students with a tablet but NO phone.",
+    "C": "Step 2: 14 is phone only — they have a phone and no tablet. The cell is the opposite.",
+    "D": "Step 2: 13 is everyone with no phone (5 + 8). The cell only wants those of them who have a tablet."
+   },
+   "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q9.svg",
+   "diagram_alt": "Venn diagram for 36 students: phone only 14, both phone and tablet 9, tablet only 5, neither 8"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The Venn diagram shows 50 students and which of French and Japanese they study. How many students study French?",
+   "options": {
+    "A": "11",
+    "B": "28",
+    "C": "17",
+    "D": "19"
+   },
+   "answer": "C",
+   "explanation": "x + 6 + 2x + 11 = 50, so 3x + 17 = 50, 3x = 33, x = 11. French = x + 6 = 17. Answering 11 forgets that the 6 in the overlap also study French.",
+   "steps": [
+    "All four regions add to 50: x + 6 + 2x + 11 = 50, so 3x + 17 = 50.",
+    "Solve: 3x = 33, so x = 11.",
+    "French students = French only + both = 11 + 6 = 17."
+   ],
+   "mistakes": {
+    "A": "Step 3: 11 is x — the French-only students. Add the 6 who study both.",
+    "B": "Step 3: 2x + 6 = 28 is the number who study Japanese. French is x + 6.",
+    "D": "Step 1: all four regions must add to 50, including the 6 in the overlap. You left the 6 out, so x came out as 13."
+   },
+   "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-q10.svg",
+   "diagram_alt": "Venn diagram for 50 students: French only x, both French and Japanese 6, Japanese only 2x, neither 11"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In a group of 80 people, 35 wear glasses. 12 people are left-handed, and 7 of these wear glasses. A left-handed person is chosen at random. What is the probability that they wear glasses?",
+   "options": {
+    "A": "1/5",
+    "B": "7/80",
+    "C": "3/20",
+    "D": "7/12"
+   },
+   "answer": "D",
+   "explanation": "We only choose from the 12 left-handed people, and 7 of them wear glasses, so P = 7/12. The tempting 7/35 = 1/5 answers the reverse question (choosing from people with glasses).",
+   "steps": [
+    "The person is chosen from the left-handed people only: 12 people.",
+    "Of those 12, 7 wear glasses.",
+    "P = 7/12."
+   ],
+   "mistakes": {
+    "A": "Step 2: 7/35 is the chance a glasses-wearer is left-handed. Here we start with the left-handed people, so divide by 12.",
+    "B": "Step 2: 7/80 divides by everyone. We already know the person is left-handed, so only the 12 left-handers count.",
+    "C": "Step 1: 12/80 is the chance that any person is left-handed. The question already tells you they are."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In a survey of 60 people, 34 like apples, 28 like bananas and 9 like neither. One person is chosen at random. What is the probability that they like exactly one of the two fruits?",
+   "options": {
+    "A": "17/20",
+    "B": "2/3",
+    "C": "49/60",
+    "D": "11/60"
+   },
+   "answer": "B",
+   "explanation": "At least one = 60 − 9 = 51, so both = 34 + 28 − 51 = 11. Exactly one = 51 − 11 = 40, and 40/60 = 2/3. Answering 17/20 still includes the 11 who like both.",
+   "steps": [
+    "At least one fruit: 60 − 9 = 51.",
+    "Both: 34 + 28 − 51 = 11.",
+    "Exactly one: 51 − 11 = 40, so P = 40/60 = 2/3."
+   ],
+   "mistakes": {
+    "A": "Step 3: 51/60 is people who like at least one fruit — it still includes those who like both. Take away the 11 who like both.",
+    "C": "Step 3: 49/60 is everyone who does NOT like both — it includes the 9 who like neither. Exactly one means apples only or bananas only.",
+    "D": "Step 3: 11 is the people who like both fruits. “Exactly one” means one but not both."
+   }
+  }
+ ]
 }
