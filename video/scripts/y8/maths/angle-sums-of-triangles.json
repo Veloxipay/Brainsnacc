@@ -1,0 +1,115 @@
+{
+  "lesson": "y8/maths/angle-sums-of-triangles.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Angle sums of triangles",
+  "icon": "📐",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Angle sums of triangles",
+      "sub": "Why is it always 180°?",
+      "icon": "📐",
+      "say": "Every triangle's angles add to one hundred and eighty degrees. But why? Today you'll prove it, then use it to crack harder problems.",
+      "caption": "Every triangle's angles add to 180°. But why? Today you'll prove it, then use it to crack harder problems."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "everyday": "Tear off the 3 corners of a paper triangle",
+      "icon": "🍕",
+      "science": "The 3 angles always line up to make a straight line: 180°",
+      "icon2": "📐",
+      "breaks": "tearing paper only shows it for one triangle, roughly. A proof shows it for every triangle.",
+      "say": "Cut out a paper triangle and tear off its three corners. Line them up, point to point, and they always make a straight edge. That's half a turn, one hundred and eighty degrees. But tearing paper only shows it for one triangle. For every triangle, we need a proof.",
+      "caption": "Tear off the three corners and line them up: they always make a straight edge, half a turn, 180°. But that only shows one triangle. For every triangle, we need a proof."
+    },
+    {
+      "type": "steps",
+      "heading": "The proof",
+      "steps": [
+        "Draw a line through A, parallel to BC",
+        "Left angle at A = ∠B (alternate)",
+        "Right angle at A = ∠C (alternate)",
+        "∠B + ∠A + ∠C sit on a straight line",
+        "So they add to 180°"
+      ],
+      "say": "Take triangle A B C and draw a line through A, parallel to B C. The angle on the left at A is alternate to angle B. The angle on the right is alternate to angle C. These three angles sit on a straight line, so they add to one hundred and eighty.",
+      "caption": "Draw a line through A, parallel to BC. The angle on the left at A is alternate to ∠B; the angle on the right is alternate to ∠C. The three angles at A sit on a straight line, so they add to 180°."
+    },
+    {
+      "type": "diagram",
+      "heading": "Why the angles add to 180°",
+      "diagram": "diagrams/y8/maths/angle-sums-of-triangles-proof.svg",
+      "notes": [
+        "Dashed line through A is parallel to BC",
+        "b and c reappear at A (alternate angles)",
+        "b + a + c = 180° on a straight line"
+      ],
+      "say": "Here is the picture. First the triangle, then the dashed line through A, parallel to B C. Angle b reappears on the left of A, and angle c on the right. Together with a, they fill a straight line."
+    },
+    {
+      "type": "equation",
+      "heading": "Exterior angle rule",
+      "equation": "exterior = a + b",
+      "parts": [
+        [
+          "exterior",
+          "angle outside, at one corner"
+        ],
+        [
+          "a, b",
+          "the two inside angles opposite it"
+        ]
+      ],
+      "say": "This is the exterior angle rule. Outside equals opposite two. It is a handy shortcut that skips finding the third angle."
+    },
+    {
+      "type": "diagram",
+      "heading": "Outside = opposite two",
+      "diagram": "diagrams/y8/maths/angle-sums-of-triangles-exterior.svg",
+      "notes": [
+        "Extend BC past C to D",
+        "Exterior angle at C = a + b"
+      ],
+      "say": "Now extend side B C past C. The exterior angle at C equals a plus b, the two inside angles that are not next to it."
+    },
+    {
+      "type": "example",
+      "heading": "Isosceles and exterior",
+      "question": "AB = AC. BC is extended to D and ∠ACD = 118°. Find ∠BAC.",
+      "lines": [
+        "∠ACB = 180 − 118 = 62° (straight line)",
+        "∠ABC = 62° (base angles equal)",
+        "∠BAC = 180 − 62 − 62",
+        "∠BAC = 56°"
+      ],
+      "say": "Triangle A B C is isosceles. The exterior angle at C is one hundred and eighteen. On a straight line, the inside angle at C is sixty-two. Base angles are equal, so angle B is sixty-two too. Then angle A is one hundred and eighty, take away sixty-two twice, which is fifty-six degrees.",
+      "caption": "On a straight line, ∠ACB = 180 − 118 = 62°. Base angles are equal, so ∠ABC = 62°. Then ∠BAC = 180 − 62 − 62 = 56°."
+    },
+    {
+      "type": "example",
+      "heading": "Angles with algebra",
+      "question": "A triangle has angles x°, (2x + 10)° and (3x − 4)°. Find each angle.",
+      "lines": [
+        "x + 2x + 10 + 3x − 4 = 180",
+        "6x + 6 = 180",
+        "6x = 174, so x = 29",
+        "Angles: 29°, 68°, 83°"
+      ],
+      "say": "The angles add to one hundred and eighty. Collect like terms: six x plus six equals one hundred and eighty. Take away six: six x equals one hundred and seventy-four, so x is twenty-nine. Substitute back: twenty-nine, sixty-eight and eighty-three degrees. Check, they add to one hundred and eighty.",
+      "caption": "The angles add to 180. So 6x + 6 = 180, 6x = 174 and x = 29. Substitute back: 29°, 68° and 83°. Check: they add to 180."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Triangle angles add to 180°",
+        "Proof: parallel line + alternate angles",
+        "Exterior = sum of 2 opposite angles",
+        "Isosceles: subtract from 180, then split"
+      ],
+      "say": "Quick recap. Triangle angles add to one hundred and eighty, and alternate angles prove it. An exterior angle equals the two opposite inside angles. For isosceles base angles, subtract the apex from one hundred and eighty, then split in half. Now try the practice questions!",
+      "caption": "Triangle angles add to 180°, and alternate angles prove it. An exterior angle equals the two opposite inside angles. Isosceles: subtract the apex from 180, then split. Now try the practice questions!"
+    }
+  ]
+}
