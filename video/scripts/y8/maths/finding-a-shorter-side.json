@@ -1,0 +1,142 @@
+{
+  "lesson": "y8/maths/finding-a-shorter-side.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Finding a shorter side",
+  "icon": "🪜",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Finding a shorter side",
+      "sub": "Pythagoras, backwards",
+      "icon": "🪜",
+      "say": "You know how long a ladder is and how far its foot is from the wall. How high does it reach? To find a shorter side of a right-angled triangle, we turn Pythagoras around and subtract."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🧱",
+      "everyday": "Big tile minus one small tile = the other small tile",
+      "icon2": "📐",
+      "science": "a² = c² − b², e.g. 25 − 9 = 16, so the side is 4",
+      "breaks": "Subtract the squares, never the lengths: 5 − 3 = 2 is wrong, √(25 − 9) = 4 is right.",
+      "say": "Remember the tiles. The big tile on the hypotenuse equals the two small tiles together. So if you know the big tile and one small tile, the missing tile is what's left over. Twenty-five take away nine is sixteen, so the missing side is four.",
+      "caption": "The big tile equals the two small tiles. If you know the big one and one small one, subtract: 25 − 9 = 16, so the missing side is 4."
+    },
+    {
+      "type": "equation",
+      "heading": "Rearranged rule",
+      "equation": "a² = c² − b²",
+      "parts": [
+        [
+          "c",
+          "hypotenuse (longest side)"
+        ],
+        [
+          "b",
+          "the shorter side you know"
+        ],
+        [
+          "a",
+          "the shorter side you want"
+        ]
+      ],
+      "say": "Start from c squared equals a squared plus b squared, and take b squared away from both sides. So a squared equals c squared minus b squared. Always start from the hypotenuse's square.",
+      "caption": "From c² = a² + b², take away b²: a² = c² − b². Always start from the hypotenuse's square."
+    },
+    {
+      "type": "compare",
+      "heading": "Add or subtract?",
+      "left": {
+        "title": "Finding the hypotenuse",
+        "icon": "➕",
+        "points": [
+          "The longest side",
+          "c² = a² + b²",
+          "Square, add, root"
+        ]
+      },
+      "right": {
+        "title": "Finding a shorter side",
+        "icon": "➖",
+        "points": [
+          "Not the longest side",
+          "a² = c² − b²",
+          "Square, subtract, root"
+        ]
+      },
+      "say": "Before you start, ask: am I finding the longest side? If yes, add the squares. If you're finding a shorter side, subtract. And a shorter side can never be longer than the hypotenuse."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "Hypotenuse 13 cm, one shorter side 5 cm. Find the other side.",
+      "lines": [
+        "a² = 13² − 5²",
+        "a² = 169 − 25 = 144",
+        "a = √144",
+        "a = 12 cm"
+      ],
+      "say": "The hypotenuse is thirteen and one side is five. Thirteen squared is one hundred and sixty-nine. Take away five squared, twenty-five, to get one hundred and forty-four. The square root is twelve centimetres.",
+      "caption": "13² − 5² = 169 − 25 = 144. √144 = 12 cm."
+    },
+    {
+      "type": "diagram",
+      "heading": "How high does it reach?",
+      "diagram": "diagrams/y8/maths/finding-a-shorter-side-ex3.svg",
+      "notes": [
+        "Ladder = hypotenuse = 4.5 m",
+        "Height is a shorter side: subtract"
+      ],
+      "say": "Here's the ladder against the wall. The right angle is where the wall meets the ground. The ladder is opposite it, so it's the hypotenuse, and the height is a shorter side."
+    },
+    {
+      "type": "example",
+      "heading": "Ladder",
+      "question": "A 4.5 m ladder has its foot 1.5 m from a wall. How high does it reach, to 1 decimal place?",
+      "lines": [
+        "Ladder = hypotenuse = 4.5 m",
+        "h² = 4.5² − 1.5² = 20.25 − 2.25",
+        "h² = 18",
+        "h = √18 ≈ 4.2 m"
+      ],
+      "say": "A four point five metre ladder stands one point five metres from a wall. The ladder is the hypotenuse. Twenty point two five minus two point two five is eighteen. The square root of eighteen is about four point two metres.",
+      "caption": "The ladder is the hypotenuse. 4.5² − 1.5² = 20.25 − 2.25 = 18. √18 ≈ 4.2 m."
+    },
+    {
+      "type": "diagram",
+      "heading": "Split it in half",
+      "diagram": "diagrams/y8/maths/finding-a-shorter-side-isosceles.svg",
+      "notes": [
+        "The height cuts the base in half",
+        "Two right-angled triangles"
+      ],
+      "say": "Now an isosceles triangle. Draw the height from the top corner. It cuts the twelve centimetre base into two halves of six, making two right-angled triangles."
+    },
+    {
+      "type": "example",
+      "heading": "Isosceles triangle",
+      "question": "Equal sides 10 cm, base 12 cm. Find the height and area.",
+      "lines": [
+        "Half the base: 12 ÷ 2 = 6 cm",
+        "h² = 10² − 6² = 64",
+        "h = 8 cm",
+        "Area = ½ × 12 × 8 = 48 cm²"
+      ],
+      "say": "An isosceles triangle has equal sides of ten and a base of twelve. The height cuts the base in half, so use six. Ten squared minus six squared is sixty-four, so the height is eight. The area is half of twelve times eight, forty-eight square centimetres.",
+      "caption": "Halve the base: 6 cm. 10² − 6² = 64, so h = 8 cm. Area = ½ × 12 × 8 = 48 cm²."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Shorter side: a² = c² − b²",
+        "Square, subtract, square root",
+        "Longest side? Add. Shorter? Subtract.",
+        "Answer must be less than c",
+        "Isosceles: halve the base first"
+      ],
+      "say": "Quick recap. To find a shorter side, square, subtract from the hypotenuse's square, then square root. Longest side, add. Shorter side, subtract. Your answer must be less than the hypotenuse. Now try the practice questions!",
+      "caption": "Shorter side: a² = c² − b². Square, subtract, square root. Longest? Add. Shorter? Subtract. The answer must be less than the hypotenuse. Now try the practice questions!"
+    }
+  ]
+}
