@@ -1,0 +1,354 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Chapter 11 · Test 4",
+  "kind": "test",
+  "summary": "Chapter 11 test 4: 15 questions on algorithms with variables and loops and on testing number patterns with algorithms.",
+  "minutes": 25,
+  "body": "This test covers Chapter 11 · Algorithmic thinking: assignment, accumulators, while and repeat-until loops, real-life loops, finding a term's position, searching for a counterexample, and writing a rule for what a loop outputs after n runs.\n\nThere are 15 multiple-choice questions: 4 easy, 5 medium, 4 hard and 2 challenge. Allow about 25 minutes, no notes, no calculator unless the question says. Trace every loop carefully on paper and check the condition after each step.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set a to 8. Set b to a + 5. Set a to b × 2. What are a and b at the end?",
+      "options": {
+        "A": "a = 16, b = 13",
+        "B": "a = 26, b = 13",
+        "C": "a = 26, b = 26",
+        "D": "a = 8, b = 13"
+      },
+      "answer": "B",
+      "explanation": "b = 8 + 5 = 13, then a = 13 × 2 = 26. a = 16 doubles the old a instead of b.",
+      "steps": [
+        "Step 1: a = 8.",
+        "Step 2: b = 8 + 5 = 13.",
+        "Step 3: a = 13 × 2 = 26, and b is still 13."
+      ],
+      "mistakes": {
+        "A": "Step 3: the step says b × 2, so double b, not the old a.",
+        "C": "Step 3: only a changes in the last step. b keeps its value.",
+        "D": "Step 3: \"set a to b × 2\" gives a a new value — don't skip it."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "In an algorithm, what does the step \"set count to count − 1\" do?",
+      "options": {
+        "A": "It makes count 1 less than its old value.",
+        "B": "It sets count to −1.",
+        "C": "It is an equation with no solution, so it cannot be done.",
+        "D": "It stores count − 1 in a new variable and leaves count alone."
+      },
+      "answer": "A",
+      "explanation": "Work out count − 1 using the old value, then store it back in count: new = old − 1. It is an instruction, not an equation.",
+      "steps": [
+        "Step 1: work out the right side, count − 1, using the current value.",
+        "Step 2: store the answer back in count, so count is now 1 less."
+      ],
+      "mistakes": {
+        "B": "Step 1: the right side uses the old value of count — it is not just −1.",
+        "C": "Step 1: an assignment is an instruction, not an equation to solve.",
+        "D": "Step 2: the answer is stored back in count, replacing the old value."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Ben claims: \"The square of any whole number is even.\" Which number is a counterexample?",
+      "options": {
+        "A": "4",
+        "B": "6",
+        "C": "10",
+        "D": "3"
+      },
+      "answer": "D",
+      "explanation": "3² = 9 is odd, so 3 breaks the claim. Squares of even numbers like 4 are even, so they agree with it.",
+      "steps": [
+        "Step 1: a counterexample is a whole number whose square is NOT even.",
+        "Step 2: 3² = 9 is odd, so 3 is the counterexample."
+      ],
+      "mistakes": {
+        "A": "Step 2: 4² = 16 is even, so it agrees with the claim.",
+        "B": "Step 2: 6² = 36 is even, so it agrees with the claim.",
+        "C": "Step 2: 10² = 100 is even, so it agrees with the claim."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Set t to 6. Repeat 4 times: set t to t + 4, then output t. Which numbers are output?",
+      "options": {
+        "A": "6, 10, 14, 18",
+        "B": "10, 14, 18, 22, 26",
+        "C": "10, 14, 18, 22",
+        "D": "24, 96, 384, 1536"
+      },
+      "answer": "C",
+      "explanation": "Add first, then output: 10, 14, 18, 22. 6, 10, 14, 18 outputs before adding.",
+      "steps": [
+        "Step 1: add first: t = 10, output 10.",
+        "Step 2: repeat: 14, 18, 22 — four outputs in all."
+      ],
+      "mistakes": {
+        "A": "Step 1: this loop adds 4 BEFORE it outputs, so 6 is never output.",
+        "B": "Step 2: the loop runs 4 times, so there are only 4 outputs.",
+        "D": "Step 1: \"t + 4\" means add 4, not multiply by 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set s to 0. For i from 3 to 7: set s to s + 2 × i − 1. Output s. What is the output?",
+      "options": {
+        "A": "25",
+        "B": "50",
+        "C": "32",
+        "D": "45"
+      },
+      "answer": "D",
+      "explanation": "The loop adds 5 + 7 + 9 + 11 + 13 = 45. 32 stops before i = 7.",
+      "steps": [
+        "Step 1: i takes the values 3, 4, 5, 6, 7.",
+        "Step 2: the amounts added are 2 × i − 1 = 5, 7, 9, 11, 13.",
+        "Step 3: s = 5 + 7 + 9 + 11 + 13 = 45."
+      ],
+      "mistakes": {
+        "A": "Step 2: add 2 × i − 1 each time, not just i.",
+        "B": "Step 2: 2 × i − 1 means double i and then take 1 away each time.",
+        "C": "Step 1: the loop includes i = 7, so there are 5 iterations."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set x to 1. While x is less than 100: set x to x × 4. Output x. What is the output?",
+      "options": {
+        "A": "256",
+        "B": "64",
+        "C": "100",
+        "D": "1024"
+      },
+      "answer": "A",
+      "explanation": "x goes 4, 16, 64, 256. 256 is not less than 100, so stop. 64 stops one step too early.",
+      "steps": [
+        "Step 1: check first: 1 is less than 100, so x = 4.",
+        "Step 2: keep going while x is less than 100: 16, 64, 256.",
+        "Step 3: 256 is not less than 100, so output 256."
+      ],
+      "mistakes": {
+        "B": "Step 2: 64 is still less than 100, so the loop runs again.",
+        "C": "Step 2: x is multiplied by 4 each time, so it jumps past 100 without landing on it.",
+        "D": "Step 2: once x is not less than 100 the loop stops — no extra run."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set money to 500 and c to 0. Repeat: set money to money − 65 and c to c + 1, until money is less than 100. What are c and money at the end?",
+      "options": {
+        "A": "c = 6, money = 110",
+        "B": "c = 7, money = 45",
+        "C": "c = 8, money = −20",
+        "D": "c = 7, money = 110"
+      },
+      "answer": "B",
+      "explanation": "money goes 435, 370, 305, 240, 175, 110, 45. 45 is less than 100, so the loop stops after 7 runs. 110 is not less than 100.",
+      "steps": [
+        "Step 1: each run takes 65 from money and adds 1 to c.",
+        "Step 2: trace money: 500 → 435 → 370 → 305 → 240 → 175 → 110 → 45.",
+        "Step 3: 45 is less than 100, so stop: c = 7, money = 45."
+      ],
+      "mistakes": {
+        "A": "Step 3: 110 is not less than 100, so the loop runs again.",
+        "C": "Step 3: the loop stops as soon as money is less than 100 — check after each run.",
+        "D": "Step 2: c and money change together, so after the 7th run money has dropped by 65 again."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "An algorithm adds up the first 9 even numbers: 2 + 4 + 6 + …. What total does it output?",
+      "options": {
+        "A": "81",
+        "B": "18",
+        "C": "90",
+        "D": "72"
+      },
+      "answer": "C",
+      "explanation": "2 + 4 + … + 18 = 90 (it is 9 × 10). 81 is the sum of the first 9 odd numbers.",
+      "steps": [
+        "Step 1: the first 9 even numbers are 2, 4, 6, …, 18.",
+        "Step 2: pair them up or use n × (n + 1): 9 × 10 = 90."
+      ],
+      "mistakes": {
+        "A": "Step 1: 9² = 81 is the sum of the first 9 ODD numbers. These numbers are even.",
+        "B": "Step 2: 18 is the 9th even number. The algorithm adds all nine.",
+        "D": "Step 2: count the numbers — there are 9, so the last one is 18, not 16."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "The pattern is 2, 9, 16, 23, …. In which position is 100?",
+      "options": {
+        "A": "15th",
+        "B": "14th",
+        "C": "100 is not in the pattern",
+        "D": "13th"
+      },
+      "answer": "A",
+      "explanation": "The rule is term = 7 × position − 5, so 7 × position = 105 and position = 15. 14 counts jumps, not positions.",
+      "steps": [
+        "Step 1: the difference is 7 and 2 − 7 = −5, so term = 7 × position − 5.",
+        "Step 2: set 7 × position − 5 = 100, so 7 × position = 105.",
+        "Step 3: position = 105 ÷ 7 = 15, so 100 is the 15th term."
+      ],
+      "mistakes": {
+        "B": "Step 3: (100 − 2) ÷ 7 = 14 counts the jumps from the first term. Add 1 to get the position.",
+        "C": "Step 2: the rule is 7 × position − 5, so ADD 5 to undo the −5 before dividing.",
+        "D": "Step 1: count the jumps from the first term, 2, not from the second term, 9."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set a to 2 and b to 5. Repeat 3 times: set c to 2 × b − a, set a to b, set b to c. Output b. What is the output?",
+      "options": {
+        "A": "11",
+        "B": "17",
+        "C": "5",
+        "D": "14"
+      },
+      "answer": "D",
+      "explanation": "Trace (a, b): (5, 8), (8, 11), (11, 14), so b = 14. 5 comes from changing a before working out c.",
+      "steps": [
+        "Step 1: c = 2 × b − a uses the old a and b.",
+        "Step 2: trace (a, b): (2, 5) → (5, 8) → (8, 11) → (11, 14).",
+        "Step 3: after 3 iterations, b = 14."
+      ],
+      "mistakes": {
+        "A": "Step 2: the loop runs 3 times — you stopped after 2.",
+        "B": "Step 2: count the iterations again — there are only 3.",
+        "C": "Step 1: c must be worked out BEFORE a changes. If a becomes b first, 2 × b − a just gives b again."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "The flowchart shows a pool being filled: set water to 2000 and hours to 0; while water is less than 5000, add 350 to water and 1 to hours; then output hours. What is the output?",
+      "options": {
+        "A": "8",
+        "B": "15",
+        "C": "9",
+        "D": "10"
+      },
+      "answer": "C",
+      "explanation": "The pool needs 3000 L more; 3000 ÷ 350 ≈ 8.6, so it takes 9 hours (2000 + 3150 = 5150). After 8 hours it holds only 4800 L.",
+      "steps": [
+        "Step 1: it needs 5000 − 2000 = 3000 L more.",
+        "Step 2: 3000 ÷ 350 ≈ 8.6 hours, so 8 hours is not enough: after 8 hours water = 4800.",
+        "Step 3: one more hour gives 5150, which is not less than 5000, so the output is 9."
+      ],
+      "mistakes": {
+        "A": "Step 3: after 8 hours water is 4800, which is still less than 5000, so the loop runs again.",
+        "B": "Step 1: the pool already holds 2000 L, so only 3000 L more is needed.",
+        "D": "Step 3: once water is not less than 5000 the loop stops — no extra hour."
+      },
+      "diagram": "diagrams/y8/maths/chapter-11-test-4-q11.svg",
+      "diagram_alt": "A flowchart: Start; water = 2000, hours = 0; the question \"Is water less than 5000?\". Yes leads to \"water = water + 350, hours = hours + 1\", which loops back to the question. No leads to \"Output hours\", then End."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "A loop tests \"2n² + 29 is always prime\" for n = 0, 1, 2, … and stops at the first n where the result is not prime. At which value of n does it stop?",
+      "options": {
+        "A": "n = 28",
+        "B": "n = 29",
+        "C": "n = 30",
+        "D": "It never stops."
+      },
+      "answer": "B",
+      "explanation": "For n = 29, 2 × 29² + 29 = 29 × (2 × 29 + 1) = 29 × 59 = 1711, which is not prime. n = 0 to 28 all give primes.",
+      "steps": [
+        "Step 1: an algorithm checks n = 0, 1, 2, … and finds primes all the way to n = 28.",
+        "Step 2: at n = 29, both parts share the factor 29: 2 × 29² + 29 = 29 × 59.",
+        "Step 3: 1711 = 29 × 59 is not prime, so the loop stops at n = 29."
+      ],
+      "mistakes": {
+        "A": "Step 2: n = 28 gives 2 × 784 + 29 = 1597, which is prime, so the loop keeps going.",
+        "C": "Step 2: check the value of n just before this — it already fails.",
+        "D": "Step 2: try n = 29 — every term then has 29 as a factor."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Pattern A is 3, 8, 13, … (add 5). Pattern B is 59, 55, 51, … (subtract 4). Is there a position where A and B have the same term?",
+      "options": {
+        "A": "No — at position 7, A = 33 and B = 35; at position 8, A = 38 and B = 31, so A jumps past B.",
+        "B": "Yes, at position 7",
+        "C": "Yes, at position 8",
+        "D": "Yes, at position 15"
+      },
+      "answer": "A",
+      "explanation": "The gap of 56 closes by 9 each step, and 56 ÷ 9 is not a whole number, so the patterns never meet: A goes from 2 below B to 7 above it.",
+      "steps": [
+        "Step 1: the first gap is 59 − 3 = 56, and it closes by 5 + 4 = 9 each step.",
+        "Step 2: 56 ÷ 9 ≈ 6.2 is not a whole number, so the gap never becomes exactly 0.",
+        "Step 3: check: position 7 gives 33 and 35; position 8 gives 38 and 31. So there is no position with the same term."
+      ],
+      "mistakes": {
+        "B": "Step 3: at position 7, A = 33 and B = 35 — close, but not equal.",
+        "C": "Step 3: at position 8, A = 38 and B = 31 — A has already passed B.",
+        "D": "Step 1: the gap closes by 5 + 4 = 9 each step, not just by 4. Trace the terms to check."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set x to 10. Repeat n times: set x to x − 3. Output x. Which expression gives the output for any whole number n?",
+      "options": {
+        "A": "7 − 3n",
+        "B": "7n",
+        "C": "10 − 3n",
+        "D": "3n + 10"
+      },
+      "answer": "C",
+      "explanation": "Each run subtracts 3, so after n runs x = 10 − 3n. Check: n = 2 gives 4 ✓. 7 − 3n gives 1 for n = 2, which is wrong.",
+      "steps": [
+        "Step 1: trace: n = 1 gives 7, n = 2 gives 4, n = 3 gives 1.",
+        "Step 2: the start is 10, and 3 is taken away n times: 10 − 3n."
+      ],
+      "mistakes": {
+        "A": "Step 2: check n = 1 — the output must be 7, so the starting value in the expression is 10.",
+        "B": "Step 2: the loop subtracts 3 each time; it does not multiply. Check n = 2: the output is 4.",
+        "D": "Step 1: each run takes 3 AWAY, so the n part must be subtracted."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Set total to 0 and k to 0. Repeat: add 1 to k, then add 3 × k to total, until total is greater than 200. What is k at the end?",
+      "options": {
+        "A": "11",
+        "B": "13",
+        "C": "234",
+        "D": "12"
+      },
+      "answer": "D",
+      "explanation": "total = 3 + 6 + 9 + … = 3 × (1 + 2 + … + k). At k = 11 it is 198; at k = 12 it is 234, the first total greater than 200.",
+      "steps": [
+        "Step 1: total = 3 × (1 + 2 + … + k).",
+        "Step 2: at k = 11, 1 + … + 11 = 66, so total = 198 — not yet greater than 200.",
+        "Step 3: at k = 12, total = 3 × 78 = 234, greater than 200, so k = 12."
+      ],
+      "mistakes": {
+        "A": "Step 2: at k = 11, total = 198, which is NOT greater than 200, so the loop runs again.",
+        "B": "Step 3: the loop stops as soon as total is greater than 200 — no extra run.",
+        "C": "Step 3: 234 is the final total. The question asks for k."
+      }
+    }
+  ]
+}

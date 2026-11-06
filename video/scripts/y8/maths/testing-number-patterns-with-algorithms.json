@@ -1,0 +1,111 @@
+{
+  "lesson": "y8/maths/testing-number-patterns-with-algorithms.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Testing number patterns with algorithms",
+  "icon": "🔍",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Testing number patterns with algorithms",
+      "sub": "Does this pattern ALWAYS work?",
+      "icon": "🔍",
+      "say": "You spot a pattern in some numbers. It works once, twice, ten times. Does it always work? An algorithm can test hundreds of cases in a moment. Let's find out what that can, and can't, tell you."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "☔",
+      "everyday": "An umbrella stays dry in ten storms. Will it never leak?",
+      "icon2": "🔍",
+      "science": "Many cases that work are evidence; one failure disproves the claim",
+      "breaks": "storms are hard to control. Numbers can be tested exactly, and algebra can prove a pattern works every time.",
+      "say": "A shop says its umbrella never leaks. You stay dry in ten storms. That's good evidence, but storm eleven might soak you, and one leak proves the claim false. Patterns are the same, except that with numbers, algebra can sometimes prove a rule works every single time."
+    },
+    {
+      "type": "equation",
+      "heading": "Position rule for adding patterns",
+      "equation": "term = d × position + (first − d)",
+      "parts": [
+        [
+          "d",
+          "the difference"
+        ],
+        [
+          "first",
+          "the first term"
+        ],
+        [
+          "5, 9, 13, …",
+          "term = 4 × position + 1"
+        ]
+      ],
+      "say": "A loop that adds the same amount each time makes an arithmetic pattern. Its rule is: difference times position, then fix the start. For five, nine, thirteen, the difference is four, and five minus four is one, so the term is four times the position plus one.",
+      "caption": "A loop that adds the same amount each time makes an arithmetic pattern. Its rule: difference × position, then fix the start. For 5, 9, 13, the difference is 4, and 5 − 4 = 1, so term = 4 × position + 1."
+    },
+    {
+      "type": "example",
+      "heading": "Finding a counterexample",
+      "question": "Conjecture: n² − n + 11 is always prime. Test n = 1, 2, 3, …",
+      "lines": [
+        "n = 1, 2, 3: 11, 13, 17 — prime",
+        "… n = 10: 101 — prime",
+        "n = 11: 121 − 11 + 11 = 121",
+        "121 = 11 × 11, not prime",
+        "n = 11 is a counterexample"
+      ],
+      "say": "Test the conjecture: n squared minus n plus eleven is always prime. One gives eleven, two gives thirteen, all the way to n equals ten, which gives one hundred and one. All prime! But n equals eleven gives one hundred and twenty-one, which is eleven times eleven. The conjecture is false.",
+      "caption": "Test: n² − n + 11 is always prime. n = 1 gives 11, n = 2 gives 13, up to n = 10, which gives 101. All prime! But n = 11 gives 121 = 11 × 11. The conjecture is false."
+    },
+    {
+      "type": "diagram",
+      "heading": "An algorithm that hunts for counterexamples",
+      "diagram": "diagrams/y8/maths/testing-number-patterns-with-algorithms-tester.svg",
+      "notes": [
+        "Start at n = 1",
+        "Prime? Add 1 to n and go round again",
+        "Not prime? Output n: a counterexample"
+      ],
+      "say": "Here is the testing algorithm as a flowchart. First n starts at one. Then it works out the value and asks: is it prime? Yes sends it round the loop with the next n. The only way out is the no arrow, which outputs a counterexample."
+    },
+    {
+      "type": "points",
+      "heading": "Evidence is not proof",
+      "icon": "🧠",
+      "points": [
+        "One counterexample: the claim is false",
+        "Many cases that work: only evidence",
+        "n² + n + 41 is prime for n = 0 to 39",
+        "n = 40 gives 1681 = 41 × 41",
+        "A proof covers every case"
+      ],
+      "say": "Here's a famous warning. N squared plus n plus forty-one is prime for every n from zero to thirty-nine. Forty in a row! But n equals forty gives sixteen hundred and eighty-one, which is forty-one times forty-one. To be certain, you need a proof that covers every case.",
+      "caption": "A famous warning: n² + n + 41 is prime for every n from 0 to 39. Forty in a row! But n = 40 gives 1681 = 41 × 41. To be certain, you need a proof that covers every case."
+    },
+    {
+      "type": "example",
+      "heading": "Is 150 in the pattern?",
+      "question": "Pattern 7, 13, 19, 25, … Set t to 7. While t is less than 150: add 6.",
+      "lines": [
+        "Rule: term = 6 × position + 1",
+        "24th term: 6 × 24 + 1 = 145",
+        "145 + 6 = 151, loop stops",
+        "It jumped over 150",
+        "150 is not in the pattern"
+      ],
+      "say": "Is one hundred and fifty in the pattern seven, thirteen, nineteen? The loop climbs in sixes. The twenty-fourth term is one hundred and forty-five, and the next is one hundred and fifty-one. It jumped right over one hundred and fifty, so one hundred and fifty is not in the pattern.",
+      "caption": "Is 150 in the pattern 7, 13, 19? The loop climbs in sixes. The 24th term is 145, and the next is 151. It jumped right over 150, so 150 is not in the pattern."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Loops can generate pattern terms",
+        "Rule: d × position + (first − d)",
+        "One counterexample sinks a claim",
+        "Testing is evidence, not proof",
+        "Search loops find the smallest value"
+      ],
+      "say": "Quick recap. Loops generate pattern terms, and the rule is difference times position, then fix the start. One counterexample sinks a claim. Testing lots of cases is evidence, not proof. And a search loop counting up finds the smallest value that works. Now try the practice questions!"
+    }
+  ]
+}

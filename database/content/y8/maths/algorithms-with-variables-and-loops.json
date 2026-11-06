@@ -1,0 +1,274 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Algorithms with variables and loops",
+  "summary": "How algorithms store and update variables inside loops: assignment, running totals and products, tracing several variables, and while versus repeat-until loops.",
+  "minutes": 30,
+  "video": "videos/y8/maths/algorithms-with-variables-and-loops.mp4",
+  "body": "Every app, game and calculator keeps track of changing numbers: your score, your battery level, the money in a bank account. In an algorithm, a value that changes is stored in a **variable**, and loops update it again and again. In this lesson you will use variables and loops together to make short algorithms do a lot of work.\n\n## Learning objective\n\nBy the end of this lesson you can follow algorithms that store and update variables inside loops, trace several variables at once, and tell the difference between a \"while\" loop and a \"repeat … until\" loop.\n\n## Before you start\n\nYou will need:\n\n- **Loops and decisions in algorithms (Year 7)** — counted loops, conditional loops and trace tables.\n- **Substituting integers into expressions (Year 8)** — putting numbers, including negatives, into a rule.\n\n**Warm-up**\n\n1. Find the value of 3x − 7 when x = −2.\n2. Start with 4. Repeat 3 times: add 6. What is the output?\n\n**Answers:** 1. 3 × (−2) − 7 = −6 − 7 = **−13**. 2. 4 → 10 → 16 → **22**.\n\n## Think of it like this\n\n### A scoreboard at the footy\n\nA scoreboard has a label (\"Home\") and a number beside it. When the home team kicks a goal, the old number is rubbed out and a new number is written in its place: \"Home is now Home + 6.\" Only the newest score is shown.\n\n*Where the analogy breaks down:* a scoreboard only ever goes up by 1 or 6. A variable can be set to any value at all — negatives, decimals, or a value worked out from other variables — and the computer changes it instantly, without ever making a mistake.\n\n## Key ideas\n\n### Variables and assignment\n\nA **variable** is a named place that stores one value, such as x, total or count. Giving a variable a value is called **assignment**. We write it in words like this:\n\n- \"Set x to 5\" — x now holds 5.\n- \"Set x to x + 4\" — work out the right side using the **current** value of x, then store the answer back in x.\n\n\"Set x to x + 4\" is **not** an equation to solve. It is an instruction: take the old x, add 4, and that becomes the new x.\n\n### Order matters\n\nSteps happen one at a time, and each step uses the newest values. Suppose a = 4 and b = 10, and you want to swap them. \"Set a to b, then set b to a\" does **not** work: after the first step a = 10, so the second step makes b = 10 too. A third variable fixes this:\n\n- Set t to a (t = 4) — keep a safe copy.\n- Set a to b (a = 10).\n- Set b to t (b = 4). Swapped!\n\n### Accumulators\n\nAn **accumulator** is a variable that builds up an answer bit by bit inside a loop.\n\n- A running **total** starts at 0 and has something added on each iteration.\n- A running **product** starts at 1 and is multiplied on each iteration. (Starting a product at 0 would make every answer 0.)\n\n### Loops with a loop variable\n\n\"For i from 1 to 5\" is a counted loop where the variable i takes the values 1, 2, 3, 4, 5 in turn. The number of iterations is last − first + 1, so \"for i from 3 to 10\" runs 10 − 3 + 1 = **8** times.\n\n### While loops and repeat-until loops\n\nBoth are conditional loops, but they check at different moments:\n\n| While loop | Repeat … until loop |\n|---|---|\n| \"While the condition is true: do the steps\" | \"Repeat: do the steps, until the condition is true\" |\n| Checks **before** each iteration | Checks **after** each iteration |\n| Might run **zero** times | Always runs at least once |\n| Keeps going while the condition is true | Stops as soon as the condition is true |\n\n![Flowcharts of a while loop (question first, then steps) and a repeat-until loop (steps first, then question)](/diagrams/y8/maths/algorithms-with-variables-and-loops-while-until.svg)\n\nIn a **flowchart**, a diamond asks a Yes/No question and a rectangle is a step. Follow the arrows: the while loop meets the question first; the repeat-until loop meets the steps first.\n\n## Worked examples\n\n### Example 1\n\n\"Set x to 5. Set x to x + 4. Set x to 3 × x. Set y to x − 7. Output x and y.\"\n\nStep 1: x = 5 — the starting value.\nStep 2: x = 5 + 4 = 9 — use the current x, then store the answer back in x.\nStep 3: x = 3 × 9 = 27 — the current x is now 9, not 5.\nStep 4: y = 27 − 7 = 20 — y uses the newest x.\nStep 5: output **x = 27, y = 20**.\n\nCheck: y is 7 less than x, and 27 − 7 = 20. ✓\n\n### Example 2\n\nA running product: \"Set p to 1. For i from 1 to 5: set p to p × i. Output p.\"\n\n| i | p |\n|---|---|\n| start | 1 |\n| 1 | 1 |\n| 2 | 2 |\n| 3 | 6 |\n| 4 | 24 |\n| 5 | 120 |\n\nStep 1: p starts at 1 — a product must start at 1, not 0.\nStep 2: each row multiplies the p above it by the new i: 1 × 1 = 1, 1 × 2 = 2, 2 × 3 = 6, 6 × 4 = 24, 24 × 5 = 120.\nStep 3: i has reached 5, so the loop ends. Output **120**.\n\nCheck: 1 × 2 × 3 × 4 × 5 = 120. ✓\n\n### Example 3\n\nA water tank holds 1200 L. Each day 85 L is used. \"Set water to 1200 and days to 0. While water is at least 300: set water to water − 85 and days to days + 1. Output days and water.\"\n\n![Flowchart: while water is at least 300, take 85 from water and add 1 to days; then output days and water](/diagrams/y8/maths/algorithms-with-variables-and-loops-tank.svg)\n\n\nStep 1: this is a while loop, so check first — 1200 is at least 300, so run the loop.\nStep 2: after 10 days, water = 1200 − 850 = 350. Is 350 at least 300? Yes — run again.\nStep 3: day 11: water = 350 − 85 = 265. Is 265 at least 300? No — stop.\nStep 4: output **days = 11, water = 265 L**.\n\nCheck: 11 × 85 = 935 and 1200 − 935 = 265. ✓\n\n### Example 4\n\nTwo variables updating together: \"Set a to 1 and b to 1. Repeat 5 times: set c to a + b, set a to b, set b to c. Output b.\"\n\n| Iteration | c | a | b |\n|---|---|---|---|\n| start | – | 1 | 1 |\n| 1 | 2 | 1 | 2 |\n| 2 | 3 | 2 | 3 |\n| 3 | 5 | 3 | 5 |\n| 4 | 8 | 5 | 8 |\n| 5 | 13 | 8 | 13 |\n\nStep 1: c holds the sum of the two latest numbers — it's a safe copy so nothing gets lost.\nStep 2: a moves up to the old b, then b becomes c.\nStep 3: after 5 iterations, output **b = 13**.\n\nThis makes the famous **Fibonacci sequence** 1, 1, 2, 3, 5, 8, 13, … where each number is the sum of the two before it. If you leave out c and write \"set a to b, then set b to a + b\", a has already changed, so b just doubles each time (2, 4, 8, 16, 32) — a completely different output.\n\n## Common mistakes\n\n- **Treating \"set x to x + 4\" as an equation.** It happens because it looks like algebra. Fix: read it as \"new x = old x + 4\".\n- **Using an old value.** After a variable changes, every later step uses the new value. Fix: in a trace table, always work from the row above.\n- **Starting a product at 0.** Anything times 0 is 0. Fix: start totals at 0 and products at 1.\n- **Mixing up while and until.** They check at different moments. Fix: underline \"while\" or \"until\" and picture its flowchart before you start.\n- **Losing a value when swapping.** Fix: copy it into a spare variable first.\n\n## Tips to remember\n\n- **\"New = old + change.\"** (A made-up memory trick.) Every update step has this shape: work out the right side with the old value, then overwrite.\n- **Scoreboard picture.** A variable is a scoreboard — rub out, write the new number, and the old one is gone.\n- **\"Totals start at 0, products start at 1.\"** Starting anywhere else changes the answer.\n- **\"While looks before it leaps; until leaps before it looks.\"** (Made-up.) A while loop checks first; a repeat-until loop does the steps first.\n- **Quick self-check:** \"for i from 3 to 10\" runs last − first + 1 = 8 times, not 7.\n\n## Key terms\n\n- **Variable** — a named place that stores one value, which can change.\n- **Assignment** — giving a variable a value, such as \"set x to x + 4\".\n- **Accumulator** — a variable that builds up a total or product inside a loop.\n- **Loop variable** — a variable that steps through values in a counted loop, such as i from 1 to 5.\n- **While loop** — a loop that checks its condition before each iteration and runs while it is true.\n- **Repeat-until loop** — a loop that checks its condition after each iteration and stops when it is true.\n- **Flowchart** — a diagram of an algorithm: rectangles for steps, diamonds for Yes/No questions, arrows for the order.\n- **Fibonacci sequence** — 1, 1, 2, 3, 5, 8, …, where each number is the sum of the two before it.\n\n## Summary\n\n- A variable stores one value; \"set x to x + 4\" replaces x with its old value plus 4.\n- Steps run in order and always use the newest values, so the order of updates matters.\n- Accumulators build answers: totals start at 0, products start at 1.\n- \"For i from a to b\" runs b − a + 1 times.\n- A while loop checks first (it may run zero times); a repeat-until loop checks last (it runs at least once).\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "Set x to 7. Set x to x + 5. Set x to 2 × x. Output x. What is the output?",
+      "options": {
+        "A": "24",
+        "B": "17",
+        "C": "19",
+        "D": "14"
+      },
+      "answer": "A",
+      "explanation": "x becomes 7 + 5 = 12, then 2 × 12 = 24. 19 is tempting, but it does the doubling before the adding.",
+      "steps": [
+        "Set x to x + 5 — use the current x: 7 + 5 = 12, so x is now 12.",
+        "Set x to 2 × x — use the new x: 2 × 12 = 24. Output 24."
+      ],
+      "mistakes": {
+        "B": "Step 2: do the steps one at a time. You doubled the 5 instead of doubling the new x.",
+        "C": "Step 1: the order matters. You doubled 7 first, then added 5 — do the add step first.",
+        "D": "Step 2: you doubled the old x (7). After the first update x has changed, so use the new value."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "In an algorithm, what does the step \"set n to n + 3\" do?",
+      "options": {
+        "A": "It is an equation with no solution, so the step can't be done.",
+        "B": "It sets n to 3, whatever n was before.",
+        "C": "It replaces the value of n with 3 more than its old value.",
+        "D": "It adds 3 to n and stores the answer in a different variable."
+      },
+      "answer": "C",
+      "explanation": "Assignment works out the right side using the current n, then stores the answer back in n. Calling it an equation is the tempting mistake — it is an instruction.",
+      "steps": [
+        "Recall: \"set n to …\" is assignment — an instruction, not an equation.",
+        "Work out the right side with the old n (old n + 3), then store that answer back in n."
+      ],
+      "mistakes": {
+        "A": "Step 1: this is an instruction, not an equation. Read it as \"new n = old n + 3\".",
+        "B": "Step 2: the right side uses the old value of n and adds 3 to it — n is not simply set to 3.",
+        "D": "Step 2: the answer goes back into n itself, the variable named on the left."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "A loop says \"For i from 3 to 10: …\". How many times does the loop run?",
+      "options": {
+        "A": "7",
+        "B": "8",
+        "C": "10",
+        "D": "6"
+      },
+      "answer": "B",
+      "explanation": "i takes the values 3, 4, 5, 6, 7, 8, 9, 10, which is 10 − 3 + 1 = 8. 7 is tempting, but subtracting forgets to count one end.",
+      "steps": [
+        "The loop variable takes every whole number from 3 to 10, including both ends.",
+        "Count them: last − first + 1 = 10 − 3 + 1 = 8 iterations."
+      ],
+      "mistakes": {
+        "A": "Step 2: 10 − 3 = 7 leaves out one value. Count both 3 and 10 — add 1.",
+        "C": "Step 1: the loop starts at 3, not 1, so 1 and 2 are not counted.",
+        "D": "Step 1: both end values are included — i takes the value 3 and the value 10."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Set s to 100. For i from 1 to 4: set s to s − i². Output s. What is the output?",
+      "options": {
+        "A": "90",
+        "B": "86",
+        "C": "45",
+        "D": "70"
+      },
+      "answer": "D",
+      "explanation": "s goes 99, 95, 86, 70, because 1 + 4 + 9 + 16 = 30 and 100 − 30 = 70. 86 is tempting, but that stops one iteration early.",
+      "steps": [
+        "Square each i: 1, 4, 9, 16.",
+        "Subtract them in turn: 100 − 1 = 99, − 4 = 95, − 9 = 86, − 16 = 70. Output 70."
+      ],
+      "mistakes": {
+        "A": "Step 1: the step subtracts i², the square of i, not i itself.",
+        "B": "Step 2: you stopped after i = 3. The loop also runs for i = 4.",
+        "C": "Step 2: you ran the loop up to i = 5. It goes from 1 to 4 only."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "The flowchart shows an algorithm: set x to 60; while x is less than 50, set x to x − 8; then output x. What is the output?",
+      "options": {
+        "A": "52",
+        "B": "60",
+        "C": "44",
+        "D": "The loop never stops."
+      },
+      "answer": "B",
+      "explanation": "A while loop checks before it runs. 60 is not less than 50, so the loop body never runs and x stays 60. 52 is tempting, but that runs the loop once before checking.",
+      "steps": [
+        "A while loop checks its condition first: is 60 less than 50? No.",
+        "The condition is false, so the loop runs zero times and x stays 60. Output 60."
+      ],
+      "mistakes": {
+        "A": "Step 1: a while loop checks first. You ran it once before checking, like a repeat-until loop.",
+        "C": "Step 1: you treated it as \"until x is less than 50\". A while loop only runs while its condition is true.",
+        "D": "Step 2: the loop body is never reached, so it can't run forever."
+      },
+      "diagram": "diagrams/y8/maths/algorithms-with-variables-and-loops-q5.svg",
+      "diagram_alt": "A flowchart: Start; x = 60; the question \"Is x less than 50?\". Yes leads to \"x = x − 8\", which loops back to the question. No leads to \"Output x\", then End."
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Set t to 8 and count to 0. Repeat: set t to t − 5 and count to count + 1, until t is less than −10. What are count and t at the end?",
+      "options": {
+        "A": "count = 4, t = −12",
+        "B": "count = 3, t = −7",
+        "C": "count = 5, t = −17",
+        "D": "count = 3, t = −12"
+      },
+      "answer": "A",
+      "explanation": "t goes 3, −2, −7, −12. Only −12 is less than −10, so the loop stops after 4 iterations. Stopping at −7 is tempting, but −7 is greater than −10.",
+      "steps": [
+        "Trace: 8 − 5 = 3, 3 − 5 = −2, −2 − 5 = −7. None of these is less than −10.",
+        "−7 − 5 = −12, which is less than −10, so stop.",
+        "There were 4 iterations, so count = 4 and t = −12."
+      ],
+      "mistakes": {
+        "B": "Step 2: −7 is not less than −10 (it is closer to zero), so the loop runs again.",
+        "C": "Step 2: you did one iteration too many — check the condition after every iteration.",
+        "D": "Step 3: count goes up on every iteration, and there were 4 of them. Recount your trace table rows."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Set a to 2 and b to 3. Repeat 5 times: set c to a + b, set a to b, set b to c. Output b. What is the output?",
+      "options": {
+        "A": "21",
+        "B": "13",
+        "C": "34",
+        "D": "96"
+      },
+      "answer": "C",
+      "explanation": "Each iteration makes b the sum of the two latest numbers: 5, 8, 13, 21, 34. 21 is tempting, but that is only 4 iterations.",
+      "steps": [
+        "Iteration 1: c = 2 + 3 = 5, a = 3, b = 5.",
+        "Iterations 2 to 4: b becomes 8, then 13, then 21 (a trails one behind: 5, 8, 13).",
+        "Iteration 5: c = 13 + 21 = 34, so b = 34. Output 34."
+      ],
+      "mistakes": {
+        "A": "Step 2: you stopped after 4 iterations. The loop runs 5 times.",
+        "B": "Step 1: you never updated a, so you kept adding 2. After each iteration a must move up to the old b.",
+        "D": "Step 1: you set a to b before working out a + b, so b just doubled. Work out c = a + b first, using the old values."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "A phone battery is at 100%. Each game uses 7% of the battery. Set battery to 100 and games to 0. While battery is at least 20: set battery to battery − 7 and games to games + 1. How many games are played?",
+      "options": {
+        "A": "11",
+        "B": "14",
+        "C": "16",
+        "D": "12"
+      },
+      "answer": "D",
+      "explanation": "After 11 games the battery is 100 − 77 = 23%, still at least 20, so one more game makes it 16%. 11 is tempting, but 23 still passes the check.",
+      "steps": [
+        "The battery after g games is 100 − 7g. After 11 games: 100 − 77 = 23.",
+        "23 is at least 20, so play again: 23 − 7 = 16.",
+        "16 is less than 20, so stop. Games = 12."
+      ],
+      "mistakes": {
+        "A": "Step 2: after 11 games the battery is 23%, which is still at least 20, so the loop runs again.",
+        "B": "Step 1: 100 ÷ 7 ≈ 14 ignores the stopping condition. The loop stops when the battery drops below 20, not at 0.",
+        "C": "Step 3: 16 is the battery left at the end, not the number of games."
+      },
+      "diagram": "diagrams/y8/maths/algorithms-with-variables-and-loops-q8.svg",
+      "diagram_alt": "A flowchart: Start; battery = 100, games = 0; the question \"Is battery at least 20?\". Yes leads to \"battery = battery − 7, games = games + 1\", which loops back to the question. No leads to \"Output games\", then End."
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Set a to 4 and b to 9. Set a to b. Set b to a. What are a and b at the end?",
+      "options": {
+        "A": "a = 9, b = 4",
+        "B": "a = 9, b = 9",
+        "C": "a = 4, b = 4",
+        "D": "a = 4, b = 9"
+      },
+      "answer": "B",
+      "explanation": "The first step makes a = 9 and the old 4 is lost, so the second step makes b = 9 too. \"a = 9, b = 4\" is tempting, but a swap needs a spare variable.",
+      "steps": [
+        "Set a to b: a = 9. The old value 4 is gone.",
+        "Set b to a: a is now 9, so b = 9. Both are 9."
+      ],
+      "mistakes": {
+        "A": "Step 2: when b is set to a, a has already changed to 9. These steps do not swap the values.",
+        "C": "Step 1: do the steps in the order written — a is set to b first.",
+        "D": "Step 1: the steps do change the values — \"set a to b\" overwrites a."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "The list is 6, 2, 9, 4, 5, 9, 13, 10. Set big to the first number. For each number after it: if the number is greater than big, set big to that number and add 1 to changes. Changes starts at 0. What is the final value of changes?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "13"
+      },
+      "answer": "A",
+      "explanation": "big changes only at 9 and at 13, so changes = 2. 3 is tempting, but the second 9 is not greater than 9.",
+      "steps": [
+        "big starts at 6. 2 is not greater; 9 is greater, so big = 9 (changes = 1).",
+        "4, 5 and the second 9 are not greater than 9 — no change.",
+        "13 is greater, so big = 13 (changes = 2); 10 is not. Final changes = 2."
+      ],
+      "mistakes": {
+        "B": "Step 2: the second 9 is equal to big, not greater, so big does not change there.",
+        "C": "Step 1: you counted each number bigger than the one just before it. Compare with big, the largest so far.",
+        "D": "Step 3: 13 is the final value of big. The question asks how many times big changed."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Set total to 0. For i from 1 to 20: if i is a multiple of 3, add i to total; otherwise, subtract 1 from total. What is the final total?",
+      "options": {
+        "A": "63",
+        "B": "77",
+        "C": "−84",
+        "D": "49"
+      },
+      "answer": "D",
+      "explanation": "The multiples of 3 add to 63, and the other 14 numbers each subtract 1, so 63 − 14 = 49. 63 is tempting, but it ignores the \"otherwise\" path.",
+      "steps": [
+        "Multiples of 3 from 1 to 20: 3, 6, 9, 12, 15, 18. They add to 63.",
+        "The other 20 − 6 = 14 numbers each subtract 1, which takes away 14.",
+        "Final total = 63 − 14 = 49."
+      ],
+      "mistakes": {
+        "A": "Step 2: you added the multiples of 3 but forgot to subtract 1 for every other number.",
+        "B": "Step 2: for the numbers that are not multiples of 3, subtract 1 — you added 1 instead.",
+        "C": "Step 2: the \"otherwise\" path subtracts 1, not i itself."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Set x to 5. Repeat n times: set x to x + 4. Output x. Which expression gives the output for any whole number n?",
+      "options": {
+        "A": "9n",
+        "B": "5n + 4",
+        "C": "4n + 5",
+        "D": "4n + 1"
+      },
+      "answer": "C",
+      "explanation": "Each of the n iterations adds 4, on top of the starting 5, giving 5 + 4n. 4n + 1 is tempting, but with n = 1 it gives 5, and the algorithm outputs 9.",
+      "steps": [
+        "The starting value 5 is there once; each of the n iterations adds 4, so the loop adds 4n.",
+        "Output = 5 + 4n = 4n + 5.",
+        "Check: n = 2 gives 5 → 9 → 13, and 4 × 2 + 5 = 13 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 1: the 5 is only there once, at the start. Only the 4 is added on each iteration.",
+        "B": "Step 2: you swapped the numbers. The amount added each time (4) is multiplied by n.",
+        "D": "Step 2: 4n + 1 gives the n-th term of 5, 9, 13, …, which counts the start as term 1. Here the start is before any repeats."
+      }
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "lesson": "y8/maths/algorithms-with-variables-and-loops.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Algorithms with variables and loops",
+  "icon": "📦",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Algorithms with variables and loops",
+      "sub": "How apps keep track of changing numbers",
+      "icon": "📦",
+      "say": "Your score in a game, your phone battery, the money in your bank account. They all change, and an algorithm keeps track of them. Let's see how variables and loops work together."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🏉",
+      "everyday": "A footy scoreboard: rub out the old score, write the new one",
+      "icon2": "📦",
+      "science": "A variable stores one value; an update replaces the old value",
+      "breaks": "a scoreboard only goes up by 1 or 6. A variable can hold any value at all, and it never makes a mistake.",
+      "say": "Think of a footy scoreboard. When the home team kicks a goal, the old score is rubbed out and the new one is written in: home is now home plus six. A variable works the same way. But unlike a scoreboard, it can hold any value at all."
+    },
+    {
+      "type": "equation",
+      "heading": "Assignment",
+      "equation": "set x to x + 4",
+      "parts": [
+        [
+          "x on the right",
+          "the old value"
+        ],
+        [
+          "x on the left",
+          "where the new value goes"
+        ],
+        [
+          "+ 4",
+          "the change"
+        ]
+      ],
+      "say": "Set x to x plus four is not an equation to solve. It's an instruction. Work out the right side using the old x, then store the answer back in x. New equals old plus change.",
+      "caption": "Set x to x + 4 is not an equation to solve. It's an instruction. Work out the right side using the old x, then store the answer back in x. New = old + change."
+    },
+    {
+      "type": "example",
+      "heading": "Order matters",
+      "question": "Set x to 5. Set x to x + 4. Set x to 3 × x. Set y to x − 7.",
+      "lines": [
+        "x = 5 + 4 = 9",
+        "x = 3 × 9 = 27 (use the new x)",
+        "y = 27 − 7 = 20",
+        "Output: x = 27, y = 20"
+      ],
+      "say": "Start with x equals five. Add four, so x is nine. Now triple it, using the new x: three times nine is twenty-seven. Then y is twenty-seven minus seven, which is twenty. Every step uses the newest value.",
+      "caption": "Start with x = 5. Add 4, so x is 9. Now triple it, using the new x: 3 × 9 = 27. Then y = 27 − 7 = 20. Every step uses the newest value."
+    },
+    {
+      "type": "example",
+      "heading": "A running product",
+      "question": "Set p to 1. For i from 1 to 5: set p to p × i. Output p.",
+      "lines": [
+        "Start p at 1, not 0",
+        "i = 1, 2, 3: p = 1, 2, 6",
+        "i = 4, 5: p = 24, 120",
+        "Output: 120"
+      ],
+      "say": "A running product starts at one, because anything times zero is zero. Multiply by each i in turn: one, two, six, twenty-four, one hundred and twenty. The output is one hundred and twenty. Totals start at zero; products start at one.",
+      "caption": "A running product starts at 1, because anything times 0 is 0. Multiply by each i: 1, 2, 6, 24, 120. The output is 120. Totals start at 0; products start at 1."
+    },
+    {
+      "type": "compare",
+      "heading": "While or until?",
+      "left": {
+        "title": "While loop",
+        "icon": "👀",
+        "points": [
+          "Checks BEFORE each run",
+          "Runs while condition is true",
+          "Might run zero times"
+        ]
+      },
+      "right": {
+        "title": "Repeat … until loop",
+        "icon": "🔁",
+        "points": [
+          "Checks AFTER each run",
+          "Stops when condition is true",
+          "Always runs at least once"
+        ]
+      },
+      "say": "A while loop looks before it leaps: it checks first and keeps going while the condition is true. A repeat until loop leaps before it looks: it does the steps first, and stops as soon as the condition is true."
+    },
+    {
+      "type": "diagram",
+      "heading": "While or until? Follow the arrows",
+      "diagram": "diagrams/y8/maths/algorithms-with-variables-and-loops-while-until.svg",
+      "notes": [
+        "Diamond = a Yes/No question",
+        "While: question first",
+        "Until: steps first"
+      ],
+      "say": "Here are the two loops as flowcharts. In the while loop, the arrow hits the diamond question first, so the steps might never run. In the repeat until loop, the steps come first, then the question. No sends you back round; yes lets you carry on."
+    },
+    {
+      "type": "example",
+      "heading": "Water tank",
+      "question": "Water = 1200 L, days = 0. While water is at least 300: water − 85, days + 1.",
+      "lines": [
+        "After 10 days: 1200 − 850 = 350",
+        "350 is at least 300: go again",
+        "Day 11: 350 − 85 = 265",
+        "265 is under 300: stop",
+        "Output: 11 days, 265 L"
+      ],
+      "say": "A tank holds twelve hundred litres and loses eighty-five a day. After ten days there are three hundred and fifty litres left. That's at least three hundred, so go again. Day eleven leaves two hundred and sixty-five, which is under three hundred. Stop: eleven days.",
+      "caption": "A tank holds 1200 L and loses 85 L a day. After 10 days, 350 L are left. That's at least 300, so go again. Day 11 leaves 265 L, which is under 300. Stop: 11 days."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "A variable stores one value",
+        "Set x to x + 4: new = old + change",
+        "Use the newest value every step",
+        "Totals start at 0, products at 1",
+        "While checks first; until checks last"
+      ],
+      "say": "Quick recap. A variable stores one value. Set x to x plus four means new equals old plus change. Always use the newest value. Totals start at zero, products at one. A while loop checks first, a repeat until loop checks last. Now try the practice questions!",
+      "caption": "Quick recap. A variable stores one value. Set x to x + 4 means new = old + change. Always use the newest value. Totals start at 0, products at 1. A while loop checks first, a repeat-until loop checks last. Now try the practice questions!"
+    }
+  ]
+}

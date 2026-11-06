@@ -1,0 +1,357 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Chapter 11 · Test 1",
+  "kind": "test",
+  "summary": "Chapter 11 test 1: 15 questions on algorithms with variables and loops and on testing number patterns with algorithms.",
+  "minutes": 25,
+  "body": "This test covers Chapter 11 · Algorithmic thinking: following algorithms that store and update variables, counted loops, while loops and repeat-until loops, generating number patterns with a loop, finding position rules, and using an algorithm to search for a counterexample.\n\nThere are 15 multiple-choice questions: 4 easy, 5 medium, 4 hard and 2 challenge. Allow about 25 minutes, no notes, no calculator unless the question says. Trace each algorithm on paper with a small trace table — write down every variable after each step.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set x to 6. Set x to x + 9. Set x to 4 × x. Output x. What is the output?",
+      "options": {
+        "A": "24",
+        "B": "19",
+        "C": "60",
+        "D": "33"
+      },
+      "answer": "C",
+      "explanation": "x becomes 6 + 9 = 15, then 4 × 15 = 60. 24 comes from multiplying the old value 6 instead of the new value 15.",
+      "steps": [
+        "Step 1: x = 6.",
+        "Step 2: x = 6 + 9 = 15 — the new x replaces the old one.",
+        "Step 3: x = 4 × 15 = 60, so the output is 60."
+      ],
+      "mistakes": {
+        "A": "Step 3: by now x is 15, not 6. Each step uses the newest value of x.",
+        "B": "Step 3: \"4 × x\" means multiply by 4, not add 4.",
+        "D": "Steps 2 and 3: do the steps in the order they are written — add 9 first, then multiply."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "A loop says \"For k from 4 to 15: …\". How many times does the loop run?",
+      "options": {
+        "A": "12",
+        "B": "11",
+        "C": "15",
+        "D": "13"
+      },
+      "answer": "A",
+      "explanation": "k takes the values 4, 5, …, 15, which is 15 − 4 + 1 = 12 values. 11 forgets to count both ends.",
+      "steps": [
+        "Step 1: list where k starts and stops: from 4 to 15.",
+        "Step 2: number of values = last − first + 1 = 15 − 4 + 1 = 12."
+      ],
+      "mistakes": {
+        "B": "Step 2: 15 − 4 counts the gaps between the values, not the values. Add 1 to include both ends.",
+        "C": "Step 1: k starts at 4, not 1, so the values 1, 2 and 3 are not included.",
+        "D": "Step 2: last − first + 1 is 15 − 4 + 1. Check your subtraction."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Set t to 2. Repeat 4 times: output t, then set t to t + 9. Which numbers are output?",
+      "options": {
+        "A": "11, 20, 29, 38",
+        "B": "2, 11, 20, 29, 38",
+        "C": "2, 18, 162, 1458",
+        "D": "2, 11, 20, 29"
+      },
+      "answer": "D",
+      "explanation": "Each time round, the loop outputs t and then adds 9: 2, 11, 20, 29. 11, 20, 29, 38 adds before outputting.",
+      "steps": [
+        "Step 1: output first, so the first output is 2; then t = 11.",
+        "Step 2: keep going — output 11, then 20, then 29 (4 outputs in all)."
+      ],
+      "mistakes": {
+        "A": "Step 1: the loop outputs t BEFORE adding 9, so the starting value is the first output.",
+        "B": "Step 2: the loop runs 4 times, so there are exactly 4 outputs.",
+        "C": "Step 1: \"t + 9\" means add 9, not multiply by 9."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "In maths, what is a conjecture?",
+      "options": {
+        "A": "A statement that has been proved true for every case",
+        "B": "A statement that seems true but has not been proved",
+        "C": "One case that shows a statement is false",
+        "D": "A rule that gives the term from its position"
+      },
+      "answer": "B",
+      "explanation": "A conjecture is a claim you think is true but have not proved. A statement proved for every case is no longer just a conjecture.",
+      "steps": [
+        "Step 1: think about the word — a conjecture is a guess based on patterns you have noticed.",
+        "Step 2: it has not been proved, so it is a statement that seems true but has not been proved."
+      ],
+      "mistakes": {
+        "A": "Step 1: that describes a theorem with a proof. A conjecture has not been proved yet.",
+        "C": "Step 1: that is a counterexample, which can be used to test a conjecture.",
+        "D": "Step 1: that is a position rule. A conjecture is a claim that might or might not be true."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set s to 50. For i from 1 to 5: set s to s − 2 × i. Output s. What is the output?",
+      "options": {
+        "A": "20",
+        "B": "35",
+        "C": "40",
+        "D": "80"
+      },
+      "answer": "A",
+      "explanation": "The loop subtracts 2, 4, 6, 8 and 10, which is 30 in total, so s = 50 − 30 = 20. 35 subtracts i instead of 2 × i.",
+      "steps": [
+        "Step 1: write the amounts taken away: 2 × 1, 2 × 2, 2 × 3, 2 × 4, 2 × 5 = 2, 4, 6, 8, 10.",
+        "Step 2: trace s: 50 → 48 → 44 → 38 → 30 → 20.",
+        "Step 3: the loop has finished, so the output is 20."
+      ],
+      "mistakes": {
+        "B": "Step 2: each time you must subtract 2 × i, not just i.",
+        "C": "Step 2: i changes each time (1, 2, 3, 4, 5), so the amount subtracted changes too — it is not 2 every time.",
+        "D": "Step 2: the step says s − 2 × i, so subtract, don't add."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "The flowchart shows an algorithm: set n to 3; while n is less than 40, set n to 2 × n; then output n. What is the output?",
+      "options": {
+        "A": "24",
+        "B": "40",
+        "C": "96",
+        "D": "48"
+      },
+      "answer": "D",
+      "explanation": "n goes 3, 6, 12, 24, 48. 48 is not less than 40, so the loop stops and outputs 48. 24 stops one step too early.",
+      "steps": [
+        "Step 1: check first — 3 is less than 40, so double: 6.",
+        "Step 2: keep doubling while n is less than 40: 12, 24, 48.",
+        "Step 3: 48 is not less than 40, so stop and output 48."
+      ],
+      "mistakes": {
+        "A": "Step 3: 24 is less than 40, so the loop runs again. It only stops when the condition is false.",
+        "B": "Step 2: the loop doubles n, so n jumps from one doubled value to the next — it never lands exactly on 40.",
+        "C": "Step 3: once n is not less than 40, the loop stops — there is no extra doubling."
+      },
+      "diagram": "diagrams/y8/maths/chapter-11-test-1-q6.svg",
+      "diagram_alt": "A flowchart: Start; n = 3; the question \"Is n less than 40?\". Yes leads to \"n = 2 × n\", which loops back to the question. No leads to \"Output n\", then End."
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set p to 1. For i from 2 to 5: set p to p × i. Output p. What is the output?",
+      "options": {
+        "A": "15",
+        "B": "120",
+        "C": "60",
+        "D": "24"
+      },
+      "answer": "B",
+      "explanation": "p = 1 × 2 × 3 × 4 × 5 = 120. 24 stops before multiplying by 5.",
+      "steps": [
+        "Step 1: p starts at 1, and i takes the values 2, 3, 4, 5.",
+        "Step 2: trace p: 1 × 2 = 2, 2 × 3 = 6, 6 × 4 = 24, 24 × 5 = 120.",
+        "Step 3: the output is 120."
+      ],
+      "mistakes": {
+        "A": "Step 2: the step is p × i — multiply, don't add.",
+        "C": "Step 1: the loop starts at i = 2, so 2 is one of the numbers multiplied.",
+        "D": "Step 2: the loop includes i = 5, so multiply by 5 as well."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "A loop makes the pattern 3, 10, 17, 24, …. Which rule gives the term from its position?",
+      "options": {
+        "A": "term = 7 × position + 3",
+        "B": "term = 3 × position + 7",
+        "C": "term = 7 × position − 4",
+        "D": "term = position + 7"
+      },
+      "answer": "C",
+      "explanation": "The difference is 7 and 3 − 7 = −4, so term = 7 × position − 4. Check: position 4 gives 28 − 4 = 24. Using +3 gives 10 for position 1, which is wrong.",
+      "steps": [
+        "Step 1: the difference is 10 − 3 = 7, so the rule starts 7 × position.",
+        "Step 2: constant = first term − difference = 3 − 7 = −4.",
+        "Step 3: the rule is term = 7 × position − 4 (check: 7 × 1 − 4 = 3 ✓)."
+      ],
+      "mistakes": {
+        "A": "Step 2: the constant is first term − difference, not the first term itself. Check: position 1 must give 3.",
+        "B": "Step 1: the number multiplying the position is the difference between terms, not the first term.",
+        "D": "Step 1: the difference must multiply the position. Check: position 2 must give 10."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "The pattern is 6, 11, 16, 21, …. In which position is 96?",
+      "options": {
+        "A": "19th",
+        "B": "18th",
+        "C": "20th",
+        "D": "96 is not in the pattern"
+      },
+      "answer": "A",
+      "explanation": "The rule is term = 5 × position + 1. 5 × position = 95, so position = 19. 18 counts the jumps, not the positions.",
+      "steps": [
+        "Step 1: the difference is 5 and 6 − 5 = 1, so term = 5 × position + 1.",
+        "Step 2: set 5 × position + 1 = 96, so 5 × position = 95.",
+        "Step 3: position = 95 ÷ 5 = 19, so 96 is the 19th term."
+      ],
+      "mistakes": {
+        "B": "Step 3: 90 ÷ 5 = 18 counts the jumps from the first term. Add 1 to get the position.",
+        "C": "Step 2: the rule is 5 × position + 1. To undo +1, subtract 1 from 96 — don't add 4.",
+        "D": "Step 3: (96 − 1) ÷ 5 is a whole number, so 96 is in the pattern."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Ella has $35 and saves $12 each week. Set money to 35 and weeks to 0. While money is less than 200: set money to money + 12 and weeks to weeks + 1. What is weeks at the end?",
+      "options": {
+        "A": "13",
+        "B": "14",
+        "C": "17",
+        "D": "15"
+      },
+      "answer": "B",
+      "explanation": "Ella needs 200 − 35 = 165 more; 165 ÷ 12 = 13.75, so she needs 14 weeks (35 + 168 = 203). 13 weeks only gets her to $191.",
+      "steps": [
+        "Step 1: she needs 200 − 35 = $165 more.",
+        "Step 2: 165 ÷ 12 = 13.75 weeks, so 13 weeks is not enough.",
+        "Step 3: check: after 13 weeks money = 191 (less than 200, keep going); after 14 weeks money = 203, so the loop stops with weeks = 14."
+      ],
+      "mistakes": {
+        "A": "Step 3: after 13 weeks money is 35 + 156 = 191, which is still less than 200, so the loop runs again.",
+        "C": "Step 1: Ella starts with $35, so she does not need to save the whole $200.",
+        "D": "Step 3: as soon as money is not less than 200 the loop stops — count the weeks carefully."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set a to 3 and b to 7. Set a to a + b. Set b to a − b. Set a to a − b. What are a and b at the end?",
+      "options": {
+        "A": "a = 10, b = 3",
+        "B": "a = 14, b = −4",
+        "C": "a = 7, b = 3",
+        "D": "a = 3, b = 3"
+      },
+      "answer": "C",
+      "explanation": "a = 10, then b = 10 − 7 = 3, then a = 10 − 3 = 7. The values have swapped. a = 14, b = −4 uses the old a in the second step.",
+      "steps": [
+        "Step 1: start with a = 3, b = 7.",
+        "Step 2: a = 3 + 7 = 10.",
+        "Step 3: b = 10 − 7 = 3 (use the new a).",
+        "Step 4: a = 10 − 3 = 7 (use the new b), so a = 7 and b = 3."
+      ],
+      "mistakes": {
+        "A": "Step 4: there is one more step — set a to a − b using the new b.",
+        "B": "Step 3: by now a is 10, not 3. Use the newest value of a.",
+        "D": "Step 4: b has just changed, so a − b uses the new b, not 7."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "An algorithm tests the conjecture \"n² + n + 11 is always prime\" for n = 1, 2, 3, … and stops at the first counterexample. At which value of n does it stop?",
+      "options": {
+        "A": "n = 11",
+        "B": "n = 9",
+        "C": "It never stops — the rule is always prime.",
+        "D": "n = 10"
+      },
+      "answer": "D",
+      "explanation": "n = 1 to 9 give 13, 17, 23, 31, 41, 53, 67, 83, 101 (all prime), but n = 10 gives 121 = 11 × 11. n = 11 is not the FIRST failure.",
+      "steps": [
+        "Step 1: work out n² + n + 11 for each n and check if it is prime.",
+        "Step 2: n = 1 to 9 give 13, 17, 23, 31, 41, 53, 67, 83 and 101 — all prime.",
+        "Step 3: n = 10 gives 100 + 10 + 11 = 121 = 11 × 11, not prime, so the loop stops at n = 10."
+      ],
+      "mistakes": {
+        "A": "Step 2: check the values before n = 11 — a smaller n already gives a number that is not prime.",
+        "B": "Step 2: at n = 9 the value is 81 + 9 + 11 = 101, which is prime, so the loop keeps going.",
+        "C": "Step 2: keep testing — one of the values is a square number, so it is not prime."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Pattern A starts at 100 and subtracts 7 each time. Pattern B starts at 10 and adds 8 each time. At which position is B's term first greater than A's term?",
+      "options": {
+        "A": "Position 8",
+        "B": "Position 7",
+        "C": "Position 6",
+        "D": "Position 9"
+      },
+      "answer": "A",
+      "explanation": "The gap starts at 90 and closes by 15 each time. After 6 jumps (position 7) both are 58; at position 8, A = 51 and B = 66. At position 7 they are only equal.",
+      "steps": [
+        "Step 1: the gap is 100 − 10 = 90, and it closes by 7 + 8 = 15 each step.",
+        "Step 2: 90 ÷ 15 = 6 jumps, so at position 7 both terms are 58 — equal.",
+        "Step 3: one more step: position 8 gives A = 51 and B = 66, so B is first greater at position 8."
+      ],
+      "mistakes": {
+        "B": "Step 3: at this position the two terms are equal, and equal is not greater.",
+        "C": "Step 2: 90 ÷ 15 = 6 is the number of jumps, not the position. Then check whether equal counts.",
+        "D": "Step 3: check the position before — B has already passed A there."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "The list is 3, 8, 2, 8, 11, 5, 14, 14. Set big to the first number and changes to 0. For each number after the first: if the number is greater than big, set big to that number and add 1 to changes. What is the final value of changes?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "14",
+        "D": "3"
+      },
+      "answer": "D",
+      "explanation": "big changes to 8, then 11, then 14, so changes = 3. 5 wrongly counts the repeated 8 and 14, which are equal, not greater.",
+      "steps": [
+        "Step 1: big = 3, changes = 0.",
+        "Step 2: go through 8, 2, 8, 11, 5, 14, 14: big changes at 8 (greater than 3), 11 (greater than 8) and 14 (greater than 11). The second 8 and second 14 are only equal.",
+        "Step 3: changes = 3."
+      ],
+      "mistakes": {
+        "A": "Step 2: \"greater than\" does not include equal. The second 8 and the second 14 do not change big.",
+        "B": "Step 1: big is SET to the first number — that is not a change, because changes starts at 0.",
+        "C": "Step 3: 14 is the final value of big. The question asks for changes."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Kai's algorithm tests \"n² + 1 is never a multiple of 3\" for n = 1 to 500 and finds no counterexample. Which statement is correct?",
+      "options": {
+        "A": "It is proved, because 500 cases worked.",
+        "B": "The tests are good evidence but not proof; squares always leave remainder 0 or 1 when divided by 3, so n² + 1 leaves remainder 1 or 2 and is never a multiple of 3.",
+        "C": "It is probably false, because n = 501 has not been tested.",
+        "D": "It is false, because 2² + 1 = 5."
+      },
+      "answer": "B",
+      "explanation": "Testing is only evidence; the remainder argument covers every n, so it is a proof. 500 successes alone do not prove it.",
+      "steps": [
+        "Step 1: testing many cases gives evidence, but a proof must cover every whole number.",
+        "Step 2: every whole number is 3k, 3k + 1 or 3k + 2. Their squares leave remainder 0, 1 or 1 when divided by 3.",
+        "Step 3: so n² + 1 leaves remainder 1 or 2, never 0 — the remainder argument proves it, and the tests were only evidence."
+      ],
+      "mistakes": {
+        "A": "Step 1: many cases that work are evidence, not proof. A pattern can work for a long time and then fail.",
+        "C": "Step 2: untested cases do not make a statement false — only a counterexample does. Look for a reason that covers every n.",
+        "D": "Step 2: 5 is not a multiple of 3, so n = 2 agrees with the statement — it is not a counterexample."
+      }
+    }
+  ]
+}

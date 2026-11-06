@@ -1,0 +1,274 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Testing number patterns with algorithms",
+  "summary": "Use loops to generate pattern terms, test conjectures on many cases, find counterexamples, and see why testing is evidence but not proof.",
+  "minutes": 30,
+  "video": "videos/y8/maths/testing-number-patterns-with-algorithms.mp4",
+  "body": "Mathematicians often spot a pattern and wonder: \"Does this always work?\" An algorithm can test a pattern on hundreds of cases in a moment, which is a fast way to gather evidence — or to find the one case that breaks it. This is how people check ideas in maths, science and computing before trusting them.\n\n## Learning objective\n\nBy the end of this lesson you can write a loop that generates the terms of a pattern, use an algorithm to test whether a pattern rule holds, find a counterexample, and explain why testing many cases is evidence but not proof.\n\n## Before you start\n\nYou will need:\n\n- **Number patterns and rules (Year 7)** — continuing patterns and using a position rule.\n- **Algorithms with variables and loops (Year 8)** — updating variables and tracing while loops.\n- **Primes and prime factorisation (Year 7)** — deciding whether a number is prime.\n\n**Warm-up**\n\n1. The rule for a pattern is \"term = 5 × position − 3\". What is the 6th term?\n2. Is 91 a prime number?\n\n**Answers:** 1. 5 × 6 − 3 = **27**. 2. **No** — 91 = 7 × 13.\n\n## Think of it like this\n\n### Testing a new umbrella\n\nA shop claims its umbrella \"never leaks\". You test it in ten storms and stay dry every time. That's good evidence — but it isn't proof, because storm eleven might be the one that soaks you. One leak is enough to show the claim is false.\n\n*Where the analogy breaks down:* storms are all a bit different and hard to control. A number pattern can be tested exactly, and sometimes algebra can prove it works for every number — something no amount of storm-testing can do for an umbrella.\n\n## Key ideas\n\n### Generating a pattern with a loop\n\nA pattern that adds the same amount each time can be made by a loop: \"Set t to the first term. Repeat: output t, then set t to t + the difference.\" A pattern like this is called **arithmetic**, and its position rule is\n\n`term = difference × position + (first term − difference)`\n\nFor 5, 9, 13, … the difference is 4 and 5 − 4 = 1, so term = 4 × position + 1. Check: position 3 gives 13. ✓\n\n### Conjectures and testing\n\nA **conjecture** is a statement you think is true but haven't proved, such as \"the sum of the first n odd numbers is n²\". An algorithm can **test** it: loop through n = 1, 2, 3, …, work out both sides, and compare. If the two sides ever differ, the algorithm has found a **counterexample** — one case where the statement is false.\n\n### Evidence is not proof\n\n- **One counterexample** is enough to show a conjecture is false.\n- **Many cases that work** are only evidence. A pattern can work for a long time and then fail.\n\nThe famous rule n² + n + 41 gives a prime number for every n from 0 to 39 — forty cases in a row! But at n = 40 it gives 1681 = 41 × 41, which is not prime. To be **certain** a pattern always works, you need a **proof** — an argument that covers every case, often using algebra.\n\n### Searching for a value\n\nA while loop can search for the first term that passes a test: \"Set n to 1. While the condition is not met: add 1 to n.\" The loop stops at the first n that works, so the answer is always the **smallest** such n.\n\n## Worked examples\n\n### Example 1\n\nWrite the first six outputs of: \"Set t to 3. Repeat 6 times: output t, then set t to t + 5.\" Then find a position rule.\n\nStep 1: trace the loop — 3, 8, 13, 18, 23, 28 — output first, then add, so 3 is the first output.\nStep 2: the difference is 5, so the rule starts \"5 × position\".\nStep 3: first term − difference = 3 − 5 = −2, so **term = 5 × position − 2**.\n\nCheck: position 6 gives 5 × 6 − 2 = 28. ✓\n\n### Example 2\n\nTest the conjecture \"n² − n + 11 is always prime\" for n = 1, 2, 3, ….\n\n![A flowchart: Start; n = 1; value = n² − n + 11; the question \"Is value prime?\". Yes leads to n = n + 1, which loops back to work out the value again. No leads to \"Output n\", labelled \"a counterexample\".](/diagrams/y8/maths/testing-number-patterns-with-algorithms-tester.svg)\n\nThe flowchart shows the testing algorithm. It keeps going round the loop while the answers are prime, and only escapes through the \"No\" exit when it finds a counterexample.\n\n| n | n² − n + 11 | Prime? |\n|---|---|---|\n| 1 | 11 | yes |\n| 2 | 13 | yes |\n| 3 | 17 | yes |\n| … | … | yes |\n| 10 | 101 | yes |\n| 11 | 121 | **no** |\n\nStep 1: the loop works out n² − n + 11 for each n and checks if it is prime.\nStep 2: n = 1 to 10 all give primes: 11, 13, 17, 23, 31, 41, 53, 67, 83, 101.\nStep 3: n = 11 gives 121 − 11 + 11 = 121 = 11 × 11, which is not prime.\nStep 4: **n = 11 is a counterexample**, so the conjecture is false — even though it worked ten times in a row.\n\n### Example 3\n\nThe pattern is 7, 13, 19, 25, …. Is 150 in it? Use \"Set t to 7. While t is less than 150: set t to t + 6.\"\n\nStep 1: the rule is term = 6 × position + 1 (difference 6, and 7 − 6 = 1).\nStep 2: the loop climbs in sixes and stops at the first term that is not less than 150. The 24th term is 6 × 24 + 1 = 145, which is less than 150, so it goes on to 145 + 6 = **151**.\nStep 3: the loop jumped from 145 to 151, skipping 150. So **150 is not in the pattern**.\n\n![A number line from 136 to 154. Dots at 139, 145 and 151 are joined by two curved arrows, each labelled +6. The number 150 is marked in red between 145 and 151, with no dot on it.](/diagrams/y8/maths/testing-number-patterns-with-algorithms-jumps.svg)\n\n\nCheck with the rule: 6 × position + 1 = 150 gives position = 149 ÷ 6, which is not a whole number. ✓\n\n### Example 4\n\nPattern A is 50, 46, 42, … (subtract 4). Pattern B is 8, 11, 14, … (add 3). At which position are they first equal?\n\n| Position | A | B |\n|---|---|---|\n| 1 | 50 | 8 |\n| 2 | 46 | 11 |\n| 3 | 42 | 14 |\n| … | … | … |\n| 7 | 26 | 26 |\n\nStep 1: algorithm — \"Set n to 1, a to 50, b to 8. While a is greater than b: set a to a − 4, b to b + 3, and n to n + 1.\"\nStep 2: each iteration closes the gap by 4 + 3 = 7. The first gap is 50 − 8 = 42, and 42 ÷ 7 = 6 iterations.\nStep 3: n goes from 1 to 7, so the patterns first meet at **position 7**, where both equal 26.\n\nCheck with the rules: A = 54 − 4 × 7 = 26 and B = 3 × 7 + 5 = 26. ✓\n\n## Common mistakes\n\n- **Thinking many examples prove a pattern.** It happens because the pattern \"keeps working\". Fix: remember n² + n + 41 — forty successes, then a failure.\n- **Off-by-one errors in generated patterns.** \"Output, then add\" starts at the first term; \"add, then output\" skips it. Fix: trace the first two iterations carefully.\n- **Getting the position rule's constant wrong.** Fix: the constant is first term − difference, then check the rule with position 1.\n- **Saying a number is in a pattern because it's \"about right\".** Fix: check whether the position works out to be a whole number.\n- **Mixing up \"the first n\" and \"the value of n\".** When a search loop stops, n is the position (or input), not the term. Fix: label your trace table columns.\n\n## Tips to remember\n\n- **\"One leak sinks the claim.\"** (A made-up memory trick, from the umbrella.) One counterexample proves a conjecture false.\n- **\"41 lies 40 times.\"** (Made-up.) n² + n + 41 is prime for n = 0 to 39, then fails at n = 40 — your reminder that evidence is not proof.\n- **\"Difference times position, then fix the start.\"** To find a position rule, multiply the position by the difference, then add or subtract to match the first term.\n- **Search loops find the smallest.** A while loop that counts up from 1 stops at the first n that works.\n- **Quick self-check:** before saying \"always\", ask \"have I proved it, or only tested it?\"\n\n## Key terms\n\n- **Arithmetic pattern** — a pattern that adds (or subtracts) the same amount each time.\n- **Position rule** — a rule that gives a term from its position, such as term = 4 × position + 1.\n- **Conjecture** — a statement that seems true but has not been proved.\n- **Counterexample** — one case that shows a statement is false.\n- **Proof** — an argument that shows a statement is true in every case.\n- **Search loop** — a loop that keeps going until it finds the first value that passes a test.\n\n## Summary\n\n- Loops can generate pattern terms; the order \"output then add\" or \"add then output\" changes the list.\n- An arithmetic pattern has the rule term = difference × position + (first term − difference).\n- An algorithm can test a conjecture on many cases and stop at the first counterexample.\n- One counterexample shows a conjecture is false; many examples are evidence, not proof.\n- A while loop counting up from 1 finds the smallest value that passes a test.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "Set t to 4. Repeat 5 times: output t, then set t to t + 7. Which numbers are output?",
+      "options": {
+        "A": "11, 18, 25, 32, 39",
+        "B": "4, 11, 18, 25, 32",
+        "C": "4, 11, 18, 25, 32, 39",
+        "D": "4, 28, 196, 1372, 9604"
+      },
+      "answer": "B",
+      "explanation": "The loop outputs 4 first, then adds 7 each time: 4, 11, 18, 25, 32. 11, 18, … is tempting, but that adds before outputting.",
+      "steps": [
+        "Iteration 1: output 4, then t becomes 11.",
+        "Iterations 2 to 5: output 11, 18, 25, 32 (adding 7 after each). That is 5 outputs."
+      ],
+      "mistakes": {
+        "A": "Step 1: this algorithm outputs before it adds, so the first output is the starting value 4.",
+        "C": "Step 2: the loop runs 5 times, so there are only 5 outputs.",
+        "D": "Step 2: the step adds 7 — you multiplied by 7 instead."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "What is a counterexample?",
+      "options": {
+        "A": "A case that shows a statement is true",
+        "B": "A proof that works for every number",
+        "C": "Lots of examples that make a statement seem true",
+        "D": "One case that shows a statement is false"
+      },
+      "answer": "D",
+      "explanation": "A counterexample is one case where the statement fails, which is enough to show it is false. \"Lots of examples\" is tempting, but examples that work are only evidence.",
+      "steps": [
+        "\"Counter\" means against: a counterexample goes against the statement.",
+        "So it is one case where the statement is false — and one is enough."
+      ],
+      "mistakes": {
+        "A": "Step 1: a counterexample goes against the statement — it is a case where it fails.",
+        "B": "Step 2: a proof covers every case; a counterexample is a single case.",
+        "C": "Step 2: examples that fit are only evidence. A counterexample is one that doesn't fit."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Sam claims: \"Every odd number is prime.\" Which number is a counterexample?",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "13",
+        "D": "8"
+      },
+      "answer": "A",
+      "explanation": "9 is odd but 9 = 3 × 3, so it is not prime — it breaks the claim. 7 is tempting, but it fits the claim.",
+      "steps": [
+        "A counterexample must be odd (so the claim applies) and not prime (so the claim fails).",
+        "9 is odd, and 9 = 3 × 3, so it is not prime. 9 is a counterexample."
+      ],
+      "mistakes": {
+        "B": "Step 2: 7 is odd and prime, so it fits the claim. A counterexample must break it.",
+        "C": "Step 2: 13 is odd and prime, so it agrees with the claim.",
+        "D": "Step 1: the claim is about odd numbers, and 8 is even, so it can't break the claim."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "The flowchart tests the conjecture \"n² − n + 5 is always prime\" for n = 1, 2, 3, … and stops at the first counterexample. At which value of n does it stop?",
+      "options": {
+        "A": "n = 4",
+        "B": "n = 6",
+        "C": "n = 5",
+        "D": "It never stops — the rule is always prime."
+      },
+      "answer": "C",
+      "explanation": "n = 1 to 4 give 5, 7, 11, 17 (all prime), but n = 5 gives 25 = 5 × 5. n = 4 is tempting, but 17 is prime.",
+      "steps": [
+        "Work out n² − n + 5: n = 1 → 5, n = 2 → 7, n = 3 → 11, n = 4 → 17. All prime.",
+        "n = 5 → 25 − 5 + 5 = 25.",
+        "25 = 5 × 5 is not prime, so the algorithm stops at n = 5."
+      ],
+      "mistakes": {
+        "A": "Step 2: n = 4 gives 16 − 4 + 5 = 17, which is prime, so the loop keeps going.",
+        "B": "Step 3: n = 6 gives 35, which is not prime, but the loop has already stopped at an earlier value.",
+        "D": "Step 3: work out each value. The rule fails before n reaches 6."
+      },
+      "diagram": "diagrams/y8/maths/testing-number-patterns-with-algorithms-q4.svg",
+      "diagram_alt": "A flowchart: Start; n = 1; value = n² − n + 5; the question \"Is value prime?\". Yes leads to n = n + 1, which loops back to work out the value again. No leads to \"Output n\", labelled \"a counterexample\"."
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "The pattern is 4, 10, 16, 22, …. In which position is 100?",
+      "options": {
+        "A": "17th",
+        "B": "16th",
+        "C": "25th",
+        "D": "100 is not in the pattern"
+      },
+      "answer": "A",
+      "explanation": "From 4, it takes 96 ÷ 6 = 16 jumps of 6 to reach 100, so 100 is the 17th term (rule: 6 × 17 − 2 = 100). 16th is tempting, but it counts jumps, not terms.",
+      "steps": [
+        "The difference is 6, so the rule is term = 6 × position − 2.",
+        "Solve 6 × position − 2 = 100: 6 × position = 102, so position = 17."
+      ],
+      "mistakes": {
+        "B": "Step 2: (100 − 4) ÷ 6 = 16 counts the jumps from the first term. Add 1 for the first term itself.",
+        "C": "Step 1: 100 ÷ 4 uses the first term as if it were the difference. The difference is 6.",
+        "D": "Step 2: (100 − 4) ÷ 6 = 16 is a whole number, so 100 is reached exactly."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "An algorithm adds up the first 8 odd numbers: 1 + 3 + 5 + … What total does it output?",
+      "options": {
+        "A": "36",
+        "B": "72",
+        "C": "49",
+        "D": "64"
+      },
+      "answer": "D",
+      "explanation": "1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 = 64 = 8². 49 is tempting, but that adds only 7 odd numbers.",
+      "steps": [
+        "The first 8 odd numbers are 1, 3, 5, 7, 9, 11, 13, 15.",
+        "Running total: 1, 4, 9, 16, 25, 36, 49, 64 — each is a square number. Output 64."
+      ],
+      "mistakes": {
+        "A": "Step 1: you added 1 + 2 + … + 8. Use only the odd numbers 1, 3, 5, …",
+        "B": "Step 1: you added the first 8 even numbers (2 + 4 + … + 16).",
+        "C": "Step 2: you stopped at 13, which is only 7 odd numbers."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Pattern A starts at 129 and subtracts 9 each time. Pattern B starts at 4 and adds 6 each time. At which position is B's term first greater than A's term?",
+      "options": {
+        "A": "Position 9",
+        "B": "Position 10",
+        "C": "Position 8",
+        "D": "Position 11"
+      },
+      "answer": "B",
+      "explanation": "At position 9 A = 57 and B = 52; at position 10 A = 48 and B = 58, so B first passes A at position 10. Position 9 is tempting, but B is still behind there.",
+      "steps": [
+        "Position rules: A = 138 − 9 × position, B = 6 × position − 2. The gap closes by 15 each step.",
+        "Position 9: A = 57, B = 52 — B is still smaller.",
+        "Position 10: A = 48, B = 58 — B is greater for the first time. Answer: position 10."
+      ],
+      "mistakes": {
+        "A": "Step 2: at position 9, A = 57 and B = 52, so B is still smaller.",
+        "C": "Step 1: the first gap is 129 − 4 = 125, and 125 ÷ 15 ≈ 8.3 — but you must go past the point where they meet. Check each position.",
+        "D": "Step 3: at position 10 B (58) is already greater than A (48). The loop stops at the first one."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "The rule n² + n + 17 gives a prime for n = 0, 1, 2, …. A loop tests it, stopping at the first n where the result is not prime. Which value does it stop at?",
+      "options": {
+        "A": "n = 15",
+        "B": "n = 17",
+        "C": "n = 16",
+        "D": "It never stops."
+      },
+      "answer": "C",
+      "explanation": "n = 16 gives 256 + 16 + 17 = 289 = 17 × 17, the first result that is not prime. n = 17 is tempting because the 17 in the rule makes it easy to factorise, but 16 fails first.",
+      "steps": [
+        "n = 0 to 15 give 17, 19, 23, 29, … 257 — all prime.",
+        "n = 16: 16² + 16 + 17 = 256 + 16 + 17 = 289.",
+        "289 = 17 × 17 is not prime, so the loop stops at n = 16."
+      ],
+      "mistakes": {
+        "A": "Step 2: n = 15 gives 225 + 15 + 17 = 257, which is prime, so the loop continues.",
+        "B": "Step 2: n = 17 also fails (323 = 17 × 19), but the loop has already stopped at an earlier value.",
+        "D": "Step 3: no rule like this is prime forever — test n = 16."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "The pattern is 5, 13, 21, 29, …. Which of these numbers is in the pattern?",
+      "options": {
+        "A": "157",
+        "B": "160",
+        "C": "155",
+        "D": "163"
+      },
+      "answer": "A",
+      "explanation": "The rule is term = 8n − 3, and 8 × 20 − 3 = 157, so 157 is the 20th term. 160 is tempting because it is a multiple of 8, but every term is 3 less than one.",
+      "steps": [
+        "The difference is 8 and 5 − 8 = −3, so term = 8 × position − 3.",
+        "Try each: (157 + 3) ÷ 8 = 20 — a whole number. The others don't give whole numbers.",
+        "So 157 is in the pattern (the 20th term)."
+      ],
+      "mistakes": {
+        "B": "Step 2: 160 is a multiple of 8, but the terms are 3 less than a multiple of 8 (rule 8n − 3).",
+        "C": "Step 2: (155 − 5) ÷ 8 = 18.75 is not a whole number, so 155 is not reached.",
+        "D": "Step 1: the constant is 5 − 8 = −3, so terms are 8n − 3, not 8n + 3."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Mia's algorithm checks \"the sum of any three consecutive whole numbers is a multiple of 3\" for every start from 0 to 1000, and finds no counterexample. What can she correctly say?",
+      "options": {
+        "A": "It is proved for every whole number, because 1001 cases worked.",
+        "B": "It is probably false, because she didn't test numbers above 1000.",
+        "C": "The evidence is strong, but she needs a proof for every whole number; here algebra shows n + (n + 1) + (n + 2) = 3(n + 1), so it is always true.",
+        "D": "It is false, because consecutive numbers can be odd."
+      },
+      "answer": "C",
+      "explanation": "Testing 1001 cases is strong evidence but not proof; the algebra 3n + 3 = 3(n + 1) proves it for every n. \"Proved because 1001 cases worked\" is tempting, but n² + n + 41 worked 40 times and then failed.",
+      "steps": [
+        "Testing many cases is evidence, but a proof must cover every whole number.",
+        "Algebra: n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1), which is always a multiple of 3. So it is evidence plus a proof."
+      ],
+      "mistakes": {
+        "A": "Step 1: testing cases is evidence, not proof — a pattern can fail after many successes.",
+        "B": "Step 1: untested cases don't make a statement false. Only a counterexample does.",
+        "D": "Step 2: write the sum with algebra and simplify — odd or even, it is always 3 times something."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Set total to 0 and k to 0. Repeat: add 1 to k, add (2k − 1) to total, until total is greater than 300. What is k at the end?",
+      "options": {
+        "A": "17",
+        "B": "35",
+        "C": "324",
+        "D": "18"
+      },
+      "answer": "D",
+      "explanation": "The total after k odd numbers is k². 17² = 289 is not greater than 300, but 18² = 324 is, so k = 18. 17 is tempting, but 289 is still under 300.",
+      "steps": [
+        "The loop adds the odd numbers 1, 3, 5, …, so after k iterations total = k².",
+        "17² = 289 (not greater than 300) and 18² = 324 (greater than 300).",
+        "The loop stops when k = 18."
+      ],
+      "mistakes": {
+        "A": "Step 2: after 17 odd numbers the total is 17² = 289, which is not greater than 300, so the loop runs again.",
+        "B": "Step 3: 35 is the last odd number added (2 × 18 − 1). The question asks for k.",
+        "C": "Step 3: 324 is the final total. The question asks for k, the counter."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Leo wants the pattern 5, 9, 13, 17, 21, 25. He draws the flowchart shown: set t to 5; then repeat 6 times: set t to t + 4, then output t. What does it output, and what is the fix?",
+      "options": {
+        "A": "5, 9, 13, 17, 21, 25 — it already works.",
+        "B": "9, 13, 17, 21, 25, 29 — swap the order: output t first, then add 4.",
+        "C": "9, 13, 17, 21, 25 — change it to repeat 6 times.",
+        "D": "13, 17, 21, 25, 29, 33 — start t at 1 instead."
+      },
+      "answer": "B",
+      "explanation": "Adding before outputting skips 5 and adds 29 at the end, so the fix is to output first. \"It already works\" is tempting, but the first output is 9.",
+      "steps": [
+        "Trace: iteration 1 adds 4 (t = 9) and outputs 9, so 5 is never output.",
+        "Six iterations output 9, 13, 17, 21, 25, 29.",
+        "Fix: output t first, then add 4 — that gives 5, 9, 13, 17, 21, 25."
+      ],
+      "mistakes": {
+        "A": "Step 1: trace the first iteration — it adds 4 before the first output, so 5 never appears.",
+        "C": "Step 2: it already repeats 6 times, so there are 6 outputs, ending at 29.",
+        "D": "Step 1: t starts at 5, so the first output is 5 + 4 = 9, not 13."
+      },
+      "diagram": "diagrams/y8/maths/testing-number-patterns-with-algorithms-q12.svg",
+      "diagram_alt": "A flowchart: Start; t = 5; t = t + 4; Output t; the question \"Done this 6 times?\". No loops back up to t = t + 4. Yes leads to End."
+    }
+  ]
+}

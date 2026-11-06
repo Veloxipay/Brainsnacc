@@ -1,0 +1,354 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Chapter 11 · Test 2",
+  "kind": "test",
+  "summary": "Chapter 11 test 2: 15 questions on algorithms with variables and loops and on testing number patterns with algorithms.",
+  "minutes": 25,
+  "body": "This test covers Chapter 11 · Algorithmic thinking: assignment steps, running totals, while loops versus repeat-until loops, two variables updating together, generating patterns with loops, comparing two patterns, and why testing is evidence but not proof.\n\nThere are 15 multiple-choice questions: 4 easy, 5 medium, 4 hard and 2 challenge. Allow about 25 minutes, no notes, no calculator unless the question says. Keep a trace table for every loop and check each condition at the right moment.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set y to 4. Set y to 5 × y. Set y to y − 7. Output y. What is the output?",
+      "options": {
+        "A": "-3",
+        "B": "13",
+        "C": "-15",
+        "D": "2"
+      },
+      "answer": "B",
+      "explanation": "y = 5 × 4 = 20, then 20 − 7 = 13. −3 uses the old value 4 in the last step.",
+      "steps": [
+        "Step 1: y = 4.",
+        "Step 2: y = 5 × 4 = 20.",
+        "Step 3: y = 20 − 7 = 13, so the output is 13."
+      ],
+      "mistakes": {
+        "A": "Step 3: by now y is 20, not 4. Always use the newest value.",
+        "C": "Steps 2 and 3: do the steps in the order written — multiply by 5 first, then subtract 7.",
+        "D": "Step 2: \"5 × y\" means multiply by 5, not add 5."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Which kind of loop always runs its steps at least once?",
+      "options": {
+        "A": "A while loop",
+        "B": "A loop that checks its condition before each iteration",
+        "C": "A repeat … until loop",
+        "D": "No loop — every loop can run zero times"
+      },
+      "answer": "C",
+      "explanation": "A repeat-until loop does the steps first and checks afterwards, so it runs at least once. A while loop checks first and might never run.",
+      "steps": [
+        "Step 1: a while loop checks first; a repeat-until loop checks last.",
+        "Step 2: checking last means the steps always run once, so the answer is the repeat … until loop."
+      ],
+      "mistakes": {
+        "A": "Step 1: a while loop checks its condition BEFORE the steps, so it can run zero times.",
+        "B": "Step 1: checking before means the loop might not run at all if the condition fails straight away.",
+        "D": "Step 2: one kind of loop does its steps first and only then checks."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Ava claims: \"Every whole number ending in 7 is prime.\" Which number is a counterexample?",
+      "options": {
+        "A": "27",
+        "B": "17",
+        "C": "37",
+        "D": "47"
+      },
+      "answer": "A",
+      "explanation": "27 ends in 7 but 27 = 3 × 9, so it is not prime — it breaks the claim. 17, 37 and 47 are all prime.",
+      "steps": [
+        "Step 1: a counterexample must end in 7 AND not be prime.",
+        "Step 2: 17, 37 and 47 are prime; 27 = 3 × 9 is not, so 27 is the counterexample."
+      ],
+      "mistakes": {
+        "B": "Step 2: 17 is prime, so it agrees with the claim. A counterexample must break it.",
+        "C": "Step 2: 37 is prime, so it agrees with the claim.",
+        "D": "Step 2: 47 is prime, so it agrees with the claim."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Set t to 50. Repeat 4 times: output t, then set t to t − 6. Which numbers are output?",
+      "options": {
+        "A": "44, 38, 32, 26",
+        "B": "50, 56, 62, 68",
+        "C": "50, 44, 38, 32, 26",
+        "D": "50, 44, 38, 32"
+      },
+      "answer": "D",
+      "explanation": "Output then subtract: 50, 44, 38, 32. 44, 38, 32, 26 subtracts before outputting.",
+      "steps": [
+        "Step 1: output 50 first, then t = 44.",
+        "Step 2: output 44, 38 and 32 — that is 4 outputs."
+      ],
+      "mistakes": {
+        "A": "Step 1: the loop outputs t BEFORE subtracting, so 50 is the first output.",
+        "B": "Step 2: the step is t − 6, so the numbers go down.",
+        "C": "Step 2: the loop runs 4 times, so there are only 4 outputs."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set total to 0. For i from 1 to 6: set total to total + 3 × i. Output total. What is the output?",
+      "options": {
+        "A": "63",
+        "B": "21",
+        "C": "18",
+        "D": "60"
+      },
+      "answer": "A",
+      "explanation": "The loop adds 3 + 6 + 9 + 12 + 15 + 18 = 63. 21 forgets to multiply by 3.",
+      "steps": [
+        "Step 1: i takes the values 1, 2, 3, 4, 5, 6.",
+        "Step 2: the amounts added are 3, 6, 9, 12, 15, 18.",
+        "Step 3: total = 3 + 6 + 9 + 12 + 15 + 18 = 63."
+      ],
+      "mistakes": {
+        "B": "Step 2: each time add 3 × i, not just i.",
+        "C": "Step 2: i changes each time, so you add 3, 6, 9, … — not 3 every time.",
+        "D": "Step 1: the loop starts at i = 1, so 3 × 1 is added too."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set x to 4. Repeat: set x to x + 3, until x is greater than 2. Output x. What is the output?",
+      "options": {
+        "A": "4",
+        "B": "7",
+        "C": "10",
+        "D": "The loop never stops."
+      },
+      "answer": "B",
+      "explanation": "The steps run first: x = 7. Then the check: 7 is greater than 2, so stop. 4 forgets that repeat-until always runs once.",
+      "steps": [
+        "Step 1: repeat-until runs the steps first: x = 4 + 3 = 7.",
+        "Step 2: check: is 7 greater than 2? Yes, so stop and output 7."
+      ],
+      "mistakes": {
+        "A": "Step 1: a repeat-until loop does the steps BEFORE it checks, so x changes at least once.",
+        "C": "Step 2: after one run x is 7, which is greater than 2, so the loop stops.",
+        "D": "Step 2: the loop stops as soon as the condition is true — check it after the first run."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "The flowchart shows an algorithm: set n to 64 and c to 0; while n is greater than 1, set n to n ÷ 2 and c to c + 1; then output c. What is the output?",
+      "options": {
+        "A": "5",
+        "B": "32",
+        "C": "6",
+        "D": "7"
+      },
+      "answer": "C",
+      "explanation": "n goes 32, 16, 8, 4, 2, 1 — six halvings, so c = 6. 5 stops at n = 2, which is still greater than 1.",
+      "steps": [
+        "Step 1: trace n: 64 → 32 → 16 → 8 → 4 → 2 → 1.",
+        "Step 2: count the halvings: 6. At n = 1 the condition is false, so the loop stops.",
+        "Step 3: c = 6."
+      ],
+      "mistakes": {
+        "A": "Step 2: when n is 2 it is still greater than 1, so the loop runs once more.",
+        "B": "Step 3: 32 is n after one halving. The output is c, the number of halvings.",
+        "D": "Step 2: when n reaches 1 it is not greater than 1, so the loop stops — no extra run."
+      },
+      "diagram": "diagrams/y8/maths/chapter-11-test-2-q7.svg",
+      "diagram_alt": "A flowchart: Start; n = 64, c = 0; the question \"Is n greater than 1?\". Yes leads to \"n = n ÷ 2, c = c + 1\", which loops back to the question. No leads to \"Output c\", then End."
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "An algorithm adds up the first 10 odd numbers: 1 + 3 + 5 + …. What total does it output?",
+      "options": {
+        "A": "110",
+        "B": "19",
+        "C": "81",
+        "D": "100"
+      },
+      "answer": "D",
+      "explanation": "The first 10 odd numbers are 1 to 19, and their sum is 10² = 100. 81 adds only 9 of them.",
+      "steps": [
+        "Step 1: the first 10 odd numbers are 1, 3, 5, …, 19.",
+        "Step 2: running totals 1, 4, 9, 16, … are square numbers, so after 10 numbers the total is 10² = 100."
+      ],
+      "mistakes": {
+        "A": "Step 1: odd numbers start 1, 3, 5 — you added the even numbers 2, 4, 6, ….",
+        "B": "Step 2: 19 is the 10th odd number. The algorithm adds all ten of them.",
+        "C": "Step 2: count the numbers — there are 10, so the last one is 19, not 17."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "The pattern is 9, 13, 17, 21, …. Which of these numbers is in the pattern?",
+      "options": {
+        "A": "100",
+        "B": "101",
+        "C": "102",
+        "D": "103"
+      },
+      "answer": "B",
+      "explanation": "The rule is term = 4 × position + 5. (101 − 5) ÷ 4 = 24, a whole number, so 101 is the 24th term. 100 gives 23.75.",
+      "steps": [
+        "Step 1: the difference is 4 and 9 − 4 = 5, so term = 4 × position + 5.",
+        "Step 2: for each option, work out (number − 5) ÷ 4.",
+        "Step 3: only 101 gives a whole number (24), so 101 is in the pattern."
+      ],
+      "mistakes": {
+        "A": "Step 2: (100 − 5) ÷ 4 = 23.75 is not a whole number. Terms are not multiples of 4.",
+        "C": "Step 2: (102 − 5) ÷ 4 = 24.25 is not a whole number, so 102 is not a term.",
+        "D": "Step 2: (103 − 5) ÷ 4 = 24.5 is not a whole number, so 103 is not a term."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set a to 1 and b to 4. Repeat 4 times: set c to a + b, set a to b, set b to c. Output b. What is the output?",
+      "options": {
+        "A": "23",
+        "B": "14",
+        "C": "37",
+        "D": "64"
+      },
+      "answer": "A",
+      "explanation": "Trace (a, b): (4, 5), (5, 9), (9, 14), (14, 23), so b = 23. 64 skips the safe copy c, so b just doubles.",
+      "steps": [
+        "Step 1: c holds a + b before a changes.",
+        "Step 2: trace (a, b): start (1, 4) → (4, 5) → (5, 9) → (9, 14) → (14, 23).",
+        "Step 3: after 4 iterations, b = 23."
+      ],
+      "mistakes": {
+        "B": "Step 2: the loop runs 4 times — count your rows. You stopped one early.",
+        "C": "Step 2: count the iterations again — there are only 4.",
+        "D": "Step 1: you skipped c and set b to a + b after a had already changed, so b just doubled."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "A plant is 18 cm tall and grows 2.5 cm a week. Set h to 18 and w to 0. While h is less than 50: set h to h + 2.5 and w to w + 1. What are w and h at the end?",
+      "options": {
+        "A": "w = 12, h = 48",
+        "B": "w = 20, h = 68",
+        "C": "w = 14, h = 53",
+        "D": "w = 13, h = 50.5"
+      },
+      "answer": "D",
+      "explanation": "The plant needs 32 cm more; 32 ÷ 2.5 = 12.8, so it takes 13 weeks and reaches 18 + 32.5 = 50.5 cm. After 12 weeks it is only 48 cm.",
+      "steps": [
+        "Step 1: it needs 50 − 18 = 32 cm more.",
+        "Step 2: 32 ÷ 2.5 = 12.8, so 12 weeks is not enough: after 12 weeks h = 48.",
+        "Step 3: 48 is less than 50, so one more week: h = 50.5 and w = 13. Now h is not less than 50, so stop."
+      ],
+      "mistakes": {
+        "A": "Step 3: 48 is still less than 50, so the loop runs once more.",
+        "B": "Step 1: the plant starts at 18 cm, so it only needs to grow 32 cm, not 50 cm.",
+        "C": "Step 3: once h is not less than 50 the loop stops — there is no extra week."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Pattern A is 5, 12, 19, … (add 7). Pattern B is 80, 76, 72, … (subtract 4). At which position is A's term first greater than B's term?",
+      "options": {
+        "A": "Position 7",
+        "B": "Position 6",
+        "C": "Position 8",
+        "D": "Position 9"
+      },
+      "answer": "C",
+      "explanation": "The gap of 75 closes by 11 each step, so it takes 7 jumps (75 ÷ 11 = 6.8). After 7 jumps you are at position 8: A = 54, B = 52. At position 7, A = 47 and B = 56.",
+      "steps": [
+        "Step 1: the first gap is 80 − 5 = 75, and it closes by 7 + 4 = 11 each step.",
+        "Step 2: 75 ÷ 11 ≈ 6.8, so A passes B on the 7th jump.",
+        "Step 3: 7 jumps after position 1 is position 8. Check: A = 54, B = 52 at position 8, but A = 47, B = 56 at position 7."
+      ],
+      "mistakes": {
+        "A": "Step 2: 75 ÷ 11 = 6.8 gives the number of jumps, rounded up to 7. The position is one more than the number of jumps.",
+        "B": "Step 2: 6.8 jumps is not enough — round up, and then add 1 for the position.",
+        "D": "Step 3: check the position before — A has already passed B there."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "A loop tests \"n² − n + 17 is always prime\" for n = 1, 2, 3, … and stops at the first n where the result is not prime. At which value of n does it stop?",
+      "options": {
+        "A": "n = 17",
+        "B": "n = 16",
+        "C": "n = 18",
+        "D": "It never stops."
+      },
+      "answer": "A",
+      "explanation": "n = 1 to 16 all give primes, but n = 17 gives 289 − 17 + 17 = 289 = 17 × 17. n = 16 gives 257, which is prime.",
+      "steps": [
+        "Step 1: for n = 1 to 16 the results (17, 19, 23, …, 257) are all prime.",
+        "Step 2: n = 17 gives 17² − 17 + 17 = 17² = 289.",
+        "Step 3: 289 = 17 × 17 is not prime, so the loop stops at n = 17."
+      ],
+      "mistakes": {
+        "B": "Step 2: n = 16 gives 256 − 16 + 17 = 257, which is prime, so the loop keeps going.",
+        "C": "Step 2: check the value of n just before this — it already fails.",
+        "D": "Step 2: try n = 17 — the result is a square number."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set x to 2. Repeat n times: set x to 3 × x. Output x. Which expression gives the output for any whole number n?",
+      "options": {
+        "A": "6n",
+        "B": "2 + 3n",
+        "C": "6ⁿ",
+        "D": "2 × 3ⁿ"
+      },
+      "answer": "D",
+      "explanation": "Each run multiplies by 3, so after n runs x = 2 × 3 × 3 × … = 2 × 3ⁿ. Check n = 2: 2 × 9 = 18, and the loop gives 2 → 6 → 18. 6ⁿ would give 36.",
+      "steps": [
+        "Step 1: trace: n = 1 gives 6, n = 2 gives 18, n = 3 gives 54.",
+        "Step 2: each run multiplies by 3, so after n runs the 3 has been multiplied n times: 3ⁿ.",
+        "Step 3: the start value 2 stays in front: x = 2 × 3ⁿ."
+      ],
+      "mistakes": {
+        "A": "Step 2: the loop multiplies by 3 each time, so x grows by a factor of 3 — it does not add 6 each time.",
+        "B": "Step 1: \"3 × x\" multiplies, it does not add 3.",
+        "C": "Step 2: the 2 is multiplied in only once, at the start. Only the 3 is repeated n times."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Which algorithm outputs exactly 7, 14, 21, …, 70 (the first ten multiples of 7)?",
+      "options": {
+        "A": "Set t to 7. While t is less than 70: output t, then set t to t + 7.",
+        "B": "Set t to 0. Repeat 10 times: set t to t + 7, then output t.",
+        "C": "Set t to 7. Repeat 10 times: set t to t + 7, then output t.",
+        "D": "Set t to 0. While t is less than 70: output t, then set t to t + 7."
+      },
+      "answer": "B",
+      "explanation": "Starting at 0 and adding 7 before each output gives 7, 14, …, 70 — ten outputs. The while loop from 7 stops before outputting 70.",
+      "steps": [
+        "Step 1: trace the first two outputs of each option.",
+        "Step 2: check the last output of each option.",
+        "Step 3: only \"start at 0, add 7, then output, 10 times\" gives 7 first and 70 last."
+      ],
+      "mistakes": {
+        "A": "Step 2: when t reaches 70 it is not less than 70, so 70 is never output.",
+        "C": "Step 1: adding before outputting from a start of 7 makes the first output 14.",
+        "D": "Step 1: outputting before adding from a start of 0 makes the first output 0."
+      }
+    }
+  ]
+}

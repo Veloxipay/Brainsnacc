@@ -1,0 +1,354 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Chapter 11 · Test 3",
+  "kind": "test",
+  "summary": "Chapter 11 test 3: 15 questions on algorithms with variables and loops and on testing number patterns with algorithms.",
+  "minutes": 25,
+  "body": "This test covers Chapter 11 · Algorithmic thinking: tracing variables in order, counted loops, loops that run zero times, repeat-until loops with negative numbers, position rules for increasing and decreasing patterns, counterexamples, and proof.\n\nThere are 15 multiple-choice questions: 4 easy, 5 medium, 4 hard and 2 challenge. Allow about 25 minutes, no notes, no calculator unless the question says. Write a trace table for each algorithm, and always use the newest value of each variable.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set m to 10. Set m to m − 3. Set m to m × m. Output m. What is the output?",
+      "options": {
+        "A": "100",
+        "B": "14",
+        "C": "97",
+        "D": "49"
+      },
+      "answer": "D",
+      "explanation": "m = 10 − 3 = 7, then 7 × 7 = 49. 100 squares the old value 10.",
+      "steps": [
+        "Step 1: m = 10.",
+        "Step 2: m = 10 − 3 = 7.",
+        "Step 3: m = 7 × 7 = 49, so the output is 49."
+      ],
+      "mistakes": {
+        "A": "Step 3: by now m is 7, not 10. Use the newest value.",
+        "B": "Step 3: m × m means multiply m by itself, not by 2.",
+        "C": "Steps 2 and 3: do the steps in the order written — subtract 3 first, then multiply."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "A loop says \"For j from 0 to 9: …\". How many times does the loop run?",
+      "options": {
+        "A": "9",
+        "B": "11",
+        "C": "10",
+        "D": "8"
+      },
+      "answer": "C",
+      "explanation": "j takes the values 0, 1, …, 9, which is 9 − 0 + 1 = 10 values. 9 forgets that 0 is a value too.",
+      "steps": [
+        "Step 1: j goes from 0 to 9.",
+        "Step 2: number of values = last − first + 1 = 9 − 0 + 1 = 10."
+      ],
+      "mistakes": {
+        "A": "Step 2: 9 − 0 counts the gaps. Add 1 because both ends are included.",
+        "B": "Step 2: last − first + 1 is 9 − 0 + 1. Check the count again.",
+        "D": "Step 1: j starts at 0, and 0 counts as one of the values."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Which number is a counterexample to the claim \"All prime numbers are odd\"?",
+      "options": {
+        "A": "2",
+        "B": "9",
+        "C": "3",
+        "D": "1"
+      },
+      "answer": "A",
+      "explanation": "2 is prime but not odd, so it breaks the claim. 9 is odd and not prime, so it says nothing about primes.",
+      "steps": [
+        "Step 1: a counterexample must be a prime number that is NOT odd.",
+        "Step 2: the only even prime is 2, so 2 is the counterexample."
+      ],
+      "mistakes": {
+        "B": "Step 1: a counterexample must be prime. 9 = 3 × 3 is not prime.",
+        "C": "Step 2: 3 is prime and odd, so it agrees with the claim.",
+        "D": "Step 1: 1 is not a prime number, so it cannot break a claim about primes."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Which statement about testing a pattern is true?",
+      "options": {
+        "A": "Testing 100 cases proves a conjecture is true.",
+        "B": "One counterexample is enough to show a conjecture is false.",
+        "C": "If the first 10 cases work, the pattern always works.",
+        "D": "A counterexample shows that a statement is true."
+      },
+      "answer": "B",
+      "explanation": "A single case that breaks a statement shows it is false. Testing 100 cases is evidence only, not proof.",
+      "steps": [
+        "Step 1: a counterexample is one case where the statement fails.",
+        "Step 2: so one counterexample is enough to show a conjecture is false, but many successes do not prove it."
+      ],
+      "mistakes": {
+        "A": "Step 2: many cases that work are only evidence — the next case could fail.",
+        "C": "Step 2: some patterns work many times and then fail, like n² + n + 41.",
+        "D": "Step 1: a counterexample is a case where the statement is FALSE."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set total to 0. For i from 1 to 4: set total to total + i × i. Output total. What is the output?",
+      "options": {
+        "A": "30",
+        "B": "10",
+        "C": "16",
+        "D": "100"
+      },
+      "answer": "A",
+      "explanation": "The loop adds 1 + 4 + 9 + 16 = 30. 100 adds 1 + 2 + 3 + 4 first and then squares.",
+      "steps": [
+        "Step 1: i takes the values 1, 2, 3, 4.",
+        "Step 2: the amounts added are 1, 4, 9, 16.",
+        "Step 3: total = 1 + 4 + 9 + 16 = 30."
+      ],
+      "mistakes": {
+        "B": "Step 2: add i × i each time, not just i.",
+        "C": "Step 2: the loop adds a square EVERY time, not only for the last i.",
+        "D": "Step 2: square each i and then add. Don't add first and square at the end."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set k to 5. While k is greater than 8: set k to k + 2. Output k. What is the output?",
+      "options": {
+        "A": "9",
+        "B": "7",
+        "C": "5",
+        "D": "The loop never stops."
+      },
+      "answer": "C",
+      "explanation": "5 is not greater than 8, so the while loop never runs and k stays 5. 7 treats it like a repeat-until loop.",
+      "steps": [
+        "Step 1: check the condition first: is 5 greater than 8? No.",
+        "Step 2: so the loop runs zero times and the output is k = 5."
+      ],
+      "mistakes": {
+        "A": "Step 1: a while loop checks first. Is 5 greater than 8? Answer that before doing any steps.",
+        "B": "Step 1: a while loop does not have to run once — it checks before the first run.",
+        "D": "Step 1: the loop never starts, because the condition is false at the beginning."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set t to 20 and c to 0. Repeat: set t to t − 9 and c to c + 1, until t is less than −15. What are c and t at the end?",
+      "options": {
+        "A": "c = 3, t = −7",
+        "B": "c = 5, t = −25",
+        "C": "c = 4, t = −7",
+        "D": "c = 4, t = −16"
+      },
+      "answer": "D",
+      "explanation": "t goes 11, 2, −7, −16. −16 is less than −15, so it stops after 4 runs. −7 is not yet less than −15.",
+      "steps": [
+        "Step 1: each run takes 9 from t and adds 1 to c.",
+        "Step 2: trace t: 20 → 11 → 2 → −7 → −16.",
+        "Step 3: −16 is less than −15, so stop: c = 4, t = −16."
+      ],
+      "mistakes": {
+        "A": "Step 3: −7 is not less than −15, so the loop runs again.",
+        "B": "Step 3: the loop stops as soon as t is less than −15 — check after each run.",
+        "C": "Step 2: after the 4th run t has dropped by 9 again. Update t and c together."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Set t to 1. Repeat 5 times: output t, then set t to 2 × t + 1. Which numbers are output?",
+      "options": {
+        "A": "3, 7, 15, 31, 63",
+        "B": "1, 3, 7, 15, 31",
+        "C": "1, 3, 5, 7, 9",
+        "D": "1, 4, 10, 22, 46"
+      },
+      "answer": "B",
+      "explanation": "Double and add 1 each time: 1, 3, 7, 15, 31. 1, 4, 10, … adds 1 before doubling.",
+      "steps": [
+        "Step 1: output 1, then t = 2 × 1 + 1 = 3.",
+        "Step 2: output 3, then t = 7; output 7, then t = 15; output 15, then t = 31; output 31."
+      ],
+      "mistakes": {
+        "A": "Step 1: the loop outputs t BEFORE changing it, so 1 is the first output.",
+        "C": "Step 2: the rule doubles t and then adds 1 — it does not just add 2.",
+        "D": "Step 2: 2 × t + 1 means double first, then add 1 — not 2 × (t + 1)."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "The pattern is 11, 8, 5, 2, …. Which rule gives the term from its position?",
+      "options": {
+        "A": "term = 11 − 3 × position",
+        "B": "term = 3 × position + 8",
+        "C": "term = 14 − 3 × position",
+        "D": "term = 14 + 3 × position"
+      },
+      "answer": "C",
+      "explanation": "The difference is −3 and 11 − (−3) = 14, so term = 14 − 3 × position. Check: position 4 gives 14 − 12 = 2. 11 − 3 × position gives 8 for position 1.",
+      "steps": [
+        "Step 1: the difference is 8 − 11 = −3.",
+        "Step 2: constant = first term − difference = 11 − (−3) = 14.",
+        "Step 3: term = 14 − 3 × position (check: position 1 gives 11 ✓)."
+      ],
+      "mistakes": {
+        "A": "Step 2: the constant is first term − difference = 11 − (−3). Check position 1: it must give 11.",
+        "B": "Step 1: the pattern goes DOWN by 3, so the difference is −3, not +3.",
+        "D": "Step 1: the terms decrease, so the position part must be subtracted."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "The flowchart shows an algorithm: set p to 1 and i to 1; while p is less than 500, set i to i + 1, then set p to p × i; then output i. What is the output?",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "720",
+        "D": "7"
+      },
+      "answer": "A",
+      "explanation": "p goes 2, 6, 24, 120, 720 as i goes 2, 3, 4, 5, 6. 720 is not less than 500, so stop with i = 6. At i = 5, p = 120 is still less than 500.",
+      "steps": [
+        "Step 1: each run adds 1 to i, then multiplies p by the new i.",
+        "Step 2: trace (i, p): (2, 2), (3, 6), (4, 24), (5, 120), (6, 720).",
+        "Step 3: 720 is not less than 500, so the loop stops and outputs i = 6."
+      ],
+      "mistakes": {
+        "B": "Step 2: when i = 5, p = 120, which is still less than 500, so the loop runs again.",
+        "C": "Step 3: 720 is the final value of p. The algorithm outputs i.",
+        "D": "Step 2: once p is not less than 500 the loop stops — there is no extra run."
+      },
+      "diagram": "diagrams/y8/maths/chapter-11-test-3-q10.svg",
+      "diagram_alt": "A flowchart: Start; p = 1, i = 1; the question \"Is p less than 500?\". Yes leads to \"i = i + 1, p = p × i\", which loops back to the question. No leads to \"Output i\", then End."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set x to −3 and y to 8. Set t to x. Set y to t. Set x to y. What are x and y at the end?",
+      "options": {
+        "A": "x = 8, y = −3",
+        "B": "x = −3, y = 8",
+        "C": "x = 8, y = 8",
+        "D": "x = −3, y = −3"
+      },
+      "answer": "D",
+      "explanation": "t = −3, then y = −3, then x = y = −3. The order is wrong for a swap, so both end up −3. x = 8, y = −3 assumes it swaps.",
+      "steps": [
+        "Step 1: t = x = −3.",
+        "Step 2: y = t = −3.",
+        "Step 3: x = y = −3 (y has already changed), so x = −3 and y = −3."
+      ],
+      "mistakes": {
+        "A": "Step 3: this is not a correct swap. After \"set y to t\", y is already −3, so x copies −3.",
+        "B": "Step 2: \"set y to t\" changes y. Update y before the next step.",
+        "C": "Step 2: t holds −3, so \"set y to t\" makes y = −3, not 8."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Set s to 0 and n to 1. Repeat: set s to s + n, then set n to n + 1, until s is greater than 100. What is s at the end?",
+      "options": {
+        "A": "91",
+        "B": "120",
+        "C": "105",
+        "D": "15"
+      },
+      "answer": "C",
+      "explanation": "s builds up the triangular numbers 1, 3, 6, …, 91, 105. 105 is the first greater than 100. 91 is not greater than 100.",
+      "steps": [
+        "Step 1: s = 1 + 2 + 3 + … builds triangular numbers.",
+        "Step 2: 1 + 2 + … + 13 = 91, which is not greater than 100.",
+        "Step 3: add 14: s = 105, which is greater than 100, so stop with s = 105."
+      ],
+      "mistakes": {
+        "A": "Step 3: 91 is not greater than 100, so the loop runs again.",
+        "B": "Step 3: the loop stops as soon as s is greater than 100 — no extra run.",
+        "D": "Step 3: 15 is the value of n at the end. The question asks for s."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "The pattern is 4, 11, 18, 25, …. Which of these numbers is in the pattern?",
+      "options": {
+        "A": "196",
+        "B": "200",
+        "C": "201",
+        "D": "205"
+      },
+      "answer": "B",
+      "explanation": "The rule is term = 7 × position − 3. 200 + 3 = 203 = 7 × 29, so 200 is the 29th term. 196 is a multiple of 7, but terms are 3 less than a multiple of 7.",
+      "steps": [
+        "Step 1: the difference is 7 and 4 − 7 = −3, so term = 7 × position − 3.",
+        "Step 2: a number is a term if (number + 3) ÷ 7 is a whole number.",
+        "Step 3: (200 + 3) ÷ 7 = 29 ✓, so 200 is in the pattern."
+      ],
+      "mistakes": {
+        "A": "Step 2: 196 + 3 = 199 is not a multiple of 7. Terms are not multiples of 7 themselves.",
+        "C": "Step 2: 201 + 3 = 204, and 204 ÷ 7 is not a whole number.",
+        "D": "Step 2: 205 + 3 = 208, and 208 ÷ 7 is not a whole number."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms with variables and loops",
+      "prompt": "Set total to 0. For i from 1 to 30: if i is a multiple of 5, add 10 to total; otherwise, subtract 2 from total. What is the final total?",
+      "options": {
+        "A": "12",
+        "B": "0",
+        "C": "57",
+        "D": "108"
+      },
+      "answer": "A",
+      "explanation": "There are 6 multiples of 5 (+60) and 24 other numbers (−48), so total = 12. 0 subtracts 2 for all 30 numbers.",
+      "steps": [
+        "Step 1: multiples of 5 from 1 to 30: 5, 10, 15, 20, 25, 30 — that is 6 numbers, adding 6 × 10 = 60.",
+        "Step 2: the other 30 − 6 = 24 numbers subtract 24 × 2 = 48.",
+        "Step 3: total = 60 − 48 = 12."
+      ],
+      "mistakes": {
+        "B": "Step 2: only 24 values of i are NOT multiples of 5 — don't subtract 2 for all 30.",
+        "C": "Step 2: the algorithm adds 10 for each multiple of 5, not the multiple itself.",
+        "D": "Step 3: \"subtract 2\" means the 24 other values take away 48, not add it."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Testing number patterns with algorithms",
+      "prompt": "Zoe's algorithm checks \"the sum of two consecutive odd numbers is always a multiple of 4\" for 1000 pairs and finds no counterexample. Which statement is correct?",
+      "options": {
+        "A": "It is proved, because 1000 pairs worked.",
+        "B": "It is false, because 3 + 5 = 8.",
+        "C": "It can never be proved, because there are infinitely many pairs.",
+        "D": "It is true for every pair: (2k + 1) + (2k + 3) = 4k + 4 = 4(k + 1), which proves it — the 1000 tests were only evidence."
+      },
+      "answer": "D",
+      "explanation": "Writing the odd numbers as 2k + 1 and 2k + 3 covers every pair, and the sum is 4(k + 1). 1000 tests alone are not a proof.",
+      "steps": [
+        "Step 1: testing gives evidence; a proof must work for every pair.",
+        "Step 2: any two consecutive odd numbers are 2k + 1 and 2k + 3 for some whole number k.",
+        "Step 3: their sum is 4k + 4 = 4(k + 1), always a multiple of 4 — so the algebra proves it."
+      ],
+      "mistakes": {
+        "A": "Step 1: testing gives evidence, not proof. A proof must cover every pair.",
+        "B": "Step 2: 8 = 4 × 2 is a multiple of 4, so this pair agrees with the statement.",
+        "C": "Step 2: algebra can cover infinitely many cases at once by using a letter for any number."
+      }
+    }
+  ]
+}
