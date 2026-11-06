@@ -1,276 +1,277 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Solving exponential equations",
-  "summary": "Solve exponential equations by matching bases, by using logarithms (x = log b ÷ log a) and with graphs, including \"how long?\" growth and interest problems.",
-  "minutes": 30,
-  "body": "An **exponential equation** has the unknown in the index, like 2ˣ = 32 or 1.06ⁿ = 2. You meet them whenever you ask \"how long?\" questions: how long until an investment doubles, how long until a medicine wears off, or how long until a population reaches a target. This lesson shows three ways to solve them: matching bases, using logarithms, and reading a graph.\n\n## Learning objective\n\nBy the end of this lesson you can solve exponential equations by writing both sides with the same base, by using logarithms, and by using a graph, and apply this to growth and interest problems.\n\n## Before you start\n\nYou need **Negative and fractional indices** and **Introduction to logarithms** (this chapter), and solving linear equations from **Linear equations and inequalities** (Chapter 1).\n\nWarm-up (answers below):\n1. Write 81 as a power of 3.\n2. Solve 2x − 1 = 7.\n\nAnswers: 1. **81 = 3⁴**. 2. 2x = 8, so **x = 4**.\n\n## Think of it like this\n\n### Matching price tags in the same currency\n\nYou can't compare a price in dollars with a price in yen until you change them into the same currency. Exponential equations are the same: 4ˣ = 8 is hard to compare, but if you change both sides into \"powers of 2\" (2²ˣ = 2³), you can just compare the indices: 2x = 3. When the numbers won't convert neatly, logarithms are the exchange rate that does the conversion for you.\n\n*Where the analogy breaks down:* currency rates change from day to day, but 4 = 2² is exact forever, so the conversion never has any rounding unless you use a calculator for the logs.\n\n## Key ideas\n\n### Method 1: make the bases the same\n\nIf **aᵐ = aⁿ**, then **m = n** (for a positive base a that is not 1). So:\n\n1. Write both sides as powers of the **same base** (often 2, 3, 5 or 10).\n2. Set the indices equal.\n3. Solve the linear equation.\n\nUseful powers: 2, 4, 8, 16, 32, 64 are powers of 2; 3, 9, 27, 81, 243 are powers of 3; 5, 25, 125, 625 are powers of 5. Remember 1 = a⁰ and fractions use negative indices: 1/8 = 2⁻³.\n\n### Method 2: use logarithms\n\nWhen the bases can't be matched (like 5ˣ = 20), take the log of both sides:\n\n**aˣ = b  ⇒  x = logₐ b = log b ÷ log a**\n\nThe last form uses the calculator's **log** key (base 10): log 20 ÷ log 5. It works because log (aˣ) = x log a.\n\n### Method 3: use a graph\n\nThe solution of aˣ = b is the x-coordinate where the curve y = aˣ meets the horizontal line y = b. A graph gives a quick estimate and a check on your algebra.\n\n![Graph of y = 2ˣ from x = 0 to 4 with a dashed horizontal line at y = 10. They meet where a dashed line drops to the x-axis at x ≈ 3.32.](/diagrams/y10/maths/solving-exponential-equations-graph.svg)\n\n### \"How long?\" problems\n\nFor growth A = P(1 + r)ⁿ, divide by P first to get (1 + r)ⁿ = A ÷ P, then solve for n. If the answer must be a **whole number of periods**, round **up** — the target is only reached at the end of that period.\n\n## Worked examples\n\n### Example 1\n\nSolve 3^(2x − 1) = 27.\n\nStep 1: write 27 as a power of 3: 27 = 3³, so 3^(2x − 1) = 3³ — same base on both sides.\nStep 2: set the indices equal: 2x − 1 = 3.\nStep 3: add 1 to both sides, then divide by 2: 2x = 4, so **x = 2**.\nCheck: 3^(2 × 2 − 1) = 3³ = 27 ✓\n\n### Example 2\n\nSolve 4ˣ = 8.\n\nStep 1: 4 and 8 are both powers of 2: 4 = 2² and 8 = 2³.\nStep 2: (2²)ˣ = 2³, so 2^(2x) = 2³ — power of a power: multiply the indices.\nStep 3: 2x = 3, so **x = 3/2** (or 1.5).\nCheck: 4^(3/2) = (√4)³ = 2³ = 8 ✓\n\n### Example 3\n\nSolve 5ˣ = 20, correct to 2 decimal places.\n\nStep 1: 20 is not a power of 5, so use logs: x = log₅ 20.\nStep 2: x = log 20 ÷ log 5 — using the calculator's base-10 log key.\nStep 3: x = 1.861… ≈ **1.86**.\nCheck: 5^1.86 ≈ 19.96, close to 20 ✓ (and the answer is between 1 and 2, since 5¹ = 5 and 5² = 25).\n\n### Example 4\n\n$5000 is invested at 6% p.a. compounded annually. After how many whole years will it first double?\n\nStep 1: doubling means 5000 × 1.06ⁿ = 10 000, so 1.06ⁿ = 2 — divide both sides by 5000.\nStep 2: n = log 2 ÷ log 1.06 = 11.89…\nStep 3: the balance only reaches $10 000 part-way through the 12th year, so round up: **12 years**.\nCheck: 5000 × 1.06¹¹ ≈ $9491.49 (not yet) and 5000 × 1.06¹² ≈ $10 060.98 ✓\n\n## Common mistakes\n\n- **Dividing instead of using powers.** In 3ˣ = 243, x is not 243 ÷ 3. Find the power: 3⁵ = 243.\n- **Forgetting to rewrite one side.** In 4ˣ = 32, 2⁵ = 32 does not give x = 5; the left side is 2^(2x), so 2x = 5.\n- **Dividing the logs the wrong way.** For 7ˣ = 50, x = log 50 ÷ log 7, not log 7 ÷ log 50.\n- **Rounding a \"how long\" answer down.** 11.9 years means the target is reached during year 12, so the answer is 12.\n- **Forgetting the brackets in the index.** 9^(x + 1) = (3²)^(x + 1) = 3^(2x + 2) — multiply both terms by 2.\n\n## Tips to remember\n\n- **\"Same base, same index.\"** Once the bases match, ignore them and solve the index equation.\n- **Learn your powers** of 2, 3 and 5 — they make Method 1 fast.\n- **\"Number you want on top, base on the bottom\":** x = log(answer) ÷ log(base).\n- **Estimate first:** 5ˣ = 20 must have x between 1 and 2, because 5¹ = 5 and 5² = 25.\n- **Whole periods? Round up** for \"first reaches\" questions.\n\n## Key terms\n\n- **Exponential equation** — an equation with the unknown in the index.\n- **Equating indices** — setting the indices equal once both sides have the same base.\n- **Common base** — a number that both sides can be written as powers of.\n- **Change of base** — writing logₐ b as log b ÷ log a so a calculator can work it out.\n- **Point of intersection** — where two graphs meet; its x-coordinate solves the equation.\n\n## Summary\n\n- An exponential equation has the unknown in the index.\n- Method 1: write both sides with the same base, then set the indices equal.\n- Method 2: aˣ = b gives x = logₐ b = log b ÷ log a.\n- Method 3: read the x-coordinate where y = aˣ meets y = b.\n- For growth problems, divide by the starting amount first, then solve.\n- For \"how many whole periods\", round up.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "Solve 3ˣ = 243.",
-      "options": {
-        "A": "x = 81",
-        "B": "x = 4",
-        "C": "x = 240",
-        "D": "x = 5"
-      },
-      "answer": "D",
-      "explanation": "243 = 3⁵, so 3ˣ = 3⁵ and x = 5. 81 comes from dividing 243 by 3, which is not how indices work.",
-      "steps": [
-        "Write 243 as a power of 3: 3, 9, 27, 81, 243, so 243 = 3⁵.",
-        "3ˣ = 3⁵, so the indices are equal: x = 5."
-      ],
-      "mistakes": {
-        "A": "Step 1: dividing 243 by 3 does not find the power. Count how many 3s multiply to 243.",
-        "B": "Step 1: 3⁴ = 81, not 243. Multiply by 3 once more.",
-        "C": "Step 1: x is an index, so you cannot subtract 3 from 243. Write 243 as a power of 3."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Solve 2^(x + 1) = 16.",
-      "options": {
-        "A": "x = 3",
-        "B": "x = 4",
-        "C": "x = 7",
-        "D": "x = 5"
-      },
-      "answer": "A",
-      "explanation": "16 = 2⁴, so x + 1 = 4 and x = 3. Stopping at 4 forgets that the index is x + 1, not x.",
-      "steps": [
-        "Write 16 as a power of 2: 16 = 2⁴.",
-        "Set the indices equal: x + 1 = 4.",
-        "Subtract 1 from both sides: x = 3."
-      ],
-      "mistakes": {
-        "B": "Step 3: 4 is the value of x + 1. Subtract 1 to find x.",
-        "C": "Step 1: 16 ÷ 2 = 8 is not a power. Write 16 as 2⁴, then solve x + 1 = 4.",
-        "D": "Step 3: to undo + 1, subtract 1 — don't add it."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Solve 10ˣ = 0.001.",
-      "options": {
-        "A": "x = 3",
-        "B": "x = −3",
-        "C": "x = −2",
-        "D": "x = 1/3"
-      },
-      "answer": "B",
-      "explanation": "0.001 = 1/1000 = 10⁻³, so x = −3. Numbers between 0 and 1 need a negative index, so x = 3 is wrong.",
-      "steps": [
-        "Write 0.001 as a fraction: 1/1000 = 1/10³.",
-        "One over means a negative index: 1/10³ = 10⁻³.",
-        "So x = −3."
-      ],
-      "mistakes": {
-        "A": "Step 2: 10³ = 1000, not 0.001. A number less than 1 needs a negative index.",
-        "C": "Step 1: 10⁻² = 0.01. 0.001 has three decimal places, so it is 10⁻³.",
-        "D": "Step 2: a fractional index means a root, not \"one over\". One over needs a negative index."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Solve 4ˣ = 32.",
-      "options": {
-        "A": "x = 8",
-        "B": "x = 5",
-        "C": "x = 5/2",
-        "D": "x = 10"
-      },
-      "answer": "C",
-      "explanation": "Write both sides as powers of 2: 2^(2x) = 2⁵, so 2x = 5 and x = 5/2. x = 5 forgets that 4 is 2².",
-      "steps": [
-        "4 = 2² and 32 = 2⁵.",
-        "(2²)ˣ = 2^(2x), so 2^(2x) = 2⁵.",
-        "2x = 5, so x = 5/2 (2.5)."
-      ],
-      "mistakes": {
-        "A": "Step 1: 32 ÷ 4 = 8 is a division, not a power. Write both sides as powers of 2.",
-        "B": "Step 2: the left side is 4ˣ = 2^(2x), not 2ˣ. Set 2x equal to 5.",
-        "D": "Step 3: 2x = 5 means divide 5 by 2, not multiply."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Solve 5^(2x + 1) = 125.",
-      "options": {
-        "A": "x = 2",
-        "B": "x = 1",
-        "C": "x = 1.5",
-        "D": "x = 3"
-      },
-      "answer": "B",
-      "explanation": "125 = 5³, so 2x + 1 = 3, 2x = 2 and x = 1. Check: 5^(2 + 1) = 5³ = 125 ✓",
-      "steps": [
-        "Write 125 as a power of 5: 125 = 5³.",
-        "Set the indices equal: 2x + 1 = 3.",
-        "Subtract 1: 2x = 2. Divide by 2: x = 1."
-      ],
-      "mistakes": {
-        "A": "Step 3: to undo + 1, subtract 1 from both sides (2x = 2), not add.",
-        "C": "Step 2: the index is 2x + 1, so 2x + 1 = 3 — you dropped the + 1.",
-        "D": "Step 3: 3 is the value of 2x + 1. Keep solving for x."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Solve 7ˣ = 50, correct to 2 decimal places.",
-      "options": {
-        "A": "x = 0.50",
-        "B": "x = 7.14",
-        "C": "x = 0.85",
-        "D": "x = 2.01"
-      },
-      "answer": "D",
-      "explanation": "x = log 50 ÷ log 7 = 2.010… ≈ 2.01. This makes sense: 7² = 49 is just under 50.",
-      "steps": [
-        "50 is not a power of 7, so use logs: x = log₇ 50.",
-        "x = log 50 ÷ log 7.",
-        "x = 1.69897… ÷ 0.84510… = 2.0104 ≈ 2.01."
-      ],
-      "mistakes": {
-        "A": "Step 2: you divided the logs the wrong way round. It is log 50 ÷ log 7.",
-        "B": "Step 1: 50 ÷ 7 does not find the power. Use x = log 50 ÷ log 7.",
-        "C": "Step 2: log 50 − log 7 = log (50 ÷ 7) is not the same as log 50 ÷ log 7."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Solve 9^(x + 1) = 27ˣ.",
-      "options": {
-        "A": "x = 2",
-        "B": "x = −3",
-        "C": "x = 1",
-        "D": "x = 2/5"
-      },
-      "answer": "A",
-      "explanation": "9 = 3² and 27 = 3³, so 3^(2x + 2) = 3^(3x). Then 2x + 2 = 3x gives x = 2. Check: 9³ = 729 = 27² ✓",
-      "steps": [
-        "Write both bases as powers of 3: 9 = 3² and 27 = 3³.",
-        "(3²)^(x + 1) = 3^(2x + 2) and (3³)ˣ = 3^(3x).",
-        "2x + 2 = 3x, so x = 2."
-      ],
-      "mistakes": {
-        "B": "Step 1: 9 = 3² and 27 = 3³ — you swapped them.",
-        "C": "Step 2: the 2 multiplies both terms of x + 1, giving 2x + 2, not 2x + 1.",
-        "D": "Step 3: subtract 2x from BOTH sides: 2 = 3x − 2x."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Solve (1/2)ˣ = 16.",
-      "options": {
-        "A": "x = 4",
-        "B": "x = 32",
-        "C": "x = −4",
-        "D": "x = 8"
-      },
-      "answer": "C",
-      "explanation": "1/2 = 2⁻¹, so (1/2)ˣ = 2⁻ˣ = 2⁴. Then −x = 4 and x = −4. Check: (1/2)⁻⁴ = 2⁴ = 16 ✓",
-      "steps": [
-        "Write 1/2 as a power of 2: 1/2 = 2⁻¹, so (1/2)ˣ = 2⁻ˣ.",
-        "Write 16 = 2⁴, so 2⁻ˣ = 2⁴.",
-        "−x = 4, so x = −4."
-      ],
-      "mistakes": {
-        "A": "Step 1: (1/2)ˣ is 2⁻ˣ, not 2ˣ. Raising ½ to a positive power gives a number less than 1.",
-        "B": "Step 2: 16 ÷ ½ = 32 is a division, not a power. Write both sides as powers of 2.",
-        "D": "Step 2: 16 × ½ = 8 does not find the index. Write 16 as 2⁴."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "$5000 is invested at 4% p.a. compounded annually. After how many whole years will it first be worth at least $8000?",
-      "options": {
-        "A": "11 years",
-        "B": "12 years",
-        "C": "15 years",
-        "D": "40 years"
-      },
-      "answer": "B",
-      "explanation": "1.04ⁿ = 8000 ÷ 5000 = 1.6, so n = log 1.6 ÷ log 1.04 = 11.98… Round up: 12 years. (After 11 years it is only $7697.27.)",
-      "steps": [
-        "Divide by 5000: 1.04ⁿ = 1.6.",
-        "n = log 1.6 ÷ log 1.04 = 11.98…",
-        "The target is reached during year 12, so round up: 12 years (check: 5000 × 1.04¹² ≈ $8005.16)."
-      ],
-      "mistakes": {
-        "A": "Step 3: 11.98 must be rounded up — after 11 years it is only $7697.27.",
-        "C": "Step 2: that adds $200 a year (simple interest: 3000 ÷ 200). Compound interest grows faster.",
-        "D": "Step 2: 1.6 ÷ 0.04 is not how to undo a power. Use logs: n = log 1.6 ÷ log 1.04."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The graph shows y = 4 × 1.5ˣ and the line y = 30. Use it to estimate the solution of 4 × 1.5ˣ = 30, then check with logs.",
-      "diagram": "diagrams/y10/maths/solving-exponential-equations-q-graph.svg",
-      "diagram_alt": "Graph of y = 4 × 1.5ˣ for x from 0 to 7, starting at y = 4 and rising, with a dashed horizontal line at y = 30.",
-      "options": {
-        "A": "x ≈ 7.5",
-        "B": "x ≈ 17.3",
-        "C": "x ≈ 5",
-        "D": "x ≈ 30"
-      },
-      "answer": "C",
-      "explanation": "The curve meets y = 30 at about x = 5. Check: 1.5ˣ = 30 ÷ 4 = 7.5, so x = log 7.5 ÷ log 1.5 ≈ 4.97 ≈ 5.",
-      "steps": [
-        "Find where the curve meets the line y = 30 and read down to the x-axis: about x = 5.",
-        "Check algebraically: divide by 4: 1.5ˣ = 7.5.",
-        "x = log 7.5 ÷ log 1.5 = 4.97 ≈ 5."
-      ],
-      "mistakes": {
-        "A": "Step 2: 7.5 is the value of 1.5ˣ, not x. You still need to find the power.",
-        "B": "Step 2: that solves 4 + 1.5x = 30 as if it were linear. Divide by 4 first, then undo the power.",
-        "D": "Step 1: 30 is the y-value where they meet. The solution is the x-coordinate."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Solve 9ˣ − 4 × 3ˣ + 3 = 0. (Hint: let u = 3ˣ, so 9ˣ = u².)",
-      "options": {
-        "A": "x = 1 or x = 3",
-        "B": "x = 0 or x = 1",
-        "C": "x = −1 or x = −3",
-        "D": "x = 1 only"
-      },
-      "answer": "B",
-      "explanation": "With u = 3ˣ: u² − 4u + 3 = 0, so (u − 1)(u − 3) = 0 and u = 1 or 3. Then 3ˣ = 1 gives x = 0 and 3ˣ = 3 gives x = 1.",
-      "steps": [
-        "9ˣ = (3²)ˣ = (3ˣ)², so the equation is u² − 4u + 3 = 0.",
-        "Factorise: (u − 1)(u − 3) = 0, so u = 1 or u = 3.",
-        "Change back: 3ˣ = 1 gives x = 0, and 3ˣ = 3 gives x = 1."
-      ],
-      "mistakes": {
-        "A": "Step 3: 1 and 3 are the values of u = 3ˣ. Change back to x.",
-        "C": "Step 2: (u − 1)(u − 3) = 0 gives positive values u = 1 and 3; and you still need to change back to x.",
-        "D": "Step 3: 3ˣ = 1 has a solution: x = 0, because 3⁰ = 1."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Solve 2ˣ = 3^(x − 1), correct to 2 decimal places.",
-      "options": {
-        "A": "x = −2.71",
-        "B": "x = 0.37",
-        "C": "x = 5.68",
-        "D": "x = 2.71"
-      },
-      "answer": "D",
-      "explanation": "Take logs: x log 2 = (x − 1) log 3, so x log 3 − x log 2 = log 3 and x = log 3 ÷ (log 3 − log 2) ≈ 2.71.",
-      "steps": [
-        "Take log of both sides: x log 2 = (x − 1) log 3.",
-        "Expand and collect the x terms: x log 3 − x log 2 = log 3.",
-        "x = log 3 ÷ (log 3 − log 2) = 0.4771 ÷ 0.1761 ≈ 2.71."
-      ],
-      "mistakes": {
-        "A": "Step 2: move the terms carefully — it is log 3 − log 2 on the bottom, which is positive.",
-        "B": "Step 3: you divided the wrong way round. x = log 3 ÷ (log 3 − log 2).",
-        "C": "Step 2: (x − 1) log 3 = x log 3 − log 3, not x log 3 − 1."
-      }
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Solving exponential equations",
+ "summary": "Solve exponential equations by matching bases, by using logarithms (x = log b ÷ log a) and with graphs, including \"how long?\" growth and interest problems.",
+ "minutes": 30,
+ "video": "videos/y10/maths/solving-exponential-equations.mp4",
+ "body": "An **exponential equation** has the unknown in the index, like 2ˣ = 32 or 1.06ⁿ = 2. You meet them whenever you ask \"how long?\" questions: how long until an investment doubles, how long until a medicine wears off, or how long until a population reaches a target. This lesson shows three ways to solve them: matching bases, using logarithms, and reading a graph.\n\n## Learning objective\n\nBy the end of this lesson you can solve exponential equations by writing both sides with the same base, by using logarithms, and by using a graph, and apply this to growth and interest problems.\n\n## Before you start\n\nYou need **Negative and fractional indices** and **Introduction to logarithms** (this chapter), and solving linear equations from **Linear equations and inequalities** (Chapter 1).\n\nWarm-up (answers below):\n1. Write 81 as a power of 3.\n2. Solve 2x − 1 = 7.\n\nAnswers: 1. **81 = 3⁴**. 2. 2x = 8, so **x = 4**.\n\n## Think of it like this\n\n### Matching price tags in the same currency\n\nYou can't compare a price in dollars with a price in yen until you change them into the same currency. Exponential equations are the same: 4ˣ = 8 is hard to compare, but if you change both sides into \"powers of 2\" (2²ˣ = 2³), you can just compare the indices: 2x = 3. When the numbers won't convert neatly, logarithms are the exchange rate that does the conversion for you.\n\n*Where the analogy breaks down:* currency rates change from day to day, but 4 = 2² is exact forever, so the conversion never has any rounding unless you use a calculator for the logs.\n\n## Key ideas\n\n### Method 1: make the bases the same\n\nIf **aᵐ = aⁿ**, then **m = n** (for a positive base a that is not 1). So:\n\n1. Write both sides as powers of the **same base** (often 2, 3, 5 or 10).\n2. Set the indices equal.\n3. Solve the linear equation.\n\nUseful powers: 2, 4, 8, 16, 32, 64 are powers of 2; 3, 9, 27, 81, 243 are powers of 3; 5, 25, 125, 625 are powers of 5. Remember 1 = a⁰ and fractions use negative indices: 1/8 = 2⁻³.\n\n### Method 2: use logarithms\n\nWhen the bases can't be matched (like 5ˣ = 20), take the log of both sides:\n\n**aˣ = b  ⇒  x = logₐ b = log b ÷ log a**\n\nThe last form uses the calculator's **log** key (base 10): log 20 ÷ log 5. It works because log (aˣ) = x log a.\n\n### Method 3: use a graph\n\nThe solution of aˣ = b is the x-coordinate where the curve y = aˣ meets the horizontal line y = b. A graph gives a quick estimate and a check on your algebra.\n\n![Graph of y = 2ˣ from x = 0 to 4 with a dashed horizontal line at y = 10. They meet where a dashed line drops to the x-axis at x ≈ 3.32.](/diagrams/y10/maths/solving-exponential-equations-graph.svg)\n\n### \"How long?\" problems\n\nFor growth A = P(1 + r)ⁿ, divide by P first to get (1 + r)ⁿ = A ÷ P, then solve for n. If the answer must be a **whole number of periods**, round **up** — the target is only reached at the end of that period.\n\n## Worked examples\n\n### Example 1\n\nSolve 3^(2x − 1) = 27.\n\nStep 1: write 27 as a power of 3: 27 = 3³, so 3^(2x − 1) = 3³ — same base on both sides.\nStep 2: set the indices equal: 2x − 1 = 3.\nStep 3: add 1 to both sides, then divide by 2: 2x = 4, so **x = 2**.\nCheck: 3^(2 × 2 − 1) = 3³ = 27 ✓\n\n### Example 2\n\nSolve 4ˣ = 8.\n\nStep 1: 4 and 8 are both powers of 2: 4 = 2² and 8 = 2³.\nStep 2: (2²)ˣ = 2³, so 2^(2x) = 2³ — power of a power: multiply the indices.\nStep 3: 2x = 3, so **x = 3/2** (or 1.5).\nCheck: 4^(3/2) = (√4)³ = 2³ = 8 ✓\n\n### Example 3\n\nSolve 5ˣ = 20, correct to 2 decimal places.\n\nStep 1: 20 is not a power of 5, so use logs: x = log₅ 20.\nStep 2: x = log 20 ÷ log 5 — using the calculator's base-10 log key.\nStep 3: x = 1.861… ≈ **1.86**.\nCheck: 5^1.86 ≈ 19.96, close to 20 ✓ (and the answer is between 1 and 2, since 5¹ = 5 and 5² = 25).\n\n### Example 4\n\n$5000 is invested at 6% p.a. compounded annually. After how many whole years will it first double?\n\nStep 1: doubling means 5000 × 1.06ⁿ = 10 000, so 1.06ⁿ = 2 — divide both sides by 5000.\nStep 2: n = log 2 ÷ log 1.06 = 11.89…\nStep 3: the balance only reaches $10 000 part-way through the 12th year, so round up: **12 years**.\nCheck: 5000 × 1.06¹¹ ≈ $9491.49 (not yet) and 5000 × 1.06¹² ≈ $10 060.98 ✓\n\n## Common mistakes\n\n- **Dividing instead of using powers.** In 3ˣ = 243, x is not 243 ÷ 3. Find the power: 3⁵ = 243.\n- **Forgetting to rewrite one side.** In 4ˣ = 32, 2⁵ = 32 does not give x = 5; the left side is 2^(2x), so 2x = 5.\n- **Dividing the logs the wrong way.** For 7ˣ = 50, x = log 50 ÷ log 7, not log 7 ÷ log 50.\n- **Rounding a \"how long\" answer down.** 11.9 years means the target is reached during year 12, so the answer is 12.\n- **Forgetting the brackets in the index.** 9^(x + 1) = (3²)^(x + 1) = 3^(2x + 2) — multiply both terms by 2.\n\n## Tips to remember\n\n- **\"Same base, same index.\"** Once the bases match, ignore them and solve the index equation.\n- **Learn your powers** of 2, 3 and 5 — they make Method 1 fast.\n- **\"Number you want on top, base on the bottom\":** x = log(answer) ÷ log(base).\n- **Estimate first:** 5ˣ = 20 must have x between 1 and 2, because 5¹ = 5 and 5² = 25.\n- **Whole periods? Round up** for \"first reaches\" questions.\n\n## Key terms\n\n- **Exponential equation** — an equation with the unknown in the index.\n- **Equating indices** — setting the indices equal once both sides have the same base.\n- **Common base** — a number that both sides can be written as powers of.\n- **Change of base** — writing logₐ b as log b ÷ log a so a calculator can work it out.\n- **Point of intersection** — where two graphs meet; its x-coordinate solves the equation.\n\n## Summary\n\n- An exponential equation has the unknown in the index.\n- Method 1: write both sides with the same base, then set the indices equal.\n- Method 2: aˣ = b gives x = logₐ b = log b ÷ log a.\n- Method 3: read the x-coordinate where y = aˣ meets y = b.\n- For growth problems, divide by the starting amount first, then solve.\n- For \"how many whole periods\", round up.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Solve 3ˣ = 243.",
+   "options": {
+    "A": "x = 81",
+    "B": "x = 4",
+    "C": "x = 240",
+    "D": "x = 5"
+   },
+   "answer": "D",
+   "explanation": "243 = 3⁵, so 3ˣ = 3⁵ and x = 5. 81 comes from dividing 243 by 3, which is not how indices work.",
+   "steps": [
+    "Write 243 as a power of 3: 3, 9, 27, 81, 243, so 243 = 3⁵.",
+    "3ˣ = 3⁵, so the indices are equal: x = 5."
+   ],
+   "mistakes": {
+    "A": "Step 1: dividing 243 by 3 does not find the power. Count how many 3s multiply to 243.",
+    "B": "Step 1: 3⁴ = 81, not 243. Multiply by 3 once more.",
+    "C": "Step 1: x is an index, so you cannot subtract 3 from 243. Write 243 as a power of 3."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Solve 2^(x + 1) = 16.",
+   "options": {
+    "A": "x = 3",
+    "B": "x = 4",
+    "C": "x = 7",
+    "D": "x = 5"
+   },
+   "answer": "A",
+   "explanation": "16 = 2⁴, so x + 1 = 4 and x = 3. Stopping at 4 forgets that the index is x + 1, not x.",
+   "steps": [
+    "Write 16 as a power of 2: 16 = 2⁴.",
+    "Set the indices equal: x + 1 = 4.",
+    "Subtract 1 from both sides: x = 3."
+   ],
+   "mistakes": {
+    "B": "Step 3: 4 is the value of x + 1. Subtract 1 to find x.",
+    "C": "Step 1: 16 ÷ 2 = 8 is not a power. Write 16 as 2⁴, then solve x + 1 = 4.",
+    "D": "Step 3: to undo + 1, subtract 1 — don't add it."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Solve 10ˣ = 0.001.",
+   "options": {
+    "A": "x = 3",
+    "B": "x = −3",
+    "C": "x = −2",
+    "D": "x = 1/3"
+   },
+   "answer": "B",
+   "explanation": "0.001 = 1/1000 = 10⁻³, so x = −3. Numbers between 0 and 1 need a negative index, so x = 3 is wrong.",
+   "steps": [
+    "Write 0.001 as a fraction: 1/1000 = 1/10³.",
+    "One over means a negative index: 1/10³ = 10⁻³.",
+    "So x = −3."
+   ],
+   "mistakes": {
+    "A": "Step 2: 10³ = 1000, not 0.001. A number less than 1 needs a negative index.",
+    "C": "Step 1: 10⁻² = 0.01. 0.001 has three decimal places, so it is 10⁻³.",
+    "D": "Step 2: a fractional index means a root, not \"one over\". One over needs a negative index."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Solve 4ˣ = 32.",
+   "options": {
+    "A": "x = 8",
+    "B": "x = 5",
+    "C": "x = 5/2",
+    "D": "x = 10"
+   },
+   "answer": "C",
+   "explanation": "Write both sides as powers of 2: 2^(2x) = 2⁵, so 2x = 5 and x = 5/2. x = 5 forgets that 4 is 2².",
+   "steps": [
+    "4 = 2² and 32 = 2⁵.",
+    "(2²)ˣ = 2^(2x), so 2^(2x) = 2⁵.",
+    "2x = 5, so x = 5/2 (2.5)."
+   ],
+   "mistakes": {
+    "A": "Step 1: 32 ÷ 4 = 8 is a division, not a power. Write both sides as powers of 2.",
+    "B": "Step 2: the left side is 4ˣ = 2^(2x), not 2ˣ. Set 2x equal to 5.",
+    "D": "Step 3: 2x = 5 means divide 5 by 2, not multiply."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Solve 5^(2x + 1) = 125.",
+   "options": {
+    "A": "x = 2",
+    "B": "x = 1",
+    "C": "x = 1.5",
+    "D": "x = 3"
+   },
+   "answer": "B",
+   "explanation": "125 = 5³, so 2x + 1 = 3, 2x = 2 and x = 1. Check: 5^(2 + 1) = 5³ = 125 ✓",
+   "steps": [
+    "Write 125 as a power of 5: 125 = 5³.",
+    "Set the indices equal: 2x + 1 = 3.",
+    "Subtract 1: 2x = 2. Divide by 2: x = 1."
+   ],
+   "mistakes": {
+    "A": "Step 3: to undo + 1, subtract 1 from both sides (2x = 2), not add.",
+    "C": "Step 2: the index is 2x + 1, so 2x + 1 = 3 — you dropped the + 1.",
+    "D": "Step 3: 3 is the value of 2x + 1. Keep solving for x."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Solve 7ˣ = 50, correct to 2 decimal places.",
+   "options": {
+    "A": "x = 0.50",
+    "B": "x = 7.14",
+    "C": "x = 0.85",
+    "D": "x = 2.01"
+   },
+   "answer": "D",
+   "explanation": "x = log 50 ÷ log 7 = 2.010… ≈ 2.01. This makes sense: 7² = 49 is just under 50.",
+   "steps": [
+    "50 is not a power of 7, so use logs: x = log₇ 50.",
+    "x = log 50 ÷ log 7.",
+    "x = 1.69897… ÷ 0.84510… = 2.0104 ≈ 2.01."
+   ],
+   "mistakes": {
+    "A": "Step 2: you divided the logs the wrong way round. It is log 50 ÷ log 7.",
+    "B": "Step 1: 50 ÷ 7 does not find the power. Use x = log 50 ÷ log 7.",
+    "C": "Step 2: log 50 − log 7 = log (50 ÷ 7) is not the same as log 50 ÷ log 7."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Solve 9^(x + 1) = 27ˣ.",
+   "options": {
+    "A": "x = 2",
+    "B": "x = −3",
+    "C": "x = 1",
+    "D": "x = 2/5"
+   },
+   "answer": "A",
+   "explanation": "9 = 3² and 27 = 3³, so 3^(2x + 2) = 3^(3x). Then 2x + 2 = 3x gives x = 2. Check: 9³ = 729 = 27² ✓",
+   "steps": [
+    "Write both bases as powers of 3: 9 = 3² and 27 = 3³.",
+    "(3²)^(x + 1) = 3^(2x + 2) and (3³)ˣ = 3^(3x).",
+    "2x + 2 = 3x, so x = 2."
+   ],
+   "mistakes": {
+    "B": "Step 1: 9 = 3² and 27 = 3³ — you swapped them.",
+    "C": "Step 2: the 2 multiplies both terms of x + 1, giving 2x + 2, not 2x + 1.",
+    "D": "Step 3: subtract 2x from BOTH sides: 2 = 3x − 2x."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Solve (1/2)ˣ = 16.",
+   "options": {
+    "A": "x = 4",
+    "B": "x = 32",
+    "C": "x = −4",
+    "D": "x = 8"
+   },
+   "answer": "C",
+   "explanation": "1/2 = 2⁻¹, so (1/2)ˣ = 2⁻ˣ = 2⁴. Then −x = 4 and x = −4. Check: (1/2)⁻⁴ = 2⁴ = 16 ✓",
+   "steps": [
+    "Write 1/2 as a power of 2: 1/2 = 2⁻¹, so (1/2)ˣ = 2⁻ˣ.",
+    "Write 16 = 2⁴, so 2⁻ˣ = 2⁴.",
+    "−x = 4, so x = −4."
+   ],
+   "mistakes": {
+    "A": "Step 1: (1/2)ˣ is 2⁻ˣ, not 2ˣ. Raising ½ to a positive power gives a number less than 1.",
+    "B": "Step 2: 16 ÷ ½ = 32 is a division, not a power. Write both sides as powers of 2.",
+    "D": "Step 2: 16 × ½ = 8 does not find the index. Write 16 as 2⁴."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "$5000 is invested at 4% p.a. compounded annually. After how many whole years will it first be worth at least $8000?",
+   "options": {
+    "A": "11 years",
+    "B": "12 years",
+    "C": "15 years",
+    "D": "40 years"
+   },
+   "answer": "B",
+   "explanation": "1.04ⁿ = 8000 ÷ 5000 = 1.6, so n = log 1.6 ÷ log 1.04 = 11.98… Round up: 12 years. (After 11 years it is only $7697.27.)",
+   "steps": [
+    "Divide by 5000: 1.04ⁿ = 1.6.",
+    "n = log 1.6 ÷ log 1.04 = 11.98…",
+    "The target is reached during year 12, so round up: 12 years (check: 5000 × 1.04¹² ≈ $8005.16)."
+   ],
+   "mistakes": {
+    "A": "Step 3: 11.98 must be rounded up — after 11 years it is only $7697.27.",
+    "C": "Step 2: that adds $200 a year (simple interest: 3000 ÷ 200). Compound interest grows faster.",
+    "D": "Step 2: 1.6 ÷ 0.04 is not how to undo a power. Use logs: n = log 1.6 ÷ log 1.04."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The graph shows y = 4 × 1.5ˣ and the line y = 30. Use it to estimate the solution of 4 × 1.5ˣ = 30, then check with logs.",
+   "diagram": "diagrams/y10/maths/solving-exponential-equations-q-graph.svg",
+   "diagram_alt": "Graph of y = 4 × 1.5ˣ for x from 0 to 7, starting at y = 4 and rising, with a dashed horizontal line at y = 30.",
+   "options": {
+    "A": "x ≈ 7.5",
+    "B": "x ≈ 17.3",
+    "C": "x ≈ 5",
+    "D": "x ≈ 30"
+   },
+   "answer": "C",
+   "explanation": "The curve meets y = 30 at about x = 5. Check: 1.5ˣ = 30 ÷ 4 = 7.5, so x = log 7.5 ÷ log 1.5 ≈ 4.97 ≈ 5.",
+   "steps": [
+    "Find where the curve meets the line y = 30 and read down to the x-axis: about x = 5.",
+    "Check algebraically: divide by 4: 1.5ˣ = 7.5.",
+    "x = log 7.5 ÷ log 1.5 = 4.97 ≈ 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: 7.5 is the value of 1.5ˣ, not x. You still need to find the power.",
+    "B": "Step 2: that solves 4 + 1.5x = 30 as if it were linear. Divide by 4 first, then undo the power.",
+    "D": "Step 1: 30 is the y-value where they meet. The solution is the x-coordinate."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Solve 9ˣ − 4 × 3ˣ + 3 = 0. (Hint: let u = 3ˣ, so 9ˣ = u².)",
+   "options": {
+    "A": "x = 1 or x = 3",
+    "B": "x = 0 or x = 1",
+    "C": "x = −1 or x = −3",
+    "D": "x = 1 only"
+   },
+   "answer": "B",
+   "explanation": "With u = 3ˣ: u² − 4u + 3 = 0, so (u − 1)(u − 3) = 0 and u = 1 or 3. Then 3ˣ = 1 gives x = 0 and 3ˣ = 3 gives x = 1.",
+   "steps": [
+    "9ˣ = (3²)ˣ = (3ˣ)², so the equation is u² − 4u + 3 = 0.",
+    "Factorise: (u − 1)(u − 3) = 0, so u = 1 or u = 3.",
+    "Change back: 3ˣ = 1 gives x = 0, and 3ˣ = 3 gives x = 1."
+   ],
+   "mistakes": {
+    "A": "Step 3: 1 and 3 are the values of u = 3ˣ. Change back to x.",
+    "C": "Step 2: (u − 1)(u − 3) = 0 gives positive values u = 1 and 3; and you still need to change back to x.",
+    "D": "Step 3: 3ˣ = 1 has a solution: x = 0, because 3⁰ = 1."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Solve 2ˣ = 3^(x − 1), correct to 2 decimal places.",
+   "options": {
+    "A": "x = −2.71",
+    "B": "x = 0.37",
+    "C": "x = 5.68",
+    "D": "x = 2.71"
+   },
+   "answer": "D",
+   "explanation": "Take logs: x log 2 = (x − 1) log 3, so x log 3 − x log 2 = log 3 and x = log 3 ÷ (log 3 − log 2) ≈ 2.71.",
+   "steps": [
+    "Take log of both sides: x log 2 = (x − 1) log 3.",
+    "Expand and collect the x terms: x log 3 − x log 2 = log 3.",
+    "x = log 3 ÷ (log 3 − log 2) = 0.4771 ÷ 0.1761 ≈ 2.71."
+   ],
+   "mistakes": {
+    "A": "Step 2: move the terms carefully — it is log 3 − log 2 on the bottom, which is positive.",
+    "B": "Step 3: you divided the wrong way round. x = log 3 ÷ (log 3 − log 2).",
+    "C": "Step 2: (x − 1) log 3 = x log 3 − log 3, not x log 3 − 1."
+   }
+  }
+ ]
 }

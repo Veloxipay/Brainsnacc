@@ -1,280 +1,281 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Time-series data",
-  "summary": "Draw and read time-series graphs, describe trend, seasonality and irregular changes, smooth data with moving averages, and forecast with a trend line.",
-  "minutes": 40,
-  "body": "Prices, temperatures, website visits and population are all measured again and again over time. A **time series** records a variable at regular time intervals, and its graph shows how the variable is changing — so councils can plan schools, shops can order stock and scientists can track the climate.\n\n## Learning objective\n\nBy the end of this lesson you can draw and read a time-series graph, describe its trend, seasonal pattern and irregular changes, smooth it with a 3-point moving average, and use a trend line to make a cautious forecast.\n\n## Before you start\n\nYou need straight-line graphs from *Gradient (Year 9)* and percentage change from *Percentages and money (Year 9)*.\n\n**Warm-up**\n\n1. A price rises from $250 to $300. What is the percentage increase? *(Answer: 50 ÷ 250 × 100 = 20%)*\n2. Find the mean of 12, 15 and 18. *(Answer: 45 ÷ 3 = 15)*\n\n## Think of it like this\n\n### Waves on a rising tide\n\nAt the beach, waves come in and out every few seconds, but over a few hours the tide slowly rises. A time series is the same: there are short ups and downs (like waves) and a slow overall change (like the tide). To see the tide, you have to look past the waves.\n\n*Where the analogy breaks down:* tides rise and fall on a fixed timetable, but a real trend can speed up, slow down or reverse at any time — so forecasts can be wrong.\n\n## Key ideas\n\n### Drawing a time-series graph\n\nTime always goes on the **horizontal axis**, with equal spacing for equal time intervals (days, months, years). The variable goes on the vertical axis. Plot one point for each time and join the points in order with straight lines — the lines help you see the changes from one time to the next.\n\n### Features of a time series\n\n- **Trend** — the long-term direction: **increasing**, **decreasing** or no trend (flat).\n- **Seasonality** — a pattern that repeats at the same time every year (or week, or day), such as heater sales peaking every winter.\n- **Irregular fluctuations** — random ups and downs with no pattern.\n- **Outliers (spikes)** — single values far from the pattern, often caused by a one-off event; look for a reason.\n\nIn this graph of monthly ice-cream sales, there is strong seasonality (peaks in December–January, the Australian summer, and lows in July) and a slight upward trend (every month in 2024 is higher than the same month in 2023).\n\n![Time-series graph of monthly ice-cream sales in thousands from January 2023 to December 2024; sales peak around 44 to 48 thousand in summer months and drop to about 9 to 11 thousand in July each year, with 2024 slightly higher than 2023](/diagrams/y10/maths/time-series-data-ex1.svg)\n\n### Smoothing with moving averages\n\nA **3-point moving average** replaces each value by the mean of it and its two neighbours. Averaging smooths out the irregular ups and downs so the trend is easier to see. The first moving average is the mean of values 1, 2, 3; the next is the mean of values 2, 3, 4; and so on, so there are 2 fewer averages than values.\n\n### Trend lines and forecasting\n\nWhen the trend is roughly linear, draw a **trend line** by eye (like a line of best fit) and extend it to **forecast** future values. Find its gradient as the change per time period. Forecasts a short way ahead are more reliable than those far ahead.\n\n## Worked examples\n\n### Example 1\n\nUse the ice-cream graph in Key ideas. Describe the time series.\n\nStep 1: seasonality — sales are highest in December and January and lowest in July in both years, a pattern repeating every 12 months.\nStep 2: trend — each month of 2024 is a little higher than the same month in 2023 (for example July: 9 thousand, then 11 thousand), so there is a slight **increasing trend**.\nStep 3: conclusion — strong seasonal pattern with summer peaks, plus a slight upward trend.\n\n### Example 2\n\nA town's population (thousands) from 2015 to 2024 was 12.0, 12.4, 12.9, 13.4, 13.7, 14.3, 14.6, 15.2, 15.6, 16.0. A trend line passes through (2015, 12.0) and (2023, 15.6). Forecast the population in 2028.\n\n![Time-series graph of a town population in thousands from 2015 to 2024 rising from 12.0 to 16.0, with a dashed trend line extended to 2028](/diagrams/y10/maths/time-series-data-ex2.svg)\n\nStep 1: gradient = (15.6 − 12.0) ÷ (2023 − 2015) = 3.6 ÷ 8 = 0.45 thousand per year — the trend is an increase of about 450 people per year.\nStep 2: years from 2023 to 2028 = 5.\nStep 3: forecast = 15.6 + 5 × 0.45 = 15.6 + 2.25 = **17.85 thousand**, about 17 900 people.\nCheck: the dashed line on the graph reaches about 17.9 at 2028 ✓. The vertical axis starts at 11 (shown by the zig-zag), so the rise looks steeper than it really is.\n\n### Example 3\n\nWeekly sales: 30, 36, 33, 39, 42, 38. Find the 3-point moving averages.\n\nStep 1: first average = (30 + 36 + 33) ÷ 3 = 99 ÷ 3 = 33.\nStep 2: slide along one value — (36 + 33 + 39) ÷ 3 = 108 ÷ 3 = 36.\nStep 3: (33 + 39 + 42) ÷ 3 = 114 ÷ 3 = 38, then (39 + 42 + 38) ÷ 3 = 119 ÷ 3 ≈ 39.67.\nStep 4: the moving averages 33, 36, 38, 39.67 rise steadily, showing an **increasing trend** more clearly than the jumpy raw data. There are 6 − 2 = 4 averages ✓.\n\n## Common mistakes\n\n- **Putting time on the vertical axis.** Fix: time always goes across.\n- **Mistaking seasonality for a trend.** A summer peak is not a rise in the trend. Fix: compare the same season in different years.\n- **Calling one spike a trend.** A single high value is an outlier; a trend lasts over many time periods.\n- **Grouping values in separate blocks for moving averages.** Fix: slide along one value at a time, so the groups overlap.\n- **Forecasting far into the future with confidence.** Fix: the further ahead, the less reliable the forecast.\n\n## Tips to remember\n\n- **\"Time goes across, like reading a sentence.\"**\n- **TSIO** — Trend, Seasonality, Irregular, Outliers (a made-up memory trick: \"This Series Is Odd\"), the four things to describe.\n- **Same month, different year** reveals the trend behind seasonal data.\n- **Slide, don't jump** with moving averages.\n- **Near forecasts are fair; far forecasts are fantasy** (made-up).\n\n## Key terms\n\n- **Time series** — values of a variable recorded at regular time intervals.\n- **Trend** — the long-term increase or decrease in a time series.\n- **Seasonality** — a pattern that repeats over a fixed period, such as each year.\n- **Irregular fluctuation** — random variation with no pattern.\n- **Moving average** — the mean of a fixed number of neighbouring values, used to smooth a time series.\n- **Trend line** — a straight line showing the overall trend, used for forecasting.\n- **Forecast** — a prediction of a future value.\n\n## Summary\n\n- Time goes on the horizontal axis; join the points in order.\n- Describe trend, seasonality, irregular fluctuations and outliers.\n- Compare the same season across years to separate trend from seasonality.\n- 3-point moving averages smooth the data: slide along one value at a time.\n- Use a trend line's gradient to forecast, and trust near forecasts more than far ones.",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "The time-series graph shows a town's rainfall each month of one year (J, F, M, … are January, February, March, …). In which month was the rainfall highest?",
-      "options": {
-        "A": "June",
-        "B": "August",
-        "C": "102",
-        "D": "July"
-      },
-      "answer": "D",
-      "explanation": "The highest point, 102 mm, is above the 7th month, July. June and August are close but lower.",
-      "steps": [
-        "Find the highest point on the graph: about 102 mm.",
-        "Read across to the time axis: it is the 7th month, July."
-      ],
-      "mistakes": {
-        "A": "Step 2: June is high (95 mm) but the next point is higher. Find the very top point.",
-        "B": "Step 2: August (98 mm) is just after the peak. Compare it with the point before.",
-        "C": "Step 2: 102 mm is the amount of rain. The question asks which MONTH."
-      },
-      "diagram": "diagrams/y10/maths/time-series-data-q1.svg",
-      "diagram_alt": "Time-series graph of monthly rainfall: Jan 48, Feb 52, Mar 60, Apr 74, May 88, Jun 95, Jul 102, Aug 98, Sep 80, Oct 66, Nov 55, Dec 50 mm"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "When you draw a time-series graph, where does time go?",
-      "options": {
-        "A": "On the horizontal axis, with equal spacing for equal time intervals",
-        "B": "On the vertical axis",
-        "C": "On either axis — it makes no difference",
-        "D": "On the horizontal axis, spaced by how big each value is"
-      },
-      "answer": "A",
-      "explanation": "Time goes on the horizontal axis with equal gaps for equal time periods, so the graph reads left to right. The vertical axis is for the variable.",
-      "steps": [
-        "Time is the explanatory variable, so it goes on the horizontal axis.",
-        "Equal time intervals get equal spacing."
-      ],
-      "mistakes": {
-        "B": "Step 1: the vertical axis shows the variable being measured. Time goes across.",
-        "C": "Step 1: by convention time always goes on the horizontal axis so the graph reads left to right.",
-        "D": "Step 2: the spacing depends on the time intervals, not the values."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "The graph shows the number of landline phones in a region from 2014 to 2023. Which describes the time series?",
-      "options": {
-        "A": "An increasing trend",
-        "B": "A seasonal pattern with no trend",
-        "C": "A decreasing trend",
-        "D": "No trend"
-      },
-      "answer": "C",
-      "explanation": "The values fall from 90 thousand to 52 thousand over the years, so there is a decreasing trend. There is no repeating pattern, so it is not seasonal.",
-      "steps": [
-        "Look at the overall direction from left to right: down.",
-        "The values fall steadily from 90 to 52 thousand, a decreasing trend."
-      ],
-      "mistakes": {
-        "A": "Step 1: the line goes DOWN from left to right as time passes.",
-        "B": "Step 1: there is no repeating up-and-down pattern; the values fall almost every year.",
-        "D": "Step 1: the values fall from 90 to 52 thousand — a clear long-term change."
-      },
-      "diagram": "diagrams/y10/maths/time-series-data-q3.svg",
-      "diagram_alt": "Time-series graph of landline phones in thousands from 2014 to 2023, falling from 90 to 52; the vertical axis starts at 40"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The graph shows a toy shop's sales each quarter for 3 years (Q4 is October to December). Which is the best description?",
-      "options": {
-        "A": "Seasonal, with a peak every Q1, and a slight upward trend",
-        "B": "Seasonal, with a peak every Q4, and a slight upward trend",
-        "C": "Irregular — the ups and downs have no pattern",
-        "D": "Seasonal, with a decreasing trend"
-      },
-      "answer": "B",
-      "explanation": "Sales jump every Q4 (35, 38, 41 — the Christmas season) and each year is a little higher than the last. The peaks are in Q4, not Q1.",
-      "steps": [
-        "The highest point each year is in Q4: a pattern repeating every year (seasonal).",
-        "The Q4 peaks rise from 35 to 38 to 41, so there is also a slight upward trend."
-      ],
-      "mistakes": {
-        "A": "Step 1: read the labels under the peaks: they are above Q4, not Q1.",
-        "C": "Step 1: the peak comes at the same quarter every year, so the pattern repeats: it is seasonal.",
-        "D": "Step 2: compare the peaks: 35, then 38, then 41 — they are getting higher."
-      },
-      "diagram": "diagrams/y10/maths/time-series-data-q4.svg",
-      "diagram_alt": "Time-series graph of quarterly sales for 3 years: 20, 24, 22, 35, then 22, 26, 24, 38, then 24, 28, 26, 41 thousand dollars, peaking in Q4 each year"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A time series of a gym's members shows 240 members in 2019 and 300 members in 2023. What is the percentage increase over that time?",
-      "options": {
-        "A": "20%",
-        "B": "60%",
-        "C": "125%",
-        "D": "25%"
-      },
-      "answer": "D",
-      "explanation": "The increase is 60 members, and 60 ÷ 240 × 100 = 25%. Dividing by 300 instead gives 20%.",
-      "steps": [
-        "Increase = 300 − 240 = 60 members.",
-        "Percentage increase = 60 ÷ 240 × 100 = 25%."
-      ],
-      "mistakes": {
-        "A": "Step 2: you divided by the new value, 300. Percentage change divides by the ORIGINAL value, 240.",
-        "B": "Step 1: 60 is the number of extra members. Divide it by 240 and multiply by 100.",
-        "C": "Step 2: 300 ÷ 240 = 125% is the new value as a percentage of the old one. Subtract the original 100%."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Daily visitors to a museum were 12, 15, 18, 13 (hundreds). What is the FIRST 3-point moving average?",
-      "options": {
-        "A": "15",
-        "B": "14.5",
-        "C": "45",
-        "D": "16.5"
-      },
-      "answer": "A",
-      "explanation": "(12 + 15 + 18) ÷ 3 = 45 ÷ 3 = 15. Averaging all four values (14.5) is not a 3-point moving average.",
-      "steps": [
-        "The first 3-point moving average uses values 1, 2 and 3: 12, 15, 18.",
-        "Mean = 45 ÷ 3 = 15."
-      ],
-      "mistakes": {
-        "B": "Step 1: you averaged all four values. A 3-point moving average uses only the first three.",
-        "C": "Step 2: 45 is the total of the first three values. Divide it by 3.",
-        "D": "Step 1: you averaged the 2nd and 3rd values. Use the first three values: 12, 15 and 18."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The graph shows electric cars registered in a town, with a dashed trend line through (2016, 40) and (2024, 72). If the trend continues, forecast the number (in hundreds) for 2027.",
-      "options": {
-        "A": "82.7",
-        "B": "12",
-        "C": "84",
-        "D": "168"
-      },
-      "answer": "C",
-      "explanation": "The trend rises (72 − 40) ÷ 8 = 4 hundred per year, so 2027 is 72 + 3 × 4 = 84 hundred. Counting 9 years instead of 8 gives a gradient that is too small.",
-      "steps": [
-        "Gradient = (72 − 40) ÷ (2024 − 2016) = 32 ÷ 8 = 4 hundred per year.",
-        "2027 is 3 years after 2024, so add 3 × 4 = 12.",
-        "Forecast = 72 + 12 = 84 hundred."
-      ],
-      "mistakes": {
-        "A": "Step 1: from 2016 to 2024 is 8 years, not 9. Gradient = 32 ÷ 8.",
-        "B": "Step 3: 12 is only the increase from 2024 to 2027. Add it to the 2024 value, 72.",
-        "D": "Step 2: you added 32 for each year. 32 is the rise over 8 years; the yearly rise is 4."
-      },
-      "diagram": "diagrams/y10/maths/time-series-data-q7.svg",
-      "diagram_alt": "Time-series graph of electric cars registered in hundreds from 2016 to 2024 rising from 41 to 73, with a dashed trend line from (2016, 40) to (2024, 72); the time axis runs to 2028"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A trend line for a suburb's number of households passes through 1200 in 2010 and 1800 in 2022. What is the average rate of increase?",
-      "options": {
-        "A": "600 households per year",
-        "B": "50 households per year",
-        "C": "46.2 households per year",
-        "D": "0.02 households per year"
-      },
-      "answer": "B",
-      "explanation": "(1800 − 1200) ÷ (2022 − 2010) = 600 ÷ 12 = 50 households per year. Counting 13 years (both end years) gives 46.2, which is too small.",
-      "steps": [
-        "Change in households = 1800 − 1200 = 600.",
-        "Change in years = 2022 − 2010 = 12.",
-        "Rate = 600 ÷ 12 = 50 households per year."
-      ],
-      "mistakes": {
-        "A": "Step 2: 600 is the increase over all 12 years. Divide by the number of years.",
-        "C": "Step 1: from 2010 to 2022 is 2022 − 2010 = 12 years, not 13.",
-        "D": "Step 2: you divided years by households. Rate = change in households ÷ change in years."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The graph shows monthly visits to a website. Which statement best describes month 7?",
-      "options": {
-        "A": "The start of a new, much faster increasing trend",
-        "B": "Part of a seasonal pattern",
-        "C": "A sign that the trend is decreasing",
-        "D": "An outlier (a one-off spike); the trend is still a steady increase"
-      },
-      "answer": "D",
-      "explanation": "Month 7 jumps to 31 thousand, then the values return to the steady rise (16, 17, …, 19). A single spike is an outlier, not a new trend — look for a one-off cause, like a news story.",
-      "steps": [
-        "Ignoring month 7, the values rise steadily from 12 to 19: an increasing trend.",
-        "Month 7 (31 thousand) is far above the pattern and is not repeated, so it is an outlier, a one-off spike."
-      ],
-      "mistakes": {
-        "A": "Step 2: after month 7 the values drop straight back to 16, 17, … — the jump did not last.",
-        "B": "Step 1: a seasonal pattern repeats; there is only one spike in the whole series.",
-        "C": "Step 2: apart from month 7, the values keep rising from 12 to 19."
-      },
-      "diagram": "diagrams/y10/maths/time-series-data-q9.svg",
-      "diagram_alt": "Time-series graph of monthly website visits in thousands: 12, 13, 13, 14, 15, 15, 31, 16, 17, 17, 18, 19 for months 1 to 12"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A café's daily customers (in tens) were 20, 26, 23, 29, 26, 32. Which list gives all the 3-point moving averages?",
-      "options": {
-        "A": "23, 26, 26, 29",
-        "B": "23, 24.5, 26, 27.5, 29",
-        "C": "69, 78, 78, 87",
-        "D": "23, 29"
-      },
-      "answer": "A",
-      "explanation": "(20 + 26 + 23) ÷ 3 = 23, (26 + 23 + 29) ÷ 3 = 26, (23 + 29 + 26) ÷ 3 = 26, (29 + 26 + 32) ÷ 3 = 29. Splitting into separate blocks gives only two averages and loses detail.",
-      "steps": [
-        "Slide a window of 3 values along the data one step at a time: 4 windows for 6 values.",
-        "Sums: 69, 78, 78, 87.",
-        "Divide each by 3: 23, 26, 26, 29."
-      ],
-      "mistakes": {
-        "B": "Step 1: these are 2-point averages (pairs of values). Average three values at a time.",
-        "C": "Step 2: these are the sums of each group of three. Divide each by 3.",
-        "D": "Step 1: you split the data into separate blocks of three. Slide along one value at a time so the groups overlap."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The graph shows yearly sales of two shops from 2020 (t = 0). Their trend lines are Shop A: S = 5t + 20 and Shop B: S = 2t + 50, where t is years after 2020. If both trends continue, in which year will Shop A's trend line catch up to Shop B's?",
-      "options": {
-        "A": "2010",
-        "B": "2024",
-        "C": "2030",
-        "D": "2034"
-      },
-      "answer": "C",
-      "explanation": "Solve 5t + 20 = 2t + 50: 3t = 30, so t = 10, which is 2020 + 10 = 2030. Adding the growth rates (giving about 2024) ignores that both shops are growing.",
-      "steps": [
-        "Set the trend lines equal: 5t + 20 = 2t + 50.",
-        "Subtract 2t and 20 from both sides: 3t = 30, so t = 10.",
-        "t = 10 years after 2020 is the year 2030."
-      ],
-      "mistakes": {
-        "A": "Step 3: t = 10 means 10 years AFTER 2020, so add 10 to 2020.",
-        "B": "Step 2: you added the rates (5 + 2 = 7) and found 30 ÷ 7 ≈ 4.3. Shop A only gains 5 − 2 = 3 per year on Shop B.",
-        "D": "Step 2: (20 + 50) ÷ 5 = 14 does not solve 5t + 20 = 2t + 50. Collect the t terms on one side."
-      },
-      "diagram": "diagrams/y10/maths/time-series-data-q11.svg",
-      "diagram_alt": "Time-series graph of two shops' yearly sales from t = 0 to 6. Shop A (purple) rises from 21 to 51 thousand; Shop B (blue) rises from 49 to 61 thousand; the time axis runs to 10"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A trend line for the winning time in a 100 m race starts at 9.80 seconds in 2010 and falls by 0.04 seconds per year. In which year would the trend line predict a winning time of 0 seconds — showing why long-range forecasts fail?",
-      "options": {
-        "A": "245",
-        "B": "2255",
-        "C": "2010.4",
-        "D": "2012.45"
-      },
-      "answer": "B",
-      "explanation": "9.8 ÷ 0.04 = 245 years, so the line reaches 0 s in 2010 + 245 = 2255 — impossible, which shows the trend cannot continue forever. Giving 245 forgets to add the starting year.",
-      "steps": [
-        "The time must fall by 9.8 s at 0.04 s per year.",
-        "Years needed = 9.8 ÷ 0.04 = 245.",
-        "Year = 2010 + 245 = 2255 — clearly an unreliable forecast."
-      ],
-      "mistakes": {
-        "A": "Step 3: 245 is the number of years after 2010. Add it to 2010 to get the year.",
-        "C": "Step 2: you multiplied 9.8 × 0.04. To find how many years the time takes to fall by 9.8, divide 9.8 by 0.04.",
-        "D": "Step 2: you divided by 4 instead of 0.04 (a decimal slip). Check: 0.04 × your number of years should be 9.8."
-      }
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Time-series data",
+ "summary": "Draw and read time-series graphs, describe trend, seasonality and irregular changes, smooth data with moving averages, and forecast with a trend line.",
+ "minutes": 40,
+ "video": "videos/y10/maths/time-series-data.mp4",
+ "body": "Prices, temperatures, website visits and population are all measured again and again over time. A **time series** records a variable at regular time intervals, and its graph shows how the variable is changing — so councils can plan schools, shops can order stock and scientists can track the climate.\n\n## Learning objective\n\nBy the end of this lesson you can draw and read a time-series graph, describe its trend, seasonal pattern and irregular changes, smooth it with a 3-point moving average, and use a trend line to make a cautious forecast.\n\n## Before you start\n\nYou need straight-line graphs from *Gradient (Year 9)* and percentage change from *Percentages and money (Year 9)*.\n\n**Warm-up**\n\n1. A price rises from $250 to $300. What is the percentage increase? *(Answer: 50 ÷ 250 × 100 = 20%)*\n2. Find the mean of 12, 15 and 18. *(Answer: 45 ÷ 3 = 15)*\n\n## Think of it like this\n\n### Waves on a rising tide\n\nAt the beach, waves come in and out every few seconds, but over a few hours the tide slowly rises. A time series is the same: there are short ups and downs (like waves) and a slow overall change (like the tide). To see the tide, you have to look past the waves.\n\n*Where the analogy breaks down:* tides rise and fall on a fixed timetable, but a real trend can speed up, slow down or reverse at any time — so forecasts can be wrong.\n\n## Key ideas\n\n### Drawing a time-series graph\n\nTime always goes on the **horizontal axis**, with equal spacing for equal time intervals (days, months, years). The variable goes on the vertical axis. Plot one point for each time and join the points in order with straight lines — the lines help you see the changes from one time to the next.\n\n### Features of a time series\n\n- **Trend** — the long-term direction: **increasing**, **decreasing** or no trend (flat).\n- **Seasonality** — a pattern that repeats at the same time every year (or week, or day), such as heater sales peaking every winter.\n- **Irregular fluctuations** — random ups and downs with no pattern.\n- **Outliers (spikes)** — single values far from the pattern, often caused by a one-off event; look for a reason.\n\nIn this graph of monthly ice-cream sales, there is strong seasonality (peaks in December–January, the Australian summer, and lows in July) and a slight upward trend (every month in 2024 is higher than the same month in 2023).\n\n![Time-series graph of monthly ice-cream sales in thousands from January 2023 to December 2024; sales peak around 44 to 48 thousand in summer months and drop to about 9 to 11 thousand in July each year, with 2024 slightly higher than 2023](/diagrams/y10/maths/time-series-data-ex1.svg)\n\n### Smoothing with moving averages\n\nA **3-point moving average** replaces each value by the mean of it and its two neighbours. Averaging smooths out the irregular ups and downs so the trend is easier to see. The first moving average is the mean of values 1, 2, 3; the next is the mean of values 2, 3, 4; and so on, so there are 2 fewer averages than values.\n\n### Trend lines and forecasting\n\nWhen the trend is roughly linear, draw a **trend line** by eye (like a line of best fit) and extend it to **forecast** future values. Find its gradient as the change per time period. Forecasts a short way ahead are more reliable than those far ahead.\n\n## Worked examples\n\n### Example 1\n\nUse the ice-cream graph in Key ideas. Describe the time series.\n\nStep 1: seasonality — sales are highest in December and January and lowest in July in both years, a pattern repeating every 12 months.\nStep 2: trend — each month of 2024 is a little higher than the same month in 2023 (for example July: 9 thousand, then 11 thousand), so there is a slight **increasing trend**.\nStep 3: conclusion — strong seasonal pattern with summer peaks, plus a slight upward trend.\n\n### Example 2\n\nA town's population (thousands) from 2015 to 2024 was 12.0, 12.4, 12.9, 13.4, 13.7, 14.3, 14.6, 15.2, 15.6, 16.0. A trend line passes through (2015, 12.0) and (2023, 15.6). Forecast the population in 2028.\n\n![Time-series graph of a town population in thousands from 2015 to 2024 rising from 12.0 to 16.0, with a dashed trend line extended to 2028](/diagrams/y10/maths/time-series-data-ex2.svg)\n\nStep 1: gradient = (15.6 − 12.0) ÷ (2023 − 2015) = 3.6 ÷ 8 = 0.45 thousand per year — the trend is an increase of about 450 people per year.\nStep 2: years from 2023 to 2028 = 5.\nStep 3: forecast = 15.6 + 5 × 0.45 = 15.6 + 2.25 = **17.85 thousand**, about 17 900 people.\nCheck: the dashed line on the graph reaches about 17.9 at 2028 ✓. The vertical axis starts at 11 (shown by the zig-zag), so the rise looks steeper than it really is.\n\n### Example 3\n\nWeekly sales: 30, 36, 33, 39, 42, 38. Find the 3-point moving averages.\n\nStep 1: first average = (30 + 36 + 33) ÷ 3 = 99 ÷ 3 = 33.\nStep 2: slide along one value — (36 + 33 + 39) ÷ 3 = 108 ÷ 3 = 36.\nStep 3: (33 + 39 + 42) ÷ 3 = 114 ÷ 3 = 38, then (39 + 42 + 38) ÷ 3 = 119 ÷ 3 ≈ 39.67.\nStep 4: the moving averages 33, 36, 38, 39.67 rise steadily, showing an **increasing trend** more clearly than the jumpy raw data. There are 6 − 2 = 4 averages ✓.\n\n## Common mistakes\n\n- **Putting time on the vertical axis.** Fix: time always goes across.\n- **Mistaking seasonality for a trend.** A summer peak is not a rise in the trend. Fix: compare the same season in different years.\n- **Calling one spike a trend.** A single high value is an outlier; a trend lasts over many time periods.\n- **Grouping values in separate blocks for moving averages.** Fix: slide along one value at a time, so the groups overlap.\n- **Forecasting far into the future with confidence.** Fix: the further ahead, the less reliable the forecast.\n\n## Tips to remember\n\n- **\"Time goes across, like reading a sentence.\"**\n- **TSIO** — Trend, Seasonality, Irregular, Outliers (a made-up memory trick: \"This Series Is Odd\"), the four things to describe.\n- **Same month, different year** reveals the trend behind seasonal data.\n- **Slide, don't jump** with moving averages.\n- **Near forecasts are fair; far forecasts are fantasy** (made-up).\n\n## Key terms\n\n- **Time series** — values of a variable recorded at regular time intervals.\n- **Trend** — the long-term increase or decrease in a time series.\n- **Seasonality** — a pattern that repeats over a fixed period, such as each year.\n- **Irregular fluctuation** — random variation with no pattern.\n- **Moving average** — the mean of a fixed number of neighbouring values, used to smooth a time series.\n- **Trend line** — a straight line showing the overall trend, used for forecasting.\n- **Forecast** — a prediction of a future value.\n\n## Summary\n\n- Time goes on the horizontal axis; join the points in order.\n- Describe trend, seasonality, irregular fluctuations and outliers.\n- Compare the same season across years to separate trend from seasonality.\n- 3-point moving averages smooth the data: slide along one value at a time.\n- Use a trend line's gradient to forecast, and trust near forecasts more than far ones.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The time-series graph shows a town's rainfall each month of one year (J, F, M, … are January, February, March, …). In which month was the rainfall highest?",
+   "options": {
+    "A": "June",
+    "B": "August",
+    "C": "102",
+    "D": "July"
+   },
+   "answer": "D",
+   "explanation": "The highest point, 102 mm, is above the 7th month, July. June and August are close but lower.",
+   "steps": [
+    "Find the highest point on the graph: about 102 mm.",
+    "Read across to the time axis: it is the 7th month, July."
+   ],
+   "mistakes": {
+    "A": "Step 2: June is high (95 mm) but the next point is higher. Find the very top point.",
+    "B": "Step 2: August (98 mm) is just after the peak. Compare it with the point before.",
+    "C": "Step 2: 102 mm is the amount of rain. The question asks which MONTH."
+   },
+   "diagram": "diagrams/y10/maths/time-series-data-q1.svg",
+   "diagram_alt": "Time-series graph of monthly rainfall: Jan 48, Feb 52, Mar 60, Apr 74, May 88, Jun 95, Jul 102, Aug 98, Sep 80, Oct 66, Nov 55, Dec 50 mm"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "When you draw a time-series graph, where does time go?",
+   "options": {
+    "A": "On the horizontal axis, with equal spacing for equal time intervals",
+    "B": "On the vertical axis",
+    "C": "On either axis — it makes no difference",
+    "D": "On the horizontal axis, spaced by how big each value is"
+   },
+   "answer": "A",
+   "explanation": "Time goes on the horizontal axis with equal gaps for equal time periods, so the graph reads left to right. The vertical axis is for the variable.",
+   "steps": [
+    "Time is the explanatory variable, so it goes on the horizontal axis.",
+    "Equal time intervals get equal spacing."
+   ],
+   "mistakes": {
+    "B": "Step 1: the vertical axis shows the variable being measured. Time goes across.",
+    "C": "Step 1: by convention time always goes on the horizontal axis so the graph reads left to right.",
+    "D": "Step 2: the spacing depends on the time intervals, not the values."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The graph shows the number of landline phones in a region from 2014 to 2023. Which describes the time series?",
+   "options": {
+    "A": "An increasing trend",
+    "B": "A seasonal pattern with no trend",
+    "C": "A decreasing trend",
+    "D": "No trend"
+   },
+   "answer": "C",
+   "explanation": "The values fall from 90 thousand to 52 thousand over the years, so there is a decreasing trend. There is no repeating pattern, so it is not seasonal.",
+   "steps": [
+    "Look at the overall direction from left to right: down.",
+    "The values fall steadily from 90 to 52 thousand, a decreasing trend."
+   ],
+   "mistakes": {
+    "A": "Step 1: the line goes DOWN from left to right as time passes.",
+    "B": "Step 1: there is no repeating up-and-down pattern; the values fall almost every year.",
+    "D": "Step 1: the values fall from 90 to 52 thousand — a clear long-term change."
+   },
+   "diagram": "diagrams/y10/maths/time-series-data-q3.svg",
+   "diagram_alt": "Time-series graph of landline phones in thousands from 2014 to 2023, falling from 90 to 52; the vertical axis starts at 40"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The graph shows a toy shop's sales each quarter for 3 years (Q4 is October to December). Which is the best description?",
+   "options": {
+    "A": "Seasonal, with a peak every Q1, and a slight upward trend",
+    "B": "Seasonal, with a peak every Q4, and a slight upward trend",
+    "C": "Irregular — the ups and downs have no pattern",
+    "D": "Seasonal, with a decreasing trend"
+   },
+   "answer": "B",
+   "explanation": "Sales jump every Q4 (35, 38, 41 — the Christmas season) and each year is a little higher than the last. The peaks are in Q4, not Q1.",
+   "steps": [
+    "The highest point each year is in Q4: a pattern repeating every year (seasonal).",
+    "The Q4 peaks rise from 35 to 38 to 41, so there is also a slight upward trend."
+   ],
+   "mistakes": {
+    "A": "Step 1: read the labels under the peaks: they are above Q4, not Q1.",
+    "C": "Step 1: the peak comes at the same quarter every year, so the pattern repeats: it is seasonal.",
+    "D": "Step 2: compare the peaks: 35, then 38, then 41 — they are getting higher."
+   },
+   "diagram": "diagrams/y10/maths/time-series-data-q4.svg",
+   "diagram_alt": "Time-series graph of quarterly sales for 3 years: 20, 24, 22, 35, then 22, 26, 24, 38, then 24, 28, 26, 41 thousand dollars, peaking in Q4 each year"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A time series of a gym's members shows 240 members in 2019 and 300 members in 2023. What is the percentage increase over that time?",
+   "options": {
+    "A": "20%",
+    "B": "60%",
+    "C": "125%",
+    "D": "25%"
+   },
+   "answer": "D",
+   "explanation": "The increase is 60 members, and 60 ÷ 240 × 100 = 25%. Dividing by 300 instead gives 20%.",
+   "steps": [
+    "Increase = 300 − 240 = 60 members.",
+    "Percentage increase = 60 ÷ 240 × 100 = 25%."
+   ],
+   "mistakes": {
+    "A": "Step 2: you divided by the new value, 300. Percentage change divides by the ORIGINAL value, 240.",
+    "B": "Step 1: 60 is the number of extra members. Divide it by 240 and multiply by 100.",
+    "C": "Step 2: 300 ÷ 240 = 125% is the new value as a percentage of the old one. Subtract the original 100%."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Daily visitors to a museum were 12, 15, 18, 13 (hundreds). What is the FIRST 3-point moving average?",
+   "options": {
+    "A": "15",
+    "B": "14.5",
+    "C": "45",
+    "D": "16.5"
+   },
+   "answer": "A",
+   "explanation": "(12 + 15 + 18) ÷ 3 = 45 ÷ 3 = 15. Averaging all four values (14.5) is not a 3-point moving average.",
+   "steps": [
+    "The first 3-point moving average uses values 1, 2 and 3: 12, 15, 18.",
+    "Mean = 45 ÷ 3 = 15."
+   ],
+   "mistakes": {
+    "B": "Step 1: you averaged all four values. A 3-point moving average uses only the first three.",
+    "C": "Step 2: 45 is the total of the first three values. Divide it by 3.",
+    "D": "Step 1: you averaged the 2nd and 3rd values. Use the first three values: 12, 15 and 18."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The graph shows electric cars registered in a town, with a dashed trend line through (2016, 40) and (2024, 72). If the trend continues, forecast the number (in hundreds) for 2027.",
+   "options": {
+    "A": "82.7",
+    "B": "12",
+    "C": "84",
+    "D": "168"
+   },
+   "answer": "C",
+   "explanation": "The trend rises (72 − 40) ÷ 8 = 4 hundred per year, so 2027 is 72 + 3 × 4 = 84 hundred. Counting 9 years instead of 8 gives a gradient that is too small.",
+   "steps": [
+    "Gradient = (72 − 40) ÷ (2024 − 2016) = 32 ÷ 8 = 4 hundred per year.",
+    "2027 is 3 years after 2024, so add 3 × 4 = 12.",
+    "Forecast = 72 + 12 = 84 hundred."
+   ],
+   "mistakes": {
+    "A": "Step 1: from 2016 to 2024 is 8 years, not 9. Gradient = 32 ÷ 8.",
+    "B": "Step 3: 12 is only the increase from 2024 to 2027. Add it to the 2024 value, 72.",
+    "D": "Step 2: you added 32 for each year. 32 is the rise over 8 years; the yearly rise is 4."
+   },
+   "diagram": "diagrams/y10/maths/time-series-data-q7.svg",
+   "diagram_alt": "Time-series graph of electric cars registered in hundreds from 2016 to 2024 rising from 41 to 73, with a dashed trend line from (2016, 40) to (2024, 72); the time axis runs to 2028"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A trend line for a suburb's number of households passes through 1200 in 2010 and 1800 in 2022. What is the average rate of increase?",
+   "options": {
+    "A": "600 households per year",
+    "B": "50 households per year",
+    "C": "46.2 households per year",
+    "D": "0.02 households per year"
+   },
+   "answer": "B",
+   "explanation": "(1800 − 1200) ÷ (2022 − 2010) = 600 ÷ 12 = 50 households per year. Counting 13 years (both end years) gives 46.2, which is too small.",
+   "steps": [
+    "Change in households = 1800 − 1200 = 600.",
+    "Change in years = 2022 − 2010 = 12.",
+    "Rate = 600 ÷ 12 = 50 households per year."
+   ],
+   "mistakes": {
+    "A": "Step 2: 600 is the increase over all 12 years. Divide by the number of years.",
+    "C": "Step 1: from 2010 to 2022 is 2022 − 2010 = 12 years, not 13.",
+    "D": "Step 2: you divided years by households. Rate = change in households ÷ change in years."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The graph shows monthly visits to a website. Which statement best describes month 7?",
+   "options": {
+    "A": "The start of a new, much faster increasing trend",
+    "B": "Part of a seasonal pattern",
+    "C": "A sign that the trend is decreasing",
+    "D": "An outlier (a one-off spike); the trend is still a steady increase"
+   },
+   "answer": "D",
+   "explanation": "Month 7 jumps to 31 thousand, then the values return to the steady rise (16, 17, …, 19). A single spike is an outlier, not a new trend — look for a one-off cause, like a news story.",
+   "steps": [
+    "Ignoring month 7, the values rise steadily from 12 to 19: an increasing trend.",
+    "Month 7 (31 thousand) is far above the pattern and is not repeated, so it is an outlier, a one-off spike."
+   ],
+   "mistakes": {
+    "A": "Step 2: after month 7 the values drop straight back to 16, 17, … — the jump did not last.",
+    "B": "Step 1: a seasonal pattern repeats; there is only one spike in the whole series.",
+    "C": "Step 2: apart from month 7, the values keep rising from 12 to 19."
+   },
+   "diagram": "diagrams/y10/maths/time-series-data-q9.svg",
+   "diagram_alt": "Time-series graph of monthly website visits in thousands: 12, 13, 13, 14, 15, 15, 31, 16, 17, 17, 18, 19 for months 1 to 12"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A café's daily customers (in tens) were 20, 26, 23, 29, 26, 32. Which list gives all the 3-point moving averages?",
+   "options": {
+    "A": "23, 26, 26, 29",
+    "B": "23, 24.5, 26, 27.5, 29",
+    "C": "69, 78, 78, 87",
+    "D": "23, 29"
+   },
+   "answer": "A",
+   "explanation": "(20 + 26 + 23) ÷ 3 = 23, (26 + 23 + 29) ÷ 3 = 26, (23 + 29 + 26) ÷ 3 = 26, (29 + 26 + 32) ÷ 3 = 29. Splitting into separate blocks gives only two averages and loses detail.",
+   "steps": [
+    "Slide a window of 3 values along the data one step at a time: 4 windows for 6 values.",
+    "Sums: 69, 78, 78, 87.",
+    "Divide each by 3: 23, 26, 26, 29."
+   ],
+   "mistakes": {
+    "B": "Step 1: these are 2-point averages (pairs of values). Average three values at a time.",
+    "C": "Step 2: these are the sums of each group of three. Divide each by 3.",
+    "D": "Step 1: you split the data into separate blocks of three. Slide along one value at a time so the groups overlap."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The graph shows yearly sales of two shops from 2020 (t = 0). Their trend lines are Shop A: S = 5t + 20 and Shop B: S = 2t + 50, where t is years after 2020. If both trends continue, in which year will Shop A's trend line catch up to Shop B's?",
+   "options": {
+    "A": "2010",
+    "B": "2024",
+    "C": "2030",
+    "D": "2034"
+   },
+   "answer": "C",
+   "explanation": "Solve 5t + 20 = 2t + 50: 3t = 30, so t = 10, which is 2020 + 10 = 2030. Adding the growth rates (giving about 2024) ignores that both shops are growing.",
+   "steps": [
+    "Set the trend lines equal: 5t + 20 = 2t + 50.",
+    "Subtract 2t and 20 from both sides: 3t = 30, so t = 10.",
+    "t = 10 years after 2020 is the year 2030."
+   ],
+   "mistakes": {
+    "A": "Step 3: t = 10 means 10 years AFTER 2020, so add 10 to 2020.",
+    "B": "Step 2: you added the rates (5 + 2 = 7) and found 30 ÷ 7 ≈ 4.3. Shop A only gains 5 − 2 = 3 per year on Shop B.",
+    "D": "Step 2: (20 + 50) ÷ 5 = 14 does not solve 5t + 20 = 2t + 50. Collect the t terms on one side."
+   },
+   "diagram": "diagrams/y10/maths/time-series-data-q11.svg",
+   "diagram_alt": "Time-series graph of two shops' yearly sales from t = 0 to 6. Shop A (purple) rises from 21 to 51 thousand; Shop B (blue) rises from 49 to 61 thousand; the time axis runs to 10"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A trend line for the winning time in a 100 m race starts at 9.80 seconds in 2010 and falls by 0.04 seconds per year. In which year would the trend line predict a winning time of 0 seconds — showing why long-range forecasts fail?",
+   "options": {
+    "A": "245",
+    "B": "2255",
+    "C": "2010.4",
+    "D": "2012.45"
+   },
+   "answer": "B",
+   "explanation": "9.8 ÷ 0.04 = 245 years, so the line reaches 0 s in 2010 + 245 = 2255 — impossible, which shows the trend cannot continue forever. Giving 245 forgets to add the starting year.",
+   "steps": [
+    "The time must fall by 9.8 s at 0.04 s per year.",
+    "Years needed = 9.8 ÷ 0.04 = 245.",
+    "Year = 2010 + 245 = 2255 — clearly an unreliable forecast."
+   ],
+   "mistakes": {
+    "A": "Step 3: 245 is the number of years after 2010. Add it to 2010 to get the year.",
+    "C": "Step 2: you multiplied 9.8 × 0.04. To find how many years the time takes to fall by 9.8, divide 9.8 by 0.04.",
+    "D": "Step 2: you divided by 4 instead of 0.04 (a decimal slip). Check: 0.04 × your number of years should be 9.8."
+   }
+  }
+ ]
 }

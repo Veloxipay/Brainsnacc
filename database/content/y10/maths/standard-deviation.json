@@ -1,276 +1,277 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Standard deviation",
-  "summary": "Calculate the population standard deviation of a data set (including from a frequency table) and use it to compare how consistent data sets are.",
-  "minutes": 45,
-  "body": "Two basketballers both average 15 points a game. One scores between 13 and 17 every week; the other swings from 2 points to 30. The mean can't tell them apart — the **standard deviation** can. It measures how spread out the data is around the mean, and it is used everywhere from quality control in factories to comparing athletes and weather records.\n\n## Learning objective\n\nBy the end of this lesson you can calculate the population standard deviation of a small data set (including from a frequency table), use a calculator's statistics mode, and use the standard deviation to compare how consistent data sets are.\n\n## Before you start\n\nYou need the mean and the range from *Measures of centre and spread (Year 9)* and square roots from *Introduction to surds (Year 9)*.\n\n**Warm-up**\n\n1. Find the mean of 4, 7, 10, 3. *(Answer: 24 ÷ 4 = 6)*\n2. Find √20 to 2 decimal places. *(Answer: 4.47)*\n\n## Think of it like this\n\n### Darts around the bullseye\n\nImagine two players throwing darts, with the bullseye standing for the mean. One player's darts all land close to the bullseye; the other's are scattered across the board. The standard deviation is like the typical distance of a dart from the bullseye: small for the tight group, large for the scattered one.\n\n*Where the analogy breaks down:* darts land in two directions on a board, but data values sit on one number line — and the standard deviation squares the distances before averaging, so it is not exactly the average distance.\n\n## Key ideas\n\n### What the standard deviation measures\n\nEach value's **deviation** is how far it is from the mean: x − x̄ (x̄, said \"x bar\", is the mean). Values above the mean have positive deviations and values below have negative ones, and the deviations always add to 0 — so we square them first.\n\nThe **population standard deviation** (σ, the Greek letter sigma) is\n\n`σ = √( Σ(x − x̄)² ÷ n )`\n\nwhere Σ means \"add up\" and n is the number of values. The number before taking the square root, Σ(x − x̄)² ÷ n, is called the **variance**.\n\n- A **small** standard deviation means the values are bunched close to the mean (the data is **consistent**).\n- A **large** standard deviation means the values are spread out.\n- If every value is the same, the standard deviation is 0.\n- It has the same units as the data (marks, cm, seconds).\n\n### Steps to calculate it by hand\n\n1. Find the mean x̄.\n2. Subtract the mean from each value to get the deviations.\n3. Square each deviation.\n4. Add the squares, then divide by n.\n5. Take the square root.\n\n### Calculators and the two versions\n\nScientific and CAS calculators in statistics mode give two values: **σx** (divide by n — the population standard deviation used in this lesson) and **sx** (divide by n − 1 — the sample standard deviation, used in senior statistics). Read the question carefully; in this lesson always use σ, dividing by n.\n\n### Changing the data\n\n- Adding the same number to every value moves the mean but does **not** change the standard deviation (the spread stays the same).\n- Multiplying every value by k multiplies both the mean and the standard deviation by k (for positive k).\n\n### Bell-shaped data (extension)\n\nFor data that is roughly symmetric and bell-shaped, about **68%** of values lie within 1 standard deviation of the mean, about **95%** within 2, and about **99.7%** within 3 (the 68–95–99.7 rule).\n\n## Worked examples\n\n### Example 1\n\nGoals scored by a player in five games: 6, 8, 9, 11, 16. Find the population standard deviation.\n\nStep 1: mean = (6 + 8 + 9 + 11 + 16) ÷ 5 = 50 ÷ 5 = 10.\nStep 2: deviations = −4, −2, −1, 1, 6 — each value minus 10 (check: they add to 0 ✓).\nStep 3: squares = 16, 4, 1, 1, 36, which add to 58.\nStep 4: variance = 58 ÷ 5 = 11.6 — divide by n = 5.\nStep 5: σ = √11.6 ≈ **3.41 goals**.\n\n![Dot plot of 6, 8, 9, 11 and 16 on a scale from 4 to 18, with a dashed line at the mean 10 and a shaded band from about 6.6 to 13.4 showing one standard deviation either side](/diagrams/y10/maths/standard-deviation-ex1.svg)\n\nThe shaded band shows one standard deviation either side of the mean (10 − 3.41 to 10 + 3.41). Most values are inside it; 16 is outside because it is far from the mean.\n\n### Example 2\n\nSet A is 5, 5, 6, 6, 6, 6, 7, 7 and Set B is 2, 3, 5, 6, 6, 7, 9, 10. Both have mean 6. Which is more consistent?\n\n![Two dot plots on the same scale from 0 to 12. Set A: 5, 5, 6, 6, 6, 6, 7, 7. Set B: 2, 3, 5, 6, 6, 7, 9, 10](/diagrams/y10/maths/standard-deviation-ex2.svg)\n\nStep 1: Set A squared deviations — 1, 1, 0, 0, 0, 0, 1, 1, total 4; σ = √(4 ÷ 8) = √0.5 ≈ 0.71.\nStep 2: Set B squared deviations — 16, 9, 1, 0, 0, 1, 9, 16, total 52; σ = √(52 ÷ 8) = √6.5 ≈ 2.55.\nStep 3: Set A has the much smaller standard deviation, so **Set A is more consistent** — which matches the picture: its dots are bunched around 6.\n\n### Example 3\n\nGoals per game for a soccer team over 20 games:\n\n| Goals (x) | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency (f) | 2 | 5 | 6 | 4 | 3 |\n\nFind the mean and the population standard deviation.\n\nStep 1: n = 2 + 5 + 6 + 4 + 3 = 20 games.\nStep 2: mean = (0 × 2 + 1 × 5 + 2 × 6 + 3 × 4 + 4 × 3) ÷ 20 = 41 ÷ 20 = 2.05 — multiply each value by its frequency.\nStep 3: f × (x − 2.05)² for each column — 2 × 4.2025 = 8.405, 5 × 1.1025 = 5.5125, 6 × 0.0025 = 0.015, 4 × 0.9025 = 3.61, 3 × 3.8025 = 11.4075.\nStep 4: add them — 28.95; divide by 20 to get 1.4475.\nStep 5: σ = √1.4475 ≈ **1.20 goals**. Check on a calculator: entering the table in statistics mode gives σx ≈ 1.20 ✓.\n\n## Common mistakes\n\n- **Forgetting the square root.** 11.6 in Example 1 is the variance, not the standard deviation. Fix: the last step is always √.\n- **Dividing by n − 1 when the question wants σ.** Fix: population standard deviation divides by n (σx on the calculator).\n- **Not squaring the deviations.** The plain deviations add to 0. Fix: square each one before adding.\n- **Ignoring frequencies.** In a frequency table each squared deviation must be multiplied by its frequency, and n is the total frequency.\n- **Thinking adding a constant changes the spread.** Adding 5 to every score moves all values together — σ stays the same.\n\n## Tips to remember\n\n- **\"Mean, minus, square, average, root\"** — MMSAR, \"My Mum Sings At Rehearsal\" (a made-up memory trick) for the five steps.\n- **Small σ = steady; big σ = scattered.**\n- **Deviations always add to zero** — a quick check that your mean is right.\n- **Slide, don't stretch** (made-up): adding a number slides the data (σ unchanged); multiplying stretches it (σ multiplied).\n- **68–95–99.7**: for bell-shaped data, 1, 2 and 3 standard deviations from the mean.\n\n## Key terms\n\n- **Deviation** — how far a value is from the mean, x − x̄.\n- **Variance** — the mean of the squared deviations, Σ(x − x̄)² ÷ n.\n- **Standard deviation (σ)** — the square root of the variance; a measure of spread around the mean.\n- **Consistent** — having values close together (a small standard deviation).\n- **σx and sx** — calculator symbols for the population (÷ n) and sample (÷ n − 1) standard deviations.\n- **68–95–99.7 rule** — for bell-shaped data, the percentages within 1, 2 and 3 standard deviations of the mean.\n\n## Summary\n\n- The standard deviation measures how spread out data is around the mean.\n- σ = √( Σ(x − x̄)² ÷ n ): mean, deviations, square, average, square root.\n- A smaller standard deviation means more consistent data.\n- In a frequency table, multiply each squared deviation by its frequency.\n- Adding a constant leaves σ unchanged; multiplying by k multiplies σ by k.",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "Both data sets in the dot plots have a mean of 5. Which set has the larger standard deviation?",
-      "options": {
-        "A": "Set Q",
-        "B": "Set P",
-        "C": "They are equal, because the means are equal",
-        "D": "It cannot be told without a calculator"
-      },
-      "answer": "B",
-      "explanation": "Set P's values (1 to 9) are much further from the mean of 5 than Set Q's (4 to 6), so Set P has the larger standard deviation. Equal means do not mean equal spread.",
-      "steps": [
-        "The standard deviation measures how far values typically are from the mean (5).",
-        "Set P's dots reach 4 away from 5; Set Q's are at most 1 away — so Set P has the larger standard deviation."
-      ],
-      "mistakes": {
-        "A": "Step 2: Set Q's dots are bunched around 5, so it has the SMALLER spread.",
-        "C": "Step 1: equal means say nothing about spread. Compare how far the dots are from 5.",
-        "D": "Step 2: you can compare spread by eye: which dots are further from the mean?"
-      },
-      "diagram": "diagrams/y10/maths/standard-deviation-q1.svg",
-      "diagram_alt": "Two dot plots on a scale from 0 to 10. Set P: 1, 3, 5, 7, 9. Set Q: 4, 5, 5, 5, 6"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "What does the standard deviation of a data set measure?",
-      "options": {
-        "A": "The most common value",
-        "B": "The difference between the largest and smallest values",
-        "C": "The middle value when the data is in order",
-        "D": "How spread out the values are around the mean"
-      },
-      "answer": "D",
-      "explanation": "The standard deviation measures the typical distance of the values from the mean. The range is also a measure of spread, but it uses only the two extreme values.",
-      "steps": [
-        "Standard deviation is a measure of spread, not centre.",
-        "It is built from the distance of each value from the mean, so it measures spread around the mean."
-      ],
-      "mistakes": {
-        "A": "Step 1: the most common value is the mode, a measure of centre. Standard deviation is about spread.",
-        "B": "Step 1: that is the range. The standard deviation uses the distance of EVERY value from the mean.",
-        "C": "Step 1: that is the median. The standard deviation measures spread, not centre."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Find the population standard deviation of 7, 7, 7, 7.",
-      "options": {
-        "A": "0",
-        "B": "7",
-        "C": "28",
-        "D": "1"
-      },
-      "answer": "A",
-      "explanation": "Every value equals the mean (7), so every deviation is 0 and σ = 0. Giving 7 confuses the mean with the spread.",
-      "steps": [
-        "Mean = 28 ÷ 4 = 7.",
-        "Every deviation is 7 − 7 = 0, so the squares add to 0 and σ = √0 = 0."
-      ],
-      "mistakes": {
-        "B": "Step 1: 7 is the mean. The standard deviation measures distance FROM the mean.",
-        "C": "Step 1: 28 is the total. Find each value's distance from the mean.",
-        "D": "Step 2: every deviation is 7 − 7 = 0, so nothing adds to the spread."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The dot plot shows 10 values with mean 5. Which is the best estimate of the population standard deviation?",
-      "options": {
-        "A": "About 0.1",
-        "B": "About 4",
-        "C": "About 1.1",
-        "D": "About 5"
-      },
-      "answer": "C",
-      "explanation": "Most values are 0, 1 or 2 away from 5, so the typical distance is about 1 (exactly √1.2 ≈ 1.1). The range, 4, is far too big for a typical distance.",
-      "steps": [
-        "Distances from the mean 5: 2, 1, 1, 0, 0, 0, 0, 1, 1, 2.",
-        "A typical distance is about 1; calculating gives σ = √(12 ÷ 10) ≈ 1.1."
-      ],
-      "mistakes": {
-        "A": "Step 2: most values are 0 to 2 away from the mean, so a typical distance is about 1, not 0.1.",
-        "B": "Step 2: 4 is the range (7 − 3). The standard deviation is a typical distance from the mean, smaller than the range.",
-        "D": "Step 1: 5 is the mean. The standard deviation measures distance from the mean."
-      },
-      "diagram": "diagrams/y10/maths/standard-deviation-q4.svg",
-      "diagram_alt": "Dot plot of 10 values on a scale from 0 to 10: one dot at 3, two at 4, four at 5, two at 6 and one at 7, with the mean 5 marked"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A class's test marks have mean 12 and standard deviation 3. The teacher adds 10 bonus marks to every student's mark. What are the new mean and standard deviation?",
-      "options": {
-        "A": "Mean 22, standard deviation 13",
-        "B": "Mean 22, standard deviation 3",
-        "C": "Mean 12, standard deviation 3",
-        "D": "Mean 120, standard deviation 30"
-      },
-      "answer": "B",
-      "explanation": "Adding 10 to every value adds 10 to the mean (22) but leaves the spread, and so the standard deviation (3), unchanged. Adding 10 to the standard deviation too is the common slip.",
-      "steps": [
-        "Adding 10 to every mark slides the whole data set 10 to the right: mean = 12 + 10 = 22.",
-        "The gaps between marks do not change, so the standard deviation stays 3."
-      ],
-      "mistakes": {
-        "A": "Step 2: adding 10 moves every mark together, so the spread does not change. Only the mean goes up.",
-        "C": "Step 1: every mark goes up by 10, so the mean must go up by 10.",
-        "D": "Step 1: the marks were increased BY 10, not multiplied by 10."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Find the population standard deviation of 10, 12, 14, 16, 18, correct to 2 decimal places.",
-      "options": {
-        "A": "8",
-        "B": "3.16",
-        "C": "2.4",
-        "D": "2.83"
-      },
-      "answer": "D",
-      "explanation": "Mean 14; squared deviations 16, 4, 0, 4, 16 total 40; 40 ÷ 5 = 8; √8 ≈ 2.83. Stopping at 8 gives the variance, not the standard deviation.",
-      "steps": [
-        "Mean = 70 ÷ 5 = 14.",
-        "Deviations −4, −2, 0, 2, 4; squares 16, 4, 0, 4, 16, total 40.",
-        "σ = √(40 ÷ 5) = √8 ≈ 2.83."
-      ],
-      "mistakes": {
-        "A": "Step 4: 40 ÷ 5 = 8 is the variance. Take the square root to finish.",
-        "B": "Step 4: √(40 ÷ 4) divides by n − 1, which is the sample version. Population σ divides by n = 5.",
-        "C": "Step 3: 2.4 is the mean of the plain distances (4 + 2 + 0 + 2 + 4) ÷ 5. Square the deviations first."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The dot plot shows the number of pets owned by 9 students. Find the population standard deviation, correct to 2 decimal places.",
-      "options": {
-        "A": "1.15",
-        "B": "1.33",
-        "C": "1.22",
-        "D": "0.89"
-      },
-      "answer": "A",
-      "explanation": "Mean 3; squared deviations 4, 1, 1, 0, 0, 0, 1, 1, 4 total 12; σ = √(12 ÷ 9) ≈ 1.15. Forgetting the square root gives 1.33.",
-      "steps": [
-        "Read the values: 1, 2, 2, 3, 3, 3, 4, 4, 5. Mean = 27 ÷ 9 = 3.",
-        "Squared deviations: 4, 1, 1, 0, 0, 0, 1, 1, 4 — total 12.",
-        "σ = √(12 ÷ 9) ≈ 1.15."
-      ],
-      "mistakes": {
-        "B": "Step 4: 12 ÷ 9 ≈ 1.33 is the variance. Take the square root.",
-        "C": "Step 4: √(12 ÷ 8) divides by n − 1. Population σ divides by n = 9.",
-        "D": "Step 3: 8 ÷ 9 averages the plain distances. Square each deviation before adding."
-      },
-      "diagram": "diagrams/y10/maths/standard-deviation-q7.svg",
-      "diagram_alt": "Dot plot of pets owned by 9 students on a scale from 0 to 6: one dot at 1, two at 2, three at 3, two at 4 and one at 5, with the mean 3 marked"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Ten families were asked how many pets they have: 3 families have 0 pets, 4 have 1 pet, 2 have 2 pets and 1 has 3 pets. The mean is 1.1. Find the population standard deviation, correct to 2 decimal places.",
-      "options": {
-        "A": "0.89",
-        "B": "1.10",
-        "C": "0.94",
-        "D": "0.99"
-      },
-      "answer": "C",
-      "explanation": "Σf(x − 1.1)² = 3(1.21) + 4(0.01) + 2(0.81) + 1(3.61) = 8.9, so σ = √(8.9 ÷ 10) = √0.89 ≈ 0.94. Stopping at 0.89 gives the variance.",
-      "steps": [
-        "Squared deviations from 1.1: 1.21, 0.01, 0.81, 3.61.",
-        "Multiply by the frequencies and add: 3.63 + 0.04 + 1.62 + 3.61 = 8.9.",
-        "σ = √(8.9 ÷ 10) = √0.89 ≈ 0.94."
-      ],
-      "mistakes": {
-        "A": "Step 3: 8.9 ÷ 10 = 0.89 is the variance. Take the square root.",
-        "B": "Step 1: 1.1 is the mean. Keep going: find the squared deviations.",
-        "D": "Step 3: √(8.9 ÷ 9) divides by n − 1. Population σ divides by the total frequency, 10."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The dot plot shows 12 values with mean 15 and population standard deviation about 3.3. How many of the values lie within one standard deviation of the mean?",
-      "options": {
-        "A": "10",
-        "B": "8",
-        "C": "3",
-        "D": "12"
-      },
-      "answer": "B",
-      "explanation": "One standard deviation either side is 15 − 3.3 = 11.7 to 15 + 3.3 = 18.3, which holds 12, 13, 14, 15, 15, 16, 17, 18: 8 values. Rounding σ to 4 wrongly lets in 11 and 19.",
-      "steps": [
-        "Interval: 15 − 3.3 = 11.7 to 15 + 3.3 = 18.3.",
-        "Values inside: 12, 13, 14, 15, 15, 16, 17, 18.",
-        "That is 8 values."
-      ],
-      "mistakes": {
-        "A": "Step 1: you used 15 ± 4. One standard deviation is 3.3, so the interval is about 11.7 to 18.3 — 11 and 19 are outside.",
-        "C": "Step 2: you counted only the values above the mean. \"Within\" means on either side.",
-        "D": "Step 2: 9, 11, 19 and 21 are more than 3.3 away from 15. Count only values inside the interval."
-      },
-      "diagram": "diagrams/y10/maths/standard-deviation-q9.svg",
-      "diagram_alt": "Dot plot of 12 values on a scale from 8 to 22: 9, 11, 12, 13, 14, 15, 15, 16, 17, 18, 19, 21, with the mean 15 marked"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A data set has mean 10 and standard deviation 4. Every value is doubled and then 3 is added. What are the new mean and standard deviation?",
-      "options": {
-        "A": "Mean 23, standard deviation 11",
-        "B": "Mean 20, standard deviation 8",
-        "C": "Mean 23, standard deviation 4",
-        "D": "Mean 23, standard deviation 8"
-      },
-      "answer": "D",
-      "explanation": "Doubling makes the mean 20 and the standard deviation 8; adding 3 then makes the mean 23 but leaves the standard deviation at 8. Adding 3 to the standard deviation (11) is the trap.",
-      "steps": [
-        "Doubling: mean 2 × 10 = 20, standard deviation 2 × 4 = 8 (gaps double).",
-        "Adding 3: mean 20 + 3 = 23; the gaps do not change, so the standard deviation stays 8."
-      ],
-      "mistakes": {
-        "A": "Step 2: adding 3 does not change the spread. Only the doubling affects the standard deviation.",
-        "B": "Step 1: after doubling, 3 is added to every value, so the mean also goes up by 3.",
-        "C": "Step 2: doubling every value doubles the gaps between them, so the standard deviation doubles too."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The heights of a large group of adults are bell-shaped, with mean 170 cm and standard deviation 6 cm. About what percentage of the adults are between 158 cm and 182 cm tall?",
-      "options": {
-        "A": "95%",
-        "B": "68%",
-        "C": "99.7%",
-        "D": "47.5%"
-      },
-      "answer": "A",
-      "explanation": "158 = 170 − 2 × 6 and 182 = 170 + 2 × 6, so this is within 2 standard deviations: about 95%. 68% is the one-standard-deviation band.",
-      "steps": [
-        "Distance from the mean: 170 − 158 = 12 and 182 − 170 = 12, which is 12 ÷ 6 = 2 standard deviations each way.",
-        "By the 68–95–99.7 rule, about 95% are within 2 standard deviations."
-      ],
-      "mistakes": {
-        "B": "Step 1: 68% is within ONE standard deviation (164 to 176 cm). 158 is 12 cm = 2 standard deviations below the mean.",
-        "C": "Step 1: 99.7% is within THREE standard deviations (152 to 188 cm).",
-        "D": "Step 2: 47.5% is only one side (170 to 182). The interval goes 2 standard deviations both ways."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Five values all equal 10, so their standard deviation is 0. A sixth value, 16, is added. Find the new population standard deviation, correct to 2 decimal places.",
-      "options": {
-        "A": "2.45",
-        "B": "5",
-        "C": "2.24",
-        "D": "6"
-      },
-      "answer": "C",
-      "explanation": "New mean = 66 ÷ 6 = 11; squared deviations are five 1s and one 25, total 30; σ = √(30 ÷ 6) = √5 ≈ 2.24. Dividing by 5 instead of 6 gives 2.45.",
-      "steps": [
-        "New mean = (5 × 10 + 16) ÷ 6 = 66 ÷ 6 = 11.",
-        "Squared deviations: (10 − 11)² = 1 five times, and (16 − 11)² = 25; total 30.",
-        "σ = √(30 ÷ 6) = √5 ≈ 2.24."
-      ],
-      "mistakes": {
-        "A": "Step 3: √(30 ÷ 5) divides by 5. There are now 6 values, so divide by n = 6.",
-        "B": "Step 3: 30 ÷ 6 = 5 is the variance. Take the square root.",
-        "D": "Step 1: 16 − 10 = 6 is how far the new value is from the OLD mean. Find the new mean (11) and use every value."
-      }
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Standard deviation",
+ "summary": "Calculate the population standard deviation of a data set (including from a frequency table) and use it to compare how consistent data sets are.",
+ "minutes": 45,
+ "video": "videos/y10/maths/standard-deviation.mp4",
+ "body": "Two basketballers both average 15 points a game. One scores between 13 and 17 every week; the other swings from 2 points to 30. The mean can't tell them apart — the **standard deviation** can. It measures how spread out the data is around the mean, and it is used everywhere from quality control in factories to comparing athletes and weather records.\n\n## Learning objective\n\nBy the end of this lesson you can calculate the population standard deviation of a small data set (including from a frequency table), use a calculator's statistics mode, and use the standard deviation to compare how consistent data sets are.\n\n## Before you start\n\nYou need the mean and the range from *Measures of centre and spread (Year 9)* and square roots from *Introduction to surds (Year 9)*.\n\n**Warm-up**\n\n1. Find the mean of 4, 7, 10, 3. *(Answer: 24 ÷ 4 = 6)*\n2. Find √20 to 2 decimal places. *(Answer: 4.47)*\n\n## Think of it like this\n\n### Darts around the bullseye\n\nImagine two players throwing darts, with the bullseye standing for the mean. One player's darts all land close to the bullseye; the other's are scattered across the board. The standard deviation is like the typical distance of a dart from the bullseye: small for the tight group, large for the scattered one.\n\n*Where the analogy breaks down:* darts land in two directions on a board, but data values sit on one number line — and the standard deviation squares the distances before averaging, so it is not exactly the average distance.\n\n## Key ideas\n\n### What the standard deviation measures\n\nEach value's **deviation** is how far it is from the mean: x − x̄ (x̄, said \"x bar\", is the mean). Values above the mean have positive deviations and values below have negative ones, and the deviations always add to 0 — so we square them first.\n\nThe **population standard deviation** (σ, the Greek letter sigma) is\n\n`σ = √( Σ(x − x̄)² ÷ n )`\n\nwhere Σ means \"add up\" and n is the number of values. The number before taking the square root, Σ(x − x̄)² ÷ n, is called the **variance**.\n\n- A **small** standard deviation means the values are bunched close to the mean (the data is **consistent**).\n- A **large** standard deviation means the values are spread out.\n- If every value is the same, the standard deviation is 0.\n- It has the same units as the data (marks, cm, seconds).\n\n### Steps to calculate it by hand\n\n1. Find the mean x̄.\n2. Subtract the mean from each value to get the deviations.\n3. Square each deviation.\n4. Add the squares, then divide by n.\n5. Take the square root.\n\n### Calculators and the two versions\n\nScientific and CAS calculators in statistics mode give two values: **σx** (divide by n — the population standard deviation used in this lesson) and **sx** (divide by n − 1 — the sample standard deviation, used in senior statistics). Read the question carefully; in this lesson always use σ, dividing by n.\n\n### Changing the data\n\n- Adding the same number to every value moves the mean but does **not** change the standard deviation (the spread stays the same).\n- Multiplying every value by k multiplies both the mean and the standard deviation by k (for positive k).\n\n### Bell-shaped data (extension)\n\nFor data that is roughly symmetric and bell-shaped, about **68%** of values lie within 1 standard deviation of the mean, about **95%** within 2, and about **99.7%** within 3 (the 68–95–99.7 rule).\n\n## Worked examples\n\n### Example 1\n\nGoals scored by a player in five games: 6, 8, 9, 11, 16. Find the population standard deviation.\n\nStep 1: mean = (6 + 8 + 9 + 11 + 16) ÷ 5 = 50 ÷ 5 = 10.\nStep 2: deviations = −4, −2, −1, 1, 6 — each value minus 10 (check: they add to 0 ✓).\nStep 3: squares = 16, 4, 1, 1, 36, which add to 58.\nStep 4: variance = 58 ÷ 5 = 11.6 — divide by n = 5.\nStep 5: σ = √11.6 ≈ **3.41 goals**.\n\n![Dot plot of 6, 8, 9, 11 and 16 on a scale from 4 to 18, with a dashed line at the mean 10 and a shaded band from about 6.6 to 13.4 showing one standard deviation either side](/diagrams/y10/maths/standard-deviation-ex1.svg)\n\nThe shaded band shows one standard deviation either side of the mean (10 − 3.41 to 10 + 3.41). Most values are inside it; 16 is outside because it is far from the mean.\n\n### Example 2\n\nSet A is 5, 5, 6, 6, 6, 6, 7, 7 and Set B is 2, 3, 5, 6, 6, 7, 9, 10. Both have mean 6. Which is more consistent?\n\n![Two dot plots on the same scale from 0 to 12. Set A: 5, 5, 6, 6, 6, 6, 7, 7. Set B: 2, 3, 5, 6, 6, 7, 9, 10](/diagrams/y10/maths/standard-deviation-ex2.svg)\n\nStep 1: Set A squared deviations — 1, 1, 0, 0, 0, 0, 1, 1, total 4; σ = √(4 ÷ 8) = √0.5 ≈ 0.71.\nStep 2: Set B squared deviations — 16, 9, 1, 0, 0, 1, 9, 16, total 52; σ = √(52 ÷ 8) = √6.5 ≈ 2.55.\nStep 3: Set A has the much smaller standard deviation, so **Set A is more consistent** — which matches the picture: its dots are bunched around 6.\n\n### Example 3\n\nGoals per game for a soccer team over 20 games:\n\n| Goals (x) | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency (f) | 2 | 5 | 6 | 4 | 3 |\n\nFind the mean and the population standard deviation.\n\nStep 1: n = 2 + 5 + 6 + 4 + 3 = 20 games.\nStep 2: mean = (0 × 2 + 1 × 5 + 2 × 6 + 3 × 4 + 4 × 3) ÷ 20 = 41 ÷ 20 = 2.05 — multiply each value by its frequency.\nStep 3: f × (x − 2.05)² for each column — 2 × 4.2025 = 8.405, 5 × 1.1025 = 5.5125, 6 × 0.0025 = 0.015, 4 × 0.9025 = 3.61, 3 × 3.8025 = 11.4075.\nStep 4: add them — 28.95; divide by 20 to get 1.4475.\nStep 5: σ = √1.4475 ≈ **1.20 goals**. Check on a calculator: entering the table in statistics mode gives σx ≈ 1.20 ✓.\n\n## Common mistakes\n\n- **Forgetting the square root.** 11.6 in Example 1 is the variance, not the standard deviation. Fix: the last step is always √.\n- **Dividing by n − 1 when the question wants σ.** Fix: population standard deviation divides by n (σx on the calculator).\n- **Not squaring the deviations.** The plain deviations add to 0. Fix: square each one before adding.\n- **Ignoring frequencies.** In a frequency table each squared deviation must be multiplied by its frequency, and n is the total frequency.\n- **Thinking adding a constant changes the spread.** Adding 5 to every score moves all values together — σ stays the same.\n\n## Tips to remember\n\n- **\"Mean, minus, square, average, root\"** — MMSAR, \"My Mum Sings At Rehearsal\" (a made-up memory trick) for the five steps.\n- **Small σ = steady; big σ = scattered.**\n- **Deviations always add to zero** — a quick check that your mean is right.\n- **Slide, don't stretch** (made-up): adding a number slides the data (σ unchanged); multiplying stretches it (σ multiplied).\n- **68–95–99.7**: for bell-shaped data, 1, 2 and 3 standard deviations from the mean.\n\n## Key terms\n\n- **Deviation** — how far a value is from the mean, x − x̄.\n- **Variance** — the mean of the squared deviations, Σ(x − x̄)² ÷ n.\n- **Standard deviation (σ)** — the square root of the variance; a measure of spread around the mean.\n- **Consistent** — having values close together (a small standard deviation).\n- **σx and sx** — calculator symbols for the population (÷ n) and sample (÷ n − 1) standard deviations.\n- **68–95–99.7 rule** — for bell-shaped data, the percentages within 1, 2 and 3 standard deviations of the mean.\n\n## Summary\n\n- The standard deviation measures how spread out data is around the mean.\n- σ = √( Σ(x − x̄)² ÷ n ): mean, deviations, square, average, square root.\n- A smaller standard deviation means more consistent data.\n- In a frequency table, multiply each squared deviation by its frequency.\n- Adding a constant leaves σ unchanged; multiplying by k multiplies σ by k.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Both data sets in the dot plots have a mean of 5. Which set has the larger standard deviation?",
+   "options": {
+    "A": "Set Q",
+    "B": "Set P",
+    "C": "They are equal, because the means are equal",
+    "D": "It cannot be told without a calculator"
+   },
+   "answer": "B",
+   "explanation": "Set P's values (1 to 9) are much further from the mean of 5 than Set Q's (4 to 6), so Set P has the larger standard deviation. Equal means do not mean equal spread.",
+   "steps": [
+    "The standard deviation measures how far values typically are from the mean (5).",
+    "Set P's dots reach 4 away from 5; Set Q's are at most 1 away — so Set P has the larger standard deviation."
+   ],
+   "mistakes": {
+    "A": "Step 2: Set Q's dots are bunched around 5, so it has the SMALLER spread.",
+    "C": "Step 1: equal means say nothing about spread. Compare how far the dots are from 5.",
+    "D": "Step 2: you can compare spread by eye: which dots are further from the mean?"
+   },
+   "diagram": "diagrams/y10/maths/standard-deviation-q1.svg",
+   "diagram_alt": "Two dot plots on a scale from 0 to 10. Set P: 1, 3, 5, 7, 9. Set Q: 4, 5, 5, 5, 6"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "What does the standard deviation of a data set measure?",
+   "options": {
+    "A": "The most common value",
+    "B": "The difference between the largest and smallest values",
+    "C": "The middle value when the data is in order",
+    "D": "How spread out the values are around the mean"
+   },
+   "answer": "D",
+   "explanation": "The standard deviation measures the typical distance of the values from the mean. The range is also a measure of spread, but it uses only the two extreme values.",
+   "steps": [
+    "Standard deviation is a measure of spread, not centre.",
+    "It is built from the distance of each value from the mean, so it measures spread around the mean."
+   ],
+   "mistakes": {
+    "A": "Step 1: the most common value is the mode, a measure of centre. Standard deviation is about spread.",
+    "B": "Step 1: that is the range. The standard deviation uses the distance of EVERY value from the mean.",
+    "C": "Step 1: that is the median. The standard deviation measures spread, not centre."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Find the population standard deviation of 7, 7, 7, 7.",
+   "options": {
+    "A": "0",
+    "B": "7",
+    "C": "28",
+    "D": "1"
+   },
+   "answer": "A",
+   "explanation": "Every value equals the mean (7), so every deviation is 0 and σ = 0. Giving 7 confuses the mean with the spread.",
+   "steps": [
+    "Mean = 28 ÷ 4 = 7.",
+    "Every deviation is 7 − 7 = 0, so the squares add to 0 and σ = √0 = 0."
+   ],
+   "mistakes": {
+    "B": "Step 1: 7 is the mean. The standard deviation measures distance FROM the mean.",
+    "C": "Step 1: 28 is the total. Find each value's distance from the mean.",
+    "D": "Step 2: every deviation is 7 − 7 = 0, so nothing adds to the spread."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The dot plot shows 10 values with mean 5. Which is the best estimate of the population standard deviation?",
+   "options": {
+    "A": "About 0.1",
+    "B": "About 4",
+    "C": "About 1.1",
+    "D": "About 5"
+   },
+   "answer": "C",
+   "explanation": "Most values are 0, 1 or 2 away from 5, so the typical distance is about 1 (exactly √1.2 ≈ 1.1). The range, 4, is far too big for a typical distance.",
+   "steps": [
+    "Distances from the mean 5: 2, 1, 1, 0, 0, 0, 0, 1, 1, 2.",
+    "A typical distance is about 1; calculating gives σ = √(12 ÷ 10) ≈ 1.1."
+   ],
+   "mistakes": {
+    "A": "Step 2: most values are 0 to 2 away from the mean, so a typical distance is about 1, not 0.1.",
+    "B": "Step 2: 4 is the range (7 − 3). The standard deviation is a typical distance from the mean, smaller than the range.",
+    "D": "Step 1: 5 is the mean. The standard deviation measures distance from the mean."
+   },
+   "diagram": "diagrams/y10/maths/standard-deviation-q4.svg",
+   "diagram_alt": "Dot plot of 10 values on a scale from 0 to 10: one dot at 3, two at 4, four at 5, two at 6 and one at 7, with the mean 5 marked"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A class's test marks have mean 12 and standard deviation 3. The teacher adds 10 bonus marks to every student's mark. What are the new mean and standard deviation?",
+   "options": {
+    "A": "Mean 22, standard deviation 13",
+    "B": "Mean 22, standard deviation 3",
+    "C": "Mean 12, standard deviation 3",
+    "D": "Mean 120, standard deviation 30"
+   },
+   "answer": "B",
+   "explanation": "Adding 10 to every value adds 10 to the mean (22) but leaves the spread, and so the standard deviation (3), unchanged. Adding 10 to the standard deviation too is the common slip.",
+   "steps": [
+    "Adding 10 to every mark slides the whole data set 10 to the right: mean = 12 + 10 = 22.",
+    "The gaps between marks do not change, so the standard deviation stays 3."
+   ],
+   "mistakes": {
+    "A": "Step 2: adding 10 moves every mark together, so the spread does not change. Only the mean goes up.",
+    "C": "Step 1: every mark goes up by 10, so the mean must go up by 10.",
+    "D": "Step 1: the marks were increased BY 10, not multiplied by 10."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Find the population standard deviation of 10, 12, 14, 16, 18, correct to 2 decimal places.",
+   "options": {
+    "A": "8",
+    "B": "3.16",
+    "C": "2.4",
+    "D": "2.83"
+   },
+   "answer": "D",
+   "explanation": "Mean 14; squared deviations 16, 4, 0, 4, 16 total 40; 40 ÷ 5 = 8; √8 ≈ 2.83. Stopping at 8 gives the variance, not the standard deviation.",
+   "steps": [
+    "Mean = 70 ÷ 5 = 14.",
+    "Deviations −4, −2, 0, 2, 4; squares 16, 4, 0, 4, 16, total 40.",
+    "σ = √(40 ÷ 5) = √8 ≈ 2.83."
+   ],
+   "mistakes": {
+    "A": "Step 4: 40 ÷ 5 = 8 is the variance. Take the square root to finish.",
+    "B": "Step 4: √(40 ÷ 4) divides by n − 1, which is the sample version. Population σ divides by n = 5.",
+    "C": "Step 3: 2.4 is the mean of the plain distances (4 + 2 + 0 + 2 + 4) ÷ 5. Square the deviations first."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The dot plot shows the number of pets owned by 9 students. Find the population standard deviation, correct to 2 decimal places.",
+   "options": {
+    "A": "1.15",
+    "B": "1.33",
+    "C": "1.22",
+    "D": "0.89"
+   },
+   "answer": "A",
+   "explanation": "Mean 3; squared deviations 4, 1, 1, 0, 0, 0, 1, 1, 4 total 12; σ = √(12 ÷ 9) ≈ 1.15. Forgetting the square root gives 1.33.",
+   "steps": [
+    "Read the values: 1, 2, 2, 3, 3, 3, 4, 4, 5. Mean = 27 ÷ 9 = 3.",
+    "Squared deviations: 4, 1, 1, 0, 0, 0, 1, 1, 4 — total 12.",
+    "σ = √(12 ÷ 9) ≈ 1.15."
+   ],
+   "mistakes": {
+    "B": "Step 4: 12 ÷ 9 ≈ 1.33 is the variance. Take the square root.",
+    "C": "Step 4: √(12 ÷ 8) divides by n − 1. Population σ divides by n = 9.",
+    "D": "Step 3: 8 ÷ 9 averages the plain distances. Square each deviation before adding."
+   },
+   "diagram": "diagrams/y10/maths/standard-deviation-q7.svg",
+   "diagram_alt": "Dot plot of pets owned by 9 students on a scale from 0 to 6: one dot at 1, two at 2, three at 3, two at 4 and one at 5, with the mean 3 marked"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Ten families were asked how many pets they have: 3 families have 0 pets, 4 have 1 pet, 2 have 2 pets and 1 has 3 pets. The mean is 1.1. Find the population standard deviation, correct to 2 decimal places.",
+   "options": {
+    "A": "0.89",
+    "B": "1.10",
+    "C": "0.94",
+    "D": "0.99"
+   },
+   "answer": "C",
+   "explanation": "Σf(x − 1.1)² = 3(1.21) + 4(0.01) + 2(0.81) + 1(3.61) = 8.9, so σ = √(8.9 ÷ 10) = √0.89 ≈ 0.94. Stopping at 0.89 gives the variance.",
+   "steps": [
+    "Squared deviations from 1.1: 1.21, 0.01, 0.81, 3.61.",
+    "Multiply by the frequencies and add: 3.63 + 0.04 + 1.62 + 3.61 = 8.9.",
+    "σ = √(8.9 ÷ 10) = √0.89 ≈ 0.94."
+   ],
+   "mistakes": {
+    "A": "Step 3: 8.9 ÷ 10 = 0.89 is the variance. Take the square root.",
+    "B": "Step 1: 1.1 is the mean. Keep going: find the squared deviations.",
+    "D": "Step 3: √(8.9 ÷ 9) divides by n − 1. Population σ divides by the total frequency, 10."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The dot plot shows 12 values with mean 15 and population standard deviation about 3.3. How many of the values lie within one standard deviation of the mean?",
+   "options": {
+    "A": "10",
+    "B": "8",
+    "C": "3",
+    "D": "12"
+   },
+   "answer": "B",
+   "explanation": "One standard deviation either side is 15 − 3.3 = 11.7 to 15 + 3.3 = 18.3, which holds 12, 13, 14, 15, 15, 16, 17, 18: 8 values. Rounding σ to 4 wrongly lets in 11 and 19.",
+   "steps": [
+    "Interval: 15 − 3.3 = 11.7 to 15 + 3.3 = 18.3.",
+    "Values inside: 12, 13, 14, 15, 15, 16, 17, 18.",
+    "That is 8 values."
+   ],
+   "mistakes": {
+    "A": "Step 1: you used 15 ± 4. One standard deviation is 3.3, so the interval is about 11.7 to 18.3 — 11 and 19 are outside.",
+    "C": "Step 2: you counted only the values above the mean. \"Within\" means on either side.",
+    "D": "Step 2: 9, 11, 19 and 21 are more than 3.3 away from 15. Count only values inside the interval."
+   },
+   "diagram": "diagrams/y10/maths/standard-deviation-q9.svg",
+   "diagram_alt": "Dot plot of 12 values on a scale from 8 to 22: 9, 11, 12, 13, 14, 15, 15, 16, 17, 18, 19, 21, with the mean 15 marked"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A data set has mean 10 and standard deviation 4. Every value is doubled and then 3 is added. What are the new mean and standard deviation?",
+   "options": {
+    "A": "Mean 23, standard deviation 11",
+    "B": "Mean 20, standard deviation 8",
+    "C": "Mean 23, standard deviation 4",
+    "D": "Mean 23, standard deviation 8"
+   },
+   "answer": "D",
+   "explanation": "Doubling makes the mean 20 and the standard deviation 8; adding 3 then makes the mean 23 but leaves the standard deviation at 8. Adding 3 to the standard deviation (11) is the trap.",
+   "steps": [
+    "Doubling: mean 2 × 10 = 20, standard deviation 2 × 4 = 8 (gaps double).",
+    "Adding 3: mean 20 + 3 = 23; the gaps do not change, so the standard deviation stays 8."
+   ],
+   "mistakes": {
+    "A": "Step 2: adding 3 does not change the spread. Only the doubling affects the standard deviation.",
+    "B": "Step 1: after doubling, 3 is added to every value, so the mean also goes up by 3.",
+    "C": "Step 2: doubling every value doubles the gaps between them, so the standard deviation doubles too."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The heights of a large group of adults are bell-shaped, with mean 170 cm and standard deviation 6 cm. About what percentage of the adults are between 158 cm and 182 cm tall?",
+   "options": {
+    "A": "95%",
+    "B": "68%",
+    "C": "99.7%",
+    "D": "47.5%"
+   },
+   "answer": "A",
+   "explanation": "158 = 170 − 2 × 6 and 182 = 170 + 2 × 6, so this is within 2 standard deviations: about 95%. 68% is the one-standard-deviation band.",
+   "steps": [
+    "Distance from the mean: 170 − 158 = 12 and 182 − 170 = 12, which is 12 ÷ 6 = 2 standard deviations each way.",
+    "By the 68–95–99.7 rule, about 95% are within 2 standard deviations."
+   ],
+   "mistakes": {
+    "B": "Step 1: 68% is within ONE standard deviation (164 to 176 cm). 158 is 12 cm = 2 standard deviations below the mean.",
+    "C": "Step 1: 99.7% is within THREE standard deviations (152 to 188 cm).",
+    "D": "Step 2: 47.5% is only one side (170 to 182). The interval goes 2 standard deviations both ways."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Five values all equal 10, so their standard deviation is 0. A sixth value, 16, is added. Find the new population standard deviation, correct to 2 decimal places.",
+   "options": {
+    "A": "2.45",
+    "B": "5",
+    "C": "2.24",
+    "D": "6"
+   },
+   "answer": "C",
+   "explanation": "New mean = 66 ÷ 6 = 11; squared deviations are five 1s and one 25, total 30; σ = √(30 ÷ 6) = √5 ≈ 2.24. Dividing by 5 instead of 6 gives 2.45.",
+   "steps": [
+    "New mean = (5 × 10 + 16) ÷ 6 = 66 ÷ 6 = 11.",
+    "Squared deviations: (10 − 11)² = 1 five times, and (16 − 11)² = 25; total 30.",
+    "σ = √(30 ÷ 6) = √5 ≈ 2.24."
+   ],
+   "mistakes": {
+    "A": "Step 3: √(30 ÷ 5) divides by 5. There are now 6 values, so divide by n = 6.",
+    "B": "Step 3: 30 ÷ 6 = 5 is the variance. Take the square root.",
+    "D": "Step 1: 16 − 10 = 6 is how far the new value is from the OLD mean. Find the new mean (11) and use every value."
+   }
+  }
+ ]
 }

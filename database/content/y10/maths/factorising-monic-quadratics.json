@@ -1,269 +1,270 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Factorising monic quadratics",
-  "summary": "Fully factorise quadratics of the form x² + bx + c, including common factors, negative x² terms, two variables and hidden quadratics.",
-  "minutes": 30,
-  "body": "Factorising is expanding in reverse: you start with an expression like x² + 8x + 15 and write it as a product of two brackets. It is the fastest way to solve many quadratic equations, and it is used whenever a formula for an area, a profit or a path of a ball needs to be broken into simpler parts.\n\n## Learning objective\n\nBy the end of this lesson you can fully factorise monic quadratics x² + bx + c, including ones with a common factor, a negative x² term, two variables or a hidden quadratic.\n\n## Before you start\n\nThis lesson uses:\n- **Factorising quadratic trinomials (Year 9)** — the multiply-and-add method.\n- **Factorising by common factors (Year 9)** — taking out the highest common factor.\n- **Expanding and special products (Year 10)** — so you can check your answers.\n\nWarm-up (try these, then check):\n1. Which two numbers multiply to 18 and add to −11?\n2. Factorise 5x² − 20x.\n\nAnswers: 1. **−2 and −9** ((−2) × (−9) = 18 and −2 + (−9) = −11). 2. **5x(x − 4)**.\n\n## Think of it like this\n\n### Arranging tiles into a rectangle\n\nImagine you have one big x-by-x tile, 8 long strips (each x by 1) and 15 small unit squares. Can you arrange them into one neat rectangle? Put the big tile in the corner, 3 strips down one side, 5 strips along the other, and the 15 small squares fill the corner exactly. The sides of the rectangle are x + 3 and x + 5, so x² + 8x + 15 = (x + 3)(x + 5). Factorising means finding the side lengths.\n\n*Where the analogy breaks down:* you can't hold a negative tile, but many quadratics have negative terms, so you will need sign rules instead of real tiles.\n\n## Key ideas\n\n### Monic quadratics\n\nA quadratic is **monic** when the coefficient of x² is 1, such as x² − 4x − 21. Expanding (x + p)(x + q) gives x² + (p + q)x + pq, so to factorise x² + bx + c find two numbers p and q that:\n- multiply to c (the **constant term**), and\n- add to b (the **coefficient** of x).\n\n![Area model for x² + 8x + 15: sides x + 3 and x + 5, parts x², 3x, 5x and 15](/diagrams/y10/maths/factorising-monic-quadratics-model.svg)\n\nIn the area model, the corner 3 × 5 = 15 is the product, and the strips 3x + 5x = 8x give the sum.\n\n### Sign clues\n\n| c | b | The two numbers |\n|---|---|---|\n| positive | positive | both positive |\n| positive | negative | both negative |\n| negative | either | different signs; the bigger one (ignoring signs) takes the sign of b |\n\n### Take out common factors first\n\nAlways look for a **highest common factor (HCF)** before anything else. If the x² term is negative, take out −1 so the bracket becomes monic: −x² + 2x + 15 = −(x² − 2x − 15). An expression is **fully factorised** when no bracket can be factorised any further.\n\n### Special cases you should spot\n\n- Difference of two squares: x² − 49 = (x + 7)(x − 7).\n- Perfect squares: x² − 12x + 36 = (x − 6)².\n- Two variables: x² + 5xy + 6y² = (x + 2y)(x + 3y) — treat y like a passenger that rides along with each number.\n\n### Hidden quadratics (10A)\n\nSome expressions are quadratics in disguise. In x⁴ − 13x² + 36, let u = x², so it becomes u² − 13u + 36 = (u − 4)(u − 9). This method is called **substitution**. Put x² back in, then keep factorising.\n\n### Not every quadratic factorises neatly\n\nx² + 4x + 1 has no two whole numbers that multiply to 1 and add to 4. You will learn how to deal with these in **Completing the square** and **The quadratic formula and the discriminant**.\n\n## Worked examples\n\n### Example 1\n\nFactorise x² + 11x + 24.\n\nStep 1: List factor pairs of 24 — 1 × 24, 2 × 12, 3 × 8, 4 × 6, because the numbers must multiply to 24.\nStep 2: Find the pair that adds to 11 — 3 + 8 = 11.\nAnswer: **(x + 3)(x + 8)**.\n\nCheck: (x + 3)(x + 8) = x² + 8x + 3x + 24 = x² + 11x + 24 ✓\n\n### Example 2\n\nFactorise x² − 4x − 21.\n\nStep 1: c is negative, so the numbers have different signs.\nStep 2: Pairs for −21 with a sum of −4 — 3 and −7 (3 × (−7) = −21, 3 + (−7) = −4).\nAnswer: **(x + 3)(x − 7)**.\n\nCheck with x = 1: 1 − 4 − 21 = −24 and (4)(−6) = −24 ✓\n\n### Example 3\n\nFactorise fully 2x² − 16x + 30.\n\nStep 1: Take out the HCF 2 — 2(x² − 8x + 15), to make the bracket monic.\nStep 2: Multiply to 15, add to −8 — −3 and −5 (both negative, because c is positive and b is negative).\nAnswer: **2(x − 3)(x − 5)**.\n\nCheck with x = 0: 30 and 2 × (−3) × (−5) = 30 ✓\n\n### Example 4\n\nFactorise −x² + 2x + 15.\n\nStep 1: Take out −1 — −(x² − 2x − 15). Every sign inside changes.\nStep 2: Multiply to −15, add to −2 — 3 and −5.\nAnswer: **−(x − 5)(x + 3)**.\n\nCheck with x = 0: 15 and −(−5)(3) = 15 ✓\n\n### Example 5 (challenge)\n\nFactorise fully x⁴ − 13x² + 36.\n\nStep 1: Let u = x² — the expression becomes u² − 13u + 36.\nStep 2: Multiply to 36, add to −13 — −4 and −9, so (u − 4)(u − 9).\nStep 3: Put x² back — (x² − 4)(x² − 9).\nStep 4: Both brackets are differences of two squares — **(x − 2)(x + 2)(x − 3)(x + 3)**.\n\nCheck with x = 1: 1 − 13 + 36 = 24 and (−1)(3)(−2)(4) = 24 ✓\n\n## Common mistakes\n\n- **Checking only one condition.** 2 and 12 multiply to 24 but add to 14. Fix: test both the product and the sum.\n- **Swapping the signs**, e.g. writing x² − 4x − 21 = (x − 3)(x + 7). Fix: expand your answer and look at the middle term.\n- **Dropping the common factor or the minus sign.** 2(x − 3)(x − 5) is not the same as (x − 3)(x − 5). Fix: write the HCF (or −) at the front before you start the brackets.\n- **Stopping too early.** (x² − 4)(x² − 9) can still be factorised. Fix: check every bracket for a difference of two squares.\n\n## Tips to remember\n\n- **\"Times to the end, add to the middle\"** (a made-up rhyme): the two numbers multiply to c and add to b.\n- **HCF first, always** — including a −1 if the x² term is negative.\n- **Sign clue:** c positive → same signs (the sign of b); c negative → different signs.\n- **Tiles picture:** the corner box is the product, the two strips add to the middle term.\n- **Expand to check** — it only takes a few seconds and catches sign errors.\n\n## Key terms\n\n- **Factorise** — write an expression as a product of factors.\n- **Monic quadratic** — a quadratic whose x² coefficient is 1.\n- **Coefficient** — the number multiplying a variable, such as −4 in −4x.\n- **Constant term** — the term with no variable.\n- **Highest common factor (HCF)** — the largest factor shared by every term.\n- **Fully factorised** — no factor can be broken down any further.\n- **Substitution** — replacing an expression (such as x²) with a single letter to reveal a simpler pattern.\n\n## Summary\n\n- x² + bx + c = (x + p)(x + q) when pq = c and p + q = b.\n- Use the signs of b and c to decide the signs of p and q.\n- Take out any common factor (or −1) first and keep it in the answer.\n- Spot differences of two squares, perfect squares and hidden quadratics.\n- Always expand or substitute a value to check.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "Factorise x² + 9x + 20.",
-      "options": {
-        "A": "(x + 2)(x + 10)",
-        "B": "(x + 4)(x + 5)",
-        "C": "(x − 4)(x − 5)",
-        "D": "(x + 3)(x + 6)"
-      },
-      "answer": "B",
-      "explanation": "4 × 5 = 20 and 4 + 5 = 9. (x + 2)(x + 10) multiplies to 20 but adds to 12.",
-      "steps": [
-        "List pairs that multiply to 20: 1 and 20, 2 and 10, 4 and 5.",
-        "The pair that adds to 9 is 4 and 5, so the answer is (x + 4)(x + 5)."
-      ],
-      "mistakes": {
-        "A": "Step 2: 2 + 10 = 12, not 9 — check the sum as well as the product.",
-        "C": "Step 2: −4 + (−5) = −9; the middle term here is +9x, so both numbers are positive.",
-        "D": "Step 1: 3 + 6 = 9, but 3 × 6 = 18, not 20."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Factorise x² − 36.",
-      "options": {
-        "A": "(x − 6)²",
-        "B": "(x + 6)²",
-        "C": "(x − 18)(x + 18)",
-        "D": "(x + 6)(x − 6)"
-      },
-      "answer": "D",
-      "explanation": "x² − 36 is a difference of two squares: x² − 6², which is (x + 6)(x − 6). (x − 6)² expands to x² − 12x + 36, which has a middle term.",
-      "steps": [
-        "Recognise a difference of two squares: x² − 36 = x² − 6².",
-        "Use a² − b² = (a + b)(a − b): the answer is (x + 6)(x − 6)."
-      ],
-      "mistakes": {
-        "A": "Step 2: (x − 6)² = x² − 12x + 36 — it has a middle term and ends in +36.",
-        "B": "Step 2: (x + 6)² = x² + 12x + 36, not x² − 36.",
-        "C": "Step 1: 36 = 6², so b = 6 — you halved 36 instead of taking the square root."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Factorise x² − 10x + 21.",
-      "options": {
-        "A": "(x + 3)(x + 7)",
-        "B": "(x − 3)(x + 7)",
-        "C": "(x − 3)(x − 7)",
-        "D": "(x − 2)(x − 8)"
-      },
-      "answer": "C",
-      "explanation": "(−3) × (−7) = 21 and −3 + (−7) = −10. (x + 3)(x + 7) multiplies correctly but gives +10x.",
-      "steps": [
-        "c = 21 is positive and b = −10 is negative, so both numbers are negative.",
-        "Negative pairs for 21: −1 and −21, −3 and −7. The pair that adds to −10 is −3 and −7, so the answer is (x − 3)(x − 7)."
-      ],
-      "mistakes": {
-        "A": "Step 1: the middle term is −10x, so both numbers must be negative.",
-        "B": "Step 1: (−3) × 7 = −21; the constant here is +21, so the signs must match.",
-        "D": "Step 2: −2 + (−8) = −10, but (−2) × (−8) = 16, not 21."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Factorise x² + 3x − 28.",
-      "options": {
-        "A": "(x + 7)(x − 4)",
-        "B": "(x − 7)(x + 4)",
-        "C": "(x + 14)(x − 2)",
-        "D": "(x + 7)(x + 4)"
-      },
-      "answer": "A",
-      "explanation": "7 × (−4) = −28 and 7 + (−4) = 3. (x − 7)(x + 4) has the signs swapped and gives −3x.",
-      "steps": [
-        "c is negative, so one number is positive and one is negative; the bigger one is positive because b = +3.",
-        "Try pairs for −28: 7 and −4 give 7 × (−4) = −28 and 7 − 4 = 3, so the answer is (x + 7)(x − 4)."
-      ],
-      "mistakes": {
-        "B": "Step 1: the bigger number takes the sign of b, which is +, so it is +7.",
-        "C": "Step 2: 14 + (−2) = 12, not 3.",
-        "D": "Step 1: 7 × 4 = +28; the constant is −28, so the signs must differ."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Factorise fully 3x² + 6x − 45.",
-      "options": {
-        "A": "(x + 5)(x − 3)",
-        "B": "3(x − 5)(x + 3)",
-        "C": "3(x + 5)(x − 3)",
-        "D": "(3x + 5)(x − 3)"
-      },
-      "answer": "C",
-      "explanation": "Take out 3: 3(x² + 2x − 15). Then 5 × (−3) = −15 and 5 + (−3) = 2, giving 3(x + 5)(x − 3). (x + 5)(x − 3) has lost the common factor 3.",
-      "steps": [
-        "Take out the HCF 3: 3(x² + 2x − 15).",
-        "Two numbers that multiply to −15 and add to 2 are 5 and −3, so the answer is 3(x + 5)(x − 3)."
-      ],
-      "mistakes": {
-        "A": "Step 1: the 3 you took out must stay at the front of the answer.",
-        "B": "Step 2: −5 + 3 = −2; the middle term inside the bracket is +2x.",
-        "D": "Step 1: take the 3 out of every term first; (3x + 5)(x − 3) expands to 3x² − 4x − 15."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The diagram is an area model for x² + 9x + 14. Use it to factorise x² + 9x + 14.",
-      "diagram": "diagrams/y10/maths/factorising-monic-quadratics-q6.svg",
-      "diagram_alt": "An area model with parts x², 2x (top right), 7x (bottom left) and 14 (bottom right). The side lengths are x and an unknown along the top, and x and an unknown down the left.",
-      "options": {
-        "A": "(x + 1)(x + 14)",
-        "B": "(x + 2)(x + 7)",
-        "C": "(x + 9)(x + 14)",
-        "D": "(x + 2)(x − 7)"
-      },
-      "answer": "B",
-      "explanation": "The top-right part 2x = x × 2, so the top unknown is 2; the bottom-left part 7x = 7 × x, so the side unknown is 7. Check: 2 × 7 = 14 and 2 + 7 = 9. (x + 1)(x + 14) multiplies to 14 but adds to 15.",
-      "steps": [
-        "Top-right part: x × ? = 2x, so the top side is x + 2.",
-        "Bottom-left part: ? × x = 7x, so the left side is x + 7.",
-        "The area is length × width, so x² + 9x + 14 = (x + 2)(x + 7)."
-      ],
-      "mistakes": {
-        "A": "Step 1: 1 × 14 = 14, but 1 + 14 = 15, and the strips show 2x and 7x.",
-        "C": "Step 1: the side lengths come from dividing each part by x — 9x and 14 are areas, not sides.",
-        "D": "Step 2: every part of the model is positive, so both numbers are positive."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Factorise x² − 7xy + 12y².",
-      "options": {
-        "A": "(x + 3y)(x + 4y)",
-        "B": "(x − 3y)(x − 4)",
-        "C": "(x − 2y)(x − 6y)",
-        "D": "(x − 3y)(x − 4y)"
-      },
-      "answer": "D",
-      "explanation": "Think of it as x² − 7(y)x + 12y²: two numbers that multiply to 12 and add to −7 are −3 and −4, and each carries a y. (x + 3y)(x + 4y) gives +7xy.",
-      "steps": [
-        "Ignore the y for now: find two numbers that multiply to 12 and add to −7: −3 and −4.",
-        "Attach y to each number, because the last term is 12y²: the answer is (x − 3y)(x − 4y)."
-      ],
-      "mistakes": {
-        "A": "Step 1: the middle term is −7xy, so both numbers are negative.",
-        "B": "Step 2: the last term is 12y², so both numbers need a y.",
-        "C": "Step 1: −2 + (−6) = −8, not −7."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Factorise fully −x² + 4x + 21.",
-      "options": {
-        "A": "−(x − 7)(x + 3)",
-        "B": "−(x + 7)(x − 3)",
-        "C": "(x − 7)(x + 3)",
-        "D": "−(x − 3)(x − 7)"
-      },
-      "answer": "A",
-      "explanation": "Take out −1: −(x² − 4x − 21). Then −7 × 3 = −21 and −7 + 3 = −4, giving −(x − 7)(x + 3). (x − 7)(x + 3) has lost the minus sign at the front.",
-      "steps": [
-        "Take out −1, changing every sign inside: −(x² − 4x − 21).",
-        "Two numbers that multiply to −21 and add to −4 are −7 and 3, so the answer is −(x − 7)(x + 3)."
-      ],
-      "mistakes": {
-        "B": "Step 2: 7 + (−3) = +4, but inside the bracket the middle term is −4x.",
-        "C": "Step 1: the −1 you took out must stay at the front.",
-        "D": "Step 2: (−3) × (−7) = +21; the constant inside the bracket is −21."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A rectangle has area x² + 2x − 35 cm² and length (x + 7) cm. What is its width when x = 10?",
-      "options": {
-        "A": "15 cm",
-        "B": "5 cm",
-        "C": "17 cm",
-        "D": "85 cm"
-      },
-      "answer": "B",
-      "explanation": "x² + 2x − 35 = (x + 7)(x − 5), so the width is (x − 5) cm. When x = 10 the width is 5 cm. 15 cm comes from writing the width as x + 5.",
-      "steps": [
-        "Factorise the area: two numbers that multiply to −35 and add to 2 are 7 and −5, so x² + 2x − 35 = (x + 7)(x − 5).",
-        "Area = length × width, so the width is x − 5.",
-        "Substitute x = 10: width = 10 − 5 = 5 cm."
-      ],
-      "mistakes": {
-        "A": "Step 1: 7 + 5 = 12, not 2 — the second number is −5.",
-        "C": "Step 3: 17 cm is the length (x + 7), not the width.",
-        "D": "Step 3: 85 is the area (100 + 20 − 35) in cm²; divide by the length to get the width."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Factorise fully x⁴ − 10x² + 9.",
-      "options": {
-        "A": "(x² + 1)(x² + 9)",
-        "B": "(x − 1)(x − 9)",
-        "C": "(x − 1)(x + 1)(x − 9)(x + 9)",
-        "D": "(x − 1)(x + 1)(x − 3)(x + 3)"
-      },
-      "answer": "D",
-      "explanation": "Let u = x²: u² − 10u + 9 = (u − 1)(u − 9) = (x² − 1)(x² − 9), and both are differences of two squares. (x − 1)(x + 1)(x − 9)(x + 9) uses 9 instead of √9 = 3.",
-      "steps": [
-        "Let u = x²: the expression becomes u² − 10u + 9.",
-        "Factorise: (u − 1)(u − 9), then put x² back: (x² − 1)(x² − 9).",
-        "Each bracket is a difference of two squares: (x − 1)(x + 1)(x − 3)(x + 3)."
-      ],
-      "mistakes": {
-        "A": "Step 2: the numbers −1 and −9 add to −10, so the brackets have minus signs.",
-        "B": "Step 2: you must replace u with x², not x.",
-        "C": "Step 3: x² − 9 = x² − 3², so it splits into (x − 3)(x + 3)."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Factorise (x + 2)² − 5(x + 2) + 6.",
-      "options": {
-        "A": "x(x − 1)",
-        "B": "(x − 2)(x − 3)",
-        "C": "(x + 4)(x + 5)",
-        "D": "x(x + 1)"
-      },
-      "answer": "A",
-      "explanation": "Let u = x + 2: u² − 5u + 6 = (u − 2)(u − 3). Put x + 2 back: (x + 2 − 2)(x + 2 − 3) = x(x − 1). (x − 2)(x − 3) forgets to put x + 2 back.",
-      "steps": [
-        "Let u = x + 2: the expression is u² − 5u + 6.",
-        "Factorise: (u − 2)(u − 3).",
-        "Replace u with x + 2: (x + 2 − 2)(x + 2 − 3) = x(x − 1)."
-      ],
-      "mistakes": {
-        "B": "Step 3: (u − 2)(u − 3) is in terms of u — replace u with x + 2.",
-        "C": "Step 3: u − 2 means (x + 2) − 2, so subtract 2 rather than add it.",
-        "D": "Step 3: u − 3 = x + 2 − 3 = x − 1, not x + 1."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "x² + kx − 20 can be factorised as (x + p)(x + q), where p and q are integers. Which value can k NOT be?",
-      "options": {
-        "A": "1",
-        "B": "−19",
-        "C": "9",
-        "D": "8"
-      },
-      "answer": "C",
-      "explanation": "The integer pairs for −20 are 1 and −20, −1 and 20, 2 and −10, −2 and 10, 4 and −5, −4 and 5, with sums −19, 19, −8, 8, −1 and 1. 9 is not one of these.",
-      "steps": [
-        "k = p + q where pq = −20, so list the integer pairs that multiply to −20.",
-        "Their sums are −19, 19, −8, 8, −1 and 1, so k cannot be 9."
-      ],
-      "mistakes": {
-        "A": "Step 2: −4 + 5 = 1, so x² + x − 20 = (x − 4)(x + 5) works.",
-        "B": "Step 2: 1 + (−20) = −19, so x² − 19x − 20 = (x + 1)(x − 20) works.",
-        "D": "Step 2: −2 + 10 = 8, so x² + 8x − 20 = (x − 2)(x + 10) works."
-      }
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Factorising monic quadratics",
+ "summary": "Fully factorise quadratics of the form x² + bx + c, including common factors, negative x² terms, two variables and hidden quadratics.",
+ "minutes": 30,
+ "video": "videos/y10/maths/factorising-monic-quadratics.mp4",
+ "body": "Factorising is expanding in reverse: you start with an expression like x² + 8x + 15 and write it as a product of two brackets. It is the fastest way to solve many quadratic equations, and it is used whenever a formula for an area, a profit or a path of a ball needs to be broken into simpler parts.\n\n## Learning objective\n\nBy the end of this lesson you can fully factorise monic quadratics x² + bx + c, including ones with a common factor, a negative x² term, two variables or a hidden quadratic.\n\n## Before you start\n\nThis lesson uses:\n- **Factorising quadratic trinomials (Year 9)** — the multiply-and-add method.\n- **Factorising by common factors (Year 9)** — taking out the highest common factor.\n- **Expanding and special products (Year 10)** — so you can check your answers.\n\nWarm-up (try these, then check):\n1. Which two numbers multiply to 18 and add to −11?\n2. Factorise 5x² − 20x.\n\nAnswers: 1. **−2 and −9** ((−2) × (−9) = 18 and −2 + (−9) = −11). 2. **5x(x − 4)**.\n\n## Think of it like this\n\n### Arranging tiles into a rectangle\n\nImagine you have one big x-by-x tile, 8 long strips (each x by 1) and 15 small unit squares. Can you arrange them into one neat rectangle? Put the big tile in the corner, 3 strips down one side, 5 strips along the other, and the 15 small squares fill the corner exactly. The sides of the rectangle are x + 3 and x + 5, so x² + 8x + 15 = (x + 3)(x + 5). Factorising means finding the side lengths.\n\n*Where the analogy breaks down:* you can't hold a negative tile, but many quadratics have negative terms, so you will need sign rules instead of real tiles.\n\n## Key ideas\n\n### Monic quadratics\n\nA quadratic is **monic** when the coefficient of x² is 1, such as x² − 4x − 21. Expanding (x + p)(x + q) gives x² + (p + q)x + pq, so to factorise x² + bx + c find two numbers p and q that:\n- multiply to c (the **constant term**), and\n- add to b (the **coefficient** of x).\n\n![Area model for x² + 8x + 15: sides x + 3 and x + 5, parts x², 3x, 5x and 15](/diagrams/y10/maths/factorising-monic-quadratics-model.svg)\n\nIn the area model, the corner 3 × 5 = 15 is the product, and the strips 3x + 5x = 8x give the sum.\n\n### Sign clues\n\n| c | b | The two numbers |\n|---|---|---|\n| positive | positive | both positive |\n| positive | negative | both negative |\n| negative | either | different signs; the bigger one (ignoring signs) takes the sign of b |\n\n### Take out common factors first\n\nAlways look for a **highest common factor (HCF)** before anything else. If the x² term is negative, take out −1 so the bracket becomes monic: −x² + 2x + 15 = −(x² − 2x − 15). An expression is **fully factorised** when no bracket can be factorised any further.\n\n### Special cases you should spot\n\n- Difference of two squares: x² − 49 = (x + 7)(x − 7).\n- Perfect squares: x² − 12x + 36 = (x − 6)².\n- Two variables: x² + 5xy + 6y² = (x + 2y)(x + 3y) — treat y like a passenger that rides along with each number.\n\n### Hidden quadratics (10A)\n\nSome expressions are quadratics in disguise. In x⁴ − 13x² + 36, let u = x², so it becomes u² − 13u + 36 = (u − 4)(u − 9). This method is called **substitution**. Put x² back in, then keep factorising.\n\n### Not every quadratic factorises neatly\n\nx² + 4x + 1 has no two whole numbers that multiply to 1 and add to 4. You will learn how to deal with these in **Completing the square** and **The quadratic formula and the discriminant**.\n\n## Worked examples\n\n### Example 1\n\nFactorise x² + 11x + 24.\n\nStep 1: List factor pairs of 24 — 1 × 24, 2 × 12, 3 × 8, 4 × 6, because the numbers must multiply to 24.\nStep 2: Find the pair that adds to 11 — 3 + 8 = 11.\nAnswer: **(x + 3)(x + 8)**.\n\nCheck: (x + 3)(x + 8) = x² + 8x + 3x + 24 = x² + 11x + 24 ✓\n\n### Example 2\n\nFactorise x² − 4x − 21.\n\nStep 1: c is negative, so the numbers have different signs.\nStep 2: Pairs for −21 with a sum of −4 — 3 and −7 (3 × (−7) = −21, 3 + (−7) = −4).\nAnswer: **(x + 3)(x − 7)**.\n\nCheck with x = 1: 1 − 4 − 21 = −24 and (4)(−6) = −24 ✓\n\n### Example 3\n\nFactorise fully 2x² − 16x + 30.\n\nStep 1: Take out the HCF 2 — 2(x² − 8x + 15), to make the bracket monic.\nStep 2: Multiply to 15, add to −8 — −3 and −5 (both negative, because c is positive and b is negative).\nAnswer: **2(x − 3)(x − 5)**.\n\nCheck with x = 0: 30 and 2 × (−3) × (−5) = 30 ✓\n\n### Example 4\n\nFactorise −x² + 2x + 15.\n\nStep 1: Take out −1 — −(x² − 2x − 15). Every sign inside changes.\nStep 2: Multiply to −15, add to −2 — 3 and −5.\nAnswer: **−(x − 5)(x + 3)**.\n\nCheck with x = 0: 15 and −(−5)(3) = 15 ✓\n\n### Example 5 (challenge)\n\nFactorise fully x⁴ − 13x² + 36.\n\nStep 1: Let u = x² — the expression becomes u² − 13u + 36.\nStep 2: Multiply to 36, add to −13 — −4 and −9, so (u − 4)(u − 9).\nStep 3: Put x² back — (x² − 4)(x² − 9).\nStep 4: Both brackets are differences of two squares — **(x − 2)(x + 2)(x − 3)(x + 3)**.\n\nCheck with x = 1: 1 − 13 + 36 = 24 and (−1)(3)(−2)(4) = 24 ✓\n\n## Common mistakes\n\n- **Checking only one condition.** 2 and 12 multiply to 24 but add to 14. Fix: test both the product and the sum.\n- **Swapping the signs**, e.g. writing x² − 4x − 21 = (x − 3)(x + 7). Fix: expand your answer and look at the middle term.\n- **Dropping the common factor or the minus sign.** 2(x − 3)(x − 5) is not the same as (x − 3)(x − 5). Fix: write the HCF (or −) at the front before you start the brackets.\n- **Stopping too early.** (x² − 4)(x² − 9) can still be factorised. Fix: check every bracket for a difference of two squares.\n\n## Tips to remember\n\n- **\"Times to the end, add to the middle\"** (a made-up rhyme): the two numbers multiply to c and add to b.\n- **HCF first, always** — including a −1 if the x² term is negative.\n- **Sign clue:** c positive → same signs (the sign of b); c negative → different signs.\n- **Tiles picture:** the corner box is the product, the two strips add to the middle term.\n- **Expand to check** — it only takes a few seconds and catches sign errors.\n\n## Key terms\n\n- **Factorise** — write an expression as a product of factors.\n- **Monic quadratic** — a quadratic whose x² coefficient is 1.\n- **Coefficient** — the number multiplying a variable, such as −4 in −4x.\n- **Constant term** — the term with no variable.\n- **Highest common factor (HCF)** — the largest factor shared by every term.\n- **Fully factorised** — no factor can be broken down any further.\n- **Substitution** — replacing an expression (such as x²) with a single letter to reveal a simpler pattern.\n\n## Summary\n\n- x² + bx + c = (x + p)(x + q) when pq = c and p + q = b.\n- Use the signs of b and c to decide the signs of p and q.\n- Take out any common factor (or −1) first and keep it in the answer.\n- Spot differences of two squares, perfect squares and hidden quadratics.\n- Always expand or substitute a value to check.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Factorise x² + 9x + 20.",
+   "options": {
+    "A": "(x + 2)(x + 10)",
+    "B": "(x + 4)(x + 5)",
+    "C": "(x − 4)(x − 5)",
+    "D": "(x + 3)(x + 6)"
+   },
+   "answer": "B",
+   "explanation": "4 × 5 = 20 and 4 + 5 = 9. (x + 2)(x + 10) multiplies to 20 but adds to 12.",
+   "steps": [
+    "List pairs that multiply to 20: 1 and 20, 2 and 10, 4 and 5.",
+    "The pair that adds to 9 is 4 and 5, so the answer is (x + 4)(x + 5)."
+   ],
+   "mistakes": {
+    "A": "Step 2: 2 + 10 = 12, not 9 — check the sum as well as the product.",
+    "C": "Step 2: −4 + (−5) = −9; the middle term here is +9x, so both numbers are positive.",
+    "D": "Step 1: 3 + 6 = 9, but 3 × 6 = 18, not 20."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Factorise x² − 36.",
+   "options": {
+    "A": "(x − 6)²",
+    "B": "(x + 6)²",
+    "C": "(x − 18)(x + 18)",
+    "D": "(x + 6)(x − 6)"
+   },
+   "answer": "D",
+   "explanation": "x² − 36 is a difference of two squares: x² − 6², which is (x + 6)(x − 6). (x − 6)² expands to x² − 12x + 36, which has a middle term.",
+   "steps": [
+    "Recognise a difference of two squares: x² − 36 = x² − 6².",
+    "Use a² − b² = (a + b)(a − b): the answer is (x + 6)(x − 6)."
+   ],
+   "mistakes": {
+    "A": "Step 2: (x − 6)² = x² − 12x + 36 — it has a middle term and ends in +36.",
+    "B": "Step 2: (x + 6)² = x² + 12x + 36, not x² − 36.",
+    "C": "Step 1: 36 = 6², so b = 6 — you halved 36 instead of taking the square root."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Factorise x² − 10x + 21.",
+   "options": {
+    "A": "(x + 3)(x + 7)",
+    "B": "(x − 3)(x + 7)",
+    "C": "(x − 3)(x − 7)",
+    "D": "(x − 2)(x − 8)"
+   },
+   "answer": "C",
+   "explanation": "(−3) × (−7) = 21 and −3 + (−7) = −10. (x + 3)(x + 7) multiplies correctly but gives +10x.",
+   "steps": [
+    "c = 21 is positive and b = −10 is negative, so both numbers are negative.",
+    "Negative pairs for 21: −1 and −21, −3 and −7. The pair that adds to −10 is −3 and −7, so the answer is (x − 3)(x − 7)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the middle term is −10x, so both numbers must be negative.",
+    "B": "Step 1: (−3) × 7 = −21; the constant here is +21, so the signs must match.",
+    "D": "Step 2: −2 + (−8) = −10, but (−2) × (−8) = 16, not 21."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Factorise x² + 3x − 28.",
+   "options": {
+    "A": "(x + 7)(x − 4)",
+    "B": "(x − 7)(x + 4)",
+    "C": "(x + 14)(x − 2)",
+    "D": "(x + 7)(x + 4)"
+   },
+   "answer": "A",
+   "explanation": "7 × (−4) = −28 and 7 + (−4) = 3. (x − 7)(x + 4) has the signs swapped and gives −3x.",
+   "steps": [
+    "c is negative, so one number is positive and one is negative; the bigger one is positive because b = +3.",
+    "Try pairs for −28: 7 and −4 give 7 × (−4) = −28 and 7 − 4 = 3, so the answer is (x + 7)(x − 4)."
+   ],
+   "mistakes": {
+    "B": "Step 1: the bigger number takes the sign of b, which is +, so it is +7.",
+    "C": "Step 2: 14 + (−2) = 12, not 3.",
+    "D": "Step 1: 7 × 4 = +28; the constant is −28, so the signs must differ."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Factorise fully 3x² + 6x − 45.",
+   "options": {
+    "A": "(x + 5)(x − 3)",
+    "B": "3(x − 5)(x + 3)",
+    "C": "3(x + 5)(x − 3)",
+    "D": "(3x + 5)(x − 3)"
+   },
+   "answer": "C",
+   "explanation": "Take out 3: 3(x² + 2x − 15). Then 5 × (−3) = −15 and 5 + (−3) = 2, giving 3(x + 5)(x − 3). (x + 5)(x − 3) has lost the common factor 3.",
+   "steps": [
+    "Take out the HCF 3: 3(x² + 2x − 15).",
+    "Two numbers that multiply to −15 and add to 2 are 5 and −3, so the answer is 3(x + 5)(x − 3)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the 3 you took out must stay at the front of the answer.",
+    "B": "Step 2: −5 + 3 = −2; the middle term inside the bracket is +2x.",
+    "D": "Step 1: take the 3 out of every term first; (3x + 5)(x − 3) expands to 3x² − 4x − 15."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The diagram is an area model for x² + 9x + 14. Use it to factorise x² + 9x + 14.",
+   "diagram": "diagrams/y10/maths/factorising-monic-quadratics-q6.svg",
+   "diagram_alt": "An area model with parts x², 2x (top right), 7x (bottom left) and 14 (bottom right). The side lengths are x and an unknown along the top, and x and an unknown down the left.",
+   "options": {
+    "A": "(x + 1)(x + 14)",
+    "B": "(x + 2)(x + 7)",
+    "C": "(x + 9)(x + 14)",
+    "D": "(x + 2)(x − 7)"
+   },
+   "answer": "B",
+   "explanation": "The top-right part 2x = x × 2, so the top unknown is 2; the bottom-left part 7x = 7 × x, so the side unknown is 7. Check: 2 × 7 = 14 and 2 + 7 = 9. (x + 1)(x + 14) multiplies to 14 but adds to 15.",
+   "steps": [
+    "Top-right part: x × ? = 2x, so the top side is x + 2.",
+    "Bottom-left part: ? × x = 7x, so the left side is x + 7.",
+    "The area is length × width, so x² + 9x + 14 = (x + 2)(x + 7)."
+   ],
+   "mistakes": {
+    "A": "Step 1: 1 × 14 = 14, but 1 + 14 = 15, and the strips show 2x and 7x.",
+    "C": "Step 1: the side lengths come from dividing each part by x — 9x and 14 are areas, not sides.",
+    "D": "Step 2: every part of the model is positive, so both numbers are positive."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Factorise x² − 7xy + 12y².",
+   "options": {
+    "A": "(x + 3y)(x + 4y)",
+    "B": "(x − 3y)(x − 4)",
+    "C": "(x − 2y)(x − 6y)",
+    "D": "(x − 3y)(x − 4y)"
+   },
+   "answer": "D",
+   "explanation": "Think of it as x² − 7(y)x + 12y²: two numbers that multiply to 12 and add to −7 are −3 and −4, and each carries a y. (x + 3y)(x + 4y) gives +7xy.",
+   "steps": [
+    "Ignore the y for now: find two numbers that multiply to 12 and add to −7: −3 and −4.",
+    "Attach y to each number, because the last term is 12y²: the answer is (x − 3y)(x − 4y)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the middle term is −7xy, so both numbers are negative.",
+    "B": "Step 2: the last term is 12y², so both numbers need a y.",
+    "C": "Step 1: −2 + (−6) = −8, not −7."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Factorise fully −x² + 4x + 21.",
+   "options": {
+    "A": "−(x − 7)(x + 3)",
+    "B": "−(x + 7)(x − 3)",
+    "C": "(x − 7)(x + 3)",
+    "D": "−(x − 3)(x − 7)"
+   },
+   "answer": "A",
+   "explanation": "Take out −1: −(x² − 4x − 21). Then −7 × 3 = −21 and −7 + 3 = −4, giving −(x − 7)(x + 3). (x − 7)(x + 3) has lost the minus sign at the front.",
+   "steps": [
+    "Take out −1, changing every sign inside: −(x² − 4x − 21).",
+    "Two numbers that multiply to −21 and add to −4 are −7 and 3, so the answer is −(x − 7)(x + 3)."
+   ],
+   "mistakes": {
+    "B": "Step 2: 7 + (−3) = +4, but inside the bracket the middle term is −4x.",
+    "C": "Step 1: the −1 you took out must stay at the front.",
+    "D": "Step 2: (−3) × (−7) = +21; the constant inside the bracket is −21."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A rectangle has area x² + 2x − 35 cm² and length (x + 7) cm. What is its width when x = 10?",
+   "options": {
+    "A": "15 cm",
+    "B": "5 cm",
+    "C": "17 cm",
+    "D": "85 cm"
+   },
+   "answer": "B",
+   "explanation": "x² + 2x − 35 = (x + 7)(x − 5), so the width is (x − 5) cm. When x = 10 the width is 5 cm. 15 cm comes from writing the width as x + 5.",
+   "steps": [
+    "Factorise the area: two numbers that multiply to −35 and add to 2 are 7 and −5, so x² + 2x − 35 = (x + 7)(x − 5).",
+    "Area = length × width, so the width is x − 5.",
+    "Substitute x = 10: width = 10 − 5 = 5 cm."
+   ],
+   "mistakes": {
+    "A": "Step 1: 7 + 5 = 12, not 2 — the second number is −5.",
+    "C": "Step 3: 17 cm is the length (x + 7), not the width.",
+    "D": "Step 3: 85 is the area (100 + 20 − 35) in cm²; divide by the length to get the width."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Factorise fully x⁴ − 10x² + 9.",
+   "options": {
+    "A": "(x² + 1)(x² + 9)",
+    "B": "(x − 1)(x − 9)",
+    "C": "(x − 1)(x + 1)(x − 9)(x + 9)",
+    "D": "(x − 1)(x + 1)(x − 3)(x + 3)"
+   },
+   "answer": "D",
+   "explanation": "Let u = x²: u² − 10u + 9 = (u − 1)(u − 9) = (x² − 1)(x² − 9), and both are differences of two squares. (x − 1)(x + 1)(x − 9)(x + 9) uses 9 instead of √9 = 3.",
+   "steps": [
+    "Let u = x²: the expression becomes u² − 10u + 9.",
+    "Factorise: (u − 1)(u − 9), then put x² back: (x² − 1)(x² − 9).",
+    "Each bracket is a difference of two squares: (x − 1)(x + 1)(x − 3)(x + 3)."
+   ],
+   "mistakes": {
+    "A": "Step 2: the numbers −1 and −9 add to −10, so the brackets have minus signs.",
+    "B": "Step 2: you must replace u with x², not x.",
+    "C": "Step 3: x² − 9 = x² − 3², so it splits into (x − 3)(x + 3)."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Factorise (x + 2)² − 5(x + 2) + 6.",
+   "options": {
+    "A": "x(x − 1)",
+    "B": "(x − 2)(x − 3)",
+    "C": "(x + 4)(x + 5)",
+    "D": "x(x + 1)"
+   },
+   "answer": "A",
+   "explanation": "Let u = x + 2: u² − 5u + 6 = (u − 2)(u − 3). Put x + 2 back: (x + 2 − 2)(x + 2 − 3) = x(x − 1). (x − 2)(x − 3) forgets to put x + 2 back.",
+   "steps": [
+    "Let u = x + 2: the expression is u² − 5u + 6.",
+    "Factorise: (u − 2)(u − 3).",
+    "Replace u with x + 2: (x + 2 − 2)(x + 2 − 3) = x(x − 1)."
+   ],
+   "mistakes": {
+    "B": "Step 3: (u − 2)(u − 3) is in terms of u — replace u with x + 2.",
+    "C": "Step 3: u − 2 means (x + 2) − 2, so subtract 2 rather than add it.",
+    "D": "Step 3: u − 3 = x + 2 − 3 = x − 1, not x + 1."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "x² + kx − 20 can be factorised as (x + p)(x + q), where p and q are integers. Which value can k NOT be?",
+   "options": {
+    "A": "1",
+    "B": "−19",
+    "C": "9",
+    "D": "8"
+   },
+   "answer": "C",
+   "explanation": "The integer pairs for −20 are 1 and −20, −1 and 20, 2 and −10, −2 and 10, 4 and −5, −4 and 5, with sums −19, 19, −8, 8, −1 and 1. 9 is not one of these.",
+   "steps": [
+    "k = p + q where pq = −20, so list the integer pairs that multiply to −20.",
+    "Their sums are −19, 19, −8, 8, −1 and 1, so k cannot be 9."
+   ],
+   "mistakes": {
+    "A": "Step 2: −4 + 5 = 1, so x² + x − 20 = (x − 4)(x + 5) works.",
+    "B": "Step 2: 1 + (−20) = −19, so x² − 19x − 20 = (x + 1)(x − 20) works.",
+    "D": "Step 2: −2 + 10 = 8, so x² + 8x − 20 = (x − 2)(x + 10) works."
+   }
+  }
+ ]
 }

@@ -1,273 +1,274 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Completing the square",
-  "summary": "Rewrite quadratics as a perfect square plus or minus a number, then use that form to find minimum values and to factorise with surds.",
-  "minutes": 35,
-  "body": "**Completing the square** rewrites a quadratic like x² + 6x + 5 as (x + 3)² − 4: a perfect square plus or minus a number. This form tells you the smallest (or largest) value a quadratic can take, which is how designers find the maximum area of a paddock or the lowest point of a cable, and it lets you factorise and solve quadratics that have no whole-number factors.\n\n## Learning objective\n\nBy the end of this lesson you can complete the square on a quadratic, use it to find a minimum or maximum value, and use it to factorise quadratics with surds.\n\n## Before you start\n\nThis lesson uses:\n- **Expanding and special products (Year 10)** — especially (x + a)² = x² + 2ax + a².\n- **Factorising monic quadratics (Year 10)** — including the difference of two squares.\n- **Simplifying surds (Year 10)** — for answers like √13.\n\nWarm-up (try these, then check):\n1. Expand (x − 4)².\n2. Simplify √12.\n\nAnswers: 1. **x² − 8x + 16**. 2. **2√3** (√12 = √4 × √3).\n\n## Think of it like this\n\n### The missing floor tile\n\nYou are tiling a square floor. You have one big square tile and two long strips, but the small corner tile is missing. To finish the square you borrow a corner tile from the shed. Now the floor is a perfect square, but you owe the shed one tile, so you write \"square minus the borrowed tile\". Completing the square is exactly this: add the missing corner to make a perfect square, then subtract it again so nothing has changed.\n\n*Where the analogy breaks down:* real tiles can't have a negative size, but sometimes the number you are left with after \"paying back\" is negative or a fraction.\n\n## Key ideas\n\n### The missing corner\n\nx² + 6x can be arranged as a big square x² and two strips of 3x (half of 6x each). The corner needed to finish the square has area 3 × 3 = 9.\n\n![x² + 6x drawn as a square of side x + 3 with parts x², 3x and 3x, and a dashed 3 by 3 corner of area 9 missing](/diagrams/y10/maths/completing-the-square-model.svg)\n\nSo x² + 6x + 9 = (x + 3)². In general:\n\nx² + bx + (b/2)² = (x + b/2)²\n\n**Halve the coefficient of x, then square it** — that is the number that completes the square.\n\n### Completing the square on any monic quadratic\n\nTo complete the square on x² + bx + c:\n1. Halve b and square it: (b/2)².\n2. Add it and subtract it: x² + bx + (b/2)² − (b/2)² + c.\n3. The first three terms make (x + b/2)².\n\nResult: x² + bx + c = (x + b/2)² − (b/2)² + c. This is called **completed-square form** (or **turning point form**, which you will use for parabolas in Chapter 7).\n\n### Minimum value\n\nA square is never negative, so (x + 3)² − 4 is smallest when (x + 3)² = 0, that is when x = −3. The **minimum value** is −4. If there is a minus sign in front of the square, the expression has a **maximum value** instead.\n\n### Factorising with surds\n\nIf completed-square form is (x + h)² − k with k positive, it is a difference of two squares:\n\n(x + h)² − k = (x + h − √k)(x + h + √k)\n\nIf it is (x + h)² + k with k positive, it is always positive, so it cannot be factorised using real numbers.\n\n### When a is not 1 (10A)\n\nTake a out of the x² and x terms first: 2x² + 12x + 7 = 2(x² + 6x) + 7, complete the square inside the bracket, then multiply back out.\n\n## Worked examples\n\n### Example 1\n\nWhat number completes the square x² + 10x + ...? Write the result as a perfect square.\n\nStep 1: Halve the coefficient of x — 10 ÷ 2 = 5.\nStep 2: Square it — 5² = 25.\nAnswer: x² + 10x + **25** = **(x + 5)²**.\n\n### Example 2\n\nWrite x² + 6x + 5 in completed-square form, then factorise it.\n\nStep 1: Halve 6 to get 3, and square it to get 9.\nStep 2: Add and subtract 9 — x² + 6x + 9 − 9 + 5.\nStep 3: Make the square — **(x + 3)² − 4**.\nStep 4: Difference of two squares (4 = 2²) — (x + 3 − 2)(x + 3 + 2) = **(x + 1)(x + 5)**.\n\nCheck with x = 0: 9 − 4 = 5 and 1 × 5 = 5 ✓\n\n### Example 3\n\nFactorise x² − 8x + 3 using completing the square.\n\nStep 1: Halve −8 to get −4, and square it to get 16.\nStep 2: x² − 8x + 16 − 16 + 3 = (x − 4)² − 13.\nStep 3: 13 is not a perfect square, so use √13 — **(x − 4 − √13)(x − 4 + √13)**.\n\nCheck: the brackets have the form (A − B)(A + B) with A = x − 4 and B = √13, so they multiply to (x − 4)² − 13 ✓\n\n### Example 4\n\nWrite x² + 5x + 1 in completed-square form.\n\nStep 1: Halve 5 to get 5/2, and square it to get 25/4.\nStep 2: x² + 5x + 25/4 − 25/4 + 1.\nStep 3: −25/4 + 1 = −25/4 + 4/4 = −21/4.\nAnswer: **(x + 5/2)² − 21/4**.\n\nCheck with x = 0: 25/4 − 21/4 = 4/4 = 1 ✓\n\n### Example 5 (challenge)\n\nWrite 2x² + 12x + 7 in the form a(x + h)² + k, and state its minimum value.\n\nStep 1: Take 2 out of the first two terms — 2(x² + 6x) + 7.\nStep 2: Complete the square inside — 2[(x + 3)² − 9] + 7.\nStep 3: Multiply back — 2(x + 3)² − 18 + 7 = **2(x + 3)² − 11**.\nStep 4: The square is 0 when x = −3, so the minimum value is **−11**.\n\nCheck with x = 0: 2 × 9 − 11 = 7 ✓\n\n## Common mistakes\n\n- **Forgetting to subtract what you added.** x² + 6x + 5 is not (x + 3)² + 5. Fix: always \"add and subtract\" (b/2)².\n- **Not halving first.** For x² + 6x the corner is 3² = 9, not 6² = 36. Fix: halve, THEN square.\n- **Getting the sign inside the bracket wrong.** x² − 8x completes to (x − 4)², not (x + 4)². Fix: the sign inside the bracket matches the sign of b.\n- **With a ≠ 1, not multiplying the subtracted number by a.** 2[(x + 3)² − 9] is 2(x + 3)² − 18, not 2(x + 3)² − 9. Fix: expand the square bracket carefully.\n\n## Tips to remember\n\n- **\"Halve it, square it, add it, take it away\"** (a made-up chant) — the four moves of completing the square.\n- **Picture the missing corner tile** — the corner has side b/2, so its area is (b/2)².\n- **Sign check:** the bracket's sign copies the sign of the x term.\n- **Minimum check:** (x − h)² + k has its lowest value k when x = h.\n- **Check with x = 0:** your completed-square form must give the original constant term.\n\n## Key terms\n\n- **Completing the square** — rewriting x² + bx + c as (x + b/2)² plus or minus a number.\n- **Perfect square** — an expression that equals (something)², such as x² + 10x + 25 = (x + 5)².\n- **Completed-square form** — a quadratic written as a(x + h)² + k (also called turning point form).\n- **Minimum value** — the smallest value an expression can take.\n- **Maximum value** — the largest value an expression can take.\n- **Surd** — an irrational root such as √13.\n\n## Summary\n\n- The number that completes x² + bx is (b/2)²: halve b, then square it.\n- x² + bx + c = (x + b/2)² − (b/2)² + c.\n- (x + h)² + k has minimum value k when x = −h.\n- (x + h)² − k (k positive) factorises as (x + h − √k)(x + h + √k); (x + h)² + k (k positive) does not factorise.\n- For ax² + bx + c, take a out of the first two terms before completing the square.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "What number must be added to x² + 14x to make a perfect square?",
-      "options": {
-        "A": "7",
-        "B": "14",
-        "C": "49",
-        "D": "196"
-      },
-      "answer": "C",
-      "explanation": "Halve 14 to get 7, then square it: 7² = 49, and x² + 14x + 49 = (x + 7)². 196 is 14² — you must halve before squaring.",
-      "steps": [
-        "Halve the coefficient of x: 14 ÷ 2 = 7.",
-        "Square it: 7² = 49, so add 49."
-      ],
-      "mistakes": {
-        "A": "Step 2: 7 is half of 14, but you also need to square it.",
-        "B": "Step 1: halve 14 and then square the result.",
-        "D": "Step 1: you squared 14 without halving it first."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Write x² − 6x + 9 as a perfect square.",
-      "options": {
-        "A": "(x − 3)²",
-        "B": "(x + 3)²",
-        "C": "(x − 9)²",
-        "D": "(x − 3)(x + 3)"
-      },
-      "answer": "A",
-      "explanation": "Half of −6 is −3 and (−3)² = 9, so x² − 6x + 9 = (x − 3)². (x + 3)² would give +6x.",
-      "steps": [
-        "Halve the x coefficient: −6 ÷ 2 = −3, and check (−3)² = 9.",
-        "So x² − 6x + 9 = (x − 3)²."
-      ],
-      "mistakes": {
-        "B": "Step 1: the sign inside the bracket copies the sign of the x term, which is negative.",
-        "C": "Step 1: the number in the bracket is half of the x coefficient, not the constant 9.",
-        "D": "Step 2: (x − 3)(x + 3) = x² − 9, which has no middle term."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Write x² + 4x + 1 in completed-square form.",
-      "options": {
-        "A": "(x + 2)² + 1",
-        "B": "(x + 2)² − 3",
-        "C": "(x + 4)² − 15",
-        "D": "(x + 2)² − 5"
-      },
-      "answer": "B",
-      "explanation": "Halve 4 to get 2 and square it to get 4: x² + 4x + 4 − 4 + 1 = (x + 2)² − 3. (x + 2)² + 1 forgets to subtract the 4 that was added.",
-      "steps": [
-        "Halve 4 to get 2, and square it: 4.",
-        "Add and subtract 4: x² + 4x + 4 − 4 + 1.",
-        "So x² + 4x + 1 = (x + 2)² − 3."
-      ],
-      "mistakes": {
-        "A": "Step 2: you added 4 to make the square, so you must also subtract 4.",
-        "C": "Step 1: halve 4 first — the bracket is (x + 2), not (x + 4).",
-        "D": "Step 3: −4 + 1 = −3; you subtracted the 1 instead of adding it."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Write x² − 10x + 18 in the form (x − h)² + k.",
-      "options": {
-        "A": "(x + 5)² − 7",
-        "B": "(x − 5)² + 43",
-        "C": "(x − 10)² − 82",
-        "D": "(x − 5)² − 7"
-      },
-      "answer": "D",
-      "explanation": "Half of −10 is −5 and (−5)² = 25: x² − 10x + 25 − 25 + 18 = (x − 5)² − 7. (x − 5)² + 43 adds the 25 instead of subtracting it.",
-      "steps": [
-        "Halve −10 to get −5, and square it: 25.",
-        "Add and subtract 25: x² − 10x + 25 − 25 + 18.",
-        "So the answer is (x − 5)² − 7."
-      ],
-      "mistakes": {
-        "A": "Step 1: the x term is −10x, so the bracket is (x − 5).",
-        "B": "Step 2: you added 25 to complete the square, so you must take 25 away: −25 + 18.",
-        "C": "Step 1: halve −10 before squaring — (x − 10)² has a middle term of −20x."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Use completing the square to factorise x² + 6x + 4.",
-      "options": {
-        "A": "(x + 3 − √13)(x + 3 + √13)",
-        "B": "(x + 3 − √5)(x + 3 + √5)",
-        "C": "(x − 2)(x + 8)",
-        "D": "(x − 3 − √5)(x − 3 + √5)"
-      },
-      "answer": "B",
-      "explanation": "x² + 6x + 9 − 9 + 4 = (x + 3)² − 5, a difference of two squares with √5, so (x + 3 − √5)(x + 3 + √5). Using √13 comes from working out −9 − 4 instead of −9 + 4.",
-      "steps": [
-        "Halve 6 to get 3, square it to get 9: x² + 6x + 9 − 9 + 4 = (x + 3)² − 5.",
-        "Write 5 as (√5)² and use a² − b² = (a − b)(a + b): (x + 3 − √5)(x + 3 + √5)."
-      ],
-      "mistakes": {
-        "A": "Step 1: the constant is −9 + 4 = −5; you worked out −9 − 4.",
-        "C": "Step 2: 5 is (√5)², not 5², so use √5 in the brackets.",
-        "D": "Step 1: the x term is +6x, so the bracket is (x + 3)."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The diagram shows x² + 8x arranged as a square with one corner missing. What is the area of the missing corner?",
-      "diagram": "diagrams/y10/maths/completing-the-square-q6.svg",
-      "diagram_alt": "A big square labelled x² with two strips labelled 4x, one on the right and one below. The sides are labelled x and 4. The bottom-right corner is dashed and marked with a question mark.",
-      "options": {
-        "A": "4",
-        "B": "8",
-        "C": "16",
-        "D": "64"
-      },
-      "answer": "C",
-      "explanation": "The corner is 4 by 4, so its area is 16, and x² + 8x + 16 = (x + 4)². 64 squares 8 without halving it.",
-      "steps": [
-        "Each strip is half of 8x, so the corner has side 4.",
-        "Its area is 4 × 4 = 16."
-      ],
-      "mistakes": {
-        "A": "Step 2: 4 is the side length of the corner; square it to get the area.",
-        "B": "Step 2: the corner is 4 by 4, so its area is 4 × 4, not 4 + 4.",
-        "D": "Step 1: 8x was split into two strips of 4x, so the side is 4, not 8."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Write x² + 3x − 1 in completed-square form.",
-      "options": {
-        "A": "(x + 3/2)² − 13/4",
-        "B": "(x + 3/2)² − 1",
-        "C": "(x + 3)² − 10",
-        "D": "(x + 3/2)² + 5/4"
-      },
-      "answer": "A",
-      "explanation": "Half of 3 is 3/2 and (3/2)² = 9/4: x² + 3x + 9/4 − 9/4 − 1 = (x + 3/2)² − 13/4. (x + 3/2)² + 5/4 adds the 9/4 instead of subtracting it.",
-      "steps": [
-        "Halve 3 to get 3/2, and square it: 9/4.",
-        "Add and subtract 9/4: x² + 3x + 9/4 − 9/4 − 1.",
-        "−9/4 − 1 = −9/4 − 4/4 = −13/4, so the answer is (x + 3/2)² − 13/4."
-      ],
-      "mistakes": {
-        "B": "Step 2: you added 9/4 to make the square, so you must also subtract 9/4.",
-        "C": "Step 1: halve 3 first — the bracket is (x + 3/2).",
-        "D": "Step 2: the 9/4 must be subtracted: −9/4 − 1, not +9/4 − 1."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "What is the minimum value of x² − 12x + 40, and for which value of x does it happen?",
-      "options": {
-        "A": "4, when x = −6",
-        "B": "40, when x = 0",
-        "C": "76, when x = 6",
-        "D": "4, when x = 6"
-      },
-      "answer": "D",
-      "explanation": "x² − 12x + 40 = (x − 6)² − 36 + 40 = (x − 6)² + 4. The square is 0 when x = 6, so the minimum is 4. \"4, when x = −6\" gets the sign of x wrong: (−6 − 6)² = 144.",
-      "steps": [
-        "Complete the square: x² − 12x + 36 − 36 + 40 = (x − 6)² + 4.",
-        "A square is never negative, so the smallest value is when (x − 6)² = 0, that is x = 6.",
-        "The minimum value is 4, when x = 6."
-      ],
-      "mistakes": {
-        "A": "Step 2: (x − 6)² = 0 when x = +6, not −6.",
-        "B": "Step 1: 40 is just the value at x = 0; complete the square to find the smallest value.",
-        "C": "Step 1: you added 36 instead of subtracting it: −36 + 40 = 4."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Which statement about x² + 4x + 7 is true?",
-      "options": {
-        "A": "It equals (x + 2)² − 3, so it factorises as (x + 2 − √3)(x + 2 + √3).",
-        "B": "It equals (x + 2)² + 3, so it is never less than 3 and cannot be factorised.",
-        "C": "It equals (x + 2)² + 7, so it is never less than 7.",
-        "D": "It equals (x + 4)² − 9, so it factorises as (x + 1)(x + 7)."
-      },
-      "answer": "B",
-      "explanation": "x² + 4x + 4 − 4 + 7 = (x + 2)² + 3. A square is at least 0, so the expression is at least 3 and is never 0 — it cannot be factorised. (x + 2)² − 3 has the sign of 3 wrong.",
-      "steps": [
-        "Complete the square: x² + 4x + 4 − 4 + 7 = (x + 2)² + 3.",
-        "(x + 2)² is never negative, so the expression is always at least 3.",
-        "It is a sum, not a difference of two squares, so it cannot be factorised."
-      ],
-      "mistakes": {
-        "A": "Step 1: −4 + 7 = +3, not −3.",
-        "C": "Step 1: you added 4 to complete the square, so you must also subtract 4.",
-        "D": "Step 1: halve 4 first — the bracket is (x + 2), not (x + 4)."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Write 2x² − 8x + 5 in the form a(x − h)² + k.",
-      "options": {
-        "A": "2(x − 2)² + 1",
-        "B": "2(x − 4)² − 27",
-        "C": "2(x + 2)² − 3",
-        "D": "2(x − 2)² − 3"
-      },
-      "answer": "D",
-      "explanation": "2(x² − 4x) + 5 = 2[(x − 2)² − 4] + 5 = 2(x − 2)² − 8 + 5 = 2(x − 2)² − 3. 2(x − 2)² + 1 forgets to multiply the −4 by 2.",
-      "steps": [
-        "Take 2 out of the first two terms: 2(x² − 4x) + 5.",
-        "Complete the square inside: x² − 4x = (x − 2)² − 4, so 2[(x − 2)² − 4] + 5.",
-        "Multiply back: 2(x − 2)² − 8 + 5 = 2(x − 2)² − 3."
-      ],
-      "mistakes": {
-        "A": "Step 3: the −4 is inside the bracket, so it becomes 2 × (−4) = −8.",
-        "B": "Step 2: halve −4 to get −2 — the bracket is (x − 2).",
-        "C": "Step 2: the x term is negative, so the bracket is (x − 2)."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "x² + bx + 20 = (x − 3)² + k for every value of x. Find b and k.",
-      "options": {
-        "A": "b = −6, k = 11",
-        "B": "b = −3, k = 11",
-        "C": "b = −6, k = 29",
-        "D": "b = 6, k = 11"
-      },
-      "answer": "A",
-      "explanation": "(x − 3)² + k = x² − 6x + 9 + k. Matching terms: b = −6 and 9 + k = 20, so k = 11. b = −3 forgets that the middle term of (x − 3)² is 2 × (−3)x.",
-      "steps": [
-        "Expand the right side: (x − 3)² + k = x² − 6x + 9 + k.",
-        "Match the x terms: b = −6.",
-        "Match the constants: 9 + k = 20, so k = 11."
-      ],
-      "mistakes": {
-        "B": "Step 1: the middle term of (x − 3)² is 2 × (−3)x = −6x.",
-        "C": "Step 3: 9 + k = 20 means k = 20 − 9, not 20 + 9.",
-        "D": "Step 1: (x − 3)² has a negative middle term, −6x."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "A rectangle has a perimeter of 20 m and a width of x m, so its area is A = 10x − x² square metres. By completing the square, find the largest possible area.",
-      "options": {
-        "A": "100 m²",
-        "B": "5 m²",
-        "C": "25 m²",
-        "D": "50 m²"
-      },
-      "answer": "C",
-      "explanation": "A = −(x² − 10x) = −[(x − 5)² − 25] = 25 − (x − 5)². This is largest when x = 5, giving 25 m² (a 5 m by 5 m square). 50 m² is just 10 × 5 without subtracting 5².",
-      "steps": [
-        "Take out −1: A = −(x² − 10x).",
-        "Complete the square inside: x² − 10x = (x − 5)² − 25, so A = −(x − 5)² + 25.",
-        "The largest value is when (x − 5)² = 0, that is x = 5, so the largest area is 25 m²."
-      ],
-      "mistakes": {
-        "A": "Step 2: 100 is 10²; halve 10 first, so the number is 5² = 25.",
-        "B": "Step 3: 5 m is the width that gives the largest area, not the area itself.",
-        "D": "Step 3: when x = 5, A = 10 × 5 − 5² = 50 − 25; you forgot to subtract x²."
-      }
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Completing the square",
+ "summary": "Rewrite quadratics as a perfect square plus or minus a number, then use that form to find minimum values and to factorise with surds.",
+ "minutes": 35,
+ "video": "videos/y10/maths/completing-the-square.mp4",
+ "body": "**Completing the square** rewrites a quadratic like x² + 6x + 5 as (x + 3)² − 4: a perfect square plus or minus a number. This form tells you the smallest (or largest) value a quadratic can take, which is how designers find the maximum area of a paddock or the lowest point of a cable, and it lets you factorise and solve quadratics that have no whole-number factors.\n\n## Learning objective\n\nBy the end of this lesson you can complete the square on a quadratic, use it to find a minimum or maximum value, and use it to factorise quadratics with surds.\n\n## Before you start\n\nThis lesson uses:\n- **Expanding and special products (Year 10)** — especially (x + a)² = x² + 2ax + a².\n- **Factorising monic quadratics (Year 10)** — including the difference of two squares.\n- **Simplifying surds (Year 10)** — for answers like √13.\n\nWarm-up (try these, then check):\n1. Expand (x − 4)².\n2. Simplify √12.\n\nAnswers: 1. **x² − 8x + 16**. 2. **2√3** (√12 = √4 × √3).\n\n## Think of it like this\n\n### The missing floor tile\n\nYou are tiling a square floor. You have one big square tile and two long strips, but the small corner tile is missing. To finish the square you borrow a corner tile from the shed. Now the floor is a perfect square, but you owe the shed one tile, so you write \"square minus the borrowed tile\". Completing the square is exactly this: add the missing corner to make a perfect square, then subtract it again so nothing has changed.\n\n*Where the analogy breaks down:* real tiles can't have a negative size, but sometimes the number you are left with after \"paying back\" is negative or a fraction.\n\n## Key ideas\n\n### The missing corner\n\nx² + 6x can be arranged as a big square x² and two strips of 3x (half of 6x each). The corner needed to finish the square has area 3 × 3 = 9.\n\n![x² + 6x drawn as a square of side x + 3 with parts x², 3x and 3x, and a dashed 3 by 3 corner of area 9 missing](/diagrams/y10/maths/completing-the-square-model.svg)\n\nSo x² + 6x + 9 = (x + 3)². In general:\n\nx² + bx + (b/2)² = (x + b/2)²\n\n**Halve the coefficient of x, then square it** — that is the number that completes the square.\n\n### Completing the square on any monic quadratic\n\nTo complete the square on x² + bx + c:\n1. Halve b and square it: (b/2)².\n2. Add it and subtract it: x² + bx + (b/2)² − (b/2)² + c.\n3. The first three terms make (x + b/2)².\n\nResult: x² + bx + c = (x + b/2)² − (b/2)² + c. This is called **completed-square form** (or **turning point form**, which you will use for parabolas in Chapter 7).\n\n### Minimum value\n\nA square is never negative, so (x + 3)² − 4 is smallest when (x + 3)² = 0, that is when x = −3. The **minimum value** is −4. If there is a minus sign in front of the square, the expression has a **maximum value** instead.\n\n### Factorising with surds\n\nIf completed-square form is (x + h)² − k with k positive, it is a difference of two squares:\n\n(x + h)² − k = (x + h − √k)(x + h + √k)\n\nIf it is (x + h)² + k with k positive, it is always positive, so it cannot be factorised using real numbers.\n\n### When a is not 1 (10A)\n\nTake a out of the x² and x terms first: 2x² + 12x + 7 = 2(x² + 6x) + 7, complete the square inside the bracket, then multiply back out.\n\n## Worked examples\n\n### Example 1\n\nWhat number completes the square x² + 10x + ...? Write the result as a perfect square.\n\nStep 1: Halve the coefficient of x — 10 ÷ 2 = 5.\nStep 2: Square it — 5² = 25.\nAnswer: x² + 10x + **25** = **(x + 5)²**.\n\n### Example 2\n\nWrite x² + 6x + 5 in completed-square form, then factorise it.\n\nStep 1: Halve 6 to get 3, and square it to get 9.\nStep 2: Add and subtract 9 — x² + 6x + 9 − 9 + 5.\nStep 3: Make the square — **(x + 3)² − 4**.\nStep 4: Difference of two squares (4 = 2²) — (x + 3 − 2)(x + 3 + 2) = **(x + 1)(x + 5)**.\n\nCheck with x = 0: 9 − 4 = 5 and 1 × 5 = 5 ✓\n\n### Example 3\n\nFactorise x² − 8x + 3 using completing the square.\n\nStep 1: Halve −8 to get −4, and square it to get 16.\nStep 2: x² − 8x + 16 − 16 + 3 = (x − 4)² − 13.\nStep 3: 13 is not a perfect square, so use √13 — **(x − 4 − √13)(x − 4 + √13)**.\n\nCheck: the brackets have the form (A − B)(A + B) with A = x − 4 and B = √13, so they multiply to (x − 4)² − 13 ✓\n\n### Example 4\n\nWrite x² + 5x + 1 in completed-square form.\n\nStep 1: Halve 5 to get 5/2, and square it to get 25/4.\nStep 2: x² + 5x + 25/4 − 25/4 + 1.\nStep 3: −25/4 + 1 = −25/4 + 4/4 = −21/4.\nAnswer: **(x + 5/2)² − 21/4**.\n\nCheck with x = 0: 25/4 − 21/4 = 4/4 = 1 ✓\n\n### Example 5 (challenge)\n\nWrite 2x² + 12x + 7 in the form a(x + h)² + k, and state its minimum value.\n\nStep 1: Take 2 out of the first two terms — 2(x² + 6x) + 7.\nStep 2: Complete the square inside — 2[(x + 3)² − 9] + 7.\nStep 3: Multiply back — 2(x + 3)² − 18 + 7 = **2(x + 3)² − 11**.\nStep 4: The square is 0 when x = −3, so the minimum value is **−11**.\n\nCheck with x = 0: 2 × 9 − 11 = 7 ✓\n\n## Common mistakes\n\n- **Forgetting to subtract what you added.** x² + 6x + 5 is not (x + 3)² + 5. Fix: always \"add and subtract\" (b/2)².\n- **Not halving first.** For x² + 6x the corner is 3² = 9, not 6² = 36. Fix: halve, THEN square.\n- **Getting the sign inside the bracket wrong.** x² − 8x completes to (x − 4)², not (x + 4)². Fix: the sign inside the bracket matches the sign of b.\n- **With a ≠ 1, not multiplying the subtracted number by a.** 2[(x + 3)² − 9] is 2(x + 3)² − 18, not 2(x + 3)² − 9. Fix: expand the square bracket carefully.\n\n## Tips to remember\n\n- **\"Halve it, square it, add it, take it away\"** (a made-up chant) — the four moves of completing the square.\n- **Picture the missing corner tile** — the corner has side b/2, so its area is (b/2)².\n- **Sign check:** the bracket's sign copies the sign of the x term.\n- **Minimum check:** (x − h)² + k has its lowest value k when x = h.\n- **Check with x = 0:** your completed-square form must give the original constant term.\n\n## Key terms\n\n- **Completing the square** — rewriting x² + bx + c as (x + b/2)² plus or minus a number.\n- **Perfect square** — an expression that equals (something)², such as x² + 10x + 25 = (x + 5)².\n- **Completed-square form** — a quadratic written as a(x + h)² + k (also called turning point form).\n- **Minimum value** — the smallest value an expression can take.\n- **Maximum value** — the largest value an expression can take.\n- **Surd** — an irrational root such as √13.\n\n## Summary\n\n- The number that completes x² + bx is (b/2)²: halve b, then square it.\n- x² + bx + c = (x + b/2)² − (b/2)² + c.\n- (x + h)² + k has minimum value k when x = −h.\n- (x + h)² − k (k positive) factorises as (x + h − √k)(x + h + √k); (x + h)² + k (k positive) does not factorise.\n- For ax² + bx + c, take a out of the first two terms before completing the square.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "What number must be added to x² + 14x to make a perfect square?",
+   "options": {
+    "A": "7",
+    "B": "14",
+    "C": "49",
+    "D": "196"
+   },
+   "answer": "C",
+   "explanation": "Halve 14 to get 7, then square it: 7² = 49, and x² + 14x + 49 = (x + 7)². 196 is 14² — you must halve before squaring.",
+   "steps": [
+    "Halve the coefficient of x: 14 ÷ 2 = 7.",
+    "Square it: 7² = 49, so add 49."
+   ],
+   "mistakes": {
+    "A": "Step 2: 7 is half of 14, but you also need to square it.",
+    "B": "Step 1: halve 14 and then square the result.",
+    "D": "Step 1: you squared 14 without halving it first."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Write x² − 6x + 9 as a perfect square.",
+   "options": {
+    "A": "(x − 3)²",
+    "B": "(x + 3)²",
+    "C": "(x − 9)²",
+    "D": "(x − 3)(x + 3)"
+   },
+   "answer": "A",
+   "explanation": "Half of −6 is −3 and (−3)² = 9, so x² − 6x + 9 = (x − 3)². (x + 3)² would give +6x.",
+   "steps": [
+    "Halve the x coefficient: −6 ÷ 2 = −3, and check (−3)² = 9.",
+    "So x² − 6x + 9 = (x − 3)²."
+   ],
+   "mistakes": {
+    "B": "Step 1: the sign inside the bracket copies the sign of the x term, which is negative.",
+    "C": "Step 1: the number in the bracket is half of the x coefficient, not the constant 9.",
+    "D": "Step 2: (x − 3)(x + 3) = x² − 9, which has no middle term."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Write x² + 4x + 1 in completed-square form.",
+   "options": {
+    "A": "(x + 2)² + 1",
+    "B": "(x + 2)² − 3",
+    "C": "(x + 4)² − 15",
+    "D": "(x + 2)² − 5"
+   },
+   "answer": "B",
+   "explanation": "Halve 4 to get 2 and square it to get 4: x² + 4x + 4 − 4 + 1 = (x + 2)² − 3. (x + 2)² + 1 forgets to subtract the 4 that was added.",
+   "steps": [
+    "Halve 4 to get 2, and square it: 4.",
+    "Add and subtract 4: x² + 4x + 4 − 4 + 1.",
+    "So x² + 4x + 1 = (x + 2)² − 3."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 4 to make the square, so you must also subtract 4.",
+    "C": "Step 1: halve 4 first — the bracket is (x + 2), not (x + 4).",
+    "D": "Step 3: −4 + 1 = −3; you subtracted the 1 instead of adding it."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Write x² − 10x + 18 in the form (x − h)² + k.",
+   "options": {
+    "A": "(x + 5)² − 7",
+    "B": "(x − 5)² + 43",
+    "C": "(x − 10)² − 82",
+    "D": "(x − 5)² − 7"
+   },
+   "answer": "D",
+   "explanation": "Half of −10 is −5 and (−5)² = 25: x² − 10x + 25 − 25 + 18 = (x − 5)² − 7. (x − 5)² + 43 adds the 25 instead of subtracting it.",
+   "steps": [
+    "Halve −10 to get −5, and square it: 25.",
+    "Add and subtract 25: x² − 10x + 25 − 25 + 18.",
+    "So the answer is (x − 5)² − 7."
+   ],
+   "mistakes": {
+    "A": "Step 1: the x term is −10x, so the bracket is (x − 5).",
+    "B": "Step 2: you added 25 to complete the square, so you must take 25 away: −25 + 18.",
+    "C": "Step 1: halve −10 before squaring — (x − 10)² has a middle term of −20x."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Use completing the square to factorise x² + 6x + 4.",
+   "options": {
+    "A": "(x + 3 − √13)(x + 3 + √13)",
+    "B": "(x + 3 − √5)(x + 3 + √5)",
+    "C": "(x − 2)(x + 8)",
+    "D": "(x − 3 − √5)(x − 3 + √5)"
+   },
+   "answer": "B",
+   "explanation": "x² + 6x + 9 − 9 + 4 = (x + 3)² − 5, a difference of two squares with √5, so (x + 3 − √5)(x + 3 + √5). Using √13 comes from working out −9 − 4 instead of −9 + 4.",
+   "steps": [
+    "Halve 6 to get 3, square it to get 9: x² + 6x + 9 − 9 + 4 = (x + 3)² − 5.",
+    "Write 5 as (√5)² and use a² − b² = (a − b)(a + b): (x + 3 − √5)(x + 3 + √5)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the constant is −9 + 4 = −5; you worked out −9 − 4.",
+    "C": "Step 2: 5 is (√5)², not 5², so use √5 in the brackets.",
+    "D": "Step 1: the x term is +6x, so the bracket is (x + 3)."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The diagram shows x² + 8x arranged as a square with one corner missing. What is the area of the missing corner?",
+   "diagram": "diagrams/y10/maths/completing-the-square-q6.svg",
+   "diagram_alt": "A big square labelled x² with two strips labelled 4x, one on the right and one below. The sides are labelled x and 4. The bottom-right corner is dashed and marked with a question mark.",
+   "options": {
+    "A": "4",
+    "B": "8",
+    "C": "16",
+    "D": "64"
+   },
+   "answer": "C",
+   "explanation": "The corner is 4 by 4, so its area is 16, and x² + 8x + 16 = (x + 4)². 64 squares 8 without halving it.",
+   "steps": [
+    "Each strip is half of 8x, so the corner has side 4.",
+    "Its area is 4 × 4 = 16."
+   ],
+   "mistakes": {
+    "A": "Step 2: 4 is the side length of the corner; square it to get the area.",
+    "B": "Step 2: the corner is 4 by 4, so its area is 4 × 4, not 4 + 4.",
+    "D": "Step 1: 8x was split into two strips of 4x, so the side is 4, not 8."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Write x² + 3x − 1 in completed-square form.",
+   "options": {
+    "A": "(x + 3/2)² − 13/4",
+    "B": "(x + 3/2)² − 1",
+    "C": "(x + 3)² − 10",
+    "D": "(x + 3/2)² + 5/4"
+   },
+   "answer": "A",
+   "explanation": "Half of 3 is 3/2 and (3/2)² = 9/4: x² + 3x + 9/4 − 9/4 − 1 = (x + 3/2)² − 13/4. (x + 3/2)² + 5/4 adds the 9/4 instead of subtracting it.",
+   "steps": [
+    "Halve 3 to get 3/2, and square it: 9/4.",
+    "Add and subtract 9/4: x² + 3x + 9/4 − 9/4 − 1.",
+    "−9/4 − 1 = −9/4 − 4/4 = −13/4, so the answer is (x + 3/2)² − 13/4."
+   ],
+   "mistakes": {
+    "B": "Step 2: you added 9/4 to make the square, so you must also subtract 9/4.",
+    "C": "Step 1: halve 3 first — the bracket is (x + 3/2).",
+    "D": "Step 2: the 9/4 must be subtracted: −9/4 − 1, not +9/4 − 1."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "What is the minimum value of x² − 12x + 40, and for which value of x does it happen?",
+   "options": {
+    "A": "4, when x = −6",
+    "B": "40, when x = 0",
+    "C": "76, when x = 6",
+    "D": "4, when x = 6"
+   },
+   "answer": "D",
+   "explanation": "x² − 12x + 40 = (x − 6)² − 36 + 40 = (x − 6)² + 4. The square is 0 when x = 6, so the minimum is 4. \"4, when x = −6\" gets the sign of x wrong: (−6 − 6)² = 144.",
+   "steps": [
+    "Complete the square: x² − 12x + 36 − 36 + 40 = (x − 6)² + 4.",
+    "A square is never negative, so the smallest value is when (x − 6)² = 0, that is x = 6.",
+    "The minimum value is 4, when x = 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: (x − 6)² = 0 when x = +6, not −6.",
+    "B": "Step 1: 40 is just the value at x = 0; complete the square to find the smallest value.",
+    "C": "Step 1: you added 36 instead of subtracting it: −36 + 40 = 4."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Which statement about x² + 4x + 7 is true?",
+   "options": {
+    "A": "It equals (x + 2)² − 3, so it factorises as (x + 2 − √3)(x + 2 + √3).",
+    "B": "It equals (x + 2)² + 3, so it is never less than 3 and cannot be factorised.",
+    "C": "It equals (x + 2)² + 7, so it is never less than 7.",
+    "D": "It equals (x + 4)² − 9, so it factorises as (x + 1)(x + 7)."
+   },
+   "answer": "B",
+   "explanation": "x² + 4x + 4 − 4 + 7 = (x + 2)² + 3. A square is at least 0, so the expression is at least 3 and is never 0 — it cannot be factorised. (x + 2)² − 3 has the sign of 3 wrong.",
+   "steps": [
+    "Complete the square: x² + 4x + 4 − 4 + 7 = (x + 2)² + 3.",
+    "(x + 2)² is never negative, so the expression is always at least 3.",
+    "It is a sum, not a difference of two squares, so it cannot be factorised."
+   ],
+   "mistakes": {
+    "A": "Step 1: −4 + 7 = +3, not −3.",
+    "C": "Step 1: you added 4 to complete the square, so you must also subtract 4.",
+    "D": "Step 1: halve 4 first — the bracket is (x + 2), not (x + 4)."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Write 2x² − 8x + 5 in the form a(x − h)² + k.",
+   "options": {
+    "A": "2(x − 2)² + 1",
+    "B": "2(x − 4)² − 27",
+    "C": "2(x + 2)² − 3",
+    "D": "2(x − 2)² − 3"
+   },
+   "answer": "D",
+   "explanation": "2(x² − 4x) + 5 = 2[(x − 2)² − 4] + 5 = 2(x − 2)² − 8 + 5 = 2(x − 2)² − 3. 2(x − 2)² + 1 forgets to multiply the −4 by 2.",
+   "steps": [
+    "Take 2 out of the first two terms: 2(x² − 4x) + 5.",
+    "Complete the square inside: x² − 4x = (x − 2)² − 4, so 2[(x − 2)² − 4] + 5.",
+    "Multiply back: 2(x − 2)² − 8 + 5 = 2(x − 2)² − 3."
+   ],
+   "mistakes": {
+    "A": "Step 3: the −4 is inside the bracket, so it becomes 2 × (−4) = −8.",
+    "B": "Step 2: halve −4 to get −2 — the bracket is (x − 2).",
+    "C": "Step 2: the x term is negative, so the bracket is (x − 2)."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "x² + bx + 20 = (x − 3)² + k for every value of x. Find b and k.",
+   "options": {
+    "A": "b = −6, k = 11",
+    "B": "b = −3, k = 11",
+    "C": "b = −6, k = 29",
+    "D": "b = 6, k = 11"
+   },
+   "answer": "A",
+   "explanation": "(x − 3)² + k = x² − 6x + 9 + k. Matching terms: b = −6 and 9 + k = 20, so k = 11. b = −3 forgets that the middle term of (x − 3)² is 2 × (−3)x.",
+   "steps": [
+    "Expand the right side: (x − 3)² + k = x² − 6x + 9 + k.",
+    "Match the x terms: b = −6.",
+    "Match the constants: 9 + k = 20, so k = 11."
+   ],
+   "mistakes": {
+    "B": "Step 1: the middle term of (x − 3)² is 2 × (−3)x = −6x.",
+    "C": "Step 3: 9 + k = 20 means k = 20 − 9, not 20 + 9.",
+    "D": "Step 1: (x − 3)² has a negative middle term, −6x."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A rectangle has a perimeter of 20 m and a width of x m, so its area is A = 10x − x² square metres. By completing the square, find the largest possible area.",
+   "options": {
+    "A": "100 m²",
+    "B": "5 m²",
+    "C": "25 m²",
+    "D": "50 m²"
+   },
+   "answer": "C",
+   "explanation": "A = −(x² − 10x) = −[(x − 5)² − 25] = 25 − (x − 5)². This is largest when x = 5, giving 25 m² (a 5 m by 5 m square). 50 m² is just 10 × 5 without subtracting 5².",
+   "steps": [
+    "Take out −1: A = −(x² − 10x).",
+    "Complete the square inside: x² − 10x = (x − 5)² − 25, so A = −(x − 5)² + 25.",
+    "The largest value is when (x − 5)² = 0, that is x = 5, so the largest area is 25 m²."
+   ],
+   "mistakes": {
+    "A": "Step 2: 100 is 10²; halve 10 first, so the number is 5² = 25.",
+    "B": "Step 3: 5 m is the width that gives the largest area, not the area itself.",
+    "D": "Step 3: when x = 5, A = 10 × 5 − 5² = 50 − 25; you forgot to subtract x²."
+   }
+  }
+ ]
 }

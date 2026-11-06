@@ -1,278 +1,279 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Compound interest",
-  "summary": "Use A = P(1 + r)ⁿ with yearly, quarterly, monthly or other compounding periods, find interest and reducing-balance depreciation, and compare investments.",
-  "minutes": 30,
-  "body": "Banks pay **compound interest** on savings and charge it on loans and credit cards, and the same maths describes how cars and computers lose value. In Year 9 you met the formula A = P(1 + r)ⁿ for yearly interest. This lesson goes further: interest added monthly, quarterly or daily, things that lose value, and working out how long money takes to grow.\n\n## Learning objective\n\nBy the end of this lesson you can use A = P(1 + r)ⁿ for any compounding period, calculate interest and depreciation, and compare investments and loans.\n\n## Before you start\n\nYou need **Introduction to compound interest** (Year 9) and **Exponential growth and decay** (this chapter). You may use a calculator in this lesson.\n\nWarm-up (answers below):\n1. What is 4.5% as a decimal?\n2. Work out 1.1³.\n\nAnswers: 1. 4.5 ÷ 100 = **0.045**. 2. 1.1 × 1.1 × 1.1 = **1.331**.\n\n## Think of it like this\n\n### Planting seeds from your own harvest\n\nA farmer plants seeds, harvests the crop, and plants **all** the new seeds the next season, so every season's harvest is bigger than the last. Compound interest does the same with money: each period, the interest is \"replanted\" into the balance, so the next period's interest is worked out on a bigger amount. Compounding more often is like having more harvests in a year — each one a bit smaller, but replanted sooner.\n\n*Where the analogy breaks down:* real harvests vary with the weather, but compound interest is exact — the balance is multiplied by the same number, 1 + r, every single period.\n\n## Key ideas\n\n### The compound interest formula\n\n**A = P(1 + r)ⁿ**\n\n- **P** = the **principal** (the starting amount)\n- **r** = the interest rate **per compounding period**, as a decimal\n- **n** = the **number of compounding periods**\n- **A** = the final amount; the **interest** is **I = A − P**\n\n### Compounding periods\n\nInterest rates are quoted **per annum** (p.a., per year). If interest is added more than once a year, divide the yearly rate and multiply the number of years by the number of periods per year:\n\n| Compounded | Periods per year | r = yearly rate ÷ | n = years × |\n|---|---|---|---|\n| annually | 1 | 1 | 1 |\n| half-yearly | 2 | 2 | 2 |\n| quarterly | 4 | 4 | 4 |\n| monthly | 12 | 12 | 12 |\n| fortnightly | 26 | 26 | 26 |\n| weekly | 52 | 52 | 52 |\n\nFor the same yearly rate, compounding **more often** gives a little more, because interest starts earning interest sooner.\n\n### How long to grow?\n\nTo find how long an investment takes to reach a target, try whole numbers of periods (or read a graph) until A first passes the target. Later in this chapter, logarithms give a faster way.\n\n![Graph of A = 10 000 × 1.07ⁿ from 0 to 15 years, with a dot for each year. A dashed line marks $20 000; the balance is $19 671.51 after 10 years and $21 048.52 after 11 years.](/diagrams/y10/maths/compound-interest-doubling.svg)\n\n### Depreciation\n\n**Depreciation** is the loss in value of an item over time. With **reducing-balance depreciation**, the item loses the same percentage of its **current** value each year:\n\n**V = V₀(1 − r)ⁿ**\n\nThis is compound interest in reverse — the multiplier is less than 1.\n\n## Worked examples\n\n### Example 1\n\n$8000 is invested at 4.5% p.a. compounded annually for 5 years. Find the final amount.\n\nStep 1: P = 8000, r = 0.045 (4.5 ÷ 100), n = 5 — once a year for 5 years.\nStep 2: A = 8000 × 1.045⁵ = 9969.455… ≈ **$9969.46** — round money to the cent at the end.\n\n### Example 2\n\nThe same $8000 at 4.5% p.a. is compounded **monthly** for 5 years. Find the final amount and compare.\n\nStep 1: r = 0.045 ÷ 12 = 0.00375 — the rate per month.\nStep 2: n = 5 × 12 = 60 — the number of months.\nStep 3: A = 8000 × 1.00375⁶⁰ = 10 014.366… ≈ **$10 014.37**.\nStep 4: that is 10 014.37 − 9969.46 = **$44.91 more** than compounding annually — interest is added sooner.\n\n### Example 3\n\n$12 000 is invested at 6% p.a. compounded quarterly for 3 years. How much interest is earned?\n\nStep 1: r = 0.06 ÷ 4 = 0.015 and n = 3 × 4 = 12 — four quarters a year.\nStep 2: A = 12 000 × 1.015¹² = 14 347.418… ≈ $14 347.42.\nStep 3: I = A − P = 14 347.42 − 12 000 = **$2347.42** — the question asks for interest, not the final amount.\n\n### Example 4\n\nA laptop bought for $2400 depreciates by 25% p.a. (reducing balance). Find its value after 3 years.\n\n![Graph of V = 2400 × 0.75ⁿ from 0 to 6 years, with a dot for each year; the value after 3 years is marked as $1012.50.](/diagrams/y10/maths/compound-interest-depreciation.svg)\n\nStep 1: losing 25% leaves 75%, so the multiplier is 0.75 — 1 − 0.25.\nStep 2: V = 2400 × 0.75³ = 2400 × 0.421875 = **$1012.50**.\n\n### Example 5\n\n$10 000 is invested at 7% p.a. compounded annually. After how many whole years does it first double?\n\nStep 1: doubling means A ≥ 20 000, so we need 1.07ⁿ ≥ 2.\nStep 2: n = 10: 10 000 × 1.07¹⁰ = $19 671.51 — not quite double (see the graph).\nStep 3: n = 11: 10 000 × 1.07¹¹ = $21 048.52 — more than $20 000, so **11 years**.\n\n## Common mistakes\n\n- **Using the yearly rate with monthly periods.** For monthly compounding, r must be the monthly rate (yearly rate ÷ 12).\n- **Using years instead of periods.** Quarterly for 3 years is n = 12, not n = 3.\n- **Forgetting the \"1 +\".** 1000 × 0.05³ is not compound interest. The growth multiplier for 5% is 1.05.\n- **Giving A when the question asks for I.** Interest = A − P.\n- **Depreciating by a fixed amount.** Reducing-balance depreciation multiplies by (1 − r) each year; it does not subtract the same dollars every year.\n\n## Tips to remember\n\n- **\"Divide the rate, multiply the time\"** — by the number of periods in a year.\n- **Rate and periods must match:** monthly rate with months, quarterly rate with quarters.\n- **Growth: 1 + r. Depreciation: 1 − r.**\n- **Round only at the end,** to the nearest cent.\n- **Sense check:** compound interest should be a little more than simple interest at the same rate and time.\n\n## Key terms\n\n- **Principal** — the amount first invested or borrowed.\n- **Per annum (p.a.)** — per year.\n- **Compounding period** — how often interest is added to the balance.\n- **Compound interest** — interest calculated on the principal plus all interest already added.\n- **Depreciation** — a decrease in value over time.\n- **Reducing balance** — depreciation by a fixed percentage of the current value each period.\n\n## Summary\n\n- A = P(1 + r)ⁿ, where r is the rate per period (decimal) and n is the number of periods.\n- Divide the yearly rate and multiply the years by the number of periods per year.\n- More frequent compounding gives slightly more interest.\n- Interest earned: I = A − P.\n- Reducing-balance depreciation: V = V₀(1 − r)ⁿ.\n- To find a time, test whole numbers of periods until the target is first passed.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "$2000 is invested at 5% p.a. compounded annually for 3 years. Find the final amount.",
-      "options": {
-        "A": "$2300.00",
-        "B": "$2315.25",
-        "C": "$0.25",
-        "D": "$2205.00"
-      },
-      "answer": "B",
-      "explanation": "A = 2000 × 1.05³ = 2000 × 1.157625 = $2315.25. $2300 is the simple interest answer, which ignores interest on interest.",
-      "steps": [
-        "P = 2000, r = 0.05, n = 3.",
-        "A = 2000 × 1.05³.",
-        "1.05³ = 1.157625, so A = $2315.25."
-      ],
-      "mistakes": {
-        "A": "Step 2: that adds $100 each year (simple interest). Compound interest multiplies by 1.05 each year.",
-        "C": "Step 2: the multiplier is 1 + r = 1.05, not 0.05.",
-        "D": "Step 1: 3 years means n = 3, so use 1.05³, not 1.05²."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Money is invested at 6% p.a. compounded monthly for 4 years. Which values of r and n go in A = P(1 + r)ⁿ?",
-      "options": {
-        "A": "r = 0.06, n = 48",
-        "B": "r = 0.005, n = 4",
-        "C": "r = 0.5, n = 48",
-        "D": "r = 0.005, n = 48"
-      },
-      "answer": "D",
-      "explanation": "The monthly rate is 0.06 ÷ 12 = 0.005, and there are 4 × 12 = 48 months. Using r = 0.06 with 48 periods would charge a full year's rate every month.",
-      "steps": [
-        "Rate per month: 6% ÷ 12 = 0.5% = 0.005.",
-        "Number of months: 4 × 12 = 48.",
-        "So r = 0.005 and n = 48."
-      ],
-      "mistakes": {
-        "A": "Step 1: 0.06 is the yearly rate. Divide it by 12 for monthly compounding.",
-        "B": "Step 2: n counts compounding periods (months), not years.",
-        "C": "Step 1: 6 ÷ 12 = 0.5 is a percentage. As a decimal, 0.5% is 0.005."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "$5000 is invested at 10% p.a. compounded annually for 4 years. How much interest is earned?",
-      "options": {
-        "A": "$2320.50",
-        "B": "$7320.50",
-        "C": "$2000.00",
-        "D": "$1655.00"
-      },
-      "answer": "A",
-      "explanation": "A = 5000 × 1.1⁴ = $7320.50, so the interest is 7320.50 − 5000 = $2320.50. $7320.50 is the final amount, not the interest.",
-      "steps": [
-        "A = 5000 × 1.1⁴.",
-        "1.1⁴ = 1.4641, so A = $7320.50.",
-        "Interest I = A − P = 7320.50 − 5000 = $2320.50."
-      ],
-      "mistakes": {
-        "B": "Step 3: that is the final amount. Subtract the principal to find the interest.",
-        "C": "Step 1: that is simple interest ($500 a year). Compound interest earns interest on interest.",
-        "D": "Step 1: that uses 3 years. The money is invested for 4 years."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "$8000 is invested at 4.8% p.a. compounded quarterly for 2 years. Find the final amount, to the nearest cent.",
-      "options": {
-        "A": "$8786.43",
-        "B": "$8193.15",
-        "C": "$8801.04",
-        "D": "$11 640.73"
-      },
-      "answer": "C",
-      "explanation": "Quarterly: r = 0.048 ÷ 4 = 0.012 and n = 2 × 4 = 8. A = 8000 × 1.012⁸ = $8801.04.",
-      "steps": [
-        "Rate per quarter: 0.048 ÷ 4 = 0.012.",
-        "Number of quarters: 2 × 4 = 8.",
-        "A = 8000 × 1.012⁸ = 8801.041… ≈ $8801.04."
-      ],
-      "mistakes": {
-        "A": "Step 1: that compounds annually (1.048²). The question says quarterly.",
-        "B": "Step 2: you used the quarterly rate but only 2 periods. 2 years has 8 quarters.",
-        "D": "Step 1: you used 8 quarters but the yearly rate. Divide 4.8% by 4."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A machine bought for $15 000 depreciates by 20% p.a. (reducing balance). What is it worth after 4 years?",
-      "options": {
-        "A": "$3000",
-        "B": "$24",
-        "C": "$31 104",
-        "D": "$6144"
-      },
-      "answer": "D",
-      "explanation": "Losing 20% leaves 80%: V = 15 000 × 0.8⁴ = 15 000 × 0.4096 = $6144. $3000 subtracts $3000 each year, which is not reducing balance.",
-      "steps": [
-        "Losing 20% leaves 80%, so multiply by 0.8 each year.",
-        "V = 15 000 × 0.8⁴.",
-        "0.8⁴ = 0.4096, so V = $6144."
-      ],
-      "mistakes": {
-        "A": "Step 1: reducing balance takes 20% of the current value each year, not $3000 every year.",
-        "B": "Step 1: 0.2 is the part lost. Multiply by the part kept, 0.8.",
-        "C": "Step 1: 1.2 increases the value. Depreciation makes it smaller, so use 1 − 0.2."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A credit card balance of $3000 is charged 19.8% p.a. interest, compounded monthly. If nothing is paid for 1 year, what is owed, to the nearest cent?",
-      "options": {
-        "A": "$3650.98",
-        "B": "$3594.00",
-        "C": "$3049.50",
-        "D": "$26 218.21"
-      },
-      "answer": "A",
-      "explanation": "Monthly rate: 0.198 ÷ 12 = 0.0165, and n = 12. A = 3000 × 1.0165¹² = $3650.98. Compounding once a year would give $3594.00.",
-      "steps": [
-        "Rate per month: 0.198 ÷ 12 = 0.0165.",
-        "One year has 12 months, so n = 12.",
-        "A = 3000 × 1.0165¹² = 3650.983… ≈ $3650.98."
-      ],
-      "mistakes": {
-        "B": "Step 2: that adds interest only once in the year. The card compounds monthly, so n = 12.",
-        "C": "Step 2: that is only one month of interest. Use n = 12.",
-        "D": "Step 1: you used the yearly rate 0.198 for each of 12 months. Divide the rate by 12."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Which option earns the most interest on $10 000 over 3 years?",
-      "options": {
-        "A": "6.0% p.a. compounded annually",
-        "B": "6.1% p.a. simple interest",
-        "C": "5.9% p.a. compounded monthly",
-        "D": "5.8% p.a. compounded daily (365 days a year)"
-      },
-      "answer": "C",
-      "explanation": "Over 3 years the interest is $1910.16 (A), $1830.00 (B), $1931.14 (C) and $1900.39 (D). Monthly compounding at 5.9% beats 6% compounded only once a year.",
-      "steps": [
-        "A: 10 000 × 1.06³ − 10 000 = $1910.16.",
-        "B: 10 000 × 0.061 × 3 = $1830.00.",
-        "C: 10 000 × (1 + 0.059/12)³⁶ − 10 000 = $1931.14.",
-        "D: 10 000 × (1 + 0.058/365)¹⁰⁹⁵ − 10 000 = $1900.39, so C earns the most."
-      ],
-      "mistakes": {
-        "A": "Step 3: the highest compound rate is not always best — 5.9% added monthly earns $1931.14, more than $1910.16.",
-        "B": "Step 2: simple interest never earns interest on interest, so over 3 years it falls behind ($1830.00).",
-        "D": "Step 4: daily compounding helps, but the 5.8% rate is too low: it earns only $1900.39."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "An investment of $4000 grows to $4840 after 2 years, with interest compounded annually. What is the interest rate?",
-      "options": {
-        "A": "10.5% p.a.",
-        "B": "21% p.a.",
-        "C": "1.1% p.a.",
-        "D": "10% p.a."
-      },
-      "answer": "D",
-      "explanation": "4000(1 + r)² = 4840 gives (1 + r)² = 1.21, so 1 + r = 1.1 and r = 10%. 10.5% is the simple-interest rate (840 ÷ 4000 ÷ 2).",
-      "steps": [
-        "Divide both sides by 4000: (1 + r)² = 4840 ÷ 4000 = 1.21.",
-        "Square root both sides: 1 + r = 1.1.",
-        "r = 0.1, which is 10% p.a."
-      ],
-      "mistakes": {
-        "A": "Step 1: that shares $840 equally over 2 years (simple interest). With compounding, solve (1 + r)² = 1.21.",
-        "B": "Step 2: 1.21 is the growth over 2 years. Take the square root to get one year's multiplier.",
-        "C": "Step 3: 1.1 is the multiplier 1 + r. Subtract 1 to get r = 0.1, then write it as a percentage."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The graph shows $6000 invested at 8% p.a. compounded annually. Use the formula to find after how many whole years it is first worth MORE than $12 000.",
-      "diagram": "diagrams/y10/maths/compound-interest-q-double.svg",
-      "diagram_alt": "Graph of A = 6000 × 1.08ⁿ from 0 to 12 years with a dot for each year, starting at $6000, and a dashed line at $12 000.",
-      "options": {
-        "A": "9 years",
-        "B": "10 years",
-        "C": "13 years",
-        "D": "8 years"
-      },
-      "answer": "B",
-      "explanation": "After 9 years A = 6000 × 1.08⁹ = $11 994.03, which is just under $12 000 even though it looks equal on the graph. After 10 years A = $12 953.55, so 10 years.",
-      "steps": [
-        "A = 6000 × 1.08ⁿ; we need A > 12 000.",
-        "n = 9: 6000 × 1.08⁹ = $11 994.03 — just under $12 000.",
-        "n = 10: 6000 × 1.08¹⁰ = $12 953.55 — more than $12 000, so 10 years."
-      ],
-      "mistakes": {
-        "A": "Step 2: on the graph the 9-year dot looks level with $12 000, but the formula gives $11 994.03, which is not more.",
-        "C": "Step 1: that adds $480 a year (simple interest: 6000 ÷ 480 = 12.5). Compound interest grows faster.",
-        "D": "Step 2: after 8 years the investment is worth only $11 105.58."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Option P: $20 000 at 6% p.a. compounded annually. Option Q: $20 000 at 5.85% p.a. compounded monthly. After 3 years, which is worth more, and by how much (to the nearest cent)?",
-      "options": {
-        "A": "P, by $6.36",
-        "B": "P, by $90.00",
-        "C": "They are equal",
-        "D": "Q, by $6.36"
-      },
-      "answer": "D",
-      "explanation": "P: 20 000 × 1.06³ = $23 820.32. Q: 20 000 × (1 + 0.0585/12)³⁶ = $23 826.68. Q is worth $6.36 more because its interest is added monthly.",
-      "steps": [
-        "P: A = 20 000 × 1.06³ = $23 820.32.",
-        "Q: r = 0.0585 ÷ 12 = 0.004875 and n = 36, so A = 20 000 × 1.004875³⁶ = $23 826.68.",
-        "Difference: 23 826.68 − 23 820.32 = $6.36, in favour of Q."
-      ],
-      "mistakes": {
-        "A": "Step 3: subtract carefully — Q's final amount ($23 826.68) is the bigger one.",
-        "B": "Step 2: comparing only the rates (0.15% × 3 years × $20 000) ignores the extra compounding in Q.",
-        "C": "Step 2: work out both amounts fully; monthly compounding makes them different."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "What yearly rate, compounded annually, gives the same growth as 12% p.a. compounded monthly? (Answer to 2 decimal places.)",
-      "options": {
-        "A": "12.00%",
-        "B": "12.68%",
-        "C": "112.68%",
-        "D": "1.00%"
-      },
-      "answer": "B",
-      "explanation": "One year of monthly compounding multiplies by 1.01¹² = 1.1268…, which is a 12.68% increase. It is more than 12% because the interest compounds 12 times.",
-      "steps": [
-        "Monthly rate: 12% ÷ 12 = 1% = 0.01.",
-        "Growth in one year: 1.01¹² = 1.126825…",
-        "Subtract 1 and write as a percentage: 12.68%."
-      ],
-      "mistakes": {
-        "A": "Step 2: compounding monthly gives more than the quoted 12%, because interest earns interest during the year.",
-        "C": "Step 3: 1.1268 is the multiplier. Subtract 1 before writing it as a percentage.",
-        "D": "Step 2: 1% is the monthly rate. Compound it over 12 months."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "How much must be invested now at 5% p.a. compounded annually to have $10 000 in 4 years? (Nearest cent.)",
-      "options": {
-        "A": "$8000.00",
-        "B": "$8333.33",
-        "C": "$8227.02",
-        "D": "$8145.06"
-      },
-      "answer": "C",
-      "explanation": "Solve P × 1.05⁴ = 10 000: P = 10 000 ÷ 1.05⁴ = $8227.02. $8145.06 takes 5% off $10 000 each year, which is not the same as undoing 5% growth.",
-      "steps": [
-        "Write the formula: P × 1.05⁴ = 10 000.",
-        "Divide both sides by 1.05⁴: P = 10 000 ÷ 1.05⁴.",
-        "1.05⁴ = 1.21550625, so P = 8227.024… ≈ $8227.02."
-      ],
-      "mistakes": {
-        "A": "Step 1: that takes 20% off $10 000. Undo the growth by dividing by 1.05⁴.",
-        "B": "Step 1: dividing by 1.2 undoes simple interest (4 × 5%). This is compound interest.",
-        "D": "Step 2: multiplying by 0.95⁴ is not the reverse of multiplying by 1.05⁴. Divide by 1.05⁴ instead."
-      }
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Compound interest",
+ "summary": "Use A = P(1 + r)ⁿ with yearly, quarterly, monthly or other compounding periods, find interest and reducing-balance depreciation, and compare investments.",
+ "minutes": 30,
+ "video": "videos/y10/maths/compound-interest.mp4",
+ "body": "Banks pay **compound interest** on savings and charge it on loans and credit cards, and the same maths describes how cars and computers lose value. In Year 9 you met the formula A = P(1 + r)ⁿ for yearly interest. This lesson goes further: interest added monthly, quarterly or daily, things that lose value, and working out how long money takes to grow.\n\n## Learning objective\n\nBy the end of this lesson you can use A = P(1 + r)ⁿ for any compounding period, calculate interest and depreciation, and compare investments and loans.\n\n## Before you start\n\nYou need **Introduction to compound interest** (Year 9) and **Exponential growth and decay** (this chapter). You may use a calculator in this lesson.\n\nWarm-up (answers below):\n1. What is 4.5% as a decimal?\n2. Work out 1.1³.\n\nAnswers: 1. 4.5 ÷ 100 = **0.045**. 2. 1.1 × 1.1 × 1.1 = **1.331**.\n\n## Think of it like this\n\n### Planting seeds from your own harvest\n\nA farmer plants seeds, harvests the crop, and plants **all** the new seeds the next season, so every season's harvest is bigger than the last. Compound interest does the same with money: each period, the interest is \"replanted\" into the balance, so the next period's interest is worked out on a bigger amount. Compounding more often is like having more harvests in a year — each one a bit smaller, but replanted sooner.\n\n*Where the analogy breaks down:* real harvests vary with the weather, but compound interest is exact — the balance is multiplied by the same number, 1 + r, every single period.\n\n## Key ideas\n\n### The compound interest formula\n\n**A = P(1 + r)ⁿ**\n\n- **P** = the **principal** (the starting amount)\n- **r** = the interest rate **per compounding period**, as a decimal\n- **n** = the **number of compounding periods**\n- **A** = the final amount; the **interest** is **I = A − P**\n\n### Compounding periods\n\nInterest rates are quoted **per annum** (p.a., per year). If interest is added more than once a year, divide the yearly rate and multiply the number of years by the number of periods per year:\n\n| Compounded | Periods per year | r = yearly rate ÷ | n = years × |\n|---|---|---|---|\n| annually | 1 | 1 | 1 |\n| half-yearly | 2 | 2 | 2 |\n| quarterly | 4 | 4 | 4 |\n| monthly | 12 | 12 | 12 |\n| fortnightly | 26 | 26 | 26 |\n| weekly | 52 | 52 | 52 |\n\nFor the same yearly rate, compounding **more often** gives a little more, because interest starts earning interest sooner.\n\n### How long to grow?\n\nTo find how long an investment takes to reach a target, try whole numbers of periods (or read a graph) until A first passes the target. Later in this chapter, logarithms give a faster way.\n\n![Graph of A = 10 000 × 1.07ⁿ from 0 to 15 years, with a dot for each year. A dashed line marks $20 000; the balance is $19 671.51 after 10 years and $21 048.52 after 11 years.](/diagrams/y10/maths/compound-interest-doubling.svg)\n\n### Depreciation\n\n**Depreciation** is the loss in value of an item over time. With **reducing-balance depreciation**, the item loses the same percentage of its **current** value each year:\n\n**V = V₀(1 − r)ⁿ**\n\nThis is compound interest in reverse — the multiplier is less than 1.\n\n## Worked examples\n\n### Example 1\n\n$8000 is invested at 4.5% p.a. compounded annually for 5 years. Find the final amount.\n\nStep 1: P = 8000, r = 0.045 (4.5 ÷ 100), n = 5 — once a year for 5 years.\nStep 2: A = 8000 × 1.045⁵ = 9969.455… ≈ **$9969.46** — round money to the cent at the end.\n\n### Example 2\n\nThe same $8000 at 4.5% p.a. is compounded **monthly** for 5 years. Find the final amount and compare.\n\nStep 1: r = 0.045 ÷ 12 = 0.00375 — the rate per month.\nStep 2: n = 5 × 12 = 60 — the number of months.\nStep 3: A = 8000 × 1.00375⁶⁰ = 10 014.366… ≈ **$10 014.37**.\nStep 4: that is 10 014.37 − 9969.46 = **$44.91 more** than compounding annually — interest is added sooner.\n\n### Example 3\n\n$12 000 is invested at 6% p.a. compounded quarterly for 3 years. How much interest is earned?\n\nStep 1: r = 0.06 ÷ 4 = 0.015 and n = 3 × 4 = 12 — four quarters a year.\nStep 2: A = 12 000 × 1.015¹² = 14 347.418… ≈ $14 347.42.\nStep 3: I = A − P = 14 347.42 − 12 000 = **$2347.42** — the question asks for interest, not the final amount.\n\n### Example 4\n\nA laptop bought for $2400 depreciates by 25% p.a. (reducing balance). Find its value after 3 years.\n\n![Graph of V = 2400 × 0.75ⁿ from 0 to 6 years, with a dot for each year; the value after 3 years is marked as $1012.50.](/diagrams/y10/maths/compound-interest-depreciation.svg)\n\nStep 1: losing 25% leaves 75%, so the multiplier is 0.75 — 1 − 0.25.\nStep 2: V = 2400 × 0.75³ = 2400 × 0.421875 = **$1012.50**.\n\n### Example 5\n\n$10 000 is invested at 7% p.a. compounded annually. After how many whole years does it first double?\n\nStep 1: doubling means A ≥ 20 000, so we need 1.07ⁿ ≥ 2.\nStep 2: n = 10: 10 000 × 1.07¹⁰ = $19 671.51 — not quite double (see the graph).\nStep 3: n = 11: 10 000 × 1.07¹¹ = $21 048.52 — more than $20 000, so **11 years**.\n\n## Common mistakes\n\n- **Using the yearly rate with monthly periods.** For monthly compounding, r must be the monthly rate (yearly rate ÷ 12).\n- **Using years instead of periods.** Quarterly for 3 years is n = 12, not n = 3.\n- **Forgetting the \"1 +\".** 1000 × 0.05³ is not compound interest. The growth multiplier for 5% is 1.05.\n- **Giving A when the question asks for I.** Interest = A − P.\n- **Depreciating by a fixed amount.** Reducing-balance depreciation multiplies by (1 − r) each year; it does not subtract the same dollars every year.\n\n## Tips to remember\n\n- **\"Divide the rate, multiply the time\"** — by the number of periods in a year.\n- **Rate and periods must match:** monthly rate with months, quarterly rate with quarters.\n- **Growth: 1 + r. Depreciation: 1 − r.**\n- **Round only at the end,** to the nearest cent.\n- **Sense check:** compound interest should be a little more than simple interest at the same rate and time.\n\n## Key terms\n\n- **Principal** — the amount first invested or borrowed.\n- **Per annum (p.a.)** — per year.\n- **Compounding period** — how often interest is added to the balance.\n- **Compound interest** — interest calculated on the principal plus all interest already added.\n- **Depreciation** — a decrease in value over time.\n- **Reducing balance** — depreciation by a fixed percentage of the current value each period.\n\n## Summary\n\n- A = P(1 + r)ⁿ, where r is the rate per period (decimal) and n is the number of periods.\n- Divide the yearly rate and multiply the years by the number of periods per year.\n- More frequent compounding gives slightly more interest.\n- Interest earned: I = A − P.\n- Reducing-balance depreciation: V = V₀(1 − r)ⁿ.\n- To find a time, test whole numbers of periods until the target is first passed.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "$2000 is invested at 5% p.a. compounded annually for 3 years. Find the final amount.",
+   "options": {
+    "A": "$2300.00",
+    "B": "$2315.25",
+    "C": "$0.25",
+    "D": "$2205.00"
+   },
+   "answer": "B",
+   "explanation": "A = 2000 × 1.05³ = 2000 × 1.157625 = $2315.25. $2300 is the simple interest answer, which ignores interest on interest.",
+   "steps": [
+    "P = 2000, r = 0.05, n = 3.",
+    "A = 2000 × 1.05³.",
+    "1.05³ = 1.157625, so A = $2315.25."
+   ],
+   "mistakes": {
+    "A": "Step 2: that adds $100 each year (simple interest). Compound interest multiplies by 1.05 each year.",
+    "C": "Step 2: the multiplier is 1 + r = 1.05, not 0.05.",
+    "D": "Step 1: 3 years means n = 3, so use 1.05³, not 1.05²."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Money is invested at 6% p.a. compounded monthly for 4 years. Which values of r and n go in A = P(1 + r)ⁿ?",
+   "options": {
+    "A": "r = 0.06, n = 48",
+    "B": "r = 0.005, n = 4",
+    "C": "r = 0.5, n = 48",
+    "D": "r = 0.005, n = 48"
+   },
+   "answer": "D",
+   "explanation": "The monthly rate is 0.06 ÷ 12 = 0.005, and there are 4 × 12 = 48 months. Using r = 0.06 with 48 periods would charge a full year's rate every month.",
+   "steps": [
+    "Rate per month: 6% ÷ 12 = 0.5% = 0.005.",
+    "Number of months: 4 × 12 = 48.",
+    "So r = 0.005 and n = 48."
+   ],
+   "mistakes": {
+    "A": "Step 1: 0.06 is the yearly rate. Divide it by 12 for monthly compounding.",
+    "B": "Step 2: n counts compounding periods (months), not years.",
+    "C": "Step 1: 6 ÷ 12 = 0.5 is a percentage. As a decimal, 0.5% is 0.005."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "$5000 is invested at 10% p.a. compounded annually for 4 years. How much interest is earned?",
+   "options": {
+    "A": "$2320.50",
+    "B": "$7320.50",
+    "C": "$2000.00",
+    "D": "$1655.00"
+   },
+   "answer": "A",
+   "explanation": "A = 5000 × 1.1⁴ = $7320.50, so the interest is 7320.50 − 5000 = $2320.50. $7320.50 is the final amount, not the interest.",
+   "steps": [
+    "A = 5000 × 1.1⁴.",
+    "1.1⁴ = 1.4641, so A = $7320.50.",
+    "Interest I = A − P = 7320.50 − 5000 = $2320.50."
+   ],
+   "mistakes": {
+    "B": "Step 3: that is the final amount. Subtract the principal to find the interest.",
+    "C": "Step 1: that is simple interest ($500 a year). Compound interest earns interest on interest.",
+    "D": "Step 1: that uses 3 years. The money is invested for 4 years."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "$8000 is invested at 4.8% p.a. compounded quarterly for 2 years. Find the final amount, to the nearest cent.",
+   "options": {
+    "A": "$8786.43",
+    "B": "$8193.15",
+    "C": "$8801.04",
+    "D": "$11 640.73"
+   },
+   "answer": "C",
+   "explanation": "Quarterly: r = 0.048 ÷ 4 = 0.012 and n = 2 × 4 = 8. A = 8000 × 1.012⁸ = $8801.04.",
+   "steps": [
+    "Rate per quarter: 0.048 ÷ 4 = 0.012.",
+    "Number of quarters: 2 × 4 = 8.",
+    "A = 8000 × 1.012⁸ = 8801.041… ≈ $8801.04."
+   ],
+   "mistakes": {
+    "A": "Step 1: that compounds annually (1.048²). The question says quarterly.",
+    "B": "Step 2: you used the quarterly rate but only 2 periods. 2 years has 8 quarters.",
+    "D": "Step 1: you used 8 quarters but the yearly rate. Divide 4.8% by 4."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A machine bought for $15 000 depreciates by 20% p.a. (reducing balance). What is it worth after 4 years?",
+   "options": {
+    "A": "$3000",
+    "B": "$24",
+    "C": "$31 104",
+    "D": "$6144"
+   },
+   "answer": "D",
+   "explanation": "Losing 20% leaves 80%: V = 15 000 × 0.8⁴ = 15 000 × 0.4096 = $6144. $3000 subtracts $3000 each year, which is not reducing balance.",
+   "steps": [
+    "Losing 20% leaves 80%, so multiply by 0.8 each year.",
+    "V = 15 000 × 0.8⁴.",
+    "0.8⁴ = 0.4096, so V = $6144."
+   ],
+   "mistakes": {
+    "A": "Step 1: reducing balance takes 20% of the current value each year, not $3000 every year.",
+    "B": "Step 1: 0.2 is the part lost. Multiply by the part kept, 0.8.",
+    "C": "Step 1: 1.2 increases the value. Depreciation makes it smaller, so use 1 − 0.2."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A credit card balance of $3000 is charged 19.8% p.a. interest, compounded monthly. If nothing is paid for 1 year, what is owed, to the nearest cent?",
+   "options": {
+    "A": "$3650.98",
+    "B": "$3594.00",
+    "C": "$3049.50",
+    "D": "$26 218.21"
+   },
+   "answer": "A",
+   "explanation": "Monthly rate: 0.198 ÷ 12 = 0.0165, and n = 12. A = 3000 × 1.0165¹² = $3650.98. Compounding once a year would give $3594.00.",
+   "steps": [
+    "Rate per month: 0.198 ÷ 12 = 0.0165.",
+    "One year has 12 months, so n = 12.",
+    "A = 3000 × 1.0165¹² = 3650.983… ≈ $3650.98."
+   ],
+   "mistakes": {
+    "B": "Step 2: that adds interest only once in the year. The card compounds monthly, so n = 12.",
+    "C": "Step 2: that is only one month of interest. Use n = 12.",
+    "D": "Step 1: you used the yearly rate 0.198 for each of 12 months. Divide the rate by 12."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Which option earns the most interest on $10 000 over 3 years?",
+   "options": {
+    "A": "6.0% p.a. compounded annually",
+    "B": "6.1% p.a. simple interest",
+    "C": "5.9% p.a. compounded monthly",
+    "D": "5.8% p.a. compounded daily (365 days a year)"
+   },
+   "answer": "C",
+   "explanation": "Over 3 years the interest is $1910.16 (A), $1830.00 (B), $1931.14 (C) and $1900.39 (D). Monthly compounding at 5.9% beats 6% compounded only once a year.",
+   "steps": [
+    "A: 10 000 × 1.06³ − 10 000 = $1910.16.",
+    "B: 10 000 × 0.061 × 3 = $1830.00.",
+    "C: 10 000 × (1 + 0.059/12)³⁶ − 10 000 = $1931.14.",
+    "D: 10 000 × (1 + 0.058/365)¹⁰⁹⁵ − 10 000 = $1900.39, so C earns the most."
+   ],
+   "mistakes": {
+    "A": "Step 3: the highest compound rate is not always best — 5.9% added monthly earns $1931.14, more than $1910.16.",
+    "B": "Step 2: simple interest never earns interest on interest, so over 3 years it falls behind ($1830.00).",
+    "D": "Step 4: daily compounding helps, but the 5.8% rate is too low: it earns only $1900.39."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "An investment of $4000 grows to $4840 after 2 years, with interest compounded annually. What is the interest rate?",
+   "options": {
+    "A": "10.5% p.a.",
+    "B": "21% p.a.",
+    "C": "1.1% p.a.",
+    "D": "10% p.a."
+   },
+   "answer": "D",
+   "explanation": "4000(1 + r)² = 4840 gives (1 + r)² = 1.21, so 1 + r = 1.1 and r = 10%. 10.5% is the simple-interest rate (840 ÷ 4000 ÷ 2).",
+   "steps": [
+    "Divide both sides by 4000: (1 + r)² = 4840 ÷ 4000 = 1.21.",
+    "Square root both sides: 1 + r = 1.1.",
+    "r = 0.1, which is 10% p.a."
+   ],
+   "mistakes": {
+    "A": "Step 1: that shares $840 equally over 2 years (simple interest). With compounding, solve (1 + r)² = 1.21.",
+    "B": "Step 2: 1.21 is the growth over 2 years. Take the square root to get one year's multiplier.",
+    "C": "Step 3: 1.1 is the multiplier 1 + r. Subtract 1 to get r = 0.1, then write it as a percentage."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The graph shows $6000 invested at 8% p.a. compounded annually. Use the formula to find after how many whole years it is first worth MORE than $12 000.",
+   "diagram": "diagrams/y10/maths/compound-interest-q-double.svg",
+   "diagram_alt": "Graph of A = 6000 × 1.08ⁿ from 0 to 12 years with a dot for each year, starting at $6000, and a dashed line at $12 000.",
+   "options": {
+    "A": "9 years",
+    "B": "10 years",
+    "C": "13 years",
+    "D": "8 years"
+   },
+   "answer": "B",
+   "explanation": "After 9 years A = 6000 × 1.08⁹ = $11 994.03, which is just under $12 000 even though it looks equal on the graph. After 10 years A = $12 953.55, so 10 years.",
+   "steps": [
+    "A = 6000 × 1.08ⁿ; we need A > 12 000.",
+    "n = 9: 6000 × 1.08⁹ = $11 994.03 — just under $12 000.",
+    "n = 10: 6000 × 1.08¹⁰ = $12 953.55 — more than $12 000, so 10 years."
+   ],
+   "mistakes": {
+    "A": "Step 2: on the graph the 9-year dot looks level with $12 000, but the formula gives $11 994.03, which is not more.",
+    "C": "Step 1: that adds $480 a year (simple interest: 6000 ÷ 480 = 12.5). Compound interest grows faster.",
+    "D": "Step 2: after 8 years the investment is worth only $11 105.58."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Option P: $20 000 at 6% p.a. compounded annually. Option Q: $20 000 at 5.85% p.a. compounded monthly. After 3 years, which is worth more, and by how much (to the nearest cent)?",
+   "options": {
+    "A": "P, by $6.36",
+    "B": "P, by $90.00",
+    "C": "They are equal",
+    "D": "Q, by $6.36"
+   },
+   "answer": "D",
+   "explanation": "P: 20 000 × 1.06³ = $23 820.32. Q: 20 000 × (1 + 0.0585/12)³⁶ = $23 826.68. Q is worth $6.36 more because its interest is added monthly.",
+   "steps": [
+    "P: A = 20 000 × 1.06³ = $23 820.32.",
+    "Q: r = 0.0585 ÷ 12 = 0.004875 and n = 36, so A = 20 000 × 1.004875³⁶ = $23 826.68.",
+    "Difference: 23 826.68 − 23 820.32 = $6.36, in favour of Q."
+   ],
+   "mistakes": {
+    "A": "Step 3: subtract carefully — Q's final amount ($23 826.68) is the bigger one.",
+    "B": "Step 2: comparing only the rates (0.15% × 3 years × $20 000) ignores the extra compounding in Q.",
+    "C": "Step 2: work out both amounts fully; monthly compounding makes them different."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "What yearly rate, compounded annually, gives the same growth as 12% p.a. compounded monthly? (Answer to 2 decimal places.)",
+   "options": {
+    "A": "12.00%",
+    "B": "12.68%",
+    "C": "112.68%",
+    "D": "1.00%"
+   },
+   "answer": "B",
+   "explanation": "One year of monthly compounding multiplies by 1.01¹² = 1.1268…, which is a 12.68% increase. It is more than 12% because the interest compounds 12 times.",
+   "steps": [
+    "Monthly rate: 12% ÷ 12 = 1% = 0.01.",
+    "Growth in one year: 1.01¹² = 1.126825…",
+    "Subtract 1 and write as a percentage: 12.68%."
+   ],
+   "mistakes": {
+    "A": "Step 2: compounding monthly gives more than the quoted 12%, because interest earns interest during the year.",
+    "C": "Step 3: 1.1268 is the multiplier. Subtract 1 before writing it as a percentage.",
+    "D": "Step 2: 1% is the monthly rate. Compound it over 12 months."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "How much must be invested now at 5% p.a. compounded annually to have $10 000 in 4 years? (Nearest cent.)",
+   "options": {
+    "A": "$8000.00",
+    "B": "$8333.33",
+    "C": "$8227.02",
+    "D": "$8145.06"
+   },
+   "answer": "C",
+   "explanation": "Solve P × 1.05⁴ = 10 000: P = 10 000 ÷ 1.05⁴ = $8227.02. $8145.06 takes 5% off $10 000 each year, which is not the same as undoing 5% growth.",
+   "steps": [
+    "Write the formula: P × 1.05⁴ = 10 000.",
+    "Divide both sides by 1.05⁴: P = 10 000 ÷ 1.05⁴.",
+    "1.05⁴ = 1.21550625, so P = 8227.024… ≈ $8227.02."
+   ],
+   "mistakes": {
+    "A": "Step 1: that takes 20% off $10 000. Undo the growth by dividing by 1.05⁴.",
+    "B": "Step 1: dividing by 1.2 undoes simple interest (4 × 5%). This is compound interest.",
+    "D": "Step 2: multiplying by 0.95⁴ is not the reverse of multiplying by 1.05⁴. Divide by 1.05⁴ instead."
+   }
+  }
+ ]
 }

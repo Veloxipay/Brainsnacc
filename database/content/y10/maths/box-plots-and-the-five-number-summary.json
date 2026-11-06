@@ -1,286 +1,287 @@
 {
-  "level": "Year 10",
-  "subject": "maths",
-  "unit": "Year 10",
-  "title": "Box plots and the five-number summary",
-  "summary": "Find the five-number summary, draw and read box plots, find outliers with the 1.5 × IQR rule, and compare data with parallel box plots.",
-  "minutes": 40,
-  "body": "A box plot squeezes a whole data set into five numbers and one simple picture. Doctors use them to compare growth charts, sports analysts to compare players, and scientists to compare experiments — because you can put several box plots side by side and see the differences at a glance.\n\n## Learning objective\n\nBy the end of this lesson you can find the five-number summary of a data set, draw and read a box plot, identify outliers using the 1.5 × IQR rule, and compare data sets with parallel box plots.\n\n## Before you start\n\nYou need the median, quartiles and interquartile range from *Measures of centre and spread (Year 9)*.\n\n**Warm-up**\n\n1. Find the median of 3, 8, 5, 10, 1, 7. *(Answer: in order 1, 3, 5, 7, 8, 10, so (5 + 7) ÷ 2 = 6)*\n2. Work out 30 − 1.5 × 8. *(Answer: 1.5 × 8 = 12, and 30 − 12 = 18)*\n\n## Think of it like this\n\n### A race split into four groups of runners\n\nPicture everyone in a fun run sorted by finishing time and split into four equal groups: the fastest quarter, the next quarter, and so on. The box plot shows where each group starts and finishes. If one group's section is long, those runners were spread out; if it is short, they finished close together — even though every group has the same number of people.\n\n*Where the analogy breaks down:* runners are real people you can count, but a box plot hides the individual values — you can't tell from the picture how many people ran or what each person's time was.\n\n## Key ideas\n\n### The five-number summary\n\nThe **five-number summary** is: **minimum**, **lower quartile (Q1)**, **median**, **upper quartile (Q3)** and **maximum**. To find it:\n\n1. Put the data in order.\n2. The median is the middle value (or the mean of the two middle values).\n3. Q1 is the median of the lower half, and Q3 is the median of the upper half. If there is an odd number of values, leave the median out of both halves.\n\nThe **interquartile range** is IQR = Q3 − Q1, the spread of the middle 50% of the data. The **range** is maximum − minimum.\n\n### Drawing a box plot\n\nA **box plot** (box-and-whisker plot) is drawn above a scaled number line. The **box** goes from Q1 to Q3 with a line at the median, and the **whiskers** reach out to the minimum and maximum.\n\n![A box plot on a scale from 0 to 30 minutes with minimum 4, Q1 9, median 15, Q3 20 and maximum 27 labelled](/diagrams/y10/maths/box-plots-and-the-five-number-summary-parts.svg)\n\nEach of the four sections — whisker, half-box, half-box, whisker — holds about **25%** of the data. So about 50% of the values are inside the box, and about 75% are below Q3.\n\n### Outliers\n\nAn **outlier** is a value far away from the rest. The rule used in Year 10: a value is an outlier if it is\n\n- less than the **lower fence** Q1 − 1.5 × IQR, or\n- greater than the **upper fence** Q3 + 1.5 × IQR.\n\nAn outlier is drawn as a separate dot or cross, and the whisker stops at the most extreme value that is *not* an outlier.\n\n### Comparing data sets\n\n**Parallel box plots** are drawn on the same scale so you can compare: the median (which group is typically higher?), the IQR and range (which group is more spread out or more consistent?) and the **shape** — if the right whisker and right half of the box are longer, the data is **positively skewed**; if the left side is longer, it is **negatively skewed**.\n\n## Worked examples\n\n### Example 1\n\nWaiting times (minutes) at a clinic: 16, 9, 23, 4, 18, 12, 27, 10, 20, 6, 15. Find the five-number summary and check for outliers.\n\nStep 1: order the data — 4, 6, 9, 10, 12, 15, 16, 18, 20, 23, 27 (11 values).\nStep 2: median = 6th value = 15 — it is in position (11 + 1) ÷ 2 = 6.\nStep 3: lower half (leave out 15) is 4, 6, 9, 10, 12, so Q1 = 9; upper half is 16, 18, 20, 23, 27, so Q3 = 20.\nStep 4: minimum 4, maximum 27, so the summary is **4, 9, 15, 20, 27**, and IQR = 20 − 9 = 11.\nStep 5: fences are 9 − 1.5 × 11 = −7.5 and 20 + 1.5 × 11 = 36.5 — every value lies between them, so there are **no outliers**. This is the box plot drawn in Key ideas.\n\n### Example 2\n\nScores: 21, 24, 25, 27, 28, 30, 31, 33, 34, 36, 38, 58. Find any outliers and draw the box plot.\n\nStep 1: 12 values, so the median is the mean of the 6th and 7th values: (30 + 31) ÷ 2 = 30.5.\nStep 2: lower half 21, 24, 25, 27, 28, 30 gives Q1 = (25 + 27) ÷ 2 = 26; upper half 31, 33, 34, 36, 38, 58 gives Q3 = (34 + 36) ÷ 2 = 35.\nStep 3: IQR = 35 − 26 = 9, so 1.5 × IQR = 13.5.\nStep 4: upper fence = 35 + 13.5 = 48.5 — 58 is greater, so **58 is an outlier**. Lower fence = 26 − 13.5 = 12.5 — no value is below it.\nStep 5: draw 58 as a separate dot; the right whisker stops at 38, the largest value that is not an outlier.\n\n![A box plot on a scale from 20 to 60: whisker from 21 to Q1 26, box from 26 to 35 with median 30.5, whisker to 38, and a separate outlier dot at 58](/diagrams/y10/maths/box-plots-and-the-five-number-summary-ex2.svg)\n\n### Example 3\n\nThe parallel box plots show the test scores of two classes. Compare them.\n\n![Parallel box plots of test scores. Class A: minimum 12, Q1 18, median 23, Q3 29, maximum 40. Class B: minimum 15, Q1 20, median 22, Q3 25, maximum 31](/diagrams/y10/maths/box-plots-and-the-five-number-summary-ex3.svg)\n\nStep 1: compare the centres — Class A's median (23) is a little higher than Class B's (22).\nStep 2: compare the spreads — Class A: IQR = 29 − 18 = 11, range = 40 − 12 = 28. Class B: IQR = 25 − 20 = 5, range = 31 − 15 = 16.\nStep 3: conclude — the classes have similar typical scores, but Class B's scores are much more **consistent** (smaller IQR and range), while Class A has more very low and very high scores.\n\n## Common mistakes\n\n- **Forgetting to order the data.** The median and quartiles only make sense in order. Fix: always write the ordered list first.\n- **Including the median in the halves** when there is an odd number of values. Fix: leave it out, as taught here.\n- **Saying the longer section holds more data.** Every section holds about 25%. A long section means the values are *spread out*, not that there are more of them.\n- **Drawing the whisker to an outlier.** Fix: the whisker ends at the most extreme value that is not an outlier; the outlier is a separate dot.\n- **Using the median in the fences.** Fix: lower fence uses Q1, upper fence uses Q3.\n\n## Tips to remember\n\n- **\"Min, Q1, Med, Q3, Max\" — five fingers on one hand** (a made-up memory trick): one number per finger, smallest to biggest.\n- **Every quarter is equal in number, not in length.** Long piece = spread out.\n- **Fence rule \"1.5 and out\"** (made-up): go 1.5 IQRs beyond the box; anything past that fence is an outlier.\n- **Tail tells the skew:** the long tail points to the side of the skew (long right tail = positive skew).\n- **Same scale or no deal:** parallel box plots must share one number line to be compared.\n\n## Key terms\n\n- **Five-number summary** — minimum, Q1, median, Q3, maximum.\n- **Lower quartile (Q1)** — the median of the lower half of the ordered data.\n- **Upper quartile (Q3)** — the median of the upper half of the ordered data.\n- **Interquartile range (IQR)** — Q3 − Q1, the spread of the middle 50%.\n- **Box plot** — a graph of the five-number summary: a box from Q1 to Q3 with whiskers to the extremes.\n- **Outlier** — a value below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR.\n- **Parallel box plots** — box plots drawn on the same scale to compare data sets.\n- **Skewed** — not symmetric; the data has a longer tail on one side.\n\n## Summary\n\n- Order the data, find the median, then the medians of each half to get Q1 and Q3.\n- A box plot shows the five-number summary; each of its four sections holds about 25% of the data.\n- IQR = Q3 − Q1; outliers are beyond Q1 − 1.5 × IQR or Q3 + 1.5 × IQR.\n- Outliers are drawn as separate dots, and the whisker stops at the last non-outlier.\n- Compare box plots by median, spread (IQR, range) and shape (skew).",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "The box plot shows the number of push-ups done by a group of students. What is the median?",
-      "options": {
-        "A": "12",
-        "B": "20",
-        "C": "17",
-        "D": "24"
-      },
-      "answer": "C",
-      "explanation": "The median is the line inside the box, at 17. The edges of the box (12 and 24) are the quartiles, not the median.",
-      "steps": [
-        "The median is shown by the line inside the box.",
-        "Read it on the scale: 17."
-      ],
-      "mistakes": {
-        "A": "Step 1: 12 is the left edge of the box — that is Q1. The median is the line inside the box.",
-        "B": "Step 1: 20 is halfway along the scale (the middle of 5 and 35). Read the line drawn inside the box.",
-        "D": "Step 1: 24 is the right edge of the box — that is Q3. The median is the line inside the box."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q1.svg",
-      "diagram_alt": "A box plot on a scale from 0 to 40 push-ups: minimum 5, Q1 12, median 17, Q3 24, maximum 35"
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Find the lower quartile (Q1) of: 2, 5, 6, 8, 10, 11, 13, 15, 19.",
-      "options": {
-        "A": "5.5",
-        "B": "6",
-        "C": "5",
-        "D": "10"
-      },
-      "answer": "A",
-      "explanation": "The median is 10; the lower half 2, 5, 6, 8 has median (5 + 6) ÷ 2 = 5.5. Including the 10 in the lower half gives 6 instead.",
-      "steps": [
-        "The data is in order and has 9 values, so the median is the 5th value: 10.",
-        "Leave out the median: the lower half is 2, 5, 6, 8.",
-        "Q1 = (5 + 6) ÷ 2 = 5.5."
-      ],
-      "mistakes": {
-        "B": "Step 2: you included the median (10) in the lower half. With 9 values, leave the median out: the lower half is 2, 5, 6, 8.",
-        "C": "Step 3: the lower half 2, 5, 6, 8 has an even number of values, so average the two middle ones.",
-        "D": "Step 1: 10 is the median of the whole data set. Q1 is the median of the lower half."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Use the box plot of seedling heights. What is the interquartile range?",
-      "options": {
-        "A": "40",
-        "B": "6",
-        "C": "26",
-        "D": "14"
-      },
-      "answer": "D",
-      "explanation": "IQR = Q3 − Q1 = 46 − 32 = 14, the length of the box. The range, 40, uses the whisker ends instead.",
-      "steps": [
-        "Read the ends of the box: Q1 = 32 and Q3 = 46.",
-        "IQR = 46 − 32 = 14 mm."
-      ],
-      "mistakes": {
-        "A": "Step 1: 60 − 20 = 40 is the range (maximum − minimum). The IQR uses the ends of the box.",
-        "B": "Step 1: 46 − 40 = 6 uses the median. The IQR is Q3 − Q1.",
-        "C": "Step 1: 46 − 20 subtracts the minimum. Use Q1, the left edge of the box."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q3.svg",
-      "diagram_alt": "A box plot of seedling heights on a scale from 20 to 60 mm: minimum 20, Q1 32, median 40, Q3 46, maximum 60"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The box plot shows the marks of a large group of students in a test. About what percentage of the students scored more than 70?",
-      "options": {
-        "A": "75%",
-        "B": "25%",
-        "C": "70%",
-        "D": "50%"
-      },
-      "answer": "B",
-      "explanation": "70 is Q3, and about 25% of the data lies above Q3 (the right whisker). 75% is the part below 70.",
-      "steps": [
-        "70 is the right end of the box, so it is Q3.",
-        "Each of the four sections holds about 25% of the data; above Q3 there is one section: about 25%."
-      ],
-      "mistakes": {
-        "A": "Step 2: 75% of students scored LESS than Q3 = 70. The part above 70 is only the right whisker.",
-        "C": "Step 1: 70 is a mark, not a percentage. Each section of a box plot holds about 25% of the data.",
-        "D": "Step 2: 50% is the box (from 45 to 70). Above 70 is just one section."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q4.svg",
-      "diagram_alt": "A box plot of test marks on a scale from 30 to 90: minimum 30, Q1 45, median 55, Q3 70, maximum 90"
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "A data set has Q1 = 18 and Q3 = 30. Which of these values would be an outlier?",
-      "options": {
-        "A": "50",
-        "B": "47",
-        "C": "42",
-        "D": "3"
-      },
-      "answer": "A",
-      "explanation": "IQR = 12, so the fences are 18 − 18 = 0 and 30 + 18 = 48. Only 50 is beyond a fence. 47 is close but still below 48.",
-      "steps": [
-        "IQR = 30 − 18 = 12, and 1.5 × 12 = 18.",
-        "Fences: lower 18 − 18 = 0, upper 30 + 18 = 48.",
-        "Only 50 is greater than 48 (and nothing is below 0), so 50 is the outlier."
-      ],
-      "mistakes": {
-        "B": "Step 2: the upper fence is 30 + 1.5 × 12. 47 is just inside that fence, so it is not an outlier.",
-        "C": "Step 2: you may have used Q3 + IQR = 42 as the fence. The rule uses 1.5 × IQR.",
-        "D": "Step 3: the lower fence is 18 − 1.5 × 12. 3 is above that fence, so it is not an outlier."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The parallel box plots show the goals scored per season by players in two netball teams. Which statement is true?",
-      "options": {
-        "A": "Team X has the higher median",
-        "B": "Team Y has the larger range",
-        "C": "Team Y has the higher median but the smaller IQR",
-        "D": "Both teams have the same IQR"
-      },
-      "answer": "C",
-      "explanation": "Team Y's median is 21 (Team X 19), and its IQR is 23 − 18 = 5 (Team X 9). Team Y has the longer left whisker, but its range (18) is still smaller than Team X's (20).",
-      "steps": [
-        "Medians: Team X 19, Team Y 21 — Team Y is higher.",
-        "IQRs: Team X 24 − 15 = 9, Team Y 23 − 18 = 5 — Team Y is smaller.",
-        "So \"Team Y has the higher median but the smaller IQR\" is true."
-      ],
-      "mistakes": {
-        "A": "Step 1: compare the lines inside the boxes: Team X 19, Team Y 21.",
-        "B": "Step 2: range = max − min: Team X 30 − 10 = 20, Team Y 26 − 8 = 18.",
-        "D": "Step 2: compare the box lengths: Team X 24 − 15 = 9, Team Y 23 − 18 = 5."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q6.svg",
-      "diagram_alt": "Parallel box plots of goals per season. Team X: minimum 10, Q1 15, median 19, Q3 24, maximum 30. Team Y: minimum 8, Q1 18, median 21, Q3 23, maximum 26"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Find the interquartile range of these 14 ages: 13, 15, 16, 18, 19, 22, 24, 25, 27, 28, 31, 33, 36, 40.",
-      "options": {
-        "A": "27",
-        "B": "24.5",
-        "C": "6.5",
-        "D": "13"
-      },
-      "answer": "D",
-      "explanation": "Lower half 13 … 24 has median 18 (Q1) and upper half 25 … 40 has median 31 (Q3), so IQR = 13. The range, 27, uses the extremes instead.",
-      "steps": [
-        "14 values: the lower half is the first 7 (13, 15, 16, 18, 19, 22, 24) and the upper half is the last 7.",
-        "Q1 = 4th value of the lower half = 18; Q3 = 4th value of the upper half (25, 27, 28, 31, 33, 36, 40) = 31.",
-        "IQR = 31 − 18 = 13."
-      ],
-      "mistakes": {
-        "A": "Step 3: 40 − 13 = 27 is the range. The IQR is Q3 − Q1.",
-        "B": "Step 1: 24.5 is the median, (24 + 25) ÷ 2. Keep going to find the quartiles.",
-        "C": "Step 3: 31 − 24.5 is Q3 − median. Subtract Q1, not the median."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The box plot shows daily maximum temperatures, with one value drawn as an outlier at 46 °C. What is the upper fence that makes 46 an outlier?",
-      "options": {
-        "A": "36 °C",
-        "B": "40 °C",
-        "C": "12 °C",
-        "D": "8 °C"
-      },
-      "answer": "B",
-      "explanation": "IQR = 28 − 20 = 8, so the upper fence is 28 + 1.5 × 8 = 40 °C, and 46 is beyond it. Using 1 × IQR gives 36, which is the wrong rule.",
-      "steps": [
-        "Read the box: Q1 = 20, Q3 = 28, so IQR = 8.",
-        "1.5 × IQR = 1.5 × 8 = 12.",
-        "Upper fence = Q3 + 12 = 28 + 12 = 40 °C, and 46 is above it."
-      ],
-      "mistakes": {
-        "A": "Step 2: Q3 + IQR = 28 + 8 = 36. The fence uses 1.5 × IQR, not 1 × IQR.",
-        "C": "Step 2: 12 is 1.5 × IQR on its own. Add it to Q3.",
-        "D": "Step 3: 20 − 12 = 8 is the LOWER fence. The upper fence uses Q3."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q8.svg",
-      "diagram_alt": "A box plot of temperatures on a scale from 10 to 50 °C: minimum 12, Q1 20, median 24, Q3 28, right whisker ending at 34, and a separate outlier dot at 46"
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "A data set has lower quartile 30, median 36 and interquartile range 14. Values above the upper fence are outliers. What is the upper fence?",
-      "options": {
-        "A": "65",
-        "B": "57",
-        "C": "51",
-        "D": "58"
-      },
-      "answer": "A",
-      "explanation": "Q3 = Q1 + IQR = 30 + 14 = 44, and the upper fence = 44 + 1.5 × 14 = 65. Adding 21 to the median (57) uses the wrong starting point.",
-      "steps": [
-        "IQR = Q3 − Q1, so Q3 = 30 + 14 = 44.",
-        "1.5 × IQR = 1.5 × 14 = 21.",
-        "Upper fence = 44 + 21 = 65."
-      ],
-      "mistakes": {
-        "B": "Step 2: you added 1.5 × 14 = 21 to the median. The fence starts from Q3.",
-        "C": "Step 2: you added 21 to Q1. The upper fence is built on Q3 = Q1 + IQR.",
-        "D": "Step 2: Q3 + IQR = 44 + 14 = 58. The rule adds 1.5 × IQR."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The box plot summarises the number of books read by 21 students, and every value is a whole number. Exactly how many students read 9 or more books, if no other student read exactly 9?",
-      "options": {
-        "A": "10",
-        "B": "10.5",
-        "C": "11",
-        "D": "5"
-      },
-      "answer": "C",
-      "explanation": "With 21 ordered values the median is the 11th value, 9. The 11th to 21st students read 9 or more: 11 students. Answering 10 forgets the student at the median.",
-      "steps": [
-        "21 values: the median is the (21 + 1) ÷ 2 = 11th value, which is 9.",
-        "The 10 values after it are above 9 (no one else read exactly 9).",
-        "Students with 9 or more = 1 + 10 = 11."
-      ],
-      "mistakes": {
-        "A": "Step 2: with 21 values the median (9) is itself one of the students. Count it as well as the 10 above it.",
-        "B": "Step 2: half of 21 is 10.5, but you cannot have half a student. The median value belongs to one real student.",
-        "D": "Step 2: 5 is roughly the top quarter (above Q3). \"9 or more\" starts at the median."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q10.svg",
-      "diagram_alt": "A box plot of books read by 21 students on a scale from 0 to 20: minimum 2, Q1 6, median 9, Q3 13, maximum 20"
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The data 4, 6, 9, 11, k, 18, 20, 25 is in order and its median is 13. Find k.",
-      "options": {
-        "A": "k = 13",
-        "B": "k = 26",
-        "C": "k = 2",
-        "D": "k = 15"
-      },
-      "answer": "D",
-      "explanation": "The median is (11 + k) ÷ 2 = 13, so 11 + k = 26 and k = 15, which fits between 11 and 18. Setting k = 13 forgets that the median is the mean of two values.",
-      "steps": [
-        "8 values: the median is the mean of the 4th and 5th values, 11 and k.",
-        "Solve (11 + k) ÷ 2 = 13: multiply both sides by 2 to get 11 + k = 26.",
-        "Subtract 11: k = 15. Check: 15 is between 11 and 18 ✓."
-      ],
-      "mistakes": {
-        "A": "Step 1: with 8 values the median is the mean of the 4th and 5th values, so k itself does not have to equal 13.",
-        "B": "Step 2: (11 + k) ÷ 2 = 13 gives 11 + k = 26. Subtract 11 to finish.",
-        "C": "Step 3: 13 − 11 = 2 forgets that the median is an average. Multiply 13 by 2 first."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The parallel box plots show the marks of two classes on the same test. Which statement MUST be true?",
-      "options": {
-        "A": "Every student in Class P scored higher than every student in Class Q",
-        "B": "At least 75% of Class P scored higher than Class Q's median",
-        "C": "Half of Class Q scored below 38",
-        "D": "Class P's marks have a smaller IQR than Class Q's"
-      },
-      "answer": "B",
-      "explanation": "Class P's Q1 (55) is above Class Q's median (45), and at least 75% of Class P scored at or above their Q1, so at least 75% scored above 45. The classes overlap, so \"every student\" is false.",
-      "steps": [
-        "Class Q's median is 45.",
-        "Class P's lower quartile is 55, and about 75% of Class P scored 55 or more.",
-        "Since 55 is more than 45, at least 75% of Class P scored higher than Class Q's median."
-      ],
-      "mistakes": {
-        "A": "Step 2: Class P's minimum (40) is lower than Class Q's maximum (60), so the classes overlap.",
-        "C": "Step 1: 38 is Class Q's Q1, so only about a quarter scored below it.",
-        "D": "Step 3: IQR of P = 70 − 55 = 15 and IQR of Q = 52 − 38 = 14, so P's is larger."
-      },
-      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q12.svg",
-      "diagram_alt": "Parallel box plots of test marks. Class P: minimum 40, Q1 55, median 62, Q3 70, maximum 85. Class Q: minimum 30, Q1 38, median 45, Q3 52, maximum 60"
-    }
-  ]
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Box plots and the five-number summary",
+ "summary": "Find the five-number summary, draw and read box plots, find outliers with the 1.5 × IQR rule, and compare data with parallel box plots.",
+ "minutes": 40,
+ "video": "videos/y10/maths/box-plots-and-the-five-number-summary.mp4",
+ "body": "A box plot squeezes a whole data set into five numbers and one simple picture. Doctors use them to compare growth charts, sports analysts to compare players, and scientists to compare experiments — because you can put several box plots side by side and see the differences at a glance.\n\n## Learning objective\n\nBy the end of this lesson you can find the five-number summary of a data set, draw and read a box plot, identify outliers using the 1.5 × IQR rule, and compare data sets with parallel box plots.\n\n## Before you start\n\nYou need the median, quartiles and interquartile range from *Measures of centre and spread (Year 9)*.\n\n**Warm-up**\n\n1. Find the median of 3, 8, 5, 10, 1, 7. *(Answer: in order 1, 3, 5, 7, 8, 10, so (5 + 7) ÷ 2 = 6)*\n2. Work out 30 − 1.5 × 8. *(Answer: 1.5 × 8 = 12, and 30 − 12 = 18)*\n\n## Think of it like this\n\n### A race split into four groups of runners\n\nPicture everyone in a fun run sorted by finishing time and split into four equal groups: the fastest quarter, the next quarter, and so on. The box plot shows where each group starts and finishes. If one group's section is long, those runners were spread out; if it is short, they finished close together — even though every group has the same number of people.\n\n*Where the analogy breaks down:* runners are real people you can count, but a box plot hides the individual values — you can't tell from the picture how many people ran or what each person's time was.\n\n## Key ideas\n\n### The five-number summary\n\nThe **five-number summary** is: **minimum**, **lower quartile (Q1)**, **median**, **upper quartile (Q3)** and **maximum**. To find it:\n\n1. Put the data in order.\n2. The median is the middle value (or the mean of the two middle values).\n3. Q1 is the median of the lower half, and Q3 is the median of the upper half. If there is an odd number of values, leave the median out of both halves.\n\nThe **interquartile range** is IQR = Q3 − Q1, the spread of the middle 50% of the data. The **range** is maximum − minimum.\n\n### Drawing a box plot\n\nA **box plot** (box-and-whisker plot) is drawn above a scaled number line. The **box** goes from Q1 to Q3 with a line at the median, and the **whiskers** reach out to the minimum and maximum.\n\n![A box plot on a scale from 0 to 30 minutes with minimum 4, Q1 9, median 15, Q3 20 and maximum 27 labelled](/diagrams/y10/maths/box-plots-and-the-five-number-summary-parts.svg)\n\nEach of the four sections — whisker, half-box, half-box, whisker — holds about **25%** of the data. So about 50% of the values are inside the box, and about 75% are below Q3.\n\n### Outliers\n\nAn **outlier** is a value far away from the rest. The rule used in Year 10: a value is an outlier if it is\n\n- less than the **lower fence** Q1 − 1.5 × IQR, or\n- greater than the **upper fence** Q3 + 1.5 × IQR.\n\nAn outlier is drawn as a separate dot or cross, and the whisker stops at the most extreme value that is *not* an outlier.\n\n### Comparing data sets\n\n**Parallel box plots** are drawn on the same scale so you can compare: the median (which group is typically higher?), the IQR and range (which group is more spread out or more consistent?) and the **shape** — if the right whisker and right half of the box are longer, the data is **positively skewed**; if the left side is longer, it is **negatively skewed**.\n\n## Worked examples\n\n### Example 1\n\nWaiting times (minutes) at a clinic: 16, 9, 23, 4, 18, 12, 27, 10, 20, 6, 15. Find the five-number summary and check for outliers.\n\nStep 1: order the data — 4, 6, 9, 10, 12, 15, 16, 18, 20, 23, 27 (11 values).\nStep 2: median = 6th value = 15 — it is in position (11 + 1) ÷ 2 = 6.\nStep 3: lower half (leave out 15) is 4, 6, 9, 10, 12, so Q1 = 9; upper half is 16, 18, 20, 23, 27, so Q3 = 20.\nStep 4: minimum 4, maximum 27, so the summary is **4, 9, 15, 20, 27**, and IQR = 20 − 9 = 11.\nStep 5: fences are 9 − 1.5 × 11 = −7.5 and 20 + 1.5 × 11 = 36.5 — every value lies between them, so there are **no outliers**. This is the box plot drawn in Key ideas.\n\n### Example 2\n\nScores: 21, 24, 25, 27, 28, 30, 31, 33, 34, 36, 38, 58. Find any outliers and draw the box plot.\n\nStep 1: 12 values, so the median is the mean of the 6th and 7th values: (30 + 31) ÷ 2 = 30.5.\nStep 2: lower half 21, 24, 25, 27, 28, 30 gives Q1 = (25 + 27) ÷ 2 = 26; upper half 31, 33, 34, 36, 38, 58 gives Q3 = (34 + 36) ÷ 2 = 35.\nStep 3: IQR = 35 − 26 = 9, so 1.5 × IQR = 13.5.\nStep 4: upper fence = 35 + 13.5 = 48.5 — 58 is greater, so **58 is an outlier**. Lower fence = 26 − 13.5 = 12.5 — no value is below it.\nStep 5: draw 58 as a separate dot; the right whisker stops at 38, the largest value that is not an outlier.\n\n![A box plot on a scale from 20 to 60: whisker from 21 to Q1 26, box from 26 to 35 with median 30.5, whisker to 38, and a separate outlier dot at 58](/diagrams/y10/maths/box-plots-and-the-five-number-summary-ex2.svg)\n\n### Example 3\n\nThe parallel box plots show the test scores of two classes. Compare them.\n\n![Parallel box plots of test scores. Class A: minimum 12, Q1 18, median 23, Q3 29, maximum 40. Class B: minimum 15, Q1 20, median 22, Q3 25, maximum 31](/diagrams/y10/maths/box-plots-and-the-five-number-summary-ex3.svg)\n\nStep 1: compare the centres — Class A's median (23) is a little higher than Class B's (22).\nStep 2: compare the spreads — Class A: IQR = 29 − 18 = 11, range = 40 − 12 = 28. Class B: IQR = 25 − 20 = 5, range = 31 − 15 = 16.\nStep 3: conclude — the classes have similar typical scores, but Class B's scores are much more **consistent** (smaller IQR and range), while Class A has more very low and very high scores.\n\n## Common mistakes\n\n- **Forgetting to order the data.** The median and quartiles only make sense in order. Fix: always write the ordered list first.\n- **Including the median in the halves** when there is an odd number of values. Fix: leave it out, as taught here.\n- **Saying the longer section holds more data.** Every section holds about 25%. A long section means the values are *spread out*, not that there are more of them.\n- **Drawing the whisker to an outlier.** Fix: the whisker ends at the most extreme value that is not an outlier; the outlier is a separate dot.\n- **Using the median in the fences.** Fix: lower fence uses Q1, upper fence uses Q3.\n\n## Tips to remember\n\n- **\"Min, Q1, Med, Q3, Max\" — five fingers on one hand** (a made-up memory trick): one number per finger, smallest to biggest.\n- **Every quarter is equal in number, not in length.** Long piece = spread out.\n- **Fence rule \"1.5 and out\"** (made-up): go 1.5 IQRs beyond the box; anything past that fence is an outlier.\n- **Tail tells the skew:** the long tail points to the side of the skew (long right tail = positive skew).\n- **Same scale or no deal:** parallel box plots must share one number line to be compared.\n\n## Key terms\n\n- **Five-number summary** — minimum, Q1, median, Q3, maximum.\n- **Lower quartile (Q1)** — the median of the lower half of the ordered data.\n- **Upper quartile (Q3)** — the median of the upper half of the ordered data.\n- **Interquartile range (IQR)** — Q3 − Q1, the spread of the middle 50%.\n- **Box plot** — a graph of the five-number summary: a box from Q1 to Q3 with whiskers to the extremes.\n- **Outlier** — a value below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR.\n- **Parallel box plots** — box plots drawn on the same scale to compare data sets.\n- **Skewed** — not symmetric; the data has a longer tail on one side.\n\n## Summary\n\n- Order the data, find the median, then the medians of each half to get Q1 and Q3.\n- A box plot shows the five-number summary; each of its four sections holds about 25% of the data.\n- IQR = Q3 − Q1; outliers are beyond Q1 − 1.5 × IQR or Q3 + 1.5 × IQR.\n- Outliers are drawn as separate dots, and the whisker stops at the last non-outlier.\n- Compare box plots by median, spread (IQR, range) and shape (skew).",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The box plot shows the number of push-ups done by a group of students. What is the median?",
+   "options": {
+    "A": "12",
+    "B": "20",
+    "C": "17",
+    "D": "24"
+   },
+   "answer": "C",
+   "explanation": "The median is the line inside the box, at 17. The edges of the box (12 and 24) are the quartiles, not the median.",
+   "steps": [
+    "The median is shown by the line inside the box.",
+    "Read it on the scale: 17."
+   ],
+   "mistakes": {
+    "A": "Step 1: 12 is the left edge of the box — that is Q1. The median is the line inside the box.",
+    "B": "Step 1: 20 is halfway along the scale (the middle of 5 and 35). Read the line drawn inside the box.",
+    "D": "Step 1: 24 is the right edge of the box — that is Q3. The median is the line inside the box."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q1.svg",
+   "diagram_alt": "A box plot on a scale from 0 to 40 push-ups: minimum 5, Q1 12, median 17, Q3 24, maximum 35"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Find the lower quartile (Q1) of: 2, 5, 6, 8, 10, 11, 13, 15, 19.",
+   "options": {
+    "A": "5.5",
+    "B": "6",
+    "C": "5",
+    "D": "10"
+   },
+   "answer": "A",
+   "explanation": "The median is 10; the lower half 2, 5, 6, 8 has median (5 + 6) ÷ 2 = 5.5. Including the 10 in the lower half gives 6 instead.",
+   "steps": [
+    "The data is in order and has 9 values, so the median is the 5th value: 10.",
+    "Leave out the median: the lower half is 2, 5, 6, 8.",
+    "Q1 = (5 + 6) ÷ 2 = 5.5."
+   ],
+   "mistakes": {
+    "B": "Step 2: you included the median (10) in the lower half. With 9 values, leave the median out: the lower half is 2, 5, 6, 8.",
+    "C": "Step 3: the lower half 2, 5, 6, 8 has an even number of values, so average the two middle ones.",
+    "D": "Step 1: 10 is the median of the whole data set. Q1 is the median of the lower half."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Use the box plot of seedling heights. What is the interquartile range?",
+   "options": {
+    "A": "40",
+    "B": "6",
+    "C": "26",
+    "D": "14"
+   },
+   "answer": "D",
+   "explanation": "IQR = Q3 − Q1 = 46 − 32 = 14, the length of the box. The range, 40, uses the whisker ends instead.",
+   "steps": [
+    "Read the ends of the box: Q1 = 32 and Q3 = 46.",
+    "IQR = 46 − 32 = 14 mm."
+   ],
+   "mistakes": {
+    "A": "Step 1: 60 − 20 = 40 is the range (maximum − minimum). The IQR uses the ends of the box.",
+    "B": "Step 1: 46 − 40 = 6 uses the median. The IQR is Q3 − Q1.",
+    "C": "Step 1: 46 − 20 subtracts the minimum. Use Q1, the left edge of the box."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q3.svg",
+   "diagram_alt": "A box plot of seedling heights on a scale from 20 to 60 mm: minimum 20, Q1 32, median 40, Q3 46, maximum 60"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The box plot shows the marks of a large group of students in a test. About what percentage of the students scored more than 70?",
+   "options": {
+    "A": "75%",
+    "B": "25%",
+    "C": "70%",
+    "D": "50%"
+   },
+   "answer": "B",
+   "explanation": "70 is Q3, and about 25% of the data lies above Q3 (the right whisker). 75% is the part below 70.",
+   "steps": [
+    "70 is the right end of the box, so it is Q3.",
+    "Each of the four sections holds about 25% of the data; above Q3 there is one section: about 25%."
+   ],
+   "mistakes": {
+    "A": "Step 2: 75% of students scored LESS than Q3 = 70. The part above 70 is only the right whisker.",
+    "C": "Step 1: 70 is a mark, not a percentage. Each section of a box plot holds about 25% of the data.",
+    "D": "Step 2: 50% is the box (from 45 to 70). Above 70 is just one section."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q4.svg",
+   "diagram_alt": "A box plot of test marks on a scale from 30 to 90: minimum 30, Q1 45, median 55, Q3 70, maximum 90"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A data set has Q1 = 18 and Q3 = 30. Which of these values would be an outlier?",
+   "options": {
+    "A": "50",
+    "B": "47",
+    "C": "42",
+    "D": "3"
+   },
+   "answer": "A",
+   "explanation": "IQR = 12, so the fences are 18 − 18 = 0 and 30 + 18 = 48. Only 50 is beyond a fence. 47 is close but still below 48.",
+   "steps": [
+    "IQR = 30 − 18 = 12, and 1.5 × 12 = 18.",
+    "Fences: lower 18 − 18 = 0, upper 30 + 18 = 48.",
+    "Only 50 is greater than 48 (and nothing is below 0), so 50 is the outlier."
+   ],
+   "mistakes": {
+    "B": "Step 2: the upper fence is 30 + 1.5 × 12. 47 is just inside that fence, so it is not an outlier.",
+    "C": "Step 2: you may have used Q3 + IQR = 42 as the fence. The rule uses 1.5 × IQR.",
+    "D": "Step 3: the lower fence is 18 − 1.5 × 12. 3 is above that fence, so it is not an outlier."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The parallel box plots show the goals scored per season by players in two netball teams. Which statement is true?",
+   "options": {
+    "A": "Team X has the higher median",
+    "B": "Team Y has the larger range",
+    "C": "Team Y has the higher median but the smaller IQR",
+    "D": "Both teams have the same IQR"
+   },
+   "answer": "C",
+   "explanation": "Team Y's median is 21 (Team X 19), and its IQR is 23 − 18 = 5 (Team X 9). Team Y has the longer left whisker, but its range (18) is still smaller than Team X's (20).",
+   "steps": [
+    "Medians: Team X 19, Team Y 21 — Team Y is higher.",
+    "IQRs: Team X 24 − 15 = 9, Team Y 23 − 18 = 5 — Team Y is smaller.",
+    "So \"Team Y has the higher median but the smaller IQR\" is true."
+   ],
+   "mistakes": {
+    "A": "Step 1: compare the lines inside the boxes: Team X 19, Team Y 21.",
+    "B": "Step 2: range = max − min: Team X 30 − 10 = 20, Team Y 26 − 8 = 18.",
+    "D": "Step 2: compare the box lengths: Team X 24 − 15 = 9, Team Y 23 − 18 = 5."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q6.svg",
+   "diagram_alt": "Parallel box plots of goals per season. Team X: minimum 10, Q1 15, median 19, Q3 24, maximum 30. Team Y: minimum 8, Q1 18, median 21, Q3 23, maximum 26"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Find the interquartile range of these 14 ages: 13, 15, 16, 18, 19, 22, 24, 25, 27, 28, 31, 33, 36, 40.",
+   "options": {
+    "A": "27",
+    "B": "24.5",
+    "C": "6.5",
+    "D": "13"
+   },
+   "answer": "D",
+   "explanation": "Lower half 13 … 24 has median 18 (Q1) and upper half 25 … 40 has median 31 (Q3), so IQR = 13. The range, 27, uses the extremes instead.",
+   "steps": [
+    "14 values: the lower half is the first 7 (13, 15, 16, 18, 19, 22, 24) and the upper half is the last 7.",
+    "Q1 = 4th value of the lower half = 18; Q3 = 4th value of the upper half (25, 27, 28, 31, 33, 36, 40) = 31.",
+    "IQR = 31 − 18 = 13."
+   ],
+   "mistakes": {
+    "A": "Step 3: 40 − 13 = 27 is the range. The IQR is Q3 − Q1.",
+    "B": "Step 1: 24.5 is the median, (24 + 25) ÷ 2. Keep going to find the quartiles.",
+    "C": "Step 3: 31 − 24.5 is Q3 − median. Subtract Q1, not the median."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The box plot shows daily maximum temperatures, with one value drawn as an outlier at 46 °C. What is the upper fence that makes 46 an outlier?",
+   "options": {
+    "A": "36 °C",
+    "B": "40 °C",
+    "C": "12 °C",
+    "D": "8 °C"
+   },
+   "answer": "B",
+   "explanation": "IQR = 28 − 20 = 8, so the upper fence is 28 + 1.5 × 8 = 40 °C, and 46 is beyond it. Using 1 × IQR gives 36, which is the wrong rule.",
+   "steps": [
+    "Read the box: Q1 = 20, Q3 = 28, so IQR = 8.",
+    "1.5 × IQR = 1.5 × 8 = 12.",
+    "Upper fence = Q3 + 12 = 28 + 12 = 40 °C, and 46 is above it."
+   ],
+   "mistakes": {
+    "A": "Step 2: Q3 + IQR = 28 + 8 = 36. The fence uses 1.5 × IQR, not 1 × IQR.",
+    "C": "Step 2: 12 is 1.5 × IQR on its own. Add it to Q3.",
+    "D": "Step 3: 20 − 12 = 8 is the LOWER fence. The upper fence uses Q3."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q8.svg",
+   "diagram_alt": "A box plot of temperatures on a scale from 10 to 50 °C: minimum 12, Q1 20, median 24, Q3 28, right whisker ending at 34, and a separate outlier dot at 46"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A data set has lower quartile 30, median 36 and interquartile range 14. Values above the upper fence are outliers. What is the upper fence?",
+   "options": {
+    "A": "65",
+    "B": "57",
+    "C": "51",
+    "D": "58"
+   },
+   "answer": "A",
+   "explanation": "Q3 = Q1 + IQR = 30 + 14 = 44, and the upper fence = 44 + 1.5 × 14 = 65. Adding 21 to the median (57) uses the wrong starting point.",
+   "steps": [
+    "IQR = Q3 − Q1, so Q3 = 30 + 14 = 44.",
+    "1.5 × IQR = 1.5 × 14 = 21.",
+    "Upper fence = 44 + 21 = 65."
+   ],
+   "mistakes": {
+    "B": "Step 2: you added 1.5 × 14 = 21 to the median. The fence starts from Q3.",
+    "C": "Step 2: you added 21 to Q1. The upper fence is built on Q3 = Q1 + IQR.",
+    "D": "Step 2: Q3 + IQR = 44 + 14 = 58. The rule adds 1.5 × IQR."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The box plot summarises the number of books read by 21 students, and every value is a whole number. Exactly how many students read 9 or more books, if no other student read exactly 9?",
+   "options": {
+    "A": "10",
+    "B": "10.5",
+    "C": "11",
+    "D": "5"
+   },
+   "answer": "C",
+   "explanation": "With 21 ordered values the median is the 11th value, 9. The 11th to 21st students read 9 or more: 11 students. Answering 10 forgets the student at the median.",
+   "steps": [
+    "21 values: the median is the (21 + 1) ÷ 2 = 11th value, which is 9.",
+    "The 10 values after it are above 9 (no one else read exactly 9).",
+    "Students with 9 or more = 1 + 10 = 11."
+   ],
+   "mistakes": {
+    "A": "Step 2: with 21 values the median (9) is itself one of the students. Count it as well as the 10 above it.",
+    "B": "Step 2: half of 21 is 10.5, but you cannot have half a student. The median value belongs to one real student.",
+    "D": "Step 2: 5 is roughly the top quarter (above Q3). \"9 or more\" starts at the median."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q10.svg",
+   "diagram_alt": "A box plot of books read by 21 students on a scale from 0 to 20: minimum 2, Q1 6, median 9, Q3 13, maximum 20"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The data 4, 6, 9, 11, k, 18, 20, 25 is in order and its median is 13. Find k.",
+   "options": {
+    "A": "k = 13",
+    "B": "k = 26",
+    "C": "k = 2",
+    "D": "k = 15"
+   },
+   "answer": "D",
+   "explanation": "The median is (11 + k) ÷ 2 = 13, so 11 + k = 26 and k = 15, which fits between 11 and 18. Setting k = 13 forgets that the median is the mean of two values.",
+   "steps": [
+    "8 values: the median is the mean of the 4th and 5th values, 11 and k.",
+    "Solve (11 + k) ÷ 2 = 13: multiply both sides by 2 to get 11 + k = 26.",
+    "Subtract 11: k = 15. Check: 15 is between 11 and 18 ✓."
+   ],
+   "mistakes": {
+    "A": "Step 1: with 8 values the median is the mean of the 4th and 5th values, so k itself does not have to equal 13.",
+    "B": "Step 2: (11 + k) ÷ 2 = 13 gives 11 + k = 26. Subtract 11 to finish.",
+    "C": "Step 3: 13 − 11 = 2 forgets that the median is an average. Multiply 13 by 2 first."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The parallel box plots show the marks of two classes on the same test. Which statement MUST be true?",
+   "options": {
+    "A": "Every student in Class P scored higher than every student in Class Q",
+    "B": "At least 75% of Class P scored higher than Class Q's median",
+    "C": "Half of Class Q scored below 38",
+    "D": "Class P's marks have a smaller IQR than Class Q's"
+   },
+   "answer": "B",
+   "explanation": "Class P's Q1 (55) is above Class Q's median (45), and at least 75% of Class P scored at or above their Q1, so at least 75% scored above 45. The classes overlap, so \"every student\" is false.",
+   "steps": [
+    "Class Q's median is 45.",
+    "Class P's lower quartile is 55, and about 75% of Class P scored 55 or more.",
+    "Since 55 is more than 45, at least 75% of Class P scored higher than Class Q's median."
+   ],
+   "mistakes": {
+    "A": "Step 2: Class P's minimum (40) is lower than Class Q's maximum (60), so the classes overlap.",
+    "C": "Step 1: 38 is Class Q's Q1, so only about a quarter scored below it.",
+    "D": "Step 3: IQR of P = 70 − 55 = 15 and IQR of Q = 52 − 38 = 14, so P's is larger."
+   },
+   "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-q12.svg",
+   "diagram_alt": "Parallel box plots of test marks. Class P: minimum 40, Q1 55, median 62, Q3 70, maximum 85. Class Q: minimum 30, Q1 38, median 45, Q3 52, maximum 60"
+  }
+ ]
 }
