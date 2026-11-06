@@ -1,0 +1,271 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Iteration and approximation with algorithms",
+ "summary": "Using recurrence rules and iteration to model change, approximate square roots with the Babylonian method, solve equations by fixed-point iteration, and decide when to stop.",
+ "minutes": 30,
+ "body": "A calculator finds √10 in a split second, but it doesn't \"know\" the answer — it runs an **iterative algorithm** that starts with a rough guess and improves it, again and again, until it is accurate enough. Iteration is also how banks track a loan month by month and how scientists model animal populations year by year.\n\n## Learning objective\n\nBy the end of this lesson you can use a recurrence rule xₙ₊₁ = g(xₙ) to generate values, use iteration to approximate square roots and solutions of equations to a required accuracy, and decide when to stop.\n\n## Before you start\n\nYou need **Algorithms for solving equations (Year 9)** (the halving method), **Exponential growth and decay (Year 10)** and substituting into formulas.\n\n**Warm-up**\n\n1. If x = 4, work out (x + 9 ÷ x) ÷ 2.\n2. Round 2.30278 to two decimal places.\n\n**Answers:** 1. (4 + 2.25) ÷ 2 = **3.125**. 2. **2.30** (the third decimal, 2, is less than 5).\n\n## Think of it like this\n\n### Adjusting the shower\n\nYou turn on the shower: too cold, so you turn it a little hotter. Still cool, so a little more. Each adjustment is based on the result of the last one, and you close in on the right temperature. Iteration works the same way: each new value is calculated from the previous value with the same rule.\n\n*Where the analogy breaks down:* you can feel the water and choose how much to turn. An algorithm blindly applies a fixed rule — and some rules make things worse every time, swinging further and further from the answer.\n\n## Key ideas\n\n### Iteration and recurrence rules\n\nTo **iterate** means to repeat a rule, feeding each output back in as the next input. A **recurrence rule** (or recurrence relation) such as uₙ₊₁ = 1.1uₙ − 50 says how to get the next term from the current one. You also need a **starting value**, u₀. Each new value is called an **iterate**. In a spreadsheet, type 1000 in A1, then =1.1*A1−50 in A2 and fill down.\n\n![Column graph of a fish population following u n plus 1 equals 1.1 u n minus 50 from 1000: 1000, 1050, 1105, 1165.5, 1232.05 over years 0 to 4](/diagrams/y10/maths/iteration-and-approximation-with-algorithms-fish.svg)\n\nIf the rule is uₙ₊₁ = a × uₙ + b with a between 0 and 1, the values settle at a **steady state** L where L = aL + b, so L = b ÷ (1 − a). For example, uₙ₊₁ = 0.5uₙ + 40 settles at 40 ÷ 0.5 = 80.\n\n### The Babylonian method for square roots\n\nTo find √N, start with a guess x and repeat:\n\n`new x = (x + N ÷ x) ÷ 2`\n\nWhy it works: if x is too small, N ÷ x is too big (and the other way round), so their average is closer to √N. Picture a rectangle of area N with sides x and N ÷ x — each step makes it more square, and the side of a square of area N is √N.\n\n![Three rectangles of area 10: 2 by 5, then 3.5 by 2.857, then 3.179 by 3.146, getting closer to a square each step](/diagrams/y10/maths/iteration-and-approximation-with-algorithms-rectangles.svg)\n\n### Solving equations by fixed-point iteration\n\nTo solve an equation like x² − x − 3 = 0, rearrange it into the form **x = g(x)**, for example x = √(x + 3). Then iterate xₙ₊₁ = g(xₙ). If the values settle down to a number L, then L = g(L), so L is a solution. L is called a **fixed point**.\n\nOn a graph, the solution is where y = g(x) meets y = x. The iterates make a staircase towards it:\n\n![Graph of y = square root of (x + 3) and the dashed line y = x, with a green staircase starting at x0 = 0 that climbs towards the crossing point near x = 2.3](/diagrams/y10/maths/iteration-and-approximation-with-algorithms-cobweb.svg)\n\nWhen the values settle down, the iteration **converges**. When they run away or bounce around forever, it **diverges** — then try a different rearrangement or starting value.\n\n### Stopping rules\n\nAn iteration never reaches the answer exactly, so it needs a **stopping rule**: stop when two iterates in a row round to the same value at the accuracy you need.\n\n![Flowchart: choose a start value x, work out new = g(x), then if new and x round to the same answer stop, otherwise set x = new and repeat](/diagrams/y10/maths/iteration-and-approximation-with-algorithms-flowchart.svg)\n\nThe halving method from Year 9 always works once you have a sign change, but it is slow: each step halves the interval, so after n steps an interval of width 1 has width 1 ÷ 2ⁿ. Fixed-point iteration and the Babylonian method are often much faster — when they converge.\n\n## Worked examples\n\n### Example 1\n\nA lake has 1000 fish. Each year the population grows by 10%, then 50 fish are caught: uₙ₊₁ = 1.1uₙ − 50, u₀ = 1000. Find u₃.\n\nStep 1: u₁ = 1.1 × 1000 − 50 = 1050 — substitute u₀ into the rule.\nStep 2: u₂ = 1.1 × 1050 − 50 = 1105 — feed u₁ back in.\nStep 3: u₃ = 1.1 × 1105 − 50 = **1165.5**, so about 1166 fish after 3 years.\n\n### Example 2\n\nUse the Babylonian method with x₀ = 2 to find √10 correct to four decimal places.\n\nStep 1: x₁ = (2 + 10 ÷ 2) ÷ 2 = (2 + 5) ÷ 2 = 3.5.\nStep 2: x₂ = (3.5 + 10 ÷ 3.5) ÷ 2 = (3.5 + 2.8571) ÷ 2 ≈ 3.1786.\nStep 3: x₃ = (3.1786 + 10 ÷ 3.1786) ÷ 2 ≈ 3.1623.\nStep 4: one more step also gives 3.1623 to four decimal places, so stop: **√10 ≈ 3.1623**.\n\nCheck: 3.1623² ≈ 10.0001 ✓\n\n### Example 3\n\nSolve x² − x − 3 = 0 using xₙ₊₁ = √(xₙ + 3) with x₀ = 2. Give the answer to two decimal places.\n\nStep 1: check the rearrangement: x = √(x + 3) squares to x² = x + 3, which is x² − x − 3 = 0 ✓\nStep 2: x₁ = √5 ≈ 2.2361, x₂ = √5.2361 ≈ 2.2882.\nStep 3: x₃ ≈ 2.2996, x₄ ≈ 2.3021.\nStep 4: x₃ and x₄ both round to 2.30, so stop: **x ≈ 2.30**.\n\nCheck: the exact solution is (1 + √13) ÷ 2 ≈ 2.3028 ✓\n\n### Example 4\n\nThe same equation can be rearranged as x = x² − 3. Try xₙ₊₁ = xₙ² − 3 with x₀ = 2.\n\nStep 1: x₁ = 2² − 3 = 1.\nStep 2: x₂ = 1² − 3 = −2.\nStep 3: x₃ = (−2)² − 3 = 1, then x₄ = −2 again.\nStep 4: the values bounce between 1 and −2 forever — the iteration **does not converge**, so use the rearrangement from Example 3 instead.\n\n### Example 5\n\nThe halving method starts with an interval of width 1. How many halvings make the interval narrower than 0.01?\n\nStep 1: after n halvings the width is 1 ÷ 2ⁿ, so we need 2ⁿ greater than 100.\nStep 2: 2⁶ = 64 is too small, but 2⁷ = 128 works — so **7 halvings**.\n\n## Common mistakes\n\n- **Using the starting value as the answer to the first step.** x₀ is the start; x₁ is the result of ONE use of the rule. Fix: label every value x₀, x₁, x₂, …\n- **Doing the operations in the wrong order.** In 1.1uₙ − 50, multiply first, then subtract. Fix: substitute with brackets: 1.1 × (1050) − 50.\n- **Stopping too early.** One value that rounds nicely is not enough. Fix: stop only when two iterates in a row agree at the accuracy asked for.\n- **Rounding iterates too much along the way.** Fix: keep at least two more decimal places than you need (or use the calculator's ANS key).\n- **Assuming every rearrangement works.** Some diverge. Fix: watch the iterates — if they do not settle down, try another form.\n\n## Tips to remember\n\n- **\"Feed it back in.\"** Iteration = output becomes the next input. (A made-up memory trick.)\n- **Babylonian = \"average the guess and N over the guess\".** The true root is always trapped between x and N ÷ x.\n- **The staircase picture:** go up to the curve, across to the line y = x, up to the curve again. If the steps shrink, it converges.\n- **Steady state trick:** replace both uₙ₊₁ and uₙ with L and solve.\n- **If you remember one thing:** stop when two in a row round the same.\n\n## Key terms\n\n- **Iteration** — repeating a rule, using each output as the next input.\n- **Recurrence rule** — a rule giving the next term from the current one, such as uₙ₊₁ = 2uₙ + 1.\n- **Iterate** — one of the values produced, x₁, x₂, …\n- **Fixed point** — a value L with L = g(L); where y = g(x) meets y = x.\n- **Converge** — settle down closer and closer to one value.\n- **Diverge** — fail to settle down.\n- **Steady state** — the long-term value a recurrence settles at.\n- **Stopping rule** — the test that decides when the algorithm finishes.\n\n## Summary\n\n- A recurrence rule plus a starting value generates a sequence, one term at a time.\n- The Babylonian method new x = (x + N ÷ x) ÷ 2 approximates √N quickly.\n- Rearrange an equation to x = g(x) and iterate; a value the iterates settle at is a solution.\n- Some rearrangements diverge — check that the iterates settle down.\n- Stop when two iterates in a row agree to the required accuracy.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "A sequence follows the rule uₙ₊₁ = 2uₙ + 1 with u₀ = 5. Find u₂.",
+   "options": {
+    "A": "11",
+    "B": "23",
+    "C": "26",
+    "D": "47"
+   },
+   "answer": "B",
+   "explanation": "u₁ = 2 × 5 + 1 = 11 and u₂ = 2 × 11 + 1 = 23. 11 is only one step.",
+   "steps": [
+    "u₁ = 2 × 5 + 1 = 11 — substitute u₀ into the rule.",
+    "u₂ = 2 × 11 + 1 = 23 — feed u₁ back into the rule."
+   ],
+   "mistakes": {
+    "A": "Step 1: 11 is only u₁. Use the rule a second time to get u₂.",
+    "C": "Step 1: double first, then add 1 — you added 1 before doubling.",
+    "D": "Step 2: that is u₃ — you used the rule one time too many."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The Babylonian method improves an estimate of √20 using new x = (x + 20 ÷ x) ÷ 2. Starting with x = 4, what is the next estimate?",
+   "options": {
+    "A": "9",
+    "B": "12",
+    "C": "5",
+    "D": "4.5"
+   },
+   "answer": "D",
+   "explanation": "20 ÷ 4 = 5, and the average of 4 and 5 is 4.5. 9 forgets to divide by 2.",
+   "steps": [
+    "Work out 20 ÷ 4 = 5.",
+    "Average with the guess: (4 + 5) ÷ 2 = 4.5."
+   ],
+   "mistakes": {
+    "A": "Step 2: after adding x and N ÷ x you must divide by 2 to average them.",
+    "B": "Step 1: use N ÷ x = 20 ÷ 4 = 5, not N itself.",
+    "C": "Step 2: 5 is just N ÷ x. Average it with the guess, 4."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The halving method is used on f(x) = x² − 10. The diagram shows f(3), f(3.5) and f(4). After this halving, which interval contains the solution?",
+   "options": {
+    "A": "3 to 3.5",
+    "B": "3.5 to 4",
+    "C": "3 to 4",
+    "D": "3 to 3.25"
+   },
+   "answer": "A",
+   "explanation": "f(3) is negative and f(3.5) is positive, so the graph crosses zero between 3 and 3.5. 3.5 to 4 has no sign change (both positive).",
+   "steps": [
+    "Look at the signs: f(3) = −1 is negative, f(3.5) = 2.25 and f(4) = 6 are positive.",
+    "The sign changes between 3 and 3.5, so the solution is in the interval 3 to 3.5."
+   ],
+   "mistakes": {
+    "B": "Step 2: keep the half where the signs are DIFFERENT. f(3.5) and f(4) are both positive.",
+    "C": "Step 2: after finding f(3.5), the interval must be updated to half its width.",
+    "D": "Step 2: only one halving is asked for — you cannot know about 3.25 without working out f(3.25)."
+   },
+   "diagram": "diagrams/y10/maths/iteration-and-approximation-with-algorithms-q3.svg",
+   "diagram_alt": "A number line from 3 to 4 with points marked: f(3) = −1 at 3, f(3.5) = 2.25 at 3.5, and f(4) = 6 at 4."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A savings account follows Bₙ₊₁ = 1.01Bₙ + 100 each month, where B₀ = $2000. Find B₂, the balance after 2 months.",
+   "options": {
+    "A": "$2200.00",
+    "B": "$2240.00",
+    "C": "$2241.20",
+    "D": "$2120.00"
+   },
+   "answer": "C",
+   "explanation": "B₁ = 1.01 × 2000 + 100 = 2120 and B₂ = 1.01 × 2120 + 100 = 2241.20. $2240 wrongly earns interest on $2000 both months.",
+   "steps": [
+    "B₁ = 1.01 × 2000 + 100 = 2020 + 100 = 2120.",
+    "B₂ = 1.01 × 2120 + 100 = 2141.20 + 100 = 2241.20."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by 1.01 each month — you left out the interest.",
+    "B": "Step 2: the interest in month 2 is 1% of $2120, not 1% of the original $2000.",
+    "D": "Step 1: $2120 is only after one month. Use the rule again for B₂."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Use xₙ₊₁ = 1 + 5 ÷ xₙ with x₀ = 3 to find x₂. Give the answer to three decimal places where needed.",
+   "options": {
+    "A": "2.667",
+    "B": "3",
+    "C": "2.739",
+    "D": "2.875"
+   },
+   "answer": "D",
+   "explanation": "x₁ = 1 + 5 ÷ 3 ≈ 2.667 and x₂ = 1 + 5 ÷ 2.667 = 1 + 1.875 = 2.875. 3 comes from working out (1 + 5) ÷ x.",
+   "steps": [
+    "x₁ = 1 + 5 ÷ 3 = 1 + 1.6667 ≈ 2.6667 — divide first, then add 1.",
+    "x₂ = 1 + 5 ÷ 2.6667 = 1 + 1.875 = 2.875."
+   ],
+   "mistakes": {
+    "A": "Step 1: 2.667 is x₁. Use the rule again to get x₂.",
+    "B": "Step 1: the rule is 1 + (5 ÷ x), not (1 + 5) ÷ x — divide before adding.",
+    "C": "Step 2: that is x₃. Stop after two uses of the rule."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The iteration xₙ₊₁ = √(2xₙ + 8) settles at a value of x. Which equation does that value solve?",
+   "options": {
+    "A": "x² + 2x + 8 = 0",
+    "B": "x² − 2x − 8 = 0",
+    "C": "x² − 2x + 8 = 0",
+    "D": "x = 2x + 8"
+   },
+   "answer": "B",
+   "explanation": "At the fixed point x = √(2x + 8); squaring gives x² = 2x + 8, so x² − 2x − 8 = 0. x = 2x + 8 forgets to square the left side.",
+   "steps": [
+    "When the iterates settle at x, the rule says x = √(2x + 8).",
+    "Square both sides: x² = 2x + 8, then move everything to one side: x² − 2x − 8 = 0."
+   ],
+   "mistakes": {
+    "A": "Step 2: moving 2x + 8 to the left side changes both signs to minus.",
+    "C": "Step 2: subtract 8 from both sides, so the constant becomes −8.",
+    "D": "Step 1: a fixed point means x = √(2x + 8). Square BOTH sides to remove the square root."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Use the Babylonian method, new x = (x + 30 ÷ x) ÷ 2, with x₀ = 5 to find x₂, an estimate of √30. Give it to four decimal places.",
+   "options": {
+    "A": "5.4773",
+    "B": "5.5",
+    "C": "5.4545",
+    "D": "10.9545"
+   },
+   "answer": "A",
+   "explanation": "x₁ = (5 + 6) ÷ 2 = 5.5, then x₂ = (5.5 + 5.4545…) ÷ 2 ≈ 5.4773. 5.4545 forgets to average.",
+   "steps": [
+    "x₁ = (5 + 30 ÷ 5) ÷ 2 = (5 + 6) ÷ 2 = 5.5.",
+    "30 ÷ 5.5 = 5.454545…",
+    "x₂ = (5.5 + 5.454545…) ÷ 2 ≈ 5.4773."
+   ],
+   "mistakes": {
+    "B": "Step 1: 5.5 is only x₁. Use the rule a second time.",
+    "C": "Step 2: 5.4545 is just 30 ÷ 5.5 — average it with 5.5.",
+    "D": "Step 2: you added 5.5 and 5.4545 but did not divide by 2."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The halving method starts with the interval 2 to 3. How many halvings are needed to make the interval narrower than 0.001?",
+   "options": {
+    "A": "3",
+    "B": "9",
+    "C": "10",
+    "D": "1000"
+   },
+   "answer": "C",
+   "explanation": "After n halvings the width is 1 ÷ 2ⁿ, so we need 2ⁿ greater than 1000: 2⁹ = 512 is too small, 2¹⁰ = 1024 works, so 10. 9 leaves a width of about 0.002.",
+   "steps": [
+    "After n halvings the width is 1 ÷ 2ⁿ, so 2ⁿ must be greater than 1000.",
+    "2⁹ = 512 is too small; 2¹⁰ = 1024 is big enough, so 10 halvings."
+   ],
+   "mistakes": {
+    "A": "Step 1: halving does not add one decimal place each time — each step only halves the width.",
+    "B": "Step 2: after 9 halvings the width is 1 ÷ 512 ≈ 0.00195, which is still wider than 0.001.",
+    "D": "Step 1: 1000 is how many pieces of width 0.001 fit in 1. Each halving doubles the pieces, so far fewer steps are needed."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A loan of $10 000 follows Lₙ₊₁ = 1.005Lₙ − 500, where n is the number of months. After how many months is the balance first below $8600?",
+   "options": {
+    "A": "3",
+    "B": "4",
+    "C": "5",
+    "D": "Never"
+   },
+   "answer": "B",
+   "explanation": "L₁ = 9550, L₂ = 9097.75, L₃ ≈ 8643.24, L₄ ≈ 8186.45, so month 4 is the first below $8600. Answering 3 ignores the interest.",
+   "steps": [
+    "L₁ = 1.005 × 10 000 − 500 = 9550.",
+    "L₂ = 1.005 × 9550 − 500 = 9097.75, and L₃ = 1.005 × 9097.75 − 500 ≈ 8643.24 — still above 8600.",
+    "L₄ = 1.005 × 8643.24 − 500 ≈ 8186.45 — first below 8600, so 4 months."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by 1.005 first — without interest you would reach $8500 after 3 months, but with interest it is still $8643.24.",
+    "C": "Step 2: L₀ is the starting balance, not month 1. Count from L₁.",
+    "D": "Step 1: 0.5% per month is 1.005, not 1.05. With 1.05 the balance would stay at $10 000."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The equation x² − 5x + 3 = 0 has a solution near 4.30. Two rearrangements are tried, both starting at x₀ = 4: xₙ₊₁ = (xₙ² + 3) ÷ 5 and xₙ₊₁ = 5 − 3 ÷ xₙ. Which one converges to the solution near 4.30?",
+   "options": {
+    "A": "Only xₙ₊₁ = (xₙ² + 3) ÷ 5",
+    "B": "Both of them",
+    "C": "Only xₙ₊₁ = 5 − 3 ÷ xₙ",
+    "D": "Neither of them"
+   },
+   "answer": "C",
+   "explanation": "The first gives 3.8, 3.488, … drifting down to the other solution (about 0.70). The second gives 4.25, 4.2941, … closing in on 4.30. Both are correct rearrangements, but only one converges to this solution.",
+   "steps": [
+    "Both are rearrangements of x² − 5x + 3 = 0, so test them by iterating.",
+    "First rule: (16 + 3) ÷ 5 = 3.8, then (14.44 + 3) ÷ 5 = 3.488 — moving away from 4.30.",
+    "Second rule: 5 − 3 ÷ 4 = 4.25, then 5 − 3 ÷ 4.25 ≈ 4.2941 — moving towards 4.30, so only xₙ₊₁ = 5 − 3 ÷ xₙ works."
+   ],
+   "mistakes": {
+    "A": "Step 2: work out a few terms: 3.8, 3.488, … they move AWAY from 4.30, towards the smaller solution.",
+    "B": "Step 2: two rearrangements of the same equation can behave very differently — test each one.",
+    "D": "Step 3: 5 − 3 ÷ xₙ gives 4.25, 4.2941, … which is closing in on 4.30."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The diagram shows the iteration xₙ₊₁ = √(xₙ + 6) starting at x₀ = 0, drawn as a staircase between y = √(x + 6) and y = x. Which equation does the limiting value solve, and what is that value?",
+   "options": {
+    "A": "x² − x − 6 = 0, and the value is 3",
+    "B": "x² + x − 6 = 0, and the value is 2",
+    "C": "x² − x − 6 = 0, and the value is −2",
+    "D": "x = √6, and the value is about 2.449"
+   },
+   "answer": "A",
+   "explanation": "The staircase heads to where y = √(x + 6) meets y = x. There x = √(x + 6), so x² − x − 6 = 0, which factorises to (x − 3)(x + 2) = 0. Only x = 3 is positive, so the value is 3. −2 is the other solution of the equation, but the iterates are square roots, so never negative.",
+   "steps": [
+    "The limit L satisfies L = √(L + 6) — where the curve meets y = x.",
+    "Square: L² = L + 6, so L² − L − 6 = 0, which factorises to (L − 3)(L + 2) = 0.",
+    "L must be positive (it is a square root), so L = 3."
+   ],
+   "mistakes": {
+    "B": "Step 2: x² = x + 6 rearranges to x² − x − 6 = 0 — moving +x to the left makes it −x.",
+    "C": "Step 3: a square root is never negative, so the iterates cannot settle at −2.",
+    "D": "Step 1: √6 ≈ 2.449 is only x₁. The staircase keeps climbing past it."
+   },
+   "diagram": "diagrams/y10/maths/iteration-and-approximation-with-algorithms-q11.svg",
+   "diagram_alt": "Graph from 0 to 4 on both axes showing the curve y = square root of (x + 6), the dashed line y = x, and a green staircase from x0 = 0 through x1 near 2.45 and x2 near 2.91, heading to where the curve meets the line."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A population follows Pₙ₊₁ = 0.8Pₙ + 300 (each year 20% leave and 300 arrive). What steady-state value does the population settle at?",
+   "options": {
+    "A": "375",
+    "B": "1500",
+    "C": "166.7",
+    "D": "240"
+   },
+   "answer": "B",
+   "explanation": "At the steady state L = 0.8L + 300, so 0.2L = 300 and L = 1500. 375 divides by 0.8 instead of 0.2.",
+   "steps": [
+    "At the steady state the population does not change, so L = 0.8L + 300.",
+    "Subtract 0.8L: 0.2L = 300, so L = 300 ÷ 0.2 = 1500."
+   ],
+   "mistakes": {
+    "A": "Step 2: from L = 0.8L + 300, subtract 0.8L to get 0.2L = 300 — divide by 1 − 0.8 = 0.2, not by 0.8.",
+    "C": "Step 2: 0.8L must be SUBTRACTED from both sides, giving 0.2L, not added to give 1.8L.",
+    "D": "Step 1: 0.8 × 300 is just one part of the rule. Set uₙ₊₁ and uₙ both equal to L and solve."
+   }
+  }
+ ]
+}

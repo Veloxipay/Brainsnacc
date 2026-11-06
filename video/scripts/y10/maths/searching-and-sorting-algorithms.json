@@ -1,0 +1,118 @@
+{
+ "lesson": "y10/maths/searching-and-sorting-algorithms.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Searching and sorting algorithms",
+ "icon": "🔍",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Searching and sorting algorithms",
+   "sub": "How computers find and order things fast",
+   "icon": "🔍",
+   "say": "Your phone finds one contact among thousands in a blink. How? It follows a searching algorithm. Today you will learn two ways to search a list, two ways to sort one, and how to count which is fastest."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "📖",
+   "everyday": "Open a phone book in the middle and throw away the wrong half",
+   "icon2": "🔍",
+   "science": "Binary search checks the middle of a sorted list and discards half",
+   "breaks": "A person jumps roughly to the right letter. Binary search always checks the exact middle item, one comparison at a time.",
+   "say": "To find a name in a phone book, you open near the middle, see which half the name is in, and throw the other half away. That is binary search. Reading from page one is linear search. One difference: the computer always checks the exact middle item."
+  },
+  {
+   "type": "diagram",
+   "heading": "Binary search halves the list",
+   "diagram": "diagrams/y10/maths/searching-and-sorting-algorithms-binary.svg",
+   "notes": [
+    "Look at the middle item",
+    "Throw away the wrong half",
+    "15 items: at most 4 looks"
+   ],
+   "say": "Here is a sorted list of fifteen numbers, and we want forty-seven. First look at the middle: thirty-five. Forty-seven is bigger, so grey out the left half. Next middle: fifty-one, too big. Then forty-two, too small. The fourth look finds forty-seven.",
+   "caption": "A sorted list of 15 numbers; we want 47. Middle: 35, so grey out the left half. Next: 51, too big. Then 42, too small. The 4th look finds 47."
+  },
+  {
+   "type": "equation",
+   "heading": "Binary search worst case",
+   "equation": "smallest k with 2ᵏ ≥ n + 1",
+   "parts": [
+    [
+     "n",
+     "number of items"
+    ],
+    [
+     "k",
+     "most comparisons needed"
+    ],
+    [
+     "2¹⁰ = 1024",
+     "1000 items: 10 looks"
+    ]
+   ],
+   "say": "Every look halves the list, so the worst case is the smallest k where two to the power k is at least n plus one. For a thousand items, two to the ten is one thousand and twenty-four, so just ten looks. Linear search could need a thousand.",
+   "caption": "The worst case is the smallest k with 2ᵏ ≥ n + 1. For 1000 items, 2¹⁰ = 1024, so just 10 looks. Linear search could need 1000."
+  },
+  {
+   "type": "diagram",
+   "heading": "Bubble sort: biggest to the back",
+   "diagram": "diagrams/y10/maths/searching-and-sorting-algorithms-bubble.svg",
+   "notes": [
+    "Compare neighbours, swap if wrong",
+    "Each pass parks the largest at the end",
+    "Stop after a pass with no swaps"
+   ],
+   "say": "Bubble sort compares neighbours and swaps any pair in the wrong order. Start with five, two, eight, one, four. After pass one, eight has bubbled to the end. After pass two, five joins it. After pass three the list is sorted, and pass four makes no swaps, so we stop.",
+   "caption": "Bubble sort compares neighbours and swaps pairs in the wrong order. Start: 5, 2, 8, 1, 4. After pass 1, 8 is at the end. After pass 2, 5 joins it. After pass 3 it is sorted; pass 4 has no swaps, so stop."
+  },
+  {
+   "type": "example",
+   "heading": "Selection sort",
+   "question": "Sort 6, 3, 9, 1, 7 with selection sort. How many comparisons?",
+   "lines": [
+    "Smallest is 1: swap with 6",
+    "1, 3, 9, 6, 7",
+    "Then 6 swaps with 9, 7 swaps with 9",
+    "1, 3, 6, 7, 9",
+    "4 + 3 + 2 + 1 = 10 comparisons"
+   ],
+   "say": "Selection sort finds the smallest and swaps it to the front. One swaps with six. Three is already in place. Then six swaps with nine, and seven swaps with nine. The comparisons are four plus three plus two plus one, which is ten."
+  },
+  {
+   "type": "compare",
+   "heading": "How the work grows",
+   "left": {
+    "title": "Searching",
+    "icon": "🔍",
+    "points": [
+     "Linear: up to n looks",
+     "Binary: about +1 look when n doubles",
+     "Binary needs a sorted list"
+    ]
+   },
+   "right": {
+    "title": "Sorting",
+    "icon": "🧱",
+    "points": [
+     "Bubble or selection sort",
+     "n(n − 1) ÷ 2 comparisons",
+     "Double n: about 4 times the work"
+    ]
+   },
+   "say": "Here is the big picture. Linear search can need n looks. Binary search adds only one look each time the list doubles, but the list must be sorted. Bubble and selection sort make n times n minus one over two comparisons, so doubling the list makes about four times the work."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Linear search: any list, worst case n",
+    "Binary search: sorted list, halve each look",
+    "Bubble sort: swap neighbours, big ones sink",
+    "Selection sort: smallest to the front",
+    "Sorts: n(n − 1) ÷ 2 comparisons"
+   ],
+   "say": "Quick recap. Linear search works on any list. Binary search halves a sorted list with every look. Bubble sort swaps neighbours, and selection sort moves the smallest to the front. Count comparisons to compare them. Now try the practice questions!"
+  }
+ ]
+}

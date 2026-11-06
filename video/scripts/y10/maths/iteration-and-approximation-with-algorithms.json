@@ -1,0 +1,97 @@
+{
+ "lesson": "y10/maths/iteration-and-approximation-with-algorithms.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Iteration and approximation with algorithms",
+ "icon": "🎯",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Iteration and approximation with algorithms",
+   "sub": "Guess, improve, repeat — until it is good enough",
+   "icon": "🎯",
+   "say": "How does a calculator find the square root of ten? It does not know the answer. It starts with a guess and improves it again and again. That is iteration, and today you will learn to use it to model change and solve equations."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "💧",
+   "everyday": "Too cold? Turn the shower a little hotter, then check again",
+   "icon2": "🎯",
+   "science": "Each new value comes from the last one using the same rule",
+   "breaks": "You can feel the water. An algorithm blindly applies its rule, and some rules swing further from the answer every time.",
+   "say": "Think of adjusting a shower. Too cold, turn it a bit hotter, check again. Each change is based on the last result. Iteration is the same: feed each answer back into the rule. But unlike you, an algorithm cannot feel the water, and some rules make things worse every time."
+  },
+  {
+   "type": "example",
+   "heading": "A recurrence rule",
+   "question": "uₙ₊₁ = 1.1uₙ − 50, u₀ = 1000. Find u₃.",
+   "lines": [
+    "u₁ = 1.1 × 1000 − 50 = 1050",
+    "u₂ = 1.1 × 1050 − 50 = 1105",
+    "u₃ = 1.1 × 1105 − 50",
+    "u₃ = 1165.5"
+   ],
+   "say": "A lake starts with a thousand fish. Each year they grow by ten percent, then fifty are caught. One point one times a thousand, minus fifty, is one thousand and fifty. Feed that back in: eleven hundred and five. Once more: eleven hundred and sixty-five point five.",
+   "caption": "u₁ = 1.1 × 1000 − 50 = 1050. Feed it back in: u₂ = 1105. Once more: u₃ = 1165.5."
+  },
+  {
+   "type": "diagram",
+   "heading": "Square roots by averaging",
+   "diagram": "diagrams/y10/maths/iteration-and-approximation-with-algorithms-rectangles.svg",
+   "notes": [
+    "new x = (x + N ÷ x) ÷ 2",
+    "Each rectangle has area 10",
+    "√10 ≈ 3.1623"
+   ],
+   "say": "To find the square root of ten, start with a rectangle of area ten: two by five. Average the sides to get three point five, and the other side becomes about two point eight six. Again: about three point one eight by three point one five. It is nearly a square, and its side is the square root of ten.",
+   "caption": "Start with a 2 by 5 rectangle of area 10. Average the sides: 3.5 by about 2.86. Again: about 3.18 by 3.15. Nearly a square — its side is √10."
+  },
+  {
+   "type": "diagram",
+   "heading": "Solving x = √(x + 3)",
+   "diagram": "diagrams/y10/maths/iteration-and-approximation-with-algorithms-cobweb.svg",
+   "notes": [
+    "Up to the curve, across to y = x",
+    "The steps shrink: it converges",
+    "x ≈ 2.30"
+   ],
+   "say": "To solve x squared minus x minus three equals zero, rearrange to x equals the square root of x plus three. First the curve and the line y equals x. Now the staircase: up to the curve, across to the line, up again. The steps shrink towards the crossing point, at about two point three zero.",
+   "caption": "Solve x² − x − 3 = 0 as x = √(x + 3). Draw the curve and y = x. The staircase goes up to the curve, across to the line, up again, shrinking towards x ≈ 2.30."
+  },
+  {
+   "type": "steps",
+   "heading": "The stopping rule",
+   "steps": [
+    "Choose a start value",
+    "Apply the rule to get the next value",
+    "Compare it with the last value",
+    "Stop when both round the same"
+   ],
+   "say": "Iteration never lands exactly on the answer, so you need a stopping rule. Choose a start, apply the rule, and compare the new value with the last one. Stop when two in a row round to the same answer."
+  },
+  {
+   "type": "points",
+   "heading": "When iteration fails",
+   "icon": "⚠️",
+   "points": [
+    "xₙ₊₁ = xₙ² − 3 from 2: 1, −2, 1, −2, …",
+    "It bounces forever: it diverges",
+    "Try a different rearrangement"
+   ],
+   "say": "Careful: not every rearrangement works. The same equation written as x equals x squared minus three, starting at two, gives one, negative two, one, negative two, forever. That iteration diverges, so try a different rearrangement.",
+   "caption": "Not every rearrangement works. x = x² − 3 from 2 gives 1, −2, 1, −2, forever. It diverges, so try another rearrangement."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Iterate: feed each output back in",
+    "Babylonian: average x and N ÷ x",
+    "Rearrange to x = g(x), then iterate",
+    "Some rearrangements diverge",
+    "Stop when two in a row agree"
+   ],
+   "say": "Quick recap. Iteration feeds each answer back into the rule. Average x and N over x to find square roots. Rearrange equations into x equals g of x, but check the values settle. Stop when two in a row agree. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,356 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 11 · Test 1",
+ "kind": "test",
+ "summary": "Chapter 11 test 1: searching and sorting algorithms, recurrence rules, iteration and approximation — 15 questions.",
+ "minutes": 25,
+ "body": "This test covers Chapter 11 · Algorithmic thinking: linear and binary search, bubble sort and selection sort, counting comparisons, recurrence rules, the Babylonian method for square roots, fixed-point iteration, the halving method and stopping rules. Allow about 25 minutes, no notes, no calculator unless the question says. Some questions show the list or graph in a diagram — read it carefully. Work each question out on paper before you look at the options, and write your steps so you can find where you went wrong.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Linear search is used to find 31 in the list shown in the diagram. How many comparisons are made, including the one that finds 31?",
+   "options": {
+    "A": "4",
+    "B": "7",
+    "C": "5",
+    "D": "3"
+   },
+   "answer": "C",
+   "explanation": "Linear search checks from the left: 14, 6, 22, 9, 31 — 31 is found on comparison 5. 4 forgets to count the comparison that finds it.",
+   "steps": [
+    "Linear search starts with the first item and checks each item in turn.",
+    "The items checked are 14, 6, 22, 9, 31, so 31 is found on comparison 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: count the comparison with 31 itself as well — that is the one that finds it.",
+    "B": "Step 2: linear search stops as soon as it finds 31; it does not check the rest of the list.",
+    "D": "Step 1: linear search starts at the first item on the left, not at the end of the list."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-1-linear.svg",
+   "diagram_alt": "A list of 7 boxes holding 14, 6, 22, 9, 31, 18, 27, with positions 1 to 7 underneath."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Binary search can be used on only one of these lists. Which one?",
+   "options": {
+    "A": "3, 7, 12, 20, 26",
+    "B": "3, 12, 7, 20, 26",
+    "C": "7, 3, 12, 26, 20",
+    "D": "20, 3, 26, 7, 12"
+   },
+   "answer": "A",
+   "explanation": "Binary search needs the list in increasing order, and only 3, 7, 12, 20, 26 is in order all the way. The others have at least one pair out of order.",
+   "steps": [
+    "Binary search discards half the list after each look, which only works if the list is sorted.",
+    "Check each list from left to right: only 3, 7, 12, 20, 26 increases every time."
+   ],
+   "mistakes": {
+    "B": "Step 2: check every neighbouring pair — 12 comes before 7, so this list is not in order.",
+    "C": "Step 2: 7 comes before 3 and 26 comes before 20, so this list is not sorted.",
+    "D": "Step 1: this list jumps up and down — binary search would discard the wrong half."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A sequence follows the rule uₙ₊₁ = 3uₙ − 2 with u₀ = 4. Find u₂.",
+   "options": {
+    "A": "10",
+    "B": "12",
+    "C": "82",
+    "D": "28"
+   },
+   "answer": "D",
+   "explanation": "u₁ = 3 × 4 − 2 = 10 and u₂ = 3 × 10 − 2 = 28. 10 stops after one step.",
+   "steps": [
+    "u₁ = 3 × 4 − 2 = 10 — substitute u₀ into the rule.",
+    "u₂ = 3 × 10 − 2 = 28 — feed u₁ back into the rule."
+   ],
+   "mistakes": {
+    "A": "Step 1: 10 is only u₁. Use the rule a second time to get u₂.",
+    "B": "Step 1: multiply by 3 first, then subtract 2 — you did them in the wrong order.",
+    "C": "Step 2: that is u₃ — you used the rule one time too many."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The Babylonian method improves an estimate of √45 using new x = (x + 45 ÷ x) ÷ 2. Starting with x = 5, what is the next estimate?",
+   "options": {
+    "A": "14",
+    "B": "7",
+    "C": "25",
+    "D": "9"
+   },
+   "answer": "B",
+   "explanation": "45 ÷ 5 = 9, and the average of 5 and 9 is 7. 14 forgets to divide by 2.",
+   "steps": [
+    "Work out 45 ÷ 5 = 9.",
+    "Average with the guess: (5 + 9) ÷ 2 = 7."
+   ],
+   "mistakes": {
+    "A": "Step 2: after adding x and N ÷ x, divide by 2 to average them.",
+    "C": "Step 1: use N ÷ x = 45 ÷ 5 = 9, not N itself.",
+    "D": "Step 2: 9 is just N ÷ x. Average it with the guess, 5."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Binary search is used to find 24 in the sorted list shown. The middle position is (low + high) ÷ 2, rounded down. Which numbers are compared with 24, in order?",
+   "options": {
+    "A": "30, 15, 24",
+    "B": "30, 11, 19, 24",
+    "C": "30, 24",
+    "D": "2, 6, 11, 15, 19, 24"
+   },
+   "answer": "B",
+   "explanation": "Halving from the middle each time compares 30, 11, 19, 24. Rounding the middle up instead gives 30, 15, 24.",
+   "steps": [
+    "Middle of 1 to 13 is position 7, which holds 30. 24 is smaller, so keep positions 1 to 6.",
+    "Middle of 1 to 6 is position 3, which holds 11. 24 is bigger, so keep positions 4 to 6.",
+    "Middle of 4 to 6 is position 5, which holds 19. 24 is bigger, so keep position 6.",
+    "Position 6 is all that is left; it holds 24 — found. So the order is 30, 11, 19, 24."
+   ],
+   "mistakes": {
+    "A": "Step 2: when (low + high) ÷ 2 is not a whole number, round it DOWN, not up.",
+    "C": "Step 2: after the first look, find the middle of the part that is left — do not step along one item at a time.",
+    "D": "Step 1: that is linear search. Binary search starts by looking at the middle position."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-1-binary.svg",
+   "diagram_alt": "A sorted list of 13 boxes: 2, 6, 11, 15, 19, 24, 30, 33, 37, 45, 50, 58, 63, with positions 1 to 13 underneath."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "The diagram shows the list 6, 4, 9, 2, 7 before bubble sort starts (sorting into increasing order). What is the list after the first pass?",
+   "options": {
+    "A": "2, 4, 6, 7, 9",
+    "B": "4, 2, 6, 7, 9",
+    "C": "4, 6, 9, 2, 7",
+    "D": "4, 6, 2, 7, 9"
+   },
+   "answer": "D",
+   "explanation": "Walking along and swapping each out-of-order pair gives 4, 6, 2, 7, 9 — the largest value, 9, ends at the back. 4, 2, 6, 7, 9 is after two passes.",
+   "steps": [
+    "Compare 6 and 4: swap → 4, 6, 9, 2, 7. Compare 6 and 9: no swap.",
+    "Compare 9 and 2: swap → 4, 6, 2, 9, 7. Compare 9 and 7: swap → 4, 6, 2, 7, 9."
+   ],
+   "mistakes": {
+    "A": "Step 2: one pass does not sort the whole list — it only makes sure the largest value reaches the end.",
+    "B": "Step 2: that is after the SECOND pass. Stop after one walk along the list.",
+    "C": "Step 1: keep going after the first swap — compare every neighbouring pair along the list."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-1-bubble.svg",
+   "diagram_alt": "A list of 5 boxes holding 6, 4, 9, 2, 7."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "A sorted list has 60 items. What is the greatest number of comparisons binary search could need?",
+   "options": {
+    "A": "6",
+    "B": "30",
+    "C": "60",
+    "D": "5"
+   },
+   "answer": "A",
+   "explanation": "Find the smallest k with 2ᵏ ≥ 61: 2⁵ = 32 is too small and 2⁶ = 64 is enough, so 6.",
+   "steps": [
+    "Binary search worst case: the smallest whole number k with 2ᵏ ≥ n + 1 = 61.",
+    "2⁵ = 32 is too small, but 2⁶ = 64 ≥ 61, so the answer is 6."
+   ],
+   "mistakes": {
+    "B": "Step 1: binary search halves the list every look — 30 is just half the list after one look.",
+    "C": "Step 1: 60 is the worst case for linear search, not binary search.",
+    "D": "Step 2: 2⁵ = 32 is less than 61, so 5 looks are not enough. Round up, not down."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A bank account follows Bₙ₊₁ = 1.02Bₙ + 50 each month (50 dollars deposited each month), where B₀ = $1000. Find B₂, the balance after 2 months.",
+   "options": {
+    "A": "$1100.00",
+    "B": "$1140.00",
+    "C": "$1141.40",
+    "D": "$1070.00"
+   },
+   "answer": "C",
+   "explanation": "B₁ = 1.02 × 1000 + 50 = 1070.00 and B₂ = 1.02 × 1070.00 + 50 = 1141.40. $1140.00 wrongly earns interest on the original balance both months.",
+   "steps": [
+    "B₁ = 1.02 × 1000 + 50 = 1020.00 + 50 = 1070.00.",
+    "B₂ = 1.02 × 1070.00 + 50 = 1091.40 + 50 = 1141.40."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by 1.02 each month — you left out the interest.",
+    "B": "Step 2: the interest in month 2 is on $1070.00, not on the original $1000.",
+    "D": "Step 1: $1070.00 is only after one month. Use the rule again for B₂."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "Use xₙ₊₁ = 2 + 3 ÷ xₙ with x₀ = 2 to find x₂. Give the answer to three decimal places where needed.",
+   "options": {
+    "A": "2.857",
+    "B": "3.5",
+    "C": "2",
+    "D": "3.05"
+   },
+   "answer": "A",
+   "explanation": "x₁ = 2 + 3 ÷ 2 = 3.5 and x₂ = 2 + 3 ÷ 3.5 ≈ 2.857. 2 comes from working out (2 + 3) ÷ x.",
+   "steps": [
+    "x₁ = 2 + 3 ÷ 2 = 3.5 — divide first, then add 2.",
+    "x₂ = 2 + 3 ÷ 3.5 = 2 + 0.8571 ≈ 2.857."
+   ],
+   "mistakes": {
+    "B": "Step 1: 3.5 is x₁. Use the rule again to get x₂.",
+    "C": "Step 1: the rule is 2 + (3 ÷ x), not (2 + 3) ÷ x — divide before adding.",
+    "D": "Step 2: that is x₃. Stop after two uses of the rule."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Selection sort is used on the list 7, 2, 8, 5, 3, shown in the diagram (sorting into increasing order). What is the list after the second pass?",
+   "options": {
+    "A": "2, 3, 5, 7, 8",
+    "B": "2, 7, 8, 5, 3",
+    "C": "2, 5, 3, 7, 8",
+    "D": "2, 3, 8, 5, 7"
+   },
+   "answer": "D",
+   "explanation": "Two passes place 2 and then 3 at the front: 2, 3, 8, 5, 7. 2, 5, 3, 7, 8 is what bubble sort gives after two passes.",
+   "steps": [
+    "Pass 1: the smallest of all is 2 — swap it with the first item, 7: 2, 7, 8, 5, 3.",
+    "Pass 2: the smallest of 7, 8, 5, 3 is 3 — swap it with 7: 2, 3, 8, 5, 7."
+   ],
+   "mistakes": {
+    "A": "Step 2: two passes only fix the first two positions — the rest is not sorted yet.",
+    "B": "Step 1: that is after one pass. Do a second pass on the items after the first.",
+    "C": "Step 1: that is bubble sort after two passes. Selection sort moves the smallest remaining item to the front."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-1-selection.svg",
+   "diagram_alt": "A list of 5 boxes holding 7, 2, 8, 5, 3."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "In the worst case, how many comparisons does bubble sort make to sort 30 items (each pass stopping one place earlier than the last)?",
+   "options": {
+    "A": "900",
+    "B": "435",
+    "C": "870",
+    "D": "29"
+   },
+   "answer": "B",
+   "explanation": "The passes make 29 + 28 + … + 1 = 30 × 29 ÷ 2 = 435 comparisons. 870 forgets to halve.",
+   "steps": [
+    "The passes make 29, 28, …, 1 comparisons.",
+    "Total = n(n − 1) ÷ 2 = 30 × 29 ÷ 2 = 435."
+   ],
+   "mistakes": {
+    "A": "Step 2: 30 × 30 counts every pair twice and compares items with themselves. Use n(n − 1) ÷ 2.",
+    "C": "Step 2: 30 × 29 counts every pair twice — divide by 2.",
+    "D": "Step 1: 29 is only the first pass. Add up all the passes: 29 + 28 + … + 1."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "Use the Babylonian method, new x = (x + 50 ÷ x) ÷ 2, with x₀ = 7 to find x₂, an estimate of √50. Give it to four decimal places.",
+   "options": {
+    "A": "7.0714",
+    "B": "7.0707",
+    "C": "7.0711",
+    "D": "14.1421"
+   },
+   "answer": "C",
+   "explanation": "x₁ = (7 + 7.1429) ÷ 2 = 7.0714, then x₂ = (7.0714 + 7.0707) ÷ 2 ≈ 7.0711. 7.0707 forgets to average.",
+   "steps": [
+    "x₁ = (7 + 50 ÷ 7) ÷ 2 = (7 + 7.1429) ÷ 2 ≈ 7.071429.",
+    "Keep x₁ unrounded: 50 ÷ 7.071429 ≈ 7.070707.",
+    "x₂ = (7.071429 + 7.070707) ÷ 2 ≈ 7.0711."
+   ],
+   "mistakes": {
+    "A": "Step 1: 7.0714 is only x₁. Use the rule a second time.",
+    "B": "Step 2: 7.0707 is just 50 ÷ x₁ — average it with x₁.",
+    "D": "Step 2: you added x₁ and N ÷ x₁ but did not divide by 2."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A loan of $20 000 follows Lₙ₊₁ = 1.004Lₙ − 800, where n is the number of months (0.4% interest per month and a $800 repayment). After how many months is the balance first below $17 000?",
+   "options": {
+    "A": "5",
+    "B": "4",
+    "C": "6",
+    "D": "Never"
+   },
+   "answer": "A",
+   "explanation": "Working month by month, L₄ ≈ $17 102.67 is still above $17 000 but L₅ ≈ $16 371.08 is below, so 5 months. Ignoring the interest gives 4.",
+   "steps": [
+    "L₁ = 1.004 × 20000 − 800 = 19280.",
+    "L₂ = 1.004 × 19280 − 800 = 18557.12.",
+    "L₃ = 1.004 × 18557.12 − 800 ≈ 17831.35.",
+    "L₄ = 1.004 × 17831.35 − 800 ≈ 17102.67.",
+    "L₅ = 1.004 × 17102.67 − 800 ≈ 16371.08 — first below $17 000, so 5 months."
+   ],
+   "mistakes": {
+    "B": "Step 1: the rule multiplies by the interest factor before taking off the repayment — without interest the balance falls too quickly.",
+    "C": "Step 2: L₀ is the starting balance, not month 1. Count from L₁.",
+    "D": "Step 1: 0.4% per month is ×1.004, not ×1.04. With ×1.04 the interest would cancel the repayment every month."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Binary search on a sorted list of 1000 items needs at most 10 comparisons. The list grows to 4000 items. What is the greatest number of comparisons now?",
+   "options": {
+    "A": "40",
+    "B": "12",
+    "C": "10",
+    "D": "160"
+   },
+   "answer": "B",
+   "explanation": "4000 is 4 times 1000: each doubling adds one look, so 10 + 2 = 12 (check: 2¹² = 4096 ≥ 4001). 40 wrongly scales the looks with the list.",
+   "steps": [
+    "Check the old list: 2¹⁰ = 1024 ≥ 1001, so 10 looks.",
+    "For 4000 items: 2¹¹ = 2048 is too small, but 2¹² = 4096 ≥ 4001, so 12 looks."
+   ],
+   "mistakes": {
+    "A": "Step 2: multiplying the list by 4 only adds a couple of halving steps — it does not multiply the looks by 4.",
+    "C": "Step 2: 2¹⁰ = 1024 is less than 4001, so 10 looks are no longer enough.",
+    "D": "Step 2: that is how sorting grows (about 16 times the work). Binary search adds one look each time the list doubles."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A population follows Pₙ₊₁ = 0.9Pₙ + 50 (each year 10% leave and 50 arrive). What steady-state value does the population settle at?",
+   "options": {
+    "A": "55.6",
+    "B": "26.3",
+    "C": "45",
+    "D": "500"
+   },
+   "answer": "D",
+   "explanation": "At the steady state L = 0.9L + 50, so 0.1L = 50 and L = 500. 55.6 divides by 0.9 instead of 0.1.",
+   "steps": [
+    "At the steady state the population does not change, so L = 0.9L + 50.",
+    "Subtract 0.9L: 0.1L = 50, so L = 50 ÷ 0.1 = 500."
+   ],
+   "mistakes": {
+    "A": "Step 2: from L = 0.9L + 50, subtract 0.9L to get 0.1L = 50 — divide by 0.1, not by 0.9.",
+    "B": "Step 2: 0.9L must be SUBTRACTED from both sides, not added.",
+    "C": "Step 1: 0.9 × 50 is just part of the rule. Set Pₙ₊₁ and Pₙ both equal to L and solve."
+   }
+  }
+ ]
+}

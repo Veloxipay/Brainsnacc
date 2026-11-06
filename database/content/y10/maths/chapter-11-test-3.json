@@ -1,0 +1,359 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 11 · Test 3",
+ "kind": "test",
+ "summary": "Chapter 11 test 3: searching and sorting algorithms, recurrence rules, iteration and approximation — 15 questions.",
+ "minutes": 25,
+ "body": "This test covers Chapter 11 · Algorithmic thinking: linear and binary search, bubble sort and selection sort, counting comparisons, recurrence rules, the Babylonian method for square roots, fixed-point iteration, the halving method and stopping rules. Allow about 25 minutes, no notes, no calculator unless the question says. Some questions show the list or graph in a diagram — read it carefully. Work each question out on paper before you look at the options, and write your steps so you can find where you went wrong.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Linear search is used to find 17 in the list shown in the diagram. How many comparisons are made, including the one that finds 17?",
+   "options": {
+    "A": "3",
+    "B": "2",
+    "C": "6",
+    "D": "4"
+   },
+   "answer": "A",
+   "explanation": "Linear search checks from the left: 33, 5, 17 — 17 is found on comparison 3. 2 forgets to count the comparison that finds it.",
+   "steps": [
+    "Linear search starts with the first item and checks each item in turn.",
+    "The items checked are 33, 5, 17, so 17 is found on comparison 3."
+   ],
+   "mistakes": {
+    "B": "Step 2: count the comparison with 17 itself as well — that is the one that finds it.",
+    "C": "Step 2: linear search stops as soon as it finds 17; it does not check the rest of the list.",
+    "D": "Step 1: linear search starts at the first item on the left, not at the end of the list."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-3-linear.svg",
+   "diagram_alt": "A list of 6 boxes holding 33, 5, 17, 28, 11, 2, with positions 1 to 6 underneath."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Selection sort is used on the list in the diagram (into increasing order). What is the list after the first pass?",
+   "options": {
+    "A": "2, 7, 4, 9, 5",
+    "B": "4, 7, 9, 2, 5",
+    "C": "2, 4, 9, 7, 5",
+    "D": "2, 4, 5, 7, 9"
+   },
+   "answer": "C",
+   "explanation": "The smallest item, 2, swaps places with the first item, 7: 2, 4, 9, 7, 5. Shifting everything along is not what selection sort does.",
+   "steps": [
+    "Find the smallest item in the whole list: 2.",
+    "Swap it with the first item, 7: 2, 4, 9, 7, 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: selection sort SWAPS 2 with the first item, 7; it does not shift the other items along.",
+    "B": "Step 1: that swaps the first two neighbours, like bubble sort. Selection sort finds the smallest item first.",
+    "D": "Step 2: one pass only places one item. The rest of the list is not sorted yet."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-3-selection1.svg",
+   "diagram_alt": "A list of 5 boxes holding 7, 4, 9, 2, 5."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A sequence follows the rule uₙ₊₁ = 4uₙ + 1 with u₀ = 2. Find u₂.",
+   "options": {
+    "A": "9",
+    "B": "37",
+    "C": "52",
+    "D": "149"
+   },
+   "answer": "B",
+   "explanation": "u₁ = 4 × 2 + 1 = 9 and u₂ = 4 × 9 + 1 = 37. 9 stops after one step.",
+   "steps": [
+    "u₁ = 4 × 2 + 1 = 9 — substitute u₀ into the rule.",
+    "u₂ = 4 × 9 + 1 = 37 — feed u₁ back into the rule."
+   ],
+   "mistakes": {
+    "A": "Step 1: 9 is only u₁. Use the rule a second time to get u₂.",
+    "C": "Step 1: multiply by 4 first, then add 1 — you did them in the wrong order.",
+    "D": "Step 2: that is u₃ — you used the rule one time too many."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The Babylonian method improves an estimate of √60 using new x = (x + 60 ÷ x) ÷ 2. Starting with x = 10, what is the next estimate?",
+   "options": {
+    "A": "16",
+    "B": "35",
+    "C": "6",
+    "D": "8"
+   },
+   "answer": "D",
+   "explanation": "60 ÷ 10 = 6, and the average of 10 and 6 is 8. 16 forgets to divide by 2.",
+   "steps": [
+    "Work out 60 ÷ 10 = 6.",
+    "Average with the guess: (10 + 6) ÷ 2 = 8."
+   ],
+   "mistakes": {
+    "A": "Step 2: after adding x and N ÷ x, divide by 2 to average them.",
+    "B": "Step 1: use N ÷ x = 60 ÷ 10 = 6, not N itself.",
+    "C": "Step 2: 6 is just N ÷ x. Average it with the guess, 10."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Binary search is used to find 60 in the sorted list shown. The middle position is (low + high) ÷ 2, rounded down. Which numbers are compared with 60, in order?",
+   "options": {
+    "A": "36, 60",
+    "B": "32, 36, 41, 49, 54, 60",
+    "C": "32, 54, 67, 60",
+    "D": "1, 4, 10, 16, 21, 25, 32, 36, 41, 49, 54, 60"
+   },
+   "answer": "C",
+   "explanation": "Halving from the middle each time compares 32, 54, 67, 60. Rounding the middle up instead gives 36, 60.",
+   "steps": [
+    "Middle of 1 to 14 is position 7, which holds 32. 60 is bigger, so keep positions 8 to 14.",
+    "Middle of 8 to 14 is position 11, which holds 54. 60 is bigger, so keep positions 12 to 14.",
+    "Middle of 12 to 14 is position 13, which holds 67. 60 is smaller, so keep position 12.",
+    "Position 12 is all that is left; it holds 60 — found. So the order is 32, 54, 67, 60."
+   ],
+   "mistakes": {
+    "A": "Step 2: when (low + high) ÷ 2 is not a whole number, round it DOWN, not up.",
+    "B": "Step 2: after the first look, find the middle of the part that is left — do not step along one item at a time.",
+    "D": "Step 1: that is linear search. Binary search starts by looking at the middle position."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-3-binary.svg",
+   "diagram_alt": "A sorted list of 14 boxes: 1, 4, 10, 16, 21, 25, 32, 36, 41, 49, 54, 60, 67, 72, with positions 1 to 14 underneath."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "The diagram shows the list 7, 5, 3, 8, 2 before bubble sort starts (sorting into increasing order). What is the list after the first pass?",
+   "options": {
+    "A": "5, 3, 7, 2, 8",
+    "B": "2, 3, 5, 7, 8",
+    "C": "3, 5, 2, 7, 8",
+    "D": "5, 7, 3, 8, 2"
+   },
+   "answer": "A",
+   "explanation": "Walking along and swapping each out-of-order pair gives 5, 3, 7, 2, 8 — the largest value, 8, ends at the back. 3, 5, 2, 7, 8 is after two passes.",
+   "steps": [
+    "Compare 7 and 5: swap → 5, 7, 3, 8, 2. Compare 7 and 3: swap → 5, 3, 7, 8, 2.",
+    "Compare 7 and 8: no swap. Compare 8 and 2: swap → 5, 3, 7, 2, 8."
+   ],
+   "mistakes": {
+    "B": "Step 2: one pass does not sort the whole list — it only makes sure the largest value reaches the end.",
+    "C": "Step 2: that is after the SECOND pass. Stop after one walk along the list.",
+    "D": "Step 1: keep going after the first swap — compare every neighbouring pair along the list."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-3-bubble.svg",
+   "diagram_alt": "A list of 5 boxes holding 7, 5, 3, 8, 2."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "A sorted list has 2000 items. What is the greatest number of comparisons binary search could need?",
+   "options": {
+    "A": "1000",
+    "B": "2000",
+    "C": "10",
+    "D": "11"
+   },
+   "answer": "D",
+   "explanation": "Find the smallest k with 2ᵏ ≥ 2001: 2¹⁰ = 1024 is too small and 2¹¹ = 2048 is enough, so 11.",
+   "steps": [
+    "Binary search worst case: the smallest whole number k with 2ᵏ ≥ n + 1 = 2001.",
+    "2¹⁰ = 1024 is too small, but 2¹¹ = 2048 ≥ 2001, so the answer is 11."
+   ],
+   "mistakes": {
+    "A": "Step 1: binary search halves the list every look — 1000 is just half the list after one look.",
+    "B": "Step 1: 2000 is the worst case for linear search, not binary search.",
+    "C": "Step 2: 2¹⁰ = 1024 is less than 2001, so 10 looks are not enough. Round up, not down."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A bank account follows Bₙ₊₁ = 1.03Bₙ − 100 each month (100 dollars withdrawn each month), where B₀ = $5000. Find B₂, the balance after 2 months.",
+   "options": {
+    "A": "$4800.00",
+    "B": "$5101.50",
+    "C": "$5100.00",
+    "D": "$5050.00"
+   },
+   "answer": "B",
+   "explanation": "B₁ = 1.03 × 5000 − 100 = 5050.00 and B₂ = 1.03 × 5050.00 − 100 = 5101.50. $5100.00 wrongly earns interest on the original balance both months.",
+   "steps": [
+    "B₁ = 1.03 × 5000 − 100 = 5150.00 − 100 = 5050.00.",
+    "B₂ = 1.03 × 5050.00 − 100 = 5201.50 − 100 = 5101.50."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by 1.03 each month — you left out the interest.",
+    "C": "Step 2: the interest in month 2 is on $5050.00, not on the original $5000.",
+    "D": "Step 1: $5050.00 is only after one month. Use the rule again for B₂."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "Use xₙ₊₁ = 1 + 6 ÷ xₙ with x₀ = 2 to find x₂. Give the answer to three decimal places where needed.",
+   "options": {
+    "A": "4",
+    "B": "2.5",
+    "C": "2",
+    "D": "3.4"
+   },
+   "answer": "B",
+   "explanation": "x₁ = 1 + 6 ÷ 2 = 4 and x₂ = 1 + 6 ÷ 4 = 2.5. 2 comes from working out (1 + 6) ÷ x.",
+   "steps": [
+    "x₁ = 1 + 6 ÷ 2 = 4 — divide first, then add 1.",
+    "x₂ = 1 + 6 ÷ 4 = 1 + 1.5 = 2.5."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4 is x₁. Use the rule again to get x₂.",
+    "C": "Step 1: the rule is 1 + (6 ÷ x), not (1 + 6) ÷ x — divide before adding.",
+    "D": "Step 2: that is x₃. Stop after two uses of the rule."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Selection sort is used on the list 5, 8, 1, 6, 2, 7, shown in the diagram (sorting into increasing order). What is the list after the second pass?",
+   "options": {
+    "A": "1, 2, 5, 6, 7, 8",
+    "B": "1, 8, 5, 6, 2, 7",
+    "C": "1, 2, 5, 6, 8, 7",
+    "D": "1, 5, 2, 6, 7, 8"
+   },
+   "answer": "C",
+   "explanation": "Two passes place 1 and then 2 at the front: 1, 2, 5, 6, 8, 7. 1, 5, 2, 6, 7, 8 is what bubble sort gives after two passes.",
+   "steps": [
+    "Pass 1: the smallest of all is 1 — swap it with the first item, 5: 1, 8, 5, 6, 2, 7.",
+    "Pass 2: the smallest of 8, 5, 6, 2, 7 is 2 — swap it with 8: 1, 2, 5, 6, 8, 7."
+   ],
+   "mistakes": {
+    "A": "Step 2: two passes only fix the first two positions — the rest is not sorted yet.",
+    "B": "Step 1: that is after one pass. Do a second pass on the items after the first.",
+    "D": "Step 1: that is bubble sort after two passes. Selection sort moves the smallest remaining item to the front."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-3-selection.svg",
+   "diagram_alt": "A list of 6 boxes holding 5, 8, 1, 6, 2, 7."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "In the worst case, how many comparisons does bubble sort make to sort 12 items (each pass stopping one place earlier than the last)?",
+   "options": {
+    "A": "66",
+    "B": "144",
+    "C": "132",
+    "D": "11"
+   },
+   "answer": "A",
+   "explanation": "The passes make 11 + 10 + … + 1 = 12 × 11 ÷ 2 = 66 comparisons. 132 forgets to halve.",
+   "steps": [
+    "The passes make 11, 10, …, 1 comparisons.",
+    "Total = n(n − 1) ÷ 2 = 12 × 11 ÷ 2 = 66."
+   ],
+   "mistakes": {
+    "B": "Step 2: 12 × 12 counts every pair twice and compares items with themselves. Use n(n − 1) ÷ 2.",
+    "C": "Step 2: 12 × 11 counts every pair twice — divide by 2.",
+    "D": "Step 1: 11 is only the first pass. Add up all the passes: 11 + 10 + … + 1."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "Use the Babylonian method, new x = (x + 13 ÷ x) ÷ 2, with x₀ = 4 to find x₂, an estimate of √13. Give it to four decimal places.",
+   "options": {
+    "A": "3.625",
+    "B": "3.5862",
+    "C": "7.2112",
+    "D": "3.6056"
+   },
+   "answer": "D",
+   "explanation": "x₁ = (4 + 3.25) ÷ 2 = 3.625, then x₂ = (3.625 + 3.5862) ÷ 2 ≈ 3.6056. 3.5862 forgets to average.",
+   "steps": [
+    "x₁ = (4 + 13 ÷ 4) ÷ 2 = (4 + 3.25) ÷ 2 = 3.625.",
+    "Keep x₁ unrounded: 13 ÷ 3.625 ≈ 3.586207.",
+    "x₂ = (3.625 + 3.586207) ÷ 2 ≈ 3.6056."
+   ],
+   "mistakes": {
+    "A": "Step 1: 3.625 is only x₁. Use the rule a second time.",
+    "B": "Step 2: 3.5862 is just 13 ÷ x₁ — average it with x₁.",
+    "C": "Step 2: you added x₁ and N ÷ x₁ but did not divide by 2."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A loan of $8000 follows Lₙ₊₁ = 1.01Lₙ − 800, where n is the number of months (1% interest per month and a $800 repayment). After how many months is the balance first below $6500?",
+   "options": {
+    "A": "2",
+    "B": "4",
+    "C": "3",
+    "D": "Never"
+   },
+   "answer": "C",
+   "explanation": "Working month by month, L₂ ≈ $6552.80 is still above $6500 but L₃ ≈ $5818.33 is below, so 3 months. Ignoring the interest gives 2.",
+   "steps": [
+    "L₁ = 1.01 × 8000 − 800 = 7280.",
+    "L₂ = 1.01 × 7280 − 800 = 6552.80.",
+    "L₃ = 1.01 × 6552.80 − 800 ≈ 5818.33 — first below $6500, so 3 months."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by the interest factor before taking off the repayment — without interest the balance falls too quickly.",
+    "B": "Step 2: L₀ is the starting balance, not month 1. Count from L₁.",
+    "D": "Step 1: 1% per month is ×1.01, not ×1.1. With ×1.1 the interest would cancel the repayment every month."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Bubble sort is used on the list 6, 5, 4, 3, 2, 1 to put it into increasing order. How many swaps does it make altogether?",
+   "options": {
+    "A": "5",
+    "B": "15",
+    "C": "36",
+    "D": "30"
+   },
+   "answer": "B",
+   "explanation": "In a reversed list every pair is out of order and each pair swaps exactly once: 5 + 4 + … + 1 = 15. 5 only counts the first pass.",
+   "steps": [
+    "Pass 1 moves 6 to the end with 5 swaps; pass 2 makes 4 swaps, and so on.",
+    "Total = 5 + 4 + 3 + 2 + 1 = 15."
+   ],
+   "mistakes": {
+    "A": "Step 1: 5 is the swaps in the first pass only. Every later pass also swaps, one fewer each time.",
+    "C": "Step 2: every PAIR swaps once, and there are 6 × 5 ÷ 2 pairs, not 6 × 6.",
+    "D": "Step 2: 6 × 5 counts each pair twice — divide by 2."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The diagram shows the iteration xₙ₊₁ = √(xₙ + 12) starting at x₀ = 0, drawn as a staircase between y = √(x + 12) and y = x. Which equation does the limiting value solve, and what is that value?",
+   "options": {
+    "A": "x² − x − 12 = 0, and the value is 4",
+    "B": "x² + x − 12 = 0, and the value is 3",
+    "C": "x² − x − 12 = 0, and the value is −3",
+    "D": "x = √12, and the value is about 3.464"
+   },
+   "answer": "A",
+   "explanation": "At the limit x = √(x + 12), so x² − x − 12 = 0, which factorises to (x − 4)(x + 3) = 0. The iterates are square roots, so never negative: the value is 4.",
+   "steps": [
+    "The limit L satisfies L = √(L + 12) — where the curve meets y = x.",
+    "Square: L² = L + 12, so L² − L − 12 = 0, which factorises to (L − 4)(L + 3) = 0.",
+    "L must be positive (it is a square root), so L = 4."
+   ],
+   "mistakes": {
+    "B": "Step 2: x² = x + 12 rearranges to x² − x − 12 = 0 — moving +x to the left makes it −x.",
+    "C": "Step 3: a square root is never negative, so the iterates cannot settle at −3.",
+    "D": "Step 1: √12 ≈ 3.464 is only x₁. The staircase keeps climbing past it."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-3-staircase.svg",
+   "diagram_alt": "Graph showing the curve y = square root of (x + 12), the dashed line y = x, and a green staircase starting at x0 = 0 that climbs towards where the curve meets the line."
+  }
+ ]
+}

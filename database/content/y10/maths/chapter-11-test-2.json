@@ -1,0 +1,360 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 11 · Test 2",
+ "kind": "test",
+ "summary": "Chapter 11 test 2: searching and sorting algorithms, recurrence rules, iteration and approximation — 15 questions.",
+ "minutes": 25,
+ "body": "This test covers Chapter 11 · Algorithmic thinking: linear and binary search, bubble sort and selection sort, counting comparisons, recurrence rules, the Babylonian method for square roots, fixed-point iteration, the halving method and stopping rules. Allow about 25 minutes, no notes, no calculator unless the question says. Some questions show the list or graph in a diagram — read it carefully. Work each question out on paper before you look at the options, and write your steps so you can find where you went wrong.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Linear search is used to find 40 in the list shown in the diagram. How many comparisons are made, including the one that finds 40?",
+   "options": {
+    "A": "5",
+    "B": "8",
+    "C": "3",
+    "D": "6"
+   },
+   "answer": "D",
+   "explanation": "Linear search checks from the left: 8, 19, 3, 25, 12, 40 — 40 is found on comparison 6. 5 forgets to count the comparison that finds it.",
+   "steps": [
+    "Linear search starts with the first item and checks each item in turn.",
+    "The items checked are 8, 19, 3, 25, 12, 40, so 40 is found on comparison 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: count the comparison with 40 itself as well — that is the one that finds it.",
+    "B": "Step 2: linear search stops as soon as it finds 40; it does not check the rest of the list.",
+    "C": "Step 1: linear search starts at the first item on the left, not at the end of the list."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-2-linear.svg",
+   "diagram_alt": "A list of 8 boxes holding 8, 19, 3, 25, 12, 40, 7, 16, with positions 1 to 8 underneath."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Bubble sort is used to put the list in the diagram into increasing order. What is the list after the first comparison?",
+   "options": {
+    "A": "9, 4, 6, 1",
+    "B": "4, 9, 6, 1",
+    "C": "1, 4, 6, 9",
+    "D": "4, 6, 1, 9"
+   },
+   "answer": "B",
+   "explanation": "9 and 4 are out of order, so they swap: 4, 9, 6, 1. 4, 6, 1, 9 is the list after the whole pass.",
+   "steps": [
+    "Compare the first pair, 9 and 4: 9 is bigger, so they are in the wrong order.",
+    "Swap them: 4, 9, 6, 1."
+   ],
+   "mistakes": {
+    "A": "Step 2: 9 is bigger than 4, so they are in the wrong order and must swap.",
+    "C": "Step 2: one comparison can only swap one pair — the list is not fully sorted yet.",
+    "D": "Step 2: that is the list after the whole first pass. Only one comparison has been made."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-2-compare.svg",
+   "diagram_alt": "A list of 4 boxes holding 9, 4, 6, 1, with the first two boxes highlighted for comparison."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A sequence follows the rule uₙ₊₁ = 2uₙ − 3 with u₀ = 7. Find u₂.",
+   "options": {
+    "A": "11",
+    "B": "10",
+    "C": "19",
+    "D": "35"
+   },
+   "answer": "C",
+   "explanation": "u₁ = 2 × 7 − 3 = 11 and u₂ = 2 × 11 − 3 = 19. 11 stops after one step.",
+   "steps": [
+    "u₁ = 2 × 7 − 3 = 11 — substitute u₀ into the rule.",
+    "u₂ = 2 × 11 − 3 = 19 — feed u₁ back into the rule."
+   ],
+   "mistakes": {
+    "A": "Step 1: 11 is only u₁. Use the rule a second time to get u₂.",
+    "B": "Step 1: multiply by 2 first, then subtract 3 — you did them in the wrong order.",
+    "D": "Step 2: that is u₃ — you used the rule one time too many."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The halving method is used on f(x) = x² − 7. The diagram shows f(2), f(2.5) and f(3). After this halving, which interval contains the solution?",
+   "options": {
+    "A": "2.5 to 3",
+    "B": "2 to 2.5",
+    "C": "2 to 3",
+    "D": "2.75 to 3"
+   },
+   "answer": "A",
+   "explanation": "The sign changes in the interval 2.5 to 3, so the graph crosses zero there. 2 to 2.5 has no sign change.",
+   "steps": [
+    "Look at the signs: f(2) = −3 is negative, f(3) = 2 is positive and f(2.5) = −0.75 is negative.",
+    "The sign changes between 2.5 and 3, so the solution is in the interval 2.5 to 3."
+   ],
+   "mistakes": {
+    "B": "Step 2: keep the half where the signs are DIFFERENT. f(2) and f(2.5) have the same sign.",
+    "C": "Step 2: after finding f(2.5), update the interval to half its width.",
+    "D": "Step 2: only one halving is asked for — you cannot narrow it further without another function value."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-2-halving.svg",
+   "diagram_alt": "A number line from 2 to 3 with f(2) = −3, f(2.5) = −0.75 and f(3) = 2 marked."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Binary search is used to find 38 in the sorted list shown. The middle position is (low + high) ÷ 2, rounded down. Which numbers are compared with 38, in order?",
+   "options": {
+    "A": "31, 47, 42, 38",
+    "B": "29, 42, 31, 38",
+    "C": "29, 31, 38",
+    "D": "5, 9, 14, 18, 23, 29, 31, 38"
+   },
+   "answer": "B",
+   "explanation": "Halving from the middle each time compares 29, 42, 31, 38. Rounding the middle up instead gives 31, 47, 42, 38.",
+   "steps": [
+    "Middle of 1 to 12 is position 6, which holds 29. 38 is bigger, so keep positions 7 to 12.",
+    "Middle of 7 to 12 is position 9, which holds 42. 38 is smaller, so keep positions 7 to 8.",
+    "Middle of 7 to 8 is position 7, which holds 31. 38 is bigger, so keep position 8.",
+    "Position 8 is all that is left; it holds 38 — found. So the order is 29, 42, 31, 38."
+   ],
+   "mistakes": {
+    "A": "Step 2: when (low + high) ÷ 2 is not a whole number, round it DOWN, not up.",
+    "C": "Step 2: after the first look, find the middle of the part that is left — do not step along one item at a time.",
+    "D": "Step 1: that is linear search. Binary search starts by looking at the middle position."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-2-binary.svg",
+   "diagram_alt": "A sorted list of 12 boxes: 5, 9, 14, 18, 23, 29, 31, 38, 42, 47, 53, 56, with positions 1 to 12 underneath."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "The diagram shows the list 8, 3, 6, 1, 5, 2 before bubble sort starts (sorting into increasing order). What is the list after the first pass?",
+   "options": {
+    "A": "3, 6, 1, 5, 2, 8",
+    "B": "1, 2, 3, 5, 6, 8",
+    "C": "3, 1, 5, 2, 6, 8",
+    "D": "3, 8, 6, 1, 5, 2"
+   },
+   "answer": "A",
+   "explanation": "Walking along and swapping each out-of-order pair gives 3, 6, 1, 5, 2, 8 — the largest value, 8, ends at the back. 3, 1, 5, 2, 6, 8 is after two passes.",
+   "steps": [
+    "Compare 8 and 3: swap → 3, 8, 6, 1, 5, 2. Compare 8 and 6: swap → 3, 6, 8, 1, 5, 2. Compare 8 and 1: swap → 3, 6, 1, 8, 5, 2.",
+    "Compare 8 and 5: swap → 3, 6, 1, 5, 8, 2. Compare 8 and 2: swap → 3, 6, 1, 5, 2, 8."
+   ],
+   "mistakes": {
+    "B": "Step 2: one pass does not sort the whole list — it only makes sure the largest value reaches the end.",
+    "C": "Step 2: that is after the SECOND pass. Stop after one walk along the list.",
+    "D": "Step 1: keep going after the first swap — compare every neighbouring pair along the list."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-2-bubble.svg",
+   "diagram_alt": "A list of 6 boxes holding 8, 3, 6, 1, 5, 2."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "A sorted list has 200 items. What is the greatest number of comparisons binary search could need?",
+   "options": {
+    "A": "100",
+    "B": "200",
+    "C": "8",
+    "D": "7"
+   },
+   "answer": "C",
+   "explanation": "Find the smallest k with 2ᵏ ≥ 201: 2⁷ = 128 is too small and 2⁸ = 256 is enough, so 8.",
+   "steps": [
+    "Binary search worst case: the smallest whole number k with 2ᵏ ≥ n + 1 = 201.",
+    "2⁷ = 128 is too small, but 2⁸ = 256 ≥ 201, so the answer is 8."
+   ],
+   "mistakes": {
+    "A": "Step 1: binary search halves the list every look — 100 is just half the list after one look.",
+    "B": "Step 1: 200 is the worst case for linear search, not binary search.",
+    "D": "Step 2: 2⁷ = 128 is less than 201, so 7 looks are not enough. Round up, not down."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A bank account follows Bₙ₊₁ = 1.005Bₙ + 200 each month (200 dollars deposited each month), where B₀ = $4000. Find B₂, the balance after 2 months.",
+   "options": {
+    "A": "$4400.00",
+    "B": "$4440.00",
+    "C": "$4220.00",
+    "D": "$4441.10"
+   },
+   "answer": "D",
+   "explanation": "B₁ = 1.005 × 4000 + 200 = 4220.00 and B₂ = 1.005 × 4220.00 + 200 = 4441.10. $4440.00 wrongly earns interest on the original balance both months.",
+   "steps": [
+    "B₁ = 1.005 × 4000 + 200 = 4020.00 + 200 = 4220.00.",
+    "B₂ = 1.005 × 4220.00 + 200 = 4241.10 + 200 = 4441.10."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by 1.005 each month — you left out the interest.",
+    "B": "Step 2: the interest in month 2 is on $4220.00, not on the original $4000.",
+    "C": "Step 1: $4220.00 is only after one month. Use the rule again for B₂."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The iteration xₙ₊₁ = √(3xₙ + 10) settles at a value of x. Which equation does that value solve?",
+   "options": {
+    "A": "x² + 3x + 10 = 0",
+    "B": "x² − 3x − 10 = 0",
+    "C": "x² − 3x + 10 = 0",
+    "D": "x = 3x + 10"
+   },
+   "answer": "B",
+   "explanation": "At the fixed point the new and old values are equal, which leads to x² − 3x − 10 = 0 (its positive solution is 5).",
+   "steps": [
+    "When the iterates settle at x, the rule says x = √(3x + 10).",
+    "Square both sides: x² = 3x + 10, then move everything to one side: x² − 3x − 10 = 0."
+   ],
+   "mistakes": {
+    "A": "Step 2: moving 3x + 10 to the left side changes both signs to minus.",
+    "C": "Step 2: subtract 10 from both sides, so the constant becomes −10.",
+    "D": "Step 1: a fixed point means x = √(3x + 10). Square BOTH sides to remove the square root."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "Selection sort is used on the list 9, 6, 3, 8, 4, shown in the diagram (sorting into increasing order). What is the list after the second pass?",
+   "options": {
+    "A": "3, 4, 6, 8, 9",
+    "B": "3, 6, 9, 8, 4",
+    "C": "3, 6, 4, 8, 9",
+    "D": "3, 4, 9, 8, 6"
+   },
+   "answer": "D",
+   "explanation": "Two passes place 3 and then 4 at the front: 3, 4, 9, 8, 6. 3, 6, 4, 8, 9 is what bubble sort gives after two passes.",
+   "steps": [
+    "Pass 1: the smallest of all is 3 — swap it with the first item, 9: 3, 6, 9, 8, 4.",
+    "Pass 2: the smallest of 6, 9, 8, 4 is 4 — swap it with 6: 3, 4, 9, 8, 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: two passes only fix the first two positions — the rest is not sorted yet.",
+    "B": "Step 1: that is after one pass. Do a second pass on the items after the first.",
+    "C": "Step 1: that is bubble sort after two passes. Selection sort moves the smallest remaining item to the front."
+   },
+   "diagram": "diagrams/y10/maths/chapter-11-test-2-selection.svg",
+   "diagram_alt": "A list of 5 boxes holding 9, 6, 3, 8, 4."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "A sorted list holds 250 names, and a name that is NOT in the list is searched for. How many more comparisons does linear search need than binary search, in the worst case?",
+   "options": {
+    "A": "242",
+    "B": "117",
+    "C": "243",
+    "D": "125"
+   },
+   "answer": "A",
+   "explanation": "Linear search checks all 250. Binary search needs the smallest k with 2ᵏ ≥ 251, which is 8 (2⁸ = 256). 250 − 8 = 242.",
+   "steps": [
+    "Linear search: a missing name means all 250 names are checked.",
+    "Binary search: 2⁷ = 128 is too small, 2⁸ = 256 ≥ 251, so 8 comparisons.",
+    "Difference: 250 − 8 = 242."
+   ],
+   "mistakes": {
+    "B": "Step 1: the worst case for linear search is all 250 items, not half of them.",
+    "C": "Step 2: 2⁷ = 128 is less than 251, so binary search needs 8 looks, not 7.",
+    "D": "Step 2: binary search halves the list on every look — it needs far fewer than half the items."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The halving method starts with the interval 5 to 6. How many halvings are needed to make the interval narrower than 0.0001?",
+   "options": {
+    "A": "4",
+    "B": "13",
+    "C": "14",
+    "D": "10000"
+   },
+   "answer": "C",
+   "explanation": "After n halvings the width is 1 ÷ 2ⁿ, so we need 2ⁿ greater than 10000: 2¹³ = 8192 is too small and 2¹⁴ = 16384 works, so 14.",
+   "steps": [
+    "After n halvings the width is 1 ÷ 2ⁿ, so 2ⁿ must be greater than 1 ÷ 0.0001 = 10000.",
+    "2¹³ = 8192 is too small; 2¹⁴ = 16384 is big enough, so 14 halvings."
+   ],
+   "mistakes": {
+    "A": "Step 1: halving does not add one decimal place each time — each step only halves the width.",
+    "B": "Step 2: after 13 halvings the width is 1 ÷ 8192 ≈ 0.00012, which is not yet narrower than 0.0001.",
+    "D": "Step 1: 10000 is how many pieces of width 0.0001 fit in the interval. Each halving doubles the pieces, so far fewer steps are needed."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "A loan of $15 000 follows Lₙ₊₁ = 1.006Lₙ − 900, where n is the number of months (0.6% interest per month and a $900 repayment). After how many months is the balance first below $12 500?",
+   "options": {
+    "A": "3",
+    "B": "5",
+    "C": "Never",
+    "D": "4"
+   },
+   "answer": "D",
+   "explanation": "Working month by month, L₃ ≈ $12 555.39 is still above $12 500 but L₄ ≈ $11 730.72 is below, so 4 months. Ignoring the interest gives 3.",
+   "steps": [
+    "L₁ = 1.006 × 15000 − 900 = 14190.",
+    "L₂ = 1.006 × 14190 − 900 = 13375.14.",
+    "L₃ = 1.006 × 13375.14 − 900 ≈ 12555.39.",
+    "L₄ = 1.006 × 12555.39 − 900 ≈ 11730.72 — first below $12 500, so 4 months."
+   ],
+   "mistakes": {
+    "A": "Step 1: the rule multiplies by the interest factor before taking off the repayment — without interest the balance falls too quickly.",
+    "B": "Step 2: L₀ is the starting balance, not month 1. Count from L₁.",
+    "C": "Step 1: 0.6% per month is ×1.006, not ×1.06. With ×1.06 the interest would cancel the repayment every month."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Searching and sorting algorithms",
+   "prompt": "A computer takes 5 seconds to bubble sort 2000 items in the worst case. Roughly how long would it take to bubble sort 4000 items in the worst case?",
+   "options": {
+    "A": "About 20 seconds",
+    "B": "About 10 seconds",
+    "C": "About 40 seconds",
+    "D": "About 5 seconds"
+   },
+   "answer": "A",
+   "explanation": "Comparisons = n(n − 1) ÷ 2, roughly n² ÷ 2, so 2 times the items is about 4 times the work: 5 × 4 = 20 seconds. 10 seconds assumes the work grows in proportion to n.",
+   "steps": [
+    "Worst-case comparisons = n(n − 1) ÷ 2: 1 999 000 for 2000 items and 7 998 000 for 4000 items.",
+    "That is about 4.0 times as many, so the time is about 5 × 4 = 20 seconds."
+   ],
+   "mistakes": {
+    "B": "Step 2: the work grows like n², so 2 times the items is about 4 times the work, not 2 times.",
+    "C": "Step 2: the comparisons grow like n², not n³ — multiply by 4, not 8.",
+    "D": "Step 1: more items means more comparisons, so the time must go up."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Iteration and approximation with algorithms",
+   "prompt": "The equation x² − 4x + 1 = 0 has a solution near 3.73. Two rearrangements are tried, both starting at x₀ = 3: xₙ₊₁ = (xₙ² + 1) ÷ 4 and xₙ₊₁ = 4 − 1 ÷ xₙ. Which one converges to the solution near 3.73?",
+   "options": {
+    "A": "Only xₙ₊₁ = (xₙ² + 1) ÷ 4",
+    "B": "Both of them",
+    "C": "Only xₙ₊₁ = 4 − 1 ÷ xₙ",
+    "D": "Neither of them"
+   },
+   "answer": "C",
+   "explanation": "The first gives 2.5, 1.812, … drifting away (towards the other solution, about 0.27). The second gives 3.6667, 3.7273, … closing in on 3.73.",
+   "steps": [
+    "Both are rearrangements of x² − 4x + 1 = 0, so test them by iterating from 3.",
+    "First rule: 2.5, then 1.812 — moving away from 3.73.",
+    "Second rule: 3.6667, then 3.7273 — moving towards 3.73, so only xₙ₊₁ = 4 − 1 ÷ xₙ works."
+   ],
+   "mistakes": {
+    "A": "Step 2: work out a few terms: 2.5, 1.812, … they move AWAY from 3.73.",
+    "B": "Step 2: two rearrangements of the same equation can behave very differently — test each one.",
+    "D": "Step 3: xₙ₊₁ = 4 − 1 ÷ xₙ gives 3.6667, 3.7273, … which is closing in on 3.73."
+   }
+  }
+ ]
+}
