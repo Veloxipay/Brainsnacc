@@ -1,0 +1,62 @@
+{
+  "lesson": "y10/maths/completing-the-square.json",
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Completing the square",
+  "icon": "🧱",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Completing the square",
+      "sub": "Find the missing corner tile",
+      "icon": "🧱",
+      "say": "How can x squared plus six x plus five be written as x plus three, all squared, minus four? In this video you'll learn to complete the square, and use it to find minimum values and factorise tricky quadratics.",
+      "caption": "How can x² + 6x + 5 be written as (x + 3)² − 4? In this video you'll learn to complete the square, and use it to find minimum values and factorise tricky quadratics."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🏠",
+      "everyday": "A square floor is missing its corner tile, so you borrow one",
+      "icon2": "🧮",
+      "science": "Add the missing corner to make a square, then subtract it again",
+      "breaks": "Real tiles can't have a negative size, but the number left after paying back can be negative.",
+      "say": "Imagine tiling a square floor, but the corner tile is missing. You borrow one from the shed to finish the square, but now you owe the shed a tile. Completing the square is the same: add the missing corner to make a perfect square, then subtract it again so nothing changes."
+    },
+    {
+      "type": "diagram",
+      "heading": "The missing corner",
+      "diagram": "diagrams/y10/maths/completing-the-square-model.svg",
+      "notes": ["Split 6x into two strips of 3x", "Missing corner: 3 × 3 = 9", "x² + 6x + 9 = (x + 3)²"],
+      "say": "Here is x squared plus six x. First the big square, x squared. Then six x split into two strips of three x. Now there's a gap in the corner, three by three, so its area is nine. Add the nine and you have a perfect square: x plus three, all squared.",
+      "caption": "First the big square, x². Then 6x split into two strips of 3x. The gap in the corner is 3 by 3, area 9. Add it: x² + 6x + 9 = (x + 3)²."
+    },
+    {
+      "type": "steps",
+      "heading": "Halve it, square it",
+      "steps": ["Halve the x coefficient", "Square it", "Add it and subtract it", "Write the perfect square"],
+      "say": "Here's the method. Halve the coefficient of x. Square it. Add it and subtract it, so the value doesn't change. Then write the first three terms as a perfect square."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "Write x² + 6x + 5 in completed-square form, then factorise.",
+      "lines": ["Half of 6 is 3; 3² = 9", "x² + 6x + 9 − 9 + 5", "= (x + 3)² − 4", "= (x + 3 − 2)(x + 3 + 2)", "= (x + 1)(x + 5)"],
+      "say": "Half of six is three, and three squared is nine. Add nine and take away nine. That gives x plus three, all squared, minus four. Four is two squared, so this is a difference of two squares. It factorises to x plus one, times x plus five.",
+      "caption": "Half of 6 is 3, and 3² = 9. Add and subtract 9: (x + 3)² − 4. Since 4 = 2², it is a difference of two squares: (x + 1)(x + 5)."
+    },
+    {
+      "type": "example",
+      "heading": "Finding a minimum",
+      "question": "Find the minimum value of x² − 12x + 40.",
+      "lines": ["Half of −12 is −6; (−6)² = 36", "x² − 12x + 36 − 36 + 40", "= (x − 6)² + 4", "Square is 0 when x = 6", "Minimum value = 4"],
+      "say": "Find the smallest value of x squared minus twelve x plus forty. Half of negative twelve is negative six, and that squared is thirty-six. Completing the square gives x minus six, all squared, plus four. A square can't be negative, so the smallest it can be is zero, when x is six. So the minimum value is four.",
+      "caption": "Half of −12 is −6, squared is 36. Completing the square gives (x − 6)² + 4. A square can't be negative, so the smallest is 0, when x = 6. Minimum value: 4."
+    },
+    {
+      "type": "recap",
+      "points": ["Halve b, square it", "Add it and take it away", "(x + h)² + k: minimum k at x = −h", "(x + h)² − k factorises with √k", "Check with x = 0"],
+      "say": "Quick recap. Halve the x coefficient and square it. Add it and take it away. The completed form tells you the minimum value, and if it's a square minus a number, you can factorise it using a square root. Now try the practice questions!"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "unit": "Year 10",
+  "title": "Chapter 5 · Test 2",
+  "kind": "test",
+  "summary": "Chapter 5 test 2: expanding, factorising, completing the square and solving quadratic equations, including the quadratic formula and discriminant.",
+  "minutes": 25,
+  "body": "This is test 2 of 4 for Chapter 5, Quadratic expressions and equations. It covers expanding brackets and the special products, factorising monic and non-monic quadratics, completing the square, solving quadratic equations with the null factor law, and using the quadratic formula and the discriminant.\n\nAllow about 25 minutes. Work with no notes and no calculator unless the question says. Show your working on paper: rearrange to standard form, write a, b and c with their signs, and check each answer by expanding or substituting. The last two questions are challenge questions that combine ideas.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Expanding and special products",
+      "prompt": "Expand (x − 4)(x − 6).",
+      "options": {
+        "A": "x² + 10x + 24",
+        "B": "x² − 10x + 24",
+        "C": "x² − 10x − 24",
+        "D": "x² + 24"
+      },
+      "answer": "B",
+      "explanation": "x² − 6x − 4x + 24 = x² − 10x + 24. x² − 10x − 24 gets (−4) × (−6) wrong: two negatives multiply to a positive.",
+      "steps": [
+        "Multiply every term by every term: x², −6x, −4x and (−4) × (−6) = +24.",
+        "Collect like terms: −6x − 4x = −10x, so the answer is x² − 10x + 24."
+      ],
+      "mistakes": {
+        "A": "Step 2: −6x and −4x are both negative, so the middle term is −10x.",
+        "C": "Step 1: (−4) × (−6) = +24.",
+        "D": "Step 1: the x terms −6x and −4x are missing."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Completing the square",
+      "prompt": "The diagram shows x² + 12x arranged as a square with one corner missing. What number completes the square x² + 12x + ...?",
+      "diagram": "diagrams/y10/maths/chapter-5-test-2-q2.svg",
+      "diagram_alt": "A big square labelled x² with two strips labelled 6x, one on the right and one below. The sides are labelled x and 6. The bottom-right corner is dashed and marked with a question mark.",
+      "options": {
+        "A": "6",
+        "B": "12",
+        "C": "144",
+        "D": "36"
+      },
+      "answer": "D",
+      "explanation": "Each strip is half of 12x, so the missing corner is 6 by 6, with area 36: x² + 12x + 36 = (x + 6)². 144 squares 12 without halving.",
+      "steps": [
+        "Halve 12: each strip is 6x, so the corner has side 6.",
+        "Square it: 6 × 6 = 36."
+      ],
+      "mistakes": {
+        "A": "Step 2: 6 is the side of the corner; square it to get the area.",
+        "B": "Step 2: the corner is 6 by 6, so its area is 6 × 6, not 6 + 6.",
+        "C": "Step 1: halve 12 before squaring."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Solving quadratic equations",
+      "prompt": "Solve x² − 7x = 0.",
+      "options": {
+        "A": "x = 0 or x = 7",
+        "B": "x = 7",
+        "C": "x = 0 or x = −7",
+        "D": "x = ±√7"
+      },
+      "answer": "A",
+      "explanation": "Take out x: x(x − 7) = 0, so x = 0 or x = 7. Dividing both sides by x loses the solution x = 0.",
+      "steps": [
+        "Take out the common factor x: x(x − 7) = 0.",
+        "Null factor law: x = 0 or x − 7 = 0, so x = 0 or x = 7."
+      ],
+      "mistakes": {
+        "B": "Step 1: dividing by x loses x = 0 — factorise instead.",
+        "C": "Step 2: x − 7 = 0 gives x = +7.",
+        "D": "Step 1: 7x is not a number on its own, so you can’t write x² = 7; take out the common factor x."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "The quadratic formula and the discriminant",
+      "prompt": "How many real solutions does x² + 2x + 5 = 0 have?",
+      "options": {
+        "A": "Exactly one",
+        "B": "Two",
+        "C": "None",
+        "D": "Two, both negative"
+      },
+      "answer": "C",
+      "explanation": "Δ = 2² − 4 × 1 × 5 = 4 − 20 = −16, which is negative, so there are no real solutions. \"Two\" comes from adding 4ac.",
+      "steps": [
+        "a = 1, b = 2, c = 5, so Δ = 4 − 20 = −16.",
+        "Δ is negative, so there are no real solutions."
+      ],
+      "mistakes": {
+        "A": "Step 2: one solution needs Δ = 0.",
+        "B": "Step 1: subtract 4ac: 4 − 20, not 4 + 20.",
+        "D": "Step 2: a negative discriminant means no real solutions, not negative ones."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Expanding and special products",
+      "prompt": "Expand (5x − 2)(5x + 2).",
+      "options": {
+        "A": "25x² + 4",
+        "B": "5x² − 4",
+        "C": "25x² − 4",
+        "D": "25x² − 20x + 4"
+      },
+      "answer": "C",
+      "explanation": "A difference of two squares: (5x)² − 2² = 25x² − 4. 25x² − 20x + 4 is (5x − 2)², which is a different product.",
+      "steps": [
+        "The brackets match except for the sign, so use (a − b)(a + b) = a² − b².",
+        "a² = (5x)² = 25x² and b² = 4, so the answer is 25x² − 4."
+      ],
+      "mistakes": {
+        "A": "Step 2: (−2) × 2 = −4, so the constant is negative.",
+        "B": "Step 2: (5x)² = 25x² — square the 5 as well.",
+        "D": "Step 1: that is (5x − 2)²; here the middle terms −10x and +10x cancel."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Factorising monic quadratics",
+      "prompt": "Factorise x² − 2x − 48.",
+      "options": {
+        "A": "(x − 8)(x + 6)",
+        "B": "(x + 8)(x − 6)",
+        "C": "(x − 12)(x + 4)",
+        "D": "(x − 8)(x − 6)"
+      },
+      "answer": "A",
+      "explanation": "−8 × 6 = −48 and −8 + 6 = −2, so (x − 8)(x + 6). (x + 8)(x − 6) gives +2x.",
+      "steps": [
+        "c is negative, so the numbers have different signs; the bigger one is negative because b = −2.",
+        "Pairs for −48: −8 and 6 give a sum of −2, so the answer is (x − 8)(x + 6)."
+      ],
+      "mistakes": {
+        "B": "Step 1: the bigger number takes the sign of b, which is negative.",
+        "C": "Step 2: −12 + 4 = −8, not −2.",
+        "D": "Step 1: (−8) × (−6) = +48; the constant is −48."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Factorising non-monic quadratics",
+      "prompt": "Factorise 4x² + 4x − 3.",
+      "options": {
+        "A": "(2x − 3)(2x + 1)",
+        "B": "(2x + 3)(2x − 1)",
+        "C": "(4x + 3)(x − 1)",
+        "D": "(4x − 1)(x + 3)"
+      },
+      "answer": "B",
+      "explanation": "ac = −12: 6 and −2. 4x² + 6x − 2x − 3 = 2x(2x + 3) − 1(2x + 3) = (2x + 3)(2x − 1). (2x − 3)(2x + 1) gives −4x.",
+      "steps": [
+        "ac = 4 × (−3) = −12; two numbers that multiply to −12 and add to 4 are 6 and −2.",
+        "Split and group: 4x² + 6x − 2x − 3 = 2x(2x + 3) − 1(2x + 3).",
+        "Take out the common bracket: (2x + 3)(2x − 1)."
+      ],
+      "mistakes": {
+        "A": "Step 1: you need +6 and −2 (sum +4); your brackets give a middle term of −4x.",
+        "C": "Step 3: (4x + 3)(x − 1) has middle term −4x + 3x = −x.",
+        "D": "Step 3: (4x − 1)(x + 3) has middle term 12x − x = 11x."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Completing the square",
+      "prompt": "Write x² − 4x − 7 in the form (x − h)² + k.",
+      "options": {
+        "A": "(x − 2)² − 3",
+        "B": "(x + 2)² − 11",
+        "C": "(x − 4)² − 23",
+        "D": "(x − 2)² − 11"
+      },
+      "answer": "D",
+      "explanation": "Half of −4 is −2 and (−2)² = 4: x² − 4x + 4 − 4 − 7 = (x − 2)² − 11. (x − 2)² − 3 adds the 4 instead of subtracting it.",
+      "steps": [
+        "Halve −4 to get −2, and square it: 4.",
+        "Add and subtract 4: x² − 4x + 4 − 4 − 7.",
+        "So the answer is (x − 2)² − 11."
+      ],
+      "mistakes": {
+        "A": "Step 2: the 4 you added must be subtracted: −4 − 7 = −11.",
+        "B": "Step 1: the x term is −4x, so the bracket is (x − 2).",
+        "C": "Step 1: halve −4 first — the bracket is (x − 2)."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Solving quadratic equations",
+      "prompt": "Solve 3x² − 12 = 0.",
+      "options": {
+        "A": "x = 2",
+        "B": "x = 2 or x = −2",
+        "C": "x = ±4",
+        "D": "x = ±2√3"
+      },
+      "answer": "B",
+      "explanation": "3x² = 12, so x² = 4 and x = ±2. x = 2 alone forgets the negative square root.",
+      "steps": [
+        "Add 12 and divide by 3: x² = 4.",
+        "Take the square root, with ±: x = 2 or x = −2."
+      ],
+      "mistakes": {
+        "A": "Step 2: (−2)² is also 4 — write ± when you take a square root.",
+        "C": "Step 2: x² = 4, so take the square root of 4.",
+        "D": "Step 1: divide 12 by 3 before taking the square root: x² = 4, not 12."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Factorising non-monic quadratics",
+      "prompt": "Factorise fully 10x² − 5x − 15.",
+      "options": {
+        "A": "5(2x − 3)(x + 1)",
+        "B": "(2x − 3)(x + 1)",
+        "C": "5(2x + 3)(x − 1)",
+        "D": "5(2x − 1)(x + 3)"
+      },
+      "answer": "A",
+      "explanation": "Take out 5: 5(2x² − x − 3). ac = −6: −3 and 2, so 2x² − 3x + 2x − 3 = x(2x − 3) + 1(2x − 3) = (2x − 3)(x + 1). (2x − 3)(x + 1) alone has lost the 5.",
+      "steps": [
+        "Take out the HCF 5: 5(2x² − x − 3).",
+        "ac = −6; two numbers that multiply to −6 and add to −1 are −3 and 2.",
+        "Split and group: x(2x − 3) + 1(2x − 3) = (2x − 3)(x + 1), so the answer is 5(2x − 3)(x + 1)."
+      ],
+      "mistakes": {
+        "B": "Step 1: the common factor 5 must stay at the front.",
+        "C": "Step 2: you used 3 and −2 (sum +1); inside the bracket the middle term is −x.",
+        "D": "Step 3: (2x − 1)(x + 3) has middle term 6x − x = 5x — check by expanding."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Completing the square",
+      "prompt": "Use completing the square to factorise x² + 10x + 18.",
+      "options": {
+        "A": "(x + 5 − √43)(x + 5 + √43)",
+        "B": "(x − 2)(x + 12)",
+        "C": "(x + 5 − √7)(x + 5 + √7)",
+        "D": "(x − 5 − √7)(x − 5 + √7)"
+      },
+      "answer": "C",
+      "explanation": "x² + 10x + 25 − 25 + 18 = (x + 5)² − 7, a difference of two squares with √7. Using √43 comes from adding 25 instead of subtracting it.",
+      "steps": [
+        "Halve 10 to get 5, square it to get 25: (x + 5)² − 25 + 18 = (x + 5)² − 7.",
+        "Write 7 as (√7)²: (x + 5 − √7)(x + 5 + √7)."
+      ],
+      "mistakes": {
+        "A": "Step 1: −25 + 18 = −7; you worked out 25 + 18.",
+        "B": "Step 2: 7 is (√7)², not 7², so the brackets need √7.",
+        "D": "Step 1: the x term is +10x, so the bracket is (x + 5)."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "The quadratic formula and the discriminant",
+      "prompt": "Use the quadratic formula to solve 3x² + 5x − 1 = 0. Give answers correct to two decimal places. (Calculator allowed.)",
+      "options": {
+        "A": "x ≈ −0.23 or x ≈ −1.43",
+        "B": "x ≈ 0.54 or x ≈ −5.54",
+        "C": "x ≈ −0.18 or x ≈ 1.85",
+        "D": "x ≈ 0.18 or x ≈ −1.85"
+      },
+      "answer": "D",
+      "explanation": "Δ = 25 − 4 × 3 × (−1) = 37, so x = (−5 ± √37)/6 ≈ 0.18 or −1.85. x ≈ 0.54 or −5.54 divides by 2 instead of 2a = 6.",
+      "steps": [
+        "a = 3, b = 5, c = −1, so Δ = 25 + 12 = 37.",
+        "x = (−5 ± √37)/(2 × 3) = (−5 ± √37)/6.",
+        "x ≈ (−5 + 6.083)/6 ≈ 0.18 or x ≈ (−5 − 6.083)/6 ≈ −1.85."
+      ],
+      "mistakes": {
+        "A": "Step 1: c = −1, so −4ac = +12 and Δ = 37, not 13.",
+        "B": "Step 2: divide by 2a = 6, not 2.",
+        "C": "Step 2: the formula starts with −b = −5, not +5."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Solving quadratic equations",
+      "prompt": "A ball’s height after t seconds is h = 30t − 5t² metres. At what times is the ball 40 m above the ground?",
+      "options": {
+        "A": "t = 4 s only",
+        "B": "t = 2 s and t = 4 s",
+        "C": "t = 0 s and t = 6 s",
+        "D": "t = 3 s"
+      },
+      "answer": "B",
+      "explanation": "30t − 5t² = 40 gives 5t² − 30t + 40 = 0, so t² − 6t + 8 = 0 and (t − 2)(t − 4) = 0. The ball is at 40 m on the way up (2 s) and on the way down (4 s).",
+      "steps": [
+        "Set h = 40 and rearrange: 5t² − 30t + 40 = 0; divide by 5: t² − 6t + 8 = 0.",
+        "Factorise: (t − 2)(t − 4) = 0, so t = 2 or t = 4.",
+        "Both make sense: 2 s going up and 4 s coming down."
+      ],
+      "mistakes": {
+        "A": "Step 3: both answers are positive times — the ball passes 40 m twice.",
+        "C": "Step 1: t = 0 and t = 6 solve h = 0 (on the ground); set h = 40.",
+        "D": "Step 1: t = 3 is when the ball is highest (45 m), not when it is at 40 m."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "The quadratic formula and the discriminant",
+      "prompt": "For which values of k does x² + 4x + k = 0 have no real solutions?",
+      "options": {
+        "A": "k greater than 4",
+        "B": "k less than 4",
+        "C": "k = 4",
+        "D": "k greater than 16"
+      },
+      "answer": "A",
+      "explanation": "No real solutions means Δ is negative: 16 − 4k less than 0, so 4k is greater than 16 and k is greater than 4. \"k less than 4\" gives two solutions.",
+      "steps": [
+        "No real solutions means Δ is less than 0.",
+        "Δ = 4² − 4 × 1 × k = 16 − 4k.",
+        "16 − 4k less than 0 means 4k is greater than 16, so k is greater than 4."
+      ],
+      "mistakes": {
+        "B": "Step 3: when k is less than 4, Δ is positive, giving two solutions.",
+        "C": "Step 1: k = 4 gives Δ = 0, which is exactly one solution.",
+        "D": "Step 2: Δ = 16 − 4k, so divide 16 by 4."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Expanding and special products",
+      "prompt": "Expand and simplify (x + 1)³.",
+      "options": {
+        "A": "x³ + 1",
+        "B": "x³ + x² + x + 1",
+        "C": "3x + 3",
+        "D": "x³ + 3x² + 3x + 1"
+      },
+      "answer": "D",
+      "explanation": "(x + 1)² = x² + 2x + 1, then (x² + 2x + 1)(x + 1) = x³ + x² + 2x² + 2x + x + 1 = x³ + 3x² + 3x + 1. x³ + 1 cubes each term separately.",
+      "steps": [
+        "Write (x + 1)³ = (x + 1)²(x + 1), and (x + 1)² = x² + 2x + 1.",
+        "Multiply: (x² + 2x + 1)(x + 1) = x³ + x² + 2x² + 2x + x + 1.",
+        "Collect like terms: x³ + 3x² + 3x + 1."
+      ],
+      "mistakes": {
+        "A": "Step 1: like squaring, cubing a bracket creates middle terms — expand step by step.",
+        "B": "Step 1: (x + 1)² = x² + 2x + 1, not x² + 1.",
+        "C": "Step 1: cubing means multiplying the bracket by itself three times, not by 3."
+      }
+    }
+  ]
+}
