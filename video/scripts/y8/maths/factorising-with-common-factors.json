@@ -1,0 +1,114 @@
+{
+ "lesson": "y8/maths/factorising-with-common-factors.json",
+ "level": "Year 8",
+ "subject": "maths",
+ "title": "Factorising with common factors",
+ "icon": "🍱",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Factorising with common factors",
+   "sub": "Expanding, but backwards",
+   "icon": "🍱",
+   "say": "You know that four, bracket x plus five, expands to four x plus twenty. Factorising goes the other way: you start with four x plus twenty and put the brackets back. Here's how.",
+   "caption": "You know that 4(x + 5) expands to 4x + 20. Factorising goes the other way: you start with 4x + 20 and put the brackets back. Here's how."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🍱",
+   "everyday": "12 sandwiches and 18 fruit fill 6 lunch boxes: 2 sandwiches, 3 fruit each",
+   "icon2": "🔤",
+   "science": "12S + 18F = 6(2S + 3F): HCF outside, one box inside",
+   "breaks": "In algebra the number of boxes can include letters, like 3x, or be negative. You can't pack 3x or −2 boxes!",
+   "say": "You have twelve sandwiches and eighteen pieces of fruit to pack into identical lunch boxes. The most boxes you can fill is six, with two sandwiches and three pieces of fruit in each. The six outside the bracket is the number of boxes. Inside the bracket is what goes in one box.",
+   "caption": "You have 12 sandwiches and 18 pieces of fruit to pack into identical lunch boxes. The most boxes you can fill is 6, with 2 sandwiches and 3 pieces of fruit in each. The 6 outside the bracket is the number of boxes. Inside the bracket is what goes in one box."
+  },
+  {
+   "type": "steps",
+   "heading": "How to factorise",
+   "steps": [
+    "Find the HCF of all the terms",
+    "Write the HCF outside a bracket",
+    "Divide each term by the HCF",
+    "Check by expanding"
+   ],
+   "say": "To factorise: find the highest common factor of all the terms. Write it outside a bracket. Divide each term by it and write the results inside. Then check by expanding. For letters, the HCF uses each letter that is in every term, with its lowest power."
+  },
+  {
+   "type": "diagram",
+   "heading": "Expanding, run backwards",
+   "diagram": "diagrams/y8/maths/factorising-with-common-factors-ex1.svg",
+   "notes": [
+    "Areas 12x and 18 share a side of 6",
+    "12x ÷ 6 = 2x and 18 ÷ 6 = 3",
+    "12x + 18 = 6(2x + 3)"
+   ],
+   "say": "Picture an area model run backwards. The two rectangles, with areas twelve x and eighteen, share a side of six, the highest common factor. Divide each area by six to get the other sides: two x and three. So twelve x plus eighteen equals six, bracket two x plus three.",
+   "caption": "Areas 12x and 18 share a side of 6, the HCF. Divide each area by 6 to get the other sides, 2x and 3. So 12x + 18 = 6(2x + 3)."
+  },
+  {
+   "type": "example",
+   "heading": "Numbers and letters",
+   "question": "Factorise 10a² − 15a.",
+   "lines": [
+    "HCF of 10 and 15 is 5",
+    "a is in both terms: HCF = 5a",
+    "10a² ÷ 5a = 2a, −15a ÷ 5a = −3",
+    "Answer: 5a(2a − 3)"
+   ],
+   "say": "Factorise ten a squared minus fifteen a. The highest common factor of ten and fifteen is five, and a is in both terms, so the HCF is five a. Ten a squared divided by five a is two a. Negative fifteen a divided by five a is negative three. The answer is five a, bracket two a minus three.",
+   "caption": "Factorise 10a² − 15a. The HCF of 10 and 15 is 5, and a is in both terms, so the HCF is 5a. 10a² ÷ 5a = 2a. −15a ÷ 5a = −3. The answer is 5a(2a − 3)."
+  },
+  {
+   "type": "compare",
+   "heading": "Fully factorised?",
+   "left": {
+    "title": "Not finished",
+    "icon": "❌",
+    "points": [
+     "12x + 18 = 2(6x + 9)",
+     "6x and 9 still share 3",
+     "3a² − a = a(3a)",
+     "The 1 has gone missing"
+    ]
+   },
+   "right": {
+    "title": "Fully factorised",
+    "icon": "✅",
+    "points": [
+     "12x + 18 = 6(2x + 3)",
+     "Nothing common inside",
+     "3a² − a = a(3a − 1)",
+     "a ÷ a leaves 1"
+    ]
+   },
+   "say": "Two traps. First, always take out the highest common factor. Two, bracket six x plus nine, isn't finished, because six x and nine still share three. Second, when a term equals the HCF, it leaves a one behind. Three a squared minus a is a, bracket three a minus one.",
+   "caption": "Two traps. First, always take out the highest common factor. 2(6x + 9) isn't finished, because 6x and 9 still share 3. Second, when a term equals the HCF, it leaves a 1 behind. 3a² − a = a(3a − 1)."
+  },
+  {
+   "type": "example",
+   "heading": "A negative factor",
+   "question": "Factorise −2y² + 8y, taking out a negative factor.",
+   "lines": [
+    "Take out −2y",
+    "−2y² ÷ −2y = y",
+    "8y ÷ −2y = −4",
+    "Answer: −2y(y − 4)"
+   ],
+   "say": "When the first term is negative, you can take out a negative factor. Here, take out negative two y. Negative two y squared divided by negative two y is y. Eight y divided by negative two y is negative four. The answer is negative two y, bracket y minus four.",
+   "caption": "When the first term is negative, you can take out a negative factor. Here, take out −2y. −2y² ÷ −2y = y. 8y ÷ −2y = −4. The answer is −2y(y − 4)."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Factorising is the reverse of expanding",
+    "HCF: numbers, plus letters in EVERY term",
+    "Use the lowest power of each letter",
+    "A term equal to the HCF leaves 1",
+    "Always check by expanding"
+   ],
+   "say": "Quick recap. Factorising is the reverse of expanding. Find the highest common factor, using the lowest power of each letter. Divide every term by it, and don't lose the one. Always check by expanding. Now try the practice questions!"
+  }
+ ]
+}
