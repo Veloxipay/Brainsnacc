@@ -1,0 +1,367 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 10 · Test 2",
+ "kind": "test",
+ "summary": "A 15-question test on polynomials, the factor and remainder theorems, functions, circles, hyperbolas, exponential graphs and transformations.",
+ "minutes": 25,
+ "body": "This test covers Chapter 10: polynomials (naming, evaluating, expanding and dividing), the factor and remainder theorems, functions and f(x) notation, circles and hyperbolas, exponential graphs, and transforming graphs.\n\nAllow about 25 minutes. Work with no notes and no calculator unless the question says. Several questions include a graph or diagram: read the scales carefully and check any point you use. Show your working on paper as you go, then choose the best answer for each question. When you finish, go back over any question about signs, brackets or the direction of a shift, because that is where most marks are lost.",
+ "questions": [
+  {
+   "topic": "Introducing polynomials",
+   "difficulty": "easy",
+   "prompt": "What are the degree and the leading coefficient of P(x) = 6x − 2x³ + 9x² + 1?",
+   "options": {
+    "A": "Degree 1, leading coefficient 6",
+    "B": "Degree 3, leading coefficient −2",
+    "C": "Degree 3, leading coefficient 2",
+    "D": "Degree 3, leading coefficient 1"
+   },
+   "answer": "B",
+   "explanation": "The highest power of x is 3, so the degree is 3; the term with that power has coefficient −2. Reading the first term written gives the wrong answer.",
+   "steps": [
+    "Find the highest power of x: x³, so the degree is 3.",
+    "The leading term is the x³ term, including its sign.",
+    "The leading coefficient is −2."
+   ],
+   "mistakes": {
+    "A": "Step 1: you used the first term written. Find the highest power of x, wherever it is.",
+    "C": "Step 2: the sign in front of the leading term belongs to its coefficient. Keep it.",
+    "D": "Step 2: that is the constant term. The leading coefficient multiplies the highest power."
+   }
+  },
+  {
+   "topic": "Functions and function notation",
+   "difficulty": "easy",
+   "prompt": "The diagram shows the parabola y = f(x), which has its turning point at (−1, −4). Use it to find f(2).",
+   "options": {
+    "A": "−3",
+    "B": "−4",
+    "C": "1",
+    "D": "5"
+   },
+   "answer": "D",
+   "explanation": "f(2) is the y-value of the graph when x = 2, which is 5.",
+   "steps": [
+    "f(2) means the output (y-value) when the input is x = 2.",
+    "Find x = 2 on the x-axis and move vertically to the graph.",
+    "The graph is at y = 5, so f(2) = 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: −3 is the value at x = −2 (and at x = 0). f(2) means go to x = +2.",
+    "B": "Step 3: −4 is the lowest point of the graph. Read the y-value at x = 2.",
+    "C": "Step 2: 1 is where the graph crosses the x-axis. f(2) is the y-value at x = 2."
+   },
+   "diagram": "diagrams/y10/maths/chapter-10-test-2-q2.svg",
+   "diagram_alt": "A parabola y = f(x) on a grid with x from −4 to 3 and y from −5 to 6. It crosses the x-axis at −3 and 1, has its lowest point at (−1, −4) and crosses the y-axis at −3."
+  },
+  {
+   "topic": "Exponential graphs",
+   "difficulty": "easy",
+   "prompt": "What are the horizontal asymptote and the y-intercept of y = 3ˣ − 2?",
+   "options": {
+    "A": "Asymptote y = 0, y-intercept (0, −1)",
+    "B": "Asymptote y = −2, y-intercept (0, −2)",
+    "C": "Asymptote y = −2, y-intercept (0, −1)",
+    "D": "Asymptote y = −2, y-intercept (0, 1)"
+   },
+   "answer": "C",
+   "explanation": "3ˣ approaches 0 but never reaches it, so 3ˣ − 2 approaches −2: the asymptote is y = −2. At x = 0, y = 1 − 2 = −1. Keeping the asymptote at y = 0 forgets the shift.",
+   "steps": [
+    "y = 3ˣ has asymptote y = 0; subtracting 2 moves it to y = −2.",
+    "At x = 0: y = 3⁰ − 2 = 1 − 2.",
+    "y-intercept (0, −1)."
+   ],
+   "mistakes": {
+    "A": "Step 1: subtracting 2 moves the asymptote down from y = 0 to y = −2.",
+    "B": "Step 2: 3⁰ = 1, not 0, so the y-intercept is 1 − 2.",
+    "D": "Step 2: 3⁰ = 1, not 3."
+   }
+  },
+  {
+   "topic": "Circles and hyperbolas",
+   "difficulty": "easy",
+   "prompt": "The diagram shows a circle whose centre (−3, −2) is marked. Which equation matches the circle?",
+   "options": {
+    "A": "(x + 3)² + (y + 2)² = 4",
+    "B": "(x − 3)² + (y − 2)² = 4",
+    "C": "(x + 3)² + (y + 2)² = 2",
+    "D": "x² + y² = 4"
+   },
+   "answer": "A",
+   "explanation": "The centre is (−3, −2) and the radius is 2, so the equation is (x + 3)² + (y + 2)² = 4. Writing 2 on the right forgets to square the radius.",
+   "steps": [
+    "Read the centre: (−3, −2).",
+    "Read the radius: the circle reaches 2 units from the centre, e.g. to (−1, −2).",
+    "Equation: (x + 3)² + (y + 2)² = 4."
+   ],
+   "mistakes": {
+    "B": "Step 2: the centre is (−3, −2), so the brackets are (x − h) and (y − k) with those values. Watch the signs.",
+    "C": "Step 3: the right-hand side is r², so it should be 2² = 4.",
+    "D": "Step 1: x² + y² = 4 is centred at the origin. This circle's centre is (−3, −2)."
+   },
+   "diagram": "diagrams/y10/maths/chapter-10-test-2-q4.svg",
+   "diagram_alt": "A circle on an equal-scale grid with its centre marked at (−3, −2). It passes through (−1, −2), (−5, −2), (−3, 0) and (−3, −4)."
+  },
+  {
+   "topic": "Dividing polynomials",
+   "difficulty": "medium",
+   "prompt": "The diagram shows the first steps of dividing 2x³ − x² − 7x + 6 by x − 1. What is the next term of the quotient, marked \"?\"",
+   "options": {
+    "A": "+ x²",
+    "B": "− x",
+    "C": "+ x",
+    "D": "− 3x"
+   },
+   "answer": "C",
+   "explanation": "After subtracting 2x³ − 2x², the leftover starts with x². Divide its first term by the x in x − 1: x² ÷ x = x, so the next quotient term is + x. Getting x² forgets to divide by x.",
+   "steps": [
+    "The leftover line is x² − 7x (since −x² − (−2x²) = x²).",
+    "Divide its first term by the first term of the divisor: x² ÷ x.",
+    "x² ÷ x = x, so the next term is + x."
+   ],
+   "mistakes": {
+    "A": "Step 2: divide x² by x: the power drops by 1, so x² ÷ x = x.",
+    "B": "Step 2: the line reads +x², so x² ÷ x = +x. Keep the sign.",
+    "D": "Step 1: −x² − (−2x²) = +x², not −3x². Subtracting a negative adds."
+   },
+   "diagram": "diagrams/y10/maths/chapter-10-test-2-q5.svg",
+   "diagram_alt": "A partly finished long division of 2x³ − x² − 7x + 6 by x − 1. The quotient shows 2x² followed by a question mark. Underneath, 2x³ − 2x² is subtracted, leaving x² − 7x."
+  },
+  {
+   "topic": "The factor and remainder theorems",
+   "difficulty": "medium",
+   "prompt": "Use the remainder theorem to find the remainder when 2x³ + x² − 5x + 3 is divided by (x + 2).",
+   "options": {
+    "A": "1",
+    "B": "13",
+    "C": "33",
+    "D": "−7"
+   },
+   "answer": "A",
+   "explanation": "Dividing by (x + 2) means substituting x = −2: P(−2) = 1.",
+   "steps": [
+    "(x + 2) = 0 when x = −2, so the remainder is P(−2).",
+    "Substitute x = −2 into 2x³ + x² − 5x + 3, using brackets for negatives.",
+    "P(−2) = 1, so the remainder is 1."
+   ],
+   "mistakes": {
+    "B": "Step 1: dividing by x + 2 means substitute x = −2, not 2.",
+    "C": "Step 2: (−2)³ = −8, not 8, so 2(−2)³ = −16.",
+    "D": "Step 2: (−2)² = 4, not −4. A negative squared is positive."
+   }
+  },
+  {
+   "topic": "Transforming graphs",
+   "difficulty": "medium",
+   "prompt": "The dashed graph is y = x². The solid graph is the same parabola translated so that its turning point is at (−2, 1). What is its equation?",
+   "options": {
+    "A": "y = (x − 2)² + 1",
+    "B": "y = (x + 2)² + 1",
+    "C": "y = (x + 2)² − 1",
+    "D": "y = (x − 1)² − 2"
+   },
+   "answer": "B",
+   "explanation": "The turning point moved from (0, 0) to (−2, 1), so the equation is y = (x + 2)² + 1. Remember that a move right by h shows up as (x − h).",
+   "steps": [
+    "Read the new turning point: (−2, 1).",
+    "Across 2 left: the bracket is (x + 2); up 1: add 1.",
+    "y = (x + 2)² + 1."
+   ],
+   "mistakes": {
+    "A": "Step 2: the turning point is at x = −2, which makes (x + 2) zero. (x − 2) would move the graph right.",
+    "C": "Step 2: the turning point is above the x-axis, so the graph moved up 1: add 1.",
+    "D": "Step 1: the turning point is (−2, 1): 2 left and 1 up. You swapped the two moves."
+   },
+   "diagram": "diagrams/y10/maths/chapter-10-test-2-q7.svg",
+   "diagram_alt": "The dashed parabola y = x² with turning point at the origin and a solid parabola of the same shape with its turning point marked at (−2, 1), on a grid with x from −5 to 3 and y from −2 to 8."
+  },
+  {
+   "topic": "Functions and function notation",
+   "difficulty": "medium",
+   "prompt": "g(x) = x² + 2x. Find g(−3).",
+   "options": {
+    "A": "−15",
+    "B": "15",
+    "C": "−3",
+    "D": "3"
+   },
+   "answer": "D",
+   "explanation": "g(−3) = (−3)² + 2(−3) = 9 − 6 = 3. Writing (−3)² as −9 gives the wrong answer −3.",
+   "steps": [
+    "Substitute with brackets: g(−3) = (−3)² + 2(−3).",
+    "(−3)² = 9 and 2 × (−3) = −6.",
+    "g(−3) = 9 − 6 = 3."
+   ],
+   "mistakes": {
+    "A": "Step 2: (−3)² = +9 (not −9), while 2 × (−3) = −6.",
+    "B": "Step 2: 2 × (−3) = −6, not +6. A positive times a negative is negative.",
+    "C": "Step 2: (−3)² = (−3) × (−3) = +9, not −9."
+   }
+  },
+  {
+   "topic": "Exponential graphs",
+   "difficulty": "medium",
+   "prompt": "The diagram shows an exponential graph y = k × aˣ through the marked points (0, 4) and (1, 2). Find its rule.",
+   "options": {
+    "A": "y = 4 × 2ˣ",
+    "B": "y = 4 × (½)ˣ",
+    "C": "y = 2 × (½)ˣ",
+    "D": "y = 4 − 2x"
+   },
+   "answer": "B",
+   "explanation": "The y-intercept gives k = 4. From x = 0 to x = 1, y is multiplied by 2 ÷ 4 = ½, so y = 4 × (½)ˣ. The graph falls, so a must be less than 1, which rules out 4 × 2ˣ.",
+   "steps": [
+    "At x = 0: y = k, so k = 4.",
+    "At x = 1: 2 = 4 × a, so a = ½.",
+    "The rule is y = 4 × (½)ˣ."
+   ],
+   "mistakes": {
+    "A": "Step 2: y halves from 4 to 2, so a = 2 ÷ 4 = ½, not 4 ÷ 2.",
+    "C": "Step 1: k is the y-value at x = 0, which is 4.",
+    "D": "Step 1: that is the straight line through the two points, but this graph is a curve."
+   },
+   "diagram": "diagrams/y10/maths/chapter-10-test-2-q9.svg",
+   "diagram_alt": "An exponential curve on a grid with x from −1 to 3 and y from −1 to 9, passing through the marked points (0, 4) and (1, 2)."
+  },
+  {
+   "topic": "The factor and remainder theorems",
+   "difficulty": "hard",
+   "prompt": "Fully factorise x³ + 4x² − 7x − 10.",
+   "options": {
+    "A": "(x − 2)(x + 1)(x + 5)",
+    "B": "(x + 2)(x − 1)(x − 5)",
+    "C": "(x − 2)(x − 1)(x − 5)",
+    "D": "(x + 2)(x + 1)(x + 5)"
+   },
+   "answer": "A",
+   "explanation": "P(2) = 0, so (x − 2) is a factor. Dividing gives x² + 6x + 5 = (x + 1)(x + 5), so P(x) = (x − 2)(x + 1)(x + 5). Expanding the answer gives back the original cubic.",
+   "steps": [
+    "Test factors of the constant −10: P(2) = 0, so (x − 2) is a factor.",
+    "Divide: (x³ + 4x² − 7x − 10) ÷ (x − 2) = x² + 6x + 5.",
+    "Factorise: x² + 6x + 5 = (x + 1)(x + 5), so the answer is (x − 2)(x + 1)(x + 5)."
+   ],
+   "mistakes": {
+    "B": "Step 1: a zero at x = a gives the factor x − a. You flipped every sign.",
+    "C": "Step 3: x² + 6x + 5 factorises using two numbers that multiply to 5 and add to 6. Check their signs.",
+    "D": "Step 1: P(−2) = 12, not 0, so (x + 2) is not a factor. Test P(2) instead."
+   }
+  },
+  {
+   "topic": "Circles and hyperbolas",
+   "difficulty": "hard",
+   "prompt": "Find the centre and radius of the circle x² + y² + 6x − 8y = 0.",
+   "options": {
+    "A": "Centre (3, −4), radius 5",
+    "B": "Centre (−3, 4), radius 25",
+    "C": "Centre (−3, 4), radius 5",
+    "D": "Centre (−6, 8), radius 10"
+   },
+   "answer": "C",
+   "explanation": "Completing the square gives a circle with centre (−3, 4) and r² = 25, so the radius is 5.",
+   "steps": [
+    "Group: (x² + 6x) + (y² − 8y) = 0.",
+    "Complete the squares: (x + 3)² − 9 + (y − 4)² − 16 = 0.",
+    "(x + 3)² + (y − 4)² = 25: centre (−3, 4), radius 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: x² + 6x = (x + 3)² − 9 gives h = −3; y² − 8y = (y − 4)² − 16 gives k = 4. Watch the signs.",
+    "B": "Step 3: 25 is r². The radius is √25 = 5.",
+    "D": "Step 2: halve the coefficients: x² + 6x needs (x + 3)², not (x + 6)²."
+   }
+  },
+  {
+   "topic": "Introducing polynomials",
+   "difficulty": "hard",
+   "prompt": "Expand and simplify (3x + 2)(x² − 2x + 5).",
+   "options": {
+    "A": "3x³ − 6x² + 15x + 2",
+    "B": "3x³ − 4x² + 19x + 10",
+    "C": "3x³ − 8x² + 11x + 10",
+    "D": "3x³ − 4x² + 11x + 10"
+   },
+   "answer": "D",
+   "explanation": "Multiply every term of x² − 2x + 5 by 3x and by 2, then collect like terms: 3x³ − 4x² + 11x + 10.",
+   "steps": [
+    "Multiply by 3x: 3x³ − 6x² + 15x.",
+    "Multiply by 2: 2x² − 4x + 10.",
+    "Collect like terms: 3x³ − 4x² + 11x + 10."
+   ],
+   "mistakes": {
+    "A": "Step 2: 2 must multiply every term of the trinomial, not just sit on the end.",
+    "B": "Step 2: 2 × (−2x) = −4x, so the x terms are 15x − 4x = 11x.",
+    "C": "Step 2: 2 × x² = +2x², so the x² terms are −6x² + 2x² = −4x²."
+   }
+  },
+  {
+   "topic": "Transforming graphs",
+   "difficulty": "hard",
+   "prompt": "The point (−1, 4) is on the graph of y = f(x). What is its image on y = −f(x − 2) + 3?",
+   "options": {
+    "A": "(−3, −1)",
+    "B": "(1, −1)",
+    "C": "(1, 7)",
+    "D": "(1, −7)"
+   },
+   "answer": "B",
+   "explanation": "Inside the bracket moves x the opposite way to the sign; outside, dilate or reflect the y-value first and then translate. The image is (1, −1).",
+   "steps": [
+    "Inside (x − 2): move 2 right, so x: −1 → 1.",
+    "Reflect in the x-axis: y: 4 → −4.",
+    "Translate up 3: −4 + 3 = −1. Image: (1, −1)."
+   ],
+   "mistakes": {
+    "A": "Step 1: (x − 2) inside moves the graph 2 right: −1 + 2 = 1.",
+    "C": "Step 2: the minus sign in front of f reflects the point in the x-axis: 4 becomes −4 before adding 3.",
+    "D": "Step 2: reflect first, then translate: −4 + 3 = −1, not −(4 + 3)."
+   }
+  },
+  {
+   "topic": "The factor and remainder theorems",
+   "difficulty": "challenge",
+   "prompt": "x + 2 is a factor of 2x³ + kx² − 7x − 10. Find k.",
+   "options": {
+    "A": "k = 2",
+    "B": "k = −3",
+    "C": "k = −5",
+    "D": "k = 3"
+   },
+   "answer": "D",
+   "explanation": "P(−2) = 2(−8) + 4k − 7(−2) − 10 = −16 + 4k + 14 − 10 = 4k − 12. Setting this to 0 gives k = 3. Substituting x = 2 gives k = 2, which is wrong.",
+   "steps": [
+    "x + 2 is a factor, so P(−2) = 0.",
+    "2(−2)³ + k(−2)² − 7(−2) − 10 = −16 + 4k + 14 − 10 = 4k − 12.",
+    "4k − 12 = 0, so k = 3."
+   ],
+   "mistakes": {
+    "A": "Step 1: for the factor x + 2, substitute x = −2, not x = 2.",
+    "B": "Step 2: k(−2)² = 4k, not −4k. A negative squared is positive.",
+    "C": "Step 2: 2(−2)³ = 2 × (−8) = −16, not +16."
+   }
+  },
+  {
+   "topic": "Dividing polynomials",
+   "difficulty": "challenge",
+   "prompt": "Divide x³ − 3x² + 5x − 4 by x² − x + 1. What are the quotient and remainder?",
+   "options": {
+    "A": "Quotient x − 4, remainder 0",
+    "B": "Quotient x − 2, remainder −2",
+    "C": "Quotient x − 2, remainder 2x − 2",
+    "D": "Quotient x − 2, remainder 2x − 6"
+   },
+   "answer": "C",
+   "explanation": "x(x² − x + 1) = x³ − x² + x leaves −2x² + 4x − 4. Then −2(x² − x + 1) = −2x² + 2x − 2 leaves 2x − 2, which has a lower degree than the divisor. Check: (x² − x + 1)(x − 2) + 2x − 2 = x³ − 3x² + 5x − 4 ✓",
+   "steps": [
+    "x³ ÷ x² = x; subtract x³ − x² + x to leave −2x² + 4x − 4.",
+    "−2x² ÷ x² = −2; subtract −2x² + 2x − 2 to leave 2x − 2.",
+    "2x − 2 has degree 1, lower than 2, so stop: quotient x − 2, remainder 2x − 2."
+   ],
+   "mistakes": {
+    "A": "Step 1: −3x² − (−x²) = −2x², not −4x². Subtracting a negative adds.",
+    "B": "Step 3: dividing by a quadratic can leave a linear remainder. Keep the 2x term.",
+    "D": "Step 3: −4 − (−2) = −2, not −6. Subtracting a negative adds."
+   }
+  }
+ ]
+}

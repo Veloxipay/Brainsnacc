@@ -1,0 +1,107 @@
+{
+ "lesson": "y10/maths/the-factor-and-remainder-theorems.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "The factor and remainder theorems",
+ "icon": "🔑",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "The factor and remainder theorems",
+   "sub": "Find remainders and factors without dividing",
+   "icon": "🔑",
+   "say": "Long division works, but it's slow. Two short theorems let you find a remainder, or test for a factor, just by substituting one number."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🔑",
+   "everyday": "Try each key on the ring until one turns all the way",
+   "icon2": "🧮",
+   "science": "Try x = a: if P(a) = 0, then x − a is a factor",
+   "breaks": "A wrong key just doesn't turn, but a wrong number still tells you the exact remainder, P(a).",
+   "say": "Picture a key ring. You try each key until one turns all the way. Testing a number in P of x is like trying a key: if P of a is zero, x minus a fits exactly. And the keys worth trying are the factors of the constant term.",
+   "caption": "Try each key until one turns. Testing a number in P(x) is like trying a key: if P(a) = 0, x − a fits exactly. The keys worth trying are the factors of the constant term."
+  },
+  {
+   "type": "equation",
+   "heading": "The remainder theorem",
+   "equation": "P(x) ÷ (x − a) leaves P(a)",
+   "parts": [
+    [
+     "x − a",
+     "the divisor"
+    ],
+    [
+     "P(a)",
+     "substitute x = a"
+    ],
+    [
+     "x + 2",
+     "substitute x = −2"
+    ]
+   ],
+   "say": "The remainder theorem: when P of x is divided by x minus a, the remainder is P of a. Put x equals a into the division statement and the divisor becomes zero, leaving just the remainder. For x plus two, substitute negative two.",
+   "caption": "When P(x) is divided by x − a, the remainder is P(a). Put x = a and the divisor becomes zero, leaving just the remainder. For x + 2, substitute −2."
+  },
+  {
+   "type": "diagram",
+   "heading": "The remainder is the height of the graph",
+   "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-height.svg",
+   "notes": [
+    "P(x) = x³ − x² − 4x + 4",
+    "Height at x = 3 is 10, so remainder 10"
+   ],
+   "say": "Here's y equals x cubed minus x squared minus four x plus four. Now the dashed line at x equals three: the graph is ten units high. So dividing by x minus three leaves a remainder of ten. Where the height is zero, at negative two, one and two, the remainder is zero.",
+   "caption": "Here's y = x³ − x² − 4x + 4. At x = 3 the graph is 10 units high, so dividing by x − 3 leaves remainder 10. Where the height is 0, at −2, 1 and 2, the remainder is 0."
+  },
+  {
+   "type": "points",
+   "heading": "The factor theorem",
+   "icon": "✅",
+   "points": [
+    "If P(a) = 0, then x − a is a factor",
+    "Zero at x = 4 → factor x − 4",
+    "Zero at x = −3 → factor x + 3",
+    "Test factors of the constant term"
+   ],
+   "say": "That's the factor theorem. If P of a is zero, then x minus a is a factor. Watch the sign swap: a zero at four gives x minus four, and a zero at negative three gives x plus three.",
+   "caption": "The factor theorem: if P(a) = 0, then x − a is a factor. Watch the sign swap: a zero at 4 gives x − 4; a zero at −3 gives x + 3."
+  },
+  {
+   "type": "example",
+   "heading": "Fully factorise a cubic",
+   "question": "Factorise x³ − 2x² − 11x + 12.",
+   "lines": [
+    "P(1) = 1 − 2 − 11 + 12 = 0",
+    "So x − 1 is a factor",
+    "Divide: x² − x − 12",
+    "= (x − 1)(x − 4)(x + 3)"
+   ],
+   "say": "Try x equals one: one minus two minus eleven plus twelve is zero, so x minus one is a factor. Divide to get x squared minus x minus twelve, which factorises to x minus four times x plus three.",
+   "caption": "Try x = 1: 1 − 2 − 11 + 12 = 0, so x − 1 is a factor. Divide to get x² − x − 12 = (x − 4)(x + 3)."
+  },
+  {
+   "type": "diagram",
+   "heading": "Zeros are the x-intercepts",
+   "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-zeros.svg",
+   "notes": [
+    "Crosses at −3, 1 and 4",
+    "Factors: (x + 3), (x − 1), (x − 4)"
+   ],
+   "say": "And here's the graph. It crosses the x-axis at negative three, one and four: exactly the zeros we found from the factors.",
+   "caption": "The graph crosses the x-axis at −3, 1 and 4: exactly the zeros from the factors."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Remainder on ÷ (x − a) is P(a)",
+    "P(a) = 0 means x − a is a factor",
+    "Test factors of the constant term",
+    "Find one factor, divide, factorise"
+   ],
+   "say": "Quick recap. The remainder is P of a. If P of a is zero, x minus a is a factor. Test factors of the constant, divide, then factorise the quadratic. Now try the practice questions!",
+   "caption": "Quick recap. The remainder is P(a). If P(a) = 0, x − a is a factor. Test factors of the constant, divide, then factorise the quadratic. Now try the practice questions!"
+  }
+ ]
+}

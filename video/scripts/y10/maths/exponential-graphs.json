@@ -1,0 +1,87 @@
+{
+ "lesson": "y10/maths/exponential-graphs.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Exponential graphs",
+ "icon": "📈",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Exponential graphs",
+   "sub": "Slow start, then an explosion",
+   "icon": "📈",
+   "say": "Populations, investments and cooling cups of tea all follow exponential curves. Today you'll learn to sketch them quickly and find their rules."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🗣️",
+   "everyday": "A rumour that doubles its listeners every hour",
+   "icon2": "📈",
+   "science": "y = 2ˣ: multiply by 2 each time x goes up by 1",
+   "breaks": "A real rumour stops when everyone knows; y = 2ˣ grows forever and has values for negative x too.",
+   "say": "Picture a rumour. Every hour, everyone who knows it tells one new person, so the number doubles: one, two, four, eight, sixteen. Slow at first, then the whole school knows. That's the shape of an exponential graph."
+  },
+  {
+   "type": "diagram",
+   "heading": "The basic shape: y = aˣ",
+   "diagram": "diagrams/y10/maths/exponential-graphs-family.svg",
+   "notes": [
+    "All pass through (0, 1)",
+    "Base above 1: growth",
+    "Base between 0 and 1: decay"
+   ],
+   "say": "Here are y equals two to the x, then three to the x, then one half to the x. All three pass through zero, one, because anything to the power zero is one. Bigger bases climb faster. A base of one half falls instead. None of them touch the x-axis: it's an asymptote.",
+   "caption": "y = 2ˣ, y = 3ˣ and y = (½)ˣ all pass through (0, 1), because a⁰ = 1. Bigger bases climb faster; a base of ½ falls. None touch the x-axis: it's an asymptote."
+  },
+  {
+   "type": "points",
+   "heading": "Stretch and shift",
+   "icon": "↕️",
+   "points": [
+    "y = k × aˣ: y-intercept (0, k)",
+    "Negative k: reflected in the x-axis",
+    "y = aˣ + c: asymptote y = c",
+    "y = aˣ + c: y-intercept (0, 1 + c)"
+   ],
+   "say": "Multiply by k and the y-intercept becomes zero, k. A negative k flips the graph below the x-axis. Add c and the whole graph, asymptote and all, moves up by c.",
+   "caption": "Multiply by k and the y-intercept becomes (0, k). A negative k flips the graph below the x-axis. Add c and the whole graph, asymptote and all, moves up by c."
+  },
+  {
+   "type": "diagram",
+   "heading": "Sketching y = 2ˣ − 3",
+   "diagram": "diagrams/y10/maths/exponential-graphs-shift.svg",
+   "notes": [
+    "Asymptote y = −3",
+    "y-intercept: 1 − 3 = −2",
+    "x-intercept: 2ˣ = 3, x ≈ 1.58"
+   ],
+   "say": "Let's sketch y equals two to the x minus three. First the dashed asymptote, y equals negative three. Then the y-intercept: one minus three is negative two. Now the graph crosses the x-axis where two to the x is three, at about one point five eight.",
+   "caption": "Sketch y = 2ˣ − 3. Asymptote y = −3. y-intercept: 1 − 3 = −2. It crosses the x-axis where 2ˣ = 3, at about 1.58."
+  },
+  {
+   "type": "example",
+   "heading": "Finding the rule",
+   "question": "y = k × aˣ passes through (0, 5) and (2, 45). Find k and a.",
+   "lines": [
+    "(0, 5): k = 5",
+    "(2, 45): 45 = 5 × a²",
+    "a² = 9, so a = 3",
+    "y = 5 × 3ˣ"
+   ],
+   "say": "Use the y-intercept first: k is five. Then the other point: forty-five equals five times a squared, so a squared is nine and a is three. The rule is y equals five times three to the x.",
+   "caption": "Use the y-intercept first: k = 5. Then 45 = 5 × a², so a² = 9 and a = 3. The rule is y = 5 × 3ˣ."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "y = aˣ: through (0, 1), asymptote y = 0",
+    "a above 1 grows; a below 1 decays",
+    "k × aˣ: y-intercept (0, k)",
+    "aˣ + c: asymptote y = c"
+   ],
+   "say": "Quick recap. y equals a to the x passes through zero, one with asymptote y equals zero. Multiplying by k moves the y-intercept; adding c moves the asymptote. Now try the practice questions!",
+   "caption": "Quick recap. y = aˣ passes through (0, 1) with asymptote y = 0. Multiplying by k moves the y-intercept; adding c moves the asymptote. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,283 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Dividing polynomials",
+ "summary": "Divide a polynomial by a linear expression using long division, find the quotient and remainder, and write the result as a division statement.",
+ "minutes": 25,
+ "body": "You already know how to divide numbers using long division. Polynomials can be divided in exactly the same way, and the method is the key to factorising cubics, simplifying algebraic fractions and, later, sketching curves. Engineers and computer programs use polynomial division whenever they need to break a complicated expression into simpler pieces.\n\n## Learning objective\n\nBy the end of this lesson you can divide a polynomial by a linear expression using long division, find the quotient and remainder, and write the result as a division statement.\n\n## Before you start\n\nYou need **Introducing polynomials (Year 10)** and **Factorising monic quadratics (Year 10)**.\n\nWarm-up:\n1. Work out 437 ÷ 12 as a whole number and a remainder. **Answer: 36 remainder 5** (12 × 36 = 432 and 437 − 432 = 5)\n2. Expand (x − 2)(x² + 4x + 3). **Answer: x³ + 2x² − 5x − 6**\n\n## Think of it like this\n\n### Packing lollies into bags\n\nSuppose you pack 437 lollies into bags of 12. You get 36 full bags and 5 left over, so 437 = 12 × 36 + 5. Polynomial division asks the same question: how many \"lots\" of the divisor fit into the polynomial, and what is left over?\n\n*Where the analogy breaks down:* with lollies the leftover is a small positive number, but with polynomials the remainder can be negative, and it is \"smaller\" in the sense of having a lower degree than the divisor, not a smaller value.\n\n## Key ideas\n\n### The words\n\nIn P(x) ÷ (x − a):\n- P(x) is the **dividend** (the polynomial being divided).\n- x − a is the **divisor**.\n- The answer is the **quotient**, Q(x).\n- What is left over is the **remainder**, R.\n\nThese fit together in the **division statement**:\n\nP(x) = (divisor) × Q(x) + R\n\nYou can also write it as a fraction: P(x)/(x − a) = Q(x) + R/(x − a).\n\n### Division undoes multiplication\n\nSince (x + 3)(x + 4) = x² + 7x + 12, dividing x² + 7x + 12 by x + 3 must give x + 4. An area model shows why: the rectangle has area x² + 7x + 12 and one side x + 3, so the other side is x + 4.\n\n![An area model: a rectangle split into four parts x², 4x, 3x and 12, with sides x + 4 across the top and x + 3 down the side](/diagrams/y10/maths/dividing-polynomials-area.svg)\n\n### The long division routine\n\nRepeat four moves until the leftover has a lower degree than the divisor:\n\n1. **Divide** the first term of what's left by the first term of the divisor (e.g. x³ ÷ x = x²). Write it on top.\n2. **Multiply** the whole divisor by that new term.\n3. **Subtract** it (change every sign, then add).\n4. **Bring down** the next term.\n\nLine up like terms in columns (x³, x², x, number). If a power is missing, write it with a 0 coefficient as a **placeholder**, e.g. 2x³ − 3x² + 4 becomes 2x³ − 3x² + 0x + 4.\n\nWhen you divide by a linear divisor (degree 1), the remainder is always a number (degree 0). If the remainder is 0, the divisor goes in exactly: it is a **factor**.\n\n## Worked examples\n\n### Example 1\n\nDivide x² + 7x + 12 by x + 3.\n\nStep 1: divide — x² ÷ x = x. Write x on top.\nStep 2: multiply — x(x + 3) = x² + 3x. Subtract — (x² + 7x) − (x² + 3x) = 4x. Bring down + 12.\nStep 3: divide — 4x ÷ x = 4. Multiply — 4(x + 3) = 4x + 12. Subtract — 0.\nAnswer: quotient x + 4, remainder 0.\nCheck: (x + 3)(x + 4) = x² + 7x + 12 ✓\n\n### Example 2\n\nDivide x³ + 2x² − 5x − 6 by x − 2.\n\n![Long division of x³ + 2x² − 5x − 6 by x − 2, giving quotient x² + 4x + 3 and remainder 0](/diagrams/y10/maths/dividing-polynomials-long.svg)\n\nStep 1: x³ ÷ x = x². Multiply — x²(x − 2) = x³ − 2x². Subtract — 2x² − (−2x²) = 4x². Bring down −5x.\nStep 2: 4x² ÷ x = 4x. Multiply — 4x(x − 2) = 4x² − 8x. Subtract — −5x − (−8x) = 3x. Bring down −6.\nStep 3: 3x ÷ x = 3. Multiply — 3(x − 2) = 3x − 6. Subtract — 0.\nAnswer: x³ + 2x² − 5x − 6 = (x − 2)(x² + 4x + 3), remainder 0.\n\n### Example 3\n\nDivide 2x³ − 3x² + 4 by x + 1.\n\n![Long division of 2x³ − 3x² + 0x + 4 by x + 1, giving quotient 2x² − 5x + 5 and remainder −1](/diagrams/y10/maths/dividing-polynomials-remainder.svg)\n\nStep 1: there is no x term — so write 2x³ − 3x² + 0x + 4 to keep the columns lined up.\nStep 2: 2x³ ÷ x = 2x². Multiply — 2x³ + 2x². Subtract — −3x² − 2x² = −5x².\nStep 3: −5x² ÷ x = −5x. Multiply — −5x² − 5x. Subtract — 0x − (−5x) = 5x. Bring down + 4.\nStep 4: 5x ÷ x = 5. Multiply — 5x + 5. Subtract — 4 − 5 = −1.\nAnswer: 2x³ − 3x² + 4 = (x + 1)(2x² − 5x + 5) − 1.\nCheck: put x = 0 — left side 4, right side (1)(5) − 1 = 4 ✓\n\n### Example 4\n\nWrite (x³ − 4x + 7)/(x − 3) in the form Q(x) + R/(x − 3).\n\nStep 1: use placeholders — x³ + 0x² − 4x + 7.\nStep 2: divide as before — the quotient is x² + 3x + 5 and the remainder is 22.\nStep 3: write the fraction form — (x³ − 4x + 7)/(x − 3) = x² + 3x + 5 + 22/(x − 3).\nCheck: put x = 3 into the dividend — 27 − 12 + 7 = 22, which matches the remainder ✓ (you'll see why in the next lesson).\n\n## Common mistakes\n\n- **Forgetting placeholders.** Without 0x² or 0x, terms slide into the wrong columns. Fix: write every power from the highest down to the constant.\n- **Subtracting only the first term.** When you subtract (x³ − 2x²), the −2x² becomes +2x². Fix: put the line you subtract in brackets and change every sign.\n- **Stopping too early.** If what's left still has an x term and you are dividing by x − a, keep going. Fix: stop only when the leftover has a lower degree than the divisor.\n- **Writing the remainder on its own.** P(x) ÷ (x − 3) = Q(x) + 22 is wrong. Fix: the remainder goes over the divisor: Q(x) + 22/(x − 3).\n\n## Tips to remember\n\n- **\"Does McDonald's Sell Burgers?\"** — Divide, Multiply, Subtract, Bring down. It's a well-known trick for long division of numbers, and it works for polynomials too.\n- **Only look at the front.** Each new quotient term comes from dividing the first term of what's left by the x in the divisor.\n- **Zero holds the seat** (made-up phrase): a 0 placeholder saves the seat of any missing power.\n- **Always check:** divisor × quotient + remainder should give back the dividend. Test with an easy number like x = 0 or x = 1.\n\n## Key terms\n\n- **Dividend** — the polynomial being divided.\n- **Divisor** — the polynomial you divide by.\n- **Quotient** — the result of the division (not counting the remainder).\n- **Remainder** — what is left over; its degree is lower than the divisor's.\n- **Placeholder** — a 0 coefficient written for a missing power.\n- **Division statement** — P(x) = divisor × Q(x) + R.\n\n## Summary\n\n- Long division of polynomials works like long division of numbers: Divide, Multiply, Subtract, Bring down.\n- Line up like terms and use 0 placeholders for missing powers.\n- Dividing by a linear divisor leaves a number as the remainder.\n- Write the answer as P(x) = (x − a)Q(x) + R or as Q(x) + R/(x − a).\n- A remainder of 0 means the divisor is a factor.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The rectangle in the diagram has area x² + 9x + 20 and one side x + 4. What is the length of the other side?",
+   "options": {
+    "A": "x + 16",
+    "B": "x + 5",
+    "C": "x + 9",
+    "D": "x − 5"
+   },
+   "answer": "B",
+   "explanation": "Area ÷ side = (x² + 9x + 20) ÷ (x + 4) = x + 5, because (x + 4)(x + 5) = x² + 9x + 20. Getting x + 16 comes from subtracting instead of dividing.",
+   "steps": [
+    "Other side = area ÷ known side = (x² + 9x + 20) ÷ (x + 4).",
+    "Divide: x² ÷ x = x; x(x + 4) = x² + 4x; subtract to get 5x + 20.",
+    "5x ÷ x = 5; 5(x + 4) = 5x + 20; remainder 0. The other side is x + 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: you subtracted 4 from 20. The constants multiply: 4 × ? = 20, so divide 20 by 4.",
+    "C": "Step 2: 9 is the sum of the two constants, not the missing constant. Find the number that multiplies with 4 to give 20.",
+    "D": "Step 2: the constant term is +20 and 4 is positive, so the missing number is also positive."
+   },
+   "diagram": "diagrams/y10/maths/dividing-polynomials-q1.svg",
+   "diagram_alt": "A rectangle labelled \"Area = x² + 9x + 20\". Its left side is labelled x + 4 and its top side is labelled with a question mark."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The diagram shows the first steps of dividing x³ + 3x² − 4x − 12 by x + 2. What goes in the box marked \"?\"",
+   "options": {
+    "A": "5x²",
+    "B": "3x²",
+    "C": "x²",
+    "D": "−x²"
+   },
+   "answer": "C",
+   "explanation": "Subtracting x³ + 2x² from x³ + 3x² leaves 3x² − 2x² = x². Writing 5x² comes from adding instead of subtracting.",
+   "steps": [
+    "The line in brackets is x²(x + 2) = x³ + 2x², which is subtracted.",
+    "x³ − x³ = 0 and 3x² − 2x² = x².",
+    "So the box holds x²."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 3x² and 2x². In long division you subtract: 3x² − 2x².",
+    "B": "Step 2: you brought down 3x² but forgot to subtract the 2x² underneath it.",
+    "D": "Step 2: subtract in the right order: top minus bottom, 3x² − 2x², not 2x² − 3x²."
+   },
+   "diagram": "diagrams/y10/maths/dividing-polynomials-q2.svg",
+   "diagram_alt": "A partly finished long division: x + 2 divided into x³ + 3x² − 4x − 12. The quotient so far is x². Underneath, x³ + 2x² is subtracted, and the next line shows a question mark in the x² column followed by −4x brought down."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "When P(x) is divided by x − 1, the quotient is x² + 2 and the remainder is 3. Which statement is true?",
+   "options": {
+    "A": "P(x) = (x − 1)(x² + 2) + 3",
+    "B": "P(x) = (x − 1)(x² + 2) − 3",
+    "C": "P(x) = (x − 1) + (x² + 2) + 3",
+    "D": "P(x) = 3(x − 1) + (x² + 2)"
+   },
+   "answer": "A",
+   "explanation": "Dividend = divisor × quotient + remainder, so P(x) = (x − 1)(x² + 2) + 3. Subtracting the remainder is the most common slip.",
+   "steps": [
+    "Use the division statement: dividend = divisor × quotient + remainder.",
+    "Divisor x − 1, quotient x² + 2, remainder 3.",
+    "P(x) = (x − 1)(x² + 2) + 3."
+   ],
+   "mistakes": {
+    "B": "Step 2: the remainder is added on, not subtracted, in the division statement.",
+    "C": "Step 1: the divisor and quotient are multiplied, not added.",
+    "D": "Step 1: the quotient (x² + 2) multiplies the divisor; the remainder 3 is added on its own."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Divide x³ − 7x + 6 by x − 1. What are the quotient and remainder?",
+   "options": {
+    "A": "Quotient x² − 6x, remainder 0",
+    "B": "Quotient x² − x − 6, remainder 12",
+    "C": "Quotient x² − x − 8, remainder −2",
+    "D": "Quotient x² + x − 6, remainder 0"
+   },
+   "answer": "D",
+   "explanation": "With a placeholder: x³ + 0x² − 7x + 6. x² gives x³ − x², leaving x² − 7x; then x gives x² − x, leaving −6x + 6; then −6 gives −6x + 6, remainder 0. Forgetting the 0x² placeholder pushes −7x into the wrong column.",
+   "steps": [
+    "Write x³ + 0x² − 7x + 6.",
+    "x³ ÷ x = x²; subtract x³ − x² to get x² − 7x. Then x² ÷ x = x; subtract x² − x to get −6x + 6.",
+    "−6x ÷ x = −6; subtract −6x + 6 to get 0. Quotient x² + x − 6, remainder 0."
+   ],
+   "mistakes": {
+    "A": "Step 1: you put −7x in the x² column. Write x³ + 0x² − 7x + 6 so each power has its own column.",
+    "B": "Step 2: you multiplied by x + 1. The divisor is x − 1, so x²(x − 1) = x³ − x².",
+    "C": "Step 2: 0x² − (−x²) = +x², not −x². Subtracting a negative adds."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Find the remainder when x³ + 2x² − x + 5 is divided by x + 2.",
+   "options": {
+    "A": "3",
+    "B": "7",
+    "C": "19",
+    "D": "x² − 1"
+   },
+   "answer": "B",
+   "explanation": "x³ + 2x² − x + 5 = (x + 2)(x² − 1) + 7, so the remainder is 7. The last subtraction is (−x + 5) − (−x − 2) = 7; getting 3 forgets that subtracting −2 adds 2.",
+   "steps": [
+    "x³ ÷ x = x²; x²(x + 2) = x³ + 2x²; subtract to get 0x² − x.",
+    "0x ÷ x = 0, so bring down: −x + 5. −x ÷ x = −1; −1(x + 2) = −x − 2.",
+    "Subtract: (−x + 5) − (−x − 2) = 7. The remainder is 7."
+   ],
+   "mistakes": {
+    "A": "Step 3: 5 − (+2) is wrong here: you subtract −2, so 5 − (−2) = 7.",
+    "C": "Step 1: you divided by x − 2. Multiply by the divisor x + 2 each time.",
+    "D": "Step 3: x² − 1 is the quotient. The question asks for what is left over."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The diagram shows the long division of 2x³ + x² − 5x + 4 by x − 1. Which statement matches it?",
+   "options": {
+    "A": "(2x³ + x² − 5x + 4)/(x − 1) = 2x² + 3x − 2 + 2/(x − 1)",
+    "B": "(2x³ + x² − 5x + 4)/(x − 1) = 2x² + 3x − 2 + 2",
+    "C": "(2x³ + x² − 5x + 4)/(x − 1) = 2x² + 3x − 2 − 2/(x − 1)",
+    "D": "(2x³ + x² − 5x + 4)/(x − 1) = (x − 1)(2x² + 3x − 2) + 2"
+   },
+   "answer": "A",
+   "explanation": "The quotient (on top) is 2x² + 3x − 2 and the remainder (bottom line) is 2, so the fraction form is 2x² + 3x − 2 + 2/(x − 1). Writing + 2 on its own forgets to divide the remainder by x − 1.",
+   "steps": [
+    "Read the quotient from the top line: 2x² + 3x − 2.",
+    "Read the remainder from the bottom: 2.",
+    "Fraction form: Q(x) + R/(x − 1) = 2x² + 3x − 2 + 2/(x − 1)."
+   ],
+   "mistakes": {
+    "B": "Step 2: the remainder must also be divided by the divisor: + 2/(x − 1).",
+    "C": "Step 1: the last line of the division is +2, not −2. Read the remainder carefully.",
+    "D": "Step 2: (x − 1)(2x² + 3x − 2) + 2 equals the dividend itself, not the dividend divided by x − 1."
+   },
+   "diagram": "diagrams/y10/maths/dividing-polynomials-q6.svg",
+   "diagram_alt": "A completed long division of 2x³ + x² − 5x + 4 by x − 1. The quotient on top is 2x² + 3x − 2. The subtractions are 2x³ − 2x², then 3x² − 3x, then −2x + 2, and the final line is 2."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Divide 3x³ − 2x + 5 by x − 2. What are the quotient and remainder?",
+   "options": {
+    "A": "Quotient 3x² − 6x + 10, remainder −15",
+    "B": "Quotient 3x² + 6x + 10, remainder −15",
+    "C": "Quotient 3x² + 6x + 10, remainder 25",
+    "D": "Quotient 3x² + 4x + 13, remainder 26"
+   },
+   "answer": "C",
+   "explanation": "Using 3x³ + 0x² − 2x + 5: 3x² gives 3x³ − 6x², leaving 6x² − 2x; 6x gives 6x² − 12x, leaving 10x + 5; 10 gives 10x − 20, leaving 25. A remainder of −15 comes from 5 − 20 instead of 5 − (−20).",
+   "steps": [
+    "Write 3x³ + 0x² − 2x + 5. 3x³ ÷ x = 3x²; subtract 3x³ − 6x² to leave 6x² − 2x.",
+    "6x² ÷ x = 6x; subtract 6x² − 12x to leave 10x + 5.",
+    "10x ÷ x = 10; subtract 10x − 20 to leave 25. Quotient 3x² + 6x + 10, remainder 25."
+   ],
+   "mistakes": {
+    "A": "Step 2: you multiplied by x + 2. The divisor is x − 2, so 3x²(x − 2) = 3x³ − 6x².",
+    "B": "Step 3: 5 − (−20) = 25. Subtracting a negative adds.",
+    "D": "Step 1: there is no x² term. Write 3x³ + 0x² − 2x + 5 so −2x stays in the x column."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The box in the diagram has volume x³ + 6x² + 11x + 6, height x + 1 and width x + 2. Find its length.",
+   "options": {
+    "A": "x² + 5x + 6",
+    "B": "x + 6",
+    "C": "x − 3",
+    "D": "x + 3"
+   },
+   "answer": "D",
+   "explanation": "Length = volume ÷ (height × width). (x³ + 6x² + 11x + 6) ÷ (x + 1) = x² + 5x + 6, and (x² + 5x + 6) ÷ (x + 2) = x + 3. Stopping at x² + 5x + 6 divides by only one side.",
+   "steps": [
+    "Length = volume ÷ height ÷ width.",
+    "(x³ + 6x² + 11x + 6) ÷ (x + 1) = x² + 5x + 6 (remainder 0).",
+    "(x² + 5x + 6) ÷ (x + 2) = x + 3. Check: (x + 1)(x + 2)(x + 3) = x³ + 6x² + 11x + 6 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 2: x² + 5x + 6 is the volume divided by the height only. Divide by the width as well.",
+    "B": "Step 3: the constants of all three sides multiply to 6: 1 × 2 × ? = 6. The missing number is not 6.",
+    "C": "Step 3: all the terms of the volume are positive, so the missing constant is +3, not −3."
+   },
+   "diagram": "diagrams/y10/maths/dividing-polynomials-q8.svg",
+   "diagram_alt": "A rectangular box with height x + 1, width x + 2 and its length marked with a question mark."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Find the quotient when 4x³ − 8x² + x + 3 is divided by 2x − 3.",
+   "options": {
+    "A": "2x² − x − 1",
+    "B": "4x² − 2x − 2",
+    "C": "2x² − 7x − 10",
+    "D": "2x² − x"
+   },
+   "answer": "A",
+   "explanation": "4x³ ÷ 2x = 2x²; 2x²(2x − 3) = 4x³ − 6x², leaving −2x² + x. −2x² ÷ 2x = −x; −x(2x − 3) = −2x² + 3x, leaving −2x + 3. −2x ÷ 2x = −1, remainder 0. So the quotient is 2x² − x − 1. Dividing by x instead of 2x doubles every term.",
+   "steps": [
+    "4x³ ÷ 2x = 2x²; subtract 4x³ − 6x² to leave −2x² + x.",
+    "−2x² ÷ 2x = −x; subtract −2x² + 3x to leave −2x + 3.",
+    "−2x ÷ 2x = −1; subtract −2x + 3 to leave 0. Quotient: 2x² − x − 1."
+   ],
+   "mistakes": {
+    "B": "Step 1: divide each leading term by 2x, not by x. 4x³ ÷ 2x = 2x².",
+    "C": "Step 1: −8x² − (−6x²) = −2x², not −14x². Subtracting a negative adds.",
+    "D": "Step 3: what is left, −2x + 3, has the same degree as 2x − 3, so divide once more."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "When x³ + 2x² + ax − 6 is divided by x − 1, the quotient is x² + 3x + 4. Find a and the remainder.",
+   "options": {
+    "A": "a = 1, remainder 2",
+    "B": "a = 1, remainder −2",
+    "C": "a = 7, remainder −2",
+    "D": "a = 4, remainder −6"
+   },
+   "answer": "B",
+   "explanation": "(x − 1)(x² + 3x + 4) = x³ + 2x² + x − 4. Matching the x terms gives a = 1, and −6 = −4 + R gives R = −2. Treating −1 × 3x as +3x gives a = 7.",
+   "steps": [
+    "Dividend = (x − 1)(x² + 3x + 4) + R.",
+    "Expand: x³ + 3x² + 4x − x² − 3x − 4 = x³ + 2x² + x − 4.",
+    "Compare: a = 1, and −6 = −4 + R so R = −2."
+   ],
+   "mistakes": {
+    "A": "Step 3: the remainder is −6 − (−4) = −2. Take the expanded constant away from −6, not the other way round.",
+    "C": "Step 2: −1 × 3x = −3x, so the x terms are 4x − 3x = x. Watch the sign.",
+    "D": "Step 2: −1 must multiply every term of x² + 3x + 4, giving −x² − 3x − 4, not just −x²."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Divide x³ + 2x² − x + 3 by x² + 1. What is the remainder?",
+   "options": {
+    "A": "1",
+    "B": "−2x + 5",
+    "C": "x + 2",
+    "D": "−2x + 1"
+   },
+   "answer": "D",
+   "explanation": "x(x² + 1) = x³ + x leaves 2x² − 2x + 3; then 2(x² + 1) = 2x² + 2 leaves −2x + 1, which has lower degree than x² + 1, so it is the remainder. Dropping the −2x gives the wrong answer 1.",
+   "steps": [
+    "x³ ÷ x² = x; subtract x³ + 0x² + x to leave 2x² − 2x + 3.",
+    "2x² ÷ x² = 2; subtract 2x² + 2 to leave −2x + 1.",
+    "−2x + 1 has degree 1, lower than the divisor's degree 2, so stop: the remainder is −2x + 1."
+   ],
+   "mistakes": {
+    "A": "Step 3: dividing by a quadratic can leave a linear remainder. Keep the −2x term.",
+    "B": "Step 3: the constant is 3 − 2 = 1. You subtract 2(x² + 1) = 2x² + 2, so take away 2.",
+    "C": "Step 3: x + 2 is the quotient, not the remainder."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "When P(x) is divided by x − 3, the quotient is x² + 2x − 1 and the remainder is 4. Find P(2).",
+   "options": {
+    "A": "11",
+    "B": "−11",
+    "C": "−3",
+    "D": "4"
+   },
+   "answer": "C",
+   "explanation": "P(x) = (x − 3)(x² + 2x − 1) + 4, so P(2) = (−1)(4 + 4 − 1) + 4 = −7 + 4 = −3. Getting 11 comes from using (2 − 3) = 1.",
+   "steps": [
+    "Write the division statement: P(x) = (x − 3)(x² + 2x − 1) + 4.",
+    "At x = 2: x − 3 = −1 and x² + 2x − 1 = 7.",
+    "P(2) = (−1)(7) + 4 = −3."
+   ],
+   "mistakes": {
+    "A": "Step 2: at x = 2, the divisor x − 3 equals −1, not 1. Keep its sign.",
+    "B": "Step 3: the remainder is added in the division statement: −7 + 4, not −7 − 4.",
+    "D": "Step 1: the remainder 4 equals P(3), not P(2). Substitute x = 2 into the whole statement."
+   }
+  }
+ ]
+}

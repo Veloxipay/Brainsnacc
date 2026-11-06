@@ -1,0 +1,283 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "The factor and remainder theorems",
+ "summary": "Use the remainder theorem to find remainders by substitution and the factor theorem to find factors, then fully factorise and solve cubic equations.",
+ "minutes": 25,
+ "body": "Dividing a polynomial by long division every time is slow. Two short theorems let you find a remainder, or test whether something is a factor, just by substituting a number. They are the main tools for factorising and solving cubic equations, which appear in physics, engineering and economics whenever a quantity depends on x³.\n\n## Learning objective\n\nBy the end of this lesson you can use the remainder theorem to find a remainder without dividing, use the factor theorem to find factors, and fully factorise and solve cubic equations.\n\n## Before you start\n\nYou need **Dividing polynomials (Year 10)** and **Factorising monic quadratics (Year 10)**.\n\nWarm-up:\n1. P(x) = x³ − 2x + 1. Find P(−1). **Answer: 2** (−1 + 2 + 1)\n2. Factorise x² − x − 6. **Answer: (x − 3)(x + 2)** (−3 × 2 = −6 and −3 + 2 = −1)\n\n## Think of it like this\n\n### Trying keys on a key ring\n\nImagine a key ring and a locked door. You try each key: if it turns all the way, it's the right one. Testing a number a in P(x) is like trying a key: if P(a) = 0, then x − a \"fits\" P(x) exactly, with nothing left over. And you don't try random keys: the numbers worth testing are the factors of the constant term.\n\n*Where the analogy breaks down:* a wrong key just doesn't turn, but a wrong number still tells you something useful — P(a) is exactly the remainder, so you know how far from 0 you are.\n\n## Key ideas\n\n### The remainder theorem\n\nWhen a polynomial P(x) is divided by x − a, the **remainder is P(a)**.\n\nWhy? The division statement is P(x) = (x − a)Q(x) + R. Put x = a: the bracket becomes 0, so P(a) = 0 × Q(a) + R = R.\n\n- Dividing by x − 3: substitute x = 3.\n- Dividing by x + 2 = x − (−2): substitute x = −2.\n- (Extension) Dividing by 2x − 1: substitute the value that makes it 0, x = ½.\n\nOn a graph, the remainder P(a) is the **height of the graph** at x = a.\n\n![The graph of y = x³ − x² − 4x + 4 crossing the x-axis at −2, 1 and 2, with a dashed line showing its height at x = 3 is 10, so P(3) = 10](/diagrams/y10/maths/the-factor-and-remainder-theorems-height.svg)\n\nDividing this P(x) by x − 3 leaves remainder P(3) = 27 − 9 − 12 + 4 = 10, the height at x = 3.\n\n### The factor theorem\n\nIf P(a) = 0, the remainder is 0, so x − a divides exactly: **x − a is a factor of P(x)**. It works the other way too: if x − a is a factor, then P(a) = 0.\n\nA value of x that makes P(x) = 0 is called a **zero** (or root) of P. Zeros are where the graph crosses the x-axis.\n\n### Which numbers to test\n\nFor a monic polynomial with whole-number coefficients, any whole-number zero must divide the constant term. For x³ − 2x² − 11x + 12, try ±1, ±2, ±3, ±4, ±6, ±12.\n\n### Fully factorising a cubic\n\n1. Test small numbers until P(a) = 0. Then x − a is a factor.\n2. Divide P(x) by x − a to get a quadratic.\n3. Factorise the quadratic.\n\n![The graph of y = x³ − 2x² − 11x + 12 crossing the x-axis at (−3, 0), (1, 0) and (4, 0) and the y-axis at (0, 12)](/diagrams/y10/maths/the-factor-and-remainder-theorems-zeros.svg)\n\n## Worked examples\n\n### Example 1\n\nFind the remainder when x³ − 4x² + 2x − 5 is divided by x − 3.\n\nStep 1: dividing by x − 3 — so substitute x = 3.\nStep 2: P(3) = 27 − 4(9) + 2(3) − 5 = 27 − 36 + 6 − 5.\nStep 3: P(3) = −8. The remainder is −8.\nCheck: long division gives quotient x² − x − 1 and remainder −8 ✓\n\n### Example 2\n\nFind the remainder when 2x³ + x² − 3x + 1 is divided by x + 2.\n\nStep 1: x + 2 = x − (−2) — so substitute x = −2.\nStep 2: P(−2) = 2(−8) + 4 − 3(−2) + 1 = −16 + 4 + 6 + 1.\nStep 3: P(−2) = −5. The remainder is −5.\n\n### Example 3\n\nFully factorise P(x) = x³ − 2x² − 11x + 12 and solve P(x) = 0.\n\nStep 1: test x = 1 (a factor of 12) — P(1) = 1 − 2 − 11 + 12 = 0, so x − 1 is a factor.\nStep 2: divide — (x³ − 2x² − 11x + 12) ÷ (x − 1) = x² − x − 12, remainder 0.\nStep 3: factorise the quadratic — x² − x − 12 = (x − 4)(x + 3).\nStep 4: P(x) = (x − 1)(x − 4)(x + 3). Setting each bracket to 0: x = 1, x = 4 or x = −3.\nCheck: these match the x-intercepts on the graph above ✓\n\n### Example 4\n\nx − 2 is a factor of P(x) = 2x³ + kx² − 7x − 6. Find k, then fully factorise P(x).\n\nStep 1: factor theorem — x − 2 is a factor, so P(2) = 0.\nStep 2: 2(8) + k(4) − 14 − 6 = 0, so 4k − 4 = 0 and k = 1.\nStep 3: divide 2x³ + x² − 7x − 6 by x − 2 — quotient 2x² + 5x + 3, remainder 0.\nStep 4: factorise — 2x² + 5x + 3 = (2x + 3)(x + 1). So P(x) = (x − 2)(2x + 3)(x + 1).\n\n## Common mistakes\n\n- **Using the wrong sign.** For x + 2 you substitute −2, not 2. Fix: find the x that makes the divisor zero.\n- **Thinking \"P(a) = 0 means a is a factor\".** The factor is x − a, not a. If P(−3) = 0, the factor is x + 3.\n- **Stopping after one factor.** \"Fully factorise\" means keep going until every bracket is linear (if possible).\n- **Squaring negatives wrongly when substituting.** (−2)² = 4 but (−2)³ = −8. Fix: always use brackets.\n\n## Tips to remember\n\n- **\"Zero makes the bracket vanish.\"** Substitute the value that makes the divisor 0 — that's why P(a) is the remainder.\n- **\"Sign swap\":** zero at x = 4 means factor x − 4; zero at x = −3 means factor x + 3.\n- **Test the factors of the constant** (made-up rhyme: \"check the end to find a friend\").\n- **Picture it:** the remainder P(a) is the height of the graph at x = a. Height 0 means the graph crosses there, so x − a is a factor.\n\n## Key terms\n\n- **Remainder theorem** — the remainder when P(x) is divided by x − a is P(a).\n- **Factor theorem** — x − a is a factor of P(x) exactly when P(a) = 0.\n- **Zero (root)** — a value of x that makes P(x) = 0; an x-intercept of the graph.\n- **Fully factorised** — written as a product of factors that can't be factorised further.\n\n## Summary\n\n- Remainder when dividing by x − a is P(a); for x + a, substitute −a.\n- If P(a) = 0, then x − a is a factor (and a is a zero).\n- To factorise a cubic: find one zero by testing factors of the constant, divide, then factorise the quadratic.\n- The zeros of P(x) are the x-intercepts of y = P(x).\n- Unknown coefficients can be found by setting P(a) equal to the given remainder (or 0).\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "Use the remainder theorem to find the remainder when x³ + 2x² − 5 is divided by x − 2.",
+   "options": {
+    "A": "11",
+    "B": "−5",
+    "C": "9",
+    "D": "7"
+   },
+   "answer": "A",
+   "explanation": "The remainder is P(2) = 8 + 8 − 5 = 11. Substituting −2 instead gives −5, which is the remainder for dividing by x + 2.",
+   "steps": [
+    "Dividing by x − 2, so substitute x = 2.",
+    "P(2) = 2³ + 2(2²) − 5 = 8 + 8 − 5.",
+    "P(2) = 11, so the remainder is 11."
+   ],
+   "mistakes": {
+    "B": "Step 1: dividing by x − 2 means substitute x = 2, not x = −2.",
+    "C": "Step 2: 2³ = 2 × 2 × 2 = 8, not 6.",
+    "D": "Step 2: 2x² at x = 2 is 2 × 4 = 8. Don't forget the coefficient 2."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A cubic P(x) has P(−4) = 0. Which statement must be true?",
+   "options": {
+    "A": "x − 4 is a factor of P(x)",
+    "B": "The remainder when P(x) is divided by x + 4 is −4",
+    "C": "The graph of y = P(x) crosses the y-axis at −4",
+    "D": "x + 4 is a factor of P(x)"
+   },
+   "answer": "D",
+   "explanation": "By the factor theorem, P(−4) = 0 means x − (−4) = x + 4 is a factor. Choosing x − 4 is the usual sign slip.",
+   "steps": [
+    "P(−4) = 0 means the remainder on dividing by x − (−4) is 0.",
+    "x − (−4) = x + 4.",
+    "So x + 4 is a factor (and the graph crosses the x-axis at −4)."
+   ],
+   "mistakes": {
+    "A": "Step 2: the factor is x − a with a = −4, which is x − (−4) = x + 4.",
+    "B": "Step 1: the remainder is P(−4), which is 0, not −4.",
+    "C": "Step 3: P(−4) = 0 means the graph crosses the x-axis at x = −4, not the y-axis."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The diagram shows the graph of a cubic y = P(x). Which of these is a factor of P(x)?",
+   "options": {
+    "A": "x + 2",
+    "B": "x − 2",
+    "C": "x − 1",
+    "D": "x + 3"
+   },
+   "answer": "B",
+   "explanation": "The graph crosses the x-axis at −1, 2 and 3, so P(2) = 0 and x − 2 is a factor. x + 2 would need a crossing at x = −2.",
+   "steps": [
+    "Read the x-intercepts: −1, 2 and 3. These are the zeros.",
+    "A zero at x = a gives a factor x − a.",
+    "So the factors are x + 1, x − 2 and x − 3; of the options, x − 2."
+   ],
+   "mistakes": {
+    "A": "Step 2: the graph crosses at x = 2, so P(2) = 0 and the factor is x − 2. Swap the sign.",
+    "C": "Step 1: the graph crosses at x = −1, not x = 1, so x − 1 is not a factor (x + 1 is).",
+    "D": "Step 2: the graph crosses at x = 3, which gives the factor x − 3, not x + 3."
+   },
+   "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-q3.svg",
+   "diagram_alt": "A cubic curve y = P(x) on a grid with x from −3 to 5. It crosses the x-axis at −1, 2 and 3 and crosses the y-axis at 6."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Find the remainder when 2x³ − x² + 3x − 4 is divided by x + 1.",
+   "options": {
+    "A": "0",
+    "B": "−8",
+    "C": "−10",
+    "D": "−6"
+   },
+   "answer": "C",
+   "explanation": "P(−1) = 2(−1) − 1 + 3(−1) − 4 = −2 − 1 − 3 − 4 = −10. Substituting x = 1 gives 0, which answers a different question.",
+   "steps": [
+    "x + 1 = x − (−1), so substitute x = −1.",
+    "2(−1)³ = −2, −(−1)² = −1, 3(−1) = −3.",
+    "P(−1) = −2 − 1 − 3 − 4 = −10."
+   ],
+   "mistakes": {
+    "A": "Step 1: you substituted x = 1. Dividing by x + 1 means substitute x = −1.",
+    "B": "Step 2: −(−1)² = −1, not +1. Square first, then apply the minus sign.",
+    "D": "Step 2: 2(−1)³ = −2, not +2. An odd power of −1 is −1."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The diagram shows the graph of y = P(x). What is the remainder when P(x) is divided by x − 2?",
+   "options": {
+    "A": "−3",
+    "B": "3",
+    "C": "0",
+    "D": "−15"
+   },
+   "answer": "A",
+   "explanation": "By the remainder theorem the remainder is P(2), the height of the graph at x = 2, which is −3. The answer 3 ignores that the point is below the axis.",
+   "steps": [
+    "Remainder on dividing by x − 2 is P(2).",
+    "P(2) is the y-value of the graph at x = 2.",
+    "The marked point is (2, −3), so the remainder is −3."
+   ],
+   "mistakes": {
+    "B": "Step 2: the point at x = 2 is below the x-axis, so the height is negative.",
+    "C": "Step 2: the remainder is 0 only if the graph crosses the x-axis at x = 2. Here it doesn't.",
+    "D": "Step 1: dividing by x − 2 means you need P(2), the height at x = 2, not P(−2)."
+   },
+   "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-q5.svg",
+   "diagram_alt": "A cubic curve y = P(x) on a grid with x from −2 to 4 and y from −6 to 6. It crosses the x-axis at −1, 1 and 3, and there is a marked point on the curve at x = 2, three units below the x-axis."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Which of these is a factor of x³ − 3x² − 4x + 12?",
+   "options": {
+    "A": "x + 3",
+    "B": "x − 1",
+    "C": "x + 1",
+    "D": "x − 2"
+   },
+   "answer": "D",
+   "explanation": "P(2) = 8 − 12 − 8 + 12 = 0, so x − 2 is a factor by the factor theorem. Each other option gives a non-zero value of P.",
+   "steps": [
+    "For a factor x − a, test P(a) = 0.",
+    "Test a = 2: P(2) = 8 − 12 − 8 + 12.",
+    "P(2) = 0, so x − 2 is a factor."
+   ],
+   "mistakes": {
+    "A": "Step 2: P(−3) = −27 − 27 + 12 + 12 = −30, not 0, so x + 3 is not a factor.",
+    "B": "Step 2: P(1) = 1 − 3 − 4 + 12 = 6, not 0, so x − 1 is not a factor.",
+    "C": "Step 2: P(−1) = −1 − 3 + 4 + 12 = 12, not 0, so x + 1 is not a factor."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Fully factorise x³ − 4x² + x + 6.",
+   "options": {
+    "A": "(x − 1)(x + 2)(x + 3)",
+    "B": "(x + 1)(x − 2)(x − 3)",
+    "C": "(x + 1)(x + 2)(x + 3)",
+    "D": "(x − 1)(x − 2)(x − 3)"
+   },
+   "answer": "B",
+   "explanation": "P(−1) = −1 − 4 − 1 + 6 = 0, so x + 1 is a factor. Dividing gives x² − 5x + 6 = (x − 2)(x − 3). The trap is writing x − 1 for the zero x = −1.",
+   "steps": [
+    "Test factors of 6: P(−1) = −1 − 4 − 1 + 6 = 0, so x + 1 is a factor.",
+    "Divide: (x³ − 4x² + x + 6) ÷ (x + 1) = x² − 5x + 6.",
+    "x² − 5x + 6 = (x − 2)(x − 3), so the answer is (x + 1)(x − 2)(x − 3)."
+   ],
+   "mistakes": {
+    "A": "Step 1: the zeros are −1, 2 and 3, and a zero at a gives the factor x − a. You flipped every sign.",
+    "C": "Step 3: x² − 5x + 6 needs two numbers that multiply to 6 and add to −5, so both are negative.",
+    "D": "Step 1: P(1) = 1 − 4 + 1 + 6 = 4, not 0, so x − 1 is not a factor. Try x = −1."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "x + 2 is a factor of x³ + kx² + 3x − 10. Find k.",
+   "options": {
+    "A": "k = −1",
+    "B": "k = −6",
+    "C": "k = 6",
+    "D": "k = 4.5"
+   },
+   "answer": "C",
+   "explanation": "P(−2) = −8 + 4k − 6 − 10 = 4k − 24 = 0, so k = 6. Substituting x = 2 instead gives k = −1.",
+   "steps": [
+    "x + 2 is a factor, so P(−2) = 0.",
+    "(−2)³ + k(−2)² + 3(−2) − 10 = −8 + 4k − 6 − 10 = 4k − 24.",
+    "4k − 24 = 0, so k = 6."
+   ],
+   "mistakes": {
+    "A": "Step 1: for the factor x + 2 substitute x = −2, not x = 2.",
+    "B": "Step 2: k(−2)² = 4k, not −4k. A negative number squared is positive.",
+    "D": "Step 2: you left out the 3x term. 3(−2) = −6 must be included."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The diagram shows y = P(x), where P(x) is a monic cubic (its leading coefficient is 1). Find the remainder when P(x) is divided by x − 5.",
+   "options": {
+    "A": "28",
+    "B": "162",
+    "C": "−162",
+    "D": "8"
+   },
+   "answer": "A",
+   "explanation": "The zeros −2, 1 and 4 give P(x) = (x + 2)(x − 1)(x − 4) because it is monic. The remainder is P(5) = 7 × 4 × 1 = 28. Using P(−5) = −162 is the common sign slip.",
+   "steps": [
+    "Read the zeros: −2, 1 and 4, so P(x) = (x + 2)(x − 1)(x − 4) (monic).",
+    "Remainder on dividing by x − 5 is P(5).",
+    "P(5) = (7)(4)(1) = 28."
+   ],
+   "mistakes": {
+    "B": "Step 1: zeros at −2, 1 and 4 give factors (x + 2)(x − 1)(x − 4). You flipped the signs.",
+    "C": "Step 2: the remainder for x − 5 is P(5), not P(−5).",
+    "D": "Step 2: 8 is P(0), the y-intercept. You need P(5)."
+   },
+   "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-q9.svg",
+   "diagram_alt": "A cubic curve y = P(x) on a grid with x from −3 to 5 and y from −12 to 12. It rises to the right and crosses the x-axis at −2, 1 and 4, and crosses the y-axis at 8."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Find the remainder when 4x³ − 2x² + 3x − 1 is divided by 2x − 1.",
+   "options": {
+    "A": "4",
+    "B": "29",
+    "C": "−3½",
+    "D": "½"
+   },
+   "answer": "D",
+   "explanation": "2x − 1 = 0 when x = ½, so the remainder is P(½) = 4(⅛) − 2(¼) + 3(½) − 1 = ½ − ½ + 1½ − 1 = ½. Substituting x = 1 gives 4, which is wrong.",
+   "steps": [
+    "Find the x that makes the divisor zero: 2x − 1 = 0 gives x = ½.",
+    "P(½) = 4 × ⅛ − 2 × ¼ + 3 × ½ − 1 = ½ − ½ + 3/2 − 1.",
+    "P(½) = ½, so the remainder is ½."
+   ],
+   "mistakes": {
+    "A": "Step 1: 2x − 1 = 0 when x = ½, not x = 1. Solve 2x − 1 = 0 first.",
+    "B": "Step 1: substitute the value that makes 2x − 1 zero (x = ½), not x = 2.",
+    "C": "Step 1: 2x − 1 = 0 gives x = +½, not −½."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "P(x) = x³ + ax² + bx − 6. x − 1 is a factor of P(x), and the remainder when P(x) is divided by x − 2 is 20. Find a and b.",
+   "options": {
+    "A": "a = 1, b = 4",
+    "B": "a = 4, b = 1",
+    "C": "a = −2, b = 7",
+    "D": "a = 5, b = 0"
+   },
+   "answer": "B",
+   "explanation": "P(1) = 0 gives a + b = 5; P(2) = 20 gives 8 + 4a + 2b − 6 = 20, so 2a + b = 9. Subtracting: a = 4, then b = 1. Check: P(x) = x³ + 4x² + x − 6 gives P(2) = 8 + 16 + 2 − 6 = 20 ✓",
+   "steps": [
+    "Factor theorem: P(1) = 1 + a + b − 6 = 0, so a + b = 5.",
+    "Remainder theorem: P(2) = 8 + 4a + 2b − 6 = 20, so 2a + b = 9.",
+    "Subtract the equations: a = 4, so b = 1."
+   ],
+   "mistakes": {
+    "A": "Step 3: a multiplies x² and b multiplies x. Check which letter is which before writing the answer.",
+    "C": "Step 2: the constant term is −6, so P(2) = 8 + 4a + 2b − 6, not + 6.",
+    "D": "Step 2: 2³ = 8, not 6, so P(2) = 8 + 4a + 2b − 6."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The diagram shows the graph of y = x³ + kx² − 5x − 6, which crosses the x-axis at (−3, 0). Find k.",
+   "options": {
+    "A": "k = −⅔",
+    "B": "k = −2",
+    "C": "k = 2",
+    "D": "k = −4"
+   },
+   "answer": "C",
+   "explanation": "Since (−3, 0) is on the graph, P(−3) = 0: −27 + 9k + 15 − 6 = 9k − 18 = 0, so k = 2. Squaring −3 as −9 gives k = −2 instead.",
+   "steps": [
+    "(−3, 0) is on the graph, so P(−3) = 0 (x + 3 is a factor).",
+    "(−3)³ + k(−3)² − 5(−3) − 6 = −27 + 9k + 15 − 6 = 9k − 18.",
+    "9k − 18 = 0, so k = 2."
+   ],
+   "mistakes": {
+    "A": "Step 1: the point is (−3, 0), so substitute x = −3, not x = 3.",
+    "B": "Step 2: k(−3)² = 9k, not −9k. A negative squared is positive.",
+    "D": "Step 2: (−3)³ = −27, not 27. An odd power of a negative is negative."
+   },
+   "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-q12.svg",
+   "diagram_alt": "A cubic curve on a grid with x from −4 to 3 and y from −10 to 8. It crosses the x-axis at the labelled point (−3, 0), and also at −1 and 2, and crosses the y-axis at −6."
+  }
+ ]
+}
