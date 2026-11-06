@@ -1,0 +1,113 @@
+{
+  "lesson": "y8/maths/order-of-operations-with-integers.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Order of operations with integers",
+  "icon": "🧮",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Order of operations with integers",
+      "sub": "Brackets inside brackets",
+      "icon": "🧮",
+      "say": "Forty minus two times, square bracket, negative three minus five times one minus four. Where do you even start? In this video you'll learn to work from the inside out, one layer at a time.",
+      "caption": "40 − 2 × [−3 − 5 × (1 − 4)]. Where do you even start? In this video you'll learn to work from the inside out, one layer at a time."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🎁",
+      "everyday": "Packing nesting boxes: close the smallest box first",
+      "icon2": "🔢",
+      "science": "Nested brackets: finish the innermost bracket, then the next layer out",
+      "breaks": "a packed box is still a box, but a finished bracket becomes a single number.",
+      "say": "Think of packing nesting boxes. You can't close the big box until the medium one is done, and you can't close the medium one until the small one is done. Brackets inside brackets work the same way: finish the innermost bracket first, turn it into a single number, then move out one layer at a time."
+    },
+    {
+      "type": "points",
+      "heading": "BIDMAS plus secret brackets",
+      "icon": "📝",
+      "points": [
+        "Brackets: innermost first",
+        "Indices: powers and roots",
+        "× and ÷, left to right",
+        "+ and −, left to right",
+        "√ and fraction bars group like brackets"
+      ],
+      "say": "The order is BIDMAS. Brackets, starting with the innermost. Indices, which are powers and roots. Then multiply and divide, left to right. Then add and subtract, left to right. And remember: a square root sign and a fraction bar group things just like brackets."
+    },
+    {
+      "type": "diagram",
+      "heading": "Brackets inside brackets",
+      "diagram": "diagrams/y8/maths/order-of-operations-with-integers-layers.svg",
+      "notes": [
+        "1st: the innermost bracket",
+        "2nd: the next layer out",
+        "3rd: the outside"
+      ],
+      "say": "Here is negative two times, square bracket, ten minus three times two minus seven. First the outer box, then the middle box, then the small box inside. Start in the smallest box: two minus seven is negative five. Next layer: ten minus three times negative five is twenty-five. Last, the outside: negative two times twenty-five is negative fifty.",
+      "caption": "−2 × [10 − 3 × (2 − 7)]. 1st: 2 − 7 = −5. 2nd: 10 − 3 × (−5) = 25. 3rd: −2 × 25 = −50."
+    },
+    {
+      "type": "example",
+      "heading": "Inside out",
+      "question": "Work out 40 − 2 × [−3 − 5 × (1 − 4)].",
+      "lines": [
+        "Innermost: 1 − 4 = −3",
+        "5 × (−3) = −15",
+        "−3 − (−15) = 12",
+        "40 − 2 × 12 = 40 − 24",
+        "Answer: 16"
+      ],
+      "say": "Start in the middle: one minus four is negative three. Inside the square bracket, multiply first: five times negative three is negative fifteen. Then negative three minus negative fifteen is twelve. Now forty minus two times twelve: multiply first, so forty minus twenty-four, which is sixteen.",
+      "caption": "1 − 4 = −3. 5 × (−3) = −15. −3 − (−15) = 12. 40 − 2 × 12 = 40 − 24 = 16."
+    },
+    {
+      "type": "compare",
+      "heading": "The root covers everything",
+      "left": {
+        "title": "√(9 + 16)",
+        "icon": "✅",
+        "points": [
+          "Add under the root first",
+          "9 + 16 = 25",
+          "√25 = 5"
+        ]
+      },
+      "right": {
+        "title": "Not √9 + √16",
+        "icon": "⚠️",
+        "points": [
+          "Rooting each part separately",
+          "3 + 4 = 7",
+          "A different answer, so wrong"
+        ]
+      },
+      "say": "A square root sign acts like brackets. For the square root of nine plus sixteen, add first to get twenty-five, then the root is five. Taking the root of each part gives three plus four, which is seven. That's wrong.",
+      "caption": "√(9 + 16): add first to get 25, then √25 = 5. Taking the root of each part gives 3 + 4 = 7. That's wrong."
+    },
+    {
+      "type": "example",
+      "heading": "A fraction bar",
+      "question": "Work out the fraction with top (−4)² − 2 × 9 and bottom 3 − 5.",
+      "lines": [
+        "Top: 16 − 18 = −2",
+        "Bottom: 3 − 5 = −2",
+        "−2 ÷ (−2) = 1",
+        "Answer: 1"
+      ],
+      "say": "A fraction bar groups the top and the bottom. Top: negative four, squared, is sixteen, and two times nine is eighteen, so sixteen minus eighteen is negative two. Bottom: three minus five is negative two. Negative two divided by negative two is one.",
+      "caption": "Top: (−4)² = 16, 2 × 9 = 18, so 16 − 18 = −2. Bottom: 3 − 5 = −2. −2 ÷ (−2) = 1."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Innermost brackets first",
+        "√ and fraction bars act like brackets",
+        "× ÷ then + −, each left to right",
+        "Rewrite the whole line every step"
+      ],
+      "say": "Quick recap. Work from the innermost brackets out. Treat square roots and fraction bars as brackets. Do multiply and divide, then add and subtract, left to right. And rewrite the whole line every step. Now try the practice questions!"
+    }
+  ]
+}
