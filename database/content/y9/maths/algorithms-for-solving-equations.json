@@ -1,271 +1,272 @@
 {
-  "level": "Year 9",
-  "subject": "maths",
-  "unit": "Year 9",
-  "title": "Algorithms for solving equations",
-  "summary": "Algorithms that solve equations: undoing operations for linear equations, and guess, check and improve and the halving method for harder equations, with a stopping rule.",
-  "minutes": 30,
-  "body": "Calculators, spreadsheets and graphing apps solve equations by following an **algorithm** — a set of exact steps that always works. Some equations can be solved by undoing operations; others, like x³ + x = 50, can't, so the computer searches for the answer, getting closer every round.\n\n## Learning objective\n\nBy the end of this lesson you can write and follow algorithms that solve linear equations by undoing operations, and use guess, check and improve and the halving method to find solutions of harder equations to a given accuracy.\n\n## Before you start\n\nYou will need:\n\n- **Solving linear equations (Year 9)** — using inverse operations to get x on its own.\n- **Algorithms with variables and loops (Year 8)** — following steps, loops and \"set x to …\" instructions.\n- **Rounding and significant figures (Year 9)** — rounding to one or two decimal places.\n\n**Warm-up**\n\n1. Solve 4x − 9 = 23.\n2. Find the value of x² + 3x when x = 2.5.\n\n**Answers:** 1. 4x = 32, so **x = 8**. 2. 6.25 + 7.5 = **13.75**.\n\n## Think of it like this\n\n### The \"higher or lower\" guessing game\n\nA friend thinks of a number from 1 to 100. You guess 50, and they say \"higher\". You guess 75 — \"lower\". Each guess cuts the possible numbers roughly in half, so you find the number in at most 7 guesses. The halving method in this lesson plays exactly this game with an equation: each step cuts the gap where the answer can be in half.\n\n*Where the analogy breaks down:* in the game the answer is a whole number and you can hit it exactly. The solution of an equation is often a decimal that never ends, so the algorithm never lands on it exactly — it stops when the answer is accurate enough.\n\n## Key ideas\n\n### Solving by undoing (backtracking)\n\nAn equation like 3x + 5 = 26 tells a story: start with x, **multiply by 3**, then **add 5**, and you get 26. To find x, run the story backwards using **inverse operations**: subtract 5, then divide by 3.\n\n![Top row: x, times 3 gives 3x, plus 5 gives 3x + 5. Bottom row, right to left: 26, minus 5 gives 21, divide by 3 gives 7](/diagrams/y9/maths/algorithms-for-solving-equations-undo.svg)\n\nThe algorithm is:\n\n1. List the operations done to x, in order.\n2. Start from the right-hand side number.\n3. Undo each operation with its inverse, in **reverse order** (last done, first undone).\n4. Check by substituting.\n\nThis works whenever x appears only **once** in the equation.\n\n### When undoing is not enough\n\nIn x³ + x = 50, x appears twice, so there is no single chain of operations to reverse. Instead we **search**: try a value, see how close it is, and improve. A search algorithm needs a **stopping rule** — usually \"stop when the answer is correct to the accuracy asked for\", such as one decimal place.\n\n### Guess, check and improve\n\n1. Make a sensible guess and substitute it.\n2. Compare the result with the target: **too small** or **too big**?\n3. Choose a better guess between the best \"too small\" and the best \"too big\" values.\n4. Repeat until the answer is accurate enough.\n\nKeep the guesses in a table.\n\n### The halving method (bisection)\n\nFirst rearrange the equation so one side is 0, and call the other side f(x). For x³ = 20, use f(x) = x³ − 20. A solution of the equation is where the graph of y = f(x) crosses the x-axis.\n\n![Graph of y = x³ − 20 crossing the x-axis between x = 2 and x = 3. The point (2, −12) is below the axis and (3, 7) is above it](/diagrams/y9/maths/algorithms-for-solving-equations-signchange.svg)\n\nIf f(a) and f(b) have **opposite signs** (one negative, one positive), a smooth unbroken graph must cross the x-axis between a and b — this is called a **sign change**. Then:\n\n1. Find the **midpoint** m = (a + b) ÷ 2 and work out f(m).\n2. If f(m) has the same sign as f(a), the crossing is between m and b, so replace a with m. Otherwise replace b with m.\n3. Repeat until a and b both round to the same answer.\n\n![Flowchart of the halving method: choose a and b with opposite signs, find the midpoint m, replace a or b with m, and stop when a and b round to the same answer](/diagrams/y9/maths/algorithms-for-solving-equations-flowchart.svg)\n\nEach round **halves the width** of the interval: from a width of 1, after n rounds the width is 1 ÷ 2ⁿ.\n\n## Worked examples\n\n### Example 1\n\nSolve (2x − 3) ÷ 5 = 7 by undoing.\n\nStep 1: list the operations done to x: × 2, then − 3, then ÷ 5 — read them in the order they happen to x.\nStep 2: undo the last one first: 7 × 5 = 35 — the inverse of ÷ 5 is × 5.\nStep 3: undo − 3: 35 + 3 = 38.\nStep 4: undo × 2: 38 ÷ 2 = 19. So **x = 19**.\n\nCheck: (2 × 19 − 3) ÷ 5 = 35 ÷ 5 = 7 ✓\n\n### Example 2\n\nUse guess, check and improve to solve x³ + x = 50, correct to one decimal place.\n\n| Guess x | x³ + x | Compared with 50 |\n|---|---|---|\n| 3 | 30 | too small |\n| 4 | 68 | too big |\n| 3.5 | 46.375 | too small |\n| 3.6 | 50.256 | too big |\n| 3.55 | 48.289 (3 dp) | too small |\n\nStep 1: x = 3 is too small and x = 4 is too big, so x is between 3 and 4.\nStep 2: 3.5 is too small and 3.6 is too big, so x is between 3.5 and 3.6.\nStep 3: to decide between 3.5 and 3.6, test the halfway value 3.55 — it is too small, so x is between 3.55 and 3.6.\nStep 4: every number between 3.55 and 3.6 rounds to 3.6, so **x ≈ 3.6** (1 dp).\n\nCheck: 3.6 gives 50.256, very close to 50 ✓\n\n### Example 3\n\nUse the halving method to solve x³ = 20 correct to one decimal place, starting with a = 2 and b = 3.\n\nStep 1: f(x) = x³ − 20, so f(2) = −12 and f(3) = 7 — opposite signs, so a solution lies between 2 and 3.\nStep 2: m = 2.5, f(2.5) = −4.375 (negative, like f(2)) — so replace a: the interval is now 2.5 to 3.\nStep 3: m = 2.75, f(2.75) ≈ 0.797 (positive) — replace b: 2.5 to 2.75.\nStep 4: m = 2.625, f(2.625) ≈ −1.912 (negative) — replace a: 2.625 to 2.75.\nStep 5: m = 2.6875, f(2.6875) ≈ −0.589 (negative) — replace a: 2.6875 to 2.75.\nStep 6: m = 2.71875, f(2.71875) ≈ 0.096 (positive) — replace b: 2.6875 to 2.71875.\nStep 7: both ends round to 2.7, so stop: **x ≈ 2.7** (1 dp).\n\n![Six bars showing the interval shrinking: 2 to 3, 2.5 to 3, 2.5 to 2.75, 2.625 to 2.75, 2.6875 to 2.75, then 2.6875 to 2.71875, closing in on about 2.71](/diagrams/y9/maths/algorithms-for-solving-equations-intervals.svg)\n\nCheck: 2.7³ = 19.683, close to 20 ✓ (A calculator gives the cube root of 20 ≈ 2.714.)\n\n### Example 4\n\nA different kind of search: \"Set x to 1. Repeat 3 times: set x to (x + 7 ÷ x) ÷ 2. Output x.\" This algorithm closes in on √7 (the solution of x² = 7 with x positive).\n\nStep 1: x = (1 + 7 ÷ 1) ÷ 2 = 4 — use the current x on the right.\nStep 2: x = (4 + 7 ÷ 4) ÷ 2 = (4 + 1.75) ÷ 2 = 2.875.\nStep 3: x = (2.875 + 7 ÷ 2.875) ÷ 2 ≈ 2.6549 — the output, **x ≈ 2.655** (3 dp).\n\nCheck: √7 ≈ 2.6458, so three rounds already get within 0.01. Each round gets closer — a fourth gives 2.64577.\n\n## Common mistakes\n\n- **Undoing in the wrong order.** It happens because we read left to right. Fix: undo the **last** operation first.\n- **Keeping the wrong half.** In the halving method, students replace the wrong end. Fix: keep the two ends whose f-values have **opposite signs**.\n- **Stopping too early.** An interval from 2.6875 to 2.75 contains numbers that round to 2.7 and 2.8. Fix: stop only when **both** ends round to the same answer.\n- **Forgetting to rearrange to \"= 0\".** The sign-change test only works on f(x) = 0. Fix: move everything to one side first, such as x³ = 20 → x³ − 20 = 0.\n\n## Tips to remember\n\n- **\"Last on, first off.\"** Like socks and shoes: you put socks on first, so you take shoes off first. Backtracking undoes the last operation first.\n- **\"Sign change = crossing.\"** (A made-up memory trick.) Negative to positive means the graph has crossed the x-axis somewhere between.\n- **\"Halve and keep the swap.\"** (Made-up.) Halve the interval and keep the half where the sign swaps.\n- **Picture the bars shrinking.** Each round of halving is a bar half as long as the one above it.\n- **Quick self-check:** 2¹⁰ = 1024, so 10 halvings shrink an interval of width 1 to under 0.001.\n\n## Key terms\n\n- **Algorithm** — a set of exact steps that solves a problem every time.\n- **Backtracking** — solving an equation by undoing its operations in reverse order.\n- **Inverse operation** — the operation that undoes another, such as + and −, or × and ÷.\n- **Guess, check and improve** — a search that tests values and moves closer each time.\n- **Sign change** — when f(a) and f(b) have opposite signs, so the graph crosses the x-axis between a and b.\n- **Halving method (bisection)** — repeatedly halving an interval that contains a sign change.\n- **Stopping rule** — the condition that ends a search, such as \"both ends round to the same answer\".\n\n## Summary\n\n- If x appears once, solve by undoing the operations in reverse order, then check.\n- If undoing is impossible, search: guess, check and improve, or use the halving method.\n- Rearrange to f(x) = 0; a sign change between a and b traps a solution (for an unbroken graph).\n- Each halving step halves the interval: width 1 becomes 1 ÷ 2ⁿ after n steps.\n- Stop when both ends of the interval round to the same value at the accuracy you need.\n",
-  "questions": [
-    {
-      "difficulty": "easy",
-      "prompt": "The diagram shows the steps that build the equation 4x + 7 = 39. To solve it by undoing, which steps should you follow, starting from 39?",
-      "options": {
-        "A": "Divide by 4, then subtract 7",
-        "B": "Subtract 7, then divide by 4",
-        "C": "Add 7, then multiply by 4",
-        "D": "Subtract 4, then divide by 7"
-      },
-      "answer": "B",
-      "explanation": "The last operation done to x was + 7, so undo it first (subtract 7), then undo × 4 (divide by 4): 39 − 7 = 32, 32 ÷ 4 = 8. Dividing by 4 first undoes the steps in the wrong order.",
-      "steps": [
-        "The steps done to x were: × 4, then + 7.",
-        "Undo in reverse order: the last step (+ 7) is undone first by subtracting 7, then × 4 is undone by dividing by 4."
-      ],
-      "mistakes": {
-        "A": "Step 2: undo in reverse order — the + 7 happened last, so it must be undone first.",
-        "C": "Step 2: use inverse operations. Adding and multiplying repeat the steps instead of undoing them.",
-        "D": "Step 1: the operations are × 4 and + 7 — you swapped the numbers between them."
-      },
-      "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-q1.svg",
-      "diagram_alt": "A flowchart chain: x, then an arrow labelled times 4 to 4x, then an arrow labelled plus 7 to 39."
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "A function has f(2) = −3 and f(3) = 5, and its graph is a smooth, unbroken curve. What can you say about the solution of f(x) = 0?",
-      "options": {
-        "A": "There is a solution between x = −3 and x = 5.",
-        "B": "There is no solution between x = 2 and x = 3.",
-        "C": "There is a solution between x = 2 and x = 3.",
-        "D": "The solution is exactly x = 2.5."
-      },
-      "answer": "C",
-      "explanation": "f(2) is negative and f(3) is positive, so the unbroken graph must cross the x-axis somewhere between x = 2 and x = 3. −3 and 5 are y-values, not x-values.",
-      "steps": [
-        "f(2) = −3 is below the x-axis and f(3) = 5 is above it — a sign change.",
-        "An unbroken graph must cross the x-axis between them, so a solution lies between x = 2 and x = 3."
-      ],
-      "mistakes": {
-        "A": "Step 1: −3 and 5 are the values of f (the heights), not x-values. The x-values are 2 and 3.",
-        "B": "Step 1: opposite signs mean the graph must cross the axis between the two x-values.",
-        "D": "Step 2: we only know the solution is somewhere between 2 and 3 — not that it is exactly halfway."
-      }
-    },
-    {
-      "difficulty": "easy",
-      "prompt": "Kai is solving x² + 2x = 50 by guess, check and improve. He tries x = 6 and gets 6² + 2 × 6 = 48. What should his next guess be?",
-      "options": {
-        "A": "A number a little bigger than 6",
-        "B": "A number a little smaller than 6",
-        "C": "He should stop: x = 6 is the solution",
-        "D": "50 ÷ 6, about 8.3"
-      },
-      "answer": "A",
-      "explanation": "48 is too small (less than 50), and x² + 2x gets bigger as positive x gets bigger, so the next guess should be a little more than 6. 48 is not 50, so 6 is not the solution.",
-      "steps": [
-        "Compare: 48 is less than the target 50, so x = 6 is too small.",
-        "x² + 2x increases as positive x increases, so try a number a little bigger than 6."
-      ],
-      "mistakes": {
-        "B": "Step 2: 48 is too small, so you need a bigger value of x, not a smaller one.",
-        "C": "Step 1: 48 is close, but it is not equal to 50 — keep improving.",
-        "D": "Step 2: guess, check and improve changes the guess a little; dividing 50 by 6 is not a step of the method (and 8.3 gives far more than 50)."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Solve (x − 4) ÷ 3 = 6 by undoing the operations.",
-      "options": {
-        "A": "x = 30",
-        "B": "x = 14",
-        "C": "x = 6",
-        "D": "x = 22"
-      },
-      "answer": "D",
-      "explanation": "The steps done to x were − 4 then ÷ 3. Undo ÷ 3 first: 6 × 3 = 18, then undo − 4: 18 + 4 = 22. Getting 30 means undoing in the wrong order.",
-      "steps": [
-        "The steps done to x: − 4, then ÷ 3.",
-        "Undo the last step first: 6 × 3 = 18.",
-        "Undo − 4 by adding 4: 18 + 4 = 22. Check: (22 − 4) ÷ 3 = 6 ✓"
-      ],
-      "mistakes": {
-        "A": "Steps 2–3: you undid − 4 first (6 + 4 = 10) and then × 3. Undo the last operation (÷ 3) first.",
-        "B": "Step 3: the inverse of − 4 is + 4. You subtracted 4 again.",
-        "C": "Step 2: the inverse of ÷ 3 is × 3, not ÷ 3."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "The halving method is used on f(x) = x² − 7, starting with the interval from 2 to 3. f(2) = −3, f(3) = 2 and f(2.5) = −0.75. What is the new interval?",
-      "options": {
-        "A": "From 2 to 2.5",
-        "B": "From 2.5 to 2.75",
-        "C": "From 2.5 to 3",
-        "D": "From 2 to 3 (it stays the same)"
-      },
-      "answer": "C",
-      "explanation": "f(2.5) is negative, like f(2), so the sign change is between 2.5 and 3. Keeping 2 to 2.5 is tempting, but both ends of that interval have negative f-values.",
-      "steps": [
-        "f(2.5) = −0.75 is negative — the same sign as f(2).",
-        "Replace a = 2 with 2.5: the sign change (− to +) is now between 2.5 and 3."
-      ],
-      "mistakes": {
-        "A": "Step 2: f(2) and f(2.5) are both negative, so no sign change is guaranteed there. Keep the half where the signs are opposite.",
-        "B": "Step 2: one round only replaces one end with the midpoint 2.5. The other end stays at 3.",
-        "D": "Step 1: every round halves the interval — replace one end with the midpoint."
-      }
-    },
-    {
-      "difficulty": "medium",
-      "prompt": "Mia solves x³ − x = 40 by guess, check and improve. Her table: x = 3 gives 24; x = 3.5 gives 39.375; x = 3.6 gives 43.056; x = 4 gives 60. Between which two values is the solution?",
-      "options": {
-        "A": "Between 3.5 and 3.6",
-        "B": "Between 3.6 and 4",
-        "C": "Between 3 and 3.5",
-        "D": "Between 39.375 and 43.056"
-      },
-      "answer": "A",
-      "explanation": "3.5 gives 39.375 (too small) and 3.6 gives 43.056 (too big), so the solution is between 3.5 and 3.6. 39.375 and 43.056 are the outputs, not values of x.",
-      "steps": [
-        "Find the closest guess that is too small: x = 3.5 gives 39.375, under 40.",
-        "Find the closest guess that is too big: x = 3.6 gives 43.056, over 40.",
-        "The solution is trapped between these: between 3.5 and 3.6."
-      ],
-      "mistakes": {
-        "B": "Step 2: 3.6 already gives more than 40, so the solution is below 3.6.",
-        "C": "Step 1: 3.5 still gives less than 40, so the solution is above 3.5.",
-        "D": "Step 3: give the x-values (the guesses), not the outputs of x³ − x."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "The halving method is used on f(x) = x³ + x − 12, starting with the interval from 2 to 3 (f(2) = −2, f(3) = 18). After three halvings, what is the interval?",
-      "options": {
-        "A": "From 2.25 to 2.5",
-        "B": "From 2 to 2.125",
-        "C": "From 2.125 to 2.5",
-        "D": "From 2.125 to 2.25"
-      },
-      "answer": "D",
-      "explanation": "f(2.5) = 6.125 > 0 → 2 to 2.5; f(2.25) ≈ 1.64 > 0 → 2 to 2.25; f(2.125) ≈ −0.279 < 0 → 2.125 to 2.25. Getting 2.25 to 2.5 comes from keeping the wrong half in round 2.",
-      "steps": [
-        "Round 1: f(2.5) = 15.625 + 2.5 − 12 = 6.125, positive like f(3), so the interval becomes 2 to 2.5.",
-        "Round 2: f(2.25) = 11.390625 + 2.25 − 12 ≈ 1.64, positive, so the interval becomes 2 to 2.25.",
-        "Round 3: f(2.125) ≈ 9.596 + 2.125 − 12 ≈ −0.279, negative like f(2), so the interval becomes 2.125 to 2.25."
-      ],
-      "mistakes": {
-        "A": "Step 2: f(2.25) is positive, so it replaces the positive end (2.5). You kept the half with no sign change.",
-        "B": "Step 3: f(2.125) is negative, so it replaces the negative end (2), not the positive end.",
-        "C": "Step 2: you skipped round 2. After round 1 (2 to 2.5), test 2.25 before testing 2.125."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "An interval has width 1. Each round of the halving method halves its width. How many rounds are needed before the width is less than 0.01?",
-      "options": {
-        "A": "6",
-        "B": "7",
-        "C": "10",
-        "D": "100"
-      },
-      "answer": "B",
-      "explanation": "After n rounds the width is 1 ÷ 2ⁿ. 2⁶ = 64 gives 0.0156 (not yet below 0.01), and 2⁷ = 128 gives about 0.0078, which is below 0.01. 6 rounds is tempting but stops one round short.",
-      "steps": [
-        "After n rounds, width = 1 ÷ 2ⁿ. We need 2ⁿ to be more than 100.",
-        "2⁶ = 64 (width 0.0156 — too wide); 2⁷ = 128 (width ≈ 0.0078 — narrow enough). So 7 rounds."
-      ],
-      "mistakes": {
-        "A": "Step 2: 1 ÷ 64 ≈ 0.0156 is still wider than 0.01 — do one more round.",
-        "C": "Step 1: 10 rounds gives 1 ÷ 1024, below 0.001. You only need below 0.01, so you need 2ⁿ over 100, not over 1000.",
-        "D": "Step 1: each round halves the width — it does not take off 0.01 at a time."
-      }
-    },
-    {
-      "difficulty": "hard",
-      "prompt": "Set x to 1. Repeat 3 times: set x to (x + 10 ÷ x) ÷ 2. Output x, rounded to two decimal places. What is the output?",
-      "options": {
-        "A": "3.66",
-        "B": "5.50",
-        "C": "3.20",
-        "D": "3.16"
-      },
-      "answer": "C",
-      "explanation": "x goes 1 → 5.5 → 3.6591 → 3.1960, so the output is 3.20. 3.66 is the value after only two rounds.",
-      "steps": [
-        "Round 1: (1 + 10 ÷ 1) ÷ 2 = 11 ÷ 2 = 5.5.",
-        "Round 2: (5.5 + 10 ÷ 5.5) ÷ 2 ≈ (5.5 + 1.8182) ÷ 2 ≈ 3.6591.",
-        "Round 3: (3.6591 + 10 ÷ 3.6591) ÷ 2 ≈ (3.6591 + 2.7329) ÷ 2 ≈ 3.1960, which rounds to 3.20."
-      ],
-      "mistakes": {
-        "A": "Step 3: you stopped after two rounds. The loop repeats 3 times.",
-        "B": "Steps 2–3: that is the value after one round. Keep going — the loop repeats 3 times.",
-        "D": "Step 3: 3.16 is √10, which the algorithm is closing in on, but after exactly 3 rounds it has only reached about 3.196."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "The halving method on f(x) = x² − 13 has trapped the positive solution between 3.59375 and 3.625. What can you conclude?",
-      "options": {
-        "A": "More rounds are needed, because 3.59375 and 3.625 are different numbers.",
-        "B": "x ≈ 3.5, correct to one decimal place.",
-        "C": "x = 3.609375 exactly — the midpoint.",
-        "D": "x ≈ 3.6, correct to one decimal place."
-      },
-      "answer": "D",
-      "explanation": "3.59375 rounds to 3.6 and 3.625 rounds to 3.6, so every number in the interval rounds to 3.6. (Indeed √13 ≈ 3.606.) Answer B chops off the decimals instead of rounding.",
-      "steps": [
-        "Round each end to one decimal place: 3.59375 → 3.6 (the next digit, 9, rounds up) and 3.625 → 3.6.",
-        "Both ends round to the same value, so the stopping rule is met: x ≈ 3.6 (1 dp)."
-      ],
-      "mistakes": {
-        "A": "Step 2: the ends don't need to be equal — they only need to round to the same answer.",
-        "B": "Step 1: 3.59375 rounds up to 3.6 because the second decimal digit is 9. Don't just cut off the digits.",
-        "C": "Step 2: the solution is somewhere in the interval, not necessarily at its midpoint — the algorithm only gives an approximation."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "You want to use the halving method to solve 2ˣ = 3x. Which starting interval is guaranteed to contain a solution?",
-      "options": {
-        "A": "From 1 to 2",
-        "B": "From 2 to 3",
-        "C": "From 4 to 5",
-        "D": "From 3 to 4"
-      },
-      "answer": "D",
-      "explanation": "Use f(x) = 2ˣ − 3x. f(3) = 8 − 9 = −1 and f(4) = 16 − 12 = 4 have opposite signs, so there is a solution between 3 and 4. In the other intervals both ends have the same sign.",
-      "steps": [
-        "Rearrange to f(x) = 2ˣ − 3x = 0.",
-        "Work out f at each whole number: f(1) = −1, f(2) = −2, f(3) = −1, f(4) = 4, f(5) = 17.",
-        "Only 3 to 4 has a sign change (−1 to 4), so a solution lies between 3 and 4."
-      ],
-      "mistakes": {
-        "A": "Step 2: f(1) = −1 and f(2) = −2 are both negative — no sign change.",
-        "B": "Step 2: f(2) = −2 and f(3) = −1 are both negative — no sign change, even though f is getting closer to 0.",
-        "C": "Step 2: f(4) = 4 and f(5) = 17 are both positive — no sign change."
-      }
-    },
-    {
-      "difficulty": "challenge",
-      "prompt": "Jo writes this algorithm to solve x² − 2 = 0: \"Set a to 1 and b to 2. Repeat 10 times: set m to (a + b) ÷ 2; if m² − 2 is positive, set a to m, otherwise set b to m. Output m.\" Note f(1) = −1 and f(2) = 2. Why does it give a wrong answer?",
-      "options": {
-        "A": "The midpoint should be (b − a) ÷ 2.",
-        "B": "When m² − 2 is positive, b (not a) should be set to m.",
-        "C": "The interval must start at 0, not 1.",
-        "D": "It should repeat 100 times, not 10."
-      },
-      "answer": "B",
-      "explanation": "f(b) is positive, so a positive f(m) means m should replace b, keeping the sign change between a and m. Jo swaps the ends, so the interval drifts away from √2 ≈ 1.414 towards 2. The midpoint formula (a + b) ÷ 2 is correct.",
-      "steps": [
-        "f(a) = f(1) is negative and f(b) = f(2) is positive.",
-        "If f(m) is positive, it has the same sign as f(b), so m must replace b to keep a sign change between the ends.",
-        "Jo replaces a instead, so after the first round the interval is 1.5 to 2 — both positive, with no solution inside. The fix: if m² − 2 is positive, set b to m."
-      ],
-      "mistakes": {
-        "A": "Step 2: the midpoint really is (a + b) ÷ 2 — for example, halfway between 1 and 2 is 1.5. (b − a) ÷ 2 is half the width.",
-        "C": "Step 1: 1 to 2 is a fine start because f(1) and f(2) have opposite signs.",
-        "D": "Step 3: more rounds won't help — the algorithm keeps the wrong half every time, so it never closes in on the solution."
-      }
-    }
-  ]
+ "level": "Year 9",
+ "subject": "maths",
+ "unit": "Year 9",
+ "title": "Algorithms for solving equations",
+ "summary": "Algorithms that solve equations: undoing operations for linear equations, and guess, check and improve and the halving method for harder equations, with a stopping rule.",
+ "minutes": 30,
+ "video": "videos/y9/maths/algorithms-for-solving-equations.mp4",
+ "body": "Calculators, spreadsheets and graphing apps solve equations by following an **algorithm** — a set of exact steps that always works. Some equations can be solved by undoing operations; others, like x³ + x = 50, can't, so the computer searches for the answer, getting closer every round.\n\n## Learning objective\n\nBy the end of this lesson you can write and follow algorithms that solve linear equations by undoing operations, and use guess, check and improve and the halving method to find solutions of harder equations to a given accuracy.\n\n## Before you start\n\nYou will need:\n\n- **Solving linear equations (Year 9)** — using inverse operations to get x on its own.\n- **Algorithms with variables and loops (Year 8)** — following steps, loops and \"set x to …\" instructions.\n- **Rounding and significant figures (Year 9)** — rounding to one or two decimal places.\n\n**Warm-up**\n\n1. Solve 4x − 9 = 23.\n2. Find the value of x² + 3x when x = 2.5.\n\n**Answers:** 1. 4x = 32, so **x = 8**. 2. 6.25 + 7.5 = **13.75**.\n\n## Think of it like this\n\n### The \"higher or lower\" guessing game\n\nA friend thinks of a number from 1 to 100. You guess 50, and they say \"higher\". You guess 75 — \"lower\". Each guess cuts the possible numbers roughly in half, so you find the number in at most 7 guesses. The halving method in this lesson plays exactly this game with an equation: each step cuts the gap where the answer can be in half.\n\n*Where the analogy breaks down:* in the game the answer is a whole number and you can hit it exactly. The solution of an equation is often a decimal that never ends, so the algorithm never lands on it exactly — it stops when the answer is accurate enough.\n\n## Key ideas\n\n### Solving by undoing (backtracking)\n\nAn equation like 3x + 5 = 26 tells a story: start with x, **multiply by 3**, then **add 5**, and you get 26. To find x, run the story backwards using **inverse operations**: subtract 5, then divide by 3.\n\n![Top row: x, times 3 gives 3x, plus 5 gives 3x + 5. Bottom row, right to left: 26, minus 5 gives 21, divide by 3 gives 7](/diagrams/y9/maths/algorithms-for-solving-equations-undo.svg)\n\nThe algorithm is:\n\n1. List the operations done to x, in order.\n2. Start from the right-hand side number.\n3. Undo each operation with its inverse, in **reverse order** (last done, first undone).\n4. Check by substituting.\n\nThis works whenever x appears only **once** in the equation.\n\n### When undoing is not enough\n\nIn x³ + x = 50, x appears twice, so there is no single chain of operations to reverse. Instead we **search**: try a value, see how close it is, and improve. A search algorithm needs a **stopping rule** — usually \"stop when the answer is correct to the accuracy asked for\", such as one decimal place.\n\n### Guess, check and improve\n\n1. Make a sensible guess and substitute it.\n2. Compare the result with the target: **too small** or **too big**?\n3. Choose a better guess between the best \"too small\" and the best \"too big\" values.\n4. Repeat until the answer is accurate enough.\n\nKeep the guesses in a table.\n\n### The halving method (bisection)\n\nFirst rearrange the equation so one side is 0, and call the other side f(x). For x³ = 20, use f(x) = x³ − 20. A solution of the equation is where the graph of y = f(x) crosses the x-axis.\n\n![Graph of y = x³ − 20 crossing the x-axis between x = 2 and x = 3. The point (2, −12) is below the axis and (3, 7) is above it](/diagrams/y9/maths/algorithms-for-solving-equations-signchange.svg)\n\nIf f(a) and f(b) have **opposite signs** (one negative, one positive), a smooth unbroken graph must cross the x-axis between a and b — this is called a **sign change**. Then:\n\n1. Find the **midpoint** m = (a + b) ÷ 2 and work out f(m).\n2. If f(m) has the same sign as f(a), the crossing is between m and b, so replace a with m. Otherwise replace b with m.\n3. Repeat until a and b both round to the same answer.\n\n![Flowchart of the halving method: choose a and b with opposite signs, find the midpoint m, replace a or b with m, and stop when a and b round to the same answer](/diagrams/y9/maths/algorithms-for-solving-equations-flowchart.svg)\n\nEach round **halves the width** of the interval: from a width of 1, after n rounds the width is 1 ÷ 2ⁿ.\n\n## Worked examples\n\n### Example 1\n\nSolve (2x − 3) ÷ 5 = 7 by undoing.\n\nStep 1: list the operations done to x: × 2, then − 3, then ÷ 5 — read them in the order they happen to x.\nStep 2: undo the last one first: 7 × 5 = 35 — the inverse of ÷ 5 is × 5.\nStep 3: undo − 3: 35 + 3 = 38.\nStep 4: undo × 2: 38 ÷ 2 = 19. So **x = 19**.\n\nCheck: (2 × 19 − 3) ÷ 5 = 35 ÷ 5 = 7 ✓\n\n### Example 2\n\nUse guess, check and improve to solve x³ + x = 50, correct to one decimal place.\n\n| Guess x | x³ + x | Compared with 50 |\n|---|---|---|\n| 3 | 30 | too small |\n| 4 | 68 | too big |\n| 3.5 | 46.375 | too small |\n| 3.6 | 50.256 | too big |\n| 3.55 | 48.289 (3 dp) | too small |\n\nStep 1: x = 3 is too small and x = 4 is too big, so x is between 3 and 4.\nStep 2: 3.5 is too small and 3.6 is too big, so x is between 3.5 and 3.6.\nStep 3: to decide between 3.5 and 3.6, test the halfway value 3.55 — it is too small, so x is between 3.55 and 3.6.\nStep 4: every number between 3.55 and 3.6 rounds to 3.6, so **x ≈ 3.6** (1 dp).\n\nCheck: 3.6 gives 50.256, very close to 50 ✓\n\n### Example 3\n\nUse the halving method to solve x³ = 20 correct to one decimal place, starting with a = 2 and b = 3.\n\nStep 1: f(x) = x³ − 20, so f(2) = −12 and f(3) = 7 — opposite signs, so a solution lies between 2 and 3.\nStep 2: m = 2.5, f(2.5) = −4.375 (negative, like f(2)) — so replace a: the interval is now 2.5 to 3.\nStep 3: m = 2.75, f(2.75) ≈ 0.797 (positive) — replace b: 2.5 to 2.75.\nStep 4: m = 2.625, f(2.625) ≈ −1.912 (negative) — replace a: 2.625 to 2.75.\nStep 5: m = 2.6875, f(2.6875) ≈ −0.589 (negative) — replace a: 2.6875 to 2.75.\nStep 6: m = 2.71875, f(2.71875) ≈ 0.096 (positive) — replace b: 2.6875 to 2.71875.\nStep 7: both ends round to 2.7, so stop: **x ≈ 2.7** (1 dp).\n\n![Six bars showing the interval shrinking: 2 to 3, 2.5 to 3, 2.5 to 2.75, 2.625 to 2.75, 2.6875 to 2.75, then 2.6875 to 2.71875, closing in on about 2.71](/diagrams/y9/maths/algorithms-for-solving-equations-intervals.svg)\n\nCheck: 2.7³ = 19.683, close to 20 ✓ (A calculator gives the cube root of 20 ≈ 2.714.)\n\n### Example 4\n\nA different kind of search: \"Set x to 1. Repeat 3 times: set x to (x + 7 ÷ x) ÷ 2. Output x.\" This algorithm closes in on √7 (the solution of x² = 7 with x positive).\n\nStep 1: x = (1 + 7 ÷ 1) ÷ 2 = 4 — use the current x on the right.\nStep 2: x = (4 + 7 ÷ 4) ÷ 2 = (4 + 1.75) ÷ 2 = 2.875.\nStep 3: x = (2.875 + 7 ÷ 2.875) ÷ 2 ≈ 2.6549 — the output, **x ≈ 2.655** (3 dp).\n\nCheck: √7 ≈ 2.6458, so three rounds already get within 0.01. Each round gets closer — a fourth gives 2.64577.\n\n## Common mistakes\n\n- **Undoing in the wrong order.** It happens because we read left to right. Fix: undo the **last** operation first.\n- **Keeping the wrong half.** In the halving method, students replace the wrong end. Fix: keep the two ends whose f-values have **opposite signs**.\n- **Stopping too early.** An interval from 2.6875 to 2.75 contains numbers that round to 2.7 and 2.8. Fix: stop only when **both** ends round to the same answer.\n- **Forgetting to rearrange to \"= 0\".** The sign-change test only works on f(x) = 0. Fix: move everything to one side first, such as x³ = 20 → x³ − 20 = 0.\n\n## Tips to remember\n\n- **\"Last on, first off.\"** Like socks and shoes: you put socks on first, so you take shoes off first. Backtracking undoes the last operation first.\n- **\"Sign change = crossing.\"** (A made-up memory trick.) Negative to positive means the graph has crossed the x-axis somewhere between.\n- **\"Halve and keep the swap.\"** (Made-up.) Halve the interval and keep the half where the sign swaps.\n- **Picture the bars shrinking.** Each round of halving is a bar half as long as the one above it.\n- **Quick self-check:** 2¹⁰ = 1024, so 10 halvings shrink an interval of width 1 to under 0.001.\n\n## Key terms\n\n- **Algorithm** — a set of exact steps that solves a problem every time.\n- **Backtracking** — solving an equation by undoing its operations in reverse order.\n- **Inverse operation** — the operation that undoes another, such as + and −, or × and ÷.\n- **Guess, check and improve** — a search that tests values and moves closer each time.\n- **Sign change** — when f(a) and f(b) have opposite signs, so the graph crosses the x-axis between a and b.\n- **Halving method (bisection)** — repeatedly halving an interval that contains a sign change.\n- **Stopping rule** — the condition that ends a search, such as \"both ends round to the same answer\".\n\n## Summary\n\n- If x appears once, solve by undoing the operations in reverse order, then check.\n- If undoing is impossible, search: guess, check and improve, or use the halving method.\n- Rearrange to f(x) = 0; a sign change between a and b traps a solution (for an unbroken graph).\n- Each halving step halves the interval: width 1 becomes 1 ÷ 2ⁿ after n steps.\n- Stop when both ends of the interval round to the same value at the accuracy you need.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The diagram shows the steps that build the equation 4x + 7 = 39. To solve it by undoing, which steps should you follow, starting from 39?",
+   "options": {
+    "A": "Divide by 4, then subtract 7",
+    "B": "Subtract 7, then divide by 4",
+    "C": "Add 7, then multiply by 4",
+    "D": "Subtract 4, then divide by 7"
+   },
+   "answer": "B",
+   "explanation": "The last operation done to x was + 7, so undo it first (subtract 7), then undo × 4 (divide by 4): 39 − 7 = 32, 32 ÷ 4 = 8. Dividing by 4 first undoes the steps in the wrong order.",
+   "steps": [
+    "The steps done to x were: × 4, then + 7.",
+    "Undo in reverse order: the last step (+ 7) is undone first by subtracting 7, then × 4 is undone by dividing by 4."
+   ],
+   "mistakes": {
+    "A": "Step 2: undo in reverse order — the + 7 happened last, so it must be undone first.",
+    "C": "Step 2: use inverse operations. Adding and multiplying repeat the steps instead of undoing them.",
+    "D": "Step 1: the operations are × 4 and + 7 — you swapped the numbers between them."
+   },
+   "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-q1.svg",
+   "diagram_alt": "A flowchart chain: x, then an arrow labelled times 4 to 4x, then an arrow labelled plus 7 to 39."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A function has f(2) = −3 and f(3) = 5, and its graph is a smooth, unbroken curve. What can you say about the solution of f(x) = 0?",
+   "options": {
+    "A": "There is a solution between x = −3 and x = 5.",
+    "B": "There is no solution between x = 2 and x = 3.",
+    "C": "There is a solution between x = 2 and x = 3.",
+    "D": "The solution is exactly x = 2.5."
+   },
+   "answer": "C",
+   "explanation": "f(2) is negative and f(3) is positive, so the unbroken graph must cross the x-axis somewhere between x = 2 and x = 3. −3 and 5 are y-values, not x-values.",
+   "steps": [
+    "f(2) = −3 is below the x-axis and f(3) = 5 is above it — a sign change.",
+    "An unbroken graph must cross the x-axis between them, so a solution lies between x = 2 and x = 3."
+   ],
+   "mistakes": {
+    "A": "Step 1: −3 and 5 are the values of f (the heights), not x-values. The x-values are 2 and 3.",
+    "B": "Step 1: opposite signs mean the graph must cross the axis between the two x-values.",
+    "D": "Step 2: we only know the solution is somewhere between 2 and 3 — not that it is exactly halfway."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Kai is solving x² + 2x = 50 by guess, check and improve. He tries x = 6 and gets 6² + 2 × 6 = 48. What should his next guess be?",
+   "options": {
+    "A": "A number a little bigger than 6",
+    "B": "A number a little smaller than 6",
+    "C": "He should stop: x = 6 is the solution",
+    "D": "50 ÷ 6, about 8.3"
+   },
+   "answer": "A",
+   "explanation": "48 is too small (less than 50), and x² + 2x gets bigger as positive x gets bigger, so the next guess should be a little more than 6. 48 is not 50, so 6 is not the solution.",
+   "steps": [
+    "Compare: 48 is less than the target 50, so x = 6 is too small.",
+    "x² + 2x increases as positive x increases, so try a number a little bigger than 6."
+   ],
+   "mistakes": {
+    "B": "Step 2: 48 is too small, so you need a bigger value of x, not a smaller one.",
+    "C": "Step 1: 48 is close, but it is not equal to 50 — keep improving.",
+    "D": "Step 2: guess, check and improve changes the guess a little; dividing 50 by 6 is not a step of the method (and 8.3 gives far more than 50)."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Solve (x − 4) ÷ 3 = 6 by undoing the operations.",
+   "options": {
+    "A": "x = 30",
+    "B": "x = 14",
+    "C": "x = 6",
+    "D": "x = 22"
+   },
+   "answer": "D",
+   "explanation": "The steps done to x were − 4 then ÷ 3. Undo ÷ 3 first: 6 × 3 = 18, then undo − 4: 18 + 4 = 22. Getting 30 means undoing in the wrong order.",
+   "steps": [
+    "The steps done to x: − 4, then ÷ 3.",
+    "Undo the last step first: 6 × 3 = 18.",
+    "Undo − 4 by adding 4: 18 + 4 = 22. Check: (22 − 4) ÷ 3 = 6 ✓"
+   ],
+   "mistakes": {
+    "A": "Steps 2–3: you undid − 4 first (6 + 4 = 10) and then × 3. Undo the last operation (÷ 3) first.",
+    "B": "Step 3: the inverse of − 4 is + 4. You subtracted 4 again.",
+    "C": "Step 2: the inverse of ÷ 3 is × 3, not ÷ 3."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The halving method is used on f(x) = x² − 7, starting with the interval from 2 to 3. f(2) = −3, f(3) = 2 and f(2.5) = −0.75. What is the new interval?",
+   "options": {
+    "A": "From 2 to 2.5",
+    "B": "From 2.5 to 2.75",
+    "C": "From 2.5 to 3",
+    "D": "From 2 to 3 (it stays the same)"
+   },
+   "answer": "C",
+   "explanation": "f(2.5) is negative, like f(2), so the sign change is between 2.5 and 3. Keeping 2 to 2.5 is tempting, but both ends of that interval have negative f-values.",
+   "steps": [
+    "f(2.5) = −0.75 is negative — the same sign as f(2).",
+    "Replace a = 2 with 2.5: the sign change (− to +) is now between 2.5 and 3."
+   ],
+   "mistakes": {
+    "A": "Step 2: f(2) and f(2.5) are both negative, so no sign change is guaranteed there. Keep the half where the signs are opposite.",
+    "B": "Step 2: one round only replaces one end with the midpoint 2.5. The other end stays at 3.",
+    "D": "Step 1: every round halves the interval — replace one end with the midpoint."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Mia solves x³ − x = 40 by guess, check and improve. Her table: x = 3 gives 24; x = 3.5 gives 39.375; x = 3.6 gives 43.056; x = 4 gives 60. Between which two values is the solution?",
+   "options": {
+    "A": "Between 3.5 and 3.6",
+    "B": "Between 3.6 and 4",
+    "C": "Between 3 and 3.5",
+    "D": "Between 39.375 and 43.056"
+   },
+   "answer": "A",
+   "explanation": "3.5 gives 39.375 (too small) and 3.6 gives 43.056 (too big), so the solution is between 3.5 and 3.6. 39.375 and 43.056 are the outputs, not values of x.",
+   "steps": [
+    "Find the closest guess that is too small: x = 3.5 gives 39.375, under 40.",
+    "Find the closest guess that is too big: x = 3.6 gives 43.056, over 40.",
+    "The solution is trapped between these: between 3.5 and 3.6."
+   ],
+   "mistakes": {
+    "B": "Step 2: 3.6 already gives more than 40, so the solution is below 3.6.",
+    "C": "Step 1: 3.5 still gives less than 40, so the solution is above 3.5.",
+    "D": "Step 3: give the x-values (the guesses), not the outputs of x³ − x."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The halving method is used on f(x) = x³ + x − 12, starting with the interval from 2 to 3 (f(2) = −2, f(3) = 18). After three halvings, what is the interval?",
+   "options": {
+    "A": "From 2.25 to 2.5",
+    "B": "From 2 to 2.125",
+    "C": "From 2.125 to 2.5",
+    "D": "From 2.125 to 2.25"
+   },
+   "answer": "D",
+   "explanation": "f(2.5) = 6.125 > 0 → 2 to 2.5; f(2.25) ≈ 1.64 > 0 → 2 to 2.25; f(2.125) ≈ −0.279 < 0 → 2.125 to 2.25. Getting 2.25 to 2.5 comes from keeping the wrong half in round 2.",
+   "steps": [
+    "Round 1: f(2.5) = 15.625 + 2.5 − 12 = 6.125, positive like f(3), so the interval becomes 2 to 2.5.",
+    "Round 2: f(2.25) = 11.390625 + 2.25 − 12 ≈ 1.64, positive, so the interval becomes 2 to 2.25.",
+    "Round 3: f(2.125) ≈ 9.596 + 2.125 − 12 ≈ −0.279, negative like f(2), so the interval becomes 2.125 to 2.25."
+   ],
+   "mistakes": {
+    "A": "Step 2: f(2.25) is positive, so it replaces the positive end (2.5). You kept the half with no sign change.",
+    "B": "Step 3: f(2.125) is negative, so it replaces the negative end (2), not the positive end.",
+    "C": "Step 2: you skipped round 2. After round 1 (2 to 2.5), test 2.25 before testing 2.125."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "An interval has width 1. Each round of the halving method halves its width. How many rounds are needed before the width is less than 0.01?",
+   "options": {
+    "A": "6",
+    "B": "7",
+    "C": "10",
+    "D": "100"
+   },
+   "answer": "B",
+   "explanation": "After n rounds the width is 1 ÷ 2ⁿ. 2⁶ = 64 gives 0.0156 (not yet below 0.01), and 2⁷ = 128 gives about 0.0078, which is below 0.01. 6 rounds is tempting but stops one round short.",
+   "steps": [
+    "After n rounds, width = 1 ÷ 2ⁿ. We need 2ⁿ to be more than 100.",
+    "2⁶ = 64 (width 0.0156 — too wide); 2⁷ = 128 (width ≈ 0.0078 — narrow enough). So 7 rounds."
+   ],
+   "mistakes": {
+    "A": "Step 2: 1 ÷ 64 ≈ 0.0156 is still wider than 0.01 — do one more round.",
+    "C": "Step 1: 10 rounds gives 1 ÷ 1024, below 0.001. You only need below 0.01, so you need 2ⁿ over 100, not over 1000.",
+    "D": "Step 1: each round halves the width — it does not take off 0.01 at a time."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Set x to 1. Repeat 3 times: set x to (x + 10 ÷ x) ÷ 2. Output x, rounded to two decimal places. What is the output?",
+   "options": {
+    "A": "3.66",
+    "B": "5.50",
+    "C": "3.20",
+    "D": "3.16"
+   },
+   "answer": "C",
+   "explanation": "x goes 1 → 5.5 → 3.6591 → 3.1960, so the output is 3.20. 3.66 is the value after only two rounds.",
+   "steps": [
+    "Round 1: (1 + 10 ÷ 1) ÷ 2 = 11 ÷ 2 = 5.5.",
+    "Round 2: (5.5 + 10 ÷ 5.5) ÷ 2 ≈ (5.5 + 1.8182) ÷ 2 ≈ 3.6591.",
+    "Round 3: (3.6591 + 10 ÷ 3.6591) ÷ 2 ≈ (3.6591 + 2.7329) ÷ 2 ≈ 3.1960, which rounds to 3.20."
+   ],
+   "mistakes": {
+    "A": "Step 3: you stopped after two rounds. The loop repeats 3 times.",
+    "B": "Steps 2–3: that is the value after one round. Keep going — the loop repeats 3 times.",
+    "D": "Step 3: 3.16 is √10, which the algorithm is closing in on, but after exactly 3 rounds it has only reached about 3.196."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The halving method on f(x) = x² − 13 has trapped the positive solution between 3.59375 and 3.625. What can you conclude?",
+   "options": {
+    "A": "More rounds are needed, because 3.59375 and 3.625 are different numbers.",
+    "B": "x ≈ 3.5, correct to one decimal place.",
+    "C": "x = 3.609375 exactly — the midpoint.",
+    "D": "x ≈ 3.6, correct to one decimal place."
+   },
+   "answer": "D",
+   "explanation": "3.59375 rounds to 3.6 and 3.625 rounds to 3.6, so every number in the interval rounds to 3.6. (Indeed √13 ≈ 3.606.) Answer B chops off the decimals instead of rounding.",
+   "steps": [
+    "Round each end to one decimal place: 3.59375 → 3.6 (the next digit, 9, rounds up) and 3.625 → 3.6.",
+    "Both ends round to the same value, so the stopping rule is met: x ≈ 3.6 (1 dp)."
+   ],
+   "mistakes": {
+    "A": "Step 2: the ends don't need to be equal — they only need to round to the same answer.",
+    "B": "Step 1: 3.59375 rounds up to 3.6 because the second decimal digit is 9. Don't just cut off the digits.",
+    "C": "Step 2: the solution is somewhere in the interval, not necessarily at its midpoint — the algorithm only gives an approximation."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "You want to use the halving method to solve 2ˣ = 3x. Which starting interval is guaranteed to contain a solution?",
+   "options": {
+    "A": "From 1 to 2",
+    "B": "From 2 to 3",
+    "C": "From 4 to 5",
+    "D": "From 3 to 4"
+   },
+   "answer": "D",
+   "explanation": "Use f(x) = 2ˣ − 3x. f(3) = 8 − 9 = −1 and f(4) = 16 − 12 = 4 have opposite signs, so there is a solution between 3 and 4. In the other intervals both ends have the same sign.",
+   "steps": [
+    "Rearrange to f(x) = 2ˣ − 3x = 0.",
+    "Work out f at each whole number: f(1) = −1, f(2) = −2, f(3) = −1, f(4) = 4, f(5) = 17.",
+    "Only 3 to 4 has a sign change (−1 to 4), so a solution lies between 3 and 4."
+   ],
+   "mistakes": {
+    "A": "Step 2: f(1) = −1 and f(2) = −2 are both negative — no sign change.",
+    "B": "Step 2: f(2) = −2 and f(3) = −1 are both negative — no sign change, even though f is getting closer to 0.",
+    "C": "Step 2: f(4) = 4 and f(5) = 17 are both positive — no sign change."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Jo writes this algorithm to solve x² − 2 = 0: \"Set a to 1 and b to 2. Repeat 10 times: set m to (a + b) ÷ 2; if m² − 2 is positive, set a to m, otherwise set b to m. Output m.\" Note f(1) = −1 and f(2) = 2. Why does it give a wrong answer?",
+   "options": {
+    "A": "The midpoint should be (b − a) ÷ 2.",
+    "B": "When m² − 2 is positive, b (not a) should be set to m.",
+    "C": "The interval must start at 0, not 1.",
+    "D": "It should repeat 100 times, not 10."
+   },
+   "answer": "B",
+   "explanation": "f(b) is positive, so a positive f(m) means m should replace b, keeping the sign change between a and m. Jo swaps the ends, so the interval drifts away from √2 ≈ 1.414 towards 2. The midpoint formula (a + b) ÷ 2 is correct.",
+   "steps": [
+    "f(a) = f(1) is negative and f(b) = f(2) is positive.",
+    "If f(m) is positive, it has the same sign as f(b), so m must replace b to keep a sign change between the ends.",
+    "Jo replaces a instead, so after the first round the interval is 1.5 to 2 — both positive, with no solution inside. The fix: if m² − 2 is positive, set b to m."
+   ],
+   "mistakes": {
+    "A": "Step 2: the midpoint really is (a + b) ÷ 2 — for example, halfway between 1 and 2 is 1.5. (b − a) ÷ 2 is half the width.",
+    "C": "Step 1: 1 to 2 is a fine start because f(1) and f(2) have opposite signs.",
+    "D": "Step 3: more rounds won't help — the algorithm keeps the wrong half every time, so it never closes in on the solution."
+   }
+  }
+ ]
 }
