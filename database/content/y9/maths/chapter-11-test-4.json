@@ -1,0 +1,350 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "unit": "Year 9",
+  "title": "Chapter 11 · Test 4",
+  "kind": "test",
+  "summary": "Chapter 11 test 4: solving equations with algorithms (undoing, guess-check-improve, halving) and simulating chance with random numbers.",
+  "minutes": 25,
+  "body": "Chapter 11 · Test 4 is the last practice test for Algorithmic thinking. It mixes undoing operations, sign changes, halving and repeated-improvement algorithms with designing, tracing and judging chance simulations. Allow about 25 minutes, no notes, no calculator unless the question says. Read each algorithm carefully: \"and\", \"or\", \"at least\" and \"greater than\" all change the answer, so underline them before you start tracing.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Which of these equations needs a search method, such as guess, check and improve, because it can't be solved by undoing operations?",
+      "options": {
+        "A": "x² + 5x = 30",
+        "B": "3(x + 2) = 27",
+        "C": "(2x − 1) ÷ 5 = 3",
+        "D": "√(x + 3) = 4"
+      },
+      "answer": "A",
+      "explanation": "In x² + 5x = 30, x appears twice (in x² and in 5x), so there is no single chain of steps to reverse. √(x + 3) = 4 looks harder, but x appears once, so you can undo it.",
+      "steps": [
+        "Undoing works only when x appears once.",
+        "In x² + 5x = 30, x appears twice, so it needs a search method such as guess, check and improve."
+      ],
+      "mistakes": {
+        "B": "Step 1: x appears only once here, so you can undo: ÷ 3, then − 2.",
+        "C": "Step 1: x appears only once here, so you can undo: × 5, + 1, then ÷ 2.",
+        "D": "Step 1: x appears only once here, so you can undo: square both sides, then − 3."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The graph of y = x² − 13 is shown. Between which two whole numbers is the positive solution of x² − 13 = 0?",
+      "options": {
+        "A": "Between 6 and 7",
+        "B": "Between −4 and −3",
+        "C": "Between 3 and 4",
+        "D": "Between 4 and 5"
+      },
+      "answer": "C",
+      "explanation": "The graph crosses the positive x-axis between 3 and 4: f(3) = −4 is negative and f(4) = 3 is positive. Between −4 and −3 is the negative solution.",
+      "steps": [
+        "The solution is where the graph crosses the x-axis.",
+        "On the right, f(3) = 9 − 13 = −4 and f(4) = 16 − 13 = 3: a sign change, so the crossing is between 3 and 4."
+      ],
+      "mistakes": {
+        "A": "Step 1: halving 13 doesn't find the solution. Look where the graph crosses the x-axis.",
+        "B": "Step 2: that is the negative solution. The question asks for the positive one.",
+        "D": "Step 2: check the signs: f(4) = 3 and f(5) = 12 are both positive, so the crossing is before 4."
+      },
+      "diagram": "diagrams/y9/maths/chapter-11-test-4-q2.svg",
+      "diagram_alt": "A graph of the parabola y = x² − 13 for x from −5 to 5. It crosses the y-axis at −13 and crosses the x-axis once on each side of the y-axis."
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Using a = RandInt(1, 8), which rule simulates an event with probability 0.25?",
+      "options": {
+        "A": "The event happens if a is 4 or less.",
+        "B": "The event happens if a is 1 or 2.",
+        "C": "The event happens if a = 2.",
+        "D": "The event happens if a is 6 or more."
+      },
+      "answer": "B",
+      "explanation": "0.25 = 2/8, so we need 2 outcomes: 1 or 2. \"4 or less\" is tempting (thinking of 1/4), but that is 4 outcomes out of 8, which is 0.5.",
+      "steps": [
+        "Each of the 8 outcomes has probability 1/8, and 0.25 = 2/8, so we need 2 outcomes.",
+        "\"a is 1 or 2\" is 2 outcomes, giving 2/8 = 0.25."
+      ],
+      "mistakes": {
+        "A": "Step 2: 1, 2, 3, 4 is 4 outcomes out of 8, giving 0.5.",
+        "C": "Step 2: one outcome gives 1/8 = 0.125. You need 2 outcomes out of 8.",
+        "D": "Step 2: 6, 7, 8 is 3 outcomes, giving 3/8 = 0.375."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "A simulation of 500 trials records the event 135 times. What is the relative frequency of the event?",
+      "options": {
+        "A": "1.35",
+        "B": "0.73",
+        "C": "135",
+        "D": "0.27"
+      },
+      "answer": "D",
+      "explanation": "135 ÷ 500 = 0.27. 1.35 is tempting, but that divides by 100 — and a probability can't be more than 1.",
+      "steps": [
+        "Relative frequency = count ÷ number of trials.",
+        "135 ÷ 500 = 0.27."
+      ],
+      "mistakes": {
+        "A": "Step 2: divide by the 500 trials, not by 100. A probability can't be more than 1.",
+        "B": "Step 2: 0.73 = 365 ÷ 500 is the relative frequency of the event NOT happening.",
+        "C": "Step 2: 135 is the count. Divide by the 500 trials."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Solve 4(x − 3) = 26 by undoing the operations.",
+      "options": {
+        "A": "x = 7.25",
+        "B": "x = 3.5",
+        "C": "x = 107",
+        "D": "x = 9.5"
+      },
+      "answer": "D",
+      "explanation": "Undo × 4: 26 ÷ 4 = 6.5; undo − 3: 6.5 + 3 = 9.5. 7.25 comes from undoing in the wrong order.",
+      "steps": [
+        "The steps done to x: − 3, then × 4.",
+        "Undo × 4 first: 26 ÷ 4 = 6.5.",
+        "Undo − 3: 6.5 + 3 = 9.5. Check: 4 × (9.5 − 3) = 4 × 6.5 = 26 ✓"
+      ],
+      "mistakes": {
+        "A": "Steps 2–3: you added 3 before dividing by 4. Undo the last operation (× 4) first.",
+        "B": "Step 3: the inverse of − 3 is + 3. You subtracted 3 again.",
+        "C": "Step 2: the inverse of × 4 is ÷ 4, not × 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method is used on f(x) = x³ − 30, starting with the interval from 3 to 4. f(3) = −3, f(4) = 34 and f(3.5) = 12.875. What is the new interval?",
+      "options": {
+        "A": "From 3.5 to 4",
+        "B": "From 3 to 3.5",
+        "C": "From 3.25 to 3.5",
+        "D": "From 3 to 4 (it stays the same)"
+      },
+      "answer": "B",
+      "explanation": "f(3.5) is positive, like f(4), so the sign change is between 3 and 3.5. Keeping 3.5 to 4 is tempting because 12.875 is far from 0, but both of its ends are positive.",
+      "steps": [
+        "f(3.5) = 42.875 − 30 = 12.875 is positive — the same sign as f(4).",
+        "Replace b = 4 with 3.5: the sign change is now between 3 and 3.5."
+      ],
+      "mistakes": {
+        "A": "Step 2: f(3.5) and f(4) are both positive. Keep the half where the signs are opposite.",
+        "C": "Step 2: one round replaces one end with the midpoint 3.5; the other end stays at 3.",
+        "D": "Step 1: every round halves the interval — replace one end with the midpoint."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "A machine makes a faulty part with probability 0.06. A simulation of 2500 parts is run. About how many faulty parts would you expect?",
+      "options": {
+        "A": "6",
+        "B": "2350",
+        "C": "150",
+        "D": "1500"
+      },
+      "answer": "C",
+      "explanation": "Expected count = 2500 × 0.06 = 150. 1500 is tempting, but that uses 0.6 instead of 0.06.",
+      "steps": [
+        "Expected count = number of trials × probability.",
+        "2500 × 0.06 = 150."
+      ],
+      "mistakes": {
+        "A": "Step 2: 6 is the percentage. Multiply 0.06 by the 2500 parts.",
+        "B": "Step 2: 2350 = 2500 − 150 is the expected number of parts that are NOT faulty.",
+        "D": "Step 2: 0.06 is six hundredths, not six tenths. 2500 × 0.6 would give 1500."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "The chance of rain is 0.3, so the numbers 00 to 29 mean \"rain\". The random two-digit numbers are 47 12 85 30 06 29 73 18 51 64. What is the relative frequency of rain?",
+      "options": {
+        "A": "0.4",
+        "B": "0.5",
+        "C": "0.3",
+        "D": "0.6"
+      },
+      "answer": "A",
+      "explanation": "The rain numbers are 12, 06, 29 and 18 — 4 out of 10, so 0.4. 0.5 comes from counting 30 as rain.",
+      "steps": [
+        "Mark the numbers from 00 to 29: 12, 06, 29, 18 — that is 4 rainy days.",
+        "Relative frequency = 4 ÷ 10 = 0.4."
+      ],
+      "mistakes": {
+        "B": "Step 1: 30 is not a rain number — rain is 00 to 29 only.",
+        "C": "Step 2: 0.3 is the true probability. The question asks what these 10 numbers give.",
+        "D": "Step 2: 0.6 is the relative frequency of NO rain."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Two students run the same simulation with 1000 trials each. One gets 0.312 and the other gets 0.297. What is the best explanation?",
+      "options": {
+        "A": "One of them made a mistake, because results should be identical.",
+        "B": "The true probability must be exactly 0.3045, halfway between.",
+        "C": "The simulation is biased, because 0.312 is more than 0.3.",
+        "D": "Random results vary from run to run; both are reasonable estimates."
+      },
+      "answer": "D",
+      "explanation": "A simulation uses new random numbers each run, so two correct runs almost never match exactly. \"Someone made a mistake\" is tempting, but small differences are expected.",
+      "steps": [
+        "Each run uses different random numbers, so the counts differ.",
+        "With 1000 trials each, both results are estimates close to the true probability — the difference is normal variation."
+      ],
+      "mistakes": {
+        "A": "Step 1: random numbers change every run, so results differ even when the algorithm is right.",
+        "B": "Step 2: averaging two estimates gives a better estimate, not the exact probability.",
+        "C": "Step 2: we don't know the true probability is 0.3, and small differences are normal."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Set x to 3. Repeat 2 times: set x to (x + 15 ÷ x) ÷ 2. Output x, rounded to two decimal places. What is the output?",
+      "options": {
+        "A": "4.00",
+        "B": "3.87",
+        "C": "3.88",
+        "D": "8.00"
+      },
+      "answer": "C",
+      "explanation": "x goes 3 → (3 + 5) ÷ 2 = 4 → (4 + 3.75) ÷ 2 = 3.875, which rounds to 3.88. 3.87 is √15, where the algorithm is heading, but after two rounds it is 3.875.",
+      "steps": [
+        "Round 1: (3 + 15 ÷ 3) ÷ 2 = (3 + 5) ÷ 2 = 4.",
+        "Round 2: (4 + 15 ÷ 4) ÷ 2 = (4 + 3.75) ÷ 2 = 3.875, which rounds to 3.88."
+      ],
+      "mistakes": {
+        "A": "Step 2: that is the value after one round. The loop repeats 2 times.",
+        "B": "Step 2: 3.87 is √15 (and the value after three rounds). After exactly 2 rounds x = 3.875.",
+        "D": "Step 1: you forgot to divide by 2: (3 + 5) ÷ 2 = 4, not 8."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method starts with an interval from 0 to 4 (width 4). What is the least number of halvings needed to make the width less than 0.1?",
+      "options": {
+        "A": "6",
+        "B": "5",
+        "C": "40",
+        "D": "4"
+      },
+      "answer": "A",
+      "explanation": "After n halvings the width is 4 ÷ 2ⁿ. 4 ÷ 32 = 0.125 is too wide, but 4 ÷ 64 = 0.0625 is less than 0.1, so 6 halvings. 5 is tempting but stops one short.",
+      "steps": [
+        "After n halvings, width = 4 ÷ 2ⁿ, so we need 2ⁿ to be more than 4 ÷ 0.1 = 40.",
+        "2⁵ = 32 (width 0.125 — too wide); 2⁶ = 64 (width 0.0625 — narrow enough). So 6 halvings."
+      ],
+      "mistakes": {
+        "B": "Step 2: 4 ÷ 32 = 0.125 is still wider than 0.1 — do one more halving.",
+        "C": "Step 1: you need 2ⁿ to be more than 40, not n itself.",
+        "D": "Step 1: the starting width is 4, not 1. Four halvings of 4 give 0.25, still too wide."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "The flowchart simulates tossing a coin (a = 1 means heads) and rolling a die, 1000 times. About what output would you expect?",
+      "options": {
+        "A": "About 0.83",
+        "B": "About 0.17",
+        "C": "About 0.33",
+        "D": "About 0.08"
+      },
+      "answer": "B",
+      "explanation": "P(heads) = 1/2 and P(5 or 6) = 2/6, so P(both) = 1/2 × 2/6 = 1/6 ≈ 0.17. About 0.83 comes from adding the probabilities instead of multiplying.",
+      "steps": [
+        "P(a = 1) = 1/2 and P(b is 5 or more) = 2/6 = 1/3.",
+        "Both must happen, and they are independent, so multiply: 1/2 × 1/3 = 1/6.",
+        "1/6 ≈ 0.17, so count ÷ 1000 should be about 0.17."
+      ],
+      "mistakes": {
+        "A": "Step 2: for \"and\" with independent events, multiply the probabilities — don't add them.",
+        "C": "Step 1: 2/6 is the chance for the die only. The coin must also show heads.",
+        "D": "Step 1: \"5 or more\" means 5 or 6 — two outcomes, so P = 2/6, not 1/6."
+      },
+      "diagram": "diagrams/y9/maths/chapter-11-test-4-q12.svg",
+      "diagram_alt": "A flowchart: set count and trials to 0; set a to RandInt(1, 2) and b to RandInt(1, 6); if a = 1 and b is 5 or more, add 1 to count; add 1 to trials; if trials is not 1000, go back; otherwise output count ÷ 1000."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Trace: \"Set count to 0. Repeat 10 times: set a to RandInt(1, 6) and b to RandInt(1, 6); if a is greater than b, add 1 to count. Output count ÷ 10.\" The pairs are (5, 2), (3, 3), (1, 6), (6, 4), (2, 1), (4, 4), (3, 5), (6, 1), (2, 2), (4, 3). What is the output?",
+      "options": {
+        "A": "0.8",
+        "B": "5",
+        "C": "0.5",
+        "D": "5/12"
+      },
+      "answer": "C",
+      "explanation": "a is greater than b in (5, 2), (6, 4), (2, 1), (6, 1) and (4, 3), so count = 5 and the output is 0.5. 0.8 comes from also counting the three doubles.",
+      "steps": [
+        "Check each pair: a is greater than b in (5, 2), (6, 4), (2, 1), (6, 1), (4, 3).",
+        "Pairs like (3, 3) are equal, not greater, so count = 5.",
+        "Output count ÷ 10 = 0.5."
+      ],
+      "mistakes": {
+        "A": "Step 2: \"greater than\" does not include equal pairs like (3, 3).",
+        "B": "Step 3: 5 is the count. The algorithm outputs count ÷ 10.",
+        "D": "Step 3: 5/12 is the theoretical probability (15 of the 36 outcomes). The question asks what this run outputs."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method on f(x) = x² − 3 has trapped the positive solution between 1.7265625 and 1.734375. What can you conclude?",
+      "options": {
+        "A": "x ≈ 1.72, correct to two decimal places.",
+        "B": "More halvings are needed, because the two ends are different numbers.",
+        "C": "x = 1.73046875 exactly, the midpoint.",
+        "D": "x ≈ 1.73, correct to two decimal places."
+      },
+      "answer": "D",
+      "explanation": "1.7265625 rounds to 1.73 and 1.734375 rounds to 1.73, so every number in the interval rounds to 1.73 (√3 ≈ 1.732). Answer A cuts off digits instead of rounding.",
+      "steps": [
+        "Round each end to two decimal places: 1.7265625 → 1.73 and 1.734375 → 1.73.",
+        "Both ends round to the same value, so x ≈ 1.73 (2 dp)."
+      ],
+      "mistakes": {
+        "A": "Step 1: 1.7265625 rounds UP to 1.73 (the next digit is 6). Don't just cut off digits.",
+        "B": "Step 2: the ends only need to round to the same value — they don't have to be equal.",
+        "C": "Step 2: the solution is somewhere in the interval, not necessarily at the midpoint."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "An event has a true probability of 0.4. In a simulation of 1500 trials it happens 582 times. Which statement is correct?",
+      "options": {
+        "A": "The relative frequency is 0.582; it happened 18 fewer times than expected.",
+        "B": "The relative frequency is 0.388; it happened 18 fewer times than the expected 600.",
+        "C": "The relative frequency is 0.388; it happened 18 more times than expected.",
+        "D": "The simulation must be biased, because 582 is not exactly 600."
+      },
+      "answer": "B",
+      "explanation": "582 ÷ 1500 = 0.388, and the expected count is 1500 × 0.4 = 600, so 582 is 18 fewer. \"Must be biased\" is tempting, but small differences are normal.",
+      "steps": [
+        "Relative frequency = 582 ÷ 1500 = 0.388.",
+        "Expected count = 1500 × 0.4 = 600.",
+        "600 − 582 = 18 fewer than expected — normal variation."
+      ],
+      "mistakes": {
+        "A": "Step 1: divide by the 1500 trials, not by 1000: 582 ÷ 1500 = 0.388.",
+        "C": "Step 3: 582 is less than the expected 600, so it is 18 fewer.",
+        "D": "Step 3: results always vary a little around the expected count — 582 is close to 600."
+      }
+    }
+  ]
+}

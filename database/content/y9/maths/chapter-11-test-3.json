@@ -1,0 +1,351 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "unit": "Year 9",
+  "title": "Chapter 11 · Test 3",
+  "kind": "test",
+  "summary": "Chapter 11 test 3: solving equations with algorithms (undoing, guess-check-improve, halving) and simulating chance with random numbers.",
+  "minutes": 25,
+  "body": "Chapter 11 · Test 3 is another full practice test on algorithms for solving equations and simulating chance. You will undo operations, find sign changes in tables, run the halving method, choose rules for random numbers, and read simulation results from a graph. Allow about 25 minutes, no notes, no calculator unless the question says. Check every answer by substituting or recounting.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The diagram shows the steps that build the equation 5(x − 2) = 35. Starting from 35, which steps solve it by undoing?",
+      "options": {
+        "A": "Add 2, then divide by 5",
+        "B": "Multiply by 5, then subtract 2",
+        "C": "Divide by 2, then add 5",
+        "D": "Divide by 5, then add 2"
+      },
+      "answer": "D",
+      "explanation": "The last step done to x was × 5, so undo it first by dividing by 5, then undo − 2 by adding 2 (35 ÷ 5 = 7, 7 + 2 = 9). Adding 2 first undoes the steps in the wrong order.",
+      "steps": [
+        "The steps done to x were − 2, then × 5.",
+        "Undo them in reverse order: divide by 5 first, then add 2."
+      ],
+      "mistakes": {
+        "A": "Step 2: undo in reverse order — × 5 was done last, so undo it first.",
+        "B": "Step 2: use inverse operations. Multiplying by 5 and subtracting 2 repeat the steps instead of undoing them.",
+        "C": "Step 1: the operations are − 2 and × 5 — you swapped the numbers."
+      },
+      "diagram": "diagrams/y9/maths/chapter-11-test-3-q1.svg",
+      "diagram_alt": "A chain: x, an arrow labelled minus 2 to x − 2, then an arrow labelled times 5 to 35."
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for solving equations",
+      "prompt": "A function with an unbroken graph has f(1) = 5, f(2) = 1, f(3) = −2 and f(4) = −6. Between which two x-values is there a solution of f(x) = 0?",
+      "options": {
+        "A": "Between x = 1 and x = 2",
+        "B": "Between x = 2 and x = 3",
+        "C": "Between x = 3 and x = 4",
+        "D": "There is no solution, because no value in the table is 0."
+      },
+      "answer": "B",
+      "explanation": "f(2) = 1 is positive and f(3) = −2 is negative, so the graph crosses the x-axis between x = 2 and x = 3. Between 1 and 2 is tempting because f(2) is close to 0, but both values there are positive.",
+      "steps": [
+        "Look for a sign change: f(2) = 1 is positive and f(3) = −2 is negative.",
+        "So the unbroken graph crosses the x-axis between x = 2 and x = 3."
+      ],
+      "mistakes": {
+        "A": "Step 1: f(1) = 5 and f(2) = 1 are both positive. Being close to 0 is not enough — you need a sign change.",
+        "C": "Step 1: f(3) = −2 and f(4) = −6 are both negative — no sign change.",
+        "D": "Step 2: a sign change shows the graph crosses 0 between two of the x-values, even if the table never shows 0."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Which rule simulates tossing a fair coin?",
+      "options": {
+        "A": "a = RandInt(1, 2); heads if a = 1",
+        "B": "a = RandInt(0, 2); heads if a = 0",
+        "C": "a = RandInt(1, 6); heads if a = 1",
+        "D": "a = RandInt(1, 2); heads if a is 1 or 2"
+      },
+      "answer": "A",
+      "explanation": "RandInt(1, 2) gives 1 or 2 with equal chance, so \"1 = heads\" gives probability 1/2. RandInt(0, 2) is tempting, but it has 3 outcomes.",
+      "steps": [
+        "A fair coin has 2 equally likely outcomes, so heads needs probability 1/2.",
+        "RandInt(1, 2) has 2 equally likely outcomes; letting 1 mean heads gives 1/2."
+      ],
+      "mistakes": {
+        "B": "Step 2: RandInt(0, 2) has 3 outcomes (0, 1, 2), so heads would have probability 1/3.",
+        "C": "Step 2: one outcome out of 6 gives heads a probability of 1/6, not 1/2.",
+        "D": "Step 2: every outcome would be heads — the coin could never land tails."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "A simulation runs 120 trials and the event happens 30 times. What is the relative frequency of the event?",
+      "options": {
+        "A": "0.3",
+        "B": "4",
+        "C": "0.25",
+        "D": "0.75"
+      },
+      "answer": "C",
+      "explanation": "30 ÷ 120 = 0.25. 0.3 is tempting, but that divides by 100 instead of by the 120 trials.",
+      "steps": [
+        "Relative frequency = count ÷ number of trials.",
+        "30 ÷ 120 = 0.25."
+      ],
+      "mistakes": {
+        "A": "Step 2: divide by the 120 trials, not by 100.",
+        "B": "Step 2: divide the count by the trials (30 ÷ 120), not the trials by the count.",
+        "D": "Step 2: 0.75 = 90 ÷ 120 is the relative frequency of the event NOT happening."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Solve (2x + 9) ÷ 5 = 11 by undoing the operations.",
+      "options": {
+        "A": "x = 32",
+        "B": "x = 46",
+        "C": "x = 23",
+        "D": "x = 5"
+      },
+      "answer": "C",
+      "explanation": "Undo ÷ 5: 11 × 5 = 55; undo + 9: 55 − 9 = 46; undo × 2: 46 ÷ 2 = 23. Stopping at 46 forgets the last undo step.",
+      "steps": [
+        "The steps done to x: × 2, then + 9, then ÷ 5.",
+        "Undo ÷ 5 first: 11 × 5 = 55.",
+        "Undo + 9: 55 − 9 = 46.",
+        "Undo × 2: 46 ÷ 2 = 23. Check: (46 + 9) ÷ 5 = 11 ✓"
+      ],
+      "mistakes": {
+        "A": "Step 3: the inverse of + 9 is − 9. You added 9 again.",
+        "B": "Step 4: 2x = 46 isn't finished — undo × 2 by dividing by 2.",
+        "D": "Steps 2–3: you undid + 9 before ÷ 5. Undo the last operation (÷ 5) first."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method is used on f(x) = x² − 22, starting with the interval from 4 to 5. f(4) = −6, f(5) = 3 and f(4.5) = −1.75. What is the new interval?",
+      "options": {
+        "A": "From 4.5 to 5",
+        "B": "From 4 to 4.5",
+        "C": "From 4.5 to 4.75",
+        "D": "From 4 to 5 (it stays the same)"
+      },
+      "answer": "A",
+      "explanation": "f(4.5) is negative, like f(4), so the sign change is between 4.5 and 5. Keeping 4 to 4.5 is tempting, but both of its ends give negative values.",
+      "steps": [
+        "f(4.5) = 20.25 − 22 = −1.75 is negative — the same sign as f(4).",
+        "Replace a = 4 with 4.5: the sign change is now between 4.5 and 5."
+      ],
+      "mistakes": {
+        "B": "Step 2: f(4) and f(4.5) are both negative, so no sign change is guaranteed there.",
+        "C": "Step 2: one round replaces one end with the midpoint 4.5; the other end stays at 5.",
+        "D": "Step 1: every round halves the interval — replace one end with the midpoint."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Zara solves x³ + 2x = 100 by guess, check and improve. x = 4.4 gives 93.984 and x = 4.5 gives 100.125. She wants x correct to one decimal place. Which value should she test next?",
+      "options": {
+        "A": "4.6",
+        "B": "4.35",
+        "C": "4.5 again",
+        "D": "4.45"
+      },
+      "answer": "D",
+      "explanation": "The solution is between 4.4 and 4.5. Testing the halfway value 4.45 shows whether it rounds to 4.4 or 4.5. 4.6 is tempting, but 4.5 is already too big.",
+      "steps": [
+        "4.4 gives 93.984 (too small) and 4.5 gives 100.125 (too big), so the solution is between 4.4 and 4.5.",
+        "To decide whether it rounds to 4.4 or 4.5, test the halfway value 4.45."
+      ],
+      "mistakes": {
+        "A": "Step 1: 4.5 already gives more than 100, so the solution is below 4.5 — testing 4.6 tells you nothing new.",
+        "B": "Step 1: 4.4 is already too small, so the solution is above 4.4.",
+        "C": "Step 2: testing the same value gives the same answer. Test halfway between 4.4 and 4.5."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "A player wins 70% of points, so the digits 0 to 6 mean \"win\" and 7 to 9 mean \"lose\". The digits are 8 3 6 9 0 7 2 5 4 9. What is the relative frequency of winning?",
+      "options": {
+        "A": "0.7",
+        "B": "0.6",
+        "C": "0.5",
+        "D": "0.4"
+      },
+      "answer": "B",
+      "explanation": "The wins are 3, 6, 0, 2, 5, 4 — 6 out of 10, so 0.6. 0.7 is the theoretical probability, not this simulation's result.",
+      "steps": [
+        "Mark the digits 0 to 6: 3, 6, 0, 2, 5, 4 — that is 6 wins.",
+        "Relative frequency = 6 ÷ 10 = 0.6."
+      ],
+      "mistakes": {
+        "A": "Step 2: 0.7 is the true probability. The question asks what these 10 digits give.",
+        "C": "Step 1: 0 to 6 includes 6, so the digit 6 is a win too.",
+        "D": "Step 2: 0.4 is the relative frequency of losing (8, 9, 7, 9)."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "The column graph shows the results of 100 simulated rolls of a die. What is the relative frequency of rolling an even number?",
+      "options": {
+        "A": "0.55",
+        "B": "0.5",
+        "C": "55",
+        "D": "0.45"
+      },
+      "answer": "A",
+      "explanation": "Even rolls: 19 + 17 + 19 = 55 out of 100, so 0.55. 0.5 is tempting, but that is the theoretical probability, not the simulation result.",
+      "steps": [
+        "Read the even numbers from the graph: 2 came up 19 times, 4 came up 17 times and 6 came up 19 times.",
+        "19 + 17 + 19 = 55, so the relative frequency is 55 ÷ 100 = 0.55."
+      ],
+      "mistakes": {
+        "B": "Step 2: 0.5 is the theoretical probability. Use the counts from the graph.",
+        "C": "Step 2: 55 is the count. Divide by the 100 rolls.",
+        "D": "Step 1: 0.45 is the relative frequency of odd numbers (1, 3, 5). Even means 2, 4 and 6."
+      },
+      "diagram": "diagrams/y9/maths/chapter-11-test-3-q9.svg",
+      "diagram_alt": "A column graph titled 100 simulated rolls of a die: 1 came up 15 times, 2 came up 19 times, 3 came up 14 times, 4 came up 17 times, 5 came up 16 times, 6 came up 19 times."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method starts with an interval from 1 to 3 (width 2). What is the least number of halvings needed to make the width less than 0.01?",
+      "options": {
+        "A": "7",
+        "B": "8",
+        "C": "200",
+        "D": "100"
+      },
+      "answer": "B",
+      "explanation": "After n halvings the width is 2 ÷ 2ⁿ. 2 ÷ 128 ≈ 0.0156 is too wide, but 2 ÷ 256 ≈ 0.0078 is less than 0.01, so 8 halvings. 7 is tempting if you forget the width starts at 2.",
+      "steps": [
+        "After n halvings, width = 2 ÷ 2ⁿ, so we need 2ⁿ to be more than 2 ÷ 0.01 = 200.",
+        "2⁷ = 128 (too small); 2⁸ = 256 (more than 200). So 8 halvings."
+      ],
+      "mistakes": {
+        "A": "Step 1: the starting width is 2, not 1. After 7 halvings the width is 2 ÷ 128 ≈ 0.0156, still too wide.",
+        "C": "Step 2: you need 2ⁿ to be more than 200, not n itself. Each halving halves the width.",
+        "D": "Step 2: each halving halves the width — it does not take off 0.01 or 0.02 at a time."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method is used on f(x) = x² + x − 9, starting with the interval from 2 to 3 (f(2) = −3, f(3) = 3). After three halvings, what is the interval?",
+      "options": {
+        "A": "From 2.625 to 2.75",
+        "B": "From 2.5 to 2.75",
+        "C": "From 2.75 to 3",
+        "D": "From 2.5 to 2.625"
+      },
+      "answer": "D",
+      "explanation": "f(2.5) = −0.25 → 2.5 to 3; f(2.75) ≈ 1.31 → 2.5 to 2.75; f(2.625) ≈ 0.52 → 2.5 to 2.625. 2.75 to 3 comes from keeping the wrong half in round 2.",
+      "steps": [
+        "Round 1: f(2.5) = 6.25 + 2.5 − 9 = −0.25, negative, so the interval becomes 2.5 to 3.",
+        "Round 2: f(2.75) = 7.5625 + 2.75 − 9 ≈ 1.31, positive, so the interval becomes 2.5 to 2.75.",
+        "Round 3: f(2.625) ≈ 6.8906 + 2.625 − 9 ≈ 0.52, positive, so the interval becomes 2.5 to 2.625."
+      ],
+      "mistakes": {
+        "A": "Step 3: f(2.625) is positive, so it replaces the positive end (2.75), not the negative end.",
+        "B": "Step 3: that is the interval after only two halvings. Do one more round.",
+        "C": "Step 2: f(2.75) is positive, so it replaces the positive end (3). You kept the half with no sign change."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Trace: \"Set count to 0. Repeat 8 times: set a to RandInt(1, 6) and b to RandInt(1, 6); if a × b is at least 15, add 1 to count. Output count ÷ 8.\" The pairs are (3, 5), (2, 6), (4, 4), (6, 3), (1, 6), (5, 5), (2, 4), (5, 3). What is the output?",
+      "options": {
+        "A": "0.375",
+        "B": "5",
+        "C": "0.625",
+        "D": "0.5"
+      },
+      "answer": "C",
+      "explanation": "The products are 15, 12, 16, 18, 6, 25, 8, 15. Five are at least 15, so the output is 5 ÷ 8 = 0.625. 0.375 comes from leaving out the two products equal to 15.",
+      "steps": [
+        "Multiply each pair: 15, 12, 16, 18, 6, 25, 8, 15.",
+        "\"At least 15\" includes 15: 15, 16, 18, 25, 15 — count = 5.",
+        "Output count ÷ 8 = 5 ÷ 8 = 0.625."
+      ],
+      "mistakes": {
+        "A": "Step 2: \"at least 15\" includes 15, so (3, 5) and (5, 3) count too.",
+        "B": "Step 3: 5 is the count. The algorithm outputs count ÷ 8.",
+        "D": "Step 2: you left out one pair — both (3, 5) and (5, 3) have a product of exactly 15."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "About 8% of seeds fail to sprout. You simulate each seed with a random two-digit number from 00 to 99. Which rule is correct?",
+      "options": {
+        "A": "00 to 08 means the seed fails.",
+        "B": "00 to 07 means the seed fails.",
+        "C": "01 to 07 means the seed fails.",
+        "D": "00 to 80 means the seed fails."
+      },
+      "answer": "B",
+      "explanation": "00 to 07 is 7 − 0 + 1 = 8 numbers out of 100, which is 8%. 00 to 08 is tempting, but it contains 9 numbers.",
+      "steps": [
+        "There are 100 numbers from 00 to 99, so 8% needs 8 \"fail\" numbers.",
+        "00 to 07 contains 7 − 0 + 1 = 8 numbers, giving 8/100 = 8%."
+      ],
+      "mistakes": {
+        "A": "Step 2: count both ends — 00 to 08 is 9 numbers, giving 9%.",
+        "C": "Step 2: 01 to 07 is only 7 numbers, giving 7%.",
+        "D": "Step 1: 8% is 8 out of 100, not 80 out of 100."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Sam's algorithm to solve x³ − 5 = 0 is: \"Set a to 1 and b to 2. Repeat 10 times: set m to (a + b) ÷ 2; if m³ − 5 is negative, set b to m, otherwise set a to m. Output m.\" Note f(1) = −4 and f(2) = 3. What is wrong?",
+      "options": {
+        "A": "The interval from 1 to 2 contains no solution.",
+        "B": "The midpoint should be b − a.",
+        "C": "It should repeat 100 times instead of 10.",
+        "D": "When m³ − 5 is negative, a (not b) should be set to m."
+      },
+      "answer": "D",
+      "explanation": "f(a) is negative, so a negative f(m) means m should replace a, keeping the sign change between m and b. Sam swaps the ends, so the interval moves away from the solution (about 1.71). Repeating more times doesn't fix that.",
+      "steps": [
+        "f(a) = f(1) is negative and f(b) = f(2) is positive.",
+        "If f(m) is negative, it has the same sign as f(a), so m must replace a to keep the sign change.",
+        "Sam replaces b instead: after round 1 the interval is 1 to 1.5, where f(1) = −4 and f(1.5) ≈ −1.6 are both negative — no solution inside. The fix: set a to m."
+      ],
+      "mistakes": {
+        "A": "Step 1: f(1) = −4 and f(2) = 3 have opposite signs, so a solution IS between 1 and 2.",
+        "B": "Step 2: the midpoint really is (a + b) ÷ 2 — halfway between 1 and 2 is 1.5.",
+        "C": "Step 3: more rounds won't help — the algorithm keeps the wrong half every time."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Using a = RandInt(1, 8), which rule simulates an event with probability 5/8?",
+      "options": {
+        "A": "The event happens if a is 5 or less.",
+        "B": "The event happens if a is less than 5.",
+        "C": "The event happens if a is 5 or more.",
+        "D": "The event happens if a = 5."
+      },
+      "answer": "A",
+      "explanation": "\"5 or less\" means 1, 2, 3, 4, 5: 5 outcomes out of 8, so 5/8. \"Less than 5\" is tempting, but it leaves out 5 and gives 4/8.",
+      "steps": [
+        "Each of the 8 outcomes has probability 1/8, so 5/8 needs 5 outcomes.",
+        "\"a is 5 or less\" is 1, 2, 3, 4, 5 — 5 outcomes, giving 5/8."
+      ],
+      "mistakes": {
+        "B": "Step 2: \"less than 5\" is 1, 2, 3, 4 — only 4 outcomes, giving 4/8.",
+        "C": "Step 2: \"5 or more\" is 5, 6, 7, 8 — only 4 outcomes, giving 4/8.",
+        "D": "Step 2: one outcome gives 1/8. The 5 in 5/8 means five outcomes."
+      }
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "unit": "Year 9",
+  "title": "Simulating chance with algorithms",
+  "summary": "Designing algorithms that use random numbers to simulate chance experiments, matching numbers to outcomes, and using relative frequency and expected counts to estimate probabilities.",
+  "minutes": 30,
+  "body": "Weather forecasters, game designers and traffic engineers all answer chance questions by **simulation**: they get a computer to act out a situation thousands of times using random numbers, then count what happened. It is quicker, cheaper and safer than doing the real thing. In this lesson you will design simulation algorithms and use their results to estimate probabilities.\n\n## Learning objective\n\nBy the end of this lesson you can design and follow an algorithm that uses random numbers to simulate a chance experiment, and use the results to estimate a probability.\n\n## Before you start\n\nYou will need:\n\n- **Experimental probability (Year 8)** — relative frequency = number of times the event happened ÷ number of trials.\n- **Two-step chance experiments (Year 9)** — listing outcomes for two dice or two spins.\n- **Algorithms with variables and loops (Year 8)** — counters and loops.\n\n**Warm-up**\n\n1. A coin is tossed 50 times and lands heads 28 times. What is the relative frequency of heads?\n2. Two fair dice are rolled. What is the probability that the sum is 7?\n\n**Answers:** 1. 28 ÷ 50 = **0.56**. 2. There are 6 ways out of 36: (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1), so **6/36 = 1/6**.\n\n## Think of it like this\n\n### A flight simulator\n\nPilots practise in a flight simulator: a computer model of a plane that lets them fly thousands of times without leaving the ground. A probability simulation is a computer model of a chance situation — we \"fly\" it thousands of times and count the results.\n\n*Where the analogy breaks down:* a flight simulator copies every detail of a real plane. A chance simulation only copies the **probabilities** — if those are set up wrongly, every result is wrong, however many times you run it.\n\n## Key ideas\n\n### Simulations, trials and random numbers\n\nA **simulation** uses random numbers to act out a chance experiment. Each run of the experiment is a **trial**. A **random number generator** gives numbers where every possible value is equally likely:\n\n- **RandInt(1, 6)** gives a whole number from 1 to 6 — a fair die. (Spreadsheets use RANDBETWEEN(1, 6).)\n- **Random digits** 0 to 9 each have probability 1/10.\n\n### Matching numbers to outcomes\n\nChoose numbers so the chances match the real situation:\n\n- Probability 1/4: RandInt(1, 4), and \"1\" means the event happens.\n- Probability 0.3: random digits, with 0, 1 and 2 meaning \"yes\" (3 out of 10 digits).\n- Probability 0.35: two-digit numbers 00 to 99 (100 numbers), with 00 to 34 meaning \"yes\" (35 numbers).\n\nCheck by counting: the \"yes\" numbers ÷ all the numbers must equal the probability.\n\n### A simulation algorithm\n\nEvery simulation has the same shape: a **counter** that starts at 0, a loop that runs the trials, a test, and an output.\n\n![Flowchart: set count and trials to 0; roll a die with RandInt(1, 6); if it is a 6, add 1 to count; add 1 to trials; repeat until 1000 trials, then output count ÷ 1000](/diagrams/y9/maths/simulating-chance-with-algorithms-flowchart.svg)\n\nThe output count ÷ number of trials is the **relative frequency**, our estimate of the probability. The **expected count** is the number of trials × the probability — for 1000 rolls and P(six) = 1/6, about 167 sixes.\n\n### More trials, better estimates\n\nWith only a few trials, the relative frequency jumps around. With many trials it usually settles close to the true (theoretical) probability. The graph shows one run of the algorithm above.\n\n![Line graph of the relative frequency of a six over 1000 simulated rolls: it jumps around at first, then settles near the dashed line at 1/6 ≈ 0.167](/diagrams/y9/maths/simulating-chance-with-algorithms-longrun.svg)\n\nThat's why real simulations use thousands of trials, and why two runs of the same simulation give slightly different answers.\n\n## Worked examples\n\n### Example 1\n\nA basketballer scores 70% of her free throws. Simulate 10 throws with these random digits, using 0 to 6 for \"score\" and 7 to 9 for \"miss\": 3 8 0 5 9 1 6 2 7 4.\n\nStep 1: check the matching — 0 to 6 is 7 digits out of 10, which is 70% ✓\nStep 2: mark each digit: 3 ✓, 8 ✗, 0 ✓, 5 ✓, 9 ✗, 1 ✓, 6 ✓, 2 ✓, 7 ✗, 4 ✓.\nStep 3: count the scores: 7.\nStep 4: relative frequency = 7 ÷ 10 = **0.7**.\n\nCheck: 7 scores + 3 misses = 10 throws ✓\n\n### Example 2\n\nTrace this algorithm: \"Set count to 0. Repeat 8 times: set a to RandInt(1, 6) and b to RandInt(1, 6); if a + b is at least 10, add 1 to count. Output count ÷ 8.\" The generator gives the pairs (4, 6), (2, 3), (5, 5), (6, 1), (3, 3), (6, 6), (1, 5), (4, 4).\n\n| Trial | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|\n| a + b | 10 | 5 | 10 | 7 | 6 | 12 | 6 | 8 |\n| count | 1 | 1 | 2 | 2 | 2 | 3 | 3 | 3 |\n\nStep 1: add each pair — the test uses the sum.\nStep 2: \"at least 10\" includes 10, so trials 1, 3 and 6 count.\nStep 3: output 3 ÷ 8 = **0.375**.\n\nCheck: the theoretical probability is 6/36 = 1/6 ≈ 0.167 (sums 10, 11, 12 happen in 3 + 2 + 1 = 6 ways). 0.375 is far off, because 8 trials is far too few.\n\n### Example 3\n\nThe chance of rain on any day is 0.35. Design a simulation of 400 days, and find how many rainy days you would expect.\n\nStep 1: use two-digit random numbers 00 to 99 — there are 100 of them, so each has probability 1/100.\nStep 2: let 00 to 34 mean \"rain\" — that's 35 numbers, so the probability is 35/100 = 0.35 ✓\nStep 3: algorithm: set count to 0; repeat 400 times: pick a number from 00 to 99, and if it is 34 or less, add 1 to count; output count.\nStep 4: expected count = 400 × 0.35 = **140 rainy days**.\n\nCheck: a run of the simulation might give 133 or 147 — close to 140, but rarely exactly 140.\n\n## Common mistakes\n\n- **Off-by-one matching.** 00 to 35 is 36 numbers, not 35. Fix: count the \"yes\" numbers (last − first + 1) and divide by the total.\n- **Dividing by the wrong number.** Relative frequency divides by the number of **trials**, not by 100 or by the number of outcomes.\n- **Trusting a few trials.** 8 trials can give 0.375 when the truth is 0.167. Fix: use hundreds or thousands of trials.\n- **Expecting the exact expected count.** 1000 rolls won't give exactly 167 sixes. The expected count is a long-run average, not a promise.\n- **Forgetting the counter starts at 0.** Fix: set count to 0 before the loop, not inside it.\n\n## Tips to remember\n\n- **\"Yes numbers ÷ all numbers.\"** (A made-up memory trick.) Your matching is right when this equals the probability.\n- **\"Count, loop, test, output.\"** (Made-up.) Every simulation algorithm has these four parts.\n- **Picture the wobbly line settling** onto the dashed line — more trials, steadier estimate.\n- **Expected count = trials × probability.** 400 days × 0.35 = 140.\n- **Quick self-check:** RandInt(1, 6) has 6 outcomes; RandInt(0, 6) has 7.\n\n## Key terms\n\n- **Simulation** — using random numbers to act out a chance experiment many times.\n- **Trial** — one run of the experiment.\n- **Random number generator** — a tool that gives numbers where each possible value is equally likely.\n- **Relative frequency** — number of times an event happens ÷ number of trials.\n- **Theoretical probability** — the probability worked out from equally likely outcomes.\n- **Expected count** — number of trials × probability.\n- **Counter** — a variable that starts at 0 and goes up by 1 each time the event happens.\n\n## Summary\n\n- A simulation acts out a chance experiment using random numbers, one trial at a time.\n- Match random numbers to outcomes so that \"yes numbers ÷ all numbers\" equals the probability.\n- A simulation algorithm sets a counter to 0, loops through the trials, tests each one, and outputs count ÷ trials.\n- The relative frequency estimates the probability; more trials usually give a better estimate.\n- Expected count = trials × probability, but real results vary around it.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "Which random number instruction simulates rolling one fair six-sided die?",
+      "options": {
+        "A": "RandInt(0, 6)",
+        "B": "RandInt(1, 7)",
+        "C": "RandInt(1, 6)",
+        "D": "RandInt(6, 6)"
+      },
+      "answer": "C",
+      "explanation": "A die has the six equally likely outcomes 1, 2, 3, 4, 5, 6, which is exactly what RandInt(1, 6) gives. RandInt(0, 6) is tempting but has 7 outcomes, including 0.",
+      "steps": [
+        "A fair die has 6 equally likely outcomes: 1, 2, 3, 4, 5 and 6.",
+        "RandInt(1, 6) gives each whole number from 1 to 6 with equal chance, so it matches."
+      ],
+      "mistakes": {
+        "A": "Step 2: RandInt(0, 6) gives 0, 1, …, 6 — that is 7 outcomes, and a die has no 0.",
+        "B": "Step 2: RandInt(1, 7) gives 7 outcomes, including 7, which a die can't show.",
+        "D": "Step 2: RandInt(6, 6) can only give 6 — every \"roll\" would be a six."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "A simulation runs 200 trials and the event happens 46 times. What is the estimated probability of the event?",
+      "options": {
+        "A": "0.23",
+        "B": "0.46",
+        "C": "46",
+        "D": "0.77"
+      },
+      "answer": "A",
+      "explanation": "Relative frequency = 46 ÷ 200 = 0.23. 0.46 is tempting, but that divides by 100 instead of by the 200 trials.",
+      "steps": [
+        "Relative frequency = number of times the event happened ÷ number of trials.",
+        "46 ÷ 200 = 0.23."
+      ],
+      "mistakes": {
+        "B": "Step 2: divide by the number of trials (200), not by 100.",
+        "C": "Step 1: 46 is the count. A probability is a count ÷ the number of trials, so it is between 0 and 1.",
+        "D": "Step 2: 0.77 = 154 ÷ 200 is the relative frequency of the event NOT happening."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "You want to simulate an event with probability 0.4 using random digits from 0 to 9. Which rule works?",
+      "options": {
+        "A": "The digits 0 to 4 mean the event happens.",
+        "B": "Only the digit 4 means the event happens.",
+        "C": "The digits 0 and 4 mean the event happens.",
+        "D": "The digits 0, 1, 2 and 3 mean the event happens."
+      },
+      "answer": "D",
+      "explanation": "0, 1, 2 and 3 are 4 digits out of 10, and 4/10 = 0.4. \"0 to 4\" is tempting, but that is 5 digits, which gives 0.5.",
+      "steps": [
+        "There are 10 equally likely digits, so each has probability 0.1.",
+        "For 0.4 we need 4 \"yes\" digits: 0, 1, 2 and 3 works (4 ÷ 10 = 0.4)."
+      ],
+      "mistakes": {
+        "A": "Step 2: count the digits — 0, 1, 2, 3, 4 is 5 digits, so the probability would be 0.5.",
+        "B": "Step 2: one digit gives probability 1/10 = 0.1, not 0.4.",
+        "C": "Step 2: two digits give probability 2/10 = 0.2. The \"4\" in 0.4 means four digits, not the digit 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "In a simulation, each random digit from 0 to 5 counts as a \"hit\" and 6 to 9 as a \"miss\". The digits are 7 2 9 0 4 4 8 1 6 3 5 2. What is the relative frequency of a hit?",
+      "options": {
+        "A": "8",
+        "B": "2/3",
+        "C": "1/3",
+        "D": "7/12"
+      },
+      "answer": "B",
+      "explanation": "The hits are 2, 0, 4, 4, 1, 3, 5, 2 — 8 out of 12 digits, and 8/12 = 2/3. 7/12 is tempting, but that forgets that 5 is a hit.",
+      "steps": [
+        "Mark each digit from 0 to 5 as a hit: 2, 0, 4, 4, 1, 3, 5, 2 — that is 8 hits.",
+        "There are 12 digits (trials), so the relative frequency is 8/12 = 2/3."
+      ],
+      "mistakes": {
+        "A": "Step 2: 8 is the number of hits. Divide by the 12 trials to get the relative frequency.",
+        "C": "Step 1: 4/12 = 1/3 is the relative frequency of misses (7, 9, 8, 6). Count the hits.",
+        "D": "Step 1: \"0 to 5\" includes 5, so the digit 5 is a hit too."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "An event has probability 0.15. A simulation runs 400 trials. About how many times would you expect the event to happen?",
+      "options": {
+        "A": "60",
+        "B": "15",
+        "C": "340",
+        "D": "27"
+      },
+      "answer": "A",
+      "explanation": "Expected count = trials × probability = 400 × 0.15 = 60. 15 is tempting, but that is the percentage, not a count out of 400.",
+      "steps": [
+        "Expected count = number of trials × probability.",
+        "400 × 0.15 = 60."
+      ],
+      "mistakes": {
+        "B": "Step 2: 15 is the percentage (15 out of every 100). With 400 trials, multiply: 400 × 0.15.",
+        "C": "Step 2: 340 = 400 − 60 is the expected number of times the event does NOT happen.",
+        "D": "Step 2: multiply 400 by 0.15 — don't divide 400 by 15."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "The column graph shows the results of a simulation of 60 rolls of a die. What is the relative frequency of rolling a 5 or a 6?",
+      "options": {
+        "A": "1/6",
+        "B": "20",
+        "C": "1/3",
+        "D": "13/60"
+      },
+      "answer": "C",
+      "explanation": "5 came up 7 times and 6 came up 13 times, so 20 of the 60 rolls were a 5 or a 6: 20/60 = 1/3. 13/60 is tempting, but that only counts the sixes.",
+      "steps": [
+        "Read the graph: 5 came up 7 times and 6 came up 13 times, so 7 + 13 = 20.",
+        "Relative frequency = 20 ÷ 60 = 1/3."
+      ],
+      "mistakes": {
+        "A": "Step 2: 1/6 is a theoretical probability for one number. Use the counts from the graph: 20 ÷ 60.",
+        "B": "Step 2: 20 is the count. Divide by the 60 rolls.",
+        "D": "Step 1: \"a 5 or a 6\" means add the 5s (7) and the 6s (13)."
+      },
+      "diagram": "diagrams/y9/maths/simulating-chance-with-algorithms-q6.svg",
+      "diagram_alt": "A column graph titled 60 simulated rolls of a die. Frequencies: 1 came up 8 times, 2 came up 12 times, 3 came up 9 times, 4 came up 11 times, 5 came up 7 times, 6 came up 13 times."
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "The probability of rain on a day is 0.27. You use two-digit random numbers from 00 to 99. Which rule simulates rain correctly?",
+      "options": {
+        "A": "00 to 27 means rain.",
+        "B": "Only the number 27 means rain.",
+        "C": "27 to 99 means rain.",
+        "D": "00 to 26 means rain."
+      },
+      "answer": "D",
+      "explanation": "00 to 26 is 26 − 0 + 1 = 27 numbers out of 100, so the probability is 0.27. 00 to 27 is tempting, but that is 28 numbers.",
+      "steps": [
+        "There are 100 numbers from 00 to 99, so each has probability 0.01.",
+        "We need 27 \"rain\" numbers. 00 to 26 contains 26 − 0 + 1 = 27 numbers, giving 27/100 = 0.27."
+      ],
+      "mistakes": {
+        "A": "Step 2: count both ends — 00 to 27 is 28 numbers, giving 0.28.",
+        "B": "Step 2: one number gives probability 0.01. You need 27 numbers, not the number 27.",
+        "C": "Step 2: 27 to 99 is 73 numbers, giving 0.73 — that would be the chance of no rain (plus one extra)."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Trace: \"Set count to 0. Repeat 8 times: set a to RandInt(1, 6) and b to RandInt(1, 6); if a + b = 7, add 1 to count. Output count ÷ 8.\" The pairs generated are (3, 4), (6, 1), (2, 2), (5, 3), (4, 3), (6, 6), (1, 5), (2, 5). What is the output?",
+      "options": {
+        "A": "4",
+        "B": "0.5",
+        "C": "1/6",
+        "D": "0.375"
+      },
+      "answer": "B",
+      "explanation": "The sums are 7, 7, 4, 8, 7, 12, 6, 7, so count = 4 and the output is 4 ÷ 8 = 0.5. 0.375 comes from missing one of the pairs that sum to 7.",
+      "steps": [
+        "Add each pair: 7, 7, 4, 8, 7, 12, 6, 7.",
+        "Count the 7s: (3, 4), (6, 1), (4, 3) and (2, 5), so count = 4.",
+        "Output count ÷ 8 = 4 ÷ 8 = 0.5."
+      ],
+      "mistakes": {
+        "A": "Step 3: 4 is the count. The algorithm outputs count ÷ 8.",
+        "C": "Step 3: 1/6 is the theoretical probability of a sum of 7. The question asks what this run of the algorithm outputs.",
+        "D": "Step 2: you missed one pair — check (6, 1) and (2, 5), which both add to 7."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "The flowchart shows a simulation of spinning a spinner with 4 equal sections (numbered 1 to 4) twice, 1000 times. About what output would you expect?",
+      "options": {
+        "A": "About 0.06",
+        "B": "About 0.25",
+        "C": "About 0.5",
+        "D": "About 0.44"
+      },
+      "answer": "A",
+      "explanation": "The count goes up only when both spins are 1, which has probability 1/4 × 1/4 = 1/16 = 0.0625, so the output should be about 0.06. 0.5 comes from adding the probabilities instead of multiplying.",
+      "steps": [
+        "The test \"a = 1 and b = 1\" needs both spins to land on 1.",
+        "P(a = 1) = 1/4 and P(b = 1) = 1/4, and the spins are independent, so P(both) = 1/4 × 1/4 = 1/16.",
+        "1/16 = 0.0625, so count ÷ 1000 should be about 0.06."
+      ],
+      "mistakes": {
+        "B": "Step 2: 1/4 is the chance for one spin only. Both spins must be 1, so multiply 1/4 × 1/4.",
+        "C": "Step 2: for \"and\" with two independent spins, multiply the probabilities — don't add them.",
+        "D": "Step 1: 7/16 ≈ 0.44 is the chance that at least one spin is 1 (\"or\"). The test needs both (\"and\")."
+      },
+      "diagram": "diagrams/y9/maths/simulating-chance-with-algorithms-q9.svg",
+      "diagram_alt": "A flowchart: set count and trials to 0; set a to RandInt(1, 4) and b to RandInt(1, 4); if a = 1 and b = 1, add 1 to count; add 1 to trials; if trials is not 1000, go back; otherwise output count ÷ 1000."
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "An algorithm rolls a fair die again and again until a 6 appears, then outputs how many rolls it took. It is run thousands of times. About what is the average of the outputs?",
+      "options": {
+        "A": "3.5",
+        "B": "1",
+        "C": "6",
+        "D": "36"
+      },
+      "answer": "C",
+      "explanation": "P(six) = 1/6, so in a long run of rolls about 1 roll in every 6 is a six — on average 6 rolls per six. 3.5 is tempting, but that is the average number shown on a die, not the number of rolls.",
+      "steps": [
+        "P(six) = 1/6, so in 600 rolls you expect about 600 × 1/6 = 100 sixes.",
+        "Those 600 rolls are shared out among about 100 sixes, so on average it takes 600 ÷ 100 = 6 rolls to get each six."
+      ],
+      "mistakes": {
+        "A": "Step 1: 3.5 is the average number on the face of a die. The output counts rolls until a six.",
+        "B": "Step 1: you get a six on the first roll only 1/6 of the time. Usually it takes longer.",
+        "D": "36 is the number of outcomes for two dice. Step 2: think of one six in every 6 rolls."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Using a = RandInt(1, 6), which rule simulates a coin that lands heads with probability 2/3?",
+      "options": {
+        "A": "Heads if a is 2 or less.",
+        "B": "Heads if a is less than 4.",
+        "C": "Heads if a is 2 or 3.",
+        "D": "Heads if a is 4 or less."
+      },
+      "answer": "D",
+      "explanation": "\"4 or less\" is 1, 2, 3, 4 — 4 outcomes out of 6, and 4/6 = 2/3. \"Less than 4\" is tempting, but it leaves out 4, giving 3/6 = 1/2.",
+      "steps": [
+        "Each of the 6 outcomes has probability 1/6, so 2/3 = 4/6 needs 4 \"heads\" outcomes.",
+        "\"a is 4 or less\" means 1, 2, 3 or 4 — 4 outcomes, so P(heads) = 4/6 = 2/3."
+      ],
+      "mistakes": {
+        "A": "Step 2: \"2 or less\" is only 1 and 2 — 2 outcomes, giving 2/6 = 1/3.",
+        "B": "Step 2: \"less than 4\" is 1, 2, 3 — it does not include 4, so it gives 3/6 = 1/2.",
+        "C": "Step 2: two outcomes give 2/6 = 1/3. The 2 and 3 in 2/3 are not the outcomes to pick."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "An event has a true probability of 0.2. In a simulation of 2000 trials it happens 380 times. Which statement is correct?",
+      "options": {
+        "A": "The relative frequency is 0.38, which is 20 fewer than expected.",
+        "B": "The relative frequency is 0.19; the expected count was 400, so it happened 20 fewer times than expected.",
+        "C": "The relative frequency is 0.19; it happened 20 more times than expected.",
+        "D": "The simulation must be wrong, because 380 is not exactly 0.2 × 2000."
+      },
+      "answer": "B",
+      "explanation": "380 ÷ 2000 = 0.19, and the expected count is 2000 × 0.2 = 400, so 380 is 20 fewer. Answer D is tempting, but real simulation results always vary a little around the expected count.",
+      "steps": [
+        "Relative frequency = 380 ÷ 2000 = 0.19.",
+        "Expected count = 2000 × 0.2 = 400.",
+        "380 is 400 − 380 = 20 fewer than expected — a normal small variation, and 0.19 is close to 0.2."
+      ],
+      "mistakes": {
+        "A": "Step 1: divide by the 2000 trials, not by 1000: 380 ÷ 2000 = 0.19.",
+        "C": "Step 3: 380 is less than the expected 400, so it is 20 fewer, not 20 more.",
+        "D": "Step 3: results vary from run to run. Being close to 400 (not exactly 400) is normal."
+      }
+    }
+  ]
+}

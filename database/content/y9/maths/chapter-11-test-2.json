@@ -1,0 +1,352 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "unit": "Year 9",
+  "title": "Chapter 11 · Test 2",
+  "kind": "test",
+  "summary": "Chapter 11 test 2: solving equations with algorithms (undoing, guess-check-improve, halving) and simulating chance with random numbers.",
+  "minutes": 25,
+  "body": "Chapter 11 · Test 2 checks the same skills as Test 1 with new questions: undoing operations, sign changes on a graph, guess, check and improve tables, the halving method, and designing and tracing simulations. Allow about 25 minutes, no notes, no calculator unless the question says. Write each step of an algorithm in a small table so you can see every value change.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Which equation can NOT be solved just by undoing operations in reverse order?",
+      "options": {
+        "A": "5x − 2 = 18",
+        "B": "(x + 4) ÷ 3 = 9",
+        "C": "x³ + 2x = 40",
+        "D": "2(x − 1)² = 50"
+      },
+      "answer": "C",
+      "explanation": "In x³ + 2x = 40, x appears twice (in x³ and in 2x), so there is no single chain of steps to reverse — you need a search. 2(x − 1)² = 50 looks harder, but x appears only once, so it can be undone.",
+      "steps": [
+        "Undoing works only when x appears once, so there is one chain of operations to reverse.",
+        "In x³ + 2x = 40, x appears twice, so it can't be solved just by undoing — use a search such as halving."
+      ],
+      "mistakes": {
+        "A": "Step 1: x appears only once here, so you can undo: + 2, then ÷ 5.",
+        "B": "Step 1: x appears only once here, so you can undo: × 3, then − 4.",
+        "D": "Step 1: x appears only once here, so you can undo: ÷ 2, square root, then + 1."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The graph of y = x² − 6 is shown. Between which two whole numbers is the positive solution of x² − 6 = 0?",
+      "options": {
+        "A": "Between 2 and 3",
+        "B": "Between 6 and 7",
+        "C": "Between −3 and −2",
+        "D": "Between 1 and 2"
+      },
+      "answer": "A",
+      "explanation": "The graph crosses the positive x-axis between 2 and 3: f(2) = −2 is negative and f(3) = 3 is positive. Between −3 and −2 is the other, negative, solution.",
+      "steps": [
+        "The solution of x² − 6 = 0 is where the graph crosses the x-axis.",
+        "On the right, the crossing is between 2 and 3: f(2) = 4 − 6 = −2 and f(3) = 9 − 6 = 3 — a sign change."
+      ],
+      "mistakes": {
+        "B": "Step 1: the solution is where the graph crosses the x-axis, not the number 6 from the equation.",
+        "C": "Step 2: that is where the negative solution is. The question asks for the positive one.",
+        "D": "Step 2: check the signs: f(1) = −5 and f(2) = −2 are both negative, so the graph hasn't crossed yet."
+      },
+      "diagram": "diagrams/y9/maths/chapter-11-test-2-q2.svg",
+      "diagram_alt": "A graph of the parabola y = x² − 6 for x from −5 to 5. It crosses the y-axis at −6 and crosses the x-axis once on each side of the y-axis."
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "You want to simulate an event with probability 0.6 using random digits from 0 to 9. Which rule works?",
+      "options": {
+        "A": "The digits 0 to 6 mean the event happens.",
+        "B": "Only the digit 6 means the event happens.",
+        "C": "The digits 6 to 9 mean the event happens.",
+        "D": "The digits 0 to 5 mean the event happens."
+      },
+      "answer": "D",
+      "explanation": "0 to 5 is 6 digits out of 10, giving 0.6. 0 to 6 is tempting, but that is 7 digits.",
+      "steps": [
+        "Each of the 10 digits has probability 0.1, so 0.6 needs 6 digits.",
+        "0, 1, 2, 3, 4, 5 is 6 digits: 6 ÷ 10 = 0.6."
+      ],
+      "mistakes": {
+        "A": "Step 2: 0 to 6 is 7 digits, giving 0.7. Count both ends.",
+        "B": "Step 2: one digit gives 0.1. The 6 in 0.6 means six digits, not the digit 6.",
+        "C": "Step 2: 6, 7, 8, 9 is 4 digits, giving 0.4."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "In a simulation of 250 trials, the event happens 65 times. What is the relative frequency of the event?",
+      "options": {
+        "A": "0.65",
+        "B": "0.26",
+        "C": "0.74",
+        "D": "3.85"
+      },
+      "answer": "B",
+      "explanation": "65 ÷ 250 = 0.26. 0.65 is tempting, but that divides by 100 instead of by the 250 trials.",
+      "steps": [
+        "Relative frequency = count ÷ number of trials.",
+        "65 ÷ 250 = 0.26."
+      ],
+      "mistakes": {
+        "A": "Step 2: divide by the 250 trials, not by 100.",
+        "C": "Step 2: 0.74 = 185 ÷ 250 is the relative frequency of the event NOT happening.",
+        "D": "Step 2: divide the count by the trials (65 ÷ 250), not the trials by the count."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Solve 3(x + 6) = 45 by undoing the operations.",
+      "options": {
+        "A": "x = 13",
+        "B": "x = 9",
+        "C": "x = 21",
+        "D": "x = 129"
+      },
+      "answer": "B",
+      "explanation": "The steps done to x were + 6, then × 3. Undo × 3 first: 45 ÷ 3 = 15, then undo + 6: 15 − 6 = 9. 13 comes from undoing in the wrong order.",
+      "steps": [
+        "The steps done to x: + 6, then × 3.",
+        "Undo × 3 first: 45 ÷ 3 = 15.",
+        "Undo + 6: 15 − 6 = 9. Check: 3 × (9 + 6) = 45 ✓"
+      ],
+      "mistakes": {
+        "A": "Steps 2–3: you subtracted 6 before dividing by 3. Undo the last operation (× 3) first.",
+        "C": "Step 3: the inverse of + 6 is − 6. You added 6 again.",
+        "D": "Step 2: the inverse of × 3 is ÷ 3, not × 3."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Leo solves x² + x = 60 by guess, check and improve. His table: x = 7 gives 56; x = 7.2 gives 59.04; x = 7.3 gives 60.59; x = 8 gives 72. Between which two values is the solution?",
+      "options": {
+        "A": "Between 7.3 and 8",
+        "B": "Between 7 and 7.2",
+        "C": "Between 59.04 and 60.59",
+        "D": "Between 7.2 and 7.3"
+      },
+      "answer": "D",
+      "explanation": "7.2 gives 59.04 (too small) and 7.3 gives 60.59 (too big), so the solution is between 7.2 and 7.3. 59.04 and 60.59 are the outputs, not values of x.",
+      "steps": [
+        "The closest guess that is too small: 7.2 gives 59.04, under 60.",
+        "The closest guess that is too big: 7.3 gives 60.59, over 60.",
+        "So the solution is between 7.2 and 7.3."
+      ],
+      "mistakes": {
+        "A": "Step 2: 7.3 already gives more than 60, so the solution is below 7.3.",
+        "B": "Step 1: 7.2 still gives less than 60, so the solution is above 7.2.",
+        "C": "Step 3: give the x-values (the guesses), not the outputs."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "In a simulation, the digits 0 to 3 mean \"success\" and 4 to 9 mean \"fail\". The 15 digits are 4 0 9 3 3 7 1 8 5 2 6 0 9 4 1. What is the relative frequency of success?",
+      "options": {
+        "A": "7/15",
+        "B": "3/5",
+        "C": "7",
+        "D": "8/15"
+      },
+      "answer": "A",
+      "explanation": "The successes are 0, 3, 3, 1, 2, 0, 1 — 7 out of 15, so 7/15. 3/5 = 9/15 comes from counting the 4s as successes.",
+      "steps": [
+        "Mark the digits 0 to 3: 0, 3, 3, 1, 2, 0, 1 — that is 7 successes.",
+        "Relative frequency = 7 ÷ 15 = 7/15."
+      ],
+      "mistakes": {
+        "B": "Step 1: only 0 to 3 are successes — the two 4s are fails.",
+        "C": "Step 2: 7 is the count of successes. Divide by the 15 trials.",
+        "D": "Step 2: 8/15 is the relative frequency of fails. Count the successes."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "A prize is hidden under 1 in every 8 bottle caps, so P(prize) = 1/8. A simulation opens 400 caps. About how many prizes would you expect?",
+      "options": {
+        "A": "8",
+        "B": "350",
+        "C": "50",
+        "D": "3200"
+      },
+      "answer": "C",
+      "explanation": "Expected count = 400 × 1/8 = 50. 350 is tempting, but that counts the caps with no prize.",
+      "steps": [
+        "Expected count = number of trials × probability.",
+        "400 × 1/8 = 400 ÷ 8 = 50."
+      ],
+      "mistakes": {
+        "A": "Step 2: 8 is the denominator of the probability, not a count out of 400.",
+        "B": "Step 2: 350 = 400 − 50 is the expected number of caps WITHOUT a prize.",
+        "D": "Step 2: multiply 400 by 1/8 (that is, divide by 8) — don't multiply by 8."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "Ana simulates an event with 20 trials and gets a relative frequency of 0.35. What is the best way to get a more reliable estimate of the probability?",
+      "options": {
+        "A": "Run another 20 trials and keep whichever answer is bigger.",
+        "B": "Round 0.35 to 0.4.",
+        "C": "Run many more trials, such as 2000.",
+        "D": "Use fewer trials so the answer is quicker to check."
+      },
+      "answer": "C",
+      "explanation": "With more trials, the relative frequency usually settles close to the true probability. Picking the bigger of two small runs is tempting, but it biases the estimate.",
+      "steps": [
+        "With few trials, the relative frequency can be far from the true probability.",
+        "With many trials it usually settles close to the true probability — so run many more trials."
+      ],
+      "mistakes": {
+        "A": "Choosing the bigger answer adds bias. Step 1: reliability comes from more trials in total.",
+        "B": "Step 1: rounding doesn't add any information — it only makes the estimate less precise.",
+        "D": "Step 2: fewer trials make the relative frequency jump around even more."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for solving equations",
+      "prompt": "Set x to 2. Repeat 2 times: set x to (x + 20 ÷ x) ÷ 2. Output x, rounded to two decimal places. What is the output?",
+      "options": {
+        "A": "6.00",
+        "B": "4.48",
+        "C": "4.47",
+        "D": "4.67"
+      },
+      "answer": "D",
+      "explanation": "x goes 2 → 6 → (6 + 3.333…) ÷ 2 ≈ 4.6667, so the output is 4.67. 4.48 is what you get after an extra, third round.",
+      "steps": [
+        "Round 1: (2 + 20 ÷ 2) ÷ 2 = 12 ÷ 2 = 6.",
+        "Round 2: (6 + 20 ÷ 6) ÷ 2 ≈ (6 + 3.3333) ÷ 2 ≈ 4.6667, which rounds to 4.67."
+      ],
+      "mistakes": {
+        "A": "Step 2: that is the value after one round. The loop repeats 2 times.",
+        "B": "Step 2: that is the value after three rounds. Stop after 2 rounds.",
+        "C": "Step 2: 4.47 is √20, which the algorithm closes in on — but after 2 rounds it has only reached about 4.67."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Algorithms for solving equations",
+      "prompt": "The halving method is used on f(x) = x² − 8, starting with the interval from 2 to 3 (f(2) = −4, f(3) = 1). After three halvings, what is the interval?",
+      "options": {
+        "A": "From 2.75 to 2.875",
+        "B": "From 2.875 to 3",
+        "C": "From 2.75 to 3",
+        "D": "From 2.5 to 2.75"
+      },
+      "answer": "A",
+      "explanation": "f(2.5) = −1.75 → 2.5 to 3; f(2.75) = −0.4375 → 2.75 to 3; f(2.875) ≈ 0.27 → 2.75 to 2.875. 2.5 to 2.75 comes from keeping the wrong half in round 2.",
+      "steps": [
+        "Round 1: f(2.5) = 6.25 − 8 = −1.75, negative, so the interval becomes 2.5 to 3.",
+        "Round 2: f(2.75) = 7.5625 − 8 = −0.4375, negative, so the interval becomes 2.75 to 3.",
+        "Round 3: f(2.875) ≈ 8.2656 − 8 ≈ 0.27, positive, so the interval becomes 2.75 to 2.875."
+      ],
+      "mistakes": {
+        "B": "Step 3: f(2.875) is positive, so it replaces the positive end (3), not the negative end.",
+        "C": "Step 3: that is the interval after only two halvings. Do one more round.",
+        "D": "Step 2: f(2.75) is negative, so it replaces the negative end (2.5). You kept the half with no sign change."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "The flowchart simulates rolling two dice 1000 times. About what output would you expect?",
+      "options": {
+        "A": "About 0.33",
+        "B": "About 0.31",
+        "C": "About 0.03",
+        "D": "About 0.17"
+      },
+      "answer": "B",
+      "explanation": "P(at least one six) = 1 − P(no sixes) = 1 − 5/6 × 5/6 = 1 − 25/36 = 11/36 ≈ 0.31. About 0.33 is tempting, but adding 1/6 + 1/6 counts (6, 6) twice.",
+      "steps": [
+        "The count goes up when a = 6 OR b = 6, so at least one die shows a 6.",
+        "P(no six on either die) = 5/6 × 5/6 = 25/36, so P(at least one six) = 1 − 25/36 = 11/36.",
+        "11/36 ≈ 0.31, so count ÷ 1000 should be about 0.31."
+      ],
+      "mistakes": {
+        "A": "Step 2: adding 1/6 + 1/6 counts the double six twice. Use 1 − P(no six on either die).",
+        "C": "Step 1: 1/36 is the chance that BOTH dice are 6. The test says \"or\", so either die can be 6.",
+        "D": "Step 1: 1/6 is the chance for one die only. The test checks both dice."
+      },
+      "diagram": "diagrams/y9/maths/chapter-11-test-2-q12.svg",
+      "diagram_alt": "A flowchart: set count and trials to 0; set a to RandInt(1, 6) and b to RandInt(1, 6); if a = 6 or b = 6, add 1 to count; add 1 to trials; if trials is not 1000, go back; otherwise output count ÷ 1000."
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "The probability of winning a prize is 3/20. You simulate it with random two-digit numbers from 00 to 99. Which rule is correct?",
+      "options": {
+        "A": "00 to 15 means a win.",
+        "B": "00 to 02 means a win.",
+        "C": "00 to 19 means a win.",
+        "D": "00 to 14 means a win."
+      },
+      "answer": "D",
+      "explanation": "3/20 = 15/100, so we need 15 \"win\" numbers: 00 to 14 is exactly 15. 00 to 15 is tempting, but that is 16 numbers.",
+      "steps": [
+        "Change the probability to hundredths: 3/20 = 15/100 = 0.15.",
+        "00 to 14 contains 14 − 0 + 1 = 15 numbers, giving 15/100 = 3/20."
+      ],
+      "mistakes": {
+        "A": "Step 2: 00 to 15 is 16 numbers, giving 0.16. Count both ends.",
+        "B": "Step 1: the 3 in 3/20 is out of 20, not out of 100. Change 3/20 to 15/100 first.",
+        "C": "Step 1: 20 numbers out of 100 gives 0.2. Change 3/20 into hundredths: 15/100."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Algorithms for solving equations",
+      "prompt": "You want to use the halving method to solve x³ = 4x + 2. Which starting interval is guaranteed to contain a solution?",
+      "options": {
+        "A": "From 2 to 3",
+        "B": "From 0 to 1",
+        "C": "From 1 to 2",
+        "D": "From 3 to 4"
+      },
+      "answer": "A",
+      "explanation": "With f(x) = x³ − 4x − 2: f(2) = −2 and f(3) = 13 have opposite signs, so there is a solution between 2 and 3. In the other intervals both ends have the same sign.",
+      "steps": [
+        "Rearrange to f(x) = x³ − 4x − 2 = 0.",
+        "Work out f: f(0) = −2, f(1) = −5, f(2) = −2, f(3) = 13, f(4) = 46.",
+        "Only 2 to 3 has a sign change (−2 to 13)."
+      ],
+      "mistakes": {
+        "B": "Step 2: f(0) = −2 and f(1) = −5 are both negative — no sign change.",
+        "C": "Step 2: f(1) = −5 and f(2) = −2 are both negative — no sign change.",
+        "D": "Step 2: f(3) = 13 and f(4) = 46 are both positive — no sign change."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Simulating chance with algorithms",
+      "prompt": "An event has a true probability of 0.25. In a simulation of 1200 trials it happens 318 times. Which statement is correct?",
+      "options": {
+        "A": "The relative frequency is 0.318; it happened 18 more times than expected.",
+        "B": "The relative frequency is 0.265; it happened 18 fewer times than expected.",
+        "C": "The relative frequency is 0.265; it happened 18 more times than the expected 300.",
+        "D": "The simulation must be wrong, because 318 is not exactly 300."
+      },
+      "answer": "C",
+      "explanation": "318 ÷ 1200 = 0.265, and the expected count is 1200 × 0.25 = 300, so 318 is 18 more. Answer D is tempting, but results always vary around the expected count.",
+      "steps": [
+        "Relative frequency = 318 ÷ 1200 = 0.265.",
+        "Expected count = 1200 × 0.25 = 300.",
+        "318 − 300 = 18 more than expected — normal variation."
+      ],
+      "mistakes": {
+        "A": "Step 1: divide by the 1200 trials, not by 1000: 318 ÷ 1200 = 0.265.",
+        "B": "Step 3: 318 is more than the expected 300, so it is 18 more.",
+        "D": "Step 3: simulation results always vary a little around the expected count — 318 is close."
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "lesson": "y9/maths/algorithms-for-solving-equations.json",
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Algorithms for solving equations",
+  "icon": "🎯",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Algorithms for solving equations",
+      "sub": "How a computer hunts down an answer",
+      "icon": "🎯",
+      "say": "Some equations you can solve by undoing steps. Others, like x cubed plus x equals fifty, can't be undone. So how does a calculator solve them? It follows an algorithm that closes in on the answer. Let's learn both kinds."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🎯",
+      "everyday": "Higher or lower: each guess cuts the possible numbers in half",
+      "icon2": "🧠",
+      "science": "The halving method cuts the interval holding the solution in half",
+      "breaks": "In the game you can hit the number exactly. An equation's solution is often an endless decimal, so we stop when it's accurate enough.",
+      "say": "Think of the higher or lower guessing game. Guess fifty, hear higher, guess seventy-five. Every guess cuts the possible numbers in half. The halving method does the same with an equation. The difference: the answer is often an endless decimal, so we stop when it's accurate enough."
+    },
+    {
+      "type": "diagram",
+      "heading": "Undo in reverse order",
+      "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-undo.svg",
+      "notes": ["Build: × 3, then + 5", "Undo: − 5 first, then ÷ 3", "x = 7"],
+      "say": "First the top row: start with x, times three, then plus five. That builds three x plus five. Now the bottom row runs backwards from twenty-six: take away five to get twenty-one, then divide by three to get seven. Last on, first off.",
+      "caption": "Start with x, × 3, then + 5. That builds 3x + 5. Now run backwards from 26: − 5 gives 21, then ÷ 3 gives 7. Last on, first off."
+    },
+    {
+      "type": "example",
+      "heading": "Solve (2x − 3) ÷ 5 = 7",
+      "question": "Solve (2x − 3) ÷ 5 = 7 by undoing.",
+      "lines": ["Steps done to x: × 2, − 3, ÷ 5", "Undo ÷ 5: 7 × 5 = 35", "Undo − 3: 35 + 3 = 38", "Undo × 2: 38 ÷ 2 = 19", "x = 19"],
+      "say": "The steps done to x were times two, minus three, divide by five. Undo the last one first: seven times five is thirty-five. Then add three to get thirty-eight. Then divide by two. x equals nineteen.",
+      "caption": "The steps done to x were × 2, − 3, ÷ 5. Undo the last one first: 7 × 5 = 35. Then + 3 gives 38. Then ÷ 2. x = 19."
+    },
+    {
+      "type": "diagram",
+      "heading": "A sign change traps a solution",
+      "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-signchange.svg",
+      "notes": ["f(x) = x³ − 20", "f(2) = −12, f(3) = 7", "The graph crosses between 2 and 3"],
+      "say": "To solve x cubed equals twenty, make one side zero: f of x is x cubed minus twenty. First the curve, then two points. f of two is negative twelve, below the axis. f of three is seven, above it. An unbroken graph must cross the axis in between.",
+      "caption": "To solve x³ = 20, make one side zero: f(x) = x³ − 20. f(2) = −12 is below the axis; f(3) = 7 is above it. An unbroken graph must cross in between."
+    },
+    {
+      "type": "steps",
+      "heading": "The halving method",
+      "steps": ["Find the midpoint m", "Work out f(m)", "Keep the half with a sign change", "Stop when both ends round the same"],
+      "say": "Here's the algorithm. Find the midpoint. Work out f of the midpoint. Keep the half where the sign changes. Repeat until both ends of the interval round to the same answer."
+    },
+    {
+      "type": "diagram",
+      "heading": "Closing in on x³ = 20",
+      "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-intervals.svg",
+      "notes": ["Each bar is half the one before", "Last bar: 2.6875 to 2.71875", "Both round to 2.7"],
+      "say": "Watch the interval shrink. Two to three, then two point five to three, and so on. After five halvings it runs from two point six eight seven five to two point seven one eight seven five. Both ends round to two point seven, so x is about two point seven.",
+      "caption": "Watch the interval shrink: 2 to 3, then 2.5 to 3, and so on. After five halvings it runs from 2.6875 to 2.71875. Both round to 2.7, so x ≈ 2.7."
+    },
+    {
+      "type": "recap",
+      "points": ["x appears once? Undo in reverse order", "Otherwise search: guess, check, improve", "Rearrange to f(x) = 0", "Sign change means a crossing", "Stop when both ends round the same"],
+      "say": "Quick recap. If x appears once, undo the steps in reverse order. If not, search: guess, check and improve, or halve the interval. Make one side zero, look for a sign change, and stop when both ends round to the same answer. Now try the practice questions!"
+    }
+  ]
+}

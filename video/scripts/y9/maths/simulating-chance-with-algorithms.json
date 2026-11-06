@@ -1,0 +1,70 @@
+{
+  "lesson": "y9/maths/simulating-chance-with-algorithms.json",
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Simulating chance with algorithms",
+  "icon": "🎲",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Simulating chance with algorithms",
+      "sub": "Roll a die a thousand times in one second",
+      "icon": "🎲",
+      "say": "How do forecasters and game designers work out chances? They get a computer to act out the situation thousands of times with random numbers, and count what happens. That's a simulation. Let's build one."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🚗",
+      "everyday": "A flight simulator lets pilots fly thousands of times on the ground",
+      "icon2": "🎲",
+      "science": "A simulation acts out a chance experiment thousands of times",
+      "breaks": "A simulation only copies the probabilities. Set them up wrongly and every result is wrong, however many trials you run.",
+      "say": "Think of a flight simulator. Pilots practise thousands of flights without leaving the ground. A chance simulation is the same idea for probability. But it only copies the probabilities, so if you set those up wrongly, every result is wrong."
+    },
+    {
+      "type": "points",
+      "heading": "Match numbers to outcomes",
+      "icon": "🎯",
+      "points": ["Fair die: RandInt(1, 6)", "Probability 1/4: RandInt(1, 4), 1 = yes", "Probability 0.3: digits 0, 1, 2 = yes", "Probability 0.35: 00 to 34 out of 00 to 99", "Check: yes numbers ÷ all numbers"],
+      "say": "First, match random numbers to outcomes. A fair die is RandInt one to six. For a probability of zero point three, use digits zero to nine, with zero, one and two meaning yes. For zero point three five, use zero zero to ninety-nine, with zero zero to thirty-four meaning yes. Always check: yes numbers divided by all numbers.",
+      "caption": "Match random numbers to outcomes. A fair die is RandInt(1, 6). For 0.3, use digits 0–9 with 0, 1, 2 meaning yes. For 0.35, use 00–99 with 00–34 meaning yes. Check: yes numbers ÷ all numbers."
+    },
+    {
+      "type": "diagram",
+      "heading": "Count, loop, test, output",
+      "diagram": "diagrams/y9/maths/simulating-chance-with-algorithms-flowchart.svg",
+      "notes": ["Counter starts at 0", "Roll, test, count", "Output count ÷ trials"],
+      "say": "Here's the algorithm as a flowchart. First the counter is set to zero. Then roll a die. If it's a six, add one to the count. Add one to the trials, and loop until a thousand trials are done. The output, count divided by trials, is the relative frequency."
+    },
+    {
+      "type": "example",
+      "heading": "Free throws: 70% chance",
+      "question": "Digits 0 to 6 = score, 7 to 9 = miss. Digits: 3 8 0 5 9 1 6 2 7 4",
+      "lines": ["0 to 6 is 7 digits out of 10 ✓", "Scores: 3, 0, 5, 1, 6, 2, 4", "7 scores out of 10", "Relative frequency = 0.7"],
+      "say": "A basketballer scores seventy percent of free throws. Zero to six is seven digits out of ten, so the matching is right. Mark the scores: three, zero, five, one, six, two and four. That's seven out of ten, a relative frequency of zero point seven.",
+      "caption": "A basketballer scores 70% of free throws. 0 to 6 is 7 digits out of 10, so the matching is right. Scores: 3, 0, 5, 1, 6, 2, 4. That's 7 out of 10: relative frequency 0.7."
+    },
+    {
+      "type": "diagram",
+      "heading": "More trials, steadier estimate",
+      "diagram": "diagrams/y9/maths/simulating-chance-with-algorithms-longrun.svg",
+      "notes": ["Few trials: jumps around", "Many trials: settles near 1/6"],
+      "say": "This graph shows one run of a thousand rolls. First the axes, then the dashed line at one sixth. With only a few rolls, the relative frequency jumps all over the place. As the rolls pile up, it settles close to one sixth. That's why simulations use thousands of trials.",
+      "caption": "One run of 1000 rolls. With only a few rolls, the relative frequency jumps around. As the rolls pile up, it settles close to 1/6. That's why simulations use thousands of trials."
+    },
+    {
+      "type": "equation",
+      "heading": "Expected count",
+      "equation": "expected = trials × probability",
+      "parts": [["trials", "how many times you run it"], ["probability", "the true chance"]],
+      "say": "To predict a count, multiply. Four hundred days with a rain chance of zero point three five gives about one hundred and forty rainy days. Real runs land near that, not exactly on it.",
+      "caption": "To predict a count, multiply. 400 days × 0.35 = about 140 rainy days. Real runs land near that, not exactly on it."
+    },
+    {
+      "type": "recap",
+      "points": ["Simulation = random numbers acting out chance", "Yes numbers ÷ all numbers = probability", "Count, loop, test, output", "More trials, better estimate", "Expected count = trials × probability"],
+      "say": "Quick recap. A simulation uses random numbers to act out chance. Match numbers so that yes numbers divided by all numbers equals the probability. Count, loop, test, output. More trials give a better estimate, and expected count is trials times probability. Now try the practice questions!"
+    }
+  ]
+}
