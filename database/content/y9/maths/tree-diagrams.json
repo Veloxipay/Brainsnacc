@@ -1,0 +1,285 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "unit": "Year 9",
+  "title": "Tree diagrams",
+  "summary": "Draw tree diagrams for two-step experiments with and without replacement, multiply along branches and add outcomes to find probabilities.",
+  "minutes": 45,
+  "body": "Will it rain on both days of the weekend? What are the chances of picking two winners in a raffle? When a chance experiment has two (or more) steps — especially when the outcomes are not equally likely — a **tree diagram** is the clearest way to see every path and its probability.\n\n## Learning objective\n\nBy the end of this lesson you can draw a tree diagram for a two-step experiment, with and without replacement, and use it to find probabilities by multiplying along branches and adding the outcomes you need.\n\n## Before you start\n\nYou need *Two-step chance experiments* and multiplying fractions from *Multiplying and dividing fractions (Year 7)*.\n\n**Warm-up**\n\n1. Work out 3/5 × 2/4. *(Answer: 6/20 = 3/10)*\n2. P(rain) = 0.3. What is P(no rain)? *(Answer: 1 − 0.3 = 0.7)*\n\n## Think of it like this\n\n### Choosing paths in a maze of forks\n\nImagine walking through a park where each path splits at a fork. At the first fork, 3 out of 5 walkers turn left. At the next fork, half of THOSE walkers turn left again. So the fraction of all walkers who go left–left is 3/5 of 1/2 — you multiply as you walk along. Every walker ends up at exactly one finish point.\n\n*Where the analogy breaks down:* walkers choose their way, but in a probability tree each branch is decided by chance, and the numbers on the branches are probabilities, not counts of people.\n\n## Key ideas\n\n### Drawing a tree diagram\n\n- Each **stage** of the experiment is a set of branches. Start from one point and draw a branch for each outcome of step 1; from the end of each, draw branches for step 2.\n- Write the probability on each branch. The branches coming out of any one point must **add to 1**.\n- Each complete path from start to finish is one **outcome** of the whole experiment.\n\n![A tree diagram for tossing a coin twice: H and T each with probability 1/2, then H and T again, giving outcomes HH, HT, TH, TT each with probability 1/4; HT and TH are highlighted](/diagrams/y9/maths/tree-diagrams-ex1.svg)\n\n### Multiply along, add down\n\n- **Multiply along a path** to get the probability of that outcome (this step happens AND that step happens).\n- **Add the outcomes** you need when an event can happen in more than one way (this path OR that path).\n- All the final outcomes add to 1 — a useful check.\n\n### With and without replacement\n\n**With replacement** (or **independent** steps, like two coin tosses), the second-stage branches are the same as the first. **Without replacement**, the second-stage probabilities change: there is one fewer item, and one fewer of the type already picked.\n\n![A tree diagram for picking two counters without replacement from 3 red and 2 blue: first R 3/5, B 2/5; after R, R 2/4 and B 2/4; after B, R 3/4 and B 1/4; outcomes RR 6/20, RB 6/20, BR 6/20, BB 2/20](/diagrams/y9/maths/tree-diagrams-ex2.svg)\n\n## Worked examples\n\n### Example 1\n\nA coin is tossed twice. Find P(exactly one head).\n\nStep 1: draw the tree (in Key ideas) — each branch is 1/2 because the coin is fair.\nStep 2: multiply along each path — each outcome has probability 1/2 × 1/2 = 1/4.\nStep 3: exactly one head happens on HT or TH, so add: 1/4 + 1/4 = **1/2**.\n\n### Example 2\n\nA bag has 3 red and 2 blue counters. Two are taken out without replacement. Find P(one of each colour).\n\nStep 1: first stage — P(R) = 3/5, P(B) = 2/5.\nStep 2: second stage — after a red there are 4 counters left, 2 red and 2 blue, so 2/4 and 2/4. After a blue there are 3 red and 1 blue left, so 3/4 and 1/4.\nStep 3: multiply along the paths — RB = 3/5 × 2/4 = 6/20; BR = 2/5 × 3/4 = 6/20.\nStep 4: add — P(one of each) = 6/20 + 6/20 = 12/20 = **3/5**.\nCheck: RR + RB + BR + BB = 6/20 + 6/20 + 6/20 + 2/20 = 20/20 = 1 ✓.\n\n### Example 3\n\nThe chance of rain is 0.3 on Saturday and 0.4 on Sunday (independently). Find (a) P(rain on exactly one day) and (b) P(rain on at least one day).\n\n![A tree diagram: Saturday Rain 0.3 or Dry 0.7, then Sunday Rain 0.4 or Dry 0.6 on each; path probabilities 0.12, 0.18, 0.28 and 0.42, with the middle two highlighted](/diagrams/y9/maths/tree-diagrams-ex3.svg)\n\nStep 1: fill in the missing branches — P(dry) = 1 − 0.3 = 0.7 on Saturday and 1 − 0.4 = 0.6 on Sunday.\nStep 2: multiply along each path — Rain–Rain 0.3 × 0.4 = 0.12; Rain–Dry 0.3 × 0.6 = 0.18; Dry–Rain 0.7 × 0.4 = 0.28; Dry–Dry 0.7 × 0.6 = 0.42.\nStep 3: (a) exactly one day — add the two middle paths: 0.18 + 0.28 = **0.46**.\nStep 4: (b) at least one day is everything except Dry–Dry: 1 − 0.42 = **0.58**. Using the complement is quicker than adding three paths.\n\n## Common mistakes\n\n- **Adding along a path instead of multiplying.** Along a path, both things happen, so multiply.\n- **Keeping the same second-stage probabilities without replacement.** Fix: reduce the total by 1, and reduce the count of the colour already taken.\n- **Only using one path when the event can happen two ways.** \"One of each\" means RB OR BR — add both.\n- **Branches that don't add to 1.** Check every fork: the probabilities leaving one point always total 1.\n\n## Tips to remember\n\n- **\"Along — multiply; down — add\"** (made-up memory trick): along a branch is AND, down the list of outcomes is OR.\n- **Every fork adds to 1; every tree adds to 1.**\n- **Without replacement, one less on the bottom** (made-up): the denominator of the second stage is one smaller.\n- **\"At least one\" = 1 − \"none\"**: often the quickest route.\n\n## Key terms\n\n- **Tree diagram** — a diagram of branches showing every outcome of a multi-step experiment and its probability.\n- **Branch** — a line in a tree diagram for one outcome of one stage, labelled with its probability.\n- **Path** — a route from the start to the end of a tree; it represents one outcome of the whole experiment.\n- **Independent events** — events where the result of one does not change the probability of the other.\n- **With replacement** — the first item is returned, so the second stage is the same as the first.\n- **Without replacement** — the first item is kept out, so the second-stage probabilities change.\n- **Complement** — the event \"not A\"; P(not A) = 1 − P(A).\n\n## Summary\n\n- Draw a set of branches for each stage; the branches at each fork add to 1.\n- Multiply along a path to find the probability of that outcome.\n- Add the probabilities of all paths that give the event you want.\n- Without replacement, the second-stage fractions change (one fewer item in the total).\n- Check: all the final outcomes add to 1; use 1 − P(none) for \"at least one\".",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "The tree diagram shows a fair coin tossed twice. What is the probability of getting two tails?",
+      "options": {
+        "A": "1/2",
+        "B": "1/4",
+        "C": "1",
+        "D": "1/3"
+      },
+      "answer": "B",
+      "explanation": "Follow T then T: 1/2 × 1/2 = 1/4. Using just 1/2 forgets that BOTH tosses must be tails.",
+      "steps": [
+        "Find the path T then T.",
+        "Multiply along it: 1/2 × 1/2 = 1/4."
+      ],
+      "mistakes": {
+        "A": "Step 2: 1/2 is just one branch. Two tails means T AND then T: multiply along the path.",
+        "C": "Step 2: along a path you multiply, not add. 1/2 + 1/2 = 1 would mean two tails is certain.",
+        "D": "Step 1: there are 4 equally likely paths (HH, HT, TH, TT), not 3 results."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q1.svg",
+      "diagram_alt": "A tree diagram for a coin tossed twice; every branch is labelled 1/2 and the outcomes are HH, HT, TH and TT"
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "In the tree diagram, a team plays a game and either wins (probability 0.35) or does not win. What probability belongs on the \"not win\" branch marked ?",
+      "options": {
+        "A": "0.35",
+        "B": "0.75",
+        "C": "1.35",
+        "D": "0.65"
+      },
+      "answer": "D",
+      "explanation": "Branches from one point add to 1, so P(not win) = 1 − 0.35 = 0.65. 0.75 is a subtraction slip: 0.35 + 0.75 = 1.1.",
+      "steps": [
+        "The branches leaving one point add to 1.",
+        "P(not win) = 1 − 0.35 = 0.65."
+      ],
+      "mistakes": {
+        "A": "Step 1: both branches don’t have to be equal. The two branches leaving one point must add to 1.",
+        "B": "Step 2: check your subtraction — 0.35 + 0.75 = 1.1, not 1. Work out 1 − 0.35 carefully.",
+        "C": "Step 2: you added 1 and 0.35. A probability can never be more than 1 — subtract instead."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q2.svg",
+      "diagram_alt": "A one-stage tree diagram with two branches: Win labelled 0.35 and Not win labelled with a question mark"
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "On a tree diagram, how do you find the probability of one complete path (for example, red then blue)?",
+      "options": {
+        "A": "Multiply the probabilities along the branches of that path",
+        "B": "Add the probabilities along the branches of that path",
+        "C": "Take the probability on the last branch only",
+        "D": "Average the probabilities on the two branches"
+      },
+      "answer": "A",
+      "explanation": "A path needs every step on it to happen, so you multiply along it (e.g. 3/5 × 2/4). Adding is used to combine DIFFERENT paths, not the branches of one path.",
+      "steps": [
+        "A path = step 1 happens AND step 2 happens.",
+        "For \"and\" along a path, multiply the branch probabilities."
+      ],
+      "mistakes": {
+        "B": "Step 1: a path means the first event AND the second event happen. For \"and\" along a path, multiply.",
+        "C": "Step 1: the last branch only covers the second step. The first step must happen too, so include its branch.",
+        "D": "Step 1: averaging is not a probability rule. Along a path, multiply."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "A bag has 2 green and 3 yellow balls. A ball is taken, its colour noted, and it is put BACK. Then a second ball is taken. Use the tree diagram to find the probability that both balls are green.",
+      "options": {
+        "A": "4/5",
+        "B": "2/5",
+        "C": "4/25",
+        "D": "1/10"
+      },
+      "answer": "C",
+      "explanation": "With replacement the second stage is the same as the first, so P(GG) = 2/5 × 2/5 = 4/25. 1/10 would be the answer without replacement.",
+      "steps": [
+        "Follow the path G then G. With replacement both branches are 2/5.",
+        "Multiply: 2/5 × 2/5 = 4/25."
+      ],
+      "mistakes": {
+        "A": "Step 2: along a path you multiply, not add: 2/5 × 2/5.",
+        "B": "Step 2: 2/5 is only the first pick. Both picks must be green, so multiply by the second branch too.",
+        "D": "Step 1: the ball is put back, so the second pick is still 2 green out of 5 — not 1 out of 4."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q4.svg",
+      "diagram_alt": "A tree diagram with first stage G 2/5 and Y 3/5, and second stage G 2/5 and Y 3/5 on both sets of branches; outcomes GG, GY, YG, YY"
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "A spinner lands on red with probability 0.6 and on white with probability 0.4. It is spun twice. Use the tree diagram to find the probability of exactly one red.",
+      "options": {
+        "A": "0.48",
+        "B": "0.24",
+        "C": "0.36",
+        "D": "0.52"
+      },
+      "answer": "A",
+      "explanation": "Red–white = 0.6 × 0.4 = 0.24 and white–red = 0.4 × 0.6 = 0.24, so P(exactly one red) = 0.48. Stopping at 0.24 misses the second path.",
+      "steps": [
+        "Paths with exactly one red: R then W, and W then R.",
+        "R then W = 0.6 × 0.4 = 0.24. W then R = 0.4 × 0.6 = 0.24.",
+        "Add: 0.24 + 0.24 = 0.48."
+      ],
+      "mistakes": {
+        "B": "Step 3: red-then-white is only one way. White-then-red also gives exactly one red — add both paths.",
+        "C": "Step 2: 0.6 × 0.6 = 0.36 is red BOTH times. Use the paths with one red and one white.",
+        "D": "Step 3: 0.36 + 0.16 = 0.52 is the chance of the SAME colour twice. You want different colours."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q5.svg",
+      "diagram_alt": "A tree diagram with R 0.6 and W 0.4 at each stage; outcomes RR, RW, WR, WW"
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "A bag has 4 red and 3 blue marbles. Two are taken WITHOUT replacement. In the tree diagram, what probability belongs on the branch marked ? (red on the second pick, after red on the first)?",
+      "options": {
+        "A": "4/7",
+        "B": "1/2",
+        "C": "3/7",
+        "D": "2/3"
+      },
+      "answer": "B",
+      "explanation": "After one red is removed, 6 marbles remain and 3 are red, so the branch is 3/6 = 1/2. 4/7 is what it would be WITH replacement.",
+      "steps": [
+        "After a red is taken: 3 red and 3 blue are left (6 marbles).",
+        "P(red second | red first) = 3/6 = 1/2."
+      ],
+      "mistakes": {
+        "A": "Step 1: 4/7 is the first pick. Without replacement, one red marble is already gone.",
+        "C": "Step 2: there are only 6 marbles left after the first pick, so the denominator is 6.",
+        "D": "Step 1: 4/6 forgets that the marble taken was red. Only 3 reds are left."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q6.svg",
+      "diagram_alt": "A tree diagram for taking two marbles without replacement: first R 4/7 and B 3/7; after R, the R branch is marked ? and B is 3/6; after B, R is 4/6 and B is 2/6"
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "A box has 6 chocolates: 2 caramel and 4 mint. Jo eats two, one after the other, chosen at random. What is the probability that both are mint?",
+      "options": {
+        "A": "4/9",
+        "B": "8/15",
+        "C": "2/5",
+        "D": "7/11"
+      },
+      "answer": "C",
+      "explanation": "Along the mint–mint path: 4/6 × 3/5 = 12/30 = 2/5. 4/9 forgets that the first chocolate has been eaten.",
+      "steps": [
+        "First pick: P(mint) = 4/6.",
+        "Second pick (one mint gone, 5 left): P(mint) = 3/5.",
+        "Multiply: 4/6 × 3/5 = 12/30 = 2/5."
+      ],
+      "mistakes": {
+        "A": "Step 2: 4/6 × 4/6 is WITH replacement. After one mint is eaten, there are 3 mints out of 5.",
+        "B": "Step 3: 8/15 is the chance of one of each flavour. Use only the mint-then-mint path.",
+        "D": "Step 3: (4 + 3) ÷ (6 + 5) adds the fractions’ tops and bottoms. Multiply along the path instead."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Each day the probability that Leo’s bus is late is 0.2, independently of other days. Use the tree diagram to find the probability that the bus is late on at least one of two days.",
+      "options": {
+        "A": "0.4",
+        "B": "0.04",
+        "C": "0.32",
+        "D": "0.36"
+      },
+      "answer": "D",
+      "explanation": "P(on time both days) = 0.8 × 0.8 = 0.64, so P(late at least once) = 1 − 0.64 = 0.36. Adding 0.2 + 0.2 counts the late–late path twice.",
+      "steps": [
+        "On time each day: 1 − 0.2 = 0.8.",
+        "P(on time both days) = 0.8 × 0.8 = 0.64.",
+        "P(late at least once) = 1 − 0.64 = 0.36."
+      ],
+      "mistakes": {
+        "A": "Step 1: 0.2 + 0.2 counts \"late both days\" twice. Use 1 − P(on time both days).",
+        "B": "Step 2: 0.2 × 0.2 is late on BOTH days. \"At least one\" includes exactly one day too.",
+        "C": "Step 2: 0.32 is late on exactly one day. \"At least one\" also includes late on both days (0.04)."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q8.svg",
+      "diagram_alt": "A tree diagram for two days: Late 0.2 and On time 0.8 on day 1, then Late 0.2 and On time 0.8 on day 2 after each"
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "In each game a team wins (0.5), draws (0.2) or loses (0.3), independently. The tree diagram shows two games. What is the probability that the team does not lose either game?",
+      "options": {
+        "A": "0.49",
+        "B": "0.7",
+        "C": "0.09",
+        "D": "0.29"
+      },
+      "answer": "A",
+      "explanation": "No loss in a game has probability 0.5 + 0.2 = 0.7, so for both games 0.7 × 0.7 = 0.49 (= WW 0.25 + WD 0.1 + DW 0.1 + DD 0.04). Using only WW and DD misses the mixed paths.",
+      "steps": [
+        "Paths with no L: WW, WD, DW, DD.",
+        "WW = 0.25, WD = 0.1, DW = 0.1, DD = 0.04.",
+        "Add: 0.25 + 0.1 + 0.1 + 0.04 = 0.49 (or 0.7 × 0.7)."
+      ],
+      "mistakes": {
+        "B": "Step 2: 0.7 is \"no loss\" in ONE game. Both games must have no loss, so multiply.",
+        "C": "Step 1: 0.3 × 0.3 is losing BOTH games. You want neither game lost.",
+        "D": "Step 2: you used only WW (0.25) and DD (0.04). WD and DW (0.1 each) also have no loss."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q9.svg",
+      "diagram_alt": "A tree diagram for two games: each game branches into W 0.5, D 0.2 and L 0.3, giving nine outcomes WW, WD, WL, DW, DD, DL, LW, LD, LL"
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "A bag has 10 counters, some red and the rest blue. Two counters are drawn WITH replacement, and P(both red) = 9/25. How many red counters are in the bag?",
+      "options": {
+        "A": "9",
+        "B": "3",
+        "C": "3.6",
+        "D": "6"
+      },
+      "answer": "D",
+      "explanation": "With replacement, P(both red) = P(red)², so P(red) = 3/5 (since 3/5 × 3/5 = 9/25), and 3/5 of 10 = 6. Answering 3 stops at the numerator of 3/5.",
+      "steps": [
+        "With replacement, P(both red) = P(red) × P(red).",
+        "Which fraction times itself is 9/25? 3/5.",
+        "Red counters = 3/5 × 10 = 6. Check: 6/10 × 6/10 = 36/100 = 9/25 ✓."
+      ],
+      "mistakes": {
+        "A": "Step 1: 9/25 is a product of two equal fractions, not the fraction of red counters. Find the fraction that, squared, gives 9/25.",
+        "B": "Step 2: P(red) = 3/5, but that is a fraction of 10 counters: 3/5 × 10.",
+        "C": "Step 1: 9/25 × 10 uses the two-draw probability. Square-root it first to get P(red) for ONE draw."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Two students are chosen at random, one after the other, from 4 boys and 2 girls (no one can be chosen twice). Use the tree diagram to find the probability that at least one girl is chosen.",
+      "options": {
+        "A": "3/5",
+        "B": "2/5",
+        "C": "5/9",
+        "D": "8/15"
+      },
+      "answer": "A",
+      "explanation": "P(no girl) = 4/6 × 3/5 = 2/5, so P(at least one girl) = 1 − 2/5 = 3/5. Check: one girl 8/15 + two girls 1/15 = 9/15 = 3/5. Answering 2/5 forgets to subtract from 1.",
+      "steps": [
+        "Path with no girls: B then B = 4/6 × 3/5 = 12/30 = 2/5.",
+        "P(at least one girl) = 1 − 2/5 = 3/5."
+      ],
+      "mistakes": {
+        "B": "Step 2: 2/5 is the chance of NO girls (BB). Subtract it from 1.",
+        "C": "Step 1: 1 − 4/6 × 4/6 treats the choice as WITH replacement. Use the tree’s second-stage fractions.",
+        "D": "Step 2: 8/15 is exactly one girl. \"At least one\" also includes choosing two girls (1/15)."
+      },
+      "diagram": "diagrams/y9/maths/tree-diagrams-q11.svg",
+      "diagram_alt": "A tree diagram for choosing two students without replacement: first B 4/6 and G 2/6; after B, B 3/5 and G 2/5; after G, B 4/5 and G 1/5; outcomes BB, BG, GB, GG"
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "A fair coin is tossed three times. Imagine extending a tree diagram to a third stage. What is the probability of exactly two heads?",
+      "options": {
+        "A": "1/8",
+        "B": "1/2",
+        "C": "3/8",
+        "D": "1/4"
+      },
+      "answer": "C",
+      "explanation": "There are 2 × 2 × 2 = 8 paths, each 1/2 × 1/2 × 1/2 = 1/8. Exactly two heads: HHT, HTH, THH, so 3/8. 1/8 counts only one of the three paths.",
+      "steps": [
+        "A third stage doubles the paths: 2 × 2 × 2 = 8, each with probability 1/2 × 1/2 × 1/2 = 1/8.",
+        "Paths with exactly two heads: HHT, HTH, THH — 3 paths.",
+        "P(exactly two heads) = 3 × 1/8 = 3/8."
+      ],
+      "mistakes": {
+        "A": "Step 3: HHT is only one path. Two heads can also be HTH or THH — add all three.",
+        "B": "Step 3: 4/8 includes HHH, which has three heads. Count only paths with exactly two.",
+        "D": "Step 1: 0, 1, 2 or 3 heads are not equally likely. Use the 8 equally likely paths."
+      }
+    }
+  ]
+}

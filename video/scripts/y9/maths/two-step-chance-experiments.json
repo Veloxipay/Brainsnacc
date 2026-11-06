@@ -1,0 +1,31 @@
+{
+  "lesson": "y9/maths/two-step-chance-experiments.json",
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Two-step chance experiments",
+  "icon": "🎲",
+  "scenes": [
+    {"type": "title", "heading": "Two-step chance experiments", "sub": "Roll two dice, spin twice, pick two names", "icon": "🎲",
+     "say": "Roll two dice, spin a spinner twice, or pull two names out of a hat. To find the chances, you need to list every outcome without missing any or counting any twice."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "👕", "everyday": "2 hats and 3 T-shirts make 2 × 3 = 6 outfits", "icon2": "🎲", "science": "Step 1 has m outcomes, step 2 has n: m × n outcomes",
+     "breaks": "You choose an outfit on purpose; chance outcomes are random, and only count simply if equally likely.",
+     "say": "Say you have two hats and three T-shirts. Each hat goes with any of the three shirts, so there are two times three, six outfits. Two-step experiments work the same way: every result of step one pairs with every result of step two.",
+     "caption": "Two hats and three T-shirts: each hat goes with any shirt, so 2 × 3 = 6 outfits. Two-step experiments work the same way: every result of step one pairs with every result of step two."},
+    {"type": "diagram", "heading": "A table of outcomes for two dice", "diagram": "diagrams/y9/maths/two-step-chance-experiments-ex2.svg",
+     "notes": ["6 × 6 = 36 equally likely cells", "Sum 7 appears in 6 cells", "P(sum 7) = 6/36 = 1/6"],
+     "say": "Here's a table for two dice. First the first die down the side and the second across the top. Then each cell gets the sum. That's thirty-six equally likely cells. Six of them show seven, so the probability of a sum of seven is six out of thirty-six, which is one sixth."},
+    {"type": "equation", "heading": "Equally likely outcomes", "equation": "P(event) = favourable ÷ total", "parts": [["favourable", "cells where the event happens"], ["total", "all equally likely cells"]],
+     "say": "When the outcomes are equally likely, the probability of an event is the number of favourable outcomes divided by the total number of outcomes. Count cells, never the list of different sums, because sums like two and seven are not equally likely."},
+    {"type": "compare", "heading": "With or without replacement?", "left": {"title": "With replacement", "icon": "🔁", "points": ["Item goes back in", "Same item can be picked twice", "Cards 1–4: 4 × 4 = 16 outcomes"]},
+     "right": {"title": "Without replacement", "icon": "🚫", "points": ["Item stays out", "Cross out the diagonal", "Cards 1–4: 4 × 3 = 12 outcomes"]},
+     "say": "With replacement, the first item goes back, so it could be picked again. Four cards give sixteen outcomes. Without replacement, it stays out, so you cross out the diagonal where the same card is picked twice. That leaves twelve outcomes."},
+    {"type": "diagram", "heading": "Two cards without replacement", "diagram": "diagrams/y9/maths/two-step-chance-experiments-ex3.svg",
+     "notes": ["Diagonal crossed out: 12 outcomes", "Sum of 5 in 4 cells", "P(sum 5) = 4/12 = 1/3"],
+     "say": "Cards one to four, drawn without replacement. First the table, then the diagonal crossed out, leaving twelve cells. A sum of five appears four times, so the probability is four twelfths, which is one third. With replacement it would be four out of sixteen, one quarter."},
+    {"type": "example", "heading": "Coin and spinner", "question": "Toss a coin and spin a 1–4 spinner. Find P(head and an even number).",
+     "lines": ["Outcomes: 2 × 4 = 8", "Favourable: H2, H4", "P = 2/8", "P = 1/4"],
+     "say": "Toss a coin and spin a spinner numbered one to four. There are two times four, eight outcomes. Head with an even number happens twice: H two and H four. So the probability is two eighths, which is one quarter."},
+    {"type": "recap", "points": ["Multiply: m × n outcomes", "Use a list or table of ordered pairs", "P = favourable ÷ total (equally likely)", "Without replacement: cross out the diagonal"],
+     "say": "Quick recap. Multiply to find the number of outcomes. List them as ordered pairs in a table. Probability is favourable over total. And without replacement, cross out the diagonal. Now try the practice questions!"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "lesson": "y9/maths/tree-diagrams.json",
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Tree diagrams",
+  "icon": "🌳",
+  "scenes": [
+    {"type": "title", "heading": "Tree diagrams", "sub": "Every path, every probability, all in one picture", "icon": "🌳",
+     "say": "Will it rain on both days of the weekend? When an experiment has two steps and the chances aren't equal, a tree diagram shows every path and its probability."},
+    {"type": "analogy", "heading": "Think of it like this", "icon": "🚶", "everyday": "Walkers at forks: 3/5 go left, then half of those go left again", "icon2": "🌳", "science": "Multiply along the path: 3/5 × 1/2",
+     "breaks": "Walkers choose their way; on a tree each branch is decided by chance.",
+     "say": "Imagine walkers in a park reaching a fork. Three fifths turn left. At the next fork, half of those turn left again. So the fraction going left, then left, is three fifths of a half. You multiply as you walk along the path."},
+    {"type": "diagram", "heading": "A coin tossed twice", "diagram": "diagrams/y9/maths/tree-diagrams-ex1.svg",
+     "notes": ["Branches at each fork add to 1", "Each path: 1/2 × 1/2 = 1/4", "Exactly one head: HT + TH = 1/2"],
+     "say": "First the two branches for the first toss, heads and tails, each one half. Then two more branches from each. Multiply along each path: a half times a half is a quarter. Exactly one head happens on H T or T H, so add them: one half."},
+    {"type": "steps", "heading": "Multiply along, add down", "steps": ["Draw a branch for each outcome", "Label each branch; forks add to 1", "Multiply along each path", "Add the paths you need"],
+     "say": "Here's the method. Draw a branch for each outcome. Label each branch with its probability, and check each fork adds to one. Multiply along a path for that outcome. Then add the paths that give the event you want."},
+    {"type": "diagram", "heading": "Without replacement: the fractions change", "diagram": "diagrams/y9/maths/tree-diagrams-ex2.svg",
+     "notes": ["3 red, 2 blue: first pick 3/5 and 2/5", "After red: 2/4 and 2/4", "One of each: 6/20 + 6/20 = 3/5"],
+     "say": "A bag has three red and two blue counters, and we take two without putting the first back. The first branches are three fifths and two fifths. After a red, only four are left: two red, two blue. One of each colour is red-blue plus blue-red: six twentieths plus six twentieths, which is three fifths.",
+     "caption": "3 red and 2 blue, two taken without replacement. First branches: 3/5 and 2/5. After a red, 4 are left: 2 red, 2 blue. One of each = RB + BR = 6/20 + 6/20 = 3/5."},
+    {"type": "example", "heading": "Rain at the weekend", "question": "P(rain) is 0.3 on Saturday and 0.4 on Sunday. Find P(rain on at least one day).",
+     "lines": ["P(dry): 0.7 and 0.6", "Dry, Dry = 0.7 × 0.6 = 0.42", "At least one = 1 − 0.42", "= 0.58"],
+     "say": "The chance of rain is zero point three on Saturday and zero point four on Sunday. The dry branches are zero point seven and zero point six. Dry both days is zero point seven times zero point six, which is zero point four two. So rain on at least one day is one minus zero point four two: zero point five eight.",
+     "caption": "Rain: 0.3 on Saturday, 0.4 on Sunday. Dry: 0.7 and 0.6. Dry both days = 0.7 × 0.6 = 0.42. At least one rainy day = 1 − 0.42 = 0.58."},
+    {"type": "recap", "points": ["Branches at each fork add to 1", "Multiply along a path", "Add the paths you need", "Without replacement: one less on the bottom", "At least one = 1 − none"],
+     "say": "Quick recap. Branches at each fork add to one. Multiply along, add down. Without replacement, the second stage has one less on the bottom. And at least one equals one minus none. Now try the practice questions!"}
+  ]
+}
