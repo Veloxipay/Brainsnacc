@@ -1,0 +1,95 @@
+{
+ "lesson": "y10/maths/average-rate-of-change.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Average rate of change",
+ "icon": "🚗",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Average rate of change",
+   "sub": "How fast, on average?",
+   "icon": "🚗",
+   "say": "How fast is a tank draining, or a ball rising? When a graph is curved, the rate keeps changing. Today you will learn to find the average rate of change between two points."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🚗",
+   "everyday": "A road trip: 300 km in 4 hours averages 75 km/h",
+   "icon2": "📈",
+   "science": "Average rate of change = change in y ÷ change in x",
+   "breaks": "Speed is never negative, but a rate of change can be, when a quantity goes down.",
+   "say": "You drive three hundred kilometres in four hours. You stopped for lunch and sped up on the freeway, but your average speed is seventy-five kilometres per hour. An average only cares about where you started and finished. Unlike speed, though, a rate of change can be negative."
+  },
+  {
+   "type": "equation",
+   "heading": "Average rate of change",
+   "equation": "(y₂ − y₁) ÷ (x₂ − x₁)",
+   "parts": [
+    [
+     "y₂ − y₁",
+     "rise: change in y"
+    ],
+    [
+     "x₂ − x₁",
+     "run: change in x"
+    ],
+    [
+     "chord",
+     "line joining the two points"
+    ]
+   ],
+   "say": "The average rate of change is the change in y divided by the change in x: rise over run. It is the gradient of the chord, the straight line joining the two points on the curve.",
+   "caption": "Average rate of change = (y₂ − y₁) ÷ (x₂ − x₁): the gradient of the chord."
+  },
+  {
+   "type": "diagram",
+   "heading": "The chord on y = x²",
+   "diagram": "diagrams/y10/maths/average-rate-of-change-chord.svg",
+   "notes": [
+    "From (1, 1) to (3, 9)",
+    "Rise 8, run 2",
+    "Average rate = 8 ÷ 2 = 4"
+   ],
+   "say": "First the curve y equals x squared. Now the chord from one, one to three, nine. The dashed triangle shows the run of two and the rise of eight. Eight divided by two is four, so the average rate of change is four.",
+   "caption": "Chord from (1, 1) to (3, 9): rise 8, run 2, average rate 4."
+  },
+  {
+   "type": "example",
+   "heading": "A draining tank",
+   "question": "V = 200 L at t = 0 and 150 L at t = 10 min. Find the average rate of change.",
+   "lines": [
+    "Change in V: 150 − 200 = −50",
+    "Change in t: 10 − 0 = 10",
+    "Rate = −50 ÷ 10",
+    "= −5 L/min"
+   ],
+   "say": "The volume changes from two hundred to one hundred and fifty: that is negative fifty litres. The time changes by ten minutes. Negative fifty divided by ten is negative five litres per minute. The negative tells you the tank is emptying.",
+   "caption": "Rate = (150 − 200) ÷ (10 − 0) = −5 L/min."
+  },
+  {
+   "type": "diagram",
+   "heading": "From chord to tangent",
+   "diagram": "diagrams/y10/maths/average-rate-of-change-tangent.svg",
+   "notes": [
+    "Chords from x = 2: 5, 4.1, 4.01 …",
+    "They close in on 4",
+    "Tangent gradient = instantaneous rate"
+   ],
+   "say": "Here is y equals x squared again, with a chord from two, four. As the second point slides closer, the chord gradients go five, four point one, four point zero one. They close in on four, the gradient of the dashed tangent. That is the instantaneous rate of change.",
+   "caption": "Chord gradients 5, 4.1, 4.01 approach 4: the gradient of the tangent at (2, 4)."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Average rate = rise ÷ run",
+    "It is the gradient of the chord",
+    "Units: y-units per x-unit",
+    "Negative means an overall decrease",
+    "Shrink the interval: tangent gradient"
+   ],
+   "say": "To recap: average rate of change is rise over run, the gradient of the chord. Its units are y units per x unit. Negative means an overall decrease. Shrink the interval and you approach the gradient of the tangent. Now try the practice questions!"
+  }
+ ]
+}

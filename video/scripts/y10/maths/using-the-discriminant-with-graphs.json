@@ -1,0 +1,94 @@
+{
+ "lesson": "y10/maths/using-the-discriminant-with-graphs.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Using the discriminant with graphs",
+ "icon": "🎯",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Using the discriminant with graphs",
+   "sub": "One number tells you how many crossings",
+   "icon": "🎯",
+   "say": "Does a parabola cross the x-axis twice, touch it once, or miss it completely? You can find out with one quick calculation: the discriminant."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🚗",
+   "everyday": "A valley dipping below, just touching, or staying above a flat road",
+   "icon2": "📈",
+   "science": "Δ positive: two crossings. Δ = 0: touches. Δ negative: none",
+   "breaks": "Δ is a number worked out from a, b and c. It counts crossings but does not say where they are.",
+   "say": "Picture the parabola as a valley and the x-axis as a flat road. If the valley floor dips below the road, it crosses twice. If it is exactly level, it touches once. If it stays above, they never meet. The discriminant tells you which, without drawing anything."
+  },
+  {
+   "type": "equation",
+   "heading": "The discriminant",
+   "equation": "Δ = b² − 4ac",
+   "parts": [
+    [
+     "Δ positive",
+     "two x-intercepts"
+    ],
+    [
+     "Δ = 0",
+     "touches once"
+    ],
+    [
+     "Δ negative",
+     "no x-intercepts"
+    ]
+   ],
+   "say": "The discriminant, delta, equals b squared minus four a c. It is the part under the square root in the quadratic formula. Positive means two x-intercepts, zero means it touches once, and negative means none.",
+   "caption": "Δ = b² − 4ac. Positive: two. Zero: one. Negative: none."
+  },
+  {
+   "type": "diagram",
+   "heading": "Three discriminants, three pictures",
+   "diagram": "diagrams/y10/maths/using-the-discriminant-with-graphs-three.svg",
+   "notes": [
+    "Δ = 16: crosses twice",
+    "Δ = 0: touches at x = 3",
+    "Δ = −16: misses"
+   ],
+   "say": "Here are three parabolas with the same shape. First the lowest one, with discriminant sixteen: it crosses twice. The middle one has discriminant zero and just touches the axis at three. The top one has discriminant negative sixteen and never meets the axis.",
+   "caption": "y = x² − 6x + 5 (Δ = 16), y = x² − 6x + 9 (Δ = 0), y = x² − 6x + 13 (Δ = −16)."
+  },
+  {
+   "type": "example",
+   "heading": "Line meets parabola",
+   "question": "Show y = 2x − 1 is a tangent to y = x² − 4x + 8.",
+   "lines": [
+    "x² − 4x + 8 = 2x − 1",
+    "x² − 6x + 9 = 0",
+    "Δ = 36 − 36 = 0",
+    "One point: tangent at (3, 5)"
+   ],
+   "say": "Set the rules equal, then move everything to one side: x squared minus six x plus nine equals zero. The discriminant is thirty-six minus thirty-six, which is zero. One meeting point, so the line is a tangent, touching at three, five.",
+   "caption": "x² − 6x + 9 = 0, Δ = 36 − 36 = 0, so one point: (3, 5)."
+  },
+  {
+   "type": "diagram",
+   "heading": "A tangent touches once",
+   "diagram": "diagrams/y10/maths/using-the-discriminant-with-graphs-ex4.svg",
+   "notes": [
+    "Δ = 0 means one meeting point",
+    "The line touches at (3, 5)"
+   ],
+   "say": "Here is the picture. First the parabola, then the straight line. The line just grazes the curve at three, five, without cutting through it. That is what a discriminant of zero looks like.",
+   "caption": "The line y = 2x − 1 touches y = x² − 4x + 8 at (3, 5)."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Δ = b² − 4ac",
+    "Positive two, zero one, negative none",
+    "Line and parabola: set equal, then Δ",
+    "Touching: solve Δ = 0 for the unknown",
+    "Perfect square Δ: it factorises"
+   ],
+   "say": "To recap: delta is b squared minus four a c. Positive two, zero one, negative none. For a line and a parabola, set the rules equal, rearrange, then use delta. To make a graph touch, solve delta equals zero. Now try the practice questions!"
+  }
+ ]
+}
