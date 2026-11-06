@@ -1,0 +1,97 @@
+{
+  "lesson": "y9/maths/factorising-by-common-factors.json",
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Factorising by common factors",
+  "icon": "🎁",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Factorising by common factors",
+      "sub": "Expanding in reverse",
+      "icon": "🎁",
+      "say": "You know how to expand brackets. Now you will go backwards: start with the terms and put the brackets back in. This is called factorising."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🎁",
+      "everyday": "12 lollies and 18 stickers into 6 equal party bags",
+      "icon2": "🧮",
+      "science": "12 + 18 = 6(2 + 3)",
+      "breaks": "Party bags need whole numbers, but in algebra the factor can contain letters and even a minus sign.",
+      "say": "Imagine packing twelve lollies and eighteen stickers into identical party bags. The most bags you can make is six, with two lollies and three stickers in each. Twelve plus eighteen equals six lots of two plus three. The number outside is the highest common factor."
+    },
+    {
+      "type": "diagram",
+      "heading": "A rectangle view",
+      "diagram": "diagrams/y9/maths/factorising-by-common-factors-model.svg",
+      "notes": [
+        "Height 3x, areas 3x² and 12x",
+        "Widths x and 4",
+        "3x² + 12x = 3x(x + 4)"
+      ],
+      "say": "Here is a rectangle with height three x. It is drawn in two parts, with areas three x squared and twelve x. Divide each area by the height, and the widths are x and four. So three x squared plus twelve x equals three x, times x plus four.",
+      "caption": "A rectangle with height 3x, in two parts with areas 3x² and 12x. Divide each area by the height: the widths are x and 4. So 3x² + 12x = 3x(x + 4)."
+    },
+    {
+      "type": "steps",
+      "heading": "How to factorise",
+      "steps": [
+        "Find the HCF of the numbers",
+        "Add any letters in every term",
+        "Divide each term by the HCF",
+        "Expand to check"
+      ],
+      "say": "Here are the steps. Find the highest common factor of the numbers. Add any letters that are in every term. Divide each term by that factor to fill the bracket. Then expand to check."
+    },
+    {
+      "type": "example",
+      "heading": "Worked example",
+      "question": "Factorise fully 8a²b − 12ab².",
+      "lines": [
+        "HCF of 8 and 12 is 4",
+        "Both terms share a and b: 4ab",
+        "8a²b ÷ 4ab = 2a, 12ab² ÷ 4ab = 3b",
+        "= 4ab(2a − 3b)"
+      ],
+      "say": "Factorise eight a squared b minus twelve a b squared. The highest common factor of eight and twelve is four. Both terms share an a and a b, so take out four a b. Dividing gives two a and three b. The answer is four a b, times two a minus three b.",
+      "caption": "Factorise 8a²b − 12ab². The HCF of 8 and 12 is 4. Both terms share a and b, so take out 4ab. Dividing gives 2a and 3b. Answer: 4ab(2a − 3b)."
+    },
+    {
+      "type": "compare",
+      "heading": "Negative factors and brackets",
+      "left": {
+        "title": "Negative factor",
+        "icon": "➖",
+        "points": [
+          "−5x² − 15x",
+          "Take out −5x",
+          "Signs inside flip",
+          "= −5x(x + 3)"
+        ]
+      },
+      "right": {
+        "title": "Common bracket",
+        "icon": "📦",
+        "points": [
+          "3(y − 4) + y(y − 4)",
+          "Both share (y − 4)",
+          "Take the bracket out",
+          "= (y − 4)(3 + y)"
+        ]
+      },
+      "say": "Two special cases. If the first term is negative, take out a negative factor, and every sign inside flips. And the common factor can be a whole bracket: if both parts contain y minus four, take that bracket out."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Factorising is the reverse of expanding",
+        "Take out the HCF: numbers and letters",
+        "Factorise fully: nothing common left",
+        "Negative factor: flip the signs inside"
+      ],
+      "say": "Quick recap. Factorising is expanding in reverse. Take out the highest common factor, numbers and letters. Make sure nothing common is left in the bracket, and expand to check. Now try the practice questions!"
+    }
+  ]
+}
