@@ -2,9 +2,14 @@
 @section('title', $subject->name.' course map')
 
 @section('content')
+    {{-- The student's next lesson across the whole course: the page jumps to it on open, so nobody has to scroll on a phone --}}
+    @php($nextLesson = $units->flatMap(fn ($u) => $u->modules)->flatMap(fn ($m) => $m->lessons)->first(fn ($l) => $l->isPublished() && ! $done->contains($l->id)))
     <header>
         <p class="small muted" style="margin:0 0 4px">{{ $level?->name }}</p>
         <h1 style="margin:0"><span class="nav-dot" style="background:{{ $subject->color }};width:14px;height:14px"></span> {{ $subject->name }} course map</h1>
+        @if ($nextLesson)
+            <a class="btn" href="#next-lesson" style="margin-top:12px">Up next: {{ $nextLesson->title }} ↓</a>
+        @endif
     </header>
 
     @forelse ($units as $unit)
@@ -36,7 +41,7 @@
                             @endif
                             @php($isDone = $done->contains($lesson->id))
                             @php($isCurrent = $lesson->id === $currentId)
-                            <li class="{{ $isDone ? 'done' : ($isCurrent ? 'current' : '') }}">
+                            <li class="{{ $isDone ? 'done' : ($isCurrent ? 'current' : '') }}" @if ($lesson->id === $nextLesson?->id) id="next-lesson" style="scroll-margin-top:24px" @endif>
                                 @if ($isDone)
                                     <span class="dot done" aria-label="Done">✓</span>
                                 @else
@@ -55,4 +60,15 @@
             <p class="muted" style="margin:0">No {{ $subject->name }} units at this level yet.</p>
         </section>
     @endforelse
+
+    <script>
+        // Open the course map at the student's next lesson instead of the top (unless the link already points somewhere on the page).
+        (function () {
+            var next = document.getElementById('next-lesson');
+            if (!next || location.hash) return;
+            if (next.getBoundingClientRect().top > window.innerHeight * 0.6) {
+                next.scrollIntoView({ block: 'center' });
+            }
+        })();
+    </script>
 @endsection
