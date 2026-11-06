@@ -1,0 +1,94 @@
+{
+ "lesson": "y10/maths/counting-techniques.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Counting techniques",
+ "icon": "🔢",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Counting techniques",
+   "sub": "Count thousands of options without listing them",
+   "icon": "🔢",
+   "say": "How many four-digit PINs are there? Ten thousand. Nobody wants to list them all. Counting techniques find the number of possibilities quickly, and that makes probability much easier."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "👕",
+   "everyday": "3 shirts and 4 pants: each shirt goes with 4 pants, so 12 outfits",
+   "icon2": "🔢",
+   "science": "Multiplication principle: m ways then n ways gives m × n",
+   "breaks": "Dressing order doesn't matter. In counting, sometimes order matters (1st, 2nd) and sometimes it doesn't (a team).",
+   "say": "You have three shirts and four pairs of pants. Each shirt can go with any of the four pants, so that's four plus four plus four, which is three times four: twelve outfits. Add shoes and you multiply again."
+  },
+  {
+   "type": "diagram",
+   "heading": "Each branch splits the same way",
+   "diagram": "diagrams/y10/maths/counting-techniques-menu.svg",
+   "notes": [
+    "3 mains × 2 drinks = 6 meals",
+    "Add 4 desserts: 6 × 4 = 24"
+   ],
+   "say": "First the three mains: pasta, pizza and salad. Then each main splits into two drinks. That gives six end points, three times two. Add four desserts and every meal splits four more ways: twenty-four."
+  },
+  {
+   "type": "diagram",
+   "heading": "Boxes: count down when no repeats",
+   "diagram": "diagrams/y10/maths/counting-techniques-slots.svg",
+   "notes": [
+    "8 choices, then 7, then 6",
+    "8 × 7 × 6 = 336"
+   ],
+   "say": "Eight club members elect a president, a vice-president and a secretary. Draw a box for each role. Eight choices for president, then seven left, then six. Multiply: three hundred and thirty-six ways."
+  },
+  {
+   "type": "compare",
+   "heading": "Does order matter?",
+   "left": {
+    "title": "Arrangement",
+    "icon": "🥇",
+    "points": [
+     "Order matters: 1st, 2nd, 3rd",
+     "Just multiply the boxes",
+     "5 books on a shelf: 5! = 120"
+    ]
+   },
+   "right": {
+    "title": "Selection",
+    "icon": "🤝",
+    "points": [
+     "Order doesn't matter: a team",
+     "Divide out the orders",
+     "Pairs from 5: 20 ÷ 2 = 10"
+    ]
+   },
+   "say": "Ask: does swapping change it? If yes, it's an arrangement, like first, second and third. Five books on a shelf can be arranged in five factorial, a hundred and twenty ways. If no, it's a selection, like a team. Pairs from five people: twenty ordered picks, divided by two, is ten.",
+   "caption": "Does swapping change it? If yes, it's an arrangement: 5 books on a shelf in 5! = 120 ways. If no, it's a selection: pairs from 5 people = 20 ÷ 2 = 10."
+  },
+  {
+   "type": "example",
+   "heading": "PIN with no repeated digits",
+   "question": "A 4-digit PIN (digits 0–9) is chosen at random. Find P(no digit repeated).",
+   "lines": [
+    "Total = 10⁴ = 10 000",
+    "No repeats = 10 × 9 × 8 × 7",
+    "= 5040",
+    "P = 5040 ÷ 10 000 = 0.504"
+   ],
+   "say": "A four-digit PIN is chosen at random. In total there are ten to the power four, ten thousand PINs. With no repeats it's ten times nine times eight times seven, which is five thousand and forty. So the probability is zero point five zero four.",
+   "caption": "Total = 10⁴ = 10 000 PINs. No repeats: 10 × 9 × 8 × 7 = 5040. P = 5040 ÷ 10 000 = 0.504."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "And then → multiply",
+    "No repeats: count down",
+    "n! arranges n different items",
+    "Order doesn't matter → divide",
+    "P = ways wanted ÷ total ways"
+   ],
+   "say": "Quick recap. And then means multiply. With no repeats, count down. n factorial arranges n different items. If order doesn't matter, divide out the orders. And probability is ways wanted over total ways. Now try the practice questions!"
+  }
+ ]
+}

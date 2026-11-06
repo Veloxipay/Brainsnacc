@@ -1,0 +1,99 @@
+{
+ "lesson": "y10/maths/conditional-probability.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Conditional probability",
+ "icon": "🔍",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Conditional probability",
+   "sub": "How new information changes the odds",
+   "icon": "🔍",
+   "say": "What is the chance a random person plays professional basketball? Tiny. But what if you are told they are over two metres tall? Knowing something new changes the probability. That is conditional probability."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "📱",
+   "everyday": "Tick the size M filter: 80 shirts show, 20 are red, so 20/80",
+   "icon2": "🔍",
+   "science": "P(A | B): shrink to B, then count A inside it",
+   "breaks": "A filter just hides items. In probability the condition is something already known, and you divide by the new total.",
+   "say": "Think of an online shop. You tick the filter size M, and now only eighty shirts show. If twenty of them are red, the chance a shirt you can see is red is twenty out of eighty. The filter shrank the set, so you divide by the new, smaller total."
+  },
+  {
+   "type": "equation",
+   "heading": "Both over given",
+   "equation": "P(A | B) = P(A ∩ B) ÷ P(B)",
+   "parts": [
+    [
+     "|",
+     "given that"
+    ],
+    [
+     "P(A ∩ B)",
+     "both happen"
+    ],
+    [
+     "P(B)",
+     "the given event"
+    ]
+   ],
+   "say": "The rule is: the probability of A given B equals the probability of A and B, divided by the probability of B. Both, over the given. The bar means given that."
+  },
+  {
+   "type": "diagram",
+   "heading": "Given Year 10: use only that row",
+   "diagram": "diagrams/y10/maths/conditional-probability-ex1.svg",
+   "notes": [
+    "P(walks | Year 10) = 21/40",
+    "P(Year 10 | walks) = 21/35 = 3/5"
+   ],
+   "say": "Here is a table of eighty students. We are told the student is in Year 10, so shade just that row: forty students. Twenty-one of them walk, so the probability is twenty-one fortieths. But given the student walks, use the walk column: twenty-one out of thirty-five, which is three fifths. Same top, different bottom.",
+   "caption": "We are told the student is in Year 10, so shade that row: 40 students. 21 walk, so P = 21/40. But given the student walks, use the Walk column: 21/35 = 3/5. Same top, different bottom."
+  },
+  {
+   "type": "diagram",
+   "heading": "The sum is 8: was it a double?",
+   "diagram": "diagrams/y10/maths/conditional-probability-ex4.svg",
+   "notes": [
+    "Only 5 cells are possible",
+    "One double, 4 + 4",
+    "P = 1/5"
+   ],
+   "say": "Two dice are rolled, and you are told the sum is eight. First the grid, then shade the five cells that make eight. That is the new sample space. Only four and four is a double, so the probability is one fifth."
+  },
+  {
+   "type": "compare",
+   "heading": "Don't swap the order",
+   "left": {
+    "title": "P(A | B)",
+    "icon": "🅱️",
+    "points": [
+     "Given B",
+     "Divide by P(B)"
+    ]
+   },
+   "right": {
+    "title": "P(B | A)",
+    "icon": "🅰️",
+    "points": [
+     "Given A",
+     "Divide by P(A)"
+    ]
+   },
+   "say": "Watch the order. For A given B, you divide by the probability of B. For B given A, you divide by the probability of A. The top stays the same; only the bottom changes."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "The bar | means given that",
+    "P(A | B) = P(A ∩ B) ÷ P(B)",
+    "Shrink to the condition, then count",
+    "P(A | B) is not P(B | A)"
+   ],
+   "say": "Quick recap. The bar means given that. Divide both by the given. Shrink to the condition, then count inside it. And A given B is not the same as B given A. Now try the practice questions!"
+  }
+ ]
+}

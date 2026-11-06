@@ -1,0 +1,288 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Conditional probability",
+ "summary": "Find P(A | B), the probability of A given B, from two-way tables, Venn diagrams, outcome grids and the formula P(A ∩ B) ÷ P(B).",
+ "minutes": 45,
+ "body": "Probabilities change when you learn something new. The chance that a random person is a professional basketballer is tiny — but if you are told the person is 2.1 m tall, the chance is much bigger. **Conditional probability** is the probability of an event *given* that you already know another event has happened. Doctors use it to read test results, and insurers use it to set prices.\n\n## Learning objective\n\nBy the end of this lesson you can find conditional probabilities P(A | B) from two-way tables, Venn diagrams, lists of outcomes and the formula P(A | B) = P(A ∩ B) ÷ P(B).\n\n## Before you start\n\nYou need *Venn diagrams and two-way tables* (the previous lesson), including the notation A ∩ B, and dividing decimals.\n\n**Warm-up**\n\n1. Simplify 21/35. *(Answer: 3/5)*\n2. Work out 0.24 ÷ 0.6. *(Answer: 0.4)*\n\n## Think of it like this\n\n### Using a filter in an online shop\n\nYou open a clothing website with 500 shirts and tick the filter \"size M\". Now only 80 shirts are shown. If 20 of those are red, then out of the shirts you can see, 20/80 are red. The filter shrank the set you are choosing from, and you divide by the new, smaller total.\n\n*Where the analogy breaks down:* a filter just hides items. In probability, the condition is information about something that has already happened, and the outcomes inside it must still be equally likely (or you must use probabilities, not counts).\n\n## Key ideas\n\n### What \"given\" means\n\nP(A | B) is read \"the probability of A **given** B\". The bar | means \"given that\". Because we know B has happened, the only outcomes still possible are the ones in B. This smaller set is the **reduced sample space**.\n\n### From a two-way table\n\nFind the row or column for the condition, and divide by **its** total — not the grand total.\n\n![A two-way table of 80 students by year level and travel: Year 9 walk 14, bus 26, total 40; Year 10 walk 21, bus 19, total 40; totals walk 35, bus 45, 80. The Year 10 row is shaded](/diagrams/y10/maths/conditional-probability-ex1.svg)\n\nGiven the student is in Year 10 (shaded row), P(walks | Year 10) = 21/40.\n\n### The formula\n\nP(A | B) = P(A ∩ B) ÷ P(B)\n\n\"Both, divided by the given.\" It works with counts too: P(A | B) = n(A ∩ B) ÷ n(B).\n\n### Order matters\n\nP(A | B) and P(B | A) are usually different, because you divide by different totals. P(walks | Year 10) = 21/40, but P(Year 10 | walks) = 21/35 = 3/5.\n\n### Multiplication rule\n\nRearranging the formula: P(A ∩ B) = P(B) × P(A | B). For example, if P(rain) = 0.3 and P(late | rain) = 0.6, then P(rain and late) = 0.3 × 0.6 = 0.18. This is exactly what you do along the branches of a tree diagram.\n\n## Worked examples\n\n### Example 1\n\nUse the walk/bus table above. A student is chosen at random. Find P(walks | Year 10) and P(Year 10 | walks).\n\nStep 1: given Year 10, look only at the Year 10 row: 40 students — the reduced sample space.\nStep 2: 21 of them walk, so P(walks | Year 10) = 21/40.\nStep 3: given walks, look only at the Walk column: 35 students — a different reduced sample space.\nStep 4: 21 of them are in Year 10, so P(Year 10 | walks) = 21/35 = 3/5.\nCheck: the numerators match (both use the 21 in the overlap cell); only the totals differ ✓\n\n### Example 2\n\nUse the Venn diagram (ξ = 50). Find P(A | B) and P(B | A).\n\n![A Venn diagram with ξ = 50: A only 10, both 5, B only 15, and 20 outside both circles](/diagrams/y10/maths/conditional-probability-ex2.svg)\n\nStep 1: n(B) = 5 + 15 = 20 — everything inside circle B.\nStep 2: P(A | B) = n(A ∩ B) ÷ n(B) = 5/20 = 1/4 — both, divided by the given.\nStep 3: n(A) = 10 + 5 = 15, so P(B | A) = 5/15 = 1/3.\nCheck: the 20 outside both circles are never used — they are not in A or B ✓\n\n### Example 3\n\nP(A) = 0.6 and P(A ∩ B) = 0.24. Find P(B | A).\n\nStep 1: write the formula with A as the given event: P(B | A) = P(A ∩ B) ÷ P(A).\nStep 2: P(B | A) = 0.24 ÷ 0.6 = 0.4.\nCheck: 0.6 × 0.4 = 0.24 ✓ (multiplication rule)\n\n### Example 4\n\nTwo dice are rolled. You are told the sum is 8. What is the probability that a double was rolled?\n\n![A 6 by 6 grid of sums of two dice with the five cells showing 8 shaded](/diagrams/y10/maths/conditional-probability-ex4.svg)\n\nStep 1: the reduced sample space is the 5 cells with sum 8: (2,6), (3,5), (4,4), (5,3), (6,2) — the condition.\nStep 2: only (4,4) is a double — 1 cell.\nStep 3: P(double | sum is 8) = 1/5.\nCheck: without the condition P(double) = 6/36 = 1/6, so knowing the sum changed the probability ✓\n\n## Common mistakes\n\n- **Dividing by the grand total.** That gives P(A ∩ B), not P(A | B). Fix: divide by the total of the GIVEN group.\n- **Swapping the order.** P(A | B) is not P(B | A). Fix: the event after the bar is the one you divide by.\n- **Multiplying instead of dividing.** P(A ∩ B) × P(B) is meaningless here. Fix: \"both ÷ given\".\n- **Using the whole grid after a condition.** Once you know the sum is 8, only those 5 cells are possible. Fix: shade the condition first and count only inside it.\n\n## Tips to remember\n\n- **\"Both over given\"** (a made-up memory trick): P(A | B) = P(A ∩ B) ÷ P(B).\n- **The bar means \"given that\"** — read it out loud as \"given\".\n- **Shrink, then count.** Shade or circle the condition; that is your new total.\n- **Tables:** given a row → divide by the row total; given a column → divide by the column total.\n- **Swap test:** if you swap A and B, only the bottom number changes.\n\n## Key terms\n\n- **Conditional probability** — the probability of an event when you know another event has happened.\n- **P(A | B)** — the probability of A given B.\n- **Reduced sample space** — the outcomes still possible once the condition is known.\n- **Intersection (A ∩ B)** — outcomes in both A and B; the top of the fraction.\n- **Multiplication rule** — P(A ∩ B) = P(B) × P(A | B).\n\n## Summary\n\n- P(A | B) means the probability of A given that B has happened.\n- P(A | B) = P(A ∩ B) ÷ P(B): both, divided by the given.\n- In a table, divide by the row or column total of the condition.\n- P(A | B) and P(B | A) usually differ — the denominators are different.\n- P(A ∩ B) = P(B) × P(A | B), which is how tree diagrams work.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The two-way table shows 70 students by year level and whether they play sport. A Year 8 student is chosen at random. What is the probability that they play sport?",
+   "options": {
+    "A": "3/8",
+    "B": "3/14",
+    "C": "5/11",
+    "D": "33/70"
+   },
+   "answer": "A",
+   "explanation": "Given Year 8, use only the Year 8 row: 15 of its 40 students play sport, so P = 15/40 = 3/8. 3/14 = 15/70 divides by everyone, but we know the student is in Year 8.",
+   "steps": [
+    "We know the student is in Year 8, so use only the Year 8 row: 40 students.",
+    "15 of them play sport.",
+    "P(sport | Year 8) = 15/40 = 3/8."
+   ],
+   "mistakes": {
+    "B": "Step 1: 15/70 divides by all 70 students. The condition \"Year 8\" shrinks the total to the Year 8 row.",
+    "C": "Step 1: 15/33 divides by the sport column — that is P(Year 8 | sport). The given group is Year 8.",
+    "D": "Step 2: 33/70 is everyone who plays sport, from both years. Use only the Year 8 row."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q1.svg",
+   "diagram_alt": "A two-way table with columns Sport, No sport, Total and rows Year 7 (18, 12, 30), Year 8 (15, 25, 40) and Total (33, 37, 70)"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Use the Venn diagram (ξ = 25). Find P(A | B).",
+   "options": {
+    "A": "4/25",
+    "B": "2/5",
+    "C": "2/7",
+    "D": "5/7"
+   },
+   "answer": "C",
+   "explanation": "Given B, use only circle B: 4 + 10 = 14 outcomes, and 4 are also in A. So P(A | B) = 4/14 = 2/7. 2/5 = 4/10 divides by circle A, which is P(B | A).",
+   "steps": [
+    "Given B: the reduced sample space is circle B, 4 + 10 = 14.",
+    "In A as well: the overlap, 4.",
+    "P(A | B) = 4/14 = 2/7."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4/25 is P(A ∩ B). Given B, divide by the outcomes in B only.",
+    "B": "Step 1: 4/10 divides by circle A, which gives P(B | A). Divide by circle B.",
+    "D": "Step 2: 10/14 counts \"B only\" — those are NOT in A. Count the overlap."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q2.svg",
+   "diagram_alt": "A Venn diagram with ξ = 25: A only 6, both 4, B only 10, and 5 outside both circles"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "P(A ∩ B) = 0.12 and P(B) = 0.4. Find P(A | B).",
+   "options": {
+    "A": "0.048",
+    "B": "0.28",
+    "C": "3.33",
+    "D": "0.3"
+   },
+   "answer": "D",
+   "explanation": "P(A | B) = P(A ∩ B) ÷ P(B) = 0.12 ÷ 0.4 = 0.3. 0.048 comes from multiplying instead of dividing.",
+   "steps": [
+    "Use P(A | B) = P(A ∩ B) ÷ P(B).",
+    "0.12 ÷ 0.4 = 0.3."
+   ],
+   "mistakes": {
+    "A": "Step 2: you multiplied 0.12 × 0.4. The formula divides \"both\" by \"given\".",
+    "B": "Step 2: you subtracted 0.4 − 0.12. Divide instead.",
+    "C": "Step 2: you divided 0.4 by 0.12 — upside down. A probability can never be more than 1."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Two fair dice are rolled; the diagram shows every sum. You are told that at least one die shows a 6. What is the probability that the sum is 10 or more?",
+   "options": {
+    "A": "1/6",
+    "B": "5/11",
+    "C": "5/36",
+    "D": "5/12"
+   },
+   "answer": "B",
+   "explanation": "At least one 6 leaves 11 cells (the 6 row and 6 column share the cell 6 + 6). Of these, 4+6, 5+6, 6+6, 6+5 and 6+4 give 10 or more: 5 cells, so P = 5/11. 1/6 = 6/36 ignores the condition.",
+   "steps": [
+    "Reduced sample space: cells with at least one 6. Row 6 has 6 cells and column 6 has 6, but (6, 6) is shared: 11 cells.",
+    "Sum 10 or more among them: (4,6), (5,6), (6,6), (6,4), (6,5) — 5 cells.",
+    "P = 5/11."
+   ],
+   "mistakes": {
+    "A": "Step 1: 6/36 is P(sum 10 or more) for all rolls. You were told at least one die is a 6 — count only those cells.",
+    "C": "Step 1: 5/36 divides by all 36 cells, which gives \"6 AND sum 10 or more\". Divide by the cells with a 6.",
+    "D": "Step 1: you counted (6, 6) twice, giving 12 cells. It is one cell."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q4.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the sum of the two values"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The two-way table shows 120 café customers by drink and how they paid. A tea drinker is chosen at random. What is the probability that they paid cash?",
+   "options": {
+    "A": "11/24",
+    "B": "11/20",
+    "C": "11/60",
+    "D": "2/5"
+   },
+   "answer": "A",
+   "explanation": "Given tea, use the Tea column: 22 of its 48 customers paid cash, so P = 22/48 = 11/24. 11/20 = 22/40 divides by the Cash row, which is P(tea | cash).",
+   "steps": [
+    "Given tea: use only the Tea column, 48 customers.",
+    "22 of them paid cash.",
+    "P(cash | tea) = 22/48 = 11/24."
+   ],
+   "mistakes": {
+    "B": "Step 1: 22/40 divides by the Cash row — that is P(tea | cash). The given group is tea drinkers.",
+    "C": "Step 1: 22/120 divides by everyone. The condition shrinks the total to the tea drinkers.",
+    "D": "Step 2: 48/120 = 2/5 is P(tea). You need the cash payers within the Tea column."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q5.svg",
+   "diagram_alt": "A two-way table with columns Coffee, Tea, Total and rows Card (54, 26, 80), Cash (18, 22, 40) and Total (72, 48, 120)"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In the Venn diagram the numbers are probabilities. Find P(B | A).",
+   "options": {
+    "A": "0.3",
+    "B": "0.15",
+    "C": "0.6",
+    "D": "0.375"
+   },
+   "answer": "D",
+   "explanation": "P(A) = 0.25 + 0.15 = 0.4, so P(B | A) = 0.15 ÷ 0.4 = 0.375. 0.3 = 0.15 ÷ 0.5 divides by P(B), which gives P(A | B).",
+   "steps": [
+    "P(A) = A only + both = 0.25 + 0.15 = 0.4.",
+    "P(B | A) = P(A ∩ B) ÷ P(A).",
+    "0.15 ÷ 0.4 = 0.375."
+   ],
+   "mistakes": {
+    "A": "Step 2: 0.15 ÷ 0.5 divides by P(B) and gives P(A | B). The given event is A.",
+    "B": "Step 3: 0.15 is P(A ∩ B). Divide it by P(A).",
+    "C": "Step 1: you divided by \"A only\" (0.25). P(A) includes the overlap too."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q6.svg",
+   "diagram_alt": "A Venn diagram of probabilities: A only 0.25, both 0.15, B only 0.35, and 0.25 outside both circles"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "In a class of 30, 18 students study French, 12 study Japanese and 5 study both. A student who studies Japanese is chosen at random. What is the probability that they also study French?",
+   "options": {
+    "A": "5/18",
+    "B": "1/6",
+    "C": "5/12",
+    "D": "7/12"
+   },
+   "answer": "C",
+   "explanation": "Given Japanese, the reduced sample space is the 12 Japanese students; 5 of them also study French, so P = 5/12. 5/18 divides by the French students instead.",
+   "steps": [
+    "Given Japanese: only the 12 Japanese students count.",
+    "5 of them study French too (the \"both\" group).",
+    "P(French | Japanese) = 5/12."
+   ],
+   "mistakes": {
+    "A": "Step 1: 5/18 divides by the French students — that is P(Japanese | French).",
+    "B": "Step 1: 5/30 divides by the whole class. The condition shrinks it to the Japanese students.",
+    "D": "Step 2: 7/12 counts Japanese students who do NOT study French (12 − 5 = 7)."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The probability of rain on Saturday is 0.35. If it rains, a game is cancelled with probability 0.8. If it does not rain, the game is cancelled with probability 0.05. Find the probability that the game is cancelled.",
+   "options": {
+    "A": "0.85",
+    "B": "0.3125",
+    "C": "0.28",
+    "D": "0.33"
+   },
+   "answer": "B",
+   "explanation": "Cancelled happens in two ways: rain and cancelled = 0.35 × 0.8 = 0.28, and no rain and cancelled = 0.65 × 0.05 = 0.0325. Total 0.3125. 0.28 forgets the no-rain cancellations.",
+   "steps": [
+    "P(rain and cancelled) = 0.35 × 0.8 = 0.28 (multiplication rule).",
+    "P(no rain and cancelled) = 0.65 × 0.05 = 0.0325.",
+    "P(cancelled) = 0.28 + 0.0325 = 0.3125."
+   ],
+   "mistakes": {
+    "A": "Step 1: 0.8 + 0.05 adds two conditional probabilities. Each must first be multiplied by the chance of its condition.",
+    "C": "Step 3: 0.28 is only the rainy-day cancellations. Add the dry-day ones too.",
+    "D": "Step 2: you added 0.05 without multiplying it by P(no rain) = 0.65."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "P(A) = 0.5, P(B) = 0.4 and P(A ∪ B) = 0.7. Find P(A | B).",
+   "options": {
+    "A": "0.5",
+    "B": "0.4",
+    "C": "0.2",
+    "D": "about 0.29"
+   },
+   "answer": "A",
+   "explanation": "P(A ∩ B) = 0.5 + 0.4 − 0.7 = 0.2, so P(A | B) = 0.2 ÷ 0.4 = 0.5. 0.4 = 0.2 ÷ 0.5 divides by P(A) and gives P(B | A).",
+   "steps": [
+    "Addition rule: P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 0.5 + 0.4 − 0.7 = 0.2.",
+    "P(A | B) = P(A ∩ B) ÷ P(B).",
+    "0.2 ÷ 0.4 = 0.5."
+   ],
+   "mistakes": {
+    "B": "Step 3: 0.2 ÷ 0.5 divides by P(A), which is P(B | A). The given event is B.",
+    "C": "Step 2: 0.2 is P(A ∩ B). You still need to divide by P(B).",
+    "D": "Step 3: 0.2 ÷ 0.7 divides by P(A ∪ B). Divide by the given event, P(B)."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Two fair dice are rolled and the numbers are multiplied, as shown in the diagram. Given that the product is 12, what is the probability that one of the dice shows a 3?",
+   "options": {
+    "A": "1/18",
+    "B": "11/36",
+    "C": "1/4",
+    "D": "1/2"
+   },
+   "answer": "D",
+   "explanation": "Product 12 happens in 4 cells: (2,6), (3,4), (4,3), (6,2). Two of these contain a 3, so P = 2/4 = 1/2. 1/18 = 2/36 divides by all 36 cells instead of the 4 allowed ones.",
+   "steps": [
+    "Reduced sample space: the cells showing 12 — (2,6), (3,4), (4,3), (6,2), so 4 cells.",
+    "Cells with a 3: (3,4) and (4,3) — 2 cells.",
+    "P = 2/4 = 1/2."
+   ],
+   "mistakes": {
+    "A": "Step 1: 2/36 divides by all cells. Given the product is 12, only 4 cells are possible.",
+    "B": "Step 1: 11/36 is P(at least one 3) with no condition. Use only the cells showing 12.",
+    "C": "Step 2: you counted (3,4) but not (4,3). They are different cells."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q10.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the product of the two values"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "At a school, 60% of students catch a bus. Of the bus catchers, 25% are in Year 10; of the others, 40% are in Year 10 (see the tree diagram). A Year 10 student is chosen at random. What is the probability that they catch a bus?",
+   "options": {
+    "A": "0.25",
+    "B": "15/31",
+    "C": "0.15",
+    "D": "0.6"
+   },
+   "answer": "B",
+   "explanation": "P(bus and Y10) = 0.6 × 0.25 = 0.15 and P(no bus and Y10) = 0.4 × 0.4 = 0.16, so P(Y10) = 0.31 and P(bus | Y10) = 0.15 ÷ 0.31 = 15/31. 0.25 is P(Y10 | bus) — the condition the wrong way round.",
+   "steps": [
+    "P(bus and Year 10) = 0.6 × 0.25 = 0.15.",
+    "P(Year 10) = 0.15 + 0.4 × 0.4 = 0.15 + 0.16 = 0.31.",
+    "P(bus | Year 10) = 0.15 ÷ 0.31 = 15/31."
+   ],
+   "mistakes": {
+    "A": "Step 3: 0.25 is P(Year 10 | bus). Here the given event is Year 10, so divide by P(Year 10).",
+    "C": "Step 3: 0.15 is P(bus AND Year 10). Divide it by P(Year 10).",
+    "D": "Step 3: 0.6 ignores the information that the student is in Year 10."
+   },
+   "diagram": "diagrams/y10/maths/conditional-probability-q11.svg",
+   "diagram_alt": "A tree diagram: first branches Bus 0.6 and No bus 0.4; after Bus, Year 10 0.25 and Not Y10 0.75; after No bus, Year 10 0.4 and Not Y10 0.6"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "P(A | B) = 0.6, P(B | A) = 0.3 and P(A ∩ B) = 0.12. Find P(A) and P(B).",
+   "options": {
+    "A": "P(A) = 0.2, P(B) = 0.4",
+    "B": "P(A) = 0.6, P(B) = 0.3",
+    "C": "P(A) = 0.4, P(B) = 0.2",
+    "D": "P(A) = 0.072, P(B) = 0.036"
+   },
+   "answer": "C",
+   "explanation": "P(B | A) = P(A ∩ B) ÷ P(A), so P(A) = 0.12 ÷ 0.3 = 0.4. P(A | B) = P(A ∩ B) ÷ P(B), so P(B) = 0.12 ÷ 0.6 = 0.2. Swapping them is the most common slip.",
+   "steps": [
+    "P(B | A) = P(A ∩ B) ÷ P(A), so P(A) = P(A ∩ B) ÷ P(B | A).",
+    "P(A) = 0.12 ÷ 0.3 = 0.4.",
+    "Similarly P(B) = 0.12 ÷ P(A | B) = 0.12 ÷ 0.6 = 0.2."
+   ],
+   "mistakes": {
+    "A": "Step 1: you swapped them. In P(B | A) the given event A is on the bottom, so it is P(A) that comes from 0.3.",
+    "B": "Step 1: conditional probabilities are not the same as P(A) and P(B). Rearrange the formula.",
+    "D": "Step 2: you multiplied 0.12 by the conditional probabilities. Rearranging the formula means dividing."
+   }
+  }
+ ]
+}

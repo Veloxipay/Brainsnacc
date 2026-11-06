@@ -1,0 +1,369 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 8 · Test 1",
+ "kind": "test",
+ "summary": "Chapter 8 test 1: 15 questions on probability, Venn diagrams, two-way tables, conditional and independent events, tree diagrams and counting.",
+ "minutes": 25,
+ "body": "This test covers all of Chapter 8: probability review, Venn diagrams and two-way tables, conditional probability, independent events, tree diagrams with and without replacement, and counting techniques. It has 15 multiple-choice questions, from easy to challenge. Allow about 25 minutes, no notes, no calculator unless the question says. Draw a quick tree, table or set of boxes on scrap paper when it helps, and check that every probability you find is between 0 and 1.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Probability review",
+   "prompt": "A bag holds 7 red, 5 green and 8 black jellybeans. One is taken at random. What is the probability that it is NOT black?",
+   "options": {
+    "A": "3/5",
+    "B": "2/5",
+    "C": "2/3",
+    "D": "3/2"
+   },
+   "answer": "A",
+   "explanation": "There are 20 jellybeans and 12 are not black, so P = 12/20 = 3/5.",
+   "steps": [
+    "Total: 7 + 5 + 8 = 20.",
+    "Not black: 20 − 8 = 12.",
+    "P(not black) = 12/20 = 3/5."
+   ],
+   "mistakes": {
+    "B": "Step 3: 2/5 is the probability that it IS black. Use the complement.",
+    "C": "Step 2: you counted colours (2 of 3 colours). Count the items, not the colours.",
+    "D": "Step 3: you divided by the 8 black jellybeans. A probability is out of the total, 20."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Venn diagrams and two-way tables",
+   "prompt": "The Venn diagram shows 25 people and whether they chose Bus and/or Train. One person is picked at random. Find P(Bus ∪ Train).",
+   "options": {
+    "A": "4/25",
+    "B": "19/25",
+    "C": "3/5",
+    "D": "13/25"
+   },
+   "answer": "B",
+   "explanation": "Bus ∪ Train is everything inside the circles: 9 + 4 + 6 = 19, so P = 19/25.",
+   "steps": [
+    "∪ means \"or\": every region inside either circle.",
+    "9 + 4 + 6 = 19 people.",
+    "P = 19/25."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4 is the overlap, Bus ∩ Train. ∪ means everything inside either circle.",
+    "C": "Step 2: you left out the overlap. People in both circles are in the union too.",
+    "D": "Step 2: 13 is the whole Bus circle. Add the \"Train only\" region as well."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q2.svg",
+   "diagram_alt": "A Venn diagram with ξ = 25: Bus only 9, both 4, Train only 6, and 6 outside both circles"
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Independent events",
+   "prompt": "The probability that a train is on time is 0.9 and, independently, the probability that a bus is on time is 0.7. Find the probability that both are on time.",
+   "options": {
+    "A": "1.6",
+    "B": "0.9",
+    "C": "0.63",
+    "D": "0.7"
+   },
+   "answer": "C",
+   "explanation": "The events are independent, so multiply: 0.9 × 0.7 = 0.63. Adding the probabilities is the common slip.",
+   "steps": [
+    "The two events don't affect each other: independent.",
+    "P(both) = 0.9 × 0.7 = 0.63."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added the probabilities. For \"and\" with independent events, multiply — a probability can't be more than 1.",
+    "B": "Step 2: that is only the first event. Both must happen, so multiply by the second probability.",
+    "D": "Step 2: that is only the second event. Both must happen, so multiply by the first probability."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Counting techniques",
+   "prompt": "A school uniform is made of a shirt (3 styles), a jumper (2 styles) and pants (4 styles), as shown by the boxes. How many different uniforms are possible?",
+   "options": {
+    "A": "9",
+    "B": "6",
+    "C": "10",
+    "D": "24"
+   },
+   "answer": "D",
+   "explanation": "Multiplication principle: 3 × 2 × 4 = 24. Adding gives far too few.",
+   "steps": [
+    "Boxes: Shirt 3, Jumper 2, Pants 4.",
+    "Multiply: 3 × 2 × 4 = 24."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added the choices. Each choice goes with every other choice — multiply.",
+    "B": "Step 2: you forgot the third choice (Pants). Multiply all three boxes.",
+    "C": "Step 2: you added the pants choices at the end. Every box multiplies."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q4.svg",
+   "diagram_alt": "Three boxes marked ? for the number of choices, labelled Shirt, Jumper and Pants, with multiplication signs between them"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Probability review",
+   "prompt": "Two fair dice are rolled and the numbers added; the diagram shows every sum. What is the probability that the sum is 6?",
+   "options": {
+    "A": "5/36",
+    "B": "1/12",
+    "C": "1/11",
+    "D": "5/11"
+   },
+   "answer": "A",
+   "explanation": "5 of the 36 equally likely cells fit (1+5, 2+4, 3+3, 4+2, 5+1), so P = 5/36 = 5/36. The 11 sums are not equally likely.",
+   "steps": [
+    "There are 36 equally likely cells.",
+    "Count the cells: 1+5, 2+4, 3+3, 4+2, 5+1 — 5 cells.",
+    "P = 5/36."
+   ],
+   "mistakes": {
+    "B": "Step 2: you counted each pair once (e.g. only one of 1 + 5 and 5 + 1). Every cell is a different outcome — count all 5.",
+    "C": "Step 1: the 11 sums are not equally likely. Use the 36 cells.",
+    "D": "Step 1: you put 5 cells over 11 sums. The total is the 36 equally likely cells."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q5.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the sum of the two values"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Venn diagrams and two-way tables",
+   "prompt": "The two-way table has some blank cells. Complete it, then find the probability that a randomly chosen person from all 80 is in the \"Year 10\" row and the \"Home\" column (marked ?).",
+   "options": {
+    "A": "23/35",
+    "B": "23/80",
+    "C": "3/20",
+    "D": "5/8"
+   },
+   "answer": "B",
+   "explanation": "Year 10 / Canteen = 30 − 18 = 12, so the ? cell = 35 − 12 = 23 and P = 23/80 = 23/80.",
+   "steps": [
+    "Canteen column: Year 10 cell = 30 − 18 = 12.",
+    "Year 10 row: ? = 35 − 12 = 23.",
+    "Divide by the grand total: P = 23/80."
+   ],
+   "mistakes": {
+    "A": "Step 3: you divided by the Year 10 row total. The person is chosen from all 80.",
+    "C": "Step 2: 12 is the Year 10 / Canteen cell. Go on to the Home column.",
+    "D": "Step 2: 50 is the whole Home column. You need the Year 10 row only."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q6.svg",
+   "diagram_alt": "A two-way table with columns Canteen, Home, Total and rows Year 9, Year 10, Total. Year 9: Canteen 18, Total 45. Year 10: Home marked ?, Total 35. Total row: Canteen 30, grand total 80. Other cells blank"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Conditional probability",
+   "prompt": "Use the two-way table. A person in the \"Senior\" row is chosen at random. What is the probability that they are in the \"Car\" column?",
+   "options": {
+    "A": "1/4",
+    "B": "5/11",
+    "C": "1/2",
+    "D": "11/20"
+   },
+   "answer": "C",
+   "explanation": "Given Senior, use only that row: 20 of its 40 are Car, so P = 1/2. Dividing by the grand total ignores the condition.",
+   "steps": [
+    "Given \"Senior\": use only that row, 40 people.",
+    "20 of them are \"Car\".",
+    "P = 20/40 = 1/2."
+   ],
+   "mistakes": {
+    "A": "Step 1: you divided by all 80. Given \"Senior\", divide by that row's total.",
+    "B": "Step 1: you divided by the Car column — that is P(Senior | Car). The given group is the Senior row.",
+    "D": "Step 2: 44/80 ignores the condition. Use only the Senior row."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q7.svg",
+   "diagram_alt": "A two-way table with columns Bus, Car, Total and rows Junior (16, 24, 40), Senior (20, 20, 40) and Total (36, 44, 80)"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Tree diagrams with and without replacement",
+   "prompt": "A raffle has 10 tickets left: 6 belong to Year 9 students and 4 to Year 10 students. Two tickets are drawn without replacement. Find the probability that both belong to Year 10 students.",
+   "options": {
+    "A": "4/25",
+    "B": "3/25",
+    "C": "11/15",
+    "D": "2/15"
+   },
+   "answer": "D",
+   "explanation": "Without replacement: 4/10 × 3/9 = 2/15. Using 4/10 twice forgets that the first one is not put back.",
+   "steps": [
+    "First pick: 4/10.",
+    "Second pick: 9 left, 3 of the right type: 3/9.",
+    "Multiply: 4/10 × 3/9 = 2/15."
+   ],
+   "mistakes": {
+    "A": "Step 2: 4/10 again is WITH replacement. One has gone, so use 3/9.",
+    "B": "Step 2: you changed the top but not the bottom. Only 9 are left.",
+    "C": "Step 3: you added the branches. Along a path, multiply."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Counting techniques",
+   "prompt": "Six photos are placed in a row, and the class photo must go first. How many different orders are possible?",
+   "options": {
+    "A": "120",
+    "B": "720",
+    "C": "600",
+    "D": "5"
+   },
+   "answer": "A",
+   "explanation": "Fix the restricted item (1 way), then arrange the other 5: 5! = 120. 6! ignores the rule.",
+   "steps": [
+    "Fill the restricted position first: 1 way.",
+    "Arrange the other 5 items: 5! = 120.",
+    "Total = 1 × 120 = 120."
+   ],
+   "mistakes": {
+    "B": "Step 1: 6! counts every order. The fixed item has only 1 place.",
+    "C": "Step 2: you subtracted from the total, which counts the orders that break the rule.",
+    "D": "Step 2: 5 items are left, but they can be arranged in many orders — use a factorial."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Venn diagrams and two-way tables",
+   "prompt": "Of 50 students, 28 play a sport, 20 play a musical instrument and 10 do neither. One student is chosen at random. What is the probability that they play a sport AND an instrument?",
+   "options": {
+    "A": "1/5",
+    "B": "4/25",
+    "C": "4/5",
+    "D": "24/25"
+   },
+   "answer": "B",
+   "explanation": "50 − 10 = 40 are in at least one group, but 28 + 20 = 48, so 48 − 40 = 8 are counted twice: they are in both. P = 4/25.",
+   "steps": [
+    "In at least one group: 50 − 10 = 40.",
+    "28 + 20 = 48 counts the \"both\" people twice.",
+    "Both = 48 − 40 = 8, so P = 8/50 = 4/25."
+   ],
+   "mistakes": {
+    "A": "Step 1: 10 is the number in neither group. Use it to find the overlap.",
+    "C": "Step 3: 40/50 is P(at least one). \"Both\" is only the overlap.",
+    "D": "Step 2: 28 + 20 counts the \"both\" people twice — compare it with 40."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Conditional probability",
+   "prompt": "P(A) = 0.6, P(B) = 0.5 and P(A ∪ B) = 0.8. Find P(A | B).",
+   "options": {
+    "A": "0.5",
+    "B": "0.3",
+    "C": "0.6",
+    "D": "0.375"
+   },
+   "answer": "C",
+   "explanation": "P(A ∩ B) = 0.6 + 0.5 − 0.8 = 0.3, so P(A | B) = 0.3 ÷ 0.5 = 0.6.",
+   "steps": [
+    "Addition rule: P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 0.3.",
+    "P(A | B) = P(A ∩ B) ÷ P(B).",
+    "0.3 ÷ 0.5 = 0.6."
+   ],
+   "mistakes": {
+    "A": "Step 3: dividing by P(A) gives P(B | A). The given event is B.",
+    "B": "Step 2: that is P(A ∩ B). Divide it by P(B).",
+    "D": "Step 3: you divided by P(A ∪ B). Divide by the given event, P(B)."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Tree diagrams with and without replacement",
+   "prompt": "Zoe sits two tests. P(passes test 1) = 0.7. If she passes test 1, P(passes test 2) = 0.8; if she fails test 1, P(passes test 2) = 0.5 (see the tree diagram). Find the probability that she passes exactly one test.",
+   "options": {
+    "A": "0.14",
+    "B": "0.56",
+    "C": "0.85",
+    "D": "0.29"
+   },
+   "answer": "D",
+   "explanation": "Exactly one: 0.7 × 0.2 + 0.3 × 0.5 = 0.14 + 0.15 = 0.29.",
+   "steps": [
+    "Exactly one happens on two paths: Pass then Fail, or Fail then Pass.",
+    "0.7 × 0.2 = 0.14 and 0.3 × 0.5 = 0.15.",
+    "Add: 0.29."
+   ],
+   "mistakes": {
+    "A": "Step 3: that is only one path. The other order also gives exactly one — add both paths.",
+    "B": "Step 1: that path has two successes. You need exactly one.",
+    "C": "Step 1: 1 − P(none) is \"at least one\", which includes two successes."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q12.svg",
+   "diagram_alt": "A tree diagram: first Pass 0.7 and Fail 0.3; after Pass, Pass 0.8 and Fail 0.2; after Fail, Pass 0.5 and Fail 0.5"
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Independent events",
+   "prompt": "A house has 3 smoke alarms. Each one detects smoke with probability 0.7, independently. Find the probability that at least one alarm detects the smoke.",
+   "options": {
+    "A": "0.973",
+    "B": "0.343",
+    "C": "0.027",
+    "D": "2.1"
+   },
+   "answer": "A",
+   "explanation": "P(none) = 0.3³ = 0.027, so P(at least one) = 1 − 0.027 = 0.973.",
+   "steps": [
+    "P(one fails) = 1 − 0.7 = 0.3.",
+    "P(all fail) = 0.3 × 0.3 × 0.3 = 0.027 (independent, so multiply).",
+    "P(at least one) = 1 − 0.027 = 0.973."
+   ],
+   "mistakes": {
+    "B": "Step 2: that is the chance they ALL succeed. \"At least one\" is 1 − P(none).",
+    "C": "Step 3: that is P(none). Subtract it from 1.",
+    "D": "Step 2: you added the probabilities. Use 1 − P(none) for \"at least one\"."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Conditional probability",
+   "prompt": "Sam drives to work with probability 0.7, otherwise he catches the bus. If he drives, P(late) = 0.1; if he catches the bus, P(late) = 0.3 (see the tree diagram). Sam is late one day. What is the probability that he drove?",
+   "options": {
+    "A": "0.1",
+    "B": "7/16",
+    "C": "0.07",
+    "D": "9/16"
+   },
+   "answer": "B",
+   "explanation": "P(Late) = 0.7 × 0.1 + 0.3 × 0.3 = 0.16. P(Drive and Late) = 0.07. So P(Drive | Late) = 0.07 ÷ 0.16 = 7/16.",
+   "steps": [
+    "P(Drive and Late) = 0.7 × 0.1 = 0.07.",
+    "P(Late) = 0.07 + 0.3 × 0.3 = 0.16.",
+    "P(Drive | Late) = 0.07 ÷ 0.16 = 7/16."
+   ],
+   "mistakes": {
+    "A": "Step 3: 0.1 is P(Late | Drive), the condition the wrong way round. Here Late is given.",
+    "C": "Step 3: 0.07 is P(Drive and Late). Divide it by P(Late).",
+    "D": "Step 3: that is P(Bus | Late), the other branch. Use the Drive path on top."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-1-q14.svg",
+   "diagram_alt": "A tree diagram: first Drive 0.7 and Bus 0.3; after Drive, Late 0.1 and On time 0.9; after Bus, Late 0.3 and On time 0.7"
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Counting techniques",
+   "prompt": "Two students are chosen at random from a group of 6 to give a speech. What is the probability that Ava and Leo are the two chosen?",
+   "options": {
+    "A": "1/30",
+    "B": "1/3",
+    "C": "1/15",
+    "D": "1/36"
+   },
+   "answer": "C",
+   "explanation": "Number of possible pairs = 6 × 5 ÷ 2 = 15, and only one of them is the pair wanted, so P = 1/15.",
+   "steps": [
+    "Ordered picks: 6 × 5 = 30.",
+    "Each pair is counted twice (in two orders), so there are 30 ÷ 2 = 15 pairs.",
+    "Only one pair is the one wanted: P = 1/15."
+   ],
+   "mistakes": {
+    "A": "Step 2: 6 × 5 counts ordered picks, but the pair can be picked in 2 orders. Divide by 2 first.",
+    "B": "Step 1: 2/6 is the chance that ONE particular person is chosen. Both must be chosen.",
+    "D": "Step 1: 6 × 6 lets the same person be picked twice. Count pairs of different people."
+   }
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "lesson": "y10/maths/independent-events.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Independent events",
+ "icon": "🪙",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Independent events",
+   "sub": "When one event can't change the other",
+   "icon": "🪙",
+   "say": "Does your last coin toss change the next one? No. The coin has no memory. Events like this are independent, and that lets you multiply their probabilities."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🪙",
+   "everyday": "A coin tossed in Perth can't change a coin tossed in Melbourne",
+   "icon2": "✖️",
+   "science": "Independent: P(A ∩ B) = P(A) × P(B)",
+   "breaks": "Real events that seem separate are often linked, like rain and traffic. Check with numbers before assuming.",
+   "say": "A friend in Perth tosses a coin while you toss one in Melbourne. Nothing in Perth can change your coin. So the chance of two heads is just a half of a half, one quarter."
+  },
+  {
+   "type": "equation",
+   "heading": "The test for independence",
+   "equation": "P(A ∩ B) = P(A) × P(B)",
+   "parts": [
+    [
+     "P(A | B) = P(A)",
+     "knowing B changes nothing"
+    ],
+    [
+     "true",
+     "independent"
+    ],
+    [
+     "false",
+     "dependent"
+    ]
+   ],
+   "say": "A and B are independent if knowing B doesn't change the chance of A. That gives the test: the probability of A and B equals the probability of A times the probability of B. If it's true, they're independent. If not, they're dependent."
+  },
+  {
+   "type": "diagram",
+   "heading": "Testing a Venn diagram",
+   "diagram": "diagrams/y10/maths/independent-events-ex2.svg",
+   "notes": [
+    "P(A) = 0.2 + 0.2 = 0.4",
+    "P(B) = 0.2 + 0.3 = 0.5",
+    "0.4 × 0.5 = 0.2 = P(A ∩ B): independent"
+   ],
+   "say": "First the two circles, then the probabilities. The probability of A is the whole circle: zero point two plus zero point two, which is zero point four. The probability of B is zero point five. Multiply: zero point two. That matches the overlap, so A and B are independent."
+  },
+  {
+   "type": "diagram",
+   "heading": "Bus and train: multiply along",
+   "diagram": "diagrams/y10/maths/independent-events-ex1.svg",
+   "notes": [
+    "Both late: 0.2 × 0.1 = 0.02",
+    "Neither late: 0.8 × 0.9 = 0.72",
+    "At least one late: 1 − 0.72 = 0.28"
+   ],
+   "say": "The bus is late with probability zero point two, and separately the train is late with probability zero point one. The second branches are the same either way. Both late is zero point two times zero point one, zero point zero two. Neither late is zero point seven two, so at least one late is zero point two eight."
+  },
+  {
+   "type": "compare",
+   "heading": "Not the same thing!",
+   "left": {
+    "title": "Mutually exclusive",
+    "icon": "🚫",
+    "points": [
+     "Can't happen together",
+     "P(A ∩ B) = 0"
+    ]
+   },
+   "right": {
+    "title": "Independent",
+    "icon": "🪙",
+    "points": [
+     "Don't affect each other",
+     "P(A ∩ B) = P(A) × P(B)"
+    ]
+   },
+   "say": "Don't mix these up. Mutually exclusive events can't happen together, so their overlap is zero. Independent events don't affect each other, so their overlap is the product. With non-zero probabilities, they can never be both."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Independent: P(A | B) = P(A)",
+    "Test: P(A ∩ B) = P(A) × P(B)",
+    "At least one = 1 − P(none)",
+    "Mutually exclusive is not independent"
+   ],
+   "say": "Quick recap. Independent means knowing one changes nothing. Test it by multiplying. At least one is one minus none. And mutually exclusive is not the same as independent. Now try the practice questions!"
+  }
+ ]
+}

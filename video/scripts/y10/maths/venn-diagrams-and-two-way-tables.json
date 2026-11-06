@@ -1,0 +1,85 @@
+{
+ "lesson": "y10/maths/venn-diagrams-and-two-way-tables.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Venn diagrams and two-way tables",
+ "icon": "⭕",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Venn diagrams and two-way tables",
+   "sub": "Seeing the overlap makes and, or and not easy",
+   "icon": "⭕",
+   "say": "Some students play sport. Some do drama. Some do both, and some do neither. When groups overlap, a Venn diagram or a two-way table shows exactly who is where."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🏠",
+   "everyday": "Two overlapping hula hoops on the floor; everyone stands in one spot",
+   "icon2": "⭕",
+   "science": "Each region of a Venn diagram holds one group: A only, both, B only, neither",
+   "breaks": "We often write probabilities instead of people, and the rectangle around the circles must always be drawn.",
+   "say": "Picture two hula hoops on the floor, overlapping. Students who do both stand in the overlap. Students who do neither stand outside the hoops but still in the room. Every person stands in exactly one place, just like every outcome sits in exactly one region of a Venn diagram."
+  },
+  {
+   "type": "points",
+   "heading": "Set notation",
+   "icon": "🔣",
+   "points": [
+    "A ∩ B: A and B, the overlap",
+    "A ∪ B: A or B, inside either circle",
+    "A′: not A, outside circle A",
+    "ξ: the whole sample space"
+   ],
+   "say": "Here is the notation. The cap shape means and: the overlap. The cup shape means or: anything inside either circle. A dash means not A. And the symbol xi stands for the whole sample space, the rectangle."
+  },
+  {
+   "type": "diagram",
+   "heading": "Fill from the middle outwards",
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-ex1.svg",
+   "notes": [
+    "Both = 6",
+    "Drama only = 13 − 6 = 7; Sport only = 17 − 6 = 11",
+    "Neither = 30 − 24 = 6"
+   ],
+   "say": "Thirty students: thirteen do drama, seventeen do sport, six do both. First the rectangle and two circles. Put the six in the overlap first. Drama only is thirteen minus six, seven. Sport only is seventeen minus six, eleven. That is twenty-four inside the circles, so six go outside."
+  },
+  {
+   "type": "diagram",
+   "heading": "The same numbers in a two-way table",
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-ex3.svg",
+   "notes": [
+    "Four regions = four cells",
+    "Rows and columns add to their totals"
+   ],
+   "say": "The same four numbers fit in a two-way table. Both goes in the drama row and sport column. Drama only goes under not sport. Then add the rows and columns to get the totals, and the grand total is thirty."
+  },
+  {
+   "type": "equation",
+   "heading": "The addition rule",
+   "equation": "P(A∪B) = P(A) + P(B) − P(A∩B)",
+   "parts": [
+    [
+     "P(A) + P(B)",
+     "counts the overlap twice"
+    ],
+    [
+     "− P(A∩B)",
+     "so take it away once"
+    ]
+   ],
+   "say": "For or questions, use the addition rule. The probability of A or B is the probability of A plus the probability of B, minus the probability of both. Adding A and B counts the overlap twice, so you take it away once."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "∩ is and; ∪ is or; A′ is not A",
+    "Fill the overlap first",
+    "All regions add to the total",
+    "P(A∪B) = P(A) + P(B) − P(A∩B)"
+   ],
+   "say": "Quick recap. Cap means and, cup means or, dash means not. Fill a Venn diagram from the middle outwards, and check every region adds to the total. For or, add and then take away the overlap. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,285 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Independent events",
+ "summary": "Decide whether events are independent using P(A ∩ B) = P(A) × P(B), and use independence to find \"and\" and \"at least one\" probabilities.",
+ "minutes": 45,
+ "body": "Does the result of one coin toss change the next one? No — the coin has no memory. Events like this are **independent**: knowing one happened tells you nothing about the other. Independence lets you multiply probabilities, which is how engineers work out the chance that every part of a system works, and why a backup alarm makes you much safer.\n\n## Learning objective\n\nBy the end of this lesson you can decide whether two events are independent, using P(A ∩ B) = P(A) × P(B) or P(A | B) = P(A), and use independence to find \"and\" and \"at least one\" probabilities.\n\n## Before you start\n\nYou need *Conditional probability* and *Venn diagrams and two-way tables* (earlier in this chapter), and multiplying decimals.\n\n**Warm-up**\n\n1. Work out 0.4 × 0.5. *(Answer: 0.2)*\n2. P(A | B) = 0.3 means… *(Answer: the probability of A, given that B has happened, is 0.3)*\n\n## Think of it like this\n\n### Two coins tossed in two different cities\n\nA friend in Perth tosses a coin at the same time as you toss one in Melbourne. Whatever lands in Perth cannot change what lands in Melbourne. The chance of two heads is just half of a half: 1/2 × 1/2 = 1/4.\n\n*Where the analogy breaks down:* in real life, events that seem separate are often linked (rain in Melbourne and traffic jams in Melbourne). Never assume independence just because it looks likely — check it with numbers or a clear reason.\n\n## Key ideas\n\n### What independent means\n\nEvents A and B are **independent** if one happening does not change the probability of the other:\n\nP(A | B) = P(A)\n\nPutting this into P(A | B) = P(A ∩ B) ÷ P(B) gives the **test for independence**:\n\nP(A ∩ B) = P(A) × P(B)\n\nIf this is true, A and B are independent. If not, they are **dependent**.\n\n### Multiply along the branches\n\nFor independent events, the second-stage branches of a tree diagram are the same whatever happened first. The bus is late with probability 0.2 and, separately, the train is late with probability 0.1.\n\n![A tree diagram: Bus late 0.2 and Bus on time 0.8; after each, Train late 0.1 and On time 0.9; outcome probabilities 0.02, 0.18, 0.08 and 0.72](/diagrams/y10/maths/independent-events-ex1.svg)\n\n### Several independent events and \"at least one\"\n\nFor independent events, P(A and B and C) = P(A) × P(B) × P(C). For \"at least one\", use the complement:\n\nP(at least one) = 1 − P(none)\n\n### Independent is NOT the same as mutually exclusive\n\n**Mutually exclusive** events cannot happen together, so P(A ∩ B) = 0. If both have non-zero probabilities, then P(A) × P(B) is not 0, so they are NOT independent: knowing A happened tells you B definitely did not.\n\n## Worked examples\n\n### Example 1\n\nUse the bus and train tree. Find P(both late) and P(at least one late).\n\nStep 1: P(both late) = 0.2 × 0.1 = 0.02 — independent, so multiply.\nStep 2: P(neither late) = 0.8 × 0.9 = 0.72 — multiply along the bottom path.\nStep 3: P(at least one late) = 1 − 0.72 = 0.28 — complement of \"neither\".\nCheck: 0.02 + 0.18 + 0.08 = 0.28 ✓\n\n### Example 2\n\nThe Venn diagram shows probabilities. Are A and B independent?\n\n![A Venn diagram of probabilities: A only 0.2, both 0.2, B only 0.3, and 0.3 outside both circles](/diagrams/y10/maths/independent-events-ex2.svg)\n\nStep 1: P(A) = 0.2 + 0.2 = 0.4 — everything in circle A.\nStep 2: P(B) = 0.2 + 0.3 = 0.5 — everything in circle B.\nStep 3: P(A) × P(B) = 0.4 × 0.5 = 0.2 — the test.\nStep 4: P(A ∩ B) = 0.2, which matches, so A and B are independent.\nCheck: P(A | B) = 0.2 ÷ 0.5 = 0.4 = P(A) ✓\n\n### Example 3\n\n100 students were surveyed. Is being left-handed independent of learning a musical instrument?\n\n![A two-way table: Music row left 6, right 24, total 30; No music row left 14, right 56, total 70; totals left 20, right 80, 100](/diagrams/y10/maths/independent-events-ex3.svg)\n\nStep 1: P(left) = 20/100 = 0.2 — all students.\nStep 2: P(left | music) = 6/30 = 0.2 — the Music row only.\nStep 3: these are equal, so (in this survey) the two are independent.\nCheck: P(left | no music) = 14/70 = 0.2 as well ✓\n\n### Example 4\n\nThree alarm clocks each fail with probability 0.1, independently. Find P(at least one alarm goes off).\n\nStep 1: P(all three fail) = 0.1 × 0.1 × 0.1 = 0.001 — independent, so multiply.\nStep 2: P(at least one works) = 1 − 0.001 = 0.999 — complement.\nCheck: one alarm alone works with probability 0.9; three give much better odds ✓\n\n## Common mistakes\n\n- **Confusing independent with mutually exclusive.** \"Can't happen together\" is not \"don't affect each other\". Fix: mutually exclusive means P(A ∩ B) = 0; independent means P(A ∩ B) = P(A) × P(B).\n- **Assuming independence without checking.** Fix: test with numbers, or have a clear physical reason (separate coins, with replacement).\n- **Using region values instead of whole circles.** In a Venn diagram P(A) includes the overlap. Fix: add \"A only\" and \"both\".\n- **Adding for \"and\".** P(A and B) for independent events is a product, not a sum. Fix: \"and\" along branches means multiply.\n- **Working out \"at least one\" the long way.** Fix: 1 − P(none) is quicker and safer.\n\n## Tips to remember\n\n- **\"No memory, multiply\"** (a made-up memory trick): independent events don't remember each other, so you multiply.\n- **The test:** does P(A) × P(B) equal P(A ∩ B)? Yes → independent.\n- **Mutually exclusive events (with non-zero probabilities) are never independent.**\n- **At least one = 1 − none.**\n- **With replacement → independent; without replacement → usually dependent** (next lesson).\n\n## Key terms\n\n- **Independent events** — events where one happening does not change the probability of the other.\n- **Dependent events** — events where one happening changes the probability of the other.\n- **Test for independence** — check whether P(A ∩ B) = P(A) × P(B).\n- **Mutually exclusive** — events that cannot both happen; P(A ∩ B) = 0.\n- **Complement** — \"not A\"; P(A′) = 1 − P(A).\n\n## Summary\n\n- A and B are independent if P(A | B) = P(A), or equivalently P(A ∩ B) = P(A) × P(B).\n- For independent events, multiply to find \"and\" probabilities.\n- P(at least one) = 1 − P(none).\n- Test independence from Venn diagrams and tables using whole-event probabilities.\n- Mutually exclusive and independent are different ideas.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "A fair coin is tossed and a fair six-sided die is rolled. What is the probability of getting a head AND a 6?",
+   "options": {
+    "A": "2/3",
+    "B": "1/6",
+    "C": "1/12",
+    "D": "1/2"
+   },
+   "answer": "C",
+   "explanation": "The coin and die are independent, so P = 1/2 × 1/6 = 1/12. 2/3 comes from adding, but \"and\" for independent events means multiply.",
+   "steps": [
+    "The coin and die do not affect each other: independent.",
+    "P(head and 6) = P(head) × P(6).",
+    "1/2 × 1/6 = 1/12."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 1/2 + 1/6. For \"and\" with independent events, multiply.",
+    "B": "Step 2: 1/6 is just P(6). The head must happen as well, so multiply by 1/2.",
+    "D": "Step 2: 1/2 is just P(head). The 6 must happen as well, so multiply by 1/6."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A spinner lands on red (R) with probability 0.3. It is spun twice, as shown in the tree diagram. Find the probability that it lands on red both times.",
+   "options": {
+    "A": "0.09",
+    "B": "0.6",
+    "C": "0.3",
+    "D": "0.49"
+   },
+   "answer": "A",
+   "explanation": "The spins are independent, so multiply along the R–R path: 0.3 × 0.3 = 0.09. 0.6 adds the branches instead of multiplying.",
+   "steps": [
+    "Follow the path R then R.",
+    "Multiply along the path: 0.3 × 0.3 = 0.09."
+   ],
+   "mistakes": {
+    "B": "Step 2: you added 0.3 + 0.3. Along a path you multiply.",
+    "C": "Step 2: 0.3 is one spin only. Both spins must be red — multiply along the path.",
+    "D": "Step 1: 0.7 × 0.7 = 0.49 is the \"Not R, Not R\" path. Follow R then R."
+   },
+   "diagram": "diagrams/y10/maths/independent-events-q2.svg",
+   "diagram_alt": "A tree diagram for two spins: first R 0.3 and Not R 0.7; after each, R 0.3 and Not R 0.7"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Which pair of events is independent?",
+   "options": {
+    "A": "Two cards are drawn without replacement: the first is red and the second is red.",
+    "B": "A die is rolled twice: a 6 on the first roll and a 6 on the second roll.",
+    "C": "Rain falls today and you carry an umbrella today.",
+    "D": "One die is rolled: getting an even number and getting a 2."
+   },
+   "answer": "B",
+   "explanation": "A die has no memory, so the first roll cannot change the second: independent. Drawing without replacement changes what is left in the pack, so those events depend on each other.",
+   "steps": [
+    "Ask: does knowing the first event change the probability of the second?",
+    "For two separate die rolls the answer is no — the die has no memory, so they are independent."
+   ],
+   "mistakes": {
+    "A": "Step 1: without replacement, taking a red card leaves fewer red cards, so the second probability changes. These are dependent.",
+    "C": "Step 1: rain makes carrying an umbrella more likely, so these are dependent.",
+    "D": "Step 1: if you know the number is even, P(2) changes from 1/6 to 1/3, so these are dependent."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In the Venn diagram the numbers are probabilities. Are A and B independent?",
+   "options": {
+    "A": "Yes, because P(A) × P(B) = 0.3 × 0.4 = 0.12 = P(A ∩ B).",
+    "B": "No, because the circles overlap.",
+    "C": "No, because 0.18 × 0.28 does not equal 0.12.",
+    "D": "Yes, because P(A ∩ B) is smaller than P(A) and P(B)."
+   },
+   "answer": "A",
+   "explanation": "P(A) = 0.18 + 0.12 = 0.3 and P(B) = 0.12 + 0.28 = 0.4. Their product, 0.12, equals P(A ∩ B), so A and B are independent. 0.18 × 0.28 uses the \"only\" regions, not the whole circles.",
+   "steps": [
+    "P(A) = 0.18 + 0.12 = 0.3 and P(B) = 0.12 + 0.28 = 0.4 (whole circles).",
+    "P(A) × P(B) = 0.3 × 0.4 = 0.12.",
+    "This equals P(A ∩ B) = 0.12, so A and B are independent."
+   ],
+   "mistakes": {
+    "B": "Step 3: overlapping circles means the events are NOT mutually exclusive. Independence needs the multiplication test.",
+    "C": "Step 1: 0.18 and 0.28 are the \"only\" regions. P(A) and P(B) include the overlap.",
+    "D": "Step 3: P(A ∩ B) is always at most P(A) and P(B), so that proves nothing. Use the test P(A) × P(B) = P(A ∩ B)."
+   },
+   "diagram": "diagrams/y10/maths/independent-events-q4.svg",
+   "diagram_alt": "A Venn diagram of probabilities: A only 0.18, both 0.12, B only 0.28, and 0.42 outside both circles"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The two-way table shows 100 students by year level and whether they use a study app. Find P(uses app | Year 9) and decide whether using the app is independent of year level.",
+   "options": {
+    "A": "0.24; not independent",
+    "B": "0.6; not independent",
+    "C": "0.4; not independent, because the cells hold different numbers",
+    "D": "0.4; independent, because P(app) is also 0.4"
+   },
+   "answer": "D",
+   "explanation": "P(app | Year 9) = 24/60 = 0.4 and P(app) = 40/100 = 0.4. They are equal, so knowing the year level does not change the probability: independent. 0.24 divides by all 100 students.",
+   "steps": [
+    "Given Year 9: P(app | Year 9) = 24/60 = 0.4.",
+    "Overall: P(app) = 40/100 = 0.4.",
+    "They are equal, so the events are independent."
+   ],
+   "mistakes": {
+    "A": "Step 1: 24/100 divides by all students. Given Year 9, divide by the 60 Year 9 students.",
+    "B": "Step 1: 24/40 divides by the App column, giving P(Year 9 | app). The given group is Year 9.",
+    "C": "Step 3: different cell numbers don't matter. Compare P(app | Year 9) with P(app)."
+   },
+   "diagram": "diagrams/y10/maths/independent-events-q5.svg",
+   "diagram_alt": "A two-way table with columns App, No app, Total and rows Year 9 (24, 36, 60), Year 10 (16, 24, 40) and Total (40, 60, 100)"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A and B are independent, with P(A) = 0.6 and P(B) = 0.25. Find P(A ∪ B).",
+   "options": {
+    "A": "0.85",
+    "B": "0.7",
+    "C": "0.15",
+    "D": "0.55"
+   },
+   "answer": "B",
+   "explanation": "Independent, so P(A ∩ B) = 0.6 × 0.25 = 0.15. Then P(A ∪ B) = 0.6 + 0.25 − 0.15 = 0.7. 0.85 forgets to subtract the overlap.",
+   "steps": [
+    "Independent: P(A ∩ B) = 0.6 × 0.25 = 0.15.",
+    "Addition rule: P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+    "0.6 + 0.25 − 0.15 = 0.7."
+   ],
+   "mistakes": {
+    "A": "Step 2: 0.6 + 0.25 treats A and B as mutually exclusive. Independent events overlap — subtract P(A ∩ B).",
+    "C": "Step 1: 0.15 is P(A ∩ B). The question asks for A ∪ B (\"or\").",
+    "D": "Step 3: you subtracted the overlap twice. Take 0.15 away once."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "On a drive you pass three sets of traffic lights. Each is green when you arrive with probability 0.4, independently of the others. Find the probability that at least one is green.",
+   "options": {
+    "A": "1.2",
+    "B": "0.064",
+    "C": "0.216",
+    "D": "0.784"
+   },
+   "answer": "D",
+   "explanation": "P(none green) = 0.6 × 0.6 × 0.6 = 0.216, so P(at least one green) = 1 − 0.216 = 0.784. 0.216 is the chance of no greens — it still needs subtracting from 1.",
+   "steps": [
+    "P(not green) = 1 − 0.4 = 0.6 at each light.",
+    "P(none green) = 0.6 × 0.6 × 0.6 = 0.216 (independent, so multiply).",
+    "P(at least one green) = 1 − 0.216 = 0.784."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 0.4 three times. A probability can't be more than 1 — use 1 − P(none).",
+    "B": "Step 2: 0.4³ = 0.064 is P(all three green). \"At least one\" is 1 − P(none green).",
+    "C": "Step 3: 0.216 is P(none green). Subtract it from 1."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The two-way table shows 80 students, whether they studied and whether they passed. Some cells are blank. What value of x makes passing independent of studying?",
+   "options": {
+    "A": "36",
+    "B": "20",
+    "C": "24",
+    "D": "8"
+   },
+   "answer": "C",
+   "explanation": "Independent means P(pass | studied) = P(pass | did not). P(pass | studied) = 36/48 = 0.75, so x = 0.75 × 32 = 24. 20 = 32 − 12 assumes the same number failed in both rows.",
+   "steps": [
+    "For independence, the pass rate must be the same in both rows.",
+    "Studied row: P(pass) = 36/48 = 0.75.",
+    "Did not row: x = 0.75 × 32 = 24."
+   ],
+   "mistakes": {
+    "A": "Step 3: 36 copies the count, not the rate. The \"Did not\" row has only 32 students.",
+    "B": "Step 3: 32 − 12 assumes the same NUMBER failed. Independence needs the same proportion.",
+    "D": "Step 3: 8 = 0.25 × 32 is the number who FAIL in that row. x is the pass cell."
+   },
+   "diagram": "diagrams/y10/maths/independent-events-q8.svg",
+   "diagram_alt": "A two-way table with columns Pass, Fail, Total and rows Studied (36, 12, 48), Did not (x, blank, 32) and Total (blank, blank, 80)"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "An archer hits the target with probability 0.7 on each shot, independently. She shoots twice, as shown in the tree diagram. Find the probability that she hits exactly once.",
+   "options": {
+    "A": "0.42",
+    "B": "0.21",
+    "C": "0.49",
+    "D": "0.91"
+   },
+   "answer": "A",
+   "explanation": "Exactly one hit happens as Hit–Miss (0.7 × 0.3 = 0.21) or Miss–Hit (0.3 × 0.7 = 0.21), so P = 0.42. 0.21 counts only one of the two orders.",
+   "steps": [
+    "Exactly one hit: the paths Hit–Miss and Miss–Hit.",
+    "Each path: 0.7 × 0.3 = 0.21.",
+    "Add the two paths: 0.21 + 0.21 = 0.42."
+   ],
+   "mistakes": {
+    "B": "Step 3: 0.21 is only one path. Miss then Hit is also exactly one hit — add both.",
+    "C": "Step 1: 0.49 is Hit–Hit, which is two hits. You need exactly one.",
+    "D": "Step 1: 0.91 = 1 − 0.09 is \"at least one hit\", which includes two hits."
+   },
+   "diagram": "diagrams/y10/maths/independent-events-q9.svg",
+   "diagram_alt": "A tree diagram for two shots: first Hit 0.7 and Miss 0.3; after each, Hit 0.7 and Miss 0.3"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In the Venn diagram the numbers are probabilities and the overlap is marked ?. Find P(A ∩ B) and decide whether A and B are independent.",
+   "options": {
+    "A": "0.3; not independent, because the circles overlap",
+    "B": "0.3; independent",
+    "C": "0.5; independent",
+    "D": "0.3; not independent, because 0.6 × 0.2 is not 0.3"
+   },
+   "answer": "B",
+   "explanation": "? = 1 − 0.3 − 0.2 − 0.2 = 0.3. Then P(A) = 0.6 and P(B) = 0.5, and 0.6 × 0.5 = 0.3 = P(A ∩ B), so A and B are independent.",
+   "steps": [
+    "All regions add to 1: ? = 1 − 0.3 − 0.2 − 0.2 = 0.3.",
+    "P(A) = 0.3 + 0.3 = 0.6 and P(B) = 0.3 + 0.2 = 0.5.",
+    "P(A) × P(B) = 0.3 = P(A ∩ B), so A and B are independent."
+   ],
+   "mistakes": {
+    "A": "Step 3: overlapping only rules out \"mutually exclusive\". Use the multiplication test.",
+    "C": "Step 1: 0.5 forgets the 0.2 outside both circles. All four regions add to 1.",
+    "D": "Step 2: 0.2 is \"B only\". P(B) includes the overlap: 0.3 + 0.2 = 0.5."
+   },
+   "diagram": "diagrams/y10/maths/independent-events-q10.svg",
+   "diagram_alt": "A Venn diagram of probabilities: A only 0.3, the overlap marked ?, B only 0.2, and 0.2 outside both circles"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Events A and B are mutually exclusive, with P(A) = 0.3 and P(B) = 0.4. Which statement is true?",
+   "options": {
+    "A": "They are independent, because one does not cause the other.",
+    "B": "They are independent, because P(A ∪ B) = 0.7.",
+    "C": "Mutually exclusive events are always independent.",
+    "D": "They are not independent, because P(A ∩ B) = 0 but P(A) × P(B) = 0.12."
+   },
+   "answer": "D",
+   "explanation": "Mutually exclusive means P(A ∩ B) = 0, but P(A) × P(B) = 0.12, so the independence test fails. Knowing A happened tells you B did not — that is dependence.",
+   "steps": [
+    "Mutually exclusive: P(A ∩ B) = 0.",
+    "Independence test: P(A) × P(B) = 0.3 × 0.4 = 0.12.",
+    "0 is not 0.12, so A and B are NOT independent."
+   ],
+   "mistakes": {
+    "A": "Step 3: \"not causing\" is not the test. If A happens, B cannot — so A changes B's probability to 0.",
+    "B": "Step 2: P(A ∪ B) doesn't test independence. Compare P(A ∩ B) with P(A) × P(B).",
+    "C": "Step 3: it is the opposite — with non-zero probabilities, mutually exclusive events are never independent."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A fair die is rolled n times. What is the smallest n for which the probability of at least one 6 is more than 0.9?",
+   "options": {
+    "A": "6",
+    "B": "12",
+    "C": "13",
+    "D": "2"
+   },
+   "answer": "C",
+   "explanation": "P(at least one 6) = 1 − (5/6)ⁿ. We need (5/6)ⁿ below 0.1: (5/6)¹² ≈ 0.112 (not enough) and (5/6)¹³ ≈ 0.093, so n = 13. 6 assumes six rolls make a 6 certain.",
+   "steps": [
+    "P(no 6 in n rolls) = (5/6)ⁿ, so P(at least one 6) = 1 − (5/6)ⁿ.",
+    "Need (5/6)ⁿ less than 0.1. Try values: (5/6)¹² ≈ 0.112 and (5/6)¹³ ≈ 0.093.",
+    "The smallest n is 13."
+   ],
+   "mistakes": {
+    "A": "Step 1: 6 × 1/6 = 1 adds the probabilities. Rolls are independent — use 1 − (5/6)ⁿ.",
+    "B": "Step 2: (5/6)¹² ≈ 0.112 is still more than 0.1, so 12 rolls give only about 0.888. Try one more.",
+    "D": "Step 1: you used (1/6)ⁿ, the chance of ALL sixes. \"No 6\" on a roll has probability 5/6."
+   }
+  }
+ ]
+}

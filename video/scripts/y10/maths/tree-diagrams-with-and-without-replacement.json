@@ -1,0 +1,83 @@
+{
+ "lesson": "y10/maths/tree-diagrams-with-and-without-replacement.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Tree diagrams with and without replacement",
+ "icon": "🌳",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Trees with and without replacement",
+   "sub": "When the first pick changes the second",
+   "icon": "🌳",
+   "say": "Draw two raffle tickets, pick two players, deal two cards. Usually the first one isn't put back, so the odds change for the second. Tree diagrams keep track of it all."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🍬",
+   "everyday": "Eat a lolly and your friend's bag has one fewer, and one fewer of that colour",
+   "icon2": "🌳",
+   "science": "Without replacement: second-stage top and bottom both change",
+   "breaks": "Your friend can see what's left. A tree shows every branch you might have taken, not just the one that happened.",
+   "say": "A bag has four green and three yellow lollies. If you put yours back, your friend faces the same bag. If you eat it, their bag has one fewer lolly, and one fewer of the colour you ate. Their chances depend on what you did."
+  },
+  {
+   "type": "steps",
+   "heading": "Rules for any tree",
+   "steps": [
+    "Each fork adds to 1",
+    "Multiply along a path",
+    "Add the paths you need",
+    "All outcomes add to 1"
+   ],
+   "say": "Every tree follows the same rules. The branches at each fork add to one. Multiply along a path to get that outcome. Add the paths that make your event. And all the outcomes together add to one."
+  },
+  {
+   "type": "diagram",
+   "heading": "Without replacement: the fractions change",
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-without.svg",
+   "notes": [
+    "After green: 3 green, 3 yellow left",
+    "Same colour: 12/42 + 6/42 = 3/7",
+    "One of each: 1 − 3/7 = 4/7"
+   ],
+   "say": "First the branches for the first lolly: four sevenths green, three sevenths yellow. If a green is eaten, six are left: three green and three yellow, so the next branches are three sixths each. Same colour is twelve forty-seconds plus six forty-seconds, which is three sevenths. So one of each is four sevenths.",
+   "caption": "First lolly: 4/7 green, 3/7 yellow. After a green is eaten, 6 are left: 3 green, 3 yellow, so 3/6 each. Same colour = 12/42 + 6/42 = 3/7. One of each = 4/7."
+  },
+  {
+   "type": "diagram",
+   "heading": "Three stages: three penalties",
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-three.svg",
+   "notes": [
+    "Exactly two goals: GGM, GMG, MGG",
+    "Each path 0.8 × 0.8 × 0.2 = 0.128",
+    "3 × 0.128 = 0.384"
+   ],
+   "say": "A player scores each penalty with probability zero point eight and takes three. The tree has eight paths. Exactly two goals happens three ways. Each of those paths is zero point eight times zero point eight times zero point two, which is zero point one two eight. Three of them make zero point three eight four."
+  },
+  {
+   "type": "example",
+   "heading": "Given the second is yellow…",
+   "question": "Without replacement (4 green, 3 yellow): given the 2nd lolly is yellow, find P(1st was green).",
+   "lines": [
+    "P(2nd Y) = GY + YY",
+    "= 12/42 + 6/42 = 18/42",
+    "P(G then Y) = 12/42",
+    "P = 12/18 = 2/3"
+   ],
+   "say": "Given the second lolly is yellow, what's the chance the first was green? Add the paths ending in yellow: twelve plus six, eighteen forty-seconds. The path green then yellow is twelve forty-seconds. Both over given: twelve over eighteen, which is two thirds.",
+   "caption": "Add the paths ending in yellow: 12/42 + 6/42 = 18/42. Green then yellow is 12/42. Both over given: 12/18 = 2/3."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Multiply along, add between paths",
+    "With replacement: stages stay the same",
+    "Without: top and bottom both drop",
+    "Given: both paths ÷ given paths"
+   ],
+   "say": "Quick recap. Multiply along, add between paths. With replacement, every stage is the same. Without replacement, the top and bottom both change. And for given questions, divide the both paths by the given paths. Now try the practice questions!"
+  }
+ ]
+}

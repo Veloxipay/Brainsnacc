@@ -1,0 +1,284 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Probability review",
+ "summary": "Revise sample spaces, theoretical probability, complements, two-dice grids, expected numbers and relative frequency, ready for the rest of the chapter.",
+ "minutes": 45,
+ "body": "Probability is the maths of uncertainty. Weather forecasts (\"a 70% chance of rain\"), insurance prices, medical test results and every board game you have played all rely on it. This lesson pulls together the probability you met in Years 7–9 so you are ready for Venn diagrams, conditional probability and tree diagrams in this chapter.\n\n## Learning objective\n\nBy the end of this lesson you can list a sample space, find theoretical probabilities of equally likely outcomes, use complements, and use probability to predict how often something should happen.\n\n## Before you start\n\nYou need *Chance and the probability scale (Year 7)*, *Probability and complementary events (Year 8)* and *Two-step chance experiments (Year 9)*, plus simplifying fractions.\n\n**Warm-up**\n\n1. Simplify 6/36. *(Answer: 1/6)*\n2. The probability a team wins is 0.35. What is the probability it does not win? *(Answer: 1 − 0.35 = 0.65)*\n\n## Think of it like this\n\n### Slices of a pizza\n\nThink of the whole pizza as everything that could happen: it is worth 1. The slices you want are your event, and the probability is the fraction of the pizza they make up. If you want 3 of 8 equal slices, you get 3/8 of the pizza. The slices you do NOT want make up the rest: 1 − 3/8 = 5/8.\n\n*Where the analogy breaks down:* with a pizza you can see if slices are different sizes. In probability, outcomes can look alike without being equally likely, so you may only count outcomes when each one really is equally likely.\n\n## Key ideas\n\n### Outcomes, sample space and events\n\n- An **outcome** is one possible result of an experiment, e.g. rolling a 4.\n- The **sample space** is the list of all possible outcomes. For one die it is {1, 2, 3, 4, 5, 6}. It is often called S or ξ.\n- An **event** is a group of outcomes you are interested in, e.g. \"an even number\" = {2, 4, 6}.\n\n### Theoretical probability\n\nWhen all outcomes are **equally likely**:\n\nP(event) = number of outcomes in the event ÷ total number of outcomes\n\nEvery probability is between 0 (impossible) and 1 (certain), and the probabilities of all the outcomes add to 1. You can write a probability as a fraction, a decimal or a percentage.\n\nOn a spinner, the outcomes are only equally likely if the sectors are equal. Use the angle instead: P(sector) = angle ÷ 360°.\n\n![A spinner with a red half (180°), a blue quarter (90°) and a green quarter (90°)](/diagrams/y10/maths/probability-review-spinner.svg)\n\nThis spinner has 3 colours, but P(red) = 180 ÷ 360 = 1/2, not 1/3, because red takes up half the circle.\n\n### Complementary events\n\nThe **complement** of event A, written **A′** (\"A dash\" or \"not A\"), is every outcome NOT in A. Because A and A′ cover everything with no overlap:\n\nP(A′) = 1 − P(A)\n\n### \"Or\" for events that cannot happen together\n\nTwo events are **mutually exclusive** if they cannot happen at the same time (rolling a 2 and rolling a 5 on one die). For these, P(A or B) = P(A) + P(B). If they CAN happen together, count each outcome only once — the next lesson gives a rule for this.\n\n### Two-step experiments\n\nFor two dice, draw a 6 × 6 grid. There are 6 × 6 = 36 equally likely outcomes, and each cell is one of them. The sums 2 to 12 are NOT equally likely: a sum of 7 fills 6 cells but a sum of 2 fills only 1.\n\n### Expected number and relative frequency\n\n- **Expected number** = P(event) × number of trials. It is what should happen \"on average\", not a promise.\n- **Relative frequency** = number of times the event happened ÷ number of trials. It is an estimate of the probability and usually gets closer to the theoretical probability as the number of trials grows.\n\n## Worked examples\n\n### Example 1\n\nA bag holds 4 red, 5 blue and 3 white marbles. One marble is taken at random. Find P(blue) and P(not white).\n\nStep 1: total = 4 + 5 + 3 = 12 marbles — each marble is equally likely.\nStep 2: P(blue) = 5/12 — 5 of the 12 marbles are blue.\nStep 3: P(white) = 3/12 = 1/4 — 3 white marbles.\nStep 4: P(not white) = 1 − 1/4 = 3/4 — complement rule.\nCheck: not white means red or blue, 4 + 5 = 9 marbles, and 9/12 = 3/4 ✓\n\n### Example 2\n\nTwo fair dice are rolled and the numbers are added. Find P(sum is 9 or more).\n\n![A 6 by 6 grid of the sums of two dice, with the 10 cells whose sum is 9, 10, 11 or 12 shaded](/diagrams/y10/maths/probability-review-ex2.svg)\n\nStep 1: draw the grid of sums — 36 equally likely cells.\nStep 2: count the shaded cells: sum 9 → 4, sum 10 → 3, sum 11 → 2, sum 12 → 1, total 10 — each cell is one outcome.\nStep 3: P(sum is 9 or more) = 10/36 = 5/18 — divide 10 and 36 by 2.\nCheck: 10 cells out of 36 is a bit more than a quarter, and 5/18 ≈ 0.28 ✓\n\n### Example 3\n\nThe spinner in Key ideas (red 180°, blue 90°, green 90°) is spun 200 times. How many blues would you expect? Blue actually came up 62 times. What is its relative frequency?\n\nStep 1: P(blue) = 90 ÷ 360 = 1/4 — the blue sector is a quarter of the circle.\nStep 2: expected number = 1/4 × 200 = 50 — probability × number of trials.\nStep 3: relative frequency = 62 ÷ 200 = 0.31 — times it happened ÷ trials.\nCheck: 0.31 is near 0.25 but not equal. That is normal: results vary by chance.\n\n### Example 4\n\nA card is picked at random from cards numbered 1 to 20. Find P(the number is a multiple of 3 or a multiple of 5).\n\nStep 1: multiples of 3: 3, 6, 9, 12, 15, 18 (6 numbers) — list them.\nStep 2: multiples of 5: 5, 10, 15, 20 (4 numbers) — list them.\nStep 3: 15 is in both lists, so count it once: 6 + 4 − 1 = 9 numbers — don't double count.\nStep 4: P = 9/20 — 9 of the 20 cards.\nCheck: the full list is 3, 5, 6, 9, 10, 12, 15, 18, 20 — 9 numbers ✓\n\n## Common mistakes\n\n- **Counting colours instead of sizes.** A spinner with 3 colours is not automatically 1/3 each. Fix: only count outcomes that are equally likely; on spinners use angle ÷ 360°.\n- **Treating dice sums as equally likely.** There are 11 possible sums, but P(sum is 7) is not 1/11. Fix: use the 36-cell grid.\n- **Double counting in \"or\" questions.** Numbers like 15 that are in both lists get counted twice. Fix: list the outcomes, or subtract the overlap once.\n- **Expecting exact results.** Getting 62 blues instead of 50 does not mean the spinner is broken. Fix: expected number is an average; small differences are normal.\n- **Answers bigger than 1.** A probability can never be more than 1 or less than 0. Fix: check your answer is in that range.\n\n## Tips to remember\n\n- **\"Want over all\"** (a made-up memory trick): P = outcomes you want ÷ all equally likely outcomes.\n- **\"Not\" means \"1 minus\".** P(not A) = 1 − P(A) — often the quickest way.\n- **Two dice? Draw the 6 × 6.** 36 cells, every one equally likely.\n- **Spinner? Think degrees.** P = angle ÷ 360°.\n- **Expected = P × trials.** Then compare with what really happened.\n\n## Key terms\n\n- **Outcome** — one possible result of an experiment.\n- **Sample space** — the set of all possible outcomes (S or ξ).\n- **Event** — a set of outcomes you are interested in.\n- **Equally likely** — every outcome has the same chance.\n- **Complement (A′)** — all outcomes not in A; P(A′) = 1 − P(A).\n- **Mutually exclusive** — events that cannot happen at the same time.\n- **Relative frequency** — times an event happened ÷ number of trials.\n- **Expected number** — probability × number of trials.\n\n## Summary\n\n- For equally likely outcomes, P(event) = favourable outcomes ÷ total outcomes.\n- Probabilities are between 0 and 1, and all outcomes add to 1.\n- P(not A) = 1 − P(A).\n- Use a 6 × 6 grid for two dice: 36 equally likely outcomes.\n- Expected number = P × trials; relative frequency = count ÷ trials.\n- In \"or\" questions, count shared outcomes only once.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The spinner in the diagram has a yellow sector of 120°, a blue sector of 120°, a red sector of 60° and a green sector of 60°. What is the probability that it lands on green?",
+   "options": {
+    "A": "1/4",
+    "B": "1/6",
+    "C": "1/3",
+    "D": "5/6"
+   },
+   "answer": "B",
+   "explanation": "Green is 60° out of 360°, so P(green) = 60/360 = 1/6. 1/4 is tempting because there are 4 colours, but the sectors are not equal in size.",
+   "steps": [
+    "The sectors are different sizes, so use angle ÷ 360°.",
+    "P(green) = 60 ÷ 360 = 1/6."
+   ],
+   "mistakes": {
+    "A": "Step 1: you counted 4 colours as if they were equally likely. The sectors are different sizes — use the angle out of 360°.",
+    "C": "Step 2: 1/3 is 120 ÷ 360, the size of a yellow or blue sector. Use the green angle.",
+    "D": "Step 2: 5/6 is the probability of NOT green. The question asks for green itself."
+   },
+   "diagram": "diagrams/y10/maths/probability-review-q1.svg",
+   "diagram_alt": "A spinner with four sectors: yellow 120°, blue 120°, red 60° and green 60°"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A bag has 6 green, 5 yellow and 9 purple counters. One counter is taken at random. What is the probability that it is NOT purple?",
+   "options": {
+    "A": "9/20",
+    "B": "2/3",
+    "C": "11/9",
+    "D": "11/20"
+   },
+   "answer": "D",
+   "explanation": "There are 20 counters and 6 + 5 = 11 are not purple, so P(not purple) = 11/20. 9/20 is the probability that it IS purple.",
+   "steps": [
+    "Total counters: 6 + 5 + 9 = 20.",
+    "Not purple: 6 + 5 = 11 counters.",
+    "P(not purple) = 11/20."
+   ],
+   "mistakes": {
+    "A": "Step 3: 9/20 is P(purple). \"Not purple\" is the complement: subtract from 1 or count the other counters.",
+    "B": "Step 1: you counted colours (2 of the 3 colours are not purple). Count counters, not colours.",
+    "C": "Step 3: you compared not-purple with purple. A probability is out of the TOTAL number of counters."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The probability that a bus is late is 0.27. What is the probability that the bus is not late?",
+   "options": {
+    "A": "0.73",
+    "B": "0.27",
+    "C": "1.27",
+    "D": "73"
+   },
+   "answer": "A",
+   "explanation": "Late and not late are complements, so P(not late) = 1 − 0.27 = 0.73. 1.27 comes from adding instead of subtracting, and a probability cannot be more than 1.",
+   "steps": [
+    "Late and not late are complementary events.",
+    "P(not late) = 1 − 0.27 = 0.73."
+   ],
+   "mistakes": {
+    "B": "Step 1: the two events don't have to be equally likely. Their probabilities must add to 1.",
+    "C": "Step 2: you added 1 and 0.27. Subtract instead — a probability is never more than 1.",
+    "D": "Step 2: 73 is a percentage written without the % sign. As a probability it must be between 0 and 1."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Two fair dice are rolled and the numbers are added. The diagram shows every possible sum. What is the probability that the sum is 5?",
+   "options": {
+    "A": "1/11",
+    "B": "1/18",
+    "C": "1/9",
+    "D": "4/11"
+   },
+   "answer": "C",
+   "explanation": "Four of the 36 equally likely cells show 5 (1+4, 2+3, 3+2, 4+1), so P = 4/36 = 1/9. 1/11 wrongly treats the 11 different sums as equally likely.",
+   "steps": [
+    "There are 6 × 6 = 36 equally likely cells.",
+    "Count the cells showing 5: 1+4, 2+3, 3+2, 4+1 — that is 4.",
+    "P(sum is 5) = 4/36 = 1/9."
+   ],
+   "mistakes": {
+    "A": "Step 1: the 11 sums (2 to 12) are not equally likely. Use the 36 cells of the grid.",
+    "B": "Step 2: 2/36 counts only 1+4 and 2+3. 3+2 and 4+1 are different cells — count every cell showing 5.",
+    "D": "Step 1: you put the 4 cells over 11 sums. The total must be the 36 equally likely cells."
+   },
+   "diagram": "diagrams/y10/maths/probability-review-q4.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the sum, from 2 up to 12"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A card is chosen at random from 20 cards numbered 1 to 20. What is the probability that the number is a multiple of 4 or a multiple of 6?",
+   "options": {
+    "A": "2/5",
+    "B": "7/20",
+    "C": "1/20",
+    "D": "3/20"
+   },
+   "answer": "B",
+   "explanation": "Multiples of 4: 4, 8, 12, 16, 20; multiples of 6: 6, 12, 18. 12 is in both, so there are 5 + 3 − 1 = 7 numbers and P = 7/20. 2/5 = 8/20 counts 12 twice.",
+   "steps": [
+    "Multiples of 4: 4, 8, 12, 16, 20 (5 numbers).",
+    "Multiples of 6: 6, 12, 18 (3 numbers).",
+    "12 is in both, so count it once: 5 + 3 − 1 = 7.",
+    "P = 7/20."
+   ],
+   "mistakes": {
+    "A": "Step 3: 2/5 = 8/20 counts 12 twice. Numbers in both lists must be counted only once.",
+    "C": "Step 3: 1/20 counts only the numbers in BOTH lists. \"Or\" means either list.",
+    "D": "Step 2: 3/20 is only the multiples of 6. Include the multiples of 4 as well."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The spinner in the diagram has red 150°, blue 75° and green 135°. It is spun 240 times. How many times would you expect it to land on green?",
+   "options": {
+    "A": "80",
+    "B": "135",
+    "C": "0.375",
+    "D": "90"
+   },
+   "answer": "D",
+   "explanation": "P(green) = 135/360 = 0.375, and 0.375 × 240 = 90. 80 assumes each of the 3 colours has a 1/3 chance, but the sectors are different sizes.",
+   "steps": [
+    "P(green) = 135 ÷ 360 = 0.375.",
+    "Expected number = P × trials.",
+    "0.375 × 240 = 90."
+   ],
+   "mistakes": {
+    "A": "Step 1: 80 = 240 ÷ 3 treats the three colours as equally likely. Use the angle: 135 ÷ 360.",
+    "B": "Step 1: 135 is the angle in degrees, not a number of spins. Turn it into a probability first.",
+    "C": "Step 3: 0.375 is the probability. Multiply it by the 240 spins to get the expected number."
+   },
+   "diagram": "diagrams/y10/maths/probability-review-q6.svg",
+   "diagram_alt": "A spinner with three sectors: red 150°, blue 75° and green 135°"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A spinner has 4 equal sectors, and one of them is red. It is spun 400 times and lands on red 92 times. Which statement is correct?",
+   "options": {
+    "A": "The relative frequency of red is 0.25, exactly the theoretical probability.",
+    "B": "The relative frequency of red is 0.92, much higher than the theoretical 0.25.",
+    "C": "The relative frequency of red is 0.23, which proves the spinner is unfair.",
+    "D": "The relative frequency of red is 0.23, a little below the theoretical probability of 0.25."
+   },
+   "answer": "D",
+   "explanation": "Relative frequency = 92 ÷ 400 = 0.23, and the theoretical probability is 1/4 = 0.25. A small gap like this is normal chance variation — it does not prove the spinner is unfair.",
+   "steps": [
+    "Relative frequency = 92 ÷ 400 = 0.23.",
+    "Theoretical probability = 1/4 = 0.25 (one of 4 equal sectors).",
+    "0.23 is a little below 0.25 — a normal amount of variation, not proof of anything."
+   ],
+   "mistakes": {
+    "A": "Step 1: 0.25 is the theoretical probability. The relative frequency comes from the results: 92 ÷ 400.",
+    "B": "Step 1: you divided 92 by 100. Divide by the number of trials, 400.",
+    "C": "Step 3: experimental results almost never match exactly. A gap of 0.02 after 400 spins is normal chance, not proof."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Two fair dice are rolled and the two numbers are MULTIPLIED. The diagram shows every product. What is the probability that the product is odd?",
+   "options": {
+    "A": "1/4",
+    "B": "1/2",
+    "C": "3/4",
+    "D": "2/7"
+   },
+   "answer": "A",
+   "explanation": "A product is odd only when both numbers are odd: 3 × 3 = 9 of the 36 cells, so P = 9/36 = 1/4. 1/2 is tempting, but one even number makes the whole product even.",
+   "steps": [
+    "There are 36 equally likely cells.",
+    "A product is odd only if both dice are odd (1, 3 or 5): 3 × 3 = 9 cells.",
+    "P(odd) = 9/36 = 1/4."
+   ],
+   "mistakes": {
+    "B": "Step 2: products are not half odd and half even — one even die makes the product even. Count the odd cells.",
+    "C": "Step 3: 3/4 is the probability of an EVEN product. The question asks for odd.",
+    "D": "Step 1: you used 21 pairs, ignoring order. (1, 3) and (3, 1) are different outcomes — use all 36 cells."
+   },
+   "diagram": "diagrams/y10/maths/probability-review-q8.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the product of the two values"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Three fair coins are tossed. What is the probability of getting at least one head?",
+   "options": {
+    "A": "1/2",
+    "B": "3/8",
+    "C": "7/8",
+    "D": "1/8"
+   },
+   "answer": "C",
+   "explanation": "There are 2 × 2 × 2 = 8 equally likely outcomes and only TTT has no head, so P(at least one head) = 1 − 1/8 = 7/8. 1/8 is P(no heads) — the complement still has to be taken away from 1.",
+   "steps": [
+    "There are 2 × 2 × 2 = 8 equally likely outcomes.",
+    "The opposite of \"at least one head\" is \"no heads\": only TTT, so P(no heads) = 1/8.",
+    "P(at least one head) = 1 − 1/8 = 7/8."
+   ],
+   "mistakes": {
+    "A": "Step 1: 1/2 is the chance for one coin. With three coins list all 8 outcomes.",
+    "B": "Step 2: 3/8 is P(exactly one head). \"At least one\" also includes two and three heads.",
+    "D": "Step 3: 1/8 is P(no heads). Subtract it from 1 to get \"at least one\"."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Two fair dice are rolled and the difference between the numbers (larger minus smaller) is recorded, as shown in the diagram. What is the probability that the difference is 2?",
+   "options": {
+    "A": "1/6",
+    "B": "1/9",
+    "C": "5/18",
+    "D": "2/9"
+   },
+   "answer": "D",
+   "explanation": "Eight cells show a difference of 2 (1&3, 2&4, 3&5, 4&6, each in two orders), so P = 8/36 = 2/9. 1/6 wrongly treats the six differences 0 to 5 as equally likely.",
+   "steps": [
+    "There are 36 equally likely cells.",
+    "Difference 2: (1,3), (3,1), (2,4), (4,2), (3,5), (5,3), (4,6), (6,4) — 8 cells.",
+    "P = 8/36 = 2/9."
+   ],
+   "mistakes": {
+    "A": "Step 1: the 6 differences (0 to 5) are not equally likely. Count cells in the grid.",
+    "B": "Step 2: 4/36 counts each pair in one order only. (1, 3) and (3, 1) are different cells.",
+    "C": "Step 2: 10/36 = 5/18 is the count for a difference of 1. Count the cells showing 2."
+   },
+   "diagram": "diagrams/y10/maths/probability-review-q10.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the difference between the two values, from 0 to 5"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A bag contains only red and blue marbles, and P(red) = 3/8. Then 4 more red marbles are added, and now P(red) = 1/2. How many marbles were in the bag at the start?",
+   "options": {
+    "A": "8",
+    "B": "16",
+    "C": "20",
+    "D": "6"
+   },
+   "answer": "B",
+   "explanation": "If there were n marbles, there were 3n/8 red. After adding 4 red: (3n/8 + 4) ÷ (n + 4) = 1/2, which gives n = 16 (6 red, 10 blue). Check: 10 red out of 20 = 1/2 ✓. 8 assumes the 3/8 means exactly 8 marbles.",
+   "steps": [
+    "Let the starting total be n, so there are 3n/8 red marbles.",
+    "After adding 4 red: (3n/8 + 4) ÷ (n + 4) = 1/2, so 2(3n/8 + 4) = n + 4.",
+    "3n/4 + 8 = n + 4, so n/4 = 4 and n = 16. Check: 6 + 4 = 10 red out of 20 = 1/2 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 1: 3/8 does not mean there are exactly 8 marbles — with 8 marbles, 7 red out of 12 is not 1/2. Use n for the total.",
+    "C": "Step 3: 20 is the total AFTER the 4 red marbles were added. The question asks for the start.",
+    "D": "Step 3: 6 is the number of red marbles at the start, not the total."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In a game you roll a fair die. If you roll a 6 you win $5; otherwise you lose $1. Over 60 games, what is the expected overall result?",
+   "options": {
+    "A": "Win $50",
+    "B": "Win $40",
+    "C": "Break even ($0)",
+    "D": "Lose $50"
+   },
+   "answer": "C",
+   "explanation": "Expect 1/6 × 60 = 10 sixes (+$50) and 50 other rolls (−$50), so the expected result is $0. \"Win $50\" forgets the $1 lost on every other roll.",
+   "steps": [
+    "Expected sixes = 1/6 × 60 = 10, winning 10 × $5 = $50.",
+    "Expected other rolls = 60 − 10 = 50, losing 50 × $1 = $50.",
+    "Overall: $50 − $50 = $0, so you expect to break even."
+   ],
+   "mistakes": {
+    "A": "Step 2: you counted only the wins. You also lose $1 on each of the other rolls.",
+    "B": "Step 2: you took $1 off each WIN (10 × $4). The $1 is lost on the 50 non-six rolls instead.",
+    "D": "Step 1: you counted only the losses. Add the $5 won on each six."
+   }
+  }
+ ]
+}

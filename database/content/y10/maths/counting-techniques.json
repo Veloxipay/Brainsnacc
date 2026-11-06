@@ -1,0 +1,285 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Counting techniques",
+ "summary": "Count outcomes with the multiplication principle, factorials and selections, then use the counts to find probabilities.",
+ "minutes": 45,
+ "body": "How many different passwords, pizza orders or seating plans are possible? Listing them all quickly becomes impossible — a 4-digit PIN already has 10 000 options. **Counting techniques** find the number of possibilities without listing them, and they are the key to probability questions where every outcome is equally likely.\n\n## Learning objective\n\nBy the end of this lesson you can use the multiplication principle, factorials and the \"divide out repeats\" idea to count arrangements and selections, and use these counts to find probabilities.\n\n## Before you start\n\nYou need *Probability review* (earlier in this chapter), the idea of a sample space, and index notation such as 10⁴ from *Index laws review (Year 9)*.\n\n**Warm-up**\n\n1. Work out 5 × 4 × 3 × 2 × 1. *(Answer: 120)*\n2. A die is rolled and a coin is tossed. How many outcomes are there? *(Answer: 6 × 2 = 12)*\n\n## Think of it like this\n\n### Getting dressed\n\nYou own 3 shirts and 4 pairs of pants. For EACH shirt you could wear any of the 4 pants, so there are 4 + 4 + 4 = 3 × 4 = 12 outfits. Every extra item you choose (shoes, a hat) multiplies the total again.\n\n*Where the analogy breaks down:* when dressing, swapping the order you put things on gives the same outfit. In some counting problems order matters (1st, 2nd, 3rd place) and in others it doesn't (choosing a team) — you must decide which each time.\n\n## Key ideas\n\n### The multiplication principle\n\nIf one choice can be made in m ways and then a second choice in n ways, the two together can be made in **m × n** ways. This continues for three or more choices. A tree diagram shows why: each first-stage branch splits into the same number of second-stage branches.\n\n![A tree of meal choices: Pasta, Pizza and Salad each branch into Juice and Water, giving 6 meals from Pasta + Juice to Salad + Water](/diagrams/y10/maths/counting-techniques-menu.svg)\n\n### Boxes (slots)\n\nDraw a box for each position and write how many choices there are for it, then multiply. If items cannot be used twice (**without repetition**), each box has one fewer choice than the one before.\n\n![Three boxes labelled President, Vice and Secretary containing 8, 7 and 6, with multiplication signs between them](/diagrams/y10/maths/counting-techniques-slots.svg)\n\n### Factorials: arranging everything\n\nThe number of ways to arrange n different items in a row is\n\nn! = n × (n − 1) × … × 2 × 1 (read \"n **factorial**\")\n\nFor example 5! = 120. By definition 0! = 1.\n\n### When order doesn't matter\n\nAn **arrangement** (or **permutation**) is when order matters: 1st, 2nd and 3rd place. A **selection** (or **combination**) is when it doesn't: choosing 3 people for a team. To count selections, count the ordered arrangements, then divide by the number of ways each group can be ordered. Choosing r items from n can be written C(n, r) = n! ÷ (r! × (n − r)!).\n\n### Counting and probability\n\nWhen every outcome is equally likely, P(event) = (number of ways the event happens) ÷ (total number of outcomes). Count both with the same method.\n\n## Worked examples\n\n### Example 1\n\nA café offers 3 mains (pasta, pizza, salad) and 2 drinks (juice, water). How many meal deals of one main and one drink are there? If 4 desserts are added, how many meals of main, drink and dessert?\n\nStep 1: main and drink: 3 × 2 = 6 — multiplication principle (see the tree).\nStep 2: add a dessert: 6 × 4 = 24 — each meal deal can take any of the 4 desserts.\nCheck: the tree has 6 end points, matching Step 1 ✓\n\n### Example 2\n\nHow many ways can 5 different books be arranged on a shelf?\n\nStep 1: 5 choices for the first spot, then 4, 3, 2, 1 — no book is used twice.\nStep 2: 5 × 4 × 3 × 2 × 1 = 5! = 120.\nCheck: for just 3 books, 3! = 6, and listing ABC, ACB, BAC, BCA, CAB, CBA gives 6 ✓\n\n### Example 3\n\nA club of 8 members elects a president, a vice-president and a secretary (all different people). How many ways can this be done?\n\nStep 1: draw three boxes: President, Vice, Secretary — order matters, as the roles are different.\nStep 2: 8 choices, then 7, then 6 — a person can't hold two roles.\nStep 3: 8 × 7 × 6 = 336.\n\n### Example 4\n\nTwo of 5 students are chosen to carry the class banner together. How many different pairs are possible?\n\nStep 1: ordered: 5 × 4 = 20 — first pick, then second pick.\nStep 2: each pair has been counted twice (Ana-then-Ben and Ben-then-Ana) — order doesn't matter here.\nStep 3: 20 ÷ 2 = 10 pairs.\nCheck: C(5, 2) = 5! ÷ (2! × 3!) = 120 ÷ 12 = 10 ✓\n\n### Example 5\n\nA 4-digit PIN uses the digits 0–9. A PIN is chosen at random. Find the probability that no digit is repeated.\n\nStep 1: total PINs = 10 × 10 × 10 × 10 = 10⁴ = 10 000 — repeats allowed.\nStep 2: PINs with no repeats = 10 × 9 × 8 × 7 = 5040 — one fewer choice each time.\nStep 3: P(no repeats) = 5040 ÷ 10 000 = 0.504.\nCheck: about half of all PINs have a repeated digit, which surprises most people ✓\n\n## Common mistakes\n\n- **Adding instead of multiplying.** 3 shirts and 4 pants give 12 outfits, not 7. Fix: \"and then\" choices multiply.\n- **Allowing repeats when they're not allowed (or the reverse).** Fix: read the question — can the same person, digit or letter be used again?\n- **Ignoring whether order matters.** Choosing a pair is not the same as choosing a 1st and 2nd. Fix: if swapping gives the same result, divide out the repeats.\n- **Forgetting restrictions.** If a word must start with M, fill that box first. Fix: fill restricted boxes first, then the rest.\n- **Mixing methods for top and bottom of a probability.** Fix: count the event and the total in the same way (both ordered or both unordered).\n\n## Tips to remember\n\n- **\"And then → times.\"** Each extra choice multiplies.\n- **Draw the boxes.** One box per position, fill restricted boxes first, then multiply.\n- **No repeats? Count down.** 8 × 7 × 6…\n- **\"Does swapping change it?\"** Yes → order matters (arrangement). No → divide by the number of orders (selection).\n- **n! grows fast:** 10! is already 3 628 800 — that is why we count instead of list.\n\n## Key terms\n\n- **Multiplication principle** — if choices are made one after another, multiply the numbers of options.\n- **Factorial (n!)** — n × (n − 1) × … × 1, the number of ways to arrange n different items.\n- **Arrangement (permutation)** — an ordered choice; order matters.\n- **Selection (combination)** — an unordered choice; order does not matter; C(n, r) = n! ÷ (r!(n − r)!).\n- **With repetition** — an item can be chosen more than once.\n- **Without repetition** — each item can be used only once.\n\n## Summary\n\n- Multiply the number of options for each choice (multiplication principle).\n- Use boxes; without repetition, each box has one fewer option.\n- n different items can be arranged in n! ways.\n- For selections where order doesn't matter, divide the ordered count by the number of orders.\n- Probability = ways the event happens ÷ total ways, counted the same way.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "An ice-cream shop sells 3 flavours and 2 ways to serve them, as shown in the tree diagram. How many different single-flavour ice creams can you order?",
+   "options": {
+    "A": "5",
+    "B": "6",
+    "C": "8",
+    "D": "9"
+   },
+   "answer": "B",
+   "explanation": "Each of the 3 flavours can be served 2 ways, so there are 3 × 2 = 6 choices — the 6 end points of the tree. 5 adds instead of multiplying.",
+   "steps": [
+    "Flavour: 3 choices. Then serving: 2 choices.",
+    "Multiplication principle: 3 × 2 = 6."
+   ],
+   "mistakes": {
+    "A": "Step 2: 3 + 2 adds the options. Each flavour goes with each serving, so multiply.",
+    "C": "Step 2: 2³ = 8 isn't the right calculation. Multiply the number of options at each stage: 3 × 2.",
+    "D": "Step 1: 3 × 3 uses 3 serving options, but there are only 2 (waffle or cup)."
+   },
+   "diagram": "diagrams/y10/maths/counting-techniques-q1.svg",
+   "diagram_alt": "A tree diagram: Choc, Vanilla and Mango each branch into Waffle and Cup"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Four runners finish a race with no ties. In how many different orders can they finish?",
+   "options": {
+    "A": "24",
+    "B": "16",
+    "C": "10",
+    "D": "256"
+   },
+   "answer": "A",
+   "explanation": "There are 4 choices for 1st, 3 for 2nd, 2 for 3rd and 1 for 4th: 4! = 24. 10 comes from adding 4 + 3 + 2 + 1.",
+   "steps": [
+    "1st place: 4 choices; then 3 for 2nd, 2 for 3rd, 1 for 4th.",
+    "4 × 3 × 2 × 1 = 4! = 24."
+   ],
+   "mistakes": {
+    "B": "Step 1: 4 × 4 lets runners finish in two places. Each runner can only finish once.",
+    "C": "Step 2: you added 4 + 3 + 2 + 1. Multiply the choices.",
+    "D": "Step 1: 4⁴ allows a runner to take more than one place. Count down: 4, 3, 2, 1."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A locker code is 2 letters (A–Z) followed by 1 digit (0–9), as shown in the boxes. Letters may be repeated. How many different codes are possible?",
+   "options": {
+    "A": "62",
+    "B": "6500",
+    "C": "6760",
+    "D": "676"
+   },
+   "answer": "C",
+   "explanation": "26 × 26 × 10 = 6760. 6500 = 26 × 25 × 10 wrongly stops a letter being repeated.",
+   "steps": [
+    "Each letter box has 26 choices (repeats allowed).",
+    "The digit box has 10 choices.",
+    "26 × 26 × 10 = 6760."
+   ],
+   "mistakes": {
+    "A": "Step 3: you added 26 + 26 + 10. Each box multiplies the total.",
+    "B": "Step 1: 26 × 25 doesn't allow a repeated letter, but repeats are allowed.",
+    "D": "Step 3: 26 × 26 forgets the digit box. Multiply by 10 as well."
+   },
+   "diagram": "diagrams/y10/maths/counting-techniques-q3.svg",
+   "diagram_alt": "Three boxes marked ? for the number of choices, labelled Letter, Letter and Digit, with multiplication signs between them"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A committee of 7 people chooses a president, a vice-president and a treasurer, as shown by the boxes. No person can hold two roles. In how many ways can the roles be filled?",
+   "options": {
+    "A": "343",
+    "B": "35",
+    "C": "18",
+    "D": "210"
+   },
+   "answer": "D",
+   "explanation": "7 choices for president, then 6, then 5: 7 × 6 × 5 = 210. 35 divides by 6, but the roles are different, so order matters here.",
+   "steps": [
+    "President: 7 choices.",
+    "Vice-president: 6 left; treasurer: 5 left.",
+    "7 × 6 × 5 = 210."
+   ],
+   "mistakes": {
+    "A": "Step 2: 7³ lets one person hold all three roles. Count down: 7, 6, 5.",
+    "B": "Step 3: dividing by 3! = 6 is for when order doesn't matter. Here the roles are different, so order matters.",
+    "C": "Step 3: you added 7 + 6 + 5. Multiply the choices."
+   },
+   "diagram": "diagrams/y10/maths/counting-techniques-q4.svg",
+   "diagram_alt": "Three boxes marked ? for the number of choices, labelled President, Vice and Treasurer, with multiplication signs between them"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "How many different arrangements of the letters of the word MATHS begin with M?",
+   "options": {
+    "A": "24",
+    "B": "120",
+    "C": "96",
+    "D": "1"
+   },
+   "answer": "A",
+   "explanation": "M is fixed in the first box, leaving 4 different letters to arrange: 4! = 24. 120 = 5! ignores the rule about M.",
+   "steps": [
+    "Fill the restricted box first: the first letter must be M — 1 choice.",
+    "The other 4 letters can be arranged in 4 × 3 × 2 × 1 = 24 ways.",
+    "Total = 1 × 24 = 24."
+   ],
+   "mistakes": {
+    "B": "Step 1: 5! = 120 counts every arrangement. Only those starting with M are wanted.",
+    "C": "Step 1: 120 − 24 = 96 counts the arrangements that do NOT start with M.",
+    "D": "Step 2: fixing M doesn't fix the other letters. A, T, H, S can still be arranged."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "At a meeting, each of 8 people shakes hands once with every other person. How many handshakes are there?",
+   "options": {
+    "A": "56",
+    "B": "28",
+    "C": "64",
+    "D": "7"
+   },
+   "answer": "B",
+   "explanation": "Each person shakes 7 hands: 8 × 7 = 56, but this counts every handshake twice (once for each person), so there are 56 ÷ 2 = 28. 56 forgets to divide by 2.",
+   "steps": [
+    "Each of the 8 people shakes 7 hands: 8 × 7 = 56.",
+    "Each handshake involves 2 people, so it has been counted twice.",
+    "56 ÷ 2 = 28."
+   ],
+   "mistakes": {
+    "A": "Step 2: 56 counts A-with-B and B-with-A as different. They are the same handshake — divide by 2.",
+    "C": "Step 1: 8 × 8 includes people shaking their own hand. Each person shakes 7 hands.",
+    "D": "Step 1: 7 is the handshakes for ONE person. Count for all 8 people."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A 3-digit code is made from the digits 1, 2, 3, 4 and 5, with no digit used twice. A code is chosen at random. What is the probability that it is an even number?",
+   "options": {
+    "A": "1/2",
+    "B": "24/125",
+    "C": "1/5",
+    "D": "2/5"
+   },
+   "answer": "D",
+   "explanation": "Total codes = 5 × 4 × 3 = 60. Even codes end in 2 or 4: 2 choices for the last box, then 4 and 3 for the others = 24. P = 24/60 = 2/5. 24/125 uses a total that allows repeats.",
+   "steps": [
+    "Total codes, no repeats: 5 × 4 × 3 = 60.",
+    "Even: the last digit is 2 or 4 (2 choices), then 4 and 3 choices for the other boxes: 2 × 4 × 3 = 24.",
+    "P = 24/60 = 2/5."
+   ],
+   "mistakes": {
+    "A": "Step 2: only 2 of the 5 digits are even, so even and odd aren't equally likely.",
+    "B": "Step 1: 125 = 5³ allows repeats. Count the total the same way as the event: no repeats.",
+    "C": "Step 2: you used 1 even digit for the last box. Both 2 and 4 are even."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Ben has 3 shirts and 4 pairs of pants (see the grid). He won't wear his red shirt with either the green or the brown pants. How many shirt-and-pants outfits can he wear?",
+   "options": {
+    "A": "12",
+    "B": "8",
+    "C": "10",
+    "D": "5"
+   },
+   "answer": "C",
+   "explanation": "Without rules there are 3 × 4 = 12 outfits. Two of them (red–green, red–brown) are ruled out, so 12 − 2 = 10. 8 removes every red-shirt outfit, but red still goes with black or grey.",
+   "steps": [
+    "All outfits: 3 × 4 = 12 cells in the grid.",
+    "Ruled out: red with green and red with brown — 2 cells.",
+    "12 − 2 = 10."
+   ],
+   "mistakes": {
+    "A": "Step 2: 12 ignores the rule. Cross out the 2 banned cells.",
+    "B": "Step 2: 8 removes the whole red row. Red is only banned with green and brown.",
+    "D": "Step 1: 3 + 4 − 2 adds shirts and pants. Each cell of the grid is one outfit: start from 3 × 4."
+   },
+   "diagram": "diagrams/y10/maths/counting-techniques-q8.svg",
+   "diagram_alt": "A grid with rows Red, Blue and White shirts and columns Black, Green, Brown and Grey pants; each of the 12 empty cells is one outfit"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Three students are chosen from 6 volunteers to form a team. The order they are picked does not matter. The boxes show the number of choices for each pick. How many different teams are possible?",
+   "options": {
+    "A": "20",
+    "B": "120",
+    "C": "18",
+    "D": "40"
+   },
+   "answer": "A",
+   "explanation": "6 × 5 × 4 = 120 counts ordered picks, but each team of 3 can be picked in 3! = 6 orders, so there are 120 ÷ 6 = 20 teams. 120 treats the same team picked in a different order as different.",
+   "steps": [
+    "Ordered picks: 6 × 5 × 4 = 120.",
+    "Each team of 3 can be picked in 3 × 2 × 1 = 6 different orders.",
+    "Teams = 120 ÷ 6 = 20."
+   ],
+   "mistakes": {
+    "B": "Step 2: 120 counts the same team several times (ABC, ACB, BAC…). Order doesn't matter — divide by 3!.",
+    "C": "Step 1: 6 × 3 isn't a counting rule. Start from the ordered count 6 × 5 × 4.",
+    "D": "Step 2: you divided by 3. A group of 3 can be ordered in 3! = 6 ways, not 3."
+   },
+   "diagram": "diagrams/y10/maths/counting-techniques-q9.svg",
+   "diagram_alt": "Three boxes containing 6, 5 and 4, labelled 1st pick, 2nd pick and 3rd pick, with multiplication signs between them"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Five friends, including Ana and Ben, sit in a row of 5 seats in a random order. What is the probability that Ana and Ben sit next to each other?",
+   "options": {
+    "A": "1/5",
+    "B": "2/5",
+    "C": "1/10",
+    "D": "3/5"
+   },
+   "answer": "B",
+   "explanation": "Glue Ana and Ben into one block: 4 items arrange in 4! = 24 ways, and the block can be AB or BA, giving 48. Total 5! = 120, so P = 48/120 = 2/5. 1/5 forgets that the block can be AB or BA.",
+   "steps": [
+    "Total seatings: 5! = 120.",
+    "Treat Ana and Ben as one block: 4 items in 4! = 24 orders, and the block can be AB or BA: 24 × 2 = 48.",
+    "P = 48/120 = 2/5."
+   ],
+   "mistakes": {
+    "A": "Step 2: 24/120 forgets that Ana and Ben can swap inside the block. Multiply by 2.",
+    "C": "Step 2: there are 10 possible pairs of seats, but 4 of them are next to each other, not 1.",
+    "D": "Step 3: 3/5 is the probability that they are NOT next to each other."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A 3-digit lock code uses the digits 0–9, and digits may repeat (see the boxes). A code is chosen at random. What is the probability that at least two of its digits are the same?",
+   "options": {
+    "A": "0.72",
+    "B": "0.27",
+    "C": "0.01",
+    "D": "0.28"
+   },
+   "answer": "D",
+   "explanation": "Total = 10 × 10 × 10 = 1000. All different = 10 × 9 × 8 = 720. So at least two the same = 1 − 720/1000 = 0.28. 0.27 counts exactly two the same and misses codes like 777.",
+   "steps": [
+    "Total codes: 10 × 10 × 10 = 1000.",
+    "All digits different: 10 × 9 × 8 = 720.",
+    "At least two the same = 1 − 720/1000 = 0.28."
+   ],
+   "mistakes": {
+    "A": "Step 3: 0.72 is P(all different). Subtract it from 1.",
+    "B": "Step 2: 270/1000 counts exactly two the same. \"At least two\" also includes all three the same (like 777).",
+    "C": "Step 2: 10/1000 counts only codes with all three digits the same."
+   },
+   "diagram": "diagrams/y10/maths/counting-techniques-q11.svg",
+   "diagram_alt": "Three boxes containing 10, 10 and 10, labelled 1st digit, 2nd digit and 3rd digit, with multiplication signs between them"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "How many different arrangements are there of the letters in the word LEVEL?",
+   "options": {
+    "A": "120",
+    "B": "60",
+    "C": "30",
+    "D": "6"
+   },
+   "answer": "C",
+   "explanation": "If all 5 letters were different there would be 5! = 120 arrangements. Swapping the two Ls or the two Es gives the same word, so divide by 2! × 2! = 4: 120 ÷ 4 = 30. 60 only divides out one repeated letter.",
+   "steps": [
+    "If all letters were different: 5! = 120.",
+    "The two Ls can swap (2! ways) and the two Es can swap (2! ways) without changing the word.",
+    "120 ÷ (2 × 2) = 30."
+   ],
+   "mistakes": {
+    "A": "Step 2: 120 treats the two Ls (and the two Es) as different. Swapping them gives the same word.",
+    "B": "Step 3: you divided by 2 only once. Both L and E are repeated, so divide by 2 × 2.",
+    "D": "Step 1: 3! arranges L, E and V once each, but the word has 5 letters."
+   }
+  }
+ ]
+}

@@ -1,0 +1,289 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Tree diagrams with and without replacement",
+ "summary": "Draw two- and three-stage tree diagrams with and without replacement, and use them for \"and\", \"or\", \"at least one\" and conditional probabilities.",
+ "minutes": 45,
+ "body": "Pick two players for a team, draw two raffle tickets, deal two cards — in many real situations the first choice is NOT put back, so the second choice has different odds. Tree diagrams show these changing probabilities clearly, even over three or more stages, and they let you answer \"given that\" questions too.\n\n## Learning objective\n\nBy the end of this lesson you can draw two- and three-stage tree diagrams for experiments with and without replacement, use them to find probabilities, and use a tree to find a conditional probability.\n\n## Before you start\n\nYou need *Tree diagrams (Year 9)*, *Independent events* and *Conditional probability* (earlier in this chapter), and multiplying and adding fractions.\n\n**Warm-up**\n\n1. Work out 4/7 × 3/6. *(Answer: 12/42 = 2/7)*\n2. Work out 12/42 + 6/42 in simplest form. *(Answer: 18/42 = 3/7)*\n\n## Think of it like this\n\n### Sharing a bag of lollies\n\nA bag has 4 green and 3 yellow lollies. If you take one, look at it and put it back, your friend faces exactly the same bag. If you eat it instead, your friend's bag has one fewer lolly — and one fewer of the colour you ate. Their chances depend on what you did.\n\n*Where the analogy breaks down:* in real life your friend can see what is left in the bag. In a probability problem we only know the possibilities, so the tree shows every branch you might have taken, not just the one that happened.\n\n## Key ideas\n\n### Rules for any tree\n\n- Each **stage** is a set of branches; the branches from one point **add to 1**.\n- **Multiply along** a path to get the probability of that outcome (this AND then that).\n- **Add** the outcomes that make up your event (this path OR that path).\n- All the final outcomes add to 1.\n\n### With replacement\n\nThe item is put back, so every stage looks the same: the events are **independent**.\n\n![A tree for two picks with replacement from 4 green and 3 yellow: every G branch is 4/7 and every Y branch is 3/7; outcomes GG 16/49, GY 12/49, YG 12/49, YY 9/49](/diagrams/y10/maths/tree-diagrams-with-and-without-replacement-with.svg)\n\n### Without replacement\n\nThe item is kept, so at stage 2 there is **one fewer item in total** (the denominator drops by 1) and **one fewer of the type already taken**. The events are **dependent** and the second-stage branches are conditional probabilities, such as P(G second | G first) = 3/6.\n\n![A tree for two picks without replacement from 4 green and 3 yellow: first G 4/7, Y 3/7; after G, G 3/6 and Y 3/6; after Y, G 4/6 and Y 2/6; outcomes GG 12/42, GY 12/42, YG 12/42, YY 6/42](/diagrams/y10/maths/tree-diagrams-with-and-without-replacement-without.svg)\n\n### Three stages\n\nKeep branching. With three stages and two outcomes each there are 2 × 2 × 2 = 8 paths. Several paths can give the same result (e.g. \"exactly two goals\" is GGM, GMG or MGG).\n\n### Conditional probability from a tree\n\nFor \"given\" questions, use P(A | B) = P(A ∩ B) ÷ P(B): add up the paths where B happens for the bottom, and take the paths where both happen for the top.\n\n## Worked examples\n\n### Example 1\n\nA bag has 4 green and 3 yellow lollies. One is taken, its colour noted, and it is put back. A second is taken. Find P(both the same colour).\n\nStep 1: use the with-replacement tree — the bag is the same each time.\nStep 2: P(GG) = 4/7 × 4/7 = 16/49 and P(YY) = 3/7 × 3/7 = 9/49 — multiply along.\nStep 3: P(same) = 16/49 + 9/49 = 25/49 — add the two paths.\nCheck: P(different) = 12/49 + 12/49 = 24/49, and 25/49 + 24/49 = 1 ✓\n\n### Example 2\n\nSame bag, but now the first lolly is eaten (no replacement). Find P(both the same colour) and P(one of each).\n\nStep 1: after a green, 6 lollies are left: 3 green, 3 yellow — one fewer in total and one fewer green.\nStep 2: P(GG) = 4/7 × 3/6 = 12/42 and P(YY) = 3/7 × 2/6 = 6/42 — multiply along.\nStep 3: P(same) = 12/42 + 6/42 = 18/42 = 3/7.\nStep 4: P(one of each) = 1 − 3/7 = 4/7 — complement.\nCheck: GY + YG = 12/42 + 12/42 = 24/42 = 4/7 ✓\n\n### Example 3\n\nA player scores each penalty with probability 0.8, independently. She takes three. Find P(exactly two goals) and P(at least one goal).\n\n![A three-stage tree: each stage branches into Goal 0.8 and Miss 0.2, giving 8 outcomes from GGG to MMM](/diagrams/y10/maths/tree-diagrams-with-and-without-replacement-three.svg)\n\nStep 1: exactly two goals: GGM, GMG, MGG — three paths.\nStep 2: each path is 0.8 × 0.8 × 0.2 = 0.128 — multiply along (same factors in a different order).\nStep 3: P(exactly two) = 3 × 0.128 = 0.384 — add the three paths.\nStep 4: P(at least one) = 1 − P(MMM) = 1 − 0.2³ = 1 − 0.008 = 0.992.\nCheck: P(0 goals) + P(1) + P(2) + P(3) = 0.008 + 0.096 + 0.384 + 0.512 = 1 ✓\n\n### Example 4\n\nUsing the without-replacement lolly tree: given that the second lolly is yellow, find the probability that the first was green.\n\nStep 1: P(second is Y) = P(GY) + P(YY) = 12/42 + 6/42 = 18/42 — add the paths ending in Y.\nStep 2: P(first G and second Y) = P(GY) = 12/42 — the path where both happen.\nStep 3: P(first G | second Y) = (12/42) ÷ (18/42) = 12/18 = 2/3 — both over given.\nCheck: the answer is bigger than P(first G) = 4/7 ≈ 0.57, which makes sense: a yellow second means a yellow was less likely to have been used up ✓\n\n## Common mistakes\n\n- **Not changing the second stage without replacement.** Fix: one fewer on the bottom, and one fewer of the type already taken on top.\n- **Changing only the numerator or only the denominator.** Fix: after taking a green from 4G, 3Y the branch is 3/6, not 3/7 or 4/6.\n- **Counting only one order.** \"One of each\" is GY AND YG. Fix: list every path that fits.\n- **Adding along a path.** Fix: multiply along, add between paths.\n- **Dividing by the wrong total in \"given\" questions.** Fix: the bottom is the total of every path where the given event happens.\n\n## Tips to remember\n\n- **\"Multiply along, add down\"** — along a path ×, between paths +.\n- **\"Eat it, change it\"** (a made-up memory trick): without replacement, change both the top and bottom of the second-stage fractions.\n- **Every fork adds to 1.** A quick check on each set of branches.\n- **At least one = 1 − none** — one path instead of many.\n- **Same factors, different order:** paths like GGM, GMG, MGG have equal probabilities, so count them and multiply.\n\n## Key terms\n\n- **Tree diagram** — a branching diagram showing every outcome of a multi-stage experiment with its probabilities.\n- **Stage** — one step of the experiment; one set of branches.\n- **With replacement** — the item is returned, so the stages are independent.\n- **Without replacement** — the item is kept, so later probabilities change (dependent events).\n- **Path** — a route from start to finish; one outcome of the whole experiment.\n\n## Summary\n\n- Multiply along each path; add the paths you need; all outcomes add to 1.\n- With replacement, every stage is the same (independent).\n- Without replacement, the second stage has one fewer item in total and one fewer of the type taken.\n- Three-stage trees have more paths; group the ones that give the same result.\n- Conditional probabilities from a tree: (paths with both) ÷ (paths with the given event).\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "A bag has 5 red and 3 blue counters. A counter is taken, put back, and a second counter is taken (see the tree diagram). Find the probability that both are blue.",
+   "options": {
+    "A": "3/4",
+    "B": "9/64",
+    "C": "3/28",
+    "D": "3/8"
+   },
+   "answer": "B",
+   "explanation": "With replacement the bag is the same each time, so P(BB) = 3/8 × 3/8 = 9/64. 3/28 would be right only if the first counter were NOT put back.",
+   "steps": [
+    "Follow the path B then B.",
+    "With replacement, both branches are 3/8.",
+    "P(BB) = 3/8 × 3/8 = 9/64."
+   ],
+   "mistakes": {
+    "A": "Step 3: you added 3/8 + 3/8. Along a path, multiply.",
+    "C": "Step 2: 3/8 × 2/7 is for WITHOUT replacement. The counter is put back, so the second branch is still 3/8.",
+    "D": "Step 3: 3/8 is one pick only. Both must be blue — multiply along the path."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q1.svg",
+   "diagram_alt": "A tree diagram for two picks with replacement: first R 5/8 and B 3/8; after each, R 5/8 and B 3/8"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "A bowl has 6 apples and 4 oranges. Two pieces of fruit are taken without replacement (see the tree diagram). What probability belongs on the branch marked ?, for an orange second after an apple first?",
+   "options": {
+    "A": "4/9",
+    "B": "4/10",
+    "C": "3/9",
+    "D": "5/9"
+   },
+   "answer": "A",
+   "explanation": "After an apple is taken, 9 pieces are left and all 4 oranges are still there, so the branch is 4/9. 3/9 wrongly removes an orange, but it was an apple that was taken.",
+   "steps": [
+    "After an apple is taken, 9 pieces of fruit remain.",
+    "All 4 oranges are still there.",
+    "P(orange second | apple first) = 4/9."
+   ],
+   "mistakes": {
+    "B": "Step 1: 4/10 is with replacement. One piece has gone, so the total is 9.",
+    "C": "Step 2: an APPLE was taken, so all 4 oranges are still in the bowl.",
+    "D": "Step 2: 5/9 is the apple branch next to it. The ? branch is for an orange."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q2.svg",
+   "diagram_alt": "A tree diagram for two picks without replacement: first Apple 6/10 and Orange 4/10; after Apple, Apple 5/9 and Orange marked ?; after Orange, Apple 6/9 and Orange 3/9"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Two cards are drawn without replacement from ten cards numbered 1 to 10. What is the probability that both numbers are even?",
+   "options": {
+    "A": "1/4",
+    "B": "1/5",
+    "C": "17/18",
+    "D": "2/9"
+   },
+   "answer": "D",
+   "explanation": "P(even, even) = 5/10 × 4/9 = 20/90 = 2/9. 1/4 = 5/10 × 5/10 forgets that the first card is not put back.",
+   "steps": [
+    "First card: 5 of the 10 are even, so 5/10.",
+    "Second card: 9 cards left and 4 of them are even, so 4/9.",
+    "P(both even) = 5/10 × 4/9 = 20/90 = 2/9."
+   ],
+   "mistakes": {
+    "A": "Step 2: 5/10 × 5/10 is with replacement. One even card has gone: use 4/9.",
+    "B": "Step 2: 5/10 × 4/10 changes the top but not the bottom. There are only 9 cards left.",
+    "C": "Step 3: you added 5/10 + 4/9. \"Both\" is along one path — multiply."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A committee of 2 is chosen at random, one after the other, from 5 girls and 4 boys (see the tree diagram). Find the probability that the committee has one girl and one boy.",
+   "options": {
+    "A": "5/18",
+    "B": "40/81",
+    "C": "5/9",
+    "D": "1/2"
+   },
+   "answer": "C",
+   "explanation": "Girl then boy: 5/9 × 4/8 = 20/72. Boy then girl: 4/9 × 5/8 = 20/72. Total 40/72 = 5/9. 5/18 counts only one of the two orders.",
+   "steps": [
+    "One of each happens as Girl–Boy or Boy–Girl.",
+    "Girl–Boy = 5/9 × 4/8 = 20/72; Boy–Girl = 4/9 × 5/8 = 20/72.",
+    "Add: 40/72 = 5/9."
+   ],
+   "mistakes": {
+    "A": "Step 1: 5/18 = 20/72 is one order only. Boy then girl also gives one of each.",
+    "B": "Step 2: 40/81 uses 4/9 and 5/9 again at stage 2. A person can't be chosen twice — use the /8 branches.",
+    "D": "Step 1: girls and boys are not equally likely to be picked (5 vs 4), and the probabilities change. Use the tree."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q4.svg",
+   "diagram_alt": "A tree diagram without replacement: first Girl 5/9 and Boy 4/9; after Girl, Girl 4/8 and Boy 4/8; after Boy, Girl 5/8 and Boy 3/8"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A family has three children. Each child is equally likely to be a girl (G) or a boy (B), independently. Use the tree diagram to find the probability of exactly two girls.",
+   "options": {
+    "A": "1/8",
+    "B": "3/8",
+    "C": "1/4",
+    "D": "2/3"
+   },
+   "answer": "B",
+   "explanation": "Exactly two girls happens on GGB, GBG and BGG: 3 of the 8 equally likely paths, so P = 3/8. 1/8 counts only one order (e.g. GGB).",
+   "steps": [
+    "There are 8 equally likely paths, each 1/2 × 1/2 × 1/2 = 1/8.",
+    "Exactly two girls: GGB, GBG, BGG — 3 paths.",
+    "P = 3 × 1/8 = 3/8."
+   ],
+   "mistakes": {
+    "A": "Step 2: 1/8 is just one path. The boy could be first, second or third.",
+    "C": "Step 1: 0, 1, 2 or 3 girls are not equally likely. Count the 8 paths.",
+    "D": "Step 1: you treated the 3 positions as outcomes. There are 8 paths in the tree."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q5.svg",
+   "diagram_alt": "A three-stage tree diagram; every branch is G 1/2 or B 1/2, giving 8 outcomes from GGG to BBB"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A box has 8 batteries and 3 of them are flat. Two batteries are chosen without replacement. Find the probability that at least one is flat.",
+   "options": {
+    "A": "9/14",
+    "B": "5/14",
+    "C": "39/64",
+    "D": "3/28"
+   },
+   "answer": "A",
+   "explanation": "P(neither flat) = 5/8 × 4/7 = 20/56 = 5/14, so P(at least one flat) = 1 − 5/14 = 9/14. 5/14 is \"neither flat\" — it still has to be taken away from 1.",
+   "steps": [
+    "Use the complement: at least one flat = 1 − P(neither flat).",
+    "P(neither flat) = 5/8 × 4/7 = 20/56 = 5/14 (5 good batteries, then 4 of 7).",
+    "P(at least one flat) = 1 − 5/14 = 9/14."
+   ],
+   "mistakes": {
+    "B": "Step 3: 5/14 is P(neither flat). Subtract it from 1.",
+    "C": "Step 2: 1 − (5/8)² treats the draw as with replacement. The second pick is from 7 batteries.",
+    "D": "Step 1: 3/8 × 2/7 = 3/28 is P(both flat). \"At least one\" also includes exactly one flat."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Ali plays two games. P(wins game 1) = 0.6. If he wins game 1, P(wins game 2) = 0.7; if he loses game 1, P(wins game 2) = 0.4 (see the tree diagram). Find the probability that he wins exactly one game.",
+   "options": {
+    "A": "0.18",
+    "B": "0.42",
+    "C": "0.76",
+    "D": "0.34"
+   },
+   "answer": "D",
+   "explanation": "Win–Lose = 0.6 × 0.3 = 0.18 and Lose–Win = 0.4 × 0.4 = 0.16, so P(exactly one win) = 0.34. 0.18 counts only one of the two paths.",
+   "steps": [
+    "Exactly one win: Win–Lose or Lose–Win.",
+    "Win–Lose = 0.6 × 0.3 = 0.18; Lose–Win = 0.4 × 0.4 = 0.16.",
+    "Add: 0.18 + 0.16 = 0.34."
+   ],
+   "mistakes": {
+    "A": "Step 3: 0.18 is only Win–Lose. Losing then winning is also exactly one win.",
+    "B": "Step 1: 0.6 × 0.7 = 0.42 is Win–Win: two wins.",
+    "C": "Step 1: 1 − 0.4 × 0.6 = 0.76 is \"at least one win\", which includes two wins."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q7.svg",
+   "diagram_alt": "A tree diagram: first Win 0.6 and Lose 0.4; after Win, Win 0.7 and Lose 0.3; after Lose, Win 0.4 and Lose 0.6"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A bag has 4 red and 2 white marbles. Three marbles are taken without replacement. Find the probability that all three are red.",
+   "options": {
+    "A": "8/27",
+    "B": "1/9",
+    "C": "1/5",
+    "D": "2/3"
+   },
+   "answer": "C",
+   "explanation": "P(RRR) = 4/6 × 3/5 × 2/4 = 24/120 = 1/5. 8/27 = (4/6)³ forgets that the marbles are not put back.",
+   "steps": [
+    "First: 4/6. Then 5 marbles are left with 3 red: 3/5.",
+    "Then 4 are left with 2 red: 2/4.",
+    "P(RRR) = 4/6 × 3/5 × 2/4 = 24/120 = 1/5."
+   ],
+   "mistakes": {
+    "A": "Step 1: (4/6)³ is with replacement. Each time a red is taken, the top AND bottom drop by 1.",
+    "B": "Step 1: 4/6 × 3/6 × 2/6 changes only the number of reds. The total also drops: 6, then 5, then 4.",
+    "D": "Step 3: 2/3 = 4/6 is the first pick only. All three must be red — multiply three branches."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Two marbles are taken without replacement from a bag of 3 red (R) and 5 blue (B) (see the tree diagram). Given that the SECOND marble is red, what is the probability that the first was red?",
+   "options": {
+    "A": "2/7",
+    "B": "3/28",
+    "C": "3/8",
+    "D": "2/5"
+   },
+   "answer": "A",
+   "explanation": "P(2nd red) = RR + BR = 6/56 + 15/56 = 21/56. P(RR) = 6/56. So P(1st R | 2nd R) = 6/21 = 2/7. 3/28 = 6/56 is P(RR), not yet divided by the given.",
+   "steps": [
+    "P(second red) = P(RR) + P(BR) = 3/8 × 2/7 + 5/8 × 3/7 = 6/56 + 15/56 = 21/56.",
+    "P(first red and second red) = 6/56.",
+    "P = (6/56) ÷ (21/56) = 6/21 = 2/7."
+   ],
+   "mistakes": {
+    "B": "Step 3: 6/56 = 3/28 is P(both red). Divide it by P(second red).",
+    "C": "Step 3: 3/8 ignores the information about the second marble.",
+    "D": "Step 1: you divided by 15 (the BR path only). The bottom is every path where the second is red: 6 + 15 = 21."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q9.svg",
+   "diagram_alt": "A tree diagram without replacement: first R 3/8 and B 5/8; after R, R 2/7 and B 5/7; after B, R 3/7 and B 4/7"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A factory has two machines. Machine A makes 60% of the items and 3% of its items are faulty; machine B makes 40% and 5% of its items are faulty (see the tree diagram). A randomly chosen item is faulty. What is the probability it was made by machine B?",
+   "options": {
+    "A": "0.05",
+    "B": "0.02",
+    "C": "9/19",
+    "D": "10/19"
+   },
+   "answer": "D",
+   "explanation": "P(faulty) = 0.6 × 0.03 + 0.4 × 0.05 = 0.018 + 0.02 = 0.038. P(B and faulty) = 0.02. So P(B | faulty) = 0.02 ÷ 0.038 = 10/19. 0.05 is P(faulty | B), the reverse condition.",
+   "steps": [
+    "P(A and faulty) = 0.6 × 0.03 = 0.018; P(B and faulty) = 0.4 × 0.05 = 0.02.",
+    "P(faulty) = 0.018 + 0.02 = 0.038.",
+    "P(B | faulty) = 0.02 ÷ 0.038 = 20/38 = 10/19."
+   ],
+   "mistakes": {
+    "A": "Step 3: 0.05 is P(faulty | B). The question gives \"faulty\" and asks about B.",
+    "B": "Step 3: 0.02 is P(B and faulty). Divide by P(faulty) = 0.038.",
+    "C": "Step 3: 0.018 ÷ 0.038 = 9/19 is P(machine A | faulty). The question asks about B."
+   },
+   "diagram": "diagrams/y10/maths/tree-diagrams-with-and-without-replacement-q10.svg",
+   "diagram_alt": "A tree diagram: Machine A 0.6 and Machine B 0.4; after A, Faulty 0.03 and OK 0.97; after B, Faulty 0.05 and OK 0.95"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A bag has n red marbles and 3 blue marbles. Two marbles are taken without replacement. The probability that both are blue is 1/12. Find n.",
+   "options": {
+    "A": "9",
+    "B": "6",
+    "C": "72",
+    "D": "5"
+   },
+   "answer": "B",
+   "explanation": "3/(n + 3) × 2/(n + 2) = 1/12 gives (n + 3)(n + 2) = 72 = 9 × 8, so n + 3 = 9 and n = 6. Check: 3/9 × 2/8 = 6/72 = 1/12 ✓. 9 is the total number of marbles, not the number of red ones.",
+   "steps": [
+    "P(both blue) = 3/(n + 3) × 2/(n + 2) = 6/((n + 3)(n + 2)).",
+    "Set equal to 1/12: (n + 3)(n + 2) = 72.",
+    "72 = 9 × 8 (consecutive numbers), so n + 3 = 9 and n = 6. Check: 3/9 × 2/8 = 1/12 ✓"
+   ],
+   "mistakes": {
+    "A": "Step 3: 9 is n + 3, the total number of marbles. Subtract the 3 blue ones.",
+    "C": "Step 2: (n + 3)(n + 2) = 72 is not the end — find the two consecutive numbers that multiply to 72.",
+    "D": "Step 3: you paired the factors the wrong way round (n + 3 = 8). n + 3 is the larger of the two."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Each seed planted has a 0.9 chance of sprouting, independently. Three seeds are planted. Find the probability that at least two sprout.",
+   "options": {
+    "A": "0.243",
+    "B": "0.729",
+    "C": "0.972",
+    "D": "0.81"
+   },
+   "answer": "C",
+   "explanation": "All three: 0.9³ = 0.729. Exactly two: 3 paths × 0.9 × 0.9 × 0.1 = 0.243. At least two = 0.729 + 0.243 = 0.972. 0.243 leaves out the case where all three sprout.",
+   "steps": [
+    "\"At least two\" means exactly two OR all three.",
+    "Exactly two: 3 paths (SSN, SNS, NSS), each 0.9 × 0.9 × 0.1 = 0.081, total 0.243. All three: 0.9³ = 0.729.",
+    "Add: 0.243 + 0.729 = 0.972."
+   ],
+   "mistakes": {
+    "A": "Step 1: 0.243 is exactly two. \"At least two\" also includes all three.",
+    "B": "Step 1: 0.729 is all three. \"At least two\" also includes exactly two.",
+    "D": "Step 2: 0.9 × 0.9 ignores the third seed and the different orders. Use a three-stage tree."
+   }
+  }
+ ]
+}

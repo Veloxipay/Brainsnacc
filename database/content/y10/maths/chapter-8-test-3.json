@@ -1,0 +1,369 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 8 · Test 3",
+ "kind": "test",
+ "summary": "Chapter 8 test 3: 15 questions on probability, Venn diagrams, two-way tables, conditional and independent events, tree diagrams and counting.",
+ "minutes": 25,
+ "body": "This test covers all of Chapter 8: probability review, Venn diagrams and two-way tables, conditional probability, independent events, tree diagrams with and without replacement, and counting techniques. It has 15 multiple-choice questions, from easy to challenge. Allow about 25 minutes, no notes, no calculator unless the question says. Draw a quick tree, table or set of boxes on scrap paper when it helps, and check that every probability you find is between 0 and 1.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Probability review",
+   "prompt": "A bag holds 6 blue, 2 red and 10 black pens. One is taken at random. What is the probability that it is NOT red?",
+   "options": {
+    "A": "1/9",
+    "B": "2/3",
+    "C": "8/9",
+    "D": "8"
+   },
+   "answer": "C",
+   "explanation": "There are 18 pens and 16 are not red, so P = 16/18 = 8/9.",
+   "steps": [
+    "Total: 6 + 2 + 10 = 18.",
+    "Not red: 18 − 2 = 16.",
+    "P(not red) = 16/18 = 8/9."
+   ],
+   "mistakes": {
+    "A": "Step 3: 1/9 is the probability that it IS red. Use the complement.",
+    "B": "Step 2: you counted colours (2 of 3 colours). Count the items, not the colours.",
+    "D": "Step 3: you divided by the 2 red pens. A probability is out of the total, 18."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Venn diagrams and two-way tables",
+   "prompt": "The Venn diagram shows 40 people and whether they chose Hockey and/or Soccer. One person is picked at random. Find P(Hockey ∪ Soccer).",
+   "options": {
+    "A": "1/8",
+    "B": "1/2",
+    "C": "17/40",
+    "D": "5/8"
+   },
+   "answer": "D",
+   "explanation": "Hockey ∪ Soccer is everything inside the circles: 12 + 5 + 8 = 25, so P = 5/8.",
+   "steps": [
+    "∪ means \"or\": every region inside either circle.",
+    "12 + 5 + 8 = 25 people.",
+    "P = 25/40 = 5/8."
+   ],
+   "mistakes": {
+    "A": "Step 1: 5 is the overlap, Hockey ∩ Soccer. ∪ means everything inside either circle.",
+    "B": "Step 2: you left out the overlap. People in both circles are in the union too.",
+    "C": "Step 2: 17 is the whole Hockey circle. Add the \"Soccer only\" region as well."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q2.svg",
+   "diagram_alt": "A Venn diagram with ξ = 40: Hockey only 12, both 5, Soccer only 8, and 15 outside both circles"
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Independent events",
+   "prompt": "A fair coin is tossed and a fair die is rolled. What is the probability of a head AND a number less than 3 on the die?",
+   "options": {
+    "A": "1/6",
+    "B": "5/6",
+    "C": "1/2",
+    "D": "1/3"
+   },
+   "answer": "A",
+   "explanation": "The events are independent, so multiply: 1/2 × 1/3 = 1/6. Adding the probabilities is the common slip.",
+   "steps": [
+    "The two events don't affect each other: independent.",
+    "P(both) = 1/2 × 1/3 = 1/6."
+   ],
+   "mistakes": {
+    "B": "Step 2: you added the probabilities. For \"and\" with independent events, multiply.",
+    "C": "Step 2: that is only the first event. Both must happen, so multiply by the second probability.",
+    "D": "Step 2: that is only the second event. Both must happen, so multiply by the first probability."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Counting techniques",
+   "prompt": "A holiday package is made by choosing a place (5 options), a hotel (3 options) and a flight time (2 options), as shown by the boxes. How many different packages are possible?",
+   "options": {
+    "A": "10",
+    "B": "30",
+    "C": "15",
+    "D": "17"
+   },
+   "answer": "B",
+   "explanation": "Multiplication principle: 5 × 3 × 2 = 30. Adding gives far too few.",
+   "steps": [
+    "Boxes: Place 5, Hotel 3, Flight 2.",
+    "Multiply: 5 × 3 × 2 = 30."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added the choices. Each choice goes with every other choice — multiply.",
+    "C": "Step 2: you forgot the third choice (Flight). Multiply all three boxes.",
+    "D": "Step 2: you added the flight choices at the end. Every box multiplies."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q4.svg",
+   "diagram_alt": "Three boxes marked ? for the number of choices, labelled Place, Hotel and Flight, with multiplication signs between them"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Probability review",
+   "prompt": "Two fair dice are rolled and the numbers added; the diagram shows every sum. What is the probability that the sum is 10 or more?",
+   "options": {
+    "A": "1/9",
+    "B": "3/11",
+    "C": "1/6",
+    "D": "6/11"
+   },
+   "answer": "C",
+   "explanation": "6 of the 36 equally likely cells fit (4+6, 5+5, 6+4, 5+6, 6+5, 6+6), so P = 6/36 = 1/6. The 11 sums are not equally likely.",
+   "steps": [
+    "There are 36 equally likely cells.",
+    "Count the cells: 4+6, 5+5, 6+4, 5+6, 6+5, 6+6 — 6 cells.",
+    "P = 6/36 = 1/6."
+   ],
+   "mistakes": {
+    "A": "Step 2: you counted each pair once (e.g. only one of 1 + 5 and 5 + 1). Every cell is a different outcome — count all 6.",
+    "B": "Step 1: you used 3 of the 11 possible sums, but the sums are not equally likely. Use the 36 cells.",
+    "D": "Step 1: you put 6 cells over 11 sums. The total is the 36 equally likely cells."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q5.svg",
+   "diagram_alt": "A 6 by 6 grid with dice values 1 to 6 along the top and side; each cell shows the sum of the two values"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Venn diagrams and two-way tables",
+   "prompt": "The two-way table has some blank cells. Complete it, then find the probability that a randomly chosen person from all 70 is in the \"Weekend\" row and the \"On time\" column (marked ?).",
+   "options": {
+    "A": "4/5",
+    "B": "2/35",
+    "C": "6/7",
+    "D": "8/35"
+   },
+   "answer": "D",
+   "explanation": "Weekend / Late = 10 − 6 = 4, so the ? cell = 20 − 4 = 16 and P = 16/70 = 8/35.",
+   "steps": [
+    "Late column: Weekend cell = 10 − 6 = 4.",
+    "Weekend row: ? = 20 − 4 = 16.",
+    "Divide by the grand total: P = 16/70 = 8/35."
+   ],
+   "mistakes": {
+    "A": "Step 3: you divided by the Weekend row total. The person is chosen from all 70.",
+    "B": "Step 2: 4 is the Weekend / Late cell. Go on to the On time column.",
+    "C": "Step 2: 60 is the whole On time column. You need the Weekend row only."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q6.svg",
+   "diagram_alt": "A two-way table with columns Late, On time, Total and rows Weekday, Weekend, Total. Weekday: Late 6, Total 50. Weekend: On time marked ?, Total 20. Total row: Late 10, grand total 70. Other cells blank"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Conditional probability",
+   "prompt": "Use the two-way table. A person in the \"Outdoor\" row is chosen at random. What is the probability that they are in the \"Win\" column?",
+   "options": {
+    "A": "9/20",
+    "B": "9/40",
+    "C": "9/23",
+    "D": "23/40"
+   },
+   "answer": "A",
+   "explanation": "Given Outdoor, use only that row: 9 of its 20 are Win, so P = 9/20. Dividing by the grand total ignores the condition.",
+   "steps": [
+    "Given \"Outdoor\": use only that row, 20 people.",
+    "9 of them are \"Win\".",
+    "P = 9/20."
+   ],
+   "mistakes": {
+    "B": "Step 1: you divided by all 40. Given \"Outdoor\", divide by that row's total.",
+    "C": "Step 1: you divided by the Win column — that is P(Outdoor | Win). The given group is the Outdoor row.",
+    "D": "Step 2: 23/40 ignores the condition. Use only the Outdoor row."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q7.svg",
+   "diagram_alt": "A two-way table with columns Win, Loss, Total and rows Indoor (14, 6, 20), Outdoor (9, 11, 20) and Total (23, 17, 40)"
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Tree diagrams with and without replacement",
+   "prompt": "A box has 5 milk and 3 dark chocolates. Two are taken without replacement. Find the probability that both are dark.",
+   "options": {
+    "A": "9/64",
+    "B": "3/28",
+    "C": "3/32",
+    "D": "37/56"
+   },
+   "answer": "B",
+   "explanation": "Without replacement: 3/8 × 2/7 = 3/28. Using 3/8 twice forgets that the first one is not put back.",
+   "steps": [
+    "First pick: 3/8.",
+    "Second pick: 7 left, 2 of the right type: 2/7.",
+    "Multiply: 3/8 × 2/7 = 3/28."
+   ],
+   "mistakes": {
+    "A": "Step 2: 3/8 again is WITH replacement. One has gone, so use 2/7.",
+    "C": "Step 2: you changed the top but not the bottom. Only 7 are left.",
+    "D": "Step 3: you added the branches. Along a path, multiply."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Counting techniques",
+   "prompt": "Seven runners line up in seven lanes, and the captain must be in lane 1. How many different line-ups are possible?",
+   "options": {
+    "A": "5040",
+    "B": "4320",
+    "C": "720",
+    "D": "6"
+   },
+   "answer": "C",
+   "explanation": "Fix the restricted item (1 way), then arrange the other 6: 6! = 720. 7! ignores the rule.",
+   "steps": [
+    "Fill the restricted position first: 1 way.",
+    "Arrange the other 6 items: 6! = 720.",
+    "Total = 1 × 720 = 720."
+   ],
+   "mistakes": {
+    "A": "Step 1: 7! counts every order. The fixed item has only 1 place.",
+    "B": "Step 2: you subtracted from the total, which counts the orders that break the rule.",
+    "D": "Step 2: 6 items are left, but they can be arranged in many orders — use a factorial."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Venn diagrams and two-way tables",
+   "prompt": "Of 36 people, 20 like tennis, 18 like golf and 4 like neither. A person is chosen at random. What is the probability that they like both?",
+   "options": {
+    "A": "1/9",
+    "B": "8/9",
+    "C": "19/18",
+    "D": "1/6"
+   },
+   "answer": "D",
+   "explanation": "36 − 4 = 32 are in at least one group, but 20 + 18 = 38, so 38 − 32 = 6 are counted twice: they are in both. P = 1/6.",
+   "steps": [
+    "In at least one group: 36 − 4 = 32.",
+    "20 + 18 = 38 counts the \"both\" people twice.",
+    "Both = 38 − 32 = 6, so P = 6/36 = 1/6."
+   ],
+   "mistakes": {
+    "A": "Step 1: 4 is the number in neither group. Use it to find the overlap.",
+    "B": "Step 3: 32/36 is P(at least one). \"Both\" is only the overlap.",
+    "C": "Step 2: 20 + 18 counts the \"both\" people twice — compare it with 32."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Conditional probability",
+   "prompt": "P(A) = 0.7, P(B) = 0.4 and P(A ∪ B) = 0.82. Find P(A | B).",
+   "options": {
+    "A": "0.7",
+    "B": "0.4",
+    "C": "0.28",
+    "D": "about 0.34"
+   },
+   "answer": "A",
+   "explanation": "P(A ∩ B) = 0.7 + 0.4 − 0.82 = 0.28, so P(A | B) = 0.28 ÷ 0.4 = 0.7.",
+   "steps": [
+    "Addition rule: P(A ∩ B) = P(A) + P(B) − P(A ∪ B) = 0.28.",
+    "P(A | B) = P(A ∩ B) ÷ P(B).",
+    "0.28 ÷ 0.4 = 0.7."
+   ],
+   "mistakes": {
+    "B": "Step 3: dividing by P(A) gives P(B | A). The given event is B.",
+    "C": "Step 2: that is P(A ∩ B). Divide it by P(B).",
+    "D": "Step 3: you divided by P(A ∪ B). Divide by the given event, P(B)."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Tree diagrams with and without replacement",
+   "prompt": "A team plays two matches. P(wins match 1) = 0.5. If it wins match 1, P(wins match 2) = 0.75; if it loses match 1, P(wins match 2) = 0.3 (see the tree diagram). Find the probability that it wins exactly one match.",
+   "options": {
+    "A": "0.125",
+    "B": "0.275",
+    "C": "0.375",
+    "D": "0.65"
+   },
+   "answer": "B",
+   "explanation": "Exactly one: 0.5 × 0.25 + 0.5 × 0.3 = 0.125 + 0.15 = 0.275.",
+   "steps": [
+    "Exactly one happens on two paths: Win then Lose, or Lose then Win.",
+    "0.5 × 0.25 = 0.125 and 0.5 × 0.3 = 0.15.",
+    "Add: 0.275."
+   ],
+   "mistakes": {
+    "A": "Step 3: that is only one path. The other order also gives exactly one — add both paths.",
+    "C": "Step 1: that path has two successes. You need exactly one.",
+    "D": "Step 1: 1 − P(none) is \"at least one\", which includes two successes."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q12.svg",
+   "diagram_alt": "A tree diagram: first Win 0.5 and Lose 0.5; after Win, Win 0.75 and Lose 0.25; after Lose, Win 0.3 and Lose 0.7"
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Independent events",
+   "prompt": "Three seeds are planted. Each sprouts with probability 0.2, independently. Find the probability that at least one sprouts.",
+   "options": {
+    "A": "0.008",
+    "B": "0.512",
+    "C": "0.488",
+    "D": "0.6"
+   },
+   "answer": "C",
+   "explanation": "P(none) = 0.8³ = 0.512, so P(at least one) = 1 − 0.512 = 0.488.",
+   "steps": [
+    "P(one fails) = 1 − 0.2 = 0.8.",
+    "P(all fail) = 0.8 × 0.8 × 0.8 = 0.512 (independent, so multiply).",
+    "P(at least one) = 1 − 0.512 = 0.488."
+   ],
+   "mistakes": {
+    "A": "Step 2: that is the chance they ALL succeed. \"At least one\" is 1 − P(none).",
+    "B": "Step 3: that is P(none). Subtract it from 1.",
+    "D": "Step 2: you added the probabilities. Use 1 − P(none) for \"at least one\"."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Conditional probability",
+   "prompt": "20% of emails are spam. The word \"free\" appears in 60% of spam emails and in 5% of other emails (see the tree diagram). An email contains \"free\". What is the probability that it is spam?",
+   "options": {
+    "A": "0.6",
+    "B": "0.12",
+    "C": "1/4",
+    "D": "3/4"
+   },
+   "answer": "D",
+   "explanation": "P(Free) = 0.2 × 0.6 + 0.8 × 0.05 = 0.16. P(Spam and Free) = 0.12. So P(Spam | Free) = 0.12 ÷ 0.16 = 3/4.",
+   "steps": [
+    "P(Spam and Free) = 0.2 × 0.6 = 0.12.",
+    "P(Free) = 0.12 + 0.8 × 0.05 = 0.16.",
+    "P(Spam | Free) = 0.12 ÷ 0.16 = 3/4."
+   ],
+   "mistakes": {
+    "A": "Step 3: 0.6 is P(Free | Spam), the condition the wrong way round. Here Free is given.",
+    "B": "Step 3: 0.12 is P(Spam and Free). Divide it by P(Free).",
+    "C": "Step 3: that is P(Not spam | Free), the other branch. Use the Spam path on top."
+   },
+   "diagram": "diagrams/y10/maths/chapter-8-test-3-q14.svg",
+   "diagram_alt": "A tree diagram: first Spam 0.2 and Not spam 0.8; after Spam, Free 0.6 and No free 0.4; after Not spam, Free 0.05 and No free 0.95"
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Counting techniques",
+   "prompt": "Two people are chosen at random from 10 volunteers to run a stall. What is the probability that Mei and Raj are the two chosen?",
+   "options": {
+    "A": "1/45",
+    "B": "1/90",
+    "C": "1/5",
+    "D": "1/100"
+   },
+   "answer": "A",
+   "explanation": "Number of possible pairs = 10 × 9 ÷ 2 = 45, and only one of them is the pair wanted, so P = 1/45.",
+   "steps": [
+    "Ordered picks: 10 × 9 = 90.",
+    "Each pair is counted twice (in two orders), so there are 90 ÷ 2 = 45 pairs.",
+    "Only one pair is the one wanted: P = 1/45."
+   ],
+   "mistakes": {
+    "B": "Step 2: 10 × 9 counts ordered picks, but the pair can be picked in 2 orders. Divide by 2 first.",
+    "C": "Step 1: 2/10 is the chance that ONE particular person is chosen. Both must be chosen.",
+    "D": "Step 1: 10 × 10 lets the same person be picked twice. Count pairs of different people."
+   }
+  }
+ ]
+}

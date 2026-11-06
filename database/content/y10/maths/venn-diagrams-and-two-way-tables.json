@@ -1,0 +1,289 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Venn diagrams and two-way tables",
+ "summary": "Use set notation, Venn diagrams and two-way tables to find \"and\", \"or\" and \"not\" probabilities, including the addition rule.",
+ "minutes": 45,
+ "body": "When a group of people (or outcomes) can belong to two categories at once — students who play sport AND do drama, customers who buy coffee AND cake — you need a way to show the overlap. **Venn diagrams** and **two-way tables** both do this, and they make \"and\", \"or\" and \"not\" probabilities easy to read off.\n\n## Learning objective\n\nBy the end of this lesson you can use set notation, draw and read Venn diagrams and two-way tables, switch between them, and use the addition rule P(A ∪ B) = P(A) + P(B) − P(A ∩ B).\n\n## Before you start\n\nYou need *Venn diagrams and two-way tables (Year 8)* and the previous lesson, *Probability review*.\n\n**Warm-up**\n\n1. Work out 15 + 9 − 4. *(Answer: 20)*\n2. Simplify 12/40. *(Answer: 3/10)*\n\n## Think of it like this\n\n### Two hula hoops on the floor\n\nPut two overlapping hula hoops on the classroom floor: one for \"plays sport\", one for \"does drama\". Everyone stands in the right place. Students who do both stand where the hoops overlap. Students who do neither stand outside both hoops but still inside the room. Counting each area tells you everything.\n\n*Where the analogy breaks down:* each person stands in exactly one place, which is great — but in a Venn diagram we also write probabilities instead of people, and the \"room\" (the rectangle) must always be drawn, because the people outside both hoops still count.\n\n## Key ideas\n\n### Set notation\n\n- **ξ** (or S) is the whole sample space — the rectangle.\n- **A ∩ B** (\"A and B\", the **intersection**) — in both A and B: the overlap.\n- **A ∪ B** (\"A or B\", the **union**) — in A or B or both: everything inside the circles.\n- **A′** (\"not A\", the complement) — everything outside circle A.\n- **A ∩ B′** — in A but not B: \"A only\".\n\n### Reading a Venn diagram\n\nA class of 30 was asked about drama and sport: 13 do drama, 17 do sport and 6 do both.\n\n![A Venn diagram with ξ = 30: Drama only 7, both 6, Sport only 11, and 6 outside both circles](/diagrams/y10/maths/venn-diagrams-and-two-way-tables-ex1.svg)\n\nFill a Venn diagram from the **middle outwards**: both = 6, Drama only = 13 − 6 = 7, Sport only = 17 − 6 = 11, neither = 30 − 7 − 6 − 11 = 6. The four regions add to the total.\n\n### Two-way tables\n\nA **two-way table** shows the same four groups in a grid, plus totals. Each row and each column adds up to its total.\n\n![A two-way table: Drama row 6, 7, total 13; Not drama row 11, 6, total 17; totals 17, 13, 30 under the columns Sport, Not sport and Total](/diagrams/y10/maths/venn-diagrams-and-two-way-tables-ex3.svg)\n\n| Venn region | Two-way table cell |\n|---|---|\n| Drama ∩ Sport (both) | Drama row, Sport column |\n| Drama only | Drama row, Not sport column |\n| Sport only | Not drama row, Sport column |\n| Neither | Not drama row, Not sport column |\n\n### The addition rule\n\nP(A ∪ B) = P(A) + P(B) − P(A ∩ B)\n\nAdding P(A) and P(B) counts the overlap twice, so take it away once. If A and B are **mutually exclusive**, P(A ∩ B) = 0 and the rule becomes P(A ∪ B) = P(A) + P(B). In a Venn diagram, mutually exclusive circles do not overlap.\n\n## Worked examples\n\n### Example 1\n\nUse the Drama and Sport Venn diagram (ξ = 30). Find P(both), P(Drama ∪ Sport) and P(Drama only).\n\nStep 1: P(both) = 6/30 = 1/5 — the overlap holds 6 students.\nStep 2: P(Drama ∪ Sport) = (7 + 6 + 11)/30 = 24/30 = 4/5 — add every region inside the circles.\nStep 3: P(Drama only) = 7/30 — the part of the Drama circle outside the overlap.\nCheck: P(neither) = 6/30, and 24/30 + 6/30 = 1 ✓\n\n### Example 2\n\nP(A) = 0.5, P(B) = 0.4 and P(A ∩ B) = 0.15. Find P(A ∪ B) and P(neither), and draw the Venn diagram.\n\nStep 1: P(A ∪ B) = 0.5 + 0.4 − 0.15 = 0.75 — addition rule.\nStep 2: P(neither) = 1 − 0.75 = 0.25 — complement of \"A or B\".\nStep 3: A only = 0.5 − 0.15 = 0.35 and B only = 0.4 − 0.15 = 0.25 — fill from the middle outwards.\n\n![A Venn diagram with probabilities: A only 0.35, both 0.15, B only 0.25 and 0.25 outside both circles](/diagrams/y10/maths/venn-diagrams-and-two-way-tables-ex2.svg)\n\nCheck: 0.35 + 0.15 + 0.25 + 0.25 = 1 ✓\n\n### Example 3\n\nTurn the Drama and Sport Venn diagram into a two-way table and find P(Not drama and Not sport).\n\nStep 1: both (6) goes in Drama/Sport; Drama only (7) in Drama/Not sport — match each region to a cell.\nStep 2: Sport only (11) in Not drama/Sport; neither (6) in Not drama/Not sport.\nStep 3: add the rows (13, 17) and columns (17, 13); the grand total is 30 — totals check the table.\nStep 4: P(Not drama and Not sport) = 6/30 = 1/5.\nCheck: this is the same as \"neither\" in the Venn diagram ✓\n\n### Example 4\n\nOf 120 people surveyed, 70 own a dog, 45 own a cat and 25 own neither. Find P(owns a cat but not a dog).\n\nStep 1: people with at least one pet = 120 − 25 = 95 — take away \"neither\".\nStep 2: both = 70 + 45 − 95 = 20 — dog + cat counts the \"both\" people twice.\nStep 3: cat only = 45 − 20 = 25 — cat circle minus the overlap.\nStep 4: P(cat but not dog) = 25/120 = 5/24.\nCheck: dog only 50 + both 20 + cat only 25 + neither 25 = 120 ✓\n\n## Common mistakes\n\n- **Putting the total of A in the \"A only\" region.** If 13 do drama and 6 do both, \"Drama only\" is 7, not 13. Fix: always fill the overlap first, then subtract.\n- **Forgetting the outside region.** The people in neither circle are still part of ξ. Fix: make sure all four regions add to the total.\n- **Mixing up ∩ and ∪.** Fix: ∩ looks like an \"n\" for \"and\" (overlap); ∪ is a cup that holds everything, \"or\".\n- **Adding without subtracting the overlap.** P(A) + P(B) counts A ∩ B twice. Fix: use the addition rule.\n- **Dividing by the wrong total in a table.** For \"a randomly chosen person\", divide by the grand total. Fix: read the question for who is being chosen.\n\n## Tips to remember\n\n- **Middle out:** fill the overlap first, then the \"only\" parts, then the outside.\n- **∩ = \"n\" for \"and\"; ∪ = \"u\" for \"union\" — the cup that holds A or B** (a made-up memory trick).\n- **Add both, take the overlap once:** P(A ∪ B) = P(A) + P(B) − P(A ∩ B).\n- **Four regions = four cells.** A Venn diagram with two circles and a two-way table hold exactly the same four numbers.\n- **Everything adds to the total** — use it to find a missing number and to check.\n\n## Key terms\n\n- **Venn diagram** — a rectangle (ξ) with circles showing which outcomes belong to which events.\n- **Two-way table** — a table sorting a group by two categories, with row and column totals.\n- **Intersection (A ∩ B)** — outcomes in both A and B.\n- **Union (A ∪ B)** — outcomes in A or B or both.\n- **Complement (A′)** — outcomes not in A.\n- **Mutually exclusive** — events with no outcomes in common; P(A ∩ B) = 0.\n- **Addition rule** — P(A ∪ B) = P(A) + P(B) − P(A ∩ B).\n\n## Summary\n\n- ∩ means \"and\" (overlap), ∪ means \"or\" (inside either circle), A′ means \"not A\".\n- Fill a Venn diagram from the middle outwards; the four regions add to the total.\n- A two-way table holds the same four numbers as a two-circle Venn diagram, plus totals.\n- P(A ∪ B) = P(A) + P(B) − P(A ∩ B); for mutually exclusive events, just add.\n- For a randomly chosen member of the whole group, divide by the grand total.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The Venn diagram shows 25 students and whether they play tennis and/or swim. A student is chosen at random. What is the probability that the student plays tennis AND swims?",
+   "options": {
+    "A": "4/20",
+    "B": "9/25",
+    "C": "4/25",
+    "D": "13/25"
+   },
+   "answer": "C",
+   "explanation": "4 students are in the overlap out of 25 in total, so P = 4/25. 4/20 leaves out the 5 students outside both circles, but they are part of the group too.",
+   "steps": [
+    "\"Tennis and swim\" is the overlap: 4 students.",
+    "The total is ξ = 25 students.",
+    "P = 4/25."
+   ],
+   "mistakes": {
+    "A": "Step 2: you left out the 5 students outside both circles. Divide by the whole group, ξ = 25.",
+    "B": "Step 1: 9 is \"tennis only\". \"Tennis AND swim\" is the overlap of the circles.",
+    "D": "Step 1: 13 is everyone who plays tennis. \"AND swim\" means only the overlap."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q1.svg",
+   "diagram_alt": "A Venn diagram with ξ = 25: Tennis only 9, both 4, Swim only 7, and 5 outside both circles"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Use the Venn diagram (ξ = 20). What is P(A ∪ B)?",
+   "options": {
+    "A": "17/20",
+    "B": "7/10",
+    "C": "3/20",
+    "D": "11/20"
+   },
+   "answer": "A",
+   "explanation": "A ∪ B is everything inside either circle: 8 + 3 + 6 = 17, so P = 17/20. 3/20 is A ∩ B, the overlap only.",
+   "steps": [
+    "∪ means \"or\": every region inside circle A or circle B.",
+    "8 + 3 + 6 = 17 outcomes.",
+    "P(A ∪ B) = 17/20."
+   ],
+   "mistakes": {
+    "B": "Step 2: 14/20 = 7/10 leaves out the overlap. A ∪ B includes the 3 in both circles.",
+    "C": "Step 1: 3/20 is A ∩ B (the overlap). ∪ means everything inside either circle.",
+    "D": "Step 2: 11/20 is just circle A. A ∪ B also includes the \"B only\" region."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q2.svg",
+   "diagram_alt": "A Venn diagram with ξ = 20: A only 8, both 3, B only 6, and 3 outside both circles"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The two-way table shows 40 students sorted by handedness and whether they wear glasses. One of the 40 students is chosen at random. What is the probability that the student is left-handed and wears glasses?",
+   "options": {
+    "A": "3/8",
+    "B": "3/40",
+    "C": "1/4",
+    "D": "1/5"
+   },
+   "answer": "B",
+   "explanation": "3 students are in the Glasses row and the Left column, out of 40 students in total, so P = 3/40. 3/8 divides by the left-handers only, but the student is chosen from all 40.",
+   "steps": [
+    "Find the cell in the Glasses row and the Left column: 3.",
+    "The student is chosen from all 40, so divide by the grand total.",
+    "P = 3/40."
+   ],
+   "mistakes": {
+    "A": "Step 2: you divided by the 8 left-handers. The student is chosen from all 40.",
+    "C": "Step 2: you divided by the 12 glasses-wearers. The student is chosen from all 40.",
+    "D": "Step 1: 8/40 = 1/5 is all left-handers. You need left-handed AND glasses."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q3.svg",
+   "diagram_alt": "A two-way table with columns Left, Right, Total and rows Glasses (3, 9, 12), No glasses (5, 23, 28) and Total (8, 32, 40)"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "P(A) = 0.6, P(B) = 0.35 and P(A ∩ B) = 0.2. Find P(A ∪ B).",
+   "options": {
+    "A": "0.95",
+    "B": "0.75",
+    "C": "0.55",
+    "D": "0.25"
+   },
+   "answer": "B",
+   "explanation": "Addition rule: 0.6 + 0.35 − 0.2 = 0.75. 0.95 forgets to subtract the overlap, which has been counted twice.",
+   "steps": [
+    "Use P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+    "P(A ∪ B) = 0.6 + 0.35 − 0.2 = 0.75."
+   ],
+   "mistakes": {
+    "A": "Step 2: 0.6 + 0.35 counts the overlap twice. Subtract P(A ∩ B) once.",
+    "C": "Step 2: you subtracted 0.2 twice. The overlap is only counted twice in the sum, so take it away once.",
+    "D": "Step 2: 0.25 is P(neither) = 1 − P(A ∪ B). The question asks for A ∪ B itself."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In the Venn diagram the numbers are probabilities. Find P(A ∩ B), the value marked ?.",
+   "options": {
+    "A": "0.8",
+    "B": "0.45",
+    "C": "0.55",
+    "D": "0.2"
+   },
+   "answer": "D",
+   "explanation": "All four regions add to 1, so ? = 1 − 0.3 − 0.25 − 0.25 = 0.2. 0.45 forgets the 0.25 outside both circles.",
+   "steps": [
+    "All four regions of a Venn diagram add to 1.",
+    "? = 1 − 0.3 − 0.25 − 0.25 = 0.2."
+   ],
+   "mistakes": {
+    "A": "Step 2: 0.8 is the total of the other three regions. Subtract it from 1.",
+    "B": "Step 2: you left out the 0.25 outside both circles. It is part of the sample space too.",
+    "C": "Step 1: you added \"A only\" and \"B only\". The regions must add to 1 — find what is missing."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q5.svg",
+   "diagram_alt": "A Venn diagram of probabilities: A only 0.3, the overlap marked ?, B only 0.25, and 0.25 outside both circles"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "The two-way table shows 60 students by year level and whether they ride a bike to school. Some cells are blank. Complete the table, then find the probability that a randomly chosen student is in Year 10 and does not ride a bike (the cell marked ?).",
+   "options": {
+    "A": "17/60",
+    "B": "17/28",
+    "C": "11/60",
+    "D": "7/12"
+   },
+   "answer": "A",
+   "explanation": "Year 10 bike = 25 − 14 = 11, so Year 10 no bike = 28 − 11 = 17, and P = 17/60. 17/28 divides by Year 10 only, but the student is chosen from all 60.",
+   "steps": [
+    "Bike column: Year 10 bike = 25 − 14 = 11.",
+    "Year 10 row: no bike = 28 − 11 = 17.",
+    "Divide by the grand total: P = 17/60."
+   ],
+   "mistakes": {
+    "B": "Step 3: you divided by the 28 Year 10 students. The student is chosen from all 60.",
+    "C": "Step 2: 11 is Year 10 students who DO ride a bike. Go on to the \"No bike\" cell.",
+    "D": "Step 2: 35/60 = 7/12 is everyone with no bike, from both years. You need Year 10 only."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q6.svg",
+   "diagram_alt": "A two-way table with columns Bike, No bike, Total and rows Year 9, Year 10, Total. Year 9: Bike 14, Total 32. Year 10: Total 28, No bike marked ?. Total row: Bike 25, grand total 60. Other cells blank"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "In a group of 40 musicians, 22 play guitar, 15 play piano and 9 play neither. One musician is chosen at random. What is the probability that they play both guitar and piano?",
+   "options": {
+    "A": "37/40",
+    "B": "9/40",
+    "C": "3/20",
+    "D": "31/40"
+   },
+   "answer": "C",
+   "explanation": "40 − 9 = 31 play at least one, but 22 + 15 = 37, so 37 − 31 = 6 are counted twice: they play both. P = 6/40 = 3/20. 31/40 is P(at least one), not P(both).",
+   "steps": [
+    "People who play at least one: 40 − 9 = 31.",
+    "Guitar + piano = 22 + 15 = 37, which counts the \"both\" people twice.",
+    "Both = 37 − 31 = 6, so P = 6/40 = 3/20."
+   ],
+   "mistakes": {
+    "A": "Step 2: 37 counts the \"both\" musicians twice — and 37/40 would leave no room for the 9 who play neither. Compare 37 with 31.",
+    "B": "Step 1: 9 is the number who play neither. Use it to find the overlap.",
+    "D": "Step 3: 31/40 is P(guitar or piano). \"Both\" is only the overlap."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Use the Venn diagram (ξ = 40). What is P(A′ ∩ B)?",
+   "options": {
+    "A": "13/40",
+    "B": "23/40",
+    "C": "7/10",
+    "D": "1/5"
+   },
+   "answer": "D",
+   "explanation": "A′ ∩ B means \"in B but not in A\": B only = 8, so P = 8/40 = 1/5. 13/40 is all of B, including the 5 that are also in A.",
+   "steps": [
+    "A′ means \"not in A\"; ∩ B means \"and in B\".",
+    "Not in A but in B is the \"B only\" region: 8.",
+    "P = 8/40 = 1/5."
+   ],
+   "mistakes": {
+    "A": "Step 2: 13 is all of B, including the overlap. The overlap is in A, so it is not part of A′.",
+    "B": "Step 2: 23 is all of A′ (B only + outside). \"∩ B\" means it must also be in B.",
+    "C": "Step 1: 28/40 = 7/10 is A′ ∪ B (\"or\"). ∩ means \"and\": both conditions at once."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q8.svg",
+   "diagram_alt": "A Venn diagram with ξ = 40: A only 12, both 5, B only 8, and 15 outside both circles"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Events A and B are mutually exclusive. P(A) = 0.45 and P(B) = 0.3. Find the probability that neither A nor B happens.",
+   "options": {
+    "A": "0.25",
+    "B": "0.75",
+    "C": "0.385",
+    "D": "0.135"
+   },
+   "answer": "A",
+   "explanation": "Mutually exclusive means no overlap, so P(A ∪ B) = 0.45 + 0.3 = 0.75 and P(neither) = 1 − 0.75 = 0.25. 0.75 is \"A or B\", not \"neither\".",
+   "steps": [
+    "Mutually exclusive: P(A ∩ B) = 0, so P(A ∪ B) = 0.45 + 0.3 = 0.75.",
+    "Neither is the complement of A ∪ B.",
+    "P(neither) = 1 − 0.75 = 0.25."
+   ],
+   "mistakes": {
+    "B": "Step 3: 0.75 is P(A or B). \"Neither\" is everything else: subtract from 1.",
+    "C": "Step 1: you multiplied 0.55 × 0.7, which is only right for independent events. Mutually exclusive events have no overlap — add them.",
+    "D": "Step 1: 0.45 × 0.3 = 0.135 would be an overlap. Mutually exclusive events have an overlap of 0."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The two-way table shows 50 households and whether they own a cat and/or a dog. If this were drawn as a Venn diagram, what would P(Cat ∪ Dog) be?",
+   "options": {
+    "A": "49/50",
+    "B": "41/50",
+    "C": "9/50",
+    "D": "33/50"
+   },
+   "answer": "B",
+   "explanation": "Cat ∪ Dog is every household with at least one: 8 (both) + 14 (cat only) + 19 (dog only) = 41, so P = 41/50. 49/50 adds the two totals 22 + 27 and counts the 8 \"both\" households twice.",
+   "steps": [
+    "Cat ∪ Dog = households with a cat, a dog or both.",
+    "Both 8 + cat only 14 + dog only 19 = 41 (or 50 − 9 neither = 41).",
+    "P = 41/50."
+   ],
+   "mistakes": {
+    "A": "Step 2: 22 + 27 counts the 8 households with both pets twice. Subtract the overlap once.",
+    "C": "Step 2: 9 is the \"neither\" cell. ∪ means at least one pet.",
+    "D": "Step 2: 14 + 19 = 33 is \"exactly one\" pet. Cat ∪ Dog also includes households with both."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q10.svg",
+   "diagram_alt": "A two-way table with columns Dog, No dog, Total and rows Cat (8, 14, 22), No cat (19, 9, 28) and Total (27, 23, 50)"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In the Venn diagram, ξ = 40 and the regions are 2x (A only), x (both), 3x (B only) and 4 (neither). An outcome is chosen at random. Find P(A).",
+   "options": {
+    "A": "3/10",
+    "B": "3/20",
+    "C": "1/2",
+    "D": "9/20"
+   },
+   "answer": "D",
+   "explanation": "2x + x + 3x + 4 = 40 gives 6x = 36 and x = 6. A = 2x + x = 18, so P(A) = 18/40 = 9/20. 3/10 = 12/40 uses only \"A only\" and misses the overlap.",
+   "steps": [
+    "All regions add to 40: 2x + x + 3x + 4 = 40.",
+    "6x = 36, so x = 6.",
+    "Circle A = 2x + x = 12 + 6 = 18, so P(A) = 18/40 = 9/20."
+   ],
+   "mistakes": {
+    "A": "Step 3: 12/40 uses only \"A only\" (2x). Circle A also contains the overlap x.",
+    "B": "Step 3: 6/40 is just the overlap, x. Circle A is 2x + x.",
+    "C": "Step 3: you divided 18 by 36, leaving out the 4 outside the circles. Divide by ξ = 40."
+   },
+   "diagram": "diagrams/y10/maths/venn-diagrams-and-two-way-tables-q11.svg",
+   "diagram_alt": "A Venn diagram with ξ = 40: A only 2x, both x, B only 3x, and 4 outside both circles"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "P(A ∪ B) = 0.8, P(A) = 0.5 and P(B) = 0.45. Find the probability that exactly one of A or B happens.",
+   "options": {
+    "A": "0.95",
+    "B": "0.15",
+    "C": "0.65",
+    "D": "0.8"
+   },
+   "answer": "C",
+   "explanation": "Addition rule: P(A ∩ B) = 0.5 + 0.45 − 0.8 = 0.15. Exactly one = P(A ∪ B) − P(A ∩ B) = 0.8 − 0.15 = 0.65. 0.8 still includes the outcomes where both happen.",
+   "steps": [
+    "Rearrange the addition rule: P(A ∩ B) = P(A) + P(B) − P(A ∪ B).",
+    "P(A ∩ B) = 0.5 + 0.45 − 0.8 = 0.15.",
+    "Exactly one = P(A ∪ B) − P(A ∩ B) = 0.8 − 0.15 = 0.65."
+   ],
+   "mistakes": {
+    "A": "Step 2: 0.5 + 0.45 = 0.95 counts the overlap twice — and \"exactly one\" must leave the overlap out completely.",
+    "B": "Step 3: 0.15 is P(both). \"Exactly one\" is A only plus B only.",
+    "D": "Step 3: 0.8 is P(A ∪ B), which includes \"both\". Take the overlap away."
+   }
+  }
+ ]
+}
