@@ -1,0 +1,360 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "unit": "Year 10",
+  "title": "Chapter 9 · Test 1",
+  "kind": "test",
+  "summary": "Chapter 9 test 1: 15 questions on sampling, box plots, standard deviation, scatterplots, time series and evaluating statistical reports.",
+  "minutes": 25,
+  "body": "This test covers Chapter 9 · Statistics: collecting data and sampling, box plots and the five-number summary, standard deviation, scatterplots and lines of best fit, time-series data and evaluating statistical reports. It has 15 multiple-choice questions, from easy to challenge. Allow about 25 minutes and work with no notes. A calculator is allowed for this test, but show your working on paper so you can check each step. Many questions use a graph or diagram — read the axes and scales carefully before you answer.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Collecting data and sampling",
+      "prompt": "A teacher uses an alphabetical class list, picks a random starting name, then chooses every 12th name after it. What type of sample is this?",
+      "options": {
+        "A": "Systematic sample",
+        "B": "Stratified sample",
+        "C": "Self-selected sample",
+        "D": "Census"
+      },
+      "answer": "A",
+      "explanation": "A random start followed by every 12th name is a systematic sample. It is not stratified, because the list was not split into groups.",
+      "steps": [
+        "Look at the rule: a random start, then every 12th name on one list.",
+        "That is the definition of a systematic sample."
+      ],
+      "mistakes": {
+        "B": "Step 1: a stratified sample splits the list into groups first. Here one list is stepped through every 12th name.",
+        "C": "Step 1: the students did not volunteer — the teacher chose them by a rule.",
+        "D": "Step 1: a census uses every student, but only every 12th student is chosen."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Box plots and the five-number summary",
+      "prompt": "The box plot shows the minutes a group of students spent on homework one night. What is the upper quartile (Q3)?",
+      "options": {
+        "A": "19",
+        "B": "25",
+        "C": "33",
+        "D": "14"
+      },
+      "answer": "B",
+      "explanation": "Q3 is the right-hand end of the box: 25 minutes. 33 is the maximum, at the end of the whisker.",
+      "steps": [
+        "The box runs from Q1 to Q3.",
+        "Its right-hand end is at 25, so Q3 = 25 minutes."
+      ],
+      "mistakes": {
+        "A": "Step 1: 19 is the line inside the box, the median. Q3 is the right end of the box.",
+        "C": "Step 1: 33 is the end of the right whisker, the maximum. Q3 is the right end of the box.",
+        "D": "Step 1: 14 is the left end of the box, Q1. Q3 is the right end."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-1-q2.svg",
+      "diagram_alt": "A box plot of homework minutes on a scale from 5 to 35: minimum 8, Q1 14, median 19, Q3 25, maximum 33"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Scatterplots and lines of best fit",
+      "prompt": "The scatterplot shows the height and arm span of 12 people. Which best describes the relationship?",
+      "options": {
+        "A": "Strong negative correlation",
+        "B": "Weak positive correlation",
+        "C": "Strong positive correlation",
+        "D": "No correlation"
+      },
+      "answer": "C",
+      "explanation": "The dots rise from left to right (positive) and sit close to a straight line (strong). They do not fall, so it is not negative.",
+      "steps": [
+        "Direction: as height increases, arm span increases — positive.",
+        "Strength: the dots are close to a line — strong."
+      ],
+      "mistakes": {
+        "A": "Step 1: the dots RISE from left to right, so the correlation is positive.",
+        "B": "Step 2: the dots lie very close to a straight line, so it is strong.",
+        "D": "Step 1: there is a clear upward pattern in the dots."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-1-q3.svg",
+      "diagram_alt": "Scatterplot of arm span against height for 12 people from about 148 to 182 cm; the dots rise in a tight straight-line pattern"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Time-series data",
+      "prompt": "The graph shows a Melbourne household's electricity use each month of one year (J, F, M, … are January, February, March, …). The same pattern happens every year. Which feature does it show?",
+      "options": {
+        "A": "An increasing trend all year",
+        "B": "Seasonality, with a peak in summer",
+        "C": "A single outlier in July",
+        "D": "Seasonality, with a peak in winter"
+      },
+      "answer": "D",
+      "explanation": "Use peaks in June–August (winter, when heating is used) and the pattern repeats every year, so it is seasonal. It is not a summer peak — Australian summer is December to February.",
+      "steps": [
+        "A pattern that repeats every year is seasonality.",
+        "The highest values are in June, July and August — winter in Melbourne."
+      ],
+      "mistakes": {
+        "A": "Step 2: use rises to July, then FALLS again — it is not a steady increase.",
+        "B": "Step 2: the peak is in June–August, which is winter in Melbourne.",
+        "C": "Step 1: the high values build up and fall away over several months, and it repeats every year — that is a seasonal pattern, not one spike."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-1-q4.svg",
+      "diagram_alt": "Time-series graph of monthly electricity use: 420, 410, 450, 520, 600, 690, 720, 700, 610, 520, 450, 430 kWh from January to December; the vertical axis starts at 300"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Collecting data and sampling",
+      "prompt": "A factory has 600 office workers and 400 factory-floor workers. A stratified sample of 50 workers is chosen. How many factory-floor workers should be in it?",
+      "options": {
+        "A": "20",
+        "B": "25",
+        "C": "8",
+        "D": "30"
+      },
+      "answer": "A",
+      "explanation": "Factory-floor workers are 400 ÷ 1000 = 0.4 of the workforce, and 0.4 × 50 = 20. Splitting 25 and 25 ignores the group sizes.",
+      "steps": [
+        "Total workers = 600 + 400 = 1000.",
+        "Factory-floor share = 400 ÷ 1000 = 0.4.",
+        "Number in the sample = 0.4 × 50 = 20."
+      ],
+      "mistakes": {
+        "B": "Step 2: 50 ÷ 2 = 25 shares the sample equally. The groups are different sizes.",
+        "C": "Step 2: 400 ÷ 50 = 8 divides the wrong numbers. Find 400 ÷ 1000 first.",
+        "D": "Step 2: 30 is the share for the 600 office workers."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Box plots and the five-number summary",
+      "prompt": "A data set has Q1 = 40 and Q3 = 52. Which of these values is an outlier?",
+      "options": {
+        "A": "70",
+        "B": "72",
+        "C": "64",
+        "D": "22"
+      },
+      "answer": "B",
+      "explanation": "IQR = 12, so the fences are 40 − 18 = 22 and 52 + 18 = 70. Only 72 is beyond a fence. 70 sits exactly on the fence, so it is not an outlier.",
+      "steps": [
+        "IQR = 52 − 40 = 12, and 1.5 × 12 = 18.",
+        "Fences: 40 − 18 = 22 and 52 + 18 = 70.",
+        "Only 72 is beyond a fence (greater than 70), so 72 is the outlier."
+      ],
+      "mistakes": {
+        "A": "Step 3: the upper fence is exactly 70. A value must be BEYOND the fence to be an outlier.",
+        "C": "Step 2: 64 = Q3 + IQR. The fence uses 1.5 × IQR, so 64 is inside it.",
+        "D": "Step 3: the lower fence is exactly 22, so 22 is not beyond it."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Standard deviation",
+      "prompt": "Find the population standard deviation of 3, 5, 7, correct to 2 decimal places.",
+      "options": {
+        "A": "2.67",
+        "B": "2",
+        "C": "1.63",
+        "D": "1.33"
+      },
+      "answer": "C",
+      "explanation": "Mean 5; squared deviations 4, 0, 4 total 8; σ = √(8 ÷ 3) ≈ 1.63. Stopping at 8 ÷ 3 gives the variance.",
+      "steps": [
+        "Mean = 15 ÷ 3 = 5.",
+        "Squared deviations: 4, 0, 4 — total 8.",
+        "σ = √(8 ÷ 3) ≈ 1.63."
+      ],
+      "mistakes": {
+        "A": "Step 3: 8 ÷ 3 ≈ 2.67 is the variance. Take the square root.",
+        "B": "Step 3: √(8 ÷ 2) divides by n − 1. Population σ divides by n = 3.",
+        "D": "Step 2: (2 + 0 + 2) ÷ 3 averages the plain distances. Square each deviation first."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Scatterplots and lines of best fit",
+      "prompt": "The line of best fit on the scatterplot passes through (0, 15) and (20, 75). Use its equation to predict the distance thrown after 12 hours of training.",
+      "options": {
+        "A": "36 m",
+        "B": "180 m",
+        "C": "75 m",
+        "D": "51 m"
+      },
+      "answer": "D",
+      "explanation": "Gradient = (75 − 15) ÷ 20 = 3, so y = 3x + 15 and y = 3 × 12 + 15 = 51 m. Leaving out the intercept gives 36.",
+      "steps": [
+        "Gradient = (75 − 15) ÷ (20 − 0) = 3; the intercept is 15, so y = 3x + 15.",
+        "Substitute x = 12: y = 36 + 15 = 51 m."
+      ],
+      "mistakes": {
+        "A": "Step 3: 3 × 12 = 36 forgets the y-intercept. Add 15.",
+        "B": "Step 3: you multiplied the intercept 15 by 12. Use y = 3 × 12 + 15.",
+        "C": "Step 3: 75 m is the line's value at 20 hours. Substitute x = 12."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-1-q8.svg",
+      "diagram_alt": "Scatterplot of distance thrown against hours of training from 2 to 18 hours, with a line of best fit through the marked points (0, 15) and (20, 75)"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Evaluating statistical reports",
+      "prompt": "In a group of 7 students, the weekly pocket money is $20, $25, $30, $30, $35, $40 and $1000. Which value should a fair report give as the typical amount?",
+      "options": {
+        "A": "$30, the median",
+        "B": "$168.57, the mean",
+        "C": "$980, the range",
+        "D": "$1000, the largest amount"
+      },
+      "answer": "A",
+      "explanation": "The median, $30, is the middle amount and is not affected by the $1000 outlier. The mean, about $168.57, is more than four times what six of the seven students get.",
+      "steps": [
+        "$1000 is an outlier, so use the median for a typical value.",
+        "In order, the middle (4th) amount is $30."
+      ],
+      "mistakes": {
+        "B": "Step 2: one student's $1000 drags the mean far above what the other six get.",
+        "C": "Step 1: the range measures spread, not a typical amount.",
+        "D": "Step 1: $1000 is the outlier, the least typical amount."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Box plots and the five-number summary",
+      "prompt": "The parallel box plots show the heights of Year 8 and Year 9 students. Which statement is true?",
+      "options": {
+        "A": "Year 8 has the larger interquartile range",
+        "B": "About 75% of the Year 9 students are at least as tall as the median Year 8 student",
+        "C": "About half of the Year 9 students are taller than 166 cm",
+        "D": "Every Year 9 student is taller than every Year 8 student"
+      },
+      "answer": "B",
+      "explanation": "Year 9's Q1 (153) equals Year 8's median (153), and about 75% of Year 9 is at or above Q1. Year 9's IQR (13) is larger than Year 8's (10).",
+      "steps": [
+        "Year 8's median is 153 cm.",
+        "Year 9's lower quartile is also 153 cm, and about 75% of values are at or above Q1.",
+        "So about 75% of Year 9 are at least as tall as the median Year 8 student."
+      ],
+      "mistakes": {
+        "A": "Step 2: IQR Year 8 = 158 − 148 = 10; Year 9 = 166 − 153 = 13. Year 9's is larger.",
+        "C": "Step 1: 166 is Year 9's Q3, so only about 25% are taller.",
+        "D": "Step 2: the shortest Year 9 student (145 cm) is shorter than many Year 8 students."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-1-q10.svg",
+      "diagram_alt": "Parallel box plots of height. Year 8: minimum 140, Q1 148, median 153, Q3 158, maximum 170. Year 9: minimum 145, Q1 153, median 160, Q3 166, maximum 178"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Standard deviation",
+      "prompt": "In a quiz, 2 students scored 1, 3 students scored 2 and 5 students scored 3. The mean is 2.3. Find the population standard deviation, correct to 2 decimal places.",
+      "options": {
+        "A": "0.61",
+        "B": "0.82",
+        "C": "0.78",
+        "D": "2.3"
+      },
+      "answer": "C",
+      "explanation": "Σf(x − 2.3)² = 2(1.69) + 3(0.09) + 5(0.49) = 6.1, so σ = √(6.1 ÷ 10) ≈ 0.78. Stopping at 0.61 gives the variance.",
+      "steps": [
+        "Squared deviations from 2.3: (1 − 2.3)² = 1.69, (2 − 2.3)² = 0.09, (3 − 2.3)² = 0.49.",
+        "Multiply by frequencies and add: 3.38 + 0.27 + 2.45 = 6.1.",
+        "σ = √(6.1 ÷ 10) = √0.61 ≈ 0.78."
+      ],
+      "mistakes": {
+        "A": "Step 3: 6.1 ÷ 10 = 0.61 is the variance. Take the square root.",
+        "B": "Step 3: √(6.1 ÷ 9) divides by n − 1. Population σ divides by 10.",
+        "D": "Step 1: 2.3 is the mean. Find the squared deviations from it."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Time-series data",
+      "prompt": "A shop sold 14, 20, 17, 23 and 26 bikes in five weeks. What is the SECOND 3-point moving average?",
+      "options": {
+        "A": "17",
+        "B": "60",
+        "C": "22",
+        "D": "20"
+      },
+      "answer": "D",
+      "explanation": "The second moving average uses weeks 2, 3 and 4: (20 + 17 + 23) ÷ 3 = 20. Using weeks 1–3 gives the first one, 17.",
+      "steps": [
+        "The first average uses weeks 1–3; the second slides along one, to weeks 2–4.",
+        "Weeks 2–4: 20 + 17 + 23 = 60.",
+        "60 ÷ 3 = 20."
+      ],
+      "mistakes": {
+        "A": "Step 1: 17 is the FIRST moving average (weeks 1–3). The second uses weeks 2–4.",
+        "B": "Step 2: 60 is the total of weeks 2–4. Divide by 3.",
+        "C": "Step 1: 22 is the THIRD moving average (weeks 3–5). Slide along only one week from the start."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Evaluating statistical reports",
+      "prompt": "Support for a council policy fell from 60% to 45% of residents. Which description is correct?",
+      "options": {
+        "A": "A fall of 15 percentage points, which is a 25% decrease",
+        "B": "A fall of 15 percentage points, which is a 15% decrease",
+        "C": "A fall of 25 percentage points, which is a 15% decrease",
+        "D": "A fall of 15 percentage points, which is a 33.3% decrease"
+      },
+      "answer": "A",
+      "explanation": "The rates differ by 60 − 45 = 15 percentage points, and 15 ÷ 60 × 100 = 25% decrease. Dividing by 45 gives 33.3%, which uses the wrong base.",
+      "steps": [
+        "Difference = 60 − 45 = 15 percentage points.",
+        "Percentage decrease = 15 ÷ 60 × 100 = 25%."
+      ],
+      "mistakes": {
+        "B": "Step 2: the percentage decrease compares 15 with the starting 60: 15 ÷ 60.",
+        "C": "Step 1: the difference in the two rates is 60 − 45 = 15 points, not 25.",
+        "D": "Step 2: you divided by the new value, 45. Divide by the starting value, 60."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Scatterplots and lines of best fit",
+      "prompt": "The line of best fit linking a phone's age x (months) and its battery health y (%) is y = −0.8x + 64. According to the line, at what age is the battery health 40%?",
+      "options": {
+        "A": "32 months",
+        "B": "30 months",
+        "C": "130 months",
+        "D": "−30 months"
+      },
+      "answer": "B",
+      "explanation": "Set y = 40: 40 = −0.8x + 64, so −0.8x = −24 and x = 30 months. Substituting 40 for x answers a different question.",
+      "steps": [
+        "Set y = 40: 40 = −0.8x + 64.",
+        "Subtract 64: −0.8x = −24.",
+        "Divide by −0.8: x = 30 months."
+      ],
+      "mistakes": {
+        "A": "Step 1: you substituted 40 for x. Here 40 is the battery health, so set y = 40.",
+        "C": "Step 2: 40 = −0.8x + 64 gives 0.8x = 64 − 40. You added instead of subtracting.",
+        "D": "Step 3: −0.8x = −24, and a negative divided by a negative is positive."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Collecting data and sampling",
+      "prompt": "Researchers catch and band 60 birds on an island, then release them. Later they catch 45 birds, and 9 have bands. Estimate the number of birds on the island.",
+      "options": {
+        "A": "96",
+        "B": "12",
+        "C": "300",
+        "D": "2700"
+      },
+      "answer": "C",
+      "explanation": "In the second catch 9 out of 45 (one fifth) are banded, so the 60 banded birds are about one fifth of all birds: N = 60 × 45 ÷ 9 = 300. Adding the catches (96) only counts birds actually seen.",
+      "steps": [
+        "The banded fraction should match: 9 ÷ 45 = 60 ÷ N.",
+        "Rearrange: N = 60 × 45 ÷ 9.",
+        "N = 2700 ÷ 9 = 300 birds."
+      ],
+      "mistakes": {
+        "A": "Step 1: 60 + 45 − 9 counts only birds that were caught. Use the banded fraction to scale up.",
+        "B": "Step 2: you worked out 60 × 9 ÷ 45. The equation is 9 ÷ 45 = 60 ÷ N, so N = 60 × 45 ÷ 9.",
+        "D": "Step 2: 60 × 45 forgets to divide by the 9 banded birds."
+      }
+    }
+  ]
+}

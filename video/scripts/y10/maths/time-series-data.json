@@ -1,0 +1,86 @@
+{
+  "lesson": "y10/maths/time-series-data.json",
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Time-series data",
+  "icon": "📅",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Time-series data",
+      "sub": "Reading the story of data over time",
+      "icon": "📅",
+      "say": "Prices, temperatures and populations change over time. A time-series graph tells the story of those changes, and helps us guess what comes next."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🌊",
+      "everyday": "Waves go in and out while the tide slowly rises",
+      "icon2": "📈",
+      "science": "Short ups and downs sit on top of a long-term trend",
+      "breaks": "Tides follow a fixed timetable, but a real trend can speed up, slow down or reverse.",
+      "say": "At the beach, waves come in and out every few seconds, but over a few hours the tide slowly rises. A time series is the same: short ups and downs, like waves, on top of a slow overall change, like the tide. To see the tide, look past the waves."
+    },
+    {
+      "type": "points",
+      "heading": "What to look for",
+      "icon": "🔍",
+      "points": [
+        "Time goes on the horizontal axis",
+        "Trend: long-term up, down or flat",
+        "Seasonality: a pattern that repeats",
+        "Irregular ups and downs, and spikes"
+      ],
+      "say": "Time always goes across the bottom. Then look for four things: the trend, which is the long-term direction; seasonality, a pattern that repeats every year; irregular ups and downs; and outliers, which are one-off spikes."
+    },
+    {
+      "type": "diagram",
+      "heading": "Ice-cream sales over two years",
+      "diagram": "diagrams/y10/maths/time-series-data-ex1.svg",
+      "notes": [
+        "Peaks every summer: seasonal",
+        "Lows every July",
+        "2024 a little higher than 2023: trend"
+      ],
+      "say": "Here are monthly ice-cream sales for two years. First the time axis, then the line. Sales peak every summer and drop every July, a seasonal pattern. Compare the same month in each year and 2024 is a little higher, so there's also a slight upward trend."
+    },
+    {
+      "type": "example",
+      "heading": "3-point moving averages",
+      "question": "Weekly sales: 30, 36, 33, 39, 42, 38. Find the 3-point moving averages.",
+      "lines": [
+        "(30 + 36 + 33) ÷ 3 = 33",
+        "(36 + 33 + 39) ÷ 3 = 36",
+        "(33 + 39 + 42) ÷ 3 = 38",
+        "(39 + 42 + 38) ÷ 3 ≈ 39.67",
+        "Smoothed: 33, 36, 38, 39.67"
+      ],
+      "say": "To smooth jumpy data, use moving averages. Average the first three values: thirty-three. Slide along one: thirty-six. Then thirty-eight, and about thirty-nine point six seven. The smoothed values rise steadily, showing the trend clearly.",
+      "caption": "Average three values at a time, sliding along one each time: 33, 36, 38, 39.67. The smoothed values show the upward trend."
+    },
+    {
+      "type": "diagram",
+      "heading": "Forecasting with a trend line",
+      "diagram": "diagrams/y10/maths/time-series-data-ex2.svg",
+      "notes": [
+        "Trend: +0.45 thousand per year",
+        "2028: 15.6 + 5 × 0.45 = 17.85",
+        "Near forecasts are more reliable"
+      ],
+      "say": "This town's population rose from twelve thousand to sixteen thousand. The dashed trend line rises zero point four five thousand each year. From fifteen point six in 2023, five more years gives seventeen point eight five thousand in 2028. The further ahead you forecast, the less reliable it is.",
+      "caption": "The trend line rises 0.45 thousand per year. From 15.6 in 2023: 15.6 + 5 × 0.45 = 17.85 thousand in 2028. Far-ahead forecasts are less reliable."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Time on the horizontal axis",
+        "Trend, seasonality, irregular, outliers",
+        "Same season, different years = trend",
+        "Moving averages: slide one at a time",
+        "Forecast with care — not too far ahead"
+      ],
+      "say": "Quick recap. Time goes across. Look for trend, seasonality, irregular changes and outliers. Compare the same season in different years to find the trend. Moving averages slide along one value at a time. And forecast with care. Now try the practice questions!"
+    }
+  ]
+}

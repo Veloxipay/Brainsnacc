@@ -1,0 +1,107 @@
+{
+  "lesson": "y10/maths/scatterplots-and-lines-of-best-fit.json",
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Scatterplots and lines of best fit",
+  "icon": "📈",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Scatterplots and lines of best fit",
+      "sub": "Does studying more really help?",
+      "icon": "📈",
+      "say": "Does studying longer really lead to better marks? Put each student on a scatterplot and you can see the answer, and even make predictions."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🐦",
+      "everyday": "A flock of birds heading one way",
+      "icon2": "📈",
+      "science": "A line of best fit shows the overall trend of the dots",
+      "breaks": "A flock keeps flying, but a trend may stop or change outside the data.",
+      "say": "From far away, a flock of birds looks like one shape heading one way, even though every bird is in a slightly different spot. A line of best fit is the path of the flock: it shows the overall direction of the dots. But unlike a flock, the trend may not continue past the data."
+    },
+    {
+      "type": "diagram",
+      "heading": "Direction of the dots",
+      "diagram": "diagrams/y10/maths/scatterplots-and-lines-of-best-fit-types.svg",
+      "notes": [
+        "Positive: dots rise",
+        "Negative: dots fall",
+        "No correlation: no pattern"
+      ],
+      "say": "First, the direction. When the dots rise from left to right, it's a positive correlation. When they fall, it's negative. With no pattern, there's no correlation. Then describe the form, straight or curved, and the strength: strong if the dots hug a line, weak if they're loosely scattered."
+    },
+    {
+      "type": "diagram",
+      "heading": "Fitting the line",
+      "diagram": "diagrams/y10/maths/scatterplots-and-lines-of-best-fit-ex2.svg",
+      "notes": [
+        "Through the middle of the dots",
+        "Passes through (2, 52) and (6, 80)",
+        "Gradient = 28 ÷ 4 = 7"
+      ],
+      "say": "Here are fourteen students' study hours and test scores: strong, positive and linear. Now the line of best fit, drawn through the middle of the dots. It passes through two to fifty-two and six to eighty. The gradient is twenty-eight divided by four, which is seven.",
+      "caption": "Strong, positive, linear. The line passes through (2, 52) and (6, 80). Gradient = 28 ÷ 4 = 7."
+    },
+    {
+      "type": "example",
+      "heading": "Equation and prediction",
+      "question": "The line passes through (2, 52) and (6, 80). Find its equation and predict the score for 4 hours.",
+      "lines": [
+        "m = (80 − 52) ÷ (6 − 2) = 7",
+        "52 = 7 × 2 + c, so c = 38",
+        "score = 7 × hours + 38",
+        "4 hours: 7 × 4 + 38 = 66%"
+      ],
+      "say": "The gradient is seven. Substitute two and fifty-two: fifty-two equals fourteen plus c, so c is thirty-eight. The equation is score equals seven times hours plus thirty-eight. For four hours, that's twenty-eight plus thirty-eight, sixty-six percent.",
+      "caption": "m = 7. 52 = 14 + c, so c = 38. Score = 7 × hours + 38. For 4 hours: 66%."
+    },
+    {
+      "type": "compare",
+      "heading": "Can you trust the prediction?",
+      "left": {
+        "title": "Interpolation",
+        "icon": "✅",
+        "points": [
+          "Inside the data range",
+          "4 hours → 66%",
+          "Fairly reliable"
+        ]
+      },
+      "right": {
+        "title": "Extrapolation",
+        "icon": "⚠️",
+        "points": [
+          "Outside the data range",
+          "15 hours → 143%: impossible!",
+          "Not reliable"
+        ]
+      },
+      "say": "Predicting inside the data, like four hours, is interpolation, and it's fairly reliable. Predicting outside the data is extrapolation. Fifteen hours gives one hundred and forty-three percent, which is impossible. The pattern can't go on forever."
+    },
+    {
+      "type": "points",
+      "heading": "Correlation is not causation",
+      "icon": "🍦",
+      "points": [
+        "Ice-cream sales and sunburn rise together",
+        "Hot weather drives both",
+        "A lurking variable can explain a link"
+      ],
+      "say": "One last warning. Ice-cream sales and sunburn cases rise together, but ice-cream doesn't cause sunburn. Hot weather drives both. A strong correlation never proves that one thing causes the other."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Explanatory on the horizontal axis",
+        "Describe direction, form and strength",
+        "Equation from two points on the line",
+        "Interpolate: OK. Extrapolate: careful!",
+        "Correlation is not causation"
+      ],
+      "say": "Quick recap. Put the explanatory variable across the bottom. Describe direction, form and strength. Find the line's equation from two points on the line. Interpolation is fairly safe; extrapolation isn't. And correlation is not causation. Now try the practice questions!"
+    }
+  ]
+}

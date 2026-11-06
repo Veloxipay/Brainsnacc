@@ -1,0 +1,121 @@
+{
+  "lesson": "y10/maths/standard-deviation.json",
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Standard deviation",
+  "icon": "🎯",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Standard deviation",
+      "sub": "Same average, very different players",
+      "icon": "🏀",
+      "say": "Two basketballers both average fifteen points a game. One scores about fifteen every week; the other swings from two to thirty. The mean can't tell them apart, but the standard deviation can."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🎯",
+      "everyday": "Darts close to, or scattered around, the bullseye",
+      "icon2": "📊",
+      "science": "Standard deviation: typical distance of values from the mean",
+      "breaks": "Darts spread in two directions; data sits on one line, and the distances are squared first.",
+      "say": "Picture two darts players, with the bullseye as the mean. One player's darts are tightly grouped; the other's are all over the board. The standard deviation is like the typical distance of a dart from the bullseye: small when tight, large when scattered."
+    },
+    {
+      "type": "equation",
+      "heading": "The formula",
+      "equation": "σ = √( Σ(x − x̄)² ÷ n )",
+      "parts": [
+        [
+          "σ",
+          "population standard deviation"
+        ],
+        [
+          "x − x̄",
+          "deviation from the mean"
+        ],
+        [
+          "Σ",
+          "add them all up"
+        ],
+        [
+          "n",
+          "number of values"
+        ]
+      ],
+      "say": "Here's the formula. Find each value's deviation from the mean, square it, add them all up, divide by n, the number of values, and take the square root. That's sigma, the population standard deviation.",
+      "caption": "σ = √( Σ(x − x̄)² ÷ n ). Square each deviation, add them up, divide by n, then take the square root."
+    },
+    {
+      "type": "example",
+      "heading": "Five games of goals",
+      "question": "Find σ for 6, 8, 9, 11, 16.",
+      "lines": [
+        "Mean = 50 ÷ 5 = 10",
+        "Deviations: −4, −2, −1, 1, 6",
+        "Squares: 16 + 4 + 1 + 1 + 36 = 58",
+        "58 ÷ 5 = 11.6",
+        "σ = √11.6 ≈ 3.41"
+      ],
+      "say": "Let's find sigma for six, eight, nine, eleven and sixteen. The mean is fifty divided by five, which is ten. The deviations are negative four, negative two, negative one, one and six. Their squares add to fifty-eight. Divide by five to get eleven point six, then square root: about three point four one.",
+      "caption": "Mean = 10. Deviations −4, −2, −1, 1, 6. Squares add to 58. 58 ÷ 5 = 11.6. σ = √11.6 ≈ 3.41."
+    },
+    {
+      "type": "diagram",
+      "heading": "One standard deviation either side",
+      "diagram": "diagrams/y10/maths/standard-deviation-ex1.svg",
+      "notes": [
+        "Mean = 10 (dashed line)",
+        "Band from about 6.6 to 13.4",
+        "16 is far from the mean"
+      ],
+      "say": "Here are those five values on a dot plot. First the dots, then the dashed line at the mean, ten. The shaded band reaches one standard deviation either side, from about six point six to thirteen point four. Sixteen sits outside the band because it's far from the mean.",
+      "caption": "The dots, then the mean at 10, then a band one standard deviation either side: about 6.6 to 13.4. 16 is outside the band."
+    },
+    {
+      "type": "diagram",
+      "heading": "Which set is more consistent?",
+      "diagram": "diagrams/y10/maths/standard-deviation-ex2.svg",
+      "notes": [
+        "Both sets have mean 6",
+        "Set A: σ ≈ 0.71",
+        "Set B: σ ≈ 2.55"
+      ],
+      "say": "Both of these sets have a mean of six. Set A is bunched close to six, and its standard deviation is about zero point seven one. Set B is spread out, with a standard deviation of about two point five five. The smaller standard deviation means Set A is more consistent.",
+      "caption": "Both sets have mean 6. Set A: σ ≈ 0.71. Set B: σ ≈ 2.55. The smaller standard deviation means Set A is more consistent."
+    },
+    {
+      "type": "compare",
+      "heading": "Changing the data",
+      "left": {
+        "title": "Add 5 to every value",
+        "icon": "➡️",
+        "points": [
+          "Mean goes up by 5",
+          "σ stays the same"
+        ]
+      },
+      "right": {
+        "title": "Multiply every value by 2",
+        "icon": "↔️",
+        "points": [
+          "Mean doubles",
+          "σ doubles too"
+        ]
+      },
+      "say": "What happens if you change the data? Adding five to every value slides it along: the mean goes up by five, but the spread, and so the standard deviation, stays the same. Doubling every value stretches it: the mean and the standard deviation both double."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "σ measures spread around the mean",
+        "Mean, minus, square, average, root",
+        "Small σ = consistent data",
+        "σx divides by n; sx by n − 1",
+        "Adding: σ same. Multiplying: σ scales"
+      ],
+      "say": "Quick recap. Standard deviation measures spread around the mean. Remember the steps: mean, minus, square, average, root. A smaller standard deviation means more consistent data. Use sigma x on your calculator for the population version. Now try the practice questions!"
+    }
+  ]
+}

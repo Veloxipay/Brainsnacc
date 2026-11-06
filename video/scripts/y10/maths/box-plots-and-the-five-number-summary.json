@@ -1,0 +1,106 @@
+{
+  "lesson": "y10/maths/box-plots-and-the-five-number-summary.json",
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Box plots and the five-number summary",
+  "icon": "📦",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Box plots and the five-number summary",
+      "sub": "A whole data set in five numbers",
+      "icon": "📦",
+      "say": "What if you could squeeze a whole list of numbers into just five, and one simple picture? That's exactly what a box plot does."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🏃",
+      "everyday": "Fun-run finishers split into four equal groups",
+      "icon2": "📦",
+      "science": "A box plot splits ordered data into four quarters",
+      "breaks": "You can count runners, but a box plot hides each value and how many there are.",
+      "say": "Imagine everyone in a fun run sorted by finishing time and split into four equal groups. A box plot shows where each group starts and stops. A long section means those runners were spread out, not that there were more of them."
+    },
+    {
+      "type": "points",
+      "heading": "The five-number summary",
+      "icon": "✋",
+      "points": [
+        "Minimum and maximum",
+        "Median: the middle value",
+        "Q1 = median of the lower half",
+        "Q3 = median of the upper half",
+        "IQR = Q3 − Q1"
+      ],
+      "say": "The five-number summary is the minimum, the lower quartile, the median, the upper quartile and the maximum. Order the data, find the median, then find the median of each half. With an odd number of values, leave the median out of the halves. The interquartile range is Q three minus Q one.",
+      "caption": "The five-number summary: minimum, Q1, median, Q3, maximum. Order the data, find the median, then the median of each half. IQR = Q3 − Q1."
+    },
+    {
+      "type": "diagram",
+      "heading": "Drawing the box plot",
+      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-parts.svg",
+      "notes": [
+        "Box from Q1 = 9 to Q3 = 20",
+        "Median line at 15",
+        "Each section holds about 25%"
+      ],
+      "say": "Here are clinic waiting times. First the number line, then the box from nine to twenty, with the median line at fifteen. Then the whiskers stretch out to the minimum, four, and the maximum, twenty-seven. Each of the four sections holds about a quarter of the data."
+    },
+    {
+      "type": "equation",
+      "heading": "The outlier fences",
+      "equation": "Q3 + 1.5 × IQR",
+      "parts": [
+        [
+          "Upper fence",
+          "Q3 + 1.5 × IQR"
+        ],
+        [
+          "Lower fence",
+          "Q1 − 1.5 × IQR"
+        ],
+        [
+          "Outlier",
+          "any value beyond a fence"
+        ]
+      ],
+      "say": "To test for outliers, build two fences. The upper fence is Q three plus one point five times the IQR. The lower fence is Q one minus one point five times the IQR. Any value beyond a fence is an outlier.",
+      "caption": "Upper fence = Q3 + 1.5 × IQR. Lower fence = Q1 − 1.5 × IQR. Any value beyond a fence is an outlier."
+    },
+    {
+      "type": "diagram",
+      "heading": "Showing an outlier",
+      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-ex2.svg",
+      "notes": [
+        "Q1 = 26, Q3 = 35, IQR = 9",
+        "Upper fence = 35 + 13.5 = 48.5",
+        "58 is an outlier: drawn as a dot"
+      ],
+      "say": "In this example, Q one is twenty-six and Q three is thirty-five, so the IQR is nine. The upper fence is thirty-five plus thirteen point five, which is forty-eight point five. Fifty-eight is beyond it, so it's drawn as a separate dot, and the whisker stops at thirty-eight.",
+      "caption": "Q1 = 26, Q3 = 35, IQR = 9. Upper fence = 35 + 13.5 = 48.5. 58 is beyond it, so it is a separate dot and the whisker stops at 38."
+    },
+    {
+      "type": "diagram",
+      "heading": "Comparing two classes",
+      "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-ex3.svg",
+      "notes": [
+        "Medians: 23 and 22",
+        "IQRs: 11 and 5",
+        "Class B is more consistent"
+      ],
+      "say": "Parallel box plots share one scale. Class A's median is twenty-three and Class B's is twenty-two, so they're similar. But Class A's IQR is eleven and Class B's is only five, so Class B's scores are much more consistent."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Order first, then median, then Q1 and Q3",
+        "Each section holds about 25%",
+        "IQR = Q3 − Q1",
+        "Outliers: beyond Q1 or Q3 ± 1.5 × IQR",
+        "Compare centre, spread and shape"
+      ],
+      "say": "Quick recap. Order the data, find the median, then the quartiles. Each section of a box plot holds about a quarter of the data. Outliers lie more than one and a half IQRs beyond the box. Compare box plots by centre, spread and shape. Now try the practice questions!"
+    }
+  ]
+}

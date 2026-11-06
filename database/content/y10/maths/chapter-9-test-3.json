@@ -1,0 +1,361 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "unit": "Year 10",
+  "title": "Chapter 9 · Test 3",
+  "kind": "test",
+  "summary": "Chapter 9 test 3: 15 questions on sampling, box plots, standard deviation, scatterplots, time series and evaluating statistical reports.",
+  "minutes": 25,
+  "body": "This test covers Chapter 9 · Statistics: collecting data and sampling, box plots and the five-number summary, standard deviation, scatterplots and lines of best fit, time-series data and evaluating statistical reports. It has 15 multiple-choice questions, from easy to challenge. Allow about 25 minutes and work with no notes. A calculator is allowed for this test, but show your working on paper so you can check each step. Many questions use a graph or diagram — read the axes and scales carefully before you answer.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Collecting data and sampling",
+      "prompt": "A school sorts its students by year level, then randomly chooses 10% of the students in each year level. Which sampling method is this?",
+      "options": {
+        "A": "Systematic sample",
+        "B": "Stratified sample",
+        "C": "Simple random sample from the whole school",
+        "D": "Census"
+      },
+      "answer": "B",
+      "explanation": "Splitting the population into groups and choosing the same fraction from each group is a stratified sample. It is not systematic — there is no every-k-th rule.",
+      "steps": [
+        "The population is split into groups (year levels) first.",
+        "Then a fair share (10%) is chosen from each group — a stratified sample."
+      ],
+      "mistakes": {
+        "A": "Step 1: systematic means every k-th person on a list. Here the school first splits students into groups.",
+        "C": "Step 1: the students were split into year levels first, and each level was sampled separately.",
+        "D": "Step 1: only 10% of each year level is chosen, not everyone."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Box plots and the five-number summary",
+      "prompt": "The box plot shows the reaction times of a large group of people. About what percentage of the times are between 42 and 60?",
+      "options": {
+        "A": "50%",
+        "B": "25%",
+        "C": "75%",
+        "D": "18%"
+      },
+      "answer": "A",
+      "explanation": "42 is Q1 and 60 is Q3, and the box between them holds about 50% of the data. 18 is the IQR, not a percentage.",
+      "steps": [
+        "42 is the left end of the box (Q1) and 60 is the right end (Q3).",
+        "The box holds the middle two quarters: about 50%."
+      ],
+      "mistakes": {
+        "B": "Step 2: 42 to 60 is the whole box (Q1 to Q3), which is two quarters, not one.",
+        "C": "Step 2: 75% runs from the minimum to Q3. The box alone holds two quarters.",
+        "D": "Step 1: 60 − 42 = 18 is the IQR, a length on the scale, not a percentage."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q2.svg",
+      "diagram_alt": "A box plot of reaction times on a scale from 25 to 80: minimum 30, Q1 42, median 48, Q3 60, maximum 75"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Time-series data",
+      "prompt": "Which graph is best for showing how a city's population changed each year from 2000 to 2024?",
+      "options": {
+        "A": "A pie chart with one sector for each year",
+        "B": "A scatterplot with population on the horizontal axis",
+        "C": "A box plot of the 25 population values",
+        "D": "A line graph with the years on the horizontal axis"
+      },
+      "answer": "D",
+      "explanation": "Data recorded over time is a time series, best shown as a line graph with time across the bottom. A box plot loses the order of the years.",
+      "steps": [
+        "Population each year is a time series.",
+        "Show it on a line graph with time (years) on the horizontal axis."
+      ],
+      "mistakes": {
+        "A": "Step 1: a pie chart shows parts of one whole, not change over time.",
+        "B": "Step 2: time must go on the horizontal axis so the graph reads from left to right.",
+        "C": "Step 1: a box plot hides the order of the years, so you cannot see the change over time."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Scatterplots and lines of best fit",
+      "prompt": "The scatterplot shows shoe size and maths test mark for 16 students. Which describes the relationship?",
+      "options": {
+        "A": "Strong positive correlation",
+        "B": "Strong negative correlation",
+        "C": "No correlation",
+        "D": "Weak negative correlation"
+      },
+      "answer": "C",
+      "explanation": "High and low marks appear at every shoe size, with no upward or downward pattern, so there is no correlation.",
+      "steps": [
+        "Look for a direction: do the dots rise or fall from left to right?",
+        "They are scattered with no pattern, so there is no correlation."
+      ],
+      "mistakes": {
+        "A": "Step 1: the dots do not rise in a pattern — they are scattered all over.",
+        "B": "Step 1: the dots do not fall in a pattern either.",
+        "D": "Step 1: there is no downward drift; the marks are spread out at every shoe size."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q4.svg",
+      "diagram_alt": "Scatterplot of maths test mark against shoe size for 16 students; the dots are scattered between 45% and 95% at every shoe size from 5 to 11 with no pattern"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Standard deviation",
+      "prompt": "Runner A's 100 m times have mean 12.4 s and standard deviation 0.2 s. Runner B's have mean 12.1 s and standard deviation 0.9 s. Which statement is correct?",
+      "options": {
+        "A": "Runner B is faster on average, but Runner A is more consistent",
+        "B": "Runner A is faster on average and more consistent",
+        "C": "Runner B is faster on average and more consistent",
+        "D": "Runner A is faster on average, but Runner B is more consistent"
+      },
+      "answer": "A",
+      "explanation": "Runner B's mean time is lower (faster), while Runner A's smaller standard deviation means steadier times. A higher mean time does not mean faster in a race.",
+      "steps": [
+        "In a race, a lower mean time is faster: Runner B (12.1 s).",
+        "A smaller standard deviation means more consistent: Runner A (0.2 s)."
+      ],
+      "mistakes": {
+        "B": "Step 1: a LOWER time is faster, and Runner B's mean (12.1 s) is lower.",
+        "C": "Step 2: Runner B's larger standard deviation (0.9 s) means LESS consistent times.",
+        "D": "Step 1 and Step 2: both are reversed — lower time means faster, and smaller standard deviation means more consistent."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Box plots and the five-number summary",
+      "prompt": "The parallel box plots show the travel times of students who catch a bus or a train to school. How much greater is the median bus time than the median train time?",
+      "options": {
+        "A": "5 minutes",
+        "B": "9 minutes",
+        "C": "15 minutes",
+        "D": "2 minutes"
+      },
+      "answer": "B",
+      "explanation": "Bus median 35 − train median 26 = 9 minutes. The maximums differ by 15, but the median is the line inside the box.",
+      "steps": [
+        "Read the medians (lines inside the boxes): bus 35, train 26.",
+        "Difference = 35 − 26 = 9 minutes."
+      ],
+      "mistakes": {
+        "A": "Step 2: 5 is the difference in the IQRs (13 − 8). Compare the lines inside the boxes.",
+        "C": "Step 2: 15 is the difference in the maximums. Compare the medians.",
+        "D": "Step 2: 2 is the difference in the minimums. Compare the medians."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q6.svg",
+      "diagram_alt": "Parallel box plots of travel times. Bus: minimum 20, Q1 28, median 35, Q3 41, maximum 55. Train: minimum 18, Q1 22, median 26, Q3 30, maximum 40"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Scatterplots and lines of best fit",
+      "prompt": "For a plant, the line of best fit linking hours of light per week (h) and growth in millimetres (G) is G = 0.5h + 12. The data covers 10 to 50 hours. Predict the growth for 30 hours of light.",
+      "options": {
+        "A": "21 mm",
+        "B": "15 mm",
+        "C": "36 mm",
+        "D": "27 mm"
+      },
+      "answer": "D",
+      "explanation": "G = 0.5 × 30 + 12 = 15 + 12 = 27 mm, and 30 is inside the data (10 to 50 hours), so this is interpolation. Adding before multiplying gives 21.",
+      "steps": [
+        "Substitute h = 30: G = 0.5 × 30 + 12.",
+        "Multiply first: 15, then add 12: G = 27 mm."
+      ],
+      "mistakes": {
+        "A": "Step 1: you added 30 and 12 before multiplying. Multiply 0.5 × 30 first.",
+        "B": "Step 2: 0.5 × 30 = 15 is only part of it. Add the 12.",
+        "C": "Step 1: you solved 0.5h + 12 = 30 for h. Here h = 30 is given — substitute it."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Time-series data",
+      "prompt": "The graph shows a Melbourne shop's umbrella sales each quarter for 3 years (Q3 is July to September). Which is the best description?",
+      "options": {
+        "A": "Seasonal, with a peak every Q3, and an increasing trend",
+        "B": "Seasonal, with a peak every Q1, and a decreasing trend",
+        "C": "Seasonal, with a peak every Q3, and a decreasing trend",
+        "D": "No pattern, only irregular changes"
+      },
+      "answer": "C",
+      "explanation": "Sales peak every Q3 (55, 50, 45), so the data is seasonal, and each year is lower than the one before, so the trend is decreasing.",
+      "steps": [
+        "The highest point each year is in Q3: a seasonal pattern.",
+        "The Q3 peaks fall from 55 to 50 to 45: a decreasing trend."
+      ],
+      "mistakes": {
+        "A": "Step 2: compare the Q3 peaks: 55, then 50, then 45 — they are getting lower.",
+        "B": "Step 1: read the labels under the peaks: they are above Q3.",
+        "D": "Step 1: the peak comes in the same quarter each year, so there is a repeating seasonal pattern."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q8.svg",
+      "diagram_alt": "Time-series graph of quarterly umbrella sales for 3 years: 30, 42, 55, 34, then 28, 39, 50, 31, then 25, 35, 45, 27, peaking in Q3 each year"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Evaluating statistical reports",
+      "prompt": "A recycling report shows the amount recycled with two squares. The 2025 square is 3 times as wide and 3 times as tall as the 2015 square. Which statement is correct?",
+      "options": {
+        "A": "The square looks 9 times as big, but recycling only tripled",
+        "B": "The square looks 3 times as big, and recycling tripled",
+        "C": "The square looks 9 times as big, and recycling increased 9 times",
+        "D": "The square looks 6 times as big, but recycling only tripled"
+      },
+      "answer": "A",
+      "explanation": "The area grows by 3 × 3 = 9, so it looks 9 times as big, while the amount went from 50 to 150 tonnes — 3 times. Thinking it looks only 3 times bigger ignores the area effect.",
+      "steps": [
+        "Width × 3 and height × 3 means area × 9: the square looks 9 times as big.",
+        "The labels show 50 → 150 tonnes: only 3 times as much."
+      ],
+      "mistakes": {
+        "B": "Step 1: making BOTH the width and height 3 times bigger multiplies the area by 3 × 3.",
+        "C": "Step 2: read the labels: 50 to 150 tonnes is 3 times as much.",
+        "D": "Step 1: the area is multiplied (3 × 3), not added (3 + 3)."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q9.svg",
+      "diagram_alt": "Two squares on a baseline: a small square labelled 50 tonnes for 2015 and a square three times as wide and three times as tall labelled 150 tonnes for 2025"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Collecting data and sampling",
+      "prompt": "A sports club has 1080 juniors, 840 seniors and 480 veterans. A stratified sample of 60 members is chosen. How many seniors should be in the sample?",
+      "options": {
+        "A": "20",
+        "B": "14",
+        "C": "35",
+        "D": "21"
+      },
+      "answer": "D",
+      "explanation": "Seniors are 840 ÷ 2400 = 0.35 of the club, and 0.35 × 60 = 21. Sharing equally (20 each) ignores the group sizes.",
+      "steps": [
+        "Total members = 1080 + 840 + 480 = 2400.",
+        "Seniors' share = 840 ÷ 2400 = 0.35.",
+        "Seniors in the sample = 0.35 × 60 = 21."
+      ],
+      "mistakes": {
+        "A": "Step 2: 60 ÷ 3 = 20 gives each group the same number. Each group's share must match its size.",
+        "B": "Step 2: 840 ÷ 60 = 14 divides the wrong numbers. Find the seniors' fraction of 2400 first.",
+        "C": "Step 2: 35 is the seniors' PERCENTAGE of the club. Take 35% of 60."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Standard deviation",
+      "prompt": "The dot plot shows the number of goals a netball player scored in 6 games. Find the population standard deviation, correct to 2 decimal places.",
+      "options": {
+        "A": "3.33",
+        "B": "1.83",
+        "C": "2.00",
+        "D": "1.33"
+      },
+      "answer": "B",
+      "explanation": "Mean 6; squared deviations 9, 1, 0, 0, 1, 9 total 20; σ = √(20 ÷ 6) ≈ 1.83. Forgetting the square root gives 3.33.",
+      "steps": [
+        "Read the values: 3, 5, 6, 6, 7, 9. Mean = 36 ÷ 6 = 6.",
+        "Squared deviations: 9, 1, 0, 0, 1, 9 — total 20.",
+        "σ = √(20 ÷ 6) ≈ 1.83."
+      ],
+      "mistakes": {
+        "A": "Step 3: 20 ÷ 6 ≈ 3.33 is the variance. Take the square root.",
+        "C": "Step 3: √(20 ÷ 5) divides by n − 1. Population σ divides by n = 6.",
+        "D": "Step 2: 8 ÷ 6 averages the plain distances. Square each deviation first."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q11.svg",
+      "diagram_alt": "Dot plot of goals in 6 games on a scale from 0 to 12: one dot each at 3, 5, 7 and 9, and two dots at 6, with the mean 6 marked"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Box plots and the five-number summary",
+      "prompt": "A box plot has minimum 20, lower quartile 35, interquartile range 12 and range 50. Find the upper quartile and the maximum.",
+      "options": {
+        "A": "Q3 = 47, maximum = 85",
+        "B": "Q3 = 23, maximum = 70",
+        "C": "Q3 = 47, maximum = 70",
+        "D": "Q3 = 47, maximum = 50"
+      },
+      "answer": "C",
+      "explanation": "Q3 = Q1 + IQR = 35 + 12 = 47, and maximum = minimum + range = 20 + 50 = 70. Adding the range to Q1 gives 85, which is wrong.",
+      "steps": [
+        "IQR = Q3 − Q1, so Q3 = 35 + 12 = 47.",
+        "Range = maximum − minimum, so maximum = 20 + 50 = 70."
+      ],
+      "mistakes": {
+        "A": "Step 2: you added the range to Q1. The range is measured from the MINIMUM: 20 + 50.",
+        "B": "Step 1: Q3 is above Q1, so add the IQR: 35 + 12.",
+        "D": "Step 2: 50 is the range, not the maximum. Add it to the minimum."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Evaluating statistical reports",
+      "prompt": "A news story says \"The average height of the combined squad is 185 cm\", after averaging Team A (12 players, mean 180 cm) and Team B (8 players, mean 190 cm). What is the correct mean height of all 20 players?",
+      "options": {
+        "A": "184 cm",
+        "B": "185 cm",
+        "C": "186 cm",
+        "D": "370 cm"
+      },
+      "answer": "A",
+      "explanation": "Total = 12 × 180 + 8 × 190 = 2160 + 1520 = 3680, and 3680 ÷ 20 = 184 cm. The story's 185 cm gives the smaller team too much weight.",
+      "steps": [
+        "Total height: Team A 12 × 180 = 2160, Team B 8 × 190 = 1520.",
+        "All 20 players: 2160 + 1520 = 3680 cm.",
+        "Mean = 3680 ÷ 20 = 184 cm."
+      ],
+      "mistakes": {
+        "B": "Step 1: averaging the two means treats the teams as the same size. Team A has more players.",
+        "C": "Step 2: you matched the team sizes to the wrong means. Team A (180 cm) has 12 players.",
+        "D": "Step 3: 180 + 190 is not divided. Find the total height and divide by 20."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Scatterplots and lines of best fit",
+      "prompt": "The line of best fit on the scatterplot passes through (2, 33) and (10, 73). The data covers 2 to 10 hours of practice. What does the line predict for 0 hours, and how reliable is it?",
+      "options": {
+        "A": "33 words per minute, because that is the first point on the line",
+        "B": "23 words per minute, and it is reliable because it is the y-intercept",
+        "C": "43 words per minute, but it is extrapolation",
+        "D": "23 words per minute, but it is extrapolation, so treat it with caution"
+      },
+      "answer": "D",
+      "explanation": "The gradient is (73 − 33) ÷ 8 = 5, so c = 33 − 10 = 23. But 0 hours is outside the data range, so 23 words per minute is extrapolation and may not be accurate.",
+      "steps": [
+        "Gradient = (73 − 33) ÷ (10 − 2) = 5.",
+        "At 0 hours: 33 − 5 × 2 = 23 words per minute (the y-intercept).",
+        "0 hours is outside 2 to 10 hours, so this is extrapolation: treat with caution."
+      ],
+      "mistakes": {
+        "A": "Step 2: (2, 33) is at 2 hours. Find c, the value at 0 hours.",
+        "B": "Step 3: 0 hours is outside the data (2 to 10 hours), so the prediction is extrapolation.",
+        "C": "Step 2: going from x = 2 back to x = 0 SUBTRACTS 2 × 5 from 33."
+      },
+      "diagram": "diagrams/y10/maths/chapter-9-test-3-q14.svg",
+      "diagram_alt": "Scatterplot of typing speed against hours of practice from 2 to 10 hours, with a line of best fit through the marked points (2, 33) and (10, 73)"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Time-series data",
+      "prompt": "A time series has four values a, 10, 14, b. Its two 3-point moving averages are 11 and 13. Find a and b.",
+      "options": {
+        "A": "a = 11, b = 13",
+        "B": "a = 9, b = 15",
+        "C": "a = 33, b = 39",
+        "D": "a = −13, b = −11"
+      },
+      "answer": "B",
+      "explanation": "(a + 10 + 14) ÷ 3 = 11 gives a + 24 = 33, so a = 9; (10 + 14 + b) ÷ 3 = 13 gives b + 24 = 39, so b = 15. Treating 11 and 13 as the values themselves ignores the averaging.",
+      "steps": [
+        "First average: (a + 10 + 14) ÷ 3 = 11, so a + 24 = 33.",
+        "Second average: (10 + 14 + b) ÷ 3 = 13, so b + 24 = 39.",
+        "So a = 9 and b = 15."
+      ],
+      "mistakes": {
+        "A": "Step 1: 11 and 13 are the moving averages, not the missing values. Each average uses three values.",
+        "C": "Step 2: 33 and 39 are the totals of each group of three. Subtract the known values 10 and 14.",
+        "D": "Step 1: you used a + 10 + 14 = 11. The SUM of three values is 3 × 11 = 33."
+      }
+    }
+  ]
+}
