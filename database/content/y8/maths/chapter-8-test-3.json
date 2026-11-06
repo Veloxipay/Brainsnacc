@@ -1,0 +1,365 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Chapter 8 · Test 3",
+  "kind": "test",
+  "summary": "A 15-question test on Year 8 Chapter 8: types of samples, comparing data sets, mutually exclusive and complementary events, Venn diagrams and two-way tables, and experimental probability.",
+  "minutes": 25,
+  "body": "This test covers Chapter 8, Probability and statistics: samples and populations, comparing data sets, probability and complementary events, Venn diagrams and two-way tables, and experimental probability.\n\n## How to do this test\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says. Show your working on paper.\n- **Diagrams:** many questions have a graph, dot plot, spinner, grid or Venn diagram — read the numbers on it carefully.\n- **Levels:** 4 easy, 5 medium, 4 hard and 2 challenge questions.\n- **After marking:** for each question you got wrong, go back to the lesson it came from and redo its worked examples. Then try another Chapter 8 test — each one has different questions on the same skills.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Samples and populations",
+      "prompt": "A teacher writes the name of every student in Year 8 on a slip of paper, puts the slips in a hat, mixes them and draws out 20 names. What type of sample is this?",
+      "options": {
+        "A": "A systematic sample",
+        "B": "A simple random sample",
+        "C": "A stratified sample",
+        "D": "A convenience sample"
+      },
+      "answer": "B",
+      "explanation": "Drawing mixed slips from a hat gives every student the same chance, which is a simple random sample. It is not systematic, because there is no list with every kth name taken.",
+      "steps": [
+        "Ask how the names are chosen: every slip is mixed together and drawn by chance.",
+        "Every student has the same chance of being chosen, so it is a simple random sample."
+      ],
+      "mistakes": {
+        "A": "Step 2: a systematic sample takes every kth name from a list after a random start. Drawing from a hat gives everyone the same chance instead.",
+        "C": "Step 2: a stratified sample first splits the population into groups and samples each group. Here all the names are mixed together.",
+        "D": "Step 2: a convenience sample asks whoever is easy to reach. Here every student has the same chance of being drawn."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Samples and populations",
+      "prompt": "A park has 1000 trees. A ranger records the type of tree for a random sample of 40 of them, as shown in the column graph. Estimate the number of wattle trees in the park.",
+      "options": {
+        "A": "25",
+        "B": "100",
+        "C": "250",
+        "D": "990"
+      },
+      "answer": "C",
+      "explanation": "A quarter of the sample (10 out of 40) are wattles, so about a quarter of the 1000 trees are: 250. The answer 25 is the percentage, not a number of trees.",
+      "steps": [
+        "Read the graph: 10 of the 40 trees in the sample are wattles.",
+        "Fraction of the sample: 10/40 = 1/4. Assume the park is the same, because the sample is random.",
+        "Estimate: 1/4 × 1000 = 250 wattle trees."
+      ],
+      "mistakes": {
+        "A": "Step 2: 10/40 = 25% is the percentage of the sample. Multiply the fraction by all 1000 trees.",
+        "B": "Step 1: 10 is a count out of 40, not 10%. Use the fraction 10/40.",
+        "D": "Step 2: 1000 − 10 doesn’t estimate anything. Multiply the sample fraction by 1000."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q2.svg",
+      "diagram_alt": "Column graph of 40 sampled trees: gum 18, wattle 10, oak 8, elm 4"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Samples and populations",
+      "prompt": "A shop has a numbered list of 600 customers. The manager chooses a systematic sample of 25 customers. She picks a random starting number of 7, then keeps adding the step size. What is the number of the 10th customer chosen?",
+      "options": {
+        "A": "223",
+        "B": "247",
+        "C": "240",
+        "D": "70"
+      },
+      "answer": "A",
+      "explanation": "The step size is 600 ÷ 25 = 24, and the 10th customer is 9 steps after number 7: 7 + 216 = 223. Using 10 steps (247) counts one step too many, because the 1st customer is the start itself.",
+      "steps": [
+        "Step size = population ÷ sample size = 600 ÷ 25 = 24.",
+        "The customers chosen are 7, 31, 55, … — each 24 more than the one before.",
+        "The 10th is 9 steps after the 1st: 7 + 24 × 9 = 223."
+      ],
+      "mistakes": {
+        "B": "Step 3: the 1st customer is number 7, so the 10th is only 9 steps later: 7 + 24 × 9.",
+        "C": "Step 3: 24 × 10 forgets the random start. Start at 7, then add 9 steps of 24.",
+        "D": "Step 3: 7 × 10 multiplies the start. Each new customer is the step size (24) further down the list."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Comparing data sets",
+      "prompt": "The parallel dot plots show the daily maximum temperatures (°C) in two towns for one week. Which town’s temperatures are more spread out?",
+      "options": {
+        "A": "Town A, because its range is 4 °C",
+        "B": "They are equally spread out, because both towns have 7 values",
+        "C": "Town A, because its dots are stacked higher",
+        "D": "Town B, because its range is 14 °C compared with Town A’s 4 °C"
+      },
+      "answer": "D",
+      "explanation": "Town B’s temperatures go from 14 to 28 °C (range 14), while Town A’s only go from 18 to 22 °C (range 4), so Town B is more spread out. Town A’s stacked dots show repeats, which means less spread.",
+      "steps": [
+        "Ranges: Town A = 22 − 18 = 4 °C; Town B = 28 − 14 = 14 °C.",
+        "More spread out means the larger range: Town B."
+      ],
+      "mistakes": {
+        "A": "Step 2: a range of 4 is the SMALLER spread. More spread out means the larger range.",
+        "B": "Step 1: the number of values doesn’t measure spread. Work out each town’s range.",
+        "C": "Step 1: stacked dots show values that repeat, which means LESS spread. Compare the ranges."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q4.svg",
+      "diagram_alt": "Parallel dot plots of temperatures: Town A has dots at 18, 19, 20, 20, 20, 21 and 22; Town B has dots at 14, 16, 19, 23, 25, 26 and 28"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Comparing data sets",
+      "prompt": "Back-to-back stem-and-leaf plot of the ages of people in two fitness classes (key: 3 | 2 means 32). Class X’s leaves are on the left and Class Y’s leaves are on the right.\n8 5 | 1 | 9\n9 6 3 1 | 2 | 0 4 4 7\n7 2 | 3 | 1 5 8\n| 4 | 2 6\nWhat is the range of the ages in Class X?",
+      "options": {
+        "A": "22",
+        "B": "27",
+        "C": "37",
+        "D": "19"
+      },
+      "answer": "A",
+      "explanation": "Class X’s ages run from 15 to 37, so the range is 22. 27 is Class Y’s range — it comes from the wrong side of the stem.",
+      "steps": [
+        "Class X is on the left; read its leaves from the stem outwards: 15, 18, 21, 23, 26, 29, 32, 37.",
+        "Smallest = 15 and largest = 37.",
+        "Range = 37 − 15 = 22."
+      ],
+      "mistakes": {
+        "B": "Step 1: 27 is the range of Class Y (the right side). Class X’s leaves are on the LEFT.",
+        "C": "Step 2: 37 is the oldest person in Class X. The range is largest − smallest.",
+        "D": "Step 1: left-side leaves are read from the stem outwards, so the smallest Class X age is 15 (the leaf next to the stem), not 18."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Comparing data sets",
+      "prompt": "Six quiz scores are 3, 14, 15, 16, 17 and 19. The score of 3 is an outlier and is removed. How do the mean and the median change?",
+      "options": {
+        "A": "The mean rises by 2.2 and the median stays at 15.5",
+        "B": "The mean rises by 2.2 and the median rises by 0.5",
+        "C": "The mean falls by 0.5 and the median rises by 0.5",
+        "D": "Both the mean and the median rise by 2.2"
+      },
+      "answer": "B",
+      "explanation": "The mean goes from 14 to 16.2 (up 2.2) but the median only from 15.5 to 16 (up 0.5) — removing an outlier moves the mean much more than the median. Dividing by 6 after removing a score gives the wrong mean.",
+      "steps": [
+        "Before: mean = 84 ÷ 6 = 14; median = (15 + 16) ÷ 2 = 15.5.",
+        "Remove 3: the scores are 14, 15, 16, 17, 19, with total 81.",
+        "New mean = 81 ÷ 5 = 16.2, a rise of 2.2.",
+        "New median = the 3rd value = 16, a rise of only 0.5."
+      ],
+      "mistakes": {
+        "A": "Step 4: with 5 values left, the median is the 3rd value (16), so it does change.",
+        "C": "Step 3: after removing a value there are only 5 scores, so divide 81 by 5, not 6.",
+        "D": "Step 4: an outlier affects the median only a little. Find the new middle value: 16."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Probability and complementary events",
+      "prompt": "One card is drawn at random from cards numbered 1 to 12. Which pair of events are mutually exclusive?",
+      "options": {
+        "A": "“an even number” and “a multiple of 3”",
+        "B": "“a number less than 5” and “a prime number”",
+        "C": "“an odd number” and “a number greater than 8”",
+        "D": "“a multiple of 5” and “a multiple of 3”"
+      },
+      "answer": "D",
+      "explanation": "From 1 to 12, the multiples of 5 (5, 10) and the multiples of 3 (3, 6, 9, 12) share no card, so they can’t happen together. Even and multiple of 3 share 6 and 12, so they are not mutually exclusive.",
+      "steps": [
+        "Mutually exclusive events cannot happen at the same time — look for a card that fits both.",
+        "Multiples of 5 are 5 and 10; multiples of 3 are 3, 6, 9, 12. No card is in both lists, so these are mutually exclusive."
+      ],
+      "mistakes": {
+        "A": "Step 1: 6 and 12 are both even and multiples of 3, so these events can happen together.",
+        "B": "Step 1: 2 and 3 are less than 5 AND prime, so these events can happen together.",
+        "C": "Step 1: 9 and 11 are odd AND greater than 8, so these events can happen together."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Probability and complementary events",
+      "prompt": "The spinner in the diagram lands on pink, purple, orange or white. The probabilities of pink, purple and white are shown. What is the probability that it does NOT land on orange?",
+      "options": {
+        "A": "0.35",
+        "B": "0.8",
+        "C": "0.65",
+        "D": "1.35"
+      },
+      "answer": "C",
+      "explanation": "P(orange) = 0.35, so P(not orange) = 1 − 0.35 = 0.65 — the same as adding pink, purple and white. 0.35 is the chance of orange itself.",
+      "steps": [
+        "All the probabilities add to 1, so P(orange) = 1 − (0.15 + 0.3 + 0.2) = 1 − 0.65 = 0.35.",
+        "P(not orange) = 1 − 0.35 = 0.65."
+      ],
+      "mistakes": {
+        "A": "Step 2: 0.35 is P(orange). The question asks for NOT orange: 1 − 0.35.",
+        "B": "Step 2: 1 − 0.2 is P(not white). Find P(orange) first, then subtract it from 1.",
+        "D": "Step 2: you added 0.35 to 1. For the complement, subtract: 1 − 0.35."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q8.svg",
+      "diagram_alt": "A spinner drawn to scale: pink 0.15, purple 0.3, white 0.2, and orange marked with a question mark"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Probability and complementary events",
+      "prompt": "Two fair dice are rolled and the smaller number is taken away from the larger number. The grid shows every difference. What is the probability that the difference is at least 2?",
+      "options": {
+        "A": "4/9",
+        "B": "5/9",
+        "C": "13/18",
+        "D": "2/3"
+      },
+      "answer": "B",
+      "explanation": "Sixteen of the 36 cells show 0 or 1, so P(at least 2) = 1 − 16/36 = 20/36 = 5/9. 13/18 forgets that the doubles (difference 0) are also less than 2.",
+      "steps": [
+        "There are 36 cells. The complement of “at least 2” is a difference of 0 or 1.",
+        "Difference 0: 6 cells; difference 1: 10 cells — 16 cells, so P(0 or 1) = 16/36 = 4/9.",
+        "P(at least 2) = 1 − 4/9 = 5/9."
+      ],
+      "mistakes": {
+        "A": "Step 3: 16/36 = 4/9 is the probability of a difference of 0 or 1. Subtract it from 1.",
+        "C": "Step 2: a difference of 0 (a double) is also less than 2. Count the 0s as well as the 1s.",
+        "D": "Step 1: the differences 0 to 5 are not equally likely. Count the 36 cells in the grid."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q9.svg",
+      "diagram_alt": "A 6 by 6 grid showing the difference between the two dice for each of the 36 outcomes, from 0 to 5"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The Venn diagram shows which of 40 office workers drink tea and which drink coffee. How many workers drink tea or coffee (or both)?",
+      "options": {
+        "A": "33",
+        "B": "39",
+        "C": "27",
+        "D": "18"
+      },
+      "answer": "A",
+      "explanation": "Everyone inside either circle counts once: 12 + 6 + 15 = 33. Adding the two whole circles (18 + 21 = 39) counts the 6 workers who drink both twice.",
+      "steps": [
+        "“Tea or coffee” means everyone inside either circle, overlap included.",
+        "Count each region once: 12 + 6 + 15 = 33."
+      ],
+      "mistakes": {
+        "B": "Step 1: adding the whole Tea circle (18) and the whole Coffee circle (21) counts the 6 in the overlap twice.",
+        "C": "Step 1: 12 + 15 leaves out the 6 workers in the overlap, who drink both — “or” includes them.",
+        "D": "Step 1: 18 is only the Tea circle. “Tea or coffee” means everything inside either circle."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q10.svg",
+      "diagram_alt": "Venn diagram for 40 workers: tea only 12, both tea and coffee 6, coffee only 15, neither 7"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "A two-way table shows 100 people.\nLeft-handed: wears glasses 9, no glasses 11.\nRight-handed: wears glasses 27, no glasses 53.\nA person who wears glasses is chosen at random. What is the probability that they are left-handed?",
+      "options": {
+        "A": "9/100",
+        "B": "9/20",
+        "C": "1/4",
+        "D": "1/5"
+      },
+      "answer": "C",
+      "explanation": "Only the 36 glasses-wearers can be chosen, and 9 of them are left-handed, so P = 9/36 = 1/4. Dividing by 20 uses the left-handed row instead of the glasses column.",
+      "steps": [
+        "“A person who wears glasses is chosen” means only the glasses column matters.",
+        "Glasses total: 9 + 27 = 36; of these, 9 are left-handed.",
+        "P = 9/36 = 1/4."
+      ],
+      "mistakes": {
+        "A": "Step 1: the person is chosen from the glasses-wearers only, so divide by the number who wear glasses, not by 100.",
+        "B": "Step 1: 20 is everyone who is left-handed. The person is chosen from the people who wear glasses.",
+        "D": "Step 2: 20/100 is the chance that ANY person is left-handed. Use only the glasses column."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "In a group of 45 students, 26 have a sister, 20 have a brother and 9 have neither, as shown in the Venn diagram. One student is chosen at random. What is the probability that they have exactly one of a sister or a brother?",
+      "options": {
+        "A": "4/5",
+        "B": "2/9",
+        "C": "16/45",
+        "D": "26/45"
+      },
+      "answer": "D",
+      "explanation": "36 students have at least one, and 10 of those have both, so 26 have exactly one: P = 26/45. 4/5 still includes the 10 students with both.",
+      "steps": [
+        "At least one: 45 − 9 = 36 students.",
+        "Both: 26 + 20 − 36 = 10 (they were counted twice in 26 + 20).",
+        "Exactly one: 36 − 10 = 26, so P = 26/45."
+      ],
+      "mistakes": {
+        "A": "Step 3: 36/45 is “at least one”, which includes the students with both. Take the overlap out.",
+        "B": "Step 2: 10/45 is the probability of having both. You want exactly one.",
+        "C": "Step 3: 16 is only the “sister only” region. Exactly one also includes “brother only”."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q12.svg",
+      "diagram_alt": "Venn diagram for 45 students: circle Sister (26 students) and circle Brother (20 students) overlap; 9 students are outside both; the regions inside the circles are marked with question marks"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Experimental probability",
+      "prompt": "A plastic bottle is tossed 120 times. The column graph shows how it landed. What is the experimental probability that it lands on its side?",
+      "options": {
+        "A": "0.84",
+        "B": "1/3",
+        "C": "0.7",
+        "D": "0.25"
+      },
+      "answer": "C",
+      "explanation": "It landed on its side 84 times in 120 tosses, so the experimental probability is 84 ÷ 120 = 0.7. 1/3 wrongly assumes the three results are equally likely.",
+      "steps": [
+        "Read the graph: on its side happened 84 times out of 30 + 84 + 6 = 120 tosses.",
+        "Experimental probability = 84 ÷ 120 = 0.7."
+      ],
+      "mistakes": {
+        "A": "Step 2: divide by the number of trials, 120 — not by 100.",
+        "B": "Step 1: the three ways of landing are not equally likely, so you can’t use 1 out of 3. Use the results.",
+        "D": "Step 1: 30 is the number of times it landed upright. Use the “on its side” bar."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-3-q13.svg",
+      "diagram_alt": "Column graph of 120 tosses of a bottle: upright 30, on its side 84, upside down 6"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Experimental probability",
+      "prompt": "A netballer scores 70% of her shots. Which is a good way to simulate one of her shots?",
+      "options": {
+        "A": "Toss a coin; heads means “score”",
+        "B": "Roll a die; 1, 2, 3 or 4 means “score”",
+        "C": "Spin a spinner with 10 equal sections; 3 sections mean “score”",
+        "D": "Choose a random digit from 0 to 9; the digits 0 to 6 mean “score”"
+      },
+      "answer": "D",
+      "explanation": "The digits 0 to 6 are 7 of the 10 equally likely digits, which gives exactly 70%. A die with 4 scoring numbers gives only 4/6 ≈ 67%, so it is close but not right.",
+      "steps": [
+        "Her probability of scoring is 70% = 7/10.",
+        "A random digit 0–9 has 10 equally likely outcomes; 0, 1, 2, 3, 4, 5, 6 are 7 of them, giving exactly 7/10."
+      ],
+      "mistakes": {
+        "A": "Step 2: a coin gives a probability of 1/2 = 50%, not 70%.",
+        "B": "Step 2: 4 out of 6 is about 67%, not 70%. Use a device that gives exactly 7 out of 10.",
+        "C": "Step 2: 3 sections out of 10 is 30% — that simulates a miss. Scoring needs 7 sections."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Probability and complementary events",
+      "prompt": "A bag holds only red, blue and yellow marbles. P(red) = 2/5 and P(blue) = 1/4. There are 14 yellow marbles. How many marbles are in the bag altogether?",
+      "options": {
+        "A": "40",
+        "B": "20",
+        "C": "35",
+        "D": "21"
+      },
+      "answer": "A",
+      "explanation": "P(yellow) = 7/20, and 7/20 of the bag is 14 marbles, so 1/20 is 2 and the bag holds 40. Answering 20 stops at the denominator instead of scaling up.",
+      "steps": [
+        "P(yellow) = 1 − (2/5 + 1/4) = 1 − (8/20 + 5/20) = 1 − 13/20 = 7/20.",
+        "7/20 of the marbles is 14, so 1/20 of the marbles is 14 ÷ 7 = 2.",
+        "Total = 20 × 2 = 40 marbles."
+      ],
+      "mistakes": {
+        "B": "Step 3: 20 is the denominator of 7/20, not the number of marbles. 7/20 of the marbles is 14, so 1/20 is 2.",
+        "C": "Step 1: 14 ÷ 2/5 uses P(red). The 14 marbles are yellow, so find P(yellow) first.",
+        "D": "Step 1: 2/5 + 1/4 is not 3/9 — use a common denominator: 8/20 + 5/20 = 13/20."
+      }
+    }
+  ]
+}

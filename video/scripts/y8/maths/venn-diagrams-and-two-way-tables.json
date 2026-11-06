@@ -1,0 +1,115 @@
+{
+  "lesson": "y8/maths/venn-diagrams-and-two-way-tables.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Venn diagrams and two-way tables",
+  "icon": "⭕",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Venn diagrams and two-way tables",
+      "sub": "How do you sort without counting twice?",
+      "icon": "⭕",
+      "say": "Fifteen students play sport, twelve play music, and five do both. How many do something? If you just add fifteen and twelve, you count those five twice. Venn diagrams and two-way tables fix that.",
+      "caption": "15 students play sport, 12 play music, and 5 do both. How many do something? If you just add 15 and 12, you count those 5 twice. Venn diagrams and two-way tables fix that."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🧦",
+      "everyday": "Two overlapping hoops: striped socks, blue socks. Blue striped go in the middle",
+      "icon2": "⭕",
+      "science": "Venn diagram: A only, both, B only, neither. Each item goes in one region",
+      "breaks": "In a Venn diagram we usually write how many are in each region, not the items themselves.",
+      "say": "Put two hula hoops on the floor so they overlap. One is for striped socks, one for blue socks. A blue striped sock goes in the overlap. A plain red sock goes outside both. Every sock lands in exactly one place, so nothing is counted twice."
+    },
+    {
+      "type": "diagram",
+      "heading": "The four regions",
+      "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-regions.svg",
+      "notes": [
+        "A only and B only",
+        "A and B: the overlap",
+        "Neither: outside both circles"
+      ],
+      "say": "First the rectangle, which holds everyone. Then two overlapping circles, A and B. That makes four regions: A only, the overlap where A and B meet, B only, and neither, outside both circles.",
+      "caption": "Four regions: A only, A and B (the overlap), B only, and neither."
+    },
+    {
+      "type": "points",
+      "heading": "Reading a Venn diagram",
+      "icon": "⭕",
+      "points": [
+        "And = the overlap only",
+        "Or = everything in either circle",
+        "A only = in A, not in B",
+        "Neither = outside both circles"
+      ],
+      "say": "And means the overlap only. Or means everything inside either circle. A only means in A but not in B. And neither means outside both circles, but still in the box."
+    },
+    {
+      "type": "example",
+      "heading": "Middle first",
+      "question": "28 students: 15 play sport, 12 play music, 5 do both. Find P(neither).",
+      "lines": [
+        "Both: 5 (fill the overlap first)",
+        "Sport only: 15 − 5 = 10",
+        "Music only: 12 − 5 = 7",
+        "Neither: 28 − 22 = 6",
+        "P(neither) = 6/28 = 3/14"
+      ],
+      "say": "Start in the middle: five do both. Sport only is fifteen minus five, which is ten. Music only is twelve minus five, which is seven. That's twenty-two altogether, so six do neither. The probability of neither is six out of twenty-eight, or three fourteenths.",
+      "caption": "Start in the middle: 5 do both. Sport only is 15 − 5 = 10. Music only is 12 − 5 = 7. That's 22 altogether, so 6 do neither. P(neither) is 6/28, or 3/14."
+    },
+    {
+      "type": "diagram",
+      "heading": "Sport and music, filled in",
+      "diagram": "diagrams/y8/maths/venn-diagrams-and-two-way-tables-ex2.svg",
+      "notes": [
+        "Overlap first: 5",
+        "Then 10 and 7",
+        "Neither: 28 − 22 = 6"
+      ],
+      "say": "Here's the finished diagram. Five in the overlap, ten in sport only, seven in music only, and six outside both circles. Check: the four regions add to twenty-eight.",
+      "caption": "Overlap 5, sport only 10, music only 7, neither 6. Check: 10 + 5 + 7 + 6 = 28."
+    },
+    {
+      "type": "equation",
+      "heading": "Counting “or”",
+      "equation": "A or B = A + B − both",
+      "parts": [
+        [
+          "A, B",
+          "how many are in each circle"
+        ],
+        [
+          "both",
+          "the overlap, counted twice in A + B"
+        ]
+      ],
+      "say": "To count A or B, add A and B, then take away the overlap once, because it was counted twice."
+    },
+    {
+      "type": "example",
+      "heading": "Two-way table",
+      "question": "Year 8 row: phone 24, no phone 6. Choose a Year 8 student at random. Find P(phone).",
+      "lines": [
+        "Choosing from Year 8 only",
+        "Year 8 total: 24 + 6 = 30",
+        "P(phone) = 24/30 = 4/5"
+      ],
+      "say": "A two-way table sorts people by two features. In the Year eight row, twenty-four have a phone and six don't. If we choose a Year eight student, only that row counts. That's twenty-four out of thirty, which is four fifths.",
+      "caption": "A two-way table sorts people by two features. In the Year 8 row, 24 have a phone and 6 don't. If we choose a Year 8 student, only that row counts. That's 24 out of 30, which is 4/5."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Fill the overlap first",
+        "And = overlap; or = everything in either",
+        "Four regions add to the total",
+        "Divide by the group you choose from"
+      ],
+      "say": "Recap. Fill the overlap first. And is the overlap; or is everything in either circle. The four regions add to the total. And always divide by the group you're choosing from. Now try the practice questions!"
+    }
+  ]
+}

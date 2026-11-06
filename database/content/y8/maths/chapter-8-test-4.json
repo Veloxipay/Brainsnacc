@@ -1,0 +1,368 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "unit": "Year 8",
+  "title": "Chapter 8 · Test 4",
+  "kind": "test",
+  "summary": "A 15-question test on Year 8 Chapter 8: samples and populations, comparing data sets, complementary events, Venn diagrams and two-way tables, and experimental probability.",
+  "minutes": 25,
+  "body": "This test covers Chapter 8, Probability and statistics: samples and populations, comparing data sets, probability and complementary events, Venn diagrams and two-way tables, and experimental probability.\n\n## How to do this test\n\n- **Time:** about 25 minutes.\n- **Conditions:** no notes and no calculator unless the question says. Show your working on paper.\n- **Diagrams:** many questions have a graph, dot plot, spinner, grid or Venn diagram — read the numbers on it carefully.\n- **Levels:** 4 easy, 5 medium, 4 hard and 2 challenge questions.\n- **After marking:** for each question you got wrong, go back to the lesson it came from and redo its worked examples. Then try another Chapter 8 test — each one has different questions on the same skills.",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "topic": "Samples and populations",
+      "prompt": "A factory makes boxes of fireworks. To check that the fireworks work, it lights some of them. Why does the factory test a sample instead of running a census?",
+      "options": {
+        "A": "Testing a firework uses it up, so a census would destroy every firework",
+        "B": "A census is always less accurate than a sample",
+        "C": "A sample gives the exact answer for the whole population",
+        "D": "Fireworks are not a population, so a census is impossible"
+      },
+      "answer": "A",
+      "explanation": "Testing destroys each firework, so testing all of them (a census) would leave none to sell. A census is not less accurate — it is simply impossible here.",
+      "steps": [
+        "A census would mean testing every firework in the population.",
+        "Lighting a firework uses it up, so a census would leave nothing to sell — a sample is the only sensible choice."
+      ],
+      "mistakes": {
+        "B": "Step 1: a census of every item gives the exact answer — it is more accurate, not less. The problem here is what testing does to the fireworks.",
+        "C": "Step 2: a sample only gives an estimate. Think about what happens to each firework that is tested.",
+        "D": "Step 1: the population is every firework the factory made — it is a population."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Samples and populations",
+      "prompt": "A town has 15 000 voters. The column graph shows the answers of a random sample of 120 voters to the question “Should the town build a new pool?” Estimate how many voters in the town would say yes.",
+      "options": {
+        "A": "55",
+        "B": "9900",
+        "C": "14 934",
+        "D": "8250"
+      },
+      "answer": "D",
+      "explanation": "The sample fraction is 66/120 = 0.55, and 0.55 × 15 000 = 8250 voters. Treating 66 as 66% (9900) forgets that the sample has 120 people, not 100.",
+      "steps": [
+        "Read the graph: 66 of the 120 voters in the sample said yes.",
+        "Fraction of the sample: 66/120 = 0.55. Assume the town is the same, because the sample is random.",
+        "Estimate: 0.55 × 15 000 = 8250 voters."
+      ],
+      "mistakes": {
+        "A": "Step 2: 66/120 = 55% is the percentage of the sample. Multiply the fraction by the 15 000 voters.",
+        "B": "Step 1: 66 is a count out of 120, not 66%. Use the fraction 66/120.",
+        "C": "Step 2: 15 000 − 66 doesn’t estimate anything. Multiply the sample fraction by 15 000."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q2.svg",
+      "diagram_alt": "Column graph for a sample of 120 voters: yes 66, no 42, unsure 12"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Samples and populations",
+      "prompt": "The column graph shows the members of a gym by age group. A stratified sample of 60 members is chosen so that each age group is in the same proportion as in the gym. How many members aged 31 to 50 should be in the sample?",
+      "options": {
+        "A": "20",
+        "B": "46.7",
+        "C": "28",
+        "D": "5.8"
+      },
+      "answer": "C",
+      "explanation": "The 31 to 50 group is 350/750 = 7/15 of the gym, so it gets 7/15 × 60 = 28 places. Sharing the places equally (20 each) ignores that this is the biggest group.",
+      "steps": [
+        "Total members: 250 + 350 + 150 = 750.",
+        "Fraction aged 31 to 50: 350/750 = 7/15.",
+        "Members aged 31 to 50 in the sample: 7/15 × 60 = 28."
+      ],
+      "mistakes": {
+        "A": "Step 2: sharing the 60 places equally between 3 groups ignores their sizes. Use each group’s fraction of the gym.",
+        "B": "Step 3: 350/750 ≈ 46.7% is the percentage of the gym. Multiply the fraction by the sample size, 60.",
+        "D": "Step 2: 350 ÷ 60 divides the group by the sample size. Find the group’s fraction of the gym (350/750) first."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q3.svg",
+      "diagram_alt": "Column graph of gym members: 18 to 30 has 250, 31 to 50 has 350, 51 and over has 150"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Comparing data sets",
+      "prompt": "The parallel dot plots show the goals scored by two hockey teams in six games. Which team has the higher median?",
+      "options": {
+        "A": "Team X: its median is 3 goals, compared with 2.5 for Team Y",
+        "B": "Team Y: its median is 3 goals, compared with 2.5 for Team X",
+        "C": "Neither: both teams have the same median",
+        "D": "Team X, because its range is smaller"
+      },
+      "answer": "B",
+      "explanation": "Team Y’s 3rd and 4th values are both 3, so its median is 3; Team X’s are 2 and 3, giving 2.5. The means are equal (2.5 each), which is why “the same” is tempting — but the question asks about medians.",
+      "steps": [
+        "Six values each, so the median is the average of the 3rd and 4th values.",
+        "Team X: 1, 2, 2, 3, 3, 4 → (2 + 3) ÷ 2 = 2.5. Team Y: 0, 1, 3, 3, 4, 4 → (3 + 3) ÷ 2 = 3.",
+        "Team Y has the higher median: 3 goals compared with 2.5."
+      ],
+      "mistakes": {
+        "A": "Step 1: you swapped the plots. Team X is the top plot: its middle values are 2 and 3.",
+        "C": "Step 2: both teams scored 15 goals in total, so their MEANS are equal — but the medians are different. Find the middle of each.",
+        "D": "Step 1: the range measures spread, not the centre. Find each team’s middle value."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q4.svg",
+      "diagram_alt": "Parallel dot plots of goals in six games: Team X has dots at 1, 2, 2, 3, 3 and 4; Team Y has dots at 0, 1, 3, 3, 4 and 4"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Comparing data sets",
+      "prompt": "Six houses in a street sold for these prices (in thousands of dollars): 610, 640, 650, 680, 700 and 1900. Which gives the best idea of a typical price?",
+      "options": {
+        "A": "The mean, about $863 thousand, because it uses every price",
+        "B": "The median, $650 thousand",
+        "C": "The range, $1290 thousand",
+        "D": "The median, $665 thousand, because the $1900 thousand outlier drags the mean up"
+      },
+      "answer": "D",
+      "explanation": "Because $1900 thousand is an outlier, the median, $665 thousand, is the best typical price — the mean (about $863 thousand) is higher than five of the six prices. With six prices, the median averages the 3rd and 4th values, so it is not $650 thousand.",
+      "steps": [
+        "Notice the outlier: 1900 is far above the other prices.",
+        "An outlier drags the mean, so use the median.",
+        "Six values, so median = (3rd + 4th) ÷ 2 = (650 + 680) ÷ 2 = 665, i.e. $665 thousand."
+      ],
+      "mistakes": {
+        "A": "Step 1: $1900 thousand is an outlier — the mean is more than five of the six prices. Use the median.",
+        "B": "Step 3: with 6 values the median is the average of the 3rd and 4th values: (650 + 680) ÷ 2.",
+        "C": "Step 2: the range measures spread, not a typical value. Use a measure of centre."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Comparing data sets",
+      "prompt": "The mean of 8 values is 15. One of the values, 23, is removed. What is the mean of the 7 values that are left, correct to one decimal place?",
+      "options": {
+        "A": "13.9",
+        "B": "12.1",
+        "C": "15",
+        "D": "19"
+      },
+      "answer": "A",
+      "explanation": "The total was 120, so after removing 23 it is 97, and 97 ÷ 7 ≈ 13.9. Dividing by 8 (12.1) forgets that only 7 values are left.",
+      "steps": [
+        "Total of the 8 values = 8 × 15 = 120.",
+        "Remove 23: new total = 120 − 23 = 97.",
+        "New mean = 97 ÷ 7 ≈ 13.9."
+      ],
+      "mistakes": {
+        "B": "Step 3: after removing a value there are only 7 values left, so divide by 7, not 8.",
+        "C": "Step 2: removing a value bigger than the mean always lowers the mean. Find the new total and divide by 7.",
+        "D": "Step 1: (15 + 23) ÷ 2 averages the mean with one value. Find the total first: 8 × 15."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Probability and complementary events",
+      "prompt": "A fair six-sided die is rolled. What is the complement of the event “rolling a number greater than 4”?",
+      "options": {
+        "A": "Rolling a number less than 4",
+        "B": "Rolling a 5 or a 6",
+        "C": "Rolling a number less than or equal to 4",
+        "D": "Rolling a 4"
+      },
+      "answer": "C",
+      "explanation": "The event is {5, 6}, so its complement is {1, 2, 3, 4} — a number less than or equal to 4. “Less than 4” leaves out the 4, which is not greater than 4.",
+      "steps": [
+        "The event “greater than 4” is {5, 6}.",
+        "The complement is every other outcome: {1, 2, 3, 4}, which is “4 or less”."
+      ],
+      "mistakes": {
+        "A": "Step 2: 4 is not greater than 4, so 4 belongs in the complement too. The complement is 1, 2, 3 and 4.",
+        "B": "Step 1: 5 and 6 ARE the event “greater than 4”. The complement is everything else.",
+        "D": "Step 2: the complement must include every outcome not in the event: 1, 2, 3 and 4, not just 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Probability and complementary events",
+      "prompt": "The bag in the diagram holds 6 red, 3 blue, 9 green and 2 yellow counters. One counter is chosen at random. What is the probability that it is NOT green?",
+      "options": {
+        "A": "9/20",
+        "B": "11/20",
+        "C": "9/11",
+        "D": "11/9"
+      },
+      "answer": "B",
+      "explanation": "P(green) = 9/20, so P(not green) = 1 − 9/20 = 11/20 (the 11 red, blue and yellow counters). 9/20 is the chance of green itself.",
+      "steps": [
+        "Total counters: 6 + 3 + 9 + 2 = 20, so P(green) = 9/20.",
+        "P(not green) = 1 − 9/20 = 11/20."
+      ],
+      "mistakes": {
+        "A": "Step 2: 9/20 is the probability that it IS green. Subtract it from 1.",
+        "C": "Step 1: 9/11 compares green with not green. A probability compares with all 20 counters.",
+        "D": "Step 2: a probability can never be more than 1. Divide by the total number of counters, 20."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q8.svg",
+      "diagram_alt": "A bag of 20 counters: 6 red (R), 3 blue (B), 9 green (G) and 2 yellow (Y)"
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Probability and complementary events",
+      "prompt": "Two fair dice are rolled and the numbers are added. The grid shows every total. What is the probability that the total is at least 5?",
+      "options": {
+        "A": "1/6",
+        "B": "8/11",
+        "C": "13/18",
+        "D": "5/6"
+      },
+      "answer": "D",
+      "explanation": "Only 6 of the 36 cells have a total below 5, so P(at least 5) = 1 − 6/36 = 5/6. 13/18 wrongly puts the total of 5 into the complement.",
+      "steps": [
+        "There are 36 cells. The complement of “at least 5” is a total of 2, 3 or 4.",
+        "Totals 2, 3, 4: 1 + 2 + 3 = 6 cells, so P(2, 3 or 4) = 6/36 = 1/6.",
+        "P(at least 5) = 1 − 1/6 = 5/6."
+      ],
+      "mistakes": {
+        "A": "Step 3: 6/36 = 1/6 is the probability of a total of 2, 3 or 4. Subtract it from 1.",
+        "B": "Step 1: the totals 2 to 12 are not equally likely. Count the 36 cells in the grid.",
+        "C": "Step 1: a total of 5 is “at least 5”, so it is not in the complement. The complement is only totals 2, 3 and 4."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q9.svg",
+      "diagram_alt": "A 6 by 6 grid showing the total of two dice for each of the 36 outcomes, from 2 to 12"
+    },
+    {
+      "difficulty": "easy",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The Venn diagram shows which of 30 students have a bike and which have a scooter. How many students have a bike?",
+      "options": {
+        "A": "16",
+        "B": "11",
+        "C": "5",
+        "D": "24"
+      },
+      "answer": "A",
+      "explanation": "The Bike circle holds 11 (bike only) plus 5 (both), so 16 students have a bike. 11 forgets the students in the overlap.",
+      "steps": [
+        "The Bike circle has two parts: bike only (11) and the overlap, both (5).",
+        "Students with a bike = 11 + 5 = 16."
+      ],
+      "mistakes": {
+        "B": "Step 1: 11 is the students with a bike but NO scooter. Add the overlap — they have a bike too.",
+        "C": "Step 1: 5 is only the students who have both. The Bike circle also includes “bike only”.",
+        "D": "Step 1: 11 + 5 + 8 is everyone in either circle. Only the Bike circle counts: bike only plus both."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q10.svg",
+      "diagram_alt": "Venn diagram for 30 students: bike only 11, both bike and scooter 5, scooter only 8, neither 6"
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "In a class of 30 students, 16 have a sister, 12 have a brother and 5 have both. How many students have at least one sister or brother?",
+      "options": {
+        "A": "28",
+        "B": "33",
+        "C": "23",
+        "D": "7"
+      },
+      "answer": "C",
+      "explanation": "Adding 16 and 12 counts the 5 students with both twice, so take them away once: 16 + 12 − 5 = 23. 28 is what you get if you forget the overlap.",
+      "steps": [
+        "The 5 with both are counted in the 16 AND in the 12.",
+        "At least one = 16 + 12 − 5 = 23."
+      ],
+      "mistakes": {
+        "A": "Step 1: 16 + 12 counts the 5 students with both twice. Subtract them once.",
+        "B": "Step 1: you added the 5 instead of subtracting it. They are already inside the 16 and the 12.",
+        "D": "Step 2: 30 − 23 = 7 is the number with neither. The question asks for at least one."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "A two-way table shows 200 students.\nYear 9: does music 60, no music 40.\nYear 10: does music 30, no music 70.\nA student who does music is chosen at random. What is the probability that they are in Year 10?",
+      "options": {
+        "A": "3/20",
+        "B": "1/3",
+        "C": "3/10",
+        "D": "9/20"
+      },
+      "answer": "B",
+      "explanation": "Only the 90 music students can be chosen, and 30 of them are in Year 10, so P = 30/90 = 1/3. Dividing by 100 uses the Year 10 row instead of the music column.",
+      "steps": [
+        "“A student who does music is chosen” means only the music column matters.",
+        "Music total: 60 + 30 = 90; of these, 30 are in Year 10.",
+        "P = 30/90 = 1/3."
+      ],
+      "mistakes": {
+        "A": "Step 1: the student is chosen from the music students only, so divide by the music total, not by 200.",
+        "C": "Step 1: 100 is the Year 10 total. The student is chosen from the music column.",
+        "D": "Step 2: 90/200 is the chance that ANY student does music. Use only the music column and count the Year 10s."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "topic": "Experimental probability",
+      "prompt": "A three-colour spinner was spun 160 times, with the results shown in the column graph. Using the experimental probability, how many greens would you expect in 400 spins?",
+      "options": {
+        "A": "100",
+        "B": "About 133",
+        "C": "40",
+        "D": "160"
+      },
+      "answer": "A",
+      "explanation": "Green came up 40 times in 160 spins, so P(green) ≈ 0.25 and 0.25 × 400 = 100. About 133 uses 1/3, which assumes the colours are equally likely — the results show they are not.",
+      "steps": [
+        "Read the graph: green came up 40 times in 160 spins.",
+        "Experimental P(green) = 40 ÷ 160 = 0.25.",
+        "Expected greens in 400 spins = 0.25 × 400 = 100."
+      ],
+      "mistakes": {
+        "B": "Step 1: 1/3 assumes the three colours are equally likely. The question asks you to use the results: 40 out of 160.",
+        "C": "Step 2: 40 greens came from 160 spins. Scale up to 400 spins: 0.25 × 400.",
+        "D": "Step 1: 64/160 = 0.4 is the probability of RED. Use the green bar."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q13.svg",
+      "diagram_alt": "Column graph of 160 spins: red 64, blue 56, green 40"
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Experimental probability",
+      "prompt": "Three students test the same drawing pin. Ann drops it 20 times and it lands point up 12 times. Ben drops it 50 times: 26 point up. Cal drops it 130 times: 66 point up. What is the best estimate of the probability that the pin lands point up?",
+      "options": {
+        "A": "0.6",
+        "B": "0.54",
+        "C": "0.51",
+        "D": "0.52"
+      },
+      "answer": "D",
+      "explanation": "Pooling all the results gives 104 point up out of 200 drops, which is 0.52. Averaging the three separate estimates (about 0.54) gives Ann’s small experiment too much weight.",
+      "steps": [
+        "Total point up: 12 + 26 + 66 = 104.",
+        "Total drops: 20 + 50 + 130 = 200.",
+        "Best estimate: 104 ÷ 200 = 0.52."
+      ],
+      "mistakes": {
+        "A": "Step 1: 12/20 uses only Ann’s 20 drops. Combine everyone’s results for a more reliable estimate.",
+        "B": "Step 3: averaging the three estimates treats Ann’s 20 drops as just as important as Cal’s 130. Add all the successes and all the trials instead.",
+        "C": "Step 1: 66/130 uses only Cal’s drops. Combine all 200 drops."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "topic": "Venn diagrams and two-way tables",
+      "prompt": "The Venn diagram shows 40 students and which of drama and art they study. How many students study art?",
+      "options": {
+        "A": "9",
+        "B": "23",
+        "C": "14",
+        "D": "27"
+      },
+      "answer": "C",
+      "explanation": "The regions give 3x + 13 = 40, so x = 9, and the Art circle holds 9 + 5 = 14 students. Answering 9 forgets the 5 students in the overlap.",
+      "steps": [
+        "All four regions add to 40: 2x + 5 + x + 8 = 40, so 3x + 13 = 40.",
+        "Solve: 3x = 27, so x = 9.",
+        "Art students = art only + both = 9 + 5 = 14."
+      ],
+      "mistakes": {
+        "A": "Step 3: 9 is x, the “art only” students. Add the 5 who study both.",
+        "B": "Step 3: 2x + 5 = 23 is the number who study drama. Art is x + 5.",
+        "D": "Step 3: 3x = 27 is the students who study just one subject. Art is x + 5."
+      },
+      "diagram": "diagrams/y8/maths/chapter-8-test-4-q15.svg",
+      "diagram_alt": "Venn diagram for 40 students: drama only 2x, both drama and art 5, art only x, neither 8"
+    }
+  ]
+}

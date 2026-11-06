@@ -1,0 +1,112 @@
+{
+  "lesson": "y8/maths/experimental-probability.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Experimental probability",
+  "icon": "🧪",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Experimental probability",
+      "sub": "When you can’t work it out, test it!",
+      "icon": "🧪",
+      "say": "What's the chance a bottle cap lands top up? There's no neat list of equally likely outcomes. So we experiment, count what happens, and use the results to estimate the probability."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🍳",
+      "everyday": "A café tests a new muffin on lots of customers and counts who buys it again",
+      "icon2": "🧪",
+      "science": "Experimental probability: run many trials and count the successes",
+      "breaks": "Customers' tastes can change. In an experiment we assume the chance stays the same each trial.",
+      "say": "A café tests a new muffin. After ten customers, it has a rough idea. After five hundred, it's fairly confident. Experimental probability works the same way. You learn the chance by watching what happens, and more trials mean more confidence."
+    },
+    {
+      "type": "equation",
+      "heading": "Experimental probability",
+      "equation": "P ≈ successes ÷ trials",
+      "parts": [
+        [
+          "successes",
+          "times the event happened"
+        ],
+        [
+          "trials",
+          "times you did the experiment"
+        ]
+      ],
+      "say": "Experimental probability is the number of times the event happened, divided by the number of trials."
+    },
+    {
+      "type": "diagram",
+      "heading": "Two coins: four outcomes",
+      "diagram": "diagrams/y8/maths/experimental-probability-tree.svg",
+      "notes": [
+        "HH, HT, TH, TT",
+        "One of each happens 2 ways",
+        "So P(one of each) = 2/4 = 1/2"
+      ],
+      "say": "Before we compare, draw a tree. The first coin is heads or tails. Each branch splits again for the second coin. That gives four outcomes, and one of each happens two ways: H T and T H.",
+      "caption": "Four equally likely outcomes: HH, HT, TH, TT. One of each happens two ways, so its probability is 1/2."
+    },
+    {
+      "type": "example",
+      "heading": "Two coins",
+      "question": "Two coins tossed 100 times: two heads 22, one of each 53, two tails 25. Compare with theory.",
+      "lines": [
+        "Outcomes: HH, HT, TH, TT",
+        "P(one of each) = 2/4 = 1/2",
+        "Expected: 25, 50, 25",
+        "Observed 22, 53, 25: close to theory"
+      ],
+      "say": "Two coins are tossed a hundred times. List the outcomes: head head, head tail, tail head, tail tail. One of each happens two ways, so its probability is one half. We'd expect twenty-five, fifty and twenty-five. We got twenty-two, fifty-three and twenty-five. That's close.",
+      "caption": "Two coins are tossed 100 times. List the outcomes: HH, HT, TH, TT. One of each happens two ways, so its probability is 1/2. We'd expect 25, 50 and 25. We got 22, 53 and 25. That's close."
+    },
+    {
+      "type": "example",
+      "heading": "Pool the data",
+      "question": "Four groups flip a bottle cap 25 times each. Top up: 9, 12, 8, 11. Best estimate?",
+      "lines": [
+        "Total top up: 9 + 12 + 8 + 11 = 40",
+        "Total flips: 4 × 25 = 100",
+        "Best estimate: 40/100 = 0.4"
+      ],
+      "say": "Four groups each flip a bottle cap twenty-five times. Their results vary a lot. So pool the data: forty top up out of a hundred flips. The best estimate is zero point four.",
+      "caption": "Four groups each flip a bottle cap 25 times. Their results vary a lot. So pool the data: 40 top up out of 100 flips. The best estimate is 0.4."
+    },
+    {
+      "type": "diagram",
+      "heading": "Is the spinner fair?",
+      "diagram": "diagrams/y8/maths/experimental-probability-ex4.svg",
+      "notes": [
+        "Fair: about 50 of each in 200 spins",
+        "3 came up 72 times",
+        "P(3) ≈ 72/200 = 0.36"
+      ],
+      "say": "A four-section spinner was spun two hundred times. Fair would be about fifty each. The bars for one, two and four are close to fifty, but three shot up to seventy-two. That suggests the spinner is biased towards three.",
+      "caption": "Fair would give about 50 of each. 3 came up 72 times, so P(3) ≈ 0.36: the spinner may be biased."
+    },
+    {
+      "type": "steps",
+      "heading": "Running a simulation",
+      "steps": [
+        "Find the real probability",
+        "Pick a device with the same chance",
+        "Decide what one trial is",
+        "Repeat many times and count"
+      ],
+      "say": "To run a simulation, find the real probability. Pick a device with the same chance, like a coin for one half or a die for one sixth. Decide what one trial is. Then repeat it many times and count the results."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "P ≈ successes ÷ trials",
+        "List outcomes for two-step experiments",
+        "Pool data for a better estimate",
+        "Judge fairness only after many trials"
+      ],
+      "say": "Recap. Experimental probability is successes divided by trials. List every outcome in two-step experiments. Pool data for a better estimate. And only judge fairness after many trials. Now try the practice questions!"
+    }
+  ]
+}

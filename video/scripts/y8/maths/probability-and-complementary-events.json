@@ -1,0 +1,127 @@
+{
+  "lesson": "y8/maths/probability-and-complementary-events.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Probability and complementary events",
+  "icon": "🎲",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Probability and complementary events",
+      "sub": "30% chance of rain. What about no rain?",
+      "icon": "☀️",
+      "say": "A weather app says there's a thirty percent chance of rain. So what's the chance it stays dry? Seventy percent. That quick one minus idea is one of the most powerful tools in probability.",
+      "caption": "A weather app says there's a 30% chance of rain. So what's the chance it stays dry? 70%. That quick “one minus” idea is one of the most powerful tools in probability."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "💡",
+      "everyday": "A light is on or off: never both, never anything else",
+      "icon2": "🎲",
+      "science": "An event and its complement: exactly one happens, so they add to 1",
+      "breaks": "A switch has two states. The complement of rolling a 6 is five outcomes grouped together.",
+      "say": "A light is either on or off. Never both, never anything else. Know the chance it's on, and you know the chance it's off. An event and its complement work the same way. But a complement can be many outcomes. The complement of rolling a six is one, two, three, four or five."
+    },
+    {
+      "type": "equation",
+      "heading": "The complement rule",
+      "equation": "P(not A) = 1 − P(A)",
+      "parts": [
+        [
+          "P(A)",
+          "probability event A happens"
+        ],
+        [
+          "P(not A)",
+          "probability A does not happen"
+        ]
+      ],
+      "say": "Here's the rule. The probability of not A equals one minus the probability of A. For example, if the chance a light globe is faulty is zero point zero eight, the chance it's fine is zero point nine two.",
+      "caption": "Here's the rule. P(not A) = 1 − P(A). For example, if the chance a light globe is faulty is 0.08, the chance it's fine is 0.92."
+    },
+    {
+      "type": "compare",
+      "heading": "Two kinds of events",
+      "left": {
+        "title": "Mutually exclusive",
+        "icon": "🚫",
+        "points": [
+          "Can't happen at the same time",
+          "Rolling a 2 or a 5",
+          "P(A or B) = P(A) + P(B)"
+        ]
+      },
+      "right": {
+        "title": "Complementary",
+        "icon": "💡",
+        "points": [
+          "Mutually exclusive AND cover everything",
+          "Rolling a 6 or not a 6",
+          "P(A) + P(not A) = 1"
+        ]
+      },
+      "say": "Mutually exclusive events can't happen at the same time, like rolling a two and rolling a five. For those, you add to find the chance of one or the other. Complementary events are mutually exclusive and also cover every outcome, so they add to exactly one."
+    },
+    {
+      "type": "example",
+      "heading": "Fill the gap",
+      "question": "Spinner: P(red) = 0.25, P(blue) = 0.4, P(yellow) = 0.15. Find P(green) and P(red or green).",
+      "lines": [
+        "All probabilities add to 1",
+        "P(green) = 1 − 0.8 = 0.2",
+        "P(red or green) = 0.25 + 0.2",
+        "P(red or green) = 0.45"
+      ],
+      "say": "A spinner has red at zero point two five, blue at zero point four and yellow at zero point one five. They add to zero point eight, so green must be zero point two. Red and green can't happen together, so add them: zero point four five.",
+      "caption": "A spinner has red at 0.25, blue at 0.4 and yellow at 0.15. They add to 0.8, so green must be 0.2. Red and green can't happen together, so add them: 0.45."
+    },
+    {
+      "type": "diagram",
+      "heading": "Draw the spinner",
+      "diagram": "diagrams/y8/maths/probability-and-complementary-events-ex2.svg",
+      "notes": [
+        "Red 0.25, blue 0.4, yellow 0.15",
+        "The whole spinner is 1",
+        "Green = 1 − 0.8 = 0.2"
+      ],
+      "say": "Here's that spinner, drawn to scale. Red is a quarter, blue is the biggest part, yellow is small, and green is the gap. The whole spinner is one, so green is one minus zero point eight.",
+      "caption": "The whole spinner is 1. Green = 1 − (0.25 + 0.4 + 0.15) = 0.2."
+    },
+    {
+      "type": "example",
+      "heading": "Two dice",
+      "question": "Two dice are rolled and added. Find P(total is not 7).",
+      "lines": [
+        "36 equally likely outcomes",
+        "Totals of 7: 6 outcomes",
+        "P(7) = 6/36 = 1/6",
+        "P(not 7) = 1 − 1/6 = 5/6"
+      ],
+      "say": "Roll two dice. There are thirty-six outcomes. Six of them add to seven, so the chance of seven is one sixth. The chance of not seven is one minus one sixth, which is five sixths.",
+      "caption": "Roll two dice. There are 36 outcomes. 6 of them add to 7, so the chance of 7 is 1/6. The chance of not 7 is 1 − 1/6 = 5/6."
+    },
+    {
+      "type": "diagram",
+      "heading": "All 36 outcomes for two dice",
+      "diagram": "diagrams/y8/maths/probability-and-complementary-events-ex4.svg",
+      "notes": [
+        "6 rows × 6 columns = 36 outcomes",
+        "Totals of 7 lie on one diagonal",
+        "6 out of 36"
+      ],
+      "say": "Here is the grid of every total. First die down the side, second die across the top. The sevens all sit on one diagonal: six cells out of thirty-six.",
+      "caption": "The six totals of 7 lie on one diagonal: 6 out of 36 outcomes."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "P(not A) = 1 − P(A)",
+        "For 'at least', count the small side",
+        "Mutually exclusive: add for “or”",
+        "All outcome probabilities add to 1"
+      ],
+      "say": "Recap. Not A is one minus A. For at least questions, count the smaller complement. If events can't happen together, add them for or. And all the outcomes add to one. Now try the practice questions!"
+    }
+  ]
+}
