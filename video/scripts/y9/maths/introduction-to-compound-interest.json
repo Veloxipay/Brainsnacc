@@ -1,0 +1,100 @@
+{
+ "lesson": "y9/maths/introduction-to-compound-interest.json",
+ "level": "Year 9",
+ "subject": "maths",
+ "title": "Introduction to compound interest",
+ "icon": "📈",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Compound interest",
+   "sub": "Interest that earns interest",
+   "icon": "📈",
+   "say": "Why does saving early pay off so well, and why can credit card debt grow so fast? The answer is compound interest: interest that earns its own interest."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "⛄",
+   "everyday": "A rolling snowball picks up more snow as it grows",
+   "icon2": "📈",
+   "science": "Each year's interest is on a bigger balance",
+   "breaks": "A snowball grows unevenly. Compound interest is exact: the same multiplier every period.",
+   "say": "Roll a snowball and it picks up a layer of snow. Now it's bigger, so next time it picks up even more. Compound interest is the same: interest is added to the balance, so next year's interest is on a bigger amount. Unlike a snowball, though, it's exact: the same multiplier every period."
+  },
+  {
+   "type": "equation",
+   "heading": "The compound interest formula",
+   "equation": "A = P(1 + r)ⁿ",
+   "parts": [
+    [
+     "A",
+     "final amount"
+    ],
+    [
+     "P",
+     "principal"
+    ],
+    [
+     "r",
+     "rate per period, as a decimal"
+    ],
+    [
+     "n",
+     "number of periods"
+    ]
+   ],
+   "say": "A equals P times one plus r, to the power of n. A is the final amount and P is the principal. r is the rate for each period, as a decimal. n is the number of periods. The interest earned is A minus P.",
+   "caption": "A = P(1 + r)ⁿ. A is the final amount and P is the principal. r is the rate per period, as a decimal. n is the number of periods. The interest earned is A − P."
+  },
+  {
+   "type": "example",
+   "heading": "Year by year",
+   "question": "$1000 at 10% p.a. compounded annually. Find the balance after 3 years.",
+   "lines": [
+    "Year 1: 1000 × 1.1 = 1100",
+    "Year 2: 1100 × 1.1 = 1210",
+    "Year 3: 1210 × 1.1 = 1331",
+    "Balance: $1331"
+   ],
+   "say": "A thousand dollars at ten per cent, compounded annually. Each year, multiply by one point one. Eleven hundred, then twelve hundred and ten, then thirteen hundred and thirty-one dollars. The interest grew from one hundred, to one hundred and ten, to one hundred and twenty-one.",
+   "caption": "$1000 at 10%, compounded annually. Each year, × 1.1: $1100, then $1210, then $1331. The interest grew from $100 to $110 to $121."
+  },
+  {
+   "type": "diagram",
+   "heading": "Snowball versus staircase",
+   "diagram": "diagrams/y9/maths/introduction-to-compound-interest-compare.svg",
+   "notes": [
+    "Simple: +$100 every year → $1500",
+    "Compound: grows faster → $1610.51",
+    "The gap keeps widening"
+   ],
+   "say": "Here are both kinds side by side for a thousand dollars at ten per cent. The light bars are simple interest, climbing equal steps to fifteen hundred. The dark bars are compound interest, growing faster each year to sixteen hundred and ten dollars fifty-one. And the gap keeps getting wider.",
+   "caption": "$1000 at 10%. Simple interest climbs equal steps to $1500. Compound interest grows faster each year, to $1610.51, and the gap keeps widening."
+  },
+  {
+   "type": "example",
+   "heading": "Compounding monthly",
+   "question": "$2000 at 6% p.a. compounded monthly for 2 years. Find the final amount.",
+   "lines": [
+    "r = 0.06 ÷ 12 = 0.005",
+    "n = 2 × 12 = 24",
+    "A = 2000 × 1.005²⁴",
+    "A ≈ $2254.32"
+   ],
+   "say": "Two thousand dollars at six per cent, compounded monthly, for two years. Match the rate to the period: the monthly rate is six per cent divided by twelve, point zero zero five. The number of months is twenty-four. So A is two thousand times one point zero zero five to the twenty-four, about two thousand two hundred and fifty-four dollars thirty-two.",
+   "caption": "$2000 at 6% p.a. compounded monthly for 2 years. Monthly rate: 0.06 ÷ 12 = 0.005. Months: 24. A = 2000 × 1.005²⁴ ≈ $2254.32."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Interest earns interest",
+    "A = P(1 + r)ⁿ",
+    "Interest = A − P",
+    "Monthly: r ÷ 12, months for n",
+    "Compound beats simple over time"
+   ],
+   "say": "Quick recap. With compound interest, interest earns interest. A equals P times one plus r to the n. The interest is A minus P. For monthly compounding, use the monthly rate and the number of months. And over time, compound beats simple. Now try the practice questions!"
+  }
+ ]
+}
