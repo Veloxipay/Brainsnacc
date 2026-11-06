@@ -1,0 +1,95 @@
+{
+ "lesson": "y10/maths/solving-exponential-equations.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Solving exponential equations",
+ "icon": "🎯",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Solving exponential equations",
+   "sub": "When the unknown is in the index",
+   "icon": "🎯",
+   "say": "How many years until your savings double? How long until a medicine wears off? These questions lead to equations with the unknown up in the index. Here are three ways to solve them."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "💱",
+   "everyday": "Change both prices into the same currency before comparing",
+   "icon2": "🎯",
+   "science": "Change both sides into powers of the same base: 4ˣ = 8 → 2²ˣ = 2³",
+   "breaks": "Exchange rates change daily, but 4 = 2² is exact forever.",
+   "say": "You can't compare a price in dollars with a price in yen until you change them into the same currency. Exponential equations are the same. Four to the x equals eight is tricky, but write both sides as powers of two and you can just compare the indices."
+  },
+  {
+   "type": "example",
+   "heading": "Method 1: same base",
+   "question": "Solve 4ˣ = 8.",
+   "lines": [
+    "4 = 2², 8 = 2³",
+    "2²ˣ = 2³",
+    "2x = 3",
+    "x = 3/2"
+   ],
+   "say": "Solve four to the x equals eight. Four is two squared and eight is two cubed. So two to the two x equals two cubed. Same base, so the indices are equal: two x equals three, and x is three halves.",
+   "caption": "Solve 4ˣ = 8. 4 is 2² and 8 is 2³. So 2²ˣ = 2³. Same base, so the indices are equal: 2x = 3, and x = 3/2."
+  },
+  {
+   "type": "equation",
+   "heading": "Method 2: logarithms",
+   "equation": "aˣ = b  ⇒  x = log b ÷ log a",
+   "parts": [
+    [
+     "a",
+     "the base"
+    ],
+    [
+     "b",
+     "the number you want"
+    ],
+    [
+     "log",
+     "the calculator's base-10 log key"
+    ]
+   ],
+   "say": "When the bases won't match, use logs. If a to the x equals b, then x equals log b divided by log a. For five to the x equals twenty, x is log twenty over log five, about one point eight six.",
+   "caption": "When the bases won't match, use logs. If aˣ = b, then x = log b ÷ log a. For 5ˣ = 20, x = log 20 ÷ log 5 ≈ 1.86."
+  },
+  {
+   "type": "diagram",
+   "heading": "Method 3: read the graph",
+   "diagram": "diagrams/y10/maths/solving-exponential-equations-graph.svg",
+   "notes": [
+    "Draw y = 2ˣ and the line y = 10",
+    "Read down from where they meet",
+    "x ≈ 3.32"
+   ],
+   "say": "You can also use a graph. First the curve y equals two to the x. Then the line y equals ten. From where they meet, drop down to the x-axis: about three point three two. That is the solution of two to the x equals ten.",
+   "caption": "You can also use a graph. First the curve y = 2ˣ. Then the line y = 10. From where they meet, drop down to the x-axis: about 3.32. That is the solution of 2ˣ = 10."
+  },
+  {
+   "type": "example",
+   "heading": "How long to double?",
+   "question": "$5000 at 6% p.a. compounded annually. When does it first double?",
+   "lines": [
+    "5000 × 1.06ⁿ = 10 000",
+    "1.06ⁿ = 2",
+    "n = log 2 ÷ log 1.06 ≈ 11.9",
+    "Round up: 12 years"
+   ],
+   "say": "Five thousand dollars at six per cent a year. When does it double? Divide by five thousand: one point zero six to the n equals two. So n is log two over log one point zero six, about eleven point nine. It only gets there during year twelve, so round up: twelve years.",
+   "caption": "$5000 at 6% a year. When does it double? Divide by 5000: 1.06ⁿ = 2. So n = log 2 ÷ log 1.06 ≈ 11.9. It only gets there during year 12, so round up: 12 years."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Same base → set the indices equal",
+    "Otherwise x = log b ÷ log a",
+    "Graph: x where y = aˣ meets y = b",
+    "\"First reaches\" → round up"
+   ],
+   "say": "Quick recap. If you can write both sides with the same base, set the indices equal. If not, x equals log b over log a. A graph gives a quick estimate. And for whole periods, round up. Now try the practice questions!"
+  }
+ ]
+}

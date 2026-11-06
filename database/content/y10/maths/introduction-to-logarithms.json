@@ -1,0 +1,274 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "unit": "Year 10",
+  "title": "Introduction to logarithms",
+  "summary": "Understand logₐ x = y as aʸ = x, convert between index and log form, evaluate logs, and use the log laws to simplify expressions.",
+  "minutes": 30,
+  "body": "A **logarithm** answers one question: \"what power do I need?\" For example, 2 to what power gives 8? The answer, 3, is the logarithm. Logarithms are used to measure earthquakes, sound levels in decibels and the acidity (pH) of a solution, and in the next lesson they let you solve equations where the unknown is in the index.\n\n## Learning objective\n\nBy the end of this lesson you can convert between index form and logarithmic form, evaluate simple logarithms, and use the log laws to simplify expressions.\n\n## Before you start\n\nYou need **Negative and fractional indices** and **Exponential growth and decay** (this chapter).\n\nWarm-up (answers below):\n1. Evaluate 3⁴.\n2. Evaluate 4^(1/2).\n\nAnswers: 1. 3 × 3 × 3 × 3 = **81**. 2. √4 = **2**.\n\n## Think of it like this\n\n### Undo buttons\n\nSquaring and square-rooting undo each other: square 5 to get 25, square-root 25 to get back to 5. A logarithm is the **undo button for a power**. Raising 2 to the power 3 gives 8, so log₂ 8 takes you from 8 back to the power, 3. It answers \"how many 2s were multiplied together to make 8?\"\n\n*Where the analogy breaks down:* \"how many 2s were multiplied\" only makes sense for whole numbers, but logarithms also give fractional and negative answers — log₂ 5 ≈ 2.32 and log₂ ½ = −1.\n\n## Key ideas\n\n### What a logarithm is\n\n**logₐ x = y means aʸ = x**\n\nRead logₐ x as \"log, base a, of x\". The base a is positive and not 1, and x must be positive. The logarithm **is the index**.\n\n| Index form | Log form |\n|---|---|\n| 2³ = 8 | log₂ 8 = 3 |\n| 10² = 100 | log₁₀ 100 = 2 |\n| 5⁻¹ = 1/5 | log₅ (1/5) = −1 |\n| 9^(1/2) = 3 | log₉ 3 = ½ |\n\nTo **evaluate** logₐ x, ask: \"a to what power gives x?\"\n\n### Special values\n\n- **logₐ 1 = 0**, because a⁰ = 1.\n- **logₐ a = 1**, because a¹ = a.\n- logₐ (aⁿ) = n.\n\n### Logarithms on a calculator\n\nThe **log** key means log₁₀, the **common logarithm**. For example, log 2000 ≈ 3.301, because 10^3.301 ≈ 2000. The answer is between 3 and 4 because 2000 is between 10³ and 10⁴.\n\n### Logs and graphs\n\nThe graph of y = log₂ x is the reflection of y = 2ˣ in the line y = x, because a log swaps the roles of the index and the answer. So y = 2ˣ passes through (0, 1) and (2, 4), while y = log₂ x passes through (1, 0) and (4, 2).\n\n![The graphs of y = 2ˣ and y = log₂ x on the same axes, reflections of each other in the line y = x. Marked points: (0, 1) and (2, 4) on y = 2ˣ; (1, 0) and (4, 2) on y = log₂ x.](/diagrams/y10/maths/introduction-to-logarithms-reflection.svg)\n\nYou can estimate a log from the graph of y = aˣ: to find log₂ 5, find where y = 2ˣ reaches y = 5 and read the x value.\n\n![Graph of y = 2ˣ from x = 0 to 3 with a dashed line at y = 5. Where they meet, a dashed line drops to the x-axis at about 2.32, labelled log₂ 5 ≈ 2.32.](/diagrams/y10/maths/introduction-to-logarithms-read.svg)\n\n### The log laws\n\nBecause logs are indices, the index laws turn into **log laws** (same base, x and y positive):\n\n- **logₐ x + logₐ y = logₐ (xy)** — adding logs ↔ multiplying numbers\n- **logₐ x − logₐ y = logₐ (x/y)** — subtracting logs ↔ dividing numbers\n- **logₐ (xⁿ) = n logₐ x** — a power comes out the front\n\n## Worked examples\n\n### Example 1\n\nWrite 3⁴ = 81 in log form, and write log₅ 125 = 3 in index form.\n\nStep 1: the base stays the base and the index becomes the answer: **log₃ 81 = 4**.\nStep 2: logₐ x = y means aʸ = x, so log₅ 125 = 3 becomes **5³ = 125**.\n\n### Example 2\n\nEvaluate log₂ 32 and log₁₀ 0.01.\n\nStep 1: 2 to what power gives 32? 2⁵ = 32, so **log₂ 32 = 5**.\nStep 2: 0.01 = 1/100 = 10⁻², so **log₁₀ 0.01 = −2** — a number less than 1 has a negative log.\n\n### Example 3\n\nEvaluate log₈ 4.\n\nStep 1: write both numbers as powers of 2: 8 = 2³ and 4 = 2² — a common base makes the power easy to see.\nStep 2: we need 8ʸ = 4, so (2³)ʸ = 2², giving 3y = 2.\nStep 3: **y = 2/3**. Check: 8^(2/3) = (∛8)² = 2² = 4 ✓\n\n### Example 4\n\nSimplify log₆ 4 + log₆ 9.\n\nStep 1: adding logs with the same base means multiplying: log₆ (4 × 9) = log₆ 36.\nStep 2: 6² = 36, so the answer is **2**.\n\n### Example 5\n\nSimplify 2 log₅ 10 − log₅ 4.\n\nStep 1: move the 2 inside as a power: 2 log₅ 10 = log₅ 10² = log₅ 100 — the power law.\nStep 2: subtracting logs means dividing: log₅ (100 ÷ 4) = log₅ 25.\nStep 3: 5² = 25, so the answer is **2**.\n\n## Common mistakes\n\n- **Swapping the base and the answer.** log₂ 8 = 3 means 2³ = 8, not 3² = 8 or 8³ = 2.\n- **Dividing instead of finding the power.** log₃ 81 is not 81 ÷ 3 = 27. Ask \"3 to what power gives 81?\" (4).\n- **Adding the numbers inside.** log₆ 4 + log₆ 9 is log₆ 36, not log₆ 13. Adding logs means multiplying the numbers.\n- **Forgetting logs can be negative or fractions.** log₂ (1/8) = −3 and log₁₆ 4 = ½.\n- **Using the calculator's log key for other bases.** The log key is base 10 only.\n\n## Tips to remember\n\n- **\"A log is an index.\"** Whenever you see logₐ x, ask: \"a to the power what equals x?\"\n- **\"The base stays at the base.\"** In aʸ = x and logₐ x = y, a is at the bottom both times.\n- **logₐ 1 = 0 and logₐ a = 1** — always.\n- **Log laws mirror index laws:** multiply → add, divide → subtract, power → multiply.\n- **Write numbers as powers of the same base** to evaluate tricky logs like log₈ 4.\n\n## Key terms\n\n- **Logarithm** — the index (power) a base must be raised to in order to give a number: logₐ x = y means aʸ = x.\n- **Base** — the number a in logₐ x; it is positive and not 1.\n- **Common logarithm** — a log with base 10, written log x on calculators.\n- **Index form** — a statement like 2³ = 8.\n- **Logarithmic form** — the same statement written as log₂ 8 = 3.\n- **Log laws** — rules for adding, subtracting and taking powers of logs with the same base.\n\n## Summary\n\n- logₐ x = y means aʸ = x: a logarithm is an index.\n- logₐ 1 = 0, logₐ a = 1 and logₐ (aⁿ) = n.\n- Logs can be negative (for numbers between 0 and 1) or fractions.\n- y = logₐ x is the reflection of y = aˣ in the line y = x.\n- Log laws: logₐ x + logₐ y = logₐ (xy), logₐ x − logₐ y = logₐ (x/y), logₐ (xⁿ) = n logₐ x.\n",
+  "questions": [
+    {
+      "difficulty": "easy",
+      "prompt": "Write 2⁵ = 32 in logarithmic form.",
+      "options": {
+        "A": "log₅ 32 = 2",
+        "B": "log₂ 5 = 32",
+        "C": "log₃₂ 2 = 5",
+        "D": "log₂ 32 = 5"
+      },
+      "answer": "D",
+      "explanation": "aʸ = x becomes logₐ x = y. The base is 2, the answer 32 goes inside the log, and the index 5 is the value: log₂ 32 = 5.",
+      "steps": [
+        "Match aʸ = x: the base a = 2, the index y = 5 and x = 32.",
+        "logₐ x = y, so log₂ 32 = 5."
+      ],
+      "mistakes": {
+        "A": "Step 1: the base of the power (2) is also the base of the log — you used the index as the base.",
+        "B": "Step 2: the number inside the log is the answer of the power (32), and the log equals the index (5).",
+        "C": "Step 1: the base stays at the base. 32 is the answer, not the base."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Evaluate log₃ 81.",
+      "options": {
+        "A": "4",
+        "B": "27",
+        "C": "9",
+        "D": "3"
+      },
+      "answer": "A",
+      "explanation": "Ask \"3 to what power gives 81?\": 3⁴ = 81, so log₃ 81 = 4. 27 comes from dividing 81 by 3, which is not what a log does.",
+      "steps": [
+        "A log is an index: find the power y with 3ʸ = 81.",
+        "3¹ = 3, 3² = 9, 3³ = 27, 3⁴ = 81.",
+        "So log₃ 81 = 4."
+      ],
+      "mistakes": {
+        "B": "Step 1: a log is not a division. Find the power of 3 that gives 81.",
+        "C": "Step 2: 9 is √81 (and 3²). You need the power of 3 that gives 81.",
+        "D": "Step 2: 3³ = 27, not 81. Keep multiplying by 3."
+      }
+    },
+    {
+      "difficulty": "easy",
+      "prompt": "Evaluate log₁₀ 1.",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "10",
+        "D": "0.1"
+      },
+      "answer": "B",
+      "explanation": "10⁰ = 1, so log₁₀ 1 = 0. log₁₀ 10 is the one that equals 1.",
+      "steps": [
+        "Find the power y with 10ʸ = 1.",
+        "Any non-zero number to the power 0 is 1, so 10⁰ = 1 and log₁₀ 1 = 0."
+      ],
+      "mistakes": {
+        "A": "Step 2: 10¹ = 10, not 1. logₐ a = 1, but here the number is 1, not 10.",
+        "C": "Step 1: 10 is the base. The log is the power you raise 10 to.",
+        "D": "Step 2: 10⁻¹ = 0.1, not 1. You need 10ʸ = 1."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Evaluate log₂ (1/8).",
+      "options": {
+        "A": "3",
+        "B": "1/3",
+        "C": "−3",
+        "D": "−4"
+      },
+      "answer": "C",
+      "explanation": "1/8 = 1/2³ = 2⁻³, so log₂ (1/8) = −3. Numbers between 0 and 1 have negative logs, so 3 is wrong.",
+      "steps": [
+        "Write 1/8 as a power of 2: 8 = 2³, so 1/8 = 2⁻³.",
+        "The log is the index: log₂ (1/8) = −3."
+      ],
+      "mistakes": {
+        "A": "Step 1: 1/8 is 2⁻³, not 2³. A negative index means \"one over\".",
+        "B": "Step 1: 2^(1/3) is the cube root of 2, not 1/8. One over means a negative index.",
+        "D": "Step 1: 2⁴ = 16, so 2⁻⁴ = 1/16. Use 2³ = 8."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Evaluate log₁₆ 4.",
+      "options": {
+        "A": "2",
+        "B": "½",
+        "C": "4",
+        "D": "¼"
+      },
+      "answer": "B",
+      "explanation": "16^(1/2) = √16 = 4, so log₁₆ 4 = ½. The answer 2 is log₄ 16 — the base and the number are swapped.",
+      "steps": [
+        "Find y with 16ʸ = 4.",
+        "4 is the square root of 16, and a square root is the power ½.",
+        "So log₁₆ 4 = ½."
+      ],
+      "mistakes": {
+        "A": "Step 1: 4² = 16 gives log₄ 16 = 2. Here the base is 16, so you need 16ʸ = 4.",
+        "C": "Step 1: a log is not a division (16 ÷ 4). Find the power of 16 that gives 4.",
+        "D": "Step 2: 4 ÷ 16 = ¼ is a fraction of 16, not a power. 16^(1/4) = 2, not 4."
+      }
+    },
+    {
+      "difficulty": "medium",
+      "prompt": "Simplify log₆ 4 + log₆ 9.",
+      "options": {
+        "A": "log₆ 13",
+        "B": "36",
+        "C": "1",
+        "D": "2"
+      },
+      "answer": "D",
+      "explanation": "Adding logs with the same base means multiplying: log₆ (4 × 9) = log₆ 36 = 2, since 6² = 36.",
+      "steps": [
+        "Use the log law logₐ x + logₐ y = logₐ (xy): log₆ (4 × 9).",
+        "4 × 9 = 36, so it is log₆ 36.",
+        "6² = 36, so log₆ 36 = 2."
+      ],
+      "mistakes": {
+        "A": "Step 1: adding logs means multiplying the numbers inside, not adding them.",
+        "B": "Step 3: 36 is the number inside the log. The log is the power of 6 that makes 36.",
+        "C": "Step 3: 6¹ = 6, not 36. Find the power of 6 that gives 36."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Simplify log₃ 54 − log₃ 2.",
+      "options": {
+        "A": "log₃ 52",
+        "B": "3",
+        "C": "27",
+        "D": "2"
+      },
+      "answer": "B",
+      "explanation": "Subtracting logs means dividing: log₃ (54 ÷ 2) = log₃ 27 = 3, because 3³ = 27.",
+      "steps": [
+        "Use logₐ x − logₐ y = logₐ (x/y): log₃ (54 ÷ 2).",
+        "54 ÷ 2 = 27, so it is log₃ 27.",
+        "3³ = 27, so the answer is 3."
+      ],
+      "mistakes": {
+        "A": "Step 1: subtracting logs means dividing the numbers inside, not subtracting them.",
+        "C": "Step 3: 27 is the number inside the log; the answer is the power of 3 that gives 27.",
+        "D": "Step 3: 3² = 9, not 27. Find the power of 3 that gives 27."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "Given log₁₀ 2 ≈ 0.301 and log₁₀ 3 ≈ 0.477, find log₁₀ 12.",
+      "options": {
+        "A": "0.778",
+        "B": "0.144",
+        "C": "1.079",
+        "D": "1.681"
+      },
+      "answer": "C",
+      "explanation": "12 = 2² × 3, so log 12 = 2 log 2 + log 3 ≈ 2(0.301) + 0.477 = 1.079. 0.778 is log 6, which uses only one factor of 2.",
+      "steps": [
+        "Write 12 using 2s and 3s: 12 = 2² × 3.",
+        "Use the laws: log 12 = log 2² + log 3 = 2 log 2 + log 3.",
+        "2(0.301) + 0.477 = 0.602 + 0.477 = 1.079."
+      ],
+      "mistakes": {
+        "A": "Step 1: 2 × 3 = 6, not 12. 12 has two factors of 2.",
+        "B": "Step 2: logs of a product are added, not multiplied.",
+        "D": "Step 2: log 2² = 2 log 2, not 4 log 2. The index 2 comes out the front."
+      }
+    },
+    {
+      "difficulty": "hard",
+      "prompt": "The graph shows y = 2ˣ and the line y = 6. Use the graph to estimate log₂ 6.",
+      "diagram": "diagrams/y10/maths/introduction-to-logarithms-q-estimate.svg",
+      "diagram_alt": "Graph of y = 2ˣ for x from 0 to 3.5, with x marked every 0.5, and a dashed horizontal line at y = 6.",
+      "options": {
+        "A": "about 3",
+        "B": "about 64",
+        "C": "about 0.78",
+        "D": "about 2.6"
+      },
+      "answer": "D",
+      "explanation": "log₂ 6 is the x value where 2ˣ = 6. The curve meets y = 6 at about x = 2.6 (between 2.5 and 3). It cannot be 3, because 2³ = 8.",
+      "steps": [
+        "log₂ 6 is the power x with 2ˣ = 6.",
+        "Find where the curve meets the line y = 6 and read down to the x-axis.",
+        "They meet a little past x = 2.5, so log₂ 6 ≈ 2.6."
+      ],
+      "mistakes": {
+        "A": "Step 3: 2³ = 8, which is above 6. A log is not 6 ÷ 2 — read the x value where the curve meets y = 6.",
+        "B": "Step 1: 2⁶ = 64 swaps the roles. You need the power of 2 that gives 6.",
+        "C": "Step 1: log₁₀ 6 ≈ 0.78 uses base 10. The question is about base 2."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Find x if logₓ 81 = 4 (x is positive).",
+      "options": {
+        "A": "9",
+        "B": "3",
+        "C": "20.25",
+        "D": "324"
+      },
+      "answer": "B",
+      "explanation": "logₓ 81 = 4 means x⁴ = 81, so x = ⁴√81 = 3. Check: 3⁴ = 81 ✓. 9 is only the square root.",
+      "steps": [
+        "Change to index form: x⁴ = 81.",
+        "Take the fourth root: x = 81^(1/4).",
+        "3⁴ = 81, so x = 3."
+      ],
+      "mistakes": {
+        "A": "Step 2: 9 is √81, and 9⁴ = 6561. You need the fourth root.",
+        "C": "Step 2: 81 ÷ 4 is not a root. x⁴ = 81 needs the fourth root of 81.",
+        "D": "Step 1: logₓ 81 = 4 means x⁴ = 81, not x = 81 × 4."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "If logₐ x = 3 and logₐ y = 2, find logₐ (x²/y).",
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "4",
+        "D": "8"
+      },
+      "answer": "C",
+      "explanation": "logₐ (x²/y) = 2 logₐ x − logₐ y = 2(3) − 2 = 4.",
+      "steps": [
+        "Split the division: logₐ (x²/y) = logₐ x² − logₐ y.",
+        "Bring the power to the front: logₐ x² = 2 logₐ x = 2 × 3 = 6.",
+        "Subtract: 6 − 2 = 4."
+      ],
+      "mistakes": {
+        "A": "Step 2: the square on x means 2 logₐ x — you used logₐ x only once.",
+        "B": "Step 2: logₐ x² = 2 × logₐ x = 6, not (logₐ x)² = 9.",
+        "D": "Step 1: dividing means subtracting logₐ y, not adding it."
+      }
+    },
+    {
+      "difficulty": "challenge",
+      "prompt": "Sound level in decibels is L = 10 log₁₀ (I ÷ I₀), where I is the sound intensity and I₀ is a fixed number. If the intensity of a sound is multiplied by 1000, by how many decibels does L go up?",
+      "options": {
+        "A": "30 dB",
+        "B": "3 dB",
+        "C": "10 000 dB",
+        "D": "1000 dB"
+      },
+      "answer": "A",
+      "explanation": "Multiplying I by 1000 adds log₁₀ 1000 = 3 to the log (product law), and L is 10 times the log, so L goes up by 10 × 3 = 30 dB.",
+      "steps": [
+        "New level: 10 log₁₀ (1000I ÷ I₀) = 10[log₁₀ 1000 + log₁₀ (I ÷ I₀)].",
+        "log₁₀ 1000 = 3, because 10³ = 1000.",
+        "So L goes up by 10 × 3 = 30 dB."
+      ],
+      "mistakes": {
+        "B": "Step 3: L is 10 times the log, so multiply the increase of 3 by 10.",
+        "C": "Step 2: the 1000 goes inside the log, so it adds log₁₀ 1000 = 3, not 1000.",
+        "D": "Step 1: on a log scale, multiplying the intensity does not multiply the level — it adds to it."
+      }
+    }
+  ]
+}

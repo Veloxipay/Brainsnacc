@@ -1,0 +1,123 @@
+{
+ "lesson": "y10/maths/exponential-growth-and-decay.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Exponential growth and decay",
+ "icon": "📈",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Exponential growth and decay",
+   "sub": "When things multiply instead of add",
+   "icon": "📈",
+   "say": "Bacteria that double every hour. A car that loses fifteen per cent of its value every year. Both change by multiplying, not adding. That is exponential growth and decay.",
+   "caption": "Bacteria that double every hour. A car that loses 15% of its value every year. Both change by multiplying, not adding. That is exponential growth and decay."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "📄",
+   "everyday": "Each fold of a sheet of paper doubles its layers: 2, 4, 8, 16…",
+   "icon2": "📈",
+   "science": "After n folds there are 2ⁿ layers: exponential growth",
+   "breaks": "Folds come in whole steps and paper soon won't fold, but y = 2ˣ works for any x, forever.",
+   "say": "Fold a sheet of paper in half: two layers. Fold again: four. Then eight, sixteen, thirty-two. Each fold doubles the thickness, so after n folds there are two to the n layers. You multiply by the same number every step. That is exponential growth.",
+   "caption": "Fold a sheet of paper in half: 2 layers. Fold again: 4. Then 8, 16, 32. Each fold doubles the thickness, so after n folds there are 2ⁿ layers. You multiply by the same number every step. That is exponential growth."
+  },
+  {
+   "type": "diagram",
+   "heading": "Growth and decay graphs",
+   "diagram": "diagrams/y10/maths/exponential-growth-and-decay-graphs.svg",
+   "notes": [
+    "y = 2ˣ rises: growth",
+    "y = (½)ˣ falls: decay",
+    "Both pass through (0, 1); never touch y = 0"
+   ],
+   "say": "First the axes. Then the curve y equals two to the x, rising from left to right: that is growth. Now y equals one half to the x, falling: that is decay. Both pass through the point zero, one, and both get closer and closer to the x-axis without ever touching it.",
+   "caption": "First the axes. Then y = 2ˣ, rising from left to right: growth. Now y = (½)ˣ, falling: decay. Both pass through (0, 1), and both get closer to the x-axis without ever touching it."
+  },
+  {
+   "type": "equation",
+   "heading": "Percentage growth and decay",
+   "equation": "A = A₀(1 ± r)ⁿ",
+   "parts": [
+    [
+     "A₀",
+     "starting amount"
+    ],
+    [
+     "1 + r",
+     "growth factor"
+    ],
+    [
+     "1 − r",
+     "decay factor"
+    ],
+    [
+     "n",
+     "number of periods"
+    ]
+   ],
+   "say": "When an amount changes by a percentage each period, A equals A nought times one plus or minus r, to the power n. Growth of five per cent means times one point zero five. Decay of twenty per cent means times zero point eight.",
+   "caption": "When an amount changes by a percentage each period, A = A₀(1 ± r)ⁿ. Growth of 5% means × 1.05. Decay of 20% means × 0.8."
+  },
+  {
+   "type": "diagram",
+   "heading": "Medicine leaving the blood",
+   "diagram": "diagrams/y10/maths/exponential-growth-and-decay-medicine.svg",
+   "notes": [
+    "M = 80 × 0.8ᵗ",
+    "After 3 hours: 40.96 mg",
+    "Below 20 mg by t = 7"
+   ],
+   "say": "A patient takes eighty milligrams of medicine, and twenty per cent leaves the blood every hour. Here is the curve: eighty times zero point eight to the t. After three hours, forty point nine six milligrams are left. The curve crosses the dashed twenty milligram line between six and seven hours.",
+   "caption": "A patient takes 80 mg of medicine, and 20% leaves the blood every hour: M = 80 × 0.8ᵗ. After 3 hours, 40.96 mg are left. The curve crosses the 20 mg line between 6 and 7 hours."
+  },
+  {
+   "type": "example",
+   "heading": "Finding the rule",
+   "question": "x = 0, 1, 2, 3 gives y = 5, 15, 45, 135. Find y = k × aˣ.",
+   "lines": [
+    "k = value at x = 0 = 5",
+    "Ratio: 15 ÷ 5 = 3, so a = 3",
+    "y = 5 × 3ˣ"
+   ],
+   "say": "To find the rule from a table, k is the value when x is zero: five. Then find the ratio: fifteen divided by five is three, and it stays three all the way along. So y equals five times three to the x.",
+   "caption": "k is the value when x = 0: 5. The ratio 15 ÷ 5 = 3 stays the same all the way along. So y = 5 × 3ˣ."
+  },
+  {
+   "type": "compare",
+   "heading": "Linear or exponential?",
+   "left": {
+    "title": "Linear",
+    "icon": "📏",
+    "points": [
+     "Add the same amount each step",
+     "Straight-line graph",
+     "y = mx + c"
+    ]
+   },
+   "right": {
+    "title": "Exponential",
+    "icon": "📈",
+    "points": [
+     "Multiply by the same number",
+     "Curved graph",
+     "y = k × aˣ"
+    ]
+   },
+   "say": "Don't mix them up. Linear change adds the same amount each step and gives a straight line. Exponential change multiplies by the same number and gives a curve."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "y = k × aˣ: start at k, multiply by a",
+    "a > 1 grows; 0 < a < 1 decays",
+    "y = aˣ passes through (0, 1)",
+    "A = A₀(1 ± r)ⁿ for % change"
+   ],
+   "say": "Quick recap. In y equals k times a to the x, you start at k and multiply by a. If a is bigger than one it grows; between zero and one it decays. Now try the practice questions!",
+   "caption": "Quick recap. In y = k × aˣ, you start at k and multiply by a. If a > 1 it grows; if 0 < a < 1 it decays. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "lesson": "y10/maths/compound-interest.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Compound interest",
+ "icon": "💰",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Compound interest",
+   "sub": "Monthly, quarterly, and losing value too",
+   "icon": "💰",
+   "say": "Your bank adds interest every month, but quotes a yearly rate. Your new phone loses value every year. One formula handles both: A equals P times one plus r, to the power n.",
+   "caption": "Your bank adds interest every month, but quotes a yearly rate. Your new phone loses value every year. One formula handles both: A = P(1 + r)ⁿ."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🌱",
+   "everyday": "A farmer replants all the seeds from each harvest",
+   "icon2": "💰",
+   "science": "Each period's interest is added, then earns interest too",
+   "breaks": "Harvests vary with the weather; compound interest multiplies by exactly 1 + r every period.",
+   "say": "A farmer plants seeds, harvests the crop, and replants all the new seeds, so every harvest is bigger than the last. Compound interest replants your interest into the balance, so next time you earn interest on a bigger amount."
+  },
+  {
+   "type": "equation",
+   "heading": "The formula",
+   "equation": "A = P(1 + r)ⁿ",
+   "parts": [
+    [
+     "P",
+     "principal (starting amount)"
+    ],
+    [
+     "r",
+     "rate per period, as a decimal"
+    ],
+    [
+     "n",
+     "number of periods"
+    ],
+    [
+     "A − P",
+     "interest earned"
+    ]
+   ],
+   "say": "A equals P times one plus r, to the power n. P is the principal. r is the rate for each period, as a decimal. n is the number of periods. The interest earned is A minus P.",
+   "caption": "A = P(1 + r)ⁿ. P is the principal. r is the rate for each period, as a decimal. n is the number of periods. The interest earned is A − P."
+  },
+  {
+   "type": "example",
+   "heading": "Compounded quarterly",
+   "question": "$12 000 at 6% p.a. compounded quarterly for 3 years. Find the interest.",
+   "lines": [
+    "r = 0.06 ÷ 4 = 0.015",
+    "n = 3 × 4 = 12",
+    "A = 12 000 × 1.015¹² ≈ 14 347.42",
+    "I = A − P = $2347.42"
+   ],
+   "say": "Twelve thousand dollars at six per cent, compounded quarterly, for three years. Divide the rate by four: zero point zero one five. Multiply the years by four: twelve quarters. A is about fourteen thousand three hundred and forty-seven dollars. Subtract the principal: the interest is two thousand three hundred and forty-seven dollars forty-two.",
+   "caption": "$12 000 at 6%, compounded quarterly, for 3 years. Divide the rate by 4: 0.015. Multiply the years by 4: 12 quarters. A ≈ $14 347.42. Subtract the principal: the interest is $2347.42."
+  },
+  {
+   "type": "diagram",
+   "heading": "How long to double?",
+   "diagram": "diagrams/y10/maths/compound-interest-doubling.svg",
+   "notes": [
+    "$10 000 at 7% p.a., compounded annually",
+    "10 years: $19 671.51 — not yet",
+    "11 years: $21 048.52 — doubled"
+   ],
+   "say": "Here ten thousand dollars grows at seven per cent a year, with a dot for each year. The dashed line is twenty thousand dollars. After ten years the balance is just under. After eleven years it has passed it, so it takes eleven whole years to double.",
+   "caption": "Here $10 000 grows at 7% a year, with a dot for each year. The dashed line is $20 000. After 10 years the balance is just under. After 11 years it has passed it, so it takes 11 whole years to double."
+  },
+  {
+   "type": "diagram",
+   "heading": "Depreciation: losing value",
+   "diagram": "diagrams/y10/maths/compound-interest-depreciation.svg",
+   "notes": [
+    "Loses 25% each year → × 0.75",
+    "V = 2400 × 0.75ⁿ",
+    "After 3 years: $1012.50"
+   ],
+   "say": "Now the reverse. A laptop bought for twenty-four hundred dollars loses twenty-five per cent of its value each year, so multiply by zero point seven five each year. After three years it is worth one thousand and twelve dollars fifty.",
+   "caption": "Now the reverse. A $2400 laptop loses 25% of its value each year, so multiply by 0.75 each year. After 3 years it is worth $1012.50."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "A = P(1 + r)ⁿ; interest = A − P",
+    "Divide the rate, multiply the time",
+    "More often → slightly more interest",
+    "Depreciation: V = V₀(1 − r)ⁿ"
+   ],
+   "say": "Quick recap. Use A equals P times one plus r to the n, with r and n per period. Divide the rate and multiply the time by the periods per year. For depreciation, use one minus r. Now try the practice questions!",
+   "caption": "Quick recap. Use A = P(1 + r)ⁿ, with r and n per period. Divide the rate and multiply the time by the periods per year. For depreciation, use 1 − r. Now try the practice questions!"
+  }
+ ]
+}

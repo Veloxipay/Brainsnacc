@@ -1,0 +1,108 @@
+{
+ "lesson": "y10/maths/introduction-to-logarithms.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Introduction to logarithms",
+ "icon": "🔑",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Introduction to logarithms",
+   "sub": "What power do I need?",
+   "icon": "🔑",
+   "say": "Two to what power gives eight? You probably said three. Congratulations: you just worked out a logarithm. A logarithm is simply the answer to the question, what power do I need?"
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "↩️",
+   "everyday": "Square-rooting undoes squaring",
+   "icon2": "🔑",
+   "science": "A log undoes a power: 2³ = 8, so log₂ 8 = 3",
+   "breaks": "\"How many 2s multiplied?\" only works for whole numbers, but log₂ 5 ≈ 2.32 and log₂ ½ = −1.",
+   "say": "Squaring and square-rooting undo each other. A logarithm is the undo button for a power. Two cubed is eight, so log base two of eight takes you back to the power: three.",
+   "caption": "Squaring and square-rooting undo each other. A logarithm is the undo button for a power. 2³ = 8, so log₂ 8 takes you back to the power: 3."
+  },
+  {
+   "type": "equation",
+   "heading": "The definition",
+   "equation": "logₐ x = y  ⇔  aʸ = x",
+   "parts": [
+    [
+     "a",
+     "the base (positive, not 1)"
+    ],
+    [
+     "x",
+     "the number (positive)"
+    ],
+    [
+     "y",
+     "the log — it is the index"
+    ]
+   ],
+   "say": "Log base a of x equals y means exactly the same as a to the y equals x. The base stays at the base, and the log is the index. So log base ten of one hundred is two, because ten squared is one hundred.",
+   "caption": "logₐ x = y means exactly the same as aʸ = x. The base stays at the base, and the log is the index. So log₁₀ 100 = 2, because 10² = 100."
+  },
+  {
+   "type": "example",
+   "heading": "Evaluating logs",
+   "question": "Evaluate log₁₀ 0.01 and log₈ 4.",
+   "lines": [
+    "0.01 = 10⁻², so log₁₀ 0.01 = −2",
+    "8 = 2³ and 4 = 2²",
+    "8ʸ = 4 → 3y = 2",
+    "log₈ 4 = 2/3"
+   ],
+   "say": "Logs can be negative or fractions. Zero point zero one is ten to the negative two, so its log is negative two. For log base eight of four, write both as powers of two. Eight to the y equals four becomes three y equals two, so y is two thirds.",
+   "caption": "Logs can be negative or fractions. 0.01 = 10⁻², so its log is −2. For log₈ 4, write both as powers of 2. 8ʸ = 4 becomes 3y = 2, so y = 2/3."
+  },
+  {
+   "type": "diagram",
+   "heading": "Mirror images",
+   "diagram": "diagrams/y10/maths/introduction-to-logarithms-reflection.svg",
+   "notes": [
+    "y = 2ˣ passes through (0, 1) and (2, 4)",
+    "y = log₂ x passes through (1, 0) and (4, 2)",
+    "Reflections in the line y = x"
+   ],
+   "say": "Here is y equals two to the x, through zero, one and two, four. Now the line y equals x. Reflect the curve in that line and you get y equals log base two of x, through one, zero and four, two. The log swaps the input and the output.",
+   "caption": "Here is y = 2ˣ, through (0, 1) and (2, 4). Now the line y = x. Reflect the curve in that line and you get y = log₂ x, through (1, 0) and (4, 2). The log swaps the input and the output."
+  },
+  {
+   "type": "points",
+   "heading": "The log laws",
+   "icon": "🧠",
+   "points": [
+    "logₐ x + logₐ y = logₐ (xy)",
+    "logₐ x − logₐ y = logₐ (x/y)",
+    "logₐ (xⁿ) = n logₐ x",
+    "logₐ 1 = 0 and logₐ a = 1"
+   ],
+   "say": "Because logs are indices, the index laws become log laws. Adding logs means multiplying the numbers. Subtracting logs means dividing. A power inside comes out the front. And log of one is always zero, while log a of a is one."
+  },
+  {
+   "type": "example",
+   "heading": "Using the laws",
+   "question": "Simplify 2 log₅ 10 − log₅ 4.",
+   "lines": [
+    "2 log₅ 10 = log₅ 100",
+    "log₅ 100 − log₅ 4 = log₅ 25",
+    "5² = 25",
+    "= 2"
+   ],
+   "say": "Simplify two log base five of ten, minus log base five of four. Move the two inside as a power: log of one hundred. Subtracting means dividing: one hundred over four is twenty-five. Five squared is twenty-five, so the answer is two.",
+   "caption": "Simplify 2 log₅ 10 − log₅ 4. Move the 2 inside as a power: log₅ 100. Subtracting means dividing: 100 ÷ 4 = 25. 5² = 25, so the answer is 2."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "A log is an index: logₐ x = y ⇔ aʸ = x",
+    "Ask: a to what power gives x?",
+    "Logs can be negative or fractions",
+    "Add → multiply, subtract → divide"
+   ],
+   "say": "Quick recap. A logarithm is an index. To evaluate one, ask: the base to what power gives the number? Logs can be negative or fractions, and the log laws mirror the index laws. Now try the practice questions!"
+  }
+ ]
+}
