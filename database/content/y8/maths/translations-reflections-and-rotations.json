@@ -1,0 +1,283 @@
+{
+ "level": "Year 8",
+ "subject": "maths",
+ "unit": "Year 8",
+ "title": "Translations, reflections and rotations",
+ "summary": "Writing translation rules, reflecting in lines such as y = x and x = a, rotating about any centre, and combining transformations.",
+ "minutes": 25,
+ "body": "In Year 7 you learned to slide, flip and turn shapes. Now you will describe those moves precisely with rules, reflect in new mirror lines such as y = x, rotate about points other than the origin, and combine two moves into one. Game designers, animators and robot programmers use exactly these rules to move objects around a screen.\n\n## Learning objective\n\nBy the end of this lesson you can write a translation as a rule, reflect points in the lines y = x and x = a, rotate points about any centre, and work out the result of two transformations in a row.\n\n## Before you start\n\nYou need Transformations and symmetry (Year 7) — translating, reflecting in the axes, and rotating about the origin — and Plotting points and graphs (Year 8), including drawing lines such as y = x.\n\n**Warm-up**\n\n1. Reflect the point (−2, 5) in the y-axis.\n2. Work out 3 − (−4).\n\n*Answers:* 1. (2, 5) 2. 7\n\n## Think of it like this\n\n### Instructions for a robot vacuum\n\nA robot vacuum can't \"see\" where to go — it needs exact instructions such as \"go 3 squares east, then 2 squares north\" or \"turn a quarter turn to the right around this spot\". A transformation rule is the same: an exact instruction that tells every point of a shape where to go, so anyone (or any computer) following it ends up in the same place.\n\n*Where the analogy breaks down:* a robot moves one step at a time along a path, but a transformation only cares about the start and the finish — every point jumps straight to its image.\n\n## Key ideas\n\n### Writing a translation as a rule\n\nA translation can be written as a **mapping rule** that says what happens to any point (x, y). For \"4 right and 3 down\" the rule is\n\n(x, y) → (x + 4, y − 3)\n\nTo find the translation that moves A to A′, subtract: **image − object**. The change in x is how far right (positive) or left (negative); the change in y is how far up (positive) or down (negative).\n\n### Reflecting in other mirror lines\n\nYou already know the x-axis and y-axis rules. Three more mirror lines are common:\n\n- **The line y = x** (through the origin, sloping up at 45°): swap the coordinates. (x, y) → (y, x).\n- **The line y = −x** (sloping down at 45°): swap and change both signs. (x, y) → (−y, −x).\n- **A vertical line x = a**: y stays the same. Find how far the point is from the mirror, then go the same distance to the other side. As a shortcut, the new x is 2a − x.\n- **A horizontal line y = b**: x stays the same, and the new y is 2b − y.\n\nA point that lies **on** the mirror line does not move.\n\n![A coordinate grid with the line y = x. Triangle with vertices A(3, 1), (6, 1) and (6, 2) is reflected to the image with vertices A′(1, 3), (1, 6) and (2, 6)](/diagrams/y8/maths/translations-reflections-and-rotations-mirror.svg)\n\n### Rotating about any centre\n\nTo rotate about a centre that is not the origin:\n\n1. Work out how far the point is from the centre (across, then up).\n2. Rotate that \"across, up\" movement using the origin rules: 90° clockwise (a, b) → (b, −a); 90° anticlockwise (a, b) → (−b, a); 180° (a, b) → (−a, −b).\n3. Add the result back on to the centre.\n\nTracing paper is still a great check.\n\n### Isometries and orientation\n\nTranslations, reflections and rotations are **isometries**: they keep every length and angle the same, so the image is always congruent to the object. The one thing that can change is **orientation** — which way round the shape faces. Reflections reverse orientation (labels A, B, C that ran clockwise now run anticlockwise). Translations and rotations keep orientation.\n\n### Combining transformations\n\nIn a **combined transformation** you do one move, then apply the next move to the image. The order matters: \"reflect, then translate\" can give a different answer from \"translate, then reflect\". Sometimes two moves give the same result as one single move — for example, two reflections in lines that cross at the origin at 45° give a 90° rotation.\n\n## Worked examples\n\n### Example 1\n\nB(−2, 5) is translated to B′(3, 1). Describe the translation and write its rule.\n\nStep 1: Change in x = 3 − (−2) = 5 — image minus object, so 5 right.\nStep 2: Change in y = 1 − 5 = −4 — negative means 4 down.\nStep 3: The rule is (x, y) → (x + 5, y − 4).\nCheck: (−2 + 5, 5 − 4) = (3, 1) ✓\n\n![A coordinate grid showing B(−2, 5) moved to B′(3, 1): an arrow, with dashed lines showing 5 units right and 4 units down](/diagrams/y8/maths/translations-reflections-and-rotations-translate.svg)\n\n### Example 2\n\nReflect P(5, −1) in (a) the line y = x and (b) the line x = 2.\n\nStep 1: (a) In y = x, swap the coordinates — that is the rule for this mirror. P′ = (−1, 5).\nStep 2: (b) P is 5 − 2 = 3 units to the right of the line x = 2 — find its distance from the mirror.\nStep 3: Go 3 units to the left of the mirror instead: 2 − 3 = −1, and y stays −1. P′ = (−1, −1).\nCheck: shortcut 2a − x = 2 × 2 − 5 = −1 ✓\n\n### Example 3\n\nRotate Q(4, 3) by 90° anticlockwise about the centre C(1, 1).\n\nStep 1: From C to Q is 4 − 1 = 3 across and 3 − 1 = 2 up — so the movement is (3, 2).\nStep 2: Rotate (3, 2) by 90° anticlockwise: (a, b) → (−b, a) gives (−2, 3).\nStep 3: Add back on to the centre: (1 + (−2), 1 + 3) = (−1, 4). Q′ = (−1, 4).\nCheck: Q was 3 right and 2 up from C; Q′ is 2 left and 3 up — a quarter turn anticlockwise ✓\n\n![A coordinate grid showing the centre C(1, 1), the point Q(4, 3) and its image Q′(−1, 4), with dashed lines from C to Q and from C to Q′](/diagrams/y8/maths/translations-reflections-and-rotations-rotate.svg)\n\n### Example 4\n\nR(3, −1) is translated 4 left and 2 up, then reflected in the x-axis. Find the final image. Does the order matter?\n\nStep 1: Translate: (3 − 4, −1 + 2) = (−1, 1) — left subtracts from x, up adds to y.\nStep 2: Reflect in the x-axis: keep x, change the sign of y: (−1, −1).\nStep 3: In the other order: reflect first gives (3, 1), then translate gives (−1, 3).\nSo the final image is (−1, −1), and yes, the order matters: (−1, 3) is a different point.\n\n## Common mistakes\n\n- **Subtracting the wrong way when describing a translation.** Doing object − image gives the opposite direction. Fix: always do image − object (\"where it ends minus where it starts\").\n- **Reflecting in y = x by changing signs.** That mirror only swaps the numbers. Fix: y = x swaps; y = −x swaps AND changes both signs.\n- **Using the distance from the mirror as the new coordinate.** For x = 4 and the point (7, 3), the distance is 3, but the image is not (3, 3). Fix: go that distance to the other side of the mirror: 4 − 3 = 1.\n- **Rotating about the origin when the centre is somewhere else.** Fix: measure from the centre, rotate, then add the centre back on.\n- **Doing combined moves in the wrong order.** Fix: do the first move named, then apply the second move to that image.\n\n## Tips to remember\n\n- **\"End minus start\"** gives the translation — just like working out how much your height has grown.\n- **\"y = x? Swap. y = −x? Swap and flip both signs.\"** (Made-up memory trick.)\n- **Mirror x = a: new x = 2a − x.** Double the mirror, take away the point.\n- **\"Move, Turn, Return\"** for rotating about any centre: move the centre to the origin, turn, then return. (Made-up memory trick.)\n- **Only reflections flip orientation.** If the letters on a shape now run the other way round, a reflection happened.\n\n## Key terms\n\n- **Mapping rule** — a rule such as (x, y) → (x + 4, y − 3) that says where every point goes.\n- **Line y = x** — the diagonal line through the origin where both coordinates are equal.\n- **Centre of rotation** — the fixed point a shape turns around.\n- **Isometry** — a transformation that keeps all lengths and angles the same.\n- **Orientation** — which way round a shape faces (for example, whether its labels run clockwise or anticlockwise).\n- **Combined transformation** — two or more transformations done one after the other.\n\n## Summary\n\n- Describe a translation with image − object, and write it as a rule like (x, y) → (x + a, y + b).\n- Reflect in y = x by swapping, in y = −x by swapping and changing both signs, and in x = a using 2a − x.\n- To rotate about any centre: measure from the centre, rotate, add the centre back.\n- Translations, reflections and rotations are isometries; only reflections reverse orientation.\n- In combined transformations, the order can change the final image.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "The rule (x, y) → (x + 4, y − 3) is applied to the point (2, 6). What is the image?",
+   "options": {
+    "A": "(6, 9)",
+    "B": "(6, 3)",
+    "C": "(−2, 3)",
+    "D": "(−2, 9)"
+   },
+   "answer": "B",
+   "explanation": "Add 4 to x: 2 + 4 = 6. Subtract 3 from y: 6 − 3 = 3. So the image is (6, 3). (6, 9) adds 3 to y instead of subtracting.",
+   "steps": [
+    "Step 1: x + 4 means add 4 to the x-coordinate: 2 + 4 = 6.",
+    "Step 2: y − 3 means subtract 3 from the y-coordinate: 6 − 3 = 3.",
+    "Step 3: so the image is (6, 3)."
+   ],
+   "mistakes": {
+    "A": "Step 2: the rule says y − 3, so subtract 3 from y — you added it.",
+    "C": "Step 1: the rule says x + 4, so add 4 to x — you subtracted it.",
+    "D": "Steps 1 and 2: you did the opposite of both parts of the rule. Follow the signs exactly as written."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Reflect the point P(6, 2) in the line y = x, shown in the diagram.",
+   "options": {
+    "A": "(6, −2)",
+    "B": "(−6, 2)",
+    "C": "(2, 6)",
+    "D": "(−2, −6)"
+   },
+   "answer": "C",
+   "explanation": "Reflecting in y = x swaps the coordinates, so (6, 2) → (2, 6). (−2, −6) is the reflection in y = −x, which also changes the signs.",
+   "steps": [
+    "Step 1: the rule for reflecting in y = x is (x, y) → (y, x) — swap the coordinates.",
+    "Step 2: swap 6 and 2 with no sign changes, so the image is (2, 6)."
+   ],
+   "mistakes": {
+    "A": "Step 1: that is the reflection in the x-axis. The mirror y = x swaps the coordinates.",
+    "B": "Step 1: that is the reflection in the y-axis. The mirror y = x swaps the coordinates.",
+    "D": "Step 2: swapping AND changing both signs is the rule for y = −x. For y = x, only swap."
+   },
+   "diagram": "diagrams/y8/maths/translations-reflections-and-rotations-q2.svg",
+   "diagram_alt": "A coordinate grid with the line y = x drawn and the point P(6, 2) marked"
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Which of these transformations reverses the orientation of a shape (makes it face the opposite way round)?",
+   "options": {
+    "A": "A translation",
+    "B": "A rotation of 90°",
+    "C": "A rotation of 180°",
+    "D": "A reflection"
+   },
+   "answer": "D",
+   "explanation": "Only a reflection flips a shape into its mirror image, so labels that ran clockwise now run anticlockwise. Rotations, even 180°, keep the orientation.",
+   "steps": [
+    "Step 1: think about labels A, B, C going clockwise around the shape and check each move.",
+    "Step 2: slides and turns keep the labels going clockwise; only a flip makes them go anticlockwise — a reflection."
+   ],
+   "mistakes": {
+    "A": "Step 1: a translation only slides the shape — it still faces the same way.",
+    "B": "Step 1: a rotation turns the shape, but the labels still run the same way round.",
+    "C": "Step 1: even a half turn keeps the labels running the same way round — it is still a turn, not a flip."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Point A(−3, 2) is translated to A′(4, −1), as shown in the diagram. Which describes the translation?",
+   "options": {
+    "A": "7 units right and 3 units down",
+    "B": "7 units left and 3 units up",
+    "C": "3 units right and 7 units down",
+    "D": "1 unit right and 1 unit up"
+   },
+   "answer": "A",
+   "explanation": "Image − object: 4 − (−3) = 7 (right) and −1 − 2 = −3 (down). So it is 7 right and 3 down. \"7 left and 3 up\" comes from subtracting the wrong way round.",
+   "steps": [
+    "Step 1: change in x = image − object = 4 − (−3) = 7, which is positive, so 7 right.",
+    "Step 2: change in y = −1 − 2 = −3, which is negative, so 3 down.",
+    "Step 3: so the translation is 7 units right and 3 units down."
+   ],
+   "mistakes": {
+    "B": "Step 1: you did object − image. Use image − object: 4 − (−3).",
+    "C": "Step 2: you mixed up the two numbers. The change in x is the right/left move; the change in y is the up/down move.",
+    "D": "Step 1: you added the coordinates (−3 + 4 and 2 + (−1)). Subtract instead: image − object."
+   },
+   "diagram": "diagrams/y8/maths/translations-reflections-and-rotations-q4.svg",
+   "diagram_alt": "A coordinate grid with the point A(−3, 2) and its image A′(4, −1) marked"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Reflect the point P(7, 3) in the vertical line x = 4, shown in the diagram.",
+   "options": {
+    "A": "(7, 5)",
+    "B": "(1, 3)",
+    "C": "(−7, 3)",
+    "D": "(3, 3)"
+   },
+   "answer": "B",
+   "explanation": "The point is 7 − 4 = 3 units right of the mirror, so its image is 3 units left of it: 4 − 3 = 1. y stays 3, giving (1, 3). (3, 3) uses the distance as the coordinate.",
+   "steps": [
+    "Step 1: x = 4 is a vertical mirror, so y stays 3 and only x changes.",
+    "Step 2: distance from the mirror: 7 − 4 = 3 units to the right.",
+    "Step 3: go 3 units to the left of the mirror: 4 − 3 = 1, so the image is (1, 3)."
+   ],
+   "mistakes": {
+    "A": "Step 1: that reflects in the horizontal line y = 4. The line x = 4 is vertical, so y stays the same and x changes.",
+    "C": "Step 1: that is the reflection in the y-axis (x = 0). Here the mirror is x = 4.",
+    "D": "Step 3: 3 is the distance from the mirror, not the new x. Go 3 units to the other side of x = 4."
+   },
+   "diagram": "diagrams/y8/maths/translations-reflections-and-rotations-q5.svg",
+   "diagram_alt": "A coordinate grid with the vertical mirror line x = 4 and the point P(7, 3) marked"
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Rotate the point (−4, 1) by 90° anticlockwise about the origin.",
+   "options": {
+    "A": "(1, 4)",
+    "B": "(4, −1)",
+    "C": "(−1, −4)",
+    "D": "(−4, −1)"
+   },
+   "answer": "C",
+   "explanation": "For 90° anticlockwise, (x, y) → (−y, x), so (−4, 1) → (−1, −4). (1, 4) comes from using the clockwise rule.",
+   "steps": [
+    "Step 1: the rule for 90° anticlockwise about the origin is (x, y) → (−y, x).",
+    "Step 2: here x = −4 and y = 1, so −y = −1 and x = −4.",
+    "Step 3: the image is (−1, −4) — a quarter turn from the second quadrant into the third ✓"
+   ],
+   "mistakes": {
+    "A": "Step 1: (y, −x) is the rule for 90° CLOCKWISE. Anticlockwise is (−y, x).",
+    "B": "Step 1: changing both signs is a 180° rotation, not 90°.",
+    "D": "Step 1: keeping x and changing y is a reflection in the x-axis, not a rotation."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "The point (2, 4) is reflected in the y-axis, and then the image is translated 3 units right. What is the final image?",
+   "options": {
+    "A": "(5, −4)",
+    "B": "(−5, 4)",
+    "C": "(5, 4)",
+    "D": "(1, 4)"
+   },
+   "answer": "D",
+   "explanation": "Reflect in the y-axis: (2, 4) → (−2, 4). Then 3 right: (−2 + 3, 4) = (1, 4). (−5, 4) comes from doing the two moves in the wrong order.",
+   "steps": [
+    "Step 1: reflect in the y-axis — change the sign of x: (2, 4) → (−2, 4).",
+    "Step 2: translate 3 right — add 3 to x: −2 + 3 = 1.",
+    "Step 3: the final image is (1, 4)."
+   ],
+   "mistakes": {
+    "A": "Step 1: you reflected in the x-axis. In the y-axis, x changes sign and y stays the same.",
+    "B": "Step 1: you translated first and then reflected. Do the moves in the order given: reflect, then translate.",
+    "C": "Step 1: you skipped the reflection. Change the sign of x first, then translate."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Rotate P(5, 2) by 90° clockwise about the centre C(2, 1), shown in the diagram.",
+   "options": {
+    "A": "(3, −2)",
+    "B": "(2, −5)",
+    "C": "(1, 4)",
+    "D": "(1, −3)"
+   },
+   "answer": "A",
+   "explanation": "From C to P is (3, 1). Rotating 90° clockwise gives (1, −3). Adding back to C: (2 + 1, 1 − 3) = (3, −2). (2, −5) comes from rotating about the origin instead of C.",
+   "steps": [
+    "Step 1: from C(2, 1) to P(5, 2) is 3 across and 1 up: (3, 1).",
+    "Step 2: rotate (3, 1) by 90° clockwise using (a, b) → (b, −a): (1, −3).",
+    "Step 3: add back on to the centre: (2 + 1, 1 + (−3)) = (3, −2)."
+   ],
+   "mistakes": {
+    "B": "Step 1: you rotated about the origin. Measure from the centre (2, 1) first.",
+    "C": "Step 2: (−b, a) is the anticlockwise rule. Clockwise is (a, b) → (b, −a).",
+    "D": "Step 3: (1, −3) is only the rotated movement — add it back on to the centre (2, 1)."
+   },
+   "diagram": "diagrams/y8/maths/translations-reflections-and-rotations-q8.svg",
+   "diagram_alt": "A coordinate grid with the point P(5, 2) and the centre of rotation C(2, 1) marked"
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A shape is translated using the rule (x, y) → (x + 4, y − 2). One vertex of the image is at (3, 4). Where was that vertex before the translation?",
+   "options": {
+    "A": "(7, 2)",
+    "B": "(−1, 6)",
+    "C": "(−1, 2)",
+    "D": "(7, 6)"
+   },
+   "answer": "B",
+   "explanation": "Undo the rule: subtract 4 from x and add 2 to y: (3 − 4, 4 + 2) = (−1, 6). Check: (−1 + 4, 6 − 2) = (3, 4) ✓. (7, 2) applies the rule forwards a second time.",
+   "steps": [
+    "Step 1: undo \"x + 4\" by subtracting 4: 3 − 4 = −1.",
+    "Step 2: undo \"y − 2\" by adding 2: 4 + 2 = 6.",
+    "Step 3: the original vertex was (−1, 6). Check: (−1 + 4, 6 − 2) = (3, 4) ✓"
+   ],
+   "mistakes": {
+    "A": "Step 1: you applied the rule again instead of undoing it. To go backwards, do the opposite: subtract 4 from x and add 2 to y.",
+    "C": "Step 2: to undo \"− 2\" you must ADD 2 to y, not subtract.",
+    "D": "Step 1: to undo \"+ 4\" you must SUBTRACT 4 from x, not add."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The point (2, 1) is reflected in the x-axis, and then the image is reflected in the line y = x. Which single transformation takes (2, 1) straight to the final image?",
+   "options": {
+    "A": "A rotation of 90° clockwise about the origin",
+    "B": "A rotation of 180° about the origin",
+    "C": "A rotation of 90° anticlockwise about the origin",
+    "D": "A reflection in the line y = −x"
+   },
+   "answer": "C",
+   "explanation": "x-axis: (2, 1) → (2, −1). Then y = x: (2, −1) → (−1, 2). A 90° anticlockwise turn, (x, y) → (−y, x), also sends (2, 1) to (−1, 2). Doing the reflections in the other order gives the clockwise answer.",
+   "steps": [
+    "Step 1: reflect in the x-axis: (2, 1) → (2, −1).",
+    "Step 2: reflect in y = x by swapping: (2, −1) → (−1, 2).",
+    "Step 3: test the options: 90° anticlockwise, (x, y) → (−y, x), sends (2, 1) to (−1, 2) — the same point, so the single move is a 90° anticlockwise rotation about the origin."
+   ],
+   "mistakes": {
+    "A": "Step 2: you did the reflections in the wrong order, which gives (1, −2). Reflect in the x-axis first, then in y = x.",
+    "B": "Step 3: a half turn would give (−2, −1). Compare (2, 1) with the final image you found.",
+    "D": "Step 3: reflecting (2, 1) in y = −x gives (−1, −2), not the final image."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Triangle T in the diagram has vertices (1, 1), (4, 1) and (1, 3). Its image has vertices (−1, 1), (−1, 4) and (−3, 1). Which single transformation maps T onto its image?",
+   "options": {
+    "A": "A rotation of 90° anticlockwise about the origin",
+    "B": "A reflection in the y-axis",
+    "C": "A reflection in the line y = x",
+    "D": "A rotation of 90° clockwise about the origin"
+   },
+   "answer": "A",
+   "explanation": "Using (x, y) → (−y, x): (1, 1) → (−1, 1), (4, 1) → (−1, 4) and (1, 3) → (−3, 1), which matches every image vertex. A reflection in the y-axis works for (1, 1) but not for (4, 1).",
+   "steps": [
+    "Step 1: try the 90° anticlockwise rule (x, y) → (−y, x) on each vertex.",
+    "Step 2: (1, 1) → (−1, 1); (4, 1) → (−1, 4); (1, 3) → (−3, 1).",
+    "Step 3: all three match the image, so the transformation is a rotation of 90° anticlockwise about the origin."
+   ],
+   "mistakes": {
+    "B": "Step 2: the y-axis would send (4, 1) to (−4, 1), which is not one of the image vertices. Test every vertex.",
+    "C": "Step 2: swapping gives (1, 1), (1, 4), (3, 1) — the signs are wrong. Test every vertex.",
+    "D": "Step 1: (y, −x) is the clockwise rule; it gives (1, −1), (1, −4), (3, −1). Try the anticlockwise rule."
+   },
+   "diagram": "diagrams/y8/maths/translations-reflections-and-rotations-q11.svg",
+   "diagram_alt": "A coordinate grid showing triangle T with vertices (1, 1), (4, 1) and (1, 3), and its image with vertices (−1, 1), (−1, 4) and (−3, 1)"
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Which of these points stays in exactly the same place when it is reflected in the line y = −x?",
+   "options": {
+    "A": "(3, 3)",
+    "B": "(−3, −3)",
+    "C": "(0, 3)",
+    "D": "(3, −3)"
+   },
+   "answer": "D",
+   "explanation": "Points on the mirror line don't move. (3, −3) is on y = −x because its y is the negative of its x, and the rule (x, y) → (−y, −x) gives (3, −3) again. (3, 3) is on the other diagonal, y = x.",
+   "steps": [
+    "Step 1: a point on the mirror line does not move, and points on y = −x have y equal to the negative of x.",
+    "Step 2: test with the rule (x, y) → (−y, −x): only (3, −3) gives back (−(−3), −3) = (3, −3).",
+    "Step 3: so (3, −3) stays in the same place."
+   ],
+   "mistakes": {
+    "A": "Step 2: (3, 3) → (−3, −3), so it moves. It lies on y = x, not on y = −x.",
+    "B": "Step 2: (−3, −3) → (3, 3), so it moves. It lies on y = x, not on y = −x.",
+    "C": "Step 2: (0, 3) → (−3, 0), so it moves. Use the rule (x, y) → (−y, −x) carefully."
+   }
+  }
+ ]
+}

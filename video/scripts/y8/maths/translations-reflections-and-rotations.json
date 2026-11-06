@@ -1,0 +1,125 @@
+{
+  "lesson": "y8/maths/translations-reflections-and-rotations.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Translations, reflections and rotations",
+  "icon": "🤖",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Translations, reflections and rotations",
+      "sub": "Exact rules for every move",
+      "icon": "🤖",
+      "say": "In Year 7 you learned to slide, flip and turn shapes. Now let's make those moves exact, with rules a computer could follow. You'll meet new mirror lines, turn about any centre, and combine two moves."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🤖",
+      "everyday": "A robot vacuum needs exact instructions to move",
+      "icon2": "📐",
+      "science": "A transformation rule tells every point exactly where to go",
+      "breaks": "A robot travels along a path. A transformation only cares about start and finish — each point jumps to its image.",
+      "say": "A robot vacuum can't see where to go. It needs exact instructions, like three squares east, then two north. A transformation rule is the same. It tells every point of a shape exactly where to go. The difference: a robot travels along a path, but a transformation only cares about where each point starts and finishes."
+    },
+    {
+      "type": "example",
+      "heading": "Describe a translation",
+      "question": "B(−2, 5) is translated to B′(3, 1). Describe the translation.",
+      "lines": [
+        "End minus start: 3 − (−2) = 5",
+        "1 − 5 = −4",
+        "5 right and 4 down",
+        "Rule: (x, y) → (x + 5, y − 4)"
+      ],
+      "say": "B moves from negative two, five to three, one. Use end minus start. Three minus negative two is five, so five right. One minus five is negative four, so four down. The rule is x, y goes to x plus five, y minus four.",
+      "caption": "B(−2, 5) → B′(3, 1). End minus start: 3 − (−2) = 5, so 5 right. 1 − 5 = −4, so 4 down. Rule: (x, y) → (x + 5, y − 4)."
+    },
+    {
+      "type": "points",
+      "heading": "New mirror lines",
+      "icon": "🪞",
+      "points": [
+        "y = x: swap, (x, y) → (y, x)",
+        "y = −x: swap and change both signs",
+        "x = a: y stays, new x = 2a − x",
+        "Points on the mirror don't move"
+      ],
+      "say": "Three new mirror lines. For the line y equals x, just swap the coordinates. For y equals negative x, swap and change both signs. For a vertical line x equals a, y stays the same and the new x is two a minus x. And any point on the mirror stays put.",
+      "caption": "In y = x, swap the coordinates. In y = −x, swap and change both signs. In a vertical line x = a, y stays the same and the new x is 2a − x. Points on the mirror stay put."
+    },
+    {
+      "type": "example",
+      "heading": "Rotate about any centre",
+      "question": "Rotate Q(4, 3) by 90° anticlockwise about C(1, 1).",
+      "lines": [
+        "From C to Q: (3, 2)",
+        "Turn 90° anticlockwise: (−2, 3)",
+        "Add back to C: (1 − 2, 1 + 3)",
+        "Q′ = (−1, 4)"
+      ],
+      "say": "Rotate four, three a quarter turn anticlockwise about one, one. Move: from the centre to Q is three across and two up. Turn: anticlockwise sends three, two to negative two, three. Return: add that back on to the centre. Q dash is negative one, four.",
+      "caption": "Rotate Q(4, 3) 90° anticlockwise about C(1, 1). Move: from C to Q is (3, 2). Turn: (3, 2) → (−2, 3). Return: add to C. Q′ = (−1, 4)."
+    },
+    {
+      "type": "diagram",
+      "heading": "A quarter turn about C(1, 1)",
+      "diagram": "diagrams/y8/maths/translations-reflections-and-rotations-rotate.svg",
+      "notes": [
+        "C to Q: 3 across, 2 up",
+        "C to Q′: 2 left, 3 up"
+      ],
+      "say": "Here's that turn. First C, then Q, then Q dash. The dashed arms are equal in length and meet at a right angle.",
+      "caption": "C(1, 1) to Q(4, 3) is 3 across and 2 up. C to Q′(−1, 4) is 2 left and 3 up — a quarter turn anticlockwise."
+    },
+    {
+      "type": "compare",
+      "heading": "What changes, what stays",
+      "left": {
+        "title": "Always kept",
+        "icon": "📏",
+        "points": [
+          "Side lengths",
+          "Angle sizes",
+          "Area",
+          "Image is congruent"
+        ]
+      },
+      "right": {
+        "title": "Orientation",
+        "icon": "🔄",
+        "points": [
+          "Translation: kept",
+          "Rotation: kept",
+          "Reflection: reversed"
+        ]
+      },
+      "say": "Translations, reflections and rotations are called isometries. They always keep lengths, angles and area, so the image is congruent to the object. The only thing that can change is orientation, which way round the shape faces. Only a reflection reverses it."
+    },
+    {
+      "type": "example",
+      "heading": "Two moves in a row",
+      "question": "Translate R(3, −1) 4 left and 2 up, then reflect in the x-axis.",
+      "lines": [
+        "Translate: (3 − 4, −1 + 2) = (−1, 1)",
+        "Reflect in x-axis: (−1, −1)",
+        "Other order gives (−1, 3)",
+        "Order matters!"
+      ],
+      "say": "Translate three, negative one, four left and two up, to get negative one, one. Then reflect in the x-axis: negative one, negative one. If you reflect first, you end at negative one, three instead. So always do the moves in the order given.",
+      "caption": "Translate R(3, −1) 4 left and 2 up: (−1, 1). Reflect in the x-axis: (−1, −1). Reflect first and you get (−1, 3) instead. Do the moves in order."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "Translation: end minus start",
+        "y = x: swap the coordinates",
+        "Any centre: move, turn, return",
+        "Only reflections flip orientation",
+        "Order matters in combined moves"
+      ],
+      "say": "Quick recap. Describe a translation with end minus start. Reflect in y equals x by swapping. To rotate about any centre: move, turn, return. Only reflections flip orientation. And in combined moves, order matters. Now try the practice questions!",
+      "caption": "Describe a translation with end minus start. Reflect in y = x by swapping. To rotate about any centre: move, turn, return. Only reflections flip orientation. In combined moves, order matters. Now try the practice questions!"
+    }
+  ]
+}

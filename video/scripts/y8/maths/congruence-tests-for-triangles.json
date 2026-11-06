@@ -1,0 +1,108 @@
+{
+  "lesson": "y8/maths/congruence-tests-for-triangles.json",
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Congruence tests for triangles",
+  "icon": "🔺",
+  "scenes": [
+    {
+      "type": "title",
+      "heading": "Congruence tests for triangles",
+      "sub": "Three facts are enough",
+      "icon": "🔺",
+      "say": "To prove two triangles are identical, do you need to check all six sides and angles? No! Three well-chosen facts are enough. Let's learn the four tests: S S S, S A S, A A S and R H S."
+    },
+    {
+      "type": "analogy",
+      "heading": "Think of it like this",
+      "icon": "🧱",
+      "everyday": "Three sticks always join into the same triangle",
+      "icon2": "🔺",
+      "science": "Three equal sides (SSS) fix a triangle exactly",
+      "breaks": "Real sticks have thickness and messy joins; maths sides are perfect lines with exact lengths.",
+      "say": "Give three friends the same three sticks and ask them to make a triangle. They all make the exact same triangle. It can't wobble into another shape. That's the S S S test. Real sticks have thickness, but in maths the sides are perfect lines."
+    },
+    {
+      "type": "points",
+      "heading": "The four tests",
+      "icon": "✅",
+      "points": [
+        "SSS: three pairs of sides",
+        "SAS: two sides and the angle between",
+        "AAS: two angles and a matching side",
+        "RHS: right angle, hypotenuse, side"
+      ],
+      "say": "Here are the four tests. S S S: three pairs of equal sides. S A S: two sides and the angle between them. A A S: two angles and a side in a matching position. R H S: a right angle, the hypotenuse and one other side."
+    },
+    {
+      "type": "diagram",
+      "heading": "SAS: the angle sits between the sides",
+      "diagram": "diagrams/y8/maths/congruence-tests-for-triangles-sas.svg",
+      "notes": [
+        "6 cm and 8 cm in both triangles",
+        "The 50° angle is where they meet",
+        "So △ABC ≅ △PQR (SAS)"
+      ],
+      "say": "First the two triangles, then the marks. Both have sides of six and eight centimetres, and the fifty degree angle sits right where those two sides meet. That's the included angle, so the triangles are congruent by S A S."
+    },
+    {
+      "type": "compare",
+      "heading": "Not enough!",
+      "left": {
+        "title": "AAA",
+        "icon": "🔺",
+        "points": [
+          "Three equal angles",
+          "Same shape, maybe not same size",
+          "Small vs large equilateral"
+        ]
+      },
+      "right": {
+        "title": "SSA",
+        "icon": "❌",
+        "points": [
+          "Angle NOT between the sides",
+          "Can make two different triangles",
+          "Not a test"
+        ]
+      },
+      "say": "Two sets of facts are not enough. Three equal angles only show the same shape. A small and a large equilateral triangle both have sixty degree angles. And two sides with an angle that isn't between them can make two different triangles."
+    },
+    {
+      "type": "example",
+      "heading": "Find the hidden angle",
+      "question": "△ABC: ∠A = 35°, ∠B = 22°, AC = 10 cm. △DEF: ∠D = 35°, ∠F = 123°, DF = 10 cm.",
+      "lines": [
+        "∠C = 180° − 35° − 22° = 123°",
+        "∠A = ∠D and ∠C = ∠F",
+        "AC = DF = 10 cm",
+        "△ABC ≅ △DEF (AAS)"
+      ],
+      "say": "Triangle A B C has angles of thirty-five and twenty-two degrees. First find angle C: one eighty minus thirty-five minus twenty-two is one hundred and twenty-three. Now angle A equals angle D, angle C equals angle F, and the sides between them are both ten centimetres. So they're congruent by A A S.",
+      "caption": "Find ∠C: 180° − 35° − 22° = 123°. Now ∠A = ∠D, ∠C = ∠F, and AC = DF = 10 cm. So △ABC ≅ △DEF (AAS)."
+    },
+    {
+      "type": "example",
+      "heading": "RHS with Pythagoras",
+      "question": "Right-angled triangles, both with hypotenuse 13 cm. One has a 5 cm side, the other a 12 cm side.",
+      "lines": [
+        "Third side: √(13² − 5²)",
+        "= √144 = 12 cm",
+        "Both: right angle, 13 cm, 12 cm",
+        "Congruent (RHS)"
+      ],
+      "say": "Two right-angled triangles both have a hypotenuse of thirteen. One has a five centimetre side, the other a twelve. Use Pythagoras: thirteen squared minus five squared is one hundred and forty-four, and its square root is twelve. So both have a right angle, hypotenuse thirteen and a side of twelve. Congruent by R H S.",
+      "caption": "Hypotenuse 13 cm in both. Pythagoras: √(13² − 5²) = √144 = 12 cm. Both have a right angle, 13 cm and 12 cm, so they're congruent (RHS)."
+    },
+    {
+      "type": "recap",
+      "points": [
+        "SSS, SAS, AAS, RHS",
+        "SAS: angle must be between",
+        "AAA and SSA don't work",
+        "Hunt for shared sides and 180°"
+      ],
+      "say": "Quick recap. The four tests are S S S, S A S, A A S and R H S. In S A S the angle must be between the sides. Triple A and S S A don't prove anything. And look for shared sides and the third angle. Now try the practice questions!"
+    }
+  ]
+}
