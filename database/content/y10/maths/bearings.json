@@ -1,0 +1,300 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Bearings",
+ "summary": "True and compass bearings, reverse bearings, and using right-angled triangles to find distances and directions.",
+ "minutes": 35,
+ "body": "Pilots, sailors, hikers and search-and-rescue teams describe directions with bearings. \"Head 125°\" is far more precise than \"go south-east\", and with right-angled triangles you can turn a bearing and a distance into how far north, south, east or west something is.\n\n## Learning objective\n\nBy the end of this lesson you can read and write true and compass bearings, find a reverse bearing, and use right-angled triangles to solve bearing problems.\n\n## Before you start\n\nYou need \"Finding sides and angles\" and \"Angles of elevation and depression\" (this chapter), and \"Angles at a point and vertically opposite angles\" (Year 7).\n\nWarm-up:\n1. What angle, measured clockwise from north, points due west?\n2. A right-angled triangle has legs 9 km and 12 km. How long is the hypotenuse?\n\nAnswers: 1. 270°  2. √(81 + 144) = √225 = 15 km\n\n## Think of it like this\n\n### A clock face lying on a map\n\nImagine a clock lying flat on the map with 12 pointing north. A bearing tells you how far to sweep the hand clockwise, starting from 12. A quarter of the way round is east (090°), halfway is south (180°), three-quarters is west (270°).\n\n*Where the analogy breaks down:* a clock has 12 hours, but bearings use 360 degrees — and a bearing is always measured from north, even if you happen to be facing another way.\n\n## Key ideas\n\n### True bearings\n\nA **true bearing** is the angle measured **clockwise from north**, written with three figures and often a T: 050°T, 125°T, 300°T. North is 000°T, east 090°T, south 180°T and west 270°T.\n\n### Compass bearings\n\nA **compass bearing** starts at N or S, turns towards E or W, and gives the angle (less than 90°) in between: N30°E, S55°E, S50°W, N35°W.\n\n![A compass cross with N, E, S and W. A line points south-east: the true bearing 125° is marked clockwise from north, and the 55° angle between south and the line is also marked, so the line is also S55°E](/diagrams/y10/maths/bearings-key.svg)\n\nTo convert, work out which quarter the line is in:\n- N a°E → a°; S a°E → 180° − a°; S a°W → 180° + a°; N a°W → 360° − a°.\n\n### \"From\" matters\n\n\"The bearing of B **from** A\" means stand at A, face north, and turn clockwise until you face B. The bearing of A from B is the **reverse bearing**: add 180° if the bearing is less than 180°, otherwise subtract 180°. This works because the north lines at A and B are parallel (co-interior angles).\n\n### Bearings and right-angled triangles\n\nDraw a north arrow at every point where a bearing is measured. Then drop dashed north–south and east–west lines to make a right-angled triangle. For a journey of distance d on a bearing between 000° and 090°, the north part is d cos(bearing) and the east part is d sin(bearing) — but always check with your diagram which angle is inside the triangle.\n\nIf a journey turns through exactly 90° (for example 035° then 125°), the two legs are at right angles and you can use Pythagoras and tan directly.\n\n## Worked examples\n\n### Example 1\n\n(a) Write 125°T as a compass bearing. (b) Write N30°W as a true bearing. (c) The bearing of B from A is 070°T. Find the bearing of A from B.\n\nStep 1: 125° is between 090° and 180°, so it is in the south-east quarter: 180° − 125° = 55°, giving S55°E.\nStep 2: N30°W is 30° anticlockwise from north: 360° − 30° = 330°T.\nStep 3: 070° is less than 180°, so add 180°: 070° + 180° = 250°T.\n\n### Example 2\n\nA ship sails 40 km on a bearing of 050°T. How far north and how far east of its start is it, to 2 decimal places?\n\n![A ship sails 40 km from A to B on a bearing of 050°, measured from the north arrow at A. Dashed lines show the distance n north and e east, making a right-angled triangle](/diagrams/y10/maths/bearings-ex2.svg)\n\nStep 1: The 50° angle is between north and the path, inside the triangle; 40 km is the hypotenuse.\nStep 2: North is adjacent to 50°: n = 40 cos 50° ≈ 25.71 km.\nStep 3: East is opposite 50°: e = 40 sin 50° ≈ 30.64 km.\nCheck: 25.71² + 30.64² ≈ 1600 = 40² ✓\n\n### Example 3\n\nA hiker walks 6 km due east, then 4 km due south. Find the bearing of the hiker's end point from the start, to the nearest degree.\n\n![A start point with a north arrow. The hiker walks 6 km east, then 4 km south to the end. A dashed line joins start to end, with angle θ at the start below the east line](/diagrams/y10/maths/bearings-ex3.svg)\n\nStep 1: At the start, θ is between east and the dashed line: tan θ = 4/6 — opposite 4, adjacent 6.\nStep 2: θ = tan⁻¹(4/6) ≈ 33.69°.\nStep 3: East is 090°, and the end is a further θ clockwise: 90° + 33.69° ≈ 123.69°.\nAnswer: 124°T.\n\n### Example 4\n\nA boat sails 12 km on 035°T from A to B, then 9 km on 125°T to C. Find the distance AC and the bearing of C from A, to the nearest degree.\n\n![A boat sails 12 km from A to B on 035°, then turns and sails 9 km from B to C on 125°. The turn at B is a right angle. A dashed line joins A to C, with the angle θ at A between AB and AC](/diagrams/y10/maths/bearings-ex4.svg)\n\nStep 1: 125° − 35° = 90°, so the angle at B is a right angle.\nStep 2: Pythagoras: AC = √(12² + 9²) = √225 = 15 km.\nStep 3: At A, tan θ = 9/12, so θ = tan⁻¹(0.75) ≈ 36.87°.\nStep 4: Bearing of C from A = 35° + 36.87° ≈ 71.87°.\nAnswer: 15 km on a bearing of 072°T.\n\n## Common mistakes\n\n- **Measuring anticlockwise or from east.** True bearings are always clockwise from north. Fix: draw the north arrow first, every time.\n- **Mixing up \"of B from A\".** Fix: the word after \"from\" is where you stand.\n- **Writing two figures.** 50° should be written 050°T. Fix: always three figures.\n- **Using the bearing as the angle in the triangle without checking.** A bearing of 140° is not inside a right-angled triangle. Fix: find the angle from the nearest north–south line (here 40° from south).\n- **Forgetting to add back** the starting bearing in two-leg problems. Fix: the angle θ you find at A is measured from the first leg, not from north.\n\n## Tips to remember\n\n- **\"Never Eat Soggy Weetbix\"** — North, East, South, West, going clockwise.\n- **\"From = feet\"** (made-up memory hook): the point after \"from\" is where your feet are.\n- **Reverse bearing: ± 180°** — add if under 180°, subtract if over.\n- **Compass bearings never go past 90°**: start at N or S, turn towards E or W.\n- **North arrows everywhere**: if a bearing is measured at a point, it needs its own north line.\n\n## Key terms\n\n- **True bearing** — an angle from 000° to 360°, measured clockwise from north, written with three figures.\n- **Compass bearing** — a direction such as S55°E: start at N or S and turn the given angle towards E or W.\n- **Reverse bearing** — the bearing back the other way; it differs by 180°.\n- **North line** — a line pointing north drawn at the point where a bearing is measured.\n\n## Summary\n\n- True bearings are measured clockwise from north and written as three figures, e.g. 050°T.\n- Compass bearings like N30°E start at N or S and turn towards E or W.\n- The bearing of A from B differs from the bearing of B from A by 180°.\n- Draw north lines and dashed north–south or east–west lines to form right-angled triangles.\n- When two legs differ by 90°, use Pythagoras and tan, then add the angle to the first bearing.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "In the diagram, the line from O makes an angle of 50° with south, turning towards west. Write this direction as a true bearing.",
+   "options": {
+    "A": "230°T",
+    "B": "130°T",
+    "C": "050°T",
+    "D": "310°T"
+   },
+   "answer": "A",
+   "explanation": "The direction is S50°W: from north, turn 180° to south, then 50° more towards west: 180° + 50° = 230°T. 130°T is south-east, the wrong side.",
+   "steps": [
+    "The line is between south (180°) and west (270°).",
+    "Clockwise from north: 180° to reach south, then 50° more.",
+    "180° + 50° = 230°T."
+   ],
+   "mistakes": {
+    "B": "Step 2: the line is west of south, so add 50° to 180°. Subtracting gives a south-east bearing.",
+    "C": "Step 1: 50° is measured from south, not north. A true bearing is measured clockwise from north.",
+    "D": "Step 1: true bearings turn clockwise from north. 360° − 50° turns anticlockwise from north."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q1.svg",
+   "diagram_alt": "A compass cross with N, E, S and W. A line from the centre O points between south and west, making a 50° angle with south."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Write the compass bearing N35°W as a true bearing.",
+   "options": {
+    "A": "035°T",
+    "B": "145°T",
+    "C": "325°T",
+    "D": "305°T"
+   },
+   "answer": "C",
+   "explanation": "N35°W is 35° anticlockwise from north, which is 360° − 35° = 325°T clockwise. 035°T is on the east side.",
+   "steps": [
+    "N35°W: start facing north and turn 35° towards west.",
+    "That is 35° short of a full turn clockwise.",
+    "360° − 35° = 325°T."
+   ],
+   "mistakes": {
+    "A": "Step 2: 035°T is N35°E. West of north means you turn anticlockwise from north, so subtract from 360°.",
+    "B": "Step 1: N35°W is measured from north, not south. 180° − 35° points south-east.",
+    "D": "Step 1: the 35° is measured from north, not from west. 270° + 35° measures it from west."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q2.svg",
+   "diagram_alt": "A compass cross with N, E, S and W. A line from the centre points between north and west, making a 35° angle with north."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "The bearing of B from A is 064°T, as shown. What is the bearing of A from B?",
+   "options": {
+    "A": "116°T",
+    "B": "296°T",
+    "C": "026°T",
+    "D": "244°T"
+   },
+   "answer": "D",
+   "explanation": "Reverse bearings differ by 180°: 064° + 180° = 244°T. 116°T comes from 180° − 64°, which points the wrong way.",
+   "steps": [
+    "Stand at B, face north, and turn clockwise until you face A.",
+    "The reverse of a bearing under 180° is that bearing + 180°.",
+    "064° + 180° = 244°T."
+   ],
+   "mistakes": {
+    "A": "Step 2: the reverse bearing is 064° + 180°, not 180° − 64°.",
+    "B": "Step 2: 360° − 64° is not the reverse bearing. Add 180° because 64° is less than 180°.",
+    "C": "Step 2: 90° − 64° is the angle to east, not a reverse bearing. Add 180°."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q3.svg",
+   "diagram_alt": "Points A and B, each with a north arrow. B is from A on a bearing of 64°, marked at A. At B, the clockwise angle from north round to A is marked with a question mark."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A ship sails 25 km from port on a bearing of 140°T. How far south of the port is it, correct to 1 decimal place?",
+   "options": {
+    "A": "16.1 km",
+    "B": "19.2 km",
+    "C": "32.6 km",
+    "D": "21.0 km"
+   },
+   "answer": "B",
+   "explanation": "The angle between south and the path is 180° − 140° = 40°. s = 25 cos 40° ≈ 19.2 km. 16.1 km is how far east the ship is.",
+   "steps": [
+    "The angle inside the triangle is from south: 180° − 140° = 40°.",
+    "South is adjacent to 40° and 25 km is the hypotenuse: cos 40° = s/25.",
+    "s = 25 cos 40° ≈ 19.15 ≈ 19.2 km."
+   ],
+   "mistakes": {
+    "A": "Step 2: 25 sin 40° is the distance east. South is adjacent to the 40° angle at the port, so use cos.",
+    "C": "Step 3: s is on the top of cos 40° = s/25, so multiply by 25 — don’t divide.",
+    "D": "Step 2: 25 km is the hypotenuse, so use cos, not tan."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q4.svg",
+   "diagram_alt": "A port with a north arrow. A ship sails 25 km on a bearing of 140°. A dashed line s goes due south from the port, and a dashed line goes east to the ship, making a right-angled triangle."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Jess walks 5 km due west, then 12 km due north. Find the bearing of her end point from her start, to the nearest degree.",
+   "options": {
+    "A": "337°T",
+    "B": "023°T",
+    "C": "293°T",
+    "D": "157°T"
+   },
+   "answer": "A",
+   "explanation": "From the start, the angle west of north is tan⁻¹(5/12) ≈ 22.6°, so the bearing is 360° − 22.6° ≈ 337°T. 023°T is on the east side.",
+   "steps": [
+    "Measure from the north line at the start: 5 km west is opposite, 12 km north is adjacent.",
+    "θ = tan⁻¹(5/12) ≈ 22.62° west of north.",
+    "Bearing = 360° − 22.62° ≈ 337.38°, so 337°T."
+   ],
+   "mistakes": {
+    "B": "Step 3: the end is west of north, so subtract the angle from 360° — don’t use it on its own.",
+    "C": "Step 2: at the start, 5 km (west) is opposite the angle from north and 12 km is adjacent: tan θ = 5/12, not 12/5.",
+    "D": "Step 3: 157° is the bearing of the start from the end. The question asks for the end from the start."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q5.svg",
+   "diagram_alt": "A start point with a north arrow. Jess walks 5 km west, then 12 km north to the end. A dashed line joins the start to the end."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A plane flies 300 km from an airport on a bearing of 230°T. How far west of the airport is it, to the nearest kilometre?",
+   "options": {
+    "A": "193 km",
+    "B": "392 km",
+    "C": "358 km",
+    "D": "230 km"
+   },
+   "answer": "D",
+   "explanation": "The angle from south to the path is 230° − 180° = 50°. West is opposite it: w = 300 sin 50° ≈ 230 km. 193 km is the distance south.",
+   "steps": [
+    "Angle from south towards west: 230° − 180° = 50°.",
+    "West is opposite 50° and 300 km is the hypotenuse: sin 50° = w/300.",
+    "w = 300 sin 50° ≈ 229.8 ≈ 230 km."
+   ],
+   "mistakes": {
+    "A": "Step 2: 300 cos 50° is the distance south. West is opposite the 50° angle at the airport, so use sin.",
+    "B": "Step 3: w is on the top of sin 50° = w/300, so multiply — don’t divide.",
+    "C": "Step 2: 300 km is the hypotenuse, so use sin, not tan."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q6.svg",
+   "diagram_alt": "An airport with a north arrow. A plane flies 300 km on a bearing of 230°. A dashed line w goes due west from the airport and a dashed line goes south to the plane, making a right-angled triangle."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A hiker walks 8 km from A to B on a bearing of 030°T, then 15 km from B to C on a bearing of 120°T. Find the bearing of C from A, to the nearest degree.",
+   "options": {
+    "A": "062°T",
+    "B": "058°T",
+    "C": "092°T",
+    "D": "272°T"
+   },
+   "answer": "C",
+   "explanation": "120° − 30° = 90°, so angle B is a right angle. tan θ = 15/8 gives θ ≈ 61.9°, and the bearing is 30° + 61.9° ≈ 092°T. 062°T forgets to add 30°.",
+   "steps": [
+    "The legs differ by 120° − 30° = 90°, so the angle at B is a right angle.",
+    "At A: tan θ = 15/8, so θ ≈ 61.93° (measured from AB).",
+    "Bearing of C from A = 30° + 61.93° ≈ 91.93°, so 092°T."
+   ],
+   "mistakes": {
+    "A": "Step 3: tan⁻¹(15/8) is the angle from AB, not from north. Add the first bearing, 30°.",
+    "B": "Step 2: at A, 15 km is opposite the angle and 8 km is adjacent: tan θ = 15/8, not 8/15.",
+    "D": "Step 3: 272° is the bearing of A from C. The question asks for C from A."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q7.svg",
+   "diagram_alt": "A hiker goes 8 km from A to B on a bearing of 30°, then 15 km from B to C on a bearing of 120°. The angle at B is a right angle and a dashed line joins A to C."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Ship A is 20 km due north of a port. Ship B is 15 km due east of the port. Find the bearing of B from A, to the nearest degree.",
+   "options": {
+    "A": "037°T",
+    "B": "143°T",
+    "C": "127°T",
+    "D": "323°T"
+   },
+   "answer": "B",
+   "explanation": "At A the angle between south and AB is tan⁻¹(15/20) ≈ 36.9°, towards east, so the bearing is 180° − 36.9° ≈ 143°T. 323°T is the reverse bearing.",
+   "steps": [
+    "Stand at A: B is south-east of A. The angle from south is in the right-angled triangle.",
+    "tan θ = 15/20 (opposite 15 km, adjacent 20 km), so θ ≈ 36.87° east of south.",
+    "Bearing = 180° − 36.87° ≈ 143.13°, so 143°T."
+   ],
+   "mistakes": {
+    "A": "Step 3: the angle 36.9° is measured from SOUTH at A, towards east. Subtract it from 180°.",
+    "C": "Step 3: the 36.9° angle is measured from south, not from east. Use 180° − 36.9°.",
+    "D": "Step 3: 323° is the bearing of A from B. Stand at A to find B from A."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q8.svg",
+   "diagram_alt": "A port with ship A 20 km due north and ship B 15 km due east. A north arrow is at A, and a dashed line joins A to B."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Two ships leave a port. Ship A sails 18 km on 050°T and ship B sails 24 km on 140°T. How far apart are the ships?",
+   "options": {
+    "A": "30 km",
+    "B": "42 km",
+    "C": "6 km",
+    "D": "15.9 km"
+   },
+   "answer": "A",
+   "explanation": "140° − 50° = 90°, so the angle at the port is a right angle and AB = √(18² + 24²) = 30 km. 42 km just adds the two distances.",
+   "steps": [
+    "The angle between the two paths is 140° − 50° = 90°.",
+    "The distance between the ships is the hypotenuse: AB² = 18² + 24² = 324 + 576 = 900.",
+    "AB = √900 = 30 km."
+   ],
+   "mistakes": {
+    "B": "Step 2: the ships are not in a straight line, so you can’t add the distances. The angle between them is 90°: use Pythagoras.",
+    "C": "Step 2: subtracting would only work if both ships sailed in the same direction. Use Pythagoras.",
+    "D": "Step 2: AB is the hypotenuse, so add the squares: 18² + 24², don’t subtract."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q9.svg",
+   "diagram_alt": "A port with a north arrow. Ship A sails 18 km on a bearing of 50° and ship B sails 24 km on a bearing of 140°. A dashed line joins A and B."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "From boat P, a lighthouse is on a bearing of 040°T. The boat sails 10 km due east to Q, where the lighthouse is on a bearing of 310°T. How far is Q from the lighthouse, correct to 1 decimal place?",
+   "options": {
+    "A": "6.4 km",
+    "B": "13.1 km",
+    "C": "7.7 km",
+    "D": "8.4 km"
+   },
+   "answer": "C",
+   "explanation": "Angle LPQ = 90° − 40° = 50° and angle LQP = 310° − 270° = 40°, so angle L = 90° and PQ is the hypotenuse. QL = 10 cos 40° ≈ 7.7 km. 6.4 km is PL.",
+   "steps": [
+    "At P the angle between east and PL is 90° − 40° = 50°. At Q the angle between west and QL is 310° − 270° = 40°.",
+    "The angles add to 90°, so the angle at the lighthouse is 90° and PQ = 10 km is the hypotenuse.",
+    "QL is adjacent to 40°: QL = 10 cos 40° ≈ 7.66 ≈ 7.7 km."
+   ],
+   "mistakes": {
+    "A": "Step 3: 10 cos 50° is the distance from P to the lighthouse. From Q, the angle inside the triangle is 40°.",
+    "B": "Step 3: QL is adjacent to 40° with PQ = 10 km as the hypotenuse, so multiply 10 by cos 40° — don’t divide.",
+    "D": "Step 3: 10 km is the hypotenuse (opposite the right angle at L), so use cos, not tan."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q10.svg",
+   "diagram_alt": "Boats P and Q are 10 km apart, Q due east of P, each with a north arrow. From P the lighthouse is on a bearing of 40°; from Q it is on a bearing of 310°. Dashed lines join each boat to the lighthouse."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A ship sails 30 km from P to Q on 115°T, then 20 km from Q to R on 025°T. Find the bearing of P from R, to the nearest degree.",
+   "options": {
+    "A": "081°T",
+    "B": "329°T",
+    "C": "295°T",
+    "D": "261°T"
+   },
+   "answer": "D",
+   "explanation": "The turn is 115° − 25° = 90°, so angle Q = 90°. At P, θ = tan⁻¹(20/30) ≈ 33.7°, anticlockwise from PQ: bearing of R from P ≈ 81.3°. Reverse: 81.3° + 180° ≈ 261°T. 081°T forgets to reverse.",
+   "steps": [
+    "115° − 25° = 90°, so triangle PQR has a right angle at Q.",
+    "At P: tan θ = 20/30, θ ≈ 33.69°.",
+    "R is anticlockwise from PQ: bearing of R from P = 115° − 33.69° ≈ 81.31°.",
+    "Bearing of P from R = 81.31° + 180° ≈ 261.31°, so 261°T."
+   ],
+   "mistakes": {
+    "A": "Step 4: 081° is the bearing of R from P. Reverse it by adding 180°.",
+    "B": "Step 3: R is anticlockwise from PQ (the ship turned left), so subtract 33.7° from 115°, don’t add.",
+    "C": "Step 1: 295° is the reverse of the first leg only. R is not on line PQ, so use the right-angled triangle PQR."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q11.svg",
+   "diagram_alt": "A ship sails 30 km from P to Q on a bearing of 115°, then 20 km from Q to R on a bearing of 25°. The angle at Q is a right angle, and a dashed line joins P and R."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A hiker walks 6 km from A to B on 060°T, then 6 km from B to C on 150°T. Find the exact distance AC and the bearing of C from A.",
+   "options": {
+    "A": "6√2 km on 045°T",
+    "B": "6√2 km on 105°T",
+    "C": "12 km on 105°T",
+    "D": "6√2 km on 285°T"
+   },
+   "answer": "B",
+   "explanation": "The turn is 90°, so AC = √(36 + 36) = 6√2 km. The triangle is isosceles, so angle A = 45° and the bearing is 60° + 45° = 105°T. 045°T forgets to add 60°.",
+   "steps": [
+    "150° − 60° = 90°, so the angle at B is a right angle.",
+    "AC = √(6² + 6²) = √72 = 6√2 km.",
+    "AB = BC, so angle BAC = 45°. Bearing of C from A = 60° + 45° = 105°T."
+   ],
+   "mistakes": {
+    "A": "Step 3: 45° is the angle at A measured from AB, not from north. Add the first bearing, 60°.",
+    "C": "Step 2: the legs are at right angles, so use Pythagoras: √(6² + 6²), not 6 + 6.",
+    "D": "Step 3: 285° is the bearing of A from C. Stand at A to find C from A."
+   },
+   "diagram": "diagrams/y10/maths/bearings-q12.svg",
+   "diagram_alt": "A hiker goes 6 km from A to B on a bearing of 60°, then 6 km from B to C on a bearing of 150°. The angle at B is a right angle and a dashed line joins A to C."
+  }
+ ]
+}

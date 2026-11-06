@@ -1,0 +1,385 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 6 · Test 2",
+ "kind": "test",
+ "summary": "Chapter 6 test: trigonometric ratios, sides and angles, elevation and depression, bearings, 3D trigonometry and the sine and cosine rules.",
+ "minutes": 25,
+ "body": "This test covers Chapter 6: trigonometric ratios and exact values, finding sides and angles, angles of elevation and depression, bearings, trigonometry in 3D and the sine and cosine rules (extension). It has 15 questions, from easy to challenge. Allow about 25 minutes and work with no notes. You need a scientific calculator for this test — set it to degree mode first; questions that say \"exact\" or \"without a calculator\" use the exact values. Diagrams are drawn to scale, but always calculate rather than measure. Sketch and label the right-angled triangle, round only at the end and include units.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Trigonometric ratios review",
+   "prompt": "Write sin θ for triangle XYZ in the diagram.",
+   "options": {
+    "A": "20/29",
+    "B": "21/29",
+    "C": "20/21",
+    "D": "29/20"
+   },
+   "answer": "A",
+   "explanation": "sin θ = opposite/hypotenuse = 20/29. 21/29 uses the wrong pair of sides.",
+   "steps": [
+    "The hypotenuse is across from the right angle at Y: H = 29.",
+    "From θ at X: opposite = 20, adjacent = 21.",
+    "sin θ = opposite/hypotenuse = 20/29."
+   ],
+   "mistakes": {
+    "B": "Step 2: you used the adjacent side, which gives cos θ. Sine uses the side opposite θ.",
+    "C": "Step 2: you divided by the adjacent side, which gives tan θ. Sine divides by the hypotenuse.",
+    "D": "Step 3: the fraction is upside down — sin and cos are always less than 1."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q1.svg",
+   "diagram_alt": "Right-angled triangle XYZ with the right angle at Y and θ at X. The side opposite θ is 20, the side next to θ is 21 and the hypotenuse is 29."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Finding sides and angles",
+   "prompt": "Find x in the diagram, correct to 1 decimal place. (The marked angle is 48°.)",
+   "options": {
+    "A": "14.9 m",
+    "B": "13.4 m",
+    "C": "22.2 m",
+    "D": "29.9 m"
+   },
+   "answer": "B",
+   "explanation": "cos 48° = x/20, so x = 20 cos 48° ≈ 13.4 m. 14.9 m uses the wrong ratio.",
+   "steps": [
+    "Label from 48°: x is adjacent, 20 m is hypotenuse.",
+    "Choose cos: cos 48° = x/20.",
+    "x = 20 × cos 48° ≈ 13.383 ≈ 13.4 m."
+   ],
+   "mistakes": {
+    "A": "Step 2: x is the adjacent side and 20 m is the hypotenuse, so use cos, not sin.",
+    "C": "Step 2: x is the adjacent side and 20 m is the hypotenuse, so use cos, not tan.",
+    "D": "Step 3: x is on the TOP of cos 48° = x/20, so multiply by 20 — don’t divide."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q2.svg",
+   "diagram_alt": "A right-angled triangle with a 48° angle; the hypotenuse side is 20 m and the adjacent side is x."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Bearings",
+   "prompt": "The bearing of B from A is 115°T, as shown. What is the bearing of A from B?",
+   "options": {
+    "A": "065°T",
+    "B": "245°T",
+    "C": "205°T",
+    "D": "295°T"
+   },
+   "answer": "D",
+   "explanation": "Reverse bearings differ by 180°: 115° + 180° = 295°T. 065°T comes from 180° − 115°, which points the wrong way.",
+   "steps": [
+    "Stand at B, face north and turn clockwise until you face A.",
+    "The north lines at A and B are parallel, so the reverse bearing differs by 180°.",
+    "115° + 180° = 295°T."
+   ],
+   "mistakes": {
+    "A": "Step 2: 180° − 115° is not a reverse bearing. Add 180° because 115° is less than 180°.",
+    "B": "Step 2: 360° − 115° is not the reverse bearing. Add 180°.",
+    "C": "Step 2: 90° + 115° is not the reverse bearing. The reverse of a bearing differs by exactly 180°."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q3.svg",
+   "diagram_alt": "Points A and B, each with a north arrow. B is on a bearing of 115° from A, marked at A. At B, the clockwise angle from north round to A is marked with a question mark."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Angles of elevation and depression",
+   "prompt": "You stand 60 m from the base of a radio tower. The angle of elevation to the top is 18°. Find the height h, correct to 1 decimal place.",
+   "options": {
+    "A": "18.5 m",
+    "B": "184.7 m",
+    "C": "19.5 m",
+    "D": "57.1 m"
+   },
+   "answer": "C",
+   "explanation": "tan 18° = h/60, so h = 60 tan 18° ≈ 19.5 m. Using sin would treat 60 m as the sloping line of sight.",
+   "steps": [
+    "h is opposite the 18° angle; 60 m along the ground is adjacent.",
+    "tan 18° = h/60.",
+    "h = 60 × tan 18° ≈ 19.495 ≈ 19.5 m."
+   ],
+   "mistakes": {
+    "A": "Step 2: 60 m is the horizontal distance (adjacent), not the line of sight, so use tan, not sin.",
+    "B": "Step 3: h is on the top of tan 18° = h/60, so multiply — don’t divide.",
+    "D": "Step 2: h is opposite 18° and 60 m is adjacent, so use tan, not cos."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q4.svg",
+   "diagram_alt": "An observer on flat ground 60 m from the base of a radio tower of height h, with a dashed line of sight rising at 18° to the top."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Finding sides and angles",
+   "prompt": "The triangle in the diagram has sides of 9 cm and 14 cm as marked. Find θ, correct to 1 decimal place.",
+   "options": {
+    "A": "40.0°",
+    "B": "32.7°",
+    "C": "57.3°",
+    "D": "50.0°"
+   },
+   "answer": "D",
+   "explanation": "cos θ = 9/14, so θ = cos⁻¹(9/14) ≈ 50.0°. 40.0° uses the wrong ratio.",
+   "steps": [
+    "Label from θ: 9 cm is the adjacent side and 14 cm is the hypotenuse.",
+    "Choose cos: cos θ = 9/14.",
+    "θ = cos⁻¹(9/14) ≈ 49.99 ≈ 50.0°."
+   ],
+   "mistakes": {
+    "A": "Step 2: with these two sides the ratio is cos, so use cos⁻¹, not sin⁻¹.",
+    "B": "Step 2: with these two sides the ratio is cos, so use cos⁻¹, not tan⁻¹.",
+    "C": "Step 2: one of the given sides is the hypotenuse, so the ratio is cos, not tan — and that fraction is upside down too."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q5.svg",
+   "diagram_alt": "A right-angled triangle with θ marked. The adjacent side is 9 cm and the hypotenuse side is 14 cm."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Trigonometric ratios review",
+   "prompt": "Without a calculator, find the exact value of sin 60° × tan 30°.",
+   "options": {
+    "A": "3/2",
+    "B": "1/2",
+    "C": "√3/6",
+    "D": "√3/2"
+   },
+   "answer": "B",
+   "explanation": "sin 60° × tan 30° = (√3/2) × (1/√3) = 1/2. 3/2 uses tan 60° = √3 by mistake.",
+   "steps": [
+    "From the 1-√3-2 triangle: sin 60° = √3/2 and tan 30° = 1/√3.",
+    "Multiply: (√3/2) × (1/√3).",
+    "The √3s cancel: 1/2."
+   ],
+   "mistakes": {
+    "A": "Step 1: tan 30° = 1/√3, not √3 (√3 is tan 60°).",
+    "C": "Step 1: sin 60° = √3/2, not 1/2 (1/2 is sin 30°).",
+    "D": "Step 1: tan 30° is 1/√3, not 1 (1 is tan 45°)."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Angles of elevation and depression",
+   "prompt": "From the top of a 120 m tower, the angle of depression to a car is 41°. How far is it from the base, correct to 1 decimal place?",
+   "options": {
+    "A": "104.3 m",
+    "B": "182.9 m",
+    "C": "138.0 m",
+    "D": "78.7 m"
+   },
+   "answer": "C",
+   "explanation": "By alternate angles the angle of elevation at a car is 41°, so tan 41° = 120/d and d = 120 ÷ tan 41° ≈ 138.0 m.",
+   "steps": [
+    "Alternate angles: the angle of elevation from a car is also 41°.",
+    "From there, 120 m is opposite and d is adjacent: tan 41° = 120/d.",
+    "d = 120 ÷ tan 41° ≈ 138.044 ≈ 138.0 m."
+   ],
+   "mistakes": {
+    "A": "Step 3: d is on the bottom of tan 41° = 120/d, so divide 120 by tan 41° — don’t multiply.",
+    "B": "Step 2: 120 ÷ sin 41° is the line of sight (the hypotenuse), not the distance along the ground.",
+    "D": "Step 2: 120 m is opposite 41° and d is adjacent, so use tan — and d goes on the bottom."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q7.svg",
+   "diagram_alt": "A 120 m tower with a dashed horizontal from its top and a dashed line of sight down to a car at distance d, with an angle of depression of 41°."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Bearings",
+   "prompt": "A ship travels 40 km from its start on a bearing of 160°T. How far south of the start is it, correct to 1 decimal place?",
+   "options": {
+    "A": "37.6 km",
+    "B": "13.7 km",
+    "C": "42.6 km",
+    "D": "14.6 km"
+   },
+   "answer": "A",
+   "explanation": "The angle between the south line and the path is 20°. s = 40 cos 20° ≈ 37.6 km. 13.7 km is the other component.",
+   "steps": [
+    "The angle inside the triangle is measured from south: 20°.",
+    "The south distance is adjacent to 20° and 40 km is the hypotenuse: cos 20° = s/40.",
+    "s = 40 × cos 20° ≈ 37.588 ≈ 37.6 km."
+   ],
+   "mistakes": {
+    "B": "Step 2: that is the distance east or west. The south distance is adjacent to the 20° angle, so use cos.",
+    "C": "Step 3: s is on the top of cos 20° = s/40, so multiply — don’t divide.",
+    "D": "Step 2: 40 km is the hypotenuse, so use cos, not tan."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q8.svg",
+   "diagram_alt": "A start point with a north arrow. The ship travels 40 km on a bearing of 160°. Dashed north–south and east–west lines make a right-angled triangle, with the south distance marked s."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Trigonometry in 3D",
+   "prompt": "A square-based pyramid has base edges of 12 m and a vertical height VO of 10 m. M is the midpoint of AB. Find the angle θ between the face VAB and the base, correct to 1 decimal place.",
+   "options": {
+    "A": "59.0°",
+    "B": "39.8°",
+    "C": "49.7°",
+    "D": "31.0°"
+   },
+   "answer": "A",
+   "explanation": "In triangle VOM, OM = 6 m and VO = 10 m, so tan θ = 10/6 and θ ≈ 59.0°. 39.8° uses the whole edge.",
+   "steps": [
+    "OM = 12 ÷ 2 = 6 m (centre to the middle of an edge).",
+    "Triangle VOM has a right angle at O: tan θ = 10/6.",
+    "θ = tan⁻¹(1.666…) ≈ 59.04 ≈ 59.0°."
+   ],
+   "mistakes": {
+    "B": "Step 1: OM is half the base edge, 6 m, not 12 m.",
+    "C": "Step 1: half the diagonal is for a sloping EDGE. For a face, OM = half the side.",
+    "D": "Step 2: the fraction is upside down: tan θ = VO ÷ OM = 10/6."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q9.svg",
+   "diagram_alt": "A square pyramid with base ABCD of side 12 m and apex V, 10 m above the centre O. M is the midpoint of AB; VM is drawn and θ is at M between OM and VM."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Finding sides and angles",
+   "prompt": "In triangle ABC, AD is perpendicular to BC, AB = 18 cm, angle B = 35° and angle C = 63°. Find AC, correct to 1 decimal place.",
+   "options": {
+    "A": "16.5 cm",
+    "B": "9.2 cm",
+    "C": "11.6 cm",
+    "D": "5.3 cm"
+   },
+   "answer": "C",
+   "explanation": "AD = 18 sin 35° ≈ 10.32 cm, then AC = AD ÷ sin 63° ≈ 11.6 cm.",
+   "steps": [
+    "Triangle ABD: AD = 18 sin 35° ≈ 10.324 cm.",
+    "Triangle ADC: sin 63° = AD/AC.",
+    "AC = 10.324 ÷ sin 63° ≈ 11.6 cm."
+   ],
+   "mistakes": {
+    "A": "Step 1: AD is opposite the 35° angle, so AD = 18 sin 35°, not 18 cos 35°.",
+    "B": "Step 3: AC is the hypotenuse of triangle ADC, so divide AD by sin 63° — don’t multiply.",
+    "D": "Step 2: AD ÷ tan 63° gives DC, not AC."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q10.svg",
+   "diagram_alt": "Triangle ABC with a dashed height AD meeting BC at a right angle at D. AB = 18 cm, angle B = 35°, angle C = 63°, and AC is marked x."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Trigonometry in 3D",
+   "prompt": "A box is 6 cm long, 8 cm wide and 15 cm high. Find the angle θ between the space diagonal AG and the vertical edge CG, correct to 1 decimal place.",
+   "options": {
+    "A": "56.3°",
+    "B": "33.7°",
+    "C": "28.1°",
+    "D": "21.8°"
+   },
+   "answer": "B",
+   "explanation": "AC = √(36 + 64) = 10 cm. In triangle ACG, tan θ = 10/15, so θ ≈ 33.7°. 56.3° is the angle at A.",
+   "steps": [
+    "Base diagonal AC = √(6² + 8²) = 10 cm.",
+    "Triangle ACG has a right angle at C; at G, AC is opposite θ and CG is adjacent: tan θ = 10/15.",
+    "θ = tan⁻¹(0.666…) ≈ 33.69 ≈ 33.7°."
+   ],
+   "mistakes": {
+    "A": "Step 2: the fraction is upside down. At G, AC = 10 is opposite θ and CG = 15 is adjacent.",
+    "C": "Step 1: the side opposite θ is the base diagonal AC = 10 cm, not the 8 cm edge.",
+    "D": "Step 1: the side opposite θ is the base diagonal AC = 10 cm, not the 6 cm edge."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q11.svg",
+   "diagram_alt": "A tall box ABCDEFGH, 6 cm long, 8 cm wide and 15 cm high. The space diagonal AG is purple, the base diagonal AC is dashed and θ is at G between GA and GC."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "The sine and cosine rules (extension)",
+   "prompt": "In triangle ABC, A = 52°, C = 71° and BC = a = 15 cm. Find AB = c, correct to 1 decimal place.",
+   "options": {
+    "A": "12.5 cm",
+    "B": "14.2 cm",
+    "C": "16.0 cm",
+    "D": "18.0 cm"
+   },
+   "answer": "D",
+   "explanation": "c/sin 71° = 15/sin 52°, so c = 15 sin 71° ÷ sin 52° ≈ 18.0 cm.",
+   "steps": [
+    "a = 15 and A = 52° are a complete pair; c is opposite C = 71°.",
+    "Sine rule: c/sin 71° = 15/sin 52°.",
+    "c = 15 × sin 71° ÷ sin 52° ≈ 17.998 ≈ 18.0 cm."
+   ],
+   "mistakes": {
+    "A": "Step 2: the sines are upside down: c/sin 71° = 15/sin 52°.",
+    "B": "Step 3: you multiplied by sin 71° but forgot to divide by sin 52°.",
+    "C": "Step 1: that is side b, opposite B = 57°. AB = c is opposite C = 71°."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q12.svg",
+   "diagram_alt": "Triangle ABC with angle A = 52°, angle C = 71°, side BC = 15 cm opposite A, and side AB = c opposite C."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Bearings",
+   "prompt": "A hiker walks 5 km from A to B on 140°T, then 12 km from B to C on 230°T. Find the bearing of C from A, to the nearest degree.",
+   "options": {
+    "A": "067°T",
+    "B": "163°T",
+    "C": "207°T",
+    "D": "027°T"
+   },
+   "answer": "C",
+   "explanation": "230° − 140° = 90°, so angle B is a right angle. tan θ = 12/5 gives θ ≈ 67.4°, and the bearing is 140° + 67.4° ≈ 207°T.",
+   "steps": [
+    "The legs differ by 90°, so angle ABC = 90°.",
+    "At A: tan θ = 12/5, θ ≈ 67.38°.",
+    "C is clockwise from AB: bearing = 140° + 67.38° ≈ 207.38°, so 207°T."
+   ],
+   "mistakes": {
+    "A": "Step 3: tan⁻¹(12/5) is measured from AB, not from north. Add the first bearing, 140°.",
+    "B": "Step 2: at A, 12 km is opposite and 5 km is adjacent: tan θ = 12/5, not 5/12.",
+    "D": "Step 3: 027° is the bearing of A from C."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q13.svg",
+   "diagram_alt": "A hiker goes 5 km from A to B on a bearing of 140°, then 12 km from B to C on a bearing of 230°. The angle at B is a right angle; a dashed line joins A to C."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "The sine and cosine rules (extension)",
+   "prompt": "In triangle ABC, A = 40°, b = AC = 10 cm and a = BC = 7 cm. Find all possible values of angle B, correct to 1 decimal place.",
+   "options": {
+    "A": "66.7° only",
+    "B": "66.7° or 140.0°",
+    "C": "26.7° or 153.3°",
+    "D": "66.7° or 113.3°"
+   },
+   "answer": "D",
+   "explanation": "sin B = 10 sin 40° ÷ 7 ≈ 0.9183, so B ≈ 66.7° or 113.3°. Both work with A = 40°, so there are two triangles.",
+   "steps": [
+    "Sine rule: sin B = 10 × sin 40° ÷ 7 ≈ 0.9183.",
+    "B = sin⁻¹(0.9183) ≈ 66.67°.",
+    "Also 180° − 66.67° ≈ 113.33°; adding 40° is still under 180°, so both are possible."
+   ],
+   "mistakes": {
+    "A": "Step 3: sin B ≈ 0.9183 also fits 180° − 66.7° = 113.3°, and that still leaves room for angle C.",
+    "B": "Step 3: the second angle is 180° − B, not 180° − A.",
+    "C": "Step 1: sin B = b sin A ÷ a = 10 sin 40° ÷ 7; you swapped a and b."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q14.svg",
+   "diagram_alt": "Angle A = 40° at the left end of a base line, with side AC = 10 cm going up to C. Side BC = 7 cm must reach the base line, where B can be."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Angles of elevation and depression",
+   "prompt": "From point B the angle of elevation of the top of a tower is 45°. After walking 30 m straight towards the tower to A, it is 60°. Find the exact height h of the tower.",
+   "options": {
+    "A": "15(3 + √3) m",
+    "B": "15(3 − √3) m",
+    "C": "15(√3 + 1) m",
+    "D": "30(3 + √3) m"
+   },
+   "answer": "A",
+   "explanation": "h/tan 45° − h/tan 60° = 30 gives h(1 − 1/√3) = 30, so h = 30√3/(√3 − 1) = 15(3 + √3) ≈ 71.0 m.",
+   "steps": [
+    "Distance from B = h/tan 45° = h; distance from A = h/tan 60° = h/√3.",
+    "h − h/√3 = 30, so h(√3 − 1)/√3 = 30 and h = 30√3/(√3 − 1).",
+    "Rationalise: 30√3(√3 + 1)/2 = (90 + 30√3)/2 = 15(3 + √3) m."
+   ],
+   "mistakes": {
+    "B": "Step 3: to rationalise 30√3/(√3 − 1), multiply by (√3 + 1)/(√3 + 1) — the sign changes, so the answer has a plus.",
+    "C": "Step 3: the numerator is 30√3, not 30. 30√3(√3 + 1) = 90 + 30√3.",
+    "D": "Step 3: (√3 − 1)(√3 + 1) = 3 − 1 = 2, so divide by 2."
+   },
+   "diagram": "diagrams/y10/maths/chapter-6-test-2-q15.svg",
+   "diagram_alt": "A tower of height h. From A the angle of elevation of the top is 60°; from B, 30 m further back in line, it is 45°."
+  }
+ ]
+}

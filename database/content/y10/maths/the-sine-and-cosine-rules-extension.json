@@ -1,0 +1,299 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "The sine and cosine rules (extension)",
+ "summary": "The sine rule, cosine rule and area = ½ab sin C for any triangle, including obtuse angles and the ambiguous case (10A extension).",
+ "minutes": 45,
+ "body": "SOH CAH TOA only works in right-angled triangles. But a surveyor measuring a triangular block, a navigator plotting two legs of a voyage, or an engineer designing a roof truss often has a triangle with no right angle at all. The sine rule and the cosine rule solve any triangle — this is a 10A extension topic that leads straight into VCE Mathematical Methods and Specialist Mathematics.\n\n## Learning objective\n\nBy the end of this lesson you can choose and use the sine rule, the cosine rule and the area formula ½ab sin C to find sides, angles and areas in any triangle, and recognise the ambiguous case of the sine rule.\n\n## Before you start\n\nYou need \"Finding sides and angles\" and \"Bearings\" (this chapter), and \"Solving linear equations\" (Year 9).\n\nWarm-up:\n1. Solve x/sin 30° = 10 ÷ sin 90°.\n2. Find sin 150°, using sin(180° − θ) = sin θ.\n\nAnswers: 1. x = 10 × sin 30° = 5  2. sin 150° = sin 30° = 0.5\n\n## Think of it like this\n\n### A matched pair of keys\n\nEach side of a triangle has a \"partner\": the angle directly across from it. The sine rule works like matching keys to locks — once you have one complete pair (a side AND its opposite angle), every other side–angle pair is in the same ratio. The cosine rule is for when you don't have a complete pair: it's Pythagoras with a correction term for the angle not being 90°.\n\n*Where the analogy breaks down:* one key opens only one lock, but in the ambiguous case a sine value can match two different angles, so a sine rule answer sometimes has two possible triangles.\n\n## Key ideas\n\n### Labelling\n\nName the angles with capital letters A, B, C and the side **opposite** each angle with the matching small letter: a is opposite A, b opposite B, c opposite C.\n\n![Triangle ABC with side a opposite angle A, side b opposite angle B and side c opposite angle C](/diagrams/y10/maths/the-sine-and-cosine-rules-extension-labels.svg)\n\n### The sine rule\n\n**a/sin A = b/sin B = c/sin C**\n\nUse it when you know a complete pair (a side and its opposite angle) plus one more side or angle. To find an angle, flip it: sin B/b = sin A/a.\n\n### The cosine rule\n\n**a² = b² + c² − 2bc cos A**\n\nUse it when you know two sides and the angle **between** them (to find the third side), or all three sides (to find an angle). To find an angle, rearrange: **cos A = (b² + c² − a²) ÷ (2bc)**. If A = 90°, cos A = 0 and the rule becomes Pythagoras. A negative cosine means the angle is obtuse — the calculator handles this for you.\n\n### Area of any triangle\n\n**Area = ½ab sin C** — two sides and the angle between them.\n\n### The ambiguous case\n\nsin θ is positive for acute AND obtuse angles: sin 50° = sin 130°. So when the sine rule gives an angle, there may be a second answer, 180° minus the first. Both are valid if the second one still leaves room for the third angle (the angles must add to less than 180°). This can only happen when you are given two sides and an angle that is NOT between them.\n\n![Angle A = 35° with side AC = 12. A side of length 8 swings from C and can meet the base line at two points, B₁ and B₂, giving two different triangles](/diagrams/y10/maths/the-sine-and-cosine-rules-extension-ambiguous.svg)\n\n### Which rule?\n\n| You know | Use |\n|---|---|\n| A side and its opposite angle, plus one more | Sine rule |\n| Two sides and the angle between them | Cosine rule (side) |\n| All three sides | Cosine rule (angle) |\n| Two sides and the angle between them, want area | ½ab sin C |\n\n## Worked examples\n\n### Example 1\n\nIn triangle ABC, A = 40°, B = 65° and a = 12 cm. Find b, to 1 decimal place.\n\n![Triangle ABC with angle A = 40°, angle B = 65°, side BC = 12 cm opposite A, and side AC = b opposite B](/diagrams/y10/maths/the-sine-and-cosine-rules-extension-ex1.svg)\n\nStep 1: a and A are a complete pair, and we want b (opposite B), so use the sine rule.\nStep 2: b/sin 65° = 12/sin 40°.\nStep 3: b = 12 × sin 65° ÷ sin 40° ≈ 16.9196.\nAnswer: b ≈ 16.9 cm. Check: B is bigger than A, so b should be bigger than a ✓\n\n### Example 2\n\nIn triangle ABC, a = 9, b = 7 and A = 70°. Find B, to 1 decimal place.\n\nStep 1: Use sin B/b = sin A/a: sin B = 7 × sin 70° ÷ 9 ≈ 0.7309.\nStep 2: B = sin⁻¹(0.7309…) ≈ 46.96°.\nStep 3: Check the other option: 180° − 46.96° = 133.04°, but 133.04° + 70° is more than 180°, so it is impossible.\nAnswer: B ≈ 47.0° (only one triangle).\n\n### Example 3\n\nFind a when b = 8 cm, c = 11 cm and A = 50°, to 1 decimal place.\n\n![Triangle ABC with AC = 8 cm, AB = 11 cm, the angle A = 50° between them, and the third side BC = a](/diagrams/y10/maths/the-sine-and-cosine-rules-extension-ex3.svg)\n\nStep 1: Two sides and the angle between them — cosine rule.\nStep 2: a² = 8² + 11² − 2 × 8 × 11 × cos 50° = 185 − 176 cos 50° ≈ 71.8694.\nStep 3: a = √71.8694… ≈ 8.4776.\nAnswer: a ≈ 8.5 cm.\n\n### Example 4\n\nA triangle has sides 7 m, 8 m and 13 m. Find the largest angle θ, then the area.\n\n![Triangle ABC with AB = 7 m, AC = 8 m and BC = 13 m, with θ marked at A opposite the longest side](/diagrams/y10/maths/the-sine-and-cosine-rules-extension-ex4.svg)\n\nStep 1: The largest angle is opposite the longest side (13 m).\nStep 2: cos θ = (7² + 8² − 13²) ÷ (2 × 7 × 8) = (49 + 64 − 169) ÷ 112 = −56/112 = −0.5.\nStep 3: θ = cos⁻¹(−0.5) = 120° — negative cosine means obtuse.\nStep 4: Area = ½ × 7 × 8 × sin 120° = 28 × 0.8660… ≈ 24.2 m².\n\n## Common mistakes\n\n- **Using the sine rule without a complete pair.** Fix: check you know a side AND the angle opposite it; if not, use the cosine rule.\n- **Forgetting the square root** after the cosine rule. a² = 39 means a = √39, not 39.\n- **Calculator order in the cosine rule.** Work out 2bc cos A first and subtract it all; don't subtract 2bc then multiply by cos A.\n- **Missing the ambiguous case.** Fix: when the sine rule gives an angle, test 180° minus it.\n- **Wrong angle in ½ab sin C.** Fix: the angle must be BETWEEN the two sides you use.\n\n## Tips to remember\n\n- **\"Pairs → sine; sandwich → cosine\"** (made-up rhyme): a complete side–angle pair means the sine rule; an angle sandwiched between two known sides means the cosine rule.\n- **Cosine rule = Pythagoras + correction**: a² = b² + c² … − 2bc cos A.\n- **Small letter faces capital letter**: side a is always across from angle A.\n- **Area: \"half, two sides, sine of the angle between\".**\n- **Sine twins**: sin θ = sin(180° − θ), so always check for a second angle.\n\n## Key terms\n\n- **Sine rule** — a/sin A = b/sin B = c/sin C, for any triangle.\n- **Cosine rule** — a² = b² + c² − 2bc cos A, for any triangle.\n- **Included angle** — the angle between two given sides.\n- **Ambiguous case** — when two different triangles fit the given information (two sides and a non-included angle).\n- **Obtuse angle** — an angle between 90° and 180°; its cosine is negative.\n\n## Summary\n\n- Label sides with small letters opposite the matching capital-letter angles.\n- Sine rule: a/sin A = b/sin B = c/sin C — needs one complete side–angle pair.\n- Cosine rule: a² = b² + c² − 2bc cos A — two sides and the included angle, or three sides.\n- Area of any triangle = ½ab sin C.\n- In the ambiguous case, check whether 180° minus your angle also works.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "In triangle ABC, A = 35°, B = 72° and a = 10 cm. Find b, correct to 1 decimal place.",
+   "options": {
+    "A": "6.0 cm",
+    "B": "9.5 cm",
+    "C": "16.6 cm",
+    "D": "3.8 cm"
+   },
+   "answer": "C",
+   "explanation": "b/sin 72° = 10/sin 35°, so b = 10 sin 72° ÷ sin 35° ≈ 16.6 cm. 6.0 cm has the sines upside down — and b must be longer than a because B is bigger than A.",
+   "steps": [
+    "a = 10 and A = 35° are a complete pair; b is opposite B = 72°. Use the sine rule.",
+    "b/sin 72° = 10/sin 35°.",
+    "b = 10 × sin 72° ÷ sin 35° ≈ 16.58 ≈ 16.6 cm."
+   ],
+   "mistakes": {
+    "A": "Step 2: the sines are upside down. b/sin 72° = 10/sin 35°, so b = 10 × sin 72° ÷ sin 35°.",
+    "B": "Step 3: you multiplied by sin 72° but forgot to divide by sin 35°.",
+    "D": "Step 1: the sine rule uses sines, not cosines."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q1.svg",
+   "diagram_alt": "Triangle ABC with angle A = 35° and angle B = 72°. Side BC = 10 cm is opposite A, and side AC = b is opposite B."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "In triangle ABC, b = 5 m, c = 7 m and the angle between them is A = 60°. Find a, correct to 1 decimal place.",
+   "options": {
+    "A": "10.4 m",
+    "B": "6.2 m",
+    "C": "39 m",
+    "D": "8.6 m"
+   },
+   "answer": "B",
+   "explanation": "a² = 25 + 49 − 2 × 5 × 7 × cos 60° = 74 − 35 = 39, so a = √39 ≈ 6.2 m. 10.4 m adds the correction term instead of subtracting it.",
+   "steps": [
+    "Two sides and the included angle: use the cosine rule.",
+    "a² = 5² + 7² − 2 × 5 × 7 × cos 60° = 74 − 70 × 0.5 = 39.",
+    "a = √39 ≈ 6.24 ≈ 6.2 m."
+   ],
+   "mistakes": {
+    "A": "Step 2: the cosine rule SUBTRACTS 2bc cos A. You added it.",
+    "C": "Step 3: 39 is a². Take the square root.",
+    "D": "Step 2: you left out the −2bc cos A term. That only works when A = 90°."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q2.svg",
+   "diagram_alt": "Triangle ABC with AC = 5 m, AB = 7 m and the 60° angle at A between them. The third side BC is a."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Find the area of the triangle in the diagram, which has sides 9 cm and 11 cm with a 40° angle between them, correct to 1 decimal place.",
+   "options": {
+    "A": "49.5 cm²",
+    "B": "63.6 cm²",
+    "C": "37.9 cm²",
+    "D": "31.8 cm²"
+   },
+   "answer": "D",
+   "explanation": "Area = ½ × 9 × 11 × sin 40° ≈ 31.8 cm². 49.5 cm² leaves out sin 40°, treating it as a right angle.",
+   "steps": [
+    "The 40° angle is between the two given sides, so use Area = ½ab sin C.",
+    "Area = ½ × 9 × 11 × sin 40° = 49.5 × sin 40°.",
+    "Area ≈ 31.82 ≈ 31.8 cm²."
+   ],
+   "mistakes": {
+    "A": "Step 2: ½ × 9 × 11 is only right for a right-angled triangle. Multiply by sin 40°.",
+    "B": "Step 2: you forgot the ½ in ½ab sin C.",
+    "C": "Step 2: the area formula uses sin of the included angle, not cos."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q3.svg",
+   "diagram_alt": "Triangle ABC with AC = 9 cm, AB = 11 cm and a 40° angle at A between them."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "In triangle ABC, a = 12 cm, b = 9 cm and A = 58°. Find θ = angle B, correct to 1 decimal place.",
+   "options": {
+    "A": "39.5°",
+    "B": "43.5°",
+    "C": "140.5°",
+    "D": "50.5°"
+   },
+   "answer": "A",
+   "explanation": "sin B = 9 × sin 58° ÷ 12 ≈ 0.6360, so B ≈ 39.5°. 140.5° is ruled out because it leaves no room for angle A = 58°.",
+   "steps": [
+    "a and A are a complete pair; use sin B/b = sin A/a.",
+    "sin B = 9 × sin 58° ÷ 12 ≈ 0.6360.",
+    "B = sin⁻¹(0.6360…) ≈ 39.5°. (180° − 39.5° = 140.5° is too big with A = 58°.)"
+   ],
+   "mistakes": {
+    "B": "Step 2: angles are not in proportion to sides. Use sin B = 9 sin 58° ÷ 12, then sin⁻¹.",
+    "C": "Step 3: 140.5° + 58° is more than 180°, so the obtuse answer is impossible here.",
+    "D": "Step 3: to find the angle from its sine, use sin⁻¹, not cos⁻¹."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q4.svg",
+   "diagram_alt": "Triangle ABC with angle A = 58°, side BC = 12 cm opposite A, side AC = 9 cm opposite B, and angle B marked θ."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A triangle has sides 5 cm, 6 cm and 8 cm. Find θ, the angle opposite the 8 cm side, correct to 1 decimal place.",
+   "options": {
+    "A": "87.1°",
+    "B": "38.6°",
+    "C": "90.0°",
+    "D": "92.9°"
+   },
+   "answer": "D",
+   "explanation": "cos θ = (25 + 36 − 64) ÷ 60 = −0.05, so θ ≈ 92.9° (obtuse). 87.1° ignores the minus sign.",
+   "steps": [
+    "The angle is opposite 8 cm, so cos θ = (5² + 6² − 8²) ÷ (2 × 5 × 6).",
+    "cos θ = (25 + 36 − 64) ÷ 60 = −3/60 = −0.05.",
+    "θ = cos⁻¹(−0.05) ≈ 92.87 ≈ 92.9°."
+   ],
+   "mistakes": {
+    "A": "Step 2: the numerator is 5² + 6² − 8² = −3, which is negative. Keep the minus sign: the angle is obtuse.",
+    "B": "Step 1: that is the angle opposite the 5 cm side. The side opposite θ (8 cm) goes in the \"minus\" place.",
+    "C": "Step 2: 5² + 6² is 61, not 64, so this is not a right-angled triangle. Use the cosine rule."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q5.svg",
+   "diagram_alt": "Triangle ABC with AB = 6 cm, AC = 5 cm and BC = 8 cm. The angle θ is at A, opposite the 8 cm side."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Without a calculator, find the exact area of a triangle with sides 6 cm and 8 cm and an included angle of 30°.",
+   "options": {
+    "A": "24 cm²",
+    "B": "12√3 cm²",
+    "C": "12 cm²",
+    "D": "20.8 cm²"
+   },
+   "answer": "C",
+   "explanation": "Area = ½ × 6 × 8 × sin 30° = 24 × ½ = 12 cm². 12√3 cm² uses sin 60° by mistake.",
+   "steps": [
+    "sin 30° = 1/2 (from the 1-√3-2 triangle).",
+    "Area = ½ × 6 × 8 × sin 30° = 24 × sin 30°.",
+    "24 × 1/2 = 12 cm²."
+   ],
+   "mistakes": {
+    "A": "Step 2: you forgot the ½ in ½ab sin C.",
+    "B": "Step 1: sin 30° = 1/2, not √3/2 (√3/2 is sin 60°).",
+    "D": "Step 1: the area formula uses sine, not cosine (cos 30° = √3/2)."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q6.svg",
+   "diagram_alt": "Triangle ABC with AC = 6 cm, AB = 8 cm and a 30° angle at A between them."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A triangular garden bed has two sides of 10 m and 14 m with a 72° angle between them. Find its perimeter, correct to 1 decimal place.",
+   "options": {
+    "A": "41.2 m",
+    "B": "38.5 m",
+    "C": "43.6 m",
+    "D": "24.0 m"
+   },
+   "answer": "B",
+   "explanation": "Third side: √(100 + 196 − 280 cos 72°) ≈ 14.47 m, so the perimeter ≈ 10 + 14 + 14.47 ≈ 38.5 m. 41.2 m treats the 72° angle as 90°.",
+   "steps": [
+    "Cosine rule for the third side: a² = 10² + 14² − 2 × 10 × 14 × cos 72°.",
+    "a² = 296 − 280 × 0.3090… ≈ 209.48, so a ≈ 14.473 m.",
+    "Perimeter = 10 + 14 + 14.473 ≈ 38.5 m."
+   ],
+   "mistakes": {
+    "A": "Step 1: you left out −2bc cos A, which only works for a right angle. Include it: a² = 296 − 280 cos 72°.",
+    "C": "Step 1: the cosine rule subtracts 2bc cos A — you added it.",
+    "D": "Step 3: the perimeter includes the third side too. Add BC to 10 + 14."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q7.svg",
+   "diagram_alt": "Triangle ABC with AC = 10 m, AB = 14 m and a 72° angle at A between them. The third side is not labelled."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A ship sails 20 km from A to B on a bearing of 050°T, then 35 km from B to C on a bearing of 170°T. How far is C from A, correct to 1 decimal place?",
+   "options": {
+    "A": "30.4 km",
+    "B": "48.2 km",
+    "C": "40.3 km",
+    "D": "55.0 km"
+   },
+   "answer": "A",
+   "explanation": "The interior angle at B is 60° (co-interior angles with the north lines: 180° − (170° − 50°)). AC² = 400 + 1225 − 1400 cos 60° = 925, so AC ≈ 30.4 km. 48.2 km uses 120° instead.",
+   "steps": [
+    "At B, the back-bearing to A is 230°; the angle between BA (230°) and BC (170°) is 60°.",
+    "Cosine rule: AC² = 20² + 35² − 2 × 20 × 35 × cos 60° = 1625 − 700 = 925.",
+    "AC = √925 ≈ 30.41 ≈ 30.4 km."
+   ],
+   "mistakes": {
+    "B": "Step 1: the turn is 120°, but the angle INSIDE the triangle at B is 180° − 120° = 60°.",
+    "C": "Step 2: angle B is 60°, not 90°, so you can’t use Pythagoras. Use the cosine rule.",
+    "D": "Step 2: the legs are not in a straight line, so you can’t add them."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q8.svg",
+   "diagram_alt": "A ship sails 20 km from A to B on a bearing of 50°, then 35 km from B to C on a bearing of 170°. A dashed line joins A and C."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "In triangle ABC, A = 35°, b = AC = 12 cm and a = BC = 8 cm. Find all possible values of angle B, correct to 1 decimal place.",
+   "options": {
+    "A": "59.4° only",
+    "B": "59.4° or 145.0°",
+    "C": "59.4° or 120.6°",
+    "D": "22.5° or 157.5°"
+   },
+   "answer": "C",
+   "explanation": "sin B = 12 sin 35° ÷ 8 ≈ 0.8604, so B ≈ 59.4° or 180° − 59.4° = 120.6°. Both leave room for angle C, so there are two triangles — this is the ambiguous case.",
+   "steps": [
+    "Sine rule: sin B/12 = sin 35°/8, so sin B = 12 × sin 35° ÷ 8 ≈ 0.8604.",
+    "B = sin⁻¹(0.8604…) ≈ 59.36°.",
+    "Also B = 180° − 59.36° ≈ 120.64°; 120.64° + 35° is less than 180°, so B ≈ 59.4° or 120.6°."
+   ],
+   "mistakes": {
+    "A": "Step 3: sin B = 0.8604 also fits an obtuse angle, 180° − 59.4° = 120.6°, and 120.6° + 35° is less than 180°, so both work.",
+    "B": "Step 3: the second angle is 180° − B, not 180° − A.",
+    "D": "Step 1: the sine rule is sin B = b sin A ÷ a = 12 sin 35° ÷ 8; you had a and b swapped."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q9.svg",
+   "diagram_alt": "Angle A = 35° at the left end of a base line, with side AC = 12 cm going up to C. Side BC = 8 cm must reach the base line, where B can be."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "Find the area of a triangle with sides 7 cm, 9 cm and 12 cm, correct to 1 decimal place.",
+   "options": {
+    "A": "31.5 cm²",
+    "B": "62.6 cm²",
+    "C": "3.5 cm²",
+    "D": "31.3 cm²"
+   },
+   "answer": "D",
+   "explanation": "cos C = (49 + 81 − 144) ÷ 126 = −1/9, so C ≈ 96.38°. Area = ½ × 7 × 9 × sin C ≈ 31.3 cm². 31.5 cm² assumes a right angle.",
+   "steps": [
+    "Find the angle C between the 7 cm and 9 cm sides: cos C = (7² + 9² − 12²) ÷ (2 × 7 × 9) = −14/126.",
+    "C = cos⁻¹(−0.1111…) ≈ 96.38°.",
+    "Area = ½ × 7 × 9 × sin 96.38° ≈ 31.30 ≈ 31.3 cm²."
+   ],
+   "mistakes": {
+    "A": "Step 2: the triangle has no right angle (7² + 9² is not 12²). Find an angle with the cosine rule first.",
+    "B": "Step 3: you forgot the ½ in ½ab sin C.",
+    "C": "Step 3: the area formula uses sin C, not cos C."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q10.svg",
+   "diagram_alt": "Triangle ABC with AB = 9 cm, AC = 7 cm and BC = 12 cm. No angles are given."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "In triangle ABC, AB = 10 cm, angle A = 50° and angle B = 60°. Find the area of the triangle, correct to 1 decimal place.",
+   "options": {
+    "A": "31.2 cm²",
+    "B": "35.3 cm²",
+    "C": "40.8 cm²",
+    "D": "53.1 cm²"
+   },
+   "answer": "B",
+   "explanation": "C = 70°. BC = 10 sin 50° ÷ sin 70° ≈ 8.152 cm. Area = ½ × 10 × 8.152 × sin 60° ≈ 35.3 cm². 31.2 cm² uses angle A, which is not between AB and BC.",
+   "steps": [
+    "C = 180° − 50° − 60° = 70°, and AB = 10 is opposite C.",
+    "Sine rule: BC/sin 50° = 10/sin 70°, so BC ≈ 8.152 cm.",
+    "Area = ½ × AB × BC × sin B = ½ × 10 × 8.152 × sin 60° ≈ 35.3 cm²."
+   ],
+   "mistakes": {
+    "A": "Step 3: ½ × AB × BC × sin must use the angle BETWEEN AB and BC, which is B = 60°, not A.",
+    "C": "Step 3: you left out the sine of the included angle.",
+    "D": "Step 2: BC is opposite angle A, so BC = 10 sin 50° ÷ sin 70°; you swapped the sines."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q11.svg",
+   "diagram_alt": "Triangle ABC with AB = 10 cm along the bottom, angle A = 50° and angle B = 60°."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A triangle has sides 3, 5 and 7 units. Without a calculator, find the exact size of its largest angle.",
+   "options": {
+    "A": "120°",
+    "B": "60°",
+    "C": "21.8°",
+    "D": "90°"
+   },
+   "answer": "A",
+   "explanation": "The largest angle is opposite 7: cos θ = (9 + 25 − 49) ÷ 30 = −15/30 = −1/2, so θ = 120°. 60° drops the minus sign.",
+   "steps": [
+    "The largest angle is opposite the longest side, 7.",
+    "cos θ = (3² + 5² − 7²) ÷ (2 × 3 × 5) = (9 + 25 − 49) ÷ 30 = −1/2.",
+    "cos 60° = 1/2, so cos θ = −1/2 gives θ = 180° − 60° = 120°."
+   ],
+   "mistakes": {
+    "B": "Step 2: cos θ = (9 + 25 − 49) ÷ 30 = −1/2. Keep the minus sign: cos⁻¹(−1/2) is obtuse.",
+    "C": "Step 1: that is the smallest angle (opposite the 3). The largest angle is opposite the longest side, 7.",
+    "D": "Step 2: 3² + 5² = 34, not 49, so the triangle is not right-angled."
+   },
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-q12.svg",
+   "diagram_alt": "Triangle ABC with AC = 3, AB = 5 and BC = 7. The angle at A, opposite the side of 7, is marked with a question mark."
+  }
+ ]
+}

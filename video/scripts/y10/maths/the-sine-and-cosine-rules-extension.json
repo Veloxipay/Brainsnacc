@@ -1,0 +1,108 @@
+{
+ "lesson": "y10/maths/the-sine-and-cosine-rules-extension.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "The sine and cosine rules (extension)",
+ "icon": "🔺",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "The sine and cosine rules",
+   "sub": "Trigonometry for triangles with no right angle",
+   "icon": "🔺",
+   "say": "SOH CAH TOA needs a right angle. But most triangles in the real world don’t have one. The sine rule and the cosine rule solve any triangle at all."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🔑",
+   "everyday": "Each key has its own lock",
+   "icon2": "🔺",
+   "science": "Each side has its own opposite angle",
+   "breaks": "In the ambiguous case one sine value fits two angles, so there can be two triangles.",
+   "say": "Each side of a triangle has a partner: the angle directly across from it. Once you know one complete pair, a side and its opposite angle, the sine rule unlocks the others. If you don’t have a pair, use the cosine rule instead."
+  },
+  {
+   "type": "equation",
+   "heading": "The sine rule",
+   "equation": "a/sin A = b/sin B = c/sin C",
+   "parts": [
+    [
+     "a, b, c",
+     "sides"
+    ],
+    [
+     "A, B, C",
+     "the angles opposite them"
+    ]
+   ],
+   "say": "The sine rule: a over sine A equals b over sine B equals c over sine C. Small a is the side opposite capital A, and so on. You need one complete pair to use it."
+  },
+  {
+   "type": "diagram",
+   "heading": "Sine rule: find a side",
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-ex1.svg",
+   "notes": [
+    "Pair: a = 12, A = 40°",
+    "b/sin 65° = 12/sin 40°",
+    "b ≈ 16.9 cm"
+   ],
+   "say": "First the triangle. Then the angles forty and sixty-five degrees, and the side of twelve opposite forty. That’s a complete pair. So b over sine sixty-five equals twelve over sine forty, and b is about sixteen point nine centimetres.",
+   "caption": "b/sin 65° = 12/sin 40°, so b ≈ 16.9 cm."
+  },
+  {
+   "type": "equation",
+   "heading": "The cosine rule",
+   "equation": "a² = b² + c² − 2bc cos A",
+   "parts": [
+    [
+     "b, c",
+     "two known sides"
+    ],
+    [
+     "A",
+     "the angle between them"
+    ],
+    [
+     "a",
+     "the side opposite A"
+    ]
+   ],
+   "say": "The cosine rule: a squared equals b squared plus c squared, minus two b c cos A. It’s Pythagoras with a correction. Use it for two sides and the angle between them, or for three sides."
+  },
+  {
+   "type": "example",
+   "heading": "Cosine rule: find an angle",
+   "question": "Sides 7 m, 8 m and 13 m. Find the largest angle.",
+   "lines": [
+    "cos θ = (49 + 64 − 169) ÷ 112",
+    "cos θ = −0.5",
+    "θ = 120°",
+    "Area = ½ × 7 × 8 × sin 120° ≈ 24.2 m²"
+   ],
+   "say": "The largest angle is opposite thirteen. Cos theta is forty-nine plus sixty-four minus one hundred and sixty-nine, all over one hundred and twelve. That’s negative one half, so theta is one hundred and twenty degrees. Then the area is a half times seven times eight times sine one twenty, about twenty-four point two square metres."
+  },
+  {
+   "type": "diagram",
+   "heading": "The ambiguous case",
+   "diagram": "diagrams/y10/maths/the-sine-and-cosine-rules-extension-ambiguous.svg",
+   "notes": [
+    "sin θ = sin(180° − θ)",
+    "A side of 8 can meet the base twice",
+    "Always test 180° minus your angle"
+   ],
+   "say": "Here angle A is thirty-five degrees and A C is twelve. A side of eight swings down from C, and it can meet the base line in two places. So two triangles fit. Whenever the sine rule gives you an angle, test one hundred and eighty minus it too."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Side a is opposite angle A",
+    "Complete pair → sine rule",
+    "Angle between two sides → cosine rule",
+    "Area = ½ab sin C",
+    "Check the ambiguous case"
+   ],
+   "say": "Quick recap. Side a faces angle A. A complete pair means the sine rule. An angle between two known sides, or three sides, means the cosine rule. Area is half a b sine C. And check for a second angle. Now try the practice questions!"
+  }
+ ]
+}
