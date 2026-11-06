@@ -1,0 +1,383 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 2 · Test 3",
+ "kind": "test",
+ "summary": "Fifteen questions on congruence proofs, similar triangles, circle properties, and networks: degree, trails and circuits, and shortest paths.",
+ "minutes": 25,
+ "body": "This test covers Chapter 2: writing geometric proofs with congruent triangles, similar triangles, circle properties (angles and chords), and networks — vertices, edges and degree, paths, trails and circuits, and shortest paths.\n\nAllow about 25 minutes. Work with no notes and no calculator unless a question says you may use one. Read every diagram carefully: diagrams are drawn to scale, but always use the numbers and markings given rather than measuring. Write your working on paper so you can check each step, then choose the best answer. Questions get harder as you go, and the last two are challenge questions.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "Which test shows that △XYZ is congruent to △LMN?",
+   "options": {
+    "A": "SAS",
+    "B": "SSS",
+    "C": "AAS",
+    "D": "RHS"
+   },
+   "answer": "D",
+   "explanation": "Both triangles have a right angle, the hypotenuses XZ and LN are equal, and XY = MN. That is RHS. It is not SAS, because the right angle is not between the two marked sides.",
+   "steps": [
+    "Both triangles have a right angle (at Y and at M).",
+    "Hypotenuse XZ = LN (two ticks) and side XY = MN (one tick).",
+    "Right angle, hypotenuse and one side: RHS."
+   ],
+   "mistakes": {
+    "A": "Step 2: the right angle is between XY and YZ, but the marked sides are XY and XZ — the angle is not between them.",
+    "B": "Step 1: only two pairs of sides are marked equal, not three.",
+    "C": "Step 1: only one pair of angles (the right angles) is marked, so AAS can't be used."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q1.svg",
+   "diagram_alt": "Two right-angled triangles. Triangle XYZ has the right angle at Y; triangle LMN has the right angle at M. Hypotenuses XZ and LN have two ticks; sides XY (upright) and MN (along the base) have one tick."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Similar triangles",
+   "prompt": "One triangle has sides 3 cm, 4 cm and 6 cm. Another has sides 6 cm, 8 cm and 12 cm. Which statement is true?",
+   "options": {
+    "A": "They are congruent (SSS)",
+    "B": "They are not similar, because the sides don't increase by the same amount",
+    "C": "They are similar (SSS) with scale factor 2",
+    "D": "They are similar (AAA) with scale factor 3"
+   },
+   "answer": "C",
+   "explanation": "6 ÷ 3 = 8 ÷ 4 = 12 ÷ 6 = 2, so all three pairs of sides are in the same ratio: similar by SSS with k = 2. The sides increase by different amounts, but that doesn't matter.",
+   "steps": [
+    "Match smallest with smallest: 3 ↔ 6, 4 ↔ 8, 6 ↔ 12.",
+    "Ratios: 6 ÷ 3 = 2, 8 ÷ 4 = 2, 12 ÷ 6 = 2 — all equal.",
+    "So the triangles are similar (SSS) with scale factor 2."
+   ],
+   "mistakes": {
+    "A": "Step 2: congruent triangles have equal sides; these sides are in the ratio 1 : 2, so they are similar, not congruent.",
+    "B": "Step 2: similarity needs the same RATIO, not the same difference. Divide matching sides.",
+    "D": "Step 2: no angles are given, and 6 − 3 = 3 is a difference. Divide: 6 ÷ 3 = 2."
+   }
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "Points P and Q are on the circle on the same side of chord AB. ∠APB = 63°. Find x, the size of ∠AQB.",
+   "options": {
+    "A": "63°",
+    "B": "126°",
+    "C": "31.5°",
+    "D": "117°"
+   },
+   "answer": "A",
+   "explanation": "P and Q are on the same side of AB, so ∠APB and ∠AQB stand on the same arc and are equal: x = 63°.",
+   "steps": [
+    "P and Q both lie on the circle, on the same side of chord AB.",
+    "Angles in the same segment are equal.",
+    "x = 63°."
+   ],
+   "mistakes": {
+    "B": "Step 2: you doubled. Both angles are at the circumference, so they are equal.",
+    "C": "Step 2: you halved. Halving is only for going from a centre angle to a circumference angle.",
+    "D": "Step 2: 180° − 63° is for opposite angles of a cyclic quadrilateral. P and Q are in the same segment."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q3.svg",
+   "diagram_alt": "A circle with chord AB near the bottom. P and Q are on the upper part of the circle, each joined to A and B. Angle APB is 63° and angle AQB is x."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Networks: vertices, edges and degree",
+   "prompt": "How many edges does this network have?",
+   "options": {
+    "A": "6",
+    "B": "7",
+    "C": "4",
+    "D": "14"
+   },
+   "answer": "B",
+   "explanation": "The edges are AB (twice), BC, CD, DA, AC and BD: 7 edges. Counting the double edge once gives 6.",
+   "steps": [
+    "List the edges: AB, AB (curved), BC, CD, DA.",
+    "Add the two diagonals AC and BD.",
+    "Total = 7 edges."
+   ],
+   "mistakes": {
+    "A": "Step 2: A and B are joined by TWO edges. Count both.",
+    "C": "Step 1: 4 is the number of vertices, not edges.",
+    "D": "Step 2: 14 is the sum of the degrees. Each edge is counted twice in that sum."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q4.svg",
+   "diagram_alt": "A network with vertices A, B, C and D at the corners of a rectangle. Edges: A–B twice (one straight, one curved), B–C, C–D, D–A, and both diagonals A–C and B–D."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "O is the centre of the circle. ∠ACB = 50° and ∠AOB = (2x + 20)°. Find x.",
+   "options": {
+    "A": "15",
+    "B": "2.5",
+    "C": "40",
+    "D": "50"
+   },
+   "answer": "C",
+   "explanation": "∠AOB = 2 × 50° = 100°, so 2x + 20 = 100, 2x = 80 and x = 40. Setting 2x + 20 = 50 forgets the doubling.",
+   "steps": [
+    "Angle at the centre = 2 × angle at the circumference: ∠AOB = 100°.",
+    "2x + 20 = 100, so 2x = 80.",
+    "x = 40 (check: 2 × 40 + 20 = 100)."
+   ],
+   "mistakes": {
+    "A": "Step 1: ∠AOB is not equal to ∠ACB — it is double: 2x + 20 = 100.",
+    "B": "Step 1: you halved 50°. The centre angle is the larger one, so 2x + 20 = 2 × 50.",
+    "D": "Step 2: 50 is the angle at C, not x. Solve 2x + 20 = 100."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q5.svg",
+   "diagram_alt": "A circle with centre O, C at the top and A and B on the lower part. Angle ACB is 50° and angle AOB is labelled (2x + 20)°."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Paths, trails and circuits",
+   "prompt": "This network has an Eulerian trail but no Eulerian circuit. At which vertices can the trail start?",
+   "options": {
+    "A": "At E",
+    "B": "At any vertex",
+    "C": "At A or F",
+    "D": "At B or C"
+   },
+   "answer": "D",
+   "explanation": "Degrees: A 2, B 3, C 3, D 2, E 4, F 2. The odd vertices are B and C, so the trail starts at one of them and ends at the other.",
+   "steps": [
+    "Find each degree: A 2, B 3, C 3, D 2, E 4, F 2.",
+    "The two odd vertices are B and C.",
+    "An Eulerian trail starts at one odd vertex and ends at the other: start at B or C."
+   ],
+   "mistakes": {
+    "A": "Step 2: E has degree 4 (even). The trail must start at an odd vertex.",
+    "B": "Step 3: you can start anywhere only when every degree is even (an Eulerian circuit).",
+    "C": "Step 2: A and F have degree 2 (even). Find the two odd vertices."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q6.svg",
+   "diagram_alt": "A network with A, B, C along the bottom and F, E, D along the top: a rectangle A–B–C–D–E–F–A plus edges B–E and E–C."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Shortest paths",
+   "prompt": "Dijkstra's algorithm is used from A. Which vertex is made permanent THIRD (counting A as first)?",
+   "options": {
+    "A": "B",
+    "B": "C",
+    "C": "D",
+    "D": "E"
+   },
+   "answer": "A",
+   "explanation": "A = 0 first; C = 3 second; then B's label drops from 7 to 3 + 2 = 5, the smallest temporary label, so B is third. Then D 9, E 10, F 14.",
+   "steps": [
+    "A = 0. Temporary labels: B 7, C 3. Smallest is C, so C is second.",
+    "From C: B = min(7, 3 + 2) = 5, E = 3 + 8 = 11.",
+    "Smallest temporary label is B (5), so B is made permanent third."
+   ],
+   "mistakes": {
+    "B": "Step 2: C (label 3) is made permanent second. The third is the next smallest label after that.",
+    "C": "Step 3: D's label (9) is not the smallest yet — B's label has dropped to 3 + 2 = 5.",
+    "D": "Step 3: E's label is 3 + 8 = 11 at this stage, bigger than B's label of 5."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q7.svg",
+   "diagram_alt": "A weighted network with vertices A to F. AB 7, AC 3, BC 2, BD 4, CE 8, DE 1, DF 6 and EF 4."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "AD and BC cross at M, and AB ∥ CD. Which reason explains why ∠BAM = ∠CDM?",
+   "options": {
+    "A": "Vertically opposite angles",
+    "B": "Alternate angles, AB ∥ CD",
+    "C": "Corresponding angles, AB ∥ CD",
+    "D": "Angles in the same segment"
+   },
+   "answer": "B",
+   "explanation": "AD crosses the parallel lines AB and CD. ∠BAM and ∠CDM are on opposite sides of AD and between the parallel lines (a Z shape), so they are equal alternate angles. Vertically opposite angles would both be at M.",
+   "steps": [
+    "AD is a transversal crossing the parallel lines AB and CD.",
+    "∠BAM (at A) and ∠CDM (at D) are on opposite sides of AD, inside the parallel lines — a Z shape.",
+    "So they are equal by: alternate angles, AB ∥ CD."
+   ],
+   "mistakes": {
+    "A": "Step 1: vertically opposite angles are at the same point (M). These angles are at A and D.",
+    "C": "Step 2: the angles are on opposite sides of the transversal AD, between the parallel lines — a Z shape, so alternate.",
+    "D": "Step 1: there is no circle here; that rule is about angles at the circumference of a circle."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q8.svg",
+   "diagram_alt": "Segments AD and BC cross at M. AB and CD are parallel (marked with arrows). The angle at A between AB and AM and the angle at D between DC and DM are marked."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Similar triangles",
+   "prompt": "A straight ramp starts at A. At 2 m along the ground from A, a post 0.6 m tall touches the ramp. How high is the ramp, x, at 5 m from A?",
+   "options": {
+    "A": "3.6 m",
+    "B": "16.7 m",
+    "C": "1.5 m",
+    "D": "1.1 m"
+   },
+   "answer": "C",
+   "explanation": "The two right-angled triangles share the angle at A, so they are similar. k = 5 ÷ 2 = 2.5, so x = 0.6 × 2.5 = 1.5 m.",
+   "steps": [
+    "The small and big triangles share the angle at A and both have a right angle, so they are similar.",
+    "k = 5 ÷ 2 = 2.5 (big base ÷ small base).",
+    "x = 0.6 × 2.5 = 1.5 m."
+   ],
+   "mistakes": {
+    "A": "Step 2: you added 3 m (the extra distance) to 0.6 m. Similar triangles multiply by a scale factor.",
+    "B": "Step 2: you multiplied by 5 ÷ 0.6. Compare matching sides: 5 ÷ 2.",
+    "D": "Step 2: you used the 3 m gap between the post and the end. The big triangle's base is the whole 5 m."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q9.svg",
+   "diagram_alt": "A ramp rising from A. A post 0.6 m tall stands 2 m from A and touches the ramp. At 5 m from A the ramp's height is marked x. Both upright lines meet the ground at right angles."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Similar triangles",
+   "prompt": "In the diagram, DE ∥ BC, DB = 6 cm, DE = 4 cm and BC = 12 cm. Find x, the length of AD.",
+   "options": {
+    "A": "2 cm",
+    "B": "9 cm",
+    "C": "18 cm",
+    "D": "3 cm"
+   },
+   "answer": "D",
+   "explanation": "The small triangle is ⅓ of the big one (4 ÷ 12), so x ÷ (x + 6) = ⅓, giving 3x = x + 6 and x = 3 cm. Check: AB = 9 cm and 3 ÷ 9 = ⅓ ✓",
+   "steps": [
+    "△ADE ||| △ABC with ratio DE : BC = 4 : 12 = 1 : 3.",
+    "AD : AB = 1 : 3, so x ÷ (x + 6) = ⅓, giving 3x = x + 6.",
+    "2x = 6, so x = 3 cm (AB = 9 cm)."
+   ],
+   "mistakes": {
+    "A": "Step 2: you used 6 × 4 ÷ 12, treating DB as a side of the big triangle. The big triangle's side is AB = x + 6.",
+    "B": "Step 3: 9 cm is the whole side AB. AD = AB − DB.",
+    "C": "Step 2: AD is in the small triangle, so it must be shorter than AB. Use AD ÷ AB = 4 ÷ 12."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q10.svg",
+   "diagram_alt": "Triangle ABC with D on AB and E on AC, DE parallel to BC. AD is marked x, DB is 6 cm, DE is 4 cm and BC is 12 cm."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "A chord 24 cm long is 5 cm from the centre of a circle. Find r, the radius.",
+   "options": {
+    "A": "24.5 cm",
+    "B": "13 cm",
+    "C": "12 cm",
+    "D": "17 cm"
+   },
+   "answer": "B",
+   "explanation": "Half the chord is 12 cm, so r² = 12² + 5² = 144 + 25 = 169 and r = 13 cm. Using the whole chord gives 24.5 cm.",
+   "steps": [
+    "The perpendicular from O bisects the chord: 24 ÷ 2 = 12 cm.",
+    "The radius is the hypotenuse: r² = 12² + 5².",
+    "r² = 169, so r = 13 cm."
+   ],
+   "mistakes": {
+    "A": "Step 1: halve the chord first: use 12 cm, not 24 cm.",
+    "C": "Step 2: 12 cm is half the chord. The radius is the hypotenuse of the right-angled triangle.",
+    "D": "Step 2: you added the lengths 12 + 5. Square them, add, then square root."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q11.svg",
+   "diagram_alt": "A circle with centre O. Chord AB is 24 cm long. A dashed perpendicular from O to the chord is 5 cm, and the radius OA is marked r."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Paths, trails and circuits",
+   "prompt": "A street sweeper must drive along every street in a suburb exactly once and finish back at the depot. What does the network of streets need?",
+   "options": {
+    "A": "A Hamiltonian cycle",
+    "B": "An Eulerian trail that is not a circuit",
+    "C": "An Eulerian circuit",
+    "D": "A Hamiltonian path"
+   },
+   "answer": "C",
+   "explanation": "Streets are edges. Using every edge exactly once and returning to the start is an Eulerian circuit, so every intersection must have even degree. A Hamiltonian cycle would visit every intersection instead.",
+   "steps": [
+    "Streets are edges and intersections are vertices.",
+    "Every edge exactly once → Eulerian.",
+    "Return to the start → a circuit: an Eulerian circuit (every degree even)."
+   ],
+   "mistakes": {
+    "A": "Step 1: a Hamiltonian cycle visits every INTERSECTION (vertex) once. The sweeper must cover every STREET (edge).",
+    "B": "Step 2: the sweeper must return to the depot, so the route must be closed — a circuit.",
+    "D": "Step 1: Hamiltonian routes are about vertices; streets are edges."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Shortest paths",
+   "prompt": "The weights are distances in km. The road between D and E is closed. What is now the shortest distance from A to F?",
+   "options": {
+    "A": "15 km",
+    "B": "14 km",
+    "C": "16 km",
+    "D": "19 km"
+   },
+   "answer": "A",
+   "explanation": "Without DE, the routes are A–C–E–F = 5 + 7 + 3 = 15, A–B–D–F = 16, A–B–C–E–F = 16, so the shortest is 15 km.",
+   "steps": [
+    "Before the closure the shortest was A–B–D–E–F = 14, which uses DE.",
+    "Without DE: A–C–E–F = 15, A–B–D–F = 16, A–B–C–E–F = 16, A–C–D–F = 19.",
+    "New shortest distance = 15 km."
+   ],
+   "mistakes": {
+    "B": "Step 1: 14 km is the old shortest route A–B–D–E–F, which uses the closed road DE.",
+    "C": "Step 2: 16 km is A–B–D–F or A–B–C–E–F. Check A–C–E–F.",
+    "D": "Step 2: 19 km is A–C–D–F. There are shorter routes without DE."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q13.svg",
+   "diagram_alt": "A weighted network with vertices A to F, distances in km. AB 4, AC 5, BC 2, BD 5, CD 7, CE 7, DE 2, DF 7 and EF 3."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "O is the centre. A, B, C and D lie on the circle, with B on the major arc AC and D on the minor arc AC. ∠AOC = 140°. Find x, the size of ∠ADC.",
+   "options": {
+    "A": "70°",
+    "B": "140°",
+    "C": "110°",
+    "D": "220°"
+   },
+   "answer": "C",
+   "explanation": "∠ABC = 140° ÷ 2 = 70° (angle at the centre). ABCD is cyclic, so x = 180° − 70° = 110°. (Also: reflex ∠AOC = 220°, and half of it is 110°.)",
+   "steps": [
+    "∠ABC stands on the minor arc AC, so ∠ABC = 140° ÷ 2 = 70°.",
+    "ABCD is a cyclic quadrilateral, so ∠ABC + ∠ADC = 180°.",
+    "x = 180° − 70° = 110°."
+   ],
+   "mistakes": {
+    "A": "Step 1 only: 70° is ∠ABC. D is on the other side of AC, so use the cyclic quadrilateral rule.",
+    "B": "Step 1: the angle at the circumference is half the centre angle, and D is in the other segment.",
+    "D": "Step 2: 220° is the reflex angle AOC. The angle at D is half of it: 110°."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q14.svg",
+   "diagram_alt": "A circle with centre O. B is at the top, D at the bottom, A on the lower left and C on the lower right; ABCD is a quadrilateral. Radii OA and OC are drawn with angle AOC 140° (facing D). Angle ADC is marked x."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Shortest paths",
+   "prompt": "The direct road from A to D is y km. For which smallest whole-number value of y is the route A–B–C–D shorter than the direct road?",
+   "options": {
+    "A": "9",
+    "B": "10",
+    "C": "8",
+    "D": "11"
+   },
+   "answer": "B",
+   "explanation": "A–B–C–D = 3 + 4 + 2 = 9 km. It is shorter than the direct road when y is more than 9, so the smallest whole number is y = 10. At y = 9 they tie.",
+   "steps": [
+    "Length of A–B–C–D = 3 + 4 + 2 = 9 km.",
+    "A–B–C–D is shorter than the direct road when 9 is less than y.",
+    "Smallest whole number greater than 9: y = 10."
+   ],
+   "mistakes": {
+    "A": "Step 2: when y = 9 the two routes are equal (9 km each), so A–B–C–D is not shorter.",
+    "C": "Step 2: when y = 8 the direct road is shorter than A–B–C–D (9 km).",
+    "D": "Step 1: 11 km is A–B–D. The question compares the direct road with A–B–C–D = 3 + 4 + 2 = 9."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-3-q15.svg",
+   "diagram_alt": "A network of roads between A, B, C and D: AB 3 km, BC 4 km, CD 2 km, BD 8 km, and the direct road AD labelled y."
+  }
+ ]
+}

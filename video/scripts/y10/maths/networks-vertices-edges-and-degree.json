@@ -1,0 +1,87 @@
+{
+ "lesson": "y10/maths/networks-vertices-edges-and-degree.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Networks: vertices, edges and degree",
+ "icon": "🔗",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Networks: vertices, edges and degree",
+   "sub": "Dots and lines that model the world",
+   "icon": "🔗",
+   "say": "Train lines, friendships, computers on the internet: all of them are about what is connected to what. A network shows those connections with dots and lines."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🚆",
+   "everyday": "A train map shows stations and links, not real distances",
+   "icon2": "🔗",
+   "science": "A network shows vertices and edges, only connections matter",
+   "breaks": "A train map keeps stations roughly in place; in a network, position does not matter at all.",
+   "say": "Think of a train map. It doesn't show the real shape of the tracks, just which stations are linked. A network is the same, except that positions don't matter at all. You can move the dots anywhere as long as the same things stay joined."
+  },
+  {
+   "type": "diagram",
+   "heading": "Vertices, edges, loops",
+   "diagram": "diagrams/y10/maths/networks-vertices-edges-and-degree-net.svg",
+   "notes": [
+    "Dots = vertices, lines = edges",
+    "Two edges B to C = multiple edges",
+    "Loop at D"
+   ],
+   "say": "First the vertices, A to E. Then the edges. Notice B and C are joined by two edges, called multiple edges, and D has a loop, an edge that starts and ends at the same vertex."
+  },
+  {
+   "type": "diagram",
+   "heading": "Degree of each vertex",
+   "diagram": "diagrams/y10/maths/networks-vertices-edges-and-degree-degrees.svg",
+   "notes": [
+    "Count edge-ends at each vertex",
+    "A loop adds 2",
+    "Total 16 = 2 × 8 edges"
+   ],
+   "say": "The degree is the number of edge-ends at a vertex. A has three. B has three, counting both edges to C. D has four, because the loop adds two. The degrees add to sixteen, which is two times the eight edges."
+  },
+  {
+   "type": "equation",
+   "heading": "The handshaking rule",
+   "equation": "sum of degrees = 2 × edges",
+   "parts": [
+    [
+     "degree",
+     "edge-ends at a vertex"
+    ],
+    [
+     "× 2",
+     "every edge has two ends"
+    ]
+   ],
+   "say": "Every edge has two ends, so the sum of the degrees is always twice the number of edges. That means the total is even, and there is always an even number of odd vertices."
+  },
+  {
+   "type": "example",
+   "heading": "Euler’s formula",
+   "question": "A connected planar network has 8 vertices and 12 edges. How many faces?",
+   "lines": [
+    "v − e + f = 2",
+    "8 − 12 + f = 2",
+    "f = 6"
+   ],
+   "say": "For a connected planar network, v minus e plus f equals two. Eight minus twelve plus f equals two, so f is six faces, including the outside one.",
+   "caption": "v − e + f = 2: 8 − 12 + f = 2, so f = 6."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Vertices joined by edges",
+    "Degree = edge-ends; loop counts 2",
+    "Sum of degrees = 2 × edges",
+    "Matrix entries count edges",
+    "Planar: v − e + f = 2"
+   ],
+   "say": "Quick recap. A network is vertices joined by edges. The degree counts edge-ends, and a loop counts two. The sum of degrees is twice the number of edges. An adjacency matrix counts edges between pairs. And for planar networks, v minus e plus f equals two. Now try the practice questions!"
+  }
+ ]
+}

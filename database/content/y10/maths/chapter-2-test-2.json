@@ -1,0 +1,381 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 2 · Test 2",
+ "kind": "test",
+ "summary": "Fifteen questions on congruence proofs, similar triangles, circle properties, and networks: degree, trails and circuits, and shortest paths.",
+ "minutes": 25,
+ "body": "This test covers Chapter 2: writing geometric proofs with congruent triangles, similar triangles, circle properties (angles and chords), and networks — vertices, edges and degree, paths, trails and circuits, and shortest paths.\n\nAllow about 25 minutes. Work with no notes and no calculator unless a question says you may use one. Read every diagram carefully: diagrams are drawn to scale, but always use the numbers and markings given rather than measuring. Write your working on paper so you can check each step, then choose the best answer. Questions get harder as you go, and the last two are challenge questions.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "Which congruence test shows that triangle ABC is congruent to triangle PQR?",
+   "options": {
+    "A": "SAS",
+    "B": "SSS",
+    "C": "AAS",
+    "D": "RHS"
+   },
+   "answer": "C",
+   "explanation": "Two pairs of angles are equal and one pair of matching sides is equal (the side between the marked angles), so the triangles are congruent by AAS. SAS needs two pairs of sides.",
+   "steps": [
+    "Count the marks: two pairs of equal angles (one arc and two arcs) and one pair of equal sides.",
+    "If two angles match, the third angles match as well.",
+    "Two angles and a matching side: AAS."
+   ],
+   "mistakes": {
+    "A": "Step 1: only one pair of sides is marked. SAS needs two pairs of sides.",
+    "B": "Step 1: only one pair of sides is marked, not three.",
+    "D": "Step 1: no right angle is marked, so RHS can't be used."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q1.svg",
+   "diagram_alt": "Triangle ABC and an upside-down triangle PQR. Angles A and P have one arc, angles B and Q have two arcs, and sides AB and PQ have one tick."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Similar triangles",
+   "prompt": "The triangles have matching angles marked equal. Find x.",
+   "options": {
+    "A": "10 cm",
+    "B": "9 cm",
+    "C": "16 cm",
+    "D": "4 cm"
+   },
+   "answer": "B",
+   "explanation": "The triangles are similar (AAA) with k = 12 ÷ 8 = 1.5, so x = 6 × 1.5 = 9 cm. Adding 4 cm treats the change as a difference.",
+   "steps": [
+    "Equal angles, so the triangles are similar.",
+    "k = 12 ÷ 8 = 1.5.",
+    "x = 6 × 1.5 = 9 cm."
+   ],
+   "mistakes": {
+    "A": "Step 2: the base grew from 8 to 12 by multiplying by 1.5, not by adding 4.",
+    "C": "Step 2: you multiplied 12 by 8 ÷ 6. Compare matching sides: 12 ÷ 8.",
+    "D": "Step 2: DEF is the bigger triangle, so x must be bigger than 6 cm. Multiply by 1.5."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q2.svg",
+   "diagram_alt": "Triangle ABC with base AB 8 cm and side AC 6 cm, and a larger triangle DEF with base DE 12 cm and side DF marked x. Matching angles are marked with the same arcs."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "AB is a diameter and ∠ABC = 58°. Find x, the size of ∠CAB.",
+   "options": {
+    "A": "32°",
+    "B": "58°",
+    "C": "122°",
+    "D": "90°"
+   },
+   "answer": "A",
+   "explanation": "The angle in a semicircle is 90°, so x = 180° − 90° − 58° = 32°.",
+   "steps": [
+    "AB is a diameter, so ∠ACB = 90° (angle in a semicircle).",
+    "Angles in triangle ABC add to 180°.",
+    "x = 180° − 90° − 58° = 32°."
+   ],
+   "mistakes": {
+    "B": "Step 2: ∠CAB is not equal to ∠ABC. Use the angle sum with the right angle at C.",
+    "C": "Step 2: you subtracted only 58° from 180°. The triangle also has a 90° angle at C.",
+    "D": "Step 1: the 90° angle is at C (angle in a semicircle), not at A."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q3.svg",
+   "diagram_alt": "A circle with horizontal diameter AB and a point C on the upper right. Angle ABC is 58° and angle CAB is marked x."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Networks: vertices, edges and degree",
+   "prompt": "A network has 9 edges. What is the sum of the degrees of its vertices?",
+   "options": {
+    "A": "9",
+    "B": "4.5",
+    "C": "81",
+    "D": "18"
+   },
+   "answer": "D",
+   "explanation": "Each edge has two ends, so sum of degrees = 2 × 9 = 18. 9 counts each edge only once.",
+   "steps": [
+    "Each edge has two ends.",
+    "Sum of degrees = 2 × number of edges.",
+    "2 × 9 = 18."
+   ],
+   "mistakes": {
+    "A": "Step 2: 9 is the number of edges. Each edge adds 2 to the degree sum.",
+    "B": "Step 2: you halved. The degree sum is DOUBLE the number of edges.",
+    "C": "Step 2: you squared 9. Multiply by 2 instead: each edge has two ends."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "O is the centre of the circle and ∠AOB = 124°. Find x, the size of ∠OAB.",
+   "options": {
+    "A": "62°",
+    "B": "28°",
+    "C": "56°",
+    "D": "124°"
+   },
+   "answer": "B",
+   "explanation": "OA = OB (radii), so triangle OAB is isosceles and x = (180° − 124°) ÷ 2 = 28°. 56° is both base angles together.",
+   "steps": [
+    "OA = OB because both are radii, so triangle OAB is isosceles.",
+    "The base angles are equal and add to 180° − 124° = 56°.",
+    "x = 56° ÷ 2 = 28°."
+   ],
+   "mistakes": {
+    "A": "Step 2: 62° is half of 124°, the angle at the circumference. ∠OAB is a base angle of the isosceles triangle OAB.",
+    "C": "Step 2: 180° − 124° = 56° is the two base angles together. Halve it.",
+    "D": "Step 1: 124° is the angle at O. x is at A."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q5.svg",
+   "diagram_alt": "A circle with centre O. Radii OA and OB and chord AB form a triangle. Angle AOB is 124° and angle OAB is marked x."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Paths, trails and circuits",
+   "prompt": "Which best describes the route A–B–D–A in this network?",
+   "options": {
+    "A": "A path",
+    "B": "An Eulerian circuit",
+    "C": "A cycle",
+    "D": "Not a trail, because it repeats vertex A"
+   },
+   "answer": "C",
+   "explanation": "A–B–D–A uses three different edges and returns to its start without repeating any other vertex, so it is a cycle. It is not Eulerian because it misses BC and CD.",
+   "steps": [
+    "Edges used: AB, BD, DA — no repeats.",
+    "It starts and finishes at A, and no other vertex repeats.",
+    "A closed route with no repeated vertices is a cycle."
+   ],
+   "mistakes": {
+    "A": "Step 2: a path cannot repeat a vertex, but this route starts and ends at A.",
+    "B": "Step 3: an Eulerian circuit must use every edge; this route misses BC and CD.",
+    "D": "Step 1: finishing back at the start is allowed — that is what makes it closed. No edge is repeated."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q6.svg",
+   "diagram_alt": "A square network A–B–C–D with a diagonal from B to D."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Shortest paths",
+   "prompt": "Which route from A to F is the shortest?",
+   "options": {
+    "A": "A–B–D–F",
+    "B": "A–C–E–F",
+    "C": "A–B–E–F",
+    "D": "A–C–E–D–F"
+   },
+   "answer": "D",
+   "explanation": "A–C–E–D–F = 5 + 3 + 2 + 4 = 14 is shorter than A–B–D–F (15) and A–C–E–F (16), even though it uses more edges.",
+   "steps": [
+    "Add each route: A–B–D–F = 15, A–C–E–F = 16, A–B–E–F = 20.",
+    "A–C–E–D–F = 5 + 3 + 2 + 4 = 14.",
+    "The shortest is A–C–E–D–F."
+   ],
+   "mistakes": {
+    "A": "Step 2: A–B–D–F = 3 + 8 + 4 = 15. Fewer edges doesn't mean shorter — add the weights of every route.",
+    "B": "Step 2: A–C–E–F = 5 + 3 + 8 = 16. EF is long; going E–D–F (2 + 4) is shorter.",
+    "C": "Step 2: A–B–E–F = 3 + 9 + 8 = 20."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q7.svg",
+   "diagram_alt": "A weighted network with vertices A to F. AB 3, AC 5, BC 4, BD 8, BE 9, CE 3, DE 2, DF 4 and EF 8."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "ABCD is a parallelogram with diagonals meeting at M. BM = (3x − 2) cm and MD = (x + 8) cm. Find the length of BD.",
+   "options": {
+    "A": "26 cm",
+    "B": "13 cm",
+    "C": "5 cm",
+    "D": "14 cm"
+   },
+   "answer": "A",
+   "explanation": "The diagonals of a parallelogram bisect each other, so 3x − 2 = x + 8, x = 5, BM = MD = 13 cm and BD = 26 cm.",
+   "steps": [
+    "Diagonals of a parallelogram bisect each other (congruent triangles), so BM = MD.",
+    "3x − 2 = x + 8, so 2x = 10 and x = 5.",
+    "BM = MD = 13 cm, so BD = 26 cm."
+   ],
+   "mistakes": {
+    "B": "Step 3: 13 cm is BM, half of the diagonal. BD = BM + MD.",
+    "C": "Step 2: x = 5 is not a length. Substitute it into BM and MD.",
+    "D": "Step 2: 3x − 2 = x + 8 gives 2x = 10 (add 2 to 8), so x = 5, not 3."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q8.svg",
+   "diagram_alt": "Parallelogram ABCD with both diagonals drawn, meeting at M. BM is labelled 3x − 2 and MD is labelled x + 8."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Similar triangles",
+   "prompt": "AD and BC cross at M, and AB ∥ CD. AM = 3 cm, MD = 7.5 cm and CD = 10 cm. Find x, the length of AB.",
+   "options": {
+    "A": "25 cm",
+    "B": "4 cm",
+    "C": "5.5 cm",
+    "D": "7.5 cm"
+   },
+   "answer": "B",
+   "explanation": "△MAB ||| △MDC (vertically opposite angles, alternate angles). k = 7.5 ÷ 3 = 2.5 from small to big, so AB = 10 ÷ 2.5 = 4 cm.",
+   "steps": [
+    "△MAB ||| △MDC: vertically opposite angles at M and alternate angles on AB ∥ CD.",
+    "A matches D, so k = MD ÷ AM = 7.5 ÷ 3 = 2.5.",
+    "AB matches CD: x = 10 ÷ 2.5 = 4 cm."
+   ],
+   "mistakes": {
+    "A": "Step 3: AB is in the smaller triangle, so divide 10 by 2.5 — don't multiply.",
+    "C": "Step 3: you subtracted 4.5 (the difference 7.5 − 3). Similar triangles use a scale factor.",
+    "D": "Step 2: 7.5 cm is MD. AB matches CD, so scale CD by the factor."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q9.svg",
+   "diagram_alt": "Two triangles joined at M like a bow tie, with AB parallel to CD. AM is 3 cm, MD is 7.5 cm, CD is 10 cm and AB is marked x."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Similar triangles",
+   "prompt": "Two similar triangles have matching sides of 5 cm and 8 cm. The smaller triangle has an area of 50 cm². Find the area of the larger triangle.",
+   "options": {
+    "A": "80 cm²",
+    "B": "204.8 cm²",
+    "C": "128 cm²",
+    "D": "53 cm²"
+   },
+   "answer": "C",
+   "explanation": "k = 8 ÷ 5 = 1.6, so the area factor is 1.6² = 2.56 and the area is 50 × 2.56 = 128 cm². Using k alone gives 80 cm².",
+   "steps": [
+    "k = 8 ÷ 5 = 1.6.",
+    "Area scale factor = k² = 2.56.",
+    "Area = 50 × 2.56 = 128 cm²."
+   ],
+   "mistakes": {
+    "A": "Step 2: lengths scale by k = 1.6, but areas scale by k² = 2.56.",
+    "B": "Step 2: k³ is for volumes. Areas use k².",
+    "D": "Step 1: areas don't grow by adding the 3 cm difference. Find k and square it."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "ABCD is a cyclic quadrilateral with ∠A = (5x + 2)° and ∠C = (3x + 18)°. Find the size of ∠A.",
+   "options": {
+    "A": "102°",
+    "B": "20°",
+    "C": "78°",
+    "D": "42°"
+   },
+   "answer": "A",
+   "explanation": "(5x + 2) + (3x + 18) = 180 gives 8x = 160, x = 20 and ∠A = 102°. Setting the angles equal gives 42°, which is wrong.",
+   "steps": [
+    "A and C are opposite, so (5x + 2) + (3x + 18) = 180.",
+    "8x + 20 = 180, so 8x = 160 and x = 20.",
+    "∠A = 5 × 20 + 2 = 102° (check: ∠C = 78°, total 180°)."
+   ],
+   "mistakes": {
+    "B": "Step 3: 20 is x, not the angle. Substitute into 5x + 2.",
+    "C": "Step 3: 78° is ∠C. Substitute x into the expression for ∠A.",
+    "D": "Step 1: ∠A and ∠C are not equal — opposite angles of a cyclic quadrilateral add to 180°."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q11.svg",
+   "diagram_alt": "A cyclic quadrilateral ABCD inside a circle, with angle A labelled (5x + 2)° and the opposite angle C labelled (3x + 18)°."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Paths, trails and circuits",
+   "prompt": "Which ONE extra edge would give this network an Eulerian circuit?",
+   "options": {
+    "A": "A–D",
+    "B": "F–C",
+    "C": "F–E",
+    "D": "B–C"
+   },
+   "answer": "B",
+   "explanation": "The odd vertices are F and C (degree 3). An edge F–C adds 1 to each, making every degree even, so there is an Eulerian circuit.",
+   "steps": [
+    "Degrees: A 2, B 4, C 3, D 2, E 4, F 3.",
+    "The odd vertices are C and F; an extra edge adds 1 to each of its ends.",
+    "Join them: edge F–C makes every degree even."
+   ],
+   "mistakes": {
+    "A": "Step 2: A and D already have even degree, so this makes them odd — four odd vertices.",
+    "C": "Step 2: this fixes F but makes E odd, so C and E would be odd.",
+    "D": "Step 2: this fixes C but makes B odd, so B and F would be odd."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q12.svg",
+   "diagram_alt": "A network with A, B, C along the bottom and F, E, D along the top, joined in a rectangle A–B–C–D–E–F–A, plus edges B–E, F–B and C–E."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Shortest paths",
+   "prompt": "A courier must travel from A to F and must stop at E on the way. What is the length of the shortest such route?",
+   "options": {
+    "A": "16",
+    "B": "19",
+    "C": "17",
+    "D": "11"
+   },
+   "answer": "C",
+   "explanation": "Shortest A to E is A–C–E = 11, and shortest E to F is E–D–F = 6, so the route A–C–E–D–F has length 17. Using EF directly gives 19.",
+   "steps": [
+    "Split the trip: A to E, then E to F.",
+    "A to E: A–C–E = 6 + 5 = 11 (A–B–C–E = 12). E to F: E–D–F = 6 (beats EF = 8).",
+    "Total = 11 + 6 = 17."
+   ],
+   "mistakes": {
+    "A": "Step 1: 16 is the shortest route from A to F (A–C–D–F), but it doesn't pass through E.",
+    "B": "Step 2: from E to F, going E–D–F (3 + 3 = 6) is shorter than the direct edge EF (8).",
+    "D": "Step 3: 11 is only the A to E part. Add the shortest E to F distance."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q13.svg",
+   "diagram_alt": "A weighted network with vertices A to F. AB 4, AC 6, BC 3, BD 10, CD 7, CE 5, DE 3, DF 3 and EF 8."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Similar triangles",
+   "prompt": "Triangle ABC has a right angle at A. AD is perpendicular to BC, with BD = 2 cm and DC = 8 cm. Find x, the length of AD.",
+   "options": {
+    "A": "5 cm",
+    "B": "16 cm",
+    "C": "√10 cm",
+    "D": "4 cm"
+   },
+   "answer": "D",
+   "explanation": "△ABD ||| △CAD (both right-angled at D, and ∠ABD = ∠CAD), so BD ÷ AD = AD ÷ DC: x² = 2 × 8 = 16 and x = 4 cm.",
+   "steps": [
+    "△ABD and △CAD each have a right angle at D, and ∠ABD = ∠CAD (each is 90° − ∠C), so they are similar.",
+    "Matching sides: x ÷ 2 = 8 ÷ x, so x² = 16.",
+    "x = 4 cm."
+   ],
+   "mistakes": {
+    "A": "Step 2: x is not the average of 2 and 8. Similar triangles give x ÷ 2 = 8 ÷ x, so x² = 2 × 8.",
+    "B": "Step 3: 16 is x². Take the square root.",
+    "C": "Step 2: you added 2 and 8. The similar triangles give x² = 2 × 8 (multiply)."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-2-q14.svg",
+   "diagram_alt": "Triangle ABC with a right angle at A. A line from A meets BC at D at a right angle. BD is 2 cm, DC is 8 cm and AD is marked x."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Paths, trails and circuits",
+   "prompt": "A connected network has seven vertices with degrees 2, 2, 3, 4, 4, 5 and x. It has an Eulerian trail but no Eulerian circuit. Which could be the value of x?",
+   "options": {
+    "A": "6",
+    "B": "1",
+    "C": "3",
+    "D": "5"
+   },
+   "answer": "A",
+   "explanation": "There are already two odd vertices (3 and 5). For a trail but not a circuit you need exactly two, so x must be even: 6.",
+   "steps": [
+    "An Eulerian trail but no circuit needs exactly two odd vertices.",
+    "The 3 and the 5 are already odd, so x must be even.",
+    "Of the options only x = 6 is even (degree sum 26, so 13 edges)."
+   ],
+   "mistakes": {
+    "B": "Step 2: x = 1 would give three odd vertices (3, 5, 1), which is impossible.",
+    "C": "Step 2: x = 3 would give three odd vertices (3, 5, 3) — odd vertices always come in pairs.",
+    "D": "Step 2: x = 5 would give three odd vertices. You need exactly two for a trail."
+   }
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "lesson": "y10/maths/shortest-paths.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Shortest paths",
+ "icon": "🧭",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Shortest paths",
+   "sub": "How a map app finds your fastest route",
+   "icon": "🧭",
+   "say": "Every time a map app finds your fastest route, it is solving a shortest path problem on a network. Let's learn how to do it by hand."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "💧",
+   "everyday": "Water from a tap reaches nearer places first",
+   "icon2": "🧭",
+   "science": "Dijkstra reaches vertices in order of distance",
+   "breaks": "Water keeps no records; the algorithm writes down each best distance and where it came from.",
+   "say": "Imagine water spreading out from the start along every edge at the same speed. It reaches closer vertices first. Dijkstra's algorithm works the same way, but it also writes down each distance and where it came from."
+  },
+  {
+   "type": "diagram",
+   "heading": "A weighted network",
+   "diagram": "diagrams/y10/maths/shortest-paths-net.svg",
+   "notes": [
+    "Weights = distances",
+    "Route length = sum of weights",
+    "A–C–B = 3 beats A–B = 4"
+   ],
+   "say": "Here's a weighted network. First the vertices and edges, then the weights. A route's length is the sum of its weights. Notice that going A, C, B is three, which beats the direct edge A B of four."
+  },
+  {
+   "type": "steps",
+   "heading": "Dijkstra’s algorithm",
+   "steps": [
+    "Label the start 0 (permanent)",
+    "Update labels of its neighbours",
+    "Smallest temporary → permanent",
+    "Repeat until the finish is permanent"
+   ],
+   "say": "Dijkstra's algorithm. Label the start zero. Update the labels of its neighbours. Make the smallest temporary label permanent. Repeat until the finish is permanent. Then trace back to read the route."
+  },
+  {
+   "type": "example",
+   "heading": "Shortest path A to F",
+   "question": "Use Dijkstra’s algorithm from A to F.",
+   "lines": [
+    "A 0, C 2, B 3",
+    "D 8 (via B)",
+    "E 10 (via D)",
+    "F 13 (via E)",
+    "A–C–B–D–E–F = 13 km"
+   ],
+   "say": "A is zero. C is two, then B is three, via C. D is eight, via B. E is ten, via D. F is thirteen, via E. Tracing back gives A, C, B, D, E, F: thirteen kilometres.",
+   "caption": "A 0, C 2, B 3, D 8, E 10, F 13. Path A–C–B–D–E–F = 13 km."
+  },
+  {
+   "type": "diagram",
+   "heading": "The shortest path",
+   "diagram": "diagrams/y10/maths/shortest-paths-best.svg",
+   "notes": [
+    "2 + 1 + 5 + 2 + 3 = 13",
+    "More edges, but shorter"
+   ],
+   "say": "Here is that path highlighted. It uses five edges, more than some other routes, but its total is only thirteen. Fewest edges does not mean shortest."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Weights are distances, times or costs",
+    "Route length = sum of weights",
+    "Detours can beat direct edges",
+    "Smallest temporary label → permanent",
+    "Trace back to find the route"
+   ],
+   "say": "Quick recap. Weights stand for distances, times or costs. Add them to get a route's length. Detours can beat direct edges. In Dijkstra's algorithm, the smallest temporary label becomes permanent, and you trace back to find the route. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "lesson": "y10/maths/geometric-proofs-and-congruence.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Geometric proofs and congruence",
+ "icon": "🔍",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Geometric proofs and congruence",
+   "sub": "Looks equal? Prove it.",
+   "icon": "🔍",
+   "say": "In geometry, looking equal is never enough. In this lesson you'll learn to prove that two triangles are identical, and then use that to prove facts about all sorts of shapes."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🕵️",
+   "everyday": "A detective backs every claim with evidence",
+   "icon2": "📐",
+   "science": "A proof backs every statement with a reason",
+   "breaks": "A court needs \"beyond reasonable doubt\". A maths proof must be certain, using facts that are always true.",
+   "say": "Think of a detective's case file. Every claim needs evidence. A proof is the same: each statement has a reason next to it. But a maths proof must be completely certain, not just very likely."
+  },
+  {
+   "type": "diagram",
+   "heading": "The four congruence tests",
+   "diagram": "diagrams/y10/maths/geometric-proofs-and-congruence-tests.svg",
+   "notes": [
+    "SSS, SAS, AAS, RHS",
+    "In SAS the angle is between the sides",
+    "SSA is NOT a test"
+   ],
+   "say": "Here are the four tests. First, three pairs of equal sides: S S S. Next, two sides with the angle between them: S A S. Then two angles and a side: A A S. Last, a right angle, the hypotenuse and one side: R H S. Two sides and an angle that is not between them is not a test."
+  },
+  {
+   "type": "diagram",
+   "heading": "Proving base angles are equal",
+   "diagram": "diagrams/y10/maths/geometric-proofs-and-congruence-ex2.svg",
+   "notes": [
+    "AB = AC, BM = CM, AM common",
+    "So the triangles are congruent (SSS)",
+    "So angle B = angle C"
+   ],
+   "say": "First the isosceles triangle, then the line from A to the midpoint M. A B equals A C, B M equals C M, and A M is a common side. That's S S S, so the two halves are congruent, and angle B equals angle C."
+  },
+  {
+   "type": "example",
+   "heading": "Using congruence with algebra",
+   "question": "Kite ABCD: AB = AD, CB = CD. ∠ADC = 100°, ∠ABC = (3x + 10)°. Find x.",
+   "lines": [
+    "AC is a common side",
+    "△ABC ≅ △ADC (SSS)",
+    "∠ABC = ∠ADC",
+    "3x + 10 = 100",
+    "x = 30"
+   ],
+   "say": "In this kite, A C is a common side, so the two triangles are congruent by S S S. Matching angles are equal, so three x plus ten equals one hundred. Three x is ninety, so x is thirty.",
+   "caption": "AC is common, so △ABC ≅ △ADC (SSS). 3x + 10 = 100, so x = 30."
+  },
+  {
+   "type": "compare",
+   "heading": "SAS or SSA?",
+   "left": {
+    "title": "SAS ✓",
+    "icon": "🥪",
+    "points": [
+     "Angle sandwiched between sides",
+     "Always one triangle",
+     "A congruence test"
+    ]
+   },
+   "right": {
+    "title": "SSA ✗",
+    "icon": "⚠️",
+    "points": [
+     "Angle not between the sides",
+     "Can make two triangles",
+     "Not a test"
+    ]
+   },
+   "say": "Don't mix up S A S and S S A. In S A S the angle is sandwiched between the two sides, and that always fixes one triangle. In S S A the angle is outside, and two different triangles can fit."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Every statement needs a reason",
+    "Tests: SSS, SAS, AAS, RHS",
+    "Write vertices in matching order",
+    "Look for common sides",
+    "Then matching parts are equal"
+   ],
+   "say": "Quick recap. Every statement needs a reason. Use S S S, S A S, A A S or R H S. Write the letters in matching order, look for common sides, and once the triangles are congruent, all matching parts are equal. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "lesson": "y10/maths/paths-trails-and-circuits.json",
+ "level": "Year 10",
+ "subject": "maths",
+ "title": "Paths, trails and circuits",
+ "icon": "🗺️",
+ "scenes": [
+  {
+   "type": "title",
+   "heading": "Paths, trails and circuits",
+   "sub": "Every street once, or every stop once?",
+   "icon": "🗺️",
+   "say": "Can you walk every street in your suburb without repeating one? Can you visit every friend's house once and get home? These are questions about routes through networks."
+  },
+  {
+   "type": "analogy",
+   "heading": "Think of it like this",
+   "icon": "🚗",
+   "everyday": "Painting every street line vs dropping invites at every house",
+   "icon2": "🗺️",
+   "science": "Euler: every edge once. Hamilton: every vertex once.",
+   "breaks": "A painter can drive a street without painting it; an Eulerian trail may not reuse any edge.",
+   "say": "Picture a worker painting the line on every street: that's about edges. Now picture someone dropping invitations at every house: that's about vertices. Every edge once is Euler's question. Every vertex once is Hamilton's."
+  },
+  {
+   "type": "compare",
+   "heading": "Trail or path?",
+   "left": {
+    "title": "Trail",
+    "icon": "🥾",
+    "points": [
+     "No repeated edges",
+     "Vertices may repeat",
+     "Closed trail = circuit"
+    ]
+   },
+   "right": {
+    "title": "Path",
+    "icon": "🛤️",
+    "points": [
+     "No repeated vertices",
+     "So no repeated edges",
+     "Closed path = cycle"
+    ]
+   },
+   "say": "A trail never repeats an edge, but it can revisit a vertex. A path never repeats a vertex at all. If a trail comes back to its start it's a circuit; if a path does, it's a cycle."
+  },
+  {
+   "type": "steps",
+   "heading": "Euler test: count odd vertices",
+   "steps": [
+    "Check the network is connected",
+    "Find every degree",
+    "0 odd: Eulerian circuit",
+    "2 odd: trail, odd to odd",
+    "4 or more odd: neither"
+   ],
+   "say": "To test for an Euler route, check the network is connected and find every degree. No odd vertices means an Eulerian circuit. Exactly two means a trail that starts at one odd vertex and ends at the other. Four or more means neither."
+  },
+  {
+   "type": "diagram",
+   "heading": "The bridges of Königsberg",
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-bridges.svg",
+   "notes": [
+    "Island 5, others 3",
+    "Four odd vertices",
+    "No route crosses each bridge once"
+   ],
+   "say": "Here are the seven bridges of Königsberg drawn as a network. First the four land areas, then the bridges. The island has degree five and the others have degree three. Four odd vertices, so nobody can cross every bridge exactly once."
+  },
+  {
+   "type": "example",
+   "heading": "Find an Eulerian trail",
+   "question": "Envelope network: degrees A 3, B 3, C 4, D 4, E 2.",
+   "lines": [
+    "Odd vertices: A and B",
+    "Start at A, finish at B",
+    "A–B–C–D–A–C–E–D–B",
+    "8 edges, each used once"
+   ],
+   "say": "In the envelope network, A and B are the odd vertices, so start at A and finish at B. One trail is A, B, C, D, A, C, E, D, B. That uses all eight edges once."
+  },
+  {
+   "type": "recap",
+   "points": [
+    "Trail: no repeated edges",
+    "Path: no repeated vertices",
+    "Euler: every edge once",
+    "0 odd → circuit, 2 odd → trail",
+    "Hamilton: every vertex once"
+   ],
+   "say": "Quick recap. Trails don't repeat edges; paths don't repeat vertices. Euler routes use every edge once: no odd vertices gives a circuit, two gives a trail. Hamilton routes visit every vertex once. Now try the practice questions!"
+  }
+ ]
+}

@@ -1,0 +1,295 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Paths, trails and circuits",
+ "summary": "Walks, trails, paths, circuits and cycles; Eulerian trails and circuits using odd-vertex counts; and Hamiltonian paths and cycles.",
+ "minutes": 30,
+ "body": "Can you deliver mail along every street without walking any street twice? Can a tourist visit every landmark once and get back to the hotel? These are questions about **routes** through a network, and they have a long history: in 1736 Leonhard Euler proved that nobody could cross the seven bridges of Königsberg exactly once each, and in doing so he started the study of networks.\n\n## Learning objective\n\nBy the end of this lesson you can tell walks, trails, paths, circuits and cycles apart, decide whether a network has an Eulerian trail or circuit by counting odd vertices, and find Hamiltonian paths and cycles.\n\n## Before you start\n\nYou need \"Networks: vertices, edges and degree\" from this chapter — especially finding the degree of a vertex.\n\nWarm-up:\n1. A vertex has three edges and one loop. What is its degree?\n2. A network has vertices of degrees 2, 3, 4, 3 and 2. How many vertices have odd degree?\n\nAnswers: 1. 3 + 2 = 5  2. Two (the two vertices of degree 3)\n\n## Think of it like this\n\n### Painting road lines versus visiting friends\n\nA council worker painting the centre line on every street needs a route that covers every **street (edge)** once — revisiting a corner is fine. A friend dropping off birthday invitations needs a route that visits every **house (vertex)** once — skipping some streets is fine. Those are the two big questions of this lesson: Euler's (every edge) and Hamilton's (every vertex).\n\n*Where the analogy breaks down:* a real painter can drive along a street without painting it. In a network, an Eulerian trail is not allowed to use any edge more than once.\n\n## Key ideas\n\n### Walks, trails and paths\n\nA **walk** is any route along edges, written as a list of vertices, e.g. A–B–D–C.\n\n- A **trail** is a walk with **no repeated edges** (vertices may repeat).\n- A **path** is a walk with **no repeated vertices** (so no repeated edges either).\n- A **circuit** is a trail that starts and finishes at the same vertex.\n- A **cycle** is a circuit with no repeated vertices except the start/finish.\n\n![A network with vertices A to E and the path A–B–D–C highlighted](diagrams/y10/maths/paths-trails-and-circuits-path.svg)\n\n### Eulerian trails and circuits\n\nAn **Eulerian trail** uses **every edge exactly once**. An **Eulerian circuit** does the same and finishes where it started. For a connected network, count the odd-degree vertices:\n\n| Odd vertices | What exists |\n|---|---|\n| 0 | an Eulerian circuit (start anywhere) |\n| 2 | an Eulerian trail, starting at one odd vertex and finishing at the other |\n| 4, 6, … | neither |\n\n*Why:* every time a route passes through a vertex it uses two edges (one in, one out). So every vertex in the middle of the route needs an even degree; only the start and finish can be odd.\n\n![The seven bridges of Königsberg as a network: the island has degree 5 and the north bank, south bank and east land each have degree 3](diagrams/y10/maths/paths-trails-and-circuits-bridges.svg)\n\nKönigsberg has four odd vertices, so no route crosses every bridge exactly once.\n\n### Hamiltonian paths and cycles\n\nA **Hamiltonian path** visits **every vertex exactly once**. A **Hamiltonian cycle** does this and returns to the start. There is no quick counting rule — you have to search. A useful trick: a vertex of degree 2 forces both its edges into any Hamiltonian cycle.\n\n## Worked examples\n\n### Example 1\n\n![An envelope-shaped network: square ABCD with both diagonals and a roof vertex E joined to C and D](diagrams/y10/maths/paths-trails-and-circuits-envelope.svg)\n\nDoes this network have an Eulerian trail or circuit? If so, write one.\n\nStep 1: degrees: A 3, B 3, C 4, D 4, E 2 — count the edge-ends at each vertex.\nStep 2: exactly two odd vertices (A and B), so there is an Eulerian trail but no circuit.\nStep 3: start at A and finish at B: A–B–C–D–A–C–E–D–B.\nStep 4: check: that uses 8 edges (AB, BC, CD, DA, AC, CE, ED, DB), each once, and the network has 8 edges ✓\n\n### Example 2\n\nIs A–B–C–D–B–E (in a network with those edges) a path, a trail or neither?\n\nStep 1: check edges: AB, BC, CD, DB, BE — all different, so it is a trail.\nStep 2: check vertices: B appears twice, so it is not a path.\nStep 3: it is a trail but not a path (and not a circuit, since it ends at E, not A).\n\n### Example 3\n\n![Rectangle ABCD with a middle vertex E joined to A and C; the Hamiltonian path B–A–E–C–D is highlighted](diagrams/y10/maths/paths-trails-and-circuits-hamilton.svg)\n\nFind a Hamiltonian cycle, or explain why there isn't one.\n\nStep 1: E has degree 2, so any Hamiltonian cycle must use both A–E and E–C.\nStep 2: from C the cycle goes to B or D, then must reach the other one before returning to A. But B and D are not joined, so from C–B you can only go back to A, missing D (and C–D–A misses B).\nStep 3: so there is no Hamiltonian cycle. There is a Hamiltonian path: B–A–E–C–D ✓\n\n## Common mistakes\n\n- **Mixing up Euler and Hamilton.** Fix: Euler = every Edge (both start with E). Hamilton = every vertex (think \"Hamilton visits homes\").\n- **Starting an Eulerian trail at an even vertex.** With two odd vertices, you must start at one and finish at the other.\n- **Counting a loop as 1.** A loop adds 2 to the degree; mistakes here change the odd-vertex count.\n- **Calling any route a path.** A path can't repeat a vertex. Fix: check vertices for paths and edges for trails.\n- **Forgetting \"connected\".** A disconnected network has no Eulerian trail even if all degrees are even.\n\n## Tips to remember\n\n- **\"Euler — every Edge; Hamilton — every Home.\"** (A made-up memory trick.)\n- **\"0 odd: circuit. 2 odd: trail. More: fail.\"**\n- **\"In one door, out another.\"** Each visit through a vertex uses a pair of edges — that's why middle vertices need even degree.\n- **Degree-2 vertices are signposts** for Hamiltonian cycles: both their edges must be used.\n- **Self-check:** an Eulerian trail's list of vertices has exactly (number of edges + 1) entries.\n\n## Key terms\n\n- **Walk** — any sequence of edges joining one vertex to the next.\n- **Trail** — a walk with no repeated edges.\n- **Path** — a walk with no repeated vertices.\n- **Circuit** — a trail that starts and ends at the same vertex.\n- **Cycle** — a circuit with no repeated vertices (apart from the start/finish).\n- **Eulerian trail / circuit** — a trail / circuit using every edge exactly once.\n- **Hamiltonian path / cycle** — a path / cycle visiting every vertex exactly once.\n\n## Summary\n\n- Trails don't repeat edges; paths don't repeat vertices; circuits and cycles return to the start.\n- A connected network has an Eulerian circuit if all degrees are even, and an Eulerian trail if exactly two are odd (start and end there).\n- Four or more odd vertices means no Eulerian trail — as at Königsberg.\n- Hamiltonian paths and cycles visit every vertex once; find them by careful searching.\n",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "prompt": "In the network, which best describes the route A–B–C–D–B–E?",
+   "options": {
+    "A": "A path",
+    "B": "A trail, but not a path",
+    "C": "A circuit",
+    "D": "Not a trail, because vertex B is repeated"
+   },
+   "answer": "B",
+   "explanation": "The edges AB, BC, CD, DB and BE are all different, so it is a trail; B is visited twice, so it is not a path. Repeating a vertex is allowed in a trail.",
+   "steps": [
+    "Edges used: AB, BC, CD, DB, BE — no edge repeats, so it is a trail.",
+    "Vertex B appears twice, so it is not a path.",
+    "It also ends at E, not A, so it is not a circuit: a trail but not a path."
+   ],
+   "mistakes": {
+    "A": "Step 2: a path cannot repeat a vertex, and B appears twice.",
+    "C": "Step 3: a circuit finishes where it starts; this route starts at A and ends at E.",
+    "D": "Step 1: a trail may repeat vertices — it only must not repeat edges, and no edge is repeated here."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q1.svg",
+   "diagram_alt": "A network with vertices A to E. Edges: A–B, B–C, C–D, D–B, B–E and D–E."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "Which statement about this connected network is true?",
+   "options": {
+    "A": "It has an Eulerian trail but no Eulerian circuit",
+    "B": "It has no Eulerian trail or circuit",
+    "C": "It has a Hamiltonian cycle",
+    "D": "It has an Eulerian circuit"
+   },
+   "answer": "D",
+   "explanation": "The degrees are A 2, B 2, C 4, D 2, E 2 — all even — so there is an Eulerian circuit (e.g. C–A–B–C–D–E–C). There is no Hamiltonian cycle, because you would have to pass through C twice.",
+   "steps": [
+    "Degrees: A 2, B 2, C 4, D 2, E 2.",
+    "All even (0 odd vertices) and connected, so there is an Eulerian circuit.",
+    "Example: C–A–B–C–D–E–C uses all 6 edges once and returns to C."
+   ],
+   "mistakes": {
+    "A": "Step 2: a trail-but-not-circuit needs exactly two odd vertices. Here every degree is even.",
+    "B": "Step 2: you need four or more odd vertices for that. Here there are none.",
+    "C": "Step 3: C is the only link between the two triangles, so any cycle through every vertex would pass through C twice."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q2.svg",
+   "diagram_alt": "A bow-tie network: triangle A–B–C and triangle C–D–E sharing vertex C."
+  },
+  {
+   "difficulty": "easy",
+   "prompt": "This network has an Eulerian trail. Where must the trail start?",
+   "options": {
+    "A": "At A",
+    "B": "Anywhere",
+    "C": "At B or E",
+    "D": "At C or D"
+   },
+   "answer": "C",
+   "explanation": "The degrees are A 2, B 3, C 2, D 2, E 3. The two odd vertices are B and E, so the trail starts at one and ends at the other. Starting anywhere only works when there are no odd vertices.",
+   "steps": [
+    "Find each degree: A 2, B 3, C 2, D 2, E 3.",
+    "Exactly two odd vertices: B and E.",
+    "An Eulerian trail starts at one odd vertex and ends at the other: B or E."
+   ],
+   "mistakes": {
+    "A": "Step 2: A has even degree (2). An Eulerian trail must start at one of the two odd vertices.",
+    "B": "Step 3: \"start anywhere\" is only true when all degrees are even (an Eulerian circuit).",
+    "D": "Step 2: C and D have degree 2 (even). Start at an odd vertex."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q3.svg",
+   "diagram_alt": "A network with vertices A to E around a pentagon (A–B, B–C, C–D, D–E, E–A) plus an edge B–E."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "A park has four paths meeting as shown. Can you walk along every path exactly once (you may finish anywhere)?",
+   "options": {
+    "A": "No, because all four vertices have odd degree",
+    "B": "Yes, because the network is connected",
+    "C": "Yes, starting and finishing at S",
+    "D": "No, because there are only four vertices"
+   },
+   "answer": "A",
+   "explanation": "Every vertex has degree 3, so there are four odd vertices — too many for an Eulerian trail. Being connected is not enough on its own.",
+   "steps": [
+    "Degrees: P 3, Q 3, R 3, S 3.",
+    "There are four odd vertices.",
+    "An Eulerian trail needs 0 or 2 odd vertices, so it is impossible."
+   ],
+   "mistakes": {
+    "B": "Step 2: being connected is needed, but you also need 0 or 2 odd vertices.",
+    "C": "Step 1: S has degree 3 (odd), and so do P, Q and R — four odd vertices.",
+    "D": "Step 2: the number of vertices doesn't matter; the number of ODD vertices does."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q4.svg",
+   "diagram_alt": "A network with vertices P, Q and R at the corners of a triangle and S in the middle. Every vertex is joined to every other vertex."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Which route is a Hamiltonian cycle of this network?",
+   "options": {
+    "A": "A–B–C–D–E–A",
+    "B": "A–F–E–D–C–B",
+    "C": "A–B–C–F–E–D–C–B–A",
+    "D": "A–B–E–D–C–F–A"
+   },
+   "answer": "D",
+   "explanation": "A–B–E–D–C–F–A uses edges AB, BE, ED, DC, CF and FA, visits all six vertices once and returns to A. A–F–E–D–C–B is only a Hamiltonian path.",
+   "steps": [
+    "A Hamiltonian cycle visits all 6 vertices once and returns to the start.",
+    "Check A–B–E–D–C–F–A: edges AB, BE, ED, DC, CF, FA all exist.",
+    "Each vertex appears once (A at both ends), so it is a Hamiltonian cycle."
+   ],
+   "mistakes": {
+    "A": "Step 1: this misses F, and there is no edge E–A.",
+    "B": "Step 3: this visits every vertex once but doesn't return to A — it is a Hamiltonian path, not a cycle.",
+    "C": "Step 2: C and B are visited twice. A Hamiltonian cycle visits each vertex once."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q5.svg",
+   "diagram_alt": "A network with six vertices. Edges: A–B, A–F, B–C, B–E, C–F, C–D, D–E and E–F."
+  },
+  {
+   "difficulty": "medium",
+   "prompt": "Which route is an Eulerian trail of this network?",
+   "options": {
+    "A": "E–A–B–C–D–E",
+    "B": "D–C–B–A–E–B–D–E",
+    "C": "D–B–E–A–B–C–D",
+    "D": "A–B–C–D–B–E–D"
+   },
+   "answer": "B",
+   "explanation": "The odd vertices are D and E, so the trail runs from D to E. D–C–B–A–E–B–D–E uses DC, CB, BA, AE, EB, BD and DE — all 7 edges, once each.",
+   "steps": [
+    "Degrees: A 2, B 4, C 2, D 3, E 3 — odd vertices D and E, 7 edges.",
+    "The trail must start at D or E and use 7 edges, so it lists 8 vertices.",
+    "D–C–B–A–E–B–D–E uses every edge exactly once."
+   ],
+   "mistakes": {
+    "A": "Step 3: this misses edges BE and BD. An Eulerian trail must use all 7 edges.",
+    "C": "Step 3: this uses 6 edges and misses DE.",
+    "D": "Step 1: an Eulerian trail must start at an odd vertex (D or E), and this route misses edge AE."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q6.svg",
+   "diagram_alt": "A network with A, B and C along the bottom and E and D above. Edges: A–B, B–C, C–D, D–E, E–A, B–E and B–D."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Which ONE extra edge would give this network an Eulerian circuit?",
+   "options": {
+    "A": "B–D",
+    "B": "A–E",
+    "C": "A–C",
+    "D": "A–B"
+   },
+   "answer": "C",
+   "explanation": "The odd vertices are A and C (degree 3). Joining them adds 1 to each, so every degree becomes even and there is an Eulerian circuit. Any other edge leaves (or creates) odd vertices.",
+   "steps": [
+    "Degrees: A 3, B 2, C 3, D 2, E 2 — the odd vertices are A and C.",
+    "A new edge adds 1 to the degree of each of its ends.",
+    "Join the two odd vertices: edge A–C makes every degree even."
+   ],
+   "mistakes": {
+    "A": "Step 2: adding B–D makes B and D odd as well, giving four odd vertices.",
+    "B": "Step 2: this makes A even but E odd, so C and E would still be odd.",
+    "D": "Step 2: this makes A even but B odd, so B and C would still be odd."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q7.svg",
+   "diagram_alt": "A square A–B–C–D with a vertex E inside, joined to A and C."
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "A courier must call at every town in a region exactly once and then return to the depot. She doesn't need to drive along every road. What kind of route does she need?",
+   "options": {
+    "A": "A Hamiltonian cycle",
+    "B": "An Eulerian circuit",
+    "C": "An Eulerian trail",
+    "D": "A Hamiltonian path"
+   },
+   "answer": "A",
+   "explanation": "Visiting every vertex exactly once and returning to the start is a Hamiltonian cycle. An Eulerian circuit would cover every road, which she doesn't need.",
+   "steps": [
+    "Towns are vertices and roads are edges.",
+    "Every vertex exactly once → Hamiltonian.",
+    "Returning to the start → a cycle: a Hamiltonian cycle."
+   ],
+   "mistakes": {
+    "B": "Step 1: an Eulerian circuit uses every ROAD (edge) once. She needs every TOWN (vertex) once.",
+    "C": "Step 1: Eulerian routes are about covering every edge; the courier needs every vertex.",
+    "D": "Step 2: a Hamiltonian path doesn't return to the start. She must get back to the depot, so it must be a cycle."
+   }
+  },
+  {
+   "difficulty": "hard",
+   "prompt": "Which statement about this network is true?",
+   "options": {
+    "A": "It has an Eulerian circuit and a Hamiltonian cycle",
+    "B": "It has a Hamiltonian cycle and an Eulerian trail, but no Eulerian circuit",
+    "C": "It has an Eulerian circuit but no Hamiltonian cycle",
+    "D": "It has no Eulerian trail and no Hamiltonian cycle"
+   },
+   "answer": "B",
+   "explanation": "Degrees are A 3, B 2, C 3, D 2: two odd vertices, so an Eulerian trail (A to C) but no circuit. A–B–C–D–A visits every vertex once and returns, so there is a Hamiltonian cycle.",
+   "steps": [
+    "Degrees: A 3, B 2, C 3, D 2 — two odd vertices.",
+    "So there is an Eulerian trail (e.g. A–B–C–D–A–C) but no Eulerian circuit.",
+    "A–B–C–D–A is a Hamiltonian cycle."
+   ],
+   "mistakes": {
+    "A": "Step 1: A and C have degree 3, so there is no Eulerian circuit.",
+    "C": "Step 1 and Step 3: there are two odd vertices, and A–B–C–D–A is a Hamiltonian cycle.",
+    "D": "Step 2: exactly two odd vertices means an Eulerian trail DOES exist (from A to C)."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q9.svg",
+   "diagram_alt": "A square A–B–C–D with one diagonal A–C."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A connected network has six vertices with degrees 2, 4, 3, 3, 2 and x. It has an Eulerian trail but NOT an Eulerian circuit. Which could be the value of x?",
+   "options": {
+    "A": "3",
+    "B": "5",
+    "C": "1",
+    "D": "4"
+   },
+   "answer": "D",
+   "explanation": "There are already two odd vertices (the 3s). For a trail but not a circuit you need exactly two, so x must be even: 4. Any odd x would make three odd vertices, which can't happen.",
+   "steps": [
+    "An Eulerian trail but no circuit needs exactly two odd vertices.",
+    "The two 3s are already odd, so x must be even.",
+    "Of the options only 4 is even (degree sum 18, so 9 edges)."
+   ],
+   "mistakes": {
+    "A": "Step 2: x = 3 gives three odd vertices, and the degree sum 17 would be odd — impossible.",
+    "B": "Step 2: x = 5 gives three odd vertices, which is impossible (odd vertices come in pairs).",
+    "C": "Step 2: x = 1 gives three odd vertices (3, 3, 1). Odd vertices always come in pairs."
+   }
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "A complete network has every vertex joined to every other vertex by one edge. For which number of vertices does a complete network have an Eulerian circuit?",
+   "options": {
+    "A": "4",
+    "B": "5",
+    "C": "6",
+    "D": "8"
+   },
+   "answer": "B",
+   "explanation": "In a complete network with n vertices every degree is n − 1. It is even only when n is odd, so of these only n = 5 (each degree 4) has an Eulerian circuit.",
+   "steps": [
+    "Each vertex joins every other vertex, so its degree is n − 1.",
+    "An Eulerian circuit needs every degree even, so n − 1 must be even.",
+    "n − 1 is even only for odd n: of 4, 5, 6 and 8, that is n = 5 (degree 4, as in the diagram)."
+   ],
+   "mistakes": {
+    "A": "Step 2: with 4 vertices each degree is 3 (odd), so there is no Eulerian circuit.",
+    "C": "Step 2: with 6 vertices each degree is 5 (odd).",
+    "D": "Step 2: with 8 vertices each degree is 7 (odd)."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q11.svg",
+   "diagram_alt": "A complete network on five vertices A to E: every vertex is joined to every other, so each vertex has four edges."
+  },
+  {
+   "difficulty": "challenge",
+   "prompt": "The network shows the seven bridges of Königsberg. What is the smallest number of new bridges needed so that a walk can cross every bridge exactly once and return to its start?",
+   "options": {
+    "A": "1",
+    "B": "4",
+    "C": "2",
+    "D": "3"
+   },
+   "answer": "C",
+   "explanation": "All four land areas have odd degree (5, 3, 3, 3). Each new bridge adds 1 to the degree at both ends, so two bridges joining the odd vertices in pairs (e.g. north–south and island–east) make every degree even. One bridge leaves two odd vertices.",
+   "steps": [
+    "Degrees: island 5, north 3, south 3, east 3 — four odd vertices.",
+    "A circuit needs every degree even. A new bridge adds 1 to each of its two ends.",
+    "Pair up the four odd vertices: 2 new bridges (e.g. north–south and island–east) make all degrees even."
+   ],
+   "mistakes": {
+    "A": "Step 3: one new bridge fixes only two of the four odd vertices, so you would get a trail but not a circuit.",
+    "B": "Step 3: each new bridge has two ends, so it can fix two odd vertices at once. You don't need one bridge per odd vertex.",
+    "D": "Step 3: with four odd vertices, two bridges (each joining a pair of odd vertices) is enough."
+   },
+   "diagram": "diagrams/y10/maths/paths-trails-and-circuits-q12.svg",
+   "diagram_alt": "A network of four land areas: north bank, island, south bank and east. North and island are joined by two bridges, island and south by two, and east is joined once each to north, island and south."
+  }
+ ]
+}

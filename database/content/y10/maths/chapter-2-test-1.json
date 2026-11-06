@@ -1,0 +1,383 @@
+{
+ "level": "Year 10",
+ "subject": "maths",
+ "unit": "Year 10",
+ "title": "Chapter 2 · Test 1",
+ "kind": "test",
+ "summary": "Fifteen questions on congruence proofs, similar triangles, circle properties, and networks: degree, trails and circuits, and shortest paths.",
+ "minutes": 25,
+ "body": "This test covers Chapter 2: writing geometric proofs with congruent triangles, similar triangles, circle properties (angles and chords), and networks — vertices, edges and degree, paths, trails and circuits, and shortest paths.\n\nAllow about 25 minutes. Work with no notes and no calculator unless a question says you may use one. Read every diagram carefully: diagrams are drawn to scale, but always use the numbers and markings given rather than measuring. Write your working on paper so you can check each step, then choose the best answer. Questions get harder as you go, and the last two are challenge questions.",
+ "questions": [
+  {
+   "difficulty": "easy",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "Which test proves that the two triangles are congruent?",
+   "options": {
+    "A": "SSS",
+    "B": "SAS",
+    "C": "AAS",
+    "D": "RHS"
+   },
+   "answer": "B",
+   "explanation": "Two pairs of sides are equal and the marked angles sit between them in both triangles: SAS. SSS would need the third pair of sides.",
+   "steps": [
+    "Count the marks: two pairs of equal sides (one tick and two ticks) and one pair of equal angles.",
+    "In both triangles the marked angle is between the two marked sides — the included angle.",
+    "Two sides and the included angle: SAS."
+   ],
+   "mistakes": {
+    "A": "Step 1: only two pairs of sides are marked. SSS needs all three.",
+    "C": "Step 1: only one pair of angles is marked. AAS needs two pairs of angles.",
+    "D": "Step 1: there is no right angle marked, so RHS can't be used."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q1.svg",
+   "diagram_alt": "Triangles ABC and PQR (a mirror image). AB and PQ have one tick, AC and PR have two ticks, and the angles at A and P between those sides are marked equal."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Similar triangles",
+   "prompt": "Triangle DEF is an enlargement of triangle ABC. What is the scale factor?",
+   "options": {
+    "A": "⅓",
+    "B": "4",
+    "C": "1.5",
+    "D": "3"
+   },
+   "answer": "D",
+   "explanation": "Matching sides: 6 ÷ 2 = 9 ÷ 3 = 12 ÷ 4 = 3. Dividing the other way gives ⅓, the factor back from DEF to ABC.",
+   "steps": [
+    "Match the shortest sides: 2 cm and 6 cm.",
+    "Scale factor = image ÷ original = 6 ÷ 2.",
+    "k = 3 (check: 3 × 3 = 9 and 4 × 3 = 12)."
+   ],
+   "mistakes": {
+    "A": "Step 2: you divided small by big. For the enlargement from ABC to DEF, divide DEF's side by ABC's: 6 ÷ 2.",
+    "B": "Step 2: 6 − 2 = 4 is a difference. A scale factor multiplies, so divide.",
+    "C": "Step 1: 3 ÷ 2 compares two sides of the same triangle. Divide matching sides of different triangles."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q2.svg",
+   "diagram_alt": "Triangle ABC with sides 2 cm, 3 cm and 4 cm, and triangle DEF with sides 6 cm, 9 cm and 12 cm."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "O is the centre of the circle and ∠ACB = 35°. Find x, the size of ∠AOB.",
+   "options": {
+    "A": "70°",
+    "B": "35°",
+    "C": "17.5°",
+    "D": "145°"
+   },
+   "answer": "A",
+   "explanation": "Both angles stand on arc AB, so ∠AOB = 2 × 35° = 70°. Halving gets the rule the wrong way round.",
+   "steps": [
+    "∠ACB and ∠AOB both stand on arc AB.",
+    "Angle at the centre = 2 × angle at the circumference.",
+    "x = 2 × 35° = 70°."
+   ],
+   "mistakes": {
+    "B": "Step 2: the angle at the centre is not equal to the angle at the circumference — it is double.",
+    "C": "Step 2: you halved. The CENTRE angle is the larger one, so double 35°.",
+    "D": "Step 2: 180° − 35° is not a circle rule here. Both angles stand on arc AB, so double."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q3.svg",
+   "diagram_alt": "A circle with centre O. A and B are on the lower part of the circle and C is on the upper right. Angle ACB is 35° and angle AOB is marked x."
+  },
+  {
+   "difficulty": "easy",
+   "topic": "Networks: vertices, edges and degree",
+   "prompt": "What is the degree of vertex D?",
+   "options": {
+    "A": "4",
+    "B": "3",
+    "C": "5",
+    "D": "6"
+   },
+   "answer": "C",
+   "explanation": "D meets DA, DB and DC (3) plus a loop (2): 3 + 2 = 5. Counting the loop as 1 gives 4.",
+   "steps": [
+    "Ordinary edges at D: DA, DB, DC — that is 3.",
+    "The loop at D has both ends at D, so it adds 2.",
+    "Degree of D = 3 + 2 = 5."
+   ],
+   "mistakes": {
+    "A": "Step 2: a loop has two ends at D, so it adds 2, not 1.",
+    "B": "Step 2: the loop at D also counts. Add 2 for it.",
+    "D": "Step 1: D has three ordinary edges (to A, B and C) — not four. Then add 2 for the loop."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q4.svg",
+   "diagram_alt": "A network with vertices A, B, C and D at the corners of a square. Edges: A–B, A–C, B–D, C–D, a diagonal A–D, and a loop at D."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "ABCD is a cyclic quadrilateral with ∠ABC = 104°. Find x, the size of ∠ADC.",
+   "options": {
+    "A": "104°",
+    "B": "76°",
+    "C": "256°",
+    "D": "52°"
+   },
+   "answer": "B",
+   "explanation": "B and D are opposite, so x = 180° − 104° = 76°. They are supplementary, not equal.",
+   "steps": [
+    "A, B, C and D all lie on the circle, so ABCD is cyclic.",
+    "B and D are opposite angles, so they add to 180°.",
+    "x = 180° − 104° = 76°."
+   ],
+   "mistakes": {
+    "A": "Step 2: opposite angles of a cyclic quadrilateral add to 180°; they are not equal.",
+    "C": "Step 2: you subtracted from 360°. Only the opposite pair adds to 180°.",
+    "D": "Step 2: halving is for an angle at the centre. Here, subtract from 180°."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q5.svg",
+   "diagram_alt": "A cyclic quadrilateral ABCD inside a circle. Angle ABC is 104° and the opposite angle ADC is x."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Paths, trails and circuits",
+   "prompt": "Which statement about this network is true?",
+   "options": {
+    "A": "It has an Eulerian circuit",
+    "B": "It has no Eulerian trail",
+    "C": "It has an Eulerian trail from A to C",
+    "D": "It has an Eulerian trail from D to E, but no Eulerian circuit"
+   },
+   "answer": "D",
+   "explanation": "Degrees: A 2, B 4, C 2, D 3, E 3. Exactly two odd vertices (D and E), so there is an Eulerian trail between them but no circuit, e.g. D–C–B–D–E–B–A–E.",
+   "steps": [
+    "Degrees: A 2, B 4, C 2, D 3, E 3.",
+    "Exactly two odd vertices: D and E.",
+    "So there is an Eulerian trail from D to E (e.g. D–C–B–D–E–B–A–E) but no Eulerian circuit."
+   ],
+   "mistakes": {
+    "A": "Step 2: an Eulerian circuit needs every degree even, but D and E have degree 3.",
+    "B": "Step 2: exactly two odd vertices means an Eulerian trail DOES exist.",
+    "C": "Step 3: an Eulerian trail must start and end at the odd vertices. A and C have degree 2."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q6.svg",
+   "diagram_alt": "A network with A, B and C along the bottom and E and D above. Edges: A–B, B–C, C–D, D–E, E–A, E–B and B–D."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Shortest paths",
+   "prompt": "Find the length of the shortest path from A to F.",
+   "options": {
+    "A": "14",
+    "B": "15",
+    "C": "12",
+    "D": "16"
+   },
+   "answer": "A",
+   "explanation": "A–C–B–D–F = 3 + 1 + 6 + 4 = 14 is the shortest; the direct-looking routes A–B–D–F and A–C–E–F are both 15.",
+   "steps": [
+    "A to B: A–C–B = 3 + 1 = 4 beats A–B = 5.",
+    "B to F: B–D–F = 6 + 4 = 10. Total A–C–B–D–F = 14.",
+    "Other routes: A–B–D–F = 15, A–C–E–F = 15, so the shortest is 14."
+   ],
+   "mistakes": {
+    "B": "Step 2: 15 is A–B–D–F or A–C–E–F. Going A–C–B (3 + 1 = 4) beats A–B (5).",
+    "C": "Step 3: no route adds to 12. Make sure the edges you add join up from A to F.",
+    "D": "Step 3: 16 is A–C–B–D–E–F — the detour through E adds length."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q7.svg",
+   "diagram_alt": "A weighted network with vertices A to F. AB 5, AC 3, BC 1, BD 6, CE 7, DE 2, DF 4 and EF 5."
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "△ABC ≅ △FED, with the vertices written in matching order. Which angle is equal to ∠B?",
+   "options": {
+    "A": "∠D",
+    "B": "∠F",
+    "C": "∠E",
+    "D": "∠C"
+   },
+   "answer": "C",
+   "explanation": "The order gives A↔F, B↔E and C↔D, so ∠B = ∠E. ∠D matches ∠C instead.",
+   "steps": [
+    "Match letters by position: A↔F, B↔E, C↔D.",
+    "B is in the 2nd position.",
+    "The 2nd letter of FED is E, so ∠B = ∠E."
+   ],
+   "mistakes": {
+    "A": "Step 1: B is the 2nd letter of ABC, so match it with the 2nd letter of FED, which is E.",
+    "B": "Step 1: F matches A (both 1st letters), not B.",
+    "D": "Step 1: matching parts come from the other triangle, FED."
+   }
+  },
+  {
+   "difficulty": "medium",
+   "topic": "Similar triangles",
+   "prompt": "In the diagram, DE ∥ BC, AD = 2 cm, DB = 4 cm and DE = 3 cm. Find x, the length of BC.",
+   "options": {
+    "A": "6 cm",
+    "B": "9 cm",
+    "C": "5 cm",
+    "D": "1 cm"
+   },
+   "answer": "B",
+   "explanation": "AB = 2 + 4 = 6 cm, so k = 6 ÷ 2 = 3 and BC = 3 × 3 = 9 cm. Using DB instead of AB gives 6 cm.",
+   "steps": [
+    "△ADE ||| △ABC (common angle A, corresponding angles on DE ∥ BC).",
+    "Whole side AB = 2 + 4 = 6 cm, so k = 6 ÷ 2 = 3.",
+    "x = 3 × 3 = 9 cm."
+   ],
+   "mistakes": {
+    "A": "Step 2: you used DB ÷ AD = 4 ÷ 2. The big triangle's side is the whole of AB = 6 cm.",
+    "C": "Step 3: you added 2 to DE. Similar triangles multiply by a scale factor — they don't add.",
+    "D": "Step 3: BC is in the big triangle, so it must be longer than DE. Multiply by 3, don't divide."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q9.svg",
+   "diagram_alt": "Triangle ABC with D on AB and E on AC, DE parallel to BC. AD is 2 cm, DB is 4 cm, DE is 3 cm and BC is marked x."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Similar triangles",
+   "prompt": "A person 1.5 m tall casts a shadow 2 m long. At the same time, a tree casts a shadow 10 m long, ending at the same point. Find x, the height of the tree.",
+   "options": {
+    "A": "13.3 m",
+    "B": "9.5 m",
+    "C": "6 m",
+    "D": "7.5 m"
+   },
+   "answer": "D",
+   "explanation": "The triangles are similar (same sun angle, both upright). k = 10 ÷ 2 = 5, so x = 1.5 × 5 = 7.5 m.",
+   "steps": [
+    "Both triangles have a right angle and the same angle of the sun's rays, so they are similar.",
+    "k = 10 ÷ 2 = 5.",
+    "x = 1.5 × 5 = 7.5 m."
+   ],
+   "mistakes": {
+    "A": "Step 2: heights must be compared with heights: x ÷ 1.5 = 10 ÷ 2. You used 2 ÷ 1.5.",
+    "B": "Step 2: you added 8 m (the difference of the shadows) to 1.5 m. Similar triangles multiply.",
+    "C": "Step 2: you used the 8 m gap between the person and the tree. The tree's shadow is the whole 10 m."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q10.svg",
+   "diagram_alt": "A tree of height x and a person 1.5 m tall on level ground; one sun ray passes over both. The person's shadow is 2 m and the tree's shadow is 10 m."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Circle properties: angles and chords",
+   "prompt": "A chord 30 cm long is drawn in a circle of radius 17 cm. Find d, the distance from the centre to the chord.",
+   "options": {
+    "A": "22.7 cm",
+    "B": "2 cm",
+    "C": "8 cm",
+    "D": "15 cm"
+   },
+   "answer": "C",
+   "explanation": "Half the chord is 15 cm, so d² = 17² − 15² = 289 − 225 = 64 and d = 8 cm.",
+   "steps": [
+    "The perpendicular from O bisects the chord: 30 ÷ 2 = 15 cm.",
+    "The radius (17 cm) is the hypotenuse: d² = 17² − 15².",
+    "d² = 289 − 225 = 64, so d = 8 cm."
+   ],
+   "mistakes": {
+    "A": "Step 3: the radius is the hypotenuse, so subtract the squares: 17² − 15².",
+    "B": "Step 3: you subtracted the lengths 17 − 15. Square first, then take the square root.",
+    "D": "Step 1: 15 cm is half the chord, not the distance from the centre."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q11.svg",
+   "diagram_alt": "A circle with centre O and radius OA of 17 cm. Chord AB is 30 cm. A dashed perpendicular d from O meets the chord at a right angle."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Paths, trails and circuits",
+   "prompt": "Which route is a Hamiltonian cycle in this network?",
+   "options": {
+    "A": "A–B–E–F–C–D–A",
+    "B": "A–B–C–D–E–F–A",
+    "C": "A–F–C–B–E–D",
+    "D": "A–B–E–D–C–B–A"
+   },
+   "answer": "B",
+   "explanation": "A–B–C–D–E–F–A uses existing edges AB, BC, CD, DE, EF and FA, visits each vertex once and returns to A. A–F–C–B–E–D never returns, so it is a path, not a cycle.",
+   "steps": [
+    "A Hamiltonian cycle visits all 6 vertices once and returns to the start.",
+    "Check each pair in A–B–C–D–E–F–A: AB, BC, CD, DE, EF, FA are all edges.",
+    "Every vertex appears once (A at both ends), so it is a Hamiltonian cycle."
+   ],
+   "mistakes": {
+    "A": "Step 2: there is no edge from D back to A, so this route can't be completed.",
+    "C": "Step 3: this visits every vertex once but doesn't return to A — it is only a Hamiltonian path.",
+    "D": "Step 2: B is visited twice and F is missed."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q12.svg",
+   "diagram_alt": "A network with six vertices. Edges: A–B, A–F, B–C, B–E, C–D, C–F, D–E and E–F."
+  },
+  {
+   "difficulty": "hard",
+   "topic": "Shortest paths",
+   "prompt": "The weights are travel times in minutes. Find the quickest time from S to T.",
+   "options": {
+    "A": "14 minutes",
+    "B": "15 minutes",
+    "C": "17 minutes",
+    "D": "13 minutes"
+   },
+   "answer": "A",
+   "explanation": "S–B–D–C–T = 6 + 4 + 1 + 3 = 14 minutes beats S–A–C–T = 15. Dijkstra gives A 4, B 6, D 10, C 11, T 14.",
+   "steps": [
+    "Dijkstra from S: A = 4, B = min(6, 4 + 3) = 6.",
+    "D = min(6 + 4, 4 + 9) = 10, C = min(4 + 8, 10 + 1) = 11.",
+    "T = min(11 + 3, 10 + 7) = 14, along S–B–D–C–T."
+   ],
+   "mistakes": {
+    "B": "Step 3: 15 is S–A–C–T. Check S–B–D–C–T, which uses the short edge CD.",
+    "C": "Step 3: 17 is S–B–D–T or S–A–D–C–T. There is a quicker route.",
+    "D": "Step 3: no route adds to 13. Add the weights along a route that joins S to T."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q13.svg",
+   "diagram_alt": "A weighted network from S to T with times in minutes. SA 4, SB 6, AB 3, AC 8, AD 9, BD 4, CD 1, CT 3 and DT 7."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Geometric proofs and congruence",
+   "prompt": "In △ABC, AB = AC and AD bisects ∠BAC, meeting BC at D. BD = (2y + 1) cm and DC = (4y − 7) cm. Find the length of BC.",
+   "options": {
+    "A": "9 cm",
+    "B": "4 cm",
+    "C": "6 cm",
+    "D": "18 cm"
+   },
+   "answer": "D",
+   "explanation": "△ABD ≅ △ACD by SAS (AB = AC, equal angles at A, AD common), so BD = DC: 2y + 1 = 4y − 7, y = 4, BD = DC = 9 cm and BC = 18 cm.",
+   "steps": [
+    "△ABD ≅ △ACD (SAS: AB = AC, ∠BAD = ∠CAD, AD common), so BD = DC.",
+    "2y + 1 = 4y − 7, so 8 = 2y and y = 4.",
+    "BD = DC = 9 cm, so BC = 18 cm."
+   ],
+   "mistakes": {
+    "A": "Step 3: 9 cm is BD only. BC = BD + DC.",
+    "B": "Step 2: y = 4 is not a length. Substitute it into BD and DC.",
+    "C": "Step 2: 2y + 1 = 4y − 7 gives 8 = 2y (add 7 and subtract 1), so y = 4, not 1."
+   },
+   "diagram": "diagrams/y10/maths/chapter-2-test-1-q14.svg",
+   "diagram_alt": "Isosceles triangle ABC with AB = AC (one tick each). AD bisects angle A (two equal arcs) and meets BC at D. BD is labelled 2y + 1 and DC is labelled 4y − 7."
+  },
+  {
+   "difficulty": "challenge",
+   "topic": "Networks: vertices, edges and degree",
+   "prompt": "A connected planar network has 9 edges and divides the plane into 6 faces (including the outside face). How many vertices does it have?",
+   "options": {
+    "A": "1",
+    "B": "17",
+    "C": "5",
+    "D": "3"
+   },
+   "answer": "C",
+   "explanation": "v − e + f = 2 gives v − 9 + 6 = 2, so v = 5. Leaving out the 2 gives 3.",
+   "steps": [
+    "Euler's formula: v − e + f = 2.",
+    "Substitute: v − 9 + 6 = 2, so v − 3 = 2.",
+    "v = 5 vertices."
+   ],
+   "mistakes": {
+    "A": "Step 2: rearranging v − e + f = 2 gives v = 2 + e − f, not e − f − 2.",
+    "B": "Step 2: adding everything doesn't follow Euler's formula. Use v = 2 + e − f.",
+    "D": "Step 2: you left out the 2 in Euler's formula: v − e + f = 2."
+   }
+  }
+ ]
+}
