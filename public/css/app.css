@@ -479,3 +479,8 @@ tr[hidden] { display: none; }
 .player [data-play] { min-width: 132px; }
 .player-bar { flex: 1 1 120px; height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; min-width: 80px; }
 .player-bar span { display: block; height: 100%; width: 0; background: var(--accent, var(--chem)); transition: width .4s ease; }
+.drawing .item.rm { animation: cube-rm 1.4s ease both; }
+.drawing .item.rm .cross { animation: cross-in .3s ease both; animation-delay: inherit; }
+.drawing .item.add { animation: cube-add .6s ease both; }
+.drawing .item.hl .glow { animation: cross-in .5s ease both; animation-delay: inherit; }
+@media (prefers-reduced-motion: reduce) { .drawing .item.rm { opacity: .25; } }

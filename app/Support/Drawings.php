@@ -12,6 +12,13 @@ namespace App\Support;
  *    "remove": 7, "removeFrom": "both|left|right", "add": 11, "addTo": "both|left|right",
  *    "share": true, "tip": "left|right", "labels": ["4x + 7", "35"]}
  *   {"type": "numberline", "from": -14, "to": 4, "start": 2, "jump": -14}
+ *   {"type": "shapes", "width": 560, "height": 320, "items": [
+ *      {"kind": "rect", "x": 20, "y": 40, "w": 100, "h": 40, "fill": "blue", "label": "1/4"},
+ *      {"kind": "circle", "x": 300, "y": 160, "r": 40, "fill": "orange", "change": "remove"},
+ *      {"kind": "line"|"arrow", "x": 10, "y": 10, "x2": 200, "y2": 10, "color": "red", "change": "add"},
+ *      {"kind": "polygon", "points": [[10,10],[90,10],[50,80]], "fill": "green"},
+ *      {"kind": "text", "x": 50, "y": 50, "text": "x = 7", "size": 22, "color": "purple", "change": "highlight"}]}
+ *   "change": "add" (appears in this step, green), "remove" (crossed out, then fades), "highlight" (yellow glow).
  * Negative cubes ("cubes": -11) are drawn as red "minus" cubes.
  */
 class Drawings
@@ -42,6 +49,7 @@ class Drawings
         return match ($spec['type'] ?? null) {
             'balance' => self::balance($spec),
             'numberline' => self::numberLine($spec),
+            'shapes' => self::shapes($spec),
             default => null,
         };
     }
@@ -190,6 +198,98 @@ class Drawings
     private static function balanceText(array $L, array $R): string
     {
         return 'Balance scale: '.self::expr($L).' on the left, '.self::expr($R).' on the right';
+    }
+
+    private const COLOURS = [
+        'blue' => ['#CFE0FF', '#2F6BEA'], 'orange' => ['#FFE1C2', '#C2610C'], 'green' => ['#D5F0DF', '#1F7A4D'],
+        'red' => ['#F9D2CE', '#B42318'], 'purple' => ['#E5DEFF', '#5B3FD6'], 'yellow' => ['#FFF1B8', '#9A6B00'],
+        'grey' => ['#E8EAEE', '#5B6573'], 'pink' => ['#FCE0EE', '#B4236E'], 'teal' => ['#CCF2EE', '#0F766E'],
+        'none' => ['none', '#3A3A3A'], 'white' => ['#FFFFFF', '#3A3A3A'], 'black' => ['#3A3A3A', '#141A22'],
+    ];
+
+    /** Simple shapes, lines and labels, each able to appear, be taken away or be highlighted at this step. */
+    private static function shapes(array $s): string
+    {
+        $W = self::int($s['width'] ?? 560, 100, 900, 560);
+        $H = self::int($s['height'] ?? 320, 60, 700, 320);
+        $num = fn ($v, $d = 0) => is_numeric($v) ? round((float) $v, 1) : $d;
+        $col = fn ($name, $i) => self::COLOURS[is_string($name) && isset(self::COLOURS[$name]) ? $name : 'blue'][$i];
+        $svg = '<svg class="drawing shapes" viewBox="0 0 '.$W.' '.$H.'" role="img" xmlns="http://www.w3.org/2000/svg"><title>'.self::e((string) ($s['alt'] ?? 'Drawing')).'</title>';
+        $svg .= '<defs><marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="context-stroke"/></marker></defs>';
+        $n = 0;
+        foreach (array_slice((array) ($s['items'] ?? []), 0, 80) as $it) {
+            if (! is_array($it)) {
+                continue;
+            }
+            $change = in_array($it['change'] ?? null, ['add', 'remove', 'highlight'], true) ? $it['change'] : null;
+            if ($change === 'add' && in_array(self::$phase, ['before', 'during'], true)) {
+                continue; // not there yet
+            }
+            $fill = $col($it['fill'] ?? 'blue', 0);
+            $stroke = $col($it['color'] ?? ($it['fill'] ?? 'blue'), 1);
+            if ($change === 'add') {
+                $stroke = '#1F7A4D';
+            }
+            $sw = $num($it['stroke'] ?? 2, 2);
+            $kind = $it['kind'] ?? 'rect';
+            $x = $num($it['x'] ?? 0);
+            $y = $num($it['y'] ?? 0);
+            $box = null;
+            $el = '';
+            switch ($kind) {
+                case 'rect':
+                    $w = $num($it['w'] ?? 40, 40); $h = $num($it['h'] ?? 40, 40);
+                    $el = '<rect x="'.$x.'" y="'.$y.'" width="'.$w.'" height="'.$h.'" rx="'.$num($it['rx'] ?? 3, 3).'" fill="'.$fill.'" stroke="'.$stroke.'" stroke-width="'.$sw.'"/>';
+                    $box = [$x, $y, $w, $h];
+                    break;
+                case 'circle':
+                    $r = $num($it['r'] ?? 20, 20);
+                    $el = '<circle cx="'.$x.'" cy="'.$y.'" r="'.$r.'" fill="'.$fill.'" stroke="'.$stroke.'" stroke-width="'.$sw.'"/>';
+                    $box = [$x - $r, $y - $r, 2 * $r, 2 * $r];
+                    break;
+                case 'line':
+                case 'arrow':
+                    $x2 = $num($it['x2'] ?? $x); $y2 = $num($it['y2'] ?? $y);
+                    $c = $col($it['color'] ?? 'black', 1);
+                    $el = '<line x1="'.$x.'" y1="'.$y.'" x2="'.$x2.'" y2="'.$y2.'" stroke="'.($change === 'add' ? '#1F7A4D' : $c).'" stroke-width="'.$num($it['stroke'] ?? 3, 3).'" stroke-linecap="round"'.($kind === 'arrow' ? ' marker-end="url(#arrowhead)"' : '').(! empty($it['dashed']) ? ' stroke-dasharray="6 5"' : '').'/>';
+                    $box = [min($x, $x2), min($y, $y2) - 4, abs($x2 - $x), abs($y2 - $y) + 8];
+                    break;
+                case 'polygon':
+                    $pts = array_filter(array_map(fn ($p) => is_array($p) && count($p) >= 2 ? [$num($p[0]), $num($p[1])] : null, array_slice((array) ($it['points'] ?? []), 0, 40)));
+                    if (count($pts) < 2) {
+                        continue 2;
+                    }
+                    $xs = array_column($pts, 0); $ys = array_column($pts, 1);
+                    $el = '<polygon points="'.implode(' ', array_map(fn ($p) => $p[0].','.$p[1], $pts)).'" fill="'.$fill.'" stroke="'.$stroke.'" stroke-width="'.$sw.'" stroke-linejoin="round"/>';
+                    $box = [min($xs), min($ys), max($xs) - min($xs), max($ys) - min($ys)];
+                    break;
+                case 'text':
+                    $size = $num($it['size'] ?? 20, 20);
+                    $c = $change === 'add' ? '#1F7A4D' : $col($it['color'] ?? 'black', 1);
+                    $anchor = in_array($it['anchor'] ?? 'middle', ['start', 'middle', 'end'], true) ? ($it['anchor'] ?? 'middle') : 'middle';
+                    $el = '<text x="'.$x.'" y="'.$y.'" font-size="'.$size.'" font-weight="'.(! empty($it['bold']) ? 700 : 500).'" fill="'.$c.'" text-anchor="'.$anchor.'" font-family="Inter, sans-serif">'.self::e(mb_substr((string) ($it['text'] ?? ''), 0, 60)).'</text>';
+                    $tw = mb_strlen((string) ($it['text'] ?? '')) * $size * 0.55;
+                    $box = [$anchor === 'middle' ? $x - $tw / 2 : ($anchor === 'end' ? $x - $tw : $x), $y - $size, $tw, $size * 1.2];
+                    break;
+                default:
+                    continue 2;
+            }
+            if (isset($it['label']) && $box && $kind !== 'text') {
+                $el .= '<text x="'.round($box[0] + $box[2] / 2, 1).'" y="'.round($box[1] + $box[3] / 2 + 6, 1).'" font-size="'.$num($it['labelSize'] ?? 17, 17).'" font-weight="700" fill="'.$col($it['color'] ?? ($it['fill'] ?? 'black'), 1).'" text-anchor="middle" font-family="Inter, sans-serif">'.self::e(mb_substr((string) $it['label'], 0, 30)).'</text>';
+            }
+            if ($change === 'highlight' && $box) {
+                $el = '<rect class="glow" x="'.round($box[0] - 6, 1).'" y="'.round($box[1] - 6, 1).'" width="'.round($box[2] + 12, 1).'" height="'.round($box[3] + 12, 1).'" rx="8" fill="#FFE066" opacity="'.(self::$phase === 'before' ? 0 : 0.55).'"/>'.$el;
+            }
+            if ($change === 'remove' && $box && self::$phase !== 'before') {
+                [$bx, $by, $bw, $bh] = array_map(fn ($v) => round($v, 1), $box);
+                $el .= '<path class="cross" d="M'.$bx.','.$by.' L'.($bx + $bw).','.($by + $bh).' M'.($bx + $bw).','.$by.' L'.$bx.','.($by + $bh).'" stroke="#B42318" stroke-width="3" stroke-linecap="round"/>';
+            }
+            $cls = $change === 'remove' ? 'item rm' : ($change === 'add' ? 'item add' : ($change === 'highlight' ? 'item hl' : 'item'));
+            $op = $change === 'remove' && self::$phase === 'after' ? ' opacity="0.25"' : '';
+            $svg .= '<g class="'.$cls.'" style="animation-delay:'.round(0.5 + 0.08 * $n++, 2).'s"'.$op.'>'.$el.'</g>';
+        }
+
+        return $svg.'</svg>';
     }
 
     private static function numberLine(array $s): string
