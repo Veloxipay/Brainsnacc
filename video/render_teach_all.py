@@ -19,7 +19,13 @@ def main():
     limit = int(arg('--limit', 10 ** 6))
     known = check_teach.lessons()
     done = 0
-    for path in sorted(glob.glob(os.path.join(ROOT, 'database', 'content', 'teach', '*', '*', '*.json'))):
+    # Years 7–10 Maths first (the main product), then selective prep, then the sciences.
+    order = ['year-7/maths', 'year-8/maths', 'year-9/maths', 'year-10/maths', 'year-7/selective']
+    def rank(p):
+        rel = os.path.relpath(p, os.path.join(ROOT, 'database', 'content', 'teach'))
+        key = '/'.join(rel.split(os.sep)[:2])
+        return (order.index(key) if key in order else len(order), rel)
+    for path in sorted(glob.glob(os.path.join(ROOT, 'database', 'content', 'teach', '*', '*', '*.json')), key=rank):
         if time.time() > stop_at or done >= limit:
             break
         rel = os.path.relpath(path, os.path.join(ROOT, 'database', 'content', 'teach'))
