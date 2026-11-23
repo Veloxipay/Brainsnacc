@@ -16,8 +16,29 @@ namespace App\Support;
  */
 class Drawings
 {
-    public static function render(?array $spec): ?string
+    private static ?string $phase = null;
+
+    /**
+     * $phase is for still pictures (videos), where nothing animates:
+     *   'before' — the picture before this step's change, 'during' — what's being taken off is crossed out,
+     *   'after' — the result (taken-off cubes faded, scale tipped, new cubes in, cubes shared out).
+     * Null: one animated picture for the web page.
+     */
+    public static function render(?array $spec, ?string $phase = null): ?string
     {
+        if (! is_array($spec)) {
+            return null;
+        }
+        self::$phase = $phase;
+        if ($phase === 'before') {
+            unset($spec['remove'], $spec['add'], $spec['tip'], $spec['share'], $spec['jump'], $spec['labels']);
+        } elseif ($phase === 'during') {
+            unset($spec['add'], $spec['tip'], $spec['share']);
+            if (isset($spec['jump'])) {
+                unset($spec['jump']);
+            }
+        }
+
         return match ($spec['type'] ?? null) {
             'balance' => self::balance($spec),
             'numberline' => self::numberLine($spec),
@@ -65,7 +86,9 @@ class Drawings
         $svg .= '<polygon points="'.($px - 34).',310 '.($px + 34).',310 '.$px.','.$beamY.'" fill="#E6E2D6" stroke="#6B6658" stroke-width="2"/>';
         $svg .= '<line x1="'.($px - 90).'" y1="312" x2="'.($px + 90).'" y2="312" stroke="#6B6658" stroke-width="4" stroke-linecap="round"/>';
         // beam (with a little swing when it tips)
-        $svg .= '<g class="'.($angle ? 'tipping' : '').'" style="--tip:'.(-$angle).'deg;transform-origin:'.$px.'px '.$beamY.'px">';
+        $svg .= self::$phase === 'after' && $angle
+            ? '<g transform="rotate('.(-$angle).' '.$px.' '.$beamY.')">'
+            : '<g class="'.($angle ? 'tipping' : '').'" style="--tip:'.(-$angle).'deg;transform-origin:'.$px.'px '.$beamY.'px">';
         $svg .= '<line x1="'.($px - $arm).'" y1="'.$beamY.'" x2="'.($px + $arm).'" y2="'.$beamY.'" stroke="#3A3A3A" stroke-width="6" stroke-linecap="round"/>';
         $svg .= '</g><circle cx="'.$px.'" cy="'.$beamY.'" r="8" fill="#3A3A3A"/>';
 
@@ -140,7 +163,7 @@ class Drawings
         $fill = $neg ? '#F7C6C2' : '#CFE0FF';
         $stroke = $neg ? '#B42318' : '#2F6BEA';
         $s = round($size - 2, 1);
-        $g = '<g class="cube '.$class.'" style="animation-delay:'.round($delay, 2).'s"><rect x="'.round($x, 1).'" y="'.round($y, 1).'" width="'.$s.'" height="'.$s.'" rx="2" fill="'.$fill.'" stroke="'.$stroke.'" stroke-width="1.2"/>';
+        $g = '<g class="cube '.$class.'" style="animation-delay:'.round($delay, 2).'s"'.(self::$phase === 'after' && $class === 'rm' ? ' opacity="0.25"' : '').'><rect x="'.round($x, 1).'" y="'.round($y, 1).'" width="'.$s.'" height="'.$s.'" rx="2" fill="'.$fill.'" stroke="'.$stroke.'" stroke-width="1.2"/>';
         if ($neg) {
             $g .= '<line x1="'.round($x + 3, 1).'" y1="'.round($y + $s / 2, 1).'" x2="'.round($x + $s - 3, 1).'" y2="'.round($y + $s / 2, 1).'" stroke="#B42318" stroke-width="1.5"/>';
         }

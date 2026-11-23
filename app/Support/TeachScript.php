@@ -22,6 +22,15 @@ class TeachScript
         return database_path('content/teach/'.Str::slug($unit->level->short_name).'/'.$unit->subject->slug.'/'.Str::slug($lesson->title).'.json');
     }
 
+    /** The topic as a narrated board video (made by video/board_video.py), if it has been made. */
+    public static function videoPath(Lesson $lesson): ?string
+    {
+        $unit = $lesson->module->unit;
+        $rel = 'videos/teach/'.Str::slug($unit->level->short_name).'/'.$unit->subject->slug.'/'.Str::slug($lesson->title).'.mp4';
+
+        return is_file(public_path($rel)) ? $rel : null;
+    }
+
     /** @return array<int, array{heading: string, lines: array<int, array{say: ?string, write: ?string, diagram: ?string, alt: ?string}>}>|null */
     public static function for(Lesson $lesson): ?array
     {

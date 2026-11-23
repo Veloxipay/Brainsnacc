@@ -43,6 +43,7 @@ class LessonController extends Controller
             'subject' => $lesson->module->unit->subject,
             'plan' => $plan,
             'script' => TeachScript::for($lesson),
+            'topicVideo' => TeachScript::videoPath($lesson),
             'nextLesson' => $index !== false ? $siblings->get($index + 1) : null,
             'homework' => Homework::where('student_id', $request->user()->id)->where('lesson_id', $lesson->id)->open()->with('setter')->first(),
         ]);

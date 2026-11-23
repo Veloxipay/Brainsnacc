@@ -25,7 +25,7 @@
             </div>
         </header>
         <ol class="teach-path" aria-label="Where you are">
-            @if ($lesson->video || $slides || $script)<li data-path="topic">The topic</li>@endif
+            @if ($lesson->video || $slides || $script || $topicVideo)<li data-path="topic">The topic</li>@endif
             @foreach ($plan['stages'] as $i => $stage)
                 <li data-path="stage{{ $i }}">{{ $i + 1 }}. {{ $stage['title'] }}</li>
             @endforeach
@@ -51,7 +51,16 @@
                     </figure>
                 </section>
             @endif
-            @if ($script)
+            @if ($topicVideo)
+                {{-- The topic as a video: the teacher writes and draws on the board and talks it through --}}
+                <section class="tstep" data-kind="video" data-path="topic" hidden>
+                    <h2>Watch and write along</h2>
+                    <figure class="lesson-video">
+                        <video controls preload="metadata" playsinline src="{{ asset($topicVideo) }}" data-topic-video></video>
+                    </figure>
+                    <p class="small muted" style="margin:0" data-video-tip>Pause any time to copy the board into your book. Next unlocks when the video ends.</p>
+                </section>
+            @elseif ($script)
                 {{-- The topic at the board: one short sentence at a time, with what to write and a picture where it helps --}}
                 @foreach ($script as $f => $frame)
                     <section class="tstep" data-kind="learn" data-path="topic" hidden>
@@ -203,6 +212,7 @@
 
         /* ---- moving through the steps ---- */
         function canLeave(s) {
+            if (s.dataset.kind === 'video') return s.dataset.watched === '1';
             if (s.dataset.kind === 'learn') return s.dataset.written === '1';
             if (s.dataset.kind === 'q') return s.dataset.done === '1';
             return true;
@@ -279,6 +289,15 @@
                 var last = lines[Math.max(0, shown - 1)];
                 say(last.dataset.say || last.querySelector('.ink').textContent);
             });
+        });
+
+        /* ---- topic video: Next unlocks once it has been watched to the end ---- */
+        root.querySelectorAll('[data-topic-video]').forEach(function (v) {
+            var s = v.closest('.tstep');
+            function done() { s.dataset.watched = '1'; if (steps[current] === s) next.disabled = false; s.querySelector('[data-video-tip]').textContent = 'Well done. Press Next to try it yourself.'; }
+            v.addEventListener('ended', done);
+            v.addEventListener('timeupdate', function () { if (v.duration && v.currentTime >= v.duration - 1.5) done(); });
+            v.addEventListener('play', function () { if (synth) synth.cancel(); });
         });
 
         /* ---- the topic plays like a video: write a line, say it, give time to copy it, next line ---- */
@@ -479,7 +498,7 @@
                 start = saved.at;
                 results = saved.results || [];
                 steps.slice(0, start).forEach(function (s) {
-                    s.dataset.written = '1'; s.dataset.done = '1'; s.dataset.started = '1';
+                    s.dataset.written = '1'; s.dataset.done = '1'; s.dataset.started = '1'; s.dataset.watched = '1';
                     s.querySelectorAll('[data-line]').forEach(function (l) { l.hidden = false; });
                     var b = s.querySelector('[data-next-line]'); if (b) { b.textContent = 'I’ve written it all ✓'; b.disabled = true; }
                     s.querySelectorAll('[data-answer] input, [data-answer] button, [data-choices] button').forEach(function (el) { el.disabled = true; });
