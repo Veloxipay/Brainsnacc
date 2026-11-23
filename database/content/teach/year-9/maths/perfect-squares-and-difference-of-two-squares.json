@@ -1,0 +1,684 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Perfect squares and difference of two squares",
+  "frames": [
+    {
+      "heading": "A garden with a path",
+      "lines": [
+        {
+          "say": "A square lawn of side a, with a path of width b along two sides.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 350,
+            "alt": "A square of side a + b split into a², two ab strips and b²",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "a²"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "a",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 135,
+                "text": "a",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The path adds two strips, each a by b, and a corner tile, b squared.",
+          "write": "a² + ab + ab + b²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 350,
+            "alt": "A square of side a + b split into a², two ab strips and b²",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "a²"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "a",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 135,
+                "text": "a",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 40,
+                "w": 60,
+                "h": 180,
+                "fill": "orange",
+                "label": "ab",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 220,
+                "w": 180,
+                "h": 60,
+                "fill": "orange",
+                "label": "ab",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 220,
+                "w": 60,
+                "h": 60,
+                "fill": "green",
+                "label": "b²",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 30,
+                "text": "b",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 255,
+                "text": "b",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So a plus b, all squared, has 2ab in the middle.",
+          "write": "(a + b)² = a² + 2ab + b²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 350,
+            "alt": "A square of side a + b split into a², two ab strips and b²",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "a²"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "a",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 135,
+                "text": "a",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 40,
+                "w": 60,
+                "h": 180,
+                "fill": "orange",
+                "label": "ab"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 220,
+                "w": 180,
+                "h": 60,
+                "fill": "orange",
+                "label": "ab"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 220,
+                "w": 60,
+                "h": 60,
+                "fill": "green",
+                "label": "b²"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 30,
+                "text": "b",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 255,
+                "text": "b",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 330,
+                "text": "(a + b)² = a² + 2ab + b²",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Forget a strip and you get the wrong area.",
+          "write": "two strips → 2ab"
+        }
+      ]
+    },
+    {
+      "heading": "Perfect squares",
+      "lines": [
+        {
+          "say": "A perfect square is a binomial multiplied by itself.",
+          "write": "(a + b)(a + b)"
+        },
+        {
+          "say": "Square the first, double the product, square the last.",
+          "write": "first², 2 × product, last²"
+        },
+        {
+          "say": "With a minus, the middle term is minus. The last term stays positive.",
+          "write": "(a − b)² = a² − 2ab + b²"
+        }
+      ]
+    },
+    {
+      "heading": "Expanding perfect squares",
+      "lines": [
+        {
+          "say": "Expand x plus 6, all squared. Square the first: x squared.",
+          "write": "x²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Area model of (x + 6) squared",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 30,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 22,
+                "text": "x",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 125,
+                "text": "x",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Double the product: 2 times x times 6 is 12x.",
+          "write": "+ 12x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Area model of (x + 6) squared",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 30,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 22,
+                "text": "x",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 125,
+                "text": "x",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 30,
+                "w": 90,
+                "h": 180,
+                "fill": "orange",
+                "label": "6x",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 210,
+                "w": 180,
+                "h": 90,
+                "fill": "orange",
+                "label": "6x",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 22,
+                "text": "6",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 260,
+                "text": "6",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Square the last: 36.",
+          "write": "(x + 6)² = x² + 12x + 36",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Area model of (x + 6) squared",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 30,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 22,
+                "text": "x",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 125,
+                "text": "x",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 30,
+                "w": 90,
+                "h": 180,
+                "fill": "orange",
+                "label": "6x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 210,
+                "w": 180,
+                "h": 90,
+                "fill": "orange",
+                "label": "6x"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 22,
+                "text": "6",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 260,
+                "text": "6",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 210,
+                "w": 90,
+                "h": 90,
+                "fill": "green",
+                "label": "36",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now 3x minus 2, squared. Square the 3 as well: 9x squared.",
+          "write": "(3x)² = 9x²"
+        },
+        {
+          "say": "2 times 3x times minus 2 is minus 12x. Minus 2 squared is plus 4.",
+          "write": "(3x − 2)² = 9x² − 12x + 4"
+        }
+      ]
+    },
+    {
+      "heading": "Difference of two squares",
+      "lines": [
+        {
+          "say": "Same terms, opposite signs: a plus b times a minus b.",
+          "write": "(a + b)(a − b)"
+        },
+        {
+          "say": "The middle terms, minus ab and plus ab, cancel out.",
+          "write": "a² − ab + ab − b²"
+        },
+        {
+          "say": "We're left with a squared minus b squared. No middle term.",
+          "write": "= a² − b²"
+        },
+        {
+          "say": "Start with a square of side a.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "A square of side a with a small square of side b cut from one corner",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 240,
+                "h": 240,
+                "fill": "blue",
+                "label": "a²"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 30,
+                "text": "a",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 165,
+                "text": "a",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cut a small square b squared from the corner. The area left is a squared minus b squared.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "A square of side a with a small square of side b cut from one corner",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 240,
+                "h": 240,
+                "fill": "blue",
+                "label": "a² − b²"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 40,
+                "w": 60,
+                "h": 60,
+                "fill": "white",
+                "label": "b²",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 30,
+                "text": "a",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 165,
+                "text": "a",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 320,
+                "text": "area left = a² − b²",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Using DOTS",
+      "lines": [
+        {
+          "say": "Expand 2a plus 5, times 2a minus 5.",
+          "write": "(2a + 5)(2a − 5)"
+        },
+        {
+          "say": "Square the first, 4a squared. Square the last, 25. Subtract.",
+          "write": "= 4a² − 25"
+        },
+        {
+          "say": "Mental maths: 41 times 39 is 40 plus 1, times 40 minus 1.",
+          "write": "41 × 39 = 40² − 1²"
+        },
+        {
+          "say": "1600 minus 1 is 1599.",
+          "write": "= 1599"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "x plus 3, squared, is not x squared plus 9. There's a middle term.",
+          "write": "✗ (x + 3)² = x² + 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "The two 3x strips missing from x² + 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 30,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 210,
+                "w": 60,
+                "h": 60,
+                "fill": "green",
+                "label": "9"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't forget to double. The middle term is 6x, not 3x.",
+          "write": "(x + 3)² = x² + 6x + 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "The two 3x strips missing from x² + 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 30,
+                "w": 180,
+                "h": 180,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 210,
+                "w": 60,
+                "h": 60,
+                "fill": "green",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 30,
+                "w": 60,
+                "h": 180,
+                "fill": "red",
+                "label": "3x",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 210,
+                "w": 180,
+                "h": 60,
+                "fill": "red",
+                "label": "3x",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 140,
+                "text": "2 × 3x = 6x",
+                "size": 20,
+                "change": "add",
+                "bold": true,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Square the coefficient. 3x, squared, is 9x squared.",
+          "write": "(3x)² = 9x²"
+        },
+        {
+          "say": "Minus 7, squared, is plus 49.",
+          "write": "(x − 7)² = x² − 14x + 49"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Perfect square: square, double the product, square.",
+          "write": "a² ± 2ab + b²"
+        },
+        {
+          "say": "Difference of two squares: no middle term.",
+          "write": "(a + b)(a − b) = a² − b²"
+        },
+        {
+          "say": "Check by substituting a small number like 1.",
+          "write": "check with x = 1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Equations with brackets",
+  "frames": [
+    {
+      "heading": "Why brackets appear",
+      "lines": [
+        {
+          "say": "4 friends each buy a snack for x dollars and a 3 dollar drink.",
+          "write": "4(x + 3)"
+        },
+        {
+          "say": "That's 4 lots of x plus 3.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Four groups of x + 3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 125,
+                "text": "= 36",
+                "size": 28,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "If they spend 36 dollars, we get an equation with brackets.",
+          "write": "4(x + 3) = 36"
+        },
+        {
+          "say": "There are two ways to solve it."
+        }
+      ]
+    },
+    {
+      "heading": "Method 1: expand first",
+      "lines": [
+        {
+          "say": "Multiply the 4 by every term inside. Every term gets a turn.",
+          "write": "4x + 12 = 36",
+          "diagram": "diagrams/y8/maths/equations-with-brackets-area.svg",
+          "alt": "Area model 4(x + 3) = 4x + 12"
+        },
+        {
+          "say": "Now it's 4 bags and 12 cubes, balancing 36.",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 4,
+              "cubes": 12
+            },
+            "right": {
+              "cubes": 36
+            }
+          }
+        },
+        {
+          "say": "Take 12 off both sides. It stays level.",
+          "write": "4x = 24",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 4,
+              "cubes": 12
+            },
+            "right": {
+              "cubes": 36
+            },
+            "remove": 12,
+            "labels": [
+              "4x + 12 − 12",
+              "36 − 12"
+            ]
+          }
+        },
+        {
+          "say": "Share 24 between 4 bags. x is 6.",
+          "write": "x = 6",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 4
+            },
+            "right": {
+              "cubes": 24
+            },
+            "share": true
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Method 2: divide first",
+      "lines": [
+        {
+          "say": "36 divides neatly by 4. So divide both sides by 4.",
+          "write": "÷ 4 both sides"
+        },
+        {
+          "say": "One group is a quarter of 36. x plus 3 equals 9.",
+          "write": "x + 3 = 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Four groups of x + 3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "change": "remove",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "change": "remove",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 60,
+                "w": 90,
+                "h": 110,
+                "fill": "none",
+                "change": "remove",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 75,
+                "w": 35,
+                "h": 40,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 82,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 110,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 138,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 125,
+                "text": "= 36",
+                "size": 28,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "one bag: x + 3 = 9",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take 3 from both sides. x is 6 again.",
+          "write": "x = 6"
+        },
+        {
+          "say": "Divide if it's tidy, expand if it's messy.",
+          "write": "tidy → divide, messy → expand"
+        },
+        {
+          "say": "Try 5 times 2x minus 3 equals 35. Divide by 5 first.",
+          "write": "2x − 3 = 7 → x = 5"
+        }
+      ]
+    },
+    {
+      "heading": "Two brackets",
+      "lines": [
+        {
+          "say": "Three lots of x plus 4, plus two lots of x minus 1, is 35.",
+          "write": "3(x + 4) + 2(x − 1) = 35"
+        },
+        {
+          "say": "Expand both brackets.",
+          "write": "3x + 12 + 2x − 2 = 35"
+        },
+        {
+          "say": "Collect like terms. 5x plus 10.",
+          "write": "5x + 10 = 35",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 5,
+              "cubes": 10
+            },
+            "right": {
+              "cubes": 35
+            }
+          }
+        },
+        {
+          "say": "Take 10 from both sides, then divide by 5. x is 5.",
+          "write": "5x = 25, x = 5",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 5,
+              "cubes": 10
+            },
+            "right": {
+              "cubes": 35
+            },
+            "remove": 10,
+            "labels": [
+              "5x + 10 − 10",
+              "35 − 10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "A negative outside",
+      "lines": [
+        {
+          "say": "Negative 2 times x minus 6 equals 10.",
+          "write": "−2(x − 6) = 10"
+        },
+        {
+          "say": "The sign travels with the number. Multiply by negative 2.",
+          "write": "−2 × x = −2x"
+        },
+        {
+          "say": "Negative 2 times negative 6 is plus 12.",
+          "write": "−2 × (−6) = +12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Multiply every term by negative 2",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 70,
+                "text": "−2(x − 6)",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 95,
+                "x2": 300,
+                "y2": 130,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 95,
+                "x2": 390,
+                "y2": 130,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "−2x + 12",
+                "size": 40,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take 12 from both sides, then divide by negative 2. x is 1.",
+          "write": "−2x = −2, x = 1"
+        },
+        {
+          "say": "Check: negative 2 times negative 5 is 10.",
+          "write": "−2 × (1 − 6) = 10 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "4 times x plus 3 isn't 4x plus 3. Every term gets a turn.",
+          "write": "✗ 4x + 3"
+        },
+        {
+          "say": "In 6 minus 2 times x plus 1, the minus belongs to the 2.",
+          "write": "6 − 2x − 2 = −8"
+        },
+        {
+          "say": "Don't do 6 minus 2 first. Multiply before you subtract.",
+          "write": "✗ 4(x + 1)"
+        },
+        {
+          "say": "So 4 minus 2x is negative 8. Then x is 6.",
+          "write": "x = 6"
+        },
+        {
+          "say": "A lone minus is negative 1. Every sign inside flips.",
+          "write": "−(x + 1) = −x − 1"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Every term gets a turn.",
+          "write": "a(b + c) = ab + ac"
+        },
+        {
+          "say": "Divide if it's tidy, expand if it's messy.",
+          "write": "tidy / messy"
+        },
+        {
+          "say": "Two brackets? Expand both, then collect like terms.",
+          "write": "collect like terms"
+        },
+        {
+          "say": "Check your answer in the original, with the brackets.",
+          "write": "check ✓"
+        }
+      ]
+    }
+  ]
+}

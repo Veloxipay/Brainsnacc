@@ -1,0 +1,137 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Cellular respiration",
+  "frames": [
+    { "heading": "The big picture",
+      "lines": [
+        { "say": "Cells need ATP. Respiration releases glucose's energy and captures it as ATP.", "write": "glucose → ATP" },
+        { "say": "Aerobic respiration uses oxygen and makes carbon dioxide and water.", "write": "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O" },
+        { "say": "It has three stages. Glycolysis, the Krebs cycle, and the electron transport chain.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Three stages in a row", "items": [
+            {"kind": "rect", "x": 10, "y": 60, "w": 160, "h": 70, "fill": "yellow", "label": "glycolysis"},
+            {"kind": "arrow", "x": 175, "y": 95, "x2": 200, "y2": 95, "color": "black"},
+            {"kind": "rect", "x": 205, "y": 60, "w": 150, "h": 70, "fill": "orange", "label": "Krebs cycle"},
+            {"kind": "arrow", "x": 360, "y": 95, "x2": 385, "y2": 95, "color": "black"},
+            {"kind": "rect", "x": 390, "y": 60, "w": 160, "h": 70, "fill": "red", "label": "ETC"},
+            {"kind": "text", "x": 280, "y": 175, "text": "about 30–32 ATP per glucose", "size": 20, "anchor": "middle"}
+          ]}},
+        { "say": "Coenzymes like NADH and FADH two carry electrons between the stages.", "write": "NADH, FADH₂ carry e⁻ and H⁺" }
+      ] },
+    { "heading": "Inside the mitochondrion",
+      "lines": [
+        { "say": "The last two stages happen in the mitochondrion.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Mitochondrion with outer membrane, cristae and matrix", "items": [
+            {"kind": "rect", "x": 40, "y": 40, "w": 480, "h": 180, "fill": "orange"},
+            {"kind": "rect", "x": 70, "y": 65, "w": 420, "h": 130, "fill": "yellow"},
+            {"kind": "rect", "x": 140, "y": 65, "w": 16, "h": 80, "fill": "orange"},
+            {"kind": "rect", "x": 230, "y": 115, "w": 16, "h": 80, "fill": "orange"},
+            {"kind": "rect", "x": 320, "y": 65, "w": 16, "h": 80, "fill": "orange"},
+            {"kind": "rect", "x": 410, "y": 115, "w": 16, "h": 80, "fill": "orange"},
+            {"kind": "text", "x": 280, "y": 250, "text": "outer membrane", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "The inner membrane folds into cristae. That gives a huge surface area.", "write": "cristae: more surface area",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Cristae and matrix labelled", "items": [
+            {"kind": "rect", "x": 40, "y": 40, "w": 480, "h": 180, "fill": "orange"},
+            {"kind": "rect", "x": 70, "y": 65, "w": 420, "h": 130, "fill": "yellow"},
+            {"kind": "rect", "x": 140, "y": 65, "w": 16, "h": 80, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 230, "y": 115, "w": 16, "h": 80, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 320, "y": 65, "w": 16, "h": 80, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 410, "y": 115, "w": 16, "h": 80, "fill": "orange", "change": "highlight"},
+            {"kind": "text", "x": 190, "y": 30, "text": "cristae: ETC", "size": 18, "change": "add"},
+            {"kind": "text", "x": 280, "y": 250, "text": "matrix: Krebs cycle", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "The matrix is the fluid inside. It holds the Krebs cycle enzymes.", "write": "matrix: Krebs cycle" },
+        { "say": "Busy cells like muscle and sperm have lots of mitochondria." }
+      ] },
+    { "heading": "Stage 1: glycolysis",
+      "lines": [
+        { "say": "Glycolysis means sugar splitting. It happens in the cytosol.", "write": "glycolysis: cytosol" },
+        { "say": "One six-carbon glucose splits into two three-carbon pyruvates.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Glucose splits into two pyruvate", "items": [
+            {"kind": "rect", "x": 30, "y": 70, "w": 180, "h": 60, "fill": "yellow", "label": "glucose (6C)", "change": "remove"},
+            {"kind": "arrow", "x": 220, "y": 100, "x2": 300, "y2": 70, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 220, "y": 100, "x2": 300, "y2": 150, "color": "black", "change": "add"},
+            {"kind": "rect", "x": 310, "y": 40, "w": 160, "h": 50, "fill": "orange", "label": "pyruvate (3C)", "change": "add"},
+            {"kind": "rect", "x": 310, "y": 125, "w": 160, "h": 50, "fill": "orange", "label": "pyruvate (3C)", "change": "add"},
+            {"kind": "text", "x": 280, "y": 205, "text": "+ 2 ATP + 2 NADH", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "It needs no oxygen. Net yield is two ATP and two NADH.", "write": "net: 2 ATP, 2 NADH" }
+      ] },
+    { "heading": "Stage 2: the Krebs cycle",
+      "lines": [
+        { "say": "With oxygen around, pyruvate moves into the mitochondrial matrix.", "write": "pyruvate → matrix" },
+        { "say": "Each pyruvate becomes a two-carbon acetyl group. One carbon dioxide leaves.", "write": "pyruvate → acetyl CoA + CO₂" },
+        { "say": "The acetyl group enters the cycle. The rest of the carbon leaves as carbon dioxide.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Krebs cycle releasing CO2 and loading NADH and FADH2", "items": [
+            {"kind": "circle", "x": 200, "y": 130, "r": 80, "fill": "orange", "label": "Krebs cycle"},
+            {"kind": "arrow", "x": 60, "y": 40, "x2": 140, "y2": 70, "color": "black"},
+            {"kind": "text", "x": 20, "y": 30, "text": "acetyl CoA", "size": 18},
+            {"kind": "arrow", "x": 285, "y": 90, "x2": 380, "y2": 60, "color": "grey", "change": "add"},
+            {"kind": "text", "x": 390, "y": 65, "text": "6 CO₂", "size": 20, "change": "add"},
+            {"kind": "arrow", "x": 285, "y": 150, "x2": 380, "y2": 140, "color": "red", "change": "add"},
+            {"kind": "text", "x": 390, "y": 145, "text": "8 NADH, 2 FADH₂", "size": 20, "change": "add"},
+            {"kind": "arrow", "x": 270, "y": 190, "x2": 380, "y2": 220, "color": "green", "change": "add"},
+            {"kind": "text", "x": 390, "y": 225, "text": "2 ATP", "size": 20, "change": "add"}
+          ]}},
+        { "say": "All six carbons of glucose are now gone as carbon dioxide. You breathe it out.", "write": "6 CO₂ out" },
+        { "say": "Only a little ATP so far. Most energy now sits in NADH and FADH two.", "write": "energy in loaded coenzymes" }
+      ] },
+    { "heading": "Stage 3: electron transport chain",
+      "lines": [
+        { "say": "On the cristae, NADH and FADH two unload their electrons and protons.", "write": "NADH → NAD⁺ + H⁺ + 2e⁻" },
+        { "say": "Electrons pass along the chain. Their energy pumps H plus across the membrane.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Proteins in the inner membrane pumping protons", "items": [
+            {"kind": "rect", "x": 20, "y": 120, "w": 520, "h": 30, "fill": "yellow"},
+            {"kind": "rect", "x": 60, "y": 105, "w": 60, "h": 60, "fill": "blue"},
+            {"kind": "rect", "x": 180, "y": 105, "w": 60, "h": 60, "fill": "blue"},
+            {"kind": "rect", "x": 300, "y": 105, "w": 60, "h": 60, "fill": "blue"},
+            {"kind": "rect", "x": 430, "y": 100, "w": 70, "h": 70, "fill": "green", "label": "ATP syn."},
+            {"kind": "arrow", "x": 90, "y": 180, "x2": 90, "y2": 60, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 210, "y": 180, "x2": 210, "y2": 60, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 330, "y": 180, "x2": 330, "y2": 60, "color": "red", "change": "add"},
+            {"kind": "text", "x": 210, "y": 40, "text": "H⁺ H⁺ H⁺ H⁺ build up", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "H plus flows back through ATP synthase. That flow makes ATP.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Protons flow back through ATP synthase making ATP", "items": [
+            {"kind": "rect", "x": 20, "y": 120, "w": 520, "h": 30, "fill": "yellow"},
+            {"kind": "rect", "x": 60, "y": 105, "w": 60, "h": 60, "fill": "blue"},
+            {"kind": "rect", "x": 180, "y": 105, "w": 60, "h": 60, "fill": "blue"},
+            {"kind": "rect", "x": 300, "y": 105, "w": 60, "h": 60, "fill": "blue"},
+            {"kind": "rect", "x": 430, "y": 100, "w": 70, "h": 70, "fill": "green", "label": "ATP syn.", "change": "highlight"},
+            {"kind": "text", "x": 210, "y": 40, "text": "H⁺ H⁺ H⁺ H⁺", "size": 20, "anchor": "middle"},
+            {"kind": "arrow", "x": 465, "y": 50, "x2": 465, "y2": 210, "color": "red", "change": "add"},
+            {"kind": "text", "x": 465, "y": 240, "text": "ADP + Pi → ATP", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Oxygen is the final electron acceptor. It joins with H plus to make water.", "write": "O₂ + e⁻ + H⁺ → H₂O" },
+        { "say": "This stage makes about 26 to 28 ATP. Most of the total.", "write": "ETC: about 26–28 ATP" }
+      ] },
+    { "heading": "No oxygen: fermentation",
+      "lines": [
+        { "say": "Without oxygen, the chain backs up. NAD plus runs out and Krebs stops.", "write": "no O₂ → no NAD⁺" },
+        { "say": "Fermentation turns NADH back into NAD plus, so glycolysis keeps going.", "write": "job: regenerate NAD⁺" },
+        { "say": "In animals, pyruvate becomes lactic acid. No carbon dioxide.", "write": "animals: lactic acid",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Pyruvate becomes lactic acid in animals or ethanol and CO2 in yeast", "items": [
+            {"kind": "rect", "x": 200, "y": 20, "w": 160, "h": 50, "fill": "orange", "label": "pyruvate"},
+            {"kind": "arrow", "x": 250, "y": 75, "x2": 130, "y2": 140, "color": "black", "change": "add"},
+            {"kind": "rect", "x": 40, "y": 145, "w": 180, "h": 50, "fill": "pink", "label": "lactic acid", "change": "add"},
+            {"kind": "arrow", "x": 310, "y": 75, "x2": 430, "y2": 140, "color": "black"},
+            {"kind": "rect", "x": 340, "y": 145, "w": 200, "h": 50, "fill": "yellow", "label": "ethanol + CO₂"}
+          ]}},
+        { "say": "Yeast makes ethanol and carbon dioxide. That's how bread rises.", "write": "yeast: 2C₂H₅OH + 2CO₂" },
+        { "say": "Either way, only two ATP per glucose. All from glycolysis.", "write": "anaerobic: 2 ATP" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Glycolysis is in the cytosol, not the mitochondria.", "write": "glycolysis ≠ mitochondria" },
+        { "say": "Oxygen is used only at the end of the chain, not in the Krebs cycle.", "write": "O₂ used at end of ETC" },
+        { "say": "Animals never make ethanol or carbon dioxide by fermentation.", "write": "animals: lactic acid only" },
+        { "say": "NADPH is for photosynthesis. Respiration uses NADH.", "write": "NADH, not NADPH" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Glycolysis, cytosol, two ATP.", "write": "cytosol: 2 ATP" },
+        { "say": "Krebs, matrix, two ATP and lots of loaded coenzymes.", "write": "matrix: 2 ATP" },
+        { "say": "Electron transport chain, cristae, about 26 to 28 ATP.", "write": "cristae: 26–28 ATP" },
+        { "say": "Fermentation only regenerates NAD plus. Just two ATP.", "write": "fermentation: 2 ATP" }
+      ] }
+  ]
+}

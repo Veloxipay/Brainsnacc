@@ -1,0 +1,109 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Gene regulation",
+  "frames": [
+    { "heading": "Why regulate genes?",
+      "lines": [
+        { "say": "Your liver cells and nerve cells have the same genes. They make different proteins.", "write": "same DNA, different proteins" },
+        { "say": "Gene regulation controls whether, when and how much a gene is expressed.", "write": "whether, when, how much" },
+        { "say": "It saves energy, lets cells respond, and lets them specialise.", "write": "save, respond, specialise" },
+        { "say": "Structural genes make the working proteins. Regulatory genes control other genes.", "write": "structural vs regulatory" }
+      ] },
+    { "heading": "Parts of an operon",
+      "lines": [
+        { "say": "In bacteria, genes that work together often sit in one operon.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Operon: promoter, operator, structural genes", "items": [
+            {"kind": "rect", "x": 20, "y": 80, "w": 100, "h": 50, "fill": "green", "label": "promoter"},
+            {"kind": "rect", "x": 120, "y": 80, "w": 100, "h": 50, "fill": "red", "label": "operator"},
+            {"kind": "rect", "x": 220, "y": 80, "w": 64, "h": 50, "fill": "blue", "label": "E"},
+            {"kind": "rect", "x": 284, "y": 80, "w": 64, "h": 50, "fill": "blue", "label": "D"},
+            {"kind": "rect", "x": 348, "y": 80, "w": 64, "h": 50, "fill": "blue", "label": "C"},
+            {"kind": "rect", "x": 412, "y": 80, "w": 64, "h": 50, "fill": "blue", "label": "B"},
+            {"kind": "rect", "x": 476, "y": 80, "w": 64, "h": 50, "fill": "blue", "label": "A"},
+            {"kind": "text", "x": 380, "y": 170, "text": "structural genes", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "RNA polymerase binds the promoter.", "write": "promoter: RNA pol binds" },
+        { "say": "A repressor can bind the operator and block the way.", "write": "operator: repressor binds" },
+        { "say": "The structural genes are transcribed together into one mRNA.", "write": "one mRNA" },
+        { "say": "The repressor gene isn't part of the operon. It has its own promoter.", "write": "trpR: separate gene" }
+      ] },
+    { "heading": "Low tryptophan: operon on",
+      "lines": [
+        { "say": "E coli can make tryptophan using five enzymes. Their genes form the trp operon.", "write": "trp operon: trpE–trpA" },
+        { "say": "The trp repressor is made all the time. On its own, it's inactive." },
+        { "say": "With little tryptophan, the repressor can't bind. RNA polymerase moves through.", "write": "low trp → ON",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "RNA polymerase moves through the operon", "items": [
+            {"kind": "rect", "x": 20, "y": 120, "w": 100, "h": 50, "fill": "green", "label": "promoter"},
+            {"kind": "rect", "x": 120, "y": 120, "w": 100, "h": 50, "fill": "red", "label": "operator"},
+            {"kind": "rect", "x": 220, "y": 120, "w": 320, "h": 50, "fill": "blue", "label": "structural genes"},
+            {"kind": "circle", "x": 70, "y": 80, "r": 30, "fill": "orange", "label": "RNAP"},
+            {"kind": "arrow", "x": 110, "y": 70, "x2": 420, "y2": 70, "color": "orange", "change": "add"},
+            {"kind": "text", "x": 380, "y": 215, "text": "enzymes made", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "All five enzymes are made. The cell makes its own tryptophan.", "write": "cell makes trp" }
+      ] },
+    { "heading": "High tryptophan: operon off",
+      "lines": [
+        { "say": "Now tryptophan is plentiful. It binds to the repressor.", "write": "trp = corepressor" },
+        { "say": "The repressor changes shape. Now it binds the operator.", "write": "active repressor → operator",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Repressor with tryptophan sits on the operator", "items": [
+            {"kind": "rect", "x": 20, "y": 120, "w": 100, "h": 50, "fill": "green", "label": "promoter"},
+            {"kind": "rect", "x": 120, "y": 120, "w": 100, "h": 50, "fill": "red", "label": "operator"},
+            {"kind": "rect", "x": 220, "y": 120, "w": 320, "h": 50, "fill": "blue", "label": "structural genes"},
+            {"kind": "rect", "x": 125, "y": 70, "w": 90, "h": 50, "fill": "purple", "label": "repressor", "change": "add"},
+            {"kind": "circle", "x": 230, "y": 60, "r": 16, "fill": "yellow", "label": "trp", "change": "add"},
+            {"kind": "circle", "x": 70, "y": 80, "r": 30, "fill": "orange", "label": "RNAP"}
+          ]}},
+        { "say": "The repressor blocks RNA polymerase. No enzymes are made.", "write": "high trp → OFF",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "RNA polymerase is blocked; no enzymes", "items": [
+            {"kind": "rect", "x": 20, "y": 120, "w": 100, "h": 50, "fill": "green", "label": "promoter"},
+            {"kind": "rect", "x": 120, "y": 120, "w": 100, "h": 50, "fill": "red", "label": "operator"},
+            {"kind": "rect", "x": 220, "y": 120, "w": 320, "h": 50, "fill": "blue", "label": "structural genes"},
+            {"kind": "rect", "x": 125, "y": 70, "w": 90, "h": 50, "fill": "purple", "label": "repressor"},
+            {"kind": "circle", "x": 70, "y": 80, "r": 30, "fill": "orange", "label": "RNAP"},
+            {"kind": "arrow", "x": 110, "y": 40, "x2": 420, "y2": 40, "color": "orange", "change": "remove"},
+            {"kind": "text", "x": 380, "y": 215, "text": "blocked: no enzymes", "size": 20, "anchor": "middle", "color": "red", "change": "add"}
+          ]}},
+        { "say": "More product means less made. It's a repressible operon, and negative feedback.", "write": "repressible: negative feedback" }
+      ] },
+    { "heading": "Attenuation: finer control",
+      "lines": [
+        { "say": "Before the genes is a leader sequence. Its mRNA has regions one to four.", "write": "leader: regions 1, 2, 3, 4" },
+        { "say": "In bacteria, ribosomes translate the mRNA while it's still being made.", "write": "transcribe + translate together" },
+        { "say": "High tryptophan. The ribosome races through and covers region two.", "write": "high trp → 3–4 terminator",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Regions 3 and 4 pair to form a terminator", "items": [
+            {"kind": "rect", "x": 30, "y": 150, "w": 110, "h": 40, "fill": "grey", "label": "1"},
+            {"kind": "rect", "x": 150, "y": 150, "w": 110, "h": 40, "fill": "grey", "label": "2"},
+            {"kind": "rect", "x": 270, "y": 150, "w": 110, "h": 40, "fill": "orange", "label": "3"},
+            {"kind": "rect", "x": 390, "y": 150, "w": 110, "h": 40, "fill": "orange", "label": "4"},
+            {"kind": "circle", "x": 205, "y": 120, "r": 36, "fill": "purple", "label": "ribosome", "change": "add"},
+            {"kind": "line", "x": 325, "y": 145, "x2": 445, "y2": 145, "color": "red", "change": "add"},
+            {"kind": "text", "x": 385, "y": 110, "text": "3–4 hairpin: STOP", "size": 18, "anchor": "middle", "color": "red", "change": "add"}
+          ]}},
+        { "say": "Regions three and four pair into a terminator. RNA polymerase falls off.", "write": "transcription stops" },
+        { "say": "Low tryptophan. The ribosome stalls at the trp codons in region one.", "write": "low trp → 2–3 anti-terminator",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Regions 2 and 3 pair to form an anti-terminator", "items": [
+            {"kind": "rect", "x": 30, "y": 150, "w": 110, "h": 40, "fill": "grey", "label": "1"},
+            {"kind": "rect", "x": 150, "y": 150, "w": 110, "h": 40, "fill": "green", "label": "2"},
+            {"kind": "rect", "x": 270, "y": 150, "w": 110, "h": 40, "fill": "green", "label": "3"},
+            {"kind": "rect", "x": 390, "y": 150, "w": 110, "h": 40, "fill": "grey", "label": "4"},
+            {"kind": "circle", "x": 85, "y": 120, "r": 36, "fill": "purple", "label": "stalled", "change": "highlight"},
+            {"kind": "line", "x": 205, "y": 145, "x2": 325, "y2": 145, "color": "green", "change": "add"},
+            {"kind": "text", "x": 265, "y": 110, "text": "2–3 hairpin: GO", "size": 18, "anchor": "middle", "color": "green", "change": "add"}
+          ]}},
+        { "say": "Two and three pair instead. No terminator forms, so the genes are transcribed.", "write": "transcription continues" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Tryptophan binds the repressor, not the operator.", "write": "trp → repressor → operator" },
+        { "say": "The repressor is made all the time. Tryptophan just activates it.", "write": "repressor always made" },
+        { "say": "Attenuation only happens in prokaryotes. It needs transcription and translation together.", "write": "attenuation: prokaryotes" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Regulatory genes control structural genes.", "write": "regulatory controls structural" },
+        { "say": "Low tryptophan, operon on. High tryptophan, operon off.", "write": "low ON, high OFF" },
+        { "say": "Repression senses free tryptophan. Attenuation senses tryptophan on tRNA.", "write": "repression + attenuation" },
+        { "say": "High trp, three four terminator. Low trp, two three anti-terminator.", "write": "3–4 stop, 2–3 go" }
+      ] }
+  ]
+}

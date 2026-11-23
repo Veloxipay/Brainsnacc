@@ -1,0 +1,867 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Probability and complementary events",
+  "frames": [
+    {
+      "heading": "On or off",
+      "lines": [
+        {
+          "say": "A 30 percent chance of rain. What's the chance it stays dry?",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A bar from 0 to 1: P(rain) = 0.3 and the rest, P(not rain) = 0.7",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 150,
+                "h": 70,
+                "fill": "blue",
+                "label": "P(rain) = 0.3"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 180,
+                "text": "0",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 180,
+                "text": "1",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 80,
+                "w": 350,
+                "h": 70,
+                "fill": "white",
+                "label": "?"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rain and no rain share the whole between them. So 0.7.",
+          "write": "P(not A) = 1 − P(A)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A bar from 0 to 1: P(rain) = 0.3 and the rest, P(not rain) = 0.7",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 150,
+                "h": 70,
+                "fill": "blue",
+                "label": "P(rain) = 0.3"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 180,
+                "text": "0",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 180,
+                "text": "1",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 80,
+                "w": 350,
+                "h": 70,
+                "fill": "yellow",
+                "label": "P(not rain) = 0.7",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "0.3 + 0.7 = 1",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Like a light switch. It's on or off. Never both.",
+          "write": "A and not A"
+        },
+        {
+          "say": "Not A is called the complement of A.",
+          "write": "complement = not A"
+        }
+      ]
+    },
+    {
+      "heading": "Complementary events",
+      "lines": [
+        {
+          "say": "Cards 1 to 20. A is a multiple of 3. That's 6 cards.",
+          "write": "3, 6, 9, 12, 15, 18"
+        },
+        {
+          "say": "So P of A is 6 over 20, which is three tenths.",
+          "write": "P(A) = 6/20 = 3/10"
+        },
+        {
+          "say": "Not A is 1 minus three tenths. Seven tenths.",
+          "write": "P(not A) = 7/10"
+        },
+        {
+          "say": "Watch the boundary. The complement of less than 3 is 3 or more.",
+          "write": "< 3  vs  3 or more"
+        }
+      ]
+    },
+    {
+      "heading": "At least, at most",
+      "lines": [
+        {
+          "say": "Roll a die. What's the chance of at least 2?",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Die faces 1 to 6; the complement of at least 2 is rolling a 1",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "P(at least 2)?",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 305,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 475,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "6"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Count the small side. Only a 1 is not at least 2.",
+          "write": "not at least 2 = rolling 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Die faces 1 to 6; the complement of at least 2 is rolling a 1",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "P(at least 2)?",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "1",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 305,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 475,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "1 − 1/6 = 5/6",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "At most 4 is 1, 2, 3 or 4. So not at most 4 is a third.",
+          "write": "1 − 4/6 = 1/3"
+        },
+        {
+          "say": "Big event? Count its complement and subtract from 1.",
+          "write": "count the small side"
+        }
+      ]
+    },
+    {
+      "heading": "Mutually exclusive events",
+      "lines": [
+        {
+          "say": "Mutually exclusive events can't happen at the same time.",
+          "write": "can't happen together"
+        },
+        {
+          "say": "Rolling a 2 and rolling a 5? Mutually exclusive.",
+          "write": "2 and 5 ✓"
+        },
+        {
+          "say": "Even, and greater than 3. Look at 4 and 6.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Die faces: evens 2, 4, 6 shaded, greater than 3 marked with dots; 4 and 6 are in both",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "even  and  greater than 3",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "2",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 305,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "4",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 475,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "6",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 220,
+                "text": "shaded = even,   dot = greater than 3",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 66,
+                "r": 10,
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 425,
+                "y": 66,
+                "r": 10,
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 510,
+                "y": 66,
+                "r": 10,
+                "fill": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "4 and 6 are in both. So these events are not mutually exclusive.",
+          "write": "overlap → ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Die faces: evens 2, 4, 6 shaded, greater than 3 marked with dots; 4 and 6 are in both",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "even  and  greater than 3",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 305,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 475,
+                "y": 80,
+                "w": 70,
+                "h": 70,
+                "fill": "orange",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 305,
+                "y": 160,
+                "w": 70,
+                "h": 30,
+                "fill": "red",
+                "label": "both",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 475,
+                "y": 160,
+                "w": 70,
+                "h": 30,
+                "fill": "red",
+                "label": "both",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "overlap: not mutually exclusive",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 66,
+                "r": 10,
+                "fill": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 425,
+                "y": 66,
+                "r": 10,
+                "fill": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 510,
+                "y": 66,
+                "r": 10,
+                "fill": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Only for mutually exclusive events, P of A or B is the sum.",
+          "write": "P(A or B) = P(A) + P(B)"
+        }
+      ]
+    },
+    {
+      "heading": "The whole table adds to 1",
+      "lines": [
+        {
+          "say": "A spinner: red, blue, green, yellow. Green is missing.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Spinner probability table: red 0.25, blue 0.4, green ?, yellow 0.15",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "red",
+                "label": "Red"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.25"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "blue",
+                "label": "Blue"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.4"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "green",
+                "label": "Green"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "?"
+              },
+              {
+                "kind": "rect",
+                "x": 415,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "yellow",
+                "label": "Yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 415,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.15"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The others add to 0.8. So green is 0.2.",
+          "write": "P(green) = 0.2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Spinner probability table: red 0.25, blue 0.4, green ?, yellow 0.15",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "red",
+                "label": "Red"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.25"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "blue",
+                "label": "Blue"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.4"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "green",
+                "label": "Green"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.2",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 415,
+                "y": 60,
+                "w": 110,
+                "h": 50,
+                "fill": "yellow",
+                "label": "Yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 415,
+                "y": 110,
+                "w": 110,
+                "h": 50,
+                "fill": "white",
+                "label": "0.15"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "1 − 0.8 = 0.2",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not blue is 1 minus 0.4. That's 0.6.",
+          "write": "P(not blue) = 0.6"
+        },
+        {
+          "say": "Red or green can't both happen. Add them: 0.45.",
+          "write": "0.25 + 0.2 = 0.45"
+        }
+      ]
+    },
+    {
+      "heading": "Two dice",
+      "lines": [
+        {
+          "say": "Two dice make a 6 by 6 grid. That's 36 outcomes.",
+          "diagram": "diagrams/y8/maths/probability-and-complementary-events-ex4.svg",
+          "alt": "A 6 by 6 grid of two-dice totals with the six cells totalling 7 shaded on a diagonal"
+        },
+        {
+          "say": "A total of 7 happens 6 ways. So it's one sixth.",
+          "write": "P(7) = 6/36 = 1/6"
+        },
+        {
+          "say": "Not 7 is 1 minus one sixth. Five sixths.",
+          "write": "P(not 7) = 5/6"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        {
+          "say": "Not greater than 3 means 3 or less. List the outcomes.",
+          "write": "list what's left over"
+        },
+        {
+          "say": "Only add when events can't overlap.",
+          "write": "overlap? don't add"
+        },
+        {
+          "say": "Not means one minus.",
+          "write": "P(not A) = 1 − P(A)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A bar from 0 to 1: P(rain) = 0.3 and the rest, P(not rain) = 0.7",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 150,
+                "h": 70,
+                "fill": "blue",
+                "label": "P(rain) = 0.3"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 180,
+                "text": "0",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 180,
+                "text": "1",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 80,
+                "w": 350,
+                "h": 70,
+                "fill": "yellow",
+                "label": "P(not rain) = 0.7",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "0.3 + 0.7 = 1",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Reread the question. Did it ask for neither?",
+          "write": "reread the question"
+        }
+      ]
+    }
+  ]
+}

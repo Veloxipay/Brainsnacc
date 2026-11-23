@@ -1,0 +1,1342 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Exponential growth and decay",
+  "frames": [
+    {
+      "heading": "What is an exponential function?",
+      "lines": [
+        {
+          "say": "In an exponential function, x is in the index, the power.",
+          "write": "y = aˣ"
+        },
+        {
+          "say": "The base a is positive and not 1.",
+          "write": "a > 0,  a ≠ 1"
+        },
+        {
+          "say": "If a is bigger than 1, the graph rises. That's exponential growth.",
+          "write": "a > 1: growth"
+        },
+        {
+          "say": "If a is between 0 and 1, the graph falls. That's exponential decay.",
+          "write": "0 < a < 1: decay"
+        },
+        {
+          "say": "Both curves pass through 0, 1, because a to the power 0 is 1.",
+          "write": "a⁰ = 1",
+          "diagram": "diagrams/y10/maths/exponential-growth-and-decay-graphs.svg",
+          "alt": "y = 2ˣ rising and y = (½)ˣ falling, both through (0, 1)"
+        },
+        {
+          "say": "The curve gets close to the x-axis but never touches it. That's an asymptote.",
+          "write": "asymptote: y = 0"
+        }
+      ]
+    },
+    {
+      "heading": "Multiply, don't add",
+      "lines": [
+        {
+          "say": "Here is y equals 3 to the x, for x from minus 2 to 2.",
+          "write": "y = 3ˣ"
+        },
+        {
+          "say": "Three to the minus 2 is one ninth. A negative index means one over.",
+          "write": "3⁻² = 1/9"
+        },
+        {
+          "say": "Each step, y is multiplied by 3. Watch the bars grow.",
+          "write": "1 → 3 → 9 → 27  (× 3)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars growing or shrinking by the same factor each step",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 88,
+                "y": 243,
+                "w": 60,
+                "h": 7,
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 118,
+                "y": 235,
+                "text": "1",
+                "size": 18,
+                "color": "black",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 118,
+                "y": 275,
+                "text": "x = 0",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 196,
+                "y": 228,
+                "w": 60,
+                "h": 22,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 220,
+                "text": "3",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 275,
+                "text": "x = 1",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 183,
+                "w": 60,
+                "h": 67,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 334,
+                "y": 175,
+                "text": "9",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 334,
+                "y": 275,
+                "text": "x = 2",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 412,
+                "y": 50,
+                "w": 60,
+                "h": 200,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 442,
+                "y": 42,
+                "text": "27",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 442,
+                "y": 275,
+                "text": "x = 3",
+                "size": 16,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A constant ratio between values tells you it's exponential.",
+          "write": "same ratio → exponential"
+        },
+        {
+          "say": "Adding the same amount gives a line. Multiplying gives a curve.",
+          "write": "add → line,  multiply → curve"
+        }
+      ]
+    },
+    {
+      "heading": "The rule y = k × aˣ",
+      "lines": [
+        {
+          "say": "k is where you start. a is what you multiply by each step.",
+          "write": "y = k × aˣ"
+        },
+        {
+          "say": "Look at this table. When x is 0, y is 5. So k is 5.",
+          "write": "x: 0,1,2,3  y: 5,15,45,135",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars growing or shrinking by the same factor each step",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 88,
+                "y": 243,
+                "w": 60,
+                "h": 7,
+                "fill": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 118,
+                "y": 235,
+                "text": "5",
+                "size": 18,
+                "color": "black",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 118,
+                "y": 275,
+                "text": "x = 0",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 196,
+                "y": 228,
+                "w": 60,
+                "h": 22,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 220,
+                "text": "15",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 275,
+                "text": "x = 1",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 183,
+                "w": 60,
+                "h": 67,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 334,
+                "y": 175,
+                "text": "45",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 334,
+                "y": 275,
+                "text": "x = 2",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 412,
+                "y": 50,
+                "w": 60,
+                "h": 200,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 442,
+                "y": 42,
+                "text": "135",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 442,
+                "y": 275,
+                "text": "x = 3",
+                "size": 16,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "15 over 5, 45 over 15, 135 over 45. All equal 3.",
+          "write": "ratio = 3  →  a = 3"
+        },
+        {
+          "say": "So the rule is y equals 5 times 3 to the x.",
+          "write": "y = 5 × 3ˣ"
+        },
+        {
+          "say": "Do the power first. 5 times 2 cubed is 5 times 8, which is 40.",
+          "write": "5 × 2³ = 5 × 8 = 40"
+        }
+      ]
+    },
+    {
+      "heading": "Growth by a percentage",
+      "lines": [
+        {
+          "say": "Growth by r percent means multiply by 1 plus r each period.",
+          "write": "A = A₀(1 + r)ⁿ"
+        },
+        {
+          "say": "A town of 4000 people grows by 5 percent a year.",
+          "write": "A₀ = 4000,  r = 0.05"
+        },
+        {
+          "say": "Five percent growth means times 1.05 each year.",
+          "write": "100% + 5% = 105% → × 1.05",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars growing or shrinking by the same factor each step",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 88,
+                "y": 77,
+                "w": 60,
+                "h": 173,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 118,
+                "y": 69,
+                "text": "4000",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 118,
+                "y": 275,
+                "text": "start",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 196,
+                "y": 69,
+                "w": 60,
+                "h": 181,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 61,
+                "text": "4200",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 226,
+                "y": 275,
+                "text": "year 1",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 60,
+                "w": 60,
+                "h": 190,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 334,
+                "y": 52,
+                "text": "4410",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 334,
+                "y": 275,
+                "text": "year 2",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 412,
+                "y": 50,
+                "w": 60,
+                "h": 200,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 442,
+                "y": 42,
+                "text": "4631",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 442,
+                "y": 275,
+                "text": "year 3",
+                "size": 16,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "After 6 years, that's 4000 times 1.05 to the power 6.",
+          "write": "P = 4000 × 1.05⁶"
+        },
+        {
+          "say": "That is about 5360 people.",
+          "write": "P ≈ 5360"
+        }
+      ]
+    },
+    {
+      "heading": "Decay by a percentage",
+      "lines": [
+        {
+          "say": "Decay by r percent means multiply by 1 minus r.",
+          "write": "A = A₀(1 − r)ⁿ"
+        },
+        {
+          "say": "A patient takes 80 milligrams. It falls by 20 percent every hour.",
+          "write": "M = 80 × 0.8ᵗ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "M = 80 × 0.8ᵗ falling towards zero",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 260.0,
+                "x2": 520.0,
+                "y2": 260.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 260.0,
+                "x2": 60.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 520.0,
+                "y": 284.0,
+                "text": "t (hours)",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 80.0,
+                "y": 30.0,
+                "text": "mg",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 46.7,
+                "x2": 88.8,
+                "y2": 69.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 88.8,
+                "y": 69.2,
+                "x2": 117.5,
+                "y2": 89.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 117.5,
+                "y": 89.3,
+                "x2": 146.2,
+                "y2": 107.4,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 146.2,
+                "y": 107.4,
+                "x2": 175.0,
+                "y2": 123.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 175.0,
+                "y": 123.5,
+                "x2": 203.8,
+                "y2": 137.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 203.8,
+                "y": 137.9,
+                "x2": 232.5,
+                "y2": 150.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 232.5,
+                "y": 150.8,
+                "x2": 261.2,
+                "y2": 162.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 261.2,
+                "y": 162.3,
+                "x2": 290.0,
+                "y2": 172.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 290.0,
+                "y": 172.6,
+                "x2": 318.8,
+                "y2": 181.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 318.8,
+                "y": 181.8,
+                "x2": 347.5,
+                "y2": 190.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 347.5,
+                "y": 190.1,
+                "x2": 376.2,
+                "y2": 197.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 376.2,
+                "y": 197.5,
+                "x2": 405.0,
+                "y2": 204.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 405.0,
+                "y": 204.1,
+                "x2": 433.8,
+                "y2": 210.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 433.8,
+                "y": 210.0,
+                "x2": 462.5,
+                "y2": 215.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 462.5,
+                "y": 215.3,
+                "x2": 491.2,
+                "y2": 220.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 491.2,
+                "y": 220.0,
+                "x2": 520.0,
+                "y2": 224.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 206.7,
+                "x2": 520.0,
+                "y2": 206.7,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 520.0,
+                "y": 198.7,
+                "text": "20 mg",
+                "size": 16,
+                "color": "red",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 60.0,
+                "y": 46.7,
+                "r": 6,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 82.0,
+                "y": 50.7,
+                "text": "80",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Twenty percent decay means times 0.8, not times 0.2.",
+          "write": "100% − 20% = 80% → × 0.8"
+        },
+        {
+          "say": "After 3 hours, 80 times 0.8 cubed is 40.96 milligrams.",
+          "write": "M = 80 × 0.512 = 40.96 mg",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "M = 80 × 0.8ᵗ falling towards zero",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 260.0,
+                "x2": 520.0,
+                "y2": 260.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 260.0,
+                "x2": 60.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 520.0,
+                "y": 284.0,
+                "text": "t (hours)",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 80.0,
+                "y": 30.0,
+                "text": "mg",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 46.7,
+                "x2": 88.8,
+                "y2": 69.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 88.8,
+                "y": 69.2,
+                "x2": 117.5,
+                "y2": 89.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 117.5,
+                "y": 89.3,
+                "x2": 146.2,
+                "y2": 107.4,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 146.2,
+                "y": 107.4,
+                "x2": 175.0,
+                "y2": 123.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 175.0,
+                "y": 123.5,
+                "x2": 203.8,
+                "y2": 137.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 203.8,
+                "y": 137.9,
+                "x2": 232.5,
+                "y2": 150.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 232.5,
+                "y": 150.8,
+                "x2": 261.2,
+                "y2": 162.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 261.2,
+                "y": 162.3,
+                "x2": 290.0,
+                "y2": 172.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 290.0,
+                "y": 172.6,
+                "x2": 318.8,
+                "y2": 181.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 318.8,
+                "y": 181.8,
+                "x2": 347.5,
+                "y2": 190.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 347.5,
+                "y": 190.1,
+                "x2": 376.2,
+                "y2": 197.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 376.2,
+                "y": 197.5,
+                "x2": 405.0,
+                "y2": 204.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 405.0,
+                "y": 204.1,
+                "x2": 433.8,
+                "y2": 210.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 433.8,
+                "y": 210.0,
+                "x2": 462.5,
+                "y2": 215.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 462.5,
+                "y": 215.3,
+                "x2": 491.2,
+                "y2": 220.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 491.2,
+                "y": 220.0,
+                "x2": 520.0,
+                "y2": 224.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 206.7,
+                "x2": 520.0,
+                "y2": 206.7,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 520.0,
+                "y": 198.7,
+                "text": "20 mg",
+                "size": 16,
+                "color": "red",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 60.0,
+                "y": 46.7,
+                "r": 6,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 82.0,
+                "y": 50.7,
+                "text": "80",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 232.5,
+                "y": 150.8,
+                "r": 8,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 292.5,
+                "y": 150.8,
+                "text": "(3, 40.96)",
+                "size": 16,
+                "color": "orange",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It drops below 20 milligrams by t equals 7.",
+          "write": "80 × 0.8⁷ ≈ 16.78 < 20",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "M = 80 × 0.8ᵗ falling towards zero",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 260.0,
+                "x2": 520.0,
+                "y2": 260.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 260.0,
+                "x2": 60.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 520.0,
+                "y": 284.0,
+                "text": "t (hours)",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 80.0,
+                "y": 30.0,
+                "text": "mg",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 46.7,
+                "x2": 88.8,
+                "y2": 69.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 88.8,
+                "y": 69.2,
+                "x2": 117.5,
+                "y2": 89.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 117.5,
+                "y": 89.3,
+                "x2": 146.2,
+                "y2": 107.4,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 146.2,
+                "y": 107.4,
+                "x2": 175.0,
+                "y2": 123.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 175.0,
+                "y": 123.5,
+                "x2": 203.8,
+                "y2": 137.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 203.8,
+                "y": 137.9,
+                "x2": 232.5,
+                "y2": 150.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 232.5,
+                "y": 150.8,
+                "x2": 261.2,
+                "y2": 162.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 261.2,
+                "y": 162.3,
+                "x2": 290.0,
+                "y2": 172.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 290.0,
+                "y": 172.6,
+                "x2": 318.8,
+                "y2": 181.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 318.8,
+                "y": 181.8,
+                "x2": 347.5,
+                "y2": 190.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 347.5,
+                "y": 190.1,
+                "x2": 376.2,
+                "y2": 197.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 376.2,
+                "y": 197.5,
+                "x2": 405.0,
+                "y2": 204.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 405.0,
+                "y": 204.1,
+                "x2": 433.8,
+                "y2": 210.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 433.8,
+                "y": 210.0,
+                "x2": 462.5,
+                "y2": 215.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 462.5,
+                "y": 215.3,
+                "x2": 491.2,
+                "y2": 220.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 491.2,
+                "y": 220.0,
+                "x2": 520.0,
+                "y2": 224.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 206.7,
+                "x2": 520.0,
+                "y2": 206.7,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 520.0,
+                "y": 198.7,
+                "text": "20 mg",
+                "size": 16,
+                "color": "red",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 60.0,
+                "y": 46.7,
+                "r": 6,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 82.0,
+                "y": 50.7,
+                "text": "80",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 462.5,
+                "y": 215.3,
+                "r": 8,
+                "fill": "red",
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Doubling and half-life",
+      "lines": [
+        {
+          "say": "If something doubles every fixed time, multiply by 2 for each doubling.",
+          "write": "A = A₀ × 2ⁿ"
+        },
+        {
+          "say": "n is the number of doubling times, not the number of hours.",
+          "write": "n = number of doublings"
+        },
+        {
+          "say": "Doubling every 3 hours for 12 hours? That's 4 doublings.",
+          "write": "12 ÷ 3 = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars growing or shrinking by the same factor each step",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 238,
+                "w": 60,
+                "h": 12,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 230,
+                "text": "1",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 275,
+                "text": "0 h",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 225,
+                "w": 60,
+                "h": 25,
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 217,
+                "text": "2",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 275,
+                "text": "3 h",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 200,
+                "w": 60,
+                "h": 50,
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 192,
+                "text": "4",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "6 h",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 150,
+                "w": 60,
+                "h": 100,
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 142,
+                "text": "8",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 275,
+                "text": "9 h",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 50,
+                "w": 60,
+                "h": 200,
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 42,
+                "text": "16",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 275,
+                "text": "12 h",
+                "size": 16,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Half-life is the time for an amount to halve.",
+          "write": "A = A₀ × (½)ⁿ"
+        },
+        {
+          "say": "After n half-lives, multiply by a half n times."
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "The index belongs only to the base. Don't multiply k and a first.",
+          "write": "✗ 5 × 2³ = 10³"
+        },
+        {
+          "say": "A 15 percent loss is times 0.85, not times 0.15.",
+          "write": "× (1 − 0.15) = × 0.85"
+        },
+        {
+          "say": "Count periods carefully. Divide the total time by one period.",
+          "write": "periods = total ÷ one period"
+        },
+        {
+          "say": "For k bigger than 0, the graph never touches the x-axis.",
+          "write": "y > 0 always"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "k is where you start, a is what you multiply by.",
+          "write": "y = k × aˣ"
+        },
+        {
+          "say": "Growth factor is 1 plus r. Decay factor is 1 minus r.",
+          "write": "1 + r  grows,  1 − r  shrinks"
+        },
+        {
+          "say": "Every y equals a to the x goes through 0, 1.",
+          "write": "(0, 1)"
+        },
+        {
+          "say": "Add gives a line. Multiply gives a curve.",
+          "write": "add → line, multiply → curve"
+        }
+      ]
+    }
+  ]
+}

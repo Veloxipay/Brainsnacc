@@ -1,0 +1,2370 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Shortest paths",
+  "frames": [
+    {
+      "heading": "Weighted networks",
+      "lines": [
+        {
+          "say": "In a weighted network, each edge has a number called its weight.",
+          "write": "weight = distance, time, cost",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The length of a route is the sum of its edge weights.",
+          "write": "length = sum of weights"
+        },
+        {
+          "say": "Take route A, B, D, F. That uses edges AB, BD and DF.",
+          "write": "A–B–D–F",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "orange",
+                "change": "highlight",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "orange",
+                "change": "highlight",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "orange",
+                "change": "highlight",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add the weights: 4 plus 5 plus 6 makes 15 kilometres.",
+          "write": "4 + 5 + 6 = 15 km"
+        }
+      ]
+    },
+    {
+      "heading": "Detours can be shorter",
+      "lines": [
+        {
+          "say": "The direct road from A to B has weight 4.",
+          "write": "A–B = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "orange",
+                "change": "highlight",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now go A to C, then C to B. That is 2 plus 1.",
+          "write": "A–C–B = 2 + 1 = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The detour is shorter. More edges, but less total weight.",
+          "write": "3 < 4"
+        },
+        {
+          "say": "So the shortest path is the route with the smallest total weight.",
+          "write": "shortest = smallest total"
+        }
+      ]
+    },
+    {
+      "heading": "Dijkstra's algorithm",
+      "lines": [
+        {
+          "say": "For bigger networks, we use a step-by-step method called Dijkstra's algorithm.",
+          "write": "Dijkstra's algorithm"
+        },
+        {
+          "say": "Step 1. Label the start 0 and make it permanent.",
+          "write": "start = 0, permanent"
+        },
+        {
+          "say": "Step 2. Update each neighbour: its label plus the edge weight, if smaller.",
+          "write": "update neighbours"
+        },
+        {
+          "say": "Step 3. Make the smallest temporary label in the whole network permanent.",
+          "write": "smallest temporary → permanent"
+        },
+        {
+          "say": "Repeat until the finish is permanent. Like water spreading out from a tap.",
+          "write": "repeat"
+        }
+      ]
+    },
+    {
+      "heading": "Running Dijkstra from A",
+      "lines": [
+        {
+          "say": "A is 0. Its neighbours get temporary labels: B 4, C 2.",
+          "write": "A = 0;  B 4, C 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 30,
+                "fill": "green",
+                "label": "A 0"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 30,
+                "fill": "white",
+                "change": "add",
+                "label": "B 4"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 30,
+                "fill": "white",
+                "change": "add",
+                "label": "C 2"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "C is smallest, so C is permanent. Through C, B improves to 3.",
+          "write": "B: min(4, 2 + 1) = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 30,
+                "fill": "green",
+                "label": "A 0"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 30,
+                "fill": "white",
+                "change": "highlight",
+                "label": "B 3"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 30,
+                "fill": "green",
+                "label": "C 2"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 30,
+                "fill": "white",
+                "change": "add",
+                "label": "D 10"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 30,
+                "fill": "white",
+                "change": "add",
+                "label": "E 12"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "B becomes permanent at 3. Through B, D improves to 8.",
+          "write": "D: min(10, 3 + 5) = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 30,
+                "fill": "green",
+                "label": "A 0"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 30,
+                "fill": "green",
+                "label": "B 3"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 30,
+                "fill": "green",
+                "label": "C 2"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 30,
+                "fill": "white",
+                "change": "highlight",
+                "label": "D 8"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 30,
+                "fill": "white",
+                "label": "E 12"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "D is permanent at 8. E becomes 10, and F gets 14.",
+          "write": "E 10, F 14"
+        },
+        {
+          "say": "E is permanent at 10. Through E, F improves to 13.",
+          "write": "F: min(14, 10 + 3) = 13",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 30,
+                "fill": "green",
+                "label": "A 0"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 30,
+                "fill": "green",
+                "label": "B 3"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 30,
+                "fill": "green",
+                "label": "C 2"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 30,
+                "fill": "green",
+                "label": "D 8"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 30,
+                "fill": "green",
+                "label": "E 10"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 30,
+                "fill": "white",
+                "change": "highlight",
+                "label": "F 13"
+              }
+            ]
+          }
+        },
+        {
+          "say": "F is permanent. The shortest distance is 13 kilometres.",
+          "write": "A to F = 13 km"
+        }
+      ]
+    },
+    {
+      "heading": "Trace the route back",
+      "lines": [
+        {
+          "say": "F came from E, E from D, D from B, B from C, C from A.",
+          "write": "F ← E ← D ← B ← C ← A"
+        },
+        {
+          "say": "So the shortest path is A, C, B, D, E, F.",
+          "write": "A–C–B–D–E–F",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "orange",
+                "change": "add",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check: 2 plus 1 plus 5 plus 2 plus 3 is 13. It matches.",
+          "write": "2 + 1 + 5 + 2 + 3 = 13 ✓"
+        },
+        {
+          "say": "Write where each label came from, like 8 via B.",
+          "write": "8 via B"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Fewest edges is not always shortest. Always add the weights.",
+          "write": "✗ fewest edges"
+        },
+        {
+          "say": "Don't trust the direct edge. Check detours through nearby vertices.",
+          "write": "A–B 4 vs A–C–B 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weighted network A to F",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 102.0,
+                "text": "4",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 160,
+                "x2": 190,
+                "y2": 260,
+                "color": "orange",
+                "change": "highlight",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 125.0,
+                "y": 202.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 190,
+                "y2": 260,
+                "color": "orange",
+                "change": "highlight",
+                "stroke": 6
+              },
+              {
+                "kind": "text",
+                "x": 202.0,
+                "y": 152.0,
+                "text": "1",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 60,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 52.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 60,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 266.0,
+                "y": 152.0,
+                "text": "8",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 260,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 252.0,
+                "text": "10",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 370,
+                "y2": 260,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 382.0,
+                "y": 152.0,
+                "text": "2",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 60,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 102.0,
+                "text": "6",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 260,
+                "x2": 500,
+                "y2": 160,
+                "color": "grey",
+                "stroke": 3
+              },
+              {
+                "kind": "text",
+                "x": 435.0,
+                "y": 202.0,
+                "text": "3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 60,
+                "r": 24,
+                "fill": "white",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 260,
+                "r": 24,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 160,
+                "r": 24,
+                "fill": "white",
+                "label": "F"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Make permanent the smallest temporary label anywhere, not just next door.",
+          "write": "smallest over whole network"
+        },
+        {
+          "say": "When a vertex becomes permanent, recheck all its neighbours.",
+          "write": "update every neighbour"
+        },
+        {
+          "say": "Drawn lengths mean nothing. Use the numbers only.",
+          "write": "use the weights only"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Smallest temporary becomes permanent.",
+          "write": "smallest temporary → permanent"
+        },
+        {
+          "say": "Label, compare, lock, repeat.",
+          "write": "label, compare, lock, repeat"
+        },
+        {
+          "say": "Trace back the labels to read the route.",
+          "write": "trace back"
+        },
+        {
+          "say": "Check: the route total must equal the finish label.",
+          "write": "total = finish label ✓"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{"level":"Uni Year 1","subject":"biology","title":"Molecular genetics","frames":[
+{"heading":"DNA replication","lines":[
+{"say":"Replication is semi conservative. Each new helix keeps one old strand.","write":"semi-conservative","draw":{"type":"shapes","width":560,"height":240,"alt":"Parent helix gives two helices each with one old and one new strand","items":[
+{"kind":"rect","x":40,"y":40,"w":24,"h":160,"fill":"blue"},
+{"kind":"rect","x":70,"y":40,"w":24,"h":160,"fill":"blue"},
+{"kind":"arrow","x":120,"y":120,"x2":220,"y2":120,"color":"black"},
+{"kind":"rect","x":260,"y":40,"w":24,"h":160,"fill":"blue"},
+{"kind":"rect","x":290,"y":40,"w":24,"h":160,"fill":"orange","change":"add"},
+{"kind":"rect","x":400,"y":40,"w":24,"h":160,"fill":"orange","change":"add"},
+{"kind":"rect","x":430,"y":40,"w":24,"h":160,"fill":"blue"},
+{"kind":"text","x":360,"y":225,"text":"blue old, orange new","size":16,"anchor":"middle"}]}},
+{"say":"Meselson and Stahl showed it, using heavy and light nitrogen.","write":"¹⁵N → ¹⁴N"},
+{"say":"Help Stop That Primer, Please Link. Helicase, binding proteins, topoisomerase, primase, polymerase, ligase.","write":"H S T P P L"},
+{"say":"Polymerase only adds to a free three prime end. New DNA grows five prime to three prime.","write":"always 5′ → 3′"},
+{"say":"So the lagging strand is made in bits, called Okazaki fragments.","write":"lagging: Okazaki fragments","draw":{"type":"shapes","width":560,"height":220,"alt":"Leading strand continuous, lagging strand in fragments joined by ligase","items":[
+{"kind":"arrow","x":40,"y":60,"x2":500,"y2":60,"color":"blue"},
+{"kind":"text","x":40,"y":40,"text":"leading: continuous","size":16},
+{"kind":"arrow","x":180,"y":150,"x2":40,"y2":150,"color":"red"},
+{"kind":"arrow","x":340,"y":150,"x2":200,"y2":150,"color":"red"},
+{"kind":"arrow","x":500,"y":150,"x2":360,"y2":150,"color":"red","change":"add"},
+{"kind":"text","x":40,"y":195,"text":"lagging: fragments, joined by ligase","size":16}]}},
+{"say":"Proofreading and mismatch repair keep copying very accurate.","write":"proofreading"}]},
+{"heading":"Transcription","lines":[
+{"say":"RNA polymerase binds the promoter and reads the template strand three prime to five prime.","write":"template read 3′ → 5′"},
+{"say":"The mRNA matches the coding strand, with U instead of T.","write":"mRNA = coding strand (U for T)"},
+{"say":"In eukaryotes, pre mRNA gets a five prime cap and a poly A tail.","write":"5′ cap + poly-A tail"},
+{"say":"Then the spliceosome cuts out the introns and joins the exons.","write":"splicing: introns out","draw":{"type":"shapes","width":560,"height":220,"alt":"Pre-mRNA with exons and introns; introns removed","items":[
+{"kind":"rect","x":20,"y":60,"w":100,"h":50,"fill":"blue","label":"exon"},
+{"kind":"rect","x":120,"y":60,"w":90,"h":50,"fill":"grey","label":"intron","change":"remove"},
+{"kind":"rect","x":210,"y":60,"w":100,"h":50,"fill":"blue","label":"exon"},
+{"kind":"rect","x":310,"y":60,"w":90,"h":50,"fill":"grey","label":"intron","change":"remove"},
+{"kind":"rect","x":400,"y":60,"w":100,"h":50,"fill":"blue","label":"exon"},
+{"kind":"text","x":260,"y":170,"text":"exons joined → mature mRNA","size":18,"anchor":"middle"}]}},
+{"say":"Alternative splicing lets one gene make several proteins.","write":"alternative splicing"}]},
+{"heading":"Translation","lines":[
+{"say":"The ribosome reads codons, three bases at a time. AUG is the start.","write":"codon = 3 bases, AUG start"},
+{"say":"Each tRNA has an anticodon that pairs with the codon.","write":"anticodon on tRNA"},
+{"say":"tRNAs move from the A site, to P, to E.","write":"A → P → E","draw":{"type":"shapes","width":560,"height":220,"alt":"Ribosome with E, P and A sites","items":[
+{"kind":"rect","x":100,"y":50,"w":360,"h":110,"fill":"teal"},
+{"kind":"rect","x":120,"y":80,"w":100,"h":60,"fill":"grey","label":"E"},
+{"kind":"rect","x":230,"y":80,"w":100,"h":60,"fill":"orange","label":"P"},
+{"kind":"rect","x":340,"y":80,"w":100,"h":60,"fill":"green","label":"A","change":"highlight"},
+{"kind":"arrow","x":440,"y":30,"x2":140,"y2":30,"color":"purple","change":"add"},
+{"kind":"line","x":20,"y":180,"x2":540,"y2":180,"color":"black"},
+{"kind":"text","x":30,"y":205,"text":"5′ mRNA","size":16}]}},
+{"say":"The template reads T A C, G G A, T T C, A C T.","write":"3′-TAC GGA TTC ACT-5′"},
+{"say":"Pair each base. The mRNA reads A U G, C C U, A A G, U G A.","write":"5′-AUG CCU AAG UGA-3′"},
+{"say":"That's methionine, proline, lysine, then stop.","write":"Met–Pro–Lys"}]},
+{"heading":"The lac operon","lines":[
+{"say":"With no lactose, the repressor sits on the operator. The operon is off.","write":"no lactose → off","draw":{"type":"shapes","width":560,"height":220,"alt":"Repressor on operator blocks RNA polymerase","items":[
+{"kind":"rect","x":20,"y":110,"w":110,"h":40,"fill":"grey","label":"promoter"},
+{"kind":"rect","x":130,"y":110,"w":90,"h":40,"fill":"yellow","label":"operator"},
+{"kind":"rect","x":220,"y":110,"w":320,"h":40,"fill":"blue","label":"lacZ, Y, A"},
+{"kind":"circle","x":175,"y":80,"r":28,"fill":"red","label":"R"}]}},
+{"say":"Lactose lifts the lock. Allolactose binds the repressor, and it lets go.","write":"lactose lifts the lock","draw":{"type":"shapes","width":560,"height":220,"alt":"Repressor released from operator when lactose present","items":[
+{"kind":"rect","x":20,"y":110,"w":110,"h":40,"fill":"grey","label":"promoter"},
+{"kind":"rect","x":130,"y":110,"w":90,"h":40,"fill":"yellow","label":"operator"},
+{"kind":"rect","x":220,"y":110,"w":320,"h":40,"fill":"blue","label":"lacZ, Y, A"},
+{"kind":"circle","x":175,"y":80,"r":28,"fill":"red","label":"R","change":"remove"},
+{"kind":"circle","x":300,"y":50,"r":28,"fill":"red","label":"R","change":"add"},
+{"kind":"arrow","x":220,"y":185,"x2":520,"y2":185,"color":"green","change":"add"}]}},
+{"say":"Low glucose lights the lamp. C A M P plus CAP boosts transcription.","write":"low glucose → CAP–cAMP"},
+{"say":"Fully on only with lactose present and glucose absent.","write":"lactose + no glucose = high"}]},
+{"heading":"Mutations","lines":[
+{"say":"Silent, missense, nonsense, frameshift. Mildest to usually worst.","write":"silent → frameshift"},
+{"say":"C C U to C C C still codes proline. That's silent.","write":"CCU → CCC: silent"},
+{"say":"A A G to U A G makes a stop codon. That's nonsense.","write":"AAG → UAG: nonsense"},
+{"say":"Insert one base, and every codon after it shifts. That's a frameshift.","write":"+1 base: frameshift","draw":{"type":"shapes","width":560,"height":200,"alt":"Inserted base shifts the reading frame","items":[
+{"kind":"text","x":280,"y":60,"text":"AUG | CCU | AAG | UGA","size":26,"anchor":"middle"},
+{"kind":"text","x":280,"y":140,"text":"AUG | CCC | UAA | G…","size":26,"anchor":"middle","color":"red","change":"add"},
+{"kind":"text","x":280,"y":185,"text":"early stop","size":18,"anchor":"middle","change":"highlight"}]}},
+{"say":"Insert or delete three bases, and the frame doesn't shift.","write":"3 bases: no shift"}]},
+{"heading":"Watch out, and remember","lines":[
+{"say":"New strands are always built five prime to three prime.","write":"✗ 3′ → 5′ synthesis"},
+{"say":"The mRNA matches the coding strand, not the template.","write":"coding strand, not template"},
+{"say":"Codons are on mRNA. Anticodons are on tRNA.","write":"codon mRNA, anticodon tRNA"},
+{"say":"Lactose alone isn't enough. Glucose must also be low.","write":"lac: lactose AND low glucose"}]}
+]}

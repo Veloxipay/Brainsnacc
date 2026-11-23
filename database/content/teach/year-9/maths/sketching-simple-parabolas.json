@@ -1,0 +1,143 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Sketching simple parabolas",
+  "frames": [
+    {
+      "heading": "The starting graph",
+      "lines": [
+        { "say": "We start with y equals x squared.", "write": "y = x²" },
+        {
+          "say": "Its turning point is the origin. It passes through 1, 1 and 2, 4.",
+          "write": "TP (0, 0)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Parabola y = x squared with points marked",
+            "items": [
+              { "kind": "line", "x": 40, "y": 280, "x2": 520, "y2": 280, "color": "black" },
+              { "kind": "line", "x": 280, "y": 20, "x2": 280, "y2": 300, "color": "black" },
+              { "kind": "polygon", "points": [[180,40],[200,120],[220,190],[240,240],[260,270],[280,280],[300,270],[320,240],[340,190],[360,120],[380,40]], "fill": "none" },
+              { "kind": "circle", "x": 280, "y": 280, "r": 7, "fill": "red", "change": "highlight" },
+              { "kind": "circle", "x": 330, "y": 220, "r": 6, "fill": "blue" },
+              { "kind": "circle", "x": 380, "y": 40, "r": 6, "fill": "blue" },
+              { "kind": "text", "x": 345, "y": 225, "text": "(1, 1)", "size": 18 },
+              { "kind": "text", "x": 395, "y": 50, "text": "(2, 4)", "size": 18 }
+            ]
+          }
+        },
+        { "say": "Every change to the equation moves, stretches or flips this U shape." }
+      ]
+    },
+    {
+      "heading": "Stretching and flipping",
+      "lines": [
+        { "say": "In y equals a x squared, a bigger than 1 makes it narrower.", "write": "y = 3x²: narrower" },
+        { "say": "a between 0 and 1 makes it wider.", "write": "y = ½x²: wider" },
+        { "say": "A negative a flips it upside down.", "write": "y = −x²: opens down" },
+        {
+          "say": "All of these still have their turning point at the origin.",
+          "diagram": "diagrams/y9/maths/sketching-simple-parabolas-dilate.svg",
+          "alt": "y = 3x² narrowest, y = x², y = ½x² widest, y = −x² opens downwards"
+        }
+      ]
+    },
+    {
+      "heading": "Moving up, down and sideways",
+      "lines": [
+        {
+          "say": "Adding 2 outside the square moves the whole graph up 2.",
+          "write": "y = x² + 2: TP (0, 2)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "y = x squared moved up 2",
+            "items": [
+              { "kind": "line", "x": 40, "y": 280, "x2": 520, "y2": 280, "color": "black" },
+              { "kind": "line", "x": 200, "y": 20, "x2": 200, "y2": 300, "color": "black" },
+              { "kind": "polygon", "points": [[140,100],[160,190],[180,250],[200,270],[220,250],[240,190],[260,100]], "fill": "none" },
+              { "kind": "polygon", "points": [[140,20],[160,110],[180,170],[200,190],[220,170],[240,110],[260,20]], "fill": "none", "change": "add" },
+              { "kind": "arrow", "x": 200, "y": 265, "x2": 200, "y2": 195, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 300, "y": 190, "text": "up 2", "size": 22, "bold": true, "color": "purple" }
+            ]
+          }
+        },
+        {
+          "say": "x minus 3 inside the bracket moves it 3 to the right. The opposite way to the sign.",
+          "write": "y = (x − 3)²: TP (3, 0)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "y = x squared moved right 3",
+            "items": [
+              { "kind": "line", "x": 40, "y": 280, "x2": 520, "y2": 280, "color": "black" },
+              { "kind": "line", "x": 140, "y": 20, "x2": 140, "y2": 300, "color": "black" },
+              { "kind": "polygon", "points": [[80,100],[100,190],[120,250],[140,280],[160,250],[180,190],[200,100]], "fill": "none" },
+              { "kind": "polygon", "points": [[260,100],[280,190],[300,250],[320,280],[340,250],[360,190],[380,100]], "fill": "none", "change": "add" },
+              { "kind": "arrow", "x": 150, "y": 300, "x2": 310, "y2": 300, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 330, "y": 310, "text": "right 3", "size": 18, "bold": true, "color": "purple" }
+            ]
+          }
+        },
+        { "say": "And x plus 2 in the bracket moves it 2 to the left.", "write": "y = (x + 2)²: TP (−2, 0)" },
+        {
+          "say": "Outside moves up or down. Inside moves sideways.",
+          "diagram": "diagrams/y9/maths/sketching-simple-parabolas-shift.svg",
+          "alt": "y = x², y = x² + 2 with turning point (0, 2), and y = (x − 3)² with turning point (3, 0)"
+        }
+      ]
+    },
+    {
+      "heading": "Turning point form",
+      "lines": [
+        { "say": "Put all the moves together and you get turning point form.", "write": "y = a(x − h)² + k" },
+        { "say": "The turning point is h, k.", "write": "TP = (h, k)" },
+        { "say": "Watch the sign. x plus 2 means h is minus 2.", "write": "y = (x + 2)² − 1" },
+        { "say": "So the turning point is minus 2, minus 1.", "write": "TP (−2, −1)" },
+        { "say": "Tip. Ask what x makes the bracket zero.", "write": "x + 2 = 0 → x = −2" }
+      ]
+    },
+    {
+      "heading": "How to sketch",
+      "lines": [
+        { "say": "One. Shape. Positive a is a U. Negative a is upside down.", "write": "1. shape ∪ or ∩" },
+        { "say": "Two. The turning point, h, k.", "write": "2. turning point" },
+        { "say": "Three. The y-intercept. Put x equals 0.", "write": "3. y-int: x = 0" },
+        { "say": "Four. The x-intercepts. Put y equals 0 and solve.", "write": "4. x-ints: y = 0" },
+        { "say": "Five. Draw a smooth, symmetrical curve and label every point.", "write": "5. label points" }
+      ]
+    },
+    {
+      "heading": "Sketch y = (x + 2)² − 1",
+      "lines": [
+        { "say": "a is 1, so it's a U. The turning point is minus 2, minus 1.", "write": "∪, TP (−2, −1)" },
+        { "say": "Put x equals 0. 2 squared minus 1 is 3.", "write": "y-int (0, 3)" },
+        { "say": "Put y equals 0. x plus 2 squared is 1, so x plus 2 is plus or minus 1.", "write": "x + 2 = ±1" },
+        { "say": "So x is minus 1 or minus 3.", "write": "x = −1 or x = −3" },
+        {
+          "say": "Both intercepts are 1 unit from the axis. Draw and label.",
+          "diagram": "diagrams/y9/maths/sketching-simple-parabolas-ex2.svg",
+          "alt": "Sketch of y = (x + 2)² − 1 with turning point (−2, −1), x-intercepts −3 and −1, y-intercept 3"
+        }
+      ]
+    },
+    {
+      "heading": "An upside-down one",
+      "lines": [
+        { "say": "Sketch y equals minus x minus 1 squared, plus 4.", "write": "y = −(x − 1)² + 4" },
+        { "say": "a is negative, so it opens down. Turning point 1, 4 is a maximum.", "write": "∩, TP (1, 4)" },
+        { "say": "x equals 0 gives minus 1 plus 4, which is 3.", "write": "y-int (0, 3)" },
+        { "say": "y equals 0 gives x minus 1 squared equals 4. So x is 3 or minus 1.", "write": "x = 3 or x = −1" },
+        {
+          "say": "Here's the finished sketch with every point labelled.",
+          "diagram": "diagrams/y9/maths/sketching-simple-parabolas-ex3.svg",
+          "alt": "Upside-down parabola with maximum (1, 4), x-intercepts −1 and 3, y-intercept 3"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        { "say": "x minus 3 in a bracket moves right, not left.", "write": "✗ (x − 3)² moves left" },
+        { "say": "Big a, skinny graph. y equals 4 x squared is narrower.", "write": "big a → narrow" },
+        { "say": "Don't forget plus or minus when you take a square root.", "write": "(x − 1)² = 4 → ±2" },
+        { "say": "Inside is opposite, outside is honest.", "write": "inside opposite, outside honest" },
+        { "say": "Turning point, then y-intercept, then x-intercepts. Then draw.", "write": "TP → y → x" }
+      ]
+    }
+  ]
+}

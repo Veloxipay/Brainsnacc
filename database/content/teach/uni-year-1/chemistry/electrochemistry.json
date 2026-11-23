@@ -1,0 +1,159 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Electrochemistry",
+  "frames": [
+    {
+      "heading": "Two kinds of cell",
+      "lines": [
+        {"say": "Oxidation is loss of electrons. Reduction is gain. OIL RIG.", "write": "OIL RIG"},
+        {"say": "In a cell, the two half-reactions happen at separate electrodes.", "write": "An Ox, Red Cat",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Zinc and copper half-cells joined by a wire and a salt bridge", "items": [
+           {"kind": "rect", "x": 40, "y": 130, "w": 180, "h": 120, "fill": "grey"},
+           {"kind": "rect", "x": 340, "y": 130, "w": 180, "h": 120, "fill": "blue"},
+           {"kind": "rect", "x": 110, "y": 70, "w": 40, "h": 150, "fill": "white", "label": "Zn"},
+           {"kind": "rect", "x": 410, "y": 70, "w": 40, "h": 150, "fill": "orange", "label": "Cu"},
+           {"kind": "line", "x": 130, "y": 70, "x2": 130, "y2": 40, "color": "black"},
+           {"kind": "line", "x": 130, "y": 40, "x2": 430, "y2": 40, "color": "black"},
+           {"kind": "line", "x": 430, "y": 40, "x2": 430, "y2": 70, "color": "black"},
+           {"kind": "rect", "x": 190, "y": 110, "w": 180, "h": 24, "fill": "yellow", "label": "salt bridge"},
+           {"kind": "text", "x": 130, "y": 272, "text": "anode", "size": 18, "bold": true},
+           {"kind": "text", "x": 430, "y": 272, "text": "cathode", "size": 18, "bold": true}
+         ]}},
+        {"say": "Electrons travel through the wire. Ions move through the salt bridge.", "write": "wire: e⁻   bridge: ions",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Electrons flow from zinc anode to copper cathode through the wire", "items": [
+           {"kind": "rect", "x": 40, "y": 130, "w": 180, "h": 120, "fill": "grey"},
+           {"kind": "rect", "x": 340, "y": 130, "w": 180, "h": 120, "fill": "blue"},
+           {"kind": "rect", "x": 110, "y": 70, "w": 40, "h": 150, "fill": "white", "label": "Zn"},
+           {"kind": "rect", "x": 410, "y": 70, "w": 40, "h": 150, "fill": "orange", "label": "Cu"},
+           {"kind": "line", "x": 130, "y": 70, "x2": 130, "y2": 40, "color": "black"},
+           {"kind": "line", "x": 130, "y": 40, "x2": 430, "y2": 40, "color": "black"},
+           {"kind": "line", "x": 430, "y": 40, "x2": 430, "y2": 70, "color": "black"},
+           {"kind": "rect", "x": 190, "y": 110, "w": 180, "h": 24, "fill": "yellow", "label": "salt bridge"},
+           {"kind": "arrow", "x": 180, "y": 22, "x2": 380, "y2": 22, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 16, "text": "e⁻", "size": 18, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 130, "y": 272, "text": "anode: oxidation", "size": 18, "bold": true, "change": "highlight"},
+           {"kind": "text", "x": 430, "y": 272, "text": "cathode: reduction", "size": 18, "bold": true, "change": "highlight"}
+         ]}},
+        {"say": "A galvanic cell runs a spontaneous reaction. Its anode is negative.", "write": "galvanic: anode −"},
+        {"say": "An electrolytic cell is pushed by a power supply. Its anode is positive.", "write": "PANIC: Positive Anode"},
+        {"say": "The signs swap, but the anode is always oxidation.", "write": "Zn | Zn²⁺ || Cu²⁺ | Cu"}
+      ]
+    },
+    {
+      "heading": "Standard reduction potentials",
+      "lines": [
+        {"say": "Each half-cell is measured against the standard hydrogen electrode, set at zero volts.", "write": "SHE = 0.00 V"},
+        {"say": "A more positive E nought means a stronger pull on electrons.", "write": "more + → reduced",
+         "draw": {"type": "shapes", "width": 560, "height": 320, "alt": "Vertical scale of reduction potentials from chlorine at +1.36 down to sodium at −2.71", "items": [
+           {"kind": "arrow", "x": 100, "y": 300, "x2": 100, "y2": 20, "color": "black"},
+           {"kind": "text", "x": 120, "y": 40, "text": "Cl₂ / Cl⁻   +1.36", "size": 20, "anchor": "start", "color": "red", "change": "highlight"},
+           {"kind": "text", "x": 120, "y": 90, "text": "Ag⁺ / Ag   +0.80", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 120, "y": 135, "text": "Cu²⁺ / Cu   +0.34", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 120, "y": 175, "text": "H⁺ / H₂   0.00", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 120, "y": 220, "text": "Zn²⁺ / Zn   −0.76", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 120, "y": 290, "text": "Na⁺ / Na   −2.71", "size": 20, "anchor": "start", "color": "blue", "change": "highlight"},
+           {"kind": "text", "x": 470, "y": 45, "text": "strong oxidant", "size": 18, "color": "red"},
+           {"kind": "text", "x": 470, "y": 295, "text": "strong reductant", "size": 18, "color": "blue"}
+         ]}},
+        {"say": "Top-left grabs, bottom-right gives. Chlorine is a strong oxidising agent.", "write": "Cl₂: strong oxidant"},
+        {"say": "Sodium metal, at minus 2.71, is a strong reducing agent.", "write": "Na: strong reductant"}
+      ]
+    },
+    {
+      "heading": "Cell potential",
+      "lines": [
+        {"say": "Cell potential is cathode minus anode, both as reduction potentials.", "write": "E°cell = E°cat − E°an"},
+        {"say": "Copper at plus 0.34 out-pulls zinc at minus 0.76.", "write": "Cu: cathode   Zn: anode"},
+        {"say": "So E cell is 0.34 minus minus 0.76. That's plus 1.10 volts.", "write": "0.34 − (−0.76) = +1.10 V"},
+        {"say": "Positive means spontaneous under standard conditions.", "write": "E°cell > 0 → spontaneous"},
+        {"say": "Never multiply E nought, even when you double a half-equation.", "write": "E° never doubles",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Doubling the silver half-equation: the coefficient doubles but E stays +0.80 V", "items": [
+           {"kind": "text", "x": 280, "y": 50, "text": "Ag⁺ + e⁻ → Ag     E° = +0.80 V", "size": 22},
+           {"kind": "text", "x": 280, "y": 120, "text": "2Ag⁺ + 2e⁻ → 2Ag   E° = +1.60 V", "size": 22, "color": "red", "change": "remove"},
+           {"kind": "text", "x": 280, "y": 190, "text": "2Ag⁺ + 2e⁻ → 2Ag   E° = +0.80 V", "size": 22, "bold": true, "color": "green", "change": "add"}
+         ]}},
+        {"say": "Voltage is like price per kilo. Buying more doesn't change the price.", "write": "E° is intensive"}
+      ]
+    },
+    {
+      "heading": "Linking E to ΔG and K",
+      "lines": [
+        {"say": "The total energy is delta G nought equals minus n F E.", "write": "ΔG° = −nFE°cell"},
+        {"say": "n is moles of electrons. F is 96 485 coulombs per mole.", "write": "F = 96 485 C mol⁻¹"},
+        {"say": "So positive E gives negative delta G, and K bigger than one.", "write": "E° + ↔ ΔG° − ↔ K > 1",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Chain linking positive E, negative delta G and K greater than 1", "items": [
+           {"kind": "rect", "x": 20, "y": 60, "w": 140, "h": 70, "fill": "blue", "label": "E° > 0"},
+           {"kind": "arrow", "x": 160, "y": 95, "x2": 210, "y2": 95, "color": "black"},
+           {"kind": "rect", "x": 210, "y": 60, "w": 140, "h": 70, "fill": "orange", "label": "ΔG° < 0"},
+           {"kind": "arrow", "x": 350, "y": 95, "x2": 400, "y2": 95, "color": "black"},
+           {"kind": "rect", "x": 400, "y": 60, "w": 140, "h": 70, "fill": "green", "label": "K > 1", "change": "highlight"},
+           {"kind": "text", "x": 280, "y": 180, "text": "log K = nE° / 0.05916 at 25 °C", "size": 20, "color": "purple"}
+         ]}},
+        {"say": "At 25 degrees, log K equals n E over 0.05916.", "write": "log₁₀ K = nE°/0.05916"},
+        {"say": "Even a modest voltage means a very large K.", "write": "small E° → huge K"}
+      ]
+    },
+    {
+      "heading": "The Nernst equation",
+      "lines": [
+        {"say": "Real cells aren't at one molar. The Nernst equation corrects for that.", "write": "E = E° − (RT/nF) ln Q"},
+        {"say": "At 25 degrees, use 0.05916 over n, times log Q.", "write": "E = E° − (0.05916/n) log Q"},
+        {"say": "More reactant lowers Q and raises E. More product does the opposite.", "write": "Q ↑ → E ↓"},
+        {"say": "As the cell runs, Q climbs towards K and the voltage falls.", "write": "Q = K → E = 0",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Cell voltage falling to zero as the cell runs flat", "items": [
+           {"kind": "arrow", "x": 60, "y": 210, "x2": 60, "y2": 20, "color": "black"},
+           {"kind": "arrow", "x": 60, "y": 210, "x2": 530, "y2": 210, "color": "black"},
+           {"kind": "text", "x": 70, "y": 35, "text": "E", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 520, "y": 235, "text": "time", "size": 18, "anchor": "end"},
+           {"kind": "line", "x": 70, "y": 50, "x2": 250, "y2": 80, "color": "blue"},
+           {"kind": "line", "x": 250, "y": 80, "x2": 400, "y2": 150, "color": "blue"},
+           {"kind": "line", "x": 400, "y": 150, "x2": 480, "y2": 208, "color": "blue"},
+           {"kind": "circle", "x": 480, "y": 208, "r": 8, "fill": "red", "change": "highlight"},
+           {"kind": "text", "x": 440, "y": 185, "text": "flat: Q = K", "size": 18, "color": "red", "anchor": "end", "change": "highlight"}
+         ]}},
+        {"say": "A concentration cell has E nought of zero. The dilute side is the anode.", "write": "dilute side = anode"}
+      ]
+    },
+    {
+      "heading": "Electrolysis and Faraday",
+      "lines": [
+        {"say": "Electrolysis uses a power supply to push a non-spontaneous reaction.", "write": "ΔG > 0, forced"},
+        {"say": "Electrons are coins. Silver costs one coin. Copper costs two.", "write": "Ag⁺ + e⁻ → Ag",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "One electron buys one silver atom; two electrons buy one copper atom", "items": [
+           {"kind": "circle", "x": 80, "y": 70, "r": 24, "fill": "yellow", "label": "e⁻"},
+           {"kind": "arrow", "x": 110, "y": 70, "x2": 200, "y2": 70, "color": "black"},
+           {"kind": "circle", "x": 240, "y": 70, "r": 30, "fill": "grey", "label": "Ag"},
+           {"kind": "circle", "x": 60, "y": 160, "r": 24, "fill": "yellow", "label": "e⁻", "change": "add"},
+           {"kind": "circle", "x": 115, "y": 160, "r": 24, "fill": "yellow", "label": "e⁻", "change": "add"},
+           {"kind": "arrow", "x": 145, "y": 160, "x2": 200, "y2": 160, "color": "black"},
+           {"kind": "circle", "x": 240, "y": 160, "r": 30, "fill": "orange", "label": "Cu"},
+           {"kind": "text", "x": 420, "y": 76, "text": "1 e⁻ per Ag", "size": 20},
+           {"kind": "text", "x": 420, "y": 166, "text": "2 e⁻ per Cu", "size": 20, "bold": true}
+         ]}},
+        {"say": "Charge equals current times time, with time in seconds.", "write": "Q = It"},
+        {"say": "Divide by F for moles of electrons, then use the half-equation ratio.", "write": "n(e⁻) = Q/F → ratio"},
+        {"say": "In sodium solutions, water is reduced first, so you get hydrogen, not sodium.", "write": "H₂O (−0.83) before Na⁺"},
+        {"say": "Concentrated chloride gives chlorine, because of overpotential for oxygen.", "write": "brine → Cl₂ (overpotential)"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't multiply E nought by the coefficients.", "write": "✗ 2 × E°"},
+        {"say": "n is the total electrons in the balanced overall equation.", "write": "n = total e⁻ transferred"},
+        {"say": "Convert minutes or hours to seconds before using Q equals I t.", "write": "t in seconds"},
+        {"say": "Leave solids and water out of Q. It's products over reactants.", "write": "Q: no solids, no H₂O"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Anode is oxidation, cathode is reduction, in every cell.", "write": "An Ox, Red Cat"},
+        {"say": "Cell potential is cathode minus anode, and E nought never doubles.", "write": "E°cat − E°an"},
+        {"say": "Delta G nought equals minus n F E. The Nernst equation handles real concentrations.", "write": "ΔG° = −nFE°"},
+        {"say": "Electrolysis chain: current times time, divide by F, then the ratio.", "write": "I×t → ÷F → ratio"}
+      ]
+    }
+  ]
+}

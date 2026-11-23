@@ -1,0 +1,112 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "The cell cycle",
+  "frames": [
+    { "heading": "Binary fission in bacteria",
+      "lines": [
+        { "say": "Bacteria have no nucleus, so they divide by binary fission.", "write": "prokaryotes: binary fission" },
+        { "say": "The circular chromosome is copied. The copies attach to the membrane.", "write": "1 copy the chromosome",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "A bacterium with two copies of its circular chromosome", "items": [
+            { "kind": "rect", "x": 100, "y": 60, "w": 360, "h": 100, "fill": "green" },
+            { "kind": "circle", "x": 200, "y": 110, "r": 30, "fill": "none", "label": "DNA" },
+            { "kind": "circle", "x": 360, "y": 110, "r": 30, "fill": "none", "label": "DNA", "change": "add" }
+          ] } },
+        { "say": "The cell grows longer, then a new wall pinches across the middle.", "write": "2 grow, pinch, split",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "The bacterium splits into two identical daughter cells", "items": [
+            { "kind": "rect", "x": 40, "y": 60, "w": 220, "h": 100, "fill": "green", "change": "add" },
+            { "kind": "rect", "x": 300, "y": 60, "w": 220, "h": 100, "fill": "green", "change": "add" },
+            { "kind": "circle", "x": 150, "y": 110, "r": 30, "fill": "none", "label": "DNA" },
+            { "kind": "circle", "x": 410, "y": 110, "r": 30, "fill": "none", "label": "DNA" },
+            { "kind": "text", "x": 280, "y": 200, "text": "two identical daughter cells", "size": 20, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "Some bacteria can divide every 20 minutes or so.", "write": "≈ every 20 minutes" }
+      ] },
+    { "heading": "Interphase is not a rest",
+      "lines": [
+        { "say": "The cell cycle has interphase, then the mitotic, or M, phase.", "write": "interphase → M phase" },
+        { "say": "G1: the cell grows, makes proteins and organelles, and does its job.", "write": "G1 = grow" },
+        { "say": "S: the DNA is copied. Each chromosome becomes two sister chromatids.", "write": "S = synthesise (copy DNA)",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "One chromosome becomes two sister chromatids joined at a centromere", "items": [
+            { "kind": "rect", "x": 140, "y": 40, "w": 24, "h": 140, "fill": "blue", "label": "" },
+            { "kind": "arrow", "x": 200, "y": 110, "x2": 300, "y2": 110, "color": "black" },
+            { "kind": "rect", "x": 340, "y": 40, "w": 24, "h": 140, "fill": "blue" },
+            { "kind": "rect", "x": 370, "y": 40, "w": 24, "h": 140, "fill": "blue", "change": "add" },
+            { "kind": "circle", "x": 367, "y": 110, "r": 10, "fill": "red", "change": "add" },
+            { "kind": "text", "x": 410, "y": 116, "text": "centromere", "size": 18, "color": "red" }
+          ] } },
+        { "say": "G2: more growth, and the copied DNA is checked.", "write": "G2 = grow and check" },
+        { "say": "Cells that stop dividing, like mature nerve cells, enter G0.", "write": "G0 = not dividing" }
+      ] },
+    { "heading": "Mitosis: PMAT",
+      "lines": [
+        { "say": "Prophase: chromosomes coil up and appear. The nuclear envelope breaks down.", "write": "Prophase = Prepare" },
+        { "say": "Metaphase: chromosomes line up single file in the middle.", "write": "Metaphase = Middle",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Chromosomes lined up on the middle line, spindle fibres from both poles", "items": [
+            { "kind": "circle", "x": 280, "y": 130, "r": 120, "fill": "pink" },
+            { "kind": "line", "x": 280, "y": 20, "x2": 280, "y2": 240, "color": "grey", "dashed": true },
+            { "kind": "rect", "x": 268, "y": 60, "w": 24, "h": 30, "fill": "blue" },
+            { "kind": "rect", "x": 268, "y": 115, "w": 24, "h": 30, "fill": "blue" },
+            { "kind": "rect", "x": 268, "y": 170, "w": 24, "h": 30, "fill": "blue" },
+            { "kind": "line", "x": 170, "y": 130, "x2": 268, "y2": 75, "color": "green" },
+            { "kind": "line", "x": 170, "y": 130, "x2": 268, "y2": 185, "color": "green" },
+            { "kind": "line", "x": 390, "y": 130, "x2": 292, "y2": 75, "color": "green" },
+            { "kind": "line", "x": 390, "y": 130, "x2": 292, "y2": 185, "color": "green" }
+          ] } },
+        { "say": "Anaphase: centromeres split. Spindle fibres pull chromatids apart.", "write": "Anaphase = Apart",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Sister chromatids pulled apart to opposite poles", "items": [
+            { "kind": "circle", "x": 280, "y": 130, "r": 120, "fill": "pink" },
+            { "kind": "rect", "x": 268, "y": 60, "w": 24, "h": 30, "fill": "blue", "change": "remove" },
+            { "kind": "rect", "x": 268, "y": 115, "w": 24, "h": 30, "fill": "blue", "change": "remove" },
+            { "kind": "rect", "x": 268, "y": 170, "w": 24, "h": 30, "fill": "blue", "change": "remove" },
+            { "kind": "rect", "x": 190, "y": 70, "w": 12, "h": 30, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 190, "y": 115, "w": 12, "h": 30, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 190, "y": 160, "w": 12, "h": 30, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 358, "y": 70, "w": 12, "h": 30, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 358, "y": 115, "w": 12, "h": 30, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 358, "y": 160, "w": 12, "h": 30, "fill": "blue", "change": "add" }
+          ] } },
+        { "say": "Telophase: a nuclear envelope forms around each set. Two nuclei.", "write": "Telophase = Two nuclei" },
+        { "say": "I Peed on the MAT. Interphase, prophase, metaphase, anaphase, telophase.", "write": "I · P · M · A · T" }
+      ] },
+    { "heading": "Cytokinesis",
+      "lines": [
+        { "say": "Mitosis divides the nucleus. Cytokinesis divides the cytoplasm.", "write": "mitosis ≠ cytokinesis" },
+        { "say": "Animal cells pinch in, forming a cleavage furrow.", "write": "animal: cleavage furrow" },
+        { "say": "Plant cells can't pinch. Golgi vesicles build a cell plate instead.", "write": "plant: cell plate" },
+        { "say": "Result: two daughter cells, genetically identical to the parent.", "write": "2 identical cells" },
+        { "say": "Follow the DNA: 10 units in G1, 20 after S phase, 10 in each daughter.", "write": "10 → 20 → 10 + 10" }
+      ] },
+    { "heading": "Checkpoints and apoptosis",
+      "lines": [
+        { "say": "Checkpoints are like checks before boarding a flight.", "write": "checkpoints" },
+        { "say": "G1 checks size, nutrients, signals and DNA damage. G2 checks the DNA copy.", "write": "G1 · G2 checkpoints" },
+        { "say": "The M checkpoint checks every chromosome is attached to both poles.", "write": "M: spindle attached?" },
+        { "say": "Damage that can't be fixed triggers apoptosis, programmed cell death.", "write": "can't fix → apoptosis" },
+        { "say": "Caspases break the cell into neat apoptotic bodies. No inflammation.", "write": "tidy, no inflammation",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "A cell breaks into small apoptotic bodies", "items": [
+            { "kind": "circle", "x": 150, "y": 110, "r": 70, "fill": "pink", "change": "remove" },
+            { "kind": "arrow", "x": 240, "y": 110, "x2": 320, "y2": 110, "color": "black" },
+            { "kind": "circle", "x": 380, "y": 70, "r": 22, "fill": "pink", "change": "add" },
+            { "kind": "circle", "x": 450, "y": 90, "r": 22, "fill": "pink", "change": "add" },
+            { "kind": "circle", "x": 390, "y": 150, "r": 22, "fill": "pink", "change": "add" },
+            { "kind": "circle", "x": 470, "y": 160, "r": 22, "fill": "pink", "change": "add" },
+            { "kind": "text", "x": 420, "y": 210, "text": "apoptotic bodies", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Necrosis is messy. The cell bursts and causes inflammation.", "write": "necrosis: bursts" }
+      ] },
+    { "heading": "Cancer: when control fails",
+      "lines": [
+        { "say": "Cancer is uncontrolled division, caused by mutations in control genes.", "write": "mutations in control genes" },
+        { "say": "An oncogene is like an accelerator stuck down.", "write": "oncogene = stuck accelerator" },
+        { "say": "A broken tumour suppressor gene, like p53, is like failed brakes.", "write": "p53 broken = no brakes" },
+        { "say": "Usually several mutations are needed, not just one.", "write": "several mutations" },
+        { "say": "Benign tumours stay put. Malignant ones invade and spread. That's metastasis.", "write": "malignant → metastasis" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "DNA is copied in S phase, never during mitosis.", "write": "copy in S phase" },
+        { "say": "Prepare, Middle, Apart, Two nuclei.", "write": "P · M · A · T" },
+        { "say": "Checkpoints pause, repair, or trigger apoptosis.", "write": "pause · repair · apoptosis" },
+        { "say": "Apoptosis is tidy. Necrosis is messy.", "write": "tidy vs messy" }
+      ] }
+  ]
+}

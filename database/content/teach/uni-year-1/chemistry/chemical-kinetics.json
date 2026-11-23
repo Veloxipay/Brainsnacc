@@ -1,0 +1,184 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Chemical kinetics",
+  "frames": [
+    {
+      "heading": "How fast does it go?",
+      "lines": [
+        {"say": "Thermodynamics tells you if a reaction can happen. Kinetics tells you how fast.", "write": "Kinetics = speed + pathway"},
+        {"say": "Rate is the change in concentration per second, in moles per litre per second.", "write": "rate in M s⁻¹",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Concentration of reactant falling over time, with a tangent at the start", "items": [
+           {"kind": "arrow", "x": 60, "y": 260, "x2": 60, "y2": 30, "color": "black"},
+           {"kind": "arrow", "x": 60, "y": 260, "x2": 530, "y2": 260, "color": "black"},
+           {"kind": "text", "x": 75, "y": 40, "text": "[A]", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 520, "y": 290, "text": "time", "size": 18, "anchor": "end"},
+           {"kind": "line", "x": 60, "y": 60, "x2": 140, "y2": 140, "color": "blue"},
+           {"kind": "line", "x": 140, "y": 140, "x2": 240, "y2": 195, "color": "blue"},
+           {"kind": "line", "x": 240, "y": 195, "x2": 360, "y2": 225, "color": "blue"},
+           {"kind": "line", "x": 360, "y": 225, "x2": 510, "y2": 240, "color": "blue"}
+         ]}},
+        {"say": "The curve gets flatter, so the rate usually slows down as reactant is used up.", "write": "rate falls over time"},
+        {"say": "The initial rate is the gradient of the tangent at time zero.", "write": "initial rate = gradient at t = 0",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Tangent drawn at time zero on the concentration curve", "items": [
+           {"kind": "arrow", "x": 60, "y": 260, "x2": 60, "y2": 30, "color": "black"},
+           {"kind": "arrow", "x": 60, "y": 260, "x2": 530, "y2": 260, "color": "black"},
+           {"kind": "text", "x": 75, "y": 40, "text": "[A]", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 520, "y": 290, "text": "time", "size": 18, "anchor": "end"},
+           {"kind": "line", "x": 60, "y": 60, "x2": 140, "y2": 140, "color": "blue"},
+           {"kind": "line", "x": 140, "y": 140, "x2": 240, "y2": 195, "color": "blue"},
+           {"kind": "line", "x": 240, "y": 195, "x2": 360, "y2": 225, "color": "blue"},
+           {"kind": "line", "x": 360, "y": 225, "x2": 510, "y2": 240, "color": "blue"},
+           {"kind": "line", "x": 60, "y": 60, "x2": 230, "y2": 230, "color": "red", "dashed": true, "change": "add"},
+           {"kind": "text", "x": 250, "y": 120, "text": "tangent at t = 0", "size": 18, "color": "red", "anchor": "start", "change": "add"}
+         ]}}
+      ]
+    },
+    {
+      "heading": "Rate laws and orders",
+      "lines": [
+        {"say": "Rate depends on concentrations through a rate law.", "write": "rate = k[A]^m[B]^n"},
+        {"say": "k is the rate constant. It changes with temperature, not with concentration.", "write": "k depends on T"},
+        {"say": "m and n are the orders. Their sum is the overall order.", "write": "overall order = m + n"},
+        {"say": "Here is the doubling test. Double A and watch the rate.", "write": "double [A]",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Rate bars before doubling the concentration", "items": [
+           {"kind": "rect", "x": 60, "y": 200, "w": 100, "h": 50, "fill": "blue", "label": "rate"},
+           {"kind": "rect", "x": 230, "y": 200, "w": 100, "h": 50, "fill": "blue", "label": "rate"},
+           {"kind": "rect", "x": 400, "y": 200, "w": 100, "h": 50, "fill": "blue", "label": "rate"},
+           {"kind": "text", "x": 110, "y": 285, "text": "zero order", "size": 18},
+           {"kind": "text", "x": 280, "y": 285, "text": "first order", "size": 18},
+           {"kind": "text", "x": 450, "y": 285, "text": "second order", "size": 18}
+         ]}},
+        {"say": "Zero order, no change. First order, rate doubles. Second order, rate quadruples.", "write": "×1   ×2   ×4",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "After doubling: zero order rate unchanged, first order doubled, second order four times", "items": [
+           {"kind": "rect", "x": 60, "y": 200, "w": 100, "h": 50, "fill": "blue", "label": "×1"},
+           {"kind": "rect", "x": 230, "y": 150, "w": 100, "h": 100, "fill": "orange", "label": "×2", "change": "add"},
+           {"kind": "rect", "x": 400, "y": 50, "w": 100, "h": 200, "fill": "red", "label": "×4", "change": "add"},
+           {"kind": "text", "x": 110, "y": 285, "text": "zero order", "size": 18},
+           {"kind": "text", "x": 280, "y": 285, "text": "first order", "size": 18},
+           {"kind": "text", "x": 450, "y": 285, "text": "second order", "size": 18}
+         ]}},
+        {"say": "Orders come from experiment, not from the coefficients in the balanced equation.", "write": "orders from the lab!"}
+      ]
+    },
+    {
+      "heading": "The method of initial rates",
+      "lines": [
+        {"say": "Take two nitrogen monoxide plus oxygen making two nitrogen dioxide.", "write": "2NO + O₂ → 2NO₂"},
+        {"say": "Experiments one and two: NO doubles, oxygen stays the same.", "write": "[NO] ×2, [O₂] same",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Comparing experiments 1 and 2: NO doubles and rate goes up four times", "items": [
+           {"kind": "rect", "x": 40, "y": 40, "w": 220, "h": 70, "fill": "white", "label": "Exp 1: [NO] 0.010"},
+           {"kind": "rect", "x": 300, "y": 40, "w": 220, "h": 70, "fill": "white", "label": "Exp 2: [NO] 0.020"},
+           {"kind": "text", "x": 150, "y": 160, "text": "7.0 × 10⁻⁶", "size": 22},
+           {"kind": "text", "x": 410, "y": 160, "text": "2.8 × 10⁻⁵", "size": 22},
+           {"kind": "arrow", "x": 230, "y": 155, "x2": 320, "y2": 155, "color": "purple"},
+           {"kind": "text", "x": 280, "y": 220, "text": "rate × 4 = 2²  so second order", "size": 22, "bold": true, "color": "purple", "change": "highlight"}
+         ]}},
+        {"say": "The rate goes up four times. Four is two squared, so second order in NO.", "write": "×4 = 2²  →  m = 2"},
+        {"say": "Experiments one and three: oxygen doubles and the rate doubles. First order in oxygen.", "write": "×2 = 2¹  →  n = 1"},
+        {"say": "So rate equals k times NO squared times oxygen. Third order overall.", "write": "rate = k[NO]²[O₂]"},
+        {"say": "Put experiment one's numbers in. k is 7.0 per molar squared per second.", "write": "k = 7.0 M⁻² s⁻¹"}
+      ]
+    },
+    {
+      "heading": "Integrated rate laws and half-life",
+      "lines": [
+        {"say": "Which plot is a straight line tells you the order.", "write": "[A], ln[A], 1/[A] vs t"},
+        {"say": "Zero is plain, first is ln, second flips it.", "write": "0: [A]   1: ln[A]   2: 1/[A]",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Three straight line plots: [A], ln[A] slope down, 1/[A] slopes up", "items": [
+           {"kind": "line", "x": 30, "y": 200, "x2": 170, "y2": 200, "color": "black"},
+           {"kind": "line", "x": 30, "y": 200, "x2": 30, "y2": 50, "color": "black"},
+           {"kind": "line", "x": 40, "y": 70, "x2": 160, "y2": 180, "color": "blue"},
+           {"kind": "text", "x": 100, "y": 240, "text": "[A]: slope −k", "size": 18},
+           {"kind": "line", "x": 210, "y": 200, "x2": 350, "y2": 200, "color": "black"},
+           {"kind": "line", "x": 210, "y": 200, "x2": 210, "y2": 50, "color": "black"},
+           {"kind": "line", "x": 220, "y": 70, "x2": 340, "y2": 180, "color": "orange"},
+           {"kind": "text", "x": 280, "y": 240, "text": "ln[A]: slope −k", "size": 18},
+           {"kind": "line", "x": 390, "y": 200, "x2": 530, "y2": 200, "color": "black"},
+           {"kind": "line", "x": 390, "y": 200, "x2": 390, "y2": 50, "color": "black"},
+           {"kind": "line", "x": 400, "y": 180, "x2": 520, "y2": 70, "color": "red", "change": "highlight"},
+           {"kind": "text", "x": 460, "y": 240, "text": "1/[A]: slope +k", "size": 18}
+         ]}},
+        {"say": "Half-life is the time for a reactant to fall to half its value.", "write": "t½"},
+        {"say": "First order is like popcorn. Every half-life is the same length.", "write": "t½ = ln 2 / k",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Amount halves in equal time steps: 100, 50, 25, 12.5 percent", "items": [
+           {"kind": "rect", "x": 40, "y": 40, "w": 90, "h": 160, "fill": "blue", "label": "100%"},
+           {"kind": "rect", "x": 170, "y": 120, "w": 90, "h": 80, "fill": "blue", "label": "50%", "change": "add"},
+           {"kind": "rect", "x": 300, "y": 160, "w": 90, "h": 40, "fill": "blue", "label": "25%", "change": "add"},
+           {"kind": "rect", "x": 430, "y": 180, "w": 90, "h": 20, "fill": "blue", "change": "add"},
+           {"kind": "text", "x": 475, "y": 170, "text": "12.5%", "size": 18},
+           {"kind": "text", "x": 280, "y": 240, "text": "each step = one t½", "size": 20, "bold": true, "color": "purple"}
+         ]}},
+        {"say": "After n half-lives, one half to the power n is left.", "write": "fraction left = (½)ⁿ"},
+        {"say": "Zero order half-lives get shorter. Second order ones get longer.", "write": "0: shorter   2: longer"}
+      ]
+    },
+    {
+      "heading": "Activation energy and temperature",
+      "lines": [
+        {"say": "Particles must collide with enough energy and the right orientation.", "write": "E ≥ Eₐ + right orientation"},
+        {"say": "Eₐ is the barrier up to the transition state, like a high-jump bar.", "write": "Eₐ = activation energy",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Energy profile with activation energy hump up to the transition state", "items": [
+           {"kind": "line", "x": 40, "y": 200, "x2": 140, "y2": 200, "color": "blue"},
+           {"kind": "line", "x": 140, "y": 200, "x2": 280, "y2": 70, "color": "blue"},
+           {"kind": "line", "x": 280, "y": 70, "x2": 420, "y2": 240, "color": "blue"},
+           {"kind": "line", "x": 420, "y": 240, "x2": 520, "y2": 240, "color": "blue"},
+           {"kind": "line", "x": 90, "y": 70, "x2": 280, "y2": 70, "color": "grey", "dashed": true},
+           {"kind": "arrow", "x": 100, "y": 200, "x2": 100, "y2": 72, "color": "red", "change": "highlight"},
+           {"kind": "text", "x": 80, "y": 140, "text": "Eₐ", "size": 24, "bold": true, "color": "red", "anchor": "end"},
+           {"kind": "text", "x": 280, "y": 50, "text": "transition state", "size": 18},
+           {"kind": "text", "x": 90, "y": 230, "text": "reactants", "size": 18},
+           {"kind": "text", "x": 470, "y": 275, "text": "products", "size": 18}
+         ]}},
+        {"say": "Heating gives every particle a better run-up. Far more clear the bar.", "write": "higher T → more ≥ Eₐ"},
+        {"say": "The Arrhenius equation links k to temperature.", "write": "k = A e^(−Eₐ/RT)"},
+        {"say": "Plot ln k against one over T. The gradient is minus Eₐ over R.", "write": "gradient = −Eₐ/R"},
+        {"say": "Always use kelvin, and Eₐ in joules per mole with R equals 8.314.", "write": "T in K, Eₐ in J mol⁻¹"}
+      ]
+    },
+    {
+      "heading": "Mechanisms and catalysts",
+      "lines": [
+        {"say": "Most reactions happen in elementary steps. The slowest step sets the pace.", "write": "rate-determining step"},
+        {"say": "Step one is slow, so the rate is k times NO two squared. CO is not in it.", "write": "rate = k₁[NO₂]²",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Two-step mechanism with the slow first step highlighted and NO3 as intermediate", "items": [
+           {"kind": "rect", "x": 20, "y": 30, "w": 520, "h": 60, "fill": "white", "label": "Slow: NO₂ + NO₂ → NO₃ + NO", "change": "highlight"},
+           {"kind": "rect", "x": 20, "y": 120, "w": 520, "h": 60, "fill": "white", "label": "Fast: NO₃ + CO → NO₂ + CO₂"},
+           {"kind": "text", "x": 280, "y": 210, "text": "NO₃ is an intermediate", "size": 18, "color": "purple"}
+         ]}},
+        {"say": "NO three is made then used up. That makes it an intermediate.", "write": "intermediate: made, then used"},
+        {"say": "A catalyst opens a new pathway with a lower Eₐ.", "write": "catalyst: lower Eₐ",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Energy profile with a lower catalysed hump added; reactant and product levels unchanged", "items": [
+           {"kind": "line", "x": 40, "y": 200, "x2": 140, "y2": 200, "color": "blue"},
+           {"kind": "line", "x": 140, "y": 200, "x2": 280, "y2": 70, "color": "blue"},
+           {"kind": "line", "x": 280, "y": 70, "x2": 420, "y2": 240, "color": "blue"},
+           {"kind": "line", "x": 420, "y": 240, "x2": 520, "y2": 240, "color": "blue"},
+           {"kind": "line", "x": 140, "y": 200, "x2": 280, "y2": 140, "color": "green", "dashed": true, "change": "add"},
+           {"kind": "line", "x": 280, "y": 140, "x2": 420, "y2": 240, "color": "green", "dashed": true, "change": "add"},
+           {"kind": "text", "x": 280, "y": 190, "text": "catalysed", "size": 18, "color": "green", "change": "add"},
+           {"kind": "text", "x": 280, "y": 50, "text": "uncatalysed", "size": 18},
+           {"kind": "text", "x": 280, "y": 285, "text": "ΔH unchanged", "size": 20, "bold": true, "color": "purple"}
+         ]}},
+        {"say": "It lowers the barrier both ways. Delta H and K do not change.", "write": "ΔH, ΔG, K unchanged"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't read orders off the balanced equation.", "write": "✗ orders from coefficients"},
+        {"say": "Only use ln 2 over k when the reaction is first order.", "write": "t½ = ln 2/k: first order only"},
+        {"say": "Don't mix kilojoules with R equals 8.314. Don't use degrees Celsius.", "write": "✗ kJ with 8.314   ✗ °C"},
+        {"say": "A catalyst does not shift equilibrium. It just gets there faster.", "write": "✗ catalyst shifts K"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Orders come from the lab. Doubling gives times one, two or four.", "write": "×1  ×2  ×4"},
+        {"say": "Units of k check your order. First order is per second.", "write": "1st: s⁻¹   2nd: M⁻¹ s⁻¹"},
+        {"say": "Only first order keeps a steady half-life.", "write": "t½ = ln 2/k"},
+        {"say": "The slow step sets the rate law. Catalysts lower Eₐ only.", "write": "slowest step rules"}
+      ]
+    }
+  ]
+}

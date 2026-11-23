@@ -1,0 +1,156 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "DNA structure",
+  "frames": [
+    {
+      "heading": "Nucleotides: the building blocks",
+      "lines": [
+        {"say": "In plants and animals, most DNA is inside the nucleus.", "write": "DNA in the nucleus"},
+        {"say": "DNA is a polymer. Its repeating unit is a nucleotide.", "write": "nucleotide = repeating unit"},
+        {"say": "Each nucleotide has a phosphate, a deoxyribose sugar and a base.", "write": "phosphate + sugar + base",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Nucleotide: phosphate circle joined to a sugar pentagon joined to a base rectangle", "items": [
+           {"kind": "circle", "x": 110, "y": 110, "r": 40, "fill": "yellow", "label": "P"},
+           {"kind": "line", "x": 150, "y": 110, "x2": 200, "y2": 110, "color": "black"},
+           {"kind": "polygon", "points": [[250,60],[300,95],[282,155],[218,155],[200,95]], "fill": "orange"},
+           {"kind": "text", "x": 250, "y": 118, "text": "sugar", "size": 18},
+           {"kind": "line", "x": 300, "y": 110, "x2": 350, "y2": 110, "color": "black"},
+           {"kind": "rect", "x": 350, "y": 80, "w": 120, "h": 60, "fill": "blue", "label": "base", "change": "highlight"},
+           {"kind": "text", "x": 280, "y": 205, "text": "only the base changes", "size": 20, "bold": true, "color": "purple"}
+         ]}},
+        {"say": "There are four bases: adenine, thymine, guanine and cytosine.", "write": "A, T, G, C"},
+        {"say": "Only the base changes. The order of bases carries the information.", "write": "order of bases = message"}
+      ]
+    },
+    {
+      "heading": "The double helix",
+      "lines": [
+        {"say": "Phosphate joins to the next sugar. That builds the sugar-phosphate backbone.", "write": "sugar–phosphate backbone"},
+        {"say": "Two strands pair up through their bases, like the rungs of a ladder.", "write": "2 strands, bases in middle",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "DNA as a ladder: two backbone sides with base-pair rungs", "items": [
+           {"kind": "rect", "x": 150, "y": 20, "w": 30, "h": 240, "fill": "orange"},
+           {"kind": "rect", "x": 380, "y": 20, "w": 30, "h": 240, "fill": "orange"},
+           {"kind": "rect", "x": 180, "y": 40, "w": 100, "h": 30, "fill": "red", "label": "A"},
+           {"kind": "rect", "x": 280, "y": 40, "w": 100, "h": 30, "fill": "blue", "label": "T"},
+           {"kind": "rect", "x": 180, "y": 100, "w": 100, "h": 30, "fill": "green", "label": "G"},
+           {"kind": "rect", "x": 280, "y": 100, "w": 100, "h": 30, "fill": "yellow", "label": "C"},
+           {"kind": "rect", "x": 180, "y": 160, "w": 100, "h": 30, "fill": "blue", "label": "T"},
+           {"kind": "rect", "x": 280, "y": 160, "w": 100, "h": 30, "fill": "red", "label": "A"},
+           {"kind": "rect", "x": 180, "y": 220, "w": 100, "h": 30, "fill": "yellow", "label": "C"},
+           {"kind": "rect", "x": 280, "y": 220, "w": 100, "h": 30, "fill": "green", "label": "G"},
+           {"kind": "text", "x": 90, "y": 140, "text": "backbone", "size": 18},
+           {"kind": "text", "x": 480, "y": 140, "text": "backbone", "size": 18}
+         ]}},
+        {"say": "Twist the ladder into a spiral. That's the double helix.", "write": "double helix"},
+        {"say": "The two strands run in opposite directions. They're antiparallel.", "write": "antiparallel"},
+        {"say": "Watson and Crick published it in 1953, using Rosalind Franklin's X-ray evidence.", "write": "1953: Watson, Crick, Franklin"}
+      ]
+    },
+    {
+      "heading": "Complementary base pairing",
+      "lines": [
+        {"say": "Apples in the tree. A always pairs with T.", "write": "A – T"},
+        {"say": "Car in the garage. G always pairs with C.", "write": "G – C"},
+        {"say": "Straight letters, two hydrogen bonds. Curvy letters, three.", "write": "A=T: 2 H-bonds, G≡C: 3",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "A–T pair joined by two dashed hydrogen bonds, G–C pair joined by three", "items": [
+           {"kind": "rect", "x": 40, "y": 40, "w": 80, "h": 60, "fill": "red", "label": "A"},
+           {"kind": "rect", "x": 180, "y": 40, "w": 80, "h": 60, "fill": "blue", "label": "T"},
+           {"kind": "line", "x": 120, "y": 58, "x2": 180, "y2": 58, "color": "purple", "dashed": true},
+           {"kind": "line", "x": 120, "y": 82, "x2": 180, "y2": 82, "color": "purple", "dashed": true},
+           {"kind": "rect", "x": 300, "y": 40, "w": 80, "h": 60, "fill": "green", "label": "G"},
+           {"kind": "rect", "x": 440, "y": 40, "w": 80, "h": 60, "fill": "yellow", "label": "C"},
+           {"kind": "line", "x": 380, "y": 52, "x2": 440, "y2": 52, "color": "purple", "dashed": true},
+           {"kind": "line", "x": 380, "y": 70, "x2": 440, "y2": 70, "color": "purple", "dashed": true},
+           {"kind": "line", "x": 380, "y": 88, "x2": 440, "y2": 88, "color": "purple", "dashed": true, "change": "add"},
+           {"kind": "text", "x": 150, "y": 150, "text": "2 bonds", "size": 22, "bold": true},
+           {"kind": "text", "x": 410, "y": 150, "text": "3 bonds", "size": 22, "bold": true, "change": "highlight"}
+         ]}},
+        {"say": "Each hydrogen bond is weak, so the strands can unzip.", "write": "weak H-bonds → unzip"},
+        {"say": "The two strands are partners, not twins. They're complementary.", "write": "complementary ≠ identical"}
+      ]
+    },
+    {
+      "heading": "Writing the other strand",
+      "lines": [
+        {"say": "Here's one strand. Go base by base.", "write": "ATGCCGTA"},
+        {"say": "A goes with T, T with A, G with C, C with G.", "write": "A→T  T→A  G→C  C→G",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Strand ATGCCGTA with its complementary strand TACGGCAT appearing underneath", "items": [
+           {"kind": "text", "x": 60, "y": 60, "text": "A", "size": 30, "bold": true},
+           {"kind": "text", "x": 120, "y": 60, "text": "T", "size": 30, "bold": true},
+           {"kind": "text", "x": 180, "y": 60, "text": "G", "size": 30, "bold": true},
+           {"kind": "text", "x": 240, "y": 60, "text": "C", "size": 30, "bold": true},
+           {"kind": "text", "x": 300, "y": 60, "text": "C", "size": 30, "bold": true},
+           {"kind": "text", "x": 360, "y": 60, "text": "G", "size": 30, "bold": true},
+           {"kind": "text", "x": 420, "y": 60, "text": "T", "size": 30, "bold": true},
+           {"kind": "text", "x": 480, "y": 60, "text": "A", "size": 30, "bold": true},
+           {"kind": "text", "x": 60, "y": 150, "text": "T", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 120, "y": 150, "text": "A", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 180, "y": 150, "text": "C", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 240, "y": 150, "text": "G", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 300, "y": 150, "text": "G", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 360, "y": 150, "text": "C", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 420, "y": 150, "text": "A", "size": 30, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 480, "y": 150, "text": "T", "size": 30, "bold": true, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "So the complementary strand is TACGGCAT.", "write": "TACGGCAT"},
+        {"say": "Check: every A sits opposite a T, every G opposite a C.", "write": "check each pair ✓"}
+      ]
+    },
+    {
+      "heading": "Chargaff's rule",
+      "lines": [
+        {"say": "Because of pairing, A equals T and G equals C.", "write": "A = T,  G = C"},
+        {"say": "Say a sample has 30 percent adenine. Then thymine is 30 percent too.", "write": "A 30%, T 30%",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Bar split into A 30, T 30, then the remaining 40 split into G 20 and C 20", "items": [
+           {"kind": "rect", "x": 30, "y": 60, "w": 150, "h": 70, "fill": "red", "label": "A 30%"},
+           {"kind": "rect", "x": 180, "y": 60, "w": 150, "h": 70, "fill": "blue", "label": "T 30%"},
+           {"kind": "rect", "x": 330, "y": 60, "w": 100, "h": 70, "fill": "green", "label": "G 20%", "change": "add"},
+           {"kind": "rect", "x": 430, "y": 60, "w": 100, "h": 70, "fill": "yellow", "label": "C 20%", "change": "add"},
+           {"kind": "text", "x": 430, "y": 170, "text": "40% left, split equally", "size": 18, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "That's 60 percent. The other 40 percent is G and C.", "write": "100 − 60 = 40%"},
+        {"say": "Split it equally. Guanine is 20 percent.", "write": "G = 20%"}
+      ]
+    },
+    {
+      "heading": "Copying DNA",
+      "lines": [
+        {"say": "Before a cell divides, it copies its DNA. That's replication.", "write": "DNA replication"},
+        {"say": "Helicase unzips the helix by breaking the hydrogen bonds.", "write": "1. helicase unzips",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "DNA strands separating, then free nucleotides pairing with each template strand", "items": [
+           {"kind": "rect", "x": 20, "y": 95, "w": 140, "h": 20, "fill": "orange"},
+           {"kind": "rect", "x": 20, "y": 125, "w": 140, "h": 20, "fill": "orange"},
+           {"kind": "line", "x": 160, "y": 105, "x2": 520, "y2": 40, "color": "orange"},
+           {"kind": "line", "x": 160, "y": 135, "x2": 520, "y2": 200, "color": "orange"},
+           {"kind": "circle", "x": 175, "y": 120, "r": 16, "fill": "purple", "label": "H"},
+           {"kind": "rect", "x": 300, "y": 80, "w": 200, "h": 14, "fill": "teal", "change": "add"},
+           {"kind": "rect", "x": 300, "y": 146, "w": 200, "h": 14, "fill": "teal", "change": "add"},
+           {"kind": "text", "x": 400, "y": 120, "text": "new strands", "size": 18, "color": "teal", "change": "add"},
+           {"kind": "text", "x": 175, "y": 180, "text": "helicase", "size": 16}
+         ]}},
+        {"say": "Each old strand is a template. Free nucleotides pair up with it.", "write": "2. template  3. pair up"},
+        {"say": "DNA polymerase joins the new nucleotides and checks for mistakes.", "write": "4. DNA polymerase joins"},
+        {"say": "Each new molecule keeps one old strand. That's semi-conservative.", "write": "semi-conservative"},
+        {"say": "A copying error that isn't fixed is a mutation.", "write": "error → mutation"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't pair A with G or C with T.", "write": "✗ A–G,  ✗ C–T"},
+        {"say": "The bases are held by weak hydrogen bonds. The backbone is strong.", "write": "rungs weak, sides strong"},
+        {"say": "Chargaff says A equals T, not A equals G.", "write": "✗ A = G"},
+        {"say": "Each copy has one old and one new strand.", "write": "✗ one all-old copy"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Phosphate, sugar, base. The order of bases is the message.", "write": "nucleotide: P + sugar + base"},
+        {"say": "Apples in the tree, car in the garage.", "write": "A–T,  C–G"},
+        {"say": "A twisted ladder with weak rungs, so it can unzip.", "write": "double helix"},
+        {"say": "Helicase unzips. DNA polymerase builds. Semi-conservative.", "write": "one old + one new"}
+      ]
+    }
+  ]
+}

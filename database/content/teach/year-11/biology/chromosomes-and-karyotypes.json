@@ -1,0 +1,87 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Chromosomes and karyotypes",
+  "frames": [
+    { "heading": "DNA, genes and alleles",
+      "lines": [
+        { "say": "DNA stores hereditary information in the order of its bases: A, T, C and G.", "write": "DNA: A T C G" },
+        { "say": "A gene is a section of DNA that codes for a product, usually a protein.", "write": "gene → protein" },
+        { "say": "Each gene sits at a fixed position on a chromosome, called its locus.", "write": "locus = position" },
+        { "say": "An allele is a different version of a gene, like an acoustic version of a track.", "write": "allele = version of a gene" }
+      ] },
+    { "heading": "Chromosomes",
+      "lines": [
+        { "say": "A chromosome is one long DNA molecule wrapped around histone proteins.", "write": "DNA + histones" },
+        { "say": "Before division, it's copied. Two sister chromatids join at the centromere.", "write": "sister chromatids",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "A single chromosome copied into two sister chromatids joined at the centromere", "items": [
+            { "kind": "rect", "x": 150, "y": 30, "w": 26, "h": 180, "fill": "blue" },
+            { "kind": "arrow", "x": 210, "y": 120, "x2": 300, "y2": 120, "color": "black" },
+            { "kind": "rect", "x": 340, "y": 30, "w": 26, "h": 180, "fill": "blue" },
+            { "kind": "rect", "x": 372, "y": 30, "w": 26, "h": 180, "fill": "blue", "change": "add" },
+            { "kind": "circle", "x": 369, "y": 110, "r": 12, "fill": "red", "change": "add" },
+            { "kind": "text", "x": 410, "y": 116, "text": "centromere", "size": 18, "color": "red" }
+          ] } },
+        { "say": "Count the centromeres. One centromere is still one chromosome.", "write": "1 centromere = 1 chromosome" }
+      ] },
+    { "heading": "Homologous chromosomes",
+      "lines": [
+        { "say": "Chromosomes come in pairs. One from mum, one from dad.", "write": "homologous pair" },
+        { "say": "Same size, same centromere position, same genes at the same loci.", "write": "same genes, same loci",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Homologous chromosomes 9 from mum and dad; ABO gene highlighted with A and O alleles", "items": [
+            { "kind": "rect", "x": 180, "y": 30, "w": 40, "h": 200, "fill": "pink" },
+            { "kind": "rect", "x": 340, "y": 30, "w": 40, "h": 200, "fill": "blue" },
+            { "kind": "rect", "x": 180, "y": 120, "w": 40, "h": 24, "fill": "yellow", "label": "A", "change": "highlight" },
+            { "kind": "rect", "x": 340, "y": 120, "w": 40, "h": 24, "fill": "yellow", "label": "O", "change": "highlight" },
+            { "kind": "text", "x": 200, "y": 255, "text": "from mum", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 360, "y": 255, "text": "from dad", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 470, "y": 138, "text": "ABO gene", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "But they may carry different alleles. So they're not identical.", "write": "homologous ≠ identical" },
+        { "say": "Sister chromatids are the identical copies. Two photocopies, not two editions.", "write": "sister chromatids = identical" }
+      ] },
+    { "heading": "Autosomes, sex, haploid, diploid",
+      "lines": [
+        { "say": "Humans have 46 chromosomes: 22 pairs of autosomes, plus one pair of sex chromosomes.", "write": "22 pairs + XX or XY" },
+        { "say": "The Y is small, with few genes. SRY triggers testes.", "write": "Y: SRY gene" },
+        { "say": "Body cells are diploid, 2n equals 46. Gametes are haploid, n equals 23.", "write": "2n = 46 · n = 23" },
+        { "say": "At fertilisation, 23 plus 23 makes 46 again.", "write": "23 + 23 = 46",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Sperm with 23 and egg with 23 join into a zygote with 46", "items": [
+            { "kind": "circle", "x": 90, "y": 110, "r": 40, "fill": "blue", "label": "n = 23" },
+            { "kind": "circle", "x": 260, "y": 110, "r": 55, "fill": "pink", "label": "n = 23" },
+            { "kind": "arrow", "x": 325, "y": 110, "x2": 385, "y2": 110, "color": "black" },
+            { "kind": "circle", "x": 460, "y": 110, "r": 65, "fill": "purple", "label": "2n = 46", "change": "add" },
+            { "kind": "text", "x": 460, "y": 205, "text": "zygote", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Every egg carries an X. The sperm carries X or Y, so it decides sex.", "write": "sperm decides sex" }
+      ] },
+    { "heading": "Making a karyotype",
+      "lines": [
+        { "say": "A karyotype displays all of one cell's chromosomes in pairs.", "write": "karyotype" },
+        { "say": "Cells are stopped in metaphase, when chromosomes are most condensed.", "write": "stop in metaphase" },
+        { "say": "Pair them by size, centromere position and banding. Some Cats Bark.", "write": "Size · Centromere · Bands" },
+        { "say": "Autosomes go 1 to 22, sex chromosomes last. A typical male is 46, XY.", "write": "46,XY · 46,XX" },
+        { "say": "A karyotype can't show single-gene changes, like cystic fibrosis.", "write": "✗ single-gene mutations" }
+      ] },
+    { "heading": "Aneuploidy",
+      "lines": [
+        { "say": "Aneuploidy means a chromosome too many or too few.", "write": "aneuploidy" },
+        { "say": "It usually comes from non-disjunction, when chromosomes fail to separate in meiosis.", "write": "non-disjunction" },
+        { "say": "Trisomy means three copies. Down syndrome has three chromosome 21s.", "write": "47,XY,+21",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Chromosome 21 shown as a pair, then a third copy added", "items": [
+            { "kind": "rect", "x": 200, "y": 50, "w": 30, "h": 110, "fill": "blue" },
+            { "kind": "rect", "x": 260, "y": 50, "w": 30, "h": 110, "fill": "blue" },
+            { "kind": "rect", "x": 320, "y": 50, "w": 30, "h": 110, "fill": "red", "change": "add" },
+            { "kind": "text", "x": 275, "y": 200, "text": "trisomy 21", "size": 22, "bold": true, "anchor": "middle" }
+          ] } },
+        { "say": "Monosomy means one copy. Turner syndrome is 45, X.", "write": "45,X" },
+        { "say": "Klinefelter syndrome is 47, XXY. Write the total, the sex chromosomes, then the change.", "write": "total, sex, change" },
+        { "say": "Polyploidy is whole extra sets, like seedless triploid watermelons.", "write": "polyploidy = extra sets" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "After DNA copying, a human cell still has 46 chromosomes, not 92.", "write": "46, not 92" },
+        { "say": "A gamete has 23 single chromosomes, not 23 pairs.", "write": "23 singles" },
+        { "say": "Say homologous chromosomes or sister chromatids, never just pairs.", "write": "precise terms" },
+        { "say": "Tri means three, mono means one.", "write": "2n + 1 · 2n − 1" }
+      ] }
+  ]
+}

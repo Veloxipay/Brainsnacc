@@ -1,0 +1,870 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Power of a power and the zero index",
+  "frames": [
+    {
+      "heading": "Groups inside groups",
+      "lines": [
+        {
+          "say": "An egg carton has 12 eggs. A box holds 3 cartons. A crate holds 4 boxes.",
+          "write": "12 × 3 × 4"
+        },
+        {
+          "say": "Groups inside groups? You multiply.",
+          "write": "groups in groups → ×"
+        },
+        {
+          "say": "x cubed is a group of 3 x's.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Groups of 3 x circles; 4 groups make 12 x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 25,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 85,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 30,
+                "text": "x³",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "x cubed to the 4 means 4 of those groups. 3 times 4 is 12.",
+          "write": "(x³)⁴ = x¹²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Groups of 3 x circles; 4 groups make 12 x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 25,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 85,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 185,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 255,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 320,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 355,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 455,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 490,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 525,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 30,
+                "text": "(x³)⁴ = 4 groups of x³",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "3 × 4 = 12  →  x¹²",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Power of a power",
+      "lines": [
+        {
+          "say": "Write it out. x cubed, four times. 3 plus 3 plus 3 plus 3 is 12.",
+          "write": "x³ × x³ × x³ × x³"
+        },
+        {
+          "say": "Power of a power? Multiply the indices.",
+          "write": "(aᵐ)ⁿ = aᵐˣⁿ"
+        },
+        {
+          "say": "Check with numbers. 2 cubed, squared, is 8 squared. That's 64.",
+          "write": "(2³)² = 8² = 64"
+        },
+        {
+          "say": "And 2 to the 6 is 64 too.",
+          "write": "2⁶ = 64 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Everybody gets the power",
+      "lines": [
+        {
+          "say": "The power outside a bracket goes to every factor inside.",
+          "write": "(ab)ⁿ = aⁿbⁿ"
+        },
+        {
+          "say": "2a, all cubed. 2 cubed is 8. So 8 a cubed.",
+          "write": "(2a)³ = 8a³"
+        },
+        {
+          "say": "3 x to the 4, squared. 3 squared is 9. x to the 4, squared, is x to the 8.",
+          "write": "(3x⁴)² = 9x⁸"
+        },
+        {
+          "say": "2 m cubed n, to the 4. That's 16 m to the 12, n to the 4.",
+          "write": "(2m³n)⁴ = 16m¹²n⁴"
+        },
+        {
+          "say": "Only for products. x plus 3, squared, is not x squared plus 9.",
+          "write": "(x + 3)² ≠ x² + 9"
+        }
+      ]
+    },
+    {
+      "heading": "The zero index",
+      "lines": [
+        {
+          "say": "2 cubed is 8. 2 squared is 4. 2 to the 1 is 2.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars for 2³ = 8, 2² = 4, 2¹ = 2, 2⁰ = 1: each step halves",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 100,
+                "h": 200,
+                "fill": "green",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 270,
+                "text": "2³",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 140,
+                "w": 100,
+                "h": 100,
+                "fill": "green",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 270,
+                "text": "2²",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 155,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 190,
+                "w": 100,
+                "h": 50,
+                "fill": "green",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 270,
+                "text": "2¹",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each step down halves it. So 2 to the zero is 1.",
+          "write": "2⁰ = 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars for 2³ = 8, 2² = 4, 2¹ = 2, 2⁰ = 1: each step halves",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 100,
+                "h": 200,
+                "fill": "green",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 270,
+                "text": "2³",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 140,
+                "w": 100,
+                "h": 100,
+                "fill": "green",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 270,
+                "text": "2²",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 155,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 190,
+                "w": 100,
+                "h": 50,
+                "fill": "green",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 270,
+                "text": "2¹",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 215,
+                "w": 100,
+                "h": 25,
+                "fill": "orange",
+                "label": "1",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 270,
+                "text": "2⁰",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 415,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Also, x to the 5 over x to the 5 is x to the 0. And it's 1.",
+          "write": "x⁵ ÷ x⁵ = x⁰ = 1"
+        },
+        {
+          "say": "Any number except zero, to the power zero, is 1.",
+          "write": "a⁰ = 1"
+        },
+        {
+          "say": "So 4 times 7 to the 0, plus 3 to the 0, is 5.",
+          "write": "4 × 1 + 1 = 5"
+        }
+      ]
+    },
+    {
+      "heading": "What is the zero attached to?",
+      "lines": [
+        {
+          "say": "5 x to the zero is 5 times 1. That's 5.",
+          "write": "5x⁰ = 5"
+        },
+        {
+          "say": "5x in brackets, to the zero, is 1. The whole bracket gets the zero.",
+          "write": "(5x)⁰ = 1"
+        },
+        {
+          "say": "Negatives too. Minus 2, in brackets, to the 4 is 16.",
+          "write": "(−2)⁴ = 16"
+        },
+        {
+          "say": "No brackets? Minus 2 to the 4 is minus 16.",
+          "write": "−2⁴ = −16"
+        }
+      ]
+    },
+    {
+      "heading": "Mixing the laws",
+      "lines": [
+        {
+          "say": "Brackets first, then multiply or divide.",
+          "write": "brackets first"
+        },
+        {
+          "say": "a squared, cubed, is a to the 6. Times a to the 4 is a to the 10.",
+          "write": "(a²)³ × a⁴ = a¹⁰"
+        },
+        {
+          "say": "4 p cubed, squared, over 2 p squared, cubed.",
+          "write": "(4p³)² ÷ (2p²)³"
+        },
+        {
+          "say": "Top is 16 p to the 6. Bottom is 8 p to the 6.",
+          "write": "16p⁶ ÷ 8p⁶"
+        },
+        {
+          "say": "16 over 8 is 2. p to the 6 over p to the 6 is 1. Answer: 2.",
+          "write": "= 2 × p⁰ = 2"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "x cubed, to the 4, is not x to the 7. Multiply, don't add.",
+          "write": "✗ x⁷   ✓ x¹²"
+        },
+        {
+          "say": "3 x squared, squared, is 9 x to the 4, not 3 x to the 4.",
+          "write": "(3x²)² = 9x⁴"
+        },
+        {
+          "say": "2a cubed is not 6 a cubed. 2 cubed is 8.",
+          "write": "✗ 6a³   ✓ 8a³"
+        },
+        {
+          "say": "5 to the zero is 1, not 0.",
+          "write": "5⁰ = 1"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Multiply powers, add. Divide, subtract. Power of a power, multiply.",
+          "write": "× add, ÷ subtract, ( )ⁿ ×",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Groups of 3 x circles; 4 groups make 12 x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 25,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 85,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 185,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 255,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 320,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 355,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 60,
+                "w": 120,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 455,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 490,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "circle",
+                "x": 525,
+                "y": 95,
+                "r": 14,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 30,
+                "text": "(x³)⁴ = 4 groups of x³",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "3 × 4 = 12  →  x¹²",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Everybody in the bracket gets the power.",
+          "write": "(2x³)⁴ = 16x¹²"
+        },
+        {
+          "say": "Zero index, answer one.",
+          "write": "a⁰ = 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars for 2³ = 8, 2² = 4, 2¹ = 2, 2⁰ = 1: each step halves",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 100,
+                "h": 200,
+                "fill": "green",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 270,
+                "text": "2³",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 140,
+                "w": 100,
+                "h": 100,
+                "fill": "green",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 270,
+                "text": "2²",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 155,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 190,
+                "w": 100,
+                "h": 50,
+                "fill": "green",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 270,
+                "text": "2¹",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 215,
+                "w": 100,
+                "h": 25,
+                "fill": "orange",
+                "label": "1",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 270,
+                "text": "2⁰",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 415,
+                "y": 30,
+                "text": "÷2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

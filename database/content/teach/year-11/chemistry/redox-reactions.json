@@ -1,0 +1,807 @@
+{
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "Redox reactions",
+  "frames": [
+    {
+      "heading": "Oxidation and reduction",
+      "lines": [
+        {
+          "say": "Oxidation is loss of electrons. Reduction is gain.",
+          "write": "OIL RIG"
+        },
+        {
+          "say": "Magnesium burns in oxygen. Magnesium loses two electrons.",
+          "write": "Mg → Mg²⁺ + 2e⁻",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Mg loses electrons",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 130,
+                "y": 140,
+                "r": 50,
+                "fill": "grey",
+                "label": "Mg"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 50,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 185,
+                "y": 100,
+                "r": 10,
+                "fill": "orange",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 185,
+                "y": 180,
+                "r": 10,
+                "fill": "orange",
+                "change": "remove"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 100,
+                "x2": 365,
+                "y2": 110,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 180,
+                "x2": 365,
+                "y2": 170,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 240,
+                "text": "oxidised",
+                "size": 20,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 240,
+                "text": "reduced",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Oxygen gains those electrons. That is reduction.",
+          "write": "O₂ + 4e⁻ → 2O²⁻"
+        },
+        {
+          "say": "Electrons cannot vanish, so both always happen together. That is redox.",
+          "write": "redox"
+        },
+        {
+          "say": "In oxidation, electrons are on the right. In reduction, on the left.",
+          "write": "e⁻ right: ox;  e⁻ left: red"
+        }
+      ]
+    },
+    {
+      "heading": "Agents do the opposite",
+      "lines": [
+        {
+          "say": "The oxidising agent takes electrons. So it gets reduced.",
+          "write": "oxidising agent is reduced"
+        },
+        {
+          "say": "The reducing agent gives electrons. So it gets oxidised.",
+          "write": "reducing agent is oxidised"
+        },
+        {
+          "say": "Like a travel agent, it sends you on the trip and stays behind.",
+          "write": "agents do the opposite"
+        },
+        {
+          "say": "In burning magnesium, oxygen is the oxidising agent.",
+          "write": "O₂: oxidising agent"
+        }
+      ]
+    },
+    {
+      "heading": "Oxidation numbers",
+      "lines": [
+        {
+          "say": "Elements are zero. Simple ions equal their charge.",
+          "write": "Fe = 0,  Na⁺ = +1"
+        },
+        {
+          "say": "Oxygen is usually minus 2. Hydrogen is usually plus 1.",
+          "write": "O −2,  H +1"
+        },
+        {
+          "say": "They add up to the charge of the ion.",
+          "write": "sum = charge"
+        },
+        {
+          "say": "In permanganate, four oxygens give minus 8. The total is minus 1.",
+          "write": "x + (−8) = −1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Permanganate",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 40,
+                "fill": "purple",
+                "label": "Mn ?"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 60,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 150,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 240,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 150,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 60,
+                "text": "total −1",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So manganese is plus 7.",
+          "write": "Mn = +7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Manganese is plus 7",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 40,
+                "fill": "purple",
+                "label": "Mn +7",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 60,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 150,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 240,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 150,
+                "r": 26,
+                "fill": "red",
+                "label": "−2"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 60,
+                "text": "total −1",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Up is oxidised. Down is reduced. No change, not redox.",
+          "write": "↑ oxidised,  ↓ reduced"
+        }
+      ]
+    },
+    {
+      "heading": "KOHES half-equations",
+      "lines": [
+        {
+          "say": "Permanganate becomes M n 2 plus in acid. Use KOHES.",
+          "write": "MnO₄⁻ → Mn²⁺",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "KOHES",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "K"
+              },
+              {
+                "kind": "rect",
+                "x": 132,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "O"
+              },
+              {
+                "kind": "rect",
+                "x": 234,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "rect",
+                "x": 438,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "S"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Key element first. One manganese each side, already balanced.",
+          "write": "K: Mn balanced",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "K",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "K",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 132,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "O"
+              },
+              {
+                "kind": "rect",
+                "x": 234,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "rect",
+                "x": 438,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "S"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Oxygen: add four waters to the right.",
+          "write": "O: + 4H₂O",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "O",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "K"
+              },
+              {
+                "kind": "rect",
+                "x": 132,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "O",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 234,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "rect",
+                "x": 438,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "S"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Hydrogen: add eight H plus to the left.",
+          "write": "H: + 8H⁺",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "H",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "K"
+              },
+              {
+                "kind": "rect",
+                "x": 132,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "O"
+              },
+              {
+                "kind": "rect",
+                "x": 234,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "H",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "E"
+              },
+              {
+                "kind": "rect",
+                "x": 438,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "S"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Electrons: left is plus 7, right is plus 2. Add 5 electrons left.",
+          "write": "E: + 5e⁻",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "E",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "K"
+              },
+              {
+                "kind": "rect",
+                "x": 132,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "O"
+              },
+              {
+                "kind": "rect",
+                "x": 234,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "H"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "E",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 438,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "white",
+                "label": "S"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add states. Check: plus 7 to plus 2 is a gain of 5.",
+          "write": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "S",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "K"
+              },
+              {
+                "kind": "rect",
+                "x": 132,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "O"
+              },
+              {
+                "kind": "rect",
+                "x": 234,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "H"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "E"
+              },
+              {
+                "kind": "rect",
+                "x": 438,
+                "y": 60,
+                "w": 92,
+                "h": 80,
+                "fill": "teal",
+                "label": "S",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Combining half-equations",
+      "lines": [
+        {
+          "say": "Iron 2 plus loses one electron to become iron 3 plus.",
+          "write": "Fe²⁺ → Fe³⁺ + e⁻"
+        },
+        {
+          "say": "Electrons must match like a handshake. Multiply iron by 5.",
+          "write": "5Fe²⁺ → 5Fe³⁺ + 5e⁻"
+        },
+        {
+          "say": "Add them and cancel the five electrons.",
+          "write": "cancel 5e⁻"
+        },
+        {
+          "say": "Check the charge: plus 17 on both sides.",
+          "write": "+17 = +17"
+        }
+      ]
+    },
+    {
+      "heading": "Displacement",
+      "lines": [
+        {
+          "say": "A more reactive metal gives electrons to ions of a less reactive one.",
+          "write": "Zn + Cu²⁺ → Zn²⁺ + Cu"
+        },
+        {
+          "say": "Zinc in copper sulfate gets coated with copper. The blue fades.",
+          "write": "copper coats, blue fades",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Zinc in copper sulfate",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 40,
+                "w": 440,
+                "h": 220,
+                "fill": "blue",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 10,
+                "w": 60,
+                "h": 230,
+                "fill": "grey",
+                "label": "Zn"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 120,
+                "w": 10,
+                "h": 120,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 120,
+                "w": 10,
+                "h": 120,
+                "fill": "orange",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Iron in silver nitrate works. Silver in iron sulfate does nothing.",
+          "write": "Fe + 2Ag⁺ → Fe²⁺ + 2Ag"
+        },
+        {
+          "say": "Name the real species: C u 2 plus, not copper sulfate.",
+          "write": "oxidising agent: Cu²⁺(aq)"
+        }
+      ]
+    },
+    {
+      "heading": "Corrosion",
+      "lines": [
+        {
+          "say": "Rusting needs oxygen and water. Iron is oxidised.",
+          "write": "Fe → Fe²⁺ + 2e⁻"
+        },
+        {
+          "say": "Electrons travel through the metal. Oxygen is reduced elsewhere.",
+          "write": "O₂ + 2H₂O + 4e⁻ → 4OH⁻"
+        },
+        {
+          "say": "Salt water speeds rusting. Rust flakes off and exposes fresh iron.",
+          "write": "salt speeds rusting"
+        },
+        {
+          "say": "Galvanising coats steel with zinc. Zinc takes one for the team.",
+          "write": "galvanising: Zn",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Sacrificial zinc",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 140,
+                "w": 480,
+                "h": 70,
+                "fill": "grey",
+                "label": "steel"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 110,
+                "w": 480,
+                "h": 30,
+                "fill": "teal",
+                "label": "zinc coating"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 110,
+                "w": 40,
+                "h": 30,
+                "fill": "white",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "zinc is oxidised instead of iron",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Blocks of magnesium or zinc on hulls are sacrificial protection.",
+          "write": "sacrificial protection"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "OIL RIG, or LEO the lion says GER.",
+          "write": "OIL RIG"
+        },
+        {
+          "say": "The oxidising agent is reduced.",
+          "write": "agents do the opposite"
+        },
+        {
+          "say": "KOHES, then match electrons and cancel.",
+          "write": "KOHES"
+        },
+        {
+          "say": "Balance atoms and charge, with states.",
+          "write": "atoms + charge + states"
+        }
+      ]
+    }
+  ]
+}

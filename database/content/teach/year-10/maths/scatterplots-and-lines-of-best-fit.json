@@ -1,0 +1,1007 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Scatterplots and lines of best fit",
+  "frames": [
+    {
+      "heading": "Bivariate data",
+      "lines": [
+        {
+          "say": "A scatterplot shows two numerical variables for each person.",
+          "write": "bivariate data"
+        },
+        {
+          "say": "The explanatory variable goes across. Here that's hours of study.",
+          "write": "explanatory → horizontal"
+        },
+        {
+          "say": "The response variable goes up. Here that's test score.",
+          "write": "response → vertical"
+        },
+        {
+          "say": "Each student becomes one dot.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Scatterplot of test score against hours of study",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 510.0,
+                "y2": 250.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 70.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 510.0,
+                "y": 276.0,
+                "text": "hours of study",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 26.0,
+                "text": "score %",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 97.5,
+                "y": 217.1,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 125.0,
+                "y": 200.7,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 152.5,
+                "y": 194.1,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 180.0,
+                "y": 174.4,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 207.5,
+                "y": 171.1,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 235.0,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 262.5,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 290.0,
+                "y": 128.4,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 317.5,
+                "y": 125.1,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 345.0,
+                "y": 112.0,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 372.5,
+                "y": 98.9,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 89.0,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 455.0,
+                "y": 66.0,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 482.5,
+                "y": 52.9,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Describing the relationship",
+      "lines": [
+        {
+          "say": "Describe three things: direction, form and strength.",
+          "write": "Direction, Form, Strength"
+        },
+        {
+          "say": "Direction. Rising dots are positive, falling dots are negative.",
+          "write": "positive, negative, none",
+          "diagram": "diagrams/y10/maths/scatterplots-and-lines-of-best-fit-types.svg",
+          "alt": "Positive, negative and no correlation scatterplots"
+        },
+        {
+          "say": "Form. Do the dots follow a straight line, or a curve?",
+          "write": "linear or non-linear"
+        },
+        {
+          "say": "Strength. Close to a line is strong. Loosely scattered is weak.",
+          "write": "strong, moderate, weak"
+        },
+        {
+          "say": "These dots rise, follow a line, and sit close to it.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Scatterplot of test score against hours of study",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 510.0,
+                "y2": 250.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 70.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 510.0,
+                "y": 276.0,
+                "text": "hours of study",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 26.0,
+                "text": "score %",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 97.5,
+                "y": 217.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 125.0,
+                "y": 200.7,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 152.5,
+                "y": 194.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180.0,
+                "y": 174.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 207.5,
+                "y": 171.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 235.0,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 262.5,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290.0,
+                "y": 128.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 317.5,
+                "y": 125.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 345.0,
+                "y": 112.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 372.5,
+                "y": 98.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 89.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 455.0,
+                "y": 66.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 482.5,
+                "y": 52.9,
+                "r": 5,
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So it's a strong, positive, linear relationship.",
+          "write": "strong, positive, linear"
+        },
+        {
+          "say": "A dot far from the pattern is an outlier. Check it before removing it.",
+          "write": "outlier"
+        }
+      ]
+    },
+    {
+      "heading": "Line of best fit",
+      "lines": [
+        {
+          "say": "Draw one straight line through the middle of the dots, by eye.",
+          "write": "line of best fit",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Scatterplot of test score against hours of study",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 510.0,
+                "y2": 250.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 70.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 510.0,
+                "y": 276.0,
+                "text": "hours of study",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 26.0,
+                "text": "score %",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 97.5,
+                "y": 217.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 125.0,
+                "y": 200.7,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 152.5,
+                "y": 194.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180.0,
+                "y": 174.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 207.5,
+                "y": 171.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 235.0,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 262.5,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290.0,
+                "y": 128.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 317.5,
+                "y": 125.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 345.0,
+                "y": 112.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 372.5,
+                "y": 98.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 89.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 455.0,
+                "y": 66.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 482.5,
+                "y": 52.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 70.0,
+                "y": 223.7,
+                "x2": 510.0,
+                "y2": 39.7,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Aim for about the same number of dots above and below.",
+          "write": "equal above and below"
+        },
+        {
+          "say": "To find its equation, pick two points on the line, far apart.",
+          "write": "(2, 52) and (6, 80)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Scatterplot of test score against hours of study",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 510.0,
+                "y2": 250.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 70.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 510.0,
+                "y": 276.0,
+                "text": "hours of study",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 26.0,
+                "text": "score %",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 97.5,
+                "y": 217.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 125.0,
+                "y": 200.7,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 152.5,
+                "y": 194.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180.0,
+                "y": 174.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 207.5,
+                "y": 171.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 235.0,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 262.5,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290.0,
+                "y": 128.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 317.5,
+                "y": 125.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 345.0,
+                "y": 112.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 372.5,
+                "y": 98.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 89.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 455.0,
+                "y": 66.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 482.5,
+                "y": 52.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 70.0,
+                "y": 223.7,
+                "x2": 510.0,
+                "y2": 39.7,
+                "color": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 180.0,
+                "y": 177.7,
+                "r": 8,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 85.7,
+                "r": 8,
+                "fill": "red",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Gradient is rise over run. 28 over 4 is 7.",
+          "write": "m = 28 ÷ 4 = 7"
+        },
+        {
+          "say": "Substitute 2, 52. Then c is 38.",
+          "write": "52 = 14 + c → c = 38"
+        },
+        {
+          "say": "So score equals 7 times hours, plus 38.",
+          "write": "score = 7 × hours + 38"
+        }
+      ]
+    },
+    {
+      "heading": "Making predictions",
+      "lines": [
+        {
+          "say": "Predict the score for 4 hours. Seven times 4, plus 38, is 66.",
+          "write": "7 × 4 + 38 = 66%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Scatterplot of test score against hours of study",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 510.0,
+                "y2": 250.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70.0,
+                "y": 250.0,
+                "x2": 70.0,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 510.0,
+                "y": 276.0,
+                "text": "hours of study",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 26.0,
+                "text": "score %",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 97.5,
+                "y": 217.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 125.0,
+                "y": 200.7,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 152.5,
+                "y": 194.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 180.0,
+                "y": 174.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 207.5,
+                "y": 171.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 235.0,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 262.5,
+                "y": 151.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290.0,
+                "y": 128.4,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 317.5,
+                "y": 125.1,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 345.0,
+                "y": 112.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 372.5,
+                "y": 98.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 89.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 455.0,
+                "y": 66.0,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 482.5,
+                "y": 52.9,
+                "r": 5,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 70.0,
+                "y": 223.7,
+                "x2": 510.0,
+                "y2": 39.7,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 290.0,
+                "y": 250.0,
+                "x2": 290.0,
+                "y2": 131.7,
+                "color": "green",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 290.0,
+                "y": 131.7,
+                "r": 8,
+                "fill": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "4 is inside the data. That's interpolation. It's fairly reliable.",
+          "write": "interpolation: inside"
+        },
+        {
+          "say": "Now 15 hours. The rule gives 143 percent.",
+          "write": "7 × 15 + 38 = 143%"
+        },
+        {
+          "say": "That's impossible. 15 is outside the data. That's extrapolation.",
+          "write": "extrapolation: outside ✗"
+        },
+        {
+          "say": "The gradient means each extra hour goes with about 7 more points.",
+          "write": "m = 7 points per hour"
+        }
+      ]
+    },
+    {
+      "heading": "Correlation is not causation",
+      "lines": [
+        {
+          "say": "A strong correlation doesn't prove one thing causes the other.",
+          "write": "correlation ≠ causation"
+        },
+        {
+          "say": "Ice-cream sales and sunburn both rise in summer.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Summer heat drives both ice-cream sales and sunburn",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 120,
+                "w": 160,
+                "h": 100,
+                "fill": "yellow",
+                "label": "ice-cream"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 120,
+                "w": 160,
+                "h": 100,
+                "fill": "orange",
+                "label": "sunburn"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 20,
+                "w": 160,
+                "h": 60,
+                "fill": "red",
+                "change": "add",
+                "label": "summer heat"
+              },
+              {
+                "kind": "arrow",
+                "x": 250,
+                "y": 85,
+                "x2": 160,
+                "y2": 115,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 310,
+                "y": 85,
+                "x2": 400,
+                "y2": 115,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 175,
+                "text": "≠ cause",
+                "size": 20,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Neither causes the other. Summer heat is the lurking variable.",
+          "write": "lurking variable"
+        },
+        {
+          "say": "Say the variables are associated, not that one causes the other.",
+          "write": "associated"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't join the dots. A line of best fit is one straight line."
+        },
+        {
+          "say": "Use points on the line, not data points, for the equation."
+        },
+        {
+          "say": "Don't trust extrapolation.",
+          "write": "outside the data → unreliable"
+        },
+        {
+          "say": "The explanatory variable goes on the horizontal axis.",
+          "write": "explanatory → x-axis"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Direction, form, strength.",
+          "write": "DFS"
+        },
+        {
+          "say": "Inter means inside. Extra means outside.",
+          "write": "inter = inside,  extra = outside"
+        },
+        {
+          "say": "Pick two far-apart points on the line for the gradient.",
+          "write": "two far-apart points"
+        },
+        {
+          "say": "Correlation is not causation.",
+          "write": "correlation ≠ causation"
+        }
+      ]
+    }
+  ]
+}

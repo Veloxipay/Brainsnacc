@@ -1,0 +1,1588 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Unit 3 summary and memory tips",
+  "frames": [
+    {
+      "heading": "Fuels and combustion",
+      "lines": [
+        {
+          "say": "Renewable fuels are replaced at least as fast as we use them.",
+          "write": "renewable = rate"
+        },
+        {
+          "say": "Biogas, bioethanol and biodiesel come from biomass.",
+          "write": "biofuels"
+        },
+        {
+          "say": "Balance combustion: carbon, then hydrogen, then oxygen. Water is liquid at SLC.",
+          "write": "C → H → O"
+        },
+        {
+          "say": "Exothermic: products lower, delta H negative.",
+          "write": "ΔH < 0 exothermic",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Exothermic energy profile",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 170,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 282,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 60,
+                "x2": 280,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 60,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 130,
+                "text": "Ea",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "red"
+              },
+              {
+                "kind": "arrow",
+                "x": 500,
+                "y": 200,
+                "x2": 500,
+                "y2": 260,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 236,
+                "text": "ΔH",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "purple"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 500,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Double the equation, double delta H. Reverse it, flip the sign.",
+          "write": "scale + flip"
+        }
+      ]
+    },
+    {
+      "heading": "Energy calculations",
+      "lines": [
+        {
+          "say": "q equals m c delta T, using the mass of water.",
+          "write": "q = mcΔT",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Heating water",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    180,
+                    60
+                  ],
+                  [
+                    380,
+                    60
+                  ],
+                  [
+                    350,
+                    280
+                  ],
+                  [
+                    210,
+                    280
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 150,
+                "fill": "blue",
+                "label": "water"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 40,
+                "w": 20,
+                "h": 240,
+                "fill": "red",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 60,
+                "text": "20.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 140,
+                "text": "35.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "n equals V over 24.8 at SLC. Otherwise P V equals n R T.",
+          "write": "n = V ÷ 24.8"
+        },
+        {
+          "say": "Calibrate with E equals V I t, then CF equals E over delta T.",
+          "write": "CF = E ÷ ΔT"
+        },
+        {
+          "say": "Efficiency is useful energy over total energy, times 100.",
+          "write": "% eff"
+        }
+      ]
+    },
+    {
+      "heading": "Galvanic and fuel cells",
+      "lines": [
+        {
+          "say": "Galvanic cells make electricity from spontaneous reactions.",
+          "write": "chemical → electrical",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Galvanic cell",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 170,
+                "w": 200,
+                "h": 150,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 170,
+                "w": 200,
+                "h": 150,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 300,
+                "text": "Zn²⁺",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 300,
+                "text": "Cu²⁺",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 120,
+                "w": 40,
+                "h": 150,
+                "fill": "grey",
+                "label": "Zn"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 120,
+                "w": 40,
+                "h": 150,
+                "fill": "orange",
+                "label": "Cu"
+              },
+              {
+                "kind": "line",
+                "x": 130,
+                "y": 120,
+                "x2": 130,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 410,
+                "y": 120,
+                "x2": 410,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 130,
+                "y": 50,
+                "x2": 410,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 104,
+                "y": 110,
+                "text": "− anode",
+                "size": 16,
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 436,
+                "y": 110,
+                "text": "+ cathode",
+                "size": 16,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 150,
+                "w": 160,
+                "h": 24,
+                "fill": "white",
+                "label": "salt bridge",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 160,
+                "y": 30,
+                "x2": 380,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "e⁻",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Oxidation at the negative anode. Reduction at the positive cathode.",
+          "write": "An Ox (−), Red Cat (+)"
+        },
+        {
+          "say": "Higher E nought is reduced. E cell is higher minus lower.",
+          "write": "E°cell = higher − lower"
+        },
+        {
+          "say": "Fuel cells get fuel continuously, through porous catalyst electrodes.",
+          "write": "fuel cell",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 317,
+            "alt": "Fuel cell",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 170,
+                "x2": 360,
+                "y2": 170,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "H⁺ →",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 305,
+                "text": "H₂O forms here",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Acid: water forms at the cathode. Alkali: at the anode.",
+          "write": "where water forms"
+        }
+      ]
+    },
+    {
+      "heading": "Rates and equilibrium",
+      "lines": [
+        {
+          "say": "Rate depends on the frequency of successful collisions.",
+          "write": "successful collisions per second"
+        },
+        {
+          "say": "Temperature mainly raises the fraction with energy above Ea.",
+          "write": "↑T → more ≥ Ea",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Higher temperature curve",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "kinetic energy",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "number of particles",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 270,
+                "x2": 79,
+                "y2": 155,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 79,
+                "y": 155,
+                "x2": 109,
+                "y2": 105,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 109,
+                "y": 105,
+                "x2": 138,
+                "y2": 91,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 138,
+                "y": 91,
+                "x2": 168,
+                "y2": 98,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 168,
+                "y": 98,
+                "x2": 197,
+                "y2": 115,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 197,
+                "y": 115,
+                "x2": 226,
+                "y2": 136,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 226,
+                "y": 136,
+                "x2": 256,
+                "y2": 157,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 256,
+                "y": 157,
+                "x2": 285,
+                "y2": 177,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 285,
+                "y": 177,
+                "x2": 314,
+                "y2": 194,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 314,
+                "y": 194,
+                "x2": 344,
+                "y2": 209,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 344,
+                "y": 209,
+                "x2": 373,
+                "y2": 222,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 373,
+                "y": 222,
+                "x2": 402,
+                "y2": 232,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 232,
+                "x2": 432,
+                "y2": 240,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 432,
+                "y": 240,
+                "x2": 461,
+                "y2": 247,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 461,
+                "y": 247,
+                "x2": 491,
+                "y2": 252,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 491,
+                "y": 252,
+                "x2": 520,
+                "y2": 256,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 270,
+                "x2": 79,
+                "y2": 217,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 79,
+                "y": 217,
+                "x2": 109,
+                "y2": 184,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 109,
+                "y": 184,
+                "x2": 138,
+                "y2": 165,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 138,
+                "y": 165,
+                "x2": 168,
+                "y2": 157,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 168,
+                "y": 157,
+                "x2": 197,
+                "y2": 155,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 197,
+                "y": 155,
+                "x2": 226,
+                "y2": 158,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 226,
+                "y": 158,
+                "x2": 256,
+                "y2": 164,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 256,
+                "y": 164,
+                "x2": 285,
+                "y2": 172,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 285,
+                "y": 172,
+                "x2": 314,
+                "y2": 181,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 314,
+                "y": 181,
+                "x2": 344,
+                "y2": 190,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 344,
+                "y": 190,
+                "x2": 373,
+                "y2": 198,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 373,
+                "y": 198,
+                "x2": 402,
+                "y2": 207,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 207,
+                "x2": 432,
+                "y2": 214,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 432,
+                "y": 214,
+                "x2": 461,
+                "y2": 221,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 461,
+                "y": 221,
+                "x2": 491,
+                "y2": 228,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 491,
+                "y": 228,
+                "x2": 520,
+                "y2": 233,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 120,
+                "text": "higher T",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 40,
+                "x2": 380,
+                "y2": 270,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 35,
+                "text": "Ea",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Catalysts lower Ea, without changing delta H.",
+          "write": "catalyst ↓ Ea"
+        },
+        {
+          "say": "At equilibrium, forward and reverse rates are equal.",
+          "write": "dynamic equilibrium",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Rates equal",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "time",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "rate",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 40,
+                "x2": 71,
+                "y2": 73,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 71,
+                "y": 73,
+                "x2": 92,
+                "y2": 95,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 92,
+                "y": 95,
+                "x2": 112,
+                "y2": 110,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 112,
+                "y": 110,
+                "x2": 133,
+                "y2": 119,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 133,
+                "y": 119,
+                "x2": 154,
+                "y2": 126,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 154,
+                "y": 126,
+                "x2": 175,
+                "y2": 130,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 130,
+                "x2": 196,
+                "y2": 133,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 196,
+                "y": 133,
+                "x2": 217,
+                "y2": 135,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 217,
+                "y": 135,
+                "x2": 238,
+                "y2": 136,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 238,
+                "y": 136,
+                "x2": 258,
+                "y2": 136,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 258,
+                "y": 136,
+                "x2": 279,
+                "y2": 137,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 279,
+                "y": 137,
+                "x2": 300,
+                "y2": 137,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 260,
+                "x2": 71,
+                "y2": 218,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 71,
+                "y": 218,
+                "x2": 92,
+                "y2": 191,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 92,
+                "y": 191,
+                "x2": 112,
+                "y2": 173,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 112,
+                "y": 173,
+                "x2": 133,
+                "y2": 161,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 133,
+                "y": 161,
+                "x2": 154,
+                "y2": 153,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 154,
+                "y": 153,
+                "x2": 175,
+                "y2": 148,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 148,
+                "x2": 196,
+                "y2": 145,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 196,
+                "y": 145,
+                "x2": 217,
+                "y2": 142,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 217,
+                "y": 142,
+                "x2": 238,
+                "y2": 141,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 238,
+                "y": 141,
+                "x2": 258,
+                "y2": 140,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 258,
+                "y": 140,
+                "x2": 279,
+                "y2": 139,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 279,
+                "y": 139,
+                "x2": 300,
+                "y2": 139,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 138,
+                "x2": 520,
+                "y2": 138,
+                "color": "purple",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 35,
+                "text": "forward",
+                "size": 16,
+                "anchor": "start",
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 240,
+                "text": "reverse",
+                "size": 16,
+                "anchor": "start",
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Q less than K goes forward. Only temperature changes K.",
+          "write": "Q vs K"
+        }
+      ]
+    },
+    {
+      "heading": "Le Chatelier and electrolysis",
+      "lines": [
+        {
+          "say": "A disturbed equilibrium shifts to partially oppose the change.",
+          "write": "partially oppose"
+        },
+        {
+          "say": "Squash gases, shift to fewer moles. Heat favours endothermic.",
+          "write": "fewer moles, endothermic"
+        },
+        {
+          "say": "In electrolysis, the anode is positive. The strongest oxidant is reduced at the cathode.",
+          "write": "electrolytic anode +",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Electrolytic cell",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 170,
+                "w": 340,
+                "h": 150,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "CuSO₄(aq)",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 120,
+                "w": 40,
+                "h": 150,
+                "fill": "grey",
+                "label": "C"
+              },
+              {
+                "kind": "rect",
+                "x": 350,
+                "y": 120,
+                "w": 40,
+                "h": 150,
+                "fill": "grey",
+                "label": "C"
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 120,
+                "x2": 190,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 370,
+                "y": 120,
+                "x2": 370,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 50,
+                "x2": 240,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 320,
+                "y": 50,
+                "x2": 370,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "yellow",
+                "label": "DC"
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 110,
+                "text": "+ anode",
+                "size": 16,
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 396,
+                "y": 110,
+                "text": "− cathode",
+                "size": 16,
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Q equals I t, and n electrons equals Q over F.",
+          "write": "Q = It, n = Q ÷ F"
+        }
+      ]
+    },
+    {
+      "heading": "Rechargeable batteries",
+      "lines": [
+        {
+          "say": "Secondary cells work because products stay on the electrodes.",
+          "write": "products stay"
+        },
+        {
+          "say": "Recharging is electrolytic. Polarity stays, names swap.",
+          "write": "names swap",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Recharging battery",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 150,
+                "w": 480,
+                "h": 150,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 110,
+                "w": 90,
+                "h": 180,
+                "fill": "grey",
+                "label": "Pb"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 110,
+                "w": 90,
+                "h": 180,
+                "fill": "orange",
+                "label": "PbO₂"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "H₂SO₄",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 115,
+                "y": 110,
+                "x2": 115,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 445,
+                "y": 110,
+                "x2": 445,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 100,
+                "text": "−",
+                "size": 26,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 100,
+                "text": "+",
+                "size": 26,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 115,
+                "y": 50,
+                "x2": 240,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 320,
+                "y": 50,
+                "x2": 445,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "red",
+                "label": "charger",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 230,
+                "y": 25,
+                "x2": 130,
+                "y2": 25,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 18,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 320,
+                "text": "cathode",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 445,
+                "y": 320,
+                "text": "anode",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Lead–acid forms lead sulfate on both electrodes.",
+          "write": "PbSO₄ both"
+        },
+        {
+          "say": "Lithium ions shuttle through a non-aqueous electrolyte.",
+          "write": "Li⁺ shuttles",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Lithium ions move",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 160,
+                "h": 200,
+                "fill": "grey",
+                "label": "graphite"
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 60,
+                "w": 160,
+                "h": 200,
+                "fill": "teal",
+                "label": "CoO₂"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 60,
+                "w": 160,
+                "h": 200,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "circle",
+                "x": 395,
+                "y": 110,
+                "r": 18,
+                "fill": "purple",
+                "label": "Li⁺",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 395,
+                "y": 160,
+                "r": 18,
+                "fill": "purple",
+                "label": "Li⁺",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 395,
+                "y": 210,
+                "r": 18,
+                "fill": "purple",
+                "label": "Li⁺",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 220,
+                "y": 160,
+                "x2": 340,
+                "y2": 160,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Oxidation is always at the anode. Only the sign changes.",
+          "write": "An Ox, Red Cat"
+        },
+        {
+          "say": "Time is always in seconds for Faraday calculations.",
+          "write": "t in seconds"
+        },
+        {
+          "say": "Only temperature changes K.",
+          "write": "only T changes K"
+        },
+        {
+          "say": "Close this sheet, and write down what you remember.",
+          "write": "test yourself"
+        }
+      ]
+    }
+  ]
+}

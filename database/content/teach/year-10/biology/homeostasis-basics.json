@@ -1,0 +1,1329 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "Homeostasis basics",
+  "frames": [
+    {
+      "heading": "What is homeostasis?",
+      "lines": [
+        {
+          "say": "Your cells only work well when conditions stay in a narrow range.",
+          "write": "narrow range"
+        },
+        {
+          "say": "Homeostasis keeps the internal environment steady, even when outside changes.",
+          "write": "homeostasis = stable inside"
+        },
+        {
+          "say": "Body temperature stays around 37 degrees. Blood glucose and water stay steady too.",
+          "write": "≈ 37 °C",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "temperature moving around set point",
+            "items": [
+              {
+                "kind": "line",
+                "x": 20,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 140,
+                "text": "set point 37 °C",
+                "size": 16,
+                "color": "green",
+                "anchor": "start"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    20,
+                    150
+                  ],
+                  [
+                    90,
+                    150
+                  ],
+                  [
+                    140,
+                    70
+                  ],
+                  [
+                    190,
+                    150
+                  ],
+                  [
+                    260,
+                    150
+                  ],
+                  [
+                    310,
+                    220
+                  ],
+                  [
+                    360,
+                    150
+                  ],
+                  [
+                    540,
+                    150
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 55,
+                "text": "too hot → cool down",
+                "size": 16,
+                "color": "red",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 250,
+                "text": "too cold → warm up",
+                "size": 16,
+                "color": "blue",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Conditions wobble around a set point, inside a tolerance range.",
+          "write": "set point, tolerance range"
+        },
+        {
+          "say": "Why? Enzymes work best in a narrow range. Too hot, and they change shape.",
+          "write": "enzymes need it"
+        }
+      ]
+    },
+    {
+      "heading": "Stimulus and response",
+      "lines": [
+        {
+          "say": "First, a stimulus. Something changes, like body temperature rising.",
+          "write": "1. stimulus",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "stimulus-response chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 2,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "red",
+                "label": "stimulus",
+                "change": "highlight",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 95,
+                "y": 128,
+                "x2": 109,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 111,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "orange",
+                "label": "receptor",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 204,
+                "y": 128,
+                "x2": 218,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 100,
+                "w": 124,
+                "h": 56,
+                "fill": "purple",
+                "label": "control centre",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 128,
+                "x2": 359,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 361,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "blue",
+                "label": "effector",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 454,
+                "y": 128,
+                "x2": 468,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "green",
+                "label": "response",
+                "labelSize": 15
+              }
+            ]
+          }
+        },
+        {
+          "say": "A receptor detects the change, like temperature receptors in the skin.",
+          "write": "2. receptor",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "stimulus-response chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 2,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "red",
+                "label": "stimulus",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 95,
+                "y": 128,
+                "x2": 109,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 111,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "orange",
+                "label": "receptor",
+                "change": "highlight",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 204,
+                "y": 128,
+                "x2": 218,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 100,
+                "w": 124,
+                "h": 56,
+                "fill": "purple",
+                "label": "control centre",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 128,
+                "x2": 359,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 361,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "blue",
+                "label": "effector",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 454,
+                "y": 128,
+                "x2": 468,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "green",
+                "label": "response",
+                "labelSize": 15
+              }
+            ]
+          }
+        },
+        {
+          "say": "The control centre, often the hypothalamus, compares it with the set point.",
+          "write": "3. control centre",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "stimulus-response chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 2,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "red",
+                "label": "stimulus",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 95,
+                "y": 128,
+                "x2": 109,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 111,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "orange",
+                "label": "receptor",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 204,
+                "y": 128,
+                "x2": 218,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 100,
+                "w": 124,
+                "h": 56,
+                "fill": "purple",
+                "label": "control centre",
+                "change": "highlight",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 128,
+                "x2": 359,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 361,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "blue",
+                "label": "effector",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 454,
+                "y": 128,
+                "x2": 468,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "green",
+                "label": "response",
+                "labelSize": 15
+              }
+            ]
+          }
+        },
+        {
+          "say": "An effector, a muscle or gland, carries out the response.",
+          "write": "4. effector",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "stimulus-response chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 2,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "red",
+                "label": "stimulus",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 95,
+                "y": 128,
+                "x2": 109,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 111,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "orange",
+                "label": "receptor",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 204,
+                "y": 128,
+                "x2": 218,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 100,
+                "w": 124,
+                "h": 56,
+                "fill": "purple",
+                "label": "control centre",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 128,
+                "x2": 359,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 361,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "blue",
+                "label": "effector",
+                "change": "highlight",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 454,
+                "y": 128,
+                "x2": 468,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "green",
+                "label": "response",
+                "labelSize": 15
+              }
+            ]
+          }
+        },
+        {
+          "say": "The response changes the condition. For example, sweating.",
+          "write": "5. response",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "stimulus-response chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 2,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "red",
+                "label": "stimulus",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 95,
+                "y": 128,
+                "x2": 109,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 111,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "orange",
+                "label": "receptor",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 204,
+                "y": 128,
+                "x2": 218,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 100,
+                "w": 124,
+                "h": 56,
+                "fill": "purple",
+                "label": "control centre",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 128,
+                "x2": 359,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 361,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "blue",
+                "label": "effector",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 454,
+                "y": 128,
+                "x2": 468,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "green",
+                "label": "response",
+                "change": "highlight",
+                "labelSize": 15
+              }
+            ]
+          }
+        },
+        {
+          "say": "Remember it as Silly Rabbits Can Eat Radishes.",
+          "write": "S R C E R"
+        }
+      ]
+    },
+    {
+      "heading": "Negative feedback",
+      "lines": [
+        {
+          "say": "Most homeostasis uses negative feedback.",
+          "write": "negative feedback"
+        },
+        {
+          "say": "The response reverses the change, back towards the set point.",
+          "write": "reverses the change",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "stimulus-response chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 2,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "red",
+                "label": "stimulus",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 95,
+                "y": 128,
+                "x2": 109,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 111,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "orange",
+                "label": "receptor",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 204,
+                "y": 128,
+                "x2": 218,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 100,
+                "w": 124,
+                "h": 56,
+                "fill": "purple",
+                "label": "control centre",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 128,
+                "x2": 359,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 361,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "blue",
+                "label": "effector",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 454,
+                "y": 128,
+                "x2": 468,
+                "y2": 128,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 100,
+                "w": 92,
+                "h": 56,
+                "fill": "green",
+                "label": "response",
+                "labelSize": 15
+              },
+              {
+                "kind": "arrow",
+                "x": 510,
+                "y": 170,
+                "x2": 50,
+                "y2": 170,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 215,
+                "text": "response reverses the change",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Like a heater with a thermostat. On when cold, off when warm.",
+          "write": "thermostat"
+        },
+        {
+          "say": "Negative does not mean bad. It means it cancels the change.",
+          "write": "negative ≠ bad"
+        }
+      ]
+    },
+    {
+      "heading": "Controlling body temperature",
+      "lines": [
+        {
+          "say": "Too hot? Sweat glands make more sweat. Evaporation removes heat.",
+          "write": "hot: sweat"
+        },
+        {
+          "say": "Skin blood vessels widen. More blood near the surface loses heat.",
+          "write": "vasodilation = widen",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "blood vessel widening",
+            "items": [
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 60,
+                "text": "hot",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 120,
+                "w": 200,
+                "h": 20,
+                "fill": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 105,
+                "w": 200,
+                "h": 50,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 200,
+                "text": "widen → lose heat",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 60,
+                "text": "cold",
+                "size": 22,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 120,
+                "w": 200,
+                "h": 20,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 125,
+                "w": 200,
+                "h": 10,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 200,
+                "text": "narrow → keep heat",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Too cold? Vessels narrow, which is vasoconstriction. Heat is kept.",
+          "write": "vasoconstriction = narrow"
+        },
+        {
+          "say": "Muscles shiver, releasing heat from respiration. Hairs stand up.",
+          "write": "shivering, goosebumps"
+        },
+        {
+          "say": "Vessels change width. They do not move closer to the skin.",
+          "write": "✗ vessels move"
+        },
+        {
+          "say": "Each response brings you back to 37 degrees.",
+          "write": "back to set point",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "temperature moving around set point",
+            "items": [
+              {
+                "kind": "line",
+                "x": 20,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 140,
+                "text": "set point 37 °C",
+                "size": 16,
+                "color": "green",
+                "anchor": "start"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    20,
+                    150
+                  ],
+                  [
+                    90,
+                    150
+                  ],
+                  [
+                    140,
+                    70
+                  ],
+                  [
+                    190,
+                    150
+                  ],
+                  [
+                    260,
+                    150
+                  ],
+                  [
+                    310,
+                    220
+                  ],
+                  [
+                    360,
+                    150
+                  ],
+                  [
+                    540,
+                    150
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 55,
+                "text": "too hot → cool down",
+                "size": 16,
+                "color": "red",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 250,
+                "text": "too cold → warm up",
+                "size": 16,
+                "color": "blue",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 70,
+                "x2": 185,
+                "y2": 140,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 310,
+                "y": 215,
+                "x2": 350,
+                "y2": 158,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Controlling blood glucose",
+      "lines": [
+        {
+          "say": "The pancreas controls blood glucose with two hormones.",
+          "write": "pancreas: 2 hormones"
+        },
+        {
+          "say": "After a meal, glucose is high. The pancreas releases insulin.",
+          "write": "high → insulin",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "glucose level graph with insulin and glucagon",
+            "items": [
+              {
+                "kind": "line",
+                "x": 20,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    20,
+                    150
+                  ],
+                  [
+                    80,
+                    150
+                  ],
+                  [
+                    150,
+                    60
+                  ],
+                  [
+                    230,
+                    150
+                  ],
+                  [
+                    300,
+                    150
+                  ],
+                  [
+                    370,
+                    230
+                  ],
+                  [
+                    440,
+                    150
+                  ],
+                  [
+                    540,
+                    150
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 45,
+                "text": "after a meal",
+                "size": 16,
+                "color": "red",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 262,
+                "text": "after exercise",
+                "size": 16,
+                "color": "blue",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 160,
+                "y": 70,
+                "x2": 210,
+                "y2": 135,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 95,
+                "text": "insulin",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Insulin makes cells take in glucose, and the liver store it as glycogen.",
+          "write": "insulin → glycogen store"
+        },
+        {
+          "say": "When glucose is low, the pancreas releases glucagon.",
+          "write": "low → glucagon",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "glucose level graph with insulin and glucagon",
+            "items": [
+              {
+                "kind": "line",
+                "x": 20,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    20,
+                    150
+                  ],
+                  [
+                    80,
+                    150
+                  ],
+                  [
+                    150,
+                    60
+                  ],
+                  [
+                    230,
+                    150
+                  ],
+                  [
+                    300,
+                    150
+                  ],
+                  [
+                    370,
+                    230
+                  ],
+                  [
+                    440,
+                    150
+                  ],
+                  [
+                    540,
+                    150
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 45,
+                "text": "after a meal",
+                "size": 16,
+                "color": "red",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 262,
+                "text": "after exercise",
+                "size": 16,
+                "color": "blue",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 160,
+                "y": 70,
+                "x2": 210,
+                "y2": 135,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 95,
+                "text": "insulin",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 380,
+                "y": 220,
+                "x2": 430,
+                "y2": 165,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 210,
+                "text": "glucagon",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Glucagon makes the liver break glycogen into glucose. Glucose rises.",
+          "write": "glucagon: glycogen → glucose"
+        },
+        {
+          "say": "Glucagon is released when glucose is gone.",
+          "write": "glucaGONe"
+        }
+      ]
+    },
+    {
+      "heading": "Diabetes",
+      "lines": [
+        {
+          "say": "In type 1 diabetes, the pancreas makes little or no insulin.",
+          "write": "type 1: no insulin"
+        },
+        {
+          "say": "So blood glucose stays high. It is managed with insulin injections or pumps.",
+          "write": "injections or pumps"
+        },
+        {
+          "say": "In type 2 diabetes, cells stop responding properly to insulin.",
+          "write": "type 2: cells ignore insulin"
+        },
+        {
+          "say": "Type 2 is often managed with diet, exercise and medication.",
+          "write": "diet, exercise, medication"
+        }
+      ]
+    },
+    {
+      "heading": "Nerves or hormones?",
+      "lines": [
+        {
+          "say": "Nerves send electrical impulses. Very fast, short and targeted.",
+          "write": "nerves: fast, short",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "nerve versus hormone",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 240,
+                "h": 170,
+                "fill": "yellow"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 80,
+                "text": "Nerves",
+                "size": 22,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 130,
+                "x2": 240,
+                "y2": 130,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 180,
+                "text": "text message",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 40,
+                "w": 240,
+                "h": 170,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 80,
+                "text": "Hormones",
+                "size": 22,
+                "color": "teal",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 130,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 140,
+                "r": 12,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 125,
+                "r": 12,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 180,
+                "text": "letter in the post",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Hormones travel in the blood. Slower, longer lasting and widespread.",
+          "write": "hormones: slow, long"
+        },
+        {
+          "say": "Temperature uses mostly nerves. Blood glucose uses hormones.",
+          "write": "temp: nerves, glucose: hormones"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Stimulus, receptor, control centre, effector, response.",
+          "write": "S → R → CC → E → R"
+        },
+        {
+          "say": "Negative feedback reverses the change.",
+          "write": "negative = reverse"
+        },
+        {
+          "say": "Insulin lowers blood glucose. Glucagon raises it.",
+          "write": "insulin ↓   glucagon ↑"
+        },
+        {
+          "say": "Glucagon is the hormone. Glycogen is the store.",
+          "write": "glucagon ≠ glycogen"
+        },
+        {
+          "say": "Dilate means widen and lose heat. Constrict means narrow and keep heat.",
+          "write": "dilate lose, constrict keep"
+        }
+      ]
+    }
+  ]
+}

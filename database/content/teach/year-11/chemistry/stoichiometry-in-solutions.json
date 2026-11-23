@@ -1,0 +1,125 @@
+{
+  "level": "Year 11", "subject": "chemistry", "title": "Stoichiometry in solutions",
+  "frames": [
+    { "heading": "The mole ratio",
+      "lines": [
+        { "say": "Here's a balanced equation. Magnesium reacts with hydrochloric acid.", "write": "Mg + 2HCl → MgCl₂ + H₂" },
+        { "say": "The coefficients count particles. One magnesium for every two H C L.", "write": "1 : 2 : 1 : 1",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "One Mg particle reacts with two HCl particles", "items": [
+            {"kind": "circle", "x": 80, "y": 110, "r": 36, "fill": "grey", "label": "Mg"},
+            {"kind": "text", "x": 140, "y": 120, "text": "+", "size": 32, "anchor": "middle"},
+            {"kind": "circle", "x": 200, "y": 80, "r": 30, "fill": "green", "label": "HCl"},
+            {"kind": "circle", "x": 200, "y": 150, "r": 30, "fill": "green", "label": "HCl"},
+            {"kind": "arrow", "x": 250, "y": 115, "x2": 320, "y2": 115, "color": "black"},
+            {"kind": "rect", "x": 335, "y": 85, "w": 100, "h": 60, "fill": "blue", "label": "MgCl₂"},
+            {"kind": "circle", "x": 490, "y": 115, "r": 30, "fill": "yellow", "label": "H₂"},
+            {"kind": "text", "x": 280, "y": 220, "text": "1 mol Mg : 2 mol HCl", "size": 22, "anchor": "middle", "bold": true}
+          ]}},
+        { "say": "That's a ratio of moles, not grams. One gram of magnesium doesn't need two grams of acid.", "write": "moles, never grams" },
+        { "say": "So every calculation must go through moles.", "write": "n(unknown) = n(known) × ratio" }
+      ] },
+    { "heading": "Three doors into moles",
+      "lines": [
+        { "say": "Step one. Find the moles of what you know. Pick the right door.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Three ways to get moles: mass, solution, gas", "items": [
+            {"kind": "rect", "x": 20, "y": 40, "w": 160, "h": 80, "fill": "orange", "label": "mass"},
+            {"kind": "rect", "x": 200, "y": 40, "w": 160, "h": 80, "fill": "blue", "label": "solution"},
+            {"kind": "rect", "x": 380, "y": 40, "w": 160, "h": 80, "fill": "teal", "label": "gas at SLC"},
+            {"kind": "text", "x": 100, "y": 170, "text": "n = m ÷ M", "size": 22, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 280, "y": 170, "text": "n = c × V", "size": 22, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 460, "y": 170, "text": "n = V ÷ 24.8", "size": 22, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "For solutions, n equals c times V. Volume must be in litres.", "write": "n = cV   (V in L)" },
+        { "say": "Step two. Use the mole ratio to get moles of the unknown.", "write": "Step 2: mole ratio" },
+        { "say": "Step three. Convert moles to what the question asks for.", "write": "Step 3: m, V or c" },
+        { "say": "Find, ratio, convert. Friendly rats count.", "write": "Find → Ratio → Convert" }
+      ] },
+    { "heading": "Gases at SLC",
+      "lines": [
+        { "say": "Gas particles are so far apart that their size hardly matters." },
+        { "say": "So one mole of any gas takes up the same volume.", "write": "1 mol gas = 24.8 L at SLC",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Boxes of different gases all hold 24.8 litres", "items": [
+            {"kind": "rect", "x": 30, "y": 50, "w": 140, "h": 120, "fill": "yellow", "label": "1 mol H₂"},
+            {"kind": "rect", "x": 210, "y": 50, "w": 140, "h": 120, "fill": "grey", "label": "1 mol CO₂"},
+            {"kind": "rect", "x": 390, "y": 50, "w": 140, "h": 120, "fill": "teal", "label": "1 mol O₂"},
+            {"kind": "text", "x": 280, "y": 215, "text": "each 24.8 L at 25 °C, 100 kPa", "size": 22, "anchor": "middle", "change": "highlight"}
+          ]}},
+        { "say": "SLC means 25 degrees Celsius and 100 kilopascals.", "write": "SLC: 25 °C, 100 kPa" },
+        { "say": "Never use 24.8 for liquids, solids or solutions. Gases only.", "write": "24.8: gases only" }
+      ] },
+    { "heading": "A quick worked example",
+      "lines": [
+        { "say": "2.43 grams of magnesium reacts with excess acid. Find the hydrogen volume.", "write": "Mg + 2HCl → MgCl₂ + H₂" },
+        { "say": "Find moles. 2.43 divided by 24.3 is 0.100 moles.", "write": "n(Mg) = 2.43 ÷ 24.3 = 0.100" },
+        { "say": "Ratio. Magnesium to hydrogen is one to one. So 0.100 moles of hydrogen.", "write": "n(H₂) = 0.100 mol" },
+        { "say": "Convert. 0.100 times 24.8 gives 2.48 litres.", "write": "V = 0.100 × 24.8 = 2.48 L" },
+        { "say": "With solutions, use n equals c V instead. The method stays the same.", "write": "same method, n = cV" }
+      ] },
+    { "heading": "The limiting reactant",
+      "lines": [
+        { "say": "Each sandwich needs two slices of bread and one slice of cheese.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Ten slices of bread and three slices of cheese", "items": [
+            {"kind": "rect", "x": 20, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 70, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 120, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 170, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 220, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 270, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 320, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 370, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 420, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 470, "y": 40, "w": 40, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 20, "y": 130, "w": 40, "h": 40, "fill": "yellow"},
+            {"kind": "rect", "x": 70, "y": 130, "w": 40, "h": 40, "fill": "yellow"},
+            {"kind": "rect", "x": 120, "y": 130, "w": 40, "h": 40, "fill": "yellow"},
+            {"kind": "text", "x": 20, "y": 230, "text": "10 bread, 3 cheese", "size": 22}
+          ]}},
+        { "say": "Ten bread and three cheese makes only three sandwiches. Cheese runs out first.", "write": "cheese is limiting",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Six bread and three cheese are used, four bread left over", "items": [
+            {"kind": "rect", "x": 20, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "remove"},
+            {"kind": "rect", "x": 70, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "remove"},
+            {"kind": "rect", "x": 120, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "remove"},
+            {"kind": "rect", "x": 170, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "remove"},
+            {"kind": "rect", "x": 220, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "remove"},
+            {"kind": "rect", "x": 270, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "remove"},
+            {"kind": "rect", "x": 320, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 370, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 420, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 470, "y": 40, "w": 40, "h": 40, "fill": "orange", "change": "highlight"},
+            {"kind": "rect", "x": 20, "y": 130, "w": 40, "h": 40, "fill": "yellow", "change": "remove"},
+            {"kind": "rect", "x": 70, "y": 130, "w": 40, "h": 40, "fill": "yellow", "change": "remove"},
+            {"kind": "rect", "x": 120, "y": 130, "w": 40, "h": 40, "fill": "yellow", "change": "remove"},
+            {"kind": "text", "x": 20, "y": 230, "text": "3 sandwiches, 4 bread left over", "size": 22, "change": "add"}
+          ]}},
+        { "say": "The limiting reactant is used up first. It decides how much product forms.", "write": "limiting → sets product" },
+        { "say": "The other one is in excess. Some of it is left over.", "write": "excess left = available − used" },
+        { "say": "Quick test. Divide each reactant's moles by its coefficient. Smallest is limiting.", "write": "n ÷ coefficient: smallest" }
+      ] },
+    { "heading": "Fewer moles is not always limiting",
+      "lines": [
+        { "say": "Calcium carbonate and hydrochloric acid. Both start with 0.0500 moles.", "write": "CaCO₃ + 2HCl → … + CO₂" },
+        { "say": "Divide by coefficients. Calcium carbonate stays 0.0500. Acid becomes 0.0250.", "write": "0.0500 ÷ 1   vs   0.0500 ÷ 2",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Bars comparing 0.0500 and 0.0250 after dividing by coefficients", "items": [
+            {"kind": "rect", "x": 60, "y": 60, "w": 400, "h": 50, "fill": "orange", "label": "CaCO₃: 0.0500 ÷ 1 = 0.0500"},
+            {"kind": "rect", "x": 60, "y": 140, "w": 400, "h": 50, "fill": "green", "label": "HCl: 0.0500", "change": "remove"},
+            {"kind": "rect", "x": 60, "y": 140, "w": 200, "h": 50, "fill": "green", "label": "÷ 2 = 0.0250", "change": "add"}
+          ]}},
+        { "say": "So the acid is limiting, even though the mole numbers look equal.", "write": "HCl is limiting" },
+        { "say": "Carbon dioxide is half of 0.0500, so 0.0250 moles. Times 24.8 is 0.620 litres.", "write": "V(CO₂) = 0.620 L" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't use mass ratios. Coefficients compare moles.", "write": "✗ 1 g Mg : 2 g HCl" },
+        { "say": "Convert millilitres to litres before n equals c V.", "write": "25.0 mL = 0.0250 L" },
+        { "say": "Never work out product from the excess reactant. Use the limiting one.", "write": "use the limiting reactant" },
+        { "say": "Re-read the question. Mass, volume, concentration or excess left over?", "write": "answer what is asked" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Balanced equations give mole ratios, not mass ratios.", "write": "balance first, every time" },
+        { "say": "Find moles, use the ratio, then convert.", "write": "Find → Ratio → Convert" },
+        { "say": "n equals m over M, n equals c V, n equals V over 24.8.", "write": "m ÷ M   cV   V ÷ 24.8" },
+        { "say": "Divide by coefficients. The smallest is the limiting reactant.", "write": "smallest = limiting" }
+      ] }
+  ]
+}

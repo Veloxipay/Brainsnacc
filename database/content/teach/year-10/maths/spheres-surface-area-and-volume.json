@@ -1,0 +1,542 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Spheres: surface area and volume",
+  "frames": [
+    {
+      "heading": "The sphere formulas",
+      "lines": [
+        {
+          "say": "A sphere is all points the same distance r from a centre.",
+          "write": "radius r, diameter 2r",
+          "diagram": "diagrams/y10/maths/spheres-surface-area-and-volume-ex1.svg",
+          "alt": "Sphere with radius 9 cm"
+        },
+        {
+          "say": "Peel an orange and lay it flat.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Orange peel covering four circles",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 150,
+                "r": 60,
+                "fill": "orange",
+                "label": "r"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 240,
+                "text": "orange",
+                "size": 18,
+                "color": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The peel covers about four circles the size of its middle.",
+          "write": "SA = 4πr²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Orange peel covering four circles",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 150,
+                "r": 60,
+                "fill": "orange",
+                "label": "r"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 240,
+                "text": "orange",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 38,
+                "fill": "yellow",
+                "label": "πr²"
+              },
+              {
+                "kind": "circle",
+                "x": 305,
+                "y": 150,
+                "r": 38,
+                "fill": "yellow",
+                "label": "πr²"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 150,
+                "r": 38,
+                "fill": "yellow",
+                "label": "πr²"
+              },
+              {
+                "kind": "circle",
+                "x": 475,
+                "y": 150,
+                "r": 38,
+                "fill": "yellow",
+                "change": "add",
+                "label": "πr²"
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 240,
+                "text": "4 circles = 4πr²",
+                "size": 22,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The volume is four thirds pi r cubed.",
+          "write": "V = ⁴⁄₃πr³"
+        },
+        {
+          "say": "Area uses r squared, square units. Volume uses r cubed, cubic units.",
+          "write": "cm²  vs  cm³"
+        }
+      ]
+    },
+    {
+      "heading": "Radius 9 centimetres",
+      "lines": [
+        {
+          "say": "Surface area is 4 times pi times 81, which is 324 pi.",
+          "write": "SA = 4π × 9² = 324π"
+        },
+        {
+          "say": "That is about 1017.9 square centimetres.",
+          "write": "SA ≈ 1017.9 cm²"
+        },
+        {
+          "say": "Volume: cube the radius first. 9 cubed is 729.",
+          "write": "V = ⁴⁄₃ × π × 729"
+        },
+        {
+          "say": "That is 972 pi, about 3053.6 cubic centimetres.",
+          "write": "V = 972π ≈ 3053.6 cm³"
+        }
+      ]
+    },
+    {
+      "heading": "Hemispheres",
+      "lines": [
+        {
+          "say": "A hemisphere is half a sphere: a curved surface and a flat circle.",
+          "write": "hemisphere = ½ sphere",
+          "diagram": "diagrams/y10/maths/spheres-surface-area-and-volume-hemi.svg",
+          "alt": "Hemisphere on its flat face"
+        },
+        {
+          "say": "The curved surface is half of 4 pi r squared, so 2 pi r squared.",
+          "write": "curved = 2πr²"
+        },
+        {
+          "say": "Add the flat circle for a solid hemisphere: 3 pi r squared.",
+          "write": "total = 2πr² + πr² = 3πr²"
+        },
+        {
+          "say": "The volume is half of four thirds, so two thirds pi r cubed.",
+          "write": "V = ⅔πr³"
+        }
+      ]
+    },
+    {
+      "heading": "A hemispherical bowl",
+      "lines": [
+        {
+          "say": "A bowl has diameter 20 centimetres. Halve it first. r is 10.",
+          "write": "r = 20 ÷ 2 = 10",
+          "diagram": "diagrams/y10/maths/spheres-surface-area-and-volume-ex2.svg",
+          "alt": "Hemispherical bowl with diameter 20 cm"
+        },
+        {
+          "say": "Volume is two thirds times pi times 1000. About 2094.4.",
+          "write": "V ≈ 2094.4 cm³"
+        },
+        {
+          "say": "1000 cubic centimetres is 1 litre. So it holds about 2.09 litres.",
+          "write": "≈ 2.09 L"
+        }
+      ]
+    },
+    {
+      "heading": "Composite solids",
+      "lines": [
+        {
+          "say": "A silo is a cylinder with a hemisphere on top. r is 4, height 10.",
+          "write": "silo = cylinder + dome",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Silo: cylinder with hemisphere on top",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 170,
+                "fill": "blue",
+                "label": "cylinder"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    200,
+                    120
+                  ],
+                  [
+                    210,
+                    90
+                  ],
+                  [
+                    230,
+                    65
+                  ],
+                  [
+                    255,
+                    50
+                  ],
+                  [
+                    280,
+                    45
+                  ],
+                  [
+                    305,
+                    50
+                  ],
+                  [
+                    330,
+                    65
+                  ],
+                  [
+                    350,
+                    90
+                  ],
+                  [
+                    360,
+                    120
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 210,
+                "text": "10 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 290,
+                "x2": 360,
+                "y2": 290,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 310,
+                "text": "r = 4 m",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cylinder: pi times 4 squared times 10, which is 160 pi.",
+          "write": "π × 4² × 10 = 160π",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Silo: cylinder with hemisphere on top",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 170,
+                "fill": "blue",
+                "change": "add",
+                "label": "160π"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    200,
+                    120
+                  ],
+                  [
+                    210,
+                    90
+                  ],
+                  [
+                    230,
+                    65
+                  ],
+                  [
+                    255,
+                    50
+                  ],
+                  [
+                    280,
+                    45
+                  ],
+                  [
+                    305,
+                    50
+                  ],
+                  [
+                    330,
+                    65
+                  ],
+                  [
+                    350,
+                    90
+                  ],
+                  [
+                    360,
+                    120
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 210,
+                "text": "10 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 290,
+                "x2": 360,
+                "y2": 290,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 310,
+                "text": "r = 4 m",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Dome: two thirds times pi times 64, which is 128 pi over 3.",
+          "write": "⅔ × π × 4³ = 128π/3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Silo: cylinder with hemisphere on top",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 170,
+                "fill": "blue",
+                "label": "160π"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    200,
+                    120
+                  ],
+                  [
+                    210,
+                    90
+                  ],
+                  [
+                    230,
+                    65
+                  ],
+                  [
+                    255,
+                    50
+                  ],
+                  [
+                    280,
+                    45
+                  ],
+                  [
+                    305,
+                    50
+                  ],
+                  [
+                    330,
+                    65
+                  ],
+                  [
+                    350,
+                    90
+                  ],
+                  [
+                    360,
+                    120
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 100,
+                "text": "128π/3",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 210,
+                "text": "10 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 290,
+                "x2": 360,
+                "y2": 290,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 310,
+                "text": "r = 4 m",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add them. About 636.7 cubic metres.",
+          "write": "V ≈ 636.7 m³"
+        },
+        {
+          "say": "For surface area, count only the outside. The joined circle is hidden.",
+          "write": "outside surfaces only"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "A sphere has volume 36 pi. Find the radius.",
+          "write": "⁴⁄₃πr³ = 36π"
+        },
+        {
+          "say": "Divide by pi and multiply by three quarters. r cubed is 27.",
+          "write": "r³ = 36 × ¾ = 27"
+        },
+        {
+          "say": "Take the cube root. r is 3 centimetres.",
+          "write": "r = ∛27 = 3 cm"
+        },
+        {
+          "say": "From a surface area, you take a square root instead.",
+          "write": "SA → √,  V → ∛"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use the radius, not the diameter. The error is huge when you cube.",
+          "write": "halve the diameter"
+        },
+        {
+          "say": "Surface is squared. Volume is cubed.",
+          "write": "SA: r²   V: r³"
+        },
+        {
+          "say": "A solid hemisphere includes its flat face. An open bowl does not.",
+          "write": "3πr² or 2πr²"
+        },
+        {
+          "say": "Don't count hidden faces in composite solids.",
+          "write": "no hidden faces"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Four circles of peel: 4 pi r squared.",
+          "write": "SA = 4πr²"
+        },
+        {
+          "say": "Volume is four thirds pi r cubed.",
+          "write": "V = ⁴⁄₃πr³"
+        },
+        {
+          "say": "Hemisphere: halve it, then think about the flat face.",
+          "write": "½ sphere + flat face?"
+        },
+        {
+          "say": "Check the units: squared for area, cubed for volume.",
+          "write": "cm² area, cm³ volume"
+        }
+      ]
+    }
+  ]
+}

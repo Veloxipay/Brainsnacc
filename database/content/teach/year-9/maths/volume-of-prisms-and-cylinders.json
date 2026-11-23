@@ -1,0 +1,122 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Volume of prisms and cylinders",
+  "frames": [
+    {
+      "heading": "What is volume?",
+      "lines": [
+        { "say": "Volume is the amount of space inside a solid.", "write": "cubic units: cm³, m³" },
+        { "say": "A prism has the same cross-section all the way along.", "write": "cross-section" },
+        { "say": "Think of a loaf of sliced bread. Every slice is the same shape." }
+      ]
+    },
+    {
+      "heading": "Area of the end times length",
+      "lines": [
+        {
+          "say": "Start with one slice. Its area is A.",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "One slice with area A",
+            "items": [
+              { "kind": "polygon", "points": [[60,200],[160,200],[160,80],[110,50],[60,80]], "fill": "orange", "label": "A" }
+            ]
+          }
+        },
+        {
+          "say": "Stack identical slices all along the length.",
+          "write": "V = A × length",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "Identical slices stacked along the length",
+            "items": [
+              { "kind": "polygon", "points": [[60,200],[160,200],[160,80],[110,50],[60,80]], "fill": "orange", "label": "A" },
+              { "kind": "polygon", "points": [[140,180],[240,180],[240,60],[190,30],[140,60]], "fill": "orange", "change": "add" },
+              { "kind": "polygon", "points": [[220,160],[320,160],[320,40],[270,10],[220,40]], "fill": "orange", "change": "add" },
+              { "kind": "arrow", "x": 60, "y": 230, "x2": 330, "y2": 190, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 400, "y": 220, "text": "length", "size": 22, "bold": true, "color": "purple" }
+            ]
+          }
+        },
+        {
+          "say": "So the volume is the area of the end times the length.",
+          "diagram": "diagrams/y9/maths/volume-of-prisms-and-cylinders-prism.svg",
+          "alt": "Prism with end face area A and length along the side"
+        },
+        { "say": "The length is measured at right angles to the cross-section." }
+      ]
+    },
+    {
+      "heading": "A trapezoidal prism",
+      "lines": [
+        {
+          "say": "This end is a trapezium. Parallel sides 4 and 10, height 5.",
+          "diagram": "diagrams/y9/maths/volume-of-prisms-and-cylinders-ex1.svg",
+          "alt": "Prism 20 cm long with trapezium end: parallel sides 4 cm and 10 cm, height 5 cm"
+        },
+        { "say": "Area is a half times 4 plus 10, times 5. That's 35.", "write": "A = ½ × (4 + 10) × 5 = 35" },
+        { "say": "The trapezium repeats for 20 centimetres.", "write": "V = 35 × 20 = 700 cm³" }
+      ]
+    },
+    {
+      "heading": "Cylinders",
+      "lines": [
+        { "say": "A cylinder's cross-section is a circle, area pi r squared.", "write": "V = πr²h" },
+        {
+          "say": "A can has radius 3 and height 8. Square the radius only.",
+          "write": "π × 3² × 8 = 72π",
+          "diagram": "diagrams/y9/maths/volume-of-prisms-and-cylinders-cylinder.svg",
+          "alt": "Cylinder with radius r and height h"
+        },
+        { "say": "72 pi is about 226.2 cubic centimetres. That's 226.2 millilitres.", "write": "≈ 226.2 mL" },
+        { "say": "If you're given the diameter, halve it first. Halve it, square it, pi it, height it.", "write": "r = d ÷ 2" }
+      ]
+    },
+    {
+      "heading": "Capacity",
+      "lines": [
+        { "say": "Capacity is how much a container holds.", "write": "1 cm³ = 1 mL" },
+        { "say": "A 10 centimetre cube holds exactly 1 litre.", "write": "1000 cm³ = 1 L" },
+        { "say": "A cubic metre holds 1000 litres.", "write": "1 m³ = 1000 L" },
+        { "say": "A tank with radius 1 metre and height 1.5 metres is 1.5 pi cubic metres.", "write": "1.5π ≈ 4.7124 m³" },
+        { "say": "Times 1000. It holds about 4712 litres.", "write": "≈ 4712 L" }
+      ]
+    },
+    {
+      "heading": "Pipes and missing lengths",
+      "lines": [
+        {
+          "say": "A pipe's end is a ring. Outer radius 5, inner radius 4.",
+          "write": "A = π × 5² − π × 4²",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 280, "alt": "Big circle with the inner hole removed, leaving a ring",
+            "items": [
+              { "kind": "circle", "x": 280, "y": 140, "r": 120, "fill": "blue", "label": "" },
+              { "kind": "circle", "x": 280, "y": 140, "r": 96, "fill": "white", "change": "remove" },
+              { "kind": "text", "x": 280, "y": 148, "text": "hole", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "25 pi minus 16 pi is 9 pi. Times the length, 100.", "write": "V = 900π ≈ 2827.4 cm³" },
+        { "say": "To find a missing height, substitute, then solve.", "write": "500 = π × 5² × h" },
+        { "say": "Divide 500 by 25 pi. The height is about 6.37 centimetres.", "write": "h = 500 ÷ 25π ≈ 6.37 cm" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't use the diameter. It gets squared, so the error is times 4.", "write": "✗ π × d² × h" },
+        { "say": "Use the perpendicular height, not a sloping side.", "write": "⊥ height" },
+        { "say": "Change everything to one unit first.", "write": "same units" },
+        { "say": "1 cubic metre is 1000 litres, not 100.", "write": "1 m³ = 1000 L" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Area of the end times length works for every prism.", "write": "V = A × length" },
+        { "say": "For a cylinder, pi r squared h.", "write": "V = πr²h" },
+        { "say": "Volume units always have a cubed.", "write": "cm³, m³" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Equations with unknowns on both sides",
+  "frames": [
+    { "heading": "Bags on both pans",
+      "lines": [
+        { "say": "5 bags and 3 cubes on the left. 2 bags and 18 cubes on the right.", "write": "5x + 3 = 2x + 18",
+          "draw": {"type": "balance", "left": {"bags": 5, "cubes": 3}, "right": {"bags": 2, "cubes": 18}} },
+        { "say": "There are x's on both sides. We can't divide straight away.", "write": "x on both sides" },
+        { "say": "First collect the bags on one side. The numbers go on the other.", "write": "x's one side, numbers the other" }
+      ] },
+    { "heading": "Collect the unknowns",
+      "lines": [
+        { "say": "Take 2 bags off both pans. It still balances.", "write": "5x − 2x + 3 = 2x − 2x + 18",
+          "draw": {"type": "balance", "left": {"bags": 3, "cubes": 3}, "right": {"cubes": 18}, "labels": ["5x − 2x + 3", "2x − 2x + 18"]} },
+        { "say": "Now 3 bags and 3 cubes balance 18 cubes.", "write": "3x + 3 = 18" },
+        { "say": "Take 3 cubes off both sides.", "write": "3x = 15",
+          "draw": {"type": "balance", "left": {"bags": 3, "cubes": 3}, "right": {"cubes": 18}, "remove": 3, "labels": ["3x + 3 − 3", "18 − 3"]} },
+        { "say": "Share 15 between 3 bags. Each gets 5.", "write": "x = 5",
+          "draw": {"type": "balance", "left": {"bags": 3}, "right": {"cubes": 15}, "share": true} },
+        { "say": "Check both sides. 25 plus 3 is 28. 10 plus 18 is 28.", "write": "28 = 28 ✓" }
+      ] },
+    { "heading": "Smaller x moves out",
+      "lines": [
+        { "say": "Solve 7 minus 2x equals 3x minus 8.", "write": "7 − 2x = 3x − 8" },
+        { "say": "The smaller x-term is minus 2x. Add 2x to both sides.", "write": "7 = 5x − 8" },
+        { "say": "Now the x-term is positive. Add 8 to both sides.", "write": "15 = 5x" },
+        { "say": "Divide by 5. x equals 3.", "write": "x = 3" },
+        { "say": "Check. 7 minus 6 is 1. 9 minus 8 is 1.", "write": "1 = 1 ✓" }
+      ] },
+    { "heading": "Answers can be fractions",
+      "lines": [
+        { "say": "6x minus 4 equals 2x plus 7. Take 2x from both sides.", "write": "4x − 4 = 7" },
+        { "say": "Add 4 to both sides. 4x equals 11.", "write": "4x = 11" },
+        { "say": "x equals 11 over 4, or 2.75. That's fine. Check it, don't doubt it.", "write": "x = 11/4 = 2.75" }
+      ] },
+    { "heading": "Setting up from words",
+      "lines": [
+        { "say": "Gym A costs 45 dollars to join, plus 12 a week. Gym B costs 21 a week.", "write": "A: 45 + 12w   B: 21w" },
+        { "say": "They cost the same when the two expressions are equal.", "write": "45 + 12w = 21w" },
+        { "say": "Take 12w from both sides. 45 equals 9w.", "write": "45 = 9w" },
+        { "say": "So w equals 5 weeks. Both cost 105 dollars.", "write": "w = 5 weeks",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Two cost lines crossing at 5 weeks and 105 dollars", "items": [
+            {"kind": "line", "x": 60, "y": 240, "x2": 520, "y2": 240},
+            {"kind": "line", "x": 60, "y": 240, "x2": 60, "y2": 20},
+            {"kind": "line", "x": 60, "y": 165, "x2": 500, "y2": 30, "color": "blue"},
+            {"kind": "line", "x": 60, "y": 240, "x2": 440, "y2": 20, "color": "orange"},
+            {"kind": "circle", "x": 310, "y": 95, "r": 10, "fill": "green", "change": "highlight"},
+            {"kind": "text", "x": 320, "y": 130, "text": "5 weeks, $105", "size": 18, "color": "green"},
+            {"kind": "text", "x": 500, "y": 55, "text": "A", "size": 18, "color": "blue"},
+            {"kind": "text", "x": 420, "y": 20, "text": "B", "size": 18, "color": "orange"}]}}
+      ] },
+    { "heading": "No solution, or every number",
+      "lines": [
+        { "say": "3x plus 5 equals 3x minus 1. Take 3x off both sides.", "write": "5 = −1" },
+        { "say": "That's false. No number works, so there is no solution.", "write": "no solution" },
+        { "say": "2x plus 6 equals 6 plus 2x gives 6 equals 6. Always true. Every number works.", "write": "6 = 6 → every number" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't add the x-terms. To remove 2x, subtract 2x.", "write": "✗ 7x + 3 = 18" },
+        { "say": "Don't stop at 3x equals 15. Finish with x equals.", "write": "x = …" },
+        { "say": "Keep the sign with its term. In 7 minus 2x, the term is minus 2x.", "write": "−2x" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Smaller x moves out.", "write": "remove the smaller x-term" },
+        { "say": "Both pans, every time.", "write": "same to both sides" },
+        { "say": "Check both sides of the original equation.", "write": "check both sides" }
+      ] }
+  ]
+}

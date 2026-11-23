@@ -1,0 +1,597 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Finding the equation of a line",
+  "frames": [
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "Now we're given a line, and we have to write its rule.",
+          "write": "line → rule"
+        },
+        {
+          "say": "Every non-vertical line can be written as y equals m x plus c.",
+          "write": "y = mx + c"
+        },
+        {
+          "say": "m is the gradient. c is the y-intercept.",
+          "write": "m = gradient,  c = y-intercept"
+        },
+        {
+          "say": "So our job is to find two numbers: m and c.",
+          "write": "Find m, then c"
+        }
+      ]
+    },
+    {
+      "heading": "From a graph",
+      "lines": [
+        {
+          "say": "Here's a line. First read where it crosses the y-axis.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A sloping line",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 150.0,
+                "x2": 520,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 156.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 280.0,
+                "x2": 480.0,
+                "y2": 20.0,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It crosses at minus 3. So c equals minus 3.",
+          "write": "c = −3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Line crossing the y-axis at (0, −3)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 150.0,
+                "x2": 520,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 156.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 280.0,
+                "x2": 480.0,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 200.0,
+                "y": 247.5,
+                "r": 6,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 239.5,
+                "text": "c = −3",
+                "size": 18,
+                "change": "highlight",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "From (0, −3) to (2, 1), the run is 2 and the rise is 4.",
+          "write": "m = 4 ÷ 2 = 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Run of 2 and rise of 4 from (0, −3) to (2, 1)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 150.0,
+                "x2": 520,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 156.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 280.0,
+                "x2": 480.0,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 200.0,
+                "y": 247.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 360.0,
+                "y": 117.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "line",
+                "x": 200.0,
+                "y": 247.5,
+                "x2": 360.0,
+                "y2": 247.5,
+                "color": "green",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 360.0,
+                "y": 247.5,
+                "x2": 360.0,
+                "y2": 117.5,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 267.5,
+                "text": "run 2",
+                "size": 16,
+                "change": "add",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 368.0,
+                "y": 174.5,
+                "text": "rise 4",
+                "size": 16,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the gradient is 2, and the equation is y equals 2x minus 3.",
+          "write": "y = 2x − 3"
+        },
+        {
+          "say": "Check: x equals 2 gives 4 minus 3, which is 1. It matches.",
+          "write": "2(2) − 3 = 1 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "From a gradient and a point",
+      "lines": [
+        {
+          "say": "Gradient 3, through the point (2, 5). Start with what we know.",
+          "write": "y = 3x + c",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "The point (2, 5)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 232.7,
+                "x2": 520,
+                "y2": 232.7,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 160.0,
+                "y": 280,
+                "x2": 160.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 238.7,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 114.5,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 408.0,
+                "y": 106.5,
+                "text": "(2, 5)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The point is on the line, so it must make the rule true.",
+          "write": "5 = 3(2) + c"
+        },
+        {
+          "say": "3 times 2 is 6. So 5 equals 6 plus c.",
+          "write": "5 = 6 + c"
+        },
+        {
+          "say": "Take 6 from both sides. c is minus 1.",
+          "write": "c = −1"
+        },
+        {
+          "say": "The equation is y equals 3x minus 1.",
+          "write": "y = 3x − 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "The line y = 3x − 1 through (2, 5)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 232.7,
+                "x2": 520,
+                "y2": 232.7,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 160.0,
+                "y": 280,
+                "x2": 160.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 238.7,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 114.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 408.0,
+                "y": 106.5,
+                "text": "(2, 5)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 280.0,
+                "x2": 520.0,
+                "y2": 43.6,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 160.0,
+                "y": 256.4,
+                "r": 6,
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 248.39999999999998,
+                "text": "c = −1",
+                "size": 16,
+                "change": "highlight",
+                "anchor": "start"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "From two points",
+      "lines": [
+        {
+          "say": "Two points: (−2, 7) and (4, −2). Find the gradient first.",
+          "diagram": "diagrams/y9/maths/finding-the-equation-of-a-line-two.svg",
+          "alt": "A line through (−2, 7) and (4, −2)"
+        },
+        {
+          "say": "Rise is minus 9, run is 6. So m is minus three over two.",
+          "write": "m = −9 ÷ 6 = −3/2"
+        },
+        {
+          "say": "Substitute (−2, 7). Minus three halves times minus 2 is plus 3.",
+          "write": "7 = (−3/2)(−2) + c = 3 + c"
+        },
+        {
+          "say": "Take 3 from both sides, so c equals 4.",
+          "write": "y = −3/2 x + 4"
+        },
+        {
+          "say": "Check with the other point. Minus 6 plus 4 is minus 2. It works.",
+          "write": "(−3/2)(4) + 4 = −2 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "From the intercepts",
+      "lines": [
+        {
+          "say": "x-intercept 6 and y-intercept minus 2. These are two points.",
+          "write": "(6, 0) and (0, −2)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Line through the intercepts (6, 0) and (0, −2)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 150.0,
+                "x2": 520,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 184.0,
+                "y": 280,
+                "x2": 184.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 156.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 192.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 40.0,
+                "y": 280.0,
+                "x2": 520.0,
+                "y2": 135.6,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 472.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 452.0,
+                "y": 174.0,
+                "text": "(6, 0)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 184.0,
+                "y": 236.7,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 192.0,
+                "y": 228.7,
+                "text": "(0, −2)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The gradient is 2 over 6, which is one third.",
+          "write": "m = 2 ÷ 6 = ⅓"
+        },
+        {
+          "say": "c is the y-intercept, minus 2. So y equals one third x minus 2.",
+          "write": "y = ⅓x − 2"
+        },
+        {
+          "say": "A horizontal line is y equals a number. A vertical line is x equals a number.",
+          "write": "y = b      x = a"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't use the x-intercept as c. c is where it crosses the y-axis.",
+          "write": "c = y when x = 0"
+        },
+        {
+          "say": "Don't forget to multiply by m. It's 3 times 2, not just 2.",
+          "write": "✗ 5 = 2 + c"
+        },
+        {
+          "say": "Put negatives in brackets and multiply signs carefully.",
+          "write": "(−3/2)(−2) = +3"
+        },
+        {
+          "say": "Don't stop at m. Find c too, then check with a point.",
+          "write": "m, c, check"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Find m, then find c, then check.",
+          "write": "m → c → check"
+        },
+        {
+          "say": "A point on the line makes the rule true. Substitute it to find c.",
+          "write": "substitute the point"
+        },
+        {
+          "say": "From two points, the gradient comes first.",
+          "write": "m = (y₂ − y₁) ÷ (x₂ − x₁)"
+        },
+        {
+          "say": "Vertical lines are x equals a number. They have no y equals m x plus c form.",
+          "write": "vertical: x = a"
+        }
+      ]
+    }
+  ]
+}

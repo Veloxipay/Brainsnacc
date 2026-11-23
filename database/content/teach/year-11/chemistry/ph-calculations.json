@@ -1,0 +1,1601 @@
+{
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "pH calculations",
+  "frames": [
+    {
+      "heading": "Water ionises itself",
+      "lines": [
+        {
+          "say": "Even pure water has a few ions. One water passes a proton to another.",
+          "write": "H₂O + H₂O ⇌ H₃O⁺ + OH⁻"
+        },
+        {
+          "say": "In pure water at 25 degrees, both are 1.0 times 10 to the minus 7.",
+          "write": "[H₃O⁺] = [OH⁻] = 1.0 × 10⁻⁷ M"
+        },
+        {
+          "say": "Their product is always 1.00 times 10 to the minus 14. This is K w.",
+          "write": "Kw = [H₃O⁺][OH⁻] = 1.00 × 10⁻¹⁴",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Seesaw balanced",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    200
+                  ],
+                  [
+                    250,
+                    250
+                  ],
+                  [
+                    310,
+                    250
+                  ]
+                ],
+                "fill": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 200,
+                "x2": 460,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "red",
+                "label": "H₃O⁺"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "blue",
+                "label": "OH⁻"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add acid and H 3 O plus goes up. So O H minus must come down.",
+          "write": "one up, the other down",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Seesaw tipped",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    200
+                  ],
+                  [
+                    250,
+                    250
+                  ],
+                  [
+                    310,
+                    250
+                  ]
+                ],
+                "fill": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 230,
+                "x2": 460,
+                "y2": 170,
+                "color": "black",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 150,
+                "w": 120,
+                "h": 60,
+                "fill": "red",
+                "label": "H₃O⁺ ↑",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 90,
+                "w": 120,
+                "h": 60,
+                "fill": "blue",
+                "label": "OH⁻ ↓",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Acidic means more H 3 O plus. Basic means more O H minus.",
+          "write": "acidic: [H₃O⁺] > [OH⁻]"
+        },
+        {
+          "say": "K w rises with temperature. Assume 25 degrees unless told.",
+          "write": "assume 25 °C"
+        }
+      ]
+    },
+    {
+      "heading": "The pH scale",
+      "lines": [
+        {
+          "say": "pH is minus log of the H 3 O plus concentration.",
+          "write": "pH = −log₁₀[H₃O⁺]",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "pH scale",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 56,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 92,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 164,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 236,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 272,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "green"
+              },
+              {
+                "kind": "rect",
+                "x": 308,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 344,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 416,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 488,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 524,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 38,
+                "y": 195,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 195,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 182,
+                "y": 195,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 254,
+                "y": 195,
+                "text": "6",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 326,
+                "y": 195,
+                "text": "8",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 398,
+                "y": 195,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 195,
+                "text": "12",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 542,
+                "y": 195,
+                "text": "14",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The minus sign flips it. Higher H 3 O plus, lower pH.",
+          "write": "higher [H₃O⁺] → lower pH"
+        },
+        {
+          "say": "Neutral is 7 at 25 degrees. Below 7 is acidic.",
+          "write": "neutral pH 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Neutral",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 56,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 92,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 164,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 236,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 272,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "green"
+              },
+              {
+                "kind": "rect",
+                "x": 308,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 344,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 416,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 488,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 524,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 38,
+                "y": 195,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 195,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 182,
+                "y": 195,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 254,
+                "y": 195,
+                "text": "6",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 326,
+                "y": 195,
+                "text": "8",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 398,
+                "y": 195,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 195,
+                "text": "12",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 542,
+                "y": 195,
+                "text": "14",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 290,
+                "y": 60,
+                "x2": 290,
+                "y2": 105,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 50,
+                "text": "pH 7",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each pH step is times 10, like the Richter scale.",
+          "write": "1 pH unit = × 10"
+        },
+        {
+          "say": "pH 3 has 100 times the H 3 O plus of pH 5.",
+          "write": "pH 3 vs 5: × 100"
+        },
+        {
+          "say": "To go back, H 3 O plus equals 10 to the minus pH.",
+          "write": "[H₃O⁺] = 10⁻ᵖᴴ"
+        }
+      ]
+    },
+    {
+      "heading": "Strong acids",
+      "lines": [
+        {
+          "say": "Strong acids ionise completely, one proton each.",
+          "write": "[H₃O⁺] = c(acid)"
+        },
+        {
+          "say": "For 0.050 molar nitric acid, H 3 O plus is 0.050.",
+          "write": "[H₃O⁺] = 0.050 M"
+        },
+        {
+          "say": "Minus log of 0.050 gives pH 1.30.",
+          "write": "pH = 1.30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "pH 1.30",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 56,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 92,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 164,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 236,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 272,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "green"
+              },
+              {
+                "kind": "rect",
+                "x": 308,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 344,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 416,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 488,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 524,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 38,
+                "y": 195,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 195,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 182,
+                "y": 195,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 254,
+                "y": 195,
+                "text": "6",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 326,
+                "y": 195,
+                "text": "8",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 398,
+                "y": 195,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 195,
+                "text": "12",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 542,
+                "y": 195,
+                "text": "14",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 74,
+                "y": 60,
+                "x2": 74,
+                "y2": 105,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 74,
+                "y": 50,
+                "text": "pH 1",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Two sig figs in the concentration means two decimal places in pH.",
+          "write": "2 s.f. → 2 d.p."
+        }
+      ]
+    },
+    {
+      "heading": "Strong bases take a detour",
+      "lines": [
+        {
+          "say": "Sodium hydroxide 0.020 molar gives O H minus of 0.020.",
+          "write": "[OH⁻] = 0.020 M"
+        },
+        {
+          "say": "Use K w to convert. H 3 O plus is 5.0 times 10 to the minus 13.",
+          "write": "[H₃O⁺] = 10⁻¹⁴ ÷ 0.020"
+        },
+        {
+          "say": "Then take minus log. pH is 12.30.",
+          "write": "pH = 12.30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "pH 12.30",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 56,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 92,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 164,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 236,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 272,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "green"
+              },
+              {
+                "kind": "rect",
+                "x": 308,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 344,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 416,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 488,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 524,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 38,
+                "y": 195,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 195,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 182,
+                "y": 195,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 254,
+                "y": 195,
+                "text": "6",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 326,
+                "y": 195,
+                "text": "8",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 398,
+                "y": 195,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 195,
+                "text": "12",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 542,
+                "y": 195,
+                "text": "14",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 470,
+                "y": 60,
+                "x2": 470,
+                "y2": 105,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 50,
+                "text": "pH 12",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Never call minus log of O H minus the pH.",
+          "write": "✗ −log[OH⁻] = pH"
+        },
+        {
+          "say": "Barium hydroxide gives two O H minus for each formula unit.",
+          "write": "Ba(OH)₂ → 2OH⁻"
+        }
+      ]
+    },
+    {
+      "heading": "From pH back to concentration",
+      "lines": [
+        {
+          "say": "Rainwater has pH 4.60.",
+          "write": "pH = 4.60"
+        },
+        {
+          "say": "H 3 O plus is 10 to the minus 4.60, which is 2.5 times 10 to minus 5.",
+          "write": "[H₃O⁺] = 2.5 × 10⁻⁵ M"
+        },
+        {
+          "say": "Then O H minus is K w divided by that: 4.0 times 10 to minus 10.",
+          "write": "[OH⁻] = 4.0 × 10⁻¹⁰ M"
+        }
+      ]
+    },
+    {
+      "heading": "Dilution",
+      "lines": [
+        {
+          "say": "Diluting keeps the moles, but spreads them out. c 1 V 1 equals c 2 V 2.",
+          "write": "c₁V₁ = c₂V₂"
+        },
+        {
+          "say": "Dilute a strong acid 10 times and the pH rises by 1.",
+          "write": "× 10 dilution → pH + 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Dilution raises pH",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 56,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 92,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 164,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 236,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 272,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "green"
+              },
+              {
+                "kind": "rect",
+                "x": 308,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 344,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 416,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 488,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 524,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 38,
+                "y": 195,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 195,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 182,
+                "y": 195,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 254,
+                "y": 195,
+                "text": "6",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 326,
+                "y": 195,
+                "text": "8",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 398,
+                "y": 195,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 195,
+                "text": "12",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 542,
+                "y": 195,
+                "text": "14",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 74,
+                "y": 60,
+                "x2": 74,
+                "y2": 105,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 74,
+                "y": 50,
+                "text": "pH 1",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 74,
+                "y": 240,
+                "x2": 110,
+                "y2": 240,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 270,
+                "text": "+1",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "20.0 millilitres of 0.100 molar H Cl, made up to 500.0.",
+          "write": "c₂ = 0.100 × 20.0 ÷ 500.0"
+        },
+        {
+          "say": "That is 0.00400 molar, so the pH is 2.398.",
+          "write": "pH = 2.398"
+        },
+        {
+          "say": "Diluting walks towards 7, but never crosses it.",
+          "write": "approaches 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Approaching 7",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 56,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 92,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 164,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 236,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 272,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "green"
+              },
+              {
+                "kind": "rect",
+                "x": 308,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 344,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 416,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 488,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 524,
+                "y": 110,
+                "w": 36,
+                "h": 60,
+                "fill": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 38,
+                "y": 195,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 195,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 182,
+                "y": 195,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 254,
+                "y": 195,
+                "text": "6",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 326,
+                "y": 195,
+                "text": "8",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 398,
+                "y": 195,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 195,
+                "text": "12",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 542,
+                "y": 195,
+                "text": "14",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 74,
+                "y": 240,
+                "x2": 282.79999999999995,
+                "y2": 240,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 270,
+                "text": "acid → 7, never past",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "pH equals minus log of H 3 O plus.",
+          "write": "pH = −log₁₀[H₃O⁺]"
+        },
+        {
+          "say": "K w is 1.00 times 10 to the minus 14 at 25 degrees.",
+          "write": "Kw = 1.00 × 10⁻¹⁴"
+        },
+        {
+          "say": "Bases: find O H minus, convert with K w, then take the log.",
+          "write": "[OH⁻] → [H₃O⁺] → pH"
+        },
+        {
+          "say": "Each pH unit is a factor of 10.",
+          "write": "× 10 per unit"
+        }
+      ]
+    }
+  ]
+}

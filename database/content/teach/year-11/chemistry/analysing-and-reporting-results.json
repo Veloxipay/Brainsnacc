@@ -1,0 +1,867 @@
+{
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "Analysing and reporting results",
+  "frames": [
+    {
+      "heading": "Tables and graphs",
+      "lines": [
+        {
+          "say": "Record raw data in a table as you collect it.",
+          "write": "results table"
+        },
+        {
+          "say": "Independent variable first. Units go in the column headings.",
+          "write": "Volume of H₂ (mL)"
+        },
+        {
+          "say": "Include a column for the mean of repeat trials.",
+          "write": "mean column"
+        },
+        {
+          "say": "DRY MIX: dependent on the y axis, independent on the x axis.",
+          "write": "DRY MIX",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Axes",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 80,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 295,
+                "text": "[HCl] (mol L⁻¹)  →  x",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 150,
+                "text": "y",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Use a line graph for numbers, a bar graph for categories.",
+          "write": "line vs bar"
+        }
+      ]
+    },
+    {
+      "heading": "Line of best fit",
+      "lines": [
+        {
+          "say": "Plot the mean volumes: 12, 24 and 36 millilitres.",
+          "write": "12.0, 24.0, 36.0 mL",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Points",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 80,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 295,
+                "text": "[HCl] (mol L⁻¹)  →  x",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 150,
+                "text": "y",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 215,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290,
+                "y": 155,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 95,
+                "r": 8,
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw a line of best fit. It is an average path, not dot to dot.",
+          "write": "line of best fit",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Best fit line",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 80,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 295,
+                "text": "[HCl] (mol L⁻¹)  →  x",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 150,
+                "text": "y",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 215,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290,
+                "y": 155,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 95,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 260,
+                "x2": 470,
+                "y2": 65,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It is straight through the origin. So they are directly proportional.",
+          "write": "directly proportional"
+        },
+        {
+          "say": "Gradient is rise over run: 24.0 over 1.00.",
+          "write": "gradient = 24.0 mL L mol⁻¹"
+        },
+        {
+          "say": "Interpolate inside the range. At 0.75, that gives 18.0 millilitres.",
+          "write": "0.75 M → 18.0 mL"
+        },
+        {
+          "say": "Extrapolating outside the range is risky.",
+          "write": "inter = inside, extra = outside"
+        }
+      ]
+    },
+    {
+      "heading": "Accuracy and precision",
+      "lines": [
+        {
+          "say": "Picture a dartboard. The bullseye is the true value.",
+          "write": "true value = bullseye"
+        },
+        {
+          "say": "Precise means the darts cluster together, wherever they land.",
+          "write": "precise = close together",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Precise but not accurate",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 50,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 50,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 70,
+                "y": 90,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 78,
+                "y": 96,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 66,
+                "y": 100,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "left: precise, not accurate",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Accurate means close to the bullseye.",
+          "write": "accurate = near true value",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Accurate and precise",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 50,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 50,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 140,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 70,
+                "y": 90,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 78,
+                "y": 96,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 66,
+                "y": 100,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 418,
+                "y": 138,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 424,
+                "y": 144,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 414,
+                "y": 146,
+                "r": 8,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "right: accurate and precise",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Student P got 4.70, 4.71, 4.69 grams for a 5.00 gram sample.",
+          "write": "P: precise, not accurate"
+        },
+        {
+          "say": "Student Q averaged 5.00, but the results were spread out.",
+          "write": "Q: accurate, not precise"
+        }
+      ]
+    },
+    {
+      "heading": "Random and systematic errors",
+      "lines": [
+        {
+          "say": "An error is a difference from the true value, not a mistake.",
+          "write": "error ≠ mistake"
+        },
+        {
+          "say": "Random scatters. Results spread both sides of the true value.",
+          "write": "random → scatter",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Random error",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 150,
+                "x2": 520,
+                "y2": 150,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 140,
+                "text": "true",
+                "size": 16,
+                "color": "red",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 120,
+                "r": 9,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 175,
+                "r": 9,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 130,
+                "r": 9,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 170,
+                "r": 9,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 135,
+                "r": 9,
+                "fill": "blue",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "More repeats help with random error.",
+          "write": "repeat and average"
+        },
+        {
+          "say": "Systematic shifts. Every result moves the same way.",
+          "write": "systematic → shift",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Systematic error",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 150,
+                "x2": 520,
+                "y2": 150,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 140,
+                "text": "true",
+                "size": 16,
+                "color": "red",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 215,
+                "r": 9,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 222,
+                "r": 9,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 218,
+                "r": 9,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 220,
+                "r": 9,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 216,
+                "r": 9,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 470,
+                "y": 160,
+                "x2": 470,
+                "y2": 205,
+                "color": "orange"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Repeating does not fix it. Calibrate or improve the method.",
+          "write": "calibrate, fix method"
+        },
+        {
+          "say": "Spills and misreadings are mistakes. Repeat those trials.",
+          "write": "mistakes: repeat"
+        }
+      ]
+    },
+    {
+      "heading": "Uncertainty and outliers",
+      "lines": [
+        {
+          "say": "A scale reading is plus or minus half the smallest division.",
+          "write": "±½ smallest division"
+        },
+        {
+          "say": "Titres of 20.05, 20.10 and 20.15 give 20.10 plus or minus 0.05.",
+          "write": "20.10 ± 0.05 mL"
+        },
+        {
+          "say": "An outlier does not fit the pattern.",
+          "write": "outlier",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Outlier",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 80,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 295,
+                "text": "[HCl] (mol L⁻¹)  →  x",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 150,
+                "text": "y",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 215,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 290,
+                "y": 155,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 95,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 260,
+                "x2": 470,
+                "y2": 65,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 200,
+                "r": 10,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 225,
+                "text": "outlier",
+                "size": 16,
+                "color": "red",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Suggest a cause, repeat it, and say if you left it out.",
+          "write": "never hide an outlier"
+        }
+      ]
+    },
+    {
+      "heading": "Validity and conclusions",
+      "lines": [
+        {
+          "say": "Valid means the experiment really tests the hypothesis.",
+          "write": "valid = fair test"
+        },
+        {
+          "say": "If temperature changed too, results are not valid, even if precise.",
+          "write": "control variables"
+        },
+        {
+          "say": "A conclusion quotes data. Tripled concentration, tripled volume.",
+          "write": "0.50 → 1.50: 12.0 → 36.0 mL"
+        },
+        {
+          "say": "Say the hypothesis is supported, not proven.",
+          "write": "supported, not proven"
+        },
+        {
+          "say": "Explain it with chemistry, and stay within the range tested.",
+          "write": "stay in range"
+        }
+      ]
+    },
+    {
+      "heading": "Reports and posters",
+      "lines": [
+        {
+          "say": "Title, introduction, method, results, discussion, conclusion, references.",
+          "write": "7 sections",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Report sections",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 15,
+                "w": 520,
+                "h": 32,
+                "fill": "grey",
+                "label": "Title"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 53,
+                "w": 520,
+                "h": 32,
+                "fill": "blue",
+                "label": "Introduction"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 91,
+                "w": 520,
+                "h": 32,
+                "fill": "teal",
+                "label": "Method"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 129,
+                "w": 520,
+                "h": 32,
+                "fill": "green",
+                "label": "Results"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 167,
+                "w": 520,
+                "h": 32,
+                "fill": "orange",
+                "label": "Discussion"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 205,
+                "w": 520,
+                "h": 32,
+                "fill": "purple",
+                "label": "Conclusion"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 243,
+                "w": 520,
+                "h": 32,
+                "fill": "grey",
+                "label": "References"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Write concisely, in third person and past tense.",
+          "write": "the solution was heated"
+        },
+        {
+          "say": "Name each error, classify it, and state its effect.",
+          "write": "name, classify, effect"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Accurate is near the bullseye. Precise is tightly grouped.",
+          "write": "dartboard"
+        },
+        {
+          "say": "Random scatters, systematic shifts.",
+          "write": "scatter vs shift"
+        },
+        {
+          "say": "DRY MIX for the axes.",
+          "write": "DRY MIX"
+        },
+        {
+          "say": "Quote data, and never say proven.",
+          "write": "quote data"
+        }
+      ]
+    }
+  ]
+}

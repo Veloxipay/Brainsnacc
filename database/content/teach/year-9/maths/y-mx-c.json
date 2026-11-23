@@ -1,0 +1,143 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "y = mx + c",
+  "frames": [
+    {
+      "heading": "What m and c mean",
+      "lines": [
+        { "say": "In y equals m x plus c, m is the gradient. It multiplies x.", "write": "m = gradient" },
+        { "say": "c is the y-intercept. The line crosses the y-axis at 0, c.", "write": "c = y-intercept (0, c)" },
+        { "say": "Like a taxi. c is the flag fall. m is the price per kilometre." },
+        { "say": "For y equals 3x plus 2, m is 3 and c is 2.", "write": "y = 3x + 2: m = 3, c = 2" }
+      ]
+    },
+    {
+      "heading": "Same c, different m",
+      "lines": [
+        {
+          "say": "Start with y equals x plus 2. It crosses the y-axis at 2.",
+          "write": "y = x + 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Line y = x + 2 crossing the y-axis at 2",
+            "items": [
+              { "kind": "line", "x": 40, "y": 240, "x2": 520, "y2": 240, "color": "black" },
+              { "kind": "line", "x": 280, "y": 20, "x2": 280, "y2": 310, "color": "black" },
+              { "kind": "line", "x": 140, "y": 300, "x2": 420, "y2": 20, "color": "blue" },
+              { "kind": "circle", "x": 280, "y": 160, "r": 7, "fill": "red" },
+              { "kind": "text", "x": 260, "y": 155, "text": "(0, 2)", "size": 18, "anchor": "end" }
+            ]
+          }
+        },
+        {
+          "say": "Change m to 3. Steeper, but still crossing at 2.",
+          "write": "y = 3x + 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Steeper line y = 3x + 2 added through the same point",
+            "items": [
+              { "kind": "line", "x": 40, "y": 240, "x2": 520, "y2": 240, "color": "black" },
+              { "kind": "line", "x": 280, "y": 20, "x2": 280, "y2": 310, "color": "black" },
+              { "kind": "line", "x": 140, "y": 300, "x2": 420, "y2": 20, "color": "blue" },
+              { "kind": "line", "x": 230, "y": 310, "x2": 330, "y2": 10, "color": "orange", "change": "add" },
+              { "kind": "circle", "x": 280, "y": 160, "r": 7, "fill": "red", "change": "highlight" },
+              { "kind": "text", "x": 260, "y": 155, "text": "(0, 2)", "size": 18, "anchor": "end" }
+            ]
+          }
+        },
+        {
+          "say": "Lines with the same c cross at the same point. m only changes the slope.",
+          "write": "y = −x + 2 slopes down",
+          "diagram": "diagrams/y9/maths/y-mx-c-family.svg",
+          "alt": "Three lines y = x + 2, y = 3x + 2 and y = −x + 2 all crossing at (0, 2)"
+        }
+      ]
+    },
+    {
+      "heading": "Reading m and c carefully",
+      "lines": [
+        { "say": "y equals 4 minus 3x. Reorder it so the x term comes first.", "write": "y = −3x + 4" },
+        { "say": "The sign belongs to its term. m is minus 3 and c is 4.", "write": "m = −3, c = 4" },
+        { "say": "y equals minus x. m is minus 1, c is 0. It goes through the origin.", "write": "y = −x: c = 0" },
+        { "say": "y equals 5 has m equal to 0. It's a horizontal line.", "write": "y = 5: m = 0" }
+      ]
+    },
+    {
+      "heading": "Getting y on its own",
+      "lines": [
+        { "say": "2x plus 3y equals 12 is in general form.", "write": "2x + 3y = 12" },
+        { "say": "Subtract 2x from both sides.", "write": "3y = −2x + 12" },
+        { "say": "Divide every term by 3.", "write": "y = −⅔x + 4" },
+        { "say": "So m is minus two thirds and c is 4.", "write": "m = −⅔, c = 4" },
+        { "say": "Y first, then read." }
+      ]
+    },
+    {
+      "heading": "Sketching a line",
+      "lines": [
+        {
+          "say": "Sketch y equals two thirds x minus 2. Plot the y-intercept first.",
+          "write": "start at (0, −2)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Axes with the point (0, −2) plotted",
+            "items": [
+              { "kind": "line", "x": 40, "y": 160, "x2": 520, "y2": 160, "color": "black" },
+              { "kind": "line", "x": 200, "y": 20, "x2": 200, "y2": 310, "color": "black" },
+              { "kind": "circle", "x": 200, "y": 240, "r": 8, "fill": "red", "change": "add" },
+              { "kind": "text", "x": 185, "y": 250, "text": "(0, −2)", "size": 18, "anchor": "end" }
+            ]
+          }
+        },
+        {
+          "say": "m is two thirds. Run 3 across, rise 2 up. That's 3, 0.",
+          "write": "run 3, rise 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Run 3 right and rise 2 up to reach (3, 0)",
+            "items": [
+              { "kind": "line", "x": 40, "y": 160, "x2": 520, "y2": 160, "color": "black" },
+              { "kind": "line", "x": 200, "y": 20, "x2": 200, "y2": 310, "color": "black" },
+              { "kind": "circle", "x": 200, "y": 240, "r": 8, "fill": "red" },
+              { "kind": "text", "x": 185, "y": 250, "text": "(0, −2)", "size": 18, "anchor": "end" },
+              { "kind": "arrow", "x": 200, "y": 240, "x2": 320, "y2": 240, "color": "orange", "change": "add" },
+              { "kind": "arrow", "x": 320, "y": 240, "x2": 320, "y2": 160, "color": "green", "change": "add" },
+              { "kind": "text", "x": 260, "y": 270, "text": "run 3", "size": 18, "anchor": "middle", "color": "orange" },
+              { "kind": "text", "x": 330, "y": 205, "text": "rise 2", "size": 18, "color": "green" },
+              { "kind": "circle", "x": 320, "y": 160, "r": 8, "fill": "red", "change": "add" }
+            ]
+          }
+        },
+        {
+          "say": "Rule a line through both points.",
+          "write": "y = ⅔x − 2",
+          "diagram": "diagrams/y9/maths/y-mx-c-sketch.svg",
+          "alt": "Line y = ⅔x − 2 from (0, −2) through (3, 0)"
+        }
+      ]
+    },
+    {
+      "heading": "m and c in real life",
+      "lines": [
+        { "say": "A plumber charges 80 dollars to come out, plus 60 dollars an hour.", "write": "C = 60t + 80" },
+        { "say": "m is 60, the rate per hour. c is 80, the cost at time 0.", "write": "m = 60/h, c = $80" },
+        { "say": "A 2.5 hour job costs 150 plus 80, which is 230 dollars.", "write": "C = 150 + 80 = $230" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "In 3x plus y equals 7, m is not 3. Rearrange first. It's minus 3.", "write": "y = −3x + 7" },
+        { "say": "Divide every term, not just one.", "write": "✗ y = −⅔x + 12" },
+        { "say": "c is the number on its own. m is attached to x.", "write": "y = 2x + 5: c = 5" },
+        { "say": "The top of the gradient is the rise. The bottom is the run.", "write": "m = rise/run" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "m for move, c for cross.", "write": "y = mx + c" },
+        { "say": "Start at 0, c. Then step with the gradient.", "write": "start, then step" },
+        { "say": "Get y on its own before you read m and c.", "write": "y first, then read" },
+        { "say": "Quick check. Put x equals 0. You should get c.", "write": "x = 0 → y = c ✓" }
+      ]
+    }
+  ]
+}

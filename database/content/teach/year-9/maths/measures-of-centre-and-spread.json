@@ -1,0 +1,974 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Measures of centre and spread",
+  "frames": [
+    {
+      "heading": "Centre and spread",
+      "lines": [
+        {
+          "say": "Line up for the school photo, shortest to tallest.",
+          "write": "order the data",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Seven students lined up from shortest to tallest",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 150,
+                "w": 50,
+                "h": 110,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 135,
+                "w": 50,
+                "h": 125,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 125,
+                "w": 50,
+                "h": 135,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 120,
+                "w": 50,
+                "h": 140,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 110,
+                "w": 50,
+                "h": 150,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 100,
+                "w": 50,
+                "h": 160,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 460,
+                "y": 90,
+                "w": 50,
+                "h": 170,
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The person in the exact middle is the median.",
+          "write": "median = middle",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Seven students lined up from shortest to tallest",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 150,
+                "w": 50,
+                "h": 110,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 135,
+                "w": 50,
+                "h": 125,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 125,
+                "w": 50,
+                "h": 135,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 120,
+                "w": 50,
+                "h": 140,
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 110,
+                "w": 50,
+                "h": 150,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 100,
+                "w": 50,
+                "h": 160,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 460,
+                "y": 90,
+                "w": 50,
+                "h": 170,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 40,
+                "text": "median: the middle person",
+                "size": 20,
+                "change": "add",
+                "bold": true,
+                "color": "orange"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The middles of each half are the quartiles.",
+          "write": "Q1 and Q3"
+        }
+      ]
+    },
+    {
+      "heading": "Measures of centre",
+      "lines": [
+        {
+          "say": "The mean is the sum of the values divided by how many there are.",
+          "write": "mean = sum ÷ count"
+        },
+        {
+          "say": "The median is the middle value, once the data is in order.",
+          "write": "position (n + 1) ÷ 2"
+        },
+        {
+          "say": "The mode is the most common value. There can be more than one, or none.",
+          "write": "mode = most common"
+        },
+        {
+          "say": "The mean uses every value, so an outlier drags it.",
+          "write": "outliers drag the mean"
+        }
+      ]
+    },
+    {
+      "heading": "A worked set of data",
+      "lines": [
+        {
+          "say": "Points in 11 games, put in order.",
+          "write": "4 7 7 9 10 12 13 15 15 15 21",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Eleven basketball scores in order with the median and quartiles marked",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 172,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 216,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 348,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 436,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "21"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The sum is 128. 128 over 11 is about 11.6.",
+          "write": "mean ≈ 11.6"
+        },
+        {
+          "say": "11 values, so the median is the 6th value: 12.",
+          "write": "median = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Eleven basketball scores in order with the median and quartiles marked",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 172,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 216,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "orange",
+                "label": "12",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 348,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 436,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "21"
+              },
+              {
+                "kind": "text",
+                "x": 282,
+                "y": 170,
+                "text": "median = 12 (6th value)",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "orange"
+              }
+            ]
+          }
+        },
+        {
+          "say": "15 appears three times, so the mode is 15.",
+          "write": "mode = 15"
+        },
+        {
+          "say": "The range is 21 minus 4, which is 17.",
+          "write": "range = 17"
+        }
+      ]
+    },
+    {
+      "heading": "Quartiles and IQR",
+      "lines": [
+        {
+          "say": "Leave out the median. Then find the middle of each half.",
+          "write": "Q1 = 7,  Q3 = 15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Eleven basketball scores in order with the median and quartiles marked",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "green",
+                "label": "7",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 172,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 216,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "grey",
+                "label": "12",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 348,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "green",
+                "label": "15",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 436,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "21"
+              },
+              {
+                "kind": "text",
+                "x": 148,
+                "y": 170,
+                "text": "Q1 = 7",
+                "size": 20,
+                "change": "add",
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 412,
+                "y": 170,
+                "text": "Q3 = 15",
+                "size": 20,
+                "change": "add",
+                "bold": true,
+                "color": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The interquartile range is Q3 minus Q1.",
+          "write": "IQR = Q3 − Q1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Eleven basketball scores in order with the median and quartiles marked",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "green",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 172,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 216,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 304,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 348,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "green",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 436,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "21"
+              },
+              {
+                "kind": "text",
+                "x": 148,
+                "y": 170,
+                "text": "Q1 = 7",
+                "size": 20,
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 412,
+                "y": 170,
+                "text": "Q3 = 15",
+                "size": 20,
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 282,
+                "y": 220,
+                "text": "IQR = 15 − 7 = 8",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It's the spread of the middle half, so outliers barely affect it.",
+          "diagram": "diagrams/y9/maths/measures-of-centre-and-spread-iqr.svg",
+          "alt": "Number line with Q1 = 7, median 12, Q3 = 15 and IQR = 8"
+        }
+      ]
+    },
+    {
+      "heading": "An even number of values",
+      "lines": [
+        {
+          "say": "Eight puzzle times, in order: 18 up to 35.",
+          "write": "18 19 21 23 26 27 30 35",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Eight puzzle times in order with the two middle values highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 116,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "19"
+              },
+              {
+                "kind": "rect",
+                "x": 172,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "21"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "26"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "27"
+              },
+              {
+                "kind": "rect",
+                "x": 396,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "35"
+              }
+            ]
+          }
+        },
+        {
+          "say": "No single middle. Average the 4th and 5th: 23 and 26.",
+          "write": "median = 24.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Eight puzzle times in order with the two middle values highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 116,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "19"
+              },
+              {
+                "kind": "rect",
+                "x": 172,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "21"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "green",
+                "label": "23",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "green",
+                "label": "26",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "27"
+              },
+              {
+                "kind": "rect",
+                "x": 396,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 452,
+                "y": 80,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "35"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "median = (23 + 26) ÷ 2 = 24.5",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Lower half: average 19 and 21. Upper half: average 27 and 30.",
+          "write": "Q1 = 20,  Q3 = 28.5"
+        },
+        {
+          "say": "So the IQR is 28.5 minus 20, which is 8.5 seconds.",
+          "write": "IQR = 8.5 s"
+        }
+      ]
+    },
+    {
+      "heading": "Mean from a frequency table",
+      "lines": [
+        {
+          "say": "25 students say how many siblings they have.",
+          "diagram": "diagrams/y9/maths/measures-of-centre-and-spread-ex3.svg",
+          "alt": "Column graph of siblings for 25 students: 5, 9, 7, 3, 1"
+        },
+        {
+          "say": "Multiply each value by its frequency. The total is 36.",
+          "write": "0 + 9 + 14 + 9 + 4 = 36"
+        },
+        {
+          "say": "Divide by 25 students, not 5 rows. The mean is 1.44.",
+          "write": "36 ÷ 25 = 1.44"
+        },
+        {
+          "say": "The 13th student has 1 sibling, so the median is 1.",
+          "write": "median = mode = 1"
+        }
+      ]
+    },
+    {
+      "heading": "Choosing and mistakes",
+      "lines": [
+        {
+          "say": "Symmetric with no outliers? Use the mean.",
+          "write": "symmetric → mean"
+        },
+        {
+          "say": "Skewed or has outliers? Use the median and IQR.",
+          "write": "outliers → median, IQR"
+        },
+        {
+          "say": "Always order the data before finding the median.",
+          "write": "order first!"
+        },
+        {
+          "say": "For an odd number of values, leave the median out of both halves.",
+          "write": "median not in halves"
+        },
+        {
+          "say": "The IQR is a difference, Q3 minus Q1. Not just Q3.",
+          "write": "IQR = Q3 − Q1"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Mean, median and mode measure the centre.",
+          "write": "centre: mean, median, mode"
+        },
+        {
+          "say": "Range and IQR measure the spread.",
+          "write": "spread: range, IQR"
+        },
+        {
+          "say": "The median and IQR resist outliers.",
+          "write": "resist outliers"
+        }
+      ]
+    }
+  ]
+}

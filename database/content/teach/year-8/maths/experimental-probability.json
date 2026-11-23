@@ -1,0 +1,682 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Experimental probability",
+  "frames": [
+    {
+      "heading": "Learning from experiments",
+      "lines": [
+        {
+          "say": "Will a bottle cap land top up? There's no neat list of outcomes.",
+          "write": "run an experiment"
+        },
+        {
+          "say": "So we run trials and count what happens.",
+          "write": "trials"
+        },
+        {
+          "say": "Experimental probability is successes divided by trials.",
+          "write": "P = successes ÷ trials"
+        },
+        {
+          "say": "A coin landed heads 18 times in 40. That's 0.45.",
+          "write": "18/40 = 0.45"
+        },
+        {
+          "say": "For more than 4 on a die, add the frequencies of 5 and 6 first.",
+          "write": "add the outcomes"
+        }
+      ]
+    },
+    {
+      "heading": "Two-step experiments",
+      "lines": [
+        {
+          "say": "Toss two coins. List every outcome: HH, HT, TH, TT.",
+          "write": "HH HT TH TT",
+          "diagram": "diagrams/y8/maths/experimental-probability-tree.svg",
+          "alt": "Tree diagram for two coins"
+        },
+        {
+          "say": "One of each can happen two ways. So its chance is a half.",
+          "write": "P(one of each) = 2/4"
+        },
+        {
+          "say": "HT and TH are different. They are not a third each.",
+          "write": "HT ≠ TH"
+        },
+        {
+          "say": "In 100 tosses, expect 25, 50 and 25.",
+          "write": "expected 25, 50, 25"
+        },
+        {
+          "say": "Results were 22, 53 and 25. Close. The coins look fair.",
+          "write": "22, 53, 25",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Column graph",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 80.0,
+                "y": 186.66666666666669,
+                "w": 101.33333333333334,
+                "h": 73.33333333333333,
+                "fill": "blue",
+                "label": "22"
+              },
+              {
+                "kind": "text",
+                "x": 130.66666666666669,
+                "y": 285,
+                "text": "two heads",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 233.33333333333334,
+                "y": 83.33333333333334,
+                "w": 101.33333333333334,
+                "h": 176.66666666666666,
+                "fill": "blue",
+                "label": "53"
+              },
+              {
+                "kind": "text",
+                "x": 284.0,
+                "y": 285,
+                "text": "one of each",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 386.6666666666667,
+                "y": 176.66666666666666,
+                "w": 101.33333333333334,
+                "h": 83.33333333333334,
+                "fill": "blue",
+                "label": "25"
+              },
+              {
+                "kind": "text",
+                "x": 437.33333333333337,
+                "y": 285,
+                "text": "two tails",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Combining results",
+      "lines": [
+        {
+          "say": "Four groups flipped a cap 25 times. Top up 9, 12, 8 and 11.",
+          "write": "9, 12, 8, 11 out of 25"
+        },
+        {
+          "say": "Their estimates vary, from 0.32 to 0.48. 25 trials is small.",
+          "write": "0.36 0.48 0.32 0.44",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Four groups pooled",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 110,
+                "h": 70,
+                "fill": "blue",
+                "label": "9/25"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 110,
+                "h": 70,
+                "fill": "blue",
+                "label": "12/25"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 60,
+                "w": 110,
+                "h": 70,
+                "fill": "blue",
+                "label": "8/25"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 60,
+                "w": 110,
+                "h": 70,
+                "fill": "blue",
+                "label": "11/25"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 140,
+                "x2": 280,
+                "y2": 190,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 195,
+                "w": 200,
+                "h": 70,
+                "fill": "green",
+                "change": "add",
+                "label": "40/100 = 0.4"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Pool the data. 40 top up out of 100 flips.",
+          "write": "40 ÷ 100 = 0.4"
+        },
+        {
+          "say": "The combined estimate uses more trials, so it's more reliable.",
+          "write": "pool the data"
+        },
+        {
+          "say": "With running totals, use the latest total. Don't add them.",
+          "write": "✗ add running totals"
+        }
+      ]
+    },
+    {
+      "heading": "Simulations",
+      "lines": [
+        {
+          "say": "A simulation copies a real situation with a random device.",
+          "write": "simulation"
+        },
+        {
+          "say": "Match the device to the chance. Coin for a half, die for a sixth.",
+          "write": "coin 1/2, die 1/6"
+        },
+        {
+          "say": "A four-section spinner for a quarter. Digits 0 to 2 for 0.3.",
+          "write": "spinner 1/4, digits 0.3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Devices matched to chances",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 120,
+                "r": 50,
+                "fill": "orange",
+                "label": "coin"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 210,
+                "text": "1/2",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 70,
+                "w": 100,
+                "h": 100,
+                "fill": "blue",
+                "label": "die"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 210,
+                "text": "1/6",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 120,
+                "r": 55,
+                "fill": "green",
+                "label": "spinner"
+              },
+              {
+                "kind": "line",
+                "x": 345,
+                "y": 120,
+                "x2": 455,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 65,
+                "x2": 400,
+                "y2": 175,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 210,
+                "text": "1/4",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "a coin can't simulate 1/4",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Three children, at least 2 girls? Toss 3 coins. Heads is a girl.",
+          "write": "3 coins = 1 trial"
+        },
+        {
+          "say": "21 out of 40 trials gives 0.525. Theory says 0.5. Close!",
+          "write": "21/40 = 0.525"
+        }
+      ]
+    },
+    {
+      "heading": "Is it biased?",
+      "lines": [
+        {
+          "say": "A spinner numbered 1 to 4 was spun 200 times.",
+          "write": "fair: about 50 each",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Column graph",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 80.0,
+                "y": 145.0,
+                "w": 76.0,
+                "h": 114.99999999999999,
+                "fill": "blue",
+                "label": "46"
+              },
+              {
+                "kind": "text",
+                "x": 118.0,
+                "y": 285,
+                "text": "1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 195.0,
+                "y": 165.0,
+                "w": 76.0,
+                "h": 95.0,
+                "fill": "blue",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 233.0,
+                "y": 285,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 310.0,
+                "y": 80.0,
+                "w": 76.0,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "72"
+              },
+              {
+                "kind": "text",
+                "x": 348.0,
+                "y": 285,
+                "text": "3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 425.0,
+                "y": 150.0,
+                "w": 76.0,
+                "h": 110.00000000000001,
+                "fill": "blue",
+                "label": "44"
+              },
+              {
+                "kind": "text",
+                "x": 463.0,
+                "y": 285,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A fair spinner gives about 50 of each.",
+          "write": "1/4 × 200 = 50",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Column graph",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 80.0,
+                "y": 145.0,
+                "w": 76.0,
+                "h": 114.99999999999999,
+                "fill": "blue",
+                "label": "46"
+              },
+              {
+                "kind": "text",
+                "x": 118.0,
+                "y": 285,
+                "text": "1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 195.0,
+                "y": 165.0,
+                "w": 76.0,
+                "h": 95.0,
+                "fill": "blue",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 233.0,
+                "y": 285,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 310.0,
+                "y": 80.0,
+                "w": 76.0,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "72"
+              },
+              {
+                "kind": "text",
+                "x": 348.0,
+                "y": 285,
+                "text": "3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 425.0,
+                "y": 150.0,
+                "w": 76.0,
+                "h": 110.00000000000001,
+                "fill": "blue",
+                "label": "44"
+              },
+              {
+                "kind": "text",
+                "x": 463.0,
+                "y": 285,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 135.0,
+                "x2": 540,
+                "y2": 135.0,
+                "color": "red",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 127.0,
+                "text": "expected 50",
+                "size": 16,
+                "color": "red",
+                "anchor": "end",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "3 came up 72 times. Far above 50 after 200 spins.",
+          "write": "P(3) = 72/200 = 0.36",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Column graph",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 80.0,
+                "y": 145.0,
+                "w": 76.0,
+                "h": 114.99999999999999,
+                "fill": "blue",
+                "label": "46"
+              },
+              {
+                "kind": "text",
+                "x": 118.0,
+                "y": 285,
+                "text": "1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 195.0,
+                "y": 165.0,
+                "w": 76.0,
+                "h": 95.0,
+                "fill": "blue",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 233.0,
+                "y": 285,
+                "text": "2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 310.0,
+                "y": 80.0,
+                "w": 76.0,
+                "h": 180.0,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "72"
+              },
+              {
+                "kind": "text",
+                "x": 348.0,
+                "y": 285,
+                "text": "3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 425.0,
+                "y": 150.0,
+                "w": 76.0,
+                "h": 110.00000000000001,
+                "fill": "blue",
+                "label": "44"
+              },
+              {
+                "kind": "text",
+                "x": 463.0,
+                "y": 285,
+                "text": "4",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 135.0,
+                "x2": 540,
+                "y2": 135.0,
+                "color": "red",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 127.0,
+                "text": "expected 50",
+                "size": 16,
+                "color": "red",
+                "anchor": "end",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So it may be biased towards 3. Spin more to be surer.",
+          "write": "biased?"
+        },
+        {
+          "say": "In 500 more spins, expect about 180 threes.",
+          "write": "0.36 × 500 = 180"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Count it, then divide by the tries.",
+          "write": "successes ÷ trials"
+        },
+        {
+          "say": "In two-step experiments, HT and TH are different.",
+          "write": "HT ≠ TH"
+        },
+        {
+          "say": "Pool the data. Match the device to the chance.",
+          "write": "pool • match"
+        },
+        {
+          "say": "Big samples, big trust. Judge fairness only after many trials.",
+          "write": "many trials"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1111 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Combustion and thermochemistry",
+  "frames": [
+    {
+      "heading": "What is combustion?",
+      "lines": [
+        {
+          "say": "Combustion is a fast reaction between a fuel and oxygen, releasing heat and light.",
+          "write": "fuel + O₂ → energy"
+        },
+        {
+          "say": "With plenty of oxygen, complete combustion gives only carbon dioxide and water.",
+          "write": "CH₄ + 2O₂ → CO₂ + 2H₂O"
+        },
+        {
+          "say": "With limited oxygen, some carbon becomes carbon monoxide or soot.",
+          "write": "2CH₄ + 3O₂ → 2CO + 4H₂O",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Blue flame versus yellow flame",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 150,
+                "r": 80,
+                "fill": "blue",
+                "label": "complete"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 265,
+                "text": "blue flame",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 80,
+                "fill": "yellow",
+                "label": "incomplete",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 265,
+                "text": "yellow, smoky",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Incomplete combustion releases less energy, and CO is toxic.",
+          "write": "less energy, toxic CO"
+        },
+        {
+          "say": "A blue flame means complete. A yellow, smoky flame means incomplete.",
+          "write": "blue vs yellow"
+        }
+      ]
+    },
+    {
+      "heading": "Balancing a combustion equation",
+      "lines": [
+        {
+          "say": "Ethanol burns. Write fuel and oxygen, then carbon dioxide and water.",
+          "write": "C₂H₅OH + O₂ → CO₂ + H₂O"
+        },
+        {
+          "say": "Two carbons, so two CO two.",
+          "write": "→ 2CO₂",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance carbon",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 100,
+                "w": 150,
+                "h": 70,
+                "fill": "orange",
+                "label": "C₂H₅OH"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 100,
+                "w": 80,
+                "h": 70,
+                "fill": "blue",
+                "label": "O₂"
+              },
+              {
+                "kind": "arrow",
+                "x": 290,
+                "y": 135,
+                "x2": 330,
+                "y2": 135,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 100,
+                "w": 90,
+                "h": 70,
+                "fill": "grey",
+                "label": "2CO₂",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 100,
+                "w": 100,
+                "h": 70,
+                "fill": "teal",
+                "label": "H₂O"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Six hydrogens, so three water.",
+          "write": "→ 3H₂O",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance hydrogen",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 100,
+                "w": 150,
+                "h": 70,
+                "fill": "orange",
+                "label": "C₂H₅OH"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 100,
+                "w": 80,
+                "h": 70,
+                "fill": "blue",
+                "label": "O₂"
+              },
+              {
+                "kind": "arrow",
+                "x": 290,
+                "y": 135,
+                "x2": 330,
+                "y2": 135,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 100,
+                "w": 90,
+                "h": 70,
+                "fill": "grey",
+                "label": "2CO₂"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 100,
+                "w": 100,
+                "h": 70,
+                "fill": "teal",
+                "label": "3H₂O",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Seven oxygens on the right. Ethanol gives one, so three O two.",
+          "write": "3O₂",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance oxygen",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 100,
+                "w": 150,
+                "h": 70,
+                "fill": "orange",
+                "label": "C₂H₅OH"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 100,
+                "w": 80,
+                "h": 70,
+                "fill": "blue",
+                "label": "3O₂",
+                "change": "highlight"
+              },
+              {
+                "kind": "arrow",
+                "x": 290,
+                "y": 135,
+                "x2": 330,
+                "y2": 135,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 100,
+                "w": 90,
+                "h": 70,
+                "fill": "grey",
+                "label": "2CO₂"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 100,
+                "w": 100,
+                "h": 70,
+                "fill": "teal",
+                "label": "3H₂O"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add states at SLC. Water is a liquid at 25 degrees.",
+          "write": "C₂H₅OH(l) + 3O₂ → 2CO₂ + 3H₂O(l)"
+        }
+      ]
+    },
+    {
+      "heading": "Exothermic and endothermic",
+      "lines": [
+        {
+          "say": "Delta H is the enthalpy of products minus reactants.",
+          "write": "ΔH = H(products) − H(reactants)"
+        },
+        {
+          "say": "Exothermic: products are lower. Delta H is negative, surroundings warm up.",
+          "write": "exothermic: ΔH < 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Exothermic profile",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 170,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 282,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 500,
+                "y": 200,
+                "x2": 500,
+                "y2": 260,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 236,
+                "text": "ΔH",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 500,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Endothermic: products are higher. Delta H is positive, surroundings cool.",
+          "write": "endothermic: ΔH > 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Endothermic profile",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 230,
+                "x2": 170,
+                "y2": 230,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 230,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 130,
+                "x2": 520,
+                "y2": 130,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 220,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 120,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 500,
+                "y": 230,
+                "x2": 500,
+                "y2": 130,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 186,
+                "text": "ΔH",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 230,
+                "x2": 500,
+                "y2": 230,
+                "color": "grey",
+                "dashed": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Breaking bonds absorbs energy. Making bonds releases it.",
+          "write": "break absorbs, form releases"
+        },
+        {
+          "say": "Bonds in CO two and water are strong, so combustion is exothermic.",
+          "write": "combustion is exothermic"
+        }
+      ]
+    },
+    {
+      "heading": "Thermochemical equations",
+      "lines": [
+        {
+          "say": "Add delta H to a balanced equation with states.",
+          "write": "ΔH = −890 kJ mol⁻¹"
+        },
+        {
+          "say": "Double the equation, and delta H doubles to minus 1780.",
+          "write": "×2 → −1780 kJ mol⁻¹"
+        },
+        {
+          "say": "Halve it, and you get minus 445.",
+          "write": "×½ → −445 kJ mol⁻¹"
+        },
+        {
+          "say": "Reverse it, and the sign flips to plus 890.",
+          "write": "reverse → +890 kJ mol⁻¹"
+        },
+        {
+          "say": "The data book lists heats of combustion as positive. Add the minus sign.",
+          "write": "methane: 890 kJ mol⁻¹"
+        }
+      ]
+    },
+    {
+      "heading": "Activation energy",
+      "lines": [
+        {
+          "say": "Here is an energy profile. The hill top is the transition state.",
+          "write": "transition state",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Energy profile",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 170,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 282,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Activation energy is measured from reactants to the top of the hill.",
+          "write": "Ea",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Activation energy shown",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 170,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 282,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 60,
+                "x2": 280,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 60,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 130,
+                "text": "Ea",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Reactants 100, top 250, so Ea is 150 kilojoules per mole.",
+          "write": "Ea = 250 − 100 = 150"
+        },
+        {
+          "say": "Products are at 40, so delta H is minus 60.",
+          "write": "ΔH = 40 − 100 = −60",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Delta H shown",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 170,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 282,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 60,
+                "x2": 280,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 60,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 130,
+                "text": "Ea",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "red"
+              },
+              {
+                "kind": "arrow",
+                "x": 500,
+                "y": 200,
+                "x2": 500,
+                "y2": 260,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 236,
+                "text": "ΔH",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 500,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Reverse Ea is 250 minus 40, which is 210.",
+          "write": "Ea(reverse) = 210"
+        },
+        {
+          "say": "A spark supplies Ea. Then the released heat keeps it going.",
+          "write": "spark → Ea"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Combustion delta H is negative, even though the data book shows positive.",
+          "write": "ΔH combustion < 0"
+        },
+        {
+          "say": "Scale delta H whenever you change the coefficients.",
+          "write": "scale ΔH"
+        },
+        {
+          "say": "At SLC, water is liquid, not gas.",
+          "write": "H₂O(l) not H₂O(g)"
+        },
+        {
+          "say": "Measure Ea from the reactants, not from the products or zero.",
+          "write": "Ea from reactants"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Complete combustion gives CO two and water. Incomplete adds CO and soot.",
+          "write": "complete vs incomplete"
+        },
+        {
+          "say": "Exothermic is negative delta H. Endothermic is positive.",
+          "write": "− exo, + endo"
+        },
+        {
+          "say": "Delta H scales with coefficients and flips sign when reversed.",
+          "write": "scale + flip"
+        },
+        {
+          "say": "Every reaction needs activation energy, even exothermic ones.",
+          "write": "Ea always",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Energy profile",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 290,
+                "x2": 540,
+                "y2": 290,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 20,
+                "text": "H",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 320,
+                "text": "reaction progress",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 170,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 280,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 390,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 390,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 282,
+                "text": "products",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 60,
+                "x2": 280,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 60,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 130,
+                "text": "Ea",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "red"
+              },
+              {
+                "kind": "arrow",
+                "x": 500,
+                "y": 200,
+                "x2": 500,
+                "y2": 260,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 236,
+                "text": "ΔH",
+                "size": 20,
+                "anchor": "end",
+                "bold": true,
+                "color": "purple"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 200,
+                "x2": 500,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

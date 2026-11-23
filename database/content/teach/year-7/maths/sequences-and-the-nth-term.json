@@ -1,0 +1,829 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Sequences and the nth term",
+  "frames": [
+    {
+      "heading": "Sequences that add",
+      "lines": [
+        {
+          "say": "A sequence is a list of numbers that follows a rule.",
+          "write": "7, 11, 15, 19, …",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 180,
+            "alt": "sequence boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 145,
+                "text": "T₁",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 145,
+                "text": "T₂",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 145,
+                "text": "T₃",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 345,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "19"
+              },
+              {
+                "kind": "text",
+                "x": 385,
+                "y": 145,
+                "text": "T₄",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each step adds 4. That's the common difference.",
+          "write": "d = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 180,
+            "alt": "sequence boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 145,
+                "text": "T₁",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 122,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 145,
+                "text": "T₂",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 227,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 145,
+                "text": "T₃",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 332,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 345,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "19"
+              },
+              {
+                "kind": "text",
+                "x": 385,
+                "y": 145,
+                "text": "T₄",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Tn means the term in position n.",
+          "write": "Tₙ = nth term"
+        },
+        {
+          "say": "Like a taxi: same cost per kilometre, plus a starting amount.",
+          "write": "cost × n + start"
+        }
+      ]
+    },
+    {
+      "heading": "Finding the nth term",
+      "lines": [
+        {
+          "say": "Every step adds 4, so the rule starts with 4n.",
+          "write": "4n …"
+        },
+        {
+          "say": "Step one back from the first term. 7 take 4 is 3.",
+          "write": "zeroth term = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 180,
+            "alt": "sequence boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "yellow",
+                "label": "3",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 145,
+                "text": "T₀",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 122,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 145,
+                "text": "T₁",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 227,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 145,
+                "text": "T₂",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 332,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 345,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "text",
+                "x": 385,
+                "y": 145,
+                "text": "T₃",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 437,
+                "y": 45,
+                "text": "+4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 60,
+                "w": 80,
+                "h": 60,
+                "fill": "blue",
+                "label": "19"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 145,
+                "text": "T₄",
+                "size": 18,
+                "color": "grey",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "That's the constant. So the rule is 4n plus 3.",
+          "write": "Tₙ = 4n + 3"
+        },
+        {
+          "say": "Check T1. 4 plus 3 is 7. Tick.",
+          "write": "T₁ = 4 + 3 = 7 ✓"
+        },
+        {
+          "say": "Now jump straight to T50. 4 times 50, plus 3, is 203.",
+          "write": "T₅₀ = 203"
+        }
+      ]
+    },
+    {
+      "heading": "Going down",
+      "lines": [
+        {
+          "say": "60, 54, 48. Now the difference is minus 6.",
+          "write": "d = −6",
+          "draw": {
+            "type": "numberline",
+            "from": -10,
+            "to": 70,
+            "start": 60,
+            "jump": -6
+          }
+        },
+        {
+          "say": "Step back one: 60 plus 6 is 66. So Tn is 66 minus 6n.",
+          "write": "Tₙ = 66 − 6n"
+        },
+        {
+          "say": "T11 is 66 take 66, which is zero. Zero isn't negative.",
+          "write": "T₁₁ = 0"
+        },
+        {
+          "say": "T12 is minus 6. That's the first negative term.",
+          "write": "T₁₂ = −6",
+          "draw": {
+            "type": "numberline",
+            "from": -10,
+            "to": 10,
+            "start": 0,
+            "jump": -6
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Is it a term?",
+      "lines": [
+        {
+          "say": "The rule is 7n minus 2. Is 166 a term?",
+          "write": "7n − 2 = 166"
+        },
+        {
+          "say": "Add 2 to both sides. 7n is 168. n is 24. Yes, it's T24.",
+          "write": "n = 24 ✓"
+        },
+        {
+          "say": "Is 150 a term? 7n would be 152.",
+          "write": "7n = 152"
+        },
+        {
+          "say": "152 over 7 is about 21.7. Not a whole number, so no.",
+          "write": "n = 21.7… ✗"
+        },
+        {
+          "say": "A position must be a positive whole number.",
+          "write": "n = 1, 2, 3, …"
+        }
+      ]
+    },
+    {
+      "heading": "Growing patterns",
+      "lines": [
+        {
+          "say": "One square of matchsticks uses 4 matches.",
+          "write": "T₁ = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "matchstick squares",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 50,
+                "x2": 40,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 50,
+                "x2": 100,
+                "y2": 50,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 110,
+                "x2": 100,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 50,
+                "x2": 100,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "1 squares: 4 matches",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each new square shares a side, so it adds just 3.",
+          "write": "+3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "matchstick squares",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 50,
+                "x2": 40,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 50,
+                "x2": 100,
+                "y2": 50,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 110,
+                "x2": 100,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 50,
+                "x2": 100,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 50,
+                "x2": 160,
+                "y2": 50,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 110,
+                "x2": 160,
+                "y2": 110,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 160,
+                "y": 50,
+                "x2": 160,
+                "y2": 110,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "2 squares: 7 matches",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Three squares use 10. The rule is 3n plus 1.",
+          "write": "Tₙ = 3n + 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "matchstick squares",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 50,
+                "x2": 40,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 50,
+                "x2": 100,
+                "y2": 50,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 110,
+                "x2": 100,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 50,
+                "x2": 100,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 50,
+                "x2": 160,
+                "y2": 50,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 110,
+                "x2": 160,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 160,
+                "y": 50,
+                "x2": 160,
+                "y2": 110,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 160,
+                "y": 50,
+                "x2": 220,
+                "y2": 50,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 160,
+                "y": 110,
+                "x2": 220,
+                "y2": 110,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 220,
+                "y": 50,
+                "x2": 220,
+                "y2": 110,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "3 squares: 10 matches",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "With 100 matches, 3n plus 1 is 100. So n is 33 squares.",
+          "write": "3n = 99, n = 33"
+        }
+      ]
+    },
+    {
+      "heading": "Sequences that multiply",
+      "lines": [
+        {
+          "say": "3, 6, 12, 24. Each term is doubled. That's geometric.",
+          "write": "× 2 each time",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "geometric growth",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 215,
+                "w": 80,
+                "h": 25,
+                "fill": "green",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 190,
+                "w": 80,
+                "h": 50,
+                "fill": "green",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 140,
+                "w": 80,
+                "h": 100,
+                "fill": "green",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 40,
+                "w": 80,
+                "h": 200,
+                "fill": "green",
+                "label": "24",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "T10 is 3 times 2 to the nine. That's 1536.",
+          "write": "Tₙ = 3 × 2ⁿ⁻¹"
+        },
+        {
+          "say": "Square numbers: 1, 4, 9, 16. The gaps go 3, 5, 7.",
+          "write": "Tₙ = n²"
+        },
+        {
+          "say": "Same difference, arithmetic. Same ratio, geometric. Gaps up by 2, think n squared.",
+          "write": "+ steady · × explodes"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "The constant is not the first term. 4n plus 7 is wrong.",
+          "write": "✗ 4n + 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 210,
+            "alt": "wrong constant",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 70,
+                "text": "Tₙ = 4n + 7",
+                "size": 32,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "Tₙ = 4n + 3",
+                "size": 32,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The difference multiplies n. Don't write n plus 4.",
+          "write": "✗ n + 4"
+        },
+        {
+          "say": "Going down? Subtract the n part, and the constant is bigger.",
+          "write": "66 − 6n"
+        },
+        {
+          "say": "n is where a term is. Tn is what it is.",
+          "write": "n = where, Tₙ = what"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Difference times n, then step back to zero.",
+          "write": "Tₙ = dn + (T₁ − d)"
+        },
+        {
+          "say": "Always test T1 and T2 in your rule.",
+          "write": "check T₁, T₂"
+        },
+        {
+          "say": "Is it a term? Solve it, then ask: is n whole?",
+          "write": "n whole? → yes"
+        },
+        {
+          "say": "Adding is steady. Multiplying explodes.",
+          "write": "arithmetic vs geometric"
+        }
+      ]
+    }
+  ]
+}

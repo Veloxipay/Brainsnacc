@@ -1,0 +1,83 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Stem cells",
+  "frames": [
+    { "heading": "What is a stem cell?",
+      "lines": [
+        { "say": "A stem cell is an unspecialised cell with two special properties.", "write": "stem cell = unspecialised" },
+        { "say": "Self-renewal. It divides by mitosis to make more stem cells.", "write": "1. self-renewal",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "A stem cell divides: one daughter stays a stem cell, the other differentiates", "items": [
+            { "kind": "circle", "x": 90, "y": 120, "r": 50, "fill": "teal", "label": "stem cell" },
+            { "kind": "arrow", "x": 145, "y": 110, "x2": 300, "y2": 60, "color": "black" },
+            { "kind": "circle", "x": 360, "y": 60, "r": 45, "fill": "teal", "label": "stem cell", "change": "add" }
+          ] } },
+        { "say": "Differentiation. It develops into a specialised cell type.", "write": "2. differentiation",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "A stem cell divides: one daughter stays a stem cell, the other becomes a red blood cell", "items": [
+            { "kind": "circle", "x": 90, "y": 120, "r": 50, "fill": "teal", "label": "stem cell" },
+            { "kind": "arrow", "x": 145, "y": 110, "x2": 300, "y2": 60, "color": "black" },
+            { "kind": "circle", "x": 360, "y": 60, "r": 45, "fill": "teal", "label": "stem cell" },
+            { "kind": "arrow", "x": 145, "y": 130, "x2": 300, "y2": 180, "color": "black", "change": "add" },
+            { "kind": "circle", "x": 360, "y": 185, "r": 45, "fill": "red", "label": "red blood cell", "change": "add" }
+          ] } },
+        { "say": "Like a footy academy. Keep some players back, promote the rest.", "write": "keep some, promote some" }
+      ] },
+    { "heading": "Differentiation and genes",
+      "lines": [
+        { "say": "Almost every cell in your body has the same DNA.", "write": "same DNA" },
+        { "say": "Cells become different because they express, or switch on, different genes.", "write": "different genes switched on" },
+        { "say": "Same cookbook, different recipes. Signals from nearby cells help decide.", "write": "same cookbook, different recipes" },
+        { "say": "Fully differentiated cells usually can't change type, and many stop dividing.", "write": "usually can't go back" }
+      ] },
+    { "heading": "Potency rolls downhill",
+      "lines": [
+        { "say": "Potency is how many cell types a stem cell can become.", "write": "potency",
+          "draw": { "type": "shapes", "width": 560, "height": 300, "alt": "Staircase down from totipotent to pluripotent, multipotent and unipotent", "items": [
+            { "kind": "rect", "x": 20, "y": 40, "w": 130, "h": 240, "fill": "purple", "label": "toti", "change": "highlight" },
+            { "kind": "rect", "x": 150, "y": 100, "w": 130, "h": 180, "fill": "blue", "label": "pluri" },
+            { "kind": "rect", "x": 280, "y": 160, "w": 130, "h": 120, "fill": "teal", "label": "multi" },
+            { "kind": "rect", "x": 410, "y": 220, "w": 130, "h": 60, "fill": "green", "label": "uni" },
+            { "kind": "text", "x": 85, "y": 30, "text": "all + placenta", "size": 16, "anchor": "middle" }
+          ] } },
+        { "say": "Totipotent: every cell type, including the placenta. The zygote is totipotent.", "write": "toti = total package" },
+        { "say": "Pluripotent: any body cell, but not the placenta. The inner cell mass of a blastocyst.", "write": "pluri: inner cell mass",
+          "draw": { "type": "shapes", "width": 560, "height": 300, "alt": "Staircase with pluripotent highlighted", "items": [
+            { "kind": "rect", "x": 20, "y": 40, "w": 130, "h": 240, "fill": "purple", "label": "toti" },
+            { "kind": "rect", "x": 150, "y": 100, "w": 130, "h": 180, "fill": "blue", "label": "pluri", "change": "highlight" },
+            { "kind": "rect", "x": 280, "y": 160, "w": 130, "h": 120, "fill": "teal", "label": "multi" },
+            { "kind": "rect", "x": 410, "y": 220, "w": 130, "h": 60, "fill": "green", "label": "uni" },
+            { "kind": "text", "x": 215, "y": 90, "text": "any body cell", "size": 16, "anchor": "middle" }
+          ] } },
+        { "say": "Multipotent: several types in one family, like blood stem cells in bone marrow.", "write": "multi: bone marrow" },
+        { "say": "Unipotent: just one cell type, like some skin stem cells.", "write": "uni: one type" }
+      ] },
+    { "heading": "Three sources of stem cells",
+      "lines": [
+        { "say": "Embryonic stem cells come from a blastocyst. They're pluripotent.", "write": "embryonic: pluripotent" },
+        { "say": "But collecting them destroys the embryo, and donor cells may be rejected.", "write": "embryo destroyed · rejection" },
+        { "say": "Adult stem cells come from tissues like bone marrow. The patient's own cells, so no rejection.", "write": "adult: own cells, no rejection" },
+        { "say": "But they're usually multipotent or unipotent, and rare.", "write": "narrower range" },
+        { "say": "iPS cells are ordinary skin cells, reprogrammed back to pluripotent. Rewinding the clock.", "write": "iPS: reprogrammed, pluripotent" },
+        { "say": "No embryo needed and they match the patient. Risks: genetic changes and tumours.", "write": "risk: tumours" }
+      ] },
+    { "heading": "Uses and ethics",
+      "lines": [
+        { "say": "Bone marrow transplants already treat leukaemia.", "write": "bone marrow → leukaemia" },
+        { "say": "Skin grown from a patient's own stem cells treats severe burns.", "write": "skin grafts → burns" },
+        { "say": "Treatments for spinal injury, diabetes and Parkinson's are mostly still in trials.", "write": "most still in trials" },
+        { "say": "Ethics: the status of the embryo, consent, safety, and cost.", "write": "embryo · consent · safety · cost" },
+        { "say": "In Australia, human embryo research needs a licence.", "write": "licence required" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Only totipotent cells can make the placenta and a whole organism.", "write": "toti ≠ pluri" },
+        { "say": "Differentiated cells have the same DNA. They express different genes.", "write": "✗ different DNA" },
+        { "say": "Adult stem cells are in children too. Adult just means not embryonic.", "write": "adult = not embryonic" },
+        { "say": "iPS cells come from body cells, not embryos.", "write": "✗ iPS from embryos" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Self-renewal and differentiation.", "write": "renew + differentiate" },
+        { "say": "Toti, pluri, multi, uni. Potency only rolls downhill.", "write": "toti → pluri → multi → uni" },
+        { "say": "Compare sources on potency, source, rejection risk and ethics.", "write": "potency, source, rejection, ethics" }
+      ] }
+  ]
+}

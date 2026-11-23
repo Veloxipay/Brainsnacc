@@ -1,0 +1,138 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Year 9 Semester 1 review",
+  "frames": [
+    {
+      "heading": "How this review works",
+      "lines": [
+        { "say": "This review covers chapters 1 to 5, all mixed up.", "write": "Chapters 1–5" },
+        { "say": "About 25 minutes for short answers, then 30 minutes for multiple choice.", "write": "55 minutes" },
+        { "say": "Use a calculator for trig, circles, cylinders and compound interest only.", "write": "calculator: some questions" },
+        {
+          "say": "Diagrams are to scale, but always work things out. Don't measure.",
+          "write": "work it out, don't measure",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "A ruler crossed out and a calculation highlighted",
+            "items": [
+              { "kind": "rect", "x": 40, "y": 70, "w": 200, "h": 40, "fill": "yellow", "label": "ruler", "change": "remove" },
+              { "kind": "text", "x": 400, "y": 100, "text": "c² = a² + b²", "size": 28, "bold": true, "color": "green", "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "80 percent or more and you're ready for Semester 2.", "write": "80%+ ready" }
+      ]
+    },
+    {
+      "heading": "Money",
+      "lines": [
+        { "say": "Significant figures start at the first non-zero digit. Zeros after it count.", "write": "0.0040|372 → 0.0040" },
+        {
+          "say": "Simple interest grows by the same amount each year.",
+          "write": "I = P × r × n",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "Simple interest equal columns versus compound interest growing columns",
+            "items": [
+              { "kind": "rect", "x": 40, "y": 160, "w": 50, "h": 80, "fill": "blue" },
+              { "kind": "rect", "x": 100, "y": 140, "w": 50, "h": 100, "fill": "blue" },
+              { "kind": "rect", "x": 160, "y": 120, "w": 50, "h": 120, "fill": "blue" },
+              { "kind": "text", "x": 125, "y": 40, "text": "simple: adds", "size": 20, "bold": true, "anchor": "middle" },
+              { "kind": "rect", "x": 320, "y": 160, "w": 50, "h": 80, "fill": "green", "change": "add" },
+              { "kind": "rect", "x": 380, "y": 136, "w": 50, "h": 104, "fill": "green", "change": "add" },
+              { "kind": "rect", "x": 440, "y": 100, "w": 50, "h": 140, "fill": "green", "change": "add" },
+              { "kind": "text", "x": 405, "y": 40, "text": "compound: multiplies", "size": 20, "bold": true, "anchor": "middle", "change": "add" }
+            ]
+          }
+        },
+        { "say": "Compound interest multiplies by 1 plus r each year.", "write": "A = P(1 + r)ⁿ" },
+        { "say": "Write the rate as a decimal. 4.5 percent is 0.045.", "write": "4.5% = 0.045" }
+      ]
+    },
+    {
+      "heading": "Equations and inequalities",
+      "lines": [
+        { "say": "Expand brackets first, then do the same to both sides.", "write": "expand → solve" },
+        {
+          "say": "Get the pronumerals on one side. Take the smaller x term off both sides.",
+          "write": "5x − 10 = 3x + 8",
+          "draw": { "type": "balance", "left": { "bags": 5, "cubes": -10 }, "right": { "bags": 3, "cubes": 8 } }
+        },
+        { "say": "Divide an inequality by a negative? Reverse the sign.", "write": "−2x > 8 → x < −4" },
+        { "say": "Check by putting a number back into the original.", "write": "Check ✓" }
+      ]
+    },
+    {
+      "heading": "Right-angled triangles",
+      "lines": [
+        {
+          "say": "Finding the longest side? Add the squares, then square root.",
+          "write": "c² = a² + b²",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 280, "alt": "Right-angled triangle with the hypotenuse highlighted",
+            "items": [
+              { "kind": "polygon", "points": [[100,240],[440,240],[100,60]], "fill": "none" },
+              { "kind": "rect", "x": 100, "y": 220, "w": 20, "h": 20, "fill": "none" },
+              { "kind": "line", "x": 440, "y": 240, "x2": 100, "y2": 60, "color": "purple", "change": "highlight" },
+              { "kind": "text", "x": 290, "y": 135, "text": "longest side c", "size": 20, "bold": true, "color": "purple" }
+            ]
+          }
+        },
+        { "say": "For trig, label O, A and H from the angle. Then pick SOH CAH TOA.", "write": "SOH CAH TOA" },
+        { "say": "Angle of elevation, height opposite, ground adjacent. That's tan.", "write": "h = ground × tan θ" },
+        { "say": "Check the calculator is in degree mode.", "write": "DEG" }
+      ]
+    },
+    {
+      "heading": "Straight lines",
+      "lines": [
+        { "say": "Gradient is rise over run. Going down to the right is negative.", "write": "m = (y₂ − y₁)/(x₂ − x₁)" },
+        {
+          "say": "Find m, then substitute a point to find c.",
+          "write": "y = mx + c",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 280, "alt": "A line sloping down with rise and run marked",
+            "items": [
+              { "kind": "circle", "x": 100, "y": 50, "r": 8, "fill": "blue" },
+              { "kind": "circle", "x": 420, "y": 240, "r": 8, "fill": "blue" },
+              { "kind": "line", "x": 100, "y": 50, "x2": 420, "y2": 240, "color": "purple" },
+              { "kind": "line", "x": 100, "y": 50, "x2": 420, "y2": 50, "color": "orange", "dashed": true, "change": "add" },
+              { "kind": "line", "x": 420, "y": 50, "x2": 420, "y2": 240, "color": "green", "dashed": true, "change": "add" },
+              { "kind": "text", "x": 260, "y": 38, "text": "run", "size": 20, "bold": true, "color": "orange", "anchor": "middle" },
+              { "kind": "text", "x": 435, "y": 150, "text": "fall", "size": 20, "bold": true, "color": "green" }
+            ]
+          }
+        },
+        { "say": "Midpoint averages the coordinates. Distance uses Pythagoras.", "write": "midpoint, distance" },
+        { "say": "Parallel gradients are equal. Perpendicular gradients multiply to minus 1.", "write": "m₁ × m₂ = −1" }
+      ]
+    },
+    {
+      "heading": "Measurement",
+      "lines": [
+        { "say": "Cylinder volume is pi r squared h.", "write": "V = πr²h" },
+        {
+          "say": "Cylinder surface area is two circles plus the curved label.",
+          "write": "SA = 2πr² + 2πrh",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 280, "alt": "Cylinder net: two circles and a rectangle",
+            "items": [
+              { "kind": "circle", "x": 80, "y": 70, "r": 50, "fill": "blue", "label": "πr²" },
+              { "kind": "circle", "x": 80, "y": 210, "r": 50, "fill": "blue", "label": "πr²" },
+              { "kind": "rect", "x": 170, "y": 90, "w": 360, "h": 100, "fill": "orange", "label": "2πrh", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Area is in square units. Volume is in cubic units.", "write": "cm² vs cm³" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Simple interest adds. Compound interest multiplies.", "write": "adds vs multiplies" },
+        { "say": "Negative times or divide in an inequality? Flip it.", "write": "negative flip" },
+        { "say": "Longest side, add the squares. Label from the angle for trig.", "write": "Pythagoras, SOH CAH TOA" },
+        { "say": "Always check your units.", "write": "units ✓" }
+      ]
+    }
+  ]
+}

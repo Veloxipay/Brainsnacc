@@ -1,0 +1,813 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Percentage increase and decrease",
+  "frames": [
+    {
+      "heading": "The zoom button",
+      "lines": [
+        {
+          "say": "A photocopier set to 120 percent makes copies 1.2 times as big.",
+          "write": "120% → × 1.2"
+        },
+        {
+          "say": "Set it to 75 percent and copies are 0.75 times the size.",
+          "write": "75% → × 0.75"
+        },
+        {
+          "say": "One number does the whole job. We call it the multiplier.",
+          "write": "multiplier"
+        }
+      ]
+    },
+    {
+      "heading": "The multiplier",
+      "lines": [
+        {
+          "say": "The original is always 100 percent.",
+          "write": "original = 100%"
+        },
+        {
+          "say": "Increase $80 by 15 percent. 100 plus 15 is 115 percent.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Bar model: 100% is $80, add a 15% piece worth $12, total 115% = $92",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 400,
+                "h": 70,
+                "fill": "blue",
+                "label": "100% = $80"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add the 15 percent piece. That's 12 dollars.",
+          "write": "115% = 1.15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Bar model: 100% is $80, add a 15% piece worth $12, total 115% = $92",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 400,
+                "h": 70,
+                "fill": "blue",
+                "label": "100% = $80"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 80,
+                "w": 60,
+                "h": 70,
+                "fill": "orange",
+                "label": "15%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 180,
+                "text": "+$12",
+                "size": 20,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So multiply by 1.15. 80 times 1.15 is 92 dollars.",
+          "write": "80 × 1.15 = $92",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Bar model: 100% is $80, add a 15% piece worth $12, total 115% = $92",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 400,
+                "h": 70,
+                "fill": "blue",
+                "label": "100% = $80"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 80,
+                "w": 60,
+                "h": 70,
+                "fill": "orange",
+                "label": "15%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 180,
+                "text": "+$12",
+                "size": 20,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 230,
+                "text": "115% → 80 × 1.15 = $92",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A $650 TV is reduced by 12 percent.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Bar model: $650 is 100%; take off 12%, leaving 88% = $572",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 440,
+                "h": 70,
+                "fill": "blue",
+                "label": "88%"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 80,
+                "w": 60,
+                "h": 70,
+                "fill": "grey",
+                "label": "12%"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "100% = $650",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take off 12 percent. 88 percent is left, so times 0.88. That's 572 dollars.",
+          "write": "650 × 0.88 = $572",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Bar model: $650 is 100%; take off 12%, leaving 88% = $572",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 440,
+                "h": 70,
+                "fill": "blue",
+                "label": "88%"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 80,
+                "w": 60,
+                "h": 70,
+                "fill": "grey",
+                "label": "12%",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "100% = $650",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 200,
+                "text": "88% → 650 × 0.88 = $572",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Bigger than 1 grows. Smaller than 1 shrinks.",
+          "write": "> 1 grows,  < 1 shrinks"
+        }
+      ]
+    },
+    {
+      "heading": "Percentage change",
+      "lines": [
+        {
+          "say": "Change divided by the original, times 100 percent.",
+          "write": "change ÷ original × 100%"
+        },
+        {
+          "say": "A school fell from 2400 students to 2100. That's a fall of 300.",
+          "write": "2100 − 2400 = −300"
+        },
+        {
+          "say": "Divide by the original, 2400. That gives 0.125.",
+          "write": "300 ÷ 2400 = 0.125"
+        },
+        {
+          "say": "Times 100. It's a 12.5 percent decrease.",
+          "write": "12.5% decrease"
+        },
+        {
+          "say": "Always divide by the before amount, not the after.",
+          "write": "original on the bottom"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "After a 20 percent rise, a ticket costs 66 dollars. What was it before?",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Before ? and after $66 linked by × 1.2; going back, ÷ 1.2 gives $55",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90,
+                "w": 140,
+                "h": 80,
+                "fill": "blue",
+                "label": "?"
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 90,
+                "w": 140,
+                "h": 80,
+                "fill": "green",
+                "label": "$66"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 200,
+                "text": "before",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 200,
+                "text": "after",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 205,
+                "y": 110,
+                "x2": 355,
+                "y2": 110,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "× 1.2",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Forwards you multiply by 1.2. So backwards, divide by 1.2.",
+          "write": "66 ÷ 1.2 = $55",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Before ? and after $66 linked by × 1.2; going back, ÷ 1.2 gives $55",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90,
+                "w": 140,
+                "h": 80,
+                "fill": "blue",
+                "label": "$55"
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 90,
+                "w": 140,
+                "h": 80,
+                "fill": "green",
+                "label": "$66"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 200,
+                "text": "before",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 200,
+                "text": "after",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 205,
+                "y": 110,
+                "x2": 355,
+                "y2": 110,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "× 1.2",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 355,
+                "y": 155,
+                "x2": 205,
+                "y2": 155,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 145,
+                "text": "÷ 1.2",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. 55 times 1.2 is 66.",
+          "write": "55 × 1.2 = 66 ✓"
+        },
+        {
+          "say": "Don't take 20 percent of 66. The 20 percent was of the old price.",
+          "write": "✗ 66 − 13.20"
+        }
+      ]
+    },
+    {
+      "heading": "One change after another",
+      "lines": [
+        {
+          "say": "A car worth 18 thousand dollars loses 15 percent a year.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "$18 000 × 0.85 = $15 300 after 1 year, × 0.85 again = $13 005 after 2 years",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 90,
+                "w": 120,
+                "h": 70,
+                "fill": "blue",
+                "label": "$18 000"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "start",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "After one year, times 0.85. That's 15 thousand 300.",
+          "write": "× 0.85 = $15 300",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "$18 000 × 0.85 = $15 300 after 1 year, × 0.85 again = $13 005 after 2 years",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 90,
+                "w": 120,
+                "h": 70,
+                "fill": "blue",
+                "label": "$18 000"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "start",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 145,
+                "y": 125,
+                "x2": 215,
+                "y2": 125,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 75,
+                "text": "× 0.85",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 90,
+                "w": 120,
+                "h": 70,
+                "fill": "blue",
+                "label": "$15 300",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "1 year",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Times 0.85 again. After two years, 13 thousand and 5 dollars.",
+          "write": "× 0.85 = $13 005",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "$18 000 × 0.85 = $15 300 after 1 year, × 0.85 again = $13 005 after 2 years",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 90,
+                "w": 120,
+                "h": 70,
+                "fill": "blue",
+                "label": "$18 000"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "start",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 145,
+                "y": 125,
+                "x2": 215,
+                "y2": 125,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 75,
+                "text": "× 0.85",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 90,
+                "w": 120,
+                "h": 70,
+                "fill": "blue",
+                "label": "$15 300"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "1 year",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 345,
+                "y": 125,
+                "x2": 415,
+                "y2": 125,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 75,
+                "text": "× 0.85",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 90,
+                "w": 120,
+                "h": 70,
+                "fill": "green",
+                "label": "$13 005",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 190,
+                "text": "2 years",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not 30 percent off. The second 15 percent comes off a smaller amount.",
+          "write": "✗ $12 600"
+        },
+        {
+          "say": "Up 10 percent, then down 10 percent, is a 1 percent fall overall.",
+          "write": "1.1 × 0.9 = 0.99"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "A 12 percent decrease is times 0.88, not times 0.12.",
+          "write": "✗ × 0.12   ✓ × 0.88"
+        },
+        {
+          "say": "A 5 percent increase is 1.05, not 1.5.",
+          "write": "5% up → × 1.05"
+        },
+        {
+          "say": "Two 15 percent falls is 27.75 percent, not 30.",
+          "write": "0.85 × 0.85 = 0.7225"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Start at 100. Add the increase or take away the decrease.",
+          "write": "start at 100%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Bar model: 100% is $80, add a 15% piece worth $12, total 115% = $92",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 400,
+                "h": 70,
+                "fill": "blue",
+                "label": "100% = $80"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 80,
+                "w": 60,
+                "h": 70,
+                "fill": "orange",
+                "label": "15%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 180,
+                "text": "+$12",
+                "size": 20,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 230,
+                "text": "115% → 80 × 1.15 = $92",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Change over original, times 100.",
+          "write": "change ÷ original"
+        },
+        {
+          "say": "Backwards? Divide by the multiplier.",
+          "write": "new ÷ multiplier",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Before ? and after $66 linked by × 1.2; going back, ÷ 1.2 gives $55",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90,
+                "w": 140,
+                "h": 80,
+                "fill": "blue",
+                "label": "$55"
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 90,
+                "w": 140,
+                "h": 80,
+                "fill": "green",
+                "label": "$66"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 200,
+                "text": "before",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 200,
+                "text": "after",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 205,
+                "y": 110,
+                "x2": 355,
+                "y2": 110,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "× 1.2",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 355,
+                "y": 155,
+                "x2": 205,
+                "y2": 155,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 145,
+                "text": "÷ 1.2",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

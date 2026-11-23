@@ -1,0 +1,116 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Protein structure and the proteome",
+  "frames": [
+    { "heading": "Building a polypeptide",
+      "lines": [
+        { "say": "Proteins are polymers of amino acids. There are 20 common ones.", "write": "20 amino acids" },
+        { "say": "They differ only in their R group. Some are hydrophobic, some charged.", "write": "R group varies" },
+        { "say": "Amino acids join by condensation. A peptide bond forms and water leaves.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Amino acids joining into a chain", "items": [
+            {"kind": "circle", "x": 60, "y": 100, "r": 30, "fill": "blue"},
+            {"kind": "circle", "x": 140, "y": 100, "r": 30, "fill": "orange"},
+            {"kind": "circle", "x": 220, "y": 100, "r": 30, "fill": "green"},
+            {"kind": "circle", "x": 300, "y": 100, "r": 30, "fill": "purple", "change": "add"},
+            {"kind": "text", "x": 420, "y": 90, "text": "+ H₂O", "size": 24, "change": "add"},
+            {"kind": "text", "x": 40, "y": 170, "text": "N-terminus", "size": 16},
+            {"kind": "text", "x": 260, "y": 170, "text": "C-terminus", "size": 16}
+          ]}},
+        { "say": "One end has a free amino group. The other has a free carboxyl group.", "write": "N-terminus … C-terminus" }
+      ] },
+    { "heading": "Primary and secondary",
+      "lines": [
+        { "say": "Primary structure is the amino acid sequence. The gene sets it.", "write": "primary: sequence",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "A chain of amino acids in order", "items": [
+            {"kind": "rect", "x": 20, "y": 80, "w": 70, "h": 44, "fill": "blue", "label": "Met"},
+            {"kind": "rect", "x": 95, "y": 80, "w": 70, "h": 44, "fill": "orange", "label": "Val"},
+            {"kind": "rect", "x": 170, "y": 80, "w": 70, "h": 44, "fill": "green", "label": "His"},
+            {"kind": "rect", "x": 245, "y": 80, "w": 70, "h": 44, "fill": "purple", "label": "Leu"},
+            {"kind": "rect", "x": 320, "y": 80, "w": 70, "h": 44, "fill": "teal", "label": "Glu", "change": "highlight"},
+            {"kind": "rect", "x": 395, "y": 80, "w": 70, "h": 44, "fill": "pink", "label": "Cys"},
+            {"kind": "text", "x": 355, "y": 160, "text": "change one → shape may change", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Change one amino acid and the folding can change. Like sickle cell haemoglobin.", "write": "one swap → sickle cell" },
+        { "say": "Secondary structure is local folding. Alpha helices and beta pleated sheets.", "write": "α-helix, β-sheet" },
+        { "say": "Hydrogen bonds between backbone atoms hold them. Not the R groups.", "write": "H bonds in backbone" }
+      ] },
+    { "heading": "Tertiary and quaternary",
+      "lines": [
+        { "say": "Tertiary structure is the whole 3D shape of one polypeptide.", "write": "tertiary: 3D shape" },
+        { "say": "It comes from R groups. Hydrophobic, hydrogen, ionic and disulfide bonds.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Folded chain with R group bonds", "items": [
+            {"kind": "circle", "x": 200, "y": 120, "r": 90, "fill": "blue"},
+            {"kind": "circle", "x": 200, "y": 120, "r": 30, "fill": "yellow", "label": "hydrophobic"},
+            {"kind": "line", "x": 140, "y": 60, "x2": 260, "y2": 60, "color": "red", "change": "add"},
+            {"kind": "text", "x": 300, "y": 45, "text": "S–S disulfide", "size": 18, "change": "add"},
+            {"kind": "text", "x": 310, "y": 140, "text": "ionic, H bonds", "size": 18, "change": "add"}
+          ]}},
+        { "say": "Quaternary structure is two or more polypeptides fitted together.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Haemoglobin: four subunits", "items": [
+            {"kind": "circle", "x": 220, "y": 80, "r": 50, "fill": "red", "label": "α"},
+            {"kind": "circle", "x": 330, "y": 80, "r": 50, "fill": "orange", "label": "β", "change": "add"},
+            {"kind": "circle", "x": 220, "y": 180, "r": 50, "fill": "orange", "label": "β", "change": "add"},
+            {"kind": "circle", "x": 330, "y": 180, "r": 50, "fill": "red", "label": "α", "change": "add"},
+            {"kind": "text", "x": 460, "y": 135, "text": "haemoglobin", "size": 20, "anchor": "middle"}
+          ]}},
+        { "say": "Haemoglobin has four subunits. Only multi-chain proteins have quaternary structure.", "write": "quaternary: 2+ chains" }
+      ] },
+    { "heading": "Shape decides function",
+      "lines": [
+        { "say": "Function depends on shape, like an enzyme's active site.", "write": "shape → function" },
+        { "say": "High heat or extreme pH breaks the weak bonds. That's denaturation.", "write": "denaturation" },
+        { "say": "The peptide bonds stay. But the active site loses its shape.", "write": "primary stays intact" },
+        { "say": "Fibrous proteins like collagen are long and strong. Globular ones are compact.", "write": "fibrous vs globular" }
+      ] },
+    { "heading": "The proteome",
+      "lines": [
+        { "say": "The proteome is all the proteins a cell makes at a given time.", "write": "proteome ≠ genome" },
+        { "say": "Liver and muscle cells share a genome but have different proteomes.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Same genome, different proteins", "items": [
+            {"kind": "rect", "x": 200, "y": 20, "w": 160, "h": 50, "fill": "blue", "label": "same genome"},
+            {"kind": "arrow", "x": 250, "y": 75, "x2": 140, "y2": 130, "color": "black"},
+            {"kind": "arrow", "x": 310, "y": 75, "x2": 420, "y2": 130, "color": "black"},
+            {"kind": "rect", "x": 40, "y": 140, "w": 200, "h": 60, "fill": "orange", "label": "liver proteome", "change": "add"},
+            {"kind": "rect", "x": 320, "y": 140, "w": 200, "h": 60, "fill": "red", "label": "muscle proteome", "change": "add"}
+          ]}},
+        { "say": "It changes with age, diet, disease and stress.", "write": "changes over time" },
+        { "say": "It's bigger than the gene count. Alternative splicing makes several proteins from one gene.", "write": "1 gene → many proteins" }
+      ] },
+    { "heading": "The secretory pathway",
+      "lines": [
+        { "say": "Some proteins leave the cell, like insulin and antibodies.", "write": "secreted proteins" },
+        { "say": "Ribosomes on the rough ER make them. Folding starts inside the ER.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Rough ER, vesicle, Golgi, vesicle, membrane", "items": [
+            {"kind": "rect", "x": 10, "y": 80, "w": 100, "h": 60, "fill": "blue", "label": "rough ER", "change": "highlight"},
+            {"kind": "circle", "x": 145, "y": 110, "r": 18, "fill": "yellow"},
+            {"kind": "rect", "x": 180, "y": 80, "w": 100, "h": 60, "fill": "orange", "label": "Golgi"},
+            {"kind": "circle", "x": 315, "y": 110, "r": 18, "fill": "yellow"},
+            {"kind": "rect", "x": 360, "y": 40, "w": 16, "h": 140, "fill": "grey"},
+            {"kind": "text", "x": 470, "y": 115, "text": "outside", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "A vesicle carries it to the Golgi. The Golgi modifies and packages it.", "write": "ER → vesicle → Golgi",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Protein moves through Golgi and out by exocytosis", "items": [
+            {"kind": "rect", "x": 10, "y": 80, "w": 100, "h": 60, "fill": "blue", "label": "rough ER"},
+            {"kind": "circle", "x": 145, "y": 110, "r": 18, "fill": "yellow", "change": "highlight"},
+            {"kind": "rect", "x": 180, "y": 80, "w": 100, "h": 60, "fill": "orange", "label": "Golgi", "change": "highlight"},
+            {"kind": "circle", "x": 315, "y": 110, "r": 18, "fill": "yellow", "change": "highlight"},
+            {"kind": "rect", "x": 360, "y": 40, "w": 16, "h": 140, "fill": "grey"},
+            {"kind": "arrow", "x": 335, "y": 110, "x2": 440, "y2": 110, "color": "green", "change": "add"},
+            {"kind": "text", "x": 470, "y": 160, "text": "exocytosis", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "A secretory vesicle fuses with the membrane. Exocytosis releases the protein.", "write": "vesicle → exocytosis" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Denaturation doesn't break peptide bonds.", "write": "peptide bonds survive" },
+        { "say": "Secondary structure is backbone hydrogen bonds. Tertiary is R groups.", "write": "2°: backbone  3°: R groups" },
+        { "say": "The Golgi doesn't make proteins. Ribosomes do.", "write": "Golgi modifies, not makes" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Primary, secondary, tertiary, quaternary. Sequence, local folds, 3D, subunits.", "write": "1° 2° 3° 4°" },
+        { "say": "Shape decides function. Denaturing ruins the shape.", "write": "shape = function" },
+        { "say": "Same genome, different proteomes.", "write": "proteome varies" },
+        { "say": "Rough ER, vesicle, Golgi, vesicle, exocytosis.", "write": "ER → Golgi → out" }
+      ] }
+  ]
+}

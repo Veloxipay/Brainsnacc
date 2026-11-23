@@ -1,0 +1,107 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Recombinant DNA and genetically modified organisms",
+  "frames": [
+    { "heading": "Recombinant DNA and plasmids",
+      "lines": [
+        { "say": "Recombinant DNA joins DNA from two or more different sources.", "write": "recombinant DNA" },
+        { "say": "A vector carries it into a host cell. For bacteria, that's usually a plasmid.", "write": "vector = plasmid" },
+        { "say": "A lab plasmid has an origin of replication, restriction sites and marker genes.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Plasmid with ori, ampR, tetR and a restriction site", "items": [
+            {"kind": "circle", "x": 280, "y": 140, "r": 100, "fill": "none"},
+            {"kind": "rect", "x": 230, "y": 25, "w": 100, "h": 30, "fill": "grey", "label": "ori"},
+            {"kind": "rect", "x": 120, "y": 160, "w": 100, "h": 30, "fill": "blue", "label": "ampR"},
+            {"kind": "rect", "x": 340, "y": 160, "w": 100, "h": 30, "fill": "orange", "label": "tetR"},
+            {"kind": "line", "x": 390, "y": 145, "x2": 390, "y2": 205, "color": "red", "change": "highlight"},
+            {"kind": "text", "x": 470, "y": 230, "text": "restriction site", "size": 18, "anchor": "middle", "color": "red"}
+          ]}},
+        { "say": "Notice the restriction site is inside the tetracycline resistance gene.", "write": "site inside tetR" }
+      ] },
+    { "heading": "Making a recombinant plasmid",
+      "lines": [
+        { "say": "Use a human gene without introns. Bacteria can't splice them out.", "write": "no introns (cDNA)" },
+        { "say": "Cut the gene and plasmid with the same restriction enzyme.", "write": "same enzyme → sticky ends",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Plasmid cut open, gene ready to insert", "items": [
+            {"kind": "circle", "x": 220, "y": 140, "r": 100, "fill": "none"},
+            {"kind": "rect", "x": 280, "y": 160, "w": 100, "h": 30, "fill": "orange", "label": "tetR", "change": "remove"},
+            {"kind": "rect", "x": 420, "y": 60, "w": 120, "h": 34, "fill": "green", "label": "human gene", "change": "add"},
+            {"kind": "text", "x": 220, "y": 270, "text": "opened at the site", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Mix them. The sticky ends pair, and ligase seals the backbone.", "write": "ligase seals",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Human gene sealed into the plasmid", "items": [
+            {"kind": "circle", "x": 220, "y": 140, "r": 100, "fill": "none"},
+            {"kind": "rect", "x": 100, "y": 160, "w": 100, "h": 30, "fill": "blue", "label": "ampR"},
+            {"kind": "rect", "x": 260, "y": 160, "w": 130, "h": 34, "fill": "green", "label": "human gene", "change": "highlight"},
+            {"kind": "text", "x": 460, "y": 140, "text": "recombinant", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Some plasmids just close up again with no gene inside.", "write": "some re-ligate empty" }
+      ] },
+    { "heading": "Transformation and selection",
+      "lines": [
+        { "say": "Transformation is bacteria taking up the plasmid.", "write": "heat shock or electroporation" },
+        { "say": "Now there are three kinds. No plasmid, empty plasmid, and recombinant.", "write": "3 kinds of bacteria" },
+        { "say": "Grow them on ampicillin. Bacteria without a plasmid die.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ampicillin plate: no-plasmid bacteria removed", "items": [
+            {"kind": "rect", "x": 20, "y": 60, "w": 160, "h": 70, "fill": "grey", "label": "no plasmid", "change": "remove"},
+            {"kind": "rect", "x": 200, "y": 60, "w": 160, "h": 70, "fill": "blue", "label": "empty plasmid"},
+            {"kind": "rect", "x": 380, "y": 60, "w": 160, "h": 70, "fill": "green", "label": "recombinant"},
+            {"kind": "text", "x": 280, "y": 180, "text": "ampicillin: both plasmid types grow", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "Copy them onto tetracycline. The recombinant ones don't grow, because tetR is broken.",
+          "write": "amp ✓  tet ✗ = recombinant",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Tetracycline plate: recombinant colonies missing", "items": [
+            {"kind": "rect", "x": 200, "y": 60, "w": 160, "h": 70, "fill": "blue", "label": "empty plasmid"},
+            {"kind": "rect", "x": 380, "y": 60, "w": 160, "h": 70, "fill": "green", "label": "recombinant", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 180, "text": "the missing colonies are the ones we want", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "With lacZ, recombinant colonies are white instead of blue.", "write": "lacZ: white = recombinant" }
+      ] },
+    { "heading": "Making human insulin",
+      "lines": [
+        { "say": "Insulin has an A chain and a B chain, joined by disulfide bridges.", "write": "A chain + B chain" },
+        { "say": "Each chain's DNA goes into a separate plasmid, next to the lacZ gene.", "write": "separate plasmids" },
+        { "say": "E coli grows in big tanks and makes each chain.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "A and B chains joined by disulfide bridges", "items": [
+            {"kind": "rect", "x": 60, "y": 60, "w": 200, "h": 40, "fill": "blue", "label": "A chain"},
+            {"kind": "rect", "x": 300, "y": 60, "w": 200, "h": 40, "fill": "orange", "label": "B chain"},
+            {"kind": "rect", "x": 160, "y": 150, "w": 240, "h": 50, "fill": "green", "label": "insulin: S–S bridges", "change": "add"},
+            {"kind": "arrow", "x": 160, "y": 105, "x2": 230, "y2": 145, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 400, "y": 105, "x2": 330, "y2": 145, "color": "black", "change": "add"}
+          ]}},
+        { "say": "The chains are purified and combined. It's identical to human insulin.", "write": "identical to human insulin" }
+      ] },
+    { "heading": "GMOs and transgenic organisms",
+      "lines": [
+        { "say": "A GMO has had its DNA changed using gene technology.", "write": "GMO: DNA changed" },
+        { "say": "Transgenic means it carries a gene from another species.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Transgenic organisms are a subset of GMOs", "items": [
+            {"kind": "circle", "x": 280, "y": 120, "r": 110, "fill": "blue"},
+            {"kind": "text", "x": 280, "y": 35, "text": "GMOs", "size": 20, "anchor": "middle", "color": "white", "bold": true},
+            {"kind": "circle", "x": 320, "y": 140, "r": 55, "fill": "orange", "label": "transgenic", "change": "add"},
+            {"kind": "text", "x": 210, "y": 150, "text": "CRISPR knockout", "size": 16, "anchor": "middle", "color": "white"}
+          ]}},
+        { "say": "All transgenic organisms are GMOs. Not all GMOs are transgenic.", "write": "transgenic ⊂ GMO" },
+        { "say": "Bt cotton carries a bacterial gene for an insect-killing protein.", "write": "Bt cotton" },
+        { "say": "Golden Rice makes beta carotene, a source of vitamin A.", "write": "Golden Rice: vitamin A" }
+      ] },
+    { "heading": "Weighing it up",
+      "lines": [
+        { "say": "Benefits include higher yields, less pesticide and cheaper medicines.", "write": "benefits" },
+        { "say": "Concerns include gene flow to wild relatives and pests becoming resistant.", "write": "environmental concerns" },
+        { "say": "Patented seeds can make farmers depend on big companies.", "write": "social and economic" },
+        { "say": "Use frameworks like beneficence, non-maleficence, justice and autonomy.", "write": "ethics frameworks" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Growing on ampicillin just means a plasmid. Not always the gene.", "write": "amp ✓ ≠ recombinant" },
+        { "say": "Ligase doesn't put plasmids into bacteria. Transformation does.", "write": "transformation ≠ ligation" },
+        { "say": "In ethics answers, give a benefit and a concern, linked to the example.", "write": "both sides" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Same enzyme to cut, ligase to join.", "write": "cut, join" },
+        { "say": "Heat shock or electroporation to transform.", "write": "transform" },
+        { "say": "Ampicillin yes, tetracycline no, means recombinant.", "write": "amp ✓ tet ✗" },
+        { "say": "Transgenic means a gene from another species.", "write": "trans = other species" }
+      ] }
+  ]
+}

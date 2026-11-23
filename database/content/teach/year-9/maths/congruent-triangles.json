@@ -1,0 +1,914 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Congruent triangles",
+  "frames": [
+    {
+      "heading": "Congruence notation",
+      "lines": [
+        {
+          "say": "Congruent means exactly the same shape and size.",
+          "write": "≅ means congruent"
+        },
+        {
+          "say": "Triangle ABC is congruent to triangle PQR. Order matters.",
+          "write": "△ABC ≅ △PQR",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Matching vertices in order",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "△ABC ≅ △PQR",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 130,
+                "w": 150,
+                "h": 70,
+                "fill": "blue",
+                "change": "add",
+                "label": "A ↔ P"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 130,
+                "w": 150,
+                "h": 70,
+                "fill": "green",
+                "change": "add",
+                "label": "B ↔ Q"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 130,
+                "w": 150,
+                "h": 70,
+                "fill": "orange",
+                "change": "add",
+                "label": "C ↔ R"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A matches P, B matches Q, C matches R. So AB equals PQ.",
+          "write": "AB = PQ, ∠B = ∠Q"
+        },
+        {
+          "say": "These matching sides and angles are corresponding parts.",
+          "write": "corresponding parts"
+        },
+        {
+          "say": "Tick marks show equal sides. Arcs show equal angles.",
+          "write": "ticks = sides, arcs = angles"
+        }
+      ]
+    },
+    {
+      "heading": "The four tests",
+      "lines": [
+        {
+          "say": "SSS. All three pairs of sides are equal.",
+          "write": "SSS",
+          "diagram": "diagrams/y9/maths/congruent-triangles-sss.svg",
+          "alt": "Two triangles with sides 7, 6 and 5 cm matching"
+        },
+        {
+          "say": "SAS. Two sides, and the angle between them.",
+          "write": "SAS",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Building up SAS for two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    220,
+                    250
+                  ],
+                  [
+                    90,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    250
+                  ],
+                  [
+                    500,
+                    250
+                  ],
+                  [
+                    370,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 275,
+                "text": "A",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 275,
+                "text": "B",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 70,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 275,
+                "text": "P",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 275,
+                "text": "Q",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 70,
+                "text": "R",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 160,
+                "text": "8",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 445,
+                "y": 160,
+                "text": "8",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 195,
+                "y": 240,
+                "text": "50°",
+                "size": 16,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 475,
+                "y": 240,
+                "text": "50°",
+                "size": 16,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 305,
+                "text": "SAS: angle between the sides",
+                "size": 18,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "AAS. Two angles and a matching side in the same position.",
+          "write": "AAS"
+        },
+        {
+          "say": "RHS. Right angle, hypotenuse, and one other side.",
+          "write": "RHS"
+        }
+      ]
+    },
+    {
+      "heading": "Building up SAS",
+      "lines": [
+        {
+          "say": "Two triangles. Let's collect facts one at a time.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Building up SAS for two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    220,
+                    250
+                  ],
+                  [
+                    90,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    250
+                  ],
+                  [
+                    500,
+                    250
+                  ],
+                  [
+                    370,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 275,
+                "text": "A",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 275,
+                "text": "B",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 70,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 275,
+                "text": "P",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 275,
+                "text": "Q",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 70,
+                "text": "R",
+                "size": 18,
+                "color": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "AB equals PQ. Both are 6.",
+          "write": "AB = PQ = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Building up SAS for two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    220,
+                    250
+                  ],
+                  [
+                    90,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    250
+                  ],
+                  [
+                    500,
+                    250
+                  ],
+                  [
+                    370,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 275,
+                "text": "A",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 275,
+                "text": "B",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 70,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 275,
+                "text": "P",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 275,
+                "text": "Q",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 70,
+                "text": "R",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "BC equals QR. Both are 8.",
+          "write": "BC = QR = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Building up SAS for two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    220,
+                    250
+                  ],
+                  [
+                    90,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    250
+                  ],
+                  [
+                    500,
+                    250
+                  ],
+                  [
+                    370,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 275,
+                "text": "A",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 275,
+                "text": "B",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 70,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 275,
+                "text": "P",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 275,
+                "text": "Q",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 70,
+                "text": "R",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 160,
+                "text": "8",
+                "size": 18,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 445,
+                "y": 160,
+                "text": "8",
+                "size": 18,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The 50 degree angle is between those two sides. SAS!",
+          "write": "△ABC ≅ △PQR (SAS)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Building up SAS for two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    220,
+                    250
+                  ],
+                  [
+                    90,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    250
+                  ],
+                  [
+                    500,
+                    250
+                  ],
+                  [
+                    370,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 275,
+                "text": "A",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 275,
+                "text": "B",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 70,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 275,
+                "text": "P",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 275,
+                "text": "Q",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 70,
+                "text": "R",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 270,
+                "text": "6",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 160,
+                "text": "8",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 445,
+                "y": 160,
+                "text": "8",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 195,
+                "y": 240,
+                "text": "50°",
+                "size": 16,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 475,
+                "y": 240,
+                "text": "50°",
+                "size": 16,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 305,
+                "text": "SAS: angle between the sides",
+                "size": 18,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "What is NOT enough",
+      "lines": [
+        {
+          "say": "AAA isn't a test. Same angles can give a bigger copy.",
+          "write": "✗ AAA",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Two similar triangles of different sizes",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    160,
+                    250
+                  ],
+                  [
+                    70,
+                    170
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    240,
+                    250
+                  ],
+                  [
+                    520,
+                    250
+                  ],
+                  [
+                    310,
+                    63
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "same angles, different size",
+                "size": 20,
+                "color": "red",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "That's similarity. You always need at least one pair of sides.",
+          "write": "need a side"
+        },
+        {
+          "say": "SSA isn't a test either. The third side can swing two ways.",
+          "write": "✗ SSA"
+        }
+      ]
+    },
+    {
+      "heading": "Writing a proof",
+      "lines": [
+        {
+          "say": "AB and CD cross at M, the midpoint of both.",
+          "write": "M midpoint of AB and CD",
+          "diagram": "diagrams/y9/maths/congruent-triangles-ex4.svg",
+          "alt": "Segments AB and CD crossing at their midpoint M"
+        },
+        {
+          "say": "AM equals BM, because M is the midpoint of AB.",
+          "write": "AM = BM (midpoint)"
+        },
+        {
+          "say": "Angle AMC equals angle BMD. Vertically opposite.",
+          "write": "∠AMC = ∠BMD (vert. opp.)"
+        },
+        {
+          "say": "CM equals DM, because M is the midpoint of CD.",
+          "write": "CM = DM (midpoint)"
+        },
+        {
+          "say": "The angle is between the sides. Name the test.",
+          "write": "△AMC ≅ △BMD (SAS)"
+        }
+      ]
+    },
+    {
+      "heading": "Using congruence",
+      "lines": [
+        {
+          "say": "Triangle ABC is congruent to PQR. Find x and y.",
+          "write": "△ABC ≅ △PQR",
+          "diagram": "diagrams/y9/maths/congruent-triangles-ex3.svg",
+          "alt": "Triangle ABC and turned triangle PQR with x and y"
+        },
+        {
+          "say": "PQ matches AB, so x is 10 centimetres.",
+          "write": "x = 10 cm"
+        },
+        {
+          "say": "Angle Q matches angle B. 180 take 70 take 46 is 64.",
+          "write": "y = 64°"
+        },
+        {
+          "say": "Look for free facts. Common sides, vertically opposite and alternate angles.",
+          "write": "free facts"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Write the vertices in matching order.",
+          "write": "match the order"
+        },
+        {
+          "say": "SSS, SAS, AAS, RHS. Never AAA or SSA.",
+          "write": "SSS SAS AAS RHS"
+        },
+        {
+          "say": "For SAS, the angle must sit between the two sides.",
+          "write": "included angle"
+        },
+        {
+          "say": "Three facts, each with a reason, then name the test.",
+          "write": "3 facts + reasons + test"
+        }
+      ]
+    }
+  ]
+}

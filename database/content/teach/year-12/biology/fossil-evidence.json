@@ -1,0 +1,100 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Fossil evidence",
+  "frames": [
+    { "heading": "How fossils form",
+      "lines": [
+        { "say": "A fossil is any preserved remains, impression or trace of past life.", "write": "remains, impression, trace" },
+        { "say": "An animal dies and is buried fast in sediment. Low oxygen slows decay.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Skeleton buried under sediment layers", "items": [
+            {"kind": "rect", "x": 20, "y": 200, "w": 520, "h": 60, "fill": "orange"},
+            {"kind": "rect", "x": 200, "y": 180, "w": 160, "h": 20, "fill": "white", "label": "bones"},
+            {"kind": "rect", "x": 20, "y": 140, "w": 520, "h": 40, "fill": "yellow", "change": "add"},
+            {"kind": "rect", "x": 20, "y": 100, "w": 520, "h": 40, "fill": "grey", "change": "add"},
+            {"kind": "text", "x": 280, "y": 85, "text": "new layers bury it", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Layers compress into rock. Minerals in groundwater replace the bone.", "write": "minerals replace tissue",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Bones turned to stone, later exposed", "items": [
+            {"kind": "rect", "x": 20, "y": 200, "w": 520, "h": 60, "fill": "orange"},
+            {"kind": "rect", "x": 200, "y": 180, "w": 160, "h": 20, "fill": "grey", "label": "stone", "change": "highlight"},
+            {"kind": "rect", "x": 20, "y": 140, "w": 520, "h": 40, "fill": "yellow"},
+            {"kind": "rect", "x": 20, "y": 100, "w": 520, "h": 40, "fill": "grey", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 85, "text": "erosion exposes the fossil", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Hard parts last best. So the fossil record is incomplete.", "write": "record is incomplete" }
+      ] },
+    { "heading": "Types of fossils",
+      "lines": [
+        { "say": "Petrified fossils have minerals replacing the tissue. Like petrified wood.", "write": "petrified" },
+        { "say": "A mould is a hollow imprint. A cast is a mould filled with minerals.", "write": "mould → cast" },
+        { "say": "Trace fossils show behaviour. Footprints, burrows, fossilised dung.", "write": "trace: footprints" },
+        { "say": "Some remains are kept whole, like insects in amber.", "write": "amber, permafrost" }
+      ] },
+    { "heading": "Relative dating",
+      "lines": [
+        { "say": "Relative dating gives order, not years.", "write": "older or younger" },
+        { "say": "Superposition. In undisturbed rock, lower layers are older.",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Rock layers with oldest at the bottom", "items": [
+            {"kind": "rect", "x": 60, "y": 40, "w": 300, "h": 50, "fill": "yellow", "label": "youngest"},
+            {"kind": "rect", "x": 60, "y": 90, "w": 300, "h": 50, "fill": "orange"},
+            {"kind": "rect", "x": 60, "y": 140, "w": 300, "h": 50, "fill": "pink"},
+            {"kind": "rect", "x": 60, "y": 190, "w": 300, "h": 50, "fill": "grey", "label": "oldest", "change": "highlight"},
+            {"kind": "arrow", "x": 420, "y": 230, "x2": 420, "y2": 50, "color": "black", "change": "add"},
+            {"kind": "text", "x": 440, "y": 140, "text": "time", "size": 20, "change": "add"}
+          ]}},
+        { "say": "Index fossils were widespread, common, easy to spot, and short-lived.", "write": "index fossils" },
+        { "say": "Same index fossil in two places? Those layers are about the same age.", "write": "correlation" },
+        { "say": "Folding or faults can flip layers, so be careful.", "write": "watch for folding" }
+      ] },
+    { "heading": "Radiometric dating",
+      "lines": [
+        { "say": "Absolute dating gives an age in years. It uses radioactive decay.", "write": "parent → daughter" },
+        { "say": "Half-life is the time for half the parent isotope to decay.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Parent isotope halves each half-life", "items": [
+            {"kind": "rect", "x": 30, "y": 60, "w": 240, "h": 50, "fill": "blue", "label": "1"},
+            {"kind": "rect", "x": 30, "y": 120, "w": 120, "h": 50, "fill": "blue", "label": "1/2", "change": "add"},
+            {"kind": "rect", "x": 160, "y": 120, "w": 60, "h": 50, "fill": "blue", "label": "1/4", "change": "add"},
+            {"kind": "rect", "x": 230, "y": 120, "w": 30, "h": 50, "fill": "blue", "change": "add"},
+            {"kind": "text", "x": 400, "y": 150, "text": "1/8 after 3", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Each half-life, the fraction halves. One half, one quarter, one eighth.", "write": "1 → 1/2 → 1/4 → 1/8" },
+        { "say": "Age equals number of half-lives times one half-life.", "write": "age = n × half-life" },
+        { "say": "Carbon 14 has a half-life of about 5730 years. It dates organic remains.", "write": "¹⁴C: ~5730 yr, < 50 000 yr" },
+        { "say": "Potassium 40 dates old volcanic rock. Its half-life is 1.3 billion years.", "write": "⁴⁰K: volcanic rock" }
+      ] },
+    { "heading": "Dating between volcanic layers",
+      "lines": [
+        { "say": "Fossils sit in sedimentary rock, which is hard to date directly.", "write": "sedimentary: hard to date" },
+        { "say": "So date the volcanic layers above and below the fossil.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Fossil between two dated volcanic layers", "items": [
+            {"kind": "rect", "x": 60, "y": 50, "w": 300, "h": 40, "fill": "red", "label": "ash: 2.0 mya", "change": "add"},
+            {"kind": "rect", "x": 60, "y": 90, "w": 300, "h": 90, "fill": "yellow"},
+            {"kind": "circle", "x": 210, "y": 135, "r": 20, "fill": "white", "label": "F"},
+            {"kind": "rect", "x": 60, "y": 180, "w": 300, "h": 40, "fill": "red", "label": "ash: 2.5 mya", "change": "add"},
+            {"kind": "text", "x": 460, "y": 140, "text": "2.0 to 2.5 mya", "size": 20, "anchor": "middle", "change": "highlight"}
+          ]}},
+        { "say": "The fossil's age lies between those two ages.", "write": "between the two ages" }
+      ] },
+    { "heading": "Time scale and transitional fossils",
+      "lines": [
+        { "say": "Earth is about 4.6 billion years old. Life got more complex over time.", "write": "Palaeozoic → Mesozoic → Cenozoic" },
+        { "say": "The Mesozoic was the age of reptiles. It ended 66 million years ago.", "write": "Mesozoic ends ~66 mya" },
+        { "say": "Transitional fossils mix features of an old group and a newer one.", "write": "transitional fossils" },
+        { "say": "Archaeopteryx had feathers and wings, but also teeth and a bony tail.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Archaeopteryx combines dinosaur and bird features", "items": [
+            {"kind": "rect", "x": 20, "y": 60, "w": 170, "h": 80, "fill": "green", "label": "dinosaur: teeth, tail"},
+            {"kind": "rect", "x": 370, "y": 60, "w": 170, "h": 80, "fill": "blue", "label": "bird: feathers, wings"},
+            {"kind": "rect", "x": 200, "y": 150, "w": 160, "h": 50, "fill": "orange", "label": "Archaeopteryx", "change": "add"},
+            {"kind": "arrow", "x": 140, "y": 145, "x2": 220, "y2": 165, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 420, "y": 145, "x2": 340, "y2": 165, "color": "black", "change": "add"}
+          ]}},
+        { "say": "Tiktaalik was a fish with a neck and wrist-like fin bones.", "write": "Tiktaalik: fish → tetrapod" }
+      ] },
+    { "heading": "Watch out and remember",
+      "lines": [
+        { "say": "Carbon 14 can't date dinosaurs. They're far too old.", "write": "✗ ¹⁴C for dinosaurs" },
+        { "say": "After three half-lives, one eighth remains. Halve, don't subtract.", "write": "halve each time" },
+        { "say": "Relative dating gives order. Radiometric dating gives years.", "write": "order vs years" },
+        { "say": "Gaps in the record are expected. Fossilisation is rare.", "write": "fossils are rare" }
+      ] }
+  ]
+}

@@ -1,0 +1,1558 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Fuel cells",
+  "frames": [
+    {
+      "heading": "What is a fuel cell?",
+      "lines": [
+        {
+          "say": "A fuel cell turns a fuel’s chemical energy straight into electricity.",
+          "write": "chemical → electrical"
+        },
+        {
+          "say": "It is a galvanic cell, but fuel and oxygen are supplied continuously.",
+          "write": "continuous supply",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Hydrogen fuel cell",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So it never runs flat, as long as the fuel keeps coming.",
+          "write": "doesn’t run flat"
+        },
+        {
+          "say": "The overall reaction is the same as burning hydrogen.",
+          "write": "2H₂ + O₂ → 2H₂O"
+        },
+        {
+          "say": "But no burning. Electrons travel through the circuit and do work.",
+          "write": "no combustion"
+        }
+      ]
+    },
+    {
+      "heading": "Porous electrodes",
+      "lines": [
+        {
+          "say": "Hydrogen is oxidised at the anode, which is negative.",
+          "write": "anode −: oxidation",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Anode highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15,
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Oxygen is reduced at the cathode, which is positive.",
+          "write": "cathode +: reduction",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Cathode highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15,
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The electrodes are porous, so gases reach the electrolyte.",
+          "write": "porous"
+        },
+        {
+          "say": "Pores give a huge surface area, so more reaction sites.",
+          "write": "large surface area"
+        },
+        {
+          "say": "A catalyst coating, like platinum, lowers the activation energy.",
+          "write": "Pt catalyst"
+        }
+      ]
+    },
+    {
+      "heading": "Acidic electrolyte",
+      "lines": [
+        {
+          "say": "At the anode, hydrogen loses electrons and forms H plus ions.",
+          "write": "H₂ → 2H⁺ + 2e⁻"
+        },
+        {
+          "say": "H plus ions move through the electrolyte to the cathode.",
+          "write": "H⁺ → cathode",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "H plus ions move to cathode",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 170,
+                "x2": 360,
+                "y2": 170,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "H⁺ →",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Oxygen gains electrons and makes water at the cathode.",
+          "write": "O₂ + 4H⁺ + 4e⁻ → 2H₂O",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 317,
+            "alt": "Water forms at cathode",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 170,
+                "x2": 360,
+                "y2": 170,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "H⁺ →",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 305,
+                "text": "H₂O forms here",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Double the anode equation, then add.",
+          "write": "2H₂ + O₂ → 2H₂O"
+        }
+      ]
+    },
+    {
+      "heading": "Alkaline electrolyte",
+      "lines": [
+        {
+          "say": "In alkali, hydroxide ions carry the charge instead.",
+          "write": "KOH electrolyte"
+        },
+        {
+          "say": "Oxygen and water gain electrons at the cathode, making OH minus.",
+          "write": "O₂ + 2H₂O + 4e⁻ → 4OH⁻"
+        },
+        {
+          "say": "OH minus ions move to the anode.",
+          "write": "OH⁻ → anode",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "OH minus moves to anode",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "alkaline (KOH)",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 360,
+                "y": 170,
+                "x2": 200,
+                "y2": 170,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "← OH⁻",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Hydrogen reacts with them, making water at the anode.",
+          "write": "H₂ + 2OH⁻ → 2H₂O + 2e⁻",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 317,
+            "alt": "Water forms at anode",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "alkaline (KOH)",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 360,
+                "y": 170,
+                "x2": 200,
+                "y2": 170,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "← OH⁻",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 305,
+                "text": "H₂O forms here",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "In acid, use H plus. In base, use OH minus. Never mix them.",
+          "write": "acid: H⁺, base: OH⁻"
+        }
+      ]
+    },
+    {
+      "heading": "Fuel cells versus power stations",
+      "lines": [
+        {
+          "say": "A power station converts energy in many steps.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Power station energy chain",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "orange",
+                "label": "Chemical"
+              },
+              {
+                "kind": "arrow",
+                "x": 130,
+                "y": 145,
+                "x2": 156,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 158,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "red",
+                "label": "Heat"
+              },
+              {
+                "kind": "arrow",
+                "x": 267,
+                "y": 145,
+                "x2": 293,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "grey",
+                "label": "Mechanical"
+              },
+              {
+                "kind": "arrow",
+                "x": 404,
+                "y": 145,
+                "x2": 430,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 432,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "yellow",
+                "label": "Electrical"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each step loses heat. Efficiency is only about 30 to 40 percent.",
+          "write": "30–40%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Lossy steps crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "orange",
+                "label": "Chemical"
+              },
+              {
+                "kind": "arrow",
+                "x": 130,
+                "y": 145,
+                "x2": 156,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 158,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "red",
+                "label": "Heat",
+                "change": "remove"
+              },
+              {
+                "kind": "arrow",
+                "x": 267,
+                "y": 145,
+                "x2": 293,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "grey",
+                "label": "Mechanical",
+                "change": "remove"
+              },
+              {
+                "kind": "arrow",
+                "x": 404,
+                "y": 145,
+                "x2": 430,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 432,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "yellow",
+                "label": "Electrical"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A fuel cell goes straight from chemical to electrical. About 40 to 60 percent.",
+          "write": "40–60%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Direct conversion",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 245,
+                "h": 70,
+                "fill": "orange",
+                "label": "Chemical"
+              },
+              {
+                "kind": "arrow",
+                "x": 267,
+                "y": 145,
+                "x2": 293,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 110,
+                "w": 245,
+                "h": 70,
+                "fill": "yellow",
+                "label": "Electrical",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Downsides: platinum is expensive, and hydrogen is hard to store.",
+          "write": "cost, storage"
+        }
+      ]
+    },
+    {
+      "heading": "Faraday calculations",
+      "lines": [
+        {
+          "say": "A cell gives 2.50 amps for two hours. That is 7200 seconds.",
+          "write": "t = 7200 s"
+        },
+        {
+          "say": "Q equals I t, so 18 000 coulombs.",
+          "write": "Q = 2.50 × 7200 = 18 000 C"
+        },
+        {
+          "say": "Divide by 96 500. That is 0.1865 moles of electrons.",
+          "write": "n(e⁻) = 0.1865 mol"
+        },
+        {
+          "say": "Each hydrogen gives two electrons, so halve it: 0.09326 moles.",
+          "write": "n(H₂) = 0.09326 mol"
+        },
+        {
+          "say": "Times 24.8 gives 2.31 litres of hydrogen at SLC.",
+          "write": "V(H₂) = 2.31 L"
+        },
+        {
+          "say": "Efficiency: 12.6 kilojoules out, from 26.7 available. That is 47.2 percent.",
+          "write": "12.6 ÷ 26.7 = 47.2%"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Time in seconds, always.",
+          "write": "t in seconds"
+        },
+        {
+          "say": "Hydrogen gives two electrons. Oxygen takes four.",
+          "write": "H₂: 2e⁻, O₂: 4e⁻"
+        },
+        {
+          "say": "The anode is negative in a fuel cell.",
+          "write": "anode −"
+        },
+        {
+          "say": "Fuel cells convert energy. They do not store fuel like batteries.",
+          "write": "✗ stores energy"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Fuel and oxygen are supplied continuously.",
+          "write": "continuous supply",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 317,
+            "alt": "Acid fuel cell",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "anode −",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 90,
+                "w": 110,
+                "h": 190,
+                "fill": "grey",
+                "label": "cathode +",
+                "labelSize": 15
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 90,
+                "w": 260,
+                "h": 190,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "acid electrolyte",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 10,
+                "y": 185,
+                "x2": 38,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 22,
+                "y": 165,
+                "text": "H₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 550,
+                "y": 185,
+                "x2": 522,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 538,
+                "y": 165,
+                "text": "O₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 90,
+                "x2": 95,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 40,
+                "x2": 465,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 465,
+                "y": 40,
+                "x2": 465,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 25,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "load",
+                "labelSize": 14
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 30,
+                "x2": 220,
+                "y2": 30,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 22,
+                "text": "e⁻",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 170,
+                "x2": 360,
+                "y2": 170,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "H⁺ →",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 305,
+                "text": "H₂O forms here",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Porous, catalyst-coated electrodes speed things up.",
+          "write": "porous + catalyst"
+        },
+        {
+          "say": "Acid: water at the cathode. Alkali: water at the anode.",
+          "write": "where water forms"
+        },
+        {
+          "say": "Q equals I t, then n electrons equals Q over F.",
+          "write": "Q = It, n = Q ÷ F"
+        }
+      ]
+    }
+  ]
+}

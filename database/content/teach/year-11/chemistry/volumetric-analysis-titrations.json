@@ -1,0 +1,115 @@
+{
+  "level": "Year 11", "subject": "chemistry", "title": "Volumetric analysis (titrations)",
+  "frames": [
+    { "heading": "What is a titration?",
+      "lines": [
+        { "say": "We add one solution slowly to another until the reaction is just complete.",
+          "draw": {"type": "shapes", "width": 560, "height": 340, "alt": "A burette above a conical flask", "items": [
+            {"kind": "rect", "x": 250, "y": 10, "w": 40, "h": 180, "fill": "teal", "label": "burette"},
+            {"kind": "line", "x": 270, "y": 190, "x2": 270, "y2": 220, "color": "black"},
+            {"kind": "polygon", "points": [[250,230],[290,230],[350,320],[190,320]], "fill": "pink"},
+            {"kind": "text", "x": 360, "y": 300, "text": "conical flask", "size": 18},
+            {"kind": "text", "x": 300, "y": 100, "text": "known concentration", "size": 18},
+            {"kind": "text", "x": 20, "y": 280, "text": "unknown aliquot", "size": 18}
+          ]}},
+        { "say": "The equivalence point is where they've reacted in the exact mole ratio.", "write": "equivalence point" },
+        { "say": "We can't see that, so an indicator changes colour close to it.",
+          "draw": {"type": "shapes", "width": 560, "height": 340, "alt": "The flask changes colour at the end point", "items": [
+            {"kind": "rect", "x": 250, "y": 10, "w": 40, "h": 180, "fill": "teal", "label": "burette"},
+            {"kind": "line", "x": 270, "y": 190, "x2": 270, "y2": 220, "color": "black"},
+            {"kind": "polygon", "points": [[250,230],[290,230],[350,320],[190,320]], "fill": "purple", "change": "highlight"},
+            {"kind": "text", "x": 360, "y": 300, "text": "colour change!", "size": 20, "bold": true, "change": "add"}
+          ]}},
+        { "say": "Where the colour changes is the end point. Pick an indicator so they match.", "write": "end point ≈ equivalence" }
+      ] },
+    { "heading": "Standard solutions",
+      "lines": [
+        { "say": "A standard solution has an accurately known concentration.", "write": "standard solution" },
+        { "say": "We make one by weighing a primary standard into a volumetric flask.", "write": "weigh → dissolve → to the mark" },
+        { "say": "A primary standard is pure, stable, and has a high molar mass.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Sodium carbonate ticks, sodium hydroxide crossed", "items": [
+            {"kind": "rect", "x": 40, "y": 60, "w": 210, "h": 80, "fill": "green", "label": "Na₂CO₃ ✓"},
+            {"kind": "rect", "x": 310, "y": 60, "w": 210, "h": 80, "fill": "grey", "label": "NaOH", "change": "remove"},
+            {"kind": "text", "x": 415, "y": 190, "text": "absorbs H₂O and CO₂", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Sodium hydroxide is not one. It soaks up water and carbon dioxide.", "write": "NaOH must be standardised" }
+      ] },
+    { "heading": "Rinsing the glassware",
+      "lines": [
+        { "say": "The test is simple. Will the rinse change the number of moles?", "write": "does it change the moles?" },
+        { "say": "Rinse the burette and pipette with the solution they'll hold.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Rinse table: burette and pipette with solution, flasks with water", "items": [
+            {"kind": "rect", "x": 20, "y": 30, "w": 250, "h": 50, "fill": "teal", "label": "burette: solution", "change": "highlight"},
+            {"kind": "rect", "x": 20, "y": 100, "w": 250, "h": 50, "fill": "teal", "label": "pipette: solution", "change": "highlight"},
+            {"kind": "rect", "x": 290, "y": 30, "w": 250, "h": 50, "fill": "white", "label": "conical flask: water"},
+            {"kind": "rect", "x": 290, "y": 100, "w": 250, "h": 50, "fill": "white", "label": "volumetric flask: water"}
+          ]}},
+        { "say": "Water left inside them would dilute the solution.", "write": "water → dilutes" },
+        { "say": "Rinse the conical flask with water. Water there doesn't change the moles.", "write": "conical flask: water" },
+        { "say": "Rinsing it with the solution would add extra moles.", "write": "✗ extra moles" }
+      ] },
+    { "heading": "Good technique",
+      "lines": [
+        { "say": "Read the burette at eye level, at the bottom of the meniscus.", "write": "read to 2 d.p., e.g. 18.35 mL" },
+        { "say": "The titre is the final reading minus the initial reading.", "write": "titre = final − initial" },
+        { "say": "Swirl constantly. Add drop by drop near the end point.", "write": "drop by drop near the end" },
+        { "say": "Don't blow out the last drop from the pipette. It's calibrated to leave it." }
+      ] },
+    { "heading": "Choosing an indicator",
+      "lines": [
+        { "say": "The pH at equivalence depends on which acid and base react.",
+          "draw": {"type": "shapes", "width": 560, "height": 250, "alt": "pH scale showing where each indicator fits", "items": [
+            {"kind": "rect", "x": 30, "y": 90, "w": 500, "h": 30, "fill": "white"},
+            {"kind": "text", "x": 30, "y": 80, "text": "pH 0", "size": 16},
+            {"kind": "text", "x": 280, "y": 80, "text": "7", "size": 16, "anchor": "middle"},
+            {"kind": "text", "x": 530, "y": 80, "text": "14", "size": 16, "anchor": "end"},
+            {"kind": "rect", "x": 140, "y": 140, "w": 100, "h": 40, "fill": "red", "label": "below 7", "change": "add"},
+            {"kind": "rect", "x": 240, "y": 140, "w": 80, "h": 40, "fill": "green", "label": "≈ 7", "change": "add"},
+            {"kind": "rect", "x": 320, "y": 140, "w": 100, "h": 40, "fill": "pink", "label": "above 7", "change": "add"},
+            {"kind": "text", "x": 190, "y": 210, "text": "methyl orange", "size": 16, "anchor": "middle"},
+            {"kind": "text", "x": 370, "y": 210, "text": "phenolphthalein", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "Strong acid and weak base? Below 7. Use methyl orange.", "write": "SA + WB → methyl orange" },
+        { "say": "Weak acid and strong base? Above 7. Use phenolphthalein.", "write": "WA + SB → phenolphthalein" },
+        { "say": "Use just two or three drops. The indicator is an acid or base too.", "write": "2–3 drops only" }
+      ] },
+    { "heading": "Concordant titres and the maths",
+      "lines": [
+        { "say": "These titres were for sulfuric acid against 0.1050 molar sodium hydroxide.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Five titres", "items": [
+            {"kind": "rect", "x": 10, "y": 60, "w": 100, "h": 50, "fill": "grey", "label": "23.10"},
+            {"kind": "rect", "x": 120, "y": 60, "w": 100, "h": 50, "fill": "blue", "label": "22.45"},
+            {"kind": "rect", "x": 230, "y": 60, "w": 100, "h": 50, "fill": "blue", "label": "22.50"},
+            {"kind": "rect", "x": 340, "y": 60, "w": 100, "h": 50, "fill": "blue", "label": "22.40"},
+            {"kind": "rect", "x": 450, "y": 60, "w": 100, "h": 50, "fill": "grey", "label": "22.85"}
+          ]}},
+        { "say": "Drop the rough titre and the outlier. Keep the three within 0.10.", "write": "average = 22.45 mL",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Rough titre and outlier crossed out", "items": [
+            {"kind": "rect", "x": 10, "y": 60, "w": 100, "h": 50, "fill": "grey", "label": "23.10", "change": "remove"},
+            {"kind": "rect", "x": 120, "y": 60, "w": 100, "h": 50, "fill": "blue", "label": "22.45", "change": "highlight"},
+            {"kind": "rect", "x": 230, "y": 60, "w": 100, "h": 50, "fill": "blue", "label": "22.50", "change": "highlight"},
+            {"kind": "rect", "x": 340, "y": 60, "w": 100, "h": 50, "fill": "blue", "label": "22.40", "change": "highlight"},
+            {"kind": "rect", "x": 450, "y": 60, "w": 100, "h": 50, "fill": "grey", "label": "22.85", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 160, "text": "concordant: within 0.10 mL", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Moles of base are c times V.", "write": "0.1050 × 0.02245 = 2.357 × 10⁻³" },
+        { "say": "The acid is diprotic. Acid to base is one to two, so halve it.", "write": "n(H₂SO₄) = 1.1786 × 10⁻³" },
+        { "say": "Divide by the 20.00 millilitre aliquot. That's 0.05893 molar.", "write": "c = 0.05893 mol L⁻¹" },
+        { "say": "If the sample was diluted, times by the dilution factor at the end.", "write": "× dilution factor" }
+      ] },
+    { "heading": "Errors to watch for",
+      "lines": [
+        { "say": "Burette rinsed with water? The titre is too big, so the answer's too high.", "write": "burette + water → too high" },
+        { "say": "Overshoot the end point? Titre too big again. Answer too high.", "write": "overshoot → too high" },
+        { "say": "Think through each one. What happens to the titre, then use c equals n over V.", "write": "titre first, then c = n ÷ V" },
+        { "say": "Don't forget the mole ratio with sulfuric acid or sodium carbonate.", "write": "check the mole ratio" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "End point is the colour change. Equivalence is the exact mole ratio.", "write": "end point ≠ equivalence" },
+        { "say": "Rinse what delivers with its solution. Rinse flasks with water.", "write": "rinsing rule" },
+        { "say": "Average only concordant titres, within 0.10 millilitres.", "write": "within 0.10 mL" },
+        { "say": "n equals c V, mole ratio, c equals n over V, then dilution.", "write": "n = cV → ratio → c = n ÷ V" }
+      ] }
+  ]
+}

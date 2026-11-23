@@ -1,0 +1,83 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Divisibility rules and digit puzzles",
+  "frames": [
+    { "heading": "A quick check, not a whole division",
+      "lines": [
+        { "say": "A divisibility test is like a bouncer checking ID. A quick check on part of the number.", "write": "check part of the number" },
+        { "say": "For 2, 5 and 10, look at the last digit.", "write": "2, 5, 10 → last digit" },
+        { "say": "For 4, look at the last two digits. For 8, the last three.", "write": "4 → last 2,  8 → last 3" },
+        { "say": "For 3 and 9, add up the digits.", "write": "3, 9 → digit sum" }
+      ] },
+    { "heading": "Last digits for 8",
+      "lines": [
+        { "say": "Is 7128 divisible by 8? 1000 is a multiple of 8, so the thousands don't matter.", "write": "1000 = 8 × 125",
+          "draw": {"type": "shapes", "width": 560, "height": 180, "alt": "7128 with the 7 crossed out and 128 highlighted", "items": [
+            {"kind": "rect", "x": 100, "y": 50, "w": 80, "h": 80, "fill": "grey", "label": "7", "change": "remove"},
+            {"kind": "rect", "x": 190, "y": 50, "w": 80, "h": 80, "fill": "blue", "label": "1", "change": "highlight"},
+            {"kind": "rect", "x": 280, "y": 50, "w": 80, "h": 80, "fill": "blue", "label": "2", "change": "highlight"},
+            {"kind": "rect", "x": 370, "y": 50, "w": 80, "h": 80, "fill": "blue", "label": "8", "change": "highlight"},
+            {"kind": "text", "x": 320, "y": 165, "text": "128 ÷ 8 = 16 ✓", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "Just check 128. 128 divided by 8 is 16. So yes.", "write": "128 ÷ 8 = 16 ✓" },
+        { "say": "Careful: 2620 ends in 20, a multiple of 4. But 620 isn't a multiple of 8.", "write": "2620: ✗ for 8" }
+      ] },
+    { "heading": "Why the digit sum works",
+      "lines": [
+        { "say": "Write 345 as 3 hundreds, 4 tens and 5 ones.", "write": "345 = 300 + 40 + 5" },
+        { "say": "100 is 99 plus 1. 10 is 9 plus 1.", "write": "100 = 99 + 1,  10 = 9 + 1" },
+        { "say": "So 345 is 99 times 3, plus 9 times 4, plus the digit sum 12.", "write": "99×3 + 9×4 + 12",
+          "draw": {"type": "shapes", "width": 560, "height": 180, "alt": "The multiples of 9 are set aside, leaving the digit sum", "items": [
+            {"kind": "rect", "x": 30, "y": 50, "w": 170, "h": 70, "fill": "grey", "label": "99 × 3", "change": "remove"},
+            {"kind": "rect", "x": 210, "y": 50, "w": 150, "h": 70, "fill": "grey", "label": "9 × 4", "change": "remove"},
+            {"kind": "rect", "x": 370, "y": 50, "w": 160, "h": 70, "fill": "green", "label": "3 + 4 + 5", "change": "highlight"},
+            {"kind": "text", "x": 280, "y": 160, "text": "only the digit sum decides", "size": 20, "anchor": "middle"}]}},
+        { "say": "The 99s and 9s are always multiples of 9. Only the digit sum decides.", "write": "digit sum decides" }
+      ] },
+    { "heading": "Tests for 11 and 7",
+      "lines": [
+        { "say": "For 11, swing the digits: plus, minus, plus, minus, from the right.", "write": "alternating sum" },
+        { "say": "9581: 1 minus 8 plus 5 minus 9 is minus 11. A multiple of 11.", "write": "1 − 8 + 5 − 9 = −11 ✓" },
+        { "say": "For 7, double the last digit and subtract it from the rest.", "write": "rest − 2 × last" },
+        { "say": "532: 53 minus 4 is 49. That's 7 times 7, so yes.", "write": "53 − 4 = 49 ✓" }
+      ] },
+    { "heading": "Combining tests",
+      "lines": [
+        { "say": "For 12, use 3 and 4. They share no factor, so they're co-prime.", "write": "12 = 3 × 4" },
+        { "say": "Don't use 2 and 6. 18 passes both, but 18 isn't divisible by 12.", "write": "✗ 12 = 2 × 6" },
+        { "say": "Divisible by 4 and 6? Only guarantees 12, not 24. Twelve proves it.", "write": "4 and 6 → only 12" }
+      ] },
+    { "heading": "Missing-digit puzzles",
+      "lines": [
+        { "say": "52 blank 6 is divisible by 12. So it must pass 4 and 3.", "write": "52_6 ÷ 12" },
+        { "say": "For 4, the last two digits blank 6 must be 16, 36, 56, 76 or 96.", "write": "for 4: 1, 3, 5, 7, 9",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Digits that pass the test for 4", "items": [
+            {"kind": "circle", "x": 60, "y": 70, "r": 22, "fill": "grey", "label": "0", "change": "remove"},
+            {"kind": "circle", "x": 110, "y": 70, "r": 22, "fill": "blue", "label": "1"},
+            {"kind": "circle", "x": 160, "y": 70, "r": 22, "fill": "grey", "label": "2", "change": "remove"},
+            {"kind": "circle", "x": 210, "y": 70, "r": 22, "fill": "blue", "label": "3"},
+            {"kind": "circle", "x": 260, "y": 70, "r": 22, "fill": "grey", "label": "4", "change": "remove"},
+            {"kind": "circle", "x": 310, "y": 70, "r": 22, "fill": "blue", "label": "5"},
+            {"kind": "circle", "x": 360, "y": 70, "r": 22, "fill": "grey", "label": "6", "change": "remove"},
+            {"kind": "circle", "x": 410, "y": 70, "r": 22, "fill": "blue", "label": "7"},
+            {"kind": "circle", "x": 460, "y": 70, "r": 22, "fill": "grey", "label": "8", "change": "remove"},
+            {"kind": "circle", "x": 510, "y": 70, "r": 22, "fill": "blue", "label": "9"},
+            {"kind": "text", "x": 280, "y": 150, "text": "test for 4", "size": 20, "anchor": "middle"}]}},
+        { "say": "For 3, the digit sum is 13 plus the digit. So 2, 5 or 8.", "write": "for 3: 2, 5, 8",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Only 5 passes both tests", "items": [
+            {"kind": "circle", "x": 110, "y": 70, "r": 22, "fill": "blue", "label": "1", "change": "remove"},
+            {"kind": "circle", "x": 210, "y": 70, "r": 22, "fill": "blue", "label": "3", "change": "remove"},
+            {"kind": "circle", "x": 310, "y": 70, "r": 22, "fill": "green", "label": "5", "change": "highlight"},
+            {"kind": "circle", "x": 410, "y": 70, "r": 22, "fill": "blue", "label": "7", "change": "remove"},
+            {"kind": "circle", "x": 510, "y": 70, "r": 22, "fill": "blue", "label": "9", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 150, "text": "5256 ÷ 12 = 438", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "Only 5 is in both lists. The number is 5256.", "write": "5256 ✓" },
+        { "say": "Test every digit from 0 to 9. There can be more than one answer.", "write": "4_32 ÷ 9 → 0 or 9" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Two digits for 4, three digits for 8.", "write": "4 → 2 digits, 8 → 3 digits" },
+        { "say": "Sum for 3 and 9, swing for 11.", "write": "sum, swing" },
+        { "say": "Combine co-prime partners, like 3 and 4 for 12.", "write": "co-prime partners" },
+        { "say": "One counterexample beats a hundred examples.", "write": "one counterexample" }
+      ] }
+  ]
+}

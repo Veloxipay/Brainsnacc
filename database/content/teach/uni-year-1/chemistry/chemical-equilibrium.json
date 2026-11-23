@@ -1,0 +1,69 @@
+{"level":"Uni Year 1","subject":"chemistry","title":"Chemical equilibrium","frames":[
+{"heading":"Dynamic equilibrium and K","lines":[
+{"say":"At dynamic equilibrium, forward and reverse rates are equal. Concentrations stay constant.","write":"rate forward = rate reverse"},
+{"say":"K is products over reactants, each raised to its coefficient.","write":"Kc = [C]ᶜ[D]ᵈ / [A]ᵃ[B]ᵇ"},
+{"say":"Leave out pure solids, pure liquids and solvent water. Their activity is 1.","write":"no solids, liquids, solvent"},
+{"say":"Big K means products dominate. Small K means reactants dominate.","write":"K ≫ 1 products · K ≪ 1 reactants","draw":{"type":"shapes","width":560,"height":220,"alt":"Scale from reactant-favoured to product-favoured","items":[
+{"kind":"arrow","x":40,"y":100,"x2":520,"y2":100,"color":"black"},
+{"kind":"text","x":40,"y":80,"text":"K ≪ 1","size":18},
+{"kind":"text","x":520,"y":80,"text":"K ≫ 1","size":18,"anchor":"end"},
+{"kind":"rect","x":40,"y":130,"w":150,"h":50,"fill":"blue","label":"reactants"},
+{"kind":"rect","x":370,"y":130,"w":150,"h":50,"fill":"orange","label":"products","change":"highlight"}]}},
+{"say":"K only depends on temperature.","write":"K changes only with T"}]},
+{"heading":"Manipulating K, and Kp","lines":[
+{"say":"Reverse the reaction, and K becomes one over K.","write":"reverse → 1/K"},
+{"say":"Multiply the coefficients by n, and K becomes K to the n.","write":"× n → Kⁿ"},
+{"say":"Add two reactions, and multiply their K values.","write":"add → K₁ × K₂"},
+{"say":"For gases, K p equals K c times R T to the delta n.","write":"Kp = Kc(RT)^Δn"},
+{"say":"For N 2 O 4 going to 2 N O 2, delta n is plus 1.","write":"Δn = 2 − 1 = +1"},
+{"say":"Multiply K c, 4.6 times 10 to the minus 3, by R T, 24.78.","write":"4.6 × 10⁻³ × 24.78"},
+{"say":"So K p is about 0.11. Only gases count in delta n.","write":"Kp = 0.11"}]},
+{"heading":"Q tells you the direction","lines":[
+{"say":"Q has the same form as K, but uses concentrations right now.","write":"Q = same form, any moment"},
+{"say":"Q less than K: too few products. The reaction goes forward.","write":"Q < K → forward","draw":{"type":"shapes","width":560,"height":200,"alt":"Q below K, arrow pointing forward","items":[
+{"kind":"line","x":40,"y":100,"x2":520,"y2":100,"color":"black"},
+{"kind":"line","x":360,"y":70,"x2":360,"y2":130,"color":"red"},
+{"kind":"text","x":360,"y":60,"text":"K","size":22,"anchor":"middle","color":"red"},
+{"kind":"circle","x":150,"y":100,"r":14,"fill":"blue"},
+{"kind":"text","x":150,"y":150,"text":"Q","size":22,"anchor":"middle"},
+{"kind":"arrow","x":170,"y":100,"x2":340,"y2":100,"color":"green","change":"add"},
+{"kind":"text","x":255,"y":185,"text":"shift forward","size":18,"anchor":"middle","change":"add"}]}},
+{"say":"Q greater than K: too many products. It goes in reverse.","write":"Q > K → reverse"},
+{"say":"Q equals K: it's at equilibrium.","write":"Q = K → equilibrium"}]},
+{"heading":"ICE tables","lines":[
+{"say":"Initial, Change, Equilibrium. Let x be the change, using the stoichiometry.","write":"I · C · E"},
+{"say":"H 2 starts at 0.200, I 2 at 0.100. They lose x each. H I gains 2 x.","write":"0.200 − x · 0.100 − x · 2x"},
+{"say":"K is 50, so this gives a quadratic. The roots are 0.0934 and 0.233.","write":"46.0x² − 15.0x + 1.00 = 0"},
+{"say":"0.233 would make iodine negative. Reject it.","write":"x = 0.0934","draw":{"type":"shapes","width":560,"height":200,"alt":"Two roots, the larger one rejected","items":[
+{"kind":"rect","x":60,"y":60,"w":180,"h":70,"fill":"green","label":"x = 0.0934","change":"highlight"},
+{"kind":"rect","x":320,"y":60,"w":180,"h":70,"fill":"red","label":"x = 0.233","change":"remove"},
+{"kind":"text","x":410,"y":170,"text":"[I₂] would be negative","size":16,"anchor":"middle"}]}},
+{"say":"So H I is 0.187 molar at equilibrium.","write":"[HI] = 0.187 M"},
+{"say":"If K is tiny, use the small x shortcut. Then check x is under 5 percent.","write":"small-x: check < 5%"}]},
+{"heading":"Le Chatelier's principle","lines":[
+{"say":"Disturb an equilibrium, and it shifts to partly undo the change.","write":"shift to counteract"},
+{"say":"Add a reactant: Q drops below K, so it shifts forward. K doesn't change.","write":"add reactant → forward"},
+{"say":"Squeeze the volume: it shifts to the side with fewer gas moles.","write":"↓ volume → fewer gas moles","draw":{"type":"shapes","width":560,"height":240,"alt":"Smaller container shifts to side with fewer gas particles","items":[
+{"kind":"rect","x":40,"y":40,"w":200,"h":160,"fill":"none"},
+{"kind":"circle","x":90,"y":90,"r":14,"fill":"blue"},
+{"kind":"circle","x":180,"y":80,"r":14,"fill":"blue"},
+{"kind":"circle","x":130,"y":150,"r":14,"fill":"blue"},
+{"kind":"circle","x":200,"y":160,"r":14,"fill":"blue"},
+{"kind":"rect","x":340,"y":80,"w":120,"h":120,"fill":"none","change":"add"},
+{"kind":"circle","x":380,"y":130,"r":18,"fill":"orange","change":"add"},
+{"kind":"circle","x":425,"y":160,"r":18,"fill":"orange","change":"add"},
+{"kind":"text","x":400,"y":225,"text":"fewer gas moles","size":16,"anchor":"middle"}]}},
+{"say":"Adding inert gas at constant volume changes nothing.","write":"inert gas: no shift"},
+{"say":"Temperature changes K itself. Heat an exothermic reaction, and K falls.","write":"exothermic: ↑T → ↓K"},
+{"say":"A catalyst gets there faster, but doesn't move the position.","write":"catalyst: same K"}]},
+{"heading":"K and Gibbs energy","lines":[
+{"say":"Delta G nought equals minus R T ln K.","write":"ΔG° = −RT ln K"},
+{"say":"Negative delta G nought means K is bigger than 1.","write":"ΔG° < 0 → K > 1"},
+{"say":"For ammonia, delta G nought is minus 32.9 kilojoules. Convert to joules first.","write":"−32 900 J/mol"},
+{"say":"ln K is 13.28. So K is about 5.8 times 10 to the 5.","write":"K = 5.8 × 10⁵"}]},
+{"heading":"Watch out","lines":[
+{"say":"Use R 0.08314 for K p. Use 8.314 for delta G.","write":"0.08314 vs 8.314"},
+{"say":"Only gases count in delta n.","write":"Δn: gases only"},
+{"say":"Pressure and concentration don't change K. Only temperature does.","write":"only T changes K"},
+{"say":"Never keep a root that gives a negative concentration.","write":"reject negative roots"}]}
+]}

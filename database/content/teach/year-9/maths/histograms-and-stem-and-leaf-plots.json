@@ -1,0 +1,1231 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Histograms and stem-and-leaf plots",
+  "frames": [
+    {
+      "heading": "Organising lots of numbers",
+      "lines": [
+        {
+          "say": "A long list of numbers is hard to read. We need to organise it.",
+          "write": "organise the data"
+        },
+        {
+          "say": "Think of pigeonholes in a school office. Each number goes in a hole.",
+          "write": "class intervals"
+        },
+        {
+          "say": "Then you can see straight away which hole is the fullest.",
+          "write": "frequency"
+        }
+      ]
+    },
+    {
+      "heading": "Class intervals",
+      "lines": [
+        {
+          "say": "Group the values into classes of equal width, like 0 to less than 10.",
+          "write": "0 to <10, 10 to <20, …"
+        },
+        {
+          "say": "Here the class width is 10.",
+          "write": "class width = 10"
+        },
+        {
+          "say": "A value on a boundary, like 20, goes in the class that starts at 20.",
+          "write": "20 → 20 to <30"
+        },
+        {
+          "say": "Travel times of 24 students give frequencies 2, 7, 8, 5 and 2.",
+          "write": "2 + 7 + 8 + 5 + 2 = 24 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Drawing a histogram",
+      "lines": [
+        {
+          "say": "Frequency goes up the side. Class boundaries go along the bottom.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Histogram of travel times: frequencies 2, 7, 8, 5 and 2",
+            "items": [
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 70,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 265,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 165,
+                "text": "4",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 65,
+                "text": "8",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 285,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 285,
+                "text": "10",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 285,
+                "text": "20",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 285,
+                "text": "30",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 285,
+                "text": "40",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 285,
+                "text": "50",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 285,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw each bar to its frequency: 2, then 7.",
+          "write": "2, 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Histogram of travel times: frequencies 2, 7, 8, 5 and 2",
+            "items": [
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 70,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 265,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 165,
+                "text": "4",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 65,
+                "text": "8",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 210,
+                "w": 90,
+                "h": 50,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 85,
+                "w": 90,
+                "h": 175,
+                "fill": "blue",
+                "label": "7",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 285,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 285,
+                "text": "10",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 285,
+                "text": "20",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 285,
+                "text": "30",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 285,
+                "text": "40",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 285,
+                "text": "50",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 285,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then 8, 5 and 2. The bars touch, because the classes join.",
+          "write": "bars touch",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Histogram of travel times: frequencies 2, 7, 8, 5 and 2",
+            "items": [
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 70,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 265,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 165,
+                "text": "4",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 65,
+                "text": "8",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 210,
+                "w": 90,
+                "h": 50,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 85,
+                "w": 90,
+                "h": 175,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 60,
+                "w": 90,
+                "h": 200,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 135,
+                "w": 90,
+                "h": 125,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 210,
+                "w": 90,
+                "h": 50,
+                "fill": "blue",
+                "label": "2",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 285,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 285,
+                "text": "10",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 285,
+                "text": "20",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 285,
+                "text": "30",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 285,
+                "text": "40",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 285,
+                "text": "50",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 285,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The tallest bar is the modal class: 20 to less than 30 minutes.",
+          "write": "modal class: 20 to <30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Histogram of travel times: frequencies 2, 7, 8, 5 and 2",
+            "items": [
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 70,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 265,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 165,
+                "text": "4",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 65,
+                "text": "8",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 210,
+                "w": 90,
+                "h": 50,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 85,
+                "w": 90,
+                "h": 175,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 60,
+                "w": 90,
+                "h": 200,
+                "fill": "orange",
+                "label": "8",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 135,
+                "w": 90,
+                "h": 125,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 210,
+                "w": 90,
+                "h": 50,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 285,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 285,
+                "text": "10",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 285,
+                "text": "20",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 285,
+                "text": "30",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 285,
+                "text": "40",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 285,
+                "text": "50",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 285,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't leave gaps. Gaps suggest separate categories.",
+          "write": "✗ gaps",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Histogram of travel times: frequencies 2, 7, 8, 5 and 2",
+            "items": [
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 70,
+                "y": 260,
+                "x2": 70,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 265,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 165,
+                "text": "4",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 65,
+                "text": "8",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 210,
+                "w": 70,
+                "h": 50,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 85,
+                "w": 70,
+                "h": 175,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 60,
+                "w": 70,
+                "h": 200,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 350,
+                "y": 135,
+                "w": 70,
+                "h": 125,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 210,
+                "w": 70,
+                "h": 50,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 285,
+                "text": "0",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 285,
+                "text": "10",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 285,
+                "text": "20",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 285,
+                "text": "30",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 285,
+                "text": "40",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 285,
+                "text": "50",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 285,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Reading a histogram",
+      "lines": [
+        {
+          "say": "Here are the heights of 30 students, in classes of 5 centimetres.",
+          "diagram": "diagrams/y9/maths/histograms-and-stem-and-leaf-plots-parts.svg",
+          "alt": "Histogram of heights from 150 to 180 cm: 2, 5, 9, 8, 4, 2"
+        },
+        {
+          "say": "How many are 165 or taller? Add the last three bars.",
+          "write": "8 + 4 + 2 = 14"
+        },
+        {
+          "say": "As a percentage, 14 out of 30 is about 46.7 percent.",
+          "write": "14 ÷ 30 × 100 ≈ 46.7%"
+        },
+        {
+          "say": "A histogram shows how many, but not the exact values.",
+          "write": "no exact values"
+        }
+      ]
+    },
+    {
+      "heading": "Stem-and-leaf plots",
+      "lines": [
+        {
+          "say": "The stem is the tens digit. The leaf is the units digit.",
+          "write": "stem | leaf",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Ordered stem-and-leaf plot of 15 game scores",
+            "items": [
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 110,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 22,
+                "text": "Stem",
+                "size": 16,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 22,
+                "text": "Leaf",
+                "size": 16,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 60,
+                "text": "1",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 102,
+                "text": "2",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 144,
+                "text": "3",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 186,
+                "text": "4",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 228,
+                "text": "5",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 280,
+                "text": "Key: 2 | 3 means 23",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Write each leaf next to its stem, in order, smallest to largest.",
+          "write": "18, 23, 26, 29, 29",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Ordered stem-and-leaf plot of 15 game scores",
+            "items": [
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 110,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 22,
+                "text": "Stem",
+                "size": 16,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 22,
+                "text": "Leaf",
+                "size": 16,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 60,
+                "text": "1",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 60,
+                "text": "8",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 102,
+                "text": "2",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 102,
+                "text": "3 6 9 9",
+                "size": 22,
+                "change": "add",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 144,
+                "text": "3",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 186,
+                "text": "4",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 228,
+                "text": "5",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 280,
+                "text": "Key: 2 | 3 means 23",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Keep going for all 15 scores. Always add a key.",
+          "write": "Key: 2 | 3 means 23",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Ordered stem-and-leaf plot of 15 game scores",
+            "items": [
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 110,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 22,
+                "text": "Stem",
+                "size": 16,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 22,
+                "text": "Leaf",
+                "size": 16,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 60,
+                "text": "1",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 60,
+                "text": "8",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 102,
+                "text": "2",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 102,
+                "text": "3 6 9 9",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 144,
+                "text": "3",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 144,
+                "text": "1 3 5 5 7 8",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 186,
+                "text": "4",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 186,
+                "text": "1 4 7",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 228,
+                "text": "5",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 228,
+                "text": "2",
+                "size": 22,
+                "change": "add",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 280,
+                "text": "Key: 2 | 3 means 23",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The range is the largest minus the smallest: 52 minus 18.",
+          "write": "range = 52 − 18 = 34"
+        },
+        {
+          "say": "Scores of 40 or more are in the last two rows. That's 4 scores.",
+          "write": "41, 44, 47, 52",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Ordered stem-and-leaf plot of 15 game scores",
+            "items": [
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 110,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 22,
+                "text": "Stem",
+                "size": 16,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 22,
+                "text": "Leaf",
+                "size": 16,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 60,
+                "text": "1",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 60,
+                "text": "8",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 102,
+                "text": "2",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 102,
+                "text": "3 6 9 9",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 144,
+                "text": "3",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 144,
+                "text": "1 3 5 5 7 8",
+                "size": 22,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 186,
+                "text": "4",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 186,
+                "text": "1 4 7",
+                "size": 22,
+                "change": "highlight",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 228,
+                "text": "5",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 228,
+                "text": "2",
+                "size": 22,
+                "change": "highlight",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 280,
+                "text": "Key: 2 | 3 means 23",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Split stems",
+      "lines": [
+        {
+          "say": "If the plot is squashed, use each stem twice.",
+          "write": "split stems"
+        },
+        {
+          "say": "The first row holds leaves 0 to 4. The second holds 5 to 9.",
+          "write": "4 | 2 3    4 | 6 8 9"
+        },
+        {
+          "say": "A stem-and-leaf plot keeps every original value.",
+          "write": "keeps every value"
+        },
+        {
+          "say": "Turn it on its side and it looks like a histogram.",
+          "diagram": "diagrams/y9/maths/histograms-and-stem-and-leaf-plots-ex3.svg",
+          "alt": "Histogram of the 15 game scores: 1, 4, 6, 3, 1"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "30 belongs in 30 to less than 40, not 20 to less than 30.",
+          "write": "start yes, end no"
+        },
+        {
+          "say": "The modal class is an interval, not the frequency 9.",
+          "write": "160 to <165, not 9"
+        },
+        {
+          "say": "Always order the leaves and write a key.",
+          "write": "order + key"
+        },
+        {
+          "say": "Leaves 2 2 mean the value appears twice. Count both.",
+          "write": "count repeats"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Group the data into equal class intervals.",
+          "write": "equal widths"
+        },
+        {
+          "say": "Histogram bars touch. The tallest is the modal class.",
+          "write": "touching bars"
+        },
+        {
+          "say": "Stem-and-leaf plots are ordered, with a key.",
+          "write": "ordered + key"
+        }
+      ]
+    }
+  ]
+}

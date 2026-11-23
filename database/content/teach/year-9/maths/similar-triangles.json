@@ -1,0 +1,699 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Similar triangles",
+  "frames": [
+    {
+      "heading": "A photo and its thumbnail",
+      "lines": [
+        {
+          "say": "A thumbnail is the same picture as the full photo, just smaller.",
+          "write": "same shape, different size",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A triangle and a smaller similar triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    270
+                  ],
+                  [
+                    300,
+                    270
+                  ],
+                  [
+                    120,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Every angle is the same. Every length shrinks by the same amount.",
+          "write": "scale factor k",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A triangle and a smaller similar triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    270
+                  ],
+                  [
+                    300,
+                    270
+                  ],
+                  [
+                    120,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    360,
+                    270
+                  ],
+                  [
+                    490,
+                    270
+                  ],
+                  [
+                    400,
+                    165
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 140,
+                "text": "× ½",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Similar triangles are a triangle and its thumbnail.",
+          "write": "△ABC ||| △PQR"
+        }
+      ]
+    },
+    {
+      "heading": "What similar means",
+      "lines": [
+        {
+          "say": "Matching angles are equal: A with P, B with Q, C with R.",
+          "write": "∠A = ∠P, ∠B = ∠Q, ∠C = ∠R"
+        },
+        {
+          "say": "Matching sides are all in the same ratio, the scale factor.",
+          "write": "PQ/AB = QR/BC = PR/AC = k"
+        },
+        {
+          "say": "Similar means same shape. Congruent means same shape and same size.",
+          "write": "similar ≠ congruent"
+        }
+      ]
+    },
+    {
+      "heading": "The four tests",
+      "lines": [
+        {
+          "say": "AAA: two pairs of equal angles. The third pair must match too.",
+          "write": "AAA",
+          "diagram": "diagrams/y9/maths/similar-triangles-aa.svg",
+          "alt": "Triangles ABC and PQR with angles 40° and 75° equal"
+        },
+        {
+          "say": "SSS: all three pairs of sides in the same ratio.",
+          "write": "SSS",
+          "diagram": "diagrams/y9/maths/similar-triangles-sss.svg",
+          "alt": "Triangles with sides 8, 6, 4 and 12, 9, 6, every ratio 1.5"
+        },
+        {
+          "say": "SAS: two sides in the same ratio, and the included angle equal.",
+          "write": "SAS"
+        },
+        {
+          "say": "RHS: right angles, with the hypotenuses and one other side in ratio.",
+          "write": "RHS"
+        }
+      ]
+    },
+    {
+      "heading": "A line parallel to one side",
+      "lines": [
+        {
+          "say": "DE is parallel to BC. AD is 4, DB is 6 and DE is 5.",
+          "write": "DE ∥ BC",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ABC with DE parallel to BC, AD = 4, DB = 6, DE = 5",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    80,
+                    280
+                  ],
+                  [
+                    480,
+                    280
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 200.0,
+                "y": 130.0,
+                "x2": 360.0,
+                "y2": 130.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "A",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 68,
+                "y": 290,
+                "text": "B",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 492,
+                "y": 290,
+                "text": "C",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 188.0,
+                "y": 134.0,
+                "text": "D",
+                "size": 18,
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 372.0,
+                "y": 134.0,
+                "text": "E",
+                "size": 18,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 122.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "BC = ?",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 160.0,
+                "y": 80.0,
+                "text": "4",
+                "size": 18,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 205.0,
+                "text": "6",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The triangles share angle A, and corresponding angles are equal. AAA.",
+          "write": "△ADE ||| △ABC"
+        },
+        {
+          "say": "AD matches the whole side AB. That's 4 plus 6, which is 10.",
+          "write": "AB = 4 + 6 = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ABC with DE parallel to BC, AD = 4, DB = 6, DE = 5",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    80,
+                    280
+                  ],
+                  [
+                    480,
+                    280
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 200.0,
+                "y": 130.0,
+                "x2": 360.0,
+                "y2": 130.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "A",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 68,
+                "y": 290,
+                "text": "B",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 492,
+                "y": 290,
+                "text": "C",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 188.0,
+                "y": 134.0,
+                "text": "D",
+                "size": 18,
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 372.0,
+                "y": 134.0,
+                "text": "E",
+                "size": 18,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 122.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "BC = ?",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 160.0,
+                "y": 80.0,
+                "text": "4",
+                "size": 18,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 205.0,
+                "text": "6",
+                "size": 18,
+                "change": "remove",
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 268,
+                "y": 36,
+                "x2": 68,
+                "y2": 286,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 60,
+                "text": "AB = 10",
+                "size": 20,
+                "change": "add",
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Scale factor 10 over 4 is 2.5. So BC is 5 times 2.5, which is 12.5.",
+          "write": "BC = 12.5 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ABC with DE parallel to BC, AD = 4, DB = 6, DE = 5",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    80,
+                    280
+                  ],
+                  [
+                    480,
+                    280
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 200.0,
+                "y": 130.0,
+                "x2": 360.0,
+                "y2": 130.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "A",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 68,
+                "y": 290,
+                "text": "B",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 492,
+                "y": 290,
+                "text": "C",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 188.0,
+                "y": 134.0,
+                "text": "D",
+                "size": 18,
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 372.0,
+                "y": 134.0,
+                "text": "E",
+                "size": 18,
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 122.0,
+                "text": "5",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 160.0,
+                "y": 80.0,
+                "text": "4",
+                "size": 18,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110.0,
+                "y": 205.0,
+                "text": "6",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 268,
+                "y": 36,
+                "x2": 68,
+                "y2": 286,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 60,
+                "text": "AB = 10",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 60,
+                "text": "k = 10 ÷ 4 = 2.5",
+                "size": 20,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "BC = 5 × 2.5 = 12.5",
+                "size": 18,
+                "change": "highlight",
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The hourglass",
+      "lines": [
+        {
+          "say": "AB is parallel to DE, and the lines cross at C.",
+          "diagram": "diagrams/y9/maths/similar-triangles-ex3.svg",
+          "alt": "Hourglass shape with AB parallel to DE crossing at C"
+        },
+        {
+          "say": "Vertically opposite angles at C, and alternate angles. So AAA.",
+          "write": "△ABC ||| △EDC"
+        },
+        {
+          "say": "AC matches EC. The scale factor is 9 over 6, which is 1.5.",
+          "write": "k = 9 ÷ 6 = 1.5"
+        },
+        {
+          "say": "AB matches ED. So DE is 8 times 1.5, which is 12.",
+          "write": "DE = 12 cm"
+        }
+      ]
+    },
+    {
+      "heading": "Checking SSS",
+      "lines": [
+        {
+          "say": "Sides 6, 8, 10 and 9, 12, 15. Match smallest with smallest.",
+          "write": "9/6, 12/8, 15/10"
+        },
+        {
+          "say": "Every ratio is 1.5, so they're similar.",
+          "write": "all 1.5 → similar ✓"
+        },
+        {
+          "say": "What about 9, 12 and 16? 16 over 10 is 1.6, not 1.5.",
+          "write": "16 ÷ 10 = 1.6 ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Ratios of matching sides: 1.5, 1.5 and 1.6",
+            "items": [
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 60,
+                "text": "9 ÷ 6",
+                "size": 24,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 60,
+                "text": "= 1.5",
+                "size": 24,
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 115,
+                "text": "12 ÷ 8",
+                "size": 24,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 115,
+                "text": "= 1.5",
+                "size": 24,
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 170,
+                "text": "16 ÷ 10",
+                "size": 24,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 170,
+                "text": "= 1.6",
+                "size": 24,
+                "change": "highlight",
+                "bold": true,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "not all equal → not similar",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So not similar. All three ratios must be equal.",
+          "write": "not similar"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "With a parallel line, AD matches AB, not DB. Use the whole side.",
+          "write": "whole side!"
+        },
+        {
+          "say": "Match sides by their opposite angles, not by position on the page.",
+          "write": "match by angles"
+        },
+        {
+          "say": "For SSS, check all three ratios.",
+          "write": "all three"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Similar: equal angles, sides in the same ratio.",
+          "write": "same shape"
+        },
+        {
+          "say": "Tests: AAA, SSS, SAS and RHS.",
+          "write": "AAA  SSS  SAS  RHS"
+        },
+        {
+          "say": "Scale factor: large divided by small, from a matching pair.",
+          "write": "k = large ÷ small"
+        }
+      ]
+    }
+  ]
+}

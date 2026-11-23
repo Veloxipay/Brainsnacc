@@ -1,0 +1,110 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Factors affecting photosynthesis and respiration",
+  "frames": [
+    { "heading": "Measuring rate",
+      "lines": [
+        { "say": "Rate is how much product forms, or reactant is used, per unit of time.", "write": "rate = amount ÷ time" },
+        { "say": "For photosynthesis, measure oxygen released or carbon dioxide taken up.", "write": "photo: O₂ out, CO₂ in" },
+        { "say": "For respiration, measure oxygen used or carbon dioxide released.", "write": "resp: O₂ in, CO₂ out" },
+        { "say": "In light, a plant does both. So we measure a net rate.", "write": "net = photo − resp",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Photosynthesis bar minus respiration bar gives net", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 360, "h": 44, "fill": "green", "label": "photosynthesis"},
+            {"kind": "rect", "x": 40, "y": 110, "w": 120, "h": 44, "fill": "orange", "label": "respiration", "change": "remove"},
+            {"kind": "rect", "x": 160, "y": 170, "w": 240, "h": 40, "fill": "teal", "label": "net", "change": "add"}
+          ]}},
+        { "say": "When the two exactly match, that's the compensation point.", "write": "compensation point" }
+      ] },
+    { "heading": "Limiting factors",
+      "lines": [
+        { "say": "A limiting factor is the one in shortest supply. It holds the rate back.", "write": "limiting = shortest supply" },
+        { "say": "Turn up light at low intensity. The rate climbs.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Rate rises with light intensity", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 50, "y": 240, "x2": 250, "y2": 120, "color": "blue", "change": "highlight"},
+            {"kind": "text", "x": 140, "y": 150, "text": "light limiting", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 290, "y": 270, "text": "light intensity", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "Then it levels off. Light is no longer limiting. Something else is.", "write": "plateau → another factor",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Plateau where CO2 becomes limiting", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 50, "y": 240, "x2": 250, "y2": 120, "color": "blue"},
+            {"kind": "line", "x": 250, "y": 120, "x2": 510, "y2": 115, "color": "blue", "change": "add"},
+            {"kind": "text", "x": 380, "y": 100, "text": "CO₂ or temp limiting", "size": 18, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 290, "y": 270, "text": "light intensity", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "More light means more ATP and NADPH for the Calvin cycle.", "write": "more ATP + NADPH" }
+      ] },
+    { "heading": "Carbon dioxide and oxygen",
+      "lines": [
+        { "say": "Carbon dioxide is Rubisco's substrate. More of it fills active sites more often.", "write": "↑ CO₂ → ↑ rate" },
+        { "say": "Add more carbon dioxide, and the plateau rises higher.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Higher CO2 curve has a higher plateau", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 50, "y": 240, "x2": 200, "y2": 160, "color": "blue"},
+            {"kind": "line", "x": 200, "y": 160, "x2": 510, "y2": 155, "color": "blue"},
+            {"kind": "text", "x": 420, "y": 180, "text": "0.04% CO₂", "size": 18},
+            {"kind": "line", "x": 50, "y": 240, "x2": 270, "y2": 70, "color": "green", "change": "add"},
+            {"kind": "line", "x": 270, "y": 70, "x2": 510, "y2": 65, "color": "green", "change": "add"},
+            {"kind": "text", "x": 420, "y": 55, "text": "high CO₂", "size": 18, "color": "green", "change": "add"},
+            {"kind": "text", "x": 290, "y": 270, "text": "light intensity", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "A higher plateau shows carbon dioxide was limiting the lower curve.", "write": "higher plateau → CO₂ limited" },
+        { "say": "High oxygen lowers photosynthesis. Oxygen competes with carbon dioxide at Rubisco.", "write": "↑ O₂ → photorespiration" },
+        { "say": "For respiration, oxygen is the final electron acceptor. More oxygen, faster rate.", "write": "resp: ↑ O₂ → ↑ rate" }
+      ] },
+    { "heading": "Temperature",
+      "lines": [
+        { "say": "Both pathways use enzymes. So both show an enzyme temperature curve.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Rate rises to optimum then falls steeply", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 60, "y": 225, "x2": 320, "y2": 60, "color": "blue"},
+            {"kind": "line", "x": 320, "y": 60, "x2": 400, "y2": 230, "color": "red", "change": "add"},
+            {"kind": "text", "x": 320, "y": 45, "text": "optimum", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 440, "y": 140, "text": "denaturing", "size": 18, "color": "red", "change": "add"},
+            {"kind": "text", "x": 290, "y": 270, "text": "temperature", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "Up to the optimum, more collisions mean a faster rate.", "write": "↑ kinetic energy" },
+        { "say": "Past the optimum, the active sites change shape. The rate drops fast.", "write": "too hot → denatured" },
+        { "say": "Cold slows enzymes but doesn't denature them.", "write": "cold slows, not denatures" }
+      ] },
+    { "heading": "Water and glucose",
+      "lines": [
+        { "say": "Short of water, the plant closes its stomata to save it.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Open stoma lets CO2 in; closed stoma blocks it", "items": [
+            {"kind": "circle", "x": 150, "y": 100, "r": 50, "fill": "green"},
+            {"kind": "circle", "x": 150, "y": 100, "r": 18, "fill": "white"},
+            {"kind": "text", "x": 150, "y": 190, "text": "open: CO₂ in", "size": 18, "anchor": "middle"},
+            {"kind": "circle", "x": 410, "y": 100, "r": 50, "fill": "green"},
+            {"kind": "circle", "x": 410, "y": 100, "r": 18, "fill": "white", "change": "remove"},
+            {"kind": "text", "x": 410, "y": 190, "text": "closed: no CO₂", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "That also stops carbon dioxide getting in. So carbon dioxide becomes limiting.", "write": "drought → CO₂ limiting" },
+        { "say": "It's rarely a lack of water for splitting. It's the stomata.", "write": "stomata, not photolysis" },
+        { "say": "Glucose is respiration's substrate. More glucose, faster respiration, until it plateaus.", "write": "↑ glucose → ↑ resp" }
+      ] },
+    { "heading": "Reading a rate graph",
+      "lines": [
+        { "say": "First, describe the trend with numbers from the graph.", "write": "1. describe with data" },
+        { "say": "Second, explain it using the pathway. Name the stage or enzyme.", "write": "2. explain: stage, enzyme" },
+        { "say": "Third, name the limiting factor in each section.", "write": "3. limiting factor" },
+        { "say": "Rising section, it's the x axis. On the plateau, it's something else.", "write": "plateau ≠ x-axis limiting" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "A plateau doesn't mean the reaction stopped. The rate is steady at its maximum.", "write": "plateau ≠ stopped" },
+        { "say": "Don't name the x axis variable as limiting on the plateau.", "write": "✗ light limiting on plateau" },
+        { "say": "Plants respire all the time, even in the light.", "write": "always respiring" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "The limiting factor is the one in shortest supply.", "write": "shortest supply limits" },
+        { "say": "Light and carbon dioxide raise photosynthesis until another factor limits.", "write": "light, CO₂ → plateau" },
+        { "say": "Temperature has an optimum. Too hot denatures enzymes.", "write": "optimum, then denature" },
+        { "say": "Drought closes stomata, which cuts carbon dioxide supply.", "write": "drought → stomata close" }
+      ] }
+  ]
+}

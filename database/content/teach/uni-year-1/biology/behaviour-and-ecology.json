@@ -1,0 +1,61 @@
+{"level":"Uni Year 1","subject":"biology","title":"Behaviour and ecology","frames":[
+{"heading":"How and why: proximate and ultimate","lines":[
+{"say":"Every behaviour can be explained two ways. Proximate means process: how it happens.","write":"proximate = how"},
+{"say":"Ultimate means use: why it evolved, and how it helps fitness.","write":"ultimate = why it evolved"},
+{"say":"A bird sings in spring. Longer days change its hormones. That's proximate.","write":"day length → hormones","draw":{"type":"shapes","width":560,"height":220,"alt":"Bird song explained by proximate and ultimate causes","items":[
+{"kind":"rect","x":200,"y":20,"w":160,"h":60,"fill":"yellow","label":"bird sings"},
+{"kind":"rect","x":20,"y":140,"w":220,"h":60,"fill":"blue","label":"hormones: how"},
+{"kind":"rect","x":320,"y":140,"w":220,"h":60,"fill":"green","label":"wins mates: why","change":"add"},
+{"kind":"arrow","x":250,"y":80,"x2":150,"y2":140,"color":"black"},
+{"kind":"arrow","x":310,"y":80,"x2":420,"y2":140,"color":"black","change":"add"}]}},
+{"say":"Singing wins mates and territory. That's ultimate. A full answer needs both.","write":"give both"}]},
+{"heading":"Innate and learned","lines":[
+{"say":"Innate behaviour is done right the first time, with no experience.","write":"innate: right first time"},
+{"say":"A goose rolls an egg back, and finishes the move even if the egg is taken.","write":"fixed action pattern"},
+{"say":"Habituation: birds learn to ignore a scarecrow.","write":"habituation"},
+{"say":"Imprinting: goslings follow the first moving thing they see.","write":"imprinting: sensitive period"},
+{"say":"Operant conditioning: a predator gets sick from a bright insect, and avoids that colour.","write":"operant: reward / punishment"},
+{"say":"Most behaviour mixes genes and environment. It's a continuum.","write":"innate ↔ learned"}]},
+{"heading":"Optimal foraging","lines":[
+{"say":"Profitability is bang for your buck: energy divided by handling time.","write":"profitability = E / h"},
+{"say":"A large crab gives 600 joules in 20 seconds. That's 30 joules per second.","write":"large: 600 / 20 = 30 J/s"},
+{"say":"A small crab gives 150 in 10 seconds. That's only 15.","write":"small: 150 / 10 = 15 J/s"},
+{"say":"If large crabs take 30 seconds to find, the rate is 600 over 50. Just 12.","write":"600 / (30 + 20) = 12","draw":{"type":"shapes","width":560,"height":240,"alt":"Rate from large crabs only, 12, is below small crab profitability 15","items":[
+{"kind":"line","x":40,"y":200,"x2":520,"y2":200,"color":"black"},
+{"kind":"rect","x":100,"y":104,"w":120,"h":96,"fill":"blue","label":"12"},
+{"kind":"text","x":160,"y":225,"text":"large only","size":16,"anchor":"middle"},
+{"kind":"rect","x":320,"y":80,"w":120,"h":120,"fill":"orange","label":"15","change":"highlight"},
+{"kind":"text","x":380,"y":225,"text":"small crab","size":16,"anchor":"middle"},
+{"kind":"text","x":280,"y":40,"text":"15 > 12: eat both","size":22,"anchor":"middle","bold":true,"change":"add"}]}},
+{"say":"Fifteen beats twelve, so eat small crabs too. It depends on how common the best prey is.","write":"eat both"},
+{"say":"Marginal value theorem: leave a patch when it's no better than average.","write":"leave at average rate"}]},
+{"heading":"Signals and mating","lines":[
+{"say":"Signals can be visual, acoustic, chemical or tactile.","write":"visual · sound · pheromone · touch"},
+{"say":"A honeybee waggle dance shows food direction by angle, and distance by duration.","write":"waggle dance"},
+{"say":"Costly signals tend to be honest. Only fit animals can afford them.","write":"costly = honest"},
+{"say":"Eggs are big and few, sperm small and many. Females are often the limiting resource.","write":"eggs ≫ sperm"},
+{"say":"Males compete, females choose. That's sexual selection, which explains the lyrebird's tail.","write":"intra- and intersexual"},
+{"say":"Monogamy, polygyny, polyandry or promiscuity. Care depends on certainty of paternity.","write":"mating systems"}]},
+{"heading":"Altruism and Hamilton's rule","lines":[
+{"say":"Altruism lowers your fitness but raises another's. Relatives share genes, though.","write":"altruism"},
+{"say":"Hamilton's rule: help when relatedness times benefit is greater than cost.","write":"rB > C"},
+{"say":"A young bird can breed alone and raise one, or help raise 3 extra full siblings.","write":"C = 1, B = 3, r = 0.5"},
+{"say":"0.5 times 3 is 1.5. That beats 1, so helping wins.","write":"rB = 1.5 > 1 ✓","draw":{"type":"shapes","width":560,"height":240,"alt":"Benefit to kin 1.5 versus cost 1; for half-siblings 0.75","items":[
+{"kind":"line","x":40,"y":200,"x2":520,"y2":200,"color":"black"},
+{"kind":"rect","x":80,"y":80,"w":110,"h":120,"fill":"green","label":"rB 1.5"},
+{"kind":"rect","x":230,"y":120,"w":110,"h":80,"fill":"red","label":"C 1"},
+{"kind":"rect","x":380,"y":140,"w":110,"h":60,"fill":"grey","label":"0.75","change":"add"},
+{"kind":"text","x":435,"y":225,"text":"half-sibs: no","size":16,"anchor":"middle","change":"add"}]}},
+{"say":"For half siblings, r is 0.25. Then r B is only 0.75, so breed alone.","write":"half-sibs: 0.75 < 1"},
+{"say":"Haplodiploid bee sisters share 0.75. Non-relatives need reciprocal altruism.","write":"bees r = 0.75"}]},
+{"heading":"Behaviour shapes ecosystems","lines":[
+{"say":"Territories limit how many animals can breed. That regulates population size.","write":"territoriality"},
+{"say":"Prey avoid risky areas. That's a landscape of fear.","write":"landscape of fear","draw":{"type":"shapes","width":560,"height":240,"alt":"Dingo suppresses foxes and cats, helping small native mammals","items":[
+{"kind":"rect","x":20,"y":90,"w":140,"h":60,"fill":"orange","label":"dingo"},
+{"kind":"arrow","x":160,"y":120,"x2":210,"y2":120,"color":"red"},
+{"kind":"rect","x":210,"y":90,"w":140,"h":60,"fill":"grey","label":"fox, cat","change":"remove"},
+{"kind":"arrow","x":350,"y":120,"x2":400,"y2":120,"color":"red"},
+{"kind":"rect","x":400,"y":90,"w":140,"h":60,"fill":"green","label":"native mammals","change":"highlight"}]}},
+{"say":"Research suggests dingoes may suppress foxes and cats, helping small native mammals.","write":"dingoes ⊣ foxes, cats"},
+{"say":"Selection acts on individuals and genes. Never for the good of the species.","write":"✗ good of the species"}]}
+]}

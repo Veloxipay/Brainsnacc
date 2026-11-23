@@ -1,0 +1,101 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Gene structure and expression",
+  "frames": [
+    { "heading": "The parts of a gene",
+      "lines": [
+        { "say": "Gene expression turns a gene's information into a product, usually a polypeptide.", "write": "DNA → mRNA → polypeptide" },
+        { "say": "Here's a eukaryotic gene. The promoter comes first. RNA polymerase binds there.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Gene with promoter, exons, introns and terminator", "items": [
+            {"kind": "rect", "x": 10, "y": 80, "w": 90, "h": 50, "fill": "green", "label": "promoter", "change": "highlight"},
+            {"kind": "rect", "x": 100, "y": 80, "w": 80, "h": 50, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 180, "y": 80, "w": 80, "h": 50, "fill": "grey", "label": "intron"},
+            {"kind": "rect", "x": 260, "y": 80, "w": 80, "h": 50, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 340, "y": 80, "w": 80, "h": 50, "fill": "grey", "label": "intron"},
+            {"kind": "rect", "x": 420, "y": 80, "w": 60, "h": 50, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 480, "y": 80, "w": 70, "h": 50, "fill": "red", "label": "term."}
+          ]}},
+        { "say": "Exons are expressed. Introns are transcribed, then cut out.", "write": "exons kept, introns removed" },
+        { "say": "The terminator tells RNA polymerase to stop transcribing.", "write": "terminator ≠ stop codon" },
+        { "say": "Prokaryotes also have an operator, where a repressor can bind.", "write": "operator: prokaryotes" }
+      ] },
+    { "heading": "Template and coding strands",
+      "lines": [
+        { "say": "Only one strand is read. That's the template strand.", "write": "template strand is read" },
+        { "say": "mRNA is complementary to the template.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Coding strand, template strand and mRNA", "items": [
+            {"kind": "text", "x": 20, "y": 50, "text": "coding:    A T G C C T", "size": 26},
+            {"kind": "text", "x": 20, "y": 110, "text": "template:  T A C G G A", "size": 26},
+            {"kind": "text", "x": 20, "y": 180, "text": "mRNA:      A U G C C U", "size": 26, "color": "orange", "change": "add"}
+          ]}},
+        { "say": "So the mRNA matches the coding strand, with U instead of T.", "write": "mRNA = coding strand (T → U)" }
+      ] },
+    { "heading": "Transcription",
+      "lines": [
+        { "say": "In eukaryotes, transcription happens in the nucleus.", "write": "transcription: nucleus" },
+        { "say": "RNA polymerase binds the promoter. The DNA unwinds and the bases are exposed.", "write": "1. initiation" },
+        { "say": "It reads the template and adds matching RNA nucleotides. A pairs with U.", "write": "2. elongation: A–U, G–C",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "RNA polymerase builds mRNA along the template", "items": [
+            {"kind": "rect", "x": 20, "y": 150, "w": 520, "h": 26, "fill": "blue", "label": "template strand"},
+            {"kind": "circle", "x": 300, "y": 120, "r": 40, "fill": "orange", "label": "RNA pol"},
+            {"kind": "rect", "x": 60, "y": 110, "w": 200, "h": 22, "fill": "yellow", "label": "mRNA", "change": "add"},
+            {"kind": "arrow", "x": 350, "y": 70, "x2": 480, "y2": 70, "color": "black", "change": "add"},
+            {"kind": "text", "x": 420, "y": 55, "text": "moves along", "size": 16, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "At the terminator, it lets go. The product is pre-mRNA.", "write": "3. termination → pre-mRNA" }
+      ] },
+    { "heading": "Processing pre-mRNA",
+      "lines": [
+        { "say": "Before leaving the nucleus, pre-mRNA gets three changes.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Pre-mRNA with exons and introns", "items": [
+            {"kind": "rect", "x": 60, "y": 90, "w": 90, "h": 40, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 150, "y": 90, "w": 80, "h": 40, "fill": "grey", "label": "intron"},
+            {"kind": "rect", "x": 230, "y": 90, "w": 90, "h": 40, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 320, "y": 90, "w": 80, "h": 40, "fill": "grey", "label": "intron"},
+            {"kind": "rect", "x": 400, "y": 90, "w": 90, "h": 40, "fill": "blue", "label": "exon"}
+          ]}},
+        { "say": "A 5 prime cap and a poly A tail are added. Splicing removes the introns.", "write": "cap + tail + splicing",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Introns removed, cap and tail added", "items": [
+            {"kind": "circle", "x": 40, "y": 110, "r": 18, "fill": "green", "label": "cap", "change": "add"},
+            {"kind": "rect", "x": 60, "y": 90, "w": 90, "h": 40, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 150, "y": 90, "w": 80, "h": 40, "fill": "grey", "label": "intron", "change": "remove"},
+            {"kind": "rect", "x": 230, "y": 90, "w": 90, "h": 40, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 320, "y": 90, "w": 80, "h": 40, "fill": "grey", "label": "intron", "change": "remove"},
+            {"kind": "rect", "x": 400, "y": 90, "w": 90, "h": 40, "fill": "blue", "label": "exon"},
+            {"kind": "rect", "x": 490, "y": 95, "w": 60, "h": 30, "fill": "yellow", "label": "AAAA", "change": "add"}
+          ]}},
+        { "say": "The cap and tail protect the mRNA. The cap helps the ribosome attach.", "write": "protect + help ribosome" },
+        { "say": "Alternative splicing keeps different exons. One gene, several polypeptides.", "write": "alternative splicing" },
+        { "say": "Mature mRNA leaves through a nuclear pore.", "write": "mature mRNA → cytosol" }
+      ] },
+    { "heading": "Translation",
+      "lines": [
+        { "say": "Translation happens at ribosomes. The mRNA is read in codons, three bases each.", "write": "codon = 3 bases" },
+        { "say": "It starts at A U G. A tRNA with anticodon U A C brings methionine.", "write": "start: AUG (Met)" },
+        { "say": "The next tRNA brings its amino acid. A peptide bond joins them.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "tRNAs on mRNA codons, peptide bond forms", "items": [
+            {"kind": "rect", "x": 20, "y": 190, "w": 520, "h": 30, "fill": "yellow", "label": "AUG  GGC  UUA  …"},
+            {"kind": "rect", "x": 60, "y": 130, "w": 80, "h": 50, "fill": "teal", "label": "UAC"},
+            {"kind": "circle", "x": 100, "y": 90, "r": 26, "fill": "orange", "label": "Met"},
+            {"kind": "rect", "x": 150, "y": 130, "w": 80, "h": 50, "fill": "teal", "label": "CCG", "change": "add"},
+            {"kind": "circle", "x": 190, "y": 90, "r": 26, "fill": "orange", "label": "Gly", "change": "add"},
+            {"kind": "line", "x": 126, "y": 90, "x2": 164, "y2": 90, "color": "red", "change": "add"},
+            {"kind": "text", "x": 145, "y": 40, "text": "peptide bond", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "The ribosome moves one codon along. The empty tRNA leaves.", "write": "move one codon, repeat" },
+        { "say": "At a stop codon, a release factor binds. The polypeptide is released.", "write": "stop: UAA, UAG, UGA" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "The promoter isn't transcribed or translated. It just controls transcription.", "write": "promoter: not transcribed" },
+        { "say": "Introns are cut from pre-mRNA, not from the DNA.", "write": "introns stay in DNA" },
+        { "say": "The terminator ends transcription. A stop codon ends translation.", "write": "terminator vs stop codon" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Promoter, exons and introns, then terminator.", "write": "promoter → exons/introns → term." },
+        { "say": "Transcription makes pre-mRNA from the template strand.", "write": "transcription: nucleus" },
+        { "say": "Cap, tail and splicing make mature mRNA.", "write": "cap, tail, splice" },
+        { "say": "Ribosomes read codons from A U G to a stop codon.", "write": "AUG → stop" }
+      ] }
+  ]
+}

@@ -1,0 +1,1123 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Geometric proofs and congruence",
+  "frames": [
+    {
+      "heading": "What a proof looks like",
+      "lines": [
+        {
+          "say": "A proof starts with what you are given, and what you need to prove.",
+          "write": "Given … To prove …"
+        },
+        {
+          "say": "Then you write statements. Every statement needs a reason.",
+          "write": "Statement | Reason"
+        },
+        {
+          "say": "Reasons are facts that are always true. Angles on a straight line add to 180.",
+          "write": "straight line: 180°"
+        },
+        {
+          "say": "Vertically opposite angles are equal. Angles in a triangle add to 180.",
+          "write": "vert. opp. equal,  △ = 180°"
+        },
+        {
+          "say": "On parallel lines, alternate and corresponding angles are equal.",
+          "write": "alternate =, corresponding ="
+        },
+        {
+          "say": "A side shared by two triangles is equal to itself. That's a common side.",
+          "write": "common side"
+        }
+      ]
+    },
+    {
+      "heading": "Congruent triangles",
+      "lines": [
+        {
+          "say": "Congruent triangles are exactly the same shape and size.",
+          "write": "≅  means congruent"
+        },
+        {
+          "say": "One fits exactly on top of the other. It may need flipping or turning.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Two triangles with two sides 5 and 7 and the angle 40° between them",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    240
+                  ],
+                  [
+                    230,
+                    240
+                  ],
+                  [
+                    100,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    330,
+                    240
+                  ],
+                  [
+                    520,
+                    240
+                  ],
+                  [
+                    460,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 260,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 260,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 70,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 260,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 260,
+                "text": "F",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 70,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 75,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 425,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The order of the letters matters. A matches D, B matches E, C matches F.",
+          "write": "△ABC ≅ △DEF"
+        },
+        {
+          "say": "So A B equals D E, and B C equals E F.",
+          "write": "AB = DE,  BC = EF,  AC = DF"
+        }
+      ]
+    },
+    {
+      "heading": "The four congruence tests",
+      "lines": [
+        {
+          "say": "You don't need all six measurements. One of four tests is enough.",
+          "diagram": "diagrams/y10/maths/geometric-proofs-and-congruence-tests.svg",
+          "alt": "The four tests SSS, SAS, AAS and RHS"
+        },
+        {
+          "say": "S S S. All three pairs of sides are equal.",
+          "write": "SSS"
+        },
+        {
+          "say": "S A S. Two sides, and the angle between them, are equal.",
+          "write": "SAS: angle sandwiched"
+        },
+        {
+          "say": "A A S. Two angles and a matching side are equal.",
+          "write": "AAS"
+        },
+        {
+          "say": "R H S. A right angle, equal hypotenuses, and one other equal side.",
+          "write": "RHS"
+        },
+        {
+          "say": "S S A is not a test. It can make two different triangles.",
+          "write": "✗ SSA"
+        }
+      ]
+    },
+    {
+      "heading": "Using SAS",
+      "lines": [
+        {
+          "say": "Look at these two triangles. A B and D E are both 5.",
+          "write": "AB = DE = 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Two triangles with two sides 5 and 7 and the angle 40° between them",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    240
+                  ],
+                  [
+                    230,
+                    240
+                  ],
+                  [
+                    100,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    330,
+                    240
+                  ],
+                  [
+                    520,
+                    240
+                  ],
+                  [
+                    460,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 260,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 260,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 70,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 260,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 260,
+                "text": "F",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 70,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 75,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 425,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Angle B and angle E are both 40 degrees, between the sides.",
+          "write": "∠B = ∠E = 40°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Two triangles with two sides 5 and 7 and the angle 40° between them",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    240
+                  ],
+                  [
+                    230,
+                    240
+                  ],
+                  [
+                    100,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    330,
+                    240
+                  ],
+                  [
+                    520,
+                    240
+                  ],
+                  [
+                    460,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 260,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 260,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 70,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 260,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 260,
+                "text": "F",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 70,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 75,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 425,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "B C and E F are both 7.",
+          "write": "BC = EF = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Two triangles with two sides 5 and 7 and the angle 40° between them",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    240
+                  ],
+                  [
+                    230,
+                    240
+                  ],
+                  [
+                    100,
+                    80
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    330,
+                    240
+                  ],
+                  [
+                    520,
+                    240
+                  ],
+                  [
+                    460,
+                    80
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 260,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 260,
+                "text": "C",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 70,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 260,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 260,
+                "text": "F",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 70,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 75,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 505,
+                "y": 160,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 425,
+                "y": 265,
+                "text": "7",
+                "size": 18,
+                "color": "black",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 228,
+                "text": "40°",
+                "size": 16,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the triangles are congruent by S A S.",
+          "write": "△ABC ≅ △DEF (SAS)"
+        },
+        {
+          "say": "C matches F, so A C equals D F.",
+          "write": "AC = DF"
+        }
+      ]
+    },
+    {
+      "heading": "Proving base angles are equal",
+      "lines": [
+        {
+          "say": "In triangle A B C, A B equals A C. M is the midpoint of B C.",
+          "write": "AB = AC,  BM = CM",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Isosceles triangle ABC split by AM into two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    120,
+                    250
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 30,
+                "x2": 280,
+                "y2": 250,
+                "color": "red",
+                "stroke": 5
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 272,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 272,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "M",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 130,
+                "text": "AB",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 130,
+                "text": "AC",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 305,
+                "y": 150,
+                "text": "AM",
+                "size": 16,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Join A to M. Now there are two triangles.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Isosceles triangle ABC split by AM into two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    120,
+                    250
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 30,
+                "x2": 280,
+                "y2": 250,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 272,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 272,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "M",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 130,
+                "text": "AB",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 130,
+                "text": "AC",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 305,
+                "y": 150,
+                "text": "AM",
+                "size": 16,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A M is in both triangles. It's a common side.",
+          "write": "AM = AM  (common side)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Isosceles triangle ABC split by AM into two triangles",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    120,
+                    250
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 30,
+                "x2": 280,
+                "y2": 250,
+                "color": "red",
+                "change": "highlight",
+                "stroke": 5
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 272,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 272,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "M",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 130,
+                "text": "AB",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 130,
+                "text": "AC",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 305,
+                "y": 150,
+                "text": "AM",
+                "size": 16,
+                "color": "red",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Three pairs of sides are equal. So they're congruent by S S S.",
+          "write": "△ABM ≅ △ACM (SSS)"
+        },
+        {
+          "say": "So angle B equals angle C. Matching angles of congruent triangles.",
+          "write": "∠B = ∠C"
+        }
+      ]
+    },
+    {
+      "heading": "Finding an unknown",
+      "lines": [
+        {
+          "say": "In this kite, A B equals A D, and C B equals C D.",
+          "diagram": "diagrams/y10/maths/geometric-proofs-and-congruence-ex4.svg",
+          "alt": "Kite ABCD with angle ADC = 100° and angle ABC = (3x + 10)°"
+        },
+        {
+          "say": "A C is a common side, so the triangles are congruent by S S S.",
+          "write": "△ABC ≅ △ADC (SSS)"
+        },
+        {
+          "say": "B matches D, so the angles at B and D are equal.",
+          "write": "3x + 10 = 100"
+        },
+        {
+          "say": "Solve. Three x is 90, so x is 30.",
+          "write": "x = 30"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "S S A is not a test. In S A S, check the angle is between the sides.",
+          "write": "✗ SSA"
+        },
+        {
+          "say": "Match the vertices in order. P Q R and X Y Z means Q R equals Y Z.",
+          "write": "△PQR ≅ △XYZ → QR = YZ"
+        },
+        {
+          "say": "Never assume from the picture. Use only facts that are given or proved."
+        },
+        {
+          "say": "Look for a common side. It's a free pair.",
+          "write": "shared side = free pair"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "S S S, S A S, A A S, R H S. The four that pass the test.",
+          "write": "SSS, SAS, AAS, RHS"
+        },
+        {
+          "say": "The A in S A S is sandwiched between the sides.",
+          "write": "S–A–S"
+        },
+        {
+          "say": "Every statement needs a reason.",
+          "write": "Statement | Reason"
+        },
+        {
+          "say": "Once congruent, all matching parts are equal.",
+          "write": "matching parts ="
+        }
+      ]
+    }
+  ]
+}

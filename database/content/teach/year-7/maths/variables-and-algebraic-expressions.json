@@ -1,0 +1,519 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Variables and algebraic expressions",
+  "frames": [
+    {
+      "heading": "A letter for a number",
+      "lines": [
+        {
+          "say": "Imagine a box labelled m. We don't know how many marbles are inside.",
+          "write": "m = mystery number",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "A box labelled m with 3 more marbles",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 80,
+                "w": 140,
+                "h": 120,
+                "fill": "orange",
+                "label": "m"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 60,
+                "text": "mystery box",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add 3 more marbles. Now the box holds m plus 3.",
+          "write": "m + 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "A box labelled m with 3 more marbles",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 80,
+                "w": 140,
+                "h": 120,
+                "fill": "orange",
+                "label": "m"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 60,
+                "text": "mystery box",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 140,
+                "r": 16,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 140,
+                "r": 16,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 430,
+                "y": 140,
+                "r": 16,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "m + 3",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Open it and count 10. Then m plus 3 is 13.",
+          "write": "10 + 3 = 13",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "A box labelled m with 3 more marbles",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 80,
+                "w": 140,
+                "h": 120,
+                "fill": "orange",
+                "label": "10",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 60,
+                "text": "mystery box",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 140,
+                "r": 16,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 140,
+                "r": 16,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 430,
+                "y": 140,
+                "r": 16,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "m + 3",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 250,
+                "text": "= 13",
+                "size": 30,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A letter that stands for a number is a variable, or pronumeral.",
+          "write": "variable = pronumeral"
+        },
+        {
+          "say": "Choose letters that help. c for cost, h for height.",
+          "write": "c = cost   h = height"
+        }
+      ]
+    },
+    {
+      "heading": "Terms, coefficients, constants",
+      "lines": [
+        {
+          "say": "An expression is numbers and letters joined by operations. No equals sign.",
+          "write": "4a + 3b − 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "The expression 4a + 3b − 2 split into terms",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 150,
+                "text": "4a + 3b − 2",
+                "size": 56,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Split at each plus or minus. Each part is a term.",
+          "write": "terms",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "The expression 4a + 3b − 2 split into terms",
+            "items": [
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 150,
+                "text": "4a",
+                "size": 56,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 150,
+                "text": "+",
+                "size": 56,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 150,
+                "text": "3b",
+                "size": 56,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 150,
+                "text": "−2",
+                "size": 56,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 220,
+                "text": "3 terms: 4a,  3b,  −2",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The sign in front belongs to the term. The constant is negative 2.",
+          "write": "constant = −2"
+        },
+        {
+          "say": "In 5x plus 7, the coefficient of x is 5. The constant is 7.",
+          "write": "5x + 7",
+          "diagram": "diagrams/y7/maths/variables-and-algebraic-expressions-parts.svg",
+          "alt": "5x + 7 with coefficient, variable, constant and terms labelled"
+        },
+        {
+          "say": "No number in front? The coefficient is 1. x means 1x.",
+          "write": "x = 1x"
+        }
+      ]
+    },
+    {
+      "heading": "Writing it the algebra way",
+      "lines": [
+        {
+          "say": "Leave out the times sign. 3 times a is 3a.",
+          "write": "3 × a = 3a"
+        },
+        {
+          "say": "The number goes first. a times 3 is also 3a.",
+          "write": "a × 3 = 3a"
+        },
+        {
+          "say": "Letters go in alphabetical order. a times b is ab.",
+          "write": "a × b = ab"
+        },
+        {
+          "say": "Don't write the 1. 1 times y is just y.",
+          "write": "1 × y = y"
+        },
+        {
+          "say": "Division is often written as a fraction. n divided by 4.",
+          "write": "n ÷ 4 = n/4"
+        }
+      ]
+    },
+    {
+      "heading": "Words into algebra",
+      "lines": [
+        {
+          "say": "More than, sum and plus mean add. 8 more than m is m plus 8.",
+          "write": "m + 8"
+        },
+        {
+          "say": "Product and times mean multiply. Product of 6 and k is 6k.",
+          "write": "6k"
+        },
+        {
+          "say": "Careful. 5 less than x means start with x, take 5.",
+          "write": "x − 5, not 5 − x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "5 − x crossed out, x − 5 added",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "5 − x",
+                "size": 44,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "x − 5",
+                "size": 44,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "start with x, then take 5",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Double the number 5 less than p. The whole thing doubles, so use brackets.",
+          "write": "2(p − 5)"
+        },
+        {
+          "say": "Check with p equals 9. 4 doubled is 8.",
+          "write": "2(9 − 5) = 8 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Ticket costs",
+      "lines": [
+        {
+          "say": "Tickets cost 12 dollars each, plus one 5 dollar booking fee.",
+          "write": "$12 each + $5 fee"
+        },
+        {
+          "say": "n tickets cost 12n. Add the fee once.",
+          "write": "12n + 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 210,
+            "alt": "Four tickets of $12 and one $5 fee",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 80,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 80,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 170,
+                "text": "n tickets → 12n",
+                "size": 22,
+                "color": "blue",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 80,
+                "w": 70,
+                "h": 60,
+                "fill": "orange",
+                "label": "5",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 415,
+                "y": 170,
+                "text": "fee once",
+                "size": 20,
+                "color": "orange",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "For 4 tickets, 12 times 4 plus 5 is 53 dollars.",
+          "write": "12 × 4 + 5 = $53"
+        },
+        {
+          "say": "An expression describes. An equation has an equals sign.",
+          "write": "m + 8   vs   m + 8 = 12"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "5 less than x is x minus 5, not 5 minus x.",
+          "write": "x − 5"
+        },
+        {
+          "say": "In 3a minus 7, the constant is negative 7.",
+          "write": "constant −7"
+        },
+        {
+          "say": "Number first. Write 3a, never a3.",
+          "write": "✗ a3   ✓ 3a"
+        },
+        {
+          "say": "4a means 4 times a. If a is 2, that's 8, not 6.",
+          "write": "4a = 4 × a"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "A variable is a letter standing for a number.",
+          "write": "variable"
+        },
+        {
+          "say": "Terms split at plus and minus. The sign goes with the term.",
+          "write": "sign belongs to term"
+        },
+        {
+          "say": "Number first, no times sign.",
+          "write": "3a, not a × 3"
+        },
+        {
+          "say": "Ask what you start with when you see less than.",
+          "write": "\"less than\" → start first"
+        }
+      ]
+    }
+  ]
+}

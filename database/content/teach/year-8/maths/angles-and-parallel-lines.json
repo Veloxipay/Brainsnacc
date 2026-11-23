@@ -1,0 +1,698 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Angles and parallel lines",
+  "frames": [
+    {
+      "heading": "A chain of clues",
+      "lines": [
+        {
+          "say": "Real angle problems rarely solve in one step.",
+          "write": "link the rules"
+        },
+        {
+          "say": "Like a detective, one clue leads to the next.",
+          "write": "clue → clue → answer",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Chain of angle clues",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 100,
+                "w": 140,
+                "h": 70,
+                "fill": "blue",
+                "label": "given"
+              },
+              {
+                "kind": "arrow",
+                "x": 165,
+                "y": 135,
+                "x2": 205,
+                "y2": 135,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 100,
+                "w": 140,
+                "h": 70,
+                "fill": "orange",
+                "change": "add",
+                "label": "neighbour"
+              },
+              {
+                "kind": "arrow",
+                "x": 355,
+                "y": 135,
+                "x2": 395,
+                "y2": 135,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 100,
+                "w": 140,
+                "h": 70,
+                "fill": "green",
+                "change": "add",
+                "label": "target"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each link is one rule you can name. Looks like 60 is never a reason.",
+          "write": "every step: a reason"
+        }
+      ]
+    },
+    {
+      "heading": "Quick reminder",
+      "lines": [
+        {
+          "say": "A transversal crosses two parallel lines, marked with arrows.",
+          "write": "AB ∥ CD",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Parallel lines with a transversal",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 90,
+                "x2": 530,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 210,
+                "x2": 530,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 90,
+                "x2": 500,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 210,
+                "x2": 500,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 30,
+                "x2": 380,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 96,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 96,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 216,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 216,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 80,
+                "text": "P",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 235,
+                "text": "Q",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Corresponding angles, the F shape, are equal.",
+          "write": "F: corresponding, equal"
+        },
+        {
+          "say": "Alternate angles, the Z shape, are equal.",
+          "write": "Z: alternate, equal"
+        },
+        {
+          "say": "Co-interior angles, the C shape, add to 180.",
+          "write": "C: co-interior, sum 180°"
+        },
+        {
+          "say": "The middle letter is the vertex. Angle APQ has its corner at P.",
+          "write": "∠APQ: vertex P",
+          "diagram": "diagrams/y8/maths/angles-and-parallel-lines-names.svg",
+          "alt": "Alternate and co-interior angles named with three letters"
+        }
+      ]
+    },
+    {
+      "heading": "A reasoning chain",
+      "lines": [
+        {
+          "say": "Angle APQ is 128 degrees. Find angle PQD.",
+          "write": "∠APQ = 128°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Angle APQ is 128 degrees",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 90,
+                "x2": 530,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 210,
+                "x2": 530,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 90,
+                "x2": 500,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 210,
+                "x2": 500,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 30,
+                "x2": 380,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 96,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 96,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 216,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 216,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 80,
+                "text": "P",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 235,
+                "text": "Q",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 120,
+                "text": "128°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "They're between the lines, on opposite sides. Alternate angles.",
+          "write": "∠PQD = 128° (alt. ∠s, AB ∥ CD)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Alternate angle PQD found",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 90,
+                "x2": 530,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 210,
+                "x2": 530,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 90,
+                "x2": 500,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 210,
+                "x2": 500,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 30,
+                "x2": 380,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 96,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 96,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 216,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 216,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 80,
+                "text": "P",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 235,
+                "text": "Q",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 120,
+                "text": "128°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 190,
+                "text": "128°",
+                "size": 20,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Angle PQC is on the straight line CD with it. 180 minus 128 is 52.",
+          "write": "∠PQC = 52° (straight line)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Angle PQC found",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 90,
+                "x2": 530,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 210,
+                "x2": 530,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 90,
+                "x2": 500,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 480,
+                "y": 210,
+                "x2": 500,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 30,
+                "x2": 380,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 96,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 96,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 216,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 216,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 80,
+                "text": "P",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 235,
+                "text": "Q",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 120,
+                "text": "128°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 190,
+                "text": "128°",
+                "size": 20,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 190,
+                "text": "52°",
+                "size": 20,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check: 128 and 52 are co-interior. They add to 180.",
+          "write": "128 + 52 = 180 ✓"
+        },
+        {
+          "say": "Mark it, link it, write it. Then repeat.",
+          "write": "mark • link • write"
+        }
+      ]
+    },
+    {
+      "heading": "Angles with algebra",
+      "lines": [
+        {
+          "say": "Alternate angles are 3x plus 14 and 5x minus 30.",
+          "write": "3x + 14 = 5x − 30"
+        },
+        {
+          "say": "Alternate means equal. Take 3x from both sides.",
+          "write": "14 = 2x − 30"
+        },
+        {
+          "say": "Add 30, then halve. x is 22.",
+          "write": "x = 22"
+        },
+        {
+          "say": "The question wants the angle. 3 times 22 plus 14 is 80.",
+          "write": "angle = 80°"
+        },
+        {
+          "say": "Co-interior angles add to 180. Don't set them equal.",
+          "write": "4y + 8 + 2y + 22 = 180"
+        },
+        {
+          "say": "So 6y is 150, y is 25. The angles are 108 and 72.",
+          "write": "108° + 72° = 180° ✓"
+        }
+      ]
+    },
+    {
+      "heading": "The arrowhead",
+      "lines": [
+        {
+          "say": "A line bends at E between the parallel lines, like an arrowhead.",
+          "diagram": "diagrams/y8/maths/angles-and-parallel-lines-ex3.svg",
+          "alt": "Arrowhead with arms at 35° and 50°"
+        },
+        {
+          "say": "Draw a third parallel line through E. It splits the tip angle.",
+          "write": "draw EF ∥ AB",
+          "diagram": "diagrams/y8/maths/angles-and-parallel-lines-arrowhead.svg",
+          "alt": "Dashed parallel line through E splits the tip angle into p and q"
+        },
+        {
+          "say": "The top part is alternate to 35. The bottom part to 50.",
+          "write": "35° and 50° (alt. ∠s)"
+        },
+        {
+          "say": "So the tip angle is 35 plus 50, which is 85 degrees.",
+          "write": "∠BED = 85°"
+        },
+        {
+          "say": "Arrowhead equals add. Don't just split the angle in half.",
+          "write": "tip = p + q"
+        }
+      ]
+    },
+    {
+      "heading": "Proving lines are parallel",
+      "lines": [
+        {
+          "say": "The rules work backwards too.",
+          "write": "prove AB ∥ CD"
+        },
+        {
+          "say": "Equal corresponding or alternate angles prove the lines are parallel.",
+          "write": "F or Z equal → ∥"
+        },
+        {
+          "say": "So do co-interior angles adding to 180.",
+          "write": "C adds to 180° → ∥"
+        },
+        {
+          "say": "Vertically opposite angles prove nothing. They're equal for any crossing lines.",
+          "write": "✗ vert. opp."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Mark it, link it, write it.",
+          "write": "reason every step"
+        },
+        {
+          "say": "F and Z give equals. C gives 180.",
+          "write": "= or = 180"
+        },
+        {
+          "say": "Stuck? Draw another parallel line.",
+          "write": "extra parallel line"
+        },
+        {
+          "say": "Check whether they want x or the angle.",
+          "write": "x or angle?"
+        }
+      ]
+    }
+  ]
+}

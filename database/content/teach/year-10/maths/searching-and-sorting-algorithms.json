@@ -1,0 +1,1595 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Searching and sorting algorithms",
+  "frames": [
+    {
+      "heading": "Searching and sorting",
+      "lines": [
+        {
+          "say": "Computers search and sort lists all the time, millions of items at once.",
+          "write": "algorithm = precise steps"
+        },
+        {
+          "say": "To compare algorithms, we count comparisons. That is two items checked against each other.",
+          "write": "count comparisons"
+        },
+        {
+          "say": "We look at the worst case: the most work the algorithm could ever need.",
+          "write": "worst case, n items"
+        }
+      ]
+    },
+    {
+      "heading": "Linear search",
+      "lines": [
+        {
+          "say": "Linear search checks items one at a time from the start. We want 18.",
+          "write": "find 18",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "List 12, 7, 30, 18, 25, 3, 21",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 32,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "25"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 464,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "21"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "Target: 18",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "12, 7 and 30 are not 18. Cross them off and keep going.",
+          "write": "12 ✗  7 ✗  30 ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "First three items crossed off",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 32,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "25"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 464,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "21"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "3 comparisons so far",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The fourth check is 18. Found it, after 4 comparisons.",
+          "write": "4 comparisons",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "18 found on the fourth check",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 32,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "grey",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "grey",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "grey",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "green",
+                "change": "highlight",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "25"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 464,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "21"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "Found on check 4",
+                "size": 22,
+                "color": "green",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Worst case, the target is last or missing. Then all n items get checked.",
+          "write": "worst case = n"
+        },
+        {
+          "say": "Linear search works on any list, sorted or not.",
+          "write": "any list"
+        }
+      ]
+    },
+    {
+      "heading": "Binary search",
+      "lines": [
+        {
+          "say": "Binary search needs a sorted list. We want 47 in these 15 numbers.",
+          "write": "sorted list only",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Binary search for 47 in a sorted list of 15 numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 12,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 48,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 156,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "22"
+              },
+              {
+                "kind": "rect",
+                "x": 192,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "26"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "31"
+              },
+              {
+                "kind": "rect",
+                "x": 264,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "35"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 372,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "47"
+              },
+              {
+                "kind": "rect",
+                "x": 408,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "51"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "56"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 516,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "64"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "Target: 47",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Middle of positions 1 to 15 is position 8. It holds 35.",
+          "write": "(1 + 15) ÷ 2 = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Binary search for 47 in a sorted list of 15 numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 12,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 48,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 156,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "22"
+              },
+              {
+                "kind": "rect",
+                "x": 192,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "26"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "31"
+              },
+              {
+                "kind": "rect",
+                "x": 264,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "35"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 372,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "47"
+              },
+              {
+                "kind": "rect",
+                "x": 408,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "51"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "56"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 516,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "64"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "35 < 47, keep the right",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "47 is bigger, so throw away 35 and everything to its left.",
+          "write": "keep 9 to 15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Binary search for 47 in a sorted list of 15 numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 12,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 48,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 156,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "22"
+              },
+              {
+                "kind": "rect",
+                "x": 192,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "26"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "31"
+              },
+              {
+                "kind": "rect",
+                "x": 264,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "35"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 372,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "47"
+              },
+              {
+                "kind": "rect",
+                "x": 408,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "51"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "56"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 516,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "64"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "Half gone in one look",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Middle of 9 to 15 is 12, holding 51. 47 is smaller, keep 9 to 11.",
+          "write": "51 > 47",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Binary search for 47 in a sorted list of 15 numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 12,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 48,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 156,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "22"
+              },
+              {
+                "kind": "rect",
+                "x": 192,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "26"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "31"
+              },
+              {
+                "kind": "rect",
+                "x": 264,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "35"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 372,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "label": "47"
+              },
+              {
+                "kind": "rect",
+                "x": 408,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "yellow",
+                "change": "remove",
+                "label": "51"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "56"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 516,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "white",
+                "change": "remove",
+                "label": "64"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "keep 9 to 11",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Middle of 9 to 11 is 42. Too small. Position 11 holds 47. Found in 4 looks.",
+          "write": "4 comparisons",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Binary search for 47 in a sorted list of 15 numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 12,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 48,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 84,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 156,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "22"
+              },
+              {
+                "kind": "rect",
+                "x": 192,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "26"
+              },
+              {
+                "kind": "rect",
+                "x": 228,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "31"
+              },
+              {
+                "kind": "rect",
+                "x": 264,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "35"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "38"
+              },
+              {
+                "kind": "rect",
+                "x": 336,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 372,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "green",
+                "change": "highlight",
+                "label": "47"
+              },
+              {
+                "kind": "rect",
+                "x": 408,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "51"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "56"
+              },
+              {
+                "kind": "rect",
+                "x": 480,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 516,
+                "y": 80,
+                "w": 32,
+                "h": 50,
+                "fill": "grey",
+                "label": "64"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "Found 47 on look 4",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Worst case is the smallest k with 2 to the k at least n plus 1.",
+          "write": "2ᵏ ≥ n + 1"
+        },
+        {
+          "say": "For 1000 items, only 10 looks, because 2 to the 10 is 1024.",
+          "write": "2¹⁰ = 1024"
+        }
+      ]
+    },
+    {
+      "heading": "Bubble sort",
+      "lines": [
+        {
+          "say": "Bubble sort compares neighbouring pairs and swaps any in the wrong order.",
+          "write": "5, 2, 8, 1, 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Comparing 5 and 2",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "5 > 2, swap",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "5 and 2 swap. 5 and 8 are fine. 8 and 1 swap.",
+          "write": "2, 5, 1, 8, 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Comparing 8 and 4",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "8 > 4, swap",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then 8 and 4 swap. Pass 1 is done, with 3 swaps.",
+          "write": "2, 5, 1, 4, 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "After pass 1, 8 is at the end",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "8 bubbled to the end",
+                "size": 22,
+                "color": "green",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each pass bubbles the largest remaining value to the end.",
+          "diagram": "diagrams/y10/maths/searching-and-sorting-algorithms-bubble.svg",
+          "alt": "Bubble sort of 5, 2, 8, 1, 4 pass by pass"
+        },
+        {
+          "say": "Stop after a pass with no swaps. Worst case is n times n minus 1, over 2.",
+          "write": "n(n − 1) ÷ 2"
+        }
+      ]
+    },
+    {
+      "heading": "Selection sort",
+      "lines": [
+        {
+          "say": "Selection sort finds the smallest item and swaps it to the front.",
+          "write": "6, 3, 9, 1, 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Smallest value 1 highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "Smallest is 1",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Swap 1 with 6. Now 1 is in its final place.",
+          "write": "1, 3, 9, 6, 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "1 moved to the front",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 104,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 176,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 248,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 392,
+                "y": 80,
+                "w": 64,
+                "h": 56,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "4 comparisons to find it",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Keep going on the unsorted part: 3, then 6, then 7.",
+          "write": "1, 3, 6, 7, 9",
+          "diagram": "diagrams/y10/maths/searching-and-sorting-algorithms-selection.svg",
+          "alt": "Selection sort of 6, 3, 9, 1, 7 pass by pass"
+        },
+        {
+          "say": "Comparisons are 4 plus 3 plus 2 plus 1, which is 10.",
+          "write": "5 × 4 ÷ 2 = 10"
+        },
+        {
+          "say": "Selection sort makes at most n minus 1 swaps.",
+          "write": "≤ n − 1 swaps"
+        }
+      ]
+    },
+    {
+      "heading": "Comparing efficiency",
+      "lines": [
+        {
+          "say": "Here is the worst-case work for 1000 items.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Bars comparing work for 1000 items",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 480,
+                "h": 40,
+                "fill": "orange",
+                "label": "Linear: 1000"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 100,
+                "w": 48,
+                "h": 40,
+                "fill": "green",
+                "label": "10"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 128,
+                "text": "Binary: 10",
+                "size": 20,
+                "color": "green",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 160,
+                "w": 480,
+                "h": 40,
+                "fill": "red",
+                "change": "highlight",
+                "label": "Sorts: 499 500"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "n = 1000",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Double n, and linear search doubles too.",
+          "write": "linear: × 2"
+        },
+        {
+          "say": "Binary search only adds one more look.",
+          "write": "binary: + 1"
+        },
+        {
+          "say": "Bubble and selection sort roughly quadruple.",
+          "write": "sorts: × 4"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Never use binary search on an unsorted list. Sort first, or search linearly.",
+          "write": "✗ binary on unsorted"
+        },
+        {
+          "say": "Round the middle position down, using the low plus high rule.",
+          "write": "(low + high) ÷ 2, round down"
+        },
+        {
+          "say": "After checking the middle, discard it too. Start one place past it.",
+          "write": "discard the middle"
+        },
+        {
+          "say": "In bubble sort, move one pair at a time. Write the list after each swap.",
+          "write": "one pair at a time"
+        },
+        {
+          "say": "Bubble swaps neighbours. Selection moves the smallest to the front.",
+          "write": "bubble ≠ selection"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Halve it, don't crawl it. Binary halves, linear crawls.",
+          "write": "halve it, don't crawl it"
+        },
+        {
+          "say": "Two to the ten is about a thousand. Two to the twenty, about a million.",
+          "write": "2¹⁰ ≈ 1000, 2²⁰ ≈ 1 000 000"
+        },
+        {
+          "say": "Bubbles rise: the biggest value floats to the end each pass.",
+          "write": "bubbles rise"
+        },
+        {
+          "say": "Selection means select the smallest, then put it at the front.",
+          "write": "select the smallest"
+        },
+        {
+          "say": "Both sorts need about n times n minus 1, over 2 comparisons.",
+          "write": "n(n − 1) ÷ 2"
+        }
+      ]
+    }
+  ]
+}

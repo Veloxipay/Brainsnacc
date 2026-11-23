@@ -1,0 +1,737 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Time-series data",
+  "frames": [
+    {
+      "heading": "What is a time series?",
+      "lines": [
+        {
+          "say": "A time series records a variable at regular time intervals.",
+          "write": "time series"
+        },
+        {
+          "say": "Time always goes across, on the horizontal axis, equally spaced.",
+          "write": "time → horizontal axis",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weekly sales time series",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 280,
+                "x2": 530,
+                "y2": 280,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 280,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 312,
+                "text": "week",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 108.6,
+                "y": 220.0,
+                "x2": 177.1,
+                "y2": 148.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 177.1,
+                "y": 148.0,
+                "x2": 245.7,
+                "y2": 184.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 245.7,
+                "y": 184.0,
+                "x2": 314.3,
+                "y2": 112.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 314.3,
+                "y": 112.0,
+                "x2": 382.9,
+                "y2": 76.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 382.9,
+                "y": 76.0,
+                "x2": 451.4,
+                "y2": 124.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "circle",
+                "x": 108.6,
+                "y": 220.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 177.1,
+                "y": 148.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 245.7,
+                "y": 184.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 314.3,
+                "y": 112.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 382.9,
+                "y": 76.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 451.4,
+                "y": 124.0,
+                "r": 6,
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Plot a point for each time, then join them in order.",
+          "write": "join points in order"
+        }
+      ]
+    },
+    {
+      "heading": "Trend and seasonality",
+      "lines": [
+        {
+          "say": "The trend is the long-term direction: up, down or flat.",
+          "write": "trend"
+        },
+        {
+          "say": "Seasonality is a pattern that repeats at the same time each year.",
+          "write": "seasonality"
+        },
+        {
+          "say": "Ice-cream sales peak in summer and drop in July, every year.",
+          "write": "peaks Dec–Jan, low in July",
+          "diagram": "diagrams/y10/maths/time-series-data-ex1.svg",
+          "alt": "Monthly ice-cream sales 2023 to 2024"
+        },
+        {
+          "say": "July 2023 was 9 thousand. July 2024 was 11 thousand. A slight upward trend.",
+          "write": "July: 9 → 11 thousand"
+        },
+        {
+          "say": "Compare the same season in different years to see the trend.",
+          "write": "same season, different years"
+        }
+      ]
+    },
+    {
+      "heading": "Fluctuations and outliers",
+      "lines": [
+        {
+          "say": "Irregular fluctuations are random ups and downs with no pattern.",
+          "write": "irregular fluctuations"
+        },
+        {
+          "say": "An outlier is a single spike far from the pattern.",
+          "write": "outlier = spike"
+        },
+        {
+          "say": "Look for a reason, like a one-off event. One spike is not a trend.",
+          "write": "spike ≠ trend"
+        }
+      ]
+    },
+    {
+      "heading": "Moving averages",
+      "lines": [
+        {
+          "say": "Weekly sales jump around: 30, 36, 33, 39, 42, 38.",
+          "write": "30, 36, 33, 39, 42, 38",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Six weekly sales values",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 206,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "33"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "39"
+              },
+              {
+                "kind": "rect",
+                "x": 362,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "jumpy data",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Average the first three. 99 over 3 is 33.",
+          "write": "(30 + 36 + 33) ÷ 3 = 33",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Sliding a window of 3 values",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 206,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "33"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "39"
+              },
+              {
+                "kind": "rect",
+                "x": 362,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "33",
+                "size": 22,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Slide along one value. 108 over 3 is 36.",
+          "write": "(36 + 33 + 39) ÷ 3 = 36",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Sliding a window of 3 values",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 206,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "33"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "39"
+              },
+              {
+                "kind": "rect",
+                "x": 362,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "33, 36",
+                "size": 22,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Slide again: 38. Then 39.67.",
+          "write": "38,  39.67",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Sliding a window of 3 values",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 206,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "33"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "39"
+              },
+              {
+                "kind": "rect",
+                "x": 362,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "42"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 70,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "38"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "33, 36, 38, 39.67",
+                "size": 22,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The averages rise steadily. The trend is clearer than in the raw data.",
+          "write": "increasing trend",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Weekly sales time series",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 280,
+                "x2": 530,
+                "y2": 280,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 280,
+                "x2": 40,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 312,
+                "text": "week",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 108.6,
+                "y": 220.0,
+                "x2": 177.1,
+                "y2": 148.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 177.1,
+                "y": 148.0,
+                "x2": 245.7,
+                "y2": 184.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 245.7,
+                "y": 184.0,
+                "x2": 314.3,
+                "y2": 112.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 314.3,
+                "y": 112.0,
+                "x2": 382.9,
+                "y2": 76.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 382.9,
+                "y": 76.0,
+                "x2": 451.4,
+                "y2": 124.0,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "circle",
+                "x": 108.6,
+                "y": 220.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 177.1,
+                "y": 148.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 245.7,
+                "y": 184.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 314.3,
+                "y": 112.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 382.9,
+                "y": 76.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 451.4,
+                "y": 124.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 177.1,
+                "y": 184.0,
+                "x2": 245.7,
+                "y2": 148.0,
+                "color": "orange",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 245.7,
+                "y": 148.0,
+                "x2": 314.3,
+                "y2": 124.0,
+                "color": "orange",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 314.3,
+                "y": 124.0,
+                "x2": 382.9,
+                "y2": 104.0,
+                "color": "orange",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "text",
+                "x": 530,
+                "y": 40,
+                "text": "moving average",
+                "size": 18,
+                "color": "orange",
+                "bold": true,
+                "change": "add",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "There are 2 fewer averages than values. 6 values give 4 averages.",
+          "write": "6 − 2 = 4"
+        }
+      ]
+    },
+    {
+      "heading": "Forecasting with a trend line",
+      "lines": [
+        {
+          "say": "A town grows from 12.0 thousand in 2015 to 15.6 thousand in 2023.",
+          "write": "(2015, 12.0) to (2023, 15.6)",
+          "diagram": "diagrams/y10/maths/time-series-data-ex2.svg",
+          "alt": "Town population 2015 to 2024 with dashed trend line to 2028"
+        },
+        {
+          "say": "Gradient: 3.6 over 8 years is 0.45 thousand per year.",
+          "write": "3.6 ÷ 8 = 0.45 per year"
+        },
+        {
+          "say": "2028 is 5 years after 2023. So add 5 times 0.45.",
+          "write": "15.6 + 5 × 0.45"
+        },
+        {
+          "say": "The forecast is 17.85 thousand, about 17 900 people.",
+          "write": "≈ 17.85 thousand"
+        },
+        {
+          "say": "Near forecasts are more reliable than far ones.",
+          "write": "near > far"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Time goes across, never up the side.",
+          "write": "time across"
+        },
+        {
+          "say": "A summer peak is seasonality, not a rising trend.",
+          "write": "season ≠ trend"
+        },
+        {
+          "say": "For moving averages, slide one value at a time. Groups overlap.",
+          "write": "overlap, don't block"
+        },
+        {
+          "say": "Watch the vertical axis. If it starts at 11, rises look steeper.",
+          "write": "check the axis start"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Describe trend, seasonality, fluctuations and outliers.",
+          "write": "trend, season, irregular, outlier"
+        },
+        {
+          "say": "Moving averages smooth the data so the trend shows.",
+          "write": "smooth it"
+        },
+        {
+          "say": "Use the trend line's gradient to forecast.",
+          "write": "forecast = last + years × gradient"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,678 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Similar triangles",
+  "frames": [
+    {
+      "heading": "What are similar triangles?",
+      "lines": [
+        {
+          "say": "Similar triangles are the same shape, but not always the same size.",
+          "write": "same shape, scaled size",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle with sides 4, 5, 6 and triangle with sides 6, 7.5, 9",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    30,
+                    250
+                  ],
+                  [
+                    150,
+                    250
+                  ],
+                  [
+                    60,
+                    160
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 275,
+                "text": "6",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 200,
+                "text": "4",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 195,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    230,
+                    250
+                  ],
+                  [
+                    410,
+                    250
+                  ],
+                  [
+                    275,
+                    115
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 280,
+                "text": "9",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 235,
+                "y": 180,
+                "text": "6",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 175,
+                "text": "7.5",
+                "size": 18,
+                "color": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Matching angles are equal. Matching sides are all in the same ratio.",
+          "write": "angles equal, sides in ratio"
+        },
+        {
+          "say": "Divide matching sides: 6 over 4, 7.5 over 5, 9 over 6. All 1.5.",
+          "write": "6 ÷ 4 = 7.5 ÷ 5 = 9 ÷ 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle with sides 4, 5, 6 and triangle with sides 6, 7.5, 9",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    30,
+                    250
+                  ],
+                  [
+                    150,
+                    250
+                  ],
+                  [
+                    60,
+                    160
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 275,
+                "text": "6",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 200,
+                "text": "4",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 195,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    230,
+                    250
+                  ],
+                  [
+                    410,
+                    250
+                  ],
+                  [
+                    275,
+                    115
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 280,
+                "text": "9",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 235,
+                "y": 180,
+                "text": "6",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 365,
+                "y": 175,
+                "text": "7.5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 180,
+                "text": "k = 1.5",
+                "size": 24,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "That number is the scale factor, k. Image length over original length.",
+          "write": "k = image ÷ original"
+        },
+        {
+          "say": "If k is bigger than 1, it is an enlargement. Between 0 and 1, a reduction.",
+          "write": "k > 1 enlarge, 0 < k < 1 reduce"
+        }
+      ]
+    },
+    {
+      "heading": "The four similarity tests",
+      "lines": [
+        {
+          "say": "Each test matches a congruence test, but with sides in the same ratio.",
+          "write": "△ABC ||| △PQR"
+        },
+        {
+          "say": "AAA: two pairs of equal angles. The third pair then matches too.",
+          "write": "AAA"
+        },
+        {
+          "say": "SSS: all three pairs of matching sides in the same ratio.",
+          "write": "SSS"
+        },
+        {
+          "say": "SAS: two pairs of sides in the same ratio, with equal included angles.",
+          "write": "SAS"
+        },
+        {
+          "say": "RHS: right angles, with hypotenuses and one other pair in the same ratio.",
+          "write": "RHS"
+        }
+      ]
+    },
+    {
+      "heading": "Testing with SSS",
+      "lines": [
+        {
+          "say": "Sides 4, 6 and 8. Another triangle has 6, 9 and 12.",
+          "write": "4, 6, 8   and   6, 9, 12"
+        },
+        {
+          "say": "Match smallest to smallest, middle to middle, largest to largest.",
+          "write": "small, middle, large"
+        },
+        {
+          "say": "6 over 4, 9 over 6, 12 over 8. All equal 1.5.",
+          "write": "all ratios = 1.5"
+        },
+        {
+          "say": "So they are similar by SSS, with k equal to 1.5.",
+          "write": "similar (SSS), k = 1.5"
+        }
+      ]
+    },
+    {
+      "heading": "Overlapping triangles",
+      "lines": [
+        {
+          "say": "DE is parallel to BC. AD is 4, DB is 6, and DE is 5. Find BC.",
+          "write": "DE ∥ BC",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ABC with DE parallel to BC",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    100,
+                    270
+                  ],
+                  [
+                    460,
+                    270
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 208,
+                "y": 126,
+                "x2": 352,
+                "y2": 126,
+                "color": "red",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 118,
+                "text": "5",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 75,
+                "text": "4",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 200,
+                "text": "6",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Angle A is shared, and parallel lines give equal corresponding angles. So AAA.",
+          "write": "△ADE ||| △ABC (AAA)",
+          "diagram": "diagrams/y10/maths/similar-triangles-ex2.svg",
+          "alt": "Triangle ABC with DE parallel to BC"
+        },
+        {
+          "say": "Pull the two triangles apart. Use the whole side AB, 4 plus 6.",
+          "write": "AB = 4 + 6 = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ABC with DE parallel to BC",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    60
+                  ],
+                  [
+                    48,
+                    156
+                  ],
+                  [
+                    192,
+                    156
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 100,
+                "text": "4",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 180,
+                "text": "5",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    400,
+                    30
+                  ],
+                  [
+                    220,
+                    270
+                  ],
+                  [
+                    540,
+                    270
+                  ]
+                ],
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 140,
+                "text": "10",
+                "size": 20,
+                "color": "purple",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 292,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "k is big over small: 10 over 4, which is 2.5.",
+          "write": "k = 10 ÷ 4 = 2.5"
+        },
+        {
+          "say": "So BC is 5 times 2.5, which is 12.5 centimetres.",
+          "write": "BC = 5 × 2.5 = 12.5 cm"
+        }
+      ]
+    },
+    {
+      "heading": "Shadows and heights",
+      "lines": [
+        {
+          "say": "A 1.8 metre person casts a 2.4 metre shadow. A tree casts 14 metres.",
+          "diagram": "diagrams/y10/maths/similar-triangles-ex3.svg",
+          "alt": "Person and tree with shadows ending at the same point"
+        },
+        {
+          "say": "Same sun angle, both upright. So the triangles are similar.",
+          "write": "similar (AAA)"
+        },
+        {
+          "say": "k is the tree shadow over the person shadow: 14 over 2.4.",
+          "write": "k = 14 ÷ 2.4"
+        },
+        {
+          "say": "Tree height is 1.8 times 14, divided by 2.4. That is 10.5 metres.",
+          "write": "h = 1.8 × 14 ÷ 2.4 = 10.5 m"
+        }
+      ]
+    },
+    {
+      "heading": "Area scale factor",
+      "lines": [
+        {
+          "say": "Lengths times k means area times k squared. Area is length times length.",
+          "write": "area × k²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A square enlarged by 3 holds 9 copies",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 180,
+                "w": 60,
+                "h": 60,
+                "fill": "blue",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 180,
+                "h": 180,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 280,
+                "y2": 240,
+                "color": "white"
+              },
+              {
+                "kind": "line",
+                "x": 340,
+                "y": 60,
+                "x2": 340,
+                "y2": 240,
+                "color": "white"
+              },
+              {
+                "kind": "line",
+                "x": 220,
+                "y": 120,
+                "x2": 400,
+                "y2": 120,
+                "color": "white"
+              },
+              {
+                "kind": "line",
+                "x": 220,
+                "y": 180,
+                "x2": 400,
+                "y2": 180,
+                "color": "white"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 280,
+                "text": "k = 3  →  area × 9",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Matching sides are 5 and 15, so k is 3.",
+          "write": "k = 15 ÷ 5 = 3"
+        },
+        {
+          "say": "The area scale factor is 3 squared, which is 9.",
+          "write": "k² = 9"
+        },
+        {
+          "say": "Small area is 8, so the large area is 72 square centimetres.",
+          "write": "8 × 9 = 72 cm²"
+        },
+        {
+          "say": "For volumes of similar solids, use k cubed.",
+          "write": "volume × k³"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't use a piece, like DB. Use the whole side of the big triangle.",
+          "write": "✗ DB   ✓ AB = AD + DB",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ABC with DE parallel to BC",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    100,
+                    270
+                  ],
+                  [
+                    460,
+                    270
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 208,
+                "y": 126,
+                "x2": 352,
+                "y2": 126,
+                "color": "red",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 118,
+                "text": "5",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 75,
+                "text": "4",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 200,
+                "text": "6",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't add. Sides multiply by k, so always divide to find k.",
+          "write": "✗ +6   ✓ × 2.5"
+        },
+        {
+          "say": "Check the ratio way round. An enlargement should give a bigger answer.",
+          "write": "big ÷ small"
+        },
+        {
+          "say": "Match equal angles, not positions on the page.",
+          "write": "match the angles"
+        },
+        {
+          "say": "For areas, use k squared, not k.",
+          "write": "area: k²"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Same shape, scaled size.",
+          "write": "same shape, scaled size"
+        },
+        {
+          "say": "Big over small, then multiply.",
+          "write": "k = big ÷ small"
+        },
+        {
+          "say": "Pull overlapping triangles apart before writing ratios.",
+          "write": "pull them apart"
+        },
+        {
+          "say": "Length k, area k squared, volume k cubed.",
+          "write": "k, k², k³"
+        }
+      ]
+    }
+  ]
+}

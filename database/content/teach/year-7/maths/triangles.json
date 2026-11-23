@@ -1,0 +1,912 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Triangles",
+  "frames": [
+    {
+      "heading": "Naming triangles by sides",
+      "lines": [
+        {
+          "say": "A triangle has three straight sides. Bridges use them because they can't squash.",
+          "write": "3 sides"
+        },
+        {
+          "say": "Equilateral means all three sides equal. Each angle is 60 degrees.",
+          "write": "equilateral: all equal",
+          "diagram": "diagrams/y7/maths/triangles-equilateral.svg",
+          "alt": "Equilateral triangle with a dash on each side"
+        },
+        {
+          "say": "Isosceles means two sides equal. The base angles are equal too.",
+          "write": "isosceles: 2 equal"
+        },
+        {
+          "say": "Scalene means no sides equal, and no angles equal.",
+          "write": "scalene: none equal"
+        },
+        {
+          "say": "Matching dash marks show which sides are equal.",
+          "write": "dashes = equal sides"
+        }
+      ]
+    },
+    {
+      "heading": "Naming triangles by angles",
+      "lines": [
+        {
+          "say": "Acute angled means all three angles are acute.",
+          "write": "acute-angled"
+        },
+        {
+          "say": "Right angled means one angle is 90 degrees.",
+          "write": "right-angled: one 90°"
+        },
+        {
+          "say": "Obtuse angled means one angle is obtuse.",
+          "write": "obtuse-angled"
+        },
+        {
+          "say": "A triangle can have both names. A right angled isosceles triangle.",
+          "write": "right-angled isosceles"
+        }
+      ]
+    },
+    {
+      "heading": "The angles add to 180°",
+      "lines": [
+        {
+          "say": "Draw any triangle and label its corners a, b and c.",
+          "write": "a, b, c",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Tearing off the corners of a triangle to make a straight line",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    480,
+                    260
+                  ],
+                  [
+                    200,
+                    60
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 245,
+                "text": "a",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 245,
+                "text": "b",
+                "size": 22,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 203,
+                "y": 100,
+                "text": "c",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Tear off the three corners and line them up.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Tearing off the corners of a triangle to make a straight line",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    480,
+                    260
+                  ],
+                  [
+                    200,
+                    60
+                  ]
+                ],
+                "fill": "teal",
+                "change": "remove"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 500,
+                "y2": 260,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    260
+                  ],
+                  [
+                    170,
+                    260
+                  ],
+                  [
+                    210,
+                    180
+                  ]
+                ],
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    260
+                  ],
+                  [
+                    390,
+                    260
+                  ],
+                  [
+                    340,
+                    180
+                  ]
+                ],
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    260
+                  ],
+                  [
+                    210,
+                    180
+                  ],
+                  [
+                    340,
+                    180
+                  ]
+                ],
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 235,
+                "y": 250,
+                "text": "a",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 325,
+                "y": 250,
+                "text": "b",
+                "size": 20,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 278,
+                "y": 205,
+                "text": "c",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "a + b + c = 180°",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "They always make a straight line. That's 180 degrees.",
+          "write": "a + b + c = 180°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Tearing off the corners of a triangle to make a straight line",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 500,
+                "y2": 260,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    260
+                  ],
+                  [
+                    170,
+                    260
+                  ],
+                  [
+                    210,
+                    180
+                  ]
+                ],
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    260
+                  ],
+                  [
+                    390,
+                    260
+                  ],
+                  [
+                    340,
+                    180
+                  ]
+                ],
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    260
+                  ],
+                  [
+                    210,
+                    180
+                  ],
+                  [
+                    340,
+                    180
+                  ]
+                ],
+                "fill": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 235,
+                "y": 250,
+                "text": "a",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 325,
+                "y": 250,
+                "text": "b",
+                "size": 20,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 278,
+                "y": 205,
+                "text": "c",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "a + b + c = 180°",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A line parallel to the base proves it, using alternate angles.",
+          "write": "works for every triangle"
+        },
+        {
+          "say": "50 and 70 are known. 180 minus 120 leaves 60 degrees.",
+          "write": "a = 180 − 120 = 60°",
+          "diagram": "diagrams/y7/maths/triangles-ex1.svg",
+          "alt": "Triangle with angles 50, 70 and a"
+        }
+      ]
+    },
+    {
+      "heading": "Right-angled and isosceles",
+      "lines": [
+        {
+          "say": "A right angled triangle has 90 and 35. Add them: 125.",
+          "write": "90 + 35 = 125"
+        },
+        {
+          "say": "180 minus 125 is 55 degrees.",
+          "write": "third angle = 55°"
+        },
+        {
+          "say": "This isosceles triangle has 40 degrees between its equal sides.",
+          "write": "top angle 40°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "Isosceles triangle with a 40 degree top angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    280
+                  ],
+                  [
+                    440,
+                    280
+                  ],
+                  [
+                    280,
+                    60
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 105,
+                "text": "40°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 165,
+                "x2": 210,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 350,
+                "y": 180,
+                "x2": 370,
+                "y2": 165,
+                "color": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The base angles share what's left. 180 minus 40 is 140.",
+          "write": "180 − 40 = 140",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "Isosceles triangle with a 40 degree top angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    280
+                  ],
+                  [
+                    440,
+                    280
+                  ],
+                  [
+                    280,
+                    60
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 105,
+                "text": "40°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 165,
+                "x2": 210,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 350,
+                "y": 180,
+                "x2": 370,
+                "y2": 165,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 265,
+                "text": "?",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 265,
+                "text": "?",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 320,
+                "text": "180 − 40 = 140, shared by 2",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Share 140 equally. Each base angle is 70 degrees.",
+          "write": "140 ÷ 2 = 70°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "Isosceles triangle with a 40 degree top angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    280
+                  ],
+                  [
+                    440,
+                    280
+                  ],
+                  [
+                    280,
+                    60
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 105,
+                "text": "40°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 190,
+                "y": 165,
+                "x2": 210,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 350,
+                "y": 180,
+                "x2": 370,
+                "y2": 165,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 265,
+                "text": "?",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 265,
+                "text": "?",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 265,
+                "text": "70°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 265,
+                "text": "70°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 320,
+                "text": "140 ÷ 2 = 70° each",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The exterior angle",
+      "lines": [
+        {
+          "say": "This triangle has angles of 62 and 48 degrees.",
+          "write": "62° and 48°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 330,
+            "alt": "Triangle with one side extended to make an exterior angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    340,
+                    260
+                  ],
+                  [
+                    200,
+                    70
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 245,
+                "text": "62°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 115,
+                "text": "48°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Extend one side. The new angle outside is the exterior angle.",
+          "write": "exterior angle",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 330,
+            "alt": "Triangle with one side extended to make an exterior angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    340,
+                    260
+                  ],
+                  [
+                    200,
+                    70
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 245,
+                "text": "62°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 115,
+                "text": "48°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 340,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 245,
+                "text": "?",
+                "size": 24,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "It equals the two interior opposite angles added. 62 plus 48 is 110.",
+          "write": "62 + 48 = 110°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 330,
+            "alt": "Triangle with one side extended to make an exterior angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    340,
+                    260
+                  ],
+                  [
+                    200,
+                    70
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 245,
+                "text": "62°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 115,
+                "text": "48°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 340,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 245,
+                "text": "?",
+                "size": 24,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 245,
+                "text": "110°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 310,
+                "text": "62 + 48 = 110°",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. The third angle is 70. 70 plus 110 makes a straight line.",
+          "write": "70 + 110 = 180 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't use 360. That's for quadrilaterals. A triangle is 180.",
+          "write": "triangle = 180°"
+        },
+        {
+          "say": "Isosceles base angles sit at the ends of the odd side.",
+          "write": "find the odd side"
+        },
+        {
+          "say": "For the exterior angle, add the two angles not next to it.",
+          "write": "not the neighbour"
+        },
+        {
+          "say": "A triangle can have only one right or obtuse angle.",
+          "write": "at most one ≥ 90°"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Three angles, half a turn, 180 degrees.",
+          "write": "angle sum = 180°"
+        },
+        {
+          "say": "Equilateral, isosceles, scalene. All, two, none equal.",
+          "write": "all · two · none"
+        },
+        {
+          "say": "Exterior angle equals the two opposite interior angles.",
+          "write": "ext = sum of opposite"
+        },
+        {
+          "say": "Tear off the corners if you ever forget.",
+          "write": "straight line ✓"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,959 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Perimeter and circles",
+  "frames": [
+    {
+      "heading": "Walking the edge",
+      "lines": [
+        {
+          "say": "Walk right around a playground, one hand on the fence.",
+          "write": "perimeter"
+        },
+        {
+          "say": "The perimeter is how far you walk. You never cross the middle.",
+          "write": "distance around the outside"
+        },
+        {
+          "say": "Curved parts of the fence need pi.",
+          "write": "π"
+        }
+      ]
+    },
+    {
+      "heading": "Missing sides",
+      "lines": [
+        {
+          "say": "Here's an L-shape. Two sides aren't labelled.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "An L-shape with sides 12, 5, 7 and 9 cm and two missing sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    100,
+                    260
+                  ],
+                  [
+                    400,
+                    260
+                  ],
+                  [
+                    400,
+                    135
+                  ],
+                  [
+                    275,
+                    135
+                  ],
+                  [
+                    275,
+                    35
+                  ],
+                  [
+                    100,
+                    35
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 284,
+                "text": "12 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 408,
+                "y": 203.5,
+                "text": "5 cm",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 187.5,
+                "y": 27,
+                "text": "7 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 153.5,
+                "text": "9 cm",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The two top edges match the 12 bottom. 12 minus 7 is 5.",
+          "write": "12 − 7 = 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "An L-shape with sides 12, 5, 7 and 9 cm and two missing sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    100,
+                    260
+                  ],
+                  [
+                    400,
+                    260
+                  ],
+                  [
+                    400,
+                    135
+                  ],
+                  [
+                    275,
+                    135
+                  ],
+                  [
+                    275,
+                    35
+                  ],
+                  [
+                    100,
+                    35
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 284,
+                "text": "12 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 408,
+                "y": 203.5,
+                "text": "5 cm",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 187.5,
+                "y": 27,
+                "text": "7 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 153.5,
+                "text": "9 cm",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 337.5,
+                "y": 127,
+                "text": "5 cm",
+                "size": 18,
+                "change": "add",
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The two right edges match the 9 on the left. 9 minus 5 is 4.",
+          "write": "9 − 5 = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "An L-shape with sides 12, 5, 7 and 9 cm and two missing sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    100,
+                    260
+                  ],
+                  [
+                    400,
+                    260
+                  ],
+                  [
+                    400,
+                    135
+                  ],
+                  [
+                    275,
+                    135
+                  ],
+                  [
+                    275,
+                    35
+                  ],
+                  [
+                    100,
+                    35
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 284,
+                "text": "12 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 408,
+                "y": 203.5,
+                "text": "5 cm",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 187.5,
+                "y": 27,
+                "text": "7 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 153.5,
+                "text": "9 cm",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 337.5,
+                "y": 127,
+                "text": "5 cm",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 283,
+                "y": 91,
+                "text": "4 cm",
+                "size": 18,
+                "change": "add",
+                "color": "orange",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add all six sides. The perimeter is 42 centimetres.",
+          "write": "12 + 5 + 5 + 4 + 7 + 9 = 42",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "An L-shape with sides 12, 5, 7 and 9 cm and two missing sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    100,
+                    260
+                  ],
+                  [
+                    400,
+                    260
+                  ],
+                  [
+                    400,
+                    135
+                  ],
+                  [
+                    275,
+                    135
+                  ],
+                  [
+                    275,
+                    35
+                  ],
+                  [
+                    100,
+                    35
+                  ]
+                ],
+                "fill": "green",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 284,
+                "text": "12 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 408,
+                "y": 203.5,
+                "text": "5 cm",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 187.5,
+                "y": 27,
+                "text": "7 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 153.5,
+                "text": "9 cm",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 337.5,
+                "y": 127,
+                "text": "5 cm",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 283,
+                "y": 91,
+                "text": "4 cm",
+                "size": 18,
+                "color": "orange",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "P = 42 cm",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Circumference",
+      "lines": [
+        {
+          "say": "The perimeter of a circle is its circumference.",
+          "write": "C = πd = 2πr",
+          "diagram": "diagrams/y9/maths/perimeter-and-circles-parts.svg",
+          "alt": "A circle with radius r and circumference C"
+        },
+        {
+          "say": "The diameter is twice the radius.",
+          "write": "d = 2r"
+        },
+        {
+          "say": "Radius 4.5: C equals 2 times pi times 4.5, which is 9 pi.",
+          "write": "C = 9π"
+        },
+        {
+          "say": "That's about 28.3 centimetres. Use the pi button.",
+          "write": "C ≈ 28.3 cm"
+        }
+      ]
+    },
+    {
+      "heading": "Sectors",
+      "lines": [
+        {
+          "say": "A sector is a pizza slice. Radius 6, angle 120 degrees.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A sector with radius 6 cm and angle 120 degrees",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 250,
+                "x2": 480,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 250,
+                "x2": 180,
+                "y2": 76.8,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 275,
+                "text": "6 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 160,
+                "text": "6 cm",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 232,
+                "text": "120°",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "line",
+                "x": 480.0,
+                "y": 250.0,
+                "x2": 477.0,
+                "y2": 215.3,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 477.0,
+                "y": 215.3,
+                "x2": 467.9,
+                "y2": 181.6,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 467.9,
+                "y": 181.6,
+                "x2": 453.2,
+                "y2": 150.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 453.2,
+                "y": 150.0,
+                "x2": 433.2,
+                "y2": 121.4,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 433.2,
+                "y": 121.4,
+                "x2": 408.6,
+                "y2": 96.8,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 408.6,
+                "y": 96.8,
+                "x2": 380.0,
+                "y2": 76.8,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 380.0,
+                "y": 76.8,
+                "x2": 348.4,
+                "y2": 62.1,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 348.4,
+                "y": 62.1,
+                "x2": 314.7,
+                "y2": 53.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 314.7,
+                "y": 53.0,
+                "x2": 280.0,
+                "y2": 50.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 50.0,
+                "x2": 245.3,
+                "y2": 53.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 245.3,
+                "y": 53.0,
+                "x2": 211.6,
+                "y2": 62.1,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 211.6,
+                "y": 62.1,
+                "x2": 180.0,
+                "y2": 76.8,
+                "color": "orange"
+              }
+            ]
+          }
+        },
+        {
+          "say": "120 out of 360 is one third. The arc is a third of 2 pi times 6.",
+          "write": "l = 120/360 × 2π × 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A sector with radius 6 cm and angle 120 degrees",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 250,
+                "x2": 480,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 250,
+                "x2": 180,
+                "y2": 76.8,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 275,
+                "text": "6 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 160,
+                "text": "6 cm",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 232,
+                "text": "120°",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "line",
+                "x": 480.0,
+                "y": 250.0,
+                "x2": 477.0,
+                "y2": 215.3,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 477.0,
+                "y": 215.3,
+                "x2": 467.9,
+                "y2": 181.6,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 467.9,
+                "y": 181.6,
+                "x2": 453.2,
+                "y2": 150.0,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 453.2,
+                "y": 150.0,
+                "x2": 433.2,
+                "y2": 121.4,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 433.2,
+                "y": 121.4,
+                "x2": 408.6,
+                "y2": 96.8,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 408.6,
+                "y": 96.8,
+                "x2": 380.0,
+                "y2": 76.8,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 380.0,
+                "y": 76.8,
+                "x2": 348.4,
+                "y2": 62.1,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 348.4,
+                "y": 62.1,
+                "x2": 314.7,
+                "y2": 53.0,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 314.7,
+                "y": 53.0,
+                "x2": 280.0,
+                "y2": 50.0,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 50.0,
+                "x2": 245.3,
+                "y2": 53.0,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 245.3,
+                "y": 53.0,
+                "x2": 211.6,
+                "y2": 62.1,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 211.6,
+                "y": 62.1,
+                "x2": 180.0,
+                "y2": 76.8,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 270,
+                "text": "arc = 4π ≈ 12.566",
+                "size": 20,
+                "change": "add",
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now add the two straight radii: 12.566 plus 6 plus 6.",
+          "write": "P = l + 2r",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A sector with radius 6 cm and angle 120 degrees",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 250,
+                "x2": 480,
+                "y2": 250,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 250,
+                "x2": 180,
+                "y2": 76.8,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 275,
+                "text": "6 cm",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 160,
+                "text": "6 cm",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 232,
+                "text": "120°",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "line",
+                "x": 480.0,
+                "y": 250.0,
+                "x2": 477.0,
+                "y2": 215.3,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 477.0,
+                "y": 215.3,
+                "x2": 467.9,
+                "y2": 181.6,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 467.9,
+                "y": 181.6,
+                "x2": 453.2,
+                "y2": 150.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 453.2,
+                "y": 150.0,
+                "x2": 433.2,
+                "y2": 121.4,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 433.2,
+                "y": 121.4,
+                "x2": 408.6,
+                "y2": 96.8,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 408.6,
+                "y": 96.8,
+                "x2": 380.0,
+                "y2": 76.8,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 380.0,
+                "y": 76.8,
+                "x2": 348.4,
+                "y2": 62.1,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 348.4,
+                "y": 62.1,
+                "x2": 314.7,
+                "y2": 53.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 314.7,
+                "y": 53.0,
+                "x2": 280.0,
+                "y2": 50.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 50.0,
+                "x2": 245.3,
+                "y2": 53.0,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 245.3,
+                "y": 53.0,
+                "x2": 211.6,
+                "y2": 62.1,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 211.6,
+                "y": 62.1,
+                "x2": 180.0,
+                "y2": 76.8,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 270,
+                "text": "P ≈ 24.6 cm",
+                "size": 22,
+                "change": "add",
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A semicircle is half, a quadrant is a quarter.",
+          "write": "180° → ½,  90° → ¼"
+        }
+      ]
+    },
+    {
+      "heading": "Composite shapes",
+      "lines": [
+        {
+          "say": "A running track: two 80 metre straights and a semicircle at each end.",
+          "diagram": "diagrams/y9/maths/perimeter-and-circles-ex4.svg",
+          "alt": "A running track with 80 m straights and semicircles of diameter 50 m"
+        },
+        {
+          "say": "Two semicircles make one circle: pi times 50 is about 157.08.",
+          "write": "π × 50 ≈ 157.08 m"
+        },
+        {
+          "say": "Add the straights: 160 plus 157.08 is about 317.1 metres.",
+          "write": "≈ 317.1 m"
+        },
+        {
+          "say": "The dashed diameters are inside, so leave them out.",
+          "write": "skip dashed lines"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "A circle has circumference 50 centimetres. Find the radius.",
+          "write": "50 = 2πr"
+        },
+        {
+          "say": "Divide both sides by 2 pi. Use brackets on the calculator.",
+          "write": "r = 50 ÷ (2π)"
+        },
+        {
+          "say": "The radius is about 7.96 centimetres.",
+          "write": "r ≈ 7.96 cm"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "A sector's perimeter needs the two radii, not just the arc.",
+          "write": "l + 2r"
+        },
+        {
+          "say": "Don't add the dashed lines inside a shape.",
+          "write": "outside edges only"
+        },
+        {
+          "say": "Radius or diameter? Say it before you substitute.",
+          "write": "✗ 2πd"
+        },
+        {
+          "say": "A full turn is 360 degrees, so use theta over 360.",
+          "write": "θ/360"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Perimeter is the distance around the outside.",
+          "write": "trace the outside"
+        },
+        {
+          "say": "C equals pi d, or 2 pi r.",
+          "write": "C = πd = 2πr"
+        },
+        {
+          "say": "Arc length is theta over 360 of the circumference.",
+          "write": "l = θ/360 × 2πr"
+        }
+      ]
+    }
+  ]
+}

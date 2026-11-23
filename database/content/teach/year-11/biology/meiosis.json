@@ -1,0 +1,98 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Meiosis",
+  "frames": [
+    { "heading": "What meiosis does",
+      "lines": [
+        { "say": "Meiosis makes gametes: sperm and eggs, pollen and ovules.", "write": "meiosis → gametes" },
+        { "say": "One diploid cell divides twice, giving four haploid cells.", "write": "2n → four n cells" },
+        { "say": "It halves the chromosome number, and it creates variation.", "write": "halve + vary" },
+        { "say": "First, DNA is copied in interphase. 46 chromosomes, 92 chromatids.", "write": "46 chromosomes, 92 chromatids" }
+      ] },
+    { "heading": "Meiosis I splits the partners",
+      "lines": [
+        { "say": "Prophase one: homologous chromosomes pair up side by side. That's synapsis.", "write": "prophase I: synapsis",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "A homologous pair side by side: maternal and paternal chromosomes, each with two chromatids", "items": [
+            { "kind": "rect", "x": 220, "y": 40, "w": 22, "h": 180, "fill": "pink" },
+            { "kind": "rect", "x": 246, "y": 40, "w": 22, "h": 180, "fill": "pink" },
+            { "kind": "rect", "x": 292, "y": 40, "w": 22, "h": 180, "fill": "blue" },
+            { "kind": "rect", "x": 318, "y": 40, "w": 22, "h": 180, "fill": "blue" },
+            { "kind": "text", "x": 150, "y": 135, "text": "mum's", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 410, "y": 135, "text": "dad's", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 280, "y": 250, "text": "bivalent: 4 chromatids", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Non-sister chromatids touch at chiasmata and swap sections. Crossing over.", "write": "crossing over",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Non-sister chromatids swap their bottom sections, making recombinant chromatids", "items": [
+            { "kind": "rect", "x": 220, "y": 40, "w": 22, "h": 180, "fill": "pink" },
+            { "kind": "rect", "x": 246, "y": 40, "w": 22, "h": 90, "fill": "pink" },
+            { "kind": "rect", "x": 246, "y": 130, "w": 22, "h": 90, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 292, "y": 40, "w": 22, "h": 90, "fill": "blue" },
+            { "kind": "rect", "x": 292, "y": 130, "w": 22, "h": 90, "fill": "pink", "change": "add" },
+            { "kind": "rect", "x": 318, "y": 40, "w": 22, "h": 180, "fill": "blue" },
+            { "kind": "text", "x": 280, "y": 250, "text": "recombinant chromatids", "size": 18, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "Metaphase one: the pairs line up on the equator, in pairs.", "write": "metaphase I: pairs line up" },
+        { "say": "Anaphase one: homologues are pulled apart. Sister chromatids stay joined.", "write": "anaphase I: homologues split" },
+        { "say": "Two cells, each already haploid. 23 chromosomes, 46 chromatids.", "write": "2 cells: 23 / 46" }
+      ] },
+    { "heading": "Meiosis II splits the sisters",
+      "lines": [
+        { "say": "No DNA copying in between. That's how the number halves.", "write": "no copying in between" },
+        { "say": "Metaphase two: chromosomes line up one by one, not in pairs.", "write": "metaphase II: single file" },
+        { "say": "Anaphase two: centromeres split. Sister chromatids go to opposite poles.", "write": "anaphase II: sisters split" },
+        { "say": "Four haploid cells, each with 23 chromosomes and 23 chromatids.", "write": "4 cells: 23 / 23" },
+        { "say": "In females, only one large egg forms. The small polar bodies break down.", "write": "female: 1 egg + polar bodies" }
+      ] },
+    { "heading": "Cut, shuffle, deal",
+      "lines": [
+        { "say": "Variation comes from three things, like a deck of cards.", "write": "cut · shuffle · deal" },
+        { "say": "Cut: crossing over in prophase one makes new allele combinations, like A with little b.", "write": "cut = crossing over (A with b)" },
+        { "say": "Shuffle: each pair lines up randomly at metaphase one. Independent assortment.", "write": "shuffle = independent assortment",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Two homologous pairs line up two ways, giving four gamete combinations", "items": [
+            { "kind": "rect", "x": 60, "y": 40, "w": 24, "h": 70, "fill": "pink" },
+            { "kind": "rect", "x": 60, "y": 140, "w": 24, "h": 70, "fill": "blue" },
+            { "kind": "rect", "x": 140, "y": 40, "w": 24, "h": 50, "fill": "pink" },
+            { "kind": "rect", "x": 140, "y": 160, "w": 24, "h": 50, "fill": "blue" },
+            { "kind": "text", "x": 110, "y": 245, "text": "way 1", "size": 18, "anchor": "middle" },
+            { "kind": "rect", "x": 320, "y": 40, "w": 24, "h": 70, "fill": "pink", "change": "add" },
+            { "kind": "rect", "x": 320, "y": 140, "w": 24, "h": 70, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 400, "y": 40, "w": 24, "h": 50, "fill": "blue", "change": "add" },
+            { "kind": "rect", "x": 400, "y": 160, "w": 24, "h": 50, "fill": "pink", "change": "add" },
+            { "kind": "text", "x": 370, "y": 245, "text": "way 2", "size": 18, "anchor": "middle" },
+            { "kind": "line", "x": 30, "y": 125, "x2": 530, "y2": 125, "color": "grey", "dashed": true }
+          ] } },
+        { "say": "Combinations equal 2 to the power n. For humans, 2 to the 23 is about 8.4 million.", "write": "2ⁿ = 2²³ ≈ 8.4 million" },
+        { "say": "Deal: random fertilisation. Any sperm can meet any egg.", "write": "deal = random fertilisation" },
+        { "say": "Variation is what natural selection acts on.", "write": "variation → selection" }
+      ] },
+    { "heading": "Meiosis versus mitosis",
+      "lines": [
+        { "say": "Mitosis: one division, two identical diploid cells.", "write": "mitosis: 1 division, 2 same" },
+        { "say": "Meiosis: two divisions, four different haploid cells.", "write": "meiosis: 2 divisions, 4 different" },
+        { "say": "Only meiosis pairs homologues and crosses over, in prophase one.", "write": "pairing + crossing over" }
+      ] },
+    { "heading": "Non-disjunction",
+      "lines": [
+        { "say": "Non-disjunction is when chromosomes fail to separate. Like handouts stuck together.", "write": "non-disjunction" },
+        { "say": "One gamete gets an extra chromosome, n plus 1. Another misses one, n minus 1.", "write": "n + 1 · n − 1",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Chromosomes fail to separate: one gamete gets two copies, the other gets none", "items": [
+            { "kind": "circle", "x": 140, "y": 110, "r": 70, "fill": "pink" },
+            { "kind": "circle", "x": 420, "y": 110, "r": 70, "fill": "pink" },
+            { "kind": "rect", "x": 115, "y": 70, "w": 20, "h": 80, "fill": "blue" },
+            { "kind": "rect", "x": 145, "y": 70, "w": 20, "h": 80, "fill": "red", "change": "add" },
+            { "kind": "text", "x": 140, "y": 210, "text": "n + 1", "size": 20, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 420, "y": 210, "text": "n − 1", "size": 20, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 420, "y": 116, "text": "missing", "size": 18, "anchor": "middle", "color": "red" }
+          ] } },
+        { "say": "An error in anaphase one affects all four gametes.", "write": "anaphase I: all 4 affected" },
+        { "say": "An error in anaphase two leaves two normal gametes.", "write": "anaphase II: 2 normal" },
+        { "say": "An n plus 1 gamete fertilised gives trisomy, like trisomy 21.", "write": "n + 1 + n = trisomy" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Crossing over is between non-sister chromatids, not sister chromatids.", "write": "non-sisters swap" },
+        { "say": "Cells are already haploid after meiosis one.", "write": "haploid after meiosis I" },
+        { "say": "Meiosis one splits partners. Meiosis two splits sisters.", "write": "I: partners · II: sisters" },
+        { "say": "Use the haploid number in 2 to the n. 2n equals 8 gives 16.", "write": "2n = 8 → 2⁴ = 16" }
+      ] }
+  ]
+}

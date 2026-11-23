@@ -1,0 +1,135 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Simplifying and expanding expressions",
+  "frames": [
+    {
+      "heading": "Like terms",
+      "lines": [
+        { "say": "Like terms have exactly the same letters with the same powers.", "write": "4x and −7x are like" },
+        { "say": "x squared and x are not like terms. Neither are x y and x.", "write": "x² ≠ x,  xy ≠ x" },
+        { "say": "Order doesn't matter. 3ab and 5ba are like terms.", "write": "ab = ba" },
+        { "say": "To simplify, add the numbers in front. Keep the letters the same.", "write": "coefficients add" },
+        { "say": "Each term takes the sign in front of it. And x means 1x.", "write": "6x − 2y − x" }
+      ]
+    },
+    {
+      "heading": "Collecting like terms",
+      "lines": [
+        {
+          "say": "Simplify this. First group the like terms.",
+          "write": "4x² + 3x − x² + 5x − 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Terms sorted by colour: x squared terms blue, x terms orange, number grey",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 90, "h": 60, "fill": "blue", "label": "4x²" },
+              { "kind": "rect", "x": 125, "y": 60, "w": 90, "h": 60, "fill": "orange", "label": "+3x" },
+              { "kind": "rect", "x": 230, "y": 60, "w": 90, "h": 60, "fill": "blue", "label": "−x²" },
+              { "kind": "rect", "x": 335, "y": 60, "w": 90, "h": 60, "fill": "orange", "label": "+5x" },
+              { "kind": "rect", "x": 440, "y": 60, "w": 90, "h": 60, "fill": "grey", "label": "−2" }
+            ]
+          }
+        },
+        {
+          "say": "4 x squared minus x squared is 3 x squared. 3x plus 5x is 8x.",
+          "write": "= 3x² + 8x − 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Like terms combined into 3x squared, 8x and minus 2",
+            "items": [
+              { "kind": "rect", "x": 60, "y": 60, "w": 120, "h": 60, "fill": "blue", "label": "3x²", "change": "highlight" },
+              { "kind": "rect", "x": 220, "y": 60, "w": 120, "h": 60, "fill": "orange", "label": "+8x", "change": "highlight" },
+              { "kind": "rect", "x": 380, "y": 60, "w": 120, "h": 60, "fill": "grey", "label": "−2" }
+            ]
+          }
+        },
+        { "say": "Check with x equals 1. Both give 9.", "write": "x = 1: 9 = 9 ✓" }
+      ]
+    },
+    {
+      "heading": "Multiplying and dividing terms",
+      "lines": [
+        { "say": "To multiply terms, multiply the numbers, then multiply the letters.", "write": "3a × (−4ab)" },
+        { "say": "3 times minus 4 is minus 12. a times a b is a squared b.", "write": "= −12a²b" },
+        { "say": "To divide, write it as a fraction and cancel.", "write": "18x²y ÷ 6xy" },
+        { "say": "18 over 6 is 3. x squared over x is x. y over y is 1.", "write": "= 3x" }
+      ]
+    },
+    {
+      "heading": "Expanding brackets",
+      "lines": [
+        { "say": "The number outside the bracket multiplies every term inside.", "write": "a(b + c) = ab + ac" },
+        {
+          "say": "Think of a rectangle 3 high and 2x plus 5 wide.",
+          "write": "3(2x + 5)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "Rectangle 3 high and 2x + 5 wide",
+            "items": [
+              { "kind": "rect", "x": 80, "y": 60, "w": 400, "h": 140, "fill": "white" },
+              { "kind": "text", "x": 280, "y": 45, "text": "2x + 5", "size": 22, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 60, "y": 138, "text": "3", "size": 24, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "Split it. One part is 3 by 2x, area 6x. The other is 3 by 5, area 15.",
+          "write": "3(2x + 5) = 6x + 15",
+          "diagram": "diagrams/y9/maths/simplifying-and-expanding-expressions-area.svg",
+          "alt": "Area model: 3 by 2x gives 6x and 3 by 5 gives 15"
+        },
+        { "say": "Like a postie, the 3 must visit every house inside the bracket." }
+      ]
+    },
+    {
+      "heading": "A negative in front",
+      "lines": [
+        {
+          "say": "A negative outside changes the sign of every term inside.",
+          "write": "−2(3x − 5)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Arrows from −2 to each term in the bracket",
+            "items": [
+              { "kind": "text", "x": 80, "y": 150, "text": "−2", "size": 32, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 260, "y": 150, "text": "( 3x", "size": 32, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 400, "y": 150, "text": "− 5 )", "size": 32, "bold": true, "anchor": "middle" },
+              { "kind": "arrow", "x": 90, "y": 110, "x2": 270, "y2": 115, "color": "purple", "change": "add" },
+              { "kind": "arrow", "x": 90, "y": 100, "x2": 410, "y2": 115, "color": "purple", "change": "add" }
+            ]
+          }
+        },
+        { "say": "Minus 2 times 3x is minus 6x.", "write": "(−2) × 3x = −6x" },
+        { "say": "Minus 2 times minus 5 is plus 10. Negative times negative is positive.", "write": "(−2) × (−5) = +10" },
+        { "say": "So the answer is minus 6x plus 10.", "write": "= −6x + 10" },
+        { "say": "A lone minus sign means minus 1. It flips the lot.", "write": "−(x − 4) = −x + 4" }
+      ]
+    },
+    {
+      "heading": "Expand, then simplify",
+      "lines": [
+        { "say": "Expand every bracket first.", "write": "3(2x + 4) − 2(x − 5)" },
+        { "say": "The first bracket gives 6x plus 12.", "write": "6x + 12" },
+        { "say": "The second, with minus 2, gives minus 2x plus 10.", "write": "−2x + 10" },
+        { "say": "Now collect like terms. 4x plus 22.", "write": "= 4x + 22" },
+        { "say": "Another. x times 2x minus 7, plus 4x.", "write": "x(2x − 7) + 4x" },
+        { "say": "That's 2 x squared minus 7x plus 4x, so 2 x squared minus 3x.", "write": "= 2x² − 3x" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't only multiply the first term. Every term gets multiplied.", "write": "✗ 5(2y − 3) = 10y − 3" },
+        { "say": "Watch the signs. Minus times minus is plus.", "write": "✗ −2(3x − 5) = −6x − 10" },
+        { "say": "Don't add unlike terms. 3 x squared plus 5x stays as it is.", "write": "✗ 3x² + 5x = 8x³" },
+        { "say": "Multiply, don't add. 4a times 3a is 12 a squared.", "write": "4a × 3a = 12a²" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Same letters, same powers means like terms.", "write": "like terms only" },
+        { "say": "Every house gets a letter. Multiply every term inside.", "write": "a(b + c) = ab + ac" },
+        { "say": "A minus in front flips every sign.", "write": "−(a − b) = −a + b" },
+        { "say": "Check by putting a small number into both versions.", "write": "Check x = 1 ✓" }
+      ]
+    }
+  ]
+}

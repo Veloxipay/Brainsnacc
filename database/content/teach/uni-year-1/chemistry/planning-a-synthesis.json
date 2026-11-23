@@ -1,0 +1,129 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Planning a synthesis",
+  "frames": [
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {"say": "Retrosynthesis plans a road trip from the destination back.", "write": "target ⇒ precursors"},
+        {"say": "The open arrow means could be made from.", "write": "⇒ = \"could be made from\""},
+        {"say": "Each backwards step is a disconnection: an imaginary broken bond.", "write": "disconnection",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "A target alcohol disconnected into an R minus synthon and a carbonyl, matched to a Grignard and a ketone", "items": [
+           {"kind": "rect", "x": 20, "y": 90, "w": 150, "h": 60, "fill": "blue", "label": "3° alcohol"},
+           {"kind": "text", "x": 200, "y": 128, "text": "⇒", "size": 36, "bold": true},
+           {"kind": "rect", "x": 240, "y": 40, "w": 130, "h": 55, "fill": "orange", "label": "R⁻ synthon", "change": "add"},
+           {"kind": "rect", "x": 240, "y": 145, "w": 130, "h": 55, "fill": "orange", "label": "C=O", "change": "add"},
+           {"kind": "arrow", "x": 375, "y": 67, "x2": 420, "y2": 67, "color": "black", "change": "add"},
+           {"kind": "rect", "x": 420, "y": 40, "w": 120, "h": 55, "fill": "green", "label": "RMgBr", "change": "add"},
+           {"kind": "rect", "x": 420, "y": 145, "w": 120, "h": 55, "fill": "green", "label": "ketone"},
+           {"kind": "text", "x": 480, "y": 230, "text": "real reagents", "size": 18}
+         ]}},
+        {"say": "Each fragment is a synthon. Match it to a real reagent.", "write": "R⁻ = RMgBr"},
+        {"say": "Disconnect next to the functional group, near the middle.", "write": "next to FG, near middle"}
+      ]
+    },
+    {
+      "heading": "Functional group interconversions",
+      "lines": [
+        {"say": "An FGI swaps one group for another. The skeleton stays the same.", "write": "FGI: same skeleton"},
+        {"say": "A primary alcohol with PCC stops at the aldehyde.", "write": "1° ROH + PCC → RCHO",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Primary alcohol to aldehyde with PCC, or to carboxylic acid with dichromate under reflux", "items": [
+           {"kind": "rect", "x": 20, "y": 80, "w": 140, "h": 60, "fill": "blue", "label": "1° alcohol"},
+           {"kind": "arrow", "x": 160, "y": 100, "x2": 290, "y2": 50, "color": "black"},
+           {"kind": "rect", "x": 290, "y": 20, "w": 140, "h": 55, "fill": "teal", "label": "aldehyde"},
+           {"kind": "text", "x": 205, "y": 55, "text": "PCC", "size": 18},
+           {"kind": "arrow", "x": 160, "y": 120, "x2": 290, "y2": 170, "color": "red", "change": "add"},
+           {"kind": "rect", "x": 290, "y": 145, "w": 140, "h": 55, "fill": "red", "label": "acid", "change": "add"},
+           {"kind": "text", "x": 180, "y": 190, "text": "Cr₂O₇²⁻/H⁺, reflux", "size": 16, "change": "add"}
+         ]}},
+        {"say": "Acidified dichromate under reflux goes all the way to the acid.", "write": "reflux → acid"},
+        {"say": "Secondary alcohols give ketones. Tertiary alcohols don't oxidise.", "write": "2° → ketone, 3° ✗"},
+        {"say": "Sodium borohydride is gentle. Esters and acids need lithium aluminium hydride.", "write": "NaBH₄ vs LiAlH₄"},
+        {"say": "Nitriles hydrolyse to acids with acid and heat.", "write": "RCN + H₃O⁺ → RCOOH"}
+      ]
+    },
+    {
+      "heading": "Building the carbon skeleton",
+      "lines": [
+        {"say": "Count carbons first. More carbons in the target means a C–C step.", "write": "count carbons!"},
+        {"say": "Cyanide on a haloalkane adds one carbon.", "write": "RX + KCN → RCN (+1 C)"},
+        {"say": "Grignard plus methanal gives primary. Aldehyde gives secondary. Ketone gives tertiary.", "write": "1°, 2°, 3° alcohols"},
+        {"say": "Grignard plus carbon dioxide gives a carboxylic acid.", "write": "RMgBr + CO₂ → RCOOH"},
+        {"say": "Keep it dry and O–H free. Grignards are strong bases.", "write": "dry ether, no O–H, N–H"}
+      ]
+    },
+    {
+      "heading": "Bromoethane to propanoic acid",
+      "lines": [
+        {"say": "Propanoic acid has three carbons. Bromoethane has two. Add one.", "write": "2 C → 3 C"},
+        {"say": "Acid comes from a nitrile. Nitrile comes from bromoethane and cyanide.", "write": "acid ⇒ nitrile ⇒ RBr + CN⁻"},
+        {"say": "Forwards: KCN in ethanol, then acid hydrolysis.", "write": "KCN/EtOH, then H₃O⁺",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Bromoethane to propanenitrile at 85 percent, then to propanoic acid at 75 percent", "items": [
+           {"kind": "rect", "x": 10, "y": 60, "w": 150, "h": 60, "fill": "blue", "label": "CH₃CH₂Br"},
+           {"kind": "arrow", "x": 160, "y": 90, "x2": 205, "y2": 90, "color": "black"},
+           {"kind": "rect", "x": 205, "y": 60, "w": 150, "h": 60, "fill": "orange", "label": "CH₃CH₂CN", "change": "add"},
+           {"kind": "arrow", "x": 355, "y": 90, "x2": 400, "y2": 90, "color": "black"},
+           {"kind": "rect", "x": 400, "y": 60, "w": 150, "h": 60, "fill": "green", "label": "CH₃CH₂COOH", "change": "add"},
+           {"kind": "text", "x": 182, "y": 50, "text": "85%", "size": 18},
+           {"kind": "text", "x": 378, "y": 50, "text": "75%", "size": 18}
+         ]}},
+        {"say": "Overall yield is 0.85 times 0.75. That's 63.75 percent.", "write": "0.85 × 0.75 = 0.6375"},
+        {"say": "From ten grams of bromoethane, you get 4.33 grams of acid.", "write": "m = 4.33 g"}
+      ]
+    },
+    {
+      "heading": "Protecting groups",
+      "lines": [
+        {"say": "Chemoselectivity means a reagent attacks only one group.", "write": "NaBH₄: ketone, not ester"},
+        {"say": "Want to reduce an ester but keep a ketone? LiAlH₄ would hit both.", "write": "problem: LiAlH₄ hits both"},
+        {"say": "So protect the ketone as an acetal first.", "write": "1. ketone → acetal",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ketone covered by an acetal shield while the ester is reduced, then the shield is removed", "items": [
+           {"kind": "rect", "x": 40, "y": 70, "w": 160, "h": 60, "fill": "teal", "label": "ketone"},
+           {"kind": "rect", "x": 30, "y": 60, "w": 180, "h": 80, "fill": "none", "change": "add"},
+           {"kind": "text", "x": 120, "y": 45, "text": "acetal shield", "size": 18, "color": "green", "change": "add"},
+           {"kind": "rect", "x": 320, "y": 70, "w": 160, "h": 60, "fill": "orange", "label": "ester", "change": "remove"},
+           {"kind": "text", "x": 400, "y": 175, "text": "→ CH₂OH", "size": 22, "bold": true, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "Then reduce the ester with LiAlH₄. Then aqueous acid takes the acetal off.", "write": "2. LiAlH₄   3. H₃O⁺"},
+        {"say": "Each protecting group adds two steps, so use them only when needed.", "write": "+2 steps each"}
+      ]
+    },
+    {
+      "heading": "Yields multiply",
+      "lines": [
+        {"say": "Overall yield is the product of the step yields, as decimals.", "write": "y₁ × y₂ × y₃ …"},
+        {"say": "Six steps at 90 percent leaves only 53 percent. A leaky bucket.", "write": "0.90⁶ = 0.53",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Bars shrinking from 100 to 53 percent over six steps", "items": [
+           {"kind": "rect", "x": 20, "y": 40, "w": 60, "h": 150, "fill": "blue", "label": "100"},
+           {"kind": "rect", "x": 95, "y": 55, "w": 60, "h": 135, "fill": "blue", "label": "90"},
+           {"kind": "rect", "x": 170, "y": 68, "w": 60, "h": 122, "fill": "blue", "label": "81"},
+           {"kind": "rect", "x": 245, "y": 81, "w": 60, "h": 109, "fill": "blue", "label": "73"},
+           {"kind": "rect", "x": 320, "y": 92, "w": 60, "h": 98, "fill": "blue", "label": "66"},
+           {"kind": "rect", "x": 395, "y": 102, "w": 60, "h": 88, "fill": "blue", "label": "59"},
+           {"kind": "rect", "x": 470, "y": 110, "w": 60, "h": 80, "fill": "red", "label": "53", "change": "highlight"}
+         ]}},
+        {"say": "Convergent routes join pieces near the end, so fewer steps in a line.", "write": "convergent > linear"},
+        {"say": "Atom economy is different. Additions score 100 percent.", "write": "addition: 100% atom economy"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't multiply 85 by 75, or add them. Use decimals.", "write": "✗ 85 × 75"},
+        {"say": "No Grignard if there's an O–H or N–H in the molecule.", "write": "✗ Grignard + O–H"},
+        {"say": "Sodium borohydride won't reduce esters or acids.", "write": "✗ NaBH₄ on esters"},
+        {"say": "Always give conditions, like dry ether, reflux, or acid catalyst.", "write": "state conditions"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Work backwards with disconnections, then forwards with reagents.", "write": "⇒ back, → forward"},
+        {"say": "Count carbons to see if you need a C–C step.", "write": "count carbons"},
+        {"say": "Protect a group only when no reagent is selective enough.", "write": "protect if needed"},
+        {"say": "Yields multiply as decimals. Short routes win.", "write": "fewer steps, better yield"}
+      ]
+    }
+  ]
+}

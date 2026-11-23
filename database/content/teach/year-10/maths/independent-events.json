@@ -1,0 +1,1406 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Independent events",
+  "frames": [
+    {
+      "heading": "What independent means",
+      "lines": [
+        {
+          "say": "Two events are independent if one doesn't change the chance of the other.",
+          "write": "P(A | B) = P(A)"
+        },
+        {
+          "say": "Like the bus being late, and separately, the train being late."
+        },
+        {
+          "say": "Here's the test. Is the chance of both equal to the two chances multiplied?",
+          "write": "P(A ∩ B) = P(A) × P(B)"
+        },
+        {
+          "say": "If yes, they're independent. If not, they're dependent.",
+          "write": "yes → independent"
+        }
+      ]
+    },
+    {
+      "heading": "Multiply along the branches",
+      "lines": [
+        {
+          "say": "The bus is late with probability 0.2. The train with probability 0.1.",
+          "write": "P(bus) = 0.2,  P(train) = 0.1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Tree diagram for bus and train lateness",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 160,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 240,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 105,
+                "text": "0.2",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 225,
+                "text": "0.8",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 85,
+                "text": "Bus late",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 245,
+                "text": "On time",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 35,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 125,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 48,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 122,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 40,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 130,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 195,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 285,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 208,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 282,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 200,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 290,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 40,
+                "text": "0.02",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 130,
+                "text": "0.18",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 200,
+                "text": "0.08",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 290,
+                "text": "0.72",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The second branches are the same whatever happened first.",
+          "write": "same branches each time"
+        },
+        {
+          "say": "Both late? Multiply along the top path. 0.2 times 0.1 is 0.02.",
+          "write": "0.2 × 0.1 = 0.02",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Tree diagram for bus and train lateness",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 160,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 80,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 240,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 105,
+                "text": "0.2",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 225,
+                "text": "0.8",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 85,
+                "text": "Bus late",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 245,
+                "text": "On time",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 35,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 125,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 48,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 122,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 40,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 130,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 195,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 285,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 208,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 282,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 200,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 290,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 40,
+                "text": "0.02",
+                "size": 18,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 130,
+                "text": "0.18",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 200,
+                "text": "0.08",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 290,
+                "text": "0.72",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Neither late? Multiply along the bottom path. 0.8 times 0.9 is 0.72.",
+          "write": "0.8 × 0.9 = 0.72",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Tree diagram for bus and train lateness",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 160,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 240,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 105,
+                "text": "0.2",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 225,
+                "text": "0.8",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 85,
+                "text": "Bus late",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 245,
+                "text": "On time",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 35,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 125,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 48,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 122,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 40,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 130,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 195,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 285,
+                "color": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 208,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 282,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 200,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 290,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 40,
+                "text": "0.02",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 130,
+                "text": "0.18",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 200,
+                "text": "0.08",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 290,
+                "text": "0.72",
+                "size": 18,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "At least one late is everything except neither. 1 minus 0.72 is 0.28.",
+          "write": "1 − 0.72 = 0.28",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Tree diagram for bus and train lateness",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 160,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 56,
+                "y": 160,
+                "x2": 180,
+                "y2": 240,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 105,
+                "text": "0.2",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 225,
+                "text": "0.8",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 85,
+                "text": "Bus late",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 245,
+                "text": "On time",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 35,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 80,
+                "x2": 370,
+                "y2": 125,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 48,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 122,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 40,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 130,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 195,
+                "color": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 255,
+                "y": 240,
+                "x2": 370,
+                "y2": 285,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 208,
+                "text": "0.1",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 282,
+                "text": "0.9",
+                "size": 16,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 200,
+                "text": "late",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 290,
+                "text": "on time",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 40,
+                "text": "0.02",
+                "size": 18,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 130,
+                "text": "0.18",
+                "size": 18,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 200,
+                "text": "0.08",
+                "size": 18,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 510,
+                "y": 290,
+                "text": "0.72",
+                "size": 18,
+                "color": "purple",
+                "change": "remove",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. 0.02 plus 0.18 plus 0.08 is also 0.28.",
+          "write": "0.02 + 0.18 + 0.08 = 0.28 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Testing with a Venn diagram",
+      "lines": [
+        {
+          "say": "Are A and B independent? Here are the probabilities.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram: A only 0.2, both 0.2, B only 0.3, neither 0.3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 260,
+                "fill": "none",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 110,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 150,
+                "r": 110,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 158,
+                "text": "0.3",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "0.3",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 60,
+                "text": "A",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 60,
+                "text": "B",
+                "size": 22,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "P of A is everything in circle A. 0.2 plus 0.2 is 0.4.",
+          "write": "P(A) = 0.4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram: A only 0.2, both 0.2, B only 0.3, neither 0.3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 260,
+                "fill": "none",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 110,
+                "fill": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 150,
+                "r": 110,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 158,
+                "text": "0.3",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "0.3",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 60,
+                "text": "A",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 60,
+                "text": "B",
+                "size": 22,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "P of B is 0.2 plus 0.3, which is 0.5.",
+          "write": "P(B) = 0.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram: A only 0.2, both 0.2, B only 0.3, neither 0.3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 260,
+                "fill": "none",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 110,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 150,
+                "r": 110,
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 158,
+                "text": "0.3",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "0.3",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 60,
+                "text": "A",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 60,
+                "text": "B",
+                "size": 22,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Multiply. 0.4 times 0.5 is 0.2.",
+          "write": "0.4 × 0.5 = 0.2"
+        },
+        {
+          "say": "The overlap is 0.2. They match, so A and B are independent.",
+          "write": "P(A ∩ B) = 0.2 ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram: A only 0.2, both 0.2, B only 0.3, neither 0.3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 260,
+                "fill": "none",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 110,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 150,
+                "r": 110,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "0.2",
+                "size": 22,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 158,
+                "text": "0.3",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "0.3",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 60,
+                "text": "A",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 60,
+                "text": "B",
+                "size": 22,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Testing with a table",
+      "lines": [
+        {
+          "say": "100 students. Is being left-handed independent of learning music?",
+          "diagram": "diagrams/y10/maths/independent-events-ex3.svg",
+          "alt": "Two-way table of handedness and music"
+        },
+        {
+          "say": "Overall, 20 out of 100 are left-handed. That's 0.2.",
+          "write": "P(left) = 20/100 = 0.2"
+        },
+        {
+          "say": "In the music row, 6 out of 30 are left-handed. Also 0.2.",
+          "write": "P(left | music) = 6/30 = 0.2"
+        },
+        {
+          "say": "They're equal, so in this survey they are independent.",
+          "write": "equal → independent"
+        }
+      ]
+    },
+    {
+      "heading": "At least one",
+      "lines": [
+        {
+          "say": "Three alarm clocks each fail with probability 0.1, independently.",
+          "write": "P(fail) = 0.1 each"
+        },
+        {
+          "say": "All three fail? Multiply. That's 0.001.",
+          "write": "0.1 × 0.1 × 0.1 = 0.001",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Three alarms all failing",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 130,
+                "h": 90,
+                "fill": "red",
+                "change": "add",
+                "label": "fail 0.1"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 60,
+                "w": 130,
+                "h": 90,
+                "fill": "red",
+                "change": "add",
+                "label": "fail 0.1"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 130,
+                "h": 90,
+                "fill": "red",
+                "change": "add",
+                "label": "fail 0.1"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "P(all fail) = 0.001",
+                "size": 24,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "At least one goes off is 1 minus 0.001, which is 0.999.",
+          "write": "1 − 0.001 = 0.999"
+        },
+        {
+          "say": "At least one equals 1 minus none.",
+          "write": "P(at least one) = 1 − P(none)"
+        }
+      ]
+    },
+    {
+      "heading": "Not the same as mutually exclusive",
+      "lines": [
+        {
+          "say": "Mutually exclusive events can't happen together.",
+          "write": "P(A ∩ B) = 0"
+        },
+        {
+          "say": "If one happens, you know the other didn't. So they affect each other.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Two circles that do not overlap",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 240,
+                "fill": "none",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 140,
+                "r": 90,
+                "fill": "blue",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 140,
+                "r": 90,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 150,
+                "text": "no overlap",
+                "size": 18,
+                "color": "red",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So mutually exclusive events with real chances are never independent.",
+          "write": "mutually exclusive ≠ independent"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't assume independence. Test it with numbers.",
+          "write": "test: P(A) × P(B)"
+        },
+        {
+          "say": "In a Venn diagram, P of A includes the overlap.",
+          "write": "A only + both"
+        },
+        {
+          "say": "For and, multiply. Don't add.",
+          "write": "and → ×"
+        },
+        {
+          "say": "For at least one, use 1 minus none.",
+          "write": "1 − P(none)"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "No memory, multiply.",
+          "write": "independent → multiply"
+        },
+        {
+          "say": "The test is P of A times P of B equals P of A and B.",
+          "write": "P(A) × P(B) = P(A ∩ B)?"
+        },
+        {
+          "say": "With replacement is independent. Without replacement is usually dependent.",
+          "write": "with replacement → independent"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Solving linear equations",
+  "frames": [
+    {
+      "heading": "What is a linear equation?",
+      "lines": [
+        {
+          "say": "A linear equation has x only to the power of one.",
+          "write": "3x − 4 = 11",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Linear equations kept, non-linear ones crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 230,
+                "h": 70,
+                "fill": "green",
+                "label": "3x − 4 = 11"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 230,
+                "h": 70,
+                "fill": "green",
+                "label": "(2x + 1)/5 = 3"
+              },
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 170,
+                "w": 150,
+                "h": 70,
+                "fill": "red",
+                "change": "remove",
+                "label": "x² = 9"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 170,
+                "w": 150,
+                "h": 70,
+                "fill": "red",
+                "change": "remove",
+                "label": "√x = 4"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 170,
+                "w": 150,
+                "h": 70,
+                "fill": "red",
+                "change": "remove",
+                "label": "6/x = 2"
+              },
+              {
+                "kind": "text",
+                "x": 145,
+                "y": 140,
+                "text": "linear",
+                "size": 18,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 275,
+                "text": "not linear",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "No x squared, no square root of x, and no x under a fraction line.",
+          "write": "no x², √x or 6/x"
+        },
+        {
+          "say": "This year we add negatives, fractions, decimals and three steps."
+        },
+        {
+          "say": "The number multiplying x is called the coefficient.",
+          "write": "coefficient: the 3 in 3x"
+        },
+        {
+          "say": "A number on its own is called a constant term.",
+          "write": "constant: the − 4"
+        }
+      ]
+    },
+    {
+      "heading": "Last on, first off",
+      "lines": [
+        {
+          "say": "Think of pass-the-parcel. The last layer on is the first layer off.",
+          "write": "last on, first off"
+        },
+        {
+          "say": "Here x was multiplied by 3, divided by 5, then 2 was added.",
+          "write": "3x/5 + 2 = 11",
+          "diagram": "diagrams/y8/maths/solving-linear-equations-undo.svg",
+          "alt": "Flowchart building 3x/5 + 2 from x and undoing it in reverse to get x = 15"
+        },
+        {
+          "say": "So we undo in reverse. Take 2, times 5, then divide by 3.",
+          "write": "− 2, × 5, ÷ 3"
+        },
+        {
+          "say": "Take 2 from both sides. Eleven take two is nine.",
+          "write": "3x/5 = 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Taking 2 off both sides",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "3x/5 + 2"
+              },
+              {
+                "kind": "arrow",
+                "x": 135,
+                "y": 90,
+                "x2": 190,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "green",
+                "change": "add",
+                "label": "3x/5"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 80,
+                "text": "− 2",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 200,
+                "text": "11 − 2 = 9",
+                "size": 24,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Times both sides by 5 to get 3x equals 45.",
+          "write": "3x = 45"
+        },
+        {
+          "say": "Divide both sides by 3. So x equals 15.",
+          "write": "x = 15"
+        }
+      ]
+    },
+    {
+      "heading": "Negative coefficients",
+      "lines": [
+        {
+          "say": "Here the coefficient is minus 4. The sign belongs to it.",
+          "write": "−4x + 7 = 31"
+        },
+        {
+          "say": "Take 7 off both sides first.",
+          "write": "−4x = 24"
+        },
+        {
+          "say": "Circle the coefficient, sign and all. Then divide by minus 4.",
+          "write": "x = 24 ÷ (−4)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "The coefficient minus 4 circled",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "−4x = 24",
+                "size": 56,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 165,
+                "y": 92,
+                "r": 52,
+                "fill": "none",
+                "change": "highlight",
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 220,
+                "text": "÷ (−4) both sides",
+                "size": 24,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Positive divided by negative is negative. So x equals minus 6.",
+          "write": "x = −6"
+        },
+        {
+          "say": "Check it. Minus 4 times minus 6 is 24. Plus 7 is 31.",
+          "write": "−4 × (−6) + 7 = 31 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "When the x-term comes second",
+      "lines": [
+        {
+          "say": "Look at 20 take away 3x equals 8.",
+          "write": "20 − 3x = 8"
+        },
+        {
+          "say": "The minus sits in front of 3x, so the term is minus 3x.",
+          "write": "the term is −3x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "The minus sign stays with 3x",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 120,
+                "text": "20  −3x  = 8",
+                "size": 56,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 60,
+                "w": 150,
+                "h": 80,
+                "fill": "none",
+                "change": "highlight",
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 220,
+                "text": "the sign sticks to 3x",
+                "size": 24,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take 20 from both sides. Eight take twenty is minus 12.",
+          "write": "−3x = −12"
+        },
+        {
+          "say": "Divide by minus 3. Negative over negative is positive.",
+          "write": "x = 4"
+        },
+        {
+          "say": "Check. 20 take 3 times 4 is 20 take 12, which is 8.",
+          "write": "20 − 12 = 8 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Fractions and decimals",
+      "lines": [
+        {
+          "say": "A long fraction line works like invisible brackets.",
+          "write": "(2x − 1)/3 = 7"
+        },
+        {
+          "say": "The whole top is divided by 3. So times both sides by 3 first.",
+          "write": "2x − 1 = 21",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Multiplying both sides by 3 removes the fraction line",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 30,
+                "w": 280,
+                "h": 70,
+                "fill": "blue",
+                "label": "2x − 1"
+              },
+              {
+                "kind": "line",
+                "x": 130,
+                "y": 120,
+                "x2": 430,
+                "y2": 120,
+                "color": "black",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "3",
+                "size": 40,
+                "color": "black",
+                "change": "remove",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 130,
+                "text": "= 7",
+                "size": 36,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "× 3:  2x − 1 = 21",
+                "size": 28,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then add 1 to get 2x equals 22. Divide by 2.",
+          "write": "x = 11"
+        },
+        {
+          "say": "Decimals follow the same rules. Add 1.2 to both sides.",
+          "write": "0.4x − 1.2 = 2  →  0.4x = 3.2"
+        },
+        {
+          "say": "Divide by 0.4. Times top and bottom by 10 to make it easy.",
+          "write": "32 ÷ 4 = 8"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't lose the sign. Minus 4x equals 24 gives minus 6, not 6.",
+          "write": "✗ x = 6   ✓ x = −6"
+        },
+        {
+          "say": "Don't add 1 first in a fraction. The 1 is inside the fraction.",
+          "write": "(2x − 1)/3: × 3 first"
+        },
+        {
+          "say": "Multiply every term. x over 3 plus 2, times 3, gives x plus 6.",
+          "write": "x/3 + 2 = 5 → x + 6 = 15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Wrong and right ways to multiply by 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "x/3 + 2 = 5",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "x + 2 = 15",
+                "size": 32,
+                "color": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "x + 6 = 15",
+                "size": 32,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "And always check in the original equation, not your last line.",
+          "write": "check the ORIGINAL"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Linear means x only to the power of one.",
+          "write": "x to the power 1"
+        },
+        {
+          "say": "Undo in reverse order. Last on, first off.",
+          "write": "last on, first off"
+        },
+        {
+          "say": "Divide by the coefficient, sign and all.",
+          "write": "−4x = 24 → x = −6"
+        },
+        {
+          "say": "A fraction line acts like brackets. Multiply first.",
+          "write": "fraction line = brackets"
+        },
+        {
+          "say": "Always substitute back in to check.",
+          "write": "Check ✓"
+        }
+      ]
+    }
+  ]
+}

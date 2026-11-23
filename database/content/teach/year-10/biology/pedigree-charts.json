@@ -1,0 +1,1262 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "Pedigree charts",
+  "frames": [
+    {
+      "heading": "What is a pedigree chart?",
+      "lines": [
+        {
+          "say": "A pedigree chart is a family tree that tracks one trait.",
+          "write": "pedigree = family tree"
+        },
+        {
+          "say": "A square is a male. A circle is a female.",
+          "write": "□ male   ○ female",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "pedigree symbols",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 55,
+                "y": 75,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 160,
+                "text": "male",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 100,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 160,
+                "text": "female",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 75,
+                "w": 50,
+                "h": 50,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 460,
+                "y": 100,
+                "r": 25,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 160,
+                "text": "shaded = affected",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Shaded means the person shows the trait. Empty means unaffected.",
+          "write": "shaded = affected"
+        },
+        {
+          "say": "A line joining a male and female means they are parents.",
+          "write": "mating line"
+        },
+        {
+          "say": "Generations use Roman numerals. So two dash three is the third person in generation two.",
+          "write": "II-3 = gen II, person 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170.0,
+                "y": 140,
+                "x2": 390.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170.0,
+                "y": 140,
+                "x2": 170.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 145.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 140,
+                "x2": 280.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 210,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 390.0,
+                "y": 140,
+                "x2": 390.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 365.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "white",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 280,
+                "text": "II-3",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Recessive clue",
+      "lines": [
+        {
+          "say": "Look at these parents. Neither shows the trait.",
+          "write": "both parents unaffected",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "But a child is affected.",
+          "write": "affected child appears",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "black",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The allele was hidden in both parents. Hidden means recessive.",
+          "write": "→ recessive"
+        },
+        {
+          "say": "So the trait must be recessive. Both parents are carriers.",
+          "write": "parents Aa × Aa",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 30,
+                "text": "Aa",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 30,
+                "text": "Aa",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 335,
+                "y": 265,
+                "text": "aa",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Dominant clue",
+      "lines": [
+        {
+          "say": "Now both parents show the trait.",
+          "write": "both parents affected",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "But a child does not. A surprise healthy child.",
+          "write": "unaffected child",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "white",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each parent hid a normal allele. So the trait must be dominant.",
+          "write": "→ dominant",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 30,
+                "text": "Aa",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 30,
+                "text": "Aa",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 335,
+                "y": 265,
+                "text": "aa",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Dominant traits usually show in every generation. That supports it, but is not proof.",
+          "write": "every generation ≠ proof"
+        }
+      ]
+    },
+    {
+      "heading": "Autosomal or X-linked?",
+      "lines": [
+        {
+          "say": "X-linked recessive traits affect many more males than females.",
+          "write": "X-linked: mostly males"
+        },
+        {
+          "say": "An affected mother passes her X to every son. So all her sons are affected.",
+          "write": "affected mum → all sons"
+        },
+        {
+          "say": "An affected daughter must have an affected father.",
+          "write": "affected daughter → dad"
+        },
+        {
+          "say": "Here an affected mother has an unaffected son.",
+          "write": "✗ X-linked",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "pedigree chart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 175,
+                "y": 45,
+                "w": 50,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 70,
+                "r": 25,
+                "fill": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 70,
+                "x2": 335,
+                "y2": 70,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225.0,
+                "y": 140,
+                "x2": 225.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 185,
+                "w": 50,
+                "h": 50,
+                "fill": "white",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 335.0,
+                "y": 140,
+                "x2": 335.0,
+                "y2": 185,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 335.0,
+                "y": 210,
+                "r": 25,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 78,
+                "text": "I",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 218,
+                "text": "II",
+                "size": 22,
+                "color": "grey",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So it cannot be X-linked recessive. It is autosomal.",
+          "write": "→ autosomal"
+        }
+      ]
+    },
+    {
+      "heading": "Working out genotypes",
+      "lines": [
+        {
+          "say": "First, give a key. A is dominant, little a is recessive.",
+          "write": "key: A, a"
+        },
+        {
+          "say": "For a recessive trait, every affected person is little a little a.",
+          "write": "affected = aa"
+        },
+        {
+          "say": "An unaffected person with an affected child must be a carrier, big A little a.",
+          "write": "carrier = Aa"
+        },
+        {
+          "say": "If you cannot prove it, write big A big A or big A little a.",
+          "write": "AA or Aa  (A_)"
+        }
+      ]
+    },
+    {
+      "heading": "The two thirds trap",
+      "lines": [
+        {
+          "say": "Two carriers have an unaffected child. Is that child a carrier?",
+          "write": "Aa × Aa, unaffected child",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Punnett square with aa crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 40,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "AA"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 40,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Aa"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 130,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Aa"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 130,
+                "w": 90,
+                "h": 90,
+                "fill": "red",
+                "label": "aa"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The child is unaffected, so cross out the little a little a box.",
+          "write": "cross out aa",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Punnett square with aa crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 40,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "AA"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 40,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Aa"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 130,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Aa"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 130,
+                "w": 90,
+                "h": 90,
+                "fill": "red",
+                "label": "aa",
+                "change": "remove"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Two of the three boxes left are carriers. So the answer is two thirds.",
+          "write": "2/3, not 1/4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Punnett square with aa crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 40,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "AA"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 40,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Aa",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 130,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Aa",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 140,
+                "text": "2/3",
+                "size": 36,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Every generation suggests dominant, but it is not proof. Find a key clue.",
+          "write": "find the clue"
+        },
+        {
+          "say": "Do not call a trait X-linked just because more males are affected.",
+          "write": "check the X rules"
+        },
+        {
+          "say": "Only write big A big A if you can prove it.",
+          "write": "AA only if proven"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Hidden in the parents means recessive.",
+          "write": "hidden → recessive"
+        },
+        {
+          "say": "Surprise healthy child means dominant.",
+          "write": "surprise healthy → dominant"
+        },
+        {
+          "say": "Affected mum, all sons affected, if it is X-linked recessive.",
+          "write": "X-linked checks"
+        },
+        {
+          "say": "For an unaffected child of carriers, the chance of carrier is two thirds.",
+          "write": "2/3 trap"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,736 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Speed, distance and time",
+  "frames": [
+    {
+      "heading": "Speed is a rate",
+      "lines": [
+        {
+          "say": "Speed is the distance you travel per unit of time.",
+          "write": "speed = distance per time"
+        },
+        {
+          "say": "A walkway moving 2 metres each second goes 20 metres in 10 seconds.",
+          "write": "2 m/s × 10 s = 20 m",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Walkway: 20 metres in 10 seconds",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 120,
+                "w": 520,
+                "h": 40,
+                "fill": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 100,
+                "r": 18,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 460,
+                "y": 100,
+                "r": 18,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 90,
+                "y": 80,
+                "x2": 430,
+                "y2": 80,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 60,
+                "text": "20 m in 10 s",
+                "size": 22,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "speed: 2 m every second",
+                "size": 22,
+                "color": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Common units are kilometres per hour and metres per second.",
+          "write": "km/h   m/s"
+        },
+        {
+          "say": "Know any two of speed, distance and time, and you find the third."
+        }
+      ]
+    },
+    {
+      "heading": "The D S T triangle",
+      "lines": [
+        {
+          "say": "Write D on top, with S and T underneath.",
+          "write": "D over S and T",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "D S T triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    20
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "white",
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 170,
+                "x2": 390,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "D",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 240,
+                "text": "S",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 240,
+                "text": "T",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cover T. You see D over S. So time is distance over speed.",
+          "write": "T = D ÷ S",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "D S T triangle with T covered",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    20
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "white",
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 170,
+                "x2": 390,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "D",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 240,
+                "text": "S",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 240,
+                "text": "T",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 190,
+                "w": 80,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cover S. You see D over T. Speed is distance over time.",
+          "write": "S = D ÷ T",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "D S T triangle with S covered",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    20
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "white",
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 170,
+                "x2": 390,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "D",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 240,
+                "text": "S",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 240,
+                "text": "T",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 190,
+                "w": 80,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cover D. S sits next to T, so multiply.",
+          "write": "D = S × T",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "D S T triangle with D covered",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    20
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "white",
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 170,
+                "x2": 390,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "D",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 240,
+                "text": "S",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 240,
+                "text": "T",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 90,
+                "w": 80,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Remember the order with Dad Sat Tired.",
+          "write": "Dad Sat Tired"
+        }
+      ]
+    },
+    {
+      "heading": "Make the units match",
+      "lines": [
+        {
+          "say": "If speed is in kilometres per hour, time must be in hours.",
+          "write": "km/h → km and hours"
+        },
+        {
+          "say": "Change minutes to hours by dividing by 60.",
+          "write": "40 min = 40/60 h"
+        },
+        {
+          "say": "Careful. 2 hours 30 minutes is 2.5 hours, not 2.3.",
+          "write": "2 h 30 min = 2.5 h",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Half an hour is 0.5 of an hour",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 480,
+                "h": 60,
+                "fill": "white",
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 240,
+                "h": 60,
+                "fill": "teal",
+                "change": "highlight",
+                "label": "30 min = 0.5 h"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "2.3 h",
+                "size": 36,
+                "color": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 190,
+                "text": "2.5 h",
+                "size": 36,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 190,
+                "text": "1 hour →",
+                "size": 22,
+                "color": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A train goes 150 kilometres in 2.5 hours. Divide.",
+          "write": "150 ÷ 2.5 = 60 km/h"
+        },
+        {
+          "say": "Chloe cycles at 18 for 40 minutes. 18 times 40 over 60 is 12.",
+          "write": "18 × 40/60 = 12 km"
+        }
+      ]
+    },
+    {
+      "heading": "Kilometres per hour and metres per second",
+      "lines": [
+        {
+          "say": "One kilometre per hour is 1000 metres in 3600 seconds.",
+          "write": "1 km/h = 1000 m / 3600 s"
+        },
+        {
+          "say": "To change kilometres per hour to metres per second, divide by 3.6.",
+          "write": "km/h ÷ 3.6 = m/s",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Divide by 3.6 one way, multiply the other",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 180,
+                "h": 80,
+                "fill": "blue",
+                "label": "km/h"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 80,
+                "w": 180,
+                "h": 80,
+                "fill": "orange",
+                "label": "m/s"
+              },
+              {
+                "kind": "arrow",
+                "x": 225,
+                "y": 105,
+                "x2": 335,
+                "y2": 105,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 335,
+                "y": 140,
+                "x2": 225,
+                "y2": 140,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "÷ 3.6",
+                "size": 20,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "× 3.6",
+                "size": 20,
+                "color": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So 72 kilometres per hour is 20 metres per second.",
+          "write": "72 ÷ 3.6 = 20 m/s"
+        },
+        {
+          "say": "Metres per second numbers are always the smaller ones.",
+          "write": "m/s is smaller"
+        }
+      ]
+    },
+    {
+      "heading": "Average speed",
+      "lines": [
+        {
+          "say": "Max drives 60 kilometres at 40, then 60 kilometres at 60.",
+          "diagram": "diagrams/y8/maths/speed-distance-and-time-two-part.svg",
+          "alt": "Two equal 60 km parts at 40 and 60 km/h"
+        },
+        {
+          "say": "First part takes 1.5 hours. Second part takes 1 hour.",
+          "write": "1.5 h + 1 h = 2.5 h"
+        },
+        {
+          "say": "Average speed is total distance over total time.",
+          "write": "120 ÷ 2.5 = 48 km/h",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "50 crossed out, 48 km/h is correct",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "(40 + 60) ÷ 2 = 50",
+                "size": 30,
+                "color": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "120 ÷ 2.5 = 48 km/h",
+                "size": 34,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not 50. He spent longer driving at the slower speed.",
+          "write": "✗ 50 km/h"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "18 times 40 is 720 kilometres. Far too far for a bike!",
+          "write": "✗ 18 × 40 = 720 km"
+        },
+        {
+          "say": "Change minutes into hours first.",
+          "write": "min ÷ 60 = h"
+        },
+        {
+          "say": "Don't average the speeds. Use total over total.",
+          "write": "total ÷ total"
+        },
+        {
+          "say": "Reality check. Walking is about 5, cycling about 20, highway about 100.",
+          "write": "5, 20, 100 km/h"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "S equals D over T. D equals S times T. T equals D over S.",
+          "write": "S = D÷T  D = S×T  T = D÷S",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "D S T triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    20
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "white",
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 170,
+                "x2": 390,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "D",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 240,
+                "text": "S",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 240,
+                "text": "T",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Match the units. Kilometres per hour goes with hours.",
+          "write": "match units"
+        },
+        {
+          "say": "Three point six is the magic number.",
+          "write": "÷ 3.6 or × 3.6"
+        },
+        {
+          "say": "Average speed is total distance over total time.",
+          "write": "total ÷ total"
+        }
+      ]
+    }
+  ]
+}

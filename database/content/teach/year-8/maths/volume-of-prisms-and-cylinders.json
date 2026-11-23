@@ -1,0 +1,713 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Volume of prisms and cylinders",
+  "frames": [
+    {
+      "heading": "Prisms and cross-sections",
+      "lines": [
+        {
+          "say": "A prism has two identical parallel ends joined by flat sides.",
+          "write": "prism",
+          "diagram": "diagrams/y8/maths/volume-of-prisms-and-cylinders-prism.svg",
+          "alt": "Prism with shaded cross-section A and length h"
+        },
+        {
+          "say": "Slice it parallel to the ends. Every slice is the same shape.",
+          "write": "cross-section",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Triangular cross-section repeated along the length of the prism",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    200,
+                    250
+                  ],
+                  [
+                    60,
+                    130
+                  ]
+                ],
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 290,
+                "text": "A = cross-section",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "That shape is the cross-section. Prisms are named after it.",
+          "write": "triangular, trapezoidal …"
+        },
+        {
+          "say": "Picture the cross-section stacked again and again along the length.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Triangular cross-section repeated along the length of the prism",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    240,
+                    162
+                  ],
+                  [
+                    380,
+                    162
+                  ],
+                  [
+                    240,
+                    42
+                  ]
+                ],
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    195,
+                    184
+                  ],
+                  [
+                    335,
+                    184
+                  ],
+                  [
+                    195,
+                    64
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    206
+                  ],
+                  [
+                    290,
+                    206
+                  ],
+                  [
+                    150,
+                    86
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    105,
+                    228
+                  ],
+                  [
+                    245,
+                    228
+                  ],
+                  [
+                    105,
+                    108
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    200,
+                    250
+                  ],
+                  [
+                    60,
+                    130
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 290,
+                "text": "A = cross-section",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 220,
+                "y": 240,
+                "x2": 400,
+                "y2": 152,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 200,
+                "text": "h",
+                "size": 28,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The volume rule",
+      "lines": [
+        {
+          "say": "Volume equals area of the cross-section times height.",
+          "write": "V = A × h"
+        },
+        {
+          "say": "Height is the distance between the two ends.",
+          "write": "h = distance between ends"
+        },
+        {
+          "say": "If the prism lies on its side, that height is its length.",
+          "write": "lying down: h = length"
+        },
+        {
+          "say": "For a rectangular prism, A is l times w. So V is l w h.",
+          "write": "V = l × w × h",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangular prism",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 110,
+                "w": 200,
+                "h": 140,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "A = l × w"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    110
+                  ],
+                  [
+                    150,
+                    50
+                  ],
+                  [
+                    350,
+                    50
+                  ],
+                  [
+                    280,
+                    110
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    110
+                  ],
+                  [
+                    350,
+                    50
+                  ],
+                  [
+                    350,
+                    190
+                  ],
+                  [
+                    280,
+                    250
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 280,
+                "text": "l",
+                "size": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 240,
+                "text": "w",
+                "size": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 185,
+                "text": "h",
+                "size": 20,
+                "color": "black"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Triangular prism",
+      "lines": [
+        {
+          "say": "Triangle end with base 6 and height 4. The prism is 10 long.",
+          "write": "b = 6, h = 4, length 10",
+          "diagram": "diagrams/y8/maths/volume-of-prisms-and-cylinders-ex1.svg",
+          "alt": "Triangular prism with base 6 cm, height 4 cm and length 10 cm"
+        },
+        {
+          "say": "Area first. Half times 6 times 4 is 12 square centimetres.",
+          "write": "A = ½ × 6 × 4 = 12 cm²"
+        },
+        {
+          "say": "Times by the length. 12 times 10 is 120.",
+          "write": "V = 12 × 10 = 120 cm³"
+        },
+        {
+          "say": "Check. The box around it is 240. The prism is half of that.",
+          "write": "6 × 4 × 10 = 240, half ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle is half the rectangle",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 60,
+                "w": 320,
+                "h": 180,
+                "fill": "white",
+                "color": "grey"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    240
+                  ],
+                  [
+                    440,
+                    240
+                  ],
+                  [
+                    120,
+                    60
+                  ]
+                ],
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "prism = half the box",
+                "size": 22,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Cylinders",
+      "lines": [
+        {
+          "say": "A cylinder has two identical circle ends.",
+          "write": "cylinder",
+          "diagram": "diagrams/y8/maths/volume-of-prisms-and-cylinders-cylinder.svg",
+          "alt": "Cylinder with radius r and height h"
+        },
+        {
+          "say": "The cross-section is a circle, with area pi r squared.",
+          "write": "A = πr²"
+        },
+        {
+          "say": "So volume is pi r squared h.",
+          "write": "V = πr²h"
+        },
+        {
+          "say": "Radius 3, height 10. Pi times 9 times 10 is 90 pi.",
+          "write": "V = 90π",
+          "diagram": "diagrams/y8/maths/volume-of-prisms-and-cylinders-ex2.svg",
+          "alt": "Cylinder radius 3 cm height 10 cm"
+        },
+        {
+          "say": "Use the pi button. That's about 282.7 cubic centimetres.",
+          "write": "≈ 282.7 cm³"
+        }
+      ]
+    },
+    {
+      "heading": "Units and capacity",
+      "lines": [
+        {
+          "say": "One cubic centimetre is one millilitre.",
+          "write": "1 cm³ = 1 mL"
+        },
+        {
+          "say": "1000 cubic centimetres make a litre. A cubic metre holds 1000 litres.",
+          "write": "1000 cm³ = 1 L, 1 m³ = 1000 L",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Volume and capacity units",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 120,
+                "h": 120,
+                "fill": "blue",
+                "label": "1 cm³"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 240,
+                "text": "= 1 mL",
+                "size": 20,
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 150,
+                "h": 150,
+                "fill": "teal",
+                "label": "1000 cm³"
+              },
+              {
+                "kind": "text",
+                "x": 295,
+                "y": 240,
+                "text": "= 1 L",
+                "size": 20,
+                "color": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 40,
+                "w": 130,
+                "h": 170,
+                "fill": "orange",
+                "change": "add",
+                "label": "1 m³"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 240,
+                "text": "= 1000 L",
+                "size": 20,
+                "color": "orange",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A tank has diameter 1.2 metres. Halve it. Radius is 0.6.",
+          "write": "r = 1.2 ÷ 2 = 0.6 m"
+        },
+        {
+          "say": "Pi times 0.36 times 1.5 is about 1.6965 cubic metres.",
+          "write": "V ≈ 1.6965 m³"
+        },
+        {
+          "say": "Times 1000. About 1696 litres.",
+          "write": "≈ 1696 L"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use the area of the cross-section, not a side length.",
+          "write": "find A first"
+        },
+        {
+          "say": "The cross-section is the face that stays the same all through.",
+          "write": "the same all the way"
+        },
+        {
+          "say": "Don't use the diameter. Halve it first.",
+          "write": "✗ d   ✓ r = d ÷ 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Use the radius, not the diameter",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 110,
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 150,
+                "x2": 390,
+                "y2": 150,
+                "color": "red",
+                "change": "remove",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 135,
+                "text": "d",
+                "size": 22,
+                "color": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 358,
+                "y2": 228,
+                "color": "green",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 215,
+                "text": "r",
+                "size": 24,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 5,
+                "fill": "black"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Convert to the same units first. Round pi only at the end.",
+          "write": "same units, round last"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Volume of a prism is area of the cross-section times height.",
+          "write": "V = A × h",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Triangular cross-section repeated along the length of the prism",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    240,
+                    162
+                  ],
+                  [
+                    380,
+                    162
+                  ],
+                  [
+                    240,
+                    42
+                  ]
+                ],
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    195,
+                    184
+                  ],
+                  [
+                    335,
+                    184
+                  ],
+                  [
+                    195,
+                    64
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    206
+                  ],
+                  [
+                    290,
+                    206
+                  ],
+                  [
+                    150,
+                    86
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    105,
+                    228
+                  ],
+                  [
+                    245,
+                    228
+                  ],
+                  [
+                    105,
+                    108
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    200,
+                    250
+                  ],
+                  [
+                    60,
+                    130
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 290,
+                "text": "A = cross-section",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 220,
+                "y": 240,
+                "x2": 400,
+                "y2": 152,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 200,
+                "text": "h",
+                "size": 28,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Volume of a cylinder is pi r squared h.",
+          "write": "V = πr²h"
+        },
+        {
+          "say": "Radius, not diameter.",
+          "write": "halve the diameter"
+        },
+        {
+          "say": "1000 cubic centimetres is one litre.",
+          "write": "1000 cm³ = 1 L"
+        }
+      ]
+    }
+  ]
+}

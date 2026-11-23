@@ -1,0 +1,103 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Genetic change in populations",
+  "frames": [
+    { "heading": "Gene pools and allele frequency",
+      "lines": [
+        { "say": "A gene pool is all the alleles carried by a population.", "write": "gene pool" },
+        { "say": "Allele frequency is the share of gene copies that are one allele.", "write": "copies of allele ÷ total copies" },
+        { "say": "Each person has two copies. So 100 people carry 200 copies.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ten allele copies, some A and some a", "items": [
+            {"kind": "circle", "x": 50, "y": 90, "r": 22, "fill": "blue", "label": "A"},
+            {"kind": "circle", "x": 105, "y": 90, "r": 22, "fill": "blue", "label": "A"},
+            {"kind": "circle", "x": 160, "y": 90, "r": 22, "fill": "blue", "label": "A"},
+            {"kind": "circle", "x": 215, "y": 90, "r": 22, "fill": "blue", "label": "A"},
+            {"kind": "circle", "x": 270, "y": 90, "r": 22, "fill": "blue", "label": "A"},
+            {"kind": "circle", "x": 325, "y": 90, "r": 22, "fill": "blue", "label": "A"},
+            {"kind": "circle", "x": 380, "y": 90, "r": 22, "fill": "orange", "label": "a", "change": "highlight"},
+            {"kind": "circle", "x": 435, "y": 90, "r": 22, "fill": "orange", "label": "a", "change": "highlight"},
+            {"kind": "circle", "x": 490, "y": 90, "r": 22, "fill": "orange", "label": "a", "change": "highlight"},
+            {"kind": "circle", "x": 490, "y": 150, "r": 22, "fill": "orange", "label": "a", "change": "highlight"},
+            {"kind": "text", "x": 280, "y": 205, "text": "a = 4 ÷ 10 = 0.4", "size": 22, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "All allele frequencies for one gene add up to one.", "write": "0.6 + 0.4 = 1" },
+        { "say": "Evolution is a change in allele frequency over generations. Populations evolve, not individuals.", "write": "evolution = Δ allele freq." }
+      ] },
+    { "heading": "Mutation: new alleles",
+      "lines": [
+        { "say": "A mutation is a permanent change in DNA. It's the only source of new alleles.", "write": "mutation → new alleles" },
+        { "say": "Point mutations change one base. Block mutations change big chunks.", "write": "point vs block" },
+        { "say": "Mutations are random. They don't happen because they're needed.", "write": "random, not needed" },
+        { "say": "Only germline mutations reach the next generation.", "write": "germline only" }
+      ] },
+    { "heading": "Natural selection",
+      "lines": [
+        { "say": "Natural selection needs variation, a selection pressure, differential survival and inheritance.", "write": "V, S, S, I" },
+        { "say": "Watch bacteria. A few already carry a resistance allele.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Bacteria population with a few resistant cells", "items": [
+            {"kind": "circle", "x": 60, "y": 80, "r": 22, "fill": "blue"},
+            {"kind": "circle", "x": 120, "y": 120, "r": 22, "fill": "blue"},
+            {"kind": "circle", "x": 180, "y": 70, "r": 22, "fill": "red", "label": "R"},
+            {"kind": "circle", "x": 240, "y": 130, "r": 22, "fill": "blue"},
+            {"kind": "circle", "x": 300, "y": 80, "r": 22, "fill": "blue"},
+            {"kind": "circle", "x": 360, "y": 130, "r": 22, "fill": "blue"},
+            {"kind": "circle", "x": 420, "y": 75, "r": 22, "fill": "red", "label": "R"},
+            {"kind": "circle", "x": 480, "y": 125, "r": 22, "fill": "blue"},
+            {"kind": "text", "x": 280, "y": 200, "text": "before the antibiotic", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "The antibiotic kills the susceptible ones. Resistant ones survive.", "write": "selection pressure",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Susceptible bacteria removed", "items": [
+            {"kind": "circle", "x": 60, "y": 80, "r": 22, "fill": "blue", "change": "remove"},
+            {"kind": "circle", "x": 120, "y": 120, "r": 22, "fill": "blue", "change": "remove"},
+            {"kind": "circle", "x": 180, "y": 70, "r": 22, "fill": "red", "label": "R", "change": "highlight"},
+            {"kind": "circle", "x": 240, "y": 130, "r": 22, "fill": "blue", "change": "remove"},
+            {"kind": "circle", "x": 300, "y": 80, "r": 22, "fill": "blue", "change": "remove"},
+            {"kind": "circle", "x": 360, "y": 130, "r": 22, "fill": "blue", "change": "remove"},
+            {"kind": "circle", "x": 420, "y": 75, "r": 22, "fill": "red", "label": "R", "change": "highlight"},
+            {"kind": "circle", "x": 480, "y": 125, "r": 22, "fill": "blue", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 200, "text": "antibiotic added", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Survivors divide and pass on the allele. Its frequency rises.", "write": "resistance allele ↑" },
+        { "say": "The antibiotic didn't cause the mutation. It selected cells that had it.", "write": "selects, doesn't cause" }
+      ] },
+    { "heading": "Genetic drift",
+      "lines": [
+        { "say": "Genetic drift is random change in allele frequency, by chance.", "write": "drift: chance" },
+        { "say": "It matters most in small populations. Alleles can be lost or fixed.", "write": "small pop → lost or fixed" },
+        { "say": "A bottleneck is a sudden crash in numbers. Survivors carry a random sample.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Bottleneck: many alleles pass through a narrow neck, few colours survive", "items": [
+            {"kind": "polygon", "points": [[40,30],[240,30],[240,90],[300,90],[300,30],[520,30],[520,210],[300,210],[300,150],[240,150],[240,210],[40,210]], "fill": "white"},
+            {"kind": "circle", "x": 80, "y": 70, "r": 14, "fill": "blue"},
+            {"kind": "circle", "x": 130, "y": 110, "r": 14, "fill": "red"},
+            {"kind": "circle", "x": 180, "y": 70, "r": 14, "fill": "green"},
+            {"kind": "circle", "x": 100, "y": 170, "r": 14, "fill": "yellow"},
+            {"kind": "circle", "x": 190, "y": 160, "r": 14, "fill": "blue"},
+            {"kind": "circle", "x": 360, "y": 80, "r": 14, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 420, "y": 140, "r": 14, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 470, "y": 80, "r": 14, "fill": "green", "change": "add"},
+            {"kind": "text", "x": 410, "y": 235, "text": "fewer alleles survive", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Northern elephant seals went through one. Their diversity is still very low.", "write": "lost alleles stay lost" },
+        { "say": "The founder effect. A small group starts a new population with only its alleles.", "write": "founder effect" }
+      ] },
+    { "heading": "Gene flow and selective breeding",
+      "lines": [
+        { "say": "Gene flow moves alleles between populations when individuals migrate and breed.", "write": "gene flow: migration" },
+        { "say": "It makes neighbouring populations more alike.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Alleles moving between two populations", "items": [
+            {"kind": "circle", "x": 130, "y": 100, "r": 70, "fill": "blue", "label": "pop 1"},
+            {"kind": "circle", "x": 430, "y": 100, "r": 70, "fill": "orange", "label": "pop 2"},
+            {"kind": "arrow", "x": 205, "y": 85, "x2": 355, "y2": 85, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 355, "y": 120, "x2": 205, "y2": 120, "color": "black", "change": "add"}
+          ]}},
+        { "say": "In selective breeding, humans are the selection pressure.", "write": "humans choose breeders" },
+        { "say": "It usually reduces diversity, raising the risk of inherited disorders.", "write": "diversity ↓" }
+      ] },
+    { "heading": "Watch out and remember",
+      "lines": [
+        { "say": "Don't forget to double the number of individuals to count alleles.", "write": "100 people = 200 copies" },
+        { "say": "Drift is random. Selection favours fitter alleles.", "write": "drift ≠ selection" },
+        { "say": "Mutation, selection, drift and gene flow all change allele frequencies.", "write": "4 ways to change a pool" },
+        { "say": "Populations evolve. Individuals don't.", "write": "populations evolve" }
+      ] }
+  ]
+}

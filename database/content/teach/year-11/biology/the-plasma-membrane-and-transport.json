@@ -1,0 +1,113 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "The plasma membrane and transport",
+  "frames": [
+    { "heading": "The fluid mosaic model",
+      "lines": [
+        { "say": "The membrane is built from phospholipids. Each has a head and two tails.", "write": "phospholipid: head + 2 tails" },
+        { "say": "The phosphate head is hydrophilic. The fatty acid tails are hydrophobic.", "write": "head loves water, tails fear it" },
+        { "say": "Water is on both sides, so they form a bilayer, tails tucked in the middle.", "write": "phospholipid bilayer",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Phospholipid bilayer with heads outside and tails inside; a protein is added through it", "items": [
+            { "kind": "circle", "x": 60, "y": 60, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 110, "y": 60, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 160, "y": 60, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 380, "y": 60, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 430, "y": 60, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 480, "y": 60, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 60, "y": 200, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 110, "y": 200, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 160, "y": 200, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 380, "y": 200, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 430, "y": 200, "r": 16, "fill": "blue" },
+            { "kind": "circle", "x": 480, "y": 200, "r": 16, "fill": "blue" },
+            { "kind": "rect", "x": 40, "y": 80, "w": 140, "h": 100, "fill": "yellow", "label": "tails" },
+            { "kind": "rect", "x": 360, "y": 80, "w": 140, "h": 100, "fill": "yellow", "label": "tails" },
+            { "kind": "rect", "x": 220, "y": 40, "w": 100, "h": 180, "fill": "purple", "label": "protein", "change": "add" },
+            { "kind": "text", "x": 280, "y": 250, "text": "fluid mosaic", "size": 20, "bold": true, "anchor": "middle" }
+          ] } },
+        { "say": "Proteins, cholesterol and glycoproteins are scattered through it, like tiles in a mosaic.", "write": "proteins · cholesterol · glyco" },
+        { "say": "Cholesterol keeps fluidity steady. Glycoproteins help cells recognise each other.", "write": "selectively permeable" }
+      ] },
+    { "heading": "What crosses easily?",
+      "lines": [
+        { "say": "Small non-polar molecules, like oxygen and carbon dioxide, slip straight through.", "write": "O₂, CO₂ → straight through" },
+        { "say": "Ions and big polar molecules like glucose are blocked by the oily core.", "write": "ions, glucose → need proteins" },
+        { "say": "Water is small but polar. It moves fastest through aquaporins.", "write": "water: aquaporins" }
+      ] },
+    { "heading": "Passive transport",
+      "lines": [
+        { "say": "Passive transport needs no energy. Substances move down their concentration gradient.", "write": "high → low, no ATP",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Many particles on the left, few on the right; particles diffuse across the membrane", "items": [
+            { "kind": "rect", "x": 270, "y": 20, "w": 20, "h": 200, "fill": "yellow" },
+            { "kind": "circle", "x": 60, "y": 60, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 120, "y": 100, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 80, "y": 150, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 180, "y": 70, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 200, "y": 170, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 140, "y": 190, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 400, "y": 120, "r": 12, "fill": "red" },
+            { "kind": "circle", "x": 360, "y": 70, "r": 12, "fill": "red", "change": "add" },
+            { "kind": "circle", "x": 460, "y": 170, "r": 12, "fill": "red", "change": "add" },
+            { "kind": "arrow", "x": 220, "y": 120, "x2": 340, "y2": 120, "color": "green", "change": "add" },
+            { "kind": "text", "x": 120, "y": 230, "text": "high", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 420, "y": 230, "text": "low", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Simple diffusion goes straight through the bilayer.", "write": "simple diffusion" },
+        { "say": "Facilitated diffusion goes through a channel or carrier protein, like stadium gates.", "write": "facilitated: protein, no ATP" },
+        { "say": "With a limited number of gates, the rate levels off.", "write": "rate levels off" }
+      ] },
+    { "heading": "Osmosis",
+      "lines": [
+        { "say": "Osmosis is water moving towards the higher solute concentration. Water follows solute.", "write": "water follows solute" },
+        { "say": "Hypotonic: less solute outside. Water rushes in, and a red blood cell bursts.", "write": "hypotonic → lysis",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Red blood cell in hypotonic, isotonic and hypertonic solutions", "items": [
+            { "kind": "circle", "x": 100, "y": 110, "r": 70, "fill": "red", "label": "swells", "change": "highlight" },
+            { "kind": "circle", "x": 280, "y": 110, "r": 50, "fill": "red", "label": "normal" },
+            { "kind": "circle", "x": 460, "y": 110, "r": 32, "fill": "red", "label": "shrinks" },
+            { "kind": "text", "x": 100, "y": 220, "text": "hypotonic", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 280, "y": 220, "text": "isotonic", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 460, "y": 220, "text": "hypertonic", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Isotonic: same concentration. No net movement. That's why drips are isotonic.", "write": "isotonic → normal" },
+        { "say": "Hypertonic: more solute outside. Water leaves and the cell shrivels. Crenation.", "write": "hypertonic → crenation",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Red blood cell in hypertonic solution shrinks, highlighted", "items": [
+            { "kind": "circle", "x": 100, "y": 110, "r": 70, "fill": "red", "label": "swells" },
+            { "kind": "circle", "x": 280, "y": 110, "r": 50, "fill": "red", "label": "normal" },
+            { "kind": "circle", "x": 460, "y": 110, "r": 32, "fill": "red", "label": "shrinks", "change": "highlight" },
+            { "kind": "text", "x": 100, "y": 220, "text": "hypotonic", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 280, "y": 220, "text": "isotonic", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 460, "y": 220, "text": "hypertonic", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Plant cells have a wall. In pure water they go turgid, not burst.", "write": "plant: turgid · plasmolysis" }
+      ] },
+    { "heading": "Potato strips",
+      "lines": [
+        { "say": "Potato strips in sugar solutions. Pure water: mass up 12 percent.", "write": "0.0 M → +12%" },
+        { "say": "At 0.5 molar, the mass drops 9 percent. Water left the cells.", "write": "0.5 M → −9%" },
+        { "say": "At 0.3 molar there's no change. That solution is isotonic.", "write": "0.3 M → 0% = isotonic" },
+        { "say": "Use percentage change, because the strips start at slightly different masses.", "write": "use % change" }
+      ] },
+    { "heading": "Active and bulk transport",
+      "lines": [
+        { "say": "Active transport pumps substances against their gradient, low to high, using ATP.", "write": "low → high, needs ATP" },
+        { "say": "Like an escalator. Downhill is free, uphill costs.", "write": "uphill costs" },
+        { "say": "The sodium–potassium pump moves 3 sodium out, 2 potassium in, per ATP.", "write": "3 Na⁺ out, 2 K⁺ in" },
+        { "say": "Stop respiration and active transport stops.", "write": "no ATP → no pumping" },
+        { "say": "Big things move in vesicles. Endocytosis brings them in.", "write": "endo = enter",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "The membrane folds around a particle and pinches off as a vesicle", "items": [
+            { "kind": "line", "x": 20, "y": 60, "x2": 540, "y2": 60, "color": "black" },
+            { "kind": "circle", "x": 280, "y": 30, "r": 18, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 280, "y": 150, "r": 40, "fill": "none", "change": "add" },
+            { "kind": "circle", "x": 280, "y": 150, "r": 18, "fill": "green", "change": "add" },
+            { "kind": "text", "x": 360, "y": 160, "text": "vesicle", "size": 18 }
+          ] } },
+        { "say": "Exocytosis sends them out, like a gland releasing a hormone.", "write": "exo = exit" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Water moves towards higher solute concentration, not away.", "write": "water follows solute" },
+        { "say": "Hypo means under. Water goes in and the cell swells.", "write": "hypo = under, swell" },
+        { "say": "Facilitated diffusion uses a protein, but no ATP.", "write": "protein ≠ ATP" },
+        { "say": "For water across a membrane, say osmosis, not diffusion.", "write": "say 'osmosis'" }
+      ] }
+  ]
+}

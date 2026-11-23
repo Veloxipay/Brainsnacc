@@ -1,0 +1,497 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Completing the square",
+  "frames": [
+    {
+      "heading": "The missing corner",
+      "lines": [
+        {
+          "say": "Here is x squared plus six x, as a square and a strip.",
+          "write": "x² + 6x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "x squared plus 6x as a square and a strip",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 150,
+                "h": 150,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 180,
+                "h": 150,
+                "fill": "orange",
+                "label": "6x"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 240,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 240,
+                "text": "6",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cut the strip in half. Put one half on each side.",
+          "write": "3x and 3x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Strip cut in half and moved: a 3 by 3 corner is missing",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 150,
+                "h": 150,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 60,
+                "w": 60,
+                "h": 150,
+                "fill": "orange",
+                "change": "add",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 210,
+                "w": 150,
+                "h": 60,
+                "fill": "orange",
+                "change": "add",
+                "label": "3x"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 45,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 45,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 45,
+                "y": 135,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 45,
+                "y": 240,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 210,
+                "w": 60,
+                "h": 60,
+                "fill": "none"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A three by three corner is missing. Its area is 9.",
+          "write": "add 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "The 9 corner completes the square (x + 3) squared",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 150,
+                "h": 150,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 60,
+                "w": 60,
+                "h": 150,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 210,
+                "w": 150,
+                "h": 60,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 45,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 45,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 45,
+                "y": 135,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 45,
+                "y": 240,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 210,
+                "w": 60,
+                "h": 60,
+                "fill": "yellow",
+                "change": "add",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 160,
+                "text": "(x + 3)²",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So x squared plus six x plus nine is x plus 3, all squared.",
+          "write": "x² + 6x + 9 = (x + 3)²"
+        },
+        {
+          "say": "Halve the x coefficient, then square it.",
+          "write": "(b/2)²"
+        }
+      ]
+    },
+    {
+      "heading": "Completing the square",
+      "lines": [
+        {
+          "say": "What completes x squared plus ten x? Half of 10 is 5.",
+          "write": "10 ÷ 2 = 5"
+        },
+        {
+          "say": "Five squared is 25.",
+          "write": "x² + 10x + 25 = (x + 5)²"
+        },
+        {
+          "say": "Now x squared plus six x plus five. Halve 6, square it. Nine.",
+          "write": "x² + 6x + 5"
+        },
+        {
+          "say": "Add nine and take nine away. That keeps it equal.",
+          "write": "x² + 6x + 9 − 9 + 5"
+        },
+        {
+          "say": "The first three make a square. Minus nine plus five is minus 4.",
+          "write": "(x + 3)² − 4"
+        },
+        {
+          "say": "Halve it, square it, add it, take it away."
+        }
+      ]
+    },
+    {
+      "heading": "Minimum value",
+      "lines": [
+        {
+          "say": "A square is never negative.",
+          "write": "(x + 3)² ≥ 0"
+        },
+        {
+          "say": "So x plus 3 squared, take 4, is smallest when the square is zero.",
+          "write": "x = −3"
+        },
+        {
+          "say": "The minimum value is minus 4.",
+          "write": "minimum = −4"
+        },
+        {
+          "say": "A minus sign in front of the square gives a maximum instead."
+        }
+      ]
+    },
+    {
+      "heading": "Factorising with surds",
+      "lines": [
+        {
+          "say": "x plus 3 squared take 4 is a difference of two squares.",
+          "write": "(x + 3)² − 2²"
+        },
+        {
+          "say": "So it factorises to x plus 1, times x plus 5.",
+          "write": "(x + 1)(x + 5)"
+        },
+        {
+          "say": "Try x squared take eight x plus 3. Halve minus 8, square it. Sixteen.",
+          "write": "x² − 8x + 16 − 16 + 3"
+        },
+        {
+          "say": "That gives x take 4 squared, take 13.",
+          "write": "(x − 4)² − 13"
+        },
+        {
+          "say": "Thirteen is not a perfect square, so use root 13.",
+          "write": "(x − 4 − √13)(x − 4 + √13)"
+        },
+        {
+          "say": "Plus a positive number instead? It cannot factorise.",
+          "write": "(x + h)² + k: no factors"
+        }
+      ]
+    },
+    {
+      "heading": "Fractions and a not 1",
+      "lines": [
+        {
+          "say": "x squared plus five x plus 1. Half of 5 is five halves.",
+          "write": "(5/2)² = 25/4"
+        },
+        {
+          "say": "Minus 25 quarters plus 1 is minus 21 quarters.",
+          "write": "(x + 5/2)² − 21/4"
+        },
+        {
+          "say": "If a is not 1, take it out of the first two terms.",
+          "write": "2(x² + 6x) + 7"
+        },
+        {
+          "say": "Complete inside, then multiply back out. Two times minus 9 is minus 18.",
+          "write": "2(x + 3)² − 11"
+        },
+        {
+          "say": "So the minimum value is minus 11.",
+          "write": "min = −11"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Always take away what you added.",
+          "write": "✗ (x + 3)² + 5"
+        },
+        {
+          "say": "Halve first, then square. The corner is 9, not 36.",
+          "write": "3² not 6²"
+        },
+        {
+          "say": "The sign in the bracket copies the sign of the x term.",
+          "write": "x² − 8x → (x − 4)²"
+        },
+        {
+          "say": "With a not 1, multiply the subtracted number by a too."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Picture the missing corner tile.",
+          "write": "(b/2)²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "The 9 corner completes the square (x + 3) squared",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 150,
+                "h": 150,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 60,
+                "w": 60,
+                "h": 150,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 210,
+                "w": 150,
+                "h": 60,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "text",
+                "x": 135,
+                "y": 45,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 45,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 45,
+                "y": 135,
+                "text": "x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 45,
+                "y": 240,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 210,
+                "w": 60,
+                "h": 60,
+                "fill": "yellow",
+                "change": "add",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 160,
+                "text": "(x + 3)²",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Halve it, square it, add it, take it away."
+        },
+        {
+          "say": "x take h squared plus k has its lowest value k.",
+          "write": "min k at x = h"
+        },
+        {
+          "say": "Check with x equals 0. You should get the constant back.",
+          "write": "check x = 0"
+        }
+      ]
+    }
+  ]
+}

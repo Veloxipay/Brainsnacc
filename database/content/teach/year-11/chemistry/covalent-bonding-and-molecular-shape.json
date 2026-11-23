@@ -1,0 +1,908 @@
+{
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "Covalent bonding and molecular shape",
+  "frames": [
+    {
+      "heading": "What is a covalent bond?",
+      "lines": [
+        {
+          "say": "When two non-metals bond, neither can take electrons. So they share.",
+          "write": "non-metals share electrons"
+        },
+        {
+          "say": "A covalent bond is a shared pair, attracted to both nuclei.",
+          "write": "shared pair + both nuclei",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two nuclei sharing a pair",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 140,
+                "r": 60,
+                "fill": "blue",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 140,
+                "r": 60,
+                "fill": "blue",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 18,
+                "fill": "yellow",
+                "label": "e⁻ e⁻",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "shared pair holds them together",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Like two mates both holding the same footy.",
+          "write": "two mates, one footy"
+        },
+        {
+          "say": "One pair is single, two is double, three is triple.",
+          "write": "H–H   O=O   N≡N"
+        },
+        {
+          "say": "Use HONC 1234: hydrogen 1, oxygen 2, nitrogen 3, carbon 4 bonds.",
+          "write": "HONC 1234"
+        }
+      ]
+    },
+    {
+      "heading": "Drawing a Lewis structure",
+      "lines": [
+        {
+          "say": "Take ammonia. Add up the valence electrons first.",
+          "write": "NH₃: 5 + 3 × 1 = 8"
+        },
+        {
+          "say": "8 electrons makes 4 pairs. Nitrogen goes in the middle.",
+          "write": "4 pairs",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "NH3 bonding pairs",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 160,
+                "x2": 160,
+                "y2": 220,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 220,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 160,
+                "x2": 400,
+                "y2": 220,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 220,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 160,
+                "x2": 280,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 270,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 160,
+                "r": 28,
+                "fill": "teal",
+                "label": "N"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Three pairs bond to hydrogens. One pair is left over.",
+          "write": "3 bonding pairs"
+        },
+        {
+          "say": "That last pair sits on nitrogen as a lone pair.",
+          "write": "1 lone pair on N",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "NH3 with lone pair",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 160,
+                "x2": 160,
+                "y2": 220,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 220,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 160,
+                "x2": 400,
+                "y2": 220,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 220,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 160,
+                "x2": 280,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 270,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 160,
+                "r": 28,
+                "fill": "teal",
+                "label": "N"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 95,
+                "r": 16,
+                "fill": "yellow",
+                "label": "••",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Always show lone pairs, even on outer atoms. Then count to check.",
+          "write": "count electrons to check"
+        }
+      ]
+    },
+    {
+      "heading": "VSEPR: groups spread out",
+      "lines": [
+        {
+          "say": "Electron groups repel and spread as far apart as possible.",
+          "write": "VSEPR"
+        },
+        {
+          "say": "Like strangers at a bus shelter, keeping their distance.",
+          "write": "spread out"
+        },
+        {
+          "say": "Two groups make a line. That is linear, 180 degrees.",
+          "write": "2 groups: linear 180°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Linear",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 130,
+                "x2": 150,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 130,
+                "r": 22,
+                "fill": "white",
+                "label": "O"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 130,
+                "x2": 410,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 130,
+                "r": 22,
+                "fill": "white",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 130,
+                "r": 28,
+                "fill": "teal",
+                "label": "C"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "CO₂ linear 180°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Three groups make trigonal planar, 120 degrees.",
+          "write": "3 groups: trigonal planar 120°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Trigonal planar",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 280,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 50,
+                "r": 22,
+                "fill": "white",
+                "label": "F"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 180,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 210,
+                "r": 22,
+                "fill": "white",
+                "label": "F"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 380,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 210,
+                "r": 22,
+                "fill": "white",
+                "label": "F"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 28,
+                "fill": "teal",
+                "label": "B"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "BF₃ trigonal planar 120°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Four groups make a tetrahedron, 109.5 degrees.",
+          "write": "4 groups: tetrahedral 109.5°"
+        },
+        {
+          "say": "A double bond counts as one group. It points one way.",
+          "write": "double bond = 1 group"
+        }
+      ]
+    },
+    {
+      "heading": "Lone pairs are invisible but pushy",
+      "lines": [
+        {
+          "say": "Methane has four bonding pairs. It is tetrahedral, 109.5 degrees.",
+          "write": "CH₄ tetrahedral 109.5°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Methane",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 280,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 50,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 170,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 200,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 390,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 200,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 280,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 250,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 28,
+                "fill": "teal",
+                "label": "C"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Swap one bond for a lone pair. Ammonia is pyramidal, about 107.",
+          "write": "NH₃ pyramidal ≈ 107°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Ammonia",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 170,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 200,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 390,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 200,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 280,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 250,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 28,
+                "fill": "teal",
+                "label": "N"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 80,
+                "r": 18,
+                "fill": "yellow",
+                "label": "••",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Two lone pairs. Water is bent, about 104.5 degrees.",
+          "write": "H₂O bent ≈ 104.5°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Water",
+            "items": [
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 170,
+                "y2": 220,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 220,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 390,
+                "y2": 220,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 220,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 28,
+                "fill": "teal",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 230,
+                "y": 85,
+                "r": 18,
+                "fill": "yellow",
+                "label": "••",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 330,
+                "y": 85,
+                "r": 18,
+                "fill": "yellow",
+                "label": "••",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Lone pairs push harder, so they squeeze the bond angle.",
+          "write": "lone pairs squeeze angles"
+        },
+        {
+          "say": "Name the shape from the atoms only, not the lone pairs.",
+          "write": "shape = atoms only"
+        }
+      ]
+    },
+    {
+      "heading": "Polar bonds and polar molecules",
+      "lines": [
+        {
+          "say": "If atoms differ in electronegativity, electrons are pulled to one side.",
+          "write": "δ+  H–Cl  δ−"
+        },
+        {
+          "say": "O H differs by 1.2, very polar. C H differs by 0.4, almost non-polar.",
+          "write": "O–H 1.2   C–H 0.4"
+        },
+        {
+          "say": "Carbon dioxide has polar bonds, but they pull opposite ways and cancel.",
+          "write": "CO₂ non-polar",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "CO2 dipoles cancel",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 130,
+                "r": 30,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 130,
+                "r": 30,
+                "fill": "teal",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 130,
+                "r": 30,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 190,
+                "x2": 150,
+                "y2": 190,
+                "color": "purple"
+              },
+              {
+                "kind": "arrow",
+                "x": 300,
+                "y": 190,
+                "x2": 410,
+                "y2": 190,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "cancel → non-polar",
+                "size": 24,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Water is bent, so both pulls point partly the same way. Polar.",
+          "write": "H₂O polar",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Water dipoles add",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 90,
+                "r": 32,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 200,
+                "r": 24,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 200,
+                "r": 24,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "arrow",
+                "x": 190,
+                "y": 180,
+                "x2": 260,
+                "y2": 110,
+                "color": "purple"
+              },
+              {
+                "kind": "arrow",
+                "x": 370,
+                "y": 180,
+                "x2": 300,
+                "y2": 110,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "don't cancel → polar",
+                "size": 24,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check two things: are the bonds polar, and is the shape symmetrical?",
+          "write": "polar bonds + asymmetric = polar"
+        }
+      ]
+    },
+    {
+      "heading": "Covalent network lattices",
+      "lines": [
+        {
+          "say": "Some non-metals form one giant network of covalent bonds.",
+          "write": "covalent network lattice"
+        },
+        {
+          "say": "Diamond: each carbon bonds to four others. Very hard, does not conduct.",
+          "write": "diamond: 4 bonds, no conduction"
+        },
+        {
+          "say": "Graphite: three bonds each, in flat layers. One electron is delocalised.",
+          "write": "graphite: 3 bonds + 1 free e⁻",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Graphite layers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 440,
+                "h": 30,
+                "fill": "grey",
+                "label": "layer"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 130,
+                "w": 440,
+                "h": 30,
+                "fill": "grey",
+                "label": "layer"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 200,
+                "w": 440,
+                "h": 30,
+                "fill": "grey",
+                "label": "layer"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 105,
+                "x2": 480,
+                "y2": 105,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "layers slide; electrons move along layers",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So graphite conducts, and its layers slide. That is why pencils work.",
+          "write": "soft, slippery, conducts"
+        },
+        {
+          "say": "Graphene is one layer of graphite, one atom thick.",
+          "write": "graphene = 1 layer"
+        },
+        {
+          "say": "Silicon dioxide is a network too. It melts at about 1700 degrees.",
+          "write": "SiO₂ ≈ 1700 °C"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Water has four groups, but its shape is bent, not tetrahedral.",
+          "write": "✗ water tetrahedral"
+        },
+        {
+          "say": "Polar bonds do not always make a polar molecule. Think of CO2.",
+          "write": "✗ polar bonds → polar"
+        },
+        {
+          "say": "Graphite conducts by delocalised electrons, not ions.",
+          "write": "✗ graphite has ions"
+        },
+        {
+          "say": "Melting diamond breaks strong covalent bonds, not weak forces.",
+          "write": "✗ weak forces in diamond"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "HONC 1234 for the usual number of bonds.",
+          "write": "HONC 1234"
+        },
+        {
+          "say": "Count groups, then lone pairs, then name the shape from the atoms.",
+          "write": "groups → lone pairs → shape"
+        },
+        {
+          "say": "Polarity needs polar bonds and an unsymmetrical shape.",
+          "write": "polar = uneven pull"
+        },
+        {
+          "say": "Diamond electrons are locked up. Graphite has one free per carbon.",
+          "write": "1 free e⁻ per C in graphite"
+        }
+      ]
+    }
+  ]
+}

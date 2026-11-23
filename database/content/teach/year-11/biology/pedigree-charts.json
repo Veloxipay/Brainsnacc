@@ -1,0 +1,96 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Pedigree charts",
+  "frames": [
+    { "heading": "Pedigree symbols",
+      "lines": [
+        { "say": "A pedigree traces a trait through a family, across generations.", "write": "pedigree = family trait map" },
+        { "say": "Squares are males, circles are females. Shaded means affected.", "write": "□ male · ○ female · ■ affected",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Two unaffected parents joined by a line, with three children below", "items": [
+            { "kind": "rect", "x": 170, "y": 30, "w": 50, "h": 50, "fill": "white" },
+            { "kind": "circle", "x": 365, "y": 55, "r": 25, "fill": "white" },
+            { "kind": "line", "x": 220, "y": 55, "x2": 340, "y2": 55, "color": "black" },
+            { "kind": "line", "x": 280, "y": 55, "x2": 280, "y2": 140, "color": "black" },
+            { "kind": "line", "x": 150, "y": 140, "x2": 410, "y2": 140, "color": "black" },
+            { "kind": "rect", "x": 125, "y": 165, "w": 50, "h": 50, "fill": "white" },
+            { "kind": "circle", "x": 280, "y": 190, "r": 25, "fill": "white" },
+            { "kind": "circle", "x": 410, "y": 190, "r": 25, "fill": "white" },
+            { "kind": "line", "x": 150, "y": 140, "x2": 150, "y2": 165, "color": "black" },
+            { "kind": "line", "x": 280, "y": 140, "x2": 280, "y2": 165, "color": "black" },
+            { "kind": "line", "x": 410, "y": 140, "x2": 410, "y2": 165, "color": "black" },
+            { "kind": "text", "x": 40, "y": 62, "text": "I", "size": 22, "bold": true },
+            { "kind": "text", "x": 40, "y": 197, "text": "II", "size": 22, "bold": true },
+            { "kind": "text", "x": 150, "y": 245, "text": "II-1", "size": 16, "anchor": "middle" },
+            { "kind": "text", "x": 280, "y": 245, "text": "II-2", "size": 16, "anchor": "middle" },
+            { "kind": "text", "x": 410, "y": 245, "text": "II-3", "size": 16, "anchor": "middle" }
+          ] } },
+        { "say": "A horizontal line joins parents. A vertical line leads to their children.", "write": "mating line · offspring line" },
+        { "say": "Generations use Roman numerals. II-3 is third from the left in generation two.", "write": "II-3 = gen II, person 3" }
+      ] },
+    { "heading": "The four modes",
+      "lines": [
+        { "say": "Autosomal dominant: shows in every generation. Like Huntington's disease.", "write": "AD: every generation" },
+        { "say": "Autosomal recessive: can skip generations through carriers. Like cystic fibrosis.", "write": "AR: can skip" },
+        { "say": "X-linked recessive: mostly males. Passes from grandfather through a carrier daughter.", "write": "XR: mostly males" },
+        { "say": "X-linked dominant: an affected father passes it to all daughters, no sons.", "write": "XD: dad → all daughters" }
+      ] },
+    { "heading": "Rule out, don't count",
+      "lines": [
+        { "say": "Like a detective, cross off the modes that can't be true.", "write": "rule out suspects" },
+        { "say": "Unaffected parents with an affected child? It's recessive.", "write": "□ ○ → ■ = recessive" },
+        { "say": "Affected parents with an unaffected child? It's dominant.", "write": "■ ● → □ = dominant" },
+        { "say": "XR: an affected female must have an affected father, and all affected sons.", "write": "XR: affected girl ← affected dad" },
+        { "say": "XD: an affected male with an unaffected daughter rules out X-linked dominant.", "write": "XD ruled out" }
+      ] },
+    { "heading": "Worked example: AR",
+      "lines": [
+        { "say": "Here, unaffected parents I-1 and I-2 have an affected daughter, II-2.", "write": "I-1, I-2 unaffected → II-2 ●",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Same pedigree with daughter II-2 now shaded as affected", "items": [
+            { "kind": "rect", "x": 170, "y": 30, "w": 50, "h": 50, "fill": "white" },
+            { "kind": "circle", "x": 365, "y": 55, "r": 25, "fill": "white" },
+            { "kind": "line", "x": 220, "y": 55, "x2": 340, "y2": 55, "color": "black" },
+            { "kind": "line", "x": 280, "y": 55, "x2": 280, "y2": 140, "color": "black" },
+            { "kind": "line", "x": 150, "y": 140, "x2": 410, "y2": 140, "color": "black" },
+            { "kind": "rect", "x": 125, "y": 165, "w": 50, "h": 50, "fill": "white" },
+            { "kind": "circle", "x": 280, "y": 190, "r": 25, "fill": "purple", "change": "highlight" },
+            { "kind": "circle", "x": 410, "y": 190, "r": 25, "fill": "white" },
+            { "kind": "line", "x": 150, "y": 140, "x2": 150, "y2": 165, "color": "black" },
+            { "kind": "line", "x": 280, "y": 140, "x2": 280, "y2": 165, "color": "black" },
+            { "kind": "line", "x": 410, "y": 140, "x2": 410, "y2": 165, "color": "black" },
+            { "kind": "text", "x": 195, "y": 105, "text": "Aa", "size": 18, "anchor": "middle", "change": "add" },
+            { "kind": "text", "x": 365, "y": 105, "text": "Aa", "size": 18, "anchor": "middle", "change": "add" },
+            { "kind": "text", "x": 280, "y": 245, "text": "aa", "size": 18, "bold": true, "anchor": "middle", "change": "add" }
+          ] } },
+        { "say": "So it's recessive. Dominant patterns are ruled out.", "write": "→ recessive" },
+        { "say": "II-2 is an affected female, but her father is unaffected. So not X-linked.", "write": "XR ruled out → AR" },
+        { "say": "II-2 is little a, little a. So both parents must be carriers.", "write": "parents Aa × Aa" }
+      ] },
+    { "heading": "Two-thirds, not a half",
+      "lines": [
+        { "say": "What's the chance unaffected II-3 is a carrier? Draw Aa times Aa.", "write": "AA · Aa · Aa · aa",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Four outcomes AA, Aa, Aa, aa; aa is crossed out, leaving two carriers out of three", "items": [
+            { "kind": "rect", "x": 40, "y": 60, "w": 110, "h": 90, "fill": "green", "label": "AA" },
+            { "kind": "rect", "x": 160, "y": 60, "w": 110, "h": 90, "fill": "yellow", "label": "Aa", "change": "highlight" },
+            { "kind": "rect", "x": 280, "y": 60, "w": 110, "h": 90, "fill": "yellow", "label": "Aa", "change": "highlight" },
+            { "kind": "rect", "x": 400, "y": 60, "w": 110, "h": 90, "fill": "purple", "label": "aa", "change": "remove" },
+            { "kind": "text", "x": 215, "y": 195, "text": "2 carriers out of 3 = 2/3", "size": 22, "bold": true, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "She's unaffected, so cross out little a, little a. Three options left.", "write": "aa ruled out" },
+        { "say": "Two of the three are carriers. So the chance is two thirds.", "write": "P(carrier) = 2/3" },
+        { "say": "An affected son question? Read carefully. A son, or the next child being a son?", "write": "son vs affected son" }
+      ] },
+    { "heading": "Worked example: XR",
+      "lines": [
+        { "say": "An affected grandfather, an unaffected daughter, and an affected grandson.", "write": "I-1 ■ → II-2 ○ → III-1 ■" },
+        { "say": "The daughter got her dad's X, so she's a carrier.", "write": "II-2 = XᴬXᵃ" },
+        { "say": "Each of her sons has a one in two chance of being affected.", "write": "next son: 1/2" },
+        { "say": "Always show the Y for males in X-linked genotypes.", "write": "XᵃY, not aa" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Two clinchers: unaffected to affected is recessive. Affected to unaffected is dominant.", "write": "the two clinchers" },
+        { "say": "Dominant doesn't skip. Recessive can hide.", "write": "dominant doesn't skip" },
+        { "say": "Quote specific individuals, like II-3 and II-4, to justify.", "write": "quote individuals" },
+        { "say": "If a small pedigree leaves two modes, give the most likely and why.", "write": "most likely + reason" }
+      ] }
+  ]
+}

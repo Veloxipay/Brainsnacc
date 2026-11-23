@@ -1,0 +1,642 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Mean, median, mode and range",
+  "frames": [
+    {
+      "heading": "Measures of centre",
+      "lines": [
+        {
+          "say": "A measure of centre is one number that describes the typical value.",
+          "write": "centre = typical value"
+        },
+        {
+          "say": "There are three: mean, median and mode.",
+          "write": "mean, median, mode"
+        },
+        {
+          "say": "The range is different. It measures spread.",
+          "write": "range = spread"
+        }
+      ]
+    },
+    {
+      "heading": "The mean",
+      "lines": [
+        {
+          "say": "The mean is the sum of the values, divided by how many there are.",
+          "write": "mean = sum ÷ count"
+        },
+        {
+          "say": "Four friends have 12, 15, 9 and 4 lollies.",
+          "diagram": "diagrams/y7/maths/mean-median-mode-and-range-mean.svg",
+          "alt": "Column graph of 12, 15, 9, 4 with mean line at 10"
+        },
+        {
+          "say": "Share them equally. Forty lollies between 4 is 10 each.",
+          "write": "40 ÷ 4 = 10"
+        },
+        {
+          "say": "Data: 7, 3, 9, 3, 8. The sum is 30. There are 5 values.",
+          "write": "30 ÷ 5 = 6"
+        }
+      ]
+    },
+    {
+      "heading": "The median",
+      "lines": [
+        {
+          "say": "The median is the middle value. First put the data in order.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 7, 3, 9, 3, 8",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 132.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 245.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 357.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "8"
+              }
+            ]
+          }
+        },
+        {
+          "say": "In order: 3, 3, 7, 8, 9.",
+          "write": "3, 3, 7, 8, 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 3, 3, 7, 8, 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 132.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 245.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 357.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "9"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Five values. The middle is position 5 plus 1, over 2. That is 3rd.",
+          "write": "(5 + 1) ÷ 2 = 3rd",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 3, 3, 7, 8, 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 132.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 245.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 357.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "9"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the median is 7.",
+          "write": "median = 7"
+        },
+        {
+          "say": "An even number of values? Take halfway between the middle two.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 9, 11, 12, 14, 16, 20",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 110.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 290.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "14"
+              },
+              {
+                "kind": "rect",
+                "x": 380.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "16"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "20"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Twelve plus 14 is 26. Half of that is 13.",
+          "write": "(12 + 14) ÷ 2 = 13"
+        }
+      ]
+    },
+    {
+      "heading": "The mode and the range",
+      "lines": [
+        {
+          "say": "The mode is the value that appears most often.",
+          "write": "mode = most often"
+        },
+        {
+          "say": "In 3, 3, 7, 8, 9, the 3 appears twice. Mode is 3.",
+          "write": "mode = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 3, 3, 7, 8, 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 132.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 245.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 357.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "9"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The range is largest minus smallest.",
+          "write": "range = largest − smallest"
+        },
+        {
+          "say": "Nine minus 3 is 6. The range is one number.",
+          "write": "9 − 3 = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 3, 3, 7, 8, 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 132.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 245.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 357.5,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "9"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Finding a missing value",
+      "lines": [
+        {
+          "say": "Jess has a mean of 85 on 4 tests.",
+          "write": "mean 85, 4 tests"
+        },
+        {
+          "say": "Mean times count gives the total. 85 times 4 is 340.",
+          "write": "85 × 4 = 340"
+        },
+        {
+          "say": "Her first three marks add to 250.",
+          "write": "82 + 90 + 78 = 250"
+        },
+        {
+          "say": "Three hundred and forty minus 250 is 90.",
+          "write": "4th mark = 90"
+        }
+      ]
+    },
+    {
+      "heading": "Outliers and choosing an average",
+      "lines": [
+        {
+          "say": "Hours of sport: 2, 3, 3, 4, 3 and 25.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 2, 3, 3, 3, 4, 25",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 110.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 290.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 380.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "25"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Twenty-five is an outlier, much bigger than the rest.",
+          "write": "outlier: 25",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Cards: 2, 3, 3, 3, 4, 25",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 110.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 200.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 290.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 380.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 470.0,
+                "y": 50,
+                "w": 70,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "25"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The mean is about 6.7. The outlier drags it up.",
+          "write": "mean ≈ 6.7",
+          "diagram": "diagrams/y7/maths/mean-median-mode-and-range-ex4.svg",
+          "alt": "Dot plot with outlier at 25, median 3, mean 6.7"
+        },
+        {
+          "say": "The median is 3. That describes a typical friend best.",
+          "write": "median = 3"
+        },
+        {
+          "say": "Outlier? Use the median. Categories? Use the mode.",
+          "write": "outlier → median"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Order the data before finding the median.",
+          "write": "order first"
+        },
+        {
+          "say": "Divide by how many values there are, zeros included.",
+          "write": "÷ count"
+        },
+        {
+          "say": "The range is 6, not 3 to 9.",
+          "write": "✗ 3 to 9   ✓ 6"
+        },
+        {
+          "say": "If 3 appears twice, the mode is 3, not 2.",
+          "write": "mode is a data value"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "The median is the middle. Add and divide for the mean.",
+          "write": "median middle, mean share"
+        },
+        {
+          "say": "The mode appears the most.",
+          "write": "mode = most"
+        },
+        {
+          "say": "Range is top minus bottom.",
+          "write": "range = max − min"
+        },
+        {
+          "say": "One giant value can't push the median around.",
+          "write": "outlier → median"
+        }
+      ]
+    }
+  ]
+}

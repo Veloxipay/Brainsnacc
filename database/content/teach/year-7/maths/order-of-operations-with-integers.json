@@ -1,0 +1,668 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Order of operations with integers",
+  "frames": [
+    {
+      "heading": "Same order, new numbers",
+      "lines": [
+        {
+          "say": "BIDMAS works the same with negative numbers.",
+          "write": "B  I  D M  A S"
+        },
+        {
+          "say": "Brackets, then indices, then divide and multiply, then add and subtract.",
+          "write": "B → I → D M → A S"
+        },
+        {
+          "say": "Partners, D and M, go left to right. So do A and S.",
+          "write": "partners: left to right"
+        },
+        {
+          "say": "Brackets around minus 4 just show it is one number.",
+          "write": "(−4) is one number"
+        }
+      ]
+    },
+    {
+      "heading": "Multiply before adding",
+      "lines": [
+        {
+          "say": "Minus 5 plus 3 times minus 4.",
+          "write": "−5 + 3 × (−4)"
+        },
+        {
+          "say": "Multiply first. 3 times minus 4 is minus 12.",
+          "write": "3 × (−4) = −12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Expression worked one step at a time",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 128.0,
+                "y": 30,
+                "w": 52,
+                "h": 56,
+                "fill": "blue",
+                "label": "−5"
+              },
+              {
+                "kind": "rect",
+                "x": 188.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "+"
+              },
+              {
+                "kind": "rect",
+                "x": 240.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 292.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "×"
+              },
+              {
+                "kind": "rect",
+                "x": 344.0,
+                "y": 30,
+                "w": 88,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "(−4)"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 95,
+                "x2": 280,
+                "y2": 125,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 171.0,
+                "y": 135,
+                "w": 52,
+                "h": 56,
+                "fill": "blue",
+                "label": "−5"
+              },
+              {
+                "kind": "rect",
+                "x": 231.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "+"
+              },
+              {
+                "kind": "rect",
+                "x": 283.0,
+                "y": 135,
+                "w": 106,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "(−12)"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now add. Minus 5 plus minus 12 is minus 17.",
+          "write": "−5 − 12 = −17",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Expression worked one step at a time",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 171.0,
+                "y": 30,
+                "w": 52,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "−5"
+              },
+              {
+                "kind": "rect",
+                "x": 231.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "+"
+              },
+              {
+                "kind": "rect",
+                "x": 283.0,
+                "y": 30,
+                "w": 106,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "(−12)"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 95,
+                "x2": 280,
+                "y2": 125,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 245.0,
+                "y": 135,
+                "w": 70,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "−17"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Adding first gives 8. Wrong order, wrong answer.",
+          "write": "✗ (−2) × (−4) = 8"
+        }
+      ]
+    },
+    {
+      "heading": "Dividing and subtracting",
+      "lines": [
+        {
+          "say": "20 divided by minus 4, minus minus 3. Divide first.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Expression worked one step at a time",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 106.0,
+                "y": 30,
+                "w": 52,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "20"
+              },
+              {
+                "kind": "rect",
+                "x": 166.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "÷"
+              },
+              {
+                "kind": "rect",
+                "x": 218.0,
+                "y": 30,
+                "w": 88,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "(−4)"
+              },
+              {
+                "kind": "rect",
+                "x": 314.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "−"
+              },
+              {
+                "kind": "rect",
+                "x": 366.0,
+                "y": 30,
+                "w": 88,
+                "h": 56,
+                "fill": "blue",
+                "label": "(−3)"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 95,
+                "x2": 280,
+                "y2": 125,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 180.0,
+                "y": 135,
+                "w": 52,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "−5"
+              },
+              {
+                "kind": "rect",
+                "x": 240.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "−"
+              },
+              {
+                "kind": "rect",
+                "x": 292.0,
+                "y": 135,
+                "w": 88,
+                "h": 56,
+                "fill": "blue",
+                "label": "(−3)"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Different signs, so 20 divided by minus 4 is minus 5.",
+          "write": "20 ÷ (−4) = −5"
+        },
+        {
+          "say": "Subtracting minus 3 is the same as adding 3.",
+          "write": "−5 − (−3) = −5 + 3"
+        },
+        {
+          "say": "Minus 5 plus 3 is minus 2.",
+          "write": "= −2",
+          "draw": {
+            "type": "numberline",
+            "from": -6,
+            "to": 1,
+            "start": -5,
+            "jump": 3
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Powers of negatives",
+      "lines": [
+        {
+          "say": "Minus 3, in brackets, squared means minus 3 times minus 3.",
+          "write": "(−3)² = (−3) × (−3) = 9"
+        },
+        {
+          "say": "Without brackets, only the 3 is squared. Then the minus.",
+          "write": "−3² = −(3 × 3) = −9"
+        },
+        {
+          "say": "Bracket it to square it.",
+          "write": "(−4)² = 16   −4² = −16",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Two cards comparing brackets and no brackets",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 50,
+                "w": 220,
+                "h": 70,
+                "fill": "green",
+                "change": "highlight",
+                "label": "(−4)² = 16"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 50,
+                "w": 220,
+                "h": 70,
+                "fill": "red",
+                "change": "highlight",
+                "label": "−4² = −16"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 160,
+                "text": "minus inside: squared",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 160,
+                "text": "minus outside: not",
+                "size": 18,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "2 times minus 3 squared, minus 10. Indices first: 9.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Expression worked one step at a time",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 119.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 171.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "×"
+              },
+              {
+                "kind": "rect",
+                "x": 223.0,
+                "y": 30,
+                "w": 106,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "(−3)²"
+              },
+              {
+                "kind": "rect",
+                "x": 337.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "−"
+              },
+              {
+                "kind": "rect",
+                "x": 389.0,
+                "y": 30,
+                "w": 52,
+                "h": 56,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 95,
+                "x2": 280,
+                "y2": 125,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 150.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 202.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "×"
+              },
+              {
+                "kind": "rect",
+                "x": 254.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 306.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "−"
+              },
+              {
+                "kind": "rect",
+                "x": 358.0,
+                "y": 135,
+                "w": 52,
+                "h": 56,
+                "fill": "blue",
+                "label": "10"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Two times 9 is 18. Minus 10 is 8.",
+          "write": "18 − 10 = 8"
+        }
+      ]
+    },
+    {
+      "heading": "Brackets, then left to right",
+      "lines": [
+        {
+          "say": "Minus 8 plus 2, times 7 minus 10, divided by minus 9.",
+          "write": "(−8 + 2) × (7 − 10) ÷ (−9)"
+        },
+        {
+          "say": "Brackets first. Minus 6 and minus 3.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Expression worked one step at a time",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 16.0,
+                "y": 30,
+                "w": 160,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "(−8 + 2)"
+              },
+              {
+                "kind": "rect",
+                "x": 184.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "×"
+              },
+              {
+                "kind": "rect",
+                "x": 236.0,
+                "y": 30,
+                "w": 160,
+                "h": 56,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "(7 − 10)"
+              },
+              {
+                "kind": "rect",
+                "x": 404.0,
+                "y": 30,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "÷"
+              },
+              {
+                "kind": "rect",
+                "x": 456.0,
+                "y": 30,
+                "w": 88,
+                "h": 56,
+                "fill": "blue",
+                "label": "(−9)"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 95,
+                "x2": 280,
+                "y2": 125,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 88.0,
+                "y": 135,
+                "w": 88,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "(−6)"
+              },
+              {
+                "kind": "rect",
+                "x": 184.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "×"
+              },
+              {
+                "kind": "rect",
+                "x": 236.0,
+                "y": 135,
+                "w": 88,
+                "h": 56,
+                "fill": "green",
+                "change": "add",
+                "label": "(−3)"
+              },
+              {
+                "kind": "rect",
+                "x": 332.0,
+                "y": 135,
+                "w": 44,
+                "h": 56,
+                "fill": "white",
+                "label": "÷"
+              },
+              {
+                "kind": "rect",
+                "x": 384.0,
+                "y": 135,
+                "w": 88,
+                "h": 56,
+                "fill": "blue",
+                "label": "(−9)"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Minus 6 times minus 3 is 18. Same signs, positive.",
+          "write": "(−6) × (−3) = 18"
+        },
+        {
+          "say": "Eighteen divided by minus 9 is minus 2.",
+          "write": "18 ÷ (−9) = −2"
+        },
+        {
+          "say": "A fraction bar is a big bracket. Finish the top and bottom first.",
+          "write": "fraction bar = brackets"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't work strictly left to right. Find times and divide first.",
+          "write": "underline × ÷"
+        },
+        {
+          "say": "Minus 3 squared is not the same as minus 3 in brackets, squared.",
+          "write": "−3² ≠ (−3)²"
+        },
+        {
+          "say": "Times doesn't beat divide. Go left to right.",
+          "write": "÷ × left to right"
+        },
+        {
+          "say": "Carry every sign. Minus 5 plus minus 12 is not minus 5 plus 12.",
+          "write": "✗ −5 + 12"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Brackets, indices, divide and multiply, add and subtract.",
+          "write": "BIDMAS"
+        },
+        {
+          "say": "Do one step, then rewrite the line.",
+          "write": "one step, rewrite"
+        },
+        {
+          "say": "Bracket it to square it.",
+          "write": "(−3)² = 9"
+        },
+        {
+          "say": "Check: should the answer be positive or negative?",
+          "write": "sign check"
+        }
+      ]
+    }
+  ]
+}

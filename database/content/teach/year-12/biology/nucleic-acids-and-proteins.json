@@ -1,0 +1,111 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Nucleic acids and proteins",
+  "frames": [
+    { "heading": "The nucleotide",
+      "lines": [
+        { "say": "Nucleic acids are DNA and RNA. They're built from nucleotides.", "write": "monomer: nucleotide" },
+        { "say": "Each nucleotide has a phosphate, a five-carbon sugar and a base.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Nucleotide: phosphate, sugar, base", "items": [
+            {"kind": "circle", "x": 110, "y": 110, "r": 40, "fill": "yellow", "label": "P"},
+            {"kind": "line", "x": 150, "y": 110, "x2": 210, "y2": 110, "color": "black"},
+            {"kind": "polygon", "points": [[270,60],[330,90],[310,160],[230,160],[210,90]], "fill": "orange"},
+            {"kind": "text", "x": 270, "y": 125, "text": "sugar", "size": 18, "anchor": "middle"},
+            {"kind": "line", "x": 330, "y": 110, "x2": 390, "y2": 110, "color": "black"},
+            {"kind": "rect", "x": 390, "y": 80, "w": 120, "h": 60, "fill": "blue", "label": "base"},
+            {"kind": "text", "x": 280, "y": 205, "text": "phosphate on 5′, base on 1′", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "DNA has deoxyribose. RNA has ribose, with one more oxygen.", "write": "DNA: deoxyribose  RNA: ribose" },
+        { "say": "A and G are purines, with two rings. C, T and U are pyrimidines.", "write": "purines A G; pyrimidines C T U" },
+        { "say": "RNA swaps thymine for uracil.", "write": "RNA: U replaces T" }
+      ] },
+    { "heading": "Building a strand",
+      "lines": [
+        { "say": "Nucleotides join by condensation. Each new bond releases one water.", "write": "condensation: − H₂O" },
+        { "say": "The phosphate joins the 3 prime carbon of the last sugar. That's a phosphodiester bond.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "New nucleotide added to the 3 prime end", "items": [
+            {"kind": "rect", "x": 60, "y": 40, "w": 120, "h": 44, "fill": "orange", "label": "nucleotide"},
+            {"kind": "rect", "x": 60, "y": 100, "w": 120, "h": 44, "fill": "orange", "label": "nucleotide"},
+            {"kind": "rect", "x": 60, "y": 160, "w": 120, "h": 44, "fill": "orange", "label": "nucleotide", "change": "add"},
+            {"kind": "text", "x": 200, "y": 30, "text": "5′ end", "size": 18},
+            {"kind": "text", "x": 200, "y": 190, "text": "3′ end: add here", "size": 18, "change": "add"},
+            {"kind": "text", "x": 400, "y": 140, "text": "+ H₂O released", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "That gives a sugar-phosphate backbone with bases sticking out.", "write": "sugar-phosphate backbone" },
+        { "say": "New nucleotides always go on the 3 prime end. Strands grow 5 prime to 3 prime.", "write": "built 5′ → 3′" }
+      ] },
+    { "heading": "The double helix",
+      "lines": [
+        { "say": "DNA has two strands. A pairs with T. G pairs with C.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Two antiparallel strands with base pairs", "items": [
+            {"kind": "text", "x": 40, "y": 60, "text": "5′", "size": 20},
+            {"kind": "text", "x": 500, "y": 60, "text": "3′", "size": 20},
+            {"kind": "text", "x": 280, "y": 60, "text": "A   G   C   T   T", "size": 26, "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 170, "text": "T   C   G   A   A", "size": 26, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 40, "y": 170, "text": "3′", "size": 20},
+            {"kind": "text", "x": 500, "y": 170, "text": "5′", "size": 20},
+            {"kind": "text", "x": 280, "y": 115, "text": "hydrogen bonds", "size": 18, "anchor": "middle", "color": "purple"}
+          ]}},
+        { "say": "Two hydrogen bonds hold A and T. Three hold G and C.", "write": "A=T (2), G≡C (3)" },
+        { "say": "The strands run opposite ways. They're antiparallel.", "write": "antiparallel" },
+        { "say": "So the amount of A equals T, and G equals C.", "write": "%A = %T, %G = %C" }
+      ] },
+    { "heading": "Three kinds of RNA",
+      "lines": [
+        { "say": "RNA is usually single stranded and shorter. It's a working copy.", "write": "single strand, ribose, U" },
+        { "say": "mRNA carries a gene's code to the ribosome, read in codons.", "write": "mRNA: messenger" },
+        { "say": "tRNA brings a specific amino acid. It has an anticodon.", "write": "tRNA: anticodon + amino acid" },
+        { "say": "rRNA forms ribosomes with proteins and makes peptide bonds.", "write": "rRNA: ribosomes" }
+      ] },
+    { "heading": "Amino acids and peptide bonds",
+      "lines": [
+        { "say": "Each amino acid has an amine group, a carboxyl group, and an R group.", "write": "NH₂ – C – COOH  + R",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Two amino acids side by side", "items": [
+            {"kind": "rect", "x": 40, "y": 80, "w": 200, "h": 60, "fill": "blue", "label": "NH₂ – C – COOH"},
+            {"kind": "rect", "x": 320, "y": 80, "w": 200, "h": 60, "fill": "green", "label": "NH₂ – C – COOH"},
+            {"kind": "text", "x": 140, "y": 170, "text": "R₁", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 420, "y": 170, "text": "R₂", "size": 20, "anchor": "middle"}
+          ]}},
+        { "say": "Carboxyl meets amine. Water is released and a peptide bond forms.", "write": "peptide bond: − H₂O",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Water removed, peptide bond formed", "items": [
+            {"kind": "rect", "x": 40, "y": 80, "w": 200, "h": 60, "fill": "blue", "label": "NH₂ – C – CO"},
+            {"kind": "rect", "x": 240, "y": 80, "w": 40, "h": 60, "fill": "red", "label": "–", "change": "highlight"},
+            {"kind": "rect", "x": 280, "y": 80, "w": 200, "h": 60, "fill": "green", "label": "NH – C – COOH"},
+            {"kind": "text", "x": 280, "y": 40, "text": "H₂O", "size": 22, "anchor": "middle", "change": "remove"},
+            {"kind": "text", "x": 260, "y": 180, "text": "peptide bond", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "A chain of n amino acids has n minus 1 peptide bonds.", "write": "n amino acids → n − 1 bonds" },
+        { "say": "The order of amino acids is the primary structure. It decides the final shape.", "write": "primary structure" }
+      ] },
+    { "heading": "The genetic code",
+      "lines": [
+        { "say": "The code is read in threes. Four bases, three at a time, gives 64 codons.", "write": "4 × 4 × 4 = 64" },
+        { "say": "61 code for amino acids. UAA, UAG and UGA are stop codons.", "write": "start AUG; 3 stop codons" },
+        { "say": "It's degenerate. Glycine has four codons. Several codons, one amino acid.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Four codons all point to glycine", "items": [
+            {"kind": "rect", "x": 20, "y": 30, "w": 100, "h": 40, "fill": "yellow", "label": "GGU"},
+            {"kind": "rect", "x": 20, "y": 80, "w": 100, "h": 40, "fill": "yellow", "label": "GGC"},
+            {"kind": "rect", "x": 20, "y": 130, "w": 100, "h": 40, "fill": "yellow", "label": "GGA"},
+            {"kind": "rect", "x": 20, "y": 180, "w": 100, "h": 40, "fill": "yellow", "label": "GGG"},
+            {"kind": "arrow", "x": 125, "y": 50, "x2": 360, "y2": 120, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 125, "y": 100, "x2": 360, "y2": 120, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 125, "y": 150, "x2": 360, "y2": 120, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 125, "y": 200, "x2": 360, "y2": 120, "color": "black", "change": "add"},
+            {"kind": "circle", "x": 420, "y": 120, "r": 56, "fill": "orange", "label": "glycine", "change": "highlight"}
+          ]}},
+        { "say": "It's universal. Almost all life uses the same code.", "write": "universal, non-overlapping" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Nucleotides join by phosphodiester bonds. Amino acids join by peptide bonds.", "write": "phosphodiester vs peptide" },
+        { "say": "Codons are on mRNA. Anticodons are on tRNA. DNA has triplets.", "write": "codon mRNA, anticodon tRNA" },
+        { "say": "Degenerate means many codons per amino acid. Not the other way around.", "write": "many codons → one amino acid" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "DNA is deoxyribose and T. RNA is ribose and U.", "write": "DNA: T   RNA: U" },
+        { "say": "A with T, G with C, on antiparallel strands.", "write": "A–T, G–C" },
+        { "say": "Both polymers are built by condensation, releasing water.", "write": "condensation polymers" },
+        { "say": "The code is triplet, degenerate and universal.", "write": "triplet, degenerate, universal" }
+      ] }
+  ]
+}

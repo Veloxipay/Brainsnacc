@@ -1,0 +1,343 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Congruent figures",
+  "frames": [
+    {
+      "heading": "What congruent means",
+      "lines": [
+        {
+          "say": "Congruent shapes are exact copies. Same size and same shape.",
+          "write": "congruent = same size + shape"
+        },
+        {
+          "say": "Like a key cut from the same pattern.",
+          "write": "≅"
+        },
+        {
+          "say": "You can slide, turn or flip one to sit exactly on the other.",
+          "write": "translate • rotate • reflect",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A triangle flipped onto its copy",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    240
+                  ],
+                  [
+                    220,
+                    240
+                  ],
+                  [
+                    90,
+                    90
+                  ]
+                ],
+                "fill": "blue",
+                "label": "A"
+              },
+              {
+                "kind": "arrow",
+                "x": 240,
+                "y": 170,
+                "x2": 320,
+                "y2": 170,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    500,
+                    240
+                  ],
+                  [
+                    340,
+                    240
+                  ],
+                  [
+                    470,
+                    90
+                  ]
+                ],
+                "fill": "blue",
+                "change": "add",
+                "label": "copy"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 280,
+                "y2": 270,
+                "color": "grey",
+                "dashed": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A flipped copy still counts as congruent.",
+          "write": "mirror image ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Same area is not enough",
+      "lines": [
+        {
+          "say": "Congruent shapes have equal sides, angles, perimeters and areas.",
+          "write": "all parts equal"
+        },
+        {
+          "say": "But a 2 by 12 and a 4 by 6 rectangle both have area 24.",
+          "write": "24 cm² and 24 cm²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two rectangles with area 24",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 120,
+                "w": 480,
+                "h": 40,
+                "fill": "blue",
+                "label": "2 × 12"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 190,
+                "w": 160,
+                "h": 80,
+                "fill": "orange",
+                "label": "4 × 6"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "same area, different shape",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "They're not congruent. Different shapes.",
+          "write": "✗ not congruent"
+        },
+        {
+          "say": "An enlargement is the same shape, but a different size. Not congruent.",
+          "write": "✗ enlargement"
+        }
+      ]
+    },
+    {
+      "heading": "The congruence statement",
+      "lines": [
+        {
+          "say": "Triangle ABC is congruent to triangle PQR.",
+          "write": "△ABC ≅ △PQR"
+        },
+        {
+          "say": "The order matters. A matches P, B matches Q, C matches R.",
+          "write": "A↔P  B↔Q  C↔R",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Matching letters by position",
+            "items": [
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 80,
+                "text": "A  B  C",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 80,
+                "text": "P  Q  R",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 110,
+                "y": 110,
+                "x2": 370,
+                "y2": 180,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 110,
+                "x2": 410,
+                "y2": 180,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 190,
+                "y": 110,
+                "x2": 450,
+                "y2": 180,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "same position, same partner",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "BC uses the second and third letters. So it matches QR.",
+          "write": "BC = QR"
+        },
+        {
+          "say": "Same position, same partner."
+        },
+        {
+          "say": "It works for any polygon. ABCD matches WXYZ.",
+          "write": "A↔W  B↔X  C↔Y  D↔Z"
+        }
+      ]
+    },
+    {
+      "heading": "Marks on diagrams",
+      "lines": [
+        {
+          "say": "Equal sides get matching dashes. Equal angles get matching arcs.",
+          "diagram": "diagrams/y8/maths/congruent-figures-marks.svg",
+          "alt": "Triangles ABC and PQR with matching dashes and arcs"
+        },
+        {
+          "say": "One dash matches one dash. Two arcs match two arcs.",
+          "write": "count the marks"
+        },
+        {
+          "say": "Use the marks, not how it looks. Shapes can be turned or flipped.",
+          "write": "marks, not looks"
+        }
+      ]
+    },
+    {
+      "heading": "Finding unknowns",
+      "lines": [
+        {
+          "say": "ABC is congruent to XYZ. Find YZ.",
+          "write": "△ABC ≅ △XYZ",
+          "diagram": "diagrams/y8/maths/congruent-figures-ex1.svg",
+          "alt": "Triangle ABC and turned copy XYZ"
+        },
+        {
+          "say": "YZ is letters two and three. It matches BC, so it's 9 centimetres.",
+          "write": "YZ = BC = 9 cm"
+        },
+        {
+          "say": "ABCD matches EFGH. Angle H matches angle D.",
+          "write": "∠H = ∠D",
+          "diagram": "diagrams/y8/maths/congruent-figures-ex2.svg",
+          "alt": "Quadrilaterals ABCD and EFGH"
+        },
+        {
+          "say": "Angles in a quadrilateral add to 360. So D is 75.",
+          "write": "360 − (80 + 95 + 110) = 75°"
+        },
+        {
+          "say": "So angle H is 75 degrees.",
+          "write": "∠H = 75°"
+        }
+      ]
+    },
+    {
+      "heading": "Congruence with algebra",
+      "lines": [
+        {
+          "say": "AB is 3y minus 2. DE is y plus 8. They're corresponding.",
+          "write": "3y − 2 = y + 8"
+        },
+        {
+          "say": "Take y from both sides. Then add 2.",
+          "write": "2y = 10",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3,
+              "cubes": -2
+            },
+            "right": {
+              "bags": 1,
+              "cubes": 8
+            },
+            "labels": [
+              "3y − 2",
+              "y + 8"
+            ]
+          }
+        },
+        {
+          "say": "So y is 5, and AB is 13 centimetres.",
+          "write": "y = 5, AB = 13 cm"
+        },
+        {
+          "say": "Check: DE is 5 plus 8, which is 13 too.",
+          "write": "DE = 13 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Congruent means it can be stacked exactly, flipping allowed.",
+          "write": "can be stacked"
+        },
+        {
+          "say": "Same position, same partner.",
+          "write": "△ABC ≅ △PQR"
+        },
+        {
+          "say": "Count the dashes and arcs.",
+          "write": "marks match"
+        },
+        {
+          "say": "Same area alone isn't enough.",
+          "write": "check sides + angles"
+        }
+      ]
+    }
+  ]
+}

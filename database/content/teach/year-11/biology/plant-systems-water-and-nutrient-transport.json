@@ -1,0 +1,104 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Plant systems: water and nutrient transport",
+  "frames": [
+    { "heading": "Two transport systems",
+      "lines": [
+        { "say": "A gum tree lifts water dozens of metres, with no heart or pump.", "write": "no pump needed" },
+        { "say": "Xylem carries water and minerals, upward only.", "write": "xylem: water + minerals ↑",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Xylem arrow up from roots to leaves; phloem arrows both ways from leaf to sinks", "items": [
+            { "kind": "rect", "x": 200, "y": 20, "w": 50, "h": 240, "fill": "blue", "label": "xylem" },
+            { "kind": "arrow", "x": 160, "y": 250, "x2": 160, "y2": 30, "color": "blue" },
+            { "kind": "rect", "x": 310, "y": 20, "w": 50, "h": 240, "fill": "orange", "label": "phloem", "change": "add" },
+            { "kind": "arrow", "x": 400, "y": 120, "x2": 400, "y2": 30, "color": "orange", "change": "add" },
+            { "kind": "arrow", "x": 400, "y": 140, "x2": 400, "y2": 250, "color": "orange", "change": "add" },
+            { "kind": "text", "x": 420, "y": 135, "text": "up or down", "size": 18, "color": "orange", "change": "add" }
+          ] } },
+        { "say": "Phloem carries sugars, mainly sucrose, up or down. Phloem flows food.", "write": "phloem: sugars ↑↓" },
+        { "say": "They run side by side in vascular bundles. In leaves, these are veins.", "write": "vascular bundles" }
+      ] },
+    { "heading": "Roots take in water",
+      "lines": [
+        { "say": "Root hairs give a huge surface area for absorbing.", "write": "root hairs → big SA:V" },
+        { "say": "Mineral ions are pumped in by active transport, using ATP.", "write": "minerals: active transport" },
+        { "say": "That makes root cells more concentrated, so water follows by osmosis.", "write": "water: osmosis" },
+        { "say": "The Casparian strip forces water through living membranes, so the plant controls minerals.", "write": "endodermis · Casparian strip" }
+      ] },
+    { "heading": "Xylem and transpiration",
+      "lines": [
+        { "say": "Xylem cells are dead and hollow, like a drinking straw.", "write": "dead, hollow tubes" },
+        { "say": "Lignin stiffens the walls so they don't collapse under tension.", "write": "lignin" },
+        { "say": "Transpiration is loss of water vapour, mostly through stomata on the leaf.", "write": "transpiration" },
+        { "say": "It speeds up when it's hot, dry, windy and bright. Like a washing line.", "write": "hot · dry · windy · light" }
+      ] },
+    { "heading": "Cohesion–tension model",
+      "lines": [
+        { "say": "Here's a column of water in the xylem, from roots to leaf.", "write": "water column",
+          "draw": { "type": "shapes", "width": 560, "height": 320, "alt": "Column of water molecules in xylem from roots to leaf", "items": [
+            { "kind": "rect", "x": 240, "y": 30, "w": 80, "h": 270, "fill": "none" },
+            { "kind": "circle", "x": 280, "y": 60, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 105, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 150, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 195, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 240, "r": 18, "fill": "blue" },
+            { "kind": "text", "x": 340, "y": 50, "text": "leaf", "size": 18 },
+            { "kind": "text", "x": 340, "y": 290, "text": "roots", "size": 18 }
+          ] } },
+        { "say": "Water evaporates from the leaf. That pulls on the column, creating tension.", "write": "1 transpiration pull",
+          "draw": { "type": "shapes", "width": 560, "height": 320, "alt": "Top water molecule leaves the leaf; tension arrow pulls up", "items": [
+            { "kind": "rect", "x": 240, "y": 30, "w": 80, "h": 270, "fill": "none" },
+            { "kind": "circle", "x": 280, "y": 60, "r": 18, "fill": "blue", "change": "remove" },
+            { "kind": "circle", "x": 280, "y": 105, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 150, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 195, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 240, "r": 18, "fill": "blue" },
+            { "kind": "arrow", "x": 180, "y": 260, "x2": 180, "y2": 60, "color": "red", "change": "add" },
+            { "kind": "text", "x": 170, "y": 160, "text": "tension", "size": 20, "bold": true, "color": "red", "anchor": "end", "change": "add" }
+          ] } },
+        { "say": "Cohesion: hydrogen bonds hold water to water, so the whole column follows.", "write": "2 cohesion: water–water",
+          "draw": { "type": "shapes", "width": 560, "height": 320, "alt": "Hydrogen bonds link the water molecules and a new molecule enters at the roots", "items": [
+            { "kind": "rect", "x": 240, "y": 30, "w": 80, "h": 270, "fill": "none" },
+            { "kind": "circle", "x": 280, "y": 60, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 105, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 150, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 195, "r": 18, "fill": "blue" },
+            { "kind": "circle", "x": 280, "y": 240, "r": 18, "fill": "blue", "change": "add" },
+            { "kind": "line", "x": 280, "y": 78, "x2": 280, "y2": 87, "color": "purple", "change": "highlight" },
+            { "kind": "line", "x": 280, "y": 123, "x2": 280, "y2": 132, "color": "purple", "change": "highlight" },
+            { "kind": "line", "x": 280, "y": 168, "x2": 280, "y2": 177, "color": "purple", "change": "highlight" },
+            { "kind": "line", "x": 280, "y": 213, "x2": 280, "y2": 222, "color": "purple", "change": "highlight" },
+            { "kind": "text", "x": 340, "y": 160, "text": "hydrogen bonds", "size": 18, "color": "purple" }
+          ] } },
+        { "say": "Adhesion: water also sticks to the xylem walls, holding the column up.", "write": "3 adhesion: water–wall" },
+        { "say": "The energy comes from the sun driving evaporation, not from ATP.", "write": "powered by the sun" }
+      ] },
+    { "heading": "Stomata and guard cells",
+      "lines": [
+        { "say": "Two guard cells surround each stoma and control the pore.", "write": "guard cells" },
+        { "say": "Water in by osmosis makes them turgid. They bow apart and the pore opens.", "write": "turgid opens, flaccid closes",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Two guard cells bow apart to open the stoma", "items": [
+            { "kind": "rect", "x": 220, "y": 40, "w": 50, "h": 160, "fill": "green", "change": "remove" },
+            { "kind": "rect", "x": 290, "y": 40, "w": 50, "h": 160, "fill": "green", "change": "remove" },
+            { "kind": "rect", "x": 170, "y": 40, "w": 70, "h": 160, "fill": "green", "label": "turgid", "change": "add" },
+            { "kind": "rect", "x": 320, "y": 40, "w": 70, "h": 160, "fill": "green", "label": "turgid", "change": "add" },
+            { "kind": "text", "x": 280, "y": 125, "text": "pore", "size": 18, "anchor": "middle", "change": "add" }
+          ] } },
+        { "say": "Open stomata let carbon dioxide in, but water out. That's the trade-off.", "write": "CO₂ in vs water out" },
+        { "say": "Dry-land plants save water with a thick waxy cuticle and sunken stomata.", "write": "cuticle · sunken stomata" }
+      ] },
+    { "heading": "Phloem and translocation",
+      "lines": [
+        { "say": "Phloem is living. Sieve tubes carry sap. Companion cells supply ATP.", "write": "sieve tube + companion cell" },
+        { "say": "At the source, sucrose is actively loaded. Water follows, and pressure builds.", "write": "source: load sucrose" },
+        { "say": "At the sink, sucrose is removed, water leaves, and pressure falls.", "write": "sink: unload" },
+        { "say": "The pressure difference pushes sap from source to sink.", "write": "source → sink (pressure flow)" },
+        { "say": "Ringbark a tree and the phloem is cut. The roots starve.", "write": "ringbarking → roots die" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Roots don't pump water up. Transpiration pull does.", "write": "✗ roots pump" },
+        { "say": "Cohesion is water to water. Adhesion is water to the walls.", "write": "COhesion · ADhesion" },
+        { "say": "Xylem is passive and dead. Phloem is living and needs ATP.", "write": "xylem passive · phloem ATP" },
+        { "say": "Stomata open mainly to let carbon dioxide in.", "write": "open for CO₂" }
+      ] }
+  ]
+}

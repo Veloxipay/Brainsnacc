@@ -1,0 +1,928 @@
+{
+  "level": "Year 10",
+  "subject": "chemistry",
+  "title": "Year 10 Chemistry summary and memory tips",
+  "frames": [
+    {
+      "heading": "Atoms and the periodic table",
+      "lines": [
+        {
+          "say": "Atomic number is protons. Mass number is protons plus neutrons.",
+          "write": "Z = p, A = p + n"
+        },
+        {
+          "say": "Sodium has 11 electrons. Shells fill 2, then 8, then 1.",
+          "write": "Na: 2, 8, 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sodium atom with shells 2, 8, 1",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 26,
+                "fill": "orange",
+                "label": "11p"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 55,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 85,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 115,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 25,
+                "r": 8,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 285,
+                "text": "Na: 2, 8, 1",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "It loses that one outer electron to become Na plus.",
+          "write": "Na⁺: 2, 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sodium atom with shells 2, 8, 1 losing its outer electron",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 26,
+                "fill": "orange",
+                "label": "11p"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 55,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 85,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 115,
+                "fill": "none",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 25,
+                "r": 8,
+                "fill": "blue",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 285,
+                "text": "Na⁺: 2, 8",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Isotopes have different neutrons. Relative atomic mass is their weighted average.",
+          "write": "Cl: 35.5"
+        },
+        {
+          "say": "Big atoms bottom left. Metals get mad going down, halogens get calmer."
+        }
+      ]
+    },
+    {
+      "heading": "Bonding",
+      "lines": [
+        {
+          "say": "Ionic is metal plus non-metal. Electrons transfer. Ions form a lattice.",
+          "write": "ionic: transfer",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Ionic, covalent and metallic bonding",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 110,
+                "r": 26,
+                "fill": "grey",
+                "label": "Na⁺"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 110,
+                "r": 26,
+                "fill": "green",
+                "label": "Cl⁻"
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 170,
+                "r": 26,
+                "fill": "green",
+                "label": "Cl⁻"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 170,
+                "r": 26,
+                "fill": "grey",
+                "label": "Na⁺"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 250,
+                "text": "ionic",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 140,
+                "r": 28,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 205,
+                "y": 180,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 295,
+                "y": 180,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 250,
+                "text": "covalent",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 100,
+                "r": 18,
+                "fill": "orange",
+                "label": "+"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 100,
+                "r": 18,
+                "fill": "orange",
+                "label": "+"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 100,
+                "r": 18,
+                "fill": "orange",
+                "label": "+"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 155,
+                "r": 18,
+                "fill": "orange",
+                "label": "+"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 155,
+                "r": 18,
+                "fill": "orange",
+                "label": "+"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 155,
+                "r": 18,
+                "fill": "orange",
+                "label": "+"
+              },
+              {
+                "kind": "circle",
+                "x": 425,
+                "y": 128,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 475,
+                "y": 128,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 183,
+                "r": 5,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 250,
+                "text": "metallic",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Covalent is non-metals sharing pairs of electrons.",
+          "write": "covalent: share"
+        },
+        {
+          "say": "Metallic is positive ions in a sea of moving electrons.",
+          "write": "metallic: electron sea"
+        },
+        {
+          "say": "Swap and drop the charges. Al three plus and O two minus give Al two O three.",
+          "write": "Al³⁺ + O²⁻ → Al₂O₃"
+        },
+        {
+          "say": "Alloys are harder because different sized atoms stop layers sliding."
+        }
+      ]
+    },
+    {
+      "heading": "Reactions and equations",
+      "lines": [
+        {
+          "say": "Atoms are rearranged, never made or destroyed. So equations balance.",
+          "write": "2Mg + O₂ → 2MgO"
+        },
+        {
+          "say": "Change coefficients only, never subscripts."
+        },
+        {
+          "say": "Synthesis, decomposition, combustion, displacement, precipitation."
+        },
+        {
+          "say": "Acid plus metal pops. Acid plus carbonate fizzes. Base gives salt and water."
+        },
+        {
+          "say": "Each pH step is ten times. Three steps is a thousand times.",
+          "write": "ΔpH 3 = ×1000"
+        },
+        {
+          "say": "Hit often, hit hard, hit the right way. Catalysts lower the hurdle.",
+          "write": "collision theory",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rate graph: steep start, flat finish",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 150,
+                "y2": 140,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 140,
+                "x2": 260,
+                "y2": 95,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 260,
+                "y": 95,
+                "x2": 350,
+                "y2": 85,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 350,
+                "y": 85,
+                "x2": 530,
+                "y2": 85,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 120,
+                "text": "steep = fast",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 70,
+                "text": "flat = finished",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 285,
+                "text": "time",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The mole",
+      "lines": [
+        {
+          "say": "One mole is six point oh two times ten to the twenty three particles.",
+          "write": "Nₐ = 6.02 × 10²³"
+        },
+        {
+          "say": "Put m on top of the triangle. n and M go underneath.",
+          "write": "m = n × M",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "The mole triangle: m on top, n and M underneath",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 165,
+                "x2": 385,
+                "y2": 165,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 165,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 120,
+                "text": "m",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 225,
+                "text": "n",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 225,
+                "text": "M",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 120,
+                "text": "n = m ÷ M",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cover n. You get n equals m divided by M.",
+          "write": "n = m ÷ M",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "The mole triangle: m on top, n and M underneath",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    440,
+                    260
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 165,
+                "x2": 385,
+                "y2": 165,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 165,
+                "x2": 280,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 120,
+                "text": "m",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 225,
+                "text": "n",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 225,
+                "text": "M",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 120,
+                "text": "n = m ÷ M",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Grams to moles, use the ratio, then moles to grams.",
+          "write": "g → mol → ratio → mol → g"
+        },
+        {
+          "say": "Percent to mass, mass to mole, divide by small, multiply till whole.",
+          "write": "empirical formula"
+        }
+      ]
+    },
+    {
+      "heading": "Organic chemistry and materials",
+      "lines": [
+        {
+          "say": "Alkanes have single bonds only. Alkenes have one C double bond C.",
+          "write": "-ane vs -ene"
+        },
+        {
+          "say": "Monkeys Eat Peanut Butter. Meth, eth, prop, but.",
+          "write": "1 2 3 4 carbons"
+        },
+        {
+          "say": "Addition polymers open the double bond. Nothing else forms.",
+          "write": "poly + monomer",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Monomers joining into a polymer chain",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 150,
+                "r": 26,
+                "fill": "blue",
+                "label": "M"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 150,
+                "r": 26,
+                "fill": "blue",
+                "label": "M"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 150,
+                "r": 26,
+                "fill": "blue",
+                "label": "M"
+              },
+              {
+                "kind": "circle",
+                "x": 330,
+                "y": 150,
+                "r": 26,
+                "fill": "blue",
+                "label": "M"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 150,
+                "r": 26,
+                "fill": "blue",
+                "label": "M"
+              },
+              {
+                "kind": "circle",
+                "x": 510,
+                "y": 150,
+                "r": 26,
+                "fill": "blue",
+                "label": "M"
+              },
+              {
+                "kind": "line",
+                "x": 86,
+                "y": 150,
+                "x2": 124,
+                "y2": 150,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 176,
+                "y": 150,
+                "x2": 214,
+                "y2": 150,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 266,
+                "y": 150,
+                "x2": 304,
+                "y2": 150,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 356,
+                "y": 150,
+                "x2": 394,
+                "y2": 150,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 446,
+                "y": 150,
+                "x2": 484,
+                "y2": 150,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "monomers → polymer",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Thermoplastic is chocolate. Thermoset is a baked cake."
+        },
+        {
+          "say": "Iron needs a drink and a breath to rust. Water and oxygen.",
+          "write": "rust: water + oxygen"
+        }
+      ]
+    },
+    {
+      "heading": "Chemistry and the environment",
+      "lines": [
+        {
+          "say": "Photosynthesis removes carbon dioxide. Respiration and combustion release it.",
+          "write": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"
+        },
+        {
+          "say": "Greenhouse gases act like a blanket. Humans are adding extra layers.",
+          "write": "enhanced greenhouse effect",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Greenhouse blanket",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 0,
+                "y": 240,
+                "w": 560,
+                "h": 50,
+                "fill": "green",
+                "label": "Earth"
+              },
+              {
+                "kind": "rect",
+                "x": 0,
+                "y": 40,
+                "w": 560,
+                "h": 40,
+                "fill": "teal",
+                "label": "greenhouse gases"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 0,
+                "x2": 160,
+                "y2": 235,
+                "color": "yellow"
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 235,
+                "x2": 320,
+                "y2": 90,
+                "color": "red"
+              },
+              {
+                "kind": "arrow",
+                "x": 360,
+                "y": 90,
+                "x2": 420,
+                "y2": 232,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 160,
+                "text": "some sent back",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Carbon dioxide in the sea makes carbonic acid. Shells get harder to build.",
+          "write": "CO₂ + H₂O ⇌ H₂CO₃"
+        },
+        {
+          "say": "Nutrients cause algal blooms. Decay uses up oxygen. Fish die.",
+          "write": "eutrophication"
+        },
+        {
+          "say": "Heavy metals are toxic and bioaccumulate."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Chemistry is all about electrons.",
+          "write": "it’s all about electrons",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sodium atom with shells 2, 8, 1 losing its outer electron",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 26,
+                "fill": "orange",
+                "label": "11p"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 55,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 85,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 115,
+                "fill": "none",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 25,
+                "r": 8,
+                "fill": "blue",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 285,
+                "text": "Na⁺: 2, 8",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Outer electrons decide group, bonding, ion charge and reactivity."
+        },
+        {
+          "say": "Use the memory tricks, then test yourself with the questions."
+        }
+      ]
+    }
+  ]
+}

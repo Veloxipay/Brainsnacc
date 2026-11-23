@@ -1,0 +1,141 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Simplifying surds",
+  "frames": [
+    {
+      "heading": "What is simplest form?",
+      "lines": [
+        { "say": "Root 72 and 6 root 2 are exactly the same number.", "write": "√72 = 6√2" },
+        { "say": "But 6 root 2 is easier to see and easier to work with." },
+        { "say": "A surd is in simplest form when no perfect square factor is left under the root.", "write": "√12 ✗    2√3 ✓" },
+        { "say": "The number in front, like the 2 in 2 root 3, is the coefficient.", "write": "coefficient: 2√3" }
+      ]
+    },
+    {
+      "heading": "Pairs get out, singles stay in",
+      "lines": [
+        {
+          "say": "Split 72 into prime factors. 2, 2, 2, 3, 3.",
+          "write": "72 = 2 × 2 × 2 × 3 × 3",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "Prime factors of 72 inside a root sign",
+            "items": [
+              { "kind": "polygon", "points": [[40,150],[60,140],[90,220],[130,40],[520,40]], "fill": "none" },
+              { "kind": "circle", "x": 170, "y": 120, "r": 30, "fill": "blue", "label": "2" },
+              { "kind": "circle", "x": 240, "y": 120, "r": 30, "fill": "blue", "label": "2" },
+              { "kind": "circle", "x": 310, "y": 120, "r": 30, "fill": "blue", "label": "2" },
+              { "kind": "circle", "x": 390, "y": 120, "r": 30, "fill": "orange", "label": "3" },
+              { "kind": "circle", "x": 460, "y": 120, "r": 30, "fill": "orange", "label": "3" }
+            ]
+          }
+        },
+        {
+          "say": "Each matching pair leaves the root, but only one of the pair comes out.",
+          "write": "√(2 × 2) = 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "A pair of 2s and a pair of 3s leave the root; a single 2 stays inside",
+            "items": [
+              { "kind": "polygon", "points": [[40,150],[60,140],[90,220],[130,40],[520,40]], "fill": "none" },
+              { "kind": "circle", "x": 170, "y": 120, "r": 30, "fill": "blue", "label": "2", "change": "remove" },
+              { "kind": "circle", "x": 240, "y": 120, "r": 30, "fill": "blue", "label": "2", "change": "remove" },
+              { "kind": "circle", "x": 310, "y": 120, "r": 30, "fill": "blue", "label": "2", "change": "highlight" },
+              { "kind": "circle", "x": 390, "y": 120, "r": 30, "fill": "orange", "label": "3", "change": "remove" },
+              { "kind": "circle", "x": 460, "y": 120, "r": 30, "fill": "orange", "label": "3", "change": "remove" }
+            ]
+          }
+        },
+        {
+          "say": "Outside we have 2 times 3, which is 6. The lonely 2 stays inside.",
+          "write": "√72 = 6√2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "6 outside the root and 2 inside",
+            "items": [
+              { "kind": "circle", "x": 110, "y": 130, "r": 40, "fill": "purple", "label": "6", "change": "add" },
+              { "kind": "polygon", "points": [[170,150],[190,140],[220,220],[260,40],[400,40]], "fill": "none" },
+              { "kind": "circle", "x": 320, "y": 120, "r": 30, "fill": "blue", "label": "2" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The quick method",
+      "lines": [
+        { "say": "Find the largest perfect square that divides the number.", "write": "4, 9, 16, 25, 36, 49 …" },
+        { "say": "For 50, that's 25. So split the root into root 25 times root 2.", "write": "√50 = √25 × √2" },
+        { "say": "Root 25 is 5. So root 50 is 5 root 2.", "write": "√50 = 5√2" },
+        { "say": "Check by squaring. 5 root 2, squared, is 25 times 2, which is 50.", "write": "(5√2)² = 50 ✓" },
+        { "say": "Pick a smaller square first and you'll just need another round.", "write": "2√18 → 6√2" }
+      ]
+    },
+    {
+      "heading": "Entire surds",
+      "lines": [
+        { "say": "An entire surd has everything under the root, like root 45.", "write": "√45" },
+        { "say": "To put the coefficient back inside, square it and multiply.", "write": "4 = √16" },
+        { "say": "So 4 root 3 is root 16 times root 3, which is root 48.", "write": "4√3 = √48" },
+        { "say": "This helps when you want to compare the sizes of surds." }
+      ]
+    },
+    {
+      "heading": "Adding like surds",
+      "lines": [
+        {
+          "say": "Like surds have the same number under the root. Treat root 2 like x.",
+          "write": "3√2 + 5√2 = 8√2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Three root 2 blocks and five root 2 blocks make eight",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 55, "h": 55, "fill": "blue", "label": "√2" },
+              { "kind": "rect", "x": 80, "y": 60, "w": 55, "h": 55, "fill": "blue", "label": "√2" },
+              { "kind": "rect", "x": 140, "y": 60, "w": 55, "h": 55, "fill": "blue", "label": "√2" },
+              { "kind": "rect", "x": 230, "y": 60, "w": 55, "h": 55, "fill": "green", "label": "√2", "change": "add" },
+              { "kind": "rect", "x": 290, "y": 60, "w": 55, "h": 55, "fill": "green", "label": "√2", "change": "add" },
+              { "kind": "rect", "x": 350, "y": 60, "w": 55, "h": 55, "fill": "green", "label": "√2", "change": "add" },
+              { "kind": "rect", "x": 410, "y": 60, "w": 55, "h": 55, "fill": "green", "label": "√2", "change": "add" },
+              { "kind": "rect", "x": 470, "y": 60, "w": 55, "h": 55, "fill": "green", "label": "√2", "change": "add" },
+              { "kind": "text", "x": 280, "y": 170, "text": "8√2", "size": 28, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "But 3 root 2 plus 5 root 3 can't be simplified. Like 3x plus 5y.", "write": "3√2 + 5√3 stays" },
+        { "say": "Sometimes you simplify first. Root 8 is 2 root 2. Root 18 is 3 root 2.", "write": "√8 + √18 − √2" },
+        { "say": "Now they are like surds. 2 plus 3 minus 1 is 4.", "write": "= 2√2 + 3√2 − √2 = 4√2" }
+      ]
+    },
+    {
+      "heading": "Multiplying surds",
+      "lines": [
+        { "say": "Multiply the coefficients, then multiply the roots.", "write": "2√3 × 4√5 = 8√15" },
+        { "say": "Try 3 root 6 times 2 root 10. 3 times 2 is 6.", "write": "3 × 2 = 6" },
+        { "say": "Root 6 times root 10 is root 60.", "write": "√6 × √10 = √60" },
+        { "say": "Simplify root 60. It's root 4 times root 15, so 2 root 15.", "write": "√60 = 2√15" },
+        { "say": "6 times 2 root 15 is 12 root 15.", "write": "= 12√15" }
+      ]
+    },
+    {
+      "heading": "Surds in Pythagoras",
+      "lines": [
+        {
+          "say": "Here the two short sides are both 3 centimetres.",
+          "write": "x² = 3² + 3² = 18",
+          "diagram": "diagrams/y9/maths/simplifying-surds-triangle.svg",
+          "alt": "Right-angled triangle with shorter sides 3 cm and 3 cm and hypotenuse x"
+        },
+        { "say": "So x is root 18. The biggest square in 18 is 9.", "write": "√18 = √9 × √2" },
+        { "say": "So the exact answer is 3 root 2 centimetres.", "write": "x = 3√2 cm" }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        { "say": "Only the root of the square comes out. Root 12 is 2 root 3, not 4 root 3.", "write": "✗ √12 = 4√3" },
+        { "say": "Don't add under the root. 4 root 5 plus 3 root 5 is 7 root 5.", "write": "✗ 7√10" },
+        { "say": "Unlike surds stay apart. 2 root 3 plus 3 root 2 is not 5 root 5.", "write": "✗ 5√5" },
+        { "say": "Always check nothing square is left under the root.", "write": "biggest square first" },
+        { "say": "Pairs get out, singles stay in.", "write": "pairs out, singles in" }
+      ]
+    }
+  ]
+}

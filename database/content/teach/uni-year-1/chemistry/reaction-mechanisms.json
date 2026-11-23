@@ -1,0 +1,122 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Reaction mechanisms",
+  "frames": [
+    {
+      "heading": "Curly arrows",
+      "lines": [
+        {"say": "A curly arrow moves a pair of electrons.", "write": "↷ = 2 electrons"},
+        {"say": "Arrows follow the money, and electrons are the money.", "write": "start at a lone pair or bond"},
+        {"say": "Never start an arrow at H plus or a positive charge.", "write": "✗ arrow from H⁺"},
+        {"say": "Check: no carbon with five bonds, and charges balance.", "write": "C max 4 bonds"}
+      ]
+    },
+    {
+      "heading": "Who attacks whom?",
+      "lines": [
+        {"say": "Nucleophiles love nuclei. They donate an electron pair. They're Lewis bases.", "write": "Nu: OH⁻, CN⁻, H₂O, alkenes"},
+        {"say": "Electrophiles love electrons. They accept a pair. They're Lewis acids.", "write": "E: H⁺, C⁺, δ+ carbon"},
+        {"say": "Electron rich attacks electron poor.", "write": "Nu → E",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Hydroxide attacks the delta plus carbon of bromoethane and bromide leaves", "items": [
+           {"kind": "circle", "x": 80, "y": 110, "r": 32, "fill": "purple", "label": "OH⁻"},
+           {"kind": "circle", "x": 270, "y": 110, "r": 32, "fill": "grey", "label": "Cδ+"},
+           {"kind": "circle", "x": 430, "y": 110, "r": 32, "fill": "orange", "label": "Br"},
+           {"kind": "line", "x": 302, "y": 110, "x2": 398, "y2": 110, "color": "black", "change": "remove"},
+           {"kind": "arrow", "x": 115, "y": 110, "x2": 232, "y2": 110, "color": "purple", "change": "add"},
+           {"kind": "arrow", "x": 350, "y": 90, "x2": 420, "y2": 70, "color": "red", "change": "add"},
+           {"kind": "text", "x": 430, "y": 190, "text": "leaves as Br⁻", "size": 18, "color": "red", "change": "add"}
+         ]}},
+        {"say": "Good leaving groups are weak bases. Iodide beats bromide beats chloride.", "write": "I⁻ > Br⁻ > Cl⁻ ≫ F⁻"},
+        {"say": "Carbocations: tertiary is most stable, methyl least.", "write": "3° > 2° > 1° > methyl"}
+      ]
+    },
+    {
+      "heading": "SN2: one step",
+      "lines": [
+        {"say": "SN2 is a backdoor burglar. The nucleophile attacks opposite the leaving group.", "write": "backside attack"},
+        {"say": "It all happens in one step. Both species are in the rate law.", "write": "rate = k[RX][Nu]"},
+        {"say": "The molecule flips like an umbrella. That's inversion.", "write": "inversion",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Umbrella of three groups flips from pointing right to pointing left during SN2", "items": [
+           {"kind": "circle", "x": 160, "y": 120, "r": 22, "fill": "grey", "label": "C"},
+           {"kind": "line", "x": 160, "y": 120, "x2": 210, "y2": 60, "color": "blue"},
+           {"kind": "line", "x": 160, "y": 120, "x2": 210, "y2": 180, "color": "blue"},
+           {"kind": "line", "x": 160, "y": 120, "x2": 220, "y2": 120, "color": "blue"},
+           {"kind": "text", "x": 100, "y": 128, "text": "Br", "size": 22},
+           {"kind": "arrow", "x": 250, "y": 120, "x2": 310, "y2": 120, "color": "black"},
+           {"kind": "circle", "x": 420, "y": 120, "r": 22, "fill": "grey", "label": "C"},
+           {"kind": "line", "x": 420, "y": 120, "x2": 370, "y2": 60, "color": "blue", "change": "add"},
+           {"kind": "line", "x": 420, "y": 120, "x2": 370, "y2": 180, "color": "blue", "change": "add"},
+           {"kind": "line", "x": 420, "y": 120, "x2": 360, "y2": 120, "color": "blue", "change": "add"},
+           {"kind": "text", "x": 485, "y": 128, "text": "OH", "size": 22, "bold": true, "color": "purple"},
+           {"kind": "text", "x": 280, "y": 225, "text": "flipped inside out", "size": 18}
+         ]}},
+        {"say": "Best for methyl and primary. Tertiary carbons block the back door.", "write": "1° ✓   3° ✗"},
+        {"say": "It likes strong nucleophiles and polar aprotic solvents, like DMSO.", "write": "polar aprotic: acetone, DMSO"}
+      ]
+    },
+    {
+      "heading": "SN1: two steps",
+      "lines": [
+        {"say": "In SN1, the leaving group leaves first. A carbocation forms. That's slow.", "write": "1. RX → R⁺ + X⁻ (slow)",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Bromide leaves a tertiary carbon, leaving a flat carbocation that can be attacked from either face", "items": [
+           {"kind": "circle", "x": 220, "y": 110, "r": 34, "fill": "grey", "label": "C⁺"},
+           {"kind": "circle", "x": 330, "y": 110, "r": 26, "fill": "orange", "label": "Br", "change": "remove"},
+           {"kind": "arrow", "x": 80, "y": 110, "x2": 180, "y2": 110, "color": "purple", "change": "add"},
+           {"kind": "arrow", "x": 470, "y": 110, "x2": 260, "y2": 110, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 70, "y": 90, "text": "Nu", "size": 20, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 490, "y": 90, "text": "Nu", "size": 20, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 200, "text": "flat: attack from either face", "size": 18, "bold": true}
+         ]}},
+        {"say": "Then the nucleophile attacks the flat carbocation.", "write": "2. R⁺ + Nu → R–Nu"},
+        {"say": "Only the substrate is in the slow step. SN1: one waits alone.", "write": "rate = k[RX]"},
+        {"say": "Either face can be attacked, so a stereocentre mostly racemises.", "write": "racemisation"},
+        {"say": "It likes tertiary substrates, weak nucleophiles and polar protic solvents.", "write": "3°, H₂O, ROH"}
+      ]
+    },
+    {
+      "heading": "Elimination: E2 and E1",
+      "lines": [
+        {"say": "Elimination removes H and the leaving group from neighbouring carbons.", "write": "β-H + LG → C=C"},
+        {"say": "E2 is one step. A strong base pulls off the beta H.", "write": "E2: rate = k[RX][base]"},
+        {"say": "The H and leaving group sit anti-periplanar, on opposite sides.", "write": "anti-periplanar"},
+        {"say": "E1 goes through the carbocation, like SN1.", "write": "E1: rate = k[RX]"},
+        {"say": "Heat favours elimination, because it makes more molecules.", "write": "heat → elimination"},
+        {"say": "Zaitsev: the more substituted alkene is usually the major product.", "write": "Zaitsev: more substituted"}
+      ]
+    },
+    {
+      "heading": "Adding to alkenes",
+      "lines": [
+        {"say": "The C=C pi bond is electron rich. It attacks H in HBr.", "write": "CH₃CH=CH₂ + HBr"},
+        {"say": "H adds to the end carbon, giving a secondary carbocation in the middle.", "write": "2° C⁺ beats 1° C⁺",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Propene plus HBr: the secondary carbocation is kept and the primary is crossed out", "items": [
+           {"kind": "rect", "x": 30, "y": 50, "w": 220, "h": 80, "fill": "green", "label": "CH₃–C⁺H–CH₃ (2°)", "change": "highlight"},
+           {"kind": "rect", "x": 310, "y": 50, "w": 220, "h": 80, "fill": "grey", "label": "CH₃CH₂–C⁺H₂ (1°)", "change": "remove"},
+           {"kind": "text", "x": 140, "y": 180, "text": "→ 2-bromopropane", "size": 22, "bold": true, "color": "green"}
+         ]}},
+        {"say": "Bromide attacks it. The major product is 2-bromopropane.", "write": "→ CH₃CHBrCH₃"},
+        {"say": "Markovnikov: the rich get richer. Carbocation stability is the real reason.", "write": "Markovnikov = stable C⁺"},
+        {"say": "Bromine adds through a bromonium ion, giving anti addition.", "write": "Br₂: anti addition"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "No SN2 at a tertiary carbon. The back door is blocked.", "write": "✗ SN2 on 3°"},
+        {"say": "SN1 doesn't give inversion, and the nucleophile isn't in its rate law.", "write": "✗ SN1 inversion"},
+        {"say": "Cyanide and iodide are good nucleophiles but weak bases. They substitute.", "write": "CN⁻, I⁻ → substitution"},
+        {"say": "Explain Markovnikov with carbocation stability, not just the rule.", "write": "say why: C⁺ stability"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Arrows start at electrons and end where they go.", "write": "electrons → destination"},
+        {"say": "The number tells you who's in the slow step.", "write": "1 = RX only,  2 = RX + Nu"},
+        {"say": "Look at substrate, reagent, solvent and temperature, in that order.", "write": "substrate, reagent, solvent, T"},
+        {"say": "Tertiary over secondary over primary drives SN1, E1 and Markovnikov.", "write": "3° > 2° > 1°"}
+      ]
+    }
+  ]
+}

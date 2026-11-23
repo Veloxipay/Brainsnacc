@@ -1,0 +1,150 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Year 9 Maths summary and memory tips",
+  "frames": [
+    {
+      "heading": "Number and money",
+      "lines": [
+        { "say": "Significant figures start at the first non-zero digit.", "write": "0.04037 → 0.040 (2 s.f.)" },
+        { "say": "Increase by r percent? Multiply by 1 plus r over 100.", "write": "× (1 + r/100)" },
+        {
+          "say": "Simple interest adds the same amount every year.",
+          "write": "I = P × r × n",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Simple interest: equal blocks added each year",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 260, "h": 60, "fill": "blue", "label": "P" },
+              { "kind": "rect", "x": 280, "y": 60, "w": 60, "h": 60, "fill": "green", "label": "I", "change": "add" },
+              { "kind": "rect", "x": 340, "y": 60, "w": 60, "h": 60, "fill": "green", "label": "I", "change": "add" },
+              { "kind": "rect", "x": 400, "y": 60, "w": 60, "h": 60, "fill": "green", "label": "I", "change": "add" },
+              { "kind": "text", "x": 280, "y": 180, "text": "same each year", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Compound interest multiplies. The interest earns interest too.", "write": "A = P(1 + r)ⁿ" },
+        { "say": "2000 dollars at 5 percent for 2 years grows to 2205 dollars.", "write": "2000 × 1.05² = $2205" },
+        { "say": "Simple adds, compound multiplies." }
+      ]
+    },
+    {
+      "heading": "Algebra and equations",
+      "lines": [
+        { "say": "Expanding means multiply every term inside the bracket.", "write": "3(x − 4) = 3x − 12" },
+        {
+          "say": "To solve, do the same to both sides.",
+          "write": "2(x + 3) = x + 10",
+          "draw": { "type": "balance", "left": { "bags": 2, "cubes": 6 }, "right": { "bags": 1, "cubes": 10 } }
+        },
+        {
+          "say": "Take 6 cubes off both sides. Then one bag off both. One bag balances 4.",
+          "write": "x = 4",
+          "draw": { "type": "balance", "left": { "bags": 2, "cubes": 6 }, "right": { "bags": 1, "cubes": 10 }, "remove": 6, "labels": ["2x + 6 − 6", "x + 10 − 6"] }
+        },
+        { "say": "Inequalities. Multiply or divide by a negative, and flip the sign.", "write": "negative flip" },
+        { "say": "Factorise first, then cancel factors. Never cancel across a plus.", "write": "factorise → cancel" }
+      ]
+    },
+    {
+      "heading": "Pythagoras and trigonometry",
+      "lines": [
+        { "say": "Longest side? Add the squares. Shorter side? Subtract.", "write": "c² = a² + b²" },
+        { "say": "Label opposite, adjacent and hypotenuse from the angle.", "write": "SOH CAH TOA" },
+        {
+          "say": "x is opposite 30 degrees, and 10 is the hypotenuse. So use sine.",
+          "write": "x = 10 × sin 30° = 5 cm",
+          "diagram": "diagrams/y9/maths/year-9-maths-summary-and-memory-tips-trig.svg",
+          "alt": "Right-angled triangle with hypotenuse 10 cm, angle 30° and opposite side x"
+        },
+        { "say": "Elevation and depression are both measured from the horizontal.", "write": "from the horizontal" }
+      ]
+    },
+    {
+      "heading": "Straight lines",
+      "lines": [
+        { "say": "Gradient is rise over run.", "write": "m = rise ÷ run" },
+        {
+          "say": "In y equals m x plus c, m is the gradient and c is the y-intercept.",
+          "write": "y = 3x − 1",
+          "diagram": "diagrams/y9/maths/year-9-maths-summary-and-memory-tips-line.svg",
+          "alt": "The line y = 3x − 1 crossing the y-axis at −1"
+        },
+        { "say": "m for mountain, c for crossing.", "write": "m = steep, c = crossing" },
+        { "say": "Parallel lines have equal gradients. Perpendicular gradients multiply to minus 1.", "write": "2 → −½" }
+      ]
+    },
+    {
+      "heading": "Measurement, indices and surds",
+      "lines": [
+        { "say": "Cherry pie is delicious. Apple pies are too.", "write": "C = πd,  A = πr²" },
+        { "say": "Prism volume is area of the end times length.", "write": "V = πr²h" },
+        { "say": "Times, add the indices. Divide, subtract. Bracket, multiply.", "write": "aᵐ × aⁿ = aᵐ⁺ⁿ" },
+        { "say": "A negative index means one over. 2 to the minus 3 is an eighth.", "write": "2⁻³ = 1/8" },
+        {
+          "say": "For surds, find the biggest square inside.",
+          "write": "√72 = √36 × √2 = 6√2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Root 72 split into root 36 times root 2; root 36 becomes 6",
+            "items": [
+              { "kind": "rect", "x": 60, "y": 60, "w": 140, "h": 70, "fill": "yellow", "label": "√36", "change": "remove" },
+              { "kind": "rect", "x": 60, "y": 60, "w": 140, "h": 70, "fill": "green", "label": "6", "change": "add" },
+              { "kind": "text", "x": 240, "y": 105, "text": "×", "size": 30, "anchor": "middle" },
+              { "kind": "rect", "x": 280, "y": 60, "w": 140, "h": 70, "fill": "blue", "label": "√2" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Geometry and similarity",
+      "lines": [
+        { "say": "Angles on a line add to 180. In a triangle, also 180.", "write": "line 180°, point 360°" },
+        { "say": "Similar shapes. Lengths times k, areas times k squared.", "write": "lengths k, areas k²" },
+        {
+          "say": "A 1.8 metre person casts a 1.2 metre shadow. A tree casts 6 metres.",
+          "write": "k = 6 ÷ 1.2 = 5",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Small triangle for the person and a large similar triangle for the tree",
+            "items": [
+              { "kind": "line", "x": 20, "y": 260, "x2": 540, "y2": 260, "color": "black" },
+              { "kind": "polygon", "points": [[60,260],[60,200],[100,260]], "fill": "blue" },
+              { "kind": "polygon", "points": [[200,260],[200,40],[400,260]], "fill": "green", "change": "add" },
+              { "kind": "text", "x": 50, "y": 235, "text": "1.8", "size": 18, "anchor": "end" },
+              { "kind": "text", "x": 190, "y": 150, "text": "?", "size": 24, "bold": true, "anchor": "end" },
+              { "kind": "text", "x": 300, "y": 288, "text": "6 m", "size": 18, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "So the tree is 1.8 times 5, which is 9 metres.", "write": "1.8 × 5 = 9 m" }
+      ]
+    },
+    {
+      "heading": "Chance and data",
+      "lines": [
+        { "say": "Skew is named after the tail, not the bunch.", "write": "tail right = positive skew" },
+        { "say": "Range is max minus min. IQR is Q3 minus Q1.", "write": "IQR = Q3 − Q1" },
+        {
+          "say": "Along the branch, multiply. Between branches, add.",
+          "write": "P(WW) = 0.3 × 0.3 = 0.09",
+          "diagram": "diagrams/y9/maths/year-9-maths-summary-and-memory-tips-tree.svg",
+          "alt": "Tree diagram with P(W) = 0.3 and P(L) = 0.7 on every branch"
+        },
+        { "say": "Simulations. Yes numbers over all numbers equals the probability.", "write": "count ÷ trials" }
+      ]
+    },
+    {
+      "heading": "Quadratics and algorithms",
+      "lines": [
+        { "say": "Make one side 0, factorise, then use the null factor law.", "write": "(x − 3)(x + 5) = 0" },
+        {
+          "say": "y equals x squared minus 4 crosses at minus 2 and 2. Turning point 0, minus 4.",
+          "write": "x = ±2",
+          "diagram": "diagrams/y9/maths/year-9-maths-summary-and-memory-tips-parabola.svg",
+          "alt": "Parabola y = x² − 4 with x-intercepts −2 and 2 and turning point (0, −4)"
+        },
+        { "say": "The bracket moves it the opposite way. x minus 2 moves right 2.", "write": "(x − 2)² + 3 → TP (2, 3)" },
+        { "say": "Halving method. Keep the half where the sign changes.", "write": "halve and keep the swap" }
+      ]
+    }
+  ]
+}

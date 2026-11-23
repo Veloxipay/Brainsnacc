@@ -1,0 +1,894 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Parallel and perpendicular lines",
+  "frames": [
+    {
+      "heading": "Railway tracks and crossroads",
+      "lines": [
+        {
+          "say": "Railway tracks run side by side and never meet. They're parallel.",
+          "write": "parallel ∥"
+        },
+        {
+          "say": "At a neat crossroads, roads meet at a square corner. That's perpendicular.",
+          "write": "perpendicular ⊥"
+        },
+        {
+          "say": "We can tell which is which from the gradients.",
+          "write": "compare m"
+        }
+      ]
+    },
+    {
+      "heading": "Parallel: same gradient",
+      "lines": [
+        {
+          "say": "Parallel lines have the same gradient, but different y-intercepts.",
+          "write": "same m, different c",
+          "diagram": "diagrams/y9/maths/parallel-and-perpendicular-lines-par.svg",
+          "alt": "Parallel lines y = ½x + 2 and y = ½x − 1"
+        },
+        {
+          "say": "They rise at the same rate, so the gap never closes.",
+          "write": "y = ½x + 2  ∥  y = ½x − 1"
+        },
+        {
+          "say": "Same m and same c is the same line, not parallel lines.",
+          "write": "same line ≠ parallel"
+        }
+      ]
+    },
+    {
+      "heading": "Rearrange first",
+      "lines": [
+        {
+          "say": "Are y equals 3x plus 1 and 6x minus 2y equals 5 parallel?",
+          "write": "6x − 2y = 5"
+        },
+        {
+          "say": "Get y on its own. Minus 2y equals minus 6x plus 5.",
+          "write": "−2y = −6x + 5"
+        },
+        {
+          "say": "Divide every term by minus 2. y equals 3x minus 2.5.",
+          "write": "y = 3x − 2.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "y = 3x + 1 and y = 3x − 2.5 are parallel",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 150.0,
+                "x2": 520,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 280,
+                "x2": 280.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 156.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 288.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 146.7,
+                "y": 280.0,
+                "x2": 360.0,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 370.0,
+                "y": 34.0,
+                "text": "y = 3x + 1",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 240.0,
+                "y": 280.0,
+                "x2": 453.3,
+                "y2": 20.0,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 463.3,
+                "y": 44.0,
+                "text": "y = 3x − 2.5",
+                "size": 16,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Both gradients are 3, with different intercepts. So yes, parallel.",
+          "write": "m = 3 and m = 3 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Perpendicular: multiply to −1",
+      "lines": [
+        {
+          "say": "Perpendicular gradients multiply to minus 1.",
+          "write": "m₁ × m₂ = −1"
+        },
+        {
+          "say": "So flip the fraction and change the sign. That's the negative reciprocal.",
+          "write": "negative reciprocal",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line with gradient two thirds and the perpendicular line with gradient minus three halves",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70,
+                "y": 227.6,
+                "x2": 510,
+                "y2": 227.6,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 258.6,
+                "y": 290,
+                "x2": 258.6,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 514,
+                "y": 233.6,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 266.6,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 164.3,
+                "y": 290.0,
+                "x2": 510.0,
+                "y2": 61.4,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 258.6,
+                "y": 227.6,
+                "x2": 447.1,
+                "y2": 227.6,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 447.1,
+                "y": 227.6,
+                "x2": 447.1,
+                "y2": 102.9,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 352.9,
+                "y": 249.6,
+                "text": "3",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455.1,
+                "y": 157.3,
+                "text": "2",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 500.0,
+                "y": 55.4,
+                "text": "m = ⅔",
+                "size": 18,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "For two thirds, flip to three halves, then make it negative.",
+          "write": "⅔ → −3/2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line with gradient two thirds and the perpendicular line with gradient minus three halves",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70,
+                "y": 227.6,
+                "x2": 510,
+                "y2": 227.6,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 258.6,
+                "y": 290,
+                "x2": 258.6,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 514,
+                "y": 233.6,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 266.6,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 164.3,
+                "y": 290.0,
+                "x2": 510.0,
+                "y2": 61.4,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 258.6,
+                "y": 227.6,
+                "x2": 447.1,
+                "y2": 227.6,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 447.1,
+                "y": 227.6,
+                "x2": 447.1,
+                "y2": 102.9,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 352.9,
+                "y": 249.6,
+                "text": "3",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455.1,
+                "y": 157.3,
+                "text": "2",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 500.0,
+                "y": 55.4,
+                "text": "m = ⅔",
+                "size": 18,
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 132.9,
+                "y": 40.6,
+                "x2": 300.5,
+                "y2": 290.0,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 258.6,
+                "y": 227.6,
+                "x2": 132.9,
+                "y2": 227.6,
+                "color": "green",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 132.9,
+                "y": 227.6,
+                "x2": 132.9,
+                "y2": 40.6,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 122.9,
+                "y": 126.1,
+                "text": "3",
+                "size": 18,
+                "change": "add",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 195.7,
+                "y": 249.6,
+                "text": "2",
+                "size": 18,
+                "change": "add",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 146.9,
+                "y": 50.6,
+                "text": "m = −3/2",
+                "size": 18,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check: two thirds times minus three halves is minus 1.",
+          "write": "⅔ × (−3/2) = −1 ✓"
+        },
+        {
+          "say": "A horizontal and a vertical line are perpendicular too. You can't multiply those.",
+          "write": "flat ⊥ upright"
+        }
+      ]
+    },
+    {
+      "heading": "A perpendicular line through a point",
+      "lines": [
+        {
+          "say": "Find the line perpendicular to y equals 2x minus 1 through (2, 3).",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "y = 2x − 1 and the perpendicular line through (2, 3)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 100.0,
+                "y": 340,
+                "x2": 100.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 340.0,
+                "x2": 260.0,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 36.0,
+                "text": "y = 2x − 1",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 100.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 232.0,
+                "y": 124.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The negative reciprocal of 2 is minus a half.",
+          "write": "y = −½x + c"
+        },
+        {
+          "say": "Substitute (2, 3): 3 equals minus 1 plus c, so c is 4.",
+          "write": "y = −½x + 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "y = 2x − 1 and the perpendicular line through (2, 3)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 100.0,
+                "y": 340,
+                "x2": 100.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 340.0,
+                "x2": 260.0,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 36.0,
+                "text": "y = 2x − 1",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 100.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 232.0,
+                "y": 124.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 20.0,
+                "x2": 520.0,
+                "y2": 250.0,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 516.0,
+                "y": 236.0,
+                "text": "y = −½x + 4",
+                "size": 16,
+                "change": "add",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "They cross at a right angle. 2 times minus a half is minus 1.",
+          "write": "2 × (−½) = −1 ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "y = 2x − 1 and the perpendicular line through (2, 3)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 100.0,
+                "y": 340,
+                "x2": 100.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 340.0,
+                "x2": 260.0,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 36.0,
+                "text": "y = 2x − 1",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 100.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 232.0,
+                "y": 124.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60.0,
+                "y": 20.0,
+                "x2": 520.0,
+                "y2": 250.0,
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 516.0,
+                "y": 236.0,
+                "text": "y = −½x + 4",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 320,
+                "text": "2 × (−½) = −1",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "A parallel line through a point",
+      "lines": [
+        {
+          "say": "Find the line parallel to y equals minus 2x plus 5 through (3, 1).",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "y = −2x + 5 and a parallel line through (3, 1)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 182.5,
+                "x2": 520,
+                "y2": 182.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 245.7,
+                "y": 280,
+                "x2": 245.7,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 188.5,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 253.7,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 245.7,
+                "y": 20.0,
+                "x2": 520.0,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 451.4,
+                "y": 150.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 459.4,
+                "y": 142.0,
+                "text": "(3, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 261.7,
+                "y": 34.0,
+                "text": "y = −2x + 5",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Parallel means the same gradient, minus 2.",
+          "write": "y = −2x + c"
+        },
+        {
+          "say": "Substitute (3, 1): 1 equals minus 6 plus c. Add 6, so c is 7.",
+          "write": "c = 7"
+        },
+        {
+          "say": "The line is y equals minus 2x plus 7.",
+          "write": "y = −2x + 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "y = −2x + 5 and a parallel line through (3, 1)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 182.5,
+                "x2": 520,
+                "y2": 182.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 245.7,
+                "y": 280,
+                "x2": 245.7,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 188.5,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 253.7,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 245.7,
+                "y": 20.0,
+                "x2": 520.0,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 451.4,
+                "y": 150.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 459.4,
+                "y": 142.0,
+                "text": "(3, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 261.7,
+                "y": 34.0,
+                "text": "y = −2x + 5",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 314.3,
+                "y": 20.0,
+                "x2": 520.0,
+                "y2": 215.0,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 392.9,
+                "y": 85.0,
+                "text": "y = −2x + 7",
+                "size": 16,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Flip and change the sign. Perpendicular to 5 is minus one fifth.",
+          "write": "5 → −⅕"
+        },
+        {
+          "say": "In 3x minus 2y equals 4, the gradient is not 3. Rearrange first.",
+          "write": "get y alone first"
+        },
+        {
+          "say": "Write down the new gradient before you substitute the point.",
+          "write": "new m first"
+        },
+        {
+          "say": "1 equals minus 6 plus c gives c equals 7, not minus 5.",
+          "write": "c = 7"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Parallel: same gradient.",
+          "write": "∥ : m₁ = m₂"
+        },
+        {
+          "say": "Perpendicular: gradients multiply to minus 1.",
+          "write": "⊥ : m₁ × m₂ = −1"
+        },
+        {
+          "say": "Always rearrange to y equals m x plus c before comparing.",
+          "write": "y = mx + c first"
+        }
+      ]
+    }
+  ]
+}

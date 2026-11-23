@@ -1,0 +1,487 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Samples and populations",
+  "frames": [
+    {
+      "heading": "Tasting the soup",
+      "lines": [
+        {
+          "say": "To check a pot of soup, you stir it and taste one spoonful.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A pot of soup: a stirred spoonful represents the pot; skimming the top does not",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 100,
+                "w": 240,
+                "h": 150,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "pot of soup = population",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 175,
+                "r": 22,
+                "fill": "yellow",
+                "label": "taste",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "stirred: one spoon tells you",
+                "size": 20,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Skim only the oily top, and you get the wrong idea.",
+          "write": "biased!",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A pot of soup: a stirred spoonful represents the pot; skimming the top does not",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 100,
+                "w": 240,
+                "h": 150,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "pot of soup = population",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 100,
+                "w": 240,
+                "h": 20,
+                "fill": "yellow",
+                "label": "oil on top",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 375,
+                "y": 110,
+                "r": 14,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "only skim the top → wrong idea",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Stirring is like choosing a sample at random.",
+          "write": "random = stirred"
+        }
+      ]
+    },
+    {
+      "heading": "Census or sample?",
+      "lines": [
+        {
+          "say": "The population is the whole group you want to know about.",
+          "write": "population = everyone"
+        },
+        {
+          "say": "A census asks every member. Exact, but slow and expensive.",
+          "write": "census = count everyone"
+        },
+        {
+          "say": "A sample asks only part. Quicker, but it gives an estimate.",
+          "write": "sample → estimate"
+        },
+        {
+          "say": "Australia runs a census every five years.",
+          "write": "census every 5 years"
+        }
+      ]
+    },
+    {
+      "heading": "Ways to choose a sample",
+      "lines": [
+        {
+          "say": "Simple random. Everyone has the same chance, like names from a hat.",
+          "write": "simple random"
+        },
+        {
+          "say": "Systematic. 40 people, sample of 5, so the step is 40 over 5, which is 8.",
+          "write": "40 ÷ 5 = 8"
+        },
+        {
+          "say": "Pick a random start, say 3. Then take every 8th person.",
+          "write": "3, 11, 19, 27, 35",
+          "diagram": "diagrams/y8/maths/samples-and-populations-systematic.svg",
+          "alt": "40 people numbered 1 to 40; starting at 3, every 8th person is shaded: 3, 11, 19, 27, 35"
+        },
+        {
+          "say": "Convenience. Ask whoever is easy, like your friends. Often biased.",
+          "write": "convenience → biased"
+        }
+      ]
+    },
+    {
+      "heading": "Stratified samples",
+      "lines": [
+        {
+          "say": "Split into groups, like year levels. This school has 900 students.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Year 7 360, Year 8 300, Year 9 240 students; stratified sample of 18, 15, 12",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 250,
+                "x2": 520,
+                "y2": 250,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 51.99999999999997,
+                "w": 110,
+                "h": 198.00000000000003,
+                "fill": "blue",
+                "label": "360"
+              },
+              {
+                "kind": "text",
+                "x": 125,
+                "y": 275,
+                "text": "Year 7",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 85.0,
+                "w": 110,
+                "h": 165.0,
+                "fill": "blue",
+                "label": "300"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 275,
+                "text": "Year 8",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 118.0,
+                "w": 110,
+                "h": 132.0,
+                "fill": "blue",
+                "label": "240"
+              },
+              {
+                "kind": "text",
+                "x": 445,
+                "y": 275,
+                "text": "Year 9",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each group gets its fair share of 45. Year 7: 360 over 900 times 45 is 18.",
+          "write": "360/900 × 45 = 18"
+        },
+        {
+          "say": "Year 8 gets 15. Year 9 gets 12. Slices in proportion.",
+          "write": "18 + 15 + 12 = 45",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Year 7 360, Year 8 300, Year 9 240 students; stratified sample of 18, 15, 12",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 250,
+                "x2": 520,
+                "y2": 250,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 51.99999999999997,
+                "w": 110,
+                "h": 198.00000000000003,
+                "fill": "blue",
+                "label": "360"
+              },
+              {
+                "kind": "text",
+                "x": 125,
+                "y": 275,
+                "text": "Year 7",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 95,
+                "y": 196,
+                "w": 60,
+                "h": 54,
+                "fill": "orange",
+                "label": "18",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 85.0,
+                "w": 110,
+                "h": 165.0,
+                "fill": "blue",
+                "label": "300"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 275,
+                "text": "Year 8",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 255,
+                "y": 205,
+                "w": 60,
+                "h": 45,
+                "fill": "orange",
+                "label": "15",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 390,
+                "y": 118.0,
+                "w": 110,
+                "h": 132.0,
+                "fill": "blue",
+                "label": "240"
+              },
+              {
+                "kind": "text",
+                "x": 445,
+                "y": 275,
+                "text": "Year 9",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 415,
+                "y": 214,
+                "w": 60,
+                "h": 36,
+                "fill": "orange",
+                "label": "12",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 30,
+                "text": "sample shares: 18 + 15 + 12 = 45",
+                "size": 20,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't share equally. Bigger groups get more.",
+          "write": "✗ 15, 15, 15"
+        }
+      ]
+    },
+    {
+      "heading": "Bias and sample size",
+      "lines": [
+        {
+          "say": "A biased sample leans one way. It doesn't represent everyone.",
+          "write": "biased = leans one way"
+        },
+        {
+          "say": "Online polls are self-selected. People with strong views reply most.",
+          "write": "self-selected"
+        },
+        {
+          "say": "Asking at a gym about exercise is the wrong place.",
+          "write": "wrong place or time"
+        },
+        {
+          "say": "A bigger sample doesn't fix bias. 10 thousand biased answers are still biased.",
+          "write": "size ≠ fair"
+        },
+        {
+          "say": "Random samples vary a bit. Bigger ones vary less.",
+          "write": "sample variability"
+        }
+      ]
+    },
+    {
+      "heading": "Estimating from a sample",
+      "lines": [
+        {
+          "say": "21 of 60 sampled students catch a bus. That's 0.35.",
+          "write": "21 ÷ 60 = 0.35"
+        },
+        {
+          "say": "Multiply by the population. 0.35 times 840 is 294 students.",
+          "write": "0.35 × 840 = 294"
+        },
+        {
+          "say": "Fish: 50 tagged. Later 10 of 80 caught are tagged. That's an eighth.",
+          "write": "10/80 = 1/8",
+          "diagram": "diagrams/y8/maths/samples-and-populations-recapture.svg",
+          "alt": "80 fish drawn as dots with 10 tagged fish shaded"
+        },
+        {
+          "say": "So 50 is an eighth of all the fish. About 400 fish.",
+          "write": "50 × 8 = 400"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Stir before you taste. Choose at random.",
+          "write": "random = fair",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A pot of soup: a stirred spoonful represents the pot; skimming the top does not",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 100,
+                "w": 240,
+                "h": 150,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "pot of soup = population",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 175,
+                "r": 22,
+                "fill": "yellow",
+                "label": "taste",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "stirred: one spoon tells you",
+                "size": 20,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Census means count everyone.",
+          "write": "census = everyone"
+        },
+        {
+          "say": "Bigger is better, but only if it's fair.",
+          "write": "fair first, then big"
+        },
+        {
+          "say": "Estimate equals sample fraction times population.",
+          "write": "fraction × population"
+        }
+      ]
+    }
+  ]
+}

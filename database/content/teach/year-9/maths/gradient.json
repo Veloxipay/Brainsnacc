@@ -1,0 +1,1364 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Gradient",
+  "frames": [
+    {
+      "heading": "What is gradient?",
+      "lines": [
+        {
+          "say": "Gradient is a number that measures how steep a line is.",
+          "write": "Gradient = steepness"
+        },
+        {
+          "say": "It also tells you which way the line slopes.",
+          "write": "m"
+        },
+        {
+          "say": "Think of a staircase. Steepness is the height of a step over its depth.",
+          "write": "height ÷ depth"
+        }
+      ]
+    },
+    {
+      "heading": "Rise over run",
+      "lines": [
+        {
+          "say": "Here's a line through (−1, −2) and (3, 4).",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Line through (−1, −2) and (3, 4)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 182.5,
+                "x2": 520,
+                "y2": 182.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 188.5,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 66.7,
+                "y": 280.0,
+                "x2": 466.7,
+                "y2": 36.2,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 120.0,
+                "y": 247.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 440.0,
+                "y": 52.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 130.0,
+                "y": 267.5,
+                "text": "(−1, −2)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 378.0,
+                "y": 56.5,
+                "text": "(3, 4)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The run is the change in x. Move right 4.",
+          "write": "run = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Run of 4 to the right",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 182.5,
+                "x2": 520,
+                "y2": 182.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 188.5,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 66.7,
+                "y": 280.0,
+                "x2": 466.7,
+                "y2": 36.2,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 120.0,
+                "y": 247.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 440.0,
+                "y": 52.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 130.0,
+                "y": 267.5,
+                "text": "(−1, −2)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 378.0,
+                "y": 56.5,
+                "text": "(3, 4)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 247.5,
+                "x2": 440.0,
+                "y2": 247.5,
+                "color": "green",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 269.5,
+                "text": "run 4",
+                "size": 16,
+                "change": "add",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The rise is the change in y. Go up 6.",
+          "write": "rise = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rise of 6 upwards",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 182.5,
+                "x2": 520,
+                "y2": 182.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 188.5,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 66.7,
+                "y": 280.0,
+                "x2": 466.7,
+                "y2": 36.2,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 120.0,
+                "y": 247.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 440.0,
+                "y": 52.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 130.0,
+                "y": 267.5,
+                "text": "(−1, −2)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 378.0,
+                "y": 56.5,
+                "text": "(3, 4)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 247.5,
+                "x2": 440.0,
+                "y2": 247.5,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 269.5,
+                "text": "run 4",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 440.0,
+                "y": 247.5,
+                "x2": 440.0,
+                "y2": 52.5,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 448.0,
+                "y": 142.0,
+                "text": "rise 6",
+                "size": 16,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Gradient is rise over run. 6 over 4 is three over two.",
+          "write": "m = 6 ÷ 4 = 3/2"
+        },
+        {
+          "say": "So the line goes up 1.5 for every 1 across.",
+          "write": "up 1.5 for every 1"
+        }
+      ]
+    },
+    {
+      "heading": "The gradient formula",
+      "lines": [
+        {
+          "say": "For any two points, subtract the y's on top and the x's on the bottom.",
+          "write": "m = (y₂ − y₁) ÷ (x₂ − x₁)"
+        },
+        {
+          "say": "Try (−3, 4) and (3, 0). The rise is 0 minus 4, which is minus 4.",
+          "write": "rise = 0 − 4 = −4",
+          "diagram": "diagrams/y9/maths/gradient-neg.svg",
+          "alt": "Line through (−3, 4) and (3, 0) with run 6 and rise −4"
+        },
+        {
+          "say": "The run is 3 minus minus 3, which is 6.",
+          "write": "run = 3 − (−3) = 6"
+        },
+        {
+          "say": "Minus 4 over 6 simplifies to minus two thirds.",
+          "write": "m = −4 ÷ 6 = −⅔"
+        },
+        {
+          "say": "The line goes down, so a negative gradient makes sense.",
+          "write": "downhill → negative ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Four kinds of slope",
+      "lines": [
+        {
+          "say": "Read left to right. Uphill is a positive gradient.",
+          "write": "uphill +",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Four lines: up is positive, down is negative, flat is zero, vertical is undefined",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 435,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 130,
+                "x2": 120,
+                "y2": 50,
+                "color": "green",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 50,
+                "x2": 255,
+                "y2": 130,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 310,
+                "y": 90,
+                "x2": 390,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 485,
+                "y": 50,
+                "x2": 485,
+                "y2": 130,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 180,
+                "text": "+",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 180,
+                "text": "−",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 180,
+                "text": "0",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 180,
+                "text": "undefined",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 215,
+                "text": "up",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 215,
+                "text": "down",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 215,
+                "text": "flat",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 215,
+                "text": "wall",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Downhill is a negative gradient.",
+          "write": "downhill −",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Four lines: up is positive, down is negative, flat is zero, vertical is undefined",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 435,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 130,
+                "x2": 120,
+                "y2": 50,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 50,
+                "x2": 255,
+                "y2": 130,
+                "color": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 310,
+                "y": 90,
+                "x2": 390,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 485,
+                "y": 50,
+                "x2": 485,
+                "y2": 130,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 180,
+                "text": "+",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 180,
+                "text": "−",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 180,
+                "text": "0",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 180,
+                "text": "undefined",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 215,
+                "text": "up",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 215,
+                "text": "down",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 215,
+                "text": "flat",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 215,
+                "text": "wall",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A flat line has a rise of 0, so its gradient is 0.",
+          "write": "flat 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Four lines: up is positive, down is negative, flat is zero, vertical is undefined",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 435,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 130,
+                "x2": 120,
+                "y2": 50,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 50,
+                "x2": 255,
+                "y2": 130,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 310,
+                "y": 90,
+                "x2": 390,
+                "y2": 90,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 485,
+                "y": 50,
+                "x2": 485,
+                "y2": 130,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 180,
+                "text": "+",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 180,
+                "text": "−",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 180,
+                "text": "0",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 180,
+                "text": "undefined",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 215,
+                "text": "up",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 215,
+                "text": "down",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 215,
+                "text": "flat",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 215,
+                "text": "wall",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A vertical line has a run of 0. You can't divide by 0, so it's undefined.",
+          "write": "wall undefined",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Four lines: up is positive, down is negative, flat is zero, vertical is undefined",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 435,
+                "y": 40,
+                "w": 100,
+                "h": 100,
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 130,
+                "x2": 120,
+                "y2": 50,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 50,
+                "x2": 255,
+                "y2": 130,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 310,
+                "y": 90,
+                "x2": 390,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 485,
+                "y": 50,
+                "x2": 485,
+                "y2": 130,
+                "color": "purple",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 180,
+                "text": "+",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 180,
+                "text": "−",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 180,
+                "text": "0",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 180,
+                "text": "undefined",
+                "size": 22,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 215,
+                "text": "up",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 215,
+                "text": "down",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 215,
+                "text": "flat",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 485,
+                "y": 215,
+                "text": "wall",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Ignore the sign to compare steepness. Minus 3 is steeper than 2.",
+          "write": "|−3| > |2|"
+        }
+      ]
+    },
+    {
+      "heading": "Gradient as a rate",
+      "lines": [
+        {
+          "say": "A tank holds 200 litres. After 8 minutes it holds 80 litres.",
+          "write": "(0, 200) and (8, 80)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Volume of water in a tank falling from 200 L to 80 L over 8 minutes",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70,
+                "y": 270,
+                "x2": 70,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 290,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 25,
+                "text": "L",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 70.0,
+                "y": 42.7,
+                "x2": 430.0,
+                "y2": 179.1,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 70.0,
+                "y": 42.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 430.0,
+                "y": 179.1,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 78.0,
+                "y": 34.7,
+                "text": "(0, 200)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 438.0,
+                "y": 171.1,
+                "text": "(8, 80)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The rise is 80 minus 200, which is minus 120 litres.",
+          "write": "rise = −120 L",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Volume of water in a tank falling from 200 L to 80 L over 8 minutes",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 70,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 70,
+                "y": 270,
+                "x2": 70,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 290,
+                "text": "min",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 25,
+                "text": "L",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 70.0,
+                "y": 42.7,
+                "x2": 430.0,
+                "y2": 179.1,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 70.0,
+                "y": 42.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 430.0,
+                "y": 179.1,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 78.0,
+                "y": 34.7,
+                "text": "(0, 200)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 438.0,
+                "y": 171.1,
+                "text": "(8, 80)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 70.0,
+                "y": 42.7,
+                "x2": 430.0,
+                "y2": 42.7,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 250.0,
+                "y": 34.7,
+                "text": "run 8 min",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 430.0,
+                "y": 42.7,
+                "x2": 430.0,
+                "y2": 179.1,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 438.0,
+                "y": 102.9,
+                "text": "rise −120 L",
+                "size": 16,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The run is 8 minutes. Minus 120 over 8 is minus 15.",
+          "write": "m = −15 L per minute"
+        },
+        {
+          "say": "So the tank loses 15 litres every minute. Always give the units.",
+          "write": "units: y per x"
+        }
+      ]
+    },
+    {
+      "heading": "Finding a missing coordinate",
+      "lines": [
+        {
+          "say": "The line through (2, 1) and (6, k) has gradient three over two.",
+          "write": "(k − 1) ÷ (6 − 2) = 3/2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Finding the missing coordinate k",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 254.0,
+                "x2": 520,
+                "y2": 254.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 40.0,
+                "y": 280,
+                "x2": 40.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 260.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 48.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 160.0,
+                "y": 228.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 248.0,
+                "text": "(2, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 72.0,
+                "r": 6,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 408.0,
+                "y": 64.0,
+                "text": "(6, k)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Multiply both sides by 4. k minus 1 equals 6.",
+          "write": "k − 1 = 6"
+        },
+        {
+          "say": "Add 1 to both sides. k equals 7.",
+          "write": "k = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Finding the missing coordinate k",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 254.0,
+                "x2": 520,
+                "y2": 254.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 40.0,
+                "y": 280,
+                "x2": 40.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 260.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 48.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 160.0,
+                "y": 228.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 248.0,
+                "text": "(2, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 72.0,
+                "r": 6,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 408.0,
+                "y": 64.0,
+                "text": "(6, 7)",
+                "size": 16,
+                "change": "highlight",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 228.0,
+                "x2": 400.0,
+                "y2": 72.0,
+                "color": "blue",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Points are collinear if the gradients between each pair are equal.",
+          "write": "equal m → collinear"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't put the run on top. Rise over run: y goes on top.",
+          "write": "✗ run ÷ rise"
+        },
+        {
+          "say": "Start both subtractions with the same point.",
+          "write": "same order top and bottom"
+        },
+        {
+          "say": "Bracket negatives. 3 minus minus 1 is 4, not 2.",
+          "write": "3 − (−1) = 4"
+        },
+        {
+          "say": "Negative doesn't mean gentle. Minus 3 is steeper than 2.",
+          "write": "−3 steeper than 2"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Gradient is rise over run.",
+          "write": "m = rise ÷ run"
+        },
+        {
+          "say": "Rise before you run. You stand up before you start running.",
+          "write": "y on top"
+        },
+        {
+          "say": "Uphill plus, downhill minus, flat zero, wall undefined.",
+          "write": "+  −  0  undefined"
+        },
+        {
+          "say": "On a real graph, the gradient is a rate with units.",
+          "write": "e.g. L per minute"
+        }
+      ]
+    }
+  ]
+}

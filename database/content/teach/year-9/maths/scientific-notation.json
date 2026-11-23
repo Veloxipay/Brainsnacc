@@ -1,0 +1,550 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Scientific notation",
+  "frames": [
+    {
+      "heading": "A sliding decimal point",
+      "lines": [
+        {
+          "say": "Think of the decimal point riding a zip line. The digits stay still.",
+          "write": "the point slides"
+        },
+        {
+          "say": "A positive index slides it right. The number gets bigger.",
+          "write": "+ → right, bigger"
+        },
+        {
+          "say": "A negative index slides it left. The number gets smaller.",
+          "write": "− → left, smaller"
+        }
+      ]
+    },
+    {
+      "heading": "What it looks like",
+      "lines": [
+        {
+          "say": "Scientific notation is a times 10 to the n.",
+          "write": "a × 10ⁿ"
+        },
+        {
+          "say": "a is at least 1 and less than 10. n is an integer.",
+          "write": "1 ≤ a < 10"
+        },
+        {
+          "say": "4.5 times 10 to the 4 is fine. 45 times 10 cubed is not.",
+          "write": "✓ 4.5 × 10⁴   ✗ 45 × 10³",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 170,
+            "alt": "4.5 × 10⁴ is in scientific notation; 45 × 10³ is not",
+            "items": [
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 80,
+                "text": "4.5 × 10⁴",
+                "size": 34,
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 130,
+                "text": "1 ≤ 4.5 < 10 ✓",
+                "size": 18,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 80,
+                "text": "45 × 10³",
+                "size": 34,
+                "change": "remove",
+                "bold": true,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 130,
+                "text": "45 is too big",
+                "size": 18,
+                "change": "add",
+                "color": "red"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Large numbers",
+      "lines": [
+        {
+          "say": "Write 45 000. Put the point after the first digit: 4.5.",
+          "write": "4.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "45000 with the point after the 4",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "circle",
+                "x": 212.0,
+                "y": 120,
+                "r": 7,
+                "fill": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Count the places back to 45 000. It's 4 places right.",
+          "write": "45 000 = 4.5 × 10⁴",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "The point slides 4 places right",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "circle",
+                "x": 212.0,
+                "y": 120,
+                "r": 7,
+                "fill": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 388.0,
+                "y": 120,
+                "r": 7,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 212.0,
+                "y": 160,
+                "x2": 388.0,
+                "y2": 160,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "4 places right → 10⁴",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "3.71 times 10 to the 6: slide 6 places right, filling with zeros.",
+          "write": "3 710 000"
+        }
+      ]
+    },
+    {
+      "heading": "Small numbers",
+      "lines": [
+        {
+          "say": "Write 0.0007. The first non-zero digit is 7.",
+          "write": "a = 7"
+        },
+        {
+          "say": "From 7 back to 0.0007, the point moves 4 places left.",
+          "write": "0.0007 = 7 × 10⁻⁴",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "The point slides 4 places left",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 70,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "circle",
+                "x": 388.0,
+                "y": 120,
+                "r": 7,
+                "fill": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 212.0,
+                "y": 120,
+                "r": 7,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 388.0,
+                "y": 160,
+                "x2": 212.0,
+                "y2": 160,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "4 places left → 10⁻⁴",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Count the moves, not the zeros. There are only 3 zeros after the point.",
+          "write": "moves, not zeros"
+        },
+        {
+          "say": "Numbers less than 1 always have a negative index.",
+          "write": "small → negative"
+        }
+      ]
+    },
+    {
+      "heading": "Comparing",
+      "lines": [
+        {
+          "say": "Compare the powers of 10 first.",
+          "write": "compare the index first"
+        },
+        {
+          "say": "1.2 times 10 to the minus 2 is bigger than 9.9 times 10 to the minus 4.",
+          "write": "10⁻² > 10⁻⁴",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 210,
+            "alt": "Comparing 1.2 × 10⁻² and 9.9 × 10⁻⁴ by their indices",
+            "items": [
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 80,
+                "text": "1.2 × 10⁻²",
+                "size": 32,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 80,
+                "text": "9.9 × 10⁻⁴",
+                "size": 32,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 130,
+                "text": "index −2",
+                "size": 20,
+                "change": "highlight",
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 130,
+                "text": "index −4",
+                "size": 20,
+                "change": "highlight",
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "−2 > −4, so 1.2 × 10⁻² is bigger",
+                "size": 20,
+                "change": "add",
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Only if the indices are equal do you compare a.",
+          "write": "same index → compare a"
+        }
+      ]
+    },
+    {
+      "heading": "Multiplying and dividing",
+      "lines": [
+        {
+          "say": "Group the numbers and the powers of 10.",
+          "write": "(4 × 10⁵) × (6 × 10³)"
+        },
+        {
+          "say": "4 times 6 is 24. Add the indices: 10 to the 8.",
+          "write": "= 24 × 10⁸",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Multiplying in scientific notation and adjusting 24 to 2.4",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 50,
+                "text": "(4 × 10⁵) × (6 × 10³)",
+                "size": 28,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "= 24 × 10⁸",
+                "size": 28,
+                "change": "add",
+                "bold": true,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "24 is too big. 24 is 2.4 times 10, so the index goes up by 1.",
+          "write": "= 2.4 × 10⁹",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Multiplying in scientific notation and adjusting 24 to 2.4",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 50,
+                "text": "(4 × 10⁵) × (6 × 10³)",
+                "size": 28,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "= 24 × 10⁸",
+                "size": 28,
+                "change": "remove",
+                "bold": true,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "= 2.4 × 10⁹",
+                "size": 30,
+                "change": "add",
+                "bold": true,
+                "color": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "To divide, divide the numbers and subtract the indices.",
+          "write": "(9 × 10⁻⁴) ÷ (3 × 10²) = 3 × 10⁻⁶"
+        },
+        {
+          "say": "Calculators show 1.5E11. Write it properly as 1.5 times 10 to the 11.",
+          "write": "1.5E11 → 1.5 × 10¹¹"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "24 times 10 to the 8 isn't scientific notation. Adjust a.",
+          "write": "→ 2.4 × 10⁹"
+        },
+        {
+          "say": "Is it big or small? Small numbers need a negative index.",
+          "write": "check the sign"
+        },
+        {
+          "say": "10 to the 5 times 10 cubed is 10 to the 8. Add, don't multiply.",
+          "write": "10⁵ × 10³ = 10⁸"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "a is between 1 and 10. The index counts the slides.",
+          "write": "a × 10ⁿ"
+        },
+        {
+          "say": "Big numbers: positive index. Small numbers: negative index.",
+          "write": "big +,  small −"
+        },
+        {
+          "say": "Multiply: multiply the a's and add the indices, then adjust.",
+          "write": "× a's, + indices"
+        }
+      ]
+    }
+  ]
+}

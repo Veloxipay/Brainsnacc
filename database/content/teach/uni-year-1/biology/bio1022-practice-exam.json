@@ -1,0 +1,65 @@
+{"level":"Uni Year 1","subject":"biology","title":"BIO1022 practice exam","frames":[
+{"heading":"How to sit this practice exam","lines":[
+{"say":"This exam covers all of BIO1022. Most marks come from applying ideas to data.","write":"apply, don't just recall"},
+{"say":"Two hours, closed book. About 40 minutes for multiple choice, 80 for short answers.","write":"40 min MCQ · 80 min short","draw":{"type":"shapes","width":560,"height":200,"alt":"Time split: 40 minutes MCQ, 80 minutes short answer","items":[
+{"kind":"rect","x":20,"y":60,"w":173,"h":70,"fill":"blue","label":"MCQ 40 min"},
+{"kind":"rect","x":193,"y":60,"w":347,"h":70,"fill":"orange","label":"Short answer 80 min","change":"highlight"},
+{"kind":"text","x":280,"y":175,"text":"40 marks, about 1.5 minutes per mark","size":18,"anchor":"middle"}]}},
+{"say":"Write your short answers on paper first, before reading the solutions.","write":"short answers first"},
+{"say":"Evaluate means judge strengths and weaknesses. Calculate means show every step and units.","write":"evaluate · calculate"}]},
+{"heading":"Classifying an unknown animal","lines":[
+{"say":"The blastopore becomes the mouth. So it's a protostome.","write":"mouth first → protostome"},
+{"say":"A cavity fully lined by mesoderm is a true coelom.","write":"true coelom"},
+{"say":"Jointed legs and a moulted cuticle. That's Arthropoda, in the Ecdysozoa.","write":"Arthropoda · Ecdysozoa","draw":{"type":"shapes","width":560,"height":240,"alt":"Decision path from bilateral to protostome to Ecdysozoa to Arthropoda","items":[
+{"kind":"rect","x":10,"y":90,"w":120,"h":60,"fill":"teal","label":"bilateral"},
+{"kind":"arrow","x":130,"y":120,"x2":150,"y2":120,"color":"black"},
+{"kind":"rect","x":150,"y":90,"w":120,"h":60,"fill":"blue","label":"protostome"},
+{"kind":"arrow","x":270,"y":120,"x2":290,"y2":120,"color":"black"},
+{"kind":"rect","x":290,"y":90,"w":120,"h":60,"fill":"purple","label":"Ecdysozoa","change":"add"},
+{"kind":"arrow","x":410,"y":120,"x2":430,"y2":120,"color":"black","change":"add"},
+{"kind":"rect","x":430,"y":90,"w":120,"h":60,"fill":"orange","label":"Arthropoda","change":"highlight"}]}}]},
+{"heading":"Osmoregulation and temperature","lines":[
+{"say":"Freshwater fish gain water by osmosis, so they make lots of dilute urine.","write":"freshwater fish: dilute urine"},
+{"say":"Birds excrete uric acid. It's non-toxic, nearly insoluble, and costs little water.","write":"uric acid: low water, safe in egg"},
+{"say":"At 10 degrees, a mouse uses about five times more oxygen per gram than a lizard.","write":"mouse ≈ 5 × lizard O₂"},
+{"say":"The mouse is an endotherm, making heat to stay near 37. The lizard just cools down.","write":"endotherm vs ectotherm","draw":{"type":"shapes","width":560,"height":240,"alt":"Mouse stays at 37 degrees using lots of oxygen; lizard cools to 10 degrees","items":[
+{"kind":"rect","x":60,"y":40,"w":140,"h":160,"fill":"red","label":"mouse 37 °C"},
+{"kind":"rect","x":340,"y":40,"w":140,"h":160,"fill":"orange","label":"lizard","change":"remove"},
+{"kind":"rect","x":340,"y":150,"w":140,"h":50,"fill":"blue","label":"10 °C","change":"add"},
+{"kind":"text","x":280,"y":230,"text":"heat made by metabolism costs O₂","size":16,"anchor":"middle"}]}}]},
+{"heading":"Population growth","lines":[
+{"say":"60 rabbits, r is 0.6, for 4 years. 60 times e to the 2.4.","write":"Nₜ = 60 × e²·⁴"},
+{"say":"That's 60 times 11.02. About 661 rabbits.","write":"≈ 661 rabbits"},
+{"say":"Logistic growth at 1500: 0.6 times 1500, times 500 over 2000.","write":"dN/dt = rN(K − N)/K"},
+{"say":"That's 225 rabbits per year.","write":"= 225 per year"},
+{"say":"Growth is fastest at half of K, which is 1000. The rate is r K over 4, so 300.","write":"K/2 = 1000 → 300 per year","draw":{"type":"shapes","width":560,"height":260,"alt":"S-shaped logistic curve with steepest point at K/2","items":[
+{"kind":"line","x":40,"y":230,"x2":540,"y2":230,"color":"black"},
+{"kind":"line","x":40,"y":230,"x2":40,"y2":20,"color":"black"},
+{"kind":"line","x":40,"y":40,"x2":540,"y2":40,"color":"grey","dashed":true},
+{"kind":"text","x":535,"y":32,"text":"K = 2000","size":16,"anchor":"end"},
+{"kind":"line","x":40,"y":220,"x2":200,"y2":190,"color":"blue"},
+{"kind":"line","x":200,"y":190,"x2":320,"y2":80,"color":"blue"},
+{"kind":"line","x":320,"y":80,"x2":530,"y2":45,"color":"blue"},
+{"kind":"circle","x":260,"y":135,"r":10,"fill":"red","change":"highlight"},
+{"kind":"text","x":280,"y":150,"text":"K/2: fastest","size":16,"change":"add"}]}},
+{"say":"Drought kills 40 percent at any density. Disease spreads faster when crowded.","write":"drought DI · disease DD"}]},
+{"heading":"Coevolution and disease","lines":[
+{"say":"More toxic newts go with more resistant snakes. A positive correlation.","write":"toxin ↔ resistance"},
+{"say":"Each side selects the other. That's an arms race. Region C is a hotspot.","write":"arms race"},
+{"say":"But correlation isn't cause. Show resistance is heritable to make the case.","write":"correlation ≠ cause"},
+{"say":"R nought is 4. The herd immunity threshold is 1 minus a quarter.","write":"1 − 1/R₀ = 1 − 1/4"},
+{"say":"So 75 percent of people must be immune.","write":"= 75%","draw":{"type":"shapes","width":560,"height":180,"alt":"Bar with 75 percent immune","items":[
+{"kind":"rect","x":20,"y":50,"w":390,"h":70,"fill":"green","label":"immune 75%","change":"add"},
+{"kind":"rect","x":410,"y":50,"w":130,"h":70,"fill":"grey","label":"25%"}]}}]},
+{"heading":"Immunity questions","lines":[
+{"say":"Neutralising antibodies block the virus from attaching to host cell receptors.","write":"neutralise: block entry"},
+{"say":"The first dose makes memory cells. The second dose triggers a faster, bigger response.","write":"memory → secondary response"},
+{"say":"Lose helper T cells, and B cells can't be activated. Antibodies fall.","write":"no CD4⁺ → fewer antibodies","draw":{"type":"shapes","width":560,"height":240,"alt":"Helper T cell removed: B cells and cytotoxic T cells lose activation","items":[
+{"kind":"circle","x":280,"y":70,"r":45,"fill":"blue","label":"CD4⁺","change":"remove"},
+{"kind":"circle","x":120,"y":180,"r":45,"fill":"orange","label":"B cell"},
+{"kind":"circle","x":440,"y":180,"r":45,"fill":"red","label":"CD8⁺"},
+{"kind":"arrow","x":245,"y":100,"x2":160,"y2":150,"color":"black"},
+{"kind":"arrow","x":315,"y":100,"x2":400,"y2":150,"color":"black"}]}},
+{"say":"Cytotoxic T cells also need helper cytokines, so infected cells survive longer.","write":"fewer CD8⁺ killers"},
+{"say":"Innate defences, like skin, phagocytes and NK cells, still work. They don't need T cells.","write":"innate still works"}]}
+]}

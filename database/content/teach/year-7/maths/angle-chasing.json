@@ -1,0 +1,96 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Angle chasing",
+  "frames": [
+    { "heading": "What is angle chasing?",
+      "lines": [
+        { "say": "Angle chasing is like a treasure hunt. Each angle you find is a clue to the next.", "write": "clue → clue → answer" },
+        { "say": "Every step uses one rule, and you write the reason in brackets.", "write": "angle = … (reason)" },
+        { "say": "Straight line, 180. Around a point, 360. Vertically opposite angles are equal.", "write": "180, 360, vert. opp. equal" },
+        { "say": "With parallel lines, F and Z angles are equal. C angles add to 180.", "write": "F, Z equal;  C adds to 180" },
+        { "say": "Angles in a triangle add to 180.", "write": "triangle: 180°" }
+      ] },
+    { "heading": "Isosceles triangles",
+      "lines": [
+        { "say": "Tick marks show equal sides. Equal sides mean equal base angles.", "write": "ticks → equal base angles",
+          "diagram": "diagrams/y7/maths-advanced/angle-chasing-iso.svg", "alt": "Isosceles triangle with apex 40 degrees and base angles 70 degrees" },
+        { "say": "If the apex is 40 degrees, each base angle is 180 minus 40, halved. That's 70.", "write": "(180 − 40) ÷ 2 = 70°" },
+        { "say": "The equal angles sit opposite the equal sides. Not next to the apex.", "write": "opposite the ticked sides" }
+      ] },
+    { "heading": "The exterior angle shortcut",
+      "lines": [
+        { "say": "Extend one side of a triangle. The angle outside is an exterior angle.", "write": "exterior angle",
+          "diagram": "diagrams/y7/maths-advanced/angle-chasing-ext.svg", "alt": "Triangle with side extended; exterior angle equals a plus b" },
+        { "say": "It equals the two inside angles that aren't next to it.", "write": "exterior = a + b" },
+        { "say": "Both the straight line and the triangle make 180. Remove the shared angle and a plus b is left.", "write": "outside = the other two inside" }
+      ] },
+    { "heading": "A two-step chase",
+      "lines": [
+        { "say": "A B equals A C, and the apex is 52 degrees. B C is extended to D.", "write": "AB = AC, ∠A = 52°",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Isosceles triangle ABC with apex 52 degrees, BC extended to D", "items": [
+            {"kind": "polygon", "points": [[160, 270], [320, 270], [240, 106]], "fill": "blue"},
+            {"kind": "line", "x": 320, "y": 270, "x2": 500, "y2": 270},
+            {"kind": "text", "x": 240, "y": 95, "text": "A", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 145, "y": 290, "text": "B", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 320, "y": 295, "text": "C", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 500, "y": 295, "text": "D", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 240, "y": 150, "text": "52°", "size": 18, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 370, "y": 255, "text": "?", "size": 24, "bold": true, "color": "red"}]}},
+        { "say": "Step 1. The base angles are equal. 180 minus 52 is 128. Half is 64.", "write": "∠B = ∠ACB = 64° (isosceles)",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Base angles of 64 degrees added", "items": [
+            {"kind": "polygon", "points": [[160, 270], [320, 270], [240, 106]], "fill": "blue"},
+            {"kind": "line", "x": 320, "y": 270, "x2": 500, "y2": 270},
+            {"kind": "text", "x": 240, "y": 95, "text": "A", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 145, "y": 290, "text": "B", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 320, "y": 295, "text": "C", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 500, "y": 295, "text": "D", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 240, "y": 150, "text": "52°", "size": 18, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 195, "y": 258, "text": "64°", "size": 18, "anchor": "middle", "color": "yellow", "change": "add"},
+            {"kind": "text", "x": 285, "y": 258, "text": "64°", "size": 18, "anchor": "middle", "color": "yellow", "change": "add"},
+            {"kind": "text", "x": 370, "y": 255, "text": "?", "size": 24, "bold": true, "color": "red"}]}},
+        { "say": "Step 2. Straight line at C. 180 minus 64 is 116.", "write": "∠ACD = 116° (straight line)",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Exterior angle ACD of 116 degrees found", "items": [
+            {"kind": "polygon", "points": [[160, 270], [320, 270], [240, 106]], "fill": "blue"},
+            {"kind": "line", "x": 320, "y": 270, "x2": 500, "y2": 270},
+            {"kind": "text", "x": 240, "y": 95, "text": "A", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 145, "y": 290, "text": "B", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 320, "y": 295, "text": "C", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 500, "y": 295, "text": "D", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 240, "y": 150, "text": "52°", "size": 18, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 195, "y": 258, "text": "64°", "size": 18, "anchor": "middle", "color": "yellow"},
+            {"kind": "text", "x": 285, "y": 258, "text": "64°", "size": 18, "anchor": "middle", "color": "yellow"},
+            {"kind": "text", "x": 375, "y": 255, "text": "116°", "size": 22, "bold": true, "color": "green", "change": "highlight"}]}},
+        { "say": "Check with the shortcut. 52 plus 64 is 116. It matches.", "write": "52 + 64 = 116 ✓" }
+      ] },
+    { "heading": "Construction lines",
+      "lines": [
+        { "say": "Sometimes no rule links the angles. Then draw your own extra line.", "write": "construction line" },
+        { "say": "A line bends at E between two parallel lines. 41 degrees at A, 33 at C.", "write": "∠BAE = 41°, ∠DCE = 33°",
+          "diagram": "diagrams/y7/maths-advanced/angle-chasing-ex2.svg", "alt": "Parallel lines with a bent line through E" },
+        { "say": "Draw a dashed line through E, parallel to both. Now you see two Z shapes.", "write": "two Z shapes",
+          "diagram": "diagrams/y7/maths-advanced/angle-chasing-bent.svg", "alt": "Dashed parallel line through the bend splits it into p and q" },
+        { "say": "The top part is 41, the bottom part is 33. Alternate angles.", "write": "41 + 33 = 74°" },
+        { "say": "Bent line equals add. So angle A E C is 74 degrees.", "write": "∠AEC = 74°" }
+      ] },
+    { "heading": "Chasing with algebra",
+      "lines": [
+        { "say": "Angle A is x, angle B is 2x. The exterior angle at C is 132.", "write": "x + 2x = 132",
+          "diagram": "diagrams/y7/maths-advanced/angle-chasing-ex4.svg", "alt": "Triangle with angles x and 2x and exterior angle 132 degrees" },
+        { "say": "3x equals 132, so x equals 44.", "write": "3x = 132 → x = 44" },
+        { "say": "So angle A is 44 and angle B is 88. Angle A C B is 180 minus 132, which is 48.", "write": "44°, 88°, 48°" },
+        { "say": "Check. 44 plus 88 plus 48 is 180.", "write": "44 + 88 + 48 = 180 ✓" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Only use F, Z or C if the lines are marked parallel.", "write": "arrows → parallel" },
+        { "say": "Don't add the exterior angle into the triangle's 180.", "write": "exterior is outside" },
+        { "say": "Reread the question. Don't stop at x if it asks for an angle.", "write": "answer what's asked" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Clue to clue. Write every angle on the diagram.", "write": "mark every angle" },
+        { "say": "Bent line between parallels equals add.", "write": "bent line = add" },
+        { "say": "Outside equals the other two inside.", "write": "exterior = a + b" },
+        { "say": "Ticks talk. Equal sides mean equal opposite angles.", "write": "ticks talk" }
+      ] }
+  ]
+}

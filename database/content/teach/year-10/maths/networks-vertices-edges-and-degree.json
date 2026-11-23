@@ -1,0 +1,1349 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Networks: vertices, edges and degree",
+  "frames": [
+    {
+      "heading": "Vertices and edges",
+      "lines": [
+        {
+          "say": "A network is dots joined by lines.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The dots are vertices. The lines are edges.",
+          "write": "vertices • , edges —"
+        },
+        {
+          "say": "An edge can be curved. Only what it joins matters."
+        },
+        {
+          "say": "B and C are joined by two edges. These are multiple edges.",
+          "write": "multiple edges",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The edge at D starts and ends at D. That's a loop.",
+          "write": "loop",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "change": "highlight",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "No loops and no multiple edges? That's a simple network.",
+          "write": "simple network"
+        }
+      ]
+    },
+    {
+      "heading": "Degree",
+      "lines": [
+        {
+          "say": "The degree of a vertex is the number of edge-ends that meet it.",
+          "write": "degree = edge-ends"
+        },
+        {
+          "say": "A meets three edges. So its degree is 3.",
+          "write": "deg(A) = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "D meets two edges and a loop. A loop has two ends, so it adds 2.",
+          "write": "deg(D) = 1 + 1 + 2 = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "change": "highlight",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "change": "highlight",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Here are all the degrees.",
+          "write": "3, 3, 4, 4, 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 156,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 436,
+                "y": 76,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 276,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 292,
+                "text": "2",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A vertex with degree 0 is isolated.",
+          "write": "degree 0 → isolated"
+        },
+        {
+          "say": "Connected means you can travel from any vertex to any other.",
+          "write": "connected"
+        }
+      ]
+    },
+    {
+      "heading": "The handshaking rule",
+      "lines": [
+        {
+          "say": "Every edge has two ends. So each edge adds 2 to the total degree.",
+          "write": "sum of degrees = 2 × edges"
+        },
+        {
+          "say": "Here the degrees add to 16.",
+          "write": "3 + 3 + 4 + 4 + 2 = 16",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Network with vertices A to E, two edges between B and C, and a loop at D",
+            "items": [
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 240,
+                "y2": 50,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 42,
+                "x2": 400,
+                "y2": 72,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 58,
+                "x2": 400,
+                "y2": 88,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 80,
+                "x2": 420,
+                "y2": 240,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 240,
+                "x2": 200,
+                "y2": 250,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 250,
+                "x2": 100,
+                "y2": 150,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 150,
+                "x2": 400,
+                "y2": 80,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 442,
+                "y": 266,
+                "r": 22,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 50,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 80,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 240,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 250,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 156,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 436,
+                "y": 76,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 276,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 292,
+                "text": "2",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "There are 8 edges, including the loop. Two times 8 is 16.",
+          "write": "2 × 8 = 16 ✓"
+        },
+        {
+          "say": "The total is always even. So odd vertices come in pairs.",
+          "write": "even number of odd vertices"
+        },
+        {
+          "say": "Degrees 3, 3, 2 and 1 add to 9. That's odd, so it's impossible.",
+          "write": "3 + 3 + 2 + 1 = 9 ✗"
+        }
+      ]
+    },
+    {
+      "heading": "Adjacency matrices",
+      "lines": [
+        {
+          "say": "An adjacency matrix counts the edges between each pair of vertices.",
+          "diagram": "diagrams/y10/maths/networks-vertices-edges-and-degree-matrix.svg",
+          "alt": "Network with vertices P, Q, R, S"
+        },
+        {
+          "say": "Q and S are joined by two edges. So row Q, column S is 2.",
+          "write": "Q–S: 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Adjacency matrix for P, Q, R, S",
+            "items": [
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 40,
+                "text": "P",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 40,
+                "text": "Q",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 40,
+                "text": "R",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 40,
+                "text": "S",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 90,
+                "text": "P",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 140,
+                "text": "Q",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 190,
+                "text": "R",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 240,
+                "text": "S",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 90,
+                "text": "0",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 90,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 90,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 90,
+                "text": "0",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 140,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 140,
+                "text": "0",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 140,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 140,
+                "text": "2",
+                "size": 22,
+                "color": "black",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 190,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 190,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 190,
+                "text": "0",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 190,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 240,
+                "text": "0",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 240,
+                "text": "2",
+                "size": 22,
+                "color": "black",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 240,
+                "text": "1",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 240,
+                "text": "0",
+                "size": 22,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The matrix is symmetric. Row Q, column S equals row S, column Q.",
+          "write": "symmetric"
+        },
+        {
+          "say": "With no loops, each row adds to that vertex's degree.",
+          "write": "row Q: 1 + 0 + 1 + 2 = 4"
+        }
+      ]
+    },
+    {
+      "heading": "Euler's formula",
+      "lines": [
+        {
+          "say": "A planar network can be drawn with no edges crossing.",
+          "write": "planar"
+        },
+        {
+          "say": "Its edges split the page into faces. The outside counts too.",
+          "diagram": "diagrams/y10/maths/networks-vertices-edges-and-degree-faces.svg",
+          "alt": "Planar network with 6 vertices, 9 edges and 5 faces"
+        },
+        {
+          "say": "For a connected planar network, v minus e plus f equals 2.",
+          "write": "v − e + f = 2"
+        },
+        {
+          "say": "Here, 6 minus 9 plus 5 is 2.",
+          "write": "6 − 9 + 5 = 2 ✓"
+        },
+        {
+          "say": "8 vertices and 12 edges? Then f is 6, including the outside.",
+          "write": "8 − 12 + f = 2 → f = 6"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "A loop counts 2, not 1.",
+          "write": "loop → +2"
+        },
+        {
+          "say": "Count every multiple edge separately."
+        },
+        {
+          "say": "Edges equal the sum of degrees divided by 2.",
+          "write": "edges = sum ÷ 2"
+        },
+        {
+          "say": "Don't forget the outside face."
+        },
+        {
+          "say": "Position doesn't matter. Only the connections do."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Every edge has two ends.",
+          "write": "sum of degrees = 2e"
+        },
+        {
+          "say": "Odd vertices come in pairs.",
+          "write": "odd vertices: even count"
+        },
+        {
+          "say": "Very Easy Fun equals 2.",
+          "write": "v − e + f = 2"
+        },
+        {
+          "say": "Tick each edge as you count it.",
+          "write": "tick as you count"
+        }
+      ]
+    }
+  ]
+}

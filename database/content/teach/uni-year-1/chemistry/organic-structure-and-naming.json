@@ -1,0 +1,147 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Organic structure and naming",
+  "frames": [
+    {
+      "heading": "Skeletal structures",
+      "lines": [
+        {"say": "In a skeletal structure, every corner and line end is a carbon.", "write": "corner or end = C",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Zig-zag of four carbons with OH on the second carbon: butan-2-ol", "items": [
+           {"kind": "line", "x": 100, "y": 150, "x2": 200, "y2": 90, "color": "black"},
+           {"kind": "line", "x": 200, "y": 90, "x2": 300, "y2": 150, "color": "black"},
+           {"kind": "line", "x": 300, "y": 150, "x2": 400, "y2": 90, "color": "black"},
+           {"kind": "line", "x": 200, "y": 90, "x2": 200, "y2": 40, "color": "black"},
+           {"kind": "text", "x": 200, "y": 32, "text": "OH", "size": 22, "bold": true, "color": "red"},
+           {"kind": "text", "x": 280, "y": 205, "text": "butan-2-ol", "size": 22}
+         ]}},
+        {"say": "Hydrogens on carbon are hidden. Each carbon wants four bonds.", "write": "end CH₃, 2 lines CH₂, 3 lines CH",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Same skeleton with the hidden hydrogens written in at each carbon", "items": [
+           {"kind": "line", "x": 100, "y": 150, "x2": 200, "y2": 90, "color": "black"},
+           {"kind": "line", "x": 200, "y": 90, "x2": 300, "y2": 150, "color": "black"},
+           {"kind": "line", "x": 300, "y": 150, "x2": 400, "y2": 90, "color": "black"},
+           {"kind": "line", "x": 200, "y": 90, "x2": 200, "y2": 40, "color": "black"},
+           {"kind": "text", "x": 200, "y": 32, "text": "OH", "size": 22, "bold": true, "color": "red"},
+           {"kind": "text", "x": 80, "y": 175, "text": "CH₃", "size": 20, "color": "blue", "change": "add"},
+           {"kind": "text", "x": 240, "y": 100, "text": "CH", "size": 20, "color": "blue", "change": "add"},
+           {"kind": "text", "x": 300, "y": 180, "text": "CH₂", "size": 20, "color": "blue", "change": "add"},
+           {"kind": "text", "x": 430, "y": 90, "text": "CH₃", "size": 20, "color": "blue", "change": "add"}
+         ]}},
+        {"say": "Heteroatoms, and any H on them, are always drawn.", "write": "always draw O–H, N–H"},
+        {"say": "Structural isomers differ in connections. Stereoisomers differ in 3D arrangement.", "write": "structural vs stereo"}
+      ]
+    },
+    {
+      "heading": "The naming recipe",
+      "lines": [
+        {"say": "Find the principal group. It becomes the suffix.", "write": "1. principal group"},
+        {"say": "Find the longest chain that contains it.", "write": "2. parent chain"},
+        {"say": "Number to give the principal group the lowest locant.", "write": "3. lowest locant"},
+        {"say": "Add other groups as prefixes in alphabetical order. Ignore di and tri.", "write": "4. prefixes A → Z"},
+        {"say": "People Prefer Using Suffixes: prefixes, parent, unsaturation, suffix.", "write": "4-chloropent-2-ene"}
+      ]
+    },
+    {
+      "heading": "Who gets the suffix?",
+      "lines": [
+        {"say": "Acids Eat Amides, Nice Aldehydes Kill All Amines.", "write": "acid > ester > amide > nitrile",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Ladder of functional group priority from carboxylic acid at the top to amine", "items": [
+           {"kind": "rect", "x": 40, "y": 20, "w": 200, "h": 40, "fill": "red", "label": "acid  -oic acid"},
+           {"kind": "rect", "x": 40, "y": 65, "w": 200, "h": 40, "fill": "orange", "label": "ester  -oate"},
+           {"kind": "rect", "x": 40, "y": 110, "w": 200, "h": 40, "fill": "yellow", "label": "amide  -amide"},
+           {"kind": "rect", "x": 40, "y": 155, "w": 200, "h": 40, "fill": "green", "label": "nitrile  -nitrile"},
+           {"kind": "rect", "x": 300, "y": 20, "w": 200, "h": 40, "fill": "teal", "label": "aldehyde  -al"},
+           {"kind": "rect", "x": 300, "y": 65, "w": 200, "h": 40, "fill": "blue", "label": "ketone  -one"},
+           {"kind": "rect", "x": 300, "y": 110, "w": 200, "h": 40, "fill": "purple", "label": "alcohol  -ol"},
+           {"kind": "rect", "x": 300, "y": 155, "w": 200, "h": 40, "fill": "grey", "label": "amine  -amine"},
+           {"kind": "text", "x": 280, "y": 235, "text": "highest wins the suffix", "size": 20, "bold": true}
+         ]}},
+        {"say": "Then aldehyde, ketone, alcohol and amine.", "write": "> aldehyde > ketone > ol > amine"},
+        {"say": "The losers become prefixes. HOCH two CH two COOH is 3-hydroxypropanoic acid.", "write": "3-hydroxypropanoic acid"},
+        {"say": "Acid, aldehyde, amide and nitrile carbons are always C1. No locant needed.", "write": "butanal, not butan-1-al"},
+        {"say": "Esters: alcohol part first, then the acid part.", "write": "ethyl ethanoate"}
+      ]
+    },
+    {
+      "heading": "Chirality",
+      "lines": [
+        {"say": "A carbon with four different groups is a stereocentre.", "write": "4 different groups",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Two mirror-image stereocentres either side of a dashed mirror line", "items": [
+           {"kind": "circle", "x": 150, "y": 120, "r": 24, "fill": "grey", "label": "C"},
+           {"kind": "circle", "x": 150, "y": 45, "r": 18, "fill": "red", "label": "a"},
+           {"kind": "circle", "x": 80, "y": 160, "r": 18, "fill": "blue", "label": "b"},
+           {"kind": "circle", "x": 220, "y": 160, "r": 18, "fill": "green", "label": "c"},
+           {"kind": "line", "x": 280, "y": 20, "x2": 280, "y2": 220, "color": "grey", "dashed": true},
+           {"kind": "circle", "x": 410, "y": 120, "r": 24, "fill": "grey", "label": "C", "change": "add"},
+           {"kind": "circle", "x": 410, "y": 45, "r": 18, "fill": "red", "label": "a", "change": "add"},
+           {"kind": "circle", "x": 480, "y": 160, "r": 18, "fill": "blue", "label": "b", "change": "add"},
+           {"kind": "circle", "x": 340, "y": 160, "r": 18, "fill": "green", "label": "c", "change": "add"},
+           {"kind": "text", "x": 280, "y": 235, "text": "mirror", "size": 16}
+         ]}},
+        {"say": "Its mirror image won't stack on it, like your hands. Those are enantiomers.", "write": "enantiomers"},
+        {"say": "Enantiomers rotate plane-polarised light equally, in opposite directions.", "write": "optical activity"},
+        {"say": "A 50 50 mix is racemic, and shows no rotation.", "write": "racemic: no rotation"},
+        {"say": "Stereoisomers that aren't mirror images are diastereomers.", "write": "n centres → ≤ 2ⁿ isomers"}
+      ]
+    },
+    {
+      "heading": "Assigning R and S",
+      "lines": [
+        {"say": "Rank the groups by atomic number. Bromine beats chlorine beats oxygen.", "write": "Br > Cl > O > N > C > H"},
+        {"say": "Tie? Move outwards to the first point of difference.", "write": "first point of difference"},
+        {"say": "Point group four away. Trace one, two, three like a steering wheel.", "write": "clockwise R, anticlockwise S",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Priorities 1, 2, 3 traced anticlockwise giving S", "items": [
+           {"kind": "circle", "x": 280, "y": 120, "r": 90, "fill": "none"},
+           {"kind": "circle", "x": 280, "y": 30, "r": 22, "fill": "red", "label": "1"},
+           {"kind": "circle", "x": 202, "y": 165, "r": 22, "fill": "orange", "label": "2"},
+           {"kind": "circle", "x": 358, "y": 165, "r": 22, "fill": "blue", "label": "3"},
+           {"kind": "arrow", "x": 250, "y": 40, "x2": 200, "y2": 135, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 470, "y": 130, "text": "S", "size": 36, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 90, "y": 60, "text": "4 away", "size": 18}
+         ]}},
+        {"say": "If group four is on a wedge, flip your answer.", "write": "4 on wedge → flip"},
+        {"say": "R and S are labels. They don't tell you which way light rotates.", "write": "R ≠ clockwise rotation"}
+      ]
+    },
+    {
+      "heading": "E and Z alkenes",
+      "lines": [
+        {"say": "A C=C can't rotate. So two different groups on each carbon give two isomers.", "write": "restricted rotation"},
+        {"say": "Rank the two groups on each carbon. Z is ze zame zide.", "write": "Z: same side",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Alkene with higher priority groups on the same side (Z), then moved to opposite sides (E)", "items": [
+           {"kind": "line", "x": 200, "y": 115, "x2": 360, "y2": 115, "color": "black"},
+           {"kind": "line", "x": 200, "y": 125, "x2": 360, "y2": 125, "color": "black"},
+           {"kind": "circle", "x": 130, "y": 60, "r": 24, "fill": "red", "label": "hi"},
+           {"kind": "circle", "x": 130, "y": 180, "r": 18, "fill": "grey", "label": "lo"},
+           {"kind": "circle", "x": 430, "y": 60, "r": 24, "fill": "red", "label": "hi"},
+           {"kind": "circle", "x": 430, "y": 180, "r": 18, "fill": "grey", "label": "lo"},
+           {"kind": "line", "x": 200, "y": 120, "x2": 150, "y2": 75, "color": "black"},
+           {"kind": "line", "x": 200, "y": 120, "x2": 145, "y2": 168, "color": "black"},
+           {"kind": "line", "x": 360, "y": 120, "x2": 410, "y2": 75, "color": "black"},
+           {"kind": "line", "x": 360, "y": 120, "x2": 415, "y2": 168, "color": "black"},
+           {"kind": "text", "x": 280, "y": 225, "text": "Z: both high on the same side", "size": 20, "bold": true, "color": "purple", "change": "highlight"}
+         ]}},
+        {"say": "E means enemies. The higher groups are on opposite sides.", "write": "E: opposite sides"},
+        {"say": "E and Z isomers are diastereomers, with different boiling points.", "write": "E/Z = diastereomers"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "The longest chain must contain the principal group.", "write": "chain must hold the group"},
+        {"say": "Alphabetise prefixes. Dimethyl goes under m.", "write": "dimethyl → m"},
+        {"say": "Rank by atomic number, not by the size of the group.", "write": "✗ bigger group wins"},
+        {"say": "CH two, CH three and C=C carbons are never stereocentres.", "write": "✗ CH₂ stereocentre"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Principal group, longest chain, lowest locant, alphabetical prefixes.", "write": "group, chain, number, A→Z"},
+        {"say": "Acids top the suffix list. Amines are at the bottom.", "write": "acid … amine"},
+        {"say": "Four different groups make a stereocentre.", "write": "≤ 2ⁿ stereoisomers"},
+        {"say": "Steering wheel for R and S. Zame zide for Z.", "write": "R/S and E/Z by CIP"}
+      ]
+    }
+  ]
+}

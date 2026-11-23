@@ -1,0 +1,784 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Displaying data",
+  "frames": [
+    {
+      "heading": "Every graph needs the basics",
+      "lines": [
+        {
+          "say": "A graph turns a list of numbers into a picture."
+        },
+        {
+          "say": "Every graph needs a title.",
+          "write": "title"
+        },
+        {
+          "say": "It needs labelled axes, with units if needed.",
+          "write": "axes + labels + units"
+        },
+        {
+          "say": "The scale goes up in even steps, usually starting at zero.",
+          "write": "even scale from 0"
+        },
+        {
+          "say": "If colours stand for something, add a key.",
+          "write": "key"
+        }
+      ]
+    },
+    {
+      "heading": "Column graphs",
+      "lines": [
+        {
+          "say": "Column graphs are for categories. One bar each, with gaps between.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Column graph of favourite fruit: apple 7, banana 4, mango 9, orange 5",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 250,
+                "text": "0",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 142,
+                "text": "5",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 34,
+                "text": "10",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 90,
+                "y": 98.79999999999998,
+                "w": 80,
+                "h": 151.20000000000002,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 278,
+                "text": "apple",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 163.6,
+                "w": 80,
+                "h": 86.4,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 278,
+                "text": "banana",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 55.599999999999994,
+                "w": 80,
+                "h": 194.4,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 278,
+                "text": "mango",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 435,
+                "y": 142.0,
+                "w": 80,
+                "h": 108.0,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 475,
+                "y": 278,
+                "text": "orange",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Twenty-five students chose a fruit. The bar height is the frequency.",
+          "write": "apple 7, banana 4, mango 9, orange 5"
+        },
+        {
+          "say": "How many more chose mango than banana? Look at those two bars.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Column graph of favourite fruit: apple 7, banana 4, mango 9, orange 5",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 250,
+                "text": "0",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 142,
+                "text": "5",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 34,
+                "text": "10",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 90,
+                "y": 98.79999999999998,
+                "w": 80,
+                "h": 151.20000000000002,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 278,
+                "text": "apple",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 163.6,
+                "w": 80,
+                "h": 86.4,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 278,
+                "text": "banana",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 55.599999999999994,
+                "w": 80,
+                "h": 194.4,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 278,
+                "text": "mango",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 435,
+                "y": 142.0,
+                "w": 80,
+                "h": 108.0,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 475,
+                "y": 278,
+                "text": "orange",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Nine take away four. Five more students chose mango.",
+          "write": "9 − 4 = 5"
+        },
+        {
+          "say": "Check: 7 plus 4 plus 9 plus 5 is 25.",
+          "write": "7 + 4 + 9 + 5 = 25 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Dot plots",
+      "lines": [
+        {
+          "say": "A dot plot is a number line with a dot for each result.",
+          "diagram": "diagrams/y7/maths/displaying-data-dotplot.svg",
+          "alt": "Dot plot of goals scored in 12 games"
+        },
+        {
+          "say": "Here are goals scored in 12 games. Two goals happened most often.",
+          "write": "2 goals: 5 games"
+        },
+        {
+          "say": "Count the dots. 2 plus 3 plus 5 plus 1 plus 1 is 12.",
+          "write": "2 + 3 + 5 + 1 + 1 = 12"
+        },
+        {
+          "say": "Look for clusters, gaps, and outliers far from the rest.",
+          "write": "cluster, gap, outlier"
+        }
+      ]
+    },
+    {
+      "heading": "Stem-and-leaf plots",
+      "lines": [
+        {
+          "say": "A stem-and-leaf plot splits each number. Stem is tens, leaf is ones.",
+          "write": "stem = tens   leaf = ones"
+        },
+        {
+          "say": "Ages at a barbecue. First put them in order.",
+          "write": "12 15 17 21 23 23 28 30 34 36 41"
+        },
+        {
+          "say": "Write each ones digit as a leaf next to its stem.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Stem-and-leaf plot of 11 ages",
+            "items": [
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 20,
+                "x2": 110,
+                "y2": 240,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 50,
+                "text": "1",
+                "size": 24,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 100,
+                "text": "2",
+                "size": 24,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 150,
+                "text": "3",
+                "size": 24,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 200,
+                "text": "4",
+                "size": 24,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 50,
+                "text": "2  5  7",
+                "size": 24,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 100,
+                "text": "1  3  3  8",
+                "size": 24,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 150,
+                "text": "0  4  6",
+                "size": 24,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 200,
+                "text": "1",
+                "size": 24,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 260,
+                "text": "Key: 2 | 3 means 23",
+                "size": 18,
+                "anchor": "middle",
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Thirty or older means stems 3 and 4. That is 4 people.",
+          "write": "3 + 1 = 4 people",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Stems 3 and 4 highlighted",
+            "items": [
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 20,
+                "x2": 110,
+                "y2": 240,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 50,
+                "text": "1",
+                "size": 24,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 100,
+                "text": "2",
+                "size": 24,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 150,
+                "text": "3",
+                "size": 24,
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 200,
+                "text": "4",
+                "size": 24,
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 50,
+                "text": "2  5  7",
+                "size": 24,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 100,
+                "text": "1  3  3  8",
+                "size": 24,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 150,
+                "text": "0  4  6",
+                "size": 24,
+                "anchor": "start",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 200,
+                "text": "1",
+                "size": 24,
+                "anchor": "start",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 260,
+                "text": "Key: 2 | 3 means 23",
+                "size": 18,
+                "anchor": "middle",
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Always write the key, so readers know 2 and 3 means 23.",
+          "write": "Key: 2 | 3 means 23"
+        }
+      ]
+    },
+    {
+      "heading": "Line graphs and pie charts",
+      "lines": [
+        {
+          "say": "Line graphs show change over time. Time goes along the bottom.",
+          "write": "line graph → time"
+        },
+        {
+          "say": "A steeper line means a faster change.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A line graph with a steep section highlighted",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 520,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 230,
+                "x2": 200,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 200,
+                "x2": 340,
+                "y2": 190,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 340,
+                "y": 190,
+                "x2": 480,
+                "y2": 60,
+                "color": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 100,
+                "text": "steep = fast",
+                "size": 18,
+                "anchor": "middle",
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Pie charts show parts of a whole. A full circle is 360 degrees.",
+          "write": "angle = freq ÷ total × 360°"
+        },
+        {
+          "say": "Thirty students chose a sport. Each student is worth 360 over 30, which is 12 degrees.",
+          "write": "360° ÷ 30 = 12° each"
+        },
+        {
+          "say": "Multiply each frequency by 12 degrees.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Sector angles: football 144, netball 108, basketball 72, cricket 36 degrees",
+            "items": [
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 55,
+                "text": "football",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 55,
+                "text": "12 × 12° =",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 30,
+                "w": 201.6,
+                "h": 40,
+                "fill": "blue",
+                "change": "add",
+                "label": "144°"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 110,
+                "text": "netball",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 110,
+                "text": "9 × 12° =",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 85,
+                "w": 151.2,
+                "h": 40,
+                "fill": "orange",
+                "label": "108°"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 165,
+                "text": "basketball",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 165,
+                "text": "6 × 12° =",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 140,
+                "w": 100.8,
+                "h": 40,
+                "fill": "green",
+                "label": "72°"
+              },
+              {
+                "kind": "text",
+                "x": 20,
+                "y": 220,
+                "text": "cricket",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 220,
+                "text": "3 × 12° =",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 195,
+                "w": 50.4,
+                "h": 40,
+                "fill": "purple",
+                "label": "36°"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Do them all. They must add to 360 degrees.",
+          "write": "144 + 108 + 72 + 36 = 360 ✓",
+          "diagram": "diagrams/y7/maths/displaying-data-ex3.svg",
+          "alt": "Pie chart of favourite sport"
+        }
+      ]
+    },
+    {
+      "heading": "Misleading graphs",
+      "lines": [
+        {
+          "say": "Same sales, two graphs. January 50, February 52.",
+          "diagram": "diagrams/y7/maths/displaying-data-misleading.svg",
+          "alt": "Two column graphs of the same sales with different axis starts"
+        },
+        {
+          "say": "On the left, the axis starts at 48. February looks twice as tall.",
+          "write": "axis starts at 48 ✗"
+        },
+        {
+          "say": "On the right, it starts at zero. The bars look almost the same.",
+          "write": "axis starts at 0 ✓"
+        },
+        {
+          "say": "Always read the numbers, not just the bar heights.",
+          "write": "read the axis first"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't join categories with a line. Use a column graph.",
+          "write": "✗ line graph for fruit"
+        },
+        {
+          "say": "Twelve students is not 12 degrees. Use the formula.",
+          "write": "12 students ≠ 12°"
+        },
+        {
+          "say": "Leaves go smallest to largest, and always add a key.",
+          "write": "leaves in order + key"
+        },
+        {
+          "say": "Check the title, both axis labels and units before you finish.",
+          "write": "title, labels, units"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Columns compare, lines show time, pies show parts.",
+          "write": "columns, lines, pies"
+        },
+        {
+          "say": "Stem is tens, leaf is ones.",
+          "write": "stem | leaf"
+        },
+        {
+          "say": "Pie angles must make 360 degrees.",
+          "write": "total = 360°"
+        },
+        {
+          "say": "Read the axis before you trust the bars.",
+          "write": "start at 0?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Solving linear inequalities",
+  "frames": [
+    {
+      "heading": "What is an inequality?",
+      "lines": [
+        { "say": "An inequality describes a whole range of values, not just one.", "write": "h ≥ 120" },
+        { "say": "At least 120 centimetres tall means 120 or any height above it." },
+        { "say": "Less than, and greater than.", "write": "x < 3      x > 3" },
+        { "say": "Less than or equal to, and greater than or equal to.", "write": "x ≤ 3      x ≥ 3" }
+      ]
+    },
+    {
+      "heading": "Number lines",
+      "lines": [
+        {
+          "say": "An open circle means the end number is not included.",
+          "write": "x > 3",
+          "diagram": "diagrams/y9/maths/solving-linear-inequalities-ex1.svg",
+          "alt": "Number line showing x > 3 with an open circle at 3 and an arrow pointing right"
+        },
+        {
+          "say": "A closed, filled-in circle means the number is included.",
+          "write": "x ≤ −4",
+          "diagram": "diagrams/y9/maths/solving-linear-inequalities-ex2.svg",
+          "alt": "Number line showing x ≤ −4 with a closed circle at −4 and an arrow pointing left"
+        },
+        { "say": "Filled circle, filled in. The arrow shows all the other solutions.", "write": "≤ ≥ closed,  < > open" }
+      ]
+    },
+    {
+      "heading": "Same moves as equations",
+      "lines": [
+        { "say": "Solve 4x minus 3 is greater than 9.", "write": "4x − 3 > 9" },
+        { "say": "Add 3 to both sides.", "write": "4x > 12" },
+        { "say": "Divide both sides by 4. It's positive, so the sign stays the same.", "write": "x > 3" },
+        { "say": "Check with 4. 16 minus 3 is 13, and 13 is more than 9.", "write": "x = 4: 13 > 9 ✓" }
+      ]
+    },
+    {
+      "heading": "The one new rule",
+      "lines": [
+        {
+          "say": "2 is less than 5. 2 is to the left of 5.",
+          "write": "2 < 5",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Number line from −6 to 6 with 2 and 5 marked",
+            "items": [
+              { "kind": "line", "x": 30, "y": 100, "x2": 530, "y2": 100, "color": "black" },
+              { "kind": "text", "x": 280, "y": 140, "text": "0", "size": 18, "anchor": "middle" },
+              { "kind": "circle", "x": 360, "y": 100, "r": 10, "fill": "blue", "label": "" },
+              { "kind": "circle", "x": 480, "y": 100, "r": 10, "fill": "orange" },
+              { "kind": "text", "x": 360, "y": 70, "text": "2", "size": 22, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 480, "y": 70, "text": "5", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "Multiply both by minus 1. Now minus 2 is greater than minus 5.",
+          "write": "−2 > −5",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Both numbers flip to the other side of zero, so the order swaps",
+            "items": [
+              { "kind": "line", "x": 30, "y": 100, "x2": 530, "y2": 100, "color": "black" },
+              { "kind": "text", "x": 280, "y": 140, "text": "0", "size": 18, "anchor": "middle" },
+              { "kind": "circle", "x": 360, "y": 100, "r": 10, "fill": "blue", "change": "remove" },
+              { "kind": "circle", "x": 480, "y": 100, "r": 10, "fill": "orange", "change": "remove" },
+              { "kind": "circle", "x": 200, "y": 100, "r": 10, "fill": "blue", "change": "add" },
+              { "kind": "circle", "x": 80, "y": 100, "r": 10, "fill": "orange", "change": "add" },
+              { "kind": "text", "x": 200, "y": 70, "text": "−2", "size": 22, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 80, "y": 70, "text": "−5", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Multiplying by a negative swaps the order. So reverse the sign.", "write": "× or ÷ negative: FLIP" },
+        { "say": "Adding and subtracting never flip the sign." }
+      ]
+    },
+    {
+      "heading": "Dividing by a negative",
+      "lines": [
+        { "say": "Solve 5 minus 3x is at least 17.", "write": "5 − 3x ≥ 17" },
+        { "say": "Subtract 5 from both sides.", "write": "−3x ≥ 12" },
+        {
+          "say": "Divide by minus 3, and flip the sign.",
+          "write": "x ≤ −4",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "The greater-than-or-equal sign is crossed out and replaced by less-than-or-equal",
+            "items": [
+              { "kind": "text", "x": 150, "y": 110, "text": "x", "size": 44, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 250, "y": 80, "text": "≥", "size": 44, "bold": true, "color": "red", "anchor": "middle", "change": "remove" },
+              { "kind": "text", "x": 250, "y": 150, "text": "≤", "size": 44, "bold": true, "color": "green", "anchor": "middle", "change": "add" },
+              { "kind": "text", "x": 370, "y": 110, "text": "−4", "size": 44, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 470, "y": 110, "text": "÷ (−3)", "size": 22, "color": "purple", "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Test minus 5. 5 plus 15 is 20, which is at least 17.", "write": "x = −5: 20 ≥ 17 ✓" },
+        { "say": "Tip. Keep the x term positive and you never need to flip.", "write": "2(x + 5) < 5x − 2 → x > 4" }
+      ]
+    },
+    {
+      "heading": "Double inequalities",
+      "lines": [
+        { "say": "This has three parts. Do every step to all three.", "write": "−3 < 2x + 1 ≤ 7" },
+        { "say": "Subtract 1 from all three parts.", "write": "−4 < 2x ≤ 6" },
+        {
+          "say": "Divide all three by 2. x is between minus 2 and 3.",
+          "write": "−2 < x ≤ 3",
+          "diagram": "diagrams/y9/maths/solving-linear-inequalities-double.svg",
+          "alt": "Number line showing −2 < x ≤ 3: open circle at −2, closed circle at 3"
+        },
+        { "say": "The whole numbers are minus 1, 0, 1, 2 and 3. Minus 2 is not included.", "write": "−1, 0, 1, 2, 3" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't forget to flip after dividing by a negative.", "write": "✗ −3x ≥ 12 → x ≥ −4" },
+        { "say": "Don't flip when you add or subtract a negative.", "write": "+ or −: no flip" },
+        { "say": "Change all three parts of a double inequality.", "write": "all 3 parts" },
+        { "say": "Rewrite 4 less than x as x greater than 4 before drawing.", "write": "4 < x → x > 4" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Negative times or divide? Flip the sign.", "write": "× ÷ negative → flip" },
+        { "say": "Closed circle for included. Open circle for not included.", "write": "● ≤ ≥    ○ < >" },
+        { "say": "Test one number inside and one outside your answer.", "write": "test inside & outside" },
+        { "say": "If you forget, try the 2 and 5 test.", "write": "2 < 5,  −2 > −5" }
+      ]
+    }
+  ]
+}

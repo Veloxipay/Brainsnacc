@@ -1,0 +1,96 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Planning your student investigation",
+  "frames": [
+    { "heading": "Question and hypothesis",
+      "lines": [
+        { "say": "A good question is focused, testable and practical with school equipment.", "write": "focused · testable · practical" },
+        { "say": "How does exercise affect the body? Too broad.", "write": "✗ exercise and the body" },
+        { "say": "Name one thing you change and one you measure.", "write": "duration (0–4 min) → heart rate" },
+        { "say": "A hypothesis is a prediction with a reason. If, then, because.", "write": "If … then … because …" },
+        { "say": "Results support a hypothesis or don't. They never prove it.", "write": "support, never prove" }
+      ] },
+    { "heading": "Variables and controls",
+      "lines": [
+        { "say": "The independent variable is the one thing you change.", "write": "IV = what I change" },
+        { "say": "The dependent variable is what you measure. It depends on the IV.", "write": "DV = what I measure" },
+        { "say": "Everything else stays the same. Those are controlled variables.", "write": "controlled variables",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Fair race: same track for every lane; one lane gets a head start and is crossed out", "items": [
+            { "kind": "rect", "x": 40, "y": 40, "w": 480, "h": 40, "fill": "teal", "label": "lane 1" },
+            { "kind": "rect", "x": 40, "y": 100, "w": 480, "h": 40, "fill": "teal", "label": "lane 2" },
+            { "kind": "rect", "x": 90, "y": 160, "w": 430, "h": 40, "fill": "red", "label": "lane 3: 10 m head start", "change": "remove" },
+            { "kind": "line", "x": 40, "y": 30, "x2": 40, "y2": 210, "color": "black" },
+            { "kind": "text", "x": 280, "y": 240, "text": "change two things → not valid", "size": 20, "bold": true, "anchor": "middle", "color": "red" }
+          ] } },
+        { "say": "A control is a comparison group, like the zero-minute resting condition.", "write": "control = baseline group" },
+        { "say": "Don't mix them up. The control is a group. Controlled variables stay the same.", "write": "control ≠ controlled variables" }
+      ] },
+    { "heading": "Method, ethics and safety",
+      "lines": [
+        { "say": "Write numbered steps, so someone else could repeat it exactly.", "write": "numbered, repeatable steps" },
+        { "say": "Use at least 4 or 5 IV values, with replicates at each one.", "write": "4–5 values × replicates" },
+        { "say": "Run a short pilot test first to check your method works.", "write": "pilot test" },
+        { "say": "Ethics: informed consent, confidentiality, and avoid harm.", "write": "consent · confidentiality · no harm" },
+        { "say": "Do a risk assessment: hazards, risks, and how you'll reduce them.", "write": "risk assessment" }
+      ] },
+    { "heading": "Tables and graphs",
+      "lines": [
+        { "say": "IV in the first column. Units go in the headings, not every cell.", "write": "units in headings" },
+        { "say": "DRY MIX. Dependent, responding, on the y-axis. Independent on the x-axis.", "write": "DRY MIX",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Graph axes: independent variable on x, dependent on y; a rising line of means is added", "items": [
+            { "kind": "line", "x": 80, "y": 230, "x2": 520, "y2": 230, "color": "black" },
+            { "kind": "line", "x": 80, "y": 230, "x2": 80, "y2": 30, "color": "black" },
+            { "kind": "text", "x": 300, "y": 265, "text": "IV: exercise time (min)", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 20, "y": 130, "text": "DV", "size": 18, "bold": true },
+            { "kind": "line", "x": 100, "y": 200, "x2": 200, "y2": 150, "color": "blue", "change": "add" },
+            { "kind": "line", "x": 200, "y": 150, "x2": 300, "y2": 100, "color": "blue", "change": "add" },
+            { "kind": "line", "x": 300, "y": 100, "x2": 400, "y2": 80, "color": "blue", "change": "add" },
+            { "kind": "line", "x": 400, "y": 80, "x2": 500, "y2": 78, "color": "blue", "change": "add" }
+          ] } },
+        { "say": "Use a line graph for continuous data, a column graph for categories.", "write": "line vs column graph" },
+        { "say": "Describe the trend with values, then explain it with biology.", "write": "describe → explain" }
+      ] },
+    { "heading": "Errors and outliers",
+      "lines": [
+        { "say": "Random error makes results scatter. Repeat and take the mean.", "write": "random → repeat" },
+        { "say": "Systematic error shifts every result the same way. Calibrate or swap the equipment.", "write": "systematic → swap" },
+        { "say": "Three trials: 112, 115 and 148. The 148 is an outlier.", "write": "112, 115, 148",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Three bars 112, 115 and 148; the 148 bar is crossed out as an outlier", "items": [
+            { "kind": "line", "x": 40, "y": 200, "x2": 520, "y2": 200, "color": "black" },
+            { "kind": "rect", "x": 80, "y": 88, "w": 90, "h": 112, "fill": "blue", "label": "112" },
+            { "kind": "rect", "x": 230, "y": 85, "w": 90, "h": 115, "fill": "blue", "label": "115" },
+            { "kind": "rect", "x": 380, "y": 52, "w": 90, "h": 148, "fill": "red", "label": "148", "change": "remove" },
+            { "kind": "text", "x": 280, "y": 30, "text": "mean ≈ 114 beats per minute", "size": 20, "bold": true, "color": "purple", "anchor": "middle" }
+          ] } },
+        { "say": "Leave it out and say why. The mean is about 114 beats per minute.", "write": "(112 + 115) ÷ 2 ≈ 114" },
+        { "say": "Personal errors, like spilling a sample, should be repeated, not included.", "write": "mistake → redo" }
+      ] },
+    { "heading": "Accuracy and precision",
+      "lines": [
+        { "say": "Accuracy is how close you are to the true value.", "write": "accurate = near true value" },
+        { "say": "Precision is how close repeats are to each other.", "write": "precise = close together",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Two dartboards: tight cluster off-centre is precise, cluster in the bullseye is accurate and precise", "items": [
+            { "kind": "circle", "x": 140, "y": 120, "r": 90, "fill": "white" },
+            { "kind": "circle", "x": 140, "y": 120, "r": 20, "fill": "red" },
+            { "kind": "circle", "x": 185, "y": 70, "r": 6, "fill": "black" },
+            { "kind": "circle", "x": 195, "y": 78, "r": 6, "fill": "black" },
+            { "kind": "circle", "x": 182, "y": 84, "r": 6, "fill": "black" },
+            { "kind": "text", "x": 140, "y": 232, "text": "precise only", "size": 18, "anchor": "middle" },
+            { "kind": "circle", "x": 420, "y": 120, "r": 90, "fill": "white" },
+            { "kind": "circle", "x": 420, "y": 120, "r": 20, "fill": "red", "change": "highlight" },
+            { "kind": "circle", "x": 414, "y": 116, "r": 6, "fill": "black", "change": "add" },
+            { "kind": "circle", "x": 426, "y": 122, "r": 6, "fill": "black", "change": "add" },
+            { "kind": "circle", "x": 418, "y": 128, "r": 6, "fill": "black", "change": "add" },
+            { "kind": "text", "x": 420, "y": 232, "text": "accurate and precise", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Repeating improves precision. It does not fix systematic error.", "write": "repeats ≠ accuracy" },
+        { "say": "Validity means you really tested what you claimed, changing only the IV.", "write": "valid = only IV changed" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "If, then, because. Then support it, never prove it.", "write": "If … then … because …" },
+        { "say": "Random equals repeat. Systematic equals swap.", "write": "random = repeat, systematic = swap" },
+        { "say": "Name improvements and say why they help.", "write": "change + why" },
+        { "say": "Name the ethical principle and apply it to the scenario.", "write": "principle + scenario" }
+      ] }
+  ]
+}

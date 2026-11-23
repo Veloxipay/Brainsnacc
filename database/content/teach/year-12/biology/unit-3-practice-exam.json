@@ -1,0 +1,97 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Unit 3 practice exam",
+  "frames": [
+    { "heading": "How to do this exam",
+      "lines": [
+        { "say": "Allow 60 minutes. About 20 for multiple choice, 40 for short answers.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "60 minutes split 20 and 40", "items": [
+            {"kind": "rect", "x": 30, "y": 60, "w": 167, "h": 70, "fill": "orange", "label": "MC: 20 min"},
+            {"kind": "rect", "x": 197, "y": 60, "w": 333, "h": 70, "fill": "blue", "label": "short answer: 40 min"},
+            {"kind": "text", "x": 280, "y": 170, "text": "about one mark per minute", "size": 22, "anchor": "middle", "bold": true}
+          ]}},
+        { "say": "Work alone. No notes, no textbook, no phone.", "write": "real exam conditions" },
+        { "say": "Mark yourself strictly. Only give the mark if your answer has the idea.", "write": "mark strictly" },
+        { "say": "Link cause to effect. Because this happens, so that happens.", "write": "because … so …" }
+      ] },
+    { "heading": "Reading a template strand",
+      "lines": [
+        { "say": "Here's a template strand. Pair each base, using U instead of T.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Template strand and its mRNA", "items": [
+            {"kind": "text", "x": 20, "y": 60, "text": "template: 3′ TAC CTT GGA ATT 5′", "size": 24},
+            {"kind": "text", "x": 20, "y": 130, "text": "mRNA:     5′ AUG GAA CCU UAA 3′", "size": 24, "color": "orange", "change": "add"}
+          ]}},
+        { "say": "That codes for methionine, glutamic acid, proline, then stop.", "write": "Met – Glu – Pro – stop" },
+        { "say": "Change GAA to GAG. It's still glutamic acid. The code is degenerate.", "write": "silent mutation" },
+        { "say": "Mature mRNA is shorter because the introns are spliced out.", "write": "introns spliced out" }
+      ] },
+    { "heading": "The trp operon question",
+      "lines": [
+        { "say": "Which flask makes more trp mRNA? The one with no tryptophan.", "write": "no trp → more mRNA" },
+        { "say": "Tryptophan activates the repressor. It binds the operator and blocks RNA polymerase.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Cause and effect chain", "items": [
+            {"kind": "rect", "x": 10, "y": 70, "w": 120, "h": 60, "fill": "yellow", "label": "trp binds"},
+            {"kind": "arrow", "x": 135, "y": 100, "x2": 160, "y2": 100, "color": "black", "change": "add"},
+            {"kind": "rect", "x": 165, "y": 70, "w": 120, "h": 60, "fill": "purple", "label": "repressor on", "change": "add"},
+            {"kind": "arrow", "x": 290, "y": 100, "x2": 315, "y2": 100, "color": "black", "change": "add"},
+            {"kind": "rect", "x": 320, "y": 70, "w": 100, "h": 60, "fill": "red", "label": "operator", "change": "add"},
+            {"kind": "arrow", "x": 425, "y": 100, "x2": 445, "y2": 100, "color": "black", "change": "add"},
+            {"kind": "rect", "x": 450, "y": 70, "w": 100, "h": 60, "fill": "grey", "label": "RNAP blocked", "change": "add"}
+          ]}},
+        { "say": "A repressor that can't bind tryptophan never switches the genes off.", "write": "mutant: lots of mRNA" }
+      ] },
+    { "heading": "Plasmids and PCR",
+      "lines": [
+        { "say": "Same restriction enzyme, so the sticky ends are complementary.", "write": "same enzyme → sticky ends" },
+        { "say": "Recombinant colonies grow on ampicillin and stay white. The gene broke lacZ.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Plate with blue and white colonies", "items": [
+            {"kind": "circle", "x": 280, "y": 110, "r": 100, "fill": "yellow"},
+            {"kind": "circle", "x": 230, "y": 80, "r": 16, "fill": "blue"},
+            {"kind": "circle", "x": 320, "y": 70, "r": 16, "fill": "blue"},
+            {"kind": "circle", "x": 260, "y": 150, "r": 16, "fill": "white", "change": "highlight"},
+            {"kind": "circle", "x": 330, "y": 140, "r": 16, "fill": "white", "change": "highlight"},
+            {"kind": "text", "x": 470, "y": 150, "text": "white = recombinant", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "PCR copies double each cycle. Ten copies after six cycles is 640.", "write": "10 × 2⁶ = 640" },
+        { "say": "DNA is negative, so it runs to the positive end. Small pieces go furthest.", "write": "small → further" }
+      ] },
+    { "heading": "The light intensity data",
+      "lines": [
+        { "say": "Light is the independent variable. Bubbles per minute is the dependent.", "write": "IV: light  DV: bubbles" },
+        { "say": "From 0 to 4, doubling light doubles the rate. Light is limiting.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Bubbles rise with light then plateau at 24", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 50, "y": 240, "x2": 230, "y2": 112, "color": "blue", "change": "highlight"},
+            {"kind": "line", "x": 230, "y": 112, "x2": 320, "y2": 64, "color": "blue"},
+            {"kind": "line", "x": 320, "y": 64, "x2": 500, "y2": 48, "color": "blue"},
+            {"kind": "text", "x": 130, "y": 150, "text": "light limiting", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 290, "y": 270, "text": "light intensity", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "From 8 to 10, it plateaus at 24. Carbon dioxide or temperature is limiting.", "write": "plateau → CO₂ limiting",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Plateau section highlighted", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 50, "y": 240, "x2": 230, "y2": 112, "color": "blue"},
+            {"kind": "line", "x": 230, "y": 112, "x2": 320, "y2": 64, "color": "blue"},
+            {"kind": "line", "x": 410, "y": 48, "x2": 500, "y2": 48, "color": "red", "change": "highlight"},
+            {"kind": "line", "x": 320, "y": 64, "x2": 410, "y2": 48, "color": "blue"},
+            {"kind": "text", "x": 420, "y": 30, "text": "24: CO₂ limiting", "size": 18, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 290, "y": 270, "text": "light intensity", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "The oxygen comes from water, split on the thylakoid membranes.", "write": "O₂ from H₂O, thylakoids" }
+      ] },
+    { "heading": "The sprinter's muscles",
+      "lines": [
+        { "say": "Short of oxygen, muscles use lactic acid fermentation in the cytosol.", "write": "lactic acid, cytosol" },
+        { "say": "Turning pyruvate into lactic acid regenerates NAD plus. So glycolysis keeps going.", "write": "NADH → NAD⁺" },
+        { "say": "That gives two ATP per glucose. Aerobic gives about 30 to 32.", "write": "2 vs 30–32 ATP" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "One minute per mark. Use the key terms.", "write": "1 min per mark" },
+        { "say": "Link each cause to its effect.", "write": "because … so …" },
+        { "say": "Show working, like start copies times 2 to the n.", "write": "show working" },
+        { "say": "Revisit the lessons behind every lost mark.", "write": "revise, then retry" }
+      ] }
+  ]
+}

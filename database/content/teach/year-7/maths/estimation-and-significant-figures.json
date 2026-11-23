@@ -1,0 +1,74 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Estimation and significant figures",
+  "frames": [
+    { "heading": "Which digits are significant?",
+      "lines": [
+        { "say": "About 150 centimetres, or about 1.5 metres. The important digits are 1 and 5.", "write": "150 cm ≈ 1.5 m" },
+        { "say": "Significant figures carry real information. Start counting at the first non-zero digit.", "write": "first non-zero digit" },
+        { "say": "Zeros in front don't count. 0.0063 has 2 significant figures.", "write": "0.0063 → 2 s.f.",
+          "draw": {"type": "shapes", "width": 560, "height": 180, "alt": "Leading zeros of 0.0063 crossed out, 6 and 3 highlighted", "items": [
+            {"kind": "rect", "x": 80, "y": 50, "w": 70, "h": 70, "fill": "grey", "label": "0", "change": "remove"},
+            {"kind": "text", "x": 165, "y": 110, "text": ".", "size": 40, "anchor": "middle"},
+            {"kind": "rect", "x": 180, "y": 50, "w": 70, "h": 70, "fill": "grey", "label": "0", "change": "remove"},
+            {"kind": "rect", "x": 260, "y": 50, "w": 70, "h": 70, "fill": "grey", "label": "0", "change": "remove"},
+            {"kind": "rect", "x": 340, "y": 50, "w": 70, "h": 70, "fill": "blue", "label": "6", "change": "highlight"},
+            {"kind": "rect", "x": 420, "y": 50, "w": 70, "h": 70, "fill": "blue", "label": "3", "change": "highlight"},
+            {"kind": "text", "x": 280, "y": 160, "text": "2 significant figures", "size": 20, "anchor": "middle"}]}},
+        { "say": "Zeros in between always count. 4.08 has 3.", "write": "4.08 → 3 s.f." },
+        { "say": "A zero written at the end of a decimal counts. 2.50 has 3.", "write": "2.50 → 3 s.f." },
+        { "say": "Trailing zeros in a whole number like 5300 are usually just place holders.", "write": "5300 → 2 s.f." }
+      ] },
+    { "heading": "Rounding to significant figures",
+      "lines": [
+        { "say": "Round 4386 to 2 significant figures. Keep the 4 and the 3.", "write": "4386 → 2 s.f.",
+          "draw": {"type": "shapes", "width": 560, "height": 180, "alt": "4386 with 4 and 3 kept, the next digit 8 highlighted", "items": [
+            {"kind": "rect", "x": 110, "y": 50, "w": 80, "h": 80, "fill": "blue", "label": "4"},
+            {"kind": "rect", "x": 200, "y": 50, "w": 80, "h": 80, "fill": "blue", "label": "3"},
+            {"kind": "rect", "x": 290, "y": 50, "w": 80, "h": 80, "fill": "yellow", "label": "8", "change": "highlight"},
+            {"kind": "rect", "x": 380, "y": 50, "w": 80, "h": 80, "fill": "grey", "label": "6"},
+            {"kind": "text", "x": 330, "y": 165, "text": "next digit decides", "size": 18, "anchor": "middle"}]}},
+        { "say": "The next digit is 8. That's 5 or more, so round up to 44.", "write": "43 → 44" },
+        { "say": "Keep the size. Put zeros back. The answer is 4400, not 44.", "write": "4386 ≈ 4400" },
+        { "say": "Small decimals keep their leading zeros. 0.007052 to 3 figures is 0.00705.", "write": "0.007052 → 0.00705" },
+        { "say": "29.97 to 3 figures rounds up to 30.0. Keep that last zero.", "write": "29.97 → 30.0" }
+      ] },
+    { "heading": "Estimating with 1 s.f.",
+      "lines": [
+        { "say": "To estimate, round every number to 1 significant figure.", "write": "1 s.f. each" },
+        { "say": "48.7 times 0.312 divided by 5.89 becomes 50 times 0.3 divided by 6.", "write": "≈ 50 × 0.3 ÷ 6" },
+        { "say": "50 times 0.3 is 15. 15 divided by 6 is 2.5.", "write": "15 ÷ 6 = 2.5" },
+        { "say": "The calculator says 2.58. So 25.8 would be a key-pressing mistake.", "write": "actual ≈ 2.58" }
+      ] },
+    { "heading": "Dividing by a small decimal",
+      "lines": [
+        { "say": "Divide by small, answer grows. 600 divided by 0.3 is 2000.", "write": "600 ÷ 0.3 = 2000",
+          "draw": {"type": "shapes", "width": 560, "height": 180, "alt": "One whole split into about three pieces of 0.3", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 480, "h": 60, "fill": "white", "label": "1"},
+            {"kind": "rect", "x": 40, "y": 50, "w": 144, "h": 60, "fill": "blue", "label": "0.3", "change": "add"},
+            {"kind": "rect", "x": 184, "y": 50, "w": 144, "h": 60, "fill": "blue", "label": "0.3", "change": "add"},
+            {"kind": "rect", "x": 328, "y": 50, "w": 144, "h": 60, "fill": "blue", "label": "0.3", "change": "add"},
+            {"kind": "text", "x": 280, "y": 150, "text": "about three 0.3s in every 1", "size": 20, "anchor": "middle"}]}},
+        { "say": "There are about three 0.3s in every 1. So the answer gets bigger.", "write": "÷ 0.3 → about × 3" },
+        { "say": "Divide by 0.5 doubles. Divide by 0.1 makes ten times bigger.", "write": "÷ 0.5 = × 2,  ÷ 0.1 = × 10" }
+      ] },
+    { "heading": "Too big or too small?",
+      "lines": [
+        { "say": "Round a number you multiply up, and the estimate gets bigger.", "write": "multiply: up → bigger" },
+        { "say": "Round the number you divide by down, and the estimate gets bigger too.", "write": "divisor down → bigger" },
+        { "say": "If the roundings push different ways, you can't be sure without checking.", "write": "mixed → check" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't count leading zeros. 0.0408 has 3 significant figures, not 5.", "write": "0.0408 → 3 s.f." },
+        { "say": "Don't lose the size. 63749 to 2 figures is 64000, not 64.", "write": "63 749 → 64 000" },
+        { "say": "Don't chop. Always look at the next digit and round.", "write": "round, don't chop" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Zeros in front don't count. Zeros in between always count.", "write": "front ✗, between ✓" },
+        { "say": "Sig figs keep the size.", "write": "keep place holders" },
+        { "say": "One s.f. each, then do it in your head.", "write": "estimate" },
+        { "say": "Ask which way each rounding pushed the answer.", "write": "bigger or smaller push?" }
+      ] }
+  ]
+}

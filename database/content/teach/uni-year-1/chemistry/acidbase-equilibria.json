@@ -1,0 +1,65 @@
+{"level":"Uni Year 1","subject":"chemistry","title":"Acid–base equilibria","frames":[
+{"heading":"Acids, bases and water","lines":[
+{"say":"A Brønsted Lowry acid donates a proton. A base accepts one.","write":"acid: H⁺ donor · base: acceptor"},
+{"say":"What's left after an acid loses its proton is its conjugate base.","write":"HA / A⁻ conjugate pair","draw":{"type":"shapes","width":560,"height":200,"alt":"HA loses a proton to become A-","items":[
+{"kind":"circle","x":120,"y":100,"r":50,"fill":"blue","label":"HA"},
+{"kind":"arrow","x":180,"y":100,"x2":320,"y2":100,"color":"black"},
+{"kind":"circle","x":400,"y":100,"r":50,"fill":"teal","label":"A⁻"},
+{"kind":"circle","x":250,"y":45,"r":20,"fill":"red","label":"H⁺","change":"add"}]}},
+{"say":"Water self ionises a little. K w is 1.0 times 10 to the minus 14, at 25 degrees.","write":"Kw = [H₃O⁺][OH⁻] = 1.0 × 10⁻¹⁴"},
+{"say":"pH is minus log of hydronium concentration. pH plus pOH equals 14.","write":"pH + pOH = 14.00"},
+{"say":"Neutral means equal H 3 O plus and O H minus. That's not always pH 7.","write":"neutral ≠ always pH 7"}]},
+{"heading":"Ka, Kb and pKa","lines":[
+{"say":"Strong acids ionise completely. Weak acids only partly.","write":"strong: all · weak: some"},
+{"say":"For a weak acid, K a is products over reactants.","write":"Ka = [H₃O⁺][A⁻] / [HA]"},
+{"say":"pK a is minus log K a. Smaller pK a means a stronger acid.","write":"pKa = −log Ka"},
+{"say":"For a conjugate pair, K a times K b equals K w.","write":"Ka × Kb = Kw"},
+{"say":"So the conjugate base of a weak acid, like acetate, is a weak base.","write":"pKa + pKb = 14.00"}]},
+{"heading":"pH of a weak acid","lines":[
+{"say":"0.100 molar ethanoic acid, K a 1.8 times 10 to the minus 5.","write":"0.100 M CH₃COOH"},
+{"say":"x squared over 0.100 is about K a. So x is the square root of K a times c.","write":"[H₃O⁺] ≈ √(Ka × c)"},
+{"say":"x is 1.34 times 10 to the minus 3 molar.","write":"x = 1.34 × 10⁻³ M"},
+{"say":"Check the 5 percent rule. 1.3 percent is fine.","write":"1.3% < 5% ✓"},
+{"say":"pH is minus log of that: 2.87.","write":"pH = 2.87","draw":{"type":"shapes","width":560,"height":160,"alt":"pH scale with 2.87 marked","items":[
+{"kind":"rect","x":20,"y":60,"w":520,"h":30,"fill":"grey"},
+{"kind":"text","x":20,"y":120,"text":"0","size":16},
+{"kind":"text","x":280,"y":120,"text":"7","size":16,"anchor":"middle"},
+{"kind":"text","x":540,"y":120,"text":"14","size":16,"anchor":"end"},
+{"kind":"circle","x":127,"y":75,"r":14,"fill":"red","change":"add"},
+{"kind":"text","x":127,"y":45,"text":"2.87","size":20,"anchor":"middle","change":"add"}]}}]},
+{"heading":"Buffers","lines":[
+{"say":"A buffer is a weak acid plus its conjugate base. It resists pH change.","write":"HA + A⁻"},
+{"say":"Henderson Hasselbalch: pH is pK a plus log of base over acid.","write":"pH = pKa + log([A⁻]/[HA])"},
+{"say":"0.100 moles of each. The ratio is 1, so pH equals pK a, 4.74.","write":"pH = 4.74","draw":{"type":"shapes","width":560,"height":240,"alt":"Equal amounts of acid and base","items":[
+{"kind":"rect","x":120,"y":60,"w":120,"h":120,"fill":"blue","label":"HA 0.100"},
+{"kind":"rect","x":320,"y":60,"w":120,"h":120,"fill":"teal","label":"A⁻ 0.100"}]}},
+{"say":"Add 0.010 moles of N a O H. Neutralise first: acid goes down, base goes up.","write":"HA 0.090 · A⁻ 0.110","draw":{"type":"shapes","width":560,"height":240,"alt":"NaOH converts some HA into A-","items":[
+{"kind":"rect","x":120,"y":60,"w":120,"h":120,"fill":"blue","label":"HA 0.090"},
+{"kind":"rect","x":120,"y":60,"w":120,"h":12,"fill":"blue","change":"remove"},
+{"kind":"rect","x":320,"y":48,"w":120,"h":132,"fill":"teal","label":"A⁻ 0.110","change":"add"},
+{"kind":"text","x":280,"y":220,"text":"+ 0.010 mol OH⁻","size":18,"anchor":"middle"}]}},
+{"say":"4.74 plus log of 0.110 over 0.090. pH is 4.83.","write":"pH = 4.83"},
+{"say":"The same base in pure water would jump from 7 to 12.","write":"water: 7.00 → 12.00"}]},
+{"heading":"Titration curves","lines":[
+{"say":"The equivalence point is where moles of titrant match moles of analyte.","write":"equivalence point"},
+{"say":"At half equivalence, acid equals base. So pH equals pK a.","write":"½ equivalence: pH = pKa","draw":{"type":"shapes","width":560,"height":280,"alt":"Weak acid titration curve with buffer region and steep rise","items":[
+{"kind":"line","x":40,"y":250,"x2":540,"y2":250,"color":"black"},
+{"kind":"line","x":40,"y":250,"x2":40,"y2":20,"color":"black"},
+{"kind":"line","x":40,"y":200,"x2":80,"y2":170,"color":"blue"},
+{"kind":"line","x":80,"y":170,"x2":280,"y2":140,"color":"blue"},
+{"kind":"line","x":280,"y":140,"x2":310,"y2":50,"color":"blue"},
+{"kind":"line","x":310,"y":50,"x2":530,"y2":35,"color":"blue"},
+{"kind":"circle","x":180,"y":155,"r":9,"fill":"green","change":"highlight"},
+{"kind":"text","x":180,"y":185,"text":"pH = pKa","size":16,"anchor":"middle","change":"add"},
+{"kind":"circle","x":295,"y":95,"r":9,"fill":"red","change":"add"},
+{"kind":"text","x":330,"y":100,"text":"equivalence, pH 8.72","size":16,"change":"add"}]}},
+{"say":"For a weak acid with strong base, the equivalence point is basic. Here, 8.72.","write":"equivalence pH = 8.72"},
+{"say":"That's because acetate is a weak base. So use phenolphthalein.","write":"indicator: phenolphthalein"},
+{"say":"Polyprotic acids have one K a per proton. Each is much smaller than the last.","write":"Ka1 ≫ Ka2"}]},
+{"heading":"Watch out","lines":[
+{"say":"Don't use the square root rule for strong acids. Their H 3 O plus equals c.","write":"strong: [H₃O⁺] = c"},
+{"say":"From K b you get O H minus. Find pOH, then take it from 14.","write":"Kb → pOH → pH"},
+{"say":"Neutralise first, then use Henderson Hasselbalch.","write":"stoichiometry first"},
+{"say":"Equivalence is only pH 7 for strong acid with strong base.","write":"✗ always pH 7"},
+{"say":"Buffers only work within about pK a plus or minus 1.","write":"pKa ± 1"}]}
+]}

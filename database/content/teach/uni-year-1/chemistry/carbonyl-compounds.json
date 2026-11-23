@@ -1,0 +1,137 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Carbonyl compounds",
+  "frames": [
+    {
+      "heading": "The carbonyl group",
+      "lines": [
+        {"say": "A carbonyl is a carbon double bonded to an oxygen. It's flat, at 120 degrees.", "write": "C=O, sp², 120°"},
+        {"say": "Oxygen pulls the electrons. Carbon is delta plus, oxygen delta minus.", "write": "δ+ C=O δ−",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Carbonyl group with delta plus carbon, a nucleophile attacking carbon", "items": [
+           {"kind": "circle", "x": 260, "y": 120, "r": 34, "fill": "grey", "label": "C"},
+           {"kind": "circle", "x": 400, "y": 120, "r": 34, "fill": "red", "label": "O"},
+           {"kind": "line", "x": 294, "y": 112, "x2": 366, "y2": 112, "color": "black"},
+           {"kind": "line", "x": 294, "y": 128, "x2": 366, "y2": 128, "color": "black"},
+           {"kind": "text", "x": 260, "y": 70, "text": "δ+", "size": 22, "bold": true, "color": "blue"},
+           {"kind": "text", "x": 400, "y": 70, "text": "δ−", "size": 22, "bold": true, "color": "red"},
+           {"kind": "circle", "x": 90, "y": 120, "r": 30, "fill": "purple", "label": "Nu⁻", "change": "add"},
+           {"kind": "arrow", "x": 122, "y": 120, "x2": 222, "y2": 120, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "So the carbon is an electrophile. Nucleophiles attack it.", "write": "Nu⁻ attacks C"},
+        {"say": "Acid protonates the oxygen and makes the carbon even more electrophilic.", "write": "acid catalysis"}
+      ]
+    },
+    {
+      "heading": "Can it leave?",
+      "lines": [
+        {"say": "Aldehydes and ketones have only H or carbon on the C=O.", "write": "R–CHO,  R–CO–R′"},
+        {"say": "Acids and their derivatives carry chlorine, oxygen or nitrogen, which can leave.", "write": "–Cl, –OCOR, –OR, –NH₂"},
+        {"say": "Can it leave? Then substitute. If not, add.", "write": "leave → substitute; no → add",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Two branches: aldehydes and ketones go to addition, acyl compounds go to substitution", "items": [
+           {"kind": "rect", "x": 190, "y": 20, "w": 180, "h": 50, "fill": "grey", "label": "C=O compound"},
+           {"kind": "arrow", "x": 240, "y": 70, "x2": 130, "y2": 130, "color": "black"},
+           {"kind": "arrow", "x": 320, "y": 70, "x2": 430, "y2": 130, "color": "black"},
+           {"kind": "rect", "x": 20, "y": 130, "w": 220, "h": 60, "fill": "blue", "label": "H or R: addition", "change": "highlight"},
+           {"kind": "rect", "x": 320, "y": 130, "w": 220, "h": 60, "fill": "orange", "label": "Cl, O, N: substitution", "change": "highlight"}
+         ]}},
+        {"say": "Afterwards, ask: did the C=O stay, or disappear?", "write": "C=O stays? substitution"}
+      ]
+    },
+    {
+      "heading": "Nucleophilic addition",
+      "lines": [
+        {"say": "The nucleophile bonds to carbon. The pi electrons move onto oxygen.", "write": "Nu adds, π → O"},
+        {"say": "Carbon becomes tetrahedral. This is the tetrahedral intermediate, an alkoxide.", "write": "tetrahedral O⁻",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Flat carbonyl becomes a tetrahedral alkoxide, then an alcohol after protonation", "items": [
+           {"kind": "rect", "x": 20, "y": 80, "w": 140, "h": 70, "fill": "grey", "label": "C=O"},
+           {"kind": "arrow", "x": 165, "y": 115, "x2": 205, "y2": 115, "color": "black"},
+           {"kind": "rect", "x": 210, "y": 80, "w": 150, "h": 70, "fill": "purple", "label": "Nu–C–O⁻", "change": "add"},
+           {"kind": "arrow", "x": 365, "y": 115, "x2": 405, "y2": 115, "color": "black"},
+           {"kind": "rect", "x": 410, "y": 80, "w": 140, "h": 70, "fill": "green", "label": "Nu–C–OH", "change": "add"},
+           {"kind": "text", "x": 385, "y": 190, "text": "+ H⁺", "size": 20},
+           {"kind": "text", "x": 285, "y": 190, "text": "sp³", "size": 20, "bold": true}
+         ]}},
+        {"say": "Then the alkoxide picks up H plus to give an alcohol.", "write": "+ H⁺ → alcohol"},
+        {"say": "Sodium borohydride adds hydride. Aldehydes give primary alcohols, ketones secondary.", "write": "NaBH₄: 1° and 2°"},
+        {"say": "Grignards add carbon. Methanal gives primary, aldehydes secondary, ketones tertiary.", "write": "RMgBr: new C–C bond"},
+        {"say": "Aldehydes react faster. Ketones have two alkyl groups that push and crowd.", "write": "aldehyde > ketone"}
+      ]
+    },
+    {
+      "heading": "Nucleophilic acyl substitution",
+      "lines": [
+        {"say": "Acyl compounds react by addition, then elimination.", "write": "addition–elimination"},
+        {"say": "Add the nucleophile. Then C=O reforms and pushes out the leaving group.", "write": "R–CO–L → R–CO–Nu",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Leaving group L is crossed out and replaced by the nucleophile; the C=O is kept", "items": [
+           {"kind": "rect", "x": 60, "y": 70, "w": 160, "h": 70, "fill": "grey", "label": "R–C(=O)"},
+           {"kind": "circle", "x": 270, "y": 105, "r": 32, "fill": "orange", "label": "L", "change": "remove"},
+           {"kind": "circle", "x": 360, "y": 105, "r": 32, "fill": "purple", "label": "Nu", "change": "add"},
+           {"kind": "text", "x": 280, "y": 190, "text": "C=O kept: substitution", "size": 20, "bold": true, "color": "green"}
+         ]}},
+        {"say": "It's not SN2. The tetrahedral intermediate really exists.", "write": "✗ SN2"},
+        {"say": "Clever Animals Eat Apples: chloride, anhydride, ester, amide.", "write": "RCOCl > anhydride > ester > amide"},
+        {"say": "Weak base, good leaver. Chloride leaves easily. NH two minus is terrible.", "write": "Cl⁻ great, NH₂⁻ terrible"},
+        {"say": "Nitrogen also donates its lone pair into C=O, so amides are stable.", "write": "N donates → amide stable"}
+      ]
+    },
+    {
+      "heading": "Sliding down to esters and amides",
+      "lines": [
+        {"say": "You can always slide down to a less reactive derivative.", "write": "downhill only",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Water slide from acid chloride at top down to amide at bottom", "items": [
+           {"kind": "rect", "x": 20, "y": 20, "w": 150, "h": 44, "fill": "red", "label": "acid chloride"},
+           {"kind": "rect", "x": 140, "y": 80, "w": 150, "h": 44, "fill": "orange", "label": "anhydride"},
+           {"kind": "rect", "x": 260, "y": 140, "w": 150, "h": 44, "fill": "yellow", "label": "ester"},
+           {"kind": "rect", "x": 380, "y": 200, "w": 150, "h": 44, "fill": "blue", "label": "amide"},
+           {"kind": "arrow", "x": 95, "y": 66, "x2": 330, "y2": 138, "color": "green", "change": "add"},
+           {"kind": "text", "x": 140, "y": 230, "text": "slide down ✓", "size": 20, "bold": true, "color": "green", "change": "add"}
+         ]}},
+        {"say": "Acid chloride plus ethanol gives an ester and HCl.", "write": "CH₃COCl + EtOH → ester"},
+        {"say": "With ammonia you need two equivalents, because HCl grabs one.", "write": "CH₃COCl + 2NH₃ → amide"},
+        {"say": "Fischer esterification is reversible. Use excess alcohol or remove water.", "write": "RCOOH + ROH ⇌ ester + H₂O"},
+        {"say": "Basic hydrolysis is not reversible. The carboxylate won't be attacked.", "write": "ester + OH⁻ → RCOO⁻"},
+        {"say": "Esters with excess Grignard react twice, giving a tertiary alcohol.", "write": "ester + 2RMgBr → 3°"}
+      ]
+    },
+    {
+      "heading": "Acids, enols and enolates",
+      "lines": [
+        {"say": "Carboxylic acids have pKa around four to five. Alcohols are around 16.", "write": "pKa: RCOOH 4–5, ROH 16"},
+        {"say": "The carboxylate's charge is shared over two oxygens.", "write": "RCOO⁻ resonance"},
+        {"say": "A hydrogen on the alpha carbon is unusually acidic, pKa about 19 to 20.", "write": "α-H: pKa ≈ 19–20",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Removing the alpha hydrogen gives an enolate with charge shared between carbon and oxygen", "items": [
+           {"kind": "circle", "x": 120, "y": 110, "r": 30, "fill": "grey", "label": "Cα"},
+           {"kind": "circle", "x": 120, "y": 40, "r": 18, "fill": "white", "label": "H", "change": "remove"},
+           {"kind": "circle", "x": 240, "y": 110, "r": 30, "fill": "grey", "label": "C"},
+           {"kind": "circle", "x": 360, "y": 110, "r": 30, "fill": "red", "label": "O"},
+           {"kind": "line", "x": 150, "y": 110, "x2": 210, "y2": 110, "color": "black"},
+           {"kind": "line", "x": 270, "y": 110, "x2": 330, "y2": 110, "color": "black"},
+           {"kind": "text", "x": 120, "y": 175, "text": "δ−", "size": 22, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 360, "y": 175, "text": "δ− (most)", "size": 22, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 480, "y": 115, "text": "enolate", "size": 22, "bold": true}
+         ]}},
+        {"say": "Keto and enol forms are tautomers. The keto form wins for simple ketones.", "write": "keto ⇌ enol"},
+        {"say": "Enolates attack at the alpha carbon, forming new C–C bonds.", "write": "α-alkylation, aldol"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Acyl substitution is not a one-step SN2.", "write": "via tetrahedral intermediate"},
+        {"say": "Aldehydes and ketones never substitute. H and R can't leave.", "write": "✗ substitution on ketones"},
+        {"say": "Excess Grignard on an ester doesn't stop at the ketone.", "write": "✗ stops at ketone"},
+        {"say": "The enolate charge is shared, with most on oxygen.", "write": "✗ charge only on C"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Can it leave? Substitute. If not, add.", "write": "leave? substitute : add"},
+        {"say": "Chloride, anhydride, ester, amide. Slide downhill only.", "write": "C > A > E > A"},
+        {"say": "Grignards and cyanide add carbons. Hydride reductions don't.", "write": "count the carbons"},
+        {"say": "For acidity, argue through the stability of the conjugate base.", "write": "stable base → strong acid"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "level": "Year 7",
+  "subject": "selective",
+  "title": "Number grids and matrices",
+  "frames": [
+    {
+      "heading": "One rule, find the gap",
+      "lines": [
+        {
+          "say": "Number grids put numbers in rows and columns. One or two are missing.",
+          "write": "grids · pyramids · squares"
+        },
+        {
+          "say": "A single rule links them. Find it, then fill the gap."
+        },
+        {
+          "say": "Check rows first, then columns, then the rest.",
+          "write": "Rows, columns, corners"
+        },
+        {
+          "say": "Two, five, ten. Three, four, twelve. First times second gives the third.",
+          "write": "2 × 5 = 10,  3 × 4 = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 3 by 3 number grid",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "yellow",
+                "label": "2",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "yellow",
+                "label": "5",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "yellow",
+                "label": "10",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "?"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So six times four is twenty four.",
+          "write": "6 × 4 = 24",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 3 by 3 number grid",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "green",
+                "label": "24",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Undo the rule",
+      "lines": [
+        {
+          "say": "Row one is five, two, three. Five plus two is not three. Try subtraction.",
+          "write": "5 − 2 = 3 ✓",
+          "diagram": "diagrams/y7/selective/number-grids-and-matrices-ex1.svg",
+          "alt": "A 3 by 3 grid. Row 1: 5, 2, 3. Row 2: 9, 4, 5. Row 3: 12, ?, 4."
+        },
+        {
+          "say": "Test it on row two. Nine take four is five. It works.",
+          "write": "9 − 4 = 5 ✓"
+        },
+        {
+          "say": "Row three. Twelve take what is four? Twelve take four is eight.",
+          "write": "12 − ? = 4 → ? = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 3 by 3 number grid",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 20,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 110,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "green",
+                "label": "8",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 200,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Sixteen is the trap. Adding everything in sight does not undo the rule.",
+          "write": "✗ 12 + 4 = 16"
+        }
+      ]
+    },
+    {
+      "heading": "Pyramids",
+      "lines": [
+        {
+          "say": "Each brick is the sum of the two bricks under it.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Number pyramid with bottom row 3, 8, 2",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 70,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "?"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Middle row. Three plus eight is eleven. Eight plus two is ten.",
+          "write": "3 + 8 = 11,  8 + 2 = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Number pyramid with bottom row 3, 8, 2",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "blue",
+                "label": "11",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "blue",
+                "label": "10",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 70,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "?"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Top. Eleven plus ten is twenty one.",
+          "write": "11 + 10 = 21",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Number pyramid with bottom row 3, 8, 2",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "yellow",
+                "label": "8",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 210,
+                "w": 120,
+                "h": 60,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "blue",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 140,
+                "w": 120,
+                "h": 60,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 70,
+                "w": 120,
+                "h": 60,
+                "fill": "green",
+                "label": "21",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not thirteen. The middle eight holds up two bricks, so it counts twice.",
+          "write": "✗ 3 + 8 + 2 = 13"
+        }
+      ]
+    },
+    {
+      "heading": "Magic squares",
+      "lines": [
+        {
+          "say": "Every row, column and diagonal adds to the same magic total.",
+          "write": "same total every line",
+          "diagram": "diagrams/y7/selective/number-grids-and-matrices-ex3.svg",
+          "alt": "Magic square. Row 1: 4, ?, 6. Row 2: 9, 7, blank. Row 3: 8, blank, 10."
+        },
+        {
+          "say": "Find a full line. The left column is four plus nine plus eight. Twenty one.",
+          "write": "4 + 9 + 8 = 21"
+        },
+        {
+          "say": "The top row has one gap. Twenty one take four take six is eleven.",
+          "write": "21 − 4 − 6 = 11",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Top row of the magic square filled in",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 40,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 40,
+                "w": 90,
+                "h": 80,
+                "fill": "green",
+                "label": "11",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 40,
+                "w": 90,
+                "h": 80,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "4 + 11 + 6 = 21 ✓",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Never assume the total is fifteen. Work it out.",
+          "write": "✗ total = 15"
+        }
+      ]
+    },
+    {
+      "heading": "Hidden multiplication grids",
+      "lines": [
+        {
+          "say": "Each number is a hidden row number times a hidden column number.",
+          "write": "row × column",
+          "diagram": "diagrams/y7/selective/number-grids-and-matrices-ex4.svg",
+          "alt": "Multiplication grid with hidden headings. Top row 15 and 21, bottom row 10 and ?."
+        },
+        {
+          "say": "The bottom row is the top row times ten fifteenths. That is two thirds.",
+          "write": "10 ÷ 15 = 2/3"
+        },
+        {
+          "say": "Twenty one times two thirds is fourteen.",
+          "write": "21 × 2/3 = 14",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Bottom row is top row times two thirds",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 40,
+                "w": 120,
+                "h": 70,
+                "fill": "white",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 120,
+                "h": 70,
+                "fill": "white",
+                "label": "21"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 170,
+                "w": 120,
+                "h": 70,
+                "fill": "white",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 170,
+                "w": 120,
+                "h": 70,
+                "fill": "green",
+                "label": "14",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 115,
+                "x2": 200,
+                "y2": 165,
+                "color": "purple"
+              },
+              {
+                "kind": "arrow",
+                "x": 360,
+                "y": 115,
+                "x2": 360,
+                "y2": 165,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 145,
+                "text": "× 2/3",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not sixteen. These grids scale by multiplying. They do not step by adding.",
+          "write": "✗ +6 → 16"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Rows, columns, corners. Check in that order.",
+          "write": "Rows, columns, corners"
+        },
+        {
+          "say": "Each brick weighs what the two below weigh together.",
+          "write": "brick = sum of two below"
+        },
+        {
+          "say": "Find a full line, find the total, fill one gap at a time.",
+          "write": "one gap at a time"
+        },
+        {
+          "say": "Put your answer back in and check the rule.",
+          "write": "put it back"
+        }
+      ]
+    }
+  ]
+}

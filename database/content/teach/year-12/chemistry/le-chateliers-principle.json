@@ -1,0 +1,738 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Le Chatelier’s principle",
+  "frames": [
+    {
+      "heading": "The principle",
+      "lines": [
+        {
+          "say": "If you change a system at equilibrium, it shifts to partially oppose the change.",
+          "write": "partially oppose"
+        },
+        {
+          "say": "Shift right means more products. Shift left means more reactants.",
+          "write": "right = more products"
+        },
+        {
+          "say": "It never fully cancels the change. Only partly.",
+          "write": "partial, not full"
+        },
+        {
+          "say": "Check any prediction with Q and K.",
+          "write": "Q < K → right"
+        }
+      ]
+    },
+    {
+      "heading": "Changing concentration",
+      "lines": [
+        {
+          "say": "Iron three plus and thiocyanate make deep red FeSCN two plus.",
+          "write": "Fe³⁺ + SCN⁻ ⇌ FeSCN²⁺",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Iron thiocyanate equilibrium",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 80,
+                "w": 180,
+                "h": 150,
+                "fill": "yellow",
+                "label": "Fe³⁺ + SCN⁻"
+              },
+              {
+                "kind": "arrow",
+                "x": 250,
+                "y": 155,
+                "x2": 310,
+                "y2": 155,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 180,
+                "h": 150,
+                "fill": "pink",
+                "label": "FeSCN²⁺"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add iron three plus. The system uses some up, shifting right.",
+          "write": "add Fe³⁺ → right",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Shift right, darker red",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 80,
+                "w": 180,
+                "h": 150,
+                "fill": "yellow",
+                "label": "Fe³⁺ + SCN⁻",
+                "change": "highlight"
+              },
+              {
+                "kind": "arrow",
+                "x": 250,
+                "y": 155,
+                "x2": 310,
+                "y2": 155,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 180,
+                "h": 150,
+                "fill": "red",
+                "label": "darker red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The solution goes darker red. K does not change.",
+          "write": "K unchanged"
+        },
+        {
+          "say": "Removing a product also shifts right. That is why ammonia is removed.",
+          "write": "remove NH₃ → right"
+        }
+      ]
+    },
+    {
+      "heading": "Changing volume",
+      "lines": [
+        {
+          "say": "Squash a gas mixture, and the system shifts to fewer gas moles.",
+          "write": "↓ volume → fewer moles"
+        },
+        {
+          "say": "Ammonia: four moles of gas on the left, two on the right.",
+          "write": "N₂ + 3H₂ ⇌ 2NH₃",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Four moles become two",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 150,
+                "r": 22,
+                "fill": "blue",
+                "label": "N₂"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 150,
+                "r": 22,
+                "fill": "grey",
+                "label": "H₂"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 150,
+                "r": 22,
+                "fill": "grey",
+                "label": "H₂"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 22,
+                "fill": "grey",
+                "label": "H₂"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 220,
+                "text": "4 mol gas",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 150,
+                "x2": 320,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 150,
+                "r": 26,
+                "fill": "green",
+                "label": "NH₃"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 150,
+                "r": 26,
+                "fill": "green",
+                "label": "NH₃"
+              },
+              {
+                "kind": "text",
+                "x": 415,
+                "y": 220,
+                "text": "2 mol gas",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So halving the volume shifts right, making more ammonia.",
+          "write": "halve V → more NH₃"
+        },
+        {
+          "say": "With equal gas moles on each side, like H two and I two, no shift.",
+          "write": "equal moles: no shift"
+        },
+        {
+          "say": "Adding argon at constant volume changes nothing. No shift.",
+          "write": "inert gas: no shift"
+        },
+        {
+          "say": "Diluting a solution shifts towards more dissolved particles.",
+          "write": "dilute → more particles"
+        }
+      ]
+    },
+    {
+      "heading": "Changing temperature",
+      "lines": [
+        {
+          "say": "Temperature is the only change that alters K.",
+          "write": "only T changes K"
+        },
+        {
+          "say": "Treat heat as a product of an exothermic reaction.",
+          "write": "exo: heat is a product"
+        },
+        {
+          "say": "Heat it, and an exothermic equilibrium shifts left. K decreases.",
+          "write": "heat exo → left, K ↓"
+        },
+        {
+          "say": "Two NO two makes N two O four, exothermic. In ice, it goes paler.",
+          "write": "2NO₂ ⇌ N₂O₄, ΔH < 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Hot tube brown, cold tube pale",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 60,
+                "w": 160,
+                "h": 180,
+                "fill": "orange",
+                "label": "hot: brown"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 60,
+                "w": 160,
+                "h": 180,
+                "fill": "white",
+                "label": "ice: pale",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A catalyst speeds up both directions equally. No shift at all.",
+          "write": "catalyst: faster, no shift"
+        }
+      ]
+    },
+    {
+      "heading": "Reading concentration–time graphs",
+      "lines": [
+        {
+          "say": "Flat lines mean equilibrium.",
+          "write": "flat = equilibrium",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Flat lines at equilibrium",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "time",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "concentration",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 200,
+                "x2": 520,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 120,
+                "x2": 520,
+                "y2": 120,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 190,
+                "text": "N₂",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 110,
+                "text": "NH₃",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A jump in one line only means that species was added.",
+          "write": "one jump = added",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Nitrogen added then shift",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "time",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "concentration",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 200,
+                "x2": 200,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 200,
+                "x2": 200,
+                "y2": 100,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 100,
+                "x2": 300,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 150,
+                "x2": 520,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 120,
+                "x2": 200,
+                "y2": 120,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 120,
+                "x2": 300,
+                "y2": 80,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 80,
+                "x2": 520,
+                "y2": 80,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 170,
+                "text": "N₂",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 70,
+                "text": "NH₃",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 285,
+                "text": "",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then nitrogen falls gradually and ammonia rises. It ends between old and new.",
+          "write": "partial opposition"
+        },
+        {
+          "say": "Jumps in all gas lines at once mean a volume change.",
+          "write": "all jump = volume"
+        },
+        {
+          "say": "Gradual changes with no jump mean a temperature change.",
+          "write": "no jump = temperature"
+        }
+      ]
+    },
+    {
+      "heading": "The Haber process",
+      "lines": [
+        {
+          "say": "Making ammonia is exothermic, with fewer gas moles on the right.",
+          "write": "ΔH = −92 kJ mol⁻¹"
+        },
+        {
+          "say": "High pressure gives more yield and a faster rate.",
+          "write": "high pressure"
+        },
+        {
+          "say": "Low temperature gives more yield, but the rate is too slow.",
+          "write": "temperature conflict",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Temperature compromise",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 220,
+                "h": 90,
+                "fill": "green",
+                "label": "low T: high yield"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 80,
+                "w": 220,
+                "h": 90,
+                "fill": "red",
+                "label": "low T: too slow"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "compromise: moderate T",
+                "size": 22,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So a moderate temperature is chosen, with an iron catalyst.",
+          "write": "moderate T + Fe catalyst"
+        },
+        {
+          "say": "Ammonia is liquefied and removed. Unreacted gases are recycled.",
+          "write": "remove NH₃, recycle"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "A catalyst does not increase yield. It just gets there faster.",
+          "write": "✗ catalyst ↑ yield"
+        },
+        {
+          "say": "Argon at constant volume causes no shift.",
+          "write": "✗ inert gas shift"
+        },
+        {
+          "say": "Raising temperature always favours the endothermic direction.",
+          "write": "↑T → endothermic"
+        },
+        {
+          "say": "The system only partly opposes the change.",
+          "write": "partial"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Add reactant, shift right. Add product, shift left.",
+          "write": "add → use it up"
+        },
+        {
+          "say": "Smaller volume shifts to fewer gas moles.",
+          "write": "fewer gas moles"
+        },
+        {
+          "say": "Only temperature changes K.",
+          "write": "only T changes K"
+        },
+        {
+          "say": "Haber uses compromise conditions for yield, rate and cost.",
+          "write": "compromise",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Concentration time graph",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "time",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "concentration",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 200,
+                "x2": 200,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 200,
+                "x2": 200,
+                "y2": 100,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 100,
+                "x2": 300,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 150,
+                "x2": 520,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 50,
+                "y": 120,
+                "x2": 200,
+                "y2": 120,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 120,
+                "x2": 300,
+                "y2": 80,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 80,
+                "x2": 520,
+                "y2": 80,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 170,
+                "text": "N₂",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 70,
+                "text": "NH₃",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 285,
+                "text": "",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

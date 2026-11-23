@@ -1,0 +1,102 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "CRISPR and biochemical pathways",
+  "frames": [
+    { "heading": "CRISPR-Cas9 in one minute",
+      "lines": [
+        { "say": "CRISPR-Cas9 is a gene editing tool borrowed from bacteria.", "write": "CRISPR-Cas9" },
+        { "say": "The guide RNA matches the target DNA. It leads Cas9 to the spot.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Guide RNA leads Cas9 to target DNA next to PAM", "items": [
+            {"kind": "rect", "x": 20, "y": 150, "w": 520, "h": 30, "fill": "blue", "label": "DNA"},
+            {"kind": "rect", "x": 330, "y": 150, "w": 60, "h": 30, "fill": "yellow", "label": "PAM"},
+            {"kind": "rect", "x": 180, "y": 110, "w": 140, "h": 30, "fill": "orange", "label": "gRNA"},
+            {"kind": "circle", "x": 250, "y": 70, "r": 40, "fill": "purple", "label": "Cas9"}
+          ]}},
+        { "say": "Cas9 cuts both DNA strands, right next to a PAM sequence.", "write": "Cas9 cuts, gRNA guides",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Cas9 makes a double-stranded break", "items": [
+            {"kind": "rect", "x": 20, "y": 150, "w": 290, "h": 30, "fill": "blue"},
+            {"kind": "rect", "x": 320, "y": 150, "w": 220, "h": 30, "fill": "blue"},
+            {"kind": "rect", "x": 330, "y": 150, "w": 60, "h": 30, "fill": "yellow", "label": "PAM"},
+            {"kind": "line", "x": 315, "y": 130, "x2": 315, "y2": 200, "color": "red", "change": "add"},
+            {"kind": "text", "x": 315, "y": 225, "text": "double-stranded break", "size": 18, "anchor": "middle", "change": "add"},
+            {"kind": "circle", "x": 250, "y": 70, "r": 40, "fill": "purple", "label": "Cas9"}
+          ]}},
+        { "say": "End joining repair often knocks the gene out. Template repair can insert a new sequence.", "write": "knock out or insert" },
+        { "say": "Genes code for enzymes. So editing a gene can change a whole pathway.", "write": "gene → enzyme → pathway" }
+      ] },
+    { "heading": "Why target photosynthesis?",
+      "lines": [
+        { "say": "Rubisco is slow, and it can grab oxygen instead of carbon dioxide.", "write": "Rubisco + O₂ → photorespiration",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Rubisco binding CO2 versus O2", "items": [
+            {"kind": "circle", "x": 280, "y": 120, "r": 60, "fill": "green", "label": "Rubisco"},
+            {"kind": "circle", "x": 90, "y": 120, "r": 34, "fill": "grey", "label": "CO₂"},
+            {"kind": "arrow", "x": 130, "y": 120, "x2": 215, "y2": 120, "color": "black"},
+            {"kind": "circle", "x": 470, "y": 120, "r": 34, "fill": "red", "label": "O₂", "change": "add"},
+            {"kind": "arrow", "x": 430, "y": 120, "x2": 345, "y2": 120, "color": "red", "change": "add"},
+            {"kind": "text", "x": 280, "y": 220, "text": "photorespiration wastes energy", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "That's photorespiration. It wastes energy and loses fixed carbon in wheat and rice.", "write": "big yield loss in C3 crops" },
+        { "say": "Stomata must open for carbon dioxide, but water escapes too.", "write": "open stomata → water lost" },
+        { "say": "In dry weather they close. Carbon dioxide runs short and photosynthesis slows.", "write": "drought → CO₂ limiting" }
+      ] },
+    { "heading": "CRISPR ideas for crops",
+      "lines": [
+        { "say": "Edit Rubisco genes for an enzyme that prefers carbon dioxide over oxygen.", "write": "faster, CO₂-picky Rubisco" },
+        { "say": "Make Rubisco activase heat stable, so crops keep working on hot days.", "write": "heat-stable activase" },
+        { "say": "Knock out a stomata gene. The leaf grows fewer stomata.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "A leaf with stomata, some removed by the edit", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 480, "h": 140, "fill": "green"},
+            {"kind": "circle", "x": 100, "y": 90, "r": 14, "fill": "white"},
+            {"kind": "circle", "x": 200, "y": 150, "r": 14, "fill": "white", "change": "remove"},
+            {"kind": "circle", "x": 290, "y": 90, "r": 14, "fill": "white"},
+            {"kind": "circle", "x": 380, "y": 150, "r": 14, "fill": "white", "change": "remove"},
+            {"kind": "circle", "x": 460, "y": 90, "r": 14, "fill": "white"},
+            {"kind": "circle", "x": 150, "y": 160, "r": 14, "fill": "white", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 225, "text": "fewer stomata → less water lost", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "That improves water use efficiency. More carbon fixed per drop of water.", "write": "water-use efficiency ↑" },
+        { "say": "Giving rice C4 traits would need many genes changed at once.", "write": "C4 rice: many genes" }
+      ] },
+    { "heading": "Biofuels from biomass",
+      "lines": [
+        { "say": "Biomass is plant material like straw, wood and grasses.", "write": "biomass → bioethanol" },
+        { "say": "Cellulases break cellulose into glucose. Then yeast ferments it.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Cellulose to glucose to ethanol, then distillation", "items": [
+            {"kind": "rect", "x": 10, "y": 70, "w": 120, "h": 60, "fill": "green", "label": "cellulose"},
+            {"kind": "arrow", "x": 135, "y": 100, "x2": 175, "y2": 100, "color": "black"},
+            {"kind": "rect", "x": 180, "y": 70, "w": 110, "h": 60, "fill": "yellow", "label": "glucose", "change": "add"},
+            {"kind": "arrow", "x": 295, "y": 100, "x2": 335, "y2": 100, "color": "black", "change": "add"},
+            {"kind": "rect", "x": 340, "y": 70, "w": 200, "h": 60, "fill": "orange", "label": "ethanol + CO₂", "change": "add"},
+            {"kind": "text", "x": 280, "y": 175, "text": "anaerobic: keep oxygen out", "size": 20, "anchor": "middle"}
+          ]}},
+        { "say": "Fermentation must be anaerobic. With oxygen, yeast makes no ethanol.", "write": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂" },
+        { "say": "Lignin is tough. Editing crops for less lignin frees up cellulose.", "write": "less lignin → easier" },
+        { "say": "Yeast could be edited to tolerate more ethanol, or ferment xylose.", "write": "edit the yeast too" }
+      ] },
+    { "heading": "Potential and limits",
+      "lines": [
+        { "say": "CRISPR is precise and faster than breeding. Many edits add no foreign DNA.", "write": "precise, fast, no foreign DNA" },
+        { "say": "But Cas9 may cut similar sequences elsewhere. Those are off-target effects.", "write": "off-target effects" },
+        { "say": "Yield depends on many genes. One edit has limited effect.", "write": "many genes, small effect" },
+        { "say": "Trade-offs too. Fewer stomata may slow growth when water is plentiful.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Balance of benefit and cost for fewer stomata", "items": [
+            {"kind": "rect", "x": 40, "y": 60, "w": 220, "h": 70, "fill": "green", "label": "drought: better"},
+            {"kind": "rect", "x": 300, "y": 60, "w": 220, "h": 70, "fill": "red", "label": "wet: slower growth", "change": "add"},
+            {"kind": "text", "x": 280, "y": 185, "text": "trade-off", "size": 24, "anchor": "middle", "bold": true, "change": "highlight"}
+          ]}},
+        { "say": "Biofuels aren't fully carbon neutral. Farming and processing use energy.", "write": "not fully carbon neutral" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "The guide RNA finds the target. Cas9 does the cutting.", "write": "gRNA finds, Cas9 cuts" },
+        { "say": "CRISPR doesn't always add a gene. Many crop edits are knockouts.", "write": "often a knockout" },
+        { "say": "Ethanol comes from anaerobic fermentation, never aerobic respiration.", "write": "ethanol: anaerobic only" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Edit the gene, change the enzyme, change the pathway.", "write": "gene → enzyme → pathway" },
+        { "say": "Crop targets are Rubisco, photorespiration and stomata.", "write": "Rubisco, stomata" },
+        { "say": "Biofuel targets are lignin in crops and tolerance in yeast.", "write": "lignin, yeast" },
+        { "say": "Always weigh off-target effects and trade-offs.", "write": "potential vs limits" }
+      ] }
+  ]
+}

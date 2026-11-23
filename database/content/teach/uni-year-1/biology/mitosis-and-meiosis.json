@@ -1,0 +1,73 @@
+{"level":"Uni Year 1","subject":"biology","title":"Mitosis and meiosis","frames":[
+{"heading":"Chromosomes and ploidy","lines":[
+{"say":"After replication, a chromosome is two identical sister chromatids joined at a centromere.","write":"2 sister chromatids","draw":{"type":"shapes","width":560,"height":240,"alt":"Unreplicated chromosome becomes two sister chromatids at a centromere","items":[
+{"kind":"rect","x":120,"y":40,"w":26,"h":160,"fill":"blue"},
+{"kind":"arrow","x":180,"y":120,"x2":280,"y2":120,"color":"black"},
+{"kind":"rect","x":340,"y":40,"w":26,"h":160,"fill":"blue"},
+{"kind":"rect","x":372,"y":40,"w":26,"h":160,"fill":"blue","change":"add"},
+{"kind":"circle","x":369,"y":120,"r":12,"fill":"red","change":"highlight"},
+{"kind":"text","x":369,"y":230,"text":"centromere","size":16,"anchor":"middle"}]}},
+{"say":"Human body cells are diploid: 46 chromosomes in 23 homologous pairs.","write":"2n = 46"},
+{"say":"Homologues carry the same genes, but may carry different alleles.","write":"homologues ≠ sister chromatids"},
+{"say":"Count chromosomes by centromeres. S phase doubles DNA from 2 c to 4 c.","write":"G1: 2n, 2c → G2: 2n, 4c"}]},
+{"heading":"The cell cycle and its brakes","lines":[
+{"say":"Interphase is G1, S and G2. Then comes M phase.","write":"G1 → S → G2 → M","draw":{"type":"shapes","width":560,"height":160,"alt":"Cell cycle phases in a row","items":[
+{"kind":"rect","x":20,"y":50,"w":160,"h":60,"fill":"green","label":"G1"},
+{"kind":"rect","x":180,"y":50,"w":130,"h":60,"fill":"blue","label":"S: DNA copied","change":"highlight"},
+{"kind":"rect","x":310,"y":50,"w":110,"h":60,"fill":"teal","label":"G2"},
+{"kind":"rect","x":420,"y":50,"w":120,"h":60,"fill":"orange","label":"M"},
+{"kind":"text","x":100,"y":145,"text":"G0 exit from here","size":16,"anchor":"middle"}]}},
+{"say":"Cyclins are the seasons. CDKs are the engine that only runs when cyclin arrives.","write":"cyclin + CDK"},
+{"say":"Cyclin levels rise and fall. CDK levels stay the same.","write":"cyclins oscillate"},
+{"say":"Checkpoints at G1, G2 to M, and the spindle pause the cycle if something's wrong.","write":"G1 · G2/M · spindle"},
+{"say":"p53 is the guardian. It switches on p21 to stop the cycle, or triggers apoptosis.","write":"p53 → p21 → stop"}]},
+{"heading":"Mitosis: PMAT","lines":[
+{"say":"Prophase: chromosomes condense and the spindle starts forming.","write":"P: condense"},
+{"say":"Prometaphase: the nuclear envelope breaks down and microtubules grab the kinetochores.","write":"envelope gone"},
+{"say":"Metaphase: chromosomes line up in the middle.","write":"M: middle","draw":{"type":"shapes","width":560,"height":260,"alt":"Chromosomes lined up on metaphase plate","items":[
+{"kind":"line","x":280,"y":20,"x2":280,"y2":240,"color":"grey","dashed":true},
+{"kind":"rect","x":262,"y":50,"w":36,"h":40,"fill":"blue"},
+{"kind":"rect","x":262,"y":110,"w":36,"h":40,"fill":"red"},
+{"kind":"rect","x":262,"y":170,"w":36,"h":40,"fill":"green"},
+{"kind":"circle","x":40,"y":130,"r":14,"fill":"orange"},
+{"kind":"circle","x":520,"y":130,"r":14,"fill":"orange"}]}},
+{"say":"Anaphase: cohesin is cut, and sister chromatids move away to opposite poles.","write":"A: away","draw":{"type":"shapes","width":560,"height":260,"alt":"Sister chromatids pulled to opposite poles","items":[
+{"kind":"line","x":280,"y":20,"x2":280,"y2":240,"color":"grey","dashed":true},
+{"kind":"rect","x":120,"y":50,"w":18,"h":40,"fill":"blue","change":"add"},
+{"kind":"rect","x":120,"y":110,"w":18,"h":40,"fill":"red","change":"add"},
+{"kind":"rect","x":120,"y":170,"w":18,"h":40,"fill":"green","change":"add"},
+{"kind":"rect","x":422,"y":50,"w":18,"h":40,"fill":"blue","change":"add"},
+{"kind":"rect","x":422,"y":110,"w":18,"h":40,"fill":"red","change":"add"},
+{"kind":"rect","x":422,"y":170,"w":18,"h":40,"fill":"green","change":"add"},
+{"kind":"arrow","x":250,"y":130,"x2":160,"y2":130,"color":"purple"},
+{"kind":"arrow","x":310,"y":130,"x2":400,"y2":130,"color":"purple"}]}},
+{"say":"Telophase: nuclei reform. Then cytokinesis: a furrow in animals, a cell plate in plants.","write":"T: reform · furrow / plate"},
+{"say":"Result: two identical diploid cells.","write":"2 identical cells"}]},
+{"heading":"Meiosis: partners, then twins","lines":[
+{"say":"Meiosis is one replication, then two divisions. Four haploid, different cells.","write":"1 replication, 2 divisions"},
+{"say":"Prophase one: homologues pair up and cross over at chiasmata.","write":"synapsis + crossing over"},
+{"say":"Anaphase one: the partners separate. The chromosome number halves here.","write":"MI: homologues split → n","draw":{"type":"shapes","width":560,"height":240,"alt":"Homologous pair separating in meiosis I","items":[
+{"kind":"rect","x":250,"y":60,"w":24,"h":120,"fill":"blue","change":"remove"},
+{"kind":"rect","x":286,"y":60,"w":24,"h":120,"fill":"red","change":"remove"},
+{"kind":"rect","x":80,"y":60,"w":24,"h":120,"fill":"blue","change":"add"},
+{"kind":"rect","x":456,"y":60,"w":24,"h":120,"fill":"red","change":"add"},
+{"kind":"text","x":280,"y":220,"text":"partners split, chromatids stay joined","size":16,"anchor":"middle"}]}},
+{"say":"Meiosis two separates the twins, the sister chromatids. Just like mitosis.","write":"MII: chromatids split"},
+{"say":"For 2 n equals 8: after meiosis one, 4 chromosomes and 2 c. After meiosis two, 4 and 1 c.","write":"8, 4c → 4, 2c → 4, 1c"}]},
+{"heading":"Variation and errors","lines":[
+{"say":"Cross, shuffle, meet. Crossing over happens in prophase one.","write":"Cross: prophase I"},
+{"say":"Shuffle: each bivalent lines up at random. For humans, 2 to the 23 is about 8.4 million.","write":"2²³ ≈ 8.4 million"},
+{"say":"Meet: any sperm can fertilise any egg.","write":"random fertilisation"},
+{"say":"Non-disjunction in meiosis one makes all four gametes abnormal.","write":"MI error: n+1, n+1, n−1, n−1","draw":{"type":"shapes","width":560,"height":200,"alt":"Four abnormal gametes after meiosis I non-disjunction","items":[
+{"kind":"circle","x":80,"y":90,"r":45,"fill":"orange","label":"n + 1"},
+{"kind":"circle","x":210,"y":90,"r":45,"fill":"orange","label":"n + 1"},
+{"kind":"circle","x":340,"y":90,"r":45,"fill":"purple","label":"n − 1"},
+{"kind":"circle","x":470,"y":90,"r":45,"fill":"purple","label":"n − 1"},
+{"kind":"text","x":280,"y":180,"text":"all four abnormal","size":18,"anchor":"middle","change":"highlight"}]}},
+{"say":"In meiosis two, only one cell is affected, so two gametes are normal.","write":"MII error: 2 normal"}]},
+{"heading":"Watch out, and remember","lines":[
+{"say":"The number halves in meiosis one, not meiosis two.","write":"halves in MI"},
+{"say":"Crossing over is in prophase one, not metaphase.","write":"crossing over: prophase I"},
+{"say":"Prophase, metaphase in the middle, anaphase away, telophase.","write":"PMAT"},
+{"say":"p53 is the guardian. Rb is the gatekeeper into S phase.","write":"p53 guardian, Rb gatekeeper"}]}
+]}

@@ -1,0 +1,687 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Finding side lengths with trigonometry",
+  "frames": [
+    {
+      "heading": "One angle and one side",
+      "lines": [
+        {
+          "say": "Know one angle and one side of a right triangle? Trig finds any other side.",
+          "diagram": "diagrams/y9/maths/finding-side-lengths-with-trigonometry-key.svg",
+          "alt": "Right triangle with a 35° angle, adjacent 8 cm and opposite x"
+        },
+        {
+          "say": "Builders use it for roof rafters. Councils use it to check ramps.",
+          "write": "angle + side → any side"
+        },
+        {
+          "say": "We do it in four steps: label, choose, write, solve.",
+          "write": "Label → Choose → Write → Solve"
+        }
+      ]
+    },
+    {
+      "heading": "Step 1: label the sides",
+      "lines": [
+        {
+          "say": "Start from the angle you are given. Here it is 35 degrees.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The longest side, opposite the right angle, is the hypotenuse.",
+          "write": "H = hypotenuse",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 140,
+                "text": "H",
+                "size": 20,
+                "change": "add",
+                "color": "red",
+                "bold": true,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The side across from the angle is the opposite.",
+          "write": "O = opposite",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 140,
+                "text": "H",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 160,
+                "text": "O",
+                "size": 20,
+                "change": "add",
+                "color": "blue",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The side next to the angle is the adjacent.",
+          "write": "A = adjacent",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 140,
+                "text": "H",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 160,
+                "text": "O",
+                "size": 20,
+                "color": "blue",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 282,
+                "text": "A",
+                "size": 20,
+                "change": "add",
+                "color": "green",
+                "bold": true,
+                "anchor": "middle"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Step 2: choose the ratio",
+      "lines": [
+        {
+          "say": "We know the hypotenuse is 12. We want the opposite side, x.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 140,
+                "text": "H = 12",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 160,
+                "text": "O = x",
+                "size": 20,
+                "color": "blue",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 282,
+                "text": "A",
+                "size": 20,
+                "color": "green",
+                "bold": true,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The adjacent side is not involved, so cross it off.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 140,
+                "text": "H = 12",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 160,
+                "text": "O = x",
+                "size": 20,
+                "color": "blue",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 282,
+                "text": "A",
+                "size": 20,
+                "change": "remove",
+                "color": "green",
+                "bold": true,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "O and H are left. That's SOH, so we use sine.",
+          "write": "SOH CAH TOA"
+        },
+        {
+          "say": "Write the equation: sine 35 degrees equals x over 12.",
+          "write": "sin 35° = x/12"
+        }
+      ]
+    },
+    {
+      "heading": "x on top: multiply",
+      "lines": [
+        {
+          "say": "Here x is on the top of the fraction, the numerator.",
+          "write": "sin 35° = x/12"
+        },
+        {
+          "say": "So multiply both sides by 12.",
+          "write": "x = 12 × sin 35°"
+        },
+        {
+          "say": "12 times 0.57357 is about 6.88.",
+          "write": "x ≈ 6.88 cm"
+        },
+        {
+          "say": "Check: 6.88 is shorter than the 12 centimetre hypotenuse. Good.",
+          "write": "6.88 < 12 ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A right-angled triangle with the angle 35° marked",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    440,
+                    250
+                  ],
+                  [
+                    440,
+                    60
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 250,
+                "x2": 415,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 225,
+                "x2": 440,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 240,
+                "text": "35°",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 140,
+                "text": "H = 12",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 160,
+                "text": "O ≈ 6.88",
+                "size": 20,
+                "change": "highlight",
+                "color": "blue",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 282,
+                "text": "A",
+                "size": 20,
+                "color": "green",
+                "bold": true,
+                "anchor": "middle"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "x on the bottom: divide",
+      "lines": [
+        {
+          "say": "Now the opposite side is 5 and the hypotenuse x is unknown.",
+          "diagram": "diagrams/y9/maths/finding-side-lengths-with-trigonometry-ex3.svg",
+          "alt": "Right triangle with a 28° angle, opposite 5 cm and hypotenuse x"
+        },
+        {
+          "say": "O and H again, so SOH. Sine 28 degrees equals 5 over x.",
+          "write": "sin 28° = 5/x"
+        },
+        {
+          "say": "This time x is on the bottom. Swap x and sine 28.",
+          "write": "x = 5 ÷ sin 28°"
+        },
+        {
+          "say": "5 divided by 0.46947 is about 10.65.",
+          "write": "x ≈ 10.65 cm"
+        },
+        {
+          "say": "Check: the hypotenuse must be the longest side. 10.65 is longer than 5.",
+          "write": "10.65 > 5 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "A ramp problem",
+      "lines": [
+        {
+          "say": "A ramp rises half a metre at 6 degrees. How long is the ramp?",
+          "diagram": "diagrams/y9/maths/finding-side-lengths-with-trigonometry-ex4.svg",
+          "alt": "A ramp rising 0.5 m at 6° with sloping side x"
+        },
+        {
+          "say": "The rise is opposite the angle. The ramp is the hypotenuse.",
+          "write": "O = 0.5, H = x"
+        },
+        {
+          "say": "So sine 6 degrees equals 0.5 over x.",
+          "write": "sin 6° = 0.5/x"
+        },
+        {
+          "say": "x is on the bottom, so divide. The ramp is about 4.78 metres.",
+          "write": "x = 0.5 ÷ sin 6° ≈ 4.78 m"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Label the sides first, or you may pick the wrong ratio.",
+          "write": "Label first!"
+        },
+        {
+          "say": "If x is on the bottom, don't multiply. Divide.",
+          "write": "✗ x = 5 × sin 28°"
+        },
+        {
+          "say": "Check your calculator shows D or DEG, not radians.",
+          "write": "DEG mode"
+        },
+        {
+          "say": "Don't round the trig value early. Use the full calculator value.",
+          "write": "✗ sin 35° ≈ 0.57"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Label H, O and A from the given angle.",
+          "write": "Label H, O, A"
+        },
+        {
+          "say": "Cross off the side you don't need, then use SOH CAH TOA.",
+          "write": "SOH CAH TOA"
+        },
+        {
+          "say": "Top? Times. Bottom? Divide.",
+          "write": "Top? ×   Bottom? ÷"
+        },
+        {
+          "say": "Round at the end, include units, and check the hypotenuse is longest.",
+          "write": "H is the longest ✓"
+        }
+      ]
+    }
+  ]
+}

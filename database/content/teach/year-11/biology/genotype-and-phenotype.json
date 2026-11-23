@@ -1,0 +1,91 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Genotype and phenotype",
+  "frames": [
+    { "heading": "Genotype and phenotype",
+      "lines": [
+        { "say": "The genotype is the combination of alleles an organism has. The letters.", "write": "genotype = the letters (Tt)" },
+        { "say": "The phenotype is what you see or measure. Height, blood group, enzyme activity.", "write": "phenotype = what you see" },
+        { "say": "Phenotype equals genotype plus environment. Like a recipe in a kitchen.", "write": "phenotype = genotype + env." },
+        { "say": "Capital letter for dominant, same letter lower case for recessive.", "write": "T = tall, t = short" }
+      ] },
+    { "heading": "Homozygous and heterozygous",
+      "lines": [
+        { "say": "Homo means same. TT is homozygous dominant, little tt homozygous recessive.", "write": "TT · tt = homozygous" },
+        { "say": "Hetero means different. Big T, little t is heterozygous.", "write": "Tt = heterozygous" },
+        { "say": "A dominant allele shows whenever it's there, even one copy.", "write": "dominant: one copy shows",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "TT and Tt plants both tall; tt plant short", "items": [
+            { "kind": "rect", "x": 80, "y": 40, "w": 60, "h": 180, "fill": "green", "label": "TT" },
+            { "kind": "rect", "x": 250, "y": 40, "w": 60, "h": 180, "fill": "green", "label": "Tt", "change": "highlight" },
+            { "kind": "rect", "x": 420, "y": 150, "w": 60, "h": 70, "fill": "green", "label": "tt" },
+            { "kind": "line", "x": 40, "y": 220, "x2": 520, "y2": 220, "color": "black" },
+            { "kind": "text", "x": 110, "y": 248, "text": "tall", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 280, "y": 248, "text": "tall", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 450, "y": 248, "text": "short", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "A recessive allele shows only when there's no dominant allele.", "write": "recessive: needs tt" },
+        { "say": "So a tall plant could be TT or Tt. Only the recessive tells the truth.", "write": "only recessive tells the truth" }
+      ] },
+    { "heading": "Why dominance happens",
+      "lines": [
+        { "say": "Often the dominant allele makes a working protein. The recessive makes a faulty one.", "write": "dominant = working protein" },
+        { "say": "One working allele usually makes enough. Like a lamp with one good bulb.", "write": "one bulb lights the room",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Lamps: two good bulbs lit, one good bulb lit, no good bulbs dark", "items": [
+            { "kind": "circle", "x": 70, "y": 100, "r": 30, "fill": "yellow" },
+            { "kind": "circle", "x": 140, "y": 100, "r": 30, "fill": "yellow" },
+            { "kind": "circle", "x": 250, "y": 100, "r": 30, "fill": "yellow" },
+            { "kind": "circle", "x": 320, "y": 100, "r": 30, "fill": "grey", "change": "remove" },
+            { "kind": "circle", "x": 430, "y": 100, "r": 30, "fill": "grey" },
+            { "kind": "circle", "x": 500, "y": 100, "r": 30, "fill": "grey" },
+            { "kind": "text", "x": 105, "y": 180, "text": "TT: lit", "size": 18, "anchor": "middle" },
+            { "kind": "text", "x": 285, "y": 180, "text": "Tt: still lit", "size": 18, "anchor": "middle", "color": "purple" },
+            { "kind": "text", "x": 465, "y": 180, "text": "tt: dark", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "A heterozygous person with a recessive disease allele, like cystic fibrosis, is a carrier.", "write": "carrier = Tt, no symptoms" },
+        { "say": "Dominant doesn't mean common or better. Huntington's allele is dominant.", "write": "dominant ≠ common" }
+      ] },
+    { "heading": "Working out a genotype",
+      "lines": [
+        { "say": "Black fur is dominant to white. A white and a black guinea pig breed.", "write": "B = black, b = white" },
+        { "say": "The white parent shows the recessive phenotype, so it's little b, little b.", "write": "white parent = bb" },
+        { "say": "Some offspring are white, so they got a little b from the black parent.", "write": "white offspring = bb" },
+        { "say": "So the black parent must be heterozygous.", "write": "black parent = Bb" }
+      ] },
+    { "heading": "Environment matters",
+      "lines": [
+        { "say": "Hydrangea cuttings are clones. Same genotype in every plant.", "write": "clones: genotype controlled" },
+        { "say": "Acidic soil gives blue flowers. More alkaline soil gives pink.", "write": "pH 5.5 blue · pH 7.5 pink",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Same hydrangea cutting gives blue flowers in acidic soil and pink in alkaline soil", "items": [
+            { "kind": "circle", "x": 150, "y": 90, "r": 60, "fill": "blue", "label": "blue" },
+            { "kind": "circle", "x": 410, "y": 90, "r": 60, "fill": "pink", "label": "pink", "change": "add" },
+            { "kind": "rect", "x": 80, "y": 170, "w": 140, "h": 40, "fill": "grey", "label": "pH 5.5" },
+            { "kind": "rect", "x": 340, "y": 170, "w": 140, "h": 40, "fill": "grey", "label": "pH 7.5" }
+          ] } },
+        { "say": "Siamese cats grow dark fur only on cool spots: ears, nose, paws and tail.", "write": "temperature-sensitive enzyme" },
+        { "say": "PKU: a low-phenylalanine diet protects the phenotype. The genotype doesn't change.", "write": "PKU: diet changes phenotype" },
+        { "say": "One gene gives separate categories. Many genes plus environment give a smooth range.", "write": "discontinuous vs continuous" }
+      ] },
+    { "heading": "Epigenetics",
+      "lines": [
+        { "say": "Epigenetics changes gene expression without changing the DNA sequence.", "write": "switches, not spelling" },
+        { "say": "DNA methylation adds methyl groups near a gene. It's usually silenced.", "write": "methylation → silenced" },
+        { "say": "Histone modification changes how tightly DNA is wound. Tight means switched off.", "write": "tight = off, loose = on",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Loosely wound DNA around histones becomes tightly packed and silenced", "items": [
+            { "kind": "circle", "x": 80, "y": 100, "r": 30, "fill": "purple" },
+            { "kind": "circle", "x": 200, "y": 100, "r": 30, "fill": "purple" },
+            { "kind": "line", "x": 20, "y": 100, "x2": 260, "y2": 100, "color": "blue" },
+            { "kind": "text", "x": 140, "y": 180, "text": "loose: ON", "size": 20, "anchor": "middle", "color": "green" },
+            { "kind": "circle", "x": 380, "y": 100, "r": 30, "fill": "purple", "change": "add" },
+            { "kind": "circle", "x": 440, "y": 100, "r": 30, "fill": "purple", "change": "add" },
+            { "kind": "text", "x": 410, "y": 180, "text": "tight: OFF", "size": 20, "anchor": "middle", "color": "red", "change": "add" }
+          ] } },
+        { "say": "Diet, stress and smoking can change these marks. That's why identical twins drift apart.", "write": "twins: same DNA, different marks" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Use the same letter for both alleles of a gene.", "write": "T and t, not T and s" },
+        { "say": "The environment changes phenotype, not genotype.", "write": "genotype unchanged" },
+        { "say": "Explain dominance with proteins: one working allele is enough.", "write": "link to protein" },
+        { "say": "For epigenetics, name a mechanism and say the sequence is unchanged.", "write": "mechanism + same sequence" }
+      ] }
+  ]
+}

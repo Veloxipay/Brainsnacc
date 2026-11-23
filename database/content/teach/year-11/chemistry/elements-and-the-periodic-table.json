@@ -1,0 +1,542 @@
+{
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "Elements and the periodic table",
+  "frames": [
+    {
+      "heading": "Inside the atom",
+      "lines": [
+        {
+          "say": "An atom has a tiny, dense nucleus with electrons around it.",
+          "write": "nucleus + electrons",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Atom",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 120,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 30,
+                "fill": "orange",
+                "label": "nucleus"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 30,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 150,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 150,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 270,
+                "r": 10,
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Protons are plus 1. Neutrons have no charge. Both have mass 1.",
+          "write": "p⁺ +1,  n 0,  mass 1"
+        },
+        {
+          "say": "Electrons are minus 1, and almost no mass at all.",
+          "write": "e⁻ −1, mass ≈ 0"
+        },
+        {
+          "say": "Atomic number Z counts protons. It is the ID number of the element.",
+          "write": "Z = protons"
+        },
+        {
+          "say": "Mass number A is protons plus neutrons.",
+          "write": "A = p + n"
+        },
+        {
+          "say": "So neutrons equal A minus Z.",
+          "write": "neutrons = A − Z"
+        }
+      ]
+    },
+    {
+      "heading": "Counting particles in an ion",
+      "lines": [
+        {
+          "say": "Try iron 56, three plus. Iron is atomic number 26.",
+          "write": "⁵⁶Fe³⁺: Z = 26",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Iron ion particles",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 150,
+                "h": 100,
+                "fill": "red",
+                "label": "26 p⁺"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "⁵⁶Fe³⁺",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Neutrons are 56 minus 26, which is 30.",
+          "write": "n = 56 − 26 = 30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Iron ion particles",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 150,
+                "h": 100,
+                "fill": "red",
+                "label": "26 p⁺"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 60,
+                "w": 150,
+                "h": 100,
+                "fill": "grey",
+                "label": "30 n",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "⁵⁶Fe³⁺",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A neutral atom has 26 electrons. Three plus means 3 were lost.",
+          "write": "26 − 3 = 23 e⁻",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Iron loses 3 electrons",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 150,
+                "h": 100,
+                "fill": "red",
+                "label": "26 p⁺"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 60,
+                "w": 150,
+                "h": 100,
+                "fill": "grey",
+                "label": "30 n"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 150,
+                "h": 100,
+                "fill": "blue",
+                "label": "26 e⁻",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 180,
+                "w": 150,
+                "h": 40,
+                "fill": "blue",
+                "label": "23 e⁻",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "⁵⁶Fe³⁺",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Positive is lost. The proton number never changes.",
+          "write": "positive = lost e⁻"
+        }
+      ]
+    },
+    {
+      "heading": "Isotopes",
+      "lines": [
+        {
+          "say": "Isotopes have the same protons, but different numbers of neutrons.",
+          "write": "same Z, different A"
+        },
+        {
+          "say": "Chlorine 35 has 18 neutrons. Chlorine 37 has 20.",
+          "write": "³⁵Cl: 18 n   ³⁷Cl: 20 n",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Chlorine isotopes",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 130,
+                "r": 70,
+                "fill": "teal",
+                "label": "17 p, 18 n"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 130,
+                "r": 70,
+                "fill": "teal",
+                "label": "17 p, 20 n"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 130,
+                "r": 70,
+                "fill": "teal",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 240,
+                "text": "chlorine-35",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 240,
+                "text": "chlorine-37",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Same electrons, so the same chemistry.",
+          "write": "same chemical properties"
+        },
+        {
+          "say": "Different mass, so different density and diffusion rate.",
+          "write": "different physical properties"
+        },
+        {
+          "say": "Think: identical twins in different weight jackets.",
+          "write": "twins in different jackets"
+        }
+      ]
+    },
+    {
+      "heading": "Relative atomic mass",
+      "lines": [
+        {
+          "say": "We compare masses with carbon 12, given a mass of exactly 12.",
+          "write": "standard: carbon-12 = 12"
+        },
+        {
+          "say": "Relative atomic mass is a weighted mean of the isotope masses.",
+          "write": "Aᵣ = weighted mean"
+        },
+        {
+          "say": "Multiply each mass by its abundance, add, then divide by 100.",
+          "write": "Aᵣ = Σ(Iᵣ × %) ÷ 100"
+        },
+        {
+          "say": "Chlorine is 75.78 percent chlorine 35, and 24.22 percent chlorine 37.",
+          "write": "75.78% & 24.22%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Chlorine abundance bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 90,
+                "w": 394,
+                "h": 80,
+                "fill": "teal",
+                "label": "³⁵Cl 75.78%"
+              },
+              {
+                "kind": "rect",
+                "x": 414,
+                "y": 90,
+                "w": 126,
+                "h": 80,
+                "fill": "orange",
+                "label": "³⁷Cl"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "Aᵣ = 35.45",
+                "size": 28,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "That gives 35.45. It leans towards 35, the more common one.",
+          "write": "Aᵣ = 35.45 (no units)"
+        }
+      ]
+    },
+    {
+      "heading": "Finding abundances",
+      "lines": [
+        {
+          "say": "Boron has isotopes of mass 10.013 and 11.009. Its A r is 10.81.",
+          "write": "¹⁰B, ¹¹B,  Aᵣ = 10.81"
+        },
+        {
+          "say": "Call the fraction of boron 10 x. Boron 11 is one minus x.",
+          "write": "x and (1 − x)"
+        },
+        {
+          "say": "Set up and solve the equation.",
+          "write": "10.013x + 11.009(1 − x) = 10.81"
+        },
+        {
+          "say": "x is about 0.2. So 20 percent boron 10, 80 percent boron 11.",
+          "write": "¹⁰B 20.0%   ¹¹B 80.0%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Boron abundance",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 90,
+                "w": 104,
+                "h": 80,
+                "fill": "blue",
+                "label": "20%",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 124,
+                "y": 90,
+                "w": 416,
+                "h": 80,
+                "fill": "green",
+                "label": "¹¹B 80%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "check: 10.81 is between 10.013 and 11.009",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check: the answer must sit between the two isotope masses.",
+          "write": "check it fits"
+        }
+      ]
+    },
+    {
+      "heading": "Groups, periods and blocks",
+      "lines": [
+        {
+          "say": "The modern table is ordered by atomic number. Mendeleev left gaps.",
+          "write": "ordered by Z"
+        },
+        {
+          "say": "Groups go down. Same valence electrons, so similar chemistry.",
+          "write": "group = valence e⁻"
+        },
+        {
+          "say": "Periods go across. Period number is the number of occupied shells.",
+          "write": "period = shells"
+        },
+        {
+          "say": "Sodium is in period 3. Its electrons fill three shells: 2, 8, 1.",
+          "write": "Na: period 3 → 2, 8, 1"
+        },
+        {
+          "say": "Blocks are 2, 6, 10 and 14 columns wide: s, p, d, f.",
+          "write": "s 2,  p 6,  d 10,  f 14",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Blocks of the periodic table",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 60,
+                "h": 180,
+                "fill": "blue",
+                "label": "s"
+              },
+              {
+                "kind": "rect",
+                "x": 90,
+                "y": 120,
+                "w": 240,
+                "h": 120,
+                "fill": "orange",
+                "label": "d"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 60,
+                "w": 190,
+                "h": 180,
+                "fill": "green",
+                "label": "p"
+              },
+              {
+                "kind": "rect",
+                "x": 90,
+                "y": 260,
+                "w": 330,
+                "h": 35,
+                "fill": "purple",
+                "label": "f"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Metals are left and centre. Non-metals are on the right.",
+          "write": "metals | metalloids | non-metals"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Atomic number is the smaller number. It counts protons only.",
+          "write": "Z < A"
+        },
+        {
+          "say": "Ions change electrons, never protons.",
+          "write": "✗ change protons"
+        },
+        {
+          "say": "A weighted average, not a simple average.",
+          "write": "✗ simple average"
+        },
+        {
+          "say": "Isotopes do not have different chemical properties.",
+          "write": "✗ different chemistry"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Neutrons equal A minus Z.",
+          "write": "n = A − Z"
+        },
+        {
+          "say": "Positive means electrons lost. Negative means gained.",
+          "write": "+ lost,  − gained"
+        },
+        {
+          "say": "A r is a weighted mean, with no units.",
+          "write": "Aᵣ = Σ(Iᵣ × %) ÷ 100"
+        },
+        {
+          "say": "Groups share valence electrons. Periods give the number of shells.",
+          "write": "group ↓   period →"
+        }
+      ]
+    }
+  ]
+}

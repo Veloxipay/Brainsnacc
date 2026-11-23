@@ -1,0 +1,561 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Testing number patterns with algorithms",
+  "frames": [
+    {
+      "heading": "Making a pattern with a loop",
+      "lines": [
+        {
+          "say": "A loop can build a pattern that adds the same amount each time.",
+          "write": "Set t to 3. Repeat: output t, t + 5"
+        },
+        {
+          "say": "Output 3 first, then add 5. Output 8, then add 5.",
+          "write": "3, 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Pattern terms",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 97,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Keep going. 13, 18, 23, 28.",
+          "write": "3, 8, 13, 18, 23, 28",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Pattern terms",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "change": "add",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "change": "add",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "change": "add",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "change": "add",
+                "label": "28"
+              },
+              {
+                "kind": "text",
+                "x": 97,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 187,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 277,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 367,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 457,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Adding the same amount each time is called arithmetic.",
+          "write": "arithmetic pattern"
+        },
+        {
+          "say": "Output first, then add. Trace the first two loops carefully.",
+          "write": "watch off-by-one"
+        }
+      ]
+    },
+    {
+      "heading": "Finding the position rule",
+      "lines": [
+        {
+          "say": "The rule is difference times position, plus first term take difference.",
+          "write": "term = d × position + (first − d)"
+        },
+        {
+          "say": "Here the difference is 5. First term take 5 is minus 2.",
+          "write": "3 − 5 = −2"
+        },
+        {
+          "say": "So the rule is 5 times position, take 2.",
+          "write": "term = 5 × position − 2"
+        },
+        {
+          "say": "Check position 6. 5 times 6 take 2 is 28.",
+          "write": "5 × 6 − 2 = 28 ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Pattern terms",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "blue",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 70,
+                "w": 75,
+                "h": 60,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "28"
+              },
+              {
+                "kind": "text",
+                "x": 97,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 187,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 277,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 367,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 457,
+                "y": 165,
+                "text": "+5",
+                "size": 16,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "For 5, 9, 13, the rule is 4 times position plus 1.",
+          "write": "term = 4 × position + 1"
+        }
+      ]
+    },
+    {
+      "heading": "Testing a conjecture",
+      "lines": [
+        {
+          "say": "A conjecture is something you think is true, but haven't proved.",
+          "write": "conjecture"
+        },
+        {
+          "say": "Conjecture: n squared take n plus 11 is always prime.",
+          "write": "n² − n + 11 always prime?"
+        },
+        {
+          "say": "An algorithm loops through n equals 1, 2, 3, and tests each value.",
+          "diagram": "diagrams/y8/maths/testing-number-patterns-with-algorithms-tester.svg",
+          "alt": "Flowchart that loops while the value is prime and outputs n when it is not"
+        },
+        {
+          "say": "n from 1 to 10 all give primes. 11, 13, 17, up to 101.",
+          "write": "11, 13, 17, … 101  all prime",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Ten primes in a row",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 125,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 335,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "31"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "… 41, 53, 67, 83, 101",
+                "size": 24,
+                "color": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "But n equals 11 gives 121. That's 11 times 11. Not prime!",
+          "write": "121 = 11 × 11 ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "121 is a counterexample",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 125,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 335,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 95,
+                "h": 60,
+                "fill": "green",
+                "label": "31"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 150,
+                "w": 160,
+                "h": 70,
+                "fill": "red",
+                "change": "add",
+                "label": "121"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "counterexample",
+                "size": 24,
+                "color": "red",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Evidence is not proof",
+      "lines": [
+        {
+          "say": "One counterexample is enough to show a conjecture is false.",
+          "write": "1 counterexample → false"
+        },
+        {
+          "say": "Many cases that work are only evidence.",
+          "write": "many cases = evidence"
+        },
+        {
+          "say": "n squared plus n plus 41 gives primes from 0 to 39. Forty in a row!",
+          "write": "n² + n + 41"
+        },
+        {
+          "say": "But n equals 40 gives 1681. That's 41 times 41.",
+          "write": "1681 = 41 × 41 ✗"
+        },
+        {
+          "say": "To be certain, you need a proof that covers every case.",
+          "write": "proof = every case"
+        }
+      ]
+    },
+    {
+      "heading": "Searching with a while loop",
+      "lines": [
+        {
+          "say": "Is 150 in the pattern 7, 13, 19, 25? The rule is 6n plus 1.",
+          "write": "7, 13, 19, 25, …"
+        },
+        {
+          "say": "The loop adds 6 while t is less than 150.",
+          "write": "While t < 150: t = t + 6"
+        },
+        {
+          "say": "It jumps from 145 to 151, right over 150.",
+          "write": "145 → 151",
+          "diagram": "diagrams/y8/maths/testing-number-patterns-with-algorithms-jumps.svg",
+          "alt": "Jumps of 6 from 139 to 145 to 151 skip 150"
+        },
+        {
+          "say": "So 150 is not in the pattern.",
+          "write": "150 not in pattern",
+          "draw": {
+            "type": "numberline",
+            "from": 136,
+            "to": 154,
+            "start": 145,
+            "jump": 6
+          }
+        },
+        {
+          "say": "Check. 149 over 6 isn't a whole number, so there's no such position.",
+          "write": "149 ÷ 6 not whole ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Many examples don't prove a pattern. Remember the forty successes, then a failure.",
+          "write": "evidence ≠ proof"
+        },
+        {
+          "say": "Constant term is first term take difference. Check with position 1.",
+          "write": "first − difference"
+        },
+        {
+          "say": "About right isn't enough. The position must be a whole number.",
+          "write": "position must be whole"
+        },
+        {
+          "say": "When a search loop stops, n is the position, not the term.",
+          "write": "label your columns"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Arithmetic patterns can be built with a loop.",
+          "write": "output, then add"
+        },
+        {
+          "say": "Term equals difference times position, plus first take difference.",
+          "write": "d × n + (first − d)"
+        },
+        {
+          "say": "One counterexample proves a conjecture false.",
+          "write": "1 counterexample"
+        },
+        {
+          "say": "Lots of examples are evidence. Only a proof makes it certain.",
+          "write": "proof covers every case"
+        }
+      ]
+    }
+  ]
+}

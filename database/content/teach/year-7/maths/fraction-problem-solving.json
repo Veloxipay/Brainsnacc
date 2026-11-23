@@ -1,0 +1,72 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Fraction problem solving",
+  "frames": [
+    { "heading": "A fraction of WHAT?",
+      "lines": [
+        { "say": "Your friend eats half a pizza. You eat half of what's left.", "write": "½ of what's left" },
+        { "say": "You didn't eat half a pizza. You ate half of a half. A quarter.", "write": "½ × ½ = ¼",
+          "draw": {"type": "shapes", "width": 560, "height": 180, "alt": "Pizza bar: half eaten by friend, then a quarter by you", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 240, "h": 70, "fill": "grey", "label": "friend ½", "change": "remove"},
+            {"kind": "rect", "x": 280, "y": 50, "w": 120, "h": 70, "fill": "orange", "label": "you ¼", "change": "highlight"},
+            {"kind": "rect", "x": 400, "y": 50, "w": 120, "h": 70, "fill": "blue", "label": "left ¼"}]}},
+        { "say": "Every fraction is a fraction of something. Always ask: of what?", "write": "Of WHAT?" }
+      ] },
+    { "heading": "Fractions of the whole",
+      "lines": [
+        { "say": "Mia has 90 dollars. She spends a third on a game and a quarter on food.", "write": "⅓ + ¼ of $90" },
+        { "say": "Both fractions are of the whole 90. So we can add them.", "write": "4/12 + 3/12 = 7/12" },
+        { "say": "She has 5 twelfths left. 90 divided by 12, times 5, is 37.50.", "write": "5/12 of $90 = $37.50" }
+      ] },
+    { "heading": "Fraction of the remainder",
+      "lines": [
+        { "say": "Tom has 120 dollars. He spends a quarter on shoes. That's 30.", "write": "¼ of $120 = $30",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "120 dollar bar in four parts, shoes crossed off", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 120, "h": 70, "fill": "orange", "label": "shoes $30", "change": "remove"},
+            {"kind": "rect", "x": 160, "y": 50, "w": 120, "h": 70, "fill": "blue", "label": "$30"},
+            {"kind": "rect", "x": 280, "y": 50, "w": 120, "h": 70, "fill": "blue", "label": "$30"},
+            {"kind": "rect", "x": 400, "y": 50, "w": 120, "h": 70, "fill": "blue", "label": "$30"},
+            {"kind": "text", "x": 340, "y": 160, "text": "$90 left", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "Then he spends two thirds of what is left on a jacket. Of the 90, not 120.", "write": "⅔ of $90 = $60",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Two of the remaining three parts go on the jacket", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 120, "h": 70, "fill": "grey", "label": "shoes"},
+            {"kind": "rect", "x": 160, "y": 50, "w": 120, "h": 70, "fill": "orange", "label": "jacket", "change": "remove"},
+            {"kind": "rect", "x": 280, "y": 50, "w": 120, "h": 70, "fill": "orange", "label": "jacket", "change": "remove"},
+            {"kind": "rect", "x": 400, "y": 50, "w": 120, "h": 70, "fill": "green", "label": "$30 left", "change": "highlight"}]}},
+        { "say": "90 minus 60 leaves 30 dollars.", "write": "$90 − $60 = $30" },
+        { "say": "Remainders multiply. 3 quarters left, then a third of that. A quarter.", "write": "⅓ × ¾ = ¼ → $30 ✓" }
+      ] },
+    { "heading": "Working backwards",
+      "lines": [
+        { "say": "If 3 fifths of a number is 24, one fifth is 24 divided by 3, which is 8.", "write": "⅕ = 24 ÷ 3 = 8" },
+        { "say": "The whole is 5 fifths. 8 times 5 is 40.", "write": "whole = 8 × 5 = 40" },
+        { "say": "Ana spends 2 fifths, then half of what's left. She has 18 dollars.", "write": "2/5, then ½ of rest → $18",
+          "diagram": "diagrams/y7/maths-advanced/fraction-problem-solving-backwards.svg", "alt": "Bar of 10 tenths: 4 spent, 3 spent, 3 left worth 18 dollars" },
+        { "say": "3 fifths are left, then half of that. So 3 tenths is 18 dollars.", "write": "½ × ⅗ = 3/10 = $18" },
+        { "say": "One tenth is 6 dollars. So she started with 60.", "write": "$6 × 10 = $60" }
+      ] },
+    { "heading": "Change in fraction",
+      "lines": [
+        { "say": "A tank is 3 eighths full. Add 45 litres and it's 3 quarters full.", "write": "3/8 → 3/4 with +45 L",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Tank in eighths: 3 full, 3 more added by 45 litres", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 180, "h": 70, "fill": "blue", "label": "3/8"},
+            {"kind": "rect", "x": 220, "y": 50, "w": 180, "h": 70, "fill": "teal", "label": "+45 L = 3/8", "change": "add"},
+            {"kind": "rect", "x": 400, "y": 50, "w": 120, "h": 70, "fill": "white", "label": "2/8"},
+            {"kind": "text", "x": 280, "y": 160, "text": "1/8 = 15 L", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "The 45 litres is the change. 6 eighths minus 3 eighths is 3 eighths.", "write": "3/4 − 3/8 = 3/8" },
+        { "say": "One eighth is 15 litres. The full tank is 15 times 8, which is 120.", "write": "15 × 8 = 120 L" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Underline of what is left. Find the remainder first.", "write": "of the remainder" },
+        { "say": "Only add fractions of the same whole.", "write": "same whole to add" },
+        { "say": "Working backwards, the whole must be bigger than the part. Divide.", "write": "part ÷ fraction" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Of what? Point at each fraction and say.", "write": "Of WHAT?" },
+        { "say": "Remainders multiply. Multiply the fractions that are left.", "write": "multiply what's left" },
+        { "say": "Part divided by fraction equals whole.", "write": "24 ÷ ⅗ = 40" },
+        { "say": "Draw the bar, then check forwards from your answer.", "write": "bar model + check" }
+      ] }
+  ]
+}

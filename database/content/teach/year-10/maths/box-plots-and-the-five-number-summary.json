@@ -1,0 +1,1012 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Box plots and the five-number summary",
+  "frames": [
+    {
+      "heading": "The five-number summary",
+      "lines": [
+        {
+          "say": "A box plot squeezes a whole data set into five numbers."
+        },
+        {
+          "say": "Minimum, lower quartile, median, upper quartile, maximum.",
+          "write": "min, Q1, med, Q3, max"
+        },
+        {
+          "say": "Five numbers, one for each finger, smallest to biggest."
+        },
+        {
+          "say": "The interquartile range is Q3 take Q1. The middle half of the data.",
+          "write": "IQR = Q3 − Q1"
+        }
+      ]
+    },
+    {
+      "heading": "Finding the five numbers",
+      "lines": [
+        {
+          "say": "Here are eleven waiting times. First, put them in order.",
+          "write": "4, 6, 9, 10, 12, 15 …",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Eleven ordered waiting times",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 76,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 122,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 168,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 214,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 306,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "16"
+              },
+              {
+                "kind": "rect",
+                "x": 352,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 398,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "20"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 490,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "27"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "put in order",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The median is the middle one, the sixth. It is 15.",
+          "write": "median = 15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Eleven ordered waiting times",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 76,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 122,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 168,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 214,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 306,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "16"
+              },
+              {
+                "kind": "rect",
+                "x": 352,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 398,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "20"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 490,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "27"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "median = 15",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Leave the median out. The middle of each half gives Q1 and Q3.",
+          "write": "Q1 = 9,  Q3 = 20",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Eleven ordered waiting times",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 76,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 122,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "green",
+                "change": "highlight",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 168,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 214,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "orange",
+                "label": "15"
+              },
+              {
+                "kind": "rect",
+                "x": 306,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "16"
+              },
+              {
+                "kind": "rect",
+                "x": 352,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "18"
+              },
+              {
+                "kind": "rect",
+                "x": 398,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "green",
+                "change": "highlight",
+                "label": "20"
+              },
+              {
+                "kind": "rect",
+                "x": 444,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 490,
+                "y": 110,
+                "w": 40,
+                "h": 50,
+                "fill": "blue",
+                "label": "27"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "Q1 = 9,  Q3 = 20",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Minimum 4, maximum 27. So the summary is 4, 9, 15, 20, 27.",
+          "write": "4, 9, 15, 20, 27"
+        },
+        {
+          "say": "With an even number of values, average the two middle ones."
+        }
+      ]
+    },
+    {
+      "heading": "Drawing the box plot",
+      "lines": [
+        {
+          "say": "Start with a scaled number line.",
+          "write": "scale 0 to 30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Box plot of waiting times: 4, 9, 15, 20, 27",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 240,
+                "x2": 520,
+                "y2": 240,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 268,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 268,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 268,
+                "text": "20",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 268,
+                "text": "30",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 104,
+                "y": 95,
+                "text": "min 4",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 184,
+                "y": 75,
+                "text": "Q1 9",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "med 15",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 75,
+                "text": "Q3 20",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 472,
+                "y": 95,
+                "text": "max 27",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw the box from Q1 to Q3. Put a line at the median.",
+          "write": "box: Q1 to Q3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Box plot of waiting times: 4, 9, 15, 20, 27",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 240,
+                "x2": 520,
+                "y2": 240,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 268,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 268,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 268,
+                "text": "20",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 268,
+                "text": "30",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 184,
+                "y": 110,
+                "w": 176,
+                "h": 80,
+                "fill": "teal",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 110,
+                "x2": 280,
+                "y2": 190,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 104,
+                "y": 95,
+                "text": "min 4",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 184,
+                "y": 75,
+                "text": "Q1 9",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "med 15",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 75,
+                "text": "Q3 20",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 472,
+                "y": 95,
+                "text": "max 27",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add whiskers out to the minimum and maximum.",
+          "write": "whiskers: min and max",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Box plot of waiting times: 4, 9, 15, 20, 27",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 240,
+                "x2": 520,
+                "y2": 240,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 268,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 268,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 268,
+                "text": "20",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 268,
+                "text": "30",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 184,
+                "y": 110,
+                "w": 176,
+                "h": 80,
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 110,
+                "x2": 280,
+                "y2": 190,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 104,
+                "y": 150,
+                "x2": 184,
+                "y2": 150,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 150,
+                "x2": 472,
+                "y2": 150,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 104,
+                "y": 95,
+                "text": "min 4",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 184,
+                "y": 75,
+                "text": "Q1 9",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "med 15",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 75,
+                "text": "Q3 20",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 472,
+                "y": 95,
+                "text": "max 27",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each of the four sections holds about 25 percent of the data.",
+          "write": "each section ≈ 25%"
+        },
+        {
+          "say": "A long section means spread out, not more data."
+        }
+      ]
+    },
+    {
+      "heading": "Outliers",
+      "lines": [
+        {
+          "say": "An outlier is far away from the rest.",
+          "write": "outlier"
+        },
+        {
+          "say": "Lower fence is Q1 take 1.5 IQRs. Upper fence is Q3 plus 1.5 IQRs.",
+          "write": "Q3 + 1.5 × IQR"
+        },
+        {
+          "say": "These scores have Q1 26 and Q3 35. So IQR is 9.",
+          "write": "IQR = 35 − 26 = 9"
+        },
+        {
+          "say": "Upper fence is 35 plus 13.5, which is 48.5. So 58 is an outlier.",
+          "write": "fence 48.5 → 58 is an outlier"
+        },
+        {
+          "say": "Draw 58 as a dot. The whisker stops at 38.",
+          "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-ex2.svg",
+          "alt": "Box plot with whisker ending at 38 and outlier dot at 58"
+        }
+      ]
+    },
+    {
+      "heading": "Comparing two classes",
+      "lines": [
+        {
+          "say": "Parallel box plots share one scale.",
+          "write": "same scale or no deal",
+          "diagram": "diagrams/y10/maths/box-plots-and-the-five-number-summary-ex3.svg",
+          "alt": "Parallel box plots of Class A and Class B test scores"
+        },
+        {
+          "say": "Class A’s median is 23. Class B’s is 22. Similar typical scores.",
+          "write": "median 23 vs 22"
+        },
+        {
+          "say": "Class A has IQR 11. Class B has IQR 5.",
+          "write": "IQR 11 vs 5"
+        },
+        {
+          "say": "So Class B is much more consistent."
+        },
+        {
+          "say": "A long right tail means positive skew.",
+          "write": "long right tail = positive skew"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Always order the data first."
+        },
+        {
+          "say": "Odd number of values? Leave the median out of both halves."
+        },
+        {
+          "say": "Do not draw the whisker to an outlier."
+        },
+        {
+          "say": "Fences use Q1 and Q3, not the median."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Min, Q1, median, Q3, max.",
+          "write": "min, Q1, med, Q3, max",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Box plot of waiting times: 4, 9, 15, 20, 27",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 240,
+                "x2": 520,
+                "y2": 240,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 268,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 268,
+                "text": "10",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 268,
+                "text": "20",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 268,
+                "text": "30",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 184,
+                "y": 110,
+                "w": 176,
+                "h": 80,
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 110,
+                "x2": 280,
+                "y2": 190,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 104,
+                "y": 150,
+                "x2": 184,
+                "y2": 150,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 150,
+                "x2": 472,
+                "y2": 150,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 104,
+                "y": 95,
+                "text": "min 4",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 184,
+                "y": 75,
+                "text": "Q1 9",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "med 15",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 75,
+                "text": "Q3 20",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 472,
+                "y": 95,
+                "text": "max 27",
+                "size": 16,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Every quarter holds the same amount of data, not the same length."
+        },
+        {
+          "say": "One point five and out.",
+          "write": "1.5 × IQR fences"
+        },
+        {
+          "say": "Compare median, spread and shape."
+        }
+      ]
+    }
+  ]
+}

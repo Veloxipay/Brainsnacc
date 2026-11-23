@@ -1,0 +1,1806 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Venn diagrams and two-way tables",
+  "frames": [
+    {
+      "heading": "Set notation",
+      "lines": [
+        {
+          "say": "The rectangle is the whole sample space. We call it xi.",
+          "write": "ξ = everything",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A intersect B means A and B. It is the overlap.",
+          "write": "A ∩ B = and",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 262,
+                "y": 130,
+                "w": 36,
+                "h": 60,
+                "fill": "yellow",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A union B means A or B, or both. Everything inside the circles.",
+          "write": "A ∪ B = or"
+        },
+        {
+          "say": "A dash means not A. Everything outside circle A.",
+          "write": "A′ = not A"
+        }
+      ]
+    },
+    {
+      "heading": "Filling a Venn diagram",
+      "lines": [
+        {
+          "say": "30 students. 13 do drama, 17 do sport, and 6 do both.",
+          "write": "13 drama, 17 sport, 6 both",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Start in the middle. Both goes in the overlap: 6.",
+          "write": "both = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Drama only is 13 minus 6, which is 7.",
+          "write": "drama only = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "7",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Sport only is 17 minus 6, which is 11.",
+          "write": "sport only = 11",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "7",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "11",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Neither is 30 minus 24, which is 6. It goes outside.",
+          "write": "neither = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "7",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "11",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 265,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The four regions add to 30.",
+          "write": "7 + 6 + 11 + 6 = 30 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Reading probabilities",
+      "lines": [
+        {
+          "say": "P of both is 6 out of 30, which is one fifth.",
+          "write": "P(D ∩ S) = 6/30 = 1/5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "7",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "11",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 265,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "P of drama or sport: add every region inside the circles. 24 over 30.",
+          "write": "P(D ∪ S) = 24/30 = 4/5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "7",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "11",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 265,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "P of drama only is 7 over 30.",
+          "write": "P(D ∩ S′) = 7/30"
+        },
+        {
+          "say": "Check: neither is 6 over 30. Together they make 1.",
+          "write": "24/30 + 6/30 = 1 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Two-way tables",
+      "lines": [
+        {
+          "say": "A two-way table holds the same four numbers, plus totals.",
+          "write": "same four groups",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two-way table for drama and sport",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Sport"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not sport"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "30"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Both, 6, goes in the drama row and sport column.",
+          "write": "Drama, Sport = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two-way table for drama and sport",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Sport"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not sport"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "30"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Neither, 6, goes in the not drama row and not sport column.",
+          "write": "Not D, Not S = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two-way table for drama and sport",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Sport"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not sport"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "30"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each row and column adds to its total. The grand total is 30.",
+          "write": "totals check",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two-way table for drama and sport",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Sport"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not sport"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 20,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 85,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Not drama"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 150,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "grey",
+                "label": "Total"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "white",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 215,
+                "w": 130,
+                "h": 65,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "30"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The addition rule",
+      "lines": [
+        {
+          "say": "Adding P of A and P of B counts the overlap twice.",
+          "write": "P(A) + P(B) double counts"
+        },
+        {
+          "say": "So take the overlap away once.",
+          "write": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B)"
+        },
+        {
+          "say": "P of A is 0.5, P of B is 0.4, both is 0.15. Union is 0.75.",
+          "write": "0.5 + 0.4 − 0.15 = 0.75"
+        },
+        {
+          "say": "Fill from the middle: A only 0.35, B only 0.25, neither 0.25.",
+          "write": "0.35, 0.15, 0.25, 0.25",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram with probabilities",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "A",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "B",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "0.35",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "0.15",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "0.25",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 265,
+                "text": "0.25",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "If A and B can't happen together, they are mutually exclusive. Just add.",
+          "write": "P(A ∩ B) = 0"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "120 people. 70 have a dog, 45 a cat, 25 have neither.",
+          "write": "120: dog 70, cat 45, neither 25"
+        },
+        {
+          "say": "At least one pet: 120 minus 25 is 95.",
+          "write": "95 have a pet"
+        },
+        {
+          "say": "Both is 70 plus 45 minus 95, which is 20.",
+          "write": "both = 20"
+        },
+        {
+          "say": "Cat only is 45 minus 20, which is 25. So the probability is 5 over 24.",
+          "write": "P = 25/120 = 5/24",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Dog and cat Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 120",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Dog",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Cat",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "50",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "20",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "25",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 265,
+                "text": "25",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Drama only is 7, not 13. Fill the overlap first, then subtract.",
+          "write": "✗ 13   ✓ 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Venn diagram",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 270,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 48,
+                "text": "ξ = 30",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 160,
+                "r": 100,
+                "fill": "none",
+                "color": "orange",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "Drama",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 85,
+                "text": "Sport",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "13",
+                "size": 26,
+                "color": "black",
+                "bold": true,
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't forget the outside region. It is part of the total.",
+          "write": "neither counts"
+        },
+        {
+          "say": "Intersect is and, the overlap. Union is a cup holding everything: or.",
+          "write": "∩ and,  ∪ or"
+        },
+        {
+          "say": "For a randomly chosen person, divide by the grand total.",
+          "write": "÷ grand total"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Middle out: overlap first, then the only regions, then outside.",
+          "write": "middle out"
+        },
+        {
+          "say": "Or means add, then take the overlap away once.",
+          "write": "P(A) + P(B) − P(A ∩ B)"
+        },
+        {
+          "say": "Venn diagram and two-way table: same four numbers.",
+          "write": "4 regions = 4 cells"
+        }
+      ]
+    }
+  ]
+}

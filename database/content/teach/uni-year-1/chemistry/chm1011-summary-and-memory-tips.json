@@ -1,0 +1,142 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "CHM1011 summary and memory tips",
+  "frames": [
+    {
+      "heading": "Atoms and electrons",
+      "lines": [
+        {"say": "Electron energies are quantised. Line spectra prove it.", "write": "E = hν = hc/λ"},
+        {"say": "Fill subshells from lowest energy. 4s fills before 3d.", "write": "1s 2s 2p 3s 3p 4s 3d"},
+        {"say": "Hund's rule is the bus-seat rule. Sit alone before you pair up.", "write": "Hund: singly first",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Three 2p boxes filling one electron each before pairing", "items": [
+           {"kind": "rect", "x": 130, "y": 60, "w": 100, "h": 90, "fill": "white", "label": "↑"},
+           {"kind": "rect", "x": 230, "y": 60, "w": 100, "h": 90, "fill": "white", "label": "↑"},
+           {"kind": "rect", "x": 330, "y": 60, "w": 100, "h": 90, "fill": "white", "label": "↑", "change": "add"},
+           {"kind": "text", "x": 280, "y": 190, "text": "nitrogen 2p³: three separate seats", "size": 20, "color": "purple"}
+         ]}},
+        {"say": "4s is first in and first out. Iron three plus is argon 3d five.", "write": "Fe³⁺: [Ar] 3d⁵"},
+        {"say": "Effective nuclear charge rises across a period, so atoms get smaller.", "write": "Z_eff = Z − S"}
+      ]
+    },
+    {
+      "heading": "Bonding and shape",
+      "lines": [
+        {"say": "Formal charge is valence minus lone-pair electrons minus half the bonding ones.", "write": "FC = V − L − ½B"},
+        {"say": "Electron domains spread out to keep as far apart as possible.", "write": "VSEPR"},
+        {"say": "Lone pairs are fat. Each one squeezes the bond angle smaller.", "write": "109.5° → 107° → 104.5°",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "CH4, NH3 and H2O with bond angles shrinking as lone pairs are added", "items": [
+           {"kind": "circle", "x": 100, "y": 90, "r": 45, "fill": "blue", "label": "CH₄"},
+           {"kind": "circle", "x": 280, "y": 90, "r": 45, "fill": "blue", "label": "NH₃"},
+           {"kind": "circle", "x": 460, "y": 90, "r": 45, "fill": "blue", "label": "H₂O"},
+           {"kind": "text", "x": 100, "y": 170, "text": "109.5°", "size": 22, "bold": true},
+           {"kind": "text", "x": 280, "y": 170, "text": "107°", "size": 22, "bold": true, "change": "highlight"},
+           {"kind": "text", "x": 460, "y": 170, "text": "104.5°", "size": 22, "bold": true, "change": "highlight"},
+           {"kind": "text", "x": 100, "y": 205, "text": "0 lone pairs", "size": 16},
+           {"kind": "text", "x": 280, "y": 205, "text": "1 lone pair", "size": 16},
+           {"kind": "text", "x": 460, "y": 205, "text": "2 lone pairs", "size": 16}
+         ]}},
+        {"say": "Lone pairs like the equator in five-domain shapes.", "write": "5 domains: lone pairs equatorial"},
+        {"say": "Symmetric shapes like carbon dioxide are non-polar, even with polar bonds.", "write": "CO₂, BF₃, CCl₄: non-polar"}
+      ]
+    },
+    {
+      "heading": "Forces and properties",
+      "lines": [
+        {"say": "From strongest: ion–dipole, hydrogen bonding, dipole–dipole, then dispersion.", "write": "ion–dip > H-bond > dip > LDF",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Bars for intermolecular force strength from ion-dipole down to dispersion", "items": [
+           {"kind": "rect", "x": 40, "y": 30, "w": 100, "h": 170, "fill": "red", "label": "ion–dip"},
+           {"kind": "rect", "x": 165, "y": 70, "w": 100, "h": 130, "fill": "orange", "label": "H-bond"},
+           {"kind": "rect", "x": 290, "y": 110, "w": 100, "h": 90, "fill": "yellow", "label": "dipole"},
+           {"kind": "rect", "x": 415, "y": 150, "w": 100, "h": 50, "fill": "blue", "label": "LDF"},
+           {"kind": "text", "x": 280, "y": 230, "text": "for similar-sized particles", "size": 18}
+         ]}},
+        {"say": "Hydrogen bonding needs FON. H on fluorine, oxygen or nitrogen.", "write": "H-bond: H on F, O, N"},
+        {"say": "Stronger forces mean higher boiling point and lower vapour pressure.", "write": "stronger IMF → higher bp"},
+        {"say": "Unit cells: simple one, body two, face four.", "write": "SC 1, BCC 2, FCC 4"}
+      ]
+    },
+    {
+      "heading": "Moles and gases",
+      "lines": [
+        {"say": "Every stoichiometry problem drives along the mole highway.", "write": "n = m/M   n = cV",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Mole highway: mass to moles to ratio to moles to answer", "items": [
+           {"kind": "rect", "x": 10, "y": 70, "w": 90, "h": 60, "fill": "blue", "label": "mass"},
+           {"kind": "arrow", "x": 100, "y": 100, "x2": 125, "y2": 100, "color": "black"},
+           {"kind": "rect", "x": 125, "y": 70, "w": 90, "h": 60, "fill": "orange", "label": "moles"},
+           {"kind": "arrow", "x": 215, "y": 100, "x2": 240, "y2": 100, "color": "black"},
+           {"kind": "rect", "x": 240, "y": 70, "w": 90, "h": 60, "fill": "purple", "label": "ratio", "change": "highlight"},
+           {"kind": "arrow", "x": 330, "y": 100, "x2": 355, "y2": 100, "color": "black"},
+           {"kind": "rect", "x": 355, "y": 70, "w": 90, "h": 60, "fill": "orange", "label": "moles"},
+           {"kind": "arrow", "x": 445, "y": 100, "x2": 465, "y2": 100, "color": "black"},
+           {"kind": "rect", "x": 465, "y": 70, "w": 90, "h": 60, "fill": "green", "label": "answer"}
+         ]}},
+        {"say": "The limiting reagent has the smallest moles divided by its coefficient.", "write": "limiting: smallest n ÷ coeff"},
+        {"say": "Ideal gas: P V equals n R T. Kelvin or kaput!", "write": "PV = nRT  (T in K)"},
+        {"say": "Dalton's law: each partial pressure is mole fraction times total pressure.", "write": "Pᵢ = xᵢ × P_total"}
+      ]
+    },
+    {
+      "heading": "Energy and equilibrium",
+      "lines": [
+        {"say": "Delta G equals delta H minus T delta S. Negative means spontaneous.", "write": "ΔG = ΔH − TΔS"},
+        {"say": "Minus-plus always, plus-minus never. Mixed signs, temperature decides.", "write": "crossover T = ΔH/ΔS"},
+        {"say": "Q is the quiz, K is the key. Q less than K, go forward.", "write": "Q < K → forward",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Number line with Q below K and an arrow showing the reaction moves forward", "items": [
+           {"kind": "line", "x": 40, "y": 110, "x2": 520, "y2": 110, "color": "black"},
+           {"kind": "circle", "x": 160, "y": 110, "r": 22, "fill": "orange", "label": "Q"},
+           {"kind": "circle", "x": 400, "y": 110, "r": 22, "fill": "green", "label": "K"},
+           {"kind": "arrow", "x": 185, "y": 70, "x2": 375, "y2": 70, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 55, "text": "net forward", "size": 20, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 170, "text": "makes more products", "size": 18}
+         ]}},
+        {"say": "Negative G, big K. Delta G nought equals minus R T ln K.", "write": "ΔG° = −RT ln K"},
+        {"say": "Only temperature changes K. Catalysts change neither K nor the position.", "write": "only T changes K"}
+      ]
+    },
+    {
+      "heading": "Acids, bases and cells",
+      "lines": [
+        {"say": "Strong parent, weak child. Ka times Kb equals Kw.", "write": "Ka × Kb = K_w"},
+        {"say": "Buffers: react first, then Henderson. Halfway, pH equals pKa.", "write": "½-equiv: pH = pKa"},
+        {"say": "An Ox, Red Cat. Oxidation at the anode, reduction at the cathode.", "write": "An Ox, Red Cat",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Anode labelled oxidation and cathode labelled reduction with electrons flowing between", "items": [
+           {"kind": "rect", "x": 60, "y": 60, "w": 160, "h": 110, "fill": "orange", "label": "Anode: Ox"},
+           {"kind": "rect", "x": 340, "y": 60, "w": 160, "h": 110, "fill": "teal", "label": "Cathode: Red"},
+           {"kind": "arrow", "x": 140, "y": 40, "x2": 420, "y2": 40, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 30, "text": "e⁻", "size": 20, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 205, "text": "E°cell = E°cathode − E°anode", "size": 20, "bold": true}
+         ]}},
+        {"say": "E nought never doubles when you multiply a half-equation.", "write": "E° never doubles"},
+        {"say": "Faraday chain: current times time gives charge, divide by F for moles.", "write": "Q = It,  n(e⁻) = Q/F"}
+      ]
+    },
+    {
+      "heading": "Kinetics",
+      "lines": [
+        {"say": "Orders come from experiment, not from the balanced equation.", "write": "rate = k[A]^m[B]^n"},
+        {"say": "First order, fixed half-life, just like radioactive decay.", "write": "t½ = ln 2/k"},
+        {"say": "On an Arrhenius plot, the slope is minus Eₐ over R.", "write": "slope = −Eₐ/R",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "ln k against 1 over T: a steeper line means bigger activation energy", "items": [
+           {"kind": "line", "x": 60, "y": 210, "x2": 520, "y2": 210, "color": "black"},
+           {"kind": "line", "x": 60, "y": 210, "x2": 60, "y2": 20, "color": "black"},
+           {"kind": "text", "x": 70, "y": 35, "text": "ln k", "size": 18, "anchor": "start"},
+           {"kind": "text", "x": 515, "y": 232, "text": "1/T", "size": 18, "anchor": "end"},
+           {"kind": "line", "x": 80, "y": 60, "x2": 480, "y2": 140, "color": "blue"},
+           {"kind": "line", "x": 80, "y": 40, "x2": 400, "y2": 200, "color": "red", "change": "add"},
+           {"kind": "text", "x": 410, "y": 180, "text": "steeper = bigger Eₐ", "size": 18, "color": "red", "anchor": "start", "change": "add"}
+         ]}},
+        {"say": "Catalysts lower Eₐ only. They don't change delta H or K.", "write": "catalyst: lower Eₐ only"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "In nearly every calculation, units decide the marks.", "write": "units decide the marks"},
+        {"say": "Write units at every step and always use kelvin.", "write": "T in K"},
+        {"say": "Match joules with joules, and kilojoules with kilojoules.", "write": "J with J, kJ with kJ"},
+        {"say": "Use this sheet after the lessons, not instead of them.", "write": "lessons first"}
+      ]
+    }
+  ]
+}

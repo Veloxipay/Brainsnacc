@@ -1,0 +1,620 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Factorising quadratic trinomials",
+  "frames": [
+    {
+      "heading": "Where the pattern comes from",
+      "lines": [
+        {
+          "say": "Expand x plus p, times x plus q.",
+          "write": "(x + p)(x + q)"
+        },
+        {
+          "say": "You get x squared, plus p plus q lots of x, plus p q.",
+          "write": "x² + (p + q)x + pq"
+        },
+        {
+          "say": "So to factorise, find two numbers that multiply to c and add to b.",
+          "write": "× to c, + to b"
+        },
+        {
+          "say": "In the area model, 3 times 4 makes the 12 in the corner.",
+          "write": "3 × 4 = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Area model for x² + 7x + 12",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 38,
+                "text": "x",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390.0,
+                "y": 38,
+                "text": "3",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 123.0,
+                "text": "x",
+                "size": 22,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 228.0,
+                "text": "4",
+                "size": 22,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 50,
+                "w": 200,
+                "h": 130,
+                "fill": "teal",
+                "label": "x²",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 50,
+                "w": 120,
+                "h": 130,
+                "fill": "yellow",
+                "label": "3x",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 180,
+                "w": 200,
+                "h": 80,
+                "fill": "yellow",
+                "label": "4x",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 180,
+                "w": 120,
+                "h": 80,
+                "fill": "pink",
+                "change": "highlight",
+                "label": "12",
+                "color": "black",
+                "labelSize": 22
+              }
+            ]
+          }
+        },
+        {
+          "say": "And the two strips, 3x and 4x, add to 7x.",
+          "write": "3x + 4x = 7x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Area model for x² + 7x + 12",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 38,
+                "text": "x",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390.0,
+                "y": 38,
+                "text": "3",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 123.0,
+                "text": "x",
+                "size": 22,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 228.0,
+                "text": "4",
+                "size": 22,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 50,
+                "w": 200,
+                "h": 130,
+                "fill": "teal",
+                "label": "x²",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 50,
+                "w": 120,
+                "h": 130,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "3x",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 180,
+                "w": 200,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "4x",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 180,
+                "w": 120,
+                "h": 80,
+                "fill": "pink",
+                "label": "12",
+                "color": "black",
+                "labelSize": 22
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Factorising x² + 7x + 12",
+      "lines": [
+        {
+          "say": "List the factor pairs of 12.",
+          "write": "1 × 12, 2 × 6, 3 × 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Factor pairs of 12 and their sums",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 30,
+                "w": 180,
+                "h": 60,
+                "fill": "blue",
+                "label": "1 × 12",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 110,
+                "w": 180,
+                "h": 60,
+                "fill": "blue",
+                "label": "2 × 6",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 190,
+                "w": 180,
+                "h": 60,
+                "fill": "blue",
+                "label": "3 × 4",
+                "labelSize": 24
+              }
+            ]
+          }
+        },
+        {
+          "say": "Which pair adds to 7? 3 plus 4.",
+          "write": "3 + 4 = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Factor pairs of 12 and their sums",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 30,
+                "w": 180,
+                "h": 60,
+                "fill": "blue",
+                "label": "1 × 12",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 68,
+                "text": "1 + 12 = 13 ✗",
+                "size": 24,
+                "color": "red",
+                "bold": false,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 110,
+                "w": 180,
+                "h": 60,
+                "fill": "blue",
+                "label": "2 × 6",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 148,
+                "text": "2 + 6 = 8 ✗",
+                "size": 24,
+                "color": "red",
+                "bold": false,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 190,
+                "w": 180,
+                "h": 60,
+                "fill": "green",
+                "change": "highlight",
+                "label": "3 × 4",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 228,
+                "text": "3 + 4 = 7 ✓",
+                "size": 24,
+                "color": "green",
+                "change": "highlight",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the answer is x plus 3, times x plus 4.",
+          "write": "(x + 3)(x + 4)"
+        },
+        {
+          "say": "Check by expanding. x squared plus 7x plus 12.",
+          "write": "x² + 4x + 3x + 12 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Using the signs",
+      "lines": [
+        {
+          "say": "c positive, b positive? Both numbers are positive.",
+          "write": "+c, +b → + +"
+        },
+        {
+          "say": "c positive, b negative? Both numbers are negative.",
+          "write": "+c, −b → − −"
+        },
+        {
+          "say": "c negative? One positive, one negative.",
+          "write": "−c → + −"
+        },
+        {
+          "say": "x squared take 2x take 15. We need minus 15, adding to minus 2.",
+          "write": "3 × (−5) = −15, 3 + (−5) = −2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Choosing 3 and minus 5",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 220,
+                "h": 70,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "3 and −5",
+                "labelSize": 26
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 60,
+                "w": 220,
+                "h": 70,
+                "fill": "red",
+                "change": "remove",
+                "label": "−3 and 5",
+                "labelSize": 26
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 180,
+                "text": "sum −2 ✓",
+                "size": 24,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 180,
+                "text": "sum +2 ✗",
+                "size": 24,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So it's x plus 3, times x take 5.",
+          "write": "(x + 3)(x − 5)"
+        }
+      ]
+    },
+    {
+      "heading": "Common factor first",
+      "lines": [
+        {
+          "say": "Factorise 3x squared take 21x plus 30.",
+          "write": "3x² − 21x + 30"
+        },
+        {
+          "say": "Every term shares a 3. Take it out first.",
+          "write": "3(x² − 7x + 10)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Taking out the common factor 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "3x² − 21x + 30",
+                "size": 40,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "3(x² − 7x + 10)",
+                "size": 40,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Multiply to 10, add to minus 7. That's minus 2 and minus 5.",
+          "write": "−2 × −5 = 10, −2 + −5 = −7"
+        },
+        {
+          "say": "Keep the 3 at the front.",
+          "write": "3(x − 2)(x − 5)"
+        }
+      ]
+    },
+    {
+      "heading": "A number in front of x²",
+      "lines": [
+        {
+          "say": "For 2x squared plus 7x plus 3, multiply a times c. That's 6.",
+          "write": "a × c = 2 × 3 = 6"
+        },
+        {
+          "say": "Multiply to 6, add to 7. That's 6 and 1.",
+          "write": "6 and 1"
+        },
+        {
+          "say": "Split the middle term, then group in pairs.",
+          "write": "2x² + 6x + x + 3"
+        },
+        {
+          "say": "2x, times x plus 3, plus 1 times x plus 3.",
+          "write": "(x + 3)(2x + 1)"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Check both conditions. Multiply to c AND add to b.",
+          "write": "× AND +"
+        },
+        {
+          "say": "Mixed-up signs give the wrong middle term. Expand to check.",
+          "write": "✗ (x − 3)(x + 5)"
+        },
+        {
+          "say": "Take out a common factor first.",
+          "write": "common factor first"
+        },
+        {
+          "say": "Don't lose the common factor along the way.",
+          "write": "keep the 3"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Two numbers that multiply to c and add to b.",
+          "write": "× to c, + to b",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Area model for x² + 7x + 12",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 38,
+                "text": "x",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390.0,
+                "y": 38,
+                "text": "3",
+                "size": 22,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 123.0,
+                "text": "x",
+                "size": 22,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 115,
+                "y": 228.0,
+                "text": "4",
+                "size": 22,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 50,
+                "w": 200,
+                "h": 130,
+                "fill": "teal",
+                "label": "x²",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 50,
+                "w": 120,
+                "h": 130,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "3x",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 180,
+                "w": 200,
+                "h": 80,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "4x",
+                "color": "black",
+                "labelSize": 22
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 180,
+                "w": 120,
+                "h": 80,
+                "fill": "pink",
+                "change": "highlight",
+                "label": "12",
+                "color": "black",
+                "labelSize": 22
+              }
+            ]
+          }
+        },
+        {
+          "say": "Use the signs of b and c to guide you.",
+          "write": "check the signs"
+        },
+        {
+          "say": "Take out any common factor first.",
+          "write": "common factor first"
+        },
+        {
+          "say": "Expand your answer to check.",
+          "write": "Check ✓"
+        }
+      ]
+    }
+  ]
+}

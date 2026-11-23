@@ -1,0 +1,766 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Order of operations with integers",
+  "frames": [
+    {
+      "heading": "BIDMAS with more layers",
+      "lines": [
+        {
+          "say": "Brackets, indices, divide and multiply, then add and subtract.",
+          "write": "B  I  D M  A S"
+        },
+        {
+          "say": "Divide and multiply are equal partners. Work left to right.",
+          "write": "D M: left to right"
+        },
+        {
+          "say": "Add and subtract are equal partners too.",
+          "write": "A S: left to right"
+        },
+        {
+          "say": "The new part is spotting every grouping symbol.",
+          "write": "find every group"
+        }
+      ]
+    },
+    {
+      "heading": "Nested brackets: inside out",
+      "lines": [
+        {
+          "say": "Brackets inside brackets are like nesting boxes.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Nested boxes: inner 2 − 7 = −5, middle 10 + 15 = 25, outer −2 × 25 = −50",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 30,
+                "w": 520,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 80,
+                "w": 360,
+                "h": 140,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 125,
+                "w": 180,
+                "h": 50,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "2 − 7",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "10 − 3 × (…)",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "−2 × […]",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "−2 × [10 − 3 × (2 − 7)]",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Finish the smallest box first. 2 take away 7 is minus 5.",
+          "write": "(2 − 7) = −5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Nested boxes: inner 2 − 7 = −5, middle 10 + 15 = 25, outer −2 × 25 = −50",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 30,
+                "w": 520,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 80,
+                "w": 360,
+                "h": 140,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 125,
+                "w": 180,
+                "h": 50,
+                "fill": "green",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "2 − 7 = −5",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "10 − 3 × (…)",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "−2 × […]",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "−2 × [10 − 3 × (2 − 7)]",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Next layer. Minus 3 times minus 5 is plus 15. So 25.",
+          "write": "10 + 15 = 25",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Nested boxes: inner 2 − 7 = −5, middle 10 + 15 = 25, outer −2 × 25 = −50",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 30,
+                "w": 520,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 80,
+                "w": 360,
+                "h": 140,
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 125,
+                "w": 180,
+                "h": 50,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "2 − 7 = −5",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "10 + 15 = 25",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "−2 × […]",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "−2 × [10 − 3 × (2 − 7)]",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Outside. Minus 2 times 25 is minus 50.",
+          "write": "−2 × 25 = −50",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Nested boxes: inner 2 − 7 = −5, middle 10 + 15 = 25, outer −2 × 25 = −50",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 30,
+                "w": 520,
+                "h": 240,
+                "fill": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 80,
+                "w": 360,
+                "h": 140,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 125,
+                "w": 180,
+                "h": 50,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "2 − 7 = −5",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "10 + 15 = 25",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "−2 × 25 = −50",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "−2 × [10 − 3 × (2 − 7)]",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Inside out, one layer at a time.",
+          "write": "inside out"
+        }
+      ]
+    },
+    {
+      "heading": "A longer one",
+      "lines": [
+        {
+          "say": "40 minus 2 times, square bracket, minus 3 minus 5 times bracket 1 minus 4.",
+          "write": "40 − 2 × [−3 − 5 × (1 − 4)]"
+        },
+        {
+          "say": "Innermost. 1 minus 4 is minus 3.",
+          "write": "40 − 2 × [−3 − 5 × (−3)]"
+        },
+        {
+          "say": "Multiply in the square bracket. 5 times minus 3 is minus 15.",
+          "write": "40 − 2 × [−3 + 15]"
+        },
+        {
+          "say": "Minus 3 plus 15 is 12.",
+          "write": "40 − 2 × 12"
+        },
+        {
+          "say": "Multiply, then subtract. 40 minus 24 is 16.",
+          "write": "= 40 − 24 = 16"
+        },
+        {
+          "say": "Rewrite the whole line every step, so no sign goes missing.",
+          "write": "rewrite every line"
+        }
+      ]
+    },
+    {
+      "heading": "Secret brackets: roots",
+      "lines": [
+        {
+          "say": "A square root sign covers everything under its bar.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Square root of 9 + 16 is root 25 = 5, not root 9 + root 16 = 7",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "√(9 + 16)",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Do 9 plus 16 first. Root 25 is 5. Splitting it gives 7, which is wrong.",
+          "write": "√(9 + 16) = 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Square root of 9 + 16 is root 25 = 5, not root 9 + root 16 = 7",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "√(9 + 16)",
+                "size": 40,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 150,
+                "text": "= √25 = 5  ✓",
+                "size": 30,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 220,
+                "text": "√9 + √16 = 7  ✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "remove"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Minus 2 times root of 100 minus 36, plus minus 3 cubed.",
+          "write": "−2 × √(100 − 36) + (−3)³"
+        },
+        {
+          "say": "Root 64 is 8. Minus 3 cubed is minus 27.",
+          "write": "−2 × 8 + (−27)"
+        },
+        {
+          "say": "Minus 16 plus minus 27 is minus 43.",
+          "write": "= −43"
+        }
+      ]
+    },
+    {
+      "heading": "Secret brackets: fraction bars",
+      "lines": [
+        {
+          "say": "A fraction bar groups the top and the bottom.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A fraction with −6 − 18 on top and 5 − 11 below; top −24, bottom −6, answer 4",
+            "items": [
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 140,
+                "x2": 410,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 60,
+                "w": 220,
+                "h": 60,
+                "fill": "white",
+                "label": "−6 − 18"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 160,
+                "w": 220,
+                "h": 60,
+                "fill": "white",
+                "label": "5 − 11"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Work out each one fully. Top is minus 24. Bottom is minus 6.",
+          "write": "−24 and −6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A fraction with −6 − 18 on top and 5 − 11 below; top −24, bottom −6, answer 4",
+            "items": [
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 140,
+                "x2": 410,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 60,
+                "w": 220,
+                "h": 60,
+                "fill": "blue",
+                "label": "−6 − 18",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 160,
+                "w": 220,
+                "h": 60,
+                "fill": "blue",
+                "label": "5 − 11",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then divide once. Same signs, so positive 4.",
+          "write": "−24 ÷ (−6) = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A fraction with −6 − 18 on top and 5 − 11 below; top −24, bottom −6, answer 4",
+            "items": [
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 140,
+                "x2": 410,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 60,
+                "w": 220,
+                "h": 60,
+                "fill": "blue",
+                "label": "−24"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 160,
+                "w": 220,
+                "h": 60,
+                "fill": "blue",
+                "label": "−6"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 150,
+                "text": "= 4",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Minus 4 squared needs brackets. With them it's 16. Without, minus 16.",
+          "write": "(−4)² = 16,  −4² = −16"
+        }
+      ]
+    },
+    {
+      "heading": "From words to one calculation",
+      "lines": [
+        {
+          "say": "Quiz: correct is plus 3, wrong is minus 2, skipped is 0.",
+          "write": "+3, −2, 0"
+        },
+        {
+          "say": "Tia gets 4 right, 3 wrong and skips 5.",
+          "write": "4 × 3 + 3 × (−2) + 5 × 0"
+        },
+        {
+          "say": "Multiply first. 12, minus 6, and 0.",
+          "write": "12 + (−6) + 0"
+        },
+        {
+          "say": "Tia scores 6 points.",
+          "write": "= 6"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't start with the outer brackets. Find the innermost one.",
+          "write": "innermost first"
+        },
+        {
+          "say": "Don't divide too early. Finish the whole top and bottom first.",
+          "write": "top, bottom, then ÷"
+        },
+        {
+          "say": "Keep the minus in front. 40 minus 2 times 12 is 40 minus 24.",
+          "write": "✗ 40 + 24   ✓ 40 − 24"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Inside out, one layer at a time.",
+          "write": "inside out",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Nested boxes: inner 2 − 7 = −5, middle 10 + 15 = 25, outer −2 × 25 = −50",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 30,
+                "w": 520,
+                "h": 240,
+                "fill": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 80,
+                "w": 360,
+                "h": 140,
+                "fill": "orange"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 125,
+                "w": 180,
+                "h": 50,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 158,
+                "text": "2 − 7 = −5",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "10 + 15 = 25",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "−2 × 25 = −50",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "−2 × [10 − 3 × (2 − 7)]",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Roots and bars are secret brackets.",
+          "write": "√ and — group things",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "A fraction with −6 − 18 on top and 5 − 11 below; top −24, bottom −6, answer 4",
+            "items": [
+              {
+                "kind": "line",
+                "x": 150,
+                "y": 140,
+                "x2": 410,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 60,
+                "w": 220,
+                "h": 60,
+                "fill": "blue",
+                "label": "−24"
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 160,
+                "w": 220,
+                "h": 60,
+                "fill": "blue",
+                "label": "−6"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 150,
+                "text": "= 4",
+                "size": 30,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Predict the sign, and check the answer is sensible.",
+          "write": "sense check ✓"
+        }
+      ]
+    }
+  ]
+}

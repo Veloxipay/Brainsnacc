@@ -1,0 +1,93 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Patterns of inheritance",
+  "frames": [
+    { "heading": "Setting up a cross",
+      "lines": [
+        { "say": "Step one: a key. Capital for dominant, lower case for recessive.", "write": "1 key: T tall, t short" },
+        { "say": "Step two: parent genotypes. Step three: their gametes, one allele each.", "write": "2 parents · 3 gametes" },
+        { "say": "Step four: a Punnett square. Step five: the ratios.", "write": "4 Punnett square · 5 ratios" },
+        { "say": "Two heterozygous tall plants. Each gives big T or little t.", "write": "Tt × Tt",
+          "draw": { "type": "shapes", "width": 560, "height": 300, "alt": "Empty Punnett square for Tt cross Tt with gametes on the edges", "items": [
+            { "kind": "rect", "x": 200, "y": 60, "w": 110, "h": 100, "fill": "white" },
+            { "kind": "rect", "x": 310, "y": 60, "w": 110, "h": 100, "fill": "white" },
+            { "kind": "rect", "x": 200, "y": 160, "w": 110, "h": 100, "fill": "white" },
+            { "kind": "rect", "x": 310, "y": 160, "w": 110, "h": 100, "fill": "white" },
+            { "kind": "text", "x": 255, "y": 45, "text": "T", "size": 24, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 365, "y": 45, "text": "t", "size": 24, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 180, "y": 118, "text": "T", "size": 24, "bold": true, "anchor": "end" },
+            { "kind": "text", "x": 180, "y": 218, "text": "t", "size": 24, "bold": true, "anchor": "end" }
+          ] } },
+        { "say": "Fill each box. One TT, two Tt, one tt. Three tall to one short.", "write": "1 TT : 2 Tt : 1 tt → 3 : 1",
+          "draw": { "type": "shapes", "width": 560, "height": 300, "alt": "Filled Punnett square: TT, Tt, Tt, tt with tt highlighted", "items": [
+            { "kind": "rect", "x": 200, "y": 60, "w": 110, "h": 100, "fill": "green", "label": "TT", "change": "add" },
+            { "kind": "rect", "x": 310, "y": 60, "w": 110, "h": 100, "fill": "green", "label": "Tt", "change": "add" },
+            { "kind": "rect", "x": 200, "y": 160, "w": 110, "h": 100, "fill": "green", "label": "Tt", "change": "add" },
+            { "kind": "rect", "x": 310, "y": 160, "w": 110, "h": 100, "fill": "yellow", "label": "tt", "change": "highlight" },
+            { "kind": "text", "x": 255, "y": 45, "text": "T", "size": 24, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 365, "y": 45, "text": "t", "size": 24, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 180, "y": 118, "text": "T", "size": 24, "bold": true, "anchor": "end" },
+            { "kind": "text", "x": 180, "y": 218, "text": "t", "size": 24, "bold": true, "anchor": "end" },
+            { "kind": "text", "x": 480, "y": 215, "text": "1 in 4", "size": 20, "bold": true, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "Ratios are probabilities for each child, like flipping coins. Not guarantees.", "write": "ratio = probability" }
+      ] },
+    { "heading": "Test crosses",
+      "lines": [
+        { "say": "A tall plant could be TT or Tt. A test cross finds out.", "write": "TT or Tt?" },
+        { "say": "Cross it with a homozygous recessive. It can only give little t.", "write": "× tt" },
+        { "say": "All tall offspring? Probably TT. Any short ones? It must be Tt.", "write": "any recessive → Tt" },
+        { "say": "7 black and 6 brown mice is about one to one, so the parent is Bb.", "write": "7 : 6 ≈ 1 : 1 → Bb" }
+      ] },
+    { "heading": "Codominance and blending",
+      "lines": [
+        { "say": "Codominance: both alleles fully show. Roan cattle have red and white hairs.", "write": "codominance: both show",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Roan coat with separate red and white hairs beside a pink snapdragon blend", "items": [
+            { "kind": "rect", "x": 60, "y": 50, "w": 16, "h": 120, "fill": "red" },
+            { "kind": "rect", "x": 86, "y": 50, "w": 16, "h": 120, "fill": "white" },
+            { "kind": "rect", "x": 112, "y": 50, "w": 16, "h": 120, "fill": "red" },
+            { "kind": "rect", "x": 138, "y": 50, "w": 16, "h": 120, "fill": "white" },
+            { "kind": "rect", "x": 164, "y": 50, "w": 16, "h": 120, "fill": "red" },
+            { "kind": "rect", "x": 190, "y": 50, "w": 16, "h": 120, "fill": "white" },
+            { "kind": "text", "x": 133, "y": 210, "text": "roan: side by side", "size": 18, "anchor": "middle" },
+            { "kind": "circle", "x": 410, "y": 110, "r": 60, "fill": "pink", "change": "add" },
+            { "kind": "text", "x": 410, "y": 210, "text": "pink: a blend", "size": 18, "anchor": "middle", "change": "add" }
+          ] } },
+        { "say": "Incomplete dominance is a blend. Red and white snapdragons give pink.", "write": "incomplete: in-between" },
+        { "say": "Pink times pink gives one red, two pink, one white. The alleles never blended.", "write": "1 red : 2 pink : 1 white" },
+        { "say": "ABO has three alleles. Big A and big B are codominant. Both beat little i.", "write": "Iᴬ = Iᴮ > i" },
+        { "say": "Group A and group B parents with an O child? Each next child has a quarter chance of AB.", "write": "Iᴬi × Iᴮi → ¼ AB" }
+      ] },
+    { "heading": "X-linked inheritance",
+      "lines": [
+        { "say": "X-linked genes sit on the X. Males have only one X. No backup.", "write": "male = hemizygous" },
+        { "say": "A carrier woman and an unaffected man.", "write": "XᴴXʰ × XᴴY" },
+        { "say": "Daughters are never affected. Half are carriers.", "write": "daughters: ½ carriers" },
+        { "say": "Each son has a one in two chance of haemophilia.", "write": "sons: ½ affected",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Punnett square for carrier mother and unaffected father; affected son highlighted", "items": [
+            { "kind": "rect", "x": 200, "y": 50, "w": 120, "h": 100, "fill": "white", "label": "XᴴXᴴ" },
+            { "kind": "rect", "x": 320, "y": 50, "w": 120, "h": 100, "fill": "white", "label": "XᴴY" },
+            { "kind": "rect", "x": 200, "y": 150, "w": 120, "h": 100, "fill": "yellow", "label": "XᴴXʰ" },
+            { "kind": "rect", "x": 320, "y": 150, "w": 120, "h": 100, "fill": "red", "label": "XʰY", "change": "highlight" },
+            { "kind": "text", "x": 260, "y": 38, "text": "Xᴴ", "size": 22, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 380, "y": 38, "text": "Y", "size": 22, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 180, "y": 108, "text": "Xᴴ", "size": 22, "bold": true, "anchor": "end" },
+            { "kind": "text", "x": 180, "y": 208, "text": "Xʰ", "size": 22, "bold": true, "anchor": "end" }
+          ] } },
+        { "say": "Dad gives his X to daughters and his Y to sons.", "write": "dad: X → daughters, Y → sons" }
+      ] },
+    { "heading": "Two genes at once",
+      "lines": [
+        { "say": "A dihybrid cross follows two genes. RrYy makes four gamete types equally.", "write": "RY · Ry · rY · ry" },
+        { "say": "RrYy crossed with itself gives nine, three, three, one, over 16 boxes.", "write": "9 : 3 : 3 : 1" },
+        { "say": "Linked genes sit close on one chromosome. They ride in the same car.", "write": "linked genes" },
+        { "say": "A test cross gives mostly parental types, and few recombinants. Not one to one to one to one.", "write": "92, 88 big · 11, 9 small" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Gametes carry one allele of each gene.", "write": "one allele per gamete" },
+        { "say": "Write X-linked genotypes in full, like X big H, Y.", "write": "XᴴY, not Hh" },
+        { "say": "Nine, three, three, one only works if genes assort independently.", "write": "9:3:3:1 needs unlinked" },
+        { "say": "Show the key, parents, gametes, square and ratio. Each earns marks.", "write": "key → … → ratio" }
+      ] }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "level": "Year 12", "subject": "chemistry", "title": "Reaction pathways",
+  "frames": [
+    { "heading": "What is a reaction pathway?",
+      "lines": [
+        { "say": "A reaction pathway is a planned series of reactions, one functional group at a time.", "write": "start → … → target" },
+        { "say": "It's like a trip on public transport. Bus, then train, then tram.", "write": "one step = one leg" },
+        { "say": "Each leg needs the right ticket: the right reagent and conditions.", "write": "reagent + conditions each step" },
+        { "say": "The alkene and the alcohol are the two big hub stations.", "write": "hubs: alkene, alcohol",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Functional group map with alkene and alcohol as hubs", "items": [
+            {"kind": "circle", "x": 140, "y": 150, "r": 48, "fill": "orange", "label": "alkene", "change": "highlight"},
+            {"kind": "circle", "x": 360, "y": 150, "r": 48, "fill": "blue", "label": "alcohol", "change": "highlight"},
+            {"kind": "arrow", "x": 188, "y": 150, "x2": 310, "y2": 150, "color": "black"},
+            {"kind": "rect", "x": 20, "y": 20, "w": 110, "h": 40, "fill": "grey", "label": "alkane"},
+            {"kind": "rect", "x": 20, "y": 240, "w": 130, "h": 40, "fill": "grey", "label": "haloalkane"},
+            {"kind": "arrow", "x": 120, "y": 105, "x2": 90, "y2": 62},
+            {"kind": "arrow", "x": 120, "y": 195, "x2": 90, "y2": 238},
+            {"kind": "rect", "x": 420, "y": 20, "w": 130, "h": 40, "fill": "green", "label": "acid"},
+            {"kind": "rect", "x": 420, "y": 240, "w": 130, "h": 40, "fill": "green", "label": "ketone"},
+            {"kind": "rect", "x": 300, "y": 240, "w": 100, "h": 40, "fill": "teal", "label": "ester"},
+            {"kind": "arrow", "x": 395, "y": 115, "x2": 450, "y2": 62},
+            {"kind": "arrow", "x": 395, "y": 185, "x2": 450, "y2": 238},
+            {"kind": "arrow", "x": 355, "y": 198, "x2": 350, "y2": 238}]}}
+      ] },
+    { "heading": "The key steps on the map",
+      "lines": [
+        { "say": "Alkene to alcohol: steam with a phosphoric acid catalyst, heat and pressure.", "write": "alkene → alcohol: H₂O(g), H₃PO₄" },
+        { "say": "Haloalkane to alcohol: heat with aqueous sodium hydroxide.", "write": "haloalkane → alcohol: NaOH(aq)" },
+        { "say": "Primary alcohol to acid: acidified dichromate, heated under reflux.", "write": "1° alcohol → acid: Cr₂O₇²⁻/H⁺" },
+        { "say": "Secondary alcohol to ketone, with the same oxidant.", "write": "2° alcohol → ketone" },
+        { "say": "Acid plus alcohol to ester: concentrated sulfuric acid, under reflux.", "write": "acid + alcohol → ester" }
+      ] },
+    { "heading": "Plan backwards",
+      "lines": [
+        { "say": "Target: ethyl ethanoate. Start: ethene. Count carbons. Four versus two.", "write": "C₂H₄ → CH₃COOCH₂CH₃" },
+        { "say": "More carbons? Two pieces were joined by condensation.", "write": "more C → condensation" },
+        { "say": "Work backwards. An ester comes from ethanoic acid and ethanol.", "write": "ester ← acid + alcohol",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Ethyl ethanoate traced back to ethanoic acid and ethanol", "items": [
+            {"kind": "rect", "x": 180, "y": 230, "w": 200, "h": 50, "fill": "teal", "label": "ethyl ethanoate"},
+            {"kind": "rect", "x": 40, "y": 130, "w": 180, "h": 50, "fill": "green", "label": "ethanoic acid", "change": "add"},
+            {"kind": "rect", "x": 340, "y": 130, "w": 180, "h": 50, "fill": "blue", "label": "ethanol", "change": "add"},
+            {"kind": "arrow", "x": 130, "y": 180, "x2": 230, "y2": 228, "change": "add"},
+            {"kind": "arrow", "x": 430, "y": 180, "x2": 330, "y2": 228, "change": "add"}]}},
+        { "say": "The acid comes from oxidising ethanol. Ethanol comes from hydrating ethene.", "write": "ethene → ethanol → acid",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Full pathway from ethene to ethyl ethanoate", "items": [
+            {"kind": "rect", "x": 180, "y": 230, "w": 200, "h": 50, "fill": "teal", "label": "ethyl ethanoate"},
+            {"kind": "rect", "x": 40, "y": 130, "w": 180, "h": 50, "fill": "green", "label": "ethanoic acid"},
+            {"kind": "rect", "x": 340, "y": 130, "w": 180, "h": 50, "fill": "blue", "label": "ethanol"},
+            {"kind": "arrow", "x": 130, "y": 180, "x2": 230, "y2": 228},
+            {"kind": "arrow", "x": 430, "y": 180, "x2": 330, "y2": 228},
+            {"kind": "rect", "x": 340, "y": 20, "w": 180, "h": 50, "fill": "orange", "label": "ethene", "change": "add"},
+            {"kind": "arrow", "x": 430, "y": 70, "x2": 430, "y2": 128, "change": "add"},
+            {"kind": "arrow", "x": 340, "y": 155, "x2": 222, "y2": 155, "color": "red", "change": "add"},
+            {"kind": "text", "x": 280, "y": 120, "text": "oxidise", "size": 16, "anchor": "middle", "color": "red"},
+            {"kind": "text", "x": 470, "y": 105, "text": "hydrate", "size": 16}]}},
+        { "say": "So three steps: hydration, oxidation, then condensation.", "write": "addition, oxidation, condensation" }
+      ] },
+    { "heading": "Position is everything",
+      "lines": [
+        { "say": "Target: propanone. A ketone with C double bond O on carbon 2.", "write": "CH₃COCH₃" },
+        { "say": "A ketone comes from a secondary alcohol. So we need propan-2-ol.", "write": "propan-2-ol → propanone" },
+        { "say": "O H on carbon 1 would give an acid instead, not a ketone.", "write": "–OH on C1 → acid",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "OH moves from C1 to C2 to give a ketone", "items": [
+            {"kind": "circle", "x": 160, "y": 160, "r": 24, "fill": "grey", "label": "C1"},
+            {"kind": "line", "x": 184, "y": 160, "x2": 256, "y2": 160},
+            {"kind": "circle", "x": 280, "y": 160, "r": 24, "fill": "grey", "label": "C2"},
+            {"kind": "line", "x": 304, "y": 160, "x2": 376, "y2": 160},
+            {"kind": "circle", "x": 400, "y": 160, "r": 24, "fill": "grey", "label": "C3"},
+            {"kind": "line", "x": 160, "y": 136, "x2": 160, "y2": 84, "change": "remove"},
+            {"kind": "circle", "x": 160, "y": 60, "r": 24, "fill": "red", "label": "OH", "change": "remove"},
+            {"kind": "line", "x": 280, "y": 136, "x2": 280, "y2": 84, "change": "add"},
+            {"kind": "circle", "x": 280, "y": 60, "r": 24, "fill": "red", "label": "OH", "change": "add"},
+            {"kind": "text", "x": 280, "y": 225, "text": "OH on C2 → ketone", "size": 20, "anchor": "middle"}]}},
+        { "say": "Greener route: hydrate propene to propan-2-ol in one step, then oxidise.", "write": "propene → propan-2-ol → propanone" }
+      ] },
+    { "heading": "Multiply the yields",
+      "lines": [
+        { "say": "Every step loses some product. Multiply the step yields, never average them.", "write": "overall = y₁ × y₂ × y₃" },
+        { "say": "Three steps at 90, 75 and 60 percent.", "write": "0.900 × 0.750 × 0.600" },
+        { "say": "That gives 0.405, so only 40.5 percent overall.", "write": "= 0.405 → 40.5%",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Bars shrinking at each step from 100 to 40.5 percent", "items": [
+            {"kind": "rect", "x": 40, "y": 30, "w": 480, "h": 40, "fill": "blue", "label": "start 100%"},
+            {"kind": "rect", "x": 40, "y": 85, "w": 432, "h": 40, "fill": "blue", "label": "after step 1: 90%"},
+            {"kind": "rect", "x": 40, "y": 140, "w": 324, "h": 40, "fill": "blue", "label": "after step 2: 67.5%"},
+            {"kind": "rect", "x": 40, "y": 195, "w": 194, "h": 40, "fill": "green", "label": "40.5%", "change": "highlight"}]}},
+        { "say": "With 50.0 grams possible, expect 0.405 times 50.0, which is 20.3 grams.", "write": "0.405 × 50.0 g = 20.3 g" },
+        { "say": "Fewer steps means a higher overall yield.", "write": "fewer steps → higher yield" }
+      ] },
+    { "heading": "Green chemistry",
+      "lines": [
+        { "say": "Green chemistry reduces hazardous substances and waste.", "write": "green chemistry" },
+        { "say": "Prefer addition reactions. They have 100 percent atom economy.", "write": "high atom economy" },
+        { "say": "Use catalysts and renewable feedstocks, like ethanol from fermented plant sugars.", "write": "catalysts, renewables" },
+        { "say": "Avoid toxic reagents. Chromium six compounds like dichromate are toxic.", "write": "avoid Cr(VI)" },
+        { "say": "Name the principle and the specific evidence. Not just better for the environment.", "write": "principle + evidence" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "A secondary alcohol never gives an acid. It stops at a ketone.", "write": "✗ 2° alcohol → acid" },
+        { "say": "Add water is not enough. Hydration needs steam, phosphoric acid and heat.", "write": "give full conditions" },
+        { "say": "Don't change the carbon count without a condensation step.", "write": "carbons stay the same" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Alkene and alcohol are the hubs of the map.", "write": "two hubs" },
+        { "say": "Plan backwards from the target, one step at a time.", "write": "work backwards" },
+        { "say": "Multiply step yields. Fewer steps is better.", "write": "multiply, never average" },
+        { "say": "Steps, atoms, catalysts, renewables, energy, hazards.", "write": "green checklist" }
+      ] }
+  ]
+}

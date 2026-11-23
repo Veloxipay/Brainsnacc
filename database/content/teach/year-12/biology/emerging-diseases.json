@@ -1,0 +1,98 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Emerging diseases",
+  "frames": [
+    { "heading": "Emerging and re-emerging",
+      "lines": [
+        { "say": "An emerging disease is new, or rapidly increasing in cases or range.", "write": "emerging: new or spreading" },
+        { "say": "COVID-19 is an example. So is Ebola appearing in new regions.", "write": "e.g. COVID-19" },
+        { "say": "A re-emerging disease was under control, but it's coming back.", "write": "re-emerging: measles, TB" },
+        { "say": "Outbreak, then epidemic, then pandemic, as it spreads further.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Growing circles: outbreak, epidemic, pandemic", "items": [
+            {"kind": "circle", "x": 90, "y": 130, "r": 30, "fill": "yellow", "label": "outbreak"},
+            {"kind": "circle", "x": 240, "y": 130, "r": 60, "fill": "orange", "label": "epidemic", "change": "add"},
+            {"kind": "circle", "x": 440, "y": 130, "r": 100, "fill": "red", "label": "pandemic", "change": "add"},
+            {"kind": "text", "x": 280, "y": 250, "text": "endemic: always present at a steady level", "size": 16, "anchor": "middle"}
+          ]}}
+      ] },
+    { "heading": "Changes in the pathogen",
+      "lines": [
+        { "say": "RNA viruses like influenza mutate quickly. Their copying enzymes don't fix errors.", "write": "mutation → new variants" },
+        { "say": "Antigenic drift is small changes building up in surface antigens.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Virus antigens slowly change shape so antibodies fit less well", "items": [
+            {"kind": "circle", "x": 120, "y": 110, "r": 50, "fill": "red", "label": "flu"},
+            {"kind": "polygon", "points": [[160,60],[190,40],[200,75]], "fill": "yellow"},
+            {"kind": "circle", "x": 400, "y": 110, "r": 50, "fill": "red", "label": "flu"},
+            {"kind": "polygon", "points": [[440,60],[480,35],[490,85]], "fill": "yellow", "change": "highlight"},
+            {"kind": "arrow", "x": 190, "y": 160, "x2": 340, "y2": 160, "color": "black", "change": "add"},
+            {"kind": "text", "x": 265, "y": 200, "text": "small changes over time", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Old antibodies fit less well. That's why flu vaccines are updated.", "write": "drift: gradual" },
+        { "say": "Antigenic shift is sudden. Two strains swap whole gene segments in one cell.", "write": "shift: sudden swap" },
+        { "say": "Antibiotics select for bacteria that already carry resistance.", "write": "antimicrobial resistance" }
+      ] },
+    { "heading": "Zoonoses",
+      "lines": [
+        { "say": "A zoonosis passes from animals to humans. The jump is called spillover.", "write": "zoonosis: animal → human" },
+        { "say": "Hendra virus lives in flying foxes. That's the reservoir.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Hendra virus: flying fox to horse to human", "items": [
+            {"kind": "rect", "x": 20, "y": 80, "w": 140, "h": 60, "fill": "grey", "label": "flying fox"},
+            {"kind": "arrow", "x": 165, "y": 110, "x2": 205, "y2": 110, "color": "red", "change": "add"},
+            {"kind": "rect", "x": 210, "y": 80, "w": 140, "h": 60, "fill": "orange", "label": "horse", "change": "add"},
+            {"kind": "arrow", "x": 355, "y": 110, "x2": 395, "y2": 110, "color": "red", "change": "add"},
+            {"kind": "rect", "x": 400, "y": 80, "w": 140, "h": 60, "fill": "pink", "label": "human", "change": "add"},
+            {"kind": "text", "x": 90, "y": 175, "text": "reservoir", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "Horses catch it, and people have caught it from close contact with horses.", "write": "Hendra: bats → horses → us" },
+        { "say": "Zoonoses are hard to wipe out. The pathogen survives in the animals.", "write": "reservoir persists" },
+        { "say": "A vector carries a pathogen between hosts. Mosquitoes spread Ross River virus.", "write": "vector: e.g. mosquito" }
+      ] },
+    { "heading": "Globalisation",
+      "lines": [
+        { "say": "A traveller can cross the world in a day, before symptoms even show.", "write": "incubation + air travel",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "One case spreads to many cities by flights", "items": [
+            {"kind": "circle", "x": 80, "y": 110, "r": 26, "fill": "red", "label": "1"},
+            {"kind": "arrow", "x": 110, "y": 100, "x2": 270, "y2": 50, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 110, "y": 110, "x2": 270, "y2": 110, "color": "black", "change": "add"},
+            {"kind": "arrow", "x": 110, "y": 120, "x2": 270, "y2": 170, "color": "black", "change": "add"},
+            {"kind": "circle", "x": 300, "y": 50, "r": 22, "fill": "red", "change": "add"},
+            {"kind": "circle", "x": 300, "y": 110, "r": 22, "fill": "red", "change": "add"},
+            {"kind": "circle", "x": 300, "y": 170, "r": 22, "fill": "red", "change": "add"},
+            {"kind": "text", "x": 440, "y": 115, "text": "within a day", "size": 20, "anchor": "middle"}
+          ]}},
+        { "say": "Trade moves animals, food and even mosquito eggs in containers.", "write": "global trade" },
+        { "say": "But globalisation also helps. Scientists share genome data fast.", "write": "shared data helps" }
+      ] },
+    { "heading": "Aboriginal and Torres Strait Islander knowledge",
+      "lines": [
+        { "say": "First Nations peoples hold deep knowledge of plants for health and healing.", "write": "knowledge of Country" },
+        { "say": "Plants have been used for wounds, pain, coughs and as antiseptics.", "write": "wounds, pain, antiseptics" },
+        { "say": "Some contain antimicrobial compounds that could become new medicines.", "write": "possible new medicines" },
+        { "say": "Research needs free, prior and informed consent, recognition, and shared benefits.", "write": "consent + benefit sharing" }
+      ] },
+    { "heading": "Finding and stopping an outbreak",
+      "lines": [
+        { "say": "Surveillance. Doctors report notifiable diseases, so a rise gets noticed.", "write": "notifiable diseases" },
+        { "say": "Identify the pathogen with PCR and genome sequencing.", "write": "PCR + sequencing" },
+        { "say": "Contact tracing finds who an infected person met.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Contact tracing: a case and its contacts, isolated and quarantined", "items": [
+            {"kind": "circle", "x": 280, "y": 120, "r": 34, "fill": "red", "label": "case"},
+            {"kind": "line", "x": 250, "y": 100, "x2": 140, "y2": 50, "color": "grey"},
+            {"kind": "line", "x": 310, "y": 100, "x2": 420, "y2": 50, "color": "grey"},
+            {"kind": "line", "x": 280, "y": 155, "x2": 280, "y2": 200, "color": "grey"},
+            {"kind": "circle", "x": 120, "y": 45, "r": 24, "fill": "yellow", "change": "highlight"},
+            {"kind": "circle", "x": 440, "y": 45, "r": 24, "fill": "yellow", "change": "highlight"},
+            {"kind": "circle", "x": 280, "y": 215, "r": 22, "fill": "yellow", "change": "highlight"},
+            {"kind": "text", "x": 430, "y": 160, "text": "contacts: quarantine", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Isolate the sick. Quarantine contacts who may be in the incubation period.", "write": "isolate sick, quarantine exposed" },
+        { "say": "Vaccinate, improve hygiene, control vectors, and vaccinate animals like horses.", "write": "break the chain" }
+      ] },
+    { "heading": "Watch out and remember",
+      "lines": [
+        { "say": "Emerging includes old diseases spreading to new places.", "write": "not only brand new" },
+        { "say": "Antibiotics don't cause mutations. They select resistant bacteria.", "write": "selection, not mutation" },
+        { "say": "Drift is gradual. Shift is sudden.", "write": "drift slow, shift sudden" },
+        { "say": "First Nations knowledge is living knowledge, not just history.", "write": "living knowledge" }
+      ] }
+  ]
+}

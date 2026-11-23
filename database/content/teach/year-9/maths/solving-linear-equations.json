@@ -1,0 +1,120 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Solving linear equations",
+  "frames": [
+    {
+      "heading": "What is a linear equation?",
+      "lines": [
+        { "say": "A linear equation has x to the power 1 only. No x squared.", "write": "5x − 7 = 18" },
+        { "say": "The solution is the value of x that makes both sides equal.", "write": "solution" },
+        { "say": "Each operation has an inverse that undoes it.", "write": "+ ↔ −     × ↔ ÷" },
+        { "say": "Whatever you do to one side, do it to the other side too.", "write": "same to BOTH sides" }
+      ]
+    },
+    {
+      "heading": "Undo in reverse order",
+      "lines": [
+        {
+          "say": "Here are 5 bags with 7 taken away. That balances 18.",
+          "write": "5x − 7 = 18",
+          "draw": { "type": "balance", "left": { "bags": 5, "cubes": -7 }, "right": { "cubes": 18 } }
+        },
+        { "say": "x was multiplied by 5, then 7 was taken away. So undo the minus 7 first.", "write": "x → × 5 → − 7" },
+        {
+          "say": "Add 7 to both sides. The minus 7 cancels, and the right side grows to 25.",
+          "write": "5x = 25",
+          "draw": { "type": "balance", "left": { "bags": 5, "cubes": -7 }, "right": { "cubes": 18 }, "remove": 7, "removeFrom": "left", "add": 7, "addTo": "right", "labels": ["5x − 7 + 7", "18 + 7"] }
+        },
+        {
+          "say": "Share 25 between 5 bags. Each bag gets 5.",
+          "write": "x = 5",
+          "draw": { "type": "balance", "left": { "bags": 5 }, "right": { "cubes": 25 }, "share": true }
+        },
+        { "say": "Check in the original. 5 times 5 minus 7 is 18.", "write": "5 × 5 − 7 = 18 ✓" },
+        { "say": "Socks and shoes. Shoes come off first, so undo the last step first." }
+      ]
+    },
+    {
+      "heading": "When x is divided",
+      "lines": [
+        { "say": "x over 4, minus 3, equals 2.", "write": "x/4 − 3 = 2" },
+        { "say": "Add 3 to both sides first.", "write": "x/4 = 5" },
+        { "say": "Then multiply both sides by 4 to undo the divide.", "write": "x = 20" },
+        { "say": "Now the fraction line covers the whole top. It acts like a bracket.", "write": "(2x − 1)/3 = 5" },
+        { "say": "So multiply both sides by 3 first.", "write": "2x − 1 = 15" },
+        { "say": "Add 1, then divide by 2. x equals 8.", "write": "2x = 16,  x = 8" }
+      ]
+    },
+    {
+      "heading": "Negative coefficients",
+      "lines": [
+        {
+          "say": "9 minus 4x equals 21. The x term is minus 4x.",
+          "write": "9 − 4x = 21"
+        },
+        { "say": "Subtract 9 from both sides. 21 minus 9 is 12.", "write": "−4x = 12" },
+        { "say": "Divide both sides by minus 4. Keep the sign.", "write": "x = −3" },
+        { "say": "Check. 9 minus 4 times minus 3 is 9 plus 12, which is 21.", "write": "9 + 12 = 21 ✓" }
+      ]
+    },
+    {
+      "heading": "A worded problem",
+      "lines": [
+        { "say": "A gym charges 40 dollars to join, plus 12 dollars a week. Jai paid 172 dollars.", "write": "Let w = weeks" },
+        {
+          "say": "Write the equation. 40 plus 12w equals 172.",
+          "write": "40 + 12w = 172",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Bar of $172 split into a $40 fee and weekly $12 parts",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 40, "w": 520, "h": 50, "fill": "grey", "label": "$172" },
+              { "kind": "rect", "x": 20, "y": 110, "w": 120, "h": 50, "fill": "orange", "label": "$40 fee" },
+              { "kind": "rect", "x": 140, "y": 110, "w": 400, "h": 50, "fill": "blue", "label": "12w" }
+            ]
+          }
+        },
+        {
+          "say": "Take away the 40 dollar fee from both sides.",
+          "write": "12w = 132",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "The $40 fee is removed, leaving 12w = 132",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 40, "w": 520, "h": 50, "fill": "grey", "label": "$172 − $40 = $132" },
+              { "kind": "rect", "x": 20, "y": 110, "w": 120, "h": 50, "fill": "orange", "label": "$40 fee", "change": "remove" },
+              { "kind": "rect", "x": 140, "y": 110, "w": 400, "h": 50, "fill": "blue", "label": "12w = 132", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Divide by 12. He paid for 11 weeks.", "write": "w = 11 weeks" },
+        { "say": "Let, Equation, Solve, Answer. LESA.", "write": "LESA" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Do the inverse. In 4x plus 9, subtract 9. Don't add it.", "write": "✗ 4x + 9 + 9" },
+        { "say": "Don't divide first. Undo the plus or minus first.", "write": "✗ 18 ÷ 5 first" },
+        {
+          "say": "Don't only halve part of a fraction. Multiply both sides by 2.",
+          "write": "✗ (x + 6)/2 → x + 3"
+        },
+        { "say": "Minus x equals minus 5 means x equals 5.", "write": "−x = −5 → x = 5" },
+        { "say": "Reread the question at the end. Answer what it asks." }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Do it to both sides and keep it level.", "write": "same to BOTH sides" },
+        {
+          "say": "Change just one side and the scales tip. Then undo the last operation first.",
+          "write": "socks and shoes",
+          "draw": { "type": "balance", "left": { "bags": 5, "cubes": -7 }, "right": { "cubes": 18 }, "remove": 7, "removeFrom": "left", "tip": "right", "labels": ["5x − 7 + 7", "18"] }
+        },
+        { "say": "The fraction line is a bracket around the whole top.", "write": "(2x − 1)/3" },
+        { "say": "Always check your answer in the original equation.", "write": "Check ✓" }
+      ]
+    }
+  ]
+}

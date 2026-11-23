@@ -1,0 +1,86 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Circles: circumference and area",
+  "frames": [
+    { "heading": "Parts of a circle",
+      "lines": [
+        { "say": "Here's a circle with its centre, O.", "write": "centre O",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "A circle with centre O", "items": [
+            {"kind": "circle", "x": 280, "y": 150, "r": 120, "fill": "white"},
+            {"kind": "circle", "x": 280, "y": 150, "r": 5, "fill": "black"},
+            {"kind": "text", "x": 280, "y": 178, "text": "O", "size": 18, "anchor": "middle"}]}},
+        { "say": "The radius goes from the centre to the edge.", "write": "radius r",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Radius drawn from O to the edge", "items": [
+            {"kind": "circle", "x": 280, "y": 150, "r": 120, "fill": "white"},
+            {"kind": "circle", "x": 280, "y": 150, "r": 5, "fill": "black"},
+            {"kind": "text", "x": 280, "y": 178, "text": "O", "size": 18, "anchor": "middle"},
+            {"kind": "line", "x": 280, "y": 150, "x2": 365, "y2": 65, "color": "blue", "change": "add"},
+            {"kind": "text", "x": 340, "y": 95, "text": "r", "size": 22, "bold": true, "color": "blue"}]}},
+        { "say": "The diameter goes right across through the centre. It's two radii.", "write": "d = 2r",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Diameter drawn across through O", "items": [
+            {"kind": "circle", "x": 280, "y": 150, "r": 120, "fill": "white"},
+            {"kind": "circle", "x": 280, "y": 150, "r": 5, "fill": "black"},
+            {"kind": "text", "x": 280, "y": 178, "text": "O", "size": 18, "anchor": "middle"},
+            {"kind": "line", "x": 280, "y": 150, "x2": 365, "y2": 65, "color": "blue"},
+            {"kind": "line", "x": 160, "y": 150, "x2": 400, "y2": 150, "color": "red", "change": "add"},
+            {"kind": "text", "x": 200, "y": 140, "text": "d", "size": 22, "bold": true, "color": "red"}]}},
+        { "say": "The circumference is the distance all the way round.", "write": "circumference C",
+          "diagram": "diagrams/y7/maths-advanced/circles-circumference-and-area-parts.svg", "alt": "Circle with centre, radius, diameter and circumference labelled" }
+      ] },
+    { "heading": "Pi and the circumference",
+      "lines": [
+        { "say": "Roll a can one full turn. It travels a bit more than 3 widths.", "write": "C ÷ d = π" },
+        { "say": "That number is pi, about 3.14. Its decimals never end or repeat.", "write": "π = 3.14159…" },
+        { "say": "Cherry pie is delicious. C equals pi d.", "write": "C = πd = 2πr" },
+        { "say": "Diameter 10. C equals 10 pi, which is about 31.4 centimetres.", "write": "C = 10π ≈ 31.4 cm" },
+        { "say": "Check: a bit more than 3 diameters is a bit more than 30.", "write": "≈ 3 × 10 ✓" }
+      ] },
+    { "heading": "Area of a circle",
+      "lines": [
+        { "say": "Cut a circle into thin slices and lay them top to tail.", "write": "slice into sectors",
+          "diagram": "diagrams/y7/maths-advanced/circles-circumference-and-area-sectors.svg", "alt": "Sectors rearranged into a near-parallelogram with height r and base pi r" },
+        { "say": "It's almost a parallelogram. Height r, base half the circumference, pi r.", "write": "base πr, height r" },
+        { "say": "So the area is pi r times r. Apple pies are too.", "write": "A = πr²" },
+        { "say": "Radius 6. Square it first, 36. Then 36 times 3.14 is 113.04.", "write": "A = 36π ≈ 113.04 cm²" },
+        { "say": "Only the radius is squared, not pi.", "write": "square r only" }
+      ] },
+    { "heading": "Exact or rounded?",
+      "lines": [
+        { "say": "An exact answer keeps pi. Radius 3 gives 9 pi square centimetres.", "write": "exact: 9π cm²" },
+        { "say": "A rounded answer uses 3.14. 9 times 3.14 is 28.26.", "write": "rounded: 28.26 cm²" },
+        { "say": "Read the question to see which one it wants. Round only at the end.", "write": "round at the end" }
+      ] },
+    { "heading": "Semicircles",
+      "lines": [
+        { "say": "Here's a semicircle with a 12 centimetre diameter.", "write": "d = 12 cm",
+          "diagram": "diagrams/y7/maths-advanced/circles-circumference-and-area-semi.svg", "alt": "Semicircle with diameter 12 cm" },
+        { "say": "The curved part is half of pi times 12. That's 6 pi, about 18.84.", "write": "curve = 6π ≈ 18.84" },
+        { "say": "Don't forget the straight edge. Add 12 to get 30.84.", "write": "P = 18.84 + 12 = 30.84 cm",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Semicircle perimeter: curved part plus straight diameter", "items": [
+            {"kind": "polygon", "points": [[130, 180], [150, 110], [200, 60], [280, 40], [360, 60], [410, 110], [430, 180]], "fill": "none", "color": "blue"},
+            {"kind": "line", "x": 130, "y": 180, "x2": 430, "y2": 180, "color": "red", "change": "highlight"},
+            {"kind": "text", "x": 280, "y": 210, "text": "+ 12 cm straight edge", "size": 18, "anchor": "middle", "color": "red"},
+            {"kind": "text", "x": 280, "y": 100, "text": "18.84 cm", "size": 18, "anchor": "middle", "color": "blue"}]}},
+        { "say": "Area: radius 6, so half of 36 pi is 18 pi, about 56.52.", "write": "A = 18π ≈ 56.52 cm²" },
+        { "say": "A quadrant is a quarter. Its perimeter adds two radii.", "write": "quadrant: ¼ circle + 2r" }
+      ] },
+    { "heading": "Working backwards",
+      "lines": [
+        { "say": "The circumference is 50.24. Divide by 3.14 to get the diameter, 16.", "write": "d = 50.24 ÷ 3.14 = 16" },
+        { "say": "Halve it. The radius is 8.", "write": "r = 8" },
+        { "say": "Area is 3.14 times 64, which is 200.96 square centimetres.", "write": "A ≈ 200.96 cm²" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't mix up radius and diameter. Write r and d down first.", "write": "d = 2r" },
+        { "say": "Don't square pi, and don't square the diameter.", "write": "✗ (πd)²" },
+        { "say": "Doubling the radius makes the area 4 times bigger, not 2.", "write": "2 × r → 4 × area" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Cherry pie is delicious. C equals pi d.", "write": "C = πd" },
+        { "say": "Apple pies are too. A equals pi r squared.", "write": "A = πr²" },
+        { "say": "Squared answer, squared units.", "write": "area in cm²" },
+        { "say": "Halves and quarters need their straight edges.", "write": "add the edges" }
+      ] }
+  ]
+}

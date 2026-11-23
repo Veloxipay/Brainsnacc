@@ -1,0 +1,137 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "DNA technologies and ethics",
+  "frames": [
+    {
+      "heading": "PCR: copying DNA",
+      "lines": [
+        {"say": "Sometimes we only have a hair or a drop of blood. PCR copies DNA.", "write": "PCR = amplification"},
+        {"say": "You need template DNA, primers, free nucleotides and a heat-stable polymerase.", "write": "template, primers, nucleotides, Taq"},
+        {"say": "Primers are short pieces that show where copying starts.", "write": "primers mark the start"},
+        {"say": "Taq polymerase comes from hot-spring bacteria, so 95 degrees won't denature it.", "write": "Taq: heat-stable"}
+      ]
+    },
+    {
+      "heading": "Hot, cool, warm",
+      "lines": [
+        {"say": "Step one, denaturation. Heat to about 95 degrees to separate the strands.", "write": "1. denature ~95 °C",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Temperature steps: 95, then 50 to 65, then 72 degrees", "items": [
+           {"kind": "rect", "x": 40, "y": 40, "w": 140, "h": 160, "fill": "red", "label": "95 °C", "change": "highlight"},
+           {"kind": "rect", "x": 210, "y": 120, "w": 140, "h": 80, "fill": "blue", "label": "50–65 °C"},
+           {"kind": "rect", "x": 380, "y": 80, "w": 140, "h": 120, "fill": "orange", "label": "72 °C"},
+           {"kind": "text", "x": 110, "y": 225, "text": "denature", "size": 18, "bold": true},
+           {"kind": "text", "x": 280, "y": 225, "text": "anneal", "size": 18},
+           {"kind": "text", "x": 450, "y": 225, "text": "extend", "size": 18}
+         ]}},
+        {"say": "Step two, annealing. Cool to 50 to 65 so the primers stick.", "write": "2. anneal ~50–65 °C"},
+        {"say": "Step three, extension. At 72, polymerase builds the new strands.", "write": "3. extend ~72 °C"},
+        {"say": "Don't Annoy Elephants: denature, anneal, extend.", "write": "D – A – E"},
+        {"say": "Each cycle doubles the DNA. Ten cycles from one copy gives 1024.", "write": "2¹⁰ = 1024",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "One DNA copy becomes 2, then 4, then 8", "items": [
+           {"kind": "rect", "x": 40, "y": 90, "w": 60, "h": 14, "fill": "purple"},
+           {"kind": "rect", "x": 160, "y": 80, "w": 60, "h": 14, "fill": "purple", "change": "add"},
+           {"kind": "rect", "x": 160, "y": 100, "w": 60, "h": 14, "fill": "purple", "change": "add"},
+           {"kind": "rect", "x": 280, "y": 60, "w": 60, "h": 14, "fill": "purple", "change": "add"},
+           {"kind": "rect", "x": 280, "y": 80, "w": 60, "h": 14, "fill": "purple", "change": "add"},
+           {"kind": "rect", "x": 280, "y": 100, "w": 60, "h": 14, "fill": "purple", "change": "add"},
+           {"kind": "rect", "x": 280, "y": 120, "w": 60, "h": 14, "fill": "purple", "change": "add"},
+           {"kind": "text", "x": 70, "y": 170, "text": "1", "size": 22},
+           {"kind": "text", "x": 190, "y": 170, "text": "2", "size": 22},
+           {"kind": "text", "x": 310, "y": 170, "text": "4", "size": 22},
+           {"kind": "text", "x": 460, "y": 105, "text": "30 cycles: > 1 billion", "size": 18, "bold": true}
+         ]}}
+      ]
+    },
+    {
+      "heading": "Gel electrophoresis",
+      "lines": [
+        {"say": "Gel electrophoresis sorts DNA fragments by size.", "write": "sort by size"},
+        {"say": "Load the samples into wells at one end of an agarose gel.", "write": "wells → gel"},
+        {"say": "DNA is negative, so it moves towards the positive electrode.", "write": "DNA (−) → (+)",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Gel with wells at the top near the negative electrode; small bands travel further towards the positive electrode", "items": [
+           {"kind": "rect", "x": 120, "y": 30, "w": 320, "h": 220, "fill": "grey"},
+           {"kind": "rect", "x": 160, "y": 40, "w": 60, "h": 12, "fill": "black"},
+           {"kind": "rect", "x": 250, "y": 40, "w": 60, "h": 12, "fill": "black"},
+           {"kind": "rect", "x": 340, "y": 40, "w": 60, "h": 12, "fill": "black"},
+           {"kind": "text", "x": 80, "y": 50, "text": "−", "size": 30, "bold": true},
+           {"kind": "text", "x": 80, "y": 245, "text": "+", "size": 30, "bold": true, "color": "red"},
+           {"kind": "rect", "x": 160, "y": 80, "w": 60, "h": 10, "fill": "blue", "change": "add"},
+           {"kind": "rect", "x": 250, "y": 140, "w": 60, "h": 10, "fill": "blue", "change": "add"},
+           {"kind": "rect", "x": 340, "y": 215, "w": 60, "h": 10, "fill": "blue", "change": "add"},
+           {"kind": "text", "x": 500, "y": 90, "text": "big", "size": 18},
+           {"kind": "text", "x": 500, "y": 225, "text": "small", "size": 18, "bold": true}
+         ]}},
+        {"say": "Small fragments slip through fastest, like small kids through a crowd.", "write": "small → further"},
+        {"say": "A DNA ladder of known sizes runs alongside, to measure the bands.", "write": "DNA ladder = ruler"}
+      ]
+    },
+    {
+      "heading": "DNA profiling",
+      "lines": [
+        {"say": "Short tandem repeats are a short sequence repeated many times, like GATA GATA.", "write": "STR: GATA GATA GATA"},
+        {"say": "The number of repeats differs between people.", "write": "repeat number varies"},
+        {"say": "PCR copies several STRs. The gel shows their lengths. That's your profile.", "write": "PCR + gel = profile"},
+        {"say": "Identical twins are the exception. They share the same profile.", "write": "identical twins: same"}
+      ]
+    },
+    {
+      "heading": "Who is the father?",
+      "lines": [
+        {"say": "A child gets one STR copy from each parent.", "write": "one band from each parent"},
+        {"say": "The child has 150 and 180. Mum has 150.", "write": "child: 150, 180",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Gel lanes for mother, child, man 1 and man 2; the child's 180 band matches man 2", "items": [
+           {"kind": "text", "x": 90, "y": 30, "text": "Mum", "size": 18},
+           {"kind": "text", "x": 210, "y": 30, "text": "Child", "size": 18, "bold": true},
+           {"kind": "text", "x": 330, "y": 30, "text": "Man 1", "size": 18},
+           {"kind": "text", "x": 450, "y": 30, "text": "Man 2", "size": 18},
+           {"kind": "rect", "x": 60, "y": 200, "w": 60, "h": 10, "fill": "blue"},
+           {"kind": "rect", "x": 60, "y": 160, "w": 60, "h": 10, "fill": "green"},
+           {"kind": "rect", "x": 180, "y": 160, "w": 60, "h": 10, "fill": "green"},
+           {"kind": "rect", "x": 180, "y": 120, "w": 60, "h": 10, "fill": "red", "change": "highlight"},
+           {"kind": "rect", "x": 300, "y": 185, "w": 60, "h": 10, "fill": "grey", "change": "remove"},
+           {"kind": "rect", "x": 300, "y": 145, "w": 60, "h": 10, "fill": "grey", "change": "remove"},
+           {"kind": "rect", "x": 420, "y": 120, "w": 60, "h": 10, "fill": "red", "change": "highlight"},
+           {"kind": "rect", "x": 420, "y": 90, "w": 60, "h": 10, "fill": "purple"},
+           {"kind": "text", "x": 530, "y": 128, "text": "180", "size": 16, "anchor": "end"}
+         ]}},
+        {"say": "So 180 must come from the father. Only Man 2 has a 180 band.", "write": "Man 2 ✓   Man 1 ✗"},
+        {"say": "Real cases check many STR locations before deciding.", "write": "many STRs checked"}
+      ]
+    },
+    {
+      "heading": "Genetic testing and ethics",
+      "lines": [
+        {"say": "Genetic testing checks whether someone carries a particular allele.", "write": "test for an allele"},
+        {"say": "It can diagnose cystic fibrosis, or show someone is a carrier.", "write": "diagnose, carrier, screening"},
+        {"say": "Please Consider Different People: privacy, consent, discrimination and people affected.", "write": "P · C · D · P",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Four ethical issues: privacy, consent, discrimination, people affected", "items": [
+           {"kind": "rect", "x": 20, "y": 30, "w": 255, "h": 75, "fill": "blue", "label": "Privacy"},
+           {"kind": "rect", "x": 285, "y": 30, "w": 255, "h": 75, "fill": "teal", "label": "Consent"},
+           {"kind": "rect", "x": 20, "y": 115, "w": 255, "h": 75, "fill": "orange", "label": "Discrimination"},
+           {"kind": "rect", "x": 285, "y": 115, "w": 255, "h": 75, "fill": "pink", "label": "People affected", "change": "highlight"}
+         ]}},
+        {"say": "Could insurers treat you unfairly? Did relatives agree to being revealed?", "write": "insurers, relatives"},
+        {"say": "There's often no single right answer. Weigh the benefits and harms.", "write": "benefits vs harms"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Bigger fragments don't travel further. Smaller ones do.", "write": "✗ big goes further"},
+        {"say": "DNA goes to the positive electrode, not the negative.", "write": "✗ DNA → negative"},
+        {"say": "PCR only copies DNA. The gel shows the profile.", "write": "✗ PCR identifies people"},
+        {"say": "In ethics answers, always show both sides.", "write": "show both sides"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Hot, cool, warm. Denature, anneal, extend.", "write": "95, 50–65, 72 °C"},
+        {"say": "Copies equal two to the power of cycles.", "write": "copies = 2ⁿ"},
+        {"say": "Opposites attract. Small fragments run furthest.", "write": "(−) DNA → (+)"},
+        {"say": "Every band in the child must match mum or dad.", "write": "paternity rule"}
+      ]
+    }
+  ]
+}

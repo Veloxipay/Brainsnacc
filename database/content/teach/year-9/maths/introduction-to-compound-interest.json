@@ -1,0 +1,652 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Introduction to compound interest",
+  "frames": [
+    {
+      "heading": "Interest on interest",
+      "lines": [
+        {
+          "say": "Compound interest is like a snowball rolling in the snow.",
+          "write": "compound interest"
+        },
+        {
+          "say": "Each roll it picks up snow, so the next layer is bigger.",
+          "write": "bigger balance → bigger interest",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "A snowball growing bigger with each roll",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 200,
+                "r": 30,
+                "fill": "white"
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 180,
+                "r": 50,
+                "fill": "white",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 440,
+                "y": 150,
+                "r": 80,
+                "fill": "white",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 140,
+                "y": 230,
+                "x2": 190,
+                "y2": 230,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 310,
+                "y": 230,
+                "x2": 350,
+                "y2": 230,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 265,
+                "text": "$1000",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 265,
+                "text": "$1100",
+                "size": 18,
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 265,
+                "text": "$1210",
+                "size": 18,
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each period, the interest is added to the balance.",
+          "write": "interest added to balance"
+        },
+        {
+          "say": "Then the next interest is worked out on the new balance.",
+          "write": "% of the NEW balance"
+        }
+      ]
+    },
+    {
+      "heading": "Year by year",
+      "lines": [
+        {
+          "say": "Invest 1000 dollars at 10 percent per year, compounded annually.",
+          "write": "$1000 at 10% p.a.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance of $1000 at 10% compounded each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 292,
+                "text": "start",
+                "size": 16
+              }
+            ]
+          }
+        },
+        {
+          "say": "Year 1: 10 percent of 1000 is 100. Now we have 1100.",
+          "write": "1000 × 1.1 = $1100",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance of $1000 at 10% compounded each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 292,
+                "text": "start",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 72.0,
+                "w": 80,
+                "h": 18.0,
+                "fill": "orange",
+                "label": "+$100",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 62.0,
+                "text": "$1100",
+                "size": 18,
+                "change": "add",
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 292,
+                "text": "year 1",
+                "size": 16
+              }
+            ]
+          }
+        },
+        {
+          "say": "Year 2: 10 percent of 1100 is 110. Now 1210.",
+          "write": "1100 × 1.1 = $1210",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance of $1000 at 10% compounded each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 292,
+                "text": "start",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 72.0,
+                "w": 80,
+                "h": 18.0,
+                "fill": "orange",
+                "label": "+$100"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 62.0,
+                "text": "$1100",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 292,
+                "text": "year 1",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 72.0,
+                "w": 80,
+                "h": 198.0,
+                "fill": "blue",
+                "label": "$1100"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 52.20000000000002,
+                "w": 80,
+                "h": 19.799999999999983,
+                "fill": "orange",
+                "label": "+$110",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 42.20000000000002,
+                "text": "$1210",
+                "size": 18,
+                "change": "add",
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 292,
+                "text": "year 2",
+                "size": 16
+              }
+            ]
+          }
+        },
+        {
+          "say": "Year 3: 10 percent of 1210 is 121. Now 1331.",
+          "write": "1210 × 1.1 = $1331",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Balance of $1000 at 10% compounded each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 292,
+                "text": "start",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 90.0,
+                "w": 80,
+                "h": 180.0,
+                "fill": "blue",
+                "label": "$1000"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 72.0,
+                "w": 80,
+                "h": 18.0,
+                "fill": "orange",
+                "label": "+$100"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 62.0,
+                "text": "$1100",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 292,
+                "text": "year 1",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 72.0,
+                "w": 80,
+                "h": 198.0,
+                "fill": "blue",
+                "label": "$1100"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 52.20000000000002,
+                "w": 80,
+                "h": 19.799999999999983,
+                "fill": "orange",
+                "label": "+$110"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 42.20000000000002,
+                "text": "$1210",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 292,
+                "text": "year 2",
+                "size": 16
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 52.20000000000002,
+                "w": 80,
+                "h": 217.79999999999998,
+                "fill": "blue",
+                "label": "$1210"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 30.420000000000016,
+                "w": 80,
+                "h": 21.78,
+                "fill": "orange",
+                "label": "+$121",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 20.420000000000016,
+                "text": "$1331",
+                "size": 18,
+                "change": "add",
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 292,
+                "text": "year 3",
+                "size": 16
+              }
+            ]
+          }
+        },
+        {
+          "say": "The interest grows every year: 100, 110, 121.",
+          "write": "$100, $110, $121, …"
+        }
+      ]
+    },
+    {
+      "heading": "The formula",
+      "lines": [
+        {
+          "say": "Each year we multiply by 1 plus r. After n years:",
+          "write": "A = P(1 + r)ⁿ"
+        },
+        {
+          "say": "P is the principal, A is the final amount.",
+          "write": "P = principal, A = amount"
+        },
+        {
+          "say": "r is the rate per period as a decimal. n is the number of periods.",
+          "write": "r per period, n periods"
+        },
+        {
+          "say": "Check: 1000 times 1.1 cubed is 1331. It matches.",
+          "write": "1000 × 1.1³ = $1331 ✓"
+        },
+        {
+          "say": "The interest earned is the final amount minus the principal.",
+          "write": "I = A − P"
+        }
+      ]
+    },
+    {
+      "heading": "Using the formula",
+      "lines": [
+        {
+          "say": "5000 dollars at 4 percent per year for 6 years.",
+          "write": "P = 5000, r = 0.04, n = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Principal $5000 grows to $6326.60",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 380,
+                "h": 60,
+                "fill": "blue",
+                "label": "P = $5000"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "P = 5000, r = 0.04, n = 6",
+                "size": 22,
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A equals 5000 times 1.04 to the 6.",
+          "write": "A = 5000 × 1.04⁶"
+        },
+        {
+          "say": "That's about 6326 dollars 60. Round to the cent at the end.",
+          "write": "A ≈ $6326.60"
+        },
+        {
+          "say": "The interest is 6326.60 minus 5000, which is 1326 dollars 60.",
+          "write": "I = $1326.60",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Principal $5000 grows to $6326.60",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 380,
+                "h": 60,
+                "fill": "blue",
+                "label": "P = $5000"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 80,
+                "w": 120,
+                "h": 60,
+                "fill": "orange",
+                "label": "I = $1326.60",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "A = 5000 × 1.04⁶ ≈ $6326.60",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Compounding monthly",
+      "lines": [
+        {
+          "say": "2000 dollars at 6 percent per year, compounded monthly, for 2 years.",
+          "write": "6% p.a. monthly, 2 years"
+        },
+        {
+          "say": "Divide the rate by 12. 0.06 over 12 is 0.005.",
+          "write": "r = 0.06 ÷ 12 = 0.005"
+        },
+        {
+          "say": "Multiply the years by 12. That's 24 months.",
+          "write": "n = 2 × 12 = 24"
+        },
+        {
+          "say": "A equals 2000 times 1.005 to the 24. About 2254 dollars 32.",
+          "write": "A ≈ $2254.32"
+        }
+      ]
+    },
+    {
+      "heading": "Compound versus simple",
+      "lines": [
+        {
+          "say": "Simple interest adds the same amount every year.",
+          "write": "simple: equal steps",
+          "diagram": "diagrams/y9/maths/introduction-to-compound-interest-compare.svg",
+          "alt": "Simple versus compound balances of $1000 at 10% over 5 years"
+        },
+        {
+          "say": "After 5 years, simple interest gives 1500 dollars.",
+          "write": "simple: $1500"
+        },
+        {
+          "say": "Compound gives 1000 times 1.1 to the 5. That's 1610 dollars 51.",
+          "write": "compound: $1610.51"
+        },
+        {
+          "say": "That's 110 dollars 51 more, from interest on interest.",
+          "write": "difference $110.51"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Compound interest is not P times r times n.",
+          "write": "✗ P × r × n"
+        },
+        {
+          "say": "Don't forget the 1 plus. The multiplier for 10 percent is 1.1.",
+          "write": "✓ × 1.1   ✗ × 0.1"
+        },
+        {
+          "say": "For monthly compounding, use the monthly rate and the number of months.",
+          "write": "r ÷ 12,  n × 12"
+        },
+        {
+          "say": "If the question asks for interest, subtract the principal.",
+          "write": "I = A − P"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Each period, the balance is multiplied by 1 plus r.",
+          "write": "× (1 + r) each period"
+        },
+        {
+          "say": "A equals P times 1 plus r, to the n.",
+          "write": "A = P(1 + r)ⁿ"
+        },
+        {
+          "say": "Keep the full value and round money to the cent at the end.",
+          "write": "round at the end"
+        }
+      ]
+    }
+  ]
+}

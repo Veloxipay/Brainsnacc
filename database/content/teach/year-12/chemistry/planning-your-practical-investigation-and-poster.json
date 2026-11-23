@@ -1,0 +1,103 @@
+{
+  "level": "Year 12", "subject": "chemistry", "title": "Planning your practical investigation and poster",
+  "frames": [
+    { "heading": "A good research question",
+      "lines": [
+        { "say": "You design your own investigation on sustainable energy or materials, then make a poster.", "write": "investigation → poster" },
+        { "say": "A weak question is vague. Are biofuels good? You can't test that.", "write": "✗ Are biofuels good?" },
+        { "say": "A strong question names the variables. Does alcohol chain length change energy per gram?", "write": "✓ chain length → energy per g" },
+        { "say": "Then write a hypothesis. If, then, because.", "write": "If… then… because…" },
+        { "say": "If chain length increases, energy per gram increases, because there are more bonds to burn.", "write": "more C–H, C–C bonds → more energy" }
+      ] },
+    { "heading": "Variables and a fair test",
+      "lines": [
+        { "say": "Here is a spirit burner heating a can of water.", "write": "spirit burner + can",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Spirit burner under a can of water with a thermometer", "items": [
+            {"kind": "rect", "x": 220, "y": 60, "w": 120, "h": 100, "fill": "blue", "label": "100 g water"},
+            {"kind": "line", "x": 300, "y": 20, "x2": 300, "y2": 120, "color": "red"},
+            {"kind": "polygon", "points": [[265, 230], [280, 185], [295, 230]], "fill": "orange"},
+            {"kind": "rect", "x": 240, "y": 230, "w": 80, "h": 50, "fill": "grey", "label": "alcohol"},
+            {"kind": "text", "x": 420, "y": 40, "text": "thermometer", "size": 18}]}},
+        { "say": "The independent variable is what you change. Here, the type of alcohol.", "write": "independent: type of alcohol",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "The burner, the thing you change, is highlighted", "items": [
+            {"kind": "rect", "x": 220, "y": 60, "w": 120, "h": 100, "fill": "blue", "label": "100 g water"},
+            {"kind": "line", "x": 300, "y": 20, "x2": 300, "y2": 120, "color": "red"},
+            {"kind": "polygon", "points": [[265, 230], [280, 185], [295, 230]], "fill": "orange"},
+            {"kind": "rect", "x": 240, "y": 230, "w": 80, "h": 50, "fill": "grey", "label": "alcohol", "change": "highlight"},
+            {"kind": "text", "x": 360, "y": 260, "text": "I change it", "size": 20, "bold": true, "color": "purple", "change": "add"}]}},
+        { "say": "The dependent variable is what you measure. The temperature rise of the water.", "write": "dependent: temperature rise",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "The thermometer, the thing you measure, is highlighted", "items": [
+            {"kind": "rect", "x": 220, "y": 60, "w": 120, "h": 100, "fill": "blue", "label": "100 g water"},
+            {"kind": "line", "x": 300, "y": 20, "x2": 300, "y2": 120, "color": "red", "change": "highlight"},
+            {"kind": "polygon", "points": [[265, 230], [280, 185], [295, 230]], "fill": "orange"},
+            {"kind": "rect", "x": 240, "y": 230, "w": 80, "h": 50, "fill": "grey", "label": "alcohol"},
+            {"kind": "text", "x": 320, "y": 40, "text": "I measure it", "size": 20, "bold": true, "color": "purple", "change": "add"}]}},
+        { "say": "Controlled variables stay the same. Mass of water, the can, the distance to the flame.", "write": "controlled: keep the same" },
+        { "say": "Only one thing changes, so the test is valid.", "write": "valid = fair test" }
+      ] },
+    { "heading": "Method and safety",
+      "lines": [
+        { "say": "Write steps another student could follow exactly, with sizes and repeats.", "write": "e.g. 100 mL measuring cylinder" },
+        { "say": "A risk assessment lists each hazard, its risk and your control.", "write": "hazard → risk → control" },
+        { "say": "Alcohols are flammable. Use small volumes and keep a fire blanket nearby.", "write": "flammable → small volumes" },
+        { "say": "Check the safety data sheet for every chemical.", "write": "SDS for each chemical" }
+      ] },
+    { "heading": "Accuracy and precision",
+      "lines": [
+        { "say": "Picture a dartboard. The bullseye is the true value.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Two dartboards", "items": [
+            {"kind": "circle", "x": 140, "y": 130, "r": 100, "fill": "white"},
+            {"kind": "circle", "x": 140, "y": 130, "r": 20, "fill": "red"},
+            {"kind": "circle", "x": 420, "y": 130, "r": 100, "fill": "white"},
+            {"kind": "circle", "x": 420, "y": 130, "r": 20, "fill": "red"}]}},
+        { "say": "Darts close together are precise. Darts on the bullseye are accurate.", "write": "precise: close together" },
+        { "say": "This tight cluster misses the bullseye. Precise, but not accurate.", "write": "precise, not accurate",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Left board: tight cluster off-centre. Right board: tight cluster on bullseye", "items": [
+            {"kind": "circle", "x": 140, "y": 130, "r": 100, "fill": "white"},
+            {"kind": "circle", "x": 140, "y": 130, "r": 20, "fill": "red"},
+            {"kind": "circle", "x": 85, "y": 75, "r": 7, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 97, "y": 80, "r": 7, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 88, "y": 90, "r": 7, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 420, "y": 130, "r": 100, "fill": "white"},
+            {"kind": "circle", "x": 420, "y": 130, "r": 20, "fill": "red"},
+            {"kind": "circle", "x": 414, "y": 126, "r": 7, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 426, "y": 132, "r": 7, "fill": "blue", "change": "add"},
+            {"kind": "circle", "x": 418, "y": 138, "r": 7, "fill": "blue", "change": "add"},
+            {"kind": "text", "x": 140, "y": 252, "text": "precise only", "size": 16, "anchor": "middle"},
+            {"kind": "text", "x": 420, "y": 252, "text": "precise + accurate", "size": 16, "anchor": "middle"}]}},
+        { "say": "Trials of 20.1, 20.4, 20.0 and 20.3 agree closely. Precise.", "write": "mean 20.2 kJ/g" },
+        { "say": "But the data book says 29.6. So they are not accurate.", "write": "accepted 29.6 kJ/g" }
+      ] },
+    { "heading": "Random or systematic?",
+      "lines": [
+        { "say": "Random errors scatter readings above and below. They hurt precision.", "write": "random → precision" },
+        { "say": "Random? Repeat. More trials and an average reduce the effect.", "write": "Random? Repeat." },
+        { "say": "Systematic errors shift every reading the same way. They hurt accuracy.", "write": "systematic → accuracy" },
+        { "say": "Heat lost from the can makes every result too low.", "write": "heat loss = systematic",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Heat escapes from the can into the air", "items": [
+            {"kind": "rect", "x": 220, "y": 80, "w": 120, "h": 100, "fill": "blue", "label": "water"},
+            {"kind": "polygon", "points": [[265, 240], [280, 195], [295, 240]], "fill": "orange"},
+            {"kind": "arrow", "x": 220, "y": 130, "x2": 120, "y2": 90, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 340, "y": 130, "x2": 440, "y2": 90, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 280, "y": 80, "x2": 280, "y2": 20, "color": "red", "change": "add"},
+            {"kind": "text", "x": 80, "y": 70, "text": "heat lost", "size": 18, "color": "red"}]}},
+        { "say": "Systematic? Switch the method. Insulate the can and use a draught shield.", "write": "Systematic? Switch the method." },
+        { "say": "Spilling a sample is a mistake, not an error. Discard it and redo the trial.", "write": "mistake → discard, redo" }
+      ] },
+    { "heading": "Results and the poster",
+      "lines": [
+        { "say": "Put units in column headings. Match decimal places to the equipment.", "write": "units in headings" },
+        { "say": "Use a line graph for continuous variables, a bar chart for categories.", "write": "line graph vs bar chart" },
+        { "say": "Say your data support the hypothesis. Never say proven.", "write": "supported, not proven" },
+        { "say": "The poster is about 600 words. Title, introduction, method, results, discussion, conclusion, references.", "write": "~600 words" },
+        { "say": "Keep a logbook all the way through. It shows the work is yours.", "write": "logbook" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "I change it, it depends on it, I control the rest.", "write": "independent, dependent, controlled" },
+        { "say": "Hypothesis: if, then, because. No because, no full marks.", "write": "If… then… because…" },
+        { "say": "Repeatable means same person again. Reproducible means a different person.", "write": "repeatable vs reproducible" },
+        { "say": "Random? Repeat. Systematic? Switch the method.", "write": "Random? Repeat." }
+      ] }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Converting recurring decimals to fractions",
+  "frames": [
+    { "heading": "Shift a block, subtract",
+      "lines": [
+        { "say": "A recurring decimal never ends. 0.454545 and so on, forever.", "write": "x = 0.454545…" },
+        { "say": "The repeating block is 45. It has 2 digits, so multiply by 100.", "write": "100x = 45.454545…",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "100x and x written one above the other with matching tails", "items": [
+            {"kind": "text", "x": 60, "y": 70, "text": "100x =", "size": 26, "anchor": "start"},
+            {"kind": "text", "x": 200, "y": 70, "text": "45", "size": 26, "bold": true, "color": "blue"},
+            {"kind": "text", "x": 240, "y": 70, "text": ".454545…", "size": 26, "color": "orange"},
+            {"kind": "text", "x": 60, "y": 130, "text": "     x =", "size": 26, "anchor": "start"},
+            {"kind": "text", "x": 200, "y": 130, "text": " 0", "size": 26, "bold": true, "color": "blue"},
+            {"kind": "text", "x": 240, "y": 130, "text": ".454545…", "size": 26, "color": "orange"}]}},
+        { "say": "Line them up. The endless tails match exactly.", "write": "tails match" },
+        { "say": "Subtract. The tails cancel, leaving 45.", "write": "99x = 45",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Subtracting cancels the matching tails, leaving 99x = 45", "items": [
+            {"kind": "text", "x": 60, "y": 70, "text": "100x =", "size": 26, "anchor": "start"},
+            {"kind": "text", "x": 200, "y": 70, "text": "45", "size": 26, "bold": true, "color": "blue"},
+            {"kind": "text", "x": 240, "y": 70, "text": ".454545…", "size": 26, "color": "orange", "change": "remove"},
+            {"kind": "text", "x": 60, "y": 130, "text": "  − x =", "size": 26, "anchor": "start"},
+            {"kind": "text", "x": 200, "y": 130, "text": " 0", "size": 26, "bold": true, "color": "blue"},
+            {"kind": "text", "x": 240, "y": 130, "text": ".454545…", "size": 26, "color": "orange", "change": "remove"},
+            {"kind": "line", "x": 60, "y": 150, "x2": 400, "y2": 150},
+            {"kind": "text", "x": 60, "y": 195, "text": "99x = 45", "size": 28, "bold": true, "color": "green", "change": "add"}]}},
+        { "say": "Divide by 99. 45 over 99 simplifies to 5 over 11.", "write": "x = 45/99 = 5/11" }
+      ] },
+    { "heading": "The nines shortcut",
+      "lines": [
+        { "say": "When the repeat starts straight after the point, use nines.", "write": "repeat right after the point" },
+        { "say": "One repeating digit goes over 9. 0.7 recurring is 7 over 9.", "write": "0.7̇ = 7/9" },
+        { "say": "Two repeating digits go over 99. 0.36 recurring is 36 over 99.", "write": "0.3̇6̇ = 36/99" },
+        { "say": "Then simplify. Divide top and bottom by 9 to get 4 over 11.", "write": "36/99 = 4/11" },
+        { "say": "Three digits go over 999. Count the block, count the nines.", "write": "0.1̇23̇ = 123/999" }
+      ] },
+    { "heading": "When the repeat starts later",
+      "lines": [
+        { "say": "In 0.8333, only the 3 repeats. The 8 doesn't.", "write": "x = 0.8333…" },
+        { "say": "First times 10, so the 3s start right after the point.", "write": "10x = 8.333…" },
+        { "say": "Then times 100, to shift one more block.", "write": "100x = 83.333…" },
+        { "say": "Subtract 10x from 100x. The tails cancel, leaving 75.", "write": "90x = 75",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "100x minus 10x cancels the tails of 3s", "items": [
+            {"kind": "text", "x": 60, "y": 70, "text": "100x = 83", "size": 26},
+            {"kind": "text", "x": 250, "y": 70, "text": ".333…", "size": 26, "color": "orange", "change": "remove"},
+            {"kind": "text", "x": 60, "y": 130, "text": "− 10x =  8", "size": 26},
+            {"kind": "text", "x": 250, "y": 130, "text": ".333…", "size": 26, "color": "orange", "change": "remove"},
+            {"kind": "line", "x": 60, "y": 150, "x2": 380, "y2": 150},
+            {"kind": "text", "x": 60, "y": 195, "text": "90x = 75", "size": 28, "bold": true, "color": "green", "change": "add"}]}},
+        { "say": "75 over 90 simplifies to 5 over 6. Check: 5 divided by 6 is 0.8333.", "write": "x = 75/90 = 5/6" }
+      ] },
+    { "heading": "Whole numbers and 0.9 recurring",
+      "lines": [
+        { "say": "For 2.151515, split off the 2. The rest is 15 over 99.", "write": "2 + 15/99" },
+        { "say": "15 over 99 is 5 over 33. Add 66 over 33 to get 71 over 33.", "write": "= 71/33" },
+        { "say": "Here's a surprise. 0.9 recurring is 9 over 9, which is 1.", "write": "0.9̇ = 1" },
+        { "say": "One third is 0.333. Three thirds is 0.999. And three thirds is 1.", "write": "3 × 0.3̇ = 0.9̇ = 1",
+          "draw": {"type": "shapes", "width": 560, "height": 160, "alt": "Three thirds make one whole bar", "items": [
+            {"kind": "rect", "x": 40, "y": 40, "w": 160, "h": 60, "fill": "blue", "label": "0.333…"},
+            {"kind": "rect", "x": 200, "y": 40, "w": 160, "h": 60, "fill": "blue", "label": "0.333…"},
+            {"kind": "rect", "x": 360, "y": 40, "w": 160, "h": 60, "fill": "blue", "label": "0.333…", "change": "add"},
+            {"kind": "text", "x": 280, "y": 140, "text": "= 1 whole", "size": 22, "bold": true, "anchor": "middle"}]}}
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "0.7 recurring is not 7 over 10. That's 0.7 exactly.", "write": "✗ 0.7̇ = 7/10" },
+        { "say": "Two repeating digits need 99, not 9.", "write": "✗ 0.3̇6̇ = 36/9" },
+        { "say": "Late start? Don't use the shortcut. 0.8333 is not 83 over 99.", "write": "✗ 0.83̇ = 83/99" },
+        { "say": "Shift by a whole block. 10 for one digit, 100 for two, 1000 for three.", "write": "10, 100, 1000" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Shift a block, subtract, the tail is gone.", "write": "shift, subtract" },
+        { "say": "Count the block, count the nines.", "write": "1 → 9, 2 → 99, 3 → 999" },
+        { "say": "One non-repeating digit then one repeating digit? Over 90.", "write": "late start → 90" },
+        { "say": "Always simplify, and check by dividing back out.", "write": "simplify + check" }
+      ] }
+  ]
+}

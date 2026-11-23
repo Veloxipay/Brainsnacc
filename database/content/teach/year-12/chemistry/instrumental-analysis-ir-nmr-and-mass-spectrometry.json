@@ -1,0 +1,1850 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Instrumental analysis: IR, NMR and mass spectrometry",
+  "frames": [
+    {
+      "heading": "Three instruments, three clues",
+      "lines": [
+        {
+          "say": "IR shows which functional groups are present.",
+          "write": "IR → functional groups"
+        },
+        {
+          "say": "NMR shows how carbon and hydrogen atoms are arranged.",
+          "write": "NMR → arrangement"
+        },
+        {
+          "say": "Mass spectrometry gives the molar mass and fragments.",
+          "write": "MS → molar mass",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Combining techniques",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "purple",
+                "label": "MS: mass"
+              },
+              {
+                "kind": "arrow",
+                "x": 130,
+                "y": 145,
+                "x2": 156,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 158,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "orange",
+                "label": "IR: groups"
+              },
+              {
+                "kind": "arrow",
+                "x": 267,
+                "y": 145,
+                "x2": 293,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "teal",
+                "label": "NMR: layout"
+              },
+              {
+                "kind": "arrow",
+                "x": 404,
+                "y": 145,
+                "x2": 430,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 432,
+                "y": 110,
+                "w": 108,
+                "h": 70,
+                "fill": "green",
+                "label": "Structure",
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Infrared spectroscopy",
+      "lines": [
+        {
+          "say": "Bonds vibrate and absorb infrared that matches their vibration.",
+          "write": "bonds absorb IR"
+        },
+        {
+          "say": "The spectrum shows dips in transmittance against wavenumber.",
+          "write": "% T vs cm⁻¹",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "IR spectrum",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "wavenumber (cm⁻¹)  4000 → 500",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "% transmittance",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 50,
+                "x2": 152,
+                "y2": 50,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 152,
+                "y": 50,
+                "x2": 191,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 191,
+                "y": 200,
+                "x2": 257,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 257,
+                "y": 60,
+                "x2": 356,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 356,
+                "y": 60,
+                "x2": 361,
+                "y2": 230,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 361,
+                "y": 230,
+                "x2": 366,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366,
+                "y": 60,
+                "x2": 389,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 389,
+                "y": 60,
+                "x2": 402,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 150,
+                "x2": 415,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 80,
+                "x2": 428,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 428,
+                "y": 180,
+                "x2": 454,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 454,
+                "y": 90,
+                "x2": 520,
+                "y2": 70,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A very broad dip from 2500 to 3300 means a carboxylic acid O–H.",
+          "write": "broad O–H: 2500–3300",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Broad OH band labelled",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "wavenumber (cm⁻¹)  4000 → 500",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "% transmittance",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 50,
+                "x2": 152,
+                "y2": 50,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 152,
+                "y": 50,
+                "x2": 191,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 191,
+                "y": 200,
+                "x2": 257,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 257,
+                "y": 60,
+                "x2": 356,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 356,
+                "y": 60,
+                "x2": 361,
+                "y2": 230,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 361,
+                "y": 230,
+                "x2": 366,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366,
+                "y": 60,
+                "x2": 389,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 389,
+                "y": 60,
+                "x2": 402,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 150,
+                "x2": 415,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 80,
+                "x2": 428,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 428,
+                "y": 180,
+                "x2": 454,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 454,
+                "y": 90,
+                "x2": 520,
+                "y2": 70,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 230,
+                "text": "broad O–H",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A strong, sharp dip near 1700 means C double bond O.",
+          "write": "C=O: 1650–1750",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "C=O band labelled",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "wavenumber (cm⁻¹)  4000 → 500",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "% transmittance",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 50,
+                "x2": 152,
+                "y2": 50,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 152,
+                "y": 50,
+                "x2": 191,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 191,
+                "y": 200,
+                "x2": 257,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 257,
+                "y": 60,
+                "x2": 356,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 356,
+                "y": 60,
+                "x2": 361,
+                "y2": 230,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 361,
+                "y": 230,
+                "x2": 366,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366,
+                "y": 60,
+                "x2": 389,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 389,
+                "y": 60,
+                "x2": 402,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 150,
+                "x2": 415,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 80,
+                "x2": 428,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 428,
+                "y": 180,
+                "x2": 454,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 454,
+                "y": 90,
+                "x2": 520,
+                "y2": 70,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 361,
+                "y": 255,
+                "text": "C=O ~1710",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Below 1500 is the fingerprint region. Match it, do not assign it.",
+          "write": "fingerprint < 1500",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Fingerprint region highlighted",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "wavenumber (cm⁻¹)  4000 → 500",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "% transmittance",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 50,
+                "x2": 152,
+                "y2": 50,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 152,
+                "y": 50,
+                "x2": 191,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 191,
+                "y": 200,
+                "x2": 257,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 257,
+                "y": 60,
+                "x2": 356,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 356,
+                "y": 60,
+                "x2": 361,
+                "y2": 230,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 361,
+                "y": 230,
+                "x2": 366,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366,
+                "y": 60,
+                "x2": 389,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 389,
+                "y": 60,
+                "x2": 402,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 150,
+                "x2": 415,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 80,
+                "x2": 428,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 428,
+                "y": 180,
+                "x2": 454,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 454,
+                "y": 90,
+                "x2": 520,
+                "y2": 70,
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 389,
+                "y": 35,
+                "w": 131,
+                "h": 220,
+                "fill": "yellow",
+                "label": "",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 454,
+                "y": 30,
+                "text": "fingerprint",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "NMR basics",
+      "lines": [
+        {
+          "say": "Atoms in the same environment give one signal.",
+          "write": "environments"
+        },
+        {
+          "say": "Shift is measured in ppm from TMS, which is set at zero.",
+          "write": "TMS = 0 ppm"
+        },
+        {
+          "say": "Atoms near oxygen or C double bond O appear at higher shift.",
+          "write": "deshielded → higher δ"
+        },
+        {
+          "say": "Carbon-13 NMR: one peak per carbon environment, no splitting.",
+          "write": "¹³C: count peaks"
+        },
+        {
+          "say": "Propan-2-ol has only two carbon environments. The two CH three are equal.",
+          "write": "propan-2-ol: 2 peaks"
+        }
+      ]
+    },
+    {
+      "heading": "Proton NMR",
+      "lines": [
+        {
+          "say": "Proton NMR gives number of signals, shift, area and splitting.",
+          "write": "¹H NMR: 4 clues"
+        },
+        {
+          "say": "The n plus 1 rule: n neighbouring hydrogens give n plus 1 lines.",
+          "write": "n + 1 rule"
+        },
+        {
+          "say": "This CH three sits next to two H, so it is a triplet.",
+          "write": "CH₃: triplet, 3H",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 322,
+            "alt": "Triplet labelled",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 310,
+                "text": "chemical shift δ (ppm)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 282,
+                "text": "0",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 282,
+                "text": "2",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 376,
+                "y": 282,
+                "text": "4",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 304,
+                "y": 282,
+                "text": "6",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 232,
+                "y": 282,
+                "text": "8",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 282,
+                "text": "10",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 88,
+                "y": 282,
+                "text": "12",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 473,
+                "y": 260,
+                "x2": 473,
+                "y2": 206.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 480,
+                "y": 260,
+                "x2": 480,
+                "y2": 152.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 487,
+                "y": 260,
+                "x2": 487,
+                "y2": 206.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 130,
+                "text": "triplet, 3H",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 423.5,
+                "y": 260,
+                "x2": 423.5,
+                "y2": 236.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 430.5,
+                "y": 260,
+                "x2": 430.5,
+                "y2": 188.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 437.5,
+                "y": 260,
+                "x2": 437.5,
+                "y2": 188.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 444.5,
+                "y": 260,
+                "x2": 444.5,
+                "y2": 236.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 99,
+                "y": 260,
+                "x2": 99,
+                "y2": 224.0,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The CH two sits next to three H, so it is a quartet.",
+          "write": "CH₂: quartet, 2H",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 322,
+            "alt": "Quartet labelled",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 310,
+                "text": "chemical shift δ (ppm)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 282,
+                "text": "0",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 282,
+                "text": "2",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 376,
+                "y": 282,
+                "text": "4",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 304,
+                "y": 282,
+                "text": "6",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 232,
+                "y": 282,
+                "text": "8",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 282,
+                "text": "10",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 88,
+                "y": 282,
+                "text": "12",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 473,
+                "y": 260,
+                "x2": 473,
+                "y2": 206.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 480,
+                "y": 260,
+                "x2": 480,
+                "y2": 152.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 487,
+                "y": 260,
+                "x2": 487,
+                "y2": 206.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 130,
+                "text": "triplet, 3H",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 423.5,
+                "y": 260,
+                "x2": 423.5,
+                "y2": 236.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 430.5,
+                "y": 260,
+                "x2": 430.5,
+                "y2": 188.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 437.5,
+                "y": 260,
+                "x2": 437.5,
+                "y2": 188.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 444.5,
+                "y": 260,
+                "x2": 444.5,
+                "y2": 236.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 434,
+                "y": 60,
+                "text": "quartet, 2H",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 99,
+                "y": 260,
+                "x2": 99,
+                "y2": 224.0,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A triplet of 3 and quartet of 2 together mean an ethyl group.",
+          "write": "ethyl group"
+        },
+        {
+          "say": "The singlet at 11.7 is the acid hydrogen.",
+          "write": "COOH: 11.7 ppm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 322,
+            "alt": "Singlet labelled",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 530,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 310,
+                "text": "chemical shift δ (ppm)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 282,
+                "text": "0",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 282,
+                "text": "2",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 376,
+                "y": 282,
+                "text": "4",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 304,
+                "y": 282,
+                "text": "6",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 232,
+                "y": 282,
+                "text": "8",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 282,
+                "text": "10",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 88,
+                "y": 282,
+                "text": "12",
+                "size": 14,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 473,
+                "y": 260,
+                "x2": 473,
+                "y2": 206.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 480,
+                "y": 260,
+                "x2": 480,
+                "y2": 152.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 487,
+                "y": 260,
+                "x2": 487,
+                "y2": 206.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 130,
+                "text": "triplet, 3H",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 423.5,
+                "y": 260,
+                "x2": 423.5,
+                "y2": 236.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 430.5,
+                "y": 260,
+                "x2": 430.5,
+                "y2": 188.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 437.5,
+                "y": 260,
+                "x2": 437.5,
+                "y2": 188.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 444.5,
+                "y": 260,
+                "x2": 444.5,
+                "y2": 236.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 434,
+                "y": 60,
+                "text": "quartet, 2H",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 99,
+                "y": 260,
+                "x2": 99,
+                "y2": 224.0,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 99,
+                "y": 150,
+                "text": "singlet, 1H",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Mass spectrometry",
+      "lines": [
+        {
+          "say": "Molecules are ionised, then sorted by mass to charge ratio.",
+          "write": "m/z",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Mass spectrum",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "m/z",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "relative intensity",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 234,
+                "y": 270,
+                "x2": 234,
+                "y2": 70,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 234,
+                "y": 62,
+                "text": "29",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 330,
+                "y": 270,
+                "x2": 330,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 172,
+                "text": "45",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 270,
+                "x2": 402,
+                "y2": 160,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 402,
+                "y": 152,
+                "text": "57",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 504,
+                "y": 270,
+                "x2": 504,
+                "y2": 130,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 504,
+                "y": 122,
+                "text": "74",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 510,
+                "y": 270,
+                "x2": 510,
+                "y2": 262,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The molecular ion, M plus, gives the molar mass. Here it is 74.",
+          "write": "M⁺ = 74",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Molecular ion highlighted",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "m/z",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "relative intensity",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 234,
+                "y": 270,
+                "x2": 234,
+                "y2": 70,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 234,
+                "y": 62,
+                "text": "29",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 330,
+                "y": 270,
+                "x2": 330,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 172,
+                "text": "45",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 270,
+                "x2": 402,
+                "y2": 160,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 402,
+                "y": 152,
+                "text": "57",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 504,
+                "y": 270,
+                "x2": 504,
+                "y2": 130,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 504,
+                "y": 122,
+                "text": "74",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 510,
+                "y": 270,
+                "x2": 510,
+                "y2": 262,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 494,
+                "y": 95,
+                "text": "M⁺ = 74",
+                "size": 18,
+                "anchor": "end",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The tallest peak is the base peak. It is not always M plus.",
+          "write": "base peak",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Base peak highlighted",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "m/z",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "relative intensity",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 234,
+                "y": 270,
+                "x2": 234,
+                "y2": 70,
+                "color": "blue",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 234,
+                "y": 62,
+                "text": "29",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 330,
+                "y": 270,
+                "x2": 330,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 172,
+                "text": "45",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 270,
+                "x2": 402,
+                "y2": 160,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 402,
+                "y": 152,
+                "text": "57",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 504,
+                "y": 270,
+                "x2": 504,
+                "y2": 130,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 504,
+                "y": 122,
+                "text": "74",
+                "size": 16,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 510,
+                "y": 270,
+                "x2": 510,
+                "y2": 262,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 60,
+                "text": "base peak",
+                "size": 18,
+                "anchor": "start",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A small M plus 1 peak comes from carbon-13.",
+          "write": "M+1 from ¹³C"
+        },
+        {
+          "say": "57 is the loss of OH. 45 is COOH plus. 29 is ethyl plus.",
+          "write": "57, 45, 29"
+        }
+      ]
+    },
+    {
+      "heading": "Putting it together",
+      "lines": [
+        {
+          "say": "Broad O–H and C double bond O: a carboxylic acid.",
+          "write": "IR: –COOH"
+        },
+        {
+          "say": "Three carbons, one near 180 ppm. An ethyl group in proton NMR.",
+          "write": "¹³C + ¹H"
+        },
+        {
+          "say": "So it is propanoic acid, CH three CH two COOH.",
+          "write": "CH₃CH₂COOH"
+        },
+        {
+          "say": "Check: 36 plus 6 plus 32 is 74. It matches M plus.",
+          "write": "M = 74.0 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "The tallest peak is the base peak, not the molecular ion.",
+          "write": "base ≠ M⁺"
+        },
+        {
+          "say": "In the n plus 1 rule, only count neighbouring hydrogens.",
+          "write": "neighbours only"
+        },
+        {
+          "say": "Look for symmetry when counting environments.",
+          "write": "symmetry"
+        },
+        {
+          "say": "Fragments are positive ions. Write the plus charge.",
+          "write": "CH₃CO⁺"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "MS for mass, IR for groups, NMR for layout.",
+          "write": "MS, IR, NMR"
+        },
+        {
+          "say": "Broad O–H, sharp C double bond O.",
+          "write": "O–H broad, C=O sharp",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "IR spectrum",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "wavenumber (cm⁻¹)  4000 → 500",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 25,
+                "text": "% transmittance",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 50,
+                "x2": 152,
+                "y2": 50,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 152,
+                "y": 50,
+                "x2": 191,
+                "y2": 200,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 191,
+                "y": 200,
+                "x2": 257,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 257,
+                "y": 60,
+                "x2": 356,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 356,
+                "y": 60,
+                "x2": 361,
+                "y2": 230,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 361,
+                "y": 230,
+                "x2": 366,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366,
+                "y": 60,
+                "x2": 389,
+                "y2": 60,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 389,
+                "y": 60,
+                "x2": 402,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 402,
+                "y": 150,
+                "x2": 415,
+                "y2": 80,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 415,
+                "y": 80,
+                "x2": 428,
+                "y2": 180,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 428,
+                "y": 180,
+                "x2": 454,
+                "y2": 90,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 454,
+                "y": 90,
+                "x2": 520,
+                "y2": 70,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Triplet 3 and quartet 2 means ethyl.",
+          "write": "ethyl"
+        },
+        {
+          "say": "Check your structure against every piece of data.",
+          "write": "check everything"
+        }
+      ]
+    }
+  ]
+}

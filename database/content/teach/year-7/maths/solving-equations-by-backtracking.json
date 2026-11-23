@@ -1,0 +1,727 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Solving equations by backtracking",
+  "frames": [
+    {
+      "heading": "Socks and shoes",
+      "lines": [
+        {
+          "say": "Backtracking solves an equation by working backwards.",
+          "write": "backtracking = work backwards"
+        },
+        {
+          "say": "In the morning, socks go on first, then shoes.",
+          "write": "socks → shoes"
+        },
+        {
+          "say": "At night you undo it in reverse. Shoes off first.",
+          "write": "shoes off → socks off"
+        },
+        {
+          "say": "Last on, first off. That's the whole idea.",
+          "write": "last on, first off"
+        }
+      ]
+    },
+    {
+      "heading": "Inverse operations",
+      "lines": [
+        {
+          "say": "An inverse operation undoes another one.",
+          "write": "inverse = undo"
+        },
+        {
+          "say": "Plus 5 is undone by minus 5. Minus 5 is undone by plus 5.",
+          "write": "+ 5 ↔ − 5"
+        },
+        {
+          "say": "Times 3 is undone by divide by 3.",
+          "write": "× 3 ↔ ÷ 3"
+        },
+        {
+          "say": "Add 5, then take 5. You're back where you started.",
+          "write": "+ 5 − 5 = back to start",
+          "draw": {
+            "type": "numberline",
+            "from": 0,
+            "to": 12,
+            "start": 4,
+            "jump": 5
+          }
+        },
+        {
+          "say": "Then jump back 5 to where you began.",
+          "draw": {
+            "type": "numberline",
+            "from": 0,
+            "to": 12,
+            "start": 9,
+            "jump": -5
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Build the flowchart",
+      "lines": [
+        {
+          "say": "Solve 2x plus 3 equals 17. Start with x.",
+          "write": "2x + 3 = 17",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Flowchart start",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "arrow",
+                "x": 114,
+                "y": 68,
+                "x2": 231,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 30,
+                "text": "",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 329,
+                "y": 68,
+                "x2": 446,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 30,
+                "text": "",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "First x is multiplied by 2.",
+          "write": "x → × 2 → 2x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Flowchart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "yellow",
+                "label": "2x",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "arrow",
+                "x": 114,
+                "y": 68,
+                "x2": 231,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 30,
+                "text": "× 2",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 329,
+                "y": 68,
+                "x2": 446,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 30,
+                "text": "",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then 3 is added. The result is 17.",
+          "write": "2x → + 3 → 17",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Flowchart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "2x"
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "yellow",
+                "label": "17",
+                "change": "highlight"
+              },
+              {
+                "kind": "arrow",
+                "x": 114,
+                "y": 68,
+                "x2": 231,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 30,
+                "text": "× 2",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 329,
+                "y": 68,
+                "x2": 446,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 30,
+                "text": "+ 3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Follow the order of operations when you build it. Times before plus.",
+          "write": "build with BIDMAS"
+        }
+      ]
+    },
+    {
+      "heading": "Now backtrack",
+      "lines": [
+        {
+          "say": "Start at 17, on the right. Move left using inverses.",
+          "write": "start at 17",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Flowchart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "2x"
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "17"
+              },
+              {
+                "kind": "arrow",
+                "x": 114,
+                "y": 68,
+                "x2": 231,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 30,
+                "text": "× 2",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 329,
+                "y": 68,
+                "x2": 446,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 30,
+                "text": "+ 3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 160,
+                "w": 90,
+                "h": 56,
+                "fill": "green",
+                "label": "17"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Plus 3 was last, so undo it first. 17 minus 3 is 14.",
+          "write": "17 − 3 = 14",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Flowchart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "2x"
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "17"
+              },
+              {
+                "kind": "arrow",
+                "x": 114,
+                "y": 68,
+                "x2": 231,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 30,
+                "text": "× 2",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 329,
+                "y": 68,
+                "x2": 446,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 30,
+                "text": "+ 3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 160,
+                "w": 90,
+                "h": 56,
+                "fill": "green",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 160,
+                "w": 90,
+                "h": 56,
+                "fill": "green",
+                "label": "14",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 446,
+                "y": 188,
+                "x2": 329,
+                "y2": 188,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 245,
+                "text": "− 3",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Undo times 2 by dividing by 2. 14 divided by 2 is 7.",
+          "write": "14 ÷ 2 = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Flowchart",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "2x"
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 40,
+                "w": 90,
+                "h": 56,
+                "fill": "blue",
+                "label": "17"
+              },
+              {
+                "kind": "arrow",
+                "x": 114,
+                "y": 68,
+                "x2": 231,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 30,
+                "text": "× 2",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 329,
+                "y": 68,
+                "x2": 446,
+                "y2": 68,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 30,
+                "text": "+ 3",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 160,
+                "w": 90,
+                "h": 56,
+                "fill": "green",
+                "label": "17"
+              },
+              {
+                "kind": "rect",
+                "x": 235,
+                "y": 160,
+                "w": 90,
+                "h": 56,
+                "fill": "green",
+                "label": "14"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 160,
+                "w": 90,
+                "h": 56,
+                "fill": "green",
+                "label": "7",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 446,
+                "y": 188,
+                "x2": 329,
+                "y2": 188,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 387.5,
+                "y": 245,
+                "text": "− 3",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 231,
+                "y": 188,
+                "x2": 114,
+                "y2": 188,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 172.5,
+                "y": 245,
+                "text": "÷ 2",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So x equals 7.",
+          "write": "x = 7"
+        },
+        {
+          "say": "Check. 2 times 7 plus 3 is 17.",
+          "write": "2 × 7 + 3 = 17 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Fractions and brackets",
+      "lines": [
+        {
+          "say": "x over 4 means x divided by 4. Undo it with times 4.",
+          "write": "x/4 → ÷ 4, undo × 4"
+        },
+        {
+          "say": "Solve x over 4 minus 3 equals 5. Undo minus 3 first.",
+          "write": "5 + 3 = 8"
+        },
+        {
+          "say": "Then undo divide by 4. 8 times 4 is 32.",
+          "write": "8 × 4 = 32 → x = 32"
+        },
+        {
+          "say": "With brackets, the bracket goes first. 2 times, x plus 6.",
+          "write": "2(x + 6) = 30",
+          "diagram": "diagrams/y7/maths/solving-equations-by-backtracking-brackets.svg",
+          "alt": "Flowchart for 2(x + 6) = 30 and its undo row"
+        },
+        {
+          "say": "Plus 6 happened first, times 2 last. So divide by 2 first.",
+          "write": "30 ÷ 2 = 15"
+        },
+        {
+          "say": "Then take 6. 15 minus 6 is 9.",
+          "write": "15 − 6 = 9 → x = 9"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't undo in the wrong order. Undo the last operation first.",
+          "write": "undo right to left"
+        },
+        {
+          "say": "Use the inverse, not the same operation again.",
+          "write": "+ 5 undone by − 5"
+        },
+        {
+          "say": "In 3x plus 5, times comes before plus, even though plus is written last.",
+          "write": "× before +"
+        },
+        {
+          "say": "Always check by putting your answer back in.",
+          "write": "check ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Socks and shoes. Last on, first off.",
+          "write": "last on, first off"
+        },
+        {
+          "say": "Plus and minus are partners. Times and divide are partners.",
+          "write": "+ ↔ −   × ↔ ÷"
+        },
+        {
+          "say": "Build left to right. Solve right to left.",
+          "write": "build →   ← solve"
+        },
+        {
+          "say": "Write the undo operation on every backward arrow.",
+          "write": "write the inverses"
+        }
+      ]
+    }
+  ]
+}

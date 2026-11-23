@@ -1,0 +1,759 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Time and time zones",
+  "frames": [
+    {
+      "heading": "24-hour time",
+      "lines": [
+        {
+          "say": "24-hour time counts hours from 0 to 23, starting at midnight.",
+          "write": "0000 to 2359",
+          "diagram": "diagrams/y8/maths/time-and-time-zones-24h.svg",
+          "alt": "24-hour time line from midnight to midnight"
+        },
+        {
+          "say": "No am or pm needed. Usually four digits.",
+          "write": "7:15 am = 0715"
+        },
+        {
+          "say": "For pm times, add 12 to the hour.",
+          "write": "3:40 pm = 1540",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "3:40 pm becomes 1540",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 70,
+                "w": 200,
+                "h": 80,
+                "fill": "blue",
+                "label": "3:40 pm"
+              },
+              {
+                "kind": "arrow",
+                "x": 250,
+                "y": 110,
+                "x2": 320,
+                "y2": 110,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 95,
+                "text": "+12",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 70,
+                "w": 200,
+                "h": 80,
+                "fill": "green",
+                "change": "add",
+                "label": "1540"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Midnight is zero zero hundred. Midday is twelve hundred.",
+          "write": "0000 midnight, 1200 noon"
+        }
+      ]
+    },
+    {
+      "heading": "Elapsed time: count on",
+      "lines": [
+        {
+          "say": "Excursion leaves 8:45 am and returns 3:20 pm. How long?",
+          "write": "8:45 am → 3:20 pm"
+        },
+        {
+          "say": "Count on to the next whole hour. That's 15 minutes.",
+          "write": "8:45 → 9:00 = 15 min",
+          "diagram": "diagrams/y8/maths/time-and-time-zones-ex1.svg",
+          "alt": "Counting on from 8:45 to 9:00, then to 3:00, then to 3:20"
+        },
+        {
+          "say": "Then jump whole hours. 9 am to 3 pm is 6 hours.",
+          "write": "9:00 → 3:00 = 6 h"
+        },
+        {
+          "say": "Then the leftover 20 minutes.",
+          "write": "3:00 → 3:20 = 20 min"
+        },
+        {
+          "say": "Add the pieces. 6 hours 35 minutes.",
+          "write": "6 h 35 min"
+        },
+        {
+          "say": "Remember, an hour has 60 minutes, not 100.",
+          "write": "60 min, not 100"
+        }
+      ]
+    },
+    {
+      "heading": "Time zones",
+      "lines": [
+        {
+          "say": "The world is split into time zones, each an offset from UTC.",
+          "write": "UTC = world reference time",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Australian time zones",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 30,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 110,
+                "text": "Perth",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "UTC+8",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "Adelaide",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "UTC+9:30",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 110,
+                "text": "Melbourne",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 190,
+                "text": "UTC+10",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 280,
+                "text": "← west: behind",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 280,
+                "text": "east: ahead →",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Perth is UTC plus 8. Adelaide and Darwin are plus nine thirty.",
+          "write": "AWST +8   ACST +9:30"
+        },
+        {
+          "say": "Melbourne, Sydney, Brisbane and Hobart are UTC plus 10.",
+          "write": "AEST +10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Australian time zones",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 30,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 110,
+                "text": "Perth",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "UTC+8",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "Adelaide",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "UTC+9:30",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 150,
+                "r": 12,
+                "fill": "yellow",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 110,
+                "text": "Melbourne",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 190,
+                "text": "UTC+10",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 280,
+                "text": "← west: behind",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 280,
+                "text": "east: ahead →",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "East is ahead. West is behind.",
+          "write": "east ahead, west behind"
+        }
+      ]
+    },
+    {
+      "heading": "Converting between zones",
+      "lines": [
+        {
+          "say": "It's 9 am in Melbourne in June. What time in Perth?",
+          "write": "Melbourne 9:00 am",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Australian time zones",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 30,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 110,
+                "text": "Perth",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "UTC+8",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "Adelaide",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "UTC+9:30",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 110,
+                "text": "Melbourne",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 190,
+                "text": "UTC+10",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 240,
+                "text": "9:00 am",
+                "size": 24,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 280,
+                "text": "← west: behind",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 280,
+                "text": "east: ahead →",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Subtract the offsets. 10 take 8 is 2 hours.",
+          "write": "10 − 8 = 2 h"
+        },
+        {
+          "say": "Perth is west, so subtract 2 hours. It's 7 am.",
+          "write": "Perth 7:00 am",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Australian time zones",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 30,
+                "y": 150,
+                "x2": 540,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 150,
+                "r": 12,
+                "fill": "yellow",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 110,
+                "text": "Perth",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 190,
+                "text": "UTC+8",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 240,
+                "text": "7:00 am",
+                "size": 24,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "Adelaide",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "UTC+9:30",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 110,
+                "text": "Melbourne",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 190,
+                "text": "UTC+10",
+                "size": 18,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 240,
+                "text": "9:00 am",
+                "size": 24,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 280,
+                "text": "← west: behind",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 280,
+                "text": "east: ahead →",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "If you pass midnight, remember to change the day.",
+          "write": "past midnight → change day"
+        }
+      ]
+    },
+    {
+      "heading": "Daylight saving",
+      "lines": [
+        {
+          "say": "Daylight saving moves clocks 1 hour forward in summer.",
+          "write": "+1 h in summer"
+        },
+        {
+          "say": "Victoria, New South Wales, the ACT, Tasmania and South Australia use it.",
+          "write": "Melbourne → AEDT, UTC+11"
+        },
+        {
+          "say": "Queensland, the Northern Territory and Western Australia don't.",
+          "write": "Qld, NT, WA: no"
+        },
+        {
+          "say": "So in summer Melbourne is 1 hour ahead of Brisbane, and 3 ahead of Perth.",
+          "write": "Melb ahead: Bris 1 h, Perth 3 h",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Summer offsets",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 140,
+                "h": 70,
+                "fill": "blue",
+                "label": "Perth +8"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 80,
+                "w": 140,
+                "h": 70,
+                "fill": "blue",
+                "label": "Bris +10"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 80,
+                "w": 150,
+                "h": 70,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "Melb +11"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "summer: Melbourne +1 h",
+                "size": 24,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Crossing zones and days",
+      "lines": [
+        {
+          "say": "A flight leaves Melbourne at 10:30 pm Monday, in December.",
+          "write": "dep 10:30 pm Mon (UTC+11)"
+        },
+        {
+          "say": "It flies 14 hours 20 minutes. That's 12:50 pm Tuesday, Melbourne time.",
+          "write": "arr 12:50 pm Tue Melb"
+        },
+        {
+          "say": "Los Angeles is UTC minus 8. 11 take minus 8 is 19 hours.",
+          "write": "11 − (−8) = 19 h"
+        },
+        {
+          "say": "LA is behind, so subtract 19 hours. 5:50 pm Monday!",
+          "write": "5:50 pm Mon LA",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Subtract 19 hours",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 80,
+                "w": 230,
+                "h": 80,
+                "fill": "blue",
+                "label": "12:50 pm Tue"
+              },
+              {
+                "kind": "arrow",
+                "x": 270,
+                "y": 120,
+                "x2": 320,
+                "y2": 120,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 295,
+                "y": 100,
+                "text": "− 19 h",
+                "size": 18,
+                "color": "red"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 80,
+                "w": 210,
+                "h": 80,
+                "fill": "green",
+                "change": "add",
+                "label": "5:50 pm Mon"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        {
+          "say": "Time isn't decimals. 1:50 plus 20 minutes is 2:10, not 1:70.",
+          "write": "1:50 + 0:20 = 2:10"
+        },
+        {
+          "say": "East is ahead, so add. West is behind, so subtract.",
+          "write": "east add, west subtract"
+        },
+        {
+          "say": "Change the day when you cross midnight.",
+          "write": "check the day"
+        },
+        {
+          "say": "Check if daylight saving applies.",
+          "write": "summer? +1 h"
+        },
+        {
+          "say": "Taking away a negative offset means adding.",
+          "write": "11 − (−8) = 19"
+        }
+      ]
+    }
+  ]
+}

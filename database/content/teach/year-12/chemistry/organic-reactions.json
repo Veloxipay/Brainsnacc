@@ -1,0 +1,114 @@
+{
+  "level": "Year 12", "subject": "chemistry", "title": "Organic reactions",
+  "frames": [
+    { "heading": "Addition: open the double bond",
+      "lines": [
+        { "say": "Organic reactions turn one functional group into another.", "write": "group → new group" },
+        { "say": "Here is ethene. The double bond is like a pair of arms.", "write": "CH₂=CH₂",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ethene with a C=C double bond", "items": [
+            {"kind": "circle", "x": 220, "y": 110, "r": 30, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 250, "y": 102, "x2": 310, "y2": 102},
+            {"kind": "line", "x": 250, "y": 118, "x2": 310, "y2": 118},
+            {"kind": "circle", "x": 340, "y": 110, "r": 30, "fill": "grey", "label": "C"},
+            {"kind": "text", "x": 280, "y": 190, "text": "ethene", "size": 20, "anchor": "middle"}]}},
+        { "say": "Add water. One bond opens, and each carbon grabs a new group.", "write": "CH₂=CH₂ + H₂O → CH₃CH₂OH",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "The double bond opens and H and OH add on", "items": [
+            {"kind": "circle", "x": 220, "y": 110, "r": 30, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 250, "y": 102, "x2": 310, "y2": 102, "change": "remove"},
+            {"kind": "line", "x": 250, "y": 118, "x2": 310, "y2": 118},
+            {"kind": "circle", "x": 340, "y": 110, "r": 30, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 220, "y": 80, "x2": 220, "y2": 52, "change": "add"},
+            {"kind": "circle", "x": 220, "y": 32, "r": 22, "fill": "white", "label": "H", "change": "add"},
+            {"kind": "line", "x": 340, "y": 80, "x2": 340, "y2": 52, "change": "add"},
+            {"kind": "circle", "x": 340, "y": 30, "r": 26, "fill": "red", "label": "OH", "change": "add"},
+            {"kind": "text", "x": 280, "y": 190, "text": "ethanol, nothing lost", "size": 20, "anchor": "middle"}]}},
+        { "say": "Nothing is lost, so addition has 100 percent atom economy.", "write": "addition: 100% atom economy" },
+        { "say": "Hydration needs a phosphoric acid catalyst, steam, about 300 degrees and high pressure.", "write": "H₃PO₄, ~300 °C, steam" },
+        { "say": "Hydrogenation needs a nickel catalyst. Bromine water going colourless tests for C double bond C.", "write": "Br₂: orange → colourless" }
+      ] },
+    { "heading": "Substitution: a swap",
+      "lines": [
+        { "say": "In substitution, one atom or group is swapped for another.", "write": "substitution = swap" },
+        { "say": "Heat bromoethane with sodium hydroxide. The bromine is swapped for O H.", "write": "CH₃CH₂Br + OH⁻ → CH₃CH₂OH",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Br leaves and OH takes its place", "items": [
+            {"kind": "rect", "x": 60, "y": 70, "w": 200, "h": 60, "fill": "grey", "label": "CH₃CH₂–"},
+            {"kind": "circle", "x": 300, "y": 100, "r": 30, "fill": "orange", "label": "Br", "change": "remove"},
+            {"kind": "circle", "x": 380, "y": 100, "r": 30, "fill": "red", "label": "OH", "change": "add"},
+            {"kind": "arrow", "x": 470, "y": 100, "x2": 410, "y2": 100, "color": "purple"},
+            {"kind": "text", "x": 280, "y": 180, "text": "Br out, OH in", "size": 20, "anchor": "middle"}]}},
+        { "say": "With ammonia instead, the halogen is swapped for N H two, making an amine.", "write": "+ NH₃ → amine" },
+        { "say": "Alkanes swap an H for a halogen, but only in U V light.", "write": "CH₄ + Cl₂ → CH₃Cl + HCl (UV)" }
+      ] },
+    { "heading": "Oxidising alcohols",
+      "lines": [
+        { "say": "Oxidising an alcohol removes the H on the O H and an H on that carbon.", "write": "needs H on the C–OH carbon" },
+        { "say": "Acidified dichromate goes from orange to green when it works.", "write": "Cr₂O₇²⁻ orange → Cr³⁺ green",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Dichromate changes from orange to green", "items": [
+            {"kind": "rect", "x": 100, "y": 40, "w": 100, "h": 130, "fill": "orange", "label": "Cr₂O₇²⁻"},
+            {"kind": "arrow", "x": 220, "y": 105, "x2": 330, "y2": 105, "color": "purple"},
+            {"kind": "rect", "x": 350, "y": 40, "w": 100, "h": 130, "fill": "green", "label": "Cr³⁺", "change": "add"},
+            {"kind": "text", "x": 280, "y": 205, "text": "permanganate: purple → colourless", "size": 18, "anchor": "middle"}]}},
+        { "say": "Primary goes all the way. First an aldehyde, then a carboxylic acid.", "write": "1° → aldehyde → acid" },
+        { "say": "Secondary stops at a ketone.", "write": "2° → ketone" },
+        { "say": "Tertiary just sits there. No H on that carbon, so it stays orange.", "write": "3° → no reaction",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Three test tubes: primary and secondary turn green, tertiary stays orange", "items": [
+            {"kind": "rect", "x": 80, "y": 40, "w": 80, "h": 120, "fill": "green"},
+            {"kind": "rect", "x": 240, "y": 40, "w": 80, "h": 120, "fill": "green"},
+            {"kind": "rect", "x": 400, "y": 40, "w": 80, "h": 120, "fill": "orange", "change": "highlight"},
+            {"kind": "text", "x": 120, "y": 195, "text": "1°", "size": 22, "bold": true, "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 195, "text": "2°", "size": 22, "bold": true, "anchor": "middle"},
+            {"kind": "text", "x": 440, "y": 195, "text": "3°", "size": 22, "bold": true, "anchor": "middle"}]}}
+      ] },
+    { "heading": "Condensation and hydrolysis",
+      "lines": [
+        { "say": "In condensation, two molecules join and a small molecule, usually water, leaves.", "write": "join + lose H₂O" },
+        { "say": "Ethanoic acid and ethanol join. The O H from the acid and the H from the alcohol leave.", "write": "acid + alcohol ⇌ ester + H₂O",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Acid and alcohol join to form an ester, water leaves", "items": [
+            {"kind": "rect", "x": 30, "y": 60, "w": 180, "h": 60, "fill": "orange", "label": "CH₃CO–OH"},
+            {"kind": "text", "x": 230, "y": 100, "text": "+", "size": 30, "anchor": "middle"},
+            {"kind": "rect", "x": 250, "y": 60, "w": 200, "h": 60, "fill": "teal", "label": "H–OCH₂CH₃"},
+            {"kind": "circle", "x": 500, "y": 90, "r": 34, "fill": "blue", "label": "H₂O", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 180, "text": "ethyl ethanoate + water", "size": 20, "anchor": "middle"}]}},
+        { "say": "Heat under reflux with concentrated sulfuric acid as the catalyst.", "write": "conc. H₂SO₄, reflux" },
+        { "say": "An acid and an amine join the same way, making an amide link.", "write": "–CONH– amide link" },
+        { "say": "Hydrolysis is the reverse. Water splits the ester back into acid and alcohol.", "write": "hydrolysis = water splits" }
+      ] },
+    { "heading": "Atom economy",
+      "lines": [
+        { "say": "Atom economy asks how much reactant mass ends up in the product you want.", "write": "AE = M(product) ÷ M(reactants)" },
+        { "say": "Route A, hydration. 46 over 28 plus 18. That is 100 percent.", "write": "46.0 ÷ 46.0 = 100%" },
+        { "say": "Route B, substitution. 46 over 64.5 plus 40. Only 44 percent.", "write": "46.0 ÷ 104.5 = 44.0%",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Bars comparing 100 percent and 44 percent atom economy", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 480, "h": 50, "fill": "green", "label": "Route A 100%"},
+            {"kind": "rect", "x": 40, "y": 130, "w": 211, "h": 50, "fill": "green", "label": "B 44%"},
+            {"kind": "rect", "x": 251, "y": 130, "w": 269, "h": 50, "fill": "grey", "label": "wasted as NaCl", "change": "remove"}]}},
+        { "say": "More than half of route B's reactant mass becomes sodium chloride waste.", "write": "by-product = waste" }
+      ] },
+    { "heading": "Percentage yield",
+      "lines": [
+        { "say": "Percentage yield compares what you got with the most you could get.", "write": "% yield = actual ÷ theoretical" },
+        { "say": "12.0 grams of ethanoic acid is 0.200 moles. It is the limiting reactant.", "write": "n = 12.0 ÷ 60.0 = 0.200 mol" },
+        { "say": "One to one ratio, so at most 0.200 moles of ester, which is 17.6 grams.", "write": "0.200 × 88.0 = 17.6 g" },
+        { "say": "She collected 14.1 grams. 14.1 over 17.6 is 80.1 percent.", "write": "14.1 ÷ 17.6 = 80.1%",
+          "draw": {"type": "shapes", "width": 560, "height": 160, "alt": "Bar showing 80.1 percent of the theoretical yield collected", "items": [
+            {"kind": "rect", "x": 40, "y": 40, "w": 385, "h": 60, "fill": "blue", "label": "14.1 g collected"},
+            {"kind": "rect", "x": 425, "y": 40, "w": 95, "h": 60, "fill": "grey", "label": "lost", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 140, "text": "theoretical 17.6 g", "size": 18, "anchor": "middle"}]}},
+        { "say": "Atom economy is on paper. Yield is what happened in the lab.", "write": "AE: paper.  Yield: lab." }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Tertiary alcohols do not oxidise to ketones. They do not react at all.", "write": "✗ 3° → ketone" },
+        { "say": "No water on the right of an esterification? Then it isn't balanced.", "write": "don't forget H₂O" },
+        { "say": "Use the limiting reactant for theoretical yield, never the excess one.", "write": "use the limiting reactant" },
+        { "say": "Dichromate goes dark green. Permanganate goes pale.", "write": "Dichromate → Dark green" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Addition opens a C double bond C and keeps everything.", "write": "addition: add and keep" },
+        { "say": "Substitution swaps. Condensation joins and loses water. Hydrolysis splits with water.", "write": "swap / join − H₂O / split" },
+        { "say": "Primary goes all the way, secondary stops at a ketone, tertiary sits there.", "write": "1° acid, 2° ketone, 3° none" },
+        { "say": "Learn the conditions in pairs, like nickel for hydrogenation and U V for alkanes.", "write": "learn the conditions" }
+      ] }
+  ]
+}

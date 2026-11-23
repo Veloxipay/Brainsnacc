@@ -1,0 +1,92 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Reproductive strategies",
+  "frames": [
+    { "heading": "Two ways to reproduce",
+      "lines": [
+        { "say": "Asexual reproduction needs one parent and no gametes. Offspring are clones.", "write": "asexual: 1 parent, clones" },
+        { "say": "Sexual reproduction fuses two gametes, made by meiosis, into a zygote.", "write": "sexual: gametes → zygote" },
+        { "say": "Sexual offspring differ from each other and from both parents.", "write": "every offspring unique" }
+      ] },
+    { "heading": "Binary fission",
+      "lines": [
+        { "say": "A bacterium copies its chromosome, grows, and splits into two identical cells.", "write": "1 → 2",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Bacteria doubling: 1, then 2, then 4 cells", "items": [
+            { "kind": "rect", "x": 40, "y": 110, "w": 80, "h": 40, "fill": "green" },
+            { "kind": "rect", "x": 200, "y": 80, "w": 80, "h": 40, "fill": "green", "change": "add" },
+            { "kind": "rect", "x": 200, "y": 140, "w": 80, "h": 40, "fill": "green", "change": "add" },
+            { "kind": "text", "x": 80, "y": 230, "text": "1", "size": 22, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 240, "y": 230, "text": "2", "size": 22, "bold": true, "anchor": "middle" }
+          ] } },
+        { "say": "Each round doubles the number, like a post being reshared.", "write": "1, 2, 4, 8, 16 …",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Bacteria doubling: 1, then 2, then 4 cells", "items": [
+            { "kind": "rect", "x": 40, "y": 110, "w": 80, "h": 40, "fill": "green" },
+            { "kind": "rect", "x": 200, "y": 80, "w": 80, "h": 40, "fill": "green" },
+            { "kind": "rect", "x": 200, "y": 140, "w": 80, "h": 40, "fill": "green" },
+            { "kind": "rect", "x": 360, "y": 40, "w": 80, "h": 40, "fill": "green", "change": "add" },
+            { "kind": "rect", "x": 360, "y": 90, "w": 80, "h": 40, "fill": "green", "change": "add" },
+            { "kind": "rect", "x": 360, "y": 140, "w": 80, "h": 40, "fill": "green", "change": "add" },
+            { "kind": "rect", "x": 360, "y": 190, "w": 80, "h": 40, "fill": "green", "change": "add" },
+            { "kind": "text", "x": 80, "y": 250, "text": "1", "size": 22, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 240, "y": 250, "text": "2", "size": 22, "bold": true, "anchor": "middle" },
+            { "kind": "text", "x": 490, "y": 140, "text": "4", "size": 22, "bold": true, "anchor": "middle" }
+          ] } },
+        { "say": "Every 20 minutes for 3 hours is 9 doublings. 2 to the 9 is 512 cells.", "write": "180 ÷ 20 = 9 → 2⁹ = 512" },
+        { "say": "Prokaryotes don't do mitosis. They have no nucleus.", "write": "fission ≠ mitosis" }
+      ] },
+    { "heading": "Other asexual types",
+      "lines": [
+        { "say": "Five types: Bees Buzz From Violet Petunias.", "write": "B · B · F · V · P" },
+        { "say": "Budding: a bud grows and breaks off, like yeast and Hydra.", "write": "budding: yeast, Hydra" },
+        { "say": "Fragmentation: pieces regrow into whole organisms, like planarians.", "write": "fragmentation: planarians" },
+        { "say": "Vegetative propagation grows plants from runners, tubers, bulbs and cuttings.", "write": "runners · tubers · bulbs" },
+        { "say": "Parthenogenesis: an unfertilised egg develops. Aphids and some lizards do this.", "write": "parthenogenesis: no sperm" }
+      ] },
+    { "heading": "Speed versus diversity",
+      "lines": [
+        { "say": "Asexual is fast and cheap, with no mate needed. Best in stable conditions.", "write": "asexual: fast, cheap" },
+        { "say": "But clones share the same genes. One disease can wipe them all out.", "write": "low genetic diversity",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "A disease kills every clone in a banana farm, but some varied plants survive", "items": [
+            { "kind": "circle", "x": 60, "y": 70, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 130, "y": 70, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 200, "y": 70, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 60, "y": 140, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 130, "y": 140, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 200, "y": 140, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "text", "x": 130, "y": 220, "text": "clones: all lost", "size": 18, "anchor": "middle", "color": "red" },
+            { "kind": "circle", "x": 360, "y": 70, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 430, "y": 70, "r": 24, "fill": "teal" },
+            { "kind": "circle", "x": 500, "y": 70, "r": 24, "fill": "yellow", "change": "remove" },
+            { "kind": "circle", "x": 360, "y": 140, "r": 24, "fill": "orange" },
+            { "kind": "circle", "x": 430, "y": 140, "r": 24, "fill": "green", "change": "remove" },
+            { "kind": "circle", "x": 500, "y": 140, "r": 24, "fill": "teal" },
+            { "kind": "text", "x": 430, "y": 220, "text": "varied: some survive", "size": 18, "anchor": "middle", "color": "green" }
+          ] } },
+        { "say": "Sexual reproduction is slow and costly, but creates diversity.", "write": "sexual: slow, diverse" },
+        { "say": "Three shuffles: crossing over, independent assortment and random fertilisation.", "write": "3 shuffles" },
+        { "say": "Many species do both: fast growth when good, diversity when things change.", "write": "aphids, strawberries: both" }
+      ] },
+    { "heading": "Cloning with SCNT",
+      "lines": [
+        { "say": "Plants are easy to clone with cuttings, grafting and tissue culture.", "write": "plants: cuttings, tissue culture" },
+        { "say": "In mammals, take a body cell from the donor. Remove the nucleus from an egg.", "write": "donor cell + enucleated egg",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Egg nucleus is removed and the donor nucleus is put in", "items": [
+            { "kind": "circle", "x": 280, "y": 120, "r": 90, "fill": "pink", "label": "egg" },
+            { "kind": "circle", "x": 250, "y": 100, "r": 22, "fill": "grey", "change": "remove" },
+            { "kind": "circle", "x": 310, "y": 145, "r": 22, "fill": "purple", "label": "donor", "change": "add" },
+            { "kind": "arrow", "x": 480, "y": 145, "x2": 340, "y2": 145, "color": "purple", "change": "add" },
+            { "kind": "text", "x": 470, "y": 125, "text": "donor nucleus", "size": 18, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "Insert the donor nucleus. The egg divides into an embryo, carried by a surrogate.", "write": "embryo → surrogate" },
+        { "say": "The nucleus decides. The clone looks like the nucleus donor, like a SIM card.", "write": "nucleus donor decides" },
+        { "say": "It carries the egg's mitochondrial DNA, so it's not 100 percent identical.", "write": "mtDNA from egg" },
+        { "say": "Dolly the sheep, in 1996, was the first mammal cloned from an adult cell.", "write": "Dolly, 1996" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Asexual is a photocopier: fast, identical copies.", "write": "asexual = photocopier" },
+        { "say": "Name the three shuffles, not just mixes genes.", "write": "name the shuffles" },
+        { "say": "The surrogate only carries the pregnancy. She adds no DNA.", "write": "surrogate adds no DNA" },
+        { "say": "Link each feature to survival: low diversity, whole population at risk.", "write": "link to survival" }
+      ] }
+  ]
+}

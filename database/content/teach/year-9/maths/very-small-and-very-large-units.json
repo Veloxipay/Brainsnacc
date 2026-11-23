@@ -1,0 +1,108 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Very small and very large units",
+  "frames": [
+    {
+      "heading": "What is a prefix?",
+      "lines": [
+        { "say": "A prefix goes in front of a unit, like metre, gram, second or byte.", "write": "kilo + metre = km" },
+        { "say": "It lets us write tiny or huge sizes without long strings of zeros." },
+        { "say": "Like money. A thousand dollars can be ten 100 dollar notes. Same amount, different unit.", "write": "3 mm = 3000 µm" },
+        { "say": "Bigger unit, smaller number. Smaller unit, bigger number.", "write": "small unit → big number" }
+      ]
+    },
+    {
+      "heading": "The prefix staircase",
+      "lines": [
+        { "say": "Tera, giga, mega, kilo. Then milli, micro, nano.", "write": "T  G  M  k  |  m  µ  n" },
+        { "say": "Mega is a million. Milli is a thousandth. Micro is a millionth.", "write": "M = 1 000 000,  m = 0.001" },
+        { "say": "Micro uses the Greek letter mu. µm is said micrometre.", "write": "µ = micro" },
+        {
+          "say": "Each step is 1000 times the next one.",
+          "diagram": "diagrams/y9/maths/very-small-and-very-large-units-stairs.svg",
+          "alt": "Staircase of prefixes from tera down to nano; down a stair × 1000, up a stair ÷ 1000"
+        },
+        { "say": "Tiny Giants May Keep Many Mice Napping.", "write": "T G M K (base) M M N" }
+      ]
+    },
+    {
+      "heading": "Converting",
+      "lines": [
+        { "say": "Going to a smaller unit, down the stairs, multiply by 1000 each step.", "write": "down: × 1000" },
+        { "say": "Going to a bigger unit, up the stairs, divide by 1000 each step.", "write": "up: ÷ 1000" },
+        {
+          "say": "3.5 millimetres to micrometres is one step down. Times 1000.",
+          "write": "3.5 mm = 3500 µm",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 240, "alt": "One step down from mm to µm multiplies by 1000",
+            "items": [
+              { "kind": "rect", "x": 60, "y": 40, "w": 160, "h": 60, "fill": "blue", "label": "mm" },
+              { "kind": "rect", "x": 220, "y": 100, "w": 160, "h": 60, "fill": "teal", "label": "µm" },
+              { "kind": "arrow", "x": 200, "y": 70, "x2": 260, "y2": 125, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 300, "y": 60, "text": "× 1000", "size": 24, "bold": true, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 280, "y": 210, "text": "3.5 → 3500", "size": 26, "bold": true, "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Check. Smaller unit, bigger number. Yes." },
+        {
+          "say": "Pollen is 0.000045 metres. Metres to micrometres is two steps down.",
+          "write": "0.000 045 × 1000 × 1000",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 260, "alt": "Two steps down: m to mm to µm",
+            "items": [
+              { "kind": "rect", "x": 30, "y": 30, "w": 150, "h": 56, "fill": "blue", "label": "m" },
+              { "kind": "rect", "x": 180, "y": 86, "w": 150, "h": 56, "fill": "blue", "label": "mm" },
+              { "kind": "rect", "x": 330, "y": 142, "w": 150, "h": 56, "fill": "teal", "label": "µm" },
+              { "kind": "arrow", "x": 160, "y": 58, "x2": 210, "y2": 110, "color": "purple", "change": "add" },
+              { "kind": "arrow", "x": 310, "y": 114, "x2": 360, "y2": 166, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 280, "y": 240, "text": "= 45 µm", "size": 26, "bold": true, "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Time and storage",
+      "lines": [
+        { "say": "The same prefixes work for time.", "write": "1 s = 1000 ms" },
+        { "say": "0.25 milliseconds is 250 microseconds, which is 250 thousand nanoseconds.", "write": "0.25 ms = 250 000 ns" },
+        { "say": "For storage, the unit is the byte. A gigabyte is 1000 megabytes.", "write": "1 GB = 1000 MB" },
+        { "say": "So a 2.4 gigabyte game is 2400 megabytes.", "write": "2.4 GB = 2400 MB" },
+        { "say": "A 1.8 gigabyte file at 12 megabytes per second. Match units first.", "write": "1.8 GB = 1800 MB" },
+        { "say": "1800 divided by 12 is 150 seconds. That's two and a half minutes.", "write": "1800 ÷ 12 = 150 s" }
+      ]
+    },
+    {
+      "heading": "Scale bars",
+      "lines": [
+        { "say": "Microscope photos have a scale bar. It shows the real length of a short line.", "write": "scale bar" },
+        {
+          "say": "The cell is 6 centimetres on screen. The 10 micrometre bar is 2.4 centimetres.",
+          "write": "6 ÷ 2.4 = 2.5 bars",
+          "diagram": "diagrams/y9/maths/very-small-and-very-large-units-ex5.svg",
+          "alt": "Cell 6 cm on screen with a scale bar of 10 µm measuring 2.4 cm"
+        },
+        { "say": "2.5 bars, each 10 micrometres. The cell is 25 micrometres long.", "write": "2.5 × 10 µm = 25 µm" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Ask yourself. Is the new unit smaller or bigger?", "write": "smaller unit → ×" },
+        { "say": "Only centi uses 100. The others jump by 1000.", "write": "1000, not 100" },
+        { "say": "Metres to micrometres is two steps. That's times a million.", "write": "m → µm: × 1 000 000" },
+        { "say": "Small m is milli. Capital M is mega. Very different!", "write": "5 mW ≠ 5 MW" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Down the stairs, times 1000. Up the stairs, divide by 1000.", "write": "↓ × 1000   ↑ ÷ 1000" },
+        { "say": "Smaller unit, bigger number.", "write": "check the size" },
+        { "say": "For speed questions, match the units, then divide.", "write": "same units first" }
+      ]
+    }
+  ]
+}

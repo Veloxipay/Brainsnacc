@@ -1,0 +1,73 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Equations with brackets and fractions",
+  "frames": [
+    { "heading": "Open every pack",
+      "lines": [
+        { "say": "3 packs of 2 eggs and 1 cup of flour. Open every pack: 6 eggs, 3 cups.", "write": "3(2e + f) = 6e + 3f" },
+        { "say": "Brackets work the same way. The outside number multiplies every term inside.", "write": "3(2x − 5) = 6x − 15" },
+        { "say": "Solve 3 lots of 2x minus 5 equals 27. Expand first.", "write": "6x − 15 = 27" },
+        { "say": "Add 15 to both sides. 6x equals 42. So x equals 7.", "write": "6x = 42 → x = 7" },
+        { "say": "Shortcut: 27 divides by 3, so divide first. 2x minus 5 equals 9.", "write": "2x − 5 = 9 → x = 7" }
+      ] },
+    { "heading": "Brackets on both sides",
+      "lines": [
+        { "say": "4 lots of x plus 3 equals 2 lots of x plus 11. Expand both sides.", "write": "4x + 12 = 2x + 22",
+          "draw": {"type": "balance", "left": {"bags": 4, "cubes": 12}, "right": {"bags": 2, "cubes": 22}} },
+        { "say": "Take 2 bags off both sides. It stays level.", "write": "2x + 12 = 22",
+          "draw": {"type": "balance", "left": {"bags": 2, "cubes": 12}, "right": {"cubes": 22}} },
+        { "say": "Now take 12 cubes off both sides.", "write": "2x + 12 − 12 = 22 − 12",
+          "draw": {"type": "balance", "left": {"bags": 2, "cubes": 12}, "right": {"cubes": 22}, "remove": 12, "labels": ["2x + 12 − 12", "22 − 12"]} },
+        { "say": "Share 10 cubes between 2 bags. Each gets 5.", "write": "x = 5",
+          "draw": {"type": "balance", "left": {"bags": 2}, "right": {"cubes": 10}, "share": true} },
+        { "say": "Check: 4 times 8 is 32. 2 times 16 is 32.", "write": "32 = 32 ✓" }
+      ] },
+    { "heading": "A negative in front",
+      "lines": [
+        { "say": "Solve 5 minus 2 lots of x minus 4 equals 1.", "write": "5 − 2(x − 4) = 1" },
+        { "say": "The minus belongs to the 2. Minus 2 times minus 4 is plus 8.", "write": "−2(x − 4) = −2x + 8" },
+        { "say": "So 5 minus 2x plus 8 equals 1. That's 13 minus 2x equals 1.", "write": "13 − 2x = 1" },
+        { "say": "Add 2x and take 1 from both sides. 12 equals 2x, so x equals 6.", "write": "x = 6" },
+        { "say": "Never do 5 minus 2 first. Multiplying comes before subtracting.", "write": "✗ 3(x − 4)" }
+      ] },
+    { "heading": "Clearing one fraction",
+      "lines": [
+        { "say": "Here, all of 2x plus 1 is divided by 3.", "write": "(2x + 1)/3 = 7" },
+        { "say": "Undo the divide. Multiply both sides by 3.", "write": "2x + 1 = 21" },
+        { "say": "Take 1 from both sides, then halve. x equals 10.", "write": "2x = 20 → x = 10" }
+      ] },
+    { "heading": "Two fractions: use the LCD",
+      "lines": [
+        { "say": "x over 3 plus x over 4 equals 7. The lowest common denominator is 12.", "write": "x/3 + x/4 = 7" },
+        { "say": "Multiply every term by 12. The fractions vanish.", "write": "4x + 3x = 84",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Each term multiplied by 12 and the denominators cancel", "items": [
+            {"kind": "rect", "x": 30, "y": 50, "w": 140, "h": 60, "fill": "blue", "label": "12 × x/3"},
+            {"kind": "rect", "x": 210, "y": 50, "w": 140, "h": 60, "fill": "blue", "label": "12 × x/4"},
+            {"kind": "rect", "x": 390, "y": 50, "w": 140, "h": 60, "fill": "orange", "label": "12 × 7"},
+            {"kind": "text", "x": 100, "y": 160, "text": "4x", "size": 26, "bold": true, "anchor": "middle", "color": "green", "change": "add"},
+            {"kind": "text", "x": 280, "y": 160, "text": "3x", "size": 26, "bold": true, "anchor": "middle", "color": "green", "change": "add"},
+            {"kind": "text", "x": 460, "y": 160, "text": "84", "size": 26, "bold": true, "anchor": "middle", "color": "green", "change": "add"}]}},
+        { "say": "7x equals 84, so x equals 12.", "write": "x = 12" },
+        { "say": "Check: 12 over 3 is 4, 12 over 4 is 3. 4 plus 3 is 7.", "write": "4 + 3 = 7 ✓" }
+      ] },
+    { "heading": "Fraction equals fraction",
+      "lines": [
+        { "say": "x plus 2 over 5 equals x minus 1 over 2. Cross-multiply.", "write": "(x + 2)/5 = (x − 1)/2" },
+        { "say": "Keep the brackets. 2 lots of x plus 2 equals 5 lots of x minus 1.", "write": "2(x + 2) = 5(x − 1)" },
+        { "say": "Expand: 2x plus 4 equals 5x minus 5.", "write": "2x + 4 = 5x − 5" },
+        { "say": "Take 2x from both sides and add 5. 9 equals 3x, so x equals 3.", "write": "x = 3" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "4 lots of x minus 2 is 4x minus 8, not 4x minus 2.", "write": "✗ 4(x − 2) = 4x − 2" },
+        { "say": "Multiply every term by the LCD, including plain numbers.", "write": "every term" },
+        { "say": "x over 2 plus x over 3 is not x over 5.", "write": "✗ x/2 + x/3 = x/5" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Open every pack.", "write": "expand every term" },
+        { "say": "Minus outside flips the signs inside.", "write": "−(a − b) = −a + b" },
+        { "say": "The LCD clears the deck. Bracket the top first.", "write": "× LCD, bracket the top" },
+        { "say": "Check in the original equation.", "write": "check ✓" }
+      ] }
+  ]
+}

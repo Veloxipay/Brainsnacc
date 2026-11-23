@@ -1,0 +1,145 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Transition metal chemistry",
+  "frames": [
+    {
+      "heading": "d electrons and oxidation states",
+      "lines": [
+        {"say": "4s fills before 3d in the atom. Iron is argon 3d six 4s two.", "write": "Fe: [Ar] 3d⁶ 4s²"},
+        {"say": "First in, first out. Ions lose their 4s electrons first.", "write": "Fe²⁺: [Ar] 3d⁶",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Iron loses its two 4s electrons to become Fe2+", "items": [
+           {"kind": "rect", "x": 40, "y": 60, "w": 260, "h": 70, "fill": "blue", "label": "3d⁶"},
+           {"kind": "rect", "x": 340, "y": 60, "w": 150, "h": 70, "fill": "orange", "label": "4s²", "change": "remove"},
+           {"kind": "text", "x": 280, "y": 175, "text": "Fe²⁺ = [Ar] 3d⁶", "size": 24, "bold": true, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "Quick trick: d count is group number minus oxidation state.", "write": "Co³⁺: 9 − 3 = d⁶"},
+        {"say": "4s and 3d are close in energy, so many oxidation states are possible.", "write": "Mn: +2 to +7 (MnO₄⁻)"}
+      ]
+    },
+    {
+      "heading": "Complexes and ligands",
+      "lines": [
+        {"say": "A ligand donates a lone pair to the metal. That's a coordinate bond.", "write": "ligand = Lewis base"},
+        {"say": "Water and ammonia use one donor atom. They're monodentate.", "write": "monodentate: H₂O, NH₃, Cl⁻"},
+        {"say": "En grips with two atoms, like a claw. That's a chelate.", "write": "bidentate: en, oxalate",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Metal with one monodentate ligand and one bidentate claw-like ligand", "items": [
+           {"kind": "circle", "x": 280, "y": 110, "r": 32, "fill": "purple", "label": "M"},
+           {"kind": "circle", "x": 120, "y": 110, "r": 26, "fill": "blue", "label": "NH₃"},
+           {"kind": "arrow", "x": 148, "y": 110, "x2": 246, "y2": 110, "color": "black"},
+           {"kind": "circle", "x": 420, "y": 50, "r": 22, "fill": "green", "label": "N", "change": "add"},
+           {"kind": "circle", "x": 420, "y": 170, "r": 22, "fill": "green", "label": "N", "change": "add"},
+           {"kind": "line", "x": 440, "y": 65, "x2": 440, "y2": 155, "color": "green", "change": "add"},
+           {"kind": "arrow", "x": 400, "y": 60, "x2": 308, "y2": 95, "color": "black", "change": "add"},
+           {"kind": "arrow", "x": 400, "y": 160, "x2": 308, "y2": 125, "color": "black", "change": "add"},
+           {"kind": "text", "x": 500, "y": 115, "text": "en", "size": 22, "bold": true, "color": "green", "change": "add"}
+         ]}},
+        {"say": "Chelates are extra stable, mainly because entropy goes up.", "write": "chelate effect: ΔS > 0"},
+        {"say": "Oxidation state: overall charge minus the ligand charges.", "write": "[Co(NH₃)₅Cl]²⁺: Co +3"}
+      ]
+    },
+    {
+      "heading": "Shapes and naming",
+      "lines": [
+        {"say": "Coordination number counts donor atoms, not ligands.", "write": "[Co(en)₃]³⁺: CN = 6"},
+        {"say": "Two is linear. Four is tetrahedral or square planar. Six is octahedral.", "write": "2 linear, 4 Td/sq pl, 6 Oh"},
+        {"say": "Cisplatin has its two chlorines side by side, at 90 degrees.", "write": "cis: 90°   trans: 180°"},
+        {"say": "Name ligands alphabetically, then the metal, then the oxidation state.", "write": "hexaaquacopper(II)"},
+        {"say": "Anionic complexes end in ate.", "write": "K₃[Fe(CN)₆]: hexacyanidoferrate(III)"}
+      ]
+    },
+    {
+      "heading": "Crystal field splitting",
+      "lines": [
+        {"say": "In a free ion, all five d orbitals have the same energy.", "write": "5 d orbitals, equal",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Five d orbitals at one level", "items": [
+           {"kind": "rect", "x": 80, "y": 120, "w": 60, "h": 16, "fill": "grey"},
+           {"kind": "rect", "x": 160, "y": 120, "w": 60, "h": 16, "fill": "grey"},
+           {"kind": "rect", "x": 240, "y": 120, "w": 60, "h": 16, "fill": "grey"},
+           {"kind": "rect", "x": 320, "y": 120, "w": 60, "h": 16, "fill": "grey"},
+           {"kind": "rect", "x": 400, "y": 120, "w": 60, "h": 16, "fill": "grey"},
+           {"kind": "text", "x": 280, "y": 200, "text": "free ion", "size": 20}
+         ]}},
+        {"say": "Six ligands sit on the axes. Two orbitals point at them and get pushed up.", "write": "e_g: z², x²−y²",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Octahedral splitting: two eg orbitals rise, three t2g orbitals drop, gap delta o", "items": [
+           {"kind": "rect", "x": 200, "y": 40, "w": 60, "h": 16, "fill": "orange", "change": "add"},
+           {"kind": "rect", "x": 280, "y": 40, "w": 60, "h": 16, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 360, "y": 55, "text": "e_g", "size": 20, "anchor": "start"},
+           {"kind": "rect", "x": 160, "y": 190, "w": 60, "h": 16, "fill": "blue", "change": "add"},
+           {"kind": "rect", "x": 240, "y": 190, "w": 60, "h": 16, "fill": "blue", "change": "add"},
+           {"kind": "rect", "x": 320, "y": 190, "w": 60, "h": 16, "fill": "blue", "change": "add"},
+           {"kind": "text", "x": 400, "y": 205, "text": "t₂g", "size": 20, "anchor": "start"},
+           {"kind": "arrow", "x": 120, "y": 188, "x2": 120, "y2": 58, "color": "red", "change": "highlight"},
+           {"kind": "text", "x": 100, "y": 130, "text": "Δₒ", "size": 24, "bold": true, "color": "red", "anchor": "end"}
+         ]}},
+        {"say": "The three that dodge between the axes drop. They're t two g.", "write": "t₂g: xy, xz, yz"},
+        {"say": "The gap is delta o. Tetrahedral splitting is reversed and about four ninths as big.", "write": "Δ_t ≈ 4/9 Δₒ"},
+        {"say": "Spectrochemical series: iodide is weak field, carbon monoxide is strong.", "write": "I⁻ … H₂O, NH₃, en, CN⁻, CO"}
+      ]
+    },
+    {
+      "heading": "High spin or low spin?",
+      "lines": [
+        {"say": "For d four to d seven, the fourth electron has a choice.", "write": "pair (P) or jump (Δₒ)?"},
+        {"say": "Weak field, small gap. Electrons spread out. High spin.", "write": "Δₒ < P → high spin",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Iron(II) with water: high spin with four unpaired electrons", "items": [
+           {"kind": "rect", "x": 200, "y": 70, "w": 60, "h": 40, "fill": "white", "label": "↑"},
+           {"kind": "rect", "x": 280, "y": 70, "w": 60, "h": 40, "fill": "white", "label": "↑"},
+           {"kind": "rect", "x": 160, "y": 160, "w": 60, "h": 40, "fill": "white", "label": "↑↓"},
+           {"kind": "rect", "x": 240, "y": 160, "w": 60, "h": 40, "fill": "white", "label": "↑"},
+           {"kind": "rect", "x": 320, "y": 160, "w": 60, "h": 40, "fill": "white", "label": "↑"},
+           {"kind": "text", "x": 470, "y": 120, "text": "[Fe(H₂O)₆]²⁺", "size": 20},
+           {"kind": "text", "x": 470, "y": 150, "text": "4 unpaired", "size": 20, "bold": true}
+         ]}},
+        {"say": "Strong field, big gap. Electrons squeeze in and pair. Low spin.", "write": "Δₒ > P → low spin",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Iron(II) with cyanide: low spin, the two upper electrons move down and pair, zero unpaired", "items": [
+           {"kind": "rect", "x": 200, "y": 40, "w": 60, "h": 40, "fill": "white", "label": "↑", "change": "remove"},
+           {"kind": "rect", "x": 280, "y": 40, "w": 60, "h": 40, "fill": "white", "label": "↑", "change": "remove"},
+           {"kind": "rect", "x": 160, "y": 170, "w": 60, "h": 40, "fill": "white", "label": "↑↓"},
+           {"kind": "rect", "x": 240, "y": 170, "w": 60, "h": 40, "fill": "yellow", "label": "↑↓", "change": "add"},
+           {"kind": "rect", "x": 320, "y": 170, "w": 60, "h": 40, "fill": "yellow", "label": "↑↓", "change": "add"},
+           {"kind": "text", "x": 470, "y": 120, "text": "[Fe(CN)₆]⁴⁻", "size": 20},
+           {"kind": "text", "x": 470, "y": 150, "text": "0 unpaired", "size": 20, "bold": true}
+         ]}},
+        {"say": "Unpaired electrons make it paramagnetic. Spin-only moment is root n times n plus two.", "write": "μ = √(n(n + 2)) μ_B"},
+        {"say": "Four unpaired gives root 24, which is 4.90 Bohr magnetons.", "write": "n = 4: μ = 4.90 μ_B"}
+      ]
+    },
+    {
+      "heading": "Colour",
+      "lines": [
+        {"say": "An electron absorbs visible light and jumps from t two g to e g.", "write": "d–d transition"},
+        {"say": "The energy absorbed equals delta. Delta equals h c over lambda.", "write": "Δ = hc/λ"},
+        {"say": "You see what is left. Hexaaquacopper absorbs orange-red and looks blue.", "write": "seen = complementary",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "White light hits the copper complex, orange-red is absorbed and blue comes out", "items": [
+           {"kind": "arrow", "x": 30, "y": 110, "x2": 200, "y2": 110, "color": "black"},
+           {"kind": "text", "x": 110, "y": 95, "text": "white light", "size": 18},
+           {"kind": "circle", "x": 270, "y": 110, "r": 55, "fill": "blue", "label": "Cu²⁺(aq)"},
+           {"kind": "rect", "x": 230, "y": 180, "w": 80, "h": 30, "fill": "orange", "label": "absorbed", "change": "remove"},
+           {"kind": "arrow", "x": 335, "y": 110, "x2": 510, "y2": 110, "color": "blue", "change": "add"},
+           {"kind": "text", "x": 430, "y": 95, "text": "blue seen", "size": 20, "bold": true, "color": "blue", "change": "add"}
+         ]}},
+        {"say": "Stronger field ligands absorb shorter wavelengths, so the colour changes.", "write": "NH₃ > H₂O: deeper blue"},
+        {"say": "No d–d, no colour. d zero and d ten ions are colourless.", "write": "Sc³⁺, Zn²⁺: colourless"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't remove 3d before 4s. Iron two plus is 3d six.", "write": "✗ Fe²⁺ 3d⁴ 4s²"},
+        {"say": "Coordination number counts donor atoms. Three en ligands give six.", "write": "✗ CN = number of ligands"},
+        {"say": "The colour you see is not the colour absorbed.", "write": "✗ seen = absorbed"},
+        {"say": "It's ammine, with two m's, for ammonia as a ligand.", "write": "ammine, not amine"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "4s: first in, first out. d count is group minus charge.", "write": "d = group − charge"},
+        {"say": "Ligands on the axes push e g up. t two g stays low.", "write": "e_g up, t₂g down"},
+        {"say": "Strong field, low spin, paired in. Weak field, high spin, spread out.", "write": "Δ vs P decides spin"},
+        {"say": "You see the complementary colour of the light absorbed.", "write": "you see what is left"}
+      ]
+    }
+  ]
+}

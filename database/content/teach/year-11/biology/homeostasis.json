@@ -1,0 +1,106 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Homeostasis",
+  "frames": [
+    { "heading": "What is homeostasis?",
+      "lines": [
+        { "say": "Your body stays near 37 degrees, at the beach or in the snow.", "write": "body temperature ≈ 37 °C" },
+        { "say": "Homeostasis keeps the internal environment stable, despite changes.", "write": "homeostasis = stable inside" },
+        { "say": "The internal environment is the extracellular fluid: plasma and tissue fluid.", "write": "plasma + tissue fluid" },
+        { "say": "Stable doesn't mean fixed. Variables wobble around a set point, inside a tolerance range.", "write": "set point ± tolerance range",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "A wavy line wobbling around a dashed set point, inside a shaded tolerance band", "items": [
+            { "kind": "rect", "x": 30, "y": 80, "w": 500, "h": 80, "fill": "green" },
+            { "kind": "line", "x": 30, "y": 120, "x2": 530, "y2": 120, "color": "black", "dashed": true },
+            { "kind": "line", "x": 40, "y": 120, "x2": 120, "y2": 95, "color": "red" },
+            { "kind": "line", "x": 120, "y": 95, "x2": 200, "y2": 145, "color": "red" },
+            { "kind": "line", "x": 200, "y": 145, "x2": 280, "y2": 100, "color": "red" },
+            { "kind": "line", "x": 280, "y": 100, "x2": 360, "y2": 140, "color": "red" },
+            { "kind": "line", "x": 360, "y": 140, "x2": 440, "y2": 105, "color": "red" },
+            { "kind": "line", "x": 440, "y": 105, "x2": 520, "y2": 125, "color": "red" },
+            { "kind": "text", "x": 280, "y": 40, "text": "tolerance range", "size": 20, "anchor": "middle", "color": "green" },
+            { "kind": "text", "x": 280, "y": 200, "text": "- - - set point", "size": 18, "anchor": "middle" }
+          ] } }
+      ] },
+    { "heading": "Stimulus–response model",
+      "lines": [
+        { "say": "Every mechanism follows the same chain. Silly Rabbits Can Eat Rice.", "write": "S → R → C → E → R",
+          "draw": { "type": "shapes", "width": 560, "height": 200, "alt": "Chain: stimulus, receptor, control centre, effector, response, with a feedback arrow back", "items": [
+            { "kind": "rect", "x": 5, "y": 60, "w": 100, "h": 50, "fill": "red", "label": "stimulus" },
+            { "kind": "rect", "x": 115, "y": 60, "w": 100, "h": 50, "fill": "orange", "label": "receptor" },
+            { "kind": "rect", "x": 225, "y": 60, "w": 100, "h": 50, "fill": "yellow", "label": "control" },
+            { "kind": "rect", "x": 335, "y": 60, "w": 100, "h": 50, "fill": "green", "label": "effector" },
+            { "kind": "rect", "x": 445, "y": 60, "w": 110, "h": 50, "fill": "blue", "label": "response" },
+            { "kind": "arrow", "x": 500, "y": 115, "x2": 60, "y2": 115, "color": "purple", "change": "add" },
+            { "kind": "text", "x": 280, "y": 160, "text": "negative feedback: reverses the change", "size": 18, "anchor": "middle", "color": "purple", "change": "add" }
+          ] } },
+        { "say": "The receptor detects the change. The control centre compares it with the set point.", "write": "control centre = modulator" },
+        { "say": "The effector, a muscle or gland, carries out the response.", "write": "effector = muscle or gland" },
+        { "say": "Negative feedback reverses the change, then switches off. Like cruise control on a hill.", "write": "negative feedback" },
+        { "say": "Positive feedback makes a change bigger, like childbirth. That's not homeostasis.", "write": "positive feedback ≠ homeostasis" }
+      ] },
+    { "heading": "Nerves and hormones",
+      "lines": [
+        { "say": "Nerves send electrical impulses. Very fast, but short-lived.", "write": "nervous: fast, short" },
+        { "say": "Hormones travel in the blood. Slower to start, but longer-lasting.", "write": "endocrine: slow, long" },
+        { "say": "The hypothalamus links the two systems and controls the pituitary.", "write": "hypothalamus = link" }
+      ] },
+    { "heading": "Body temperature",
+      "lines": [
+        { "say": "Thermoreceptors in the skin and hypothalamus detect the change.", "write": "control centre: hypothalamus" },
+        { "say": "Too hot? Skin arterioles widen. More blood near the surface loses heat.", "write": "hot → vasodilation, sweat",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Skin arteriole widens in vasodilation", "items": [
+            { "kind": "rect", "x": 20, "y": 40, "w": 520, "h": 30, "fill": "pink", "label": "skin surface" },
+            { "kind": "rect", "x": 60, "y": 110, "w": 440, "h": 20, "fill": "red", "change": "remove" },
+            { "kind": "rect", "x": 60, "y": 95, "w": 440, "h": 50, "fill": "red", "label": "wider vessel", "change": "add" },
+            { "kind": "arrow", "x": 280, "y": 90, "x2": 280, "y2": 20, "color": "orange", "change": "add" },
+            { "kind": "text", "x": 280, "y": 190, "text": "more heat lost by radiation", "size": 20, "anchor": "middle", "color": "orange" }
+          ] } },
+        { "say": "Sweat evaporates and removes heat. You might also seek shade.", "write": "sweat evaporates" },
+        { "say": "Too cold? Vessels narrow, and shivering muscles release heat.", "write": "cold → vasoconstriction, shiver" },
+        { "say": "The vessels widen or narrow. They do not move.", "write": "vessels widen, don't move" }
+      ] },
+    { "heading": "Blood glucose",
+      "lines": [
+        { "say": "After a meal, beta cells in the pancreas release insulin.", "write": "high glucose → insulin" },
+        { "say": "Insulin puts glucose into cells, and liver and muscle store it as glycogen.", "write": "glucose → glycogen",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Insulin moves glucose from blood into glycogen store; glucagon moves it back", "items": [
+            { "kind": "rect", "x": 30, "y": 70, "w": 180, "h": 100, "fill": "red", "label": "blood glucose" },
+            { "kind": "rect", "x": 350, "y": 70, "w": 180, "h": 100, "fill": "yellow", "label": "glycogen (liver)" },
+            { "kind": "arrow", "x": 215, "y": 95, "x2": 345, "y2": 95, "color": "blue", "change": "add" },
+            { "kind": "text", "x": 280, "y": 80, "text": "insulin", "size": 18, "bold": true, "anchor": "middle", "color": "blue", "change": "add" }
+          ] } },
+        { "say": "Between meals, alpha cells release glucagon. The liver breaks glycogen back to glucose.", "write": "low glucose → glucagon",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Insulin moves glucose into glycogen store; glucagon moves it back", "items": [
+            { "kind": "rect", "x": 30, "y": 70, "w": 180, "h": 100, "fill": "red", "label": "blood glucose" },
+            { "kind": "rect", "x": 350, "y": 70, "w": 180, "h": 100, "fill": "yellow", "label": "glycogen (liver)" },
+            { "kind": "arrow", "x": 215, "y": 95, "x2": 345, "y2": 95, "color": "blue" },
+            { "kind": "text", "x": 280, "y": 80, "text": "insulin", "size": 18, "bold": true, "anchor": "middle", "color": "blue" },
+            { "kind": "arrow", "x": 345, "y": 150, "x2": 215, "y2": 150, "color": "orange", "change": "add" },
+            { "kind": "text", "x": 280, "y": 185, "text": "glucagon", "size": 18, "bold": true, "anchor": "middle", "color": "orange", "change": "add" }
+          ] } },
+        { "say": "They push in opposite directions, so we call them antagonistic.", "write": "antagonistic hormones" },
+        { "say": "Glucagon when glucose is gone. Glycogen is the store, not a hormone.", "write": "glucagon ≠ glycogen" }
+      ] },
+    { "heading": "Water balance and ADH",
+      "lines": [
+        { "say": "Lose water by sweating, and your blood gets more concentrated.", "write": "blood too concentrated" },
+        { "say": "Osmoreceptors in the hypothalamus detect it. ADH is released from the posterior pituitary.", "write": "hypothalamus → ADH" },
+        { "say": "ADH adds aquaporins to the collecting ducts. More water returns to the blood.", "write": "more aquaporins → more water back",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Collecting duct wall gains extra water channels, letting more water move into blood", "items": [
+            { "kind": "rect", "x": 40, "y": 30, "w": 480, "h": 60, "fill": "yellow", "label": "filtrate in collecting duct" },
+            { "kind": "rect", "x": 40, "y": 150, "w": 480, "h": 60, "fill": "red", "label": "blood" },
+            { "kind": "arrow", "x": 120, "y": 95, "x2": 120, "y2": 145, "color": "blue" },
+            { "kind": "arrow", "x": 230, "y": 95, "x2": 230, "y2": 145, "color": "blue", "change": "add" },
+            { "kind": "arrow", "x": 340, "y": 95, "x2": 340, "y2": 145, "color": "blue", "change": "add" },
+            { "kind": "arrow", "x": 450, "y": 95, "x2": 450, "y2": 145, "color": "blue", "change": "add" }
+          ] } },
+        { "say": "So you make a small amount of concentrated urine. Anti-diuretic means anti-wee.", "write": "less, concentrated urine" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Name every step: stimulus, receptor, control centre, effector, response.", "write": "Silly Rabbits Can Eat Rice" },
+        { "say": "Negative feedback reverses the change and switches off.", "write": "reverse, then switch off" },
+        { "say": "Insulin lowers glucose. Glucagon raises it.", "write": "insulin ↓ · glucagon ↑" },
+        { "say": "More ADH means less urine, not more.", "write": "more ADH → less urine" }
+      ] }
+  ]
+}

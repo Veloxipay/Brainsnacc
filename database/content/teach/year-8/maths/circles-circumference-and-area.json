@@ -1,0 +1,416 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Circles: circumference and area",
+  "frames": [
+    {
+      "heading": "Parts of a circle",
+      "lines": [
+        {
+          "say": "Wheels, pizzas and clocks are all circles.",
+          "write": "circles everywhere",
+          "diagram": "diagrams/y8/maths/circles-circumference-and-area-parts.svg",
+          "alt": "Centre, radius, diameter and circumference"
+        },
+        {
+          "say": "The radius goes from the centre to the edge.",
+          "write": "radius r"
+        },
+        {
+          "say": "The diameter goes right across, through the centre. It's two radii.",
+          "write": "d = 2r",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Radius doubled to diameter",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 110,
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 150,
+                "x2": 390,
+                "y2": 150,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 335,
+                "y": 140,
+                "text": "r",
+                "size": 20,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 170,
+                "y": 150,
+                "x2": 280,
+                "y2": 150,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "d = 2r",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The circumference is the distance around the edge.",
+          "write": "circumference C"
+        }
+      ]
+    },
+    {
+      "heading": "What is pi?",
+      "lines": [
+        {
+          "say": "Roll a wheel one full turn and measure its track.",
+          "write": "one turn = C",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Wheel rolled out flat",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 110,
+                "r": 50,
+                "fill": "white",
+                "label": "d"
+              },
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 180,
+                "x2": 530,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 200,
+                "x2": 394,
+                "y2": 200,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 240,
+                "text": "a bit more than 3 diameters",
+                "size": 20,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The track is always a bit more than 3 times the width.",
+          "write": "C ÷ d = π"
+        },
+        {
+          "say": "That number is pi, about 3.14159. Its decimals never end.",
+          "write": "π ≈ 3.14159…"
+        },
+        {
+          "say": "10 pi is an exact answer. 31.4 is a rounded answer.",
+          "write": "exact 10π, rounded 31.4"
+        }
+      ]
+    },
+    {
+      "heading": "Circumference",
+      "lines": [
+        {
+          "say": "Circumference is pi times the diameter.",
+          "write": "C = πd"
+        },
+        {
+          "say": "Or 2 pi r. Same thing, because d is 2r.",
+          "write": "C = 2πr"
+        },
+        {
+          "say": "Radius 5 centimetres. 2 times pi times 5 is 10 pi.",
+          "write": "C = 2 × π × 5 = 10π",
+          "diagram": "diagrams/y8/maths/circles-circumference-and-area-ex1.svg",
+          "alt": "Circle with radius 5 cm"
+        },
+        {
+          "say": "That's about 31.4 centimetres.",
+          "write": "≈ 31.4 cm"
+        },
+        {
+          "say": "Quick check: about 3 times the diameter, 3 times 10 is 30.",
+          "write": "≈ 3 × 10 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Area",
+      "lines": [
+        {
+          "say": "Area is pi r squared. Only the radius is squared.",
+          "write": "A = πr²"
+        },
+        {
+          "say": "Diameter 12 metres. Halve it first. The radius is 6.",
+          "write": "r = 12 ÷ 2 = 6",
+          "diagram": "diagrams/y8/maths/circles-circumference-and-area-ex2.svg",
+          "alt": "Circle with diameter 12 m"
+        },
+        {
+          "say": "6 squared is 36. Times pi is about 113.1 square metres.",
+          "write": "A = π × 36 ≈ 113.1 m²"
+        },
+        {
+          "say": "Check: the 12 by 12 square around it is 144. A bit less makes sense.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Circle inside a 12 by 12 square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 10,
+                "w": 280,
+                "h": 280,
+                "fill": "none",
+                "label": ""
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 140,
+                "fill": "teal",
+                "change": "highlight",
+                "label": "113.1 m²"
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 150,
+                "text": "144 m²",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Using 12 as the radius gives 452. That's the classic mistake.",
+          "write": "✗ π × 12²"
+        }
+      ]
+    },
+    {
+      "heading": "Semicircles and quadrants",
+      "lines": [
+        {
+          "say": "A semicircle is half a circle. A quadrant is a quarter.",
+          "write": "½ and ¼",
+          "diagram": "diagrams/y8/maths/circles-circumference-and-area-semi-quad.svg",
+          "alt": "Semicircle and quadrant"
+        },
+        {
+          "say": "Semicircle, diameter 8. The curved part is half of pi times 8.",
+          "write": "½ × π × 8 = 4π ≈ 12.566"
+        },
+        {
+          "say": "Now add the straight edge, 8. About 20.6 centimetres.",
+          "write": "12.566 + 8 ≈ 20.6 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Semicircle perimeter: curve plus straight edge",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    220
+                  ],
+                  [
+                    100,
+                    150
+                  ],
+                  [
+                    150,
+                    95
+                  ],
+                  [
+                    215,
+                    63
+                  ],
+                  [
+                    280,
+                    52
+                  ],
+                  [
+                    345,
+                    63
+                  ],
+                  [
+                    410,
+                    95
+                  ],
+                  [
+                    460,
+                    150
+                  ],
+                  [
+                    480,
+                    220
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 220,
+                "x2": 480,
+                "y2": 220,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 265,
+                "text": "8 cm",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "curve 4π",
+                "size": 22,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Trace the whole outline with your finger. Don't forget straight edges.",
+          "write": "curve + straight"
+        }
+      ]
+    },
+    {
+      "heading": "A path around a pond",
+      "lines": [
+        {
+          "say": "A pond has radius 7. A 3 metre path goes around it.",
+          "diagram": "diagrams/y8/maths/circles-circumference-and-area-ex4.svg",
+          "alt": "Pond radius 7 m with 3 m path"
+        },
+        {
+          "say": "The outer radius is 7 plus 3, which is 10.",
+          "write": "R = 10 m"
+        },
+        {
+          "say": "Big circle minus pond. 100 pi minus 49 pi is 51 pi.",
+          "write": "100π − 49π = 51π",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Ring left when the pond is removed",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 140,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 98,
+                "fill": "blue",
+                "change": "remove",
+                "label": "49π"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 30,
+                "text": "100π",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "That's about 160.2 square metres. Round only at the end.",
+          "write": "≈ 160.2 m²"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Cherry pie is delicious. C equals pi d.",
+          "write": "C = πd"
+        },
+        {
+          "say": "Apple pies are too. A equals pi r squared.",
+          "write": "A = πr²"
+        },
+        {
+          "say": "Which am I given, radius or diameter? Ask every time.",
+          "write": "d = 2r"
+        },
+        {
+          "say": "Area has the square. Circumference doesn't.",
+          "write": "cm² vs cm"
+        }
+      ]
+    }
+  ]
+}

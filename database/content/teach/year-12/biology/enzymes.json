@@ -1,0 +1,129 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Enzymes",
+  "frames": [
+    { "heading": "Biological catalysts",
+      "lines": [
+        { "say": "Enzymes are biological catalysts. They speed up reactions and aren't used up.", "write": "enzyme = protein catalyst" },
+        { "say": "Almost all are proteins, folded into a precise 3D shape.", "write": "tertiary structure" },
+        { "say": "Every reaction needs an energy push to start. That's the activation energy.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Energy hill for an uncatalysed reaction", "items": [
+            {"kind": "line", "x": 40, "y": 200, "x2": 140, "y2": 200, "color": "black"},
+            {"kind": "line", "x": 140, "y": 200, "x2": 260, "y2": 40, "color": "red"},
+            {"kind": "line", "x": 260, "y": 40, "x2": 380, "y2": 240, "color": "red"},
+            {"kind": "line", "x": 380, "y": 240, "x2": 520, "y2": 240, "color": "black"},
+            {"kind": "text", "x": 270, "y": 30, "text": "no enzyme", "size": 18, "color": "red"}
+          ]}},
+        { "say": "Enzymes lower that hill. Same start, same finish, just a lower peak.", "write": "lower activation energy",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Lower energy hill with an enzyme", "items": [
+            {"kind": "line", "x": 40, "y": 200, "x2": 140, "y2": 200, "color": "black"},
+            {"kind": "line", "x": 140, "y": 200, "x2": 260, "y2": 40, "color": "red", "dashed": true},
+            {"kind": "line", "x": 260, "y": 40, "x2": 380, "y2": 240, "color": "red", "dashed": true},
+            {"kind": "line", "x": 140, "y": 200, "x2": 260, "y2": 130, "color": "green", "change": "add"},
+            {"kind": "line", "x": 260, "y": 130, "x2": 380, "y2": 240, "color": "green", "change": "add"},
+            {"kind": "line", "x": 380, "y": 240, "x2": 520, "y2": 240, "color": "black"},
+            {"kind": "text", "x": 270, "y": 120, "text": "with enzyme", "size": 18, "color": "green", "change": "add"}
+          ]}},
+        { "say": "Enzymes only change the speed. Not the products or the overall energy.", "write": "only the rate changes" }
+      ] },
+    { "heading": "Active site and induced fit",
+      "lines": [
+        { "say": "The substrate binds in a pocket called the active site.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Substrate approaching an enzyme's active site", "items": [
+            {"kind": "polygon", "points": [[120,60],[300,60],[300,110],[240,110],[220,140],[200,110],[120,110]], "fill": "blue"},
+            {"kind": "rect", "x": 120, "y": 110, "w": 180, "h": 90, "fill": "blue", "label": "enzyme"},
+            {"kind": "polygon", "points": [[400,150],[430,110],[460,150]], "fill": "orange"},
+            {"kind": "text", "x": 430, "y": 180, "text": "substrate", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "It forms an enzyme substrate complex. Then the products are released.", "write": "E + S → ES → E + P" },
+        { "say": "Induced fit. The active site moulds around the substrate, like a glove on a hand.", "write": "induced fit model",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Substrate bound, active site closes around it", "items": [
+            {"kind": "rect", "x": 120, "y": 110, "w": 180, "h": 90, "fill": "blue", "label": "enzyme"},
+            {"kind": "polygon", "points": [[180,110],[210,70],[240,110]], "fill": "orange", "change": "add"},
+            {"kind": "rect", "x": 160, "y": 60, "w": 18, "h": 50, "fill": "blue", "change": "highlight"},
+            {"kind": "rect", "x": 242, "y": 60, "w": 18, "h": 50, "fill": "blue", "change": "highlight"},
+            {"kind": "text", "x": 420, "y": 120, "text": "active site closes", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Shape and charge are complementary. So each enzyme is specific.", "write": "complementary → specific" }
+      ] },
+    { "heading": "Temperature and pH",
+      "lines": [
+        { "say": "Warmer means more collisions, so the rate rises to the optimum, about 37 degrees.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Rate rises gradually then drops sharply after 37 degrees", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 60, "y": 230, "x2": 300, "y2": 60, "color": "blue"},
+            {"kind": "line", "x": 300, "y": 60, "x2": 360, "y2": 230, "color": "red", "change": "add"},
+            {"kind": "text", "x": 300, "y": 45, "text": "37 °C", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 430, "y": 150, "text": "denatured", "size": 18, "color": "red", "change": "add"},
+            {"kind": "text", "x": 290, "y": 270, "text": "temperature", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "Too hot breaks the bonds holding the shape. The active site changes. That's denaturation.", "write": "too hot → denatured" },
+        { "say": "Cold just slows enzymes. Warm them up and they work again.", "write": "cold: inactive, not denatured" },
+        { "say": "Each enzyme has an optimum pH. Pepsin near 2, trypsin near 8.", "write": "pepsin pH 2, trypsin pH 8" },
+        { "say": "Denaturation is usually permanent. Like cooking an egg white.", "write": "usually permanent" }
+      ] },
+    { "heading": "Substrate and enzyme amounts",
+      "lines": [
+        { "say": "Add more substrate, and active sites fill more often. The rate goes up.",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Rate rises then plateaus with more substrate", "items": [
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black"},
+            {"kind": "arrow", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black"},
+            {"kind": "line", "x": 50, "y": 240, "x2": 150, "y2": 110, "color": "blue"},
+            {"kind": "line", "x": 150, "y": 110, "x2": 250, "y2": 75, "color": "blue"},
+            {"kind": "line", "x": 250, "y": 75, "x2": 510, "y2": 70, "color": "blue", "change": "highlight"},
+            {"kind": "text", "x": 380, "y": 55, "text": "plateau: saturated", "size": 18, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 290, "y": 270, "text": "substrate concentration", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "Then every active site is busy. The rate levels off. The enzymes are saturated.", "write": "saturated → plateau" },
+        { "say": "On the plateau, enzyme concentration is the limiting factor.", "write": "limiting: enzyme" },
+        { "say": "With plenty of substrate, double the enzyme and you double the rate.", "write": "2 × enzyme → 2 × rate" }
+      ] },
+    { "heading": "Inhibitors",
+      "lines": [
+        { "say": "A competitive inhibitor looks like the substrate. It blocks the active site.",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Competitive inhibitor in active site; non-competitive at allosteric site", "items": [
+            {"kind": "rect", "x": 40, "y": 110, "w": 180, "h": 90, "fill": "blue", "label": "enzyme"},
+            {"kind": "polygon", "points": [[100,110],[130,70],[160,110]], "fill": "red", "change": "add"},
+            {"kind": "text", "x": 130, "y": 225, "text": "competitive", "size": 18, "anchor": "middle"},
+            {"kind": "rect", "x": 330, "y": 110, "w": 180, "h": 90, "fill": "blue", "label": "enzyme"},
+            {"kind": "circle", "x": 510, "y": 200, "r": 22, "fill": "purple", "change": "add"},
+            {"kind": "text", "x": 420, "y": 225, "text": "non-competitive", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "More substrate can outcompete it. The maximum rate is still reached.", "write": "competitive: overcome by more S" },
+        { "say": "A non-competitive inhibitor binds an allosteric site and changes the shape.", "write": "allosteric site" },
+        { "say": "More substrate can't fix that. The maximum rate is lower.", "write": "non-competitive: lower max" },
+        { "say": "Irreversible inhibitors bind for good. Many poisons work this way.", "write": "irreversible: poisons" }
+      ] },
+    { "heading": "Controlling a pathway",
+      "lines": [
+        { "say": "In a pathway, each step's product is the next step's substrate.", "write": "A → B → C → D" },
+        { "say": "When product D builds up, it inhibits enzyme one. The whole pathway slows.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "End product D inhibits enzyme 1", "items": [
+            {"kind": "circle", "x": 60, "y": 130, "r": 30, "fill": "blue", "label": "A"},
+            {"kind": "arrow", "x": 95, "y": 130, "x2": 165, "y2": 130, "color": "black"},
+            {"kind": "circle", "x": 200, "y": 130, "r": 30, "fill": "blue", "label": "B"},
+            {"kind": "arrow", "x": 235, "y": 130, "x2": 305, "y2": 130, "color": "black"},
+            {"kind": "circle", "x": 340, "y": 130, "r": 30, "fill": "blue", "label": "C"},
+            {"kind": "arrow", "x": 375, "y": 130, "x2": 445, "y2": 130, "color": "black"},
+            {"kind": "circle", "x": 490, "y": 130, "r": 36, "fill": "green", "label": "D D D", "change": "highlight"},
+            {"kind": "arrow", "x": 480, "y": 90, "x2": 140, "y2": 40, "color": "red", "change": "add"},
+            {"kind": "line", "x": 130, "y": 30, "x2": 130, "y2": 110, "color": "red", "change": "add"},
+            {"kind": "text", "x": 310, "y": 30, "text": "feedback inhibition", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "When D falls, the inhibitor comes off. The pathway speeds up again.", "write": "end-product inhibition" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Enzymes aren't killed. They're molecules, so they're denatured.", "write": "denatured, not killed" },
+        { "say": "The active site isn't the same shape as the substrate. It's complementary.", "write": "complementary, not identical" },
+        { "say": "Competitive binds the active site. Non-competitive binds an allosteric site.", "write": "active vs allosteric site" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Enzymes lower activation energy and are reused.", "write": "lower Ea, reusable" },
+        { "say": "Induced fit. The active site moulds to the substrate.", "write": "induced fit" },
+        { "say": "Heat and extreme pH denature. Cold only slows.", "write": "heat denatures, cold slows" },
+        { "say": "End products switch off early enzymes to control pathways.", "write": "feedback inhibition" }
+      ] }
+  ]
+}

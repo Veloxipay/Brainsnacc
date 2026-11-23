@@ -1,0 +1,79 @@
+{"level":"Uni Year 1","subject":"biology","title":"Cell structure","frames":[
+{"heading":"Why cells stay small","lines":[
+{"say":"Cell theory: all living things are made of cells, and cells come from cells.","write":"Cell theory"},
+{"say":"Exchange happens at the surface, but the volume sets how much is needed.","write":"SA : V ratio"},
+{"say":"A cube with 1 micrometre sides has a ratio of 6 to 1.","write":"1 µm cube → 6 : 1","draw":{"type":"shapes","width":560,"height":260,"alt":"Small cube with high SA:V and large cube with low SA:V","items":[
+{"kind":"rect","x":60,"y":150,"w":40,"h":40,"fill":"blue"},
+{"kind":"text","x":80,"y":230,"text":"6 : 1","size":22,"anchor":"middle","bold":true}]}},
+{"say":"Make it 10 micrometres, and the ratio drops to 0.6 to 1.","write":"10 µm cube → 0.6 : 1","draw":{"type":"shapes","width":560,"height":260,"alt":"Large cube added with much lower SA:V","items":[
+{"kind":"rect","x":60,"y":150,"w":40,"h":40,"fill":"blue"},
+{"kind":"text","x":80,"y":230,"text":"6 : 1","size":22,"anchor":"middle","bold":true},
+{"kind":"rect","x":260,"y":20,"w":200,"h":200,"fill":"orange","change":"add"},
+{"kind":"text","x":360,"y":250,"text":"0.6 : 1","size":22,"anchor":"middle","bold":true,"change":"highlight"}]}},
+{"say":"Big cells can't exchange fast enough, unless they're thin or folded.","write":"bigger → too slow"}]},
+{"heading":"Prokaryotes vs eukaryotes","lines":[
+{"say":"Pro means no nucleus. The DNA sits in a region called the nucleoid.","write":"Prokaryote: nucleoid"},
+{"say":"Prokaryotes have 70 S ribosomes, often plasmids, and no membrane-bound organelles.","write":"70S, plasmids, no organelles","draw":{"type":"shapes","width":560,"height":240,"alt":"Bacterium with nucleoid, plasmid, ribosomes and flagellum","items":[
+{"kind":"rect","x":80,"y":60,"w":340,"h":130,"fill":"teal"},
+{"kind":"circle","x":200,"y":125,"r":40,"fill":"purple","label":"nucleoid"},
+{"kind":"circle","x":330,"y":100,"r":16,"fill":"orange","label":"p"},
+{"kind":"circle","x":300,"y":160,"r":6,"fill":"black"},
+{"kind":"circle","x":340,"y":160,"r":6,"fill":"black"},
+{"kind":"line","x":420,"y":125,"x2":540,"y2":125,"color":"black","change":"add"},
+{"kind":"text","x":250,"y":225,"text":"1–5 µm","size":18,"anchor":"middle"}]}},
+{"say":"Bacterial walls contain peptidoglycan. Archaea walls don't.","write":"peptidoglycan = bacteria"},
+{"say":"Eukaryotes have a nucleus with a double membrane and pores, and 80 S ribosomes.","write":"Eukaryote: nucleus, 80S"},
+{"say":"Their organelles make compartments, so different reactions can run at once.","write":"compartments"}]},
+{"heading":"The endomembrane route","lines":[
+{"say":"Think of a factory and post office. Follow one secreted protein.","write":"secreted protein"},
+{"say":"A signal sequence docks the ribosome on the rough E R.","write":"signal sequence → rough ER"},
+{"say":"In the E R lumen it folds and gets its first sugars.","write":"fold + glycosylation"},
+{"say":"A vesicle carries it to the Golgi: in at the cis face, out at the trans face.","write":"Golgi: cis in, trans out","draw":{"type":"shapes","width":560,"height":220,"alt":"Rough ER to vesicle to Golgi to secretory vesicle to membrane","items":[
+{"kind":"rect","x":10,"y":70,"w":110,"h":70,"fill":"blue","label":"rough ER"},
+{"kind":"arrow","x":120,"y":105,"x2":160,"y2":105,"color":"black"},
+{"kind":"circle","x":180,"y":105,"r":18,"fill":"yellow"},
+{"kind":"arrow","x":200,"y":105,"x2":240,"y2":105,"color":"black"},
+{"kind":"rect","x":240,"y":70,"w":110,"h":70,"fill":"orange","label":"Golgi"},
+{"kind":"arrow","x":350,"y":105,"x2":390,"y2":105,"color":"black","change":"add"},
+{"kind":"circle","x":410,"y":105,"r":18,"fill":"yellow","change":"add"},
+{"kind":"rect","x":500,"y":20,"w":20,"h":180,"fill":"grey"},
+{"kind":"arrow","x":430,"y":105,"x2":540,"y2":105,"color":"green","change":"add"},
+{"kind":"text","x":280,"y":200,"text":"exocytosis","size":18,"anchor":"middle"}]}},
+{"say":"A secretory vesicle fuses with the membrane. That's exocytosis.","write":"exocytosis"},
+{"say":"Mitochondria and chloroplasts are not part of this system.","write":"not mitochondria, chloroplasts"}]},
+{"heading":"The cytoskeleton","lines":[
+{"say":"Three fibres: microfilaments, intermediate filaments and microtubules.","write":"actin · IF · tubulin","draw":{"type":"shapes","width":560,"height":220,"alt":"Three fibres of increasing thickness","items":[
+{"kind":"rect","x":40,"y":50,"w":480,"h":8,"fill":"red","label":""},
+{"kind":"text","x":40,"y":40,"text":"microfilament, actin, 7 nm","size":16},
+{"kind":"rect","x":40,"y":110,"w":480,"h":14,"fill":"orange"},
+{"kind":"text","x":40,"y":100,"text":"intermediate filament, 8–12 nm","size":16},
+{"kind":"rect","x":40,"y":170,"w":480,"h":30,"fill":"blue","change":"highlight"},
+{"kind":"text","x":40,"y":160,"text":"microtubule, hollow, 25 nm","size":16}]}},
+{"say":"Actin gives shape and works with myosin in muscle.","write":"actin + myosin"},
+{"say":"Microtubules are the tracks. Kinesin kicks out, dynein drags in.","write":"kinesin out, dynein in"},
+{"say":"Cilia have a nine plus two pattern and bend. They never rotate.","write":"9 + 2: bends, not rotates"}]},
+{"heading":"Endosymbiosis","lines":[
+{"say":"Mitochondria came from an engulfed bacterium. Chloroplasts came from a cyanobacterium.","write":"engulfed bacteria"},
+{"say":"The bacterium was wrapped in host membrane. That explains two membranes.","write":"Two membranes","draw":{"type":"shapes","width":560,"height":240,"alt":"Host membrane wraps a bacterium, giving a double membrane","items":[
+{"kind":"circle","x":280,"y":120,"r":60,"fill":"teal","label":"bacterium"},
+{"kind":"circle","x":280,"y":120,"r":80,"fill":"none","change":"add"},
+{"kind":"text","x":280,"y":225,"text":"host membrane wraps it","size":18,"anchor":"middle","change":"add"}]}},
+{"say":"Two DNA Ribs Divide: two membranes, circular DNA, 70 S ribosomes, binary fission.","write":"Two DNA Ribs Divide"},
+{"say":"Add their bacterial size and rRNA sequences for full marks.","write":"+ size, rRNA"}]},
+{"heading":"Microscopy: I AM","lines":[
+{"say":"Image equals actual size times magnification.","write":"M = image ÷ actual"},
+{"say":"An image is 36 millimetres at 18,000 times. Convert first: 36,000 micrometres.","write":"36 mm = 36 000 µm"},
+{"say":"Divide by 18,000. The mitochondrion is 2 micrometres long.","write":"36 000 ÷ 18 000 = 2.0 µm","draw":{"type":"shapes","width":560,"height":200,"alt":"I AM triangle","items":[
+{"kind":"polygon","points":[[280,20],[120,180],[440,180]],"fill":"yellow"},
+{"kind":"line","x":180,"y":120,"x2":380,"y2":120,"color":"black"},
+{"kind":"text","x":280,"y":100,"text":"I","size":28,"anchor":"middle","bold":true},
+{"kind":"text","x":225,"y":160,"text":"A","size":28,"anchor":"middle","bold":true,"change":"highlight"},
+{"kind":"text","x":335,"y":160,"text":"M","size":28,"anchor":"middle","bold":true}]}},
+{"say":"Resolution, not magnification, limits detail. Light microscopes reach about 200 nanometres.","write":"light: ~200 nm"},
+{"say":"Electron microscopes see much finer detail, but only in dead, fixed samples.","write":"TEM, SEM: fixed samples"}]},
+{"heading":"Remember","lines":[
+{"say":"Prokaryotes have ribosomes. They just lack membrane-bound organelles.","write":"✗ prokaryotes: no ribosomes"},
+{"say":"Always convert to the same units before dividing.","write":"1 mm = 1000 µm"},
+{"say":"Ribosome, rough E R, vesicle, Golgi, vesicle, membrane.","write":"RER → Golgi → out"},
+{"say":"Bigger magnification past the limit just gives a bigger blur.","write":"resolution limits detail"}]}
+]}

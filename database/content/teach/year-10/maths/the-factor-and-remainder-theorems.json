@@ -1,0 +1,1311 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "The factor and remainder theorems",
+  "frames": [
+    {
+      "heading": "The remainder theorem",
+      "lines": [
+        {
+          "say": "Divide P of x by x minus a. The remainder is just P of a.",
+          "write": "remainder = P(a)"
+        },
+        {
+          "say": "Why? P of x is x minus a, times Q, plus R.",
+          "write": "P(x) = (x − a)Q(x) + R"
+        },
+        {
+          "say": "Put x equals a. The bracket becomes 0, so P of a equals R.",
+          "write": "P(a) = 0 × Q(a) + R = R"
+        },
+        {
+          "say": "Dividing by x minus 3? Substitute x equals 3.",
+          "write": "x − 3 → x = 3"
+        },
+        {
+          "say": "Dividing by x plus 2? That is x minus negative 2, so use minus 2.",
+          "write": "x + 2 → x = −2"
+        }
+      ]
+    },
+    {
+      "heading": "The remainder as a height",
+      "lines": [
+        {
+          "say": "Here is y equals x cubed minus x squared minus 4x plus 4.",
+          "write": "P(x) = x³ − x² − 4x + 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Graph of y = x³ − x² − 4x + 4",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 20.0,
+                "y": 203.3,
+                "x2": 545.0,
+                "y2": 203.3,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 276.5,
+                "y": 300.0,
+                "x2": 276.5,
+                "y2": 15.0,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 120.8,
+                "y": 244.3,
+                "x2": 134.6,
+                "y2": 206.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 134.6,
+                "y": 206.0,
+                "x2": 148.3,
+                "y2": 175.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 148.3,
+                "y": 175.3,
+                "x2": 162.0,
+                "y2": 151.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 162.0,
+                "y": 151.8,
+                "x2": 175.8,
+                "y2": 134.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 175.8,
+                "y": 134.7,
+                "x2": 189.5,
+                "y2": 123.4,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 189.5,
+                "y": 123.4,
+                "x2": 203.2,
+                "y2": 117.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 203.2,
+                "y": 117.3,
+                "x2": 217.0,
+                "y2": 115.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 217.0,
+                "y": 115.8,
+                "x2": 230.7,
+                "y2": 118.1,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 230.7,
+                "y": 118.1,
+                "x2": 244.4,
+                "y2": 123.6,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 244.4,
+                "y": 123.6,
+                "x2": 258.2,
+                "y2": 131.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 258.2,
+                "y": 131.8,
+                "x2": 271.9,
+                "y2": 141.9,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 271.9,
+                "y": 141.9,
+                "x2": 285.6,
+                "y2": 153.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 285.6,
+                "y": 153.3,
+                "x2": 299.4,
+                "y2": 165.4,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 299.4,
+                "y": 165.4,
+                "x2": 313.1,
+                "y2": 177.5,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 313.1,
+                "y": 177.5,
+                "x2": 326.8,
+                "y2": 189.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 326.8,
+                "y": 189.0,
+                "x2": 340.6,
+                "y2": 199.2,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 340.6,
+                "y": 199.2,
+                "x2": 354.3,
+                "y2": 207.5,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 354.3,
+                "y": 207.5,
+                "x2": 368.0,
+                "y2": 213.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 368.0,
+                "y": 213.3,
+                "x2": 381.8,
+                "y2": 216.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 381.8,
+                "y": 216.0,
+                "x2": 395.5,
+                "y2": 214.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 395.5,
+                "y": 214.7,
+                "x2": 409.2,
+                "y2": 209.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 409.2,
+                "y": 209.0,
+                "x2": 423.0,
+                "y2": 198.2,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 423.0,
+                "y": 198.2,
+                "x2": 436.7,
+                "y2": 181.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 436.7,
+                "y": 181.7,
+                "x2": 450.4,
+                "y2": 158.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 450.4,
+                "y": 158.7,
+                "x2": 464.2,
+                "y2": 128.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 464.2,
+                "y": 128.7,
+                "x2": 477.9,
+                "y2": 91.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 477.9,
+                "y": 91.0,
+                "x2": 491.6,
+                "y2": 45.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 135.6,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 135.6,
+                "y": 227.3,
+                "text": "-2",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 346.9,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 346.9,
+                "y": 227.3,
+                "text": "1",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 417.3,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 417.3,
+                "y": 227.3,
+                "text": "2",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Divide by x minus 3. The remainder is the height of the graph at 3.",
+          "write": "P(3) = 27 − 9 − 12 + 4 = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Graph of y = x³ − x² − 4x + 4",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 20.0,
+                "y": 203.3,
+                "x2": 545.0,
+                "y2": 203.3,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 276.5,
+                "y": 300.0,
+                "x2": 276.5,
+                "y2": 15.0,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 120.8,
+                "y": 244.3,
+                "x2": 134.6,
+                "y2": 206.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 134.6,
+                "y": 206.0,
+                "x2": 148.3,
+                "y2": 175.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 148.3,
+                "y": 175.3,
+                "x2": 162.0,
+                "y2": 151.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 162.0,
+                "y": 151.8,
+                "x2": 175.8,
+                "y2": 134.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 175.8,
+                "y": 134.7,
+                "x2": 189.5,
+                "y2": 123.4,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 189.5,
+                "y": 123.4,
+                "x2": 203.2,
+                "y2": 117.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 203.2,
+                "y": 117.3,
+                "x2": 217.0,
+                "y2": 115.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 217.0,
+                "y": 115.8,
+                "x2": 230.7,
+                "y2": 118.1,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 230.7,
+                "y": 118.1,
+                "x2": 244.4,
+                "y2": 123.6,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 244.4,
+                "y": 123.6,
+                "x2": 258.2,
+                "y2": 131.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 258.2,
+                "y": 131.8,
+                "x2": 271.9,
+                "y2": 141.9,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 271.9,
+                "y": 141.9,
+                "x2": 285.6,
+                "y2": 153.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 285.6,
+                "y": 153.3,
+                "x2": 299.4,
+                "y2": 165.4,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 299.4,
+                "y": 165.4,
+                "x2": 313.1,
+                "y2": 177.5,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 313.1,
+                "y": 177.5,
+                "x2": 326.8,
+                "y2": 189.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 326.8,
+                "y": 189.0,
+                "x2": 340.6,
+                "y2": 199.2,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 340.6,
+                "y": 199.2,
+                "x2": 354.3,
+                "y2": 207.5,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 354.3,
+                "y": 207.5,
+                "x2": 368.0,
+                "y2": 213.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 368.0,
+                "y": 213.3,
+                "x2": 381.8,
+                "y2": 216.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 381.8,
+                "y": 216.0,
+                "x2": 395.5,
+                "y2": 214.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 395.5,
+                "y": 214.7,
+                "x2": 409.2,
+                "y2": 209.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 409.2,
+                "y": 209.0,
+                "x2": 423.0,
+                "y2": 198.2,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 423.0,
+                "y": 198.2,
+                "x2": 436.7,
+                "y2": 181.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 436.7,
+                "y": 181.7,
+                "x2": 450.4,
+                "y2": 158.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 450.4,
+                "y": 158.7,
+                "x2": 464.2,
+                "y2": 128.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 464.2,
+                "y": 128.7,
+                "x2": 477.9,
+                "y2": 91.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 477.9,
+                "y": 91.0,
+                "x2": 491.6,
+                "y2": 45.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 135.6,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 135.6,
+                "y": 227.3,
+                "text": "-2",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 346.9,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 346.9,
+                "y": 227.3,
+                "text": "1",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 417.3,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 417.3,
+                "y": 227.3,
+                "text": "2",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 487.7,
+                "y": 203.3,
+                "x2": 487.7,
+                "y2": 58.9,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 487.7,
+                "y": 58.9,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 437.7,
+                "y": 58.9,
+                "text": "P(3) = 10",
+                "size": 16,
+                "color": "red",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Another one: x cubed minus 4x squared plus 2x minus 5, over x minus 3.",
+          "write": "P(3) = 27 − 36 + 6 − 5"
+        },
+        {
+          "say": "That gives minus 8. So the remainder is minus 8.",
+          "write": "remainder = −8"
+        }
+      ]
+    },
+    {
+      "heading": "The factor theorem",
+      "lines": [
+        {
+          "say": "If P of a is 0, there is no remainder.",
+          "write": "P(a) = 0"
+        },
+        {
+          "say": "So x minus a divides exactly. It is a factor.",
+          "write": "x − a is a factor"
+        },
+        {
+          "say": "These zeros are where the graph crosses the x-axis.",
+          "write": "zeros = x-intercepts",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Graph of y = x³ − x² − 4x + 4",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 20.0,
+                "y": 203.3,
+                "x2": 545.0,
+                "y2": 203.3,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 276.5,
+                "y": 300.0,
+                "x2": 276.5,
+                "y2": 15.0,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 120.8,
+                "y": 244.3,
+                "x2": 134.6,
+                "y2": 206.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 134.6,
+                "y": 206.0,
+                "x2": 148.3,
+                "y2": 175.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 148.3,
+                "y": 175.3,
+                "x2": 162.0,
+                "y2": 151.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 162.0,
+                "y": 151.8,
+                "x2": 175.8,
+                "y2": 134.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 175.8,
+                "y": 134.7,
+                "x2": 189.5,
+                "y2": 123.4,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 189.5,
+                "y": 123.4,
+                "x2": 203.2,
+                "y2": 117.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 203.2,
+                "y": 117.3,
+                "x2": 217.0,
+                "y2": 115.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 217.0,
+                "y": 115.8,
+                "x2": 230.7,
+                "y2": 118.1,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 230.7,
+                "y": 118.1,
+                "x2": 244.4,
+                "y2": 123.6,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 244.4,
+                "y": 123.6,
+                "x2": 258.2,
+                "y2": 131.8,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 258.2,
+                "y": 131.8,
+                "x2": 271.9,
+                "y2": 141.9,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 271.9,
+                "y": 141.9,
+                "x2": 285.6,
+                "y2": 153.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 285.6,
+                "y": 153.3,
+                "x2": 299.4,
+                "y2": 165.4,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 299.4,
+                "y": 165.4,
+                "x2": 313.1,
+                "y2": 177.5,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 313.1,
+                "y": 177.5,
+                "x2": 326.8,
+                "y2": 189.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 326.8,
+                "y": 189.0,
+                "x2": 340.6,
+                "y2": 199.2,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 340.6,
+                "y": 199.2,
+                "x2": 354.3,
+                "y2": 207.5,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 354.3,
+                "y": 207.5,
+                "x2": 368.0,
+                "y2": 213.3,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 368.0,
+                "y": 213.3,
+                "x2": 381.8,
+                "y2": 216.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 381.8,
+                "y": 216.0,
+                "x2": 395.5,
+                "y2": 214.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 395.5,
+                "y": 214.7,
+                "x2": 409.2,
+                "y2": 209.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 409.2,
+                "y": 209.0,
+                "x2": 423.0,
+                "y2": 198.2,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 423.0,
+                "y": 198.2,
+                "x2": 436.7,
+                "y2": 181.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 436.7,
+                "y": 181.7,
+                "x2": 450.4,
+                "y2": 158.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 450.4,
+                "y": 158.7,
+                "x2": 464.2,
+                "y2": 128.7,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 464.2,
+                "y": 128.7,
+                "x2": 477.9,
+                "y2": 91.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 477.9,
+                "y": 91.0,
+                "x2": 491.6,
+                "y2": 45.0,
+                "color": "blue",
+                "stroke": 4
+              },
+              {
+                "kind": "circle",
+                "x": 135.6,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 135.6,
+                "y": 227.3,
+                "text": "-2",
+                "size": 16,
+                "color": "red",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 346.9,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 346.9,
+                "y": 227.3,
+                "text": "1",
+                "size": 16,
+                "color": "red",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 417.3,
+                "y": 203.3,
+                "r": 6,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 417.3,
+                "y": 227.3,
+                "text": "2",
+                "size": 16,
+                "color": "red",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 487.7,
+                "y": 203.3,
+                "x2": 487.7,
+                "y2": 58.9,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 487.7,
+                "y": 58.9,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 437.7,
+                "y": 58.9,
+                "text": "P(3) = 10",
+                "size": 16,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Careful: if P of minus 3 is 0, the factor is x plus 3.",
+          "write": "P(−3) = 0 → (x + 3)"
+        }
+      ]
+    },
+    {
+      "heading": "Which numbers to test?",
+      "lines": [
+        {
+          "say": "Testing a number is like trying a key in a lock.",
+          "write": "P(x) = x³ − 2x² − 11x + 12"
+        },
+        {
+          "say": "Whole-number zeros must divide the constant term, 12.",
+          "write": "try factors of 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Factors of 12 to test",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±1"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±2"
+              },
+              {
+                "kind": "rect",
+                "x": 206,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±3"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±4"
+              },
+              {
+                "kind": "rect",
+                "x": 362,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±6"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±12"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "Factors of 12",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Try 1. 1 minus 2 minus 11 plus 12 is 0. It fits!",
+          "write": "P(1) = 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Factors of 12 to test",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 50,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "green",
+                "change": "highlight",
+                "label": "±1"
+              },
+              {
+                "kind": "rect",
+                "x": 128,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±2"
+              },
+              {
+                "kind": "rect",
+                "x": 206,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±3"
+              },
+              {
+                "kind": "rect",
+                "x": 284,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±4"
+              },
+              {
+                "kind": "rect",
+                "x": 362,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±6"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "±12"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "x − 1 is a factor",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Divide by x minus 1. The quotient is x squared minus x minus 12.",
+          "write": "x² − x − 12"
+        },
+        {
+          "say": "Factorise the quadratic: x minus 4, times x plus 3.",
+          "write": "(x − 1)(x − 4)(x + 3)"
+        },
+        {
+          "say": "The zeros are 1, 4 and minus 3. They match the graph.",
+          "write": "x = 1, 4, −3",
+          "diagram": "diagrams/y10/maths/the-factor-and-remainder-theorems-zeros.svg",
+          "alt": "Graph crossing at −3, 1 and 4"
+        }
+      ]
+    },
+    {
+      "heading": "Finding an unknown",
+      "lines": [
+        {
+          "say": "x minus 2 is a factor of 2x cubed plus k x squared minus 7x minus 6.",
+          "write": "P(x) = 2x³ + kx² − 7x − 6"
+        },
+        {
+          "say": "Factor theorem: P of 2 must be 0.",
+          "write": "P(2) = 0"
+        },
+        {
+          "say": "16 plus 4k minus 14 minus 6 equals 0. So 4k is 4, and k is 1.",
+          "write": "4k − 4 = 0,  k = 1"
+        },
+        {
+          "say": "Divide by x minus 2, then factorise the quadratic.",
+          "write": "(x − 2)(2x + 3)(x + 1)"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "For x plus 2, substitute minus 2, not 2.",
+          "write": "x + 2 → −2"
+        },
+        {
+          "say": "P of a equals 0 means x minus a is the factor, not a.",
+          "write": "factor is x − a"
+        },
+        {
+          "say": "Fully factorise means keep going until every bracket is linear.",
+          "write": "keep going"
+        },
+        {
+          "say": "Use brackets. Minus 2 squared is 4, minus 2 cubed is minus 8.",
+          "write": "(−2)² = 4, (−2)³ = −8"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Remainder on dividing by x minus a is P of a.",
+          "write": "R = P(a)"
+        },
+        {
+          "say": "Zero remainder means a factor.",
+          "write": "P(a) = 0 ⇔ (x − a) factor"
+        },
+        {
+          "say": "Test, divide, factorise.",
+          "write": "test, divide, factorise"
+        }
+      ]
+    }
+  ]
+}

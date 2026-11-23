@@ -1,0 +1,110 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Algorithms for number problems",
+  "frames": [
+    { "heading": "What is an algorithm?",
+      "lines": [
+        { "say": "An algorithm is a set of exact steps that always works.", "write": "algorithm = exact steps" },
+        { "say": "A good one is exact, so no guessing.", "write": "exact" },
+        { "say": "It is finite, so it must stop. And efficient, so no wasted steps.", "write": "finite, efficient" }
+      ] },
+    { "heading": "Euclid's algorithm with tiles",
+      "lines": [
+        { "say": "Here's a floor, 84 by 36. What's the biggest square tile that fits exactly?", "write": "84 × 36 floor",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "An 84 by 36 rectangle", "items": [
+            {"kind": "rect", "x": 70, "y": 40, "w": 420, "h": 180, "fill": "white"},
+            {"kind": "text", "x": 280, "y": 30, "text": "84", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 50, "y": 135, "text": "36", "size": 20, "anchor": "middle"}]}},
+        { "say": "Lay 36 by 36 squares. Two fit, leaving a 12 wide strip.", "write": "84 = 2 × 36 + 12",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Two 36 squares fill the rectangle leaving a 12 strip", "items": [
+            {"kind": "rect", "x": 70, "y": 40, "w": 420, "h": 180, "fill": "white"},
+            {"kind": "rect", "x": 70, "y": 40, "w": 180, "h": 180, "fill": "blue", "label": "36", "change": "add"},
+            {"kind": "rect", "x": 250, "y": 40, "w": 180, "h": 180, "fill": "blue", "label": "36", "change": "add"},
+            {"kind": "rect", "x": 430, "y": 40, "w": 60, "h": 180, "fill": "yellow", "label": "12", "change": "highlight"},
+            {"kind": "text", "x": 280, "y": 250, "text": "remainder 12", "size": 20, "anchor": "middle"}]}},
+        { "say": "Now tile the 36 by 12 strip with 12 by 12 squares. Three fit exactly.", "write": "36 = 3 × 12 + 0",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Three 12 squares fill the strip exactly", "items": [
+            {"kind": "rect", "x": 70, "y": 40, "w": 180, "h": 180, "fill": "blue", "label": "36"},
+            {"kind": "rect", "x": 250, "y": 40, "w": 180, "h": 180, "fill": "blue", "label": "36"},
+            {"kind": "rect", "x": 430, "y": 40, "w": 60, "h": 60, "fill": "green", "label": "12", "change": "add"},
+            {"kind": "rect", "x": 430, "y": 100, "w": 60, "h": 60, "fill": "green", "label": "12", "change": "add"},
+            {"kind": "rect", "x": 430, "y": 160, "w": 60, "h": 60, "fill": "green", "label": "12", "change": "add"},
+            {"kind": "text", "x": 280, "y": 250, "text": "remainder 0 → stop", "size": 20, "anchor": "middle"}]}},
+        { "say": "Remainder zero, so stop. The HCF of 84 and 36 is 12.", "write": "HCF = 12" },
+        { "say": "Divide, remainder, swap, repeat, until the remainder is zero.", "write": "divide, remainder, swap, repeat",
+          "diagram": "diagrams/y7/maths-advanced/algorithms-for-number-problems-euclid.svg", "alt": "Flowchart of Euclid's algorithm" }
+      ] },
+    { "heading": "Testing for primes",
+      "lines": [
+        { "say": "To test if a number is prime, try primes up to its square root.", "write": "test primes up to √n" },
+        { "say": "Why? A bigger factor always has a smaller partner you've already tried.", "write": "factors come in pairs" },
+        { "say": "Is 323 prime? 17 squared is 289, 18 squared is 324. So test up to 17.", "write": "√323 ≈ 17.97" },
+        { "say": "2, 3, 5, 7, 11 and 13 all leave a remainder.", "write": "2, 3, 5, 7, 11, 13 ✗",
+          "draw": {"type": "shapes", "width": 560, "height": 160, "alt": "Primes 2 to 13 crossed out, 17 highlighted", "items": [
+            {"kind": "circle", "x": 50, "y": 70, "r": 28, "fill": "grey", "label": "2", "change": "remove"},
+            {"kind": "circle", "x": 125, "y": 70, "r": 28, "fill": "grey", "label": "3", "change": "remove"},
+            {"kind": "circle", "x": 200, "y": 70, "r": 28, "fill": "grey", "label": "5", "change": "remove"},
+            {"kind": "circle", "x": 275, "y": 70, "r": 28, "fill": "grey", "label": "7", "change": "remove"},
+            {"kind": "circle", "x": 350, "y": 70, "r": 28, "fill": "grey", "label": "11", "change": "remove"},
+            {"kind": "circle", "x": 425, "y": 70, "r": 28, "fill": "grey", "label": "13", "change": "remove"},
+            {"kind": "circle", "x": 505, "y": 70, "r": 28, "fill": "green", "label": "17", "change": "highlight"},
+            {"kind": "text", "x": 280, "y": 140, "text": "323 ÷ 17 = 19", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "But 323 divided by 17 is 19 exactly. So 323 is not prime.", "write": "323 = 17 × 19" }
+      ] },
+    { "heading": "Converting to binary",
+      "lines": [
+        { "say": "Binary uses only 0 and 1. Place values double: 1, 2, 4, 8, 16, 32.", "write": "32 16 8 4 2 1" },
+        { "say": "To convert 45, keep dividing by 2 and write each remainder.", "write": "45 ÷ 2 = 22 r 1",
+          "draw": {"type": "shapes", "width": 560, "height": 320, "alt": "Repeated division of 45 by 2 with remainders", "items": [
+            {"kind": "text", "x": 120, "y": 40, "text": "45 ÷ 2 = 22", "size": 22},
+            {"kind": "text", "x": 120, "y": 85, "text": "22 ÷ 2 = 11", "size": 22},
+            {"kind": "text", "x": 120, "y": 130, "text": "11 ÷ 2 = 5", "size": 22},
+            {"kind": "text", "x": 120, "y": 175, "text": "5 ÷ 2 = 2", "size": 22},
+            {"kind": "text", "x": 120, "y": 220, "text": "2 ÷ 2 = 1", "size": 22},
+            {"kind": "text", "x": 120, "y": 265, "text": "1 ÷ 2 = 0", "size": 22},
+            {"kind": "text", "x": 330, "y": 40, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 85, "text": "r 0", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 130, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 175, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 220, "text": "r 0", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 265, "text": "r 1", "size": 22, "color": "blue"}]}},
+        { "say": "Now read the remainders from the floor up.", "write": "read bottom to top",
+          "draw": {"type": "shapes", "width": 560, "height": 320, "alt": "Arrow reading remainders from the bottom up to give 101101", "items": [
+            {"kind": "text", "x": 120, "y": 40, "text": "45 ÷ 2 = 22", "size": 22},
+            {"kind": "text", "x": 120, "y": 85, "text": "22 ÷ 2 = 11", "size": 22},
+            {"kind": "text", "x": 120, "y": 130, "text": "11 ÷ 2 = 5", "size": 22},
+            {"kind": "text", "x": 120, "y": 175, "text": "5 ÷ 2 = 2", "size": 22},
+            {"kind": "text", "x": 120, "y": 220, "text": "2 ÷ 2 = 1", "size": 22},
+            {"kind": "text", "x": 120, "y": 265, "text": "1 ÷ 2 = 0", "size": 22},
+            {"kind": "text", "x": 330, "y": 40, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 85, "text": "r 0", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 130, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 175, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 220, "text": "r 0", "size": 22, "color": "blue"},
+            {"kind": "text", "x": 330, "y": 265, "text": "r 1", "size": 22, "color": "blue"},
+            {"kind": "arrow", "x": 400, "y": 270, "x2": 400, "y2": 30, "color": "purple", "change": "add"},
+            {"kind": "text", "x": 480, "y": 160, "text": "101101", "size": 26, "bold": true, "anchor": "middle", "color": "purple", "change": "add"}]}},
+        { "say": "So 45 is 1 0 1 1 0 1. Check: 32 plus 8 plus 4 plus 1 is 45.", "write": "45 = 101101₂" }
+      ] },
+    { "heading": "Trace tables and going backwards",
+      "lines": [
+        { "say": "Start with 1. Double it until it's greater than 1000. How many passes?", "write": "double until > 1000" },
+        { "say": "Trace it. 2, 4, 8, 16, 32, 64, 128, 256, 512.", "write": "pass 9: 512" },
+        { "say": "512 is not over 1000, so go again. Pass 10 gives 1024. Stop.", "write": "pass 10: 1024 → 10 times" },
+        { "say": "To run an algorithm backwards, reverse the order and use opposite operations.", "write": "× 2 ↔ ÷ 2,  − 1 ↔ + 1" },
+        { "say": "Like taking off your shoes before your socks.", "write": "reverse order" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't stop Euclid early. Keep going until a remainder is zero.", "write": "remainder 0 → last divisor" },
+        { "say": "Don't read binary top-down. The first remainder is the ones place.", "write": "✗ 110101" },
+        { "say": "Watch for off-by-one errors. Check the stopping rule after every pass.", "write": "check after each pass" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Euclid: divide, remainder, swap, repeat.", "write": "divide, remainder, swap, repeat" },
+        { "say": "Primes: stop at the square root.", "write": "stop at √n" },
+        { "say": "Binary: read it from the floor up.", "write": "bottom up" },
+        { "say": "Backwards: reverse order, opposite operations.", "write": "reverse + inverse" }
+      ] }
+  ]
+}

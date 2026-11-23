@@ -1,0 +1,153 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Trigonometric ratios",
+  "frames": [
+    {
+      "heading": "What is trigonometry?",
+      "lines": [
+        { "say": "Trigonometry links the angles of a right-angled triangle to its sides.", "write": "trig" },
+        { "say": "Two ramps at the same angle are equally steep, whatever their size." },
+        { "say": "Rise over run depends only on the angle. Trig ratios are numbers like that.", "write": "ratio depends on angle" },
+        { "say": "We call the angle theta.", "write": "θ = theta" }
+      ]
+    },
+    {
+      "heading": "Naming the sides",
+      "lines": [
+        {
+          "say": "Here's a right-angled triangle with theta at the bottom right.",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Right-angled triangle with right angle bottom left and theta bottom right",
+            "items": [
+              { "kind": "polygon", "points": [[100,250],[460,250],[100,60]], "fill": "none" },
+              { "kind": "rect", "x": 100, "y": 230, "w": 20, "h": 20, "fill": "none" },
+              { "kind": "text", "x": 410, "y": 240, "text": "θ", "size": 24, "bold": true }
+            ]
+          }
+        },
+        {
+          "say": "The hypotenuse is opposite the right angle. It's the longest side.",
+          "write": "H = hypotenuse",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Hypotenuse highlighted",
+            "items": [
+              { "kind": "polygon", "points": [[100,250],[460,250],[100,60]], "fill": "none" },
+              { "kind": "rect", "x": 100, "y": 230, "w": 20, "h": 20, "fill": "none" },
+              { "kind": "text", "x": 410, "y": 240, "text": "θ", "size": 24, "bold": true },
+              { "kind": "line", "x": 460, "y": 250, "x2": 100, "y2": 60, "color": "purple", "change": "highlight" },
+              { "kind": "text", "x": 300, "y": 140, "text": "hypotenuse", "size": 20, "bold": true, "color": "purple", "change": "add" }
+            ]
+          }
+        },
+        {
+          "say": "The opposite side is across from theta. It doesn't touch theta.",
+          "write": "O = opposite",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Opposite side highlighted",
+            "items": [
+              { "kind": "polygon", "points": [[100,250],[460,250],[100,60]], "fill": "none" },
+              { "kind": "rect", "x": 100, "y": 230, "w": 20, "h": 20, "fill": "none" },
+              { "kind": "text", "x": 410, "y": 240, "text": "θ", "size": 24, "bold": true },
+              { "kind": "text", "x": 300, "y": 140, "text": "hypotenuse", "size": 20, "bold": true, "color": "purple" },
+              { "kind": "line", "x": 100, "y": 250, "x2": 100, "y2": 60, "color": "orange", "change": "highlight" },
+              { "kind": "text", "x": 90, "y": 160, "text": "opposite", "size": 20, "bold": true, "color": "orange", "anchor": "end", "change": "add" }
+            ]
+          }
+        },
+        {
+          "say": "The adjacent side touches theta, but it's not the hypotenuse.",
+          "write": "A = adjacent",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Adjacent side highlighted",
+            "items": [
+              { "kind": "polygon", "points": [[100,250],[460,250],[100,60]], "fill": "none" },
+              { "kind": "rect", "x": 100, "y": 230, "w": 20, "h": 20, "fill": "none" },
+              { "kind": "text", "x": 410, "y": 240, "text": "θ", "size": 24, "bold": true },
+              { "kind": "text", "x": 300, "y": 140, "text": "hypotenuse", "size": 20, "bold": true, "color": "purple" },
+              { "kind": "text", "x": 90, "y": 160, "text": "opposite", "size": 20, "bold": true, "color": "orange", "anchor": "end" },
+              { "kind": "line", "x": 100, "y": 250, "x2": 460, "y2": 250, "color": "green", "change": "highlight" },
+              { "kind": "text", "x": 280, "y": 285, "text": "adjacent", "size": 20, "bold": true, "color": "green", "anchor": "middle", "change": "add" }
+            ]
+          }
+        },
+        {
+          "say": "Move theta to the other angle, and opposite and adjacent swap.",
+          "diagram": "diagrams/y9/maths/trigonometric-ratios-names2.svg",
+          "alt": "Same triangle with theta at the top: opposite and adjacent swapped"
+        },
+        { "say": "So always put your finger on theta first, then label.", "write": "label from θ" }
+      ]
+    },
+    {
+      "heading": "The three ratios",
+      "lines": [
+        { "say": "Sine of theta is opposite over hypotenuse.", "write": "sin θ = O/H" },
+        { "say": "Cosine of theta is adjacent over hypotenuse.", "write": "cos θ = A/H" },
+        { "say": "Tangent of theta is opposite over adjacent.", "write": "tan θ = O/A" },
+        { "say": "Remember them as SOH CAH TOA.", "write": "SOH CAH TOA" }
+      ]
+    },
+    {
+      "heading": "Example: 5, 12, 13",
+      "lines": [
+        {
+          "say": "The 5 centimetre side is across from theta. 12 is adjacent. 13 is the hypotenuse.",
+          "write": "O = 5, A = 12, H = 13",
+          "diagram": "diagrams/y9/maths/trigonometric-ratios-ex2.svg",
+          "alt": "Right-angled triangle with 12 cm along the bottom, 5 cm up the side and hypotenuse 13 cm"
+        },
+        { "say": "Sine theta is 5 over 13.", "write": "sin θ = 5/13" },
+        { "say": "Cosine theta is 12 over 13.", "write": "cos θ = 12/13" },
+        { "say": "Tangent theta is 5 over 12.", "write": "tan θ = 5/12" },
+        { "say": "Sine and cosine are less than 1, as they must be." }
+      ]
+    },
+    {
+      "heading": "Why only the angle matters",
+      "lines": [
+        {
+          "say": "Triangles with the same angle are similar. One is an enlargement of the other.",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "A small and a large similar right-angled triangle with the same angle",
+            "items": [
+              { "kind": "polygon", "points": [[40,260],[200,260],[40,160]], "fill": "blue" },
+              { "kind": "polygon", "points": [[240,260],[520,260],[240,85]], "fill": "green", "change": "add" },
+              { "kind": "text", "x": 170, "y": 252, "text": "θ", "size": 20, "bold": true, "color": "white" },
+              { "kind": "text", "x": 480, "y": 252, "text": "θ", "size": 20, "bold": true, "color": "white" }
+            ]
+          }
+        },
+        { "say": "Every side is multiplied by the same number. So the ratios stay the same.", "write": "same angle, same ratio" },
+        { "say": "That's why your calculator can store one value of sine 35 degrees." }
+      ]
+    },
+    {
+      "heading": "Using a calculator",
+      "lines": [
+        { "say": "First check the screen shows D or DEG. That's degree mode.", "write": "DEG mode" },
+        { "say": "Sine 35 is about 0.5736.", "write": "sin 35° ≈ 0.5736" },
+        { "say": "Cosine 62 is about 0.4695.", "write": "cos 62° ≈ 0.4695" },
+        { "say": "Tangent 70 is about 2.7475. Tan can be bigger than 1.", "write": "tan 70° ≈ 2.7475" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Label from the angle you're using.", "write": "finger on θ" },
+        { "say": "The hypotenuse touches theta too, but it keeps its own name.", "write": "label H first" },
+        { "say": "In radians mode, sine 40 gives 0.7451 instead of 0.6428.", "write": "✗ RAD mode" },
+        { "say": "Don't write a ratio upside down. Tan is O over A, not A over O.", "write": "✗ tan θ = A/O" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "SOH CAH TOA.", "write": "SOH CAH TOA" },
+        { "say": "Hypotenuse first, then opposite. The last side is adjacent.", "write": "H → O → A" },
+        { "say": "Sine and cosine are never more than 1 in a right-angled triangle.", "write": "sin, cos ≤ 1" },
+        { "say": "Same angle, same ratio.", "write": "same θ, same ratio" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1177 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Area of composite shapes and sectors",
+  "frames": [
+    {
+      "heading": "Area formulas you know",
+      "lines": [
+        {
+          "say": "Rectangle is length times width. Triangle is half base times height.",
+          "write": "A = l × w   A = ½bh"
+        },
+        {
+          "say": "Parallelogram is base times perpendicular height.",
+          "write": "A = bh"
+        },
+        {
+          "say": "Trapezium is half the sum of the parallel sides, times height.",
+          "write": "A = ½(a + b)h"
+        },
+        {
+          "say": "Heights must be at right angles to the base. Never a sloping side.",
+          "write": "height ⟂ base",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Perpendicular height versus sloping side",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    400,
+                    250
+                  ],
+                  [
+                    300,
+                    70
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 70,
+                "x2": 300,
+                "y2": 250,
+                "color": "green",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 230,
+                "w": 20,
+                "h": 20,
+                "fill": "none",
+                "change": "add",
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 165,
+                "text": "h",
+                "size": 24,
+                "color": "green",
+                "change": "add",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 250,
+                "x2": 300,
+                "y2": 70,
+                "color": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 150,
+                "text": "not h",
+                "size": 18,
+                "color": "red",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A circle is pi r squared.",
+          "write": "A = πr²"
+        }
+      ]
+    },
+    {
+      "heading": "Sectors",
+      "lines": [
+        {
+          "say": "A sector is a slice of a circle, like a pizza slice.",
+          "write": "sector",
+          "diagram": "diagrams/y9/maths/area-of-composite-shapes-and-sectors-sector.svg",
+          "alt": "Sector with radius r and angle theta"
+        },
+        {
+          "say": "Its area is theta over 360, times pi r squared.",
+          "write": "A = θ/360 × πr²"
+        },
+        {
+          "say": "Radius 10, angle 72. 72 over 360 is one fifth.",
+          "write": "72/360 = ⅕",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Sector with angle 72 degrees",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 150,
+                "r": 120,
+                "fill": "white",
+                "color": "grey"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    200,
+                    150
+                  ],
+                  [
+                    320.0,
+                    150.0
+                  ],
+                  [
+                    319.8,
+                    143.7
+                  ],
+                  [
+                    319.3,
+                    137.5
+                  ],
+                  [
+                    318.5,
+                    131.2
+                  ],
+                  [
+                    317.4,
+                    125.1
+                  ],
+                  [
+                    315.9,
+                    118.9
+                  ],
+                  [
+                    314.1,
+                    112.9
+                  ],
+                  [
+                    312.0,
+                    107.0
+                  ],
+                  [
+                    309.6,
+                    101.2
+                  ],
+                  [
+                    306.9,
+                    95.5
+                  ],
+                  [
+                    303.9,
+                    90.0
+                  ],
+                  [
+                    300.6,
+                    84.6
+                  ],
+                  [
+                    297.1,
+                    79.5
+                  ],
+                  [
+                    293.3,
+                    74.5
+                  ],
+                  [
+                    289.2,
+                    69.7
+                  ],
+                  [
+                    284.9,
+                    65.1
+                  ],
+                  [
+                    280.3,
+                    60.8
+                  ],
+                  [
+                    275.5,
+                    56.7
+                  ],
+                  [
+                    270.5,
+                    52.9
+                  ],
+                  [
+                    265.4,
+                    49.4
+                  ],
+                  [
+                    260.0,
+                    46.1
+                  ],
+                  [
+                    254.5,
+                    43.1
+                  ],
+                  [
+                    248.8,
+                    40.4
+                  ],
+                  [
+                    243.0,
+                    38.0
+                  ],
+                  [
+                    237.1,
+                    35.9
+                  ]
+                ],
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 130,
+                "text": "72°",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 295,
+                "text": "r = 10 cm",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 150,
+                "text": "72/360 = ⅕",
+                "size": 24,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Whole circle is 100 pi. One fifth is 20 pi, about 62.8.",
+          "write": "20π ≈ 62.8 cm²"
+        },
+        {
+          "say": "A semicircle is half. A quadrant is a quarter.",
+          "write": "½πr²   ¼πr²"
+        }
+      ]
+    },
+    {
+      "heading": "Composite shapes: add",
+      "lines": [
+        {
+          "say": "A rectangle 10 by 6 with a semicircle on the end.",
+          "write": "10 × 6 = 60 cm²",
+          "diagram": "diagrams/y9/maths/area-of-composite-shapes-and-sectors-ex2.svg",
+          "alt": "Rectangle 10 by 6 cm with a semicircle on one end"
+        },
+        {
+          "say": "The 6 is the diameter. Halve it. The radius is 3.",
+          "write": "r = 6 ÷ 2 = 3"
+        },
+        {
+          "say": "Semicircle is half pi times 9, about 14.137.",
+          "write": "½ × π × 3² ≈ 14.137"
+        },
+        {
+          "say": "They're joined, so add. About 74.1 square centimetres.",
+          "write": "60 + 14.137 ≈ 74.1 cm²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Rectangle plus semicircle",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 80,
+                "w": 300,
+                "h": 180,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "60"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    360,
+                    170
+                  ],
+                  [
+                    360.0,
+                    260.0
+                  ],
+                  [
+                    371.7,
+                    259.2
+                  ],
+                  [
+                    383.3,
+                    256.9
+                  ],
+                  [
+                    394.4,
+                    253.1
+                  ],
+                  [
+                    405.0,
+                    247.9
+                  ],
+                  [
+                    414.8,
+                    241.4
+                  ],
+                  [
+                    423.6,
+                    233.6
+                  ],
+                  [
+                    431.4,
+                    224.8
+                  ],
+                  [
+                    437.9,
+                    215.0
+                  ],
+                  [
+                    443.1,
+                    204.4
+                  ],
+                  [
+                    446.9,
+                    193.3
+                  ],
+                  [
+                    449.2,
+                    181.7
+                  ],
+                  [
+                    450.0,
+                    170.0
+                  ],
+                  [
+                    449.2,
+                    158.3
+                  ],
+                  [
+                    446.9,
+                    146.7
+                  ],
+                  [
+                    443.1,
+                    135.6
+                  ],
+                  [
+                    437.9,
+                    125.0
+                  ],
+                  [
+                    431.4,
+                    115.2
+                  ],
+                  [
+                    423.6,
+                    106.4
+                  ],
+                  [
+                    414.8,
+                    98.6
+                  ],
+                  [
+                    405.0,
+                    92.1
+                  ],
+                  [
+                    394.4,
+                    86.9
+                  ],
+                  [
+                    383.3,
+                    83.1
+                  ],
+                  [
+                    371.7,
+                    80.8
+                  ],
+                  [
+                    360.0,
+                    80.0
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 175,
+                "text": "14.1",
+                "size": 20,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "joined on → add",
+                "size": 20,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Composite shapes: subtract",
+      "lines": [
+        {
+          "say": "A quarter circle, radius 8, is cut from a square of side 8.",
+          "write": "square 8 × 8 = 64",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Quarter circle cut from a square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 30,
+                "w": 240,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    270
+                  ],
+                  [
+                    390.0,
+                    270.0
+                  ],
+                  [
+                    389.5,
+                    254.3
+                  ],
+                  [
+                    387.9,
+                    238.7
+                  ],
+                  [
+                    385.4,
+                    223.2
+                  ],
+                  [
+                    381.8,
+                    207.9
+                  ],
+                  [
+                    377.3,
+                    192.9
+                  ],
+                  [
+                    371.7,
+                    178.2
+                  ],
+                  [
+                    365.2,
+                    163.9
+                  ],
+                  [
+                    357.8,
+                    150.0
+                  ],
+                  [
+                    349.6,
+                    136.7
+                  ],
+                  [
+                    340.4,
+                    123.9
+                  ],
+                  [
+                    330.4,
+                    111.8
+                  ],
+                  [
+                    319.7,
+                    100.3
+                  ],
+                  [
+                    308.2,
+                    89.6
+                  ],
+                  [
+                    296.1,
+                    79.6
+                  ],
+                  [
+                    283.3,
+                    70.4
+                  ],
+                  [
+                    270.0,
+                    62.2
+                  ],
+                  [
+                    256.1,
+                    54.8
+                  ],
+                  [
+                    241.8,
+                    48.3
+                  ],
+                  [
+                    227.1,
+                    42.7
+                  ],
+                  [
+                    212.1,
+                    38.2
+                  ],
+                  [
+                    196.8,
+                    34.6
+                  ],
+                  [
+                    181.3,
+                    32.1
+                  ],
+                  [
+                    165.7,
+                    30.5
+                  ],
+                  [
+                    150.0,
+                    30.0
+                  ]
+                ],
+                "fill": "orange",
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 295,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 150,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The quarter circle is a quarter of 64 pi, which is 16 pi.",
+          "write": "¼ × π × 8² = 16π ≈ 50.265",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Quarter circle cut from a square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 30,
+                "w": 240,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    270
+                  ],
+                  [
+                    390.0,
+                    270.0
+                  ],
+                  [
+                    389.5,
+                    254.3
+                  ],
+                  [
+                    387.9,
+                    238.7
+                  ],
+                  [
+                    385.4,
+                    223.2
+                  ],
+                  [
+                    381.8,
+                    207.9
+                  ],
+                  [
+                    377.3,
+                    192.9
+                  ],
+                  [
+                    371.7,
+                    178.2
+                  ],
+                  [
+                    365.2,
+                    163.9
+                  ],
+                  [
+                    357.8,
+                    150.0
+                  ],
+                  [
+                    349.6,
+                    136.7
+                  ],
+                  [
+                    340.4,
+                    123.9
+                  ],
+                  [
+                    330.4,
+                    111.8
+                  ],
+                  [
+                    319.7,
+                    100.3
+                  ],
+                  [
+                    308.2,
+                    89.6
+                  ],
+                  [
+                    296.1,
+                    79.6
+                  ],
+                  [
+                    283.3,
+                    70.4
+                  ],
+                  [
+                    270.0,
+                    62.2
+                  ],
+                  [
+                    256.1,
+                    54.8
+                  ],
+                  [
+                    241.8,
+                    48.3
+                  ],
+                  [
+                    227.1,
+                    42.7
+                  ],
+                  [
+                    212.1,
+                    38.2
+                  ],
+                  [
+                    196.8,
+                    34.6
+                  ],
+                  [
+                    181.3,
+                    32.1
+                  ],
+                  [
+                    165.7,
+                    30.5
+                  ],
+                  [
+                    150.0,
+                    30.0
+                  ]
+                ],
+                "fill": "white",
+                "change": "remove",
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 295,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 150,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It's cut out, so subtract. About 13.7 square centimetres.",
+          "write": "64 − 50.265 ≈ 13.7 cm²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Quarter circle cut from a square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 30,
+                "w": 240,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    270
+                  ],
+                  [
+                    390.0,
+                    270.0
+                  ],
+                  [
+                    389.5,
+                    254.3
+                  ],
+                  [
+                    387.9,
+                    238.7
+                  ],
+                  [
+                    385.4,
+                    223.2
+                  ],
+                  [
+                    381.8,
+                    207.9
+                  ],
+                  [
+                    377.3,
+                    192.9
+                  ],
+                  [
+                    371.7,
+                    178.2
+                  ],
+                  [
+                    365.2,
+                    163.9
+                  ],
+                  [
+                    357.8,
+                    150.0
+                  ],
+                  [
+                    349.6,
+                    136.7
+                  ],
+                  [
+                    340.4,
+                    123.9
+                  ],
+                  [
+                    330.4,
+                    111.8
+                  ],
+                  [
+                    319.7,
+                    100.3
+                  ],
+                  [
+                    308.2,
+                    89.6
+                  ],
+                  [
+                    296.1,
+                    79.6
+                  ],
+                  [
+                    283.3,
+                    70.4
+                  ],
+                  [
+                    270.0,
+                    62.2
+                  ],
+                  [
+                    256.1,
+                    54.8
+                  ],
+                  [
+                    241.8,
+                    48.3
+                  ],
+                  [
+                    227.1,
+                    42.7
+                  ],
+                  [
+                    212.1,
+                    38.2
+                  ],
+                  [
+                    196.8,
+                    34.6
+                  ],
+                  [
+                    181.3,
+                    32.1
+                  ],
+                  [
+                    165.7,
+                    30.5
+                  ],
+                  [
+                    150.0,
+                    30.0
+                  ]
+                ],
+                "fill": "white",
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 295,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 150,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 50,
+                "text": "64 − 16π ≈ 13.7",
+                "size": 18,
+                "color": "green",
+                "change": "add",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Ask yourself: is this piece joined on, or cut out?",
+          "write": "joined → add, cut out → subtract"
+        }
+      ]
+    },
+    {
+      "heading": "The annulus",
+      "lines": [
+        {
+          "say": "A ring between two circles with the same centre is an annulus.",
+          "write": "annulus",
+          "diagram": "diagrams/y9/maths/area-of-composite-shapes-and-sectors-ring.svg",
+          "alt": "Ring between circles of radius R and r"
+        },
+        {
+          "say": "A pond of radius 5 has paving out to radius 9.",
+          "write": "R = 9, r = 5"
+        },
+        {
+          "say": "Big circle 81 pi, take the pond, 25 pi.",
+          "write": "81π − 25π = 56π",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Removing the pond from the big circle",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 135,
+                "fill": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 75,
+                "fill": "blue",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 155,
+                "text": "25π",
+                "size": 22,
+                "color": "white",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "81π",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 280,
+                "text": "56π ≈ 175.9 m²",
+                "size": 20,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "56 pi is about 175.9 square metres.",
+          "write": "≈ 175.9 m²"
+        },
+        {
+          "say": "Don't subtract the radii first. Square each radius separately.",
+          "write": "✗ π(9 − 5)²"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Halve the diameter before squaring.",
+          "write": "r = d ÷ 2"
+        },
+        {
+          "say": "Use the perpendicular height, not a sloping side.",
+          "write": "height ⟂ base"
+        },
+        {
+          "say": "Sectors: write theta over 360 first.",
+          "write": "θ/360 × πr²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Sector with angle 72 degrees",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 150,
+                "r": 120,
+                "fill": "white",
+                "color": "grey"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    200,
+                    150
+                  ],
+                  [
+                    320.0,
+                    150.0
+                  ],
+                  [
+                    319.8,
+                    143.7
+                  ],
+                  [
+                    319.3,
+                    137.5
+                  ],
+                  [
+                    318.5,
+                    131.2
+                  ],
+                  [
+                    317.4,
+                    125.1
+                  ],
+                  [
+                    315.9,
+                    118.9
+                  ],
+                  [
+                    314.1,
+                    112.9
+                  ],
+                  [
+                    312.0,
+                    107.0
+                  ],
+                  [
+                    309.6,
+                    101.2
+                  ],
+                  [
+                    306.9,
+                    95.5
+                  ],
+                  [
+                    303.9,
+                    90.0
+                  ],
+                  [
+                    300.6,
+                    84.6
+                  ],
+                  [
+                    297.1,
+                    79.5
+                  ],
+                  [
+                    293.3,
+                    74.5
+                  ],
+                  [
+                    289.2,
+                    69.7
+                  ],
+                  [
+                    284.9,
+                    65.1
+                  ],
+                  [
+                    280.3,
+                    60.8
+                  ],
+                  [
+                    275.5,
+                    56.7
+                  ],
+                  [
+                    270.5,
+                    52.9
+                  ],
+                  [
+                    265.4,
+                    49.4
+                  ],
+                  [
+                    260.0,
+                    46.1
+                  ],
+                  [
+                    254.5,
+                    43.1
+                  ],
+                  [
+                    248.8,
+                    40.4
+                  ],
+                  [
+                    243.0,
+                    38.0
+                  ],
+                  [
+                    237.1,
+                    35.9
+                  ]
+                ],
+                "fill": "orange",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 130,
+                "text": "72°",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 295,
+                "text": "r = 10 cm",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 150,
+                "text": "72/360 = ⅕",
+                "size": 24,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Joined on, add. Cut out, subtract.",
+          "write": "add or subtract"
+        }
+      ]
+    }
+  ]
+}

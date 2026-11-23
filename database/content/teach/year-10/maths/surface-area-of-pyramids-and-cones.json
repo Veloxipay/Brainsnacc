@@ -1,0 +1,703 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Surface area of pyramids and cones",
+  "frames": [
+    {
+      "heading": "Unfolding a pyramid",
+      "lines": [
+        {
+          "say": "Surface area is the area of everything on the outside.",
+          "write": "SA = outside area"
+        },
+        {
+          "say": "Unfold a square pyramid. You get the base and four triangles.",
+          "write": "net",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Net of a square pyramid: base 8 by 8 and four triangles with slant height 10",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 110,
+                "w": 100,
+                "h": 100,
+                "fill": "blue",
+                "label": "8 × 8"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    110
+                  ],
+                  [
+                    320,
+                    110
+                  ],
+                  [
+                    270,
+                    10
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    110
+                  ],
+                  [
+                    320,
+                    210
+                  ],
+                  [
+                    420,
+                    160
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    210
+                  ],
+                  [
+                    320,
+                    210
+                  ],
+                  [
+                    270,
+                    310
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    110
+                  ],
+                  [
+                    220,
+                    210
+                  ],
+                  [
+                    120,
+                    160
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 270,
+                "y": 110,
+                "x2": 270,
+                "y2": 10,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 45,
+                "text": "s = 10",
+                "size": 18,
+                "color": "red",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The base is 8 times 8, which is 64.",
+          "write": "base = 64 cm²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Net of a square pyramid: base 8 by 8 and four triangles with slant height 10",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 110,
+                "w": 100,
+                "h": 100,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "64"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    110
+                  ],
+                  [
+                    320,
+                    110
+                  ],
+                  [
+                    270,
+                    10
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    110
+                  ],
+                  [
+                    320,
+                    210
+                  ],
+                  [
+                    420,
+                    160
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    210
+                  ],
+                  [
+                    320,
+                    210
+                  ],
+                  [
+                    270,
+                    310
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    110
+                  ],
+                  [
+                    220,
+                    210
+                  ],
+                  [
+                    120,
+                    160
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 270,
+                "y": 110,
+                "x2": 270,
+                "y2": 10,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 45,
+                "text": "s = 10",
+                "size": 18,
+                "color": "red",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each triangle is half times 8 times 10. That is 40. Four of them make 160.",
+          "write": "4 × ½ × 8 × 10 = 160",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 320,
+            "alt": "Net of a square pyramid: base 8 by 8 and four triangles with slant height 10",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 110,
+                "w": 100,
+                "h": 100,
+                "fill": "blue",
+                "label": "64"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    110
+                  ],
+                  [
+                    320,
+                    110
+                  ],
+                  [
+                    270,
+                    10
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add",
+                "label": "40"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    320,
+                    110
+                  ],
+                  [
+                    320,
+                    210
+                  ],
+                  [
+                    420,
+                    160
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add",
+                "label": "40"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    210
+                  ],
+                  [
+                    320,
+                    210
+                  ],
+                  [
+                    270,
+                    310
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add",
+                "label": "40"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    220,
+                    110
+                  ],
+                  [
+                    220,
+                    210
+                  ],
+                  [
+                    120,
+                    160
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add",
+                "label": "40"
+              },
+              {
+                "kind": "line",
+                "x": 270,
+                "y": 110,
+                "x2": 270,
+                "y2": 10,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 45,
+                "text": "s = 10",
+                "size": 18,
+                "color": "red",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 300,
+                "text": "64 + 160 = 224",
+                "size": 20,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Total surface area: 64 plus 160 is 224 square centimetres.",
+          "write": "SA = 224 cm²"
+        }
+      ]
+    },
+    {
+      "heading": "Slant height vs height",
+      "lines": [
+        {
+          "say": "The slant height runs up the middle of a face.",
+          "write": "slant height s"
+        },
+        {
+          "say": "The perpendicular height goes straight up from the centre.",
+          "write": "height h",
+          "diagram": "diagrams/y10/maths/surface-area-of-pyramids-and-cones-ex2.svg",
+          "alt": "Square pyramid with base 10 and height 12"
+        },
+        {
+          "say": "They make a right triangle with half the base edge.",
+          "write": "s² = h² + (b/2)²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Right triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    260
+                  ],
+                  [
+                    150,
+                    60
+                  ],
+                  [
+                    400,
+                    260
+                  ]
+                ],
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 165,
+                "text": "h = 12",
+                "size": 20,
+                "color": "black",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 275,
+                "y": 290,
+                "text": "b/2 = 5",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 145,
+                "text": "s",
+                "size": 22,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Base 10, height 12. s squared is 144 plus 25, which is 169.",
+          "write": "s² = 12² + 5² = 169",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Right triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    260
+                  ],
+                  [
+                    150,
+                    60
+                  ],
+                  [
+                    400,
+                    260
+                  ]
+                ],
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 165,
+                "text": "12",
+                "size": 20,
+                "color": "black",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 275,
+                "y": 290,
+                "text": "5",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 145,
+                "text": "s = 13",
+                "size": 22,
+                "color": "red",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So s is 13. Four triangles: 4 times half times 10 times 13 is 260.",
+          "write": "4 × ½ × 10 × 13 = 260"
+        },
+        {
+          "say": "Add the base, 100. Surface area is 360.",
+          "write": "SA = 100 + 260 = 360 cm²"
+        }
+      ]
+    },
+    {
+      "heading": "Unwrapping a cone",
+      "lines": [
+        {
+          "say": "Snip a party hat along its seam and flatten it.",
+          "write": "cone → sector"
+        },
+        {
+          "say": "You get a sector. Its radius is the slant height l.",
+          "write": "curved SA = πrl",
+          "diagram": "diagrams/y10/maths/surface-area-of-pyramids-and-cones-conenet.svg",
+          "alt": "Net of a cone: sector of radius l and circle of radius r"
+        },
+        {
+          "say": "Its arc is the base circumference, 2 pi r.",
+          "write": "arc = 2πr"
+        },
+        {
+          "say": "Add the circular base, pi r squared, for the total.",
+          "write": "SA = πr² + πrl"
+        }
+      ]
+    },
+    {
+      "heading": "A cone example",
+      "lines": [
+        {
+          "say": "Radius 5, height 12. First find the slant height.",
+          "write": "l² = r² + h²",
+          "diagram": "diagrams/y10/maths/surface-area-of-pyramids-and-cones-ex3.svg",
+          "alt": "Cone with radius 5 and height 12"
+        },
+        {
+          "say": "5 squared plus 12 squared is 169, so l is 13.",
+          "write": "l = 13 cm"
+        },
+        {
+          "say": "Base: 25 pi. Curved surface: pi times 5 times 13, which is 65 pi.",
+          "write": "25π + 65π"
+        },
+        {
+          "say": "Total is 90 pi, about 282.7 square centimetres.",
+          "write": "SA = 90π ≈ 282.7 cm²"
+        }
+      ]
+    },
+    {
+      "heading": "Rectangular bases",
+      "lines": [
+        {
+          "say": "A pyramid has an 8 by 6 base and height 4.",
+          "write": "8 × 6 base, h = 4"
+        },
+        {
+          "say": "A rectangular base has two different slant heights.",
+          "write": "two slant heights"
+        },
+        {
+          "say": "Faces on the 8 edges: root of 16 plus 9 is 5.",
+          "write": "√(4² + 3²) = 5"
+        },
+        {
+          "say": "Faces on the 6 edges: root of 16 plus 16 is 4 root 2.",
+          "write": "√(4² + 4²) = 4√2"
+        },
+        {
+          "say": "Total: 48 plus 40 plus 24 root 2, about 121.9.",
+          "write": "88 + 24√2 ≈ 121.9 cm²"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use the slant height for the faces, not the perpendicular height.",
+          "write": "✗ h   ✓ s",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Right triangle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    260
+                  ],
+                  [
+                    150,
+                    60
+                  ],
+                  [
+                    400,
+                    260
+                  ]
+                ],
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 165,
+                "text": "h",
+                "size": 20,
+                "color": "black",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 275,
+                "y": 290,
+                "text": "b/2",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 145,
+                "text": "s",
+                "size": 22,
+                "color": "red",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't forget the half for each triangle.",
+          "write": "½ × base × s"
+        },
+        {
+          "say": "Leave out the base for open solids, like an ice-cream cone.",
+          "write": "open → no base"
+        },
+        {
+          "say": "In pi r l, use l, not h. Find l with Pythagoras first.",
+          "write": "l = √(r² + h²)"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Pyramid: base plus all the triangles.",
+          "write": "base + triangles"
+        },
+        {
+          "say": "Cone: pi r squared plus pi r l.",
+          "write": "πr² + πrl"
+        },
+        {
+          "say": "Slant heights come from Pythagoras.",
+          "write": "Pythagoras for s and l"
+        }
+      ]
+    }
+  ]
+}

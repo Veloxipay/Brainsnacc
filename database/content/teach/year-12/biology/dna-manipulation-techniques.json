@@ -1,0 +1,130 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "DNA manipulation techniques",
+  "frames": [
+    { "heading": "Cutting DNA: restriction enzymes",
+      "lines": [
+        { "say": "Restriction enzymes are endonucleases. They cut DNA at a set sequence.", "write": "cuts at a recognition site" },
+        { "say": "EcoRI recognises G A A T T C. It reads the same on both strands.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "EcoRI recognition site on both strands", "items": [
+            {"kind": "text", "x": 280, "y": 80, "text": "5′- G A A T T C -3′", "size": 30, "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 140, "text": "3′- C T T A A G -5′", "size": 30, "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 200, "text": "palindromic", "size": 20, "anchor": "middle", "color": "purple"}
+          ]}},
+        { "say": "It cuts between G and A on each strand. That leaves overhangs.", "write": "G^AATTC",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "EcoRI staggered cut leaves AATT overhangs", "items": [
+            {"kind": "text", "x": 280, "y": 80, "text": "5′- G A A T T C -3′", "size": 30, "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 140, "text": "3′- C T T A A G -5′", "size": 30, "anchor": "middle"},
+            {"kind": "line", "x": 205, "y": 50, "x2": 205, "y2": 95, "color": "red", "change": "add"},
+            {"kind": "line", "x": 205, "y": 95, "x2": 355, "y2": 105, "color": "red", "dashed": true, "change": "add"},
+            {"kind": "line", "x": 355, "y": 105, "x2": 355, "y2": 155, "color": "red", "change": "add"},
+            {"kind": "text", "x": 280, "y": 200, "text": "sticky ends: AATT overhangs", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Those overhangs are sticky ends. Matching ones base pair together.", "write": "sticky ends pair up" },
+        { "say": "SmaI cuts straight across. That gives blunt ends with no overhang.", "write": "CCC^GGG: blunt ends" }
+      ] },
+    { "heading": "Joining DNA: ligase",
+      "lines": [
+        { "say": "Cut two samples with the same enzyme. Their sticky ends match.", "write": "same enzyme → matching ends" },
+        { "say": "The overhangs pair up with hydrogen bonds on their own.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Two fragments joined with a gap sealed by ligase", "items": [
+            {"kind": "rect", "x": 30, "y": 80, "w": 230, "h": 40, "fill": "blue"},
+            {"kind": "rect", "x": 300, "y": 80, "w": 230, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 260, "y": 80, "w": 40, "h": 40, "fill": "white", "label": "gap"}
+          ]}},
+        { "say": "Ligase then seals the backbone with phosphodiester bonds.", "write": "ligase: phosphodiester bonds",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Ligase seals the gap", "items": [
+            {"kind": "rect", "x": 30, "y": 80, "w": 230, "h": 40, "fill": "blue"},
+            {"kind": "rect", "x": 300, "y": 80, "w": 230, "h": 40, "fill": "orange"},
+            {"kind": "rect", "x": 260, "y": 80, "w": 40, "h": 40, "fill": "green", "label": "✓", "change": "add"},
+            {"kind": "text", "x": 280, "y": 170, "text": "ligase seals the backbone", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Ligase can join blunt ends too, but less efficiently." }
+      ] },
+    { "heading": "CRISPR: bacteria fight back",
+      "lines": [
+        { "say": "Exposure. A virus injects DNA. The bacterium saves a piece as a spacer.", "write": "1. exposure: add spacer" },
+        { "say": "Expression. The CRISPR region is transcribed into short crRNAs.", "write": "2. expression: crRNA" },
+        { "say": "Same virus again? crRNA guides Cas9, and Cas9 cuts the viral DNA.", "write": "3. targeting: Cas9 cuts",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Cas9 guided by crRNA cuts viral DNA", "items": [
+            {"kind": "rect", "x": 30, "y": 140, "w": 500, "h": 30, "fill": "red", "label": "viral DNA"},
+            {"kind": "rect", "x": 200, "y": 100, "w": 140, "h": 30, "fill": "orange", "label": "crRNA"},
+            {"kind": "circle", "x": 270, "y": 60, "r": 36, "fill": "purple", "label": "Cas9"},
+            {"kind": "line", "x": 270, "y": 125, "x2": 270, "y2": 190, "color": "black", "change": "add"},
+            {"kind": "text", "x": 270, "y": 212, "text": "cut!", "size": 20, "anchor": "middle", "bold": true, "change": "add"}
+          ]}},
+        { "say": "Cas9 only cuts next to a PAM. The bacterium's own CRISPR region has none.", "write": "needs a PAM" }
+      ] },
+    { "heading": "CRISPR as a gene editor",
+      "lines": [
+        { "say": "Design a guide RNA about 20 bases long, matching the target gene.", "write": "sgRNA: ~20 bases" },
+        { "say": "The guide leads Cas9 in. Cas9 makes a blunt double-stranded cut.", "write": "blunt double-strand cut" },
+        { "say": "The cell's repair often adds or deletes bases. That knocks out the gene.", "write": "repair → knock out" },
+        { "say": "Supply a template, and the cell can copy in a new sequence.", "write": "template → insert/correct" }
+      ] },
+    { "heading": "PCR: making copies",
+      "lines": [
+        { "say": "PCR copies one section of DNA many times. Even from a single hair.", "write": "PCR amplifies DNA" },
+        { "say": "Step one. Heat to about 95 degrees. The strands separate.", "write": "denature: ~95 °C",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Two DNA strands separate on heating", "items": [
+            {"kind": "rect", "x": 60, "y": 60, "w": 440, "h": 26, "fill": "blue"},
+            {"kind": "rect", "x": 60, "y": 140, "w": 440, "h": 26, "fill": "blue"},
+            {"kind": "arrow", "x": 280, "y": 100, "x2": 280, "y2": 70, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 280, "y": 125, "x2": 280, "y2": 155, "color": "red", "change": "add"},
+            {"kind": "text", "x": 280, "y": 205, "text": "95 °C: hydrogen bonds break", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Step two. Cool to about 55. Primers bind to each end of the target.", "write": "anneal: ~55 °C",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Primers bind to each strand", "items": [
+            {"kind": "rect", "x": 60, "y": 60, "w": 440, "h": 26, "fill": "blue"},
+            {"kind": "rect", "x": 60, "y": 140, "w": 440, "h": 26, "fill": "blue"},
+            {"kind": "rect", "x": 420, "y": 88, "w": 70, "h": 20, "fill": "orange", "change": "add"},
+            {"kind": "rect", "x": 70, "y": 118, "w": 70, "h": 20, "fill": "orange", "change": "add"},
+            {"kind": "text", "x": 280, "y": 205, "text": "primers anneal", "size": 20, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Step three. At 72 degrees, Taq polymerase extends from the primers.", "write": "extend: ~72 °C (Taq)" },
+        { "say": "Each cycle doubles the copies. After n cycles, about 2 to the n.", "write": "copies ≈ 2ⁿ" }
+      ] },
+    { "heading": "Gel electrophoresis",
+      "lines": [
+        { "say": "DNA is negative, so it moves towards the positive electrode.",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Gel with wells at the negative end", "items": [
+            {"kind": "rect", "x": 60, "y": 30, "w": 440, "h": 240, "fill": "grey"},
+            {"kind": "rect", "x": 100, "y": 45, "w": 60, "h": 12, "fill": "black"},
+            {"kind": "rect", "x": 250, "y": 45, "w": 60, "h": 12, "fill": "black"},
+            {"kind": "rect", "x": 400, "y": 45, "w": 60, "h": 12, "fill": "black"},
+            {"kind": "text", "x": 30, "y": 50, "text": "−", "size": 32, "anchor": "middle"},
+            {"kind": "text", "x": 30, "y": 265, "text": "+", "size": 32, "anchor": "middle"},
+            {"kind": "text", "x": 130, "y": 290, "text": "ladder", "size": 16, "anchor": "middle"}
+          ]}},
+        { "say": "Small fragments slip through the gel easily, so they travel furthest.", "write": "small → travels further",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Bands appear: small fragments near the bottom", "items": [
+            {"kind": "rect", "x": 60, "y": 30, "w": 440, "h": 240, "fill": "grey"},
+            {"kind": "rect", "x": 100, "y": 45, "w": 60, "h": 12, "fill": "black"},
+            {"kind": "rect", "x": 250, "y": 45, "w": 60, "h": 12, "fill": "black"},
+            {"kind": "rect", "x": 400, "y": 45, "w": 60, "h": 12, "fill": "black"},
+            {"kind": "rect", "x": 100, "y": 90, "w": 60, "h": 8, "fill": "white", "change": "add"},
+            {"kind": "rect", "x": 100, "y": 150, "w": 60, "h": 8, "fill": "white", "change": "add"},
+            {"kind": "rect", "x": 100, "y": 230, "w": 60, "h": 8, "fill": "white", "change": "add"},
+            {"kind": "rect", "x": 250, "y": 110, "w": 60, "h": 8, "fill": "white", "change": "add"},
+            {"kind": "rect", "x": 400, "y": 220, "w": 60, "h": 8, "fill": "white", "change": "highlight"},
+            {"kind": "text", "x": 470, "y": 252, "text": "small", "size": 16, "anchor": "middle"},
+            {"kind": "text", "x": 30, "y": 50, "text": "−", "size": 32, "anchor": "middle"},
+            {"kind": "text", "x": 30, "y": 265, "text": "+", "size": 32, "anchor": "middle"}
+          ]}},
+        { "say": "Compare each band with the ladder to estimate its size.", "write": "compare with the ladder" },
+        { "say": "DNA profiling uses short tandem repeats. People differ in the number of repeats.", "write": "STRs: e.g. GATA GATA GATA" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Smaller fragments travel further, not slower.", "write": "small = further" },
+        { "say": "Annealing is the coolest step. Extension is 72 degrees.", "write": "95 → 55 → 72" },
+        { "say": "Ligase makes phosphodiester bonds, not hydrogen bonds.", "write": "ligase ≠ H bonds" },
+        { "say": "Cut a circle n times for n pieces. A line gives n plus one.", "write": "circle: n; linear: n + 1" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Restriction enzymes cut. Ligase joins.", "write": "cut, join" },
+        { "say": "PCR copies. Gel electrophoresis sorts by size.", "write": "copy, sort" },
+        { "say": "CRISPR guides Cas9 to cut a chosen gene.", "write": "guide, cut, repair" }
+      ] }
+  ]
+}

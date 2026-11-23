@@ -1,0 +1,430 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Simultaneous equations by substitution",
+  "frames": [
+    {
+      "heading": "What is a solution?",
+      "lines": [
+        {
+          "say": "Simultaneous equations are two equations that must both be true at once.",
+          "write": "y = 2x + 1,  x + y = 7"
+        },
+        {
+          "say": "A solution is a pair x and y that makes both true.",
+          "write": "solution: (x, y)"
+        },
+        {
+          "say": "Each equation is a line. The solution is where they cross.",
+          "write": "point of intersection",
+          "diagram": "diagrams/y10/maths/simultaneous-equations-by-substitution-meet.svg",
+          "alt": "Lines y = 2x + 1 and x + y = 7 crossing at (2, 5)"
+        }
+      ]
+    },
+    {
+      "heading": "Swap in the substitute",
+      "lines": [
+        {
+          "say": "Here y equals 2x plus 1. So y and 2x plus 1 are interchangeable.",
+          "write": "y = 2x + 1"
+        },
+        {
+          "say": "Look at the other equation: x plus y equals 7.",
+          "write": "x + y = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Equation built from boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "white",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 195,
+                "y": 90,
+                "w": 40,
+                "h": 60,
+                "fill": "none",
+                "label": "+"
+              },
+              {
+                "kind": "rect",
+                "x": 245,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "yellow",
+                "change": "highlight",
+                "label": "y"
+              },
+              {
+                "kind": "rect",
+                "x": 325,
+                "y": 90,
+                "w": 40,
+                "h": 60,
+                "fill": "none",
+                "label": "="
+              },
+              {
+                "kind": "rect",
+                "x": 375,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "white",
+                "label": "7"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take y off, like a player leaving the field.",
+          "write": "take y off",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Equation built from boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "white",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 195,
+                "y": 90,
+                "w": 40,
+                "h": 60,
+                "fill": "none",
+                "label": "+"
+              },
+              {
+                "kind": "rect",
+                "x": 245,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "yellow",
+                "change": "remove",
+                "label": "y"
+              },
+              {
+                "kind": "rect",
+                "x": 325,
+                "y": 90,
+                "w": 40,
+                "h": 60,
+                "fill": "none",
+                "label": "="
+              },
+              {
+                "kind": "rect",
+                "x": 375,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "white",
+                "label": "7"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Bring 2x plus 1 on, in brackets. Now only x is left.",
+          "write": "x + (2x + 1) = 7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Equation built from boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 85,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "white",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 90,
+                "w": 40,
+                "h": 60,
+                "fill": "none",
+                "label": "+"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 90,
+                "w": 130,
+                "h": 60,
+                "fill": "green",
+                "change": "add",
+                "label": "(2x + 1)"
+              },
+              {
+                "kind": "rect",
+                "x": 355,
+                "y": 90,
+                "w": 40,
+                "h": 60,
+                "fill": "none",
+                "label": "="
+              },
+              {
+                "kind": "rect",
+                "x": 405,
+                "y": 90,
+                "w": 70,
+                "h": 60,
+                "fill": "white",
+                "label": "7"
+              }
+            ]
+          }
+        },
+        {
+          "say": "3x plus 1 is 7, so 3x is 6, and x is 2.",
+          "write": "3x = 6,  x = 2"
+        },
+        {
+          "say": "Substitute back: y is 2 times 2, plus 1, which is 5.",
+          "write": "y = 5,  (2, 5)"
+        }
+      ]
+    },
+    {
+      "heading": "The substitution method",
+      "lines": [
+        {
+          "say": "Make one pronumeral the subject, like y equals something.",
+          "write": "1. y = … or x = …"
+        },
+        {
+          "say": "Substitute that expression, in brackets, into the other equation.",
+          "write": "2. substitute in brackets"
+        },
+        {
+          "say": "Solve the new equation, which has just one unknown.",
+          "write": "3. solve"
+        },
+        {
+          "say": "Substitute back to find the other value.",
+          "write": "4. sub back"
+        },
+        {
+          "say": "Check your pair in both original equations.",
+          "write": "5. check both"
+        }
+      ]
+    },
+    {
+      "heading": "Rearranging first",
+      "lines": [
+        {
+          "say": "Solve 2x plus 3y equals 12, and x minus 2y equals minus 1.",
+          "write": "2x + 3y = 12,  x − 2y = −1"
+        },
+        {
+          "say": "In the second, x has coefficient 1. Make x the subject.",
+          "write": "x = 2y − 1"
+        },
+        {
+          "say": "Substitute it into the first, in brackets, for x.",
+          "write": "2(2y − 1) + 3y = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Equation built from boxes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 95,
+                "y": 90,
+                "w": 50,
+                "h": 60,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 155,
+                "y": 90,
+                "w": 130,
+                "h": 60,
+                "fill": "green",
+                "change": "add",
+                "label": "(2y − 1)"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 90,
+                "w": 80,
+                "h": 60,
+                "fill": "white",
+                "label": "+ 3y"
+              },
+              {
+                "kind": "rect",
+                "x": 385,
+                "y": 90,
+                "w": 80,
+                "h": 60,
+                "fill": "white",
+                "label": "= 12"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Expand: 4y minus 2 plus 3y. So 7y is 14, and y is 2.",
+          "write": "7y = 14,  y = 2"
+        },
+        {
+          "say": "Then x is 2 times 2, minus 1, which is 3. Answer: 3, 2.",
+          "write": "x = 3;  (3, 2)"
+        }
+      ]
+    },
+    {
+      "heading": "When both are y equals",
+      "lines": [
+        {
+          "say": "y equals 3x minus 4, and y equals minus x plus 8.",
+          "write": "y = 3x − 4,  y = −x + 8"
+        },
+        {
+          "say": "Both equal y, so set the right sides equal. This is called equating.",
+          "write": "3x − 4 = −x + 8"
+        },
+        {
+          "say": "Add x and add 4 to both sides. 4x is 12, so x is 3.",
+          "write": "4x = 12,  x = 3"
+        },
+        {
+          "say": "y is minus 3 plus 8, which is 5. The point is 3, 5.",
+          "write": "(3, 5)"
+        }
+      ]
+    },
+    {
+      "heading": "No solution, or infinitely many",
+      "lines": [
+        {
+          "say": "Substitute y equals 2x plus 1 into 4x minus 2y equals 6.",
+          "write": "4x − 2(2x + 1) = 6"
+        },
+        {
+          "say": "The x terms cancel, leaving minus 2 equals 6. That is false.",
+          "write": "−2 = 6  ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "x terms cancel leaving a false statement",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "4x − 4x − 2 = 6",
+                "size": 26,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 40,
+                "w": 140,
+                "h": 50,
+                "fill": "none",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "−2 = 6   false",
+                "size": 28,
+                "color": "red",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "False means no solution. The lines are parallel.",
+          "write": "parallel → no solution",
+          "diagram": "diagrams/y10/maths/simultaneous-equations-by-substitution-parallel.svg",
+          "alt": "Parallel lines y = 2x + 1 and 4x − 2y = 6"
+        },
+        {
+          "say": "If you get something always true, like 6 equals 6, it is the same line.",
+          "write": "same line → infinitely many"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Always substitute in brackets. 2 times 2y minus 1 loses a multiplication.",
+          "write": "✗ 2 × 2y − 1   ✓ 2(2y − 1)"
+        },
+        {
+          "say": "x equals 2 is only half the answer. Find y too.",
+          "write": "give x and y"
+        },
+        {
+          "say": "Substitute into the other equation, or you just get 0 equals 0.",
+          "write": "use the other equation"
+        },
+        {
+          "say": "Check your pair in both equations.",
+          "write": "check both"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Swap, solve, sub back, check.",
+          "write": "swap, solve, sub back, check"
+        },
+        {
+          "say": "The substitute always comes on in brackets.",
+          "write": "brackets on the bench"
+        },
+        {
+          "say": "One crossing, one solution. Parallel, none. Same line, infinitely many.",
+          "write": "1, 0 or ∞ solutions"
+        }
+      ]
+    }
+  ]
+}

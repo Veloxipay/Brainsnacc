@@ -1,0 +1,80 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Expanding and factorising",
+  "frames": [
+    { "heading": "Packing and unpacking",
+      "lines": [
+        { "say": "Three lunch bags, each with 1 apple and 2 bananas.", "write": "3(a + 2b)" },
+        { "say": "Unpack them all. 3 apples and 6 bananas. That's expanding.", "write": "3a + 6b" },
+        { "say": "Pack them back into identical bags. That's factorising.", "write": "factorise = un-expand" }
+      ] },
+    { "heading": "Expanding one bracket",
+      "lines": [
+        { "say": "Here's a rectangle, 3 tall and 2x plus 5 wide.", "write": "3(2x + 5)",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Rectangle 3 tall and 2x + 5 wide", "items": [
+            {"kind": "rect", "x": 80, "y": 60, "w": 400, "h": 120, "fill": "blue"},
+            {"kind": "text", "x": 280, "y": 45, "text": "2x + 5", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 60, "y": 128, "text": "3", "size": 22, "anchor": "middle"}]}},
+        { "say": "Split it into two parts. 3 times 2x is 6x. 3 times 5 is 15.", "write": "6x + 15",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Rectangle split into 6x and 15", "items": [
+            {"kind": "rect", "x": 80, "y": 60, "w": 260, "h": 120, "fill": "blue", "label": "6x", "change": "highlight"},
+            {"kind": "rect", "x": 340, "y": 60, "w": 140, "h": 120, "fill": "orange", "label": "15", "change": "highlight"},
+            {"kind": "text", "x": 210, "y": 45, "text": "2x", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 410, "y": 45, "text": "5", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 60, "y": 128, "text": "3", "size": 22, "anchor": "middle"}]}},
+        { "say": "The outside term multiplies every term inside. Draw rainbow arrows.", "write": "a(b + c) = ab + ac" },
+        { "say": "Negative outside: minus 3 times minus 4 is plus 12.", "write": "−3(x − 4) = −3x + 12" },
+        { "say": "Letters too. x times x is x squared.", "write": "x(x + 5) = x² + 5x" }
+      ] },
+    { "heading": "Expand and simplify",
+      "lines": [
+        { "say": "5 lots of 2x minus 3, minus 3 lots of x minus 4.", "write": "5(2x − 3) − 3(x − 4)" },
+        { "say": "First bracket: 10x minus 15.", "write": "10x − 15" },
+        { "say": "Second bracket with minus 3: minus 3x plus 12.", "write": "−3x + 12" },
+        { "say": "Collect like terms. 10x minus 3x is 7x. Minus 15 plus 12 is minus 3.", "write": "7x − 3" }
+      ] },
+    { "heading": "Factorising fully",
+      "lines": [
+        { "say": "Factorise 12x squared y plus 18xy. Find the HCF of numbers and letters.", "write": "12x²y + 18xy" },
+        { "say": "The HCF of 12 and 18 is 6. Both terms have x and y. So 6xy.", "write": "HCF = 6xy" },
+        { "say": "Divide each term by 6xy. You get 2x and 3.", "write": "6xy(2x + 3)" },
+        { "say": "Check by expanding. 6xy times 2x is 12x squared y. 6xy times 3 is 18xy.", "write": "check ✓" },
+        { "say": "Fully means the bracket has nothing left in common. 3 lots of 4x plus 6 isn't finished.", "write": "12x + 18 = 6(2x + 3)" },
+        { "say": "First term negative? Take out a negative. Minus 8x minus 20 is minus 4 lots of 2x plus 5.", "write": "−8x − 20 = −4(2x + 5)" }
+      ] },
+    { "heading": "Stretch: two brackets",
+      "lines": [
+        { "say": "Expand x plus 4, times x plus 3. Every term times every term.", "write": "(x + 4)(x + 3)",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Rectangle x + 4 by x + 3 with sides labelled", "items": [
+            {"kind": "rect", "x": 100, "y": 50, "w": 380, "h": 220, "fill": "white"},
+            {"kind": "text", "x": 200, "y": 38, "text": "x", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 420, "y": 38, "text": "4", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 80, "y": 130, "text": "x", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 80, "y": 240, "text": "3", "size": 22, "anchor": "middle"}]}},
+        { "say": "The area model splits into four parts: x squared, 4x, 3x and 12.", "write": "x² + 4x + 3x + 12",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Rectangle split into x squared, 4x, 3x and 12", "items": [
+            {"kind": "rect", "x": 100, "y": 50, "w": 200, "h": 160, "fill": "blue", "label": "x²", "change": "add"},
+            {"kind": "rect", "x": 300, "y": 50, "w": 180, "h": 160, "fill": "orange", "label": "4x", "change": "add"},
+            {"kind": "rect", "x": 100, "y": 210, "w": 200, "h": 60, "fill": "orange", "label": "3x", "change": "add"},
+            {"kind": "rect", "x": 300, "y": 210, "w": 180, "h": 60, "fill": "green", "label": "12", "change": "add"},
+            {"kind": "text", "x": 200, "y": 38, "text": "x", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 390, "y": 38, "text": "4", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 80, "y": 130, "text": "x", "size": 22, "anchor": "middle"},
+            {"kind": "text", "x": 80, "y": 240, "text": "3", "size": 22, "anchor": "middle"}]}},
+        { "say": "Collect the middle terms. x squared plus 7x plus 12.", "write": "x² + 7x + 12" },
+        { "say": "FOIL: first, outer, inner, last. Four products every time.", "write": "FOIL" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Minus 2 lots of x minus 5 is minus 2x plus 10, not minus 2x minus 5.", "write": "−2(x − 5) = −2x + 10" },
+        { "say": "Don't lose the 1. 3xy divided by 3xy is 1.", "write": "3xy(3x − 2y + 1)" },
+        { "say": "x plus 5 times x plus 2 isn't x squared plus 10. Don't skip the middle.", "write": "✗ x² + 10" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Rainbow arrows, one for each multiplication.", "write": "every term" },
+        { "say": "Factorise is un-expand. Check by expanding back.", "write": "check by expanding" },
+        { "say": "Fully means use the HCF.", "write": "fully = HCF" },
+        { "say": "Mental trick: 37 times 13 plus 37 times 7 is 37 times 20, which is 740.", "write": "37 × (13 + 7) = 740" }
+      ] }
+  ]
+}

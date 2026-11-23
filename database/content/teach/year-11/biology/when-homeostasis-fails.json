@@ -1,0 +1,94 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "When homeostasis fails",
+  "frames": [
+    { "heading": "Find the broken link",
+      "lines": [
+        { "say": "Homeostasis only works if every link in the pathway does its job.", "write": "stimulus → receptor → … → response",
+          "draw": { "type": "shapes", "width": 560, "height": 200, "alt": "Chain of the stimulus-response pathway with the gland link broken", "items": [
+            { "kind": "rect", "x": 10, "y": 70, "w": 120, "h": 50, "fill": "orange", "label": "receptor" },
+            { "kind": "rect", "x": 150, "y": 70, "w": 120, "h": 50, "fill": "yellow", "label": "gland", "change": "remove" },
+            { "kind": "rect", "x": 290, "y": 70, "w": 120, "h": 50, "fill": "green", "label": "hormone" },
+            { "kind": "rect", "x": 430, "y": 70, "w": 120, "h": 50, "fill": "blue", "label": "target cell" },
+            { "kind": "text", "x": 280, "y": 170, "text": "which link snapped?", "size": 20, "bold": true, "anchor": "middle", "color": "red" }
+          ] } },
+        { "say": "A gland can make too little hormone. That's hyposecretion.", "write": "hyposecretion = too little" },
+        { "say": "Or too much hormone. That's hypersecretion.", "write": "hypersecretion = too much" },
+        { "say": "Or the target cells stop responding, or feedback stops switching it off.", "write": "target cells · feedback" }
+      ] },
+    { "heading": "Type 1 diabetes",
+      "lines": [
+        { "say": "Type 1 diabetes is autoimmune. The immune system destroys the beta cells.", "write": "beta cells destroyed" },
+        { "say": "So little or no insulin is made. That's a gland fault.", "write": "no insulin = no key" },
+        { "say": "Cells take up little glucose, so blood glucose stays high. Hyperglycaemia.", "write": "hyperglycaemia" },
+        { "say": "Kidney carriers can only work so fast. Extra glucose stays in the filtrate.", "write": "glucose in urine",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Glucose carriers are all busy, so extra glucose is left in the filtrate", "items": [
+            { "kind": "rect", "x": 30, "y": 40, "w": 500, "h": 70, "fill": "yellow", "label": "" },
+            { "kind": "rect", "x": 30, "y": 160, "w": 500, "h": 60, "fill": "red", "label": "blood" },
+            { "kind": "rect", "x": 100, "y": 110, "w": 30, "h": 50, "fill": "purple" },
+            { "kind": "rect", "x": 260, "y": 110, "w": 30, "h": 50, "fill": "purple" },
+            { "kind": "rect", "x": 420, "y": 110, "w": 30, "h": 50, "fill": "purple" },
+            { "kind": "circle", "x": 115, "y": 75, "r": 12, "fill": "orange" },
+            { "kind": "circle", "x": 275, "y": 75, "r": 12, "fill": "orange" },
+            { "kind": "circle", "x": 435, "y": 75, "r": 12, "fill": "orange" },
+            { "kind": "circle", "x": 180, "y": 75, "r": 12, "fill": "orange", "change": "add" },
+            { "kind": "circle", "x": 350, "y": 75, "r": 12, "fill": "orange", "change": "add" },
+            { "kind": "circle", "x": 500, "y": 75, "r": 12, "fill": "orange", "change": "add" },
+            { "kind": "text", "x": 280, "y": 25, "text": "carriers full: glucose left behind", "size": 18, "anchor": "middle", "color": "red" }
+          ] } },
+        { "say": "That glucose holds water back. Lots of urine, and the person feels very thirsty.", "write": "lots of urine, thirst" },
+        { "say": "Cells starve, so they break down fat. That can make acidic ketones.", "write": "weight loss · ketones" }
+      ] },
+    { "heading": "Treating type 1, and type 2",
+      "lines": [
+        { "say": "The missing piece is insulin, so replace it with injections or a pump.", "write": "treat: insulin" },
+        { "say": "Too much insulin causes hypoglycaemia. Fast-acting sugar fixes it.", "write": "hypoglycaemia → sugar" },
+        { "say": "In type 2, insulin is made, but target cells respond poorly. A jammed lock.", "write": "type 2: insulin resistance" },
+        { "say": "Data rule: high glucose, low insulin? Look at the gland.", "write": "high + low hormone → gland" },
+        { "say": "High glucose and high insulin? Look at the target cells.", "write": "high + high hormone → target" }
+      ] },
+    { "heading": "Thyroid control",
+      "lines": [
+        { "say": "Thyroxine sets the metabolic rate. It needs iodine to be made.", "write": "thyroxine → metabolic rate" },
+        { "say": "Hypothalamus releases TRH. Pituitary releases TSH. Thyroid releases thyroxine.", "write": "TRH → TSH → thyroxine",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Hypothalamus to pituitary to thyroid; high thyroxine feeds back to reduce TSH", "items": [
+            { "kind": "rect", "x": 20, "y": 40, "w": 150, "h": 60, "fill": "purple", "label": "hypothalamus" },
+            { "kind": "arrow", "x": 170, "y": 70, "x2": 205, "y2": 70, "color": "black" },
+            { "kind": "rect", "x": 205, "y": 40, "w": 150, "h": 60, "fill": "blue", "label": "pituitary" },
+            { "kind": "arrow", "x": 355, "y": 70, "x2": 390, "y2": 70, "color": "black" },
+            { "kind": "rect", "x": 390, "y": 40, "w": 150, "h": 60, "fill": "orange", "label": "thyroid" },
+            { "kind": "arrow", "x": 465, "y": 110, "x2": 280, "y2": 180, "color": "red", "change": "add" },
+            { "kind": "text", "x": 280, "y": 220, "text": "high thyroxine → less TSH", "size": 20, "bold": true, "anchor": "middle", "color": "red", "change": "add" }
+          ] } },
+        { "say": "High thyroxine switches off TRH and TSH. That's negative feedback.", "write": "negative feedback" }
+      ] },
+    { "heading": "Graves' disease",
+      "lines": [
+        { "say": "In Graves' disease, antibodies bind the TSH receptors and switch the thyroid on.", "write": "antibodies act like TSH" },
+        { "say": "Feedback can't switch the antibodies off. Like a doorbell jammed on.", "write": "ignores feedback" },
+        { "say": "So thyroxine is high, but TSH is low.", "write": "thyroxine ↑ · TSH ↓" },
+        { "say": "Everything speeds up: hot, sweaty, fast heart, weight loss. Maybe a goitre.", "write": "hyperthyroid = sped up" },
+        { "say": "Hypothyroidism is the opposite: tired, cold, weight gain.", "write": "hypothyroid = slowed down" }
+      ] },
+    { "heading": "Water balance disorders",
+      "lines": [
+        { "say": "Diabetes insipidus is about ADH and water, not glucose.", "write": "insipidus = tasteless" },
+        { "say": "Central: not enough ADH is made. Nephrogenic: the kidneys don't respond.", "write": "central vs nephrogenic" },
+        { "say": "Either way, collecting ducts keep little water. Huge volumes of dilute urine.", "write": "lots of dilute urine",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Normal urine volume compared with a much larger volume in diabetes insipidus", "items": [
+            { "kind": "line", "x": 40, "y": 210, "x2": 520, "y2": 210, "color": "black" },
+            { "kind": "rect", "x": 100, "y": 160, "w": 120, "h": 50, "fill": "yellow", "label": "normal" },
+            { "kind": "rect", "x": 320, "y": 30, "w": 120, "h": 180, "fill": "yellow", "label": "DI", "change": "add" },
+            { "kind": "text", "x": 280, "y": 235, "text": "urine volume", "size": 16, "anchor": "middle" }
+          ] } },
+        { "say": "Synthetic ADH treats the central form, but not the nephrogenic form.", "write": "synthetic ADH: central only" },
+        { "say": "Too much ADH does the reverse. The blood becomes too dilute.", "write": "SIADH: blood too dilute" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Type 1 isn't caused by eating sugar. It's autoimmune.", "write": "✗ too much sugar" },
+        { "say": "Mellitus means honey, it's glucose. Insipidus is ADH and water.", "write": "mellitus ≠ insipidus" },
+        { "say": "Low TSH in Graves' doesn't mean an underactive thyroid.", "write": "low TSH ≠ underactive" },
+        { "say": "Find the broken link, then explain each step with so or therefore.", "write": "link → so → therefore" }
+      ] }
+  ]
+}

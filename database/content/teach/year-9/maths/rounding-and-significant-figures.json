@@ -1,0 +1,857 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Rounding and significant figures",
+  "frames": [
+    {
+      "heading": "The nearest bus stop",
+      "lines": [
+        {
+          "say": "Bus stops every 100 metres. You get off at the nearest one.",
+          "write": "round to the nearest"
+        },
+        {
+          "say": "3.47 is closer to 3.5 than to 3.4.",
+          "write": "3.47 → 3.5",
+          "diagram": "diagrams/y9/maths/rounding-and-significant-figures-nl.svg",
+          "alt": "Number line from 3.4 to 3.5 with 3.47 marked"
+        },
+        {
+          "say": "Exactly halfway, like 15 between 10 and 20, rounds up.",
+          "write": "15 → 20",
+          "diagram": "diagrams/y9/maths/rounding-and-significant-figures-half.svg",
+          "alt": "Number line from 10 to 20 with 15 at the halfway point"
+        }
+      ]
+    },
+    {
+      "heading": "The rounding rule",
+      "lines": [
+        {
+          "say": "Find the last digit you keep. Look at the next digit only.",
+          "write": "rounding digit + next digit"
+        },
+        {
+          "say": "0 to 4: leave it. 5 to 9: add 1.",
+          "write": "0–4 keep,  5–9 add 1"
+        },
+        {
+          "say": "Round 3.4718 to 2 decimal places. The next digit is 1, so keep the 7.",
+          "write": "3.47",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "3.4718 with the rounding digit 7 and next digit 1",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 148.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 192.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 236.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 324.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "orange",
+                "label": "1",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 368.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "next digit 1 → keep 7 → 3.47",
+                "size": 22,
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "To 1 decimal place, the next digit is 7. So the 4 becomes 5.",
+          "write": "3.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "3.4718 with the rounding digit 4 and next digit 7",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 148.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 192.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 236.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "orange",
+                "label": "7",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 324.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 368.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "next digit 7 → 4 becomes 5 → 3.5",
+                "size": 22,
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Always round from the original number, not your last answer.",
+          "write": "round once"
+        }
+      ]
+    },
+    {
+      "heading": "Significant figures",
+      "lines": [
+        {
+          "say": "Significant figures count from the first non-zero digit.",
+          "write": "s.f.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "The number 0.004 062 8",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 82.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 126.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 390.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 434.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "8"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Leading zeros never count. Cross them out.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Leading zeros crossed out; 4, 0, 6 are the 3 significant figures",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 82.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "grey",
+                "label": "0",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 126.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "grey",
+                "label": "0",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "grey",
+                "label": "0",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "green",
+                "label": "4",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "green",
+                "label": "0",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "green",
+                "label": "6",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 390.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "orange",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 434.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "3 s.f. → 0.004 06",
+                "size": 24,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Zeros between non-zero digits do count. 307 has 3.",
+          "write": "307 → 3 s.f."
+        },
+        {
+          "say": "Zeros at the end after a decimal point count. 2.50 has 3.",
+          "write": "2.50 → 3 s.f."
+        }
+      ]
+    },
+    {
+      "heading": "Keep the place value",
+      "lines": [
+        {
+          "say": "Round 58 362 to 2 significant figures. Keep 5 and 8.",
+          "write": "58 362",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "58 362 with the first two significant figures and next digit 3",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "orange",
+                "label": "3",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "white",
+                "label": "2"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The next digit is 3, so 58 stays.",
+          "write": "next digit 3 → keep"
+        },
+        {
+          "say": "Fill the rest with zeros. It's 58 thousand, not 58.",
+          "write": "58 000",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "58 362 rounded to 58 000",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 170.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 214.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 258.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "green",
+                "label": "0",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 302.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "green",
+                "label": "0",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 346.0,
+                "y": 60,
+                "w": 40,
+                "h": 56,
+                "fill": "green",
+                "label": "0",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "58 362 → 58 000 (not 58)",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Estimating",
+      "lines": [
+        {
+          "say": "Round every number to 1 significant figure.",
+          "write": "48.7 × 0.312 ÷ 9.6"
+        },
+        {
+          "say": "That's 50 times 0.3, divided by 10.",
+          "write": "50 × 0.3 ÷ 10"
+        },
+        {
+          "say": "15 divided by 10 is 1.5. The calculator gives 1.58. Close!",
+          "write": "≈ 1.5 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Rounding money",
+      "lines": [
+        {
+          "say": "Money is rounded to the nearest cent, 2 decimal places.",
+          "write": "$ → 2 d.p."
+        },
+        {
+          "say": "Cash is rounded to the nearest 5 cents. There are no 1 or 2 cent coins.",
+          "write": "cash → nearest 5c"
+        },
+        {
+          "say": "27 dollars 63 ends in 3, so in cash you pay 27 dollars 65.",
+          "write": "$27.63 → $27.65",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Cents from 60 to 70, with 27.63 rounded to the nearest 5 cents",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 120,
+                "x2": 520,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 110,
+                "x2": 40,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 88,
+                "y": 110,
+                "x2": 88,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 136,
+                "y": 110,
+                "x2": 136,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 184,
+                "y": 110,
+                "x2": 184,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 232,
+                "y": 110,
+                "x2": 232,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 110,
+                "x2": 280,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 328,
+                "y": 110,
+                "x2": 328,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 376,
+                "y": 110,
+                "x2": 376,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 424,
+                "y": 110,
+                "x2": 424,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 472,
+                "y": 110,
+                "x2": 472,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 520,
+                "y": 110,
+                "x2": 520,
+                "y2": 130,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 160,
+                "text": ".60",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 88,
+                "y": 160,
+                "text": ".61",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 136,
+                "y": 160,
+                "text": ".62",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 184,
+                "y": 160,
+                "text": ".63",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 232,
+                "y": 160,
+                "text": ".64",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": ".65",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 328,
+                "y": 160,
+                "text": ".66",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 376,
+                "y": 160,
+                "text": ".67",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 424,
+                "y": 160,
+                "text": ".68",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 472,
+                "y": 160,
+                "text": ".69",
+                "size": 16
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 160,
+                "text": ".70",
+                "size": 16
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 120,
+                "r": 10,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 520,
+                "y": 120,
+                "r": 10,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 40,
+                "y": 120,
+                "r": 10,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 184,
+                "y": 120,
+                "r": 8,
+                "fill": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "arrow",
+                "x": 184,
+                "y": 90,
+                "x2": 280,
+                "y2": 90,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 60,
+                "text": "$27.63 → $27.65 in cash",
+                "size": 22,
+                "change": "add",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "14 dollars 92 ends in 2, so it rounds down to 14 dollars 90.",
+          "write": "$14.92 → $14.90"
+        },
+        {
+          "say": "By card, you pay the exact amount.",
+          "write": "card: exact"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't round in two stages. 2.449 to 1 decimal place is 2.4.",
+          "write": "✗ 2.449 → 2.45 → 2.5"
+        },
+        {
+          "say": "0.0307 has 3 significant figures, not 5.",
+          "write": "0.0307 → 3 s.f."
+        },
+        {
+          "say": "Don't just chop digits off. Use the rounding rule.",
+          "write": "✗ 6.4851 → 6.4"
+        },
+        {
+          "say": "Round only the final answer.",
+          "write": "round at the end"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Look at the next digit only. 5 or more rounds up.",
+          "write": "5+ → up"
+        },
+        {
+          "say": "Significant figures start at the first non-zero digit.",
+          "write": "skip leading zeros"
+        },
+        {
+          "say": "Estimate with 1 significant figure to check your calculator.",
+          "write": "estimate to check"
+        }
+      ]
+    }
+  ]
+}

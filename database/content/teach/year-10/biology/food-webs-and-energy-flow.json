@@ -1,0 +1,130 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "Food webs and energy flow",
+  "frames": [
+    {
+      "heading": "Producers, consumers, decomposers",
+      "lines": [
+        {"say": "Producers make their own food by photosynthesis, using light energy.", "write": "6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂"},
+        {"say": "Consumers eat other organisms. Herbivores eat producers, like a koala.", "write": "herbivore: koala"},
+        {"say": "Carnivores eat animals, like a dingo. Omnivores eat both, like an emu.", "write": "carnivore, omnivore"},
+        {"say": "Decomposers, mainly bacteria and fungi, break down dead things and wastes.", "write": "decomposers recycle nutrients"}
+      ]
+    },
+    {
+      "heading": "Food chains",
+      "lines": [
+        {"say": "A food chain shows one path of feeding.", "write": "grass → kangaroo → dingo",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Food chain: grass to kangaroo to dingo, with arrows showing energy flow", "items": [
+           {"kind": "rect", "x": 20, "y": 70, "w": 130, "h": 60, "fill": "green", "label": "grass"},
+           {"kind": "rect", "x": 215, "y": 70, "w": 130, "h": 60, "fill": "orange", "label": "kangaroo"},
+           {"kind": "rect", "x": 410, "y": 70, "w": 130, "h": 60, "fill": "red", "label": "dingo"},
+           {"kind": "arrow", "x": 150, "y": 100, "x2": 213, "y2": 100, "color": "purple", "change": "add"},
+           {"kind": "arrow", "x": 345, "y": 100, "x2": 408, "y2": 100, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 170, "text": "arrow = energy flow (\"is eaten by\")", "size": 18, "bold": true, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "Arrows follow the energy into the eater's mouth.", "write": "read → as \"is eaten by\""},
+        {"say": "Each feeding position is a trophic level.", "write": "trophic level"},
+        {"say": "The consumer number is one behind. A secondary consumer is at level three.", "write": "secondary = 3rd level"}
+      ]
+    },
+    {
+      "heading": "Food webs",
+      "lines": [
+        {"say": "Most animals eat more than one thing. Linked chains make a food web.", "write": "food web = linked chains",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Woodland food web: grass to rabbit and kangaroo; rabbit to fox, dingo and eagle; kangaroo to dingo", "items": [
+           {"kind": "rect", "x": 200, "y": 240, "w": 160, "h": 45, "fill": "green", "label": "grass"},
+           {"kind": "rect", "x": 60, "y": 140, "w": 130, "h": 45, "fill": "yellow", "label": "rabbit"},
+           {"kind": "rect", "x": 370, "y": 140, "w": 130, "h": 45, "fill": "orange", "label": "kangaroo"},
+           {"kind": "rect", "x": 20, "y": 30, "w": 110, "h": 45, "fill": "red", "label": "fox"},
+           {"kind": "rect", "x": 225, "y": 30, "w": 110, "h": 45, "fill": "red", "label": "dingo"},
+           {"kind": "rect", "x": 430, "y": 30, "w": 110, "h": 45, "fill": "purple", "label": "eagle"},
+           {"kind": "arrow", "x": 240, "y": 240, "x2": 150, "y2": 187, "color": "black"},
+           {"kind": "arrow", "x": 320, "y": 240, "x2": 420, "y2": 187, "color": "black"},
+           {"kind": "arrow", "x": 100, "y": 140, "x2": 80, "y2": 77, "color": "black"},
+           {"kind": "arrow", "x": 150, "y": 140, "x2": 260, "y2": 77, "color": "black"},
+           {"kind": "arrow", "x": 410, "y": 140, "x2": 300, "y2": 77, "color": "black"},
+           {"kind": "arrow", "x": 190, "y": 150, "x2": 440, "y2": 70, "color": "black"}
+         ]}},
+        {"say": "Now remove the foxes, say with a baiting program.", "write": "foxes removed",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Foxes removed: rabbit numbers rise and grass falls", "items": [
+           {"kind": "rect", "x": 200, "y": 240, "w": 160, "h": 45, "fill": "green", "label": "grass ↓", "change": "highlight"},
+           {"kind": "rect", "x": 60, "y": 140, "w": 130, "h": 45, "fill": "yellow", "label": "rabbit ↑", "change": "highlight"},
+           {"kind": "rect", "x": 370, "y": 140, "w": 130, "h": 45, "fill": "orange", "label": "kangaroo"},
+           {"kind": "rect", "x": 20, "y": 30, "w": 110, "h": 45, "fill": "red", "label": "fox", "change": "remove"},
+           {"kind": "rect", "x": 225, "y": 30, "w": 110, "h": 45, "fill": "red", "label": "dingo"},
+           {"kind": "rect", "x": 430, "y": 30, "w": 110, "h": 45, "fill": "purple", "label": "eagle"},
+           {"kind": "arrow", "x": 240, "y": 240, "x2": 150, "y2": 187, "color": "black"},
+           {"kind": "arrow", "x": 320, "y": 240, "x2": 420, "y2": 187, "color": "black"},
+           {"kind": "arrow", "x": 150, "y": 140, "x2": 260, "y2": 77, "color": "black"},
+           {"kind": "arrow", "x": 410, "y": 140, "x2": 300, "y2": 77, "color": "black"},
+           {"kind": "arrow", "x": 190, "y": 150, "x2": 440, "y2": 70, "color": "black"}
+         ]}},
+        {"say": "Rabbits lose a predator, so they increase. Then grass may fall.", "write": "rabbits ↑, grass ↓"},
+        {"say": "Less grass means less food for kangaroos. Eagles may gain extra rabbits.", "write": "change spreads through web"}
+      ]
+    },
+    {
+      "heading": "Where does the energy go?",
+      "lines": [
+        {"say": "Only about ten percent of the energy passes to the next level.", "write": "~10% passed on"},
+        {"say": "Most is used in respiration, and lost as heat.", "write": "respiration → heat"},
+        {"say": "Some parts aren't eaten, like roots and bones. Some leaves as faeces.", "write": "not eaten, faeces"},
+        {"say": "Energy isn't destroyed. It changes form and leaves the chain.", "write": "never destroyed"},
+        {"say": "Energy flows, nutrients cycle. Sunlight has to keep topping it up.", "write": "energy flows, nutrients cycle"}
+      ]
+    },
+    {
+      "heading": "The 10% rule",
+      "lines": [
+        {"say": "Grass stores 50 000 kilojoules. Divide by ten at each step.", "write": "50 000 kJ",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Energy pyramid: grass 50 000, kangaroo 5000, dingo 500 kilojoules", "items": [
+           {"kind": "rect", "x": 40, "y": 190, "w": 480, "h": 55, "fill": "green", "label": "grass 50 000 kJ"},
+           {"kind": "rect", "x": 160, "y": 125, "w": 240, "h": 55, "fill": "orange", "label": "kangaroo 5000 kJ", "change": "add"},
+           {"kind": "rect", "x": 220, "y": 60, "w": 120, "h": 55, "fill": "red", "label": "dingo 500", "change": "add"},
+           {"kind": "text", "x": 470, "y": 100, "text": "÷ 10 each step", "size": 18, "bold": true, "color": "purple"}
+         ]}},
+        {"say": "The kangaroo gets 5000. The dingo gets just 500.", "write": "→ 5000 → 500 kJ"},
+        {"say": "That's only one percent of the energy in the grass.", "write": "500 = 1% of 50 000"},
+        {"say": "Ten percent is only an average. Use real numbers if you're given them.", "write": "efficiency = higher ÷ lower × 100"},
+        {"say": "Plankton 8000, zooplankton 640. That's 8 percent.", "write": "640 ÷ 8000 × 100 = 8%"}
+      ]
+    },
+    {
+      "heading": "Energy pyramids",
+      "lines": [
+        {"say": "Each bar shows the energy at one trophic level.", "write": "kJ m⁻² yr⁻¹"},
+        {"say": "Energy is lost at every step, so the pyramid always narrows at the top.", "write": "always narrows",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Four-level energy pyramid with a fifth level that is crossed out for lack of energy", "items": [
+           {"kind": "rect", "x": 40, "y": 220, "w": 480, "h": 45, "fill": "green", "label": "producers"},
+           {"kind": "rect", "x": 130, "y": 170, "w": 300, "h": 45, "fill": "yellow", "label": "primary"},
+           {"kind": "rect", "x": 190, "y": 120, "w": 180, "h": 45, "fill": "orange", "label": "secondary"},
+           {"kind": "rect", "x": 230, "y": 70, "w": 100, "h": 45, "fill": "red", "label": "tertiary"},
+           {"kind": "rect", "x": 260, "y": 20, "w": 40, "h": 45, "fill": "grey", "change": "remove"},
+           {"kind": "text", "x": 420, "y": 45, "text": "not enough energy", "size": 18, "color": "red"}
+         ]}},
+        {"say": "That's why chains rarely go past four or five levels.", "write": "≤ 4–5 levels"},
+        {"say": "And why top predators like eagles and sharks are rare.", "write": "few top predators"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Arrows go from food to feeder, not the other way.", "write": "✗ dingo → kangaroo"},
+        {"say": "Energy isn't used up. It changes into heat.", "write": "✗ energy destroyed"},
+        {"say": "Don't forget decomposers. They feed at every level.", "write": "include decomposers"},
+        {"say": "A secondary consumer is at the third trophic level.", "write": "✗ secondary = 2nd level"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Arrows show energy flow into the eater.", "write": "→ = is eaten by"},
+        {"say": "Divide by ten at each step, roughly.", "write": "~10% rule"},
+        {"say": "Energy flows and leaves as heat. Nutrients cycle.", "write": "flows vs cycles"},
+        {"say": "Energy pyramids always narrow at the top.", "write": "pyramid narrows"}
+      ]
+    }
+  ]
+}

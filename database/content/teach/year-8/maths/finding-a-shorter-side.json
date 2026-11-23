@@ -1,0 +1,783 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Finding a shorter side",
+  "frames": [
+    {
+      "heading": "Finding a shorter side",
+      "lines": [
+        {
+          "say": "Sometimes you know the longest side, but need a shorter one.",
+          "diagram": "diagrams/y8/maths/finding-a-shorter-side-rule.svg",
+          "alt": "A right-angled triangle with hypotenuse c, base b, and the unknown shorter side a"
+        },
+        {
+          "say": "The longest side is the hypotenuse. It sits opposite the right angle.",
+          "write": "c = hypotenuse"
+        },
+        {
+          "say": "Here the hypotenuse is 13 and one short side is 5.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right-angled triangle, hypotenuse 13 cm, side 5 cm, other side unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    270
+                  ],
+                  [
+                    120,
+                    54
+                  ],
+                  [
+                    210,
+                    270
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 254,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 150,
+                "text": "13 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 295,
+                "text": "5 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "?",
+                "size": 22,
+                "color": "red",
+                "anchor": "end",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Pythagoras still works. We just subtract instead of add.",
+          "write": "subtract, not add"
+        }
+      ]
+    },
+    {
+      "heading": "Think of the tiles",
+      "lines": [
+        {
+          "say": "The big tile on the hypotenuse equals the two small tiles together.",
+          "write": "c² = a² + b²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Square tiles: the hypotenuse tile is 25, a small tile is 9, the missing tile is 25 − 9 = 16",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 150,
+                "h": 150,
+                "fill": "purple",
+                "label": "25"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 220,
+                "text": "hypotenuse tile",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 100,
+                "w": 90,
+                "h": 90,
+                "fill": "orange",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 220,
+                "text": "known tile",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take the known small tile away from the big tile.",
+          "write": "25 − 9 = 16",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Square tiles: the hypotenuse tile is 25, a small tile is 9, the missing tile is 25 − 9 = 16",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 150,
+                "h": 150,
+                "fill": "purple",
+                "label": "25"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 220,
+                "text": "hypotenuse tile",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 100,
+                "w": 90,
+                "h": 90,
+                "fill": "orange",
+                "label": "9",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 220,
+                "text": "known tile",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 70,
+                "w": 120,
+                "h": 120,
+                "fill": "green",
+                "label": "16",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 220,
+                "text": "25 − 9 = 16",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "What is left is the missing tile. Its side is 4.",
+          "write": "side = √16 = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Square tiles: the hypotenuse tile is 25, a small tile is 9, the missing tile is 25 − 9 = 16",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 150,
+                "h": 150,
+                "fill": "purple",
+                "label": "25"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 220,
+                "text": "hypotenuse tile",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 70,
+                "w": 120,
+                "h": 120,
+                "fill": "green",
+                "label": "16",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 220,
+                "text": "25 − 9 = 16",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 260,
+                "text": "side = √16 = 4",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Subtract the squares, never the lengths. 5 take away 3 is wrong.",
+          "write": "✗ 5 − 3 = 2"
+        }
+      ]
+    },
+    {
+      "heading": "Rearranging the rule",
+      "lines": [
+        {
+          "say": "Start with c squared equals a squared plus b squared.",
+          "write": "c² = a² + b²"
+        },
+        {
+          "say": "Take b squared away from both sides.",
+          "write": "c² − b² = a²"
+        },
+        {
+          "say": "So a squared equals c squared minus b squared.",
+          "write": "a² = c² − b²"
+        },
+        {
+          "say": "Square both sides you know. Subtract, big minus small. Then square root.",
+          "write": "square, subtract, root"
+        }
+      ]
+    },
+    {
+      "heading": "Example: 13 and 5",
+      "lines": [
+        {
+          "say": "Hypotenuse 13, one short side 5. Find the other side.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle with hypotenuse 13 cm, side 5 cm, missing side marked ?",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    270
+                  ],
+                  [
+                    120,
+                    54
+                  ],
+                  [
+                    210,
+                    270
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 254,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 150,
+                "text": "13 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 295,
+                "text": "5 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "?",
+                "size": 22,
+                "color": "red",
+                "anchor": "end",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Square both. 13 squared is 169. 5 squared is 25.",
+          "write": "13² = 169,  5² = 25"
+        },
+        {
+          "say": "Subtract. 169 take away 25 is 144.",
+          "write": "a² = 169 − 25 = 144"
+        },
+        {
+          "say": "Square root of 144 is 12. The missing side is 12 centimetres.",
+          "write": "a = √144 = 12 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "The missing side is now marked 12 cm",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    270
+                  ],
+                  [
+                    120,
+                    54
+                  ],
+                  [
+                    210,
+                    270
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 254,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 150,
+                "text": "13 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 295,
+                "text": "5 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "12 cm",
+                "size": 22,
+                "color": "red",
+                "anchor": "end",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. 25 plus 144 is 169. That is 13 squared.",
+          "write": "5² + 12² = 13² ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Add or subtract?",
+      "lines": [
+        {
+          "say": "Before you start, ask: am I finding the hypotenuse?",
+          "write": "Finding the longest side?"
+        },
+        {
+          "say": "Finding the hypotenuse? Add the squares.",
+          "write": "longest → add"
+        },
+        {
+          "say": "Finding a shorter side? Subtract from the hypotenuse squared.",
+          "write": "shorter → subtract"
+        },
+        {
+          "say": "Sense check. A shorter side must be shorter than the hypotenuse.",
+          "write": "answer < hypotenuse"
+        }
+      ]
+    },
+    {
+      "heading": "A ladder against a wall",
+      "lines": [
+        {
+          "say": "A 4.5 metre ladder leans on a wall. Its foot is 1.5 metres out.",
+          "diagram": "diagrams/y8/maths/finding-a-shorter-side-ex3.svg",
+          "alt": "A 4.5 m ladder leaning against a wall, foot 1.5 m from the wall, height h unknown"
+        },
+        {
+          "say": "The ladder is the hypotenuse. The height is a shorter side.",
+          "write": "ladder = hypotenuse"
+        },
+        {
+          "say": "4.5 squared is 20.25. 1.5 squared is 2.25. Subtract to get 18.",
+          "write": "h² = 20.25 − 2.25 = 18"
+        },
+        {
+          "say": "Square root of 18 is about 4.2. It reaches about 4.2 metres.",
+          "write": "h = √18 ≈ 4.2 m"
+        }
+      ]
+    },
+    {
+      "heading": "Hidden right-angled triangles",
+      "lines": [
+        {
+          "say": "This isosceles triangle has two sides of 10 and a base of 12.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "An isosceles triangle with sides 10 cm and base 12 cm, split by a dashed height h",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    480,
+                    260
+                  ],
+                  [
+                    280,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 145,
+                "text": "10 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 145,
+                "text": "10 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "12 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw the height. It cuts the base in half, 6 and 6.",
+          "write": "12 ÷ 2 = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "An isosceles triangle with sides 10 cm and base 12 cm, split by a dashed height h",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    480,
+                    260
+                  ],
+                  [
+                    280,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 145,
+                "text": "10 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 145,
+                "text": "10 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 280,
+                "y2": 260,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 295,
+                "y": 180,
+                "text": "h",
+                "size": 22,
+                "color": "red",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 290,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 290,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now use one half. 100 take away 36 is 64.",
+          "write": "h² = 10² − 6² = 64"
+        },
+        {
+          "say": "Square root of 64 is 8. The height is 8 centimetres.",
+          "write": "h = 8 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "An isosceles triangle with sides 10 cm and base 12 cm, split by a dashed height h",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    480,
+                    260
+                  ],
+                  [
+                    280,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 145,
+                "text": "10 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 145,
+                "text": "10 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 60,
+                "x2": 280,
+                "y2": 260,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 295,
+                "y": 180,
+                "text": "h",
+                "size": 22,
+                "color": "red",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 290,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 290,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 225,
+                "text": "h = 8 cm",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Area is a half times 12 times 8. That is 48 square centimetres.",
+          "write": "Area = ½ × 12 × 8 = 48 cm²"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        {
+          "say": "Don't subtract the lengths. 13 take away 5 is not the answer.",
+          "write": "✗ 13 − 5 = 8"
+        },
+        {
+          "say": "Always start from the hypotenuse squared, or you get a negative.",
+          "write": "✗ 5² − 13²"
+        },
+        {
+          "say": "Halve the base of an isosceles triangle first.",
+          "write": "halve the base"
+        },
+        {
+          "say": "Longest? Add. Shorter? Subtract. Then take the square root.",
+          "write": "a² = c² − b²"
+        }
+      ]
+    }
+  ]
+}

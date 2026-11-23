@@ -1,0 +1,557 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Simplifying surds",
+  "frames": [
+    {
+      "heading": "What is a surd?",
+      "lines": [
+        {
+          "say": "A surd is a root of a whole number that is irrational.",
+          "write": "surd: √50, √2"
+        },
+        {
+          "say": "Its decimal never ends or repeats, so it is not a fraction.",
+          "write": "irrational"
+        },
+        {
+          "say": "Root 49 is exactly 7, so it is not a surd.",
+          "write": "√49 = 7, not a surd"
+        },
+        {
+          "say": "Root 50 is a surd. It sits just past 7 on the number line.",
+          "write": "7² = 49, 8² = 64",
+          "diagram": "diagrams/y10/maths/simplifying-surds-numline.svg",
+          "alt": "Number line from 5 to 9 with root 50 just right of 7"
+        }
+      ]
+    },
+    {
+      "heading": "Simplest form",
+      "lines": [
+        {
+          "say": "Simplest form means no perfect square factor is left under the root.",
+          "write": "no square factor inside"
+        },
+        {
+          "say": "Take root 72. Inside, find the biggest perfect square factor: 36.",
+          "write": "√72 = √(36 × 2)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Square bundle inside the root",
+            "items": [
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 175,
+                "text": "√",
+                "size": 90,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 95,
+                "x2": 520,
+                "y2": 95,
+                "color": "purple",
+                "stroke": 5
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 120,
+                "w": 140,
+                "h": 140,
+                "fill": "blue",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 170,
+                "w": 90,
+                "h": 90,
+                "fill": "orange",
+                "label": "2"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Split the root. Root of a times b is root a times root b.",
+          "write": "√(a × b) = √a × √b"
+        },
+        {
+          "say": "The 36 bundle comes out, but shrinks to its square root, 6.",
+          "write": "√36 = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Square bundle inside the root",
+            "items": [
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 175,
+                "text": "√",
+                "size": 90,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 95,
+                "x2": 520,
+                "y2": 95,
+                "color": "purple",
+                "stroke": 5
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 120,
+                "w": 140,
+                "h": 140,
+                "fill": "blue",
+                "change": "remove",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 170,
+                "w": 90,
+                "h": 90,
+                "fill": "orange",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 290,
+                "text": "6 comes out",
+                "size": 22,
+                "color": "green",
+                "bold": true,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The 2 has no square bundle, so it stays inside. Root 72 is 6 root 2.",
+          "write": "√72 = 6√2"
+        },
+        {
+          "say": "The 6 in front is called the coefficient.",
+          "write": "coefficient = 6"
+        }
+      ]
+    },
+    {
+      "heading": "Using prime factors",
+      "lines": [
+        {
+          "say": "For big numbers, write the prime factors. Simplify root 180.",
+          "write": "180 = 2 × 2 × 3 × 3 × 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Prime factors of 180",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 89,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 167,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 245,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 323,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 401,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "√180",
+                "size": 26,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each pair of equal primes escapes as one prime.",
+          "write": "pairs escape",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Pairs of 2s and 3s highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 89,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "green",
+                "change": "highlight",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 167,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "green",
+                "change": "highlight",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 245,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 323,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 401,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "pair of 2s → 2,  pair of 3s → 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The 5 has no partner, so it stays inside.",
+          "write": "√180 = 2 × 3 × √5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Pairs removed, 5 stays",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 89,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 167,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 245,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 323,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "white",
+                "change": "remove",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 401,
+                "y": 80,
+                "w": 70,
+                "h": 56,
+                "fill": "orange",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "6√5",
+                "size": 30,
+                "color": "green",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So root 180 is 6 root 5. Check: 6 squared times 5 is 180.",
+          "write": "6√5;  36 × 5 = 180 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Entire surds and comparing",
+      "lines": [
+        {
+          "say": "An entire surd has everything under the root, like root 75.",
+          "write": "entire surd: √75"
+        },
+        {
+          "say": "To go back, square the coefficient and multiply it in.",
+          "write": "5√3 = √(25 × 3) = √75"
+        },
+        {
+          "say": "Which is larger, 3 root 7 or 2 root 15?",
+          "write": "3√7  or  2√15 ?"
+        },
+        {
+          "say": "3 root 7 is root 63. 2 root 15 is root 60.",
+          "write": "√63  vs  √60",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Bars comparing root 63 and root 60",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 441,
+                "h": 50,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "√63"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 150,
+                "w": 420,
+                "h": 50,
+                "fill": "orange",
+                "label": "√60"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "63 > 60, so 3√7 is larger",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "63 is bigger, so 3 root 7 is larger.",
+          "write": "3√7 > 2√15"
+        }
+      ]
+    },
+    {
+      "heading": "Fractions and exact lengths",
+      "lines": [
+        {
+          "say": "For a fraction, take the root of the top and bottom separately.",
+          "write": "√(a/b) = √a / √b"
+        },
+        {
+          "say": "Root 50 over 9 becomes 5 root 2, over 3.",
+          "write": "√(50/9) = 5√2 / 3"
+        },
+        {
+          "say": "Pythagoras: sides 8 and 4. x squared is 64 plus 16, which is 80.",
+          "write": "x² = 64 + 16 = 80",
+          "diagram": "diagrams/y10/maths/simplifying-surds-ex3.svg",
+          "alt": "Right triangle with sides 8 and 4"
+        },
+        {
+          "say": "Root 80 is root 16 times 5, so x is 4 root 5 centimetres.",
+          "write": "x = √80 = 4√5 cm"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Take the root of the square. Root 72 is 6 root 2, not 36 root 2.",
+          "write": "✗ 36√2   ✓ 6√2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Square bundle inside the root",
+            "items": [
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 175,
+                "text": "√",
+                "size": 90,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 95,
+                "y": 95,
+                "x2": 520,
+                "y2": 95,
+                "color": "purple",
+                "stroke": 5
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 120,
+                "w": 140,
+                "h": 140,
+                "fill": "blue",
+                "change": "remove",
+                "label": "36"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 170,
+                "w": 90,
+                "h": 90,
+                "fill": "orange",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 290,
+                "text": "6, not 36, comes out",
+                "size": 22,
+                "color": "green",
+                "bold": true,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't stop early. 3 root 8 still has 4 inside it.",
+          "write": "✗ 3√8   ✓ 6√2"
+        },
+        {
+          "say": "Square when making an entire surd. 5 root 3 is root 75, not root 15.",
+          "write": "5√3 = √75"
+        },
+        {
+          "say": "Don't compare coefficients only. 4 root 3 is smaller than root 50.",
+          "write": "√48 < √50"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Biggest bundle out, and it comes out as its root.",
+          "write": "biggest bundle out"
+        },
+        {
+          "say": "Learn your squares up to 15 squared, which is 225.",
+          "write": "4, 9, 16, 25, 36 … 225"
+        },
+        {
+          "say": "Pairs of prime factors escape as one.",
+          "write": "pairs escape"
+        },
+        {
+          "say": "Self-check: square your answer. 6 root 2, squared, is 72.",
+          "write": "(6√2)² = 36 × 2 = 72 ✓"
+        }
+      ]
+    }
+  ]
+}

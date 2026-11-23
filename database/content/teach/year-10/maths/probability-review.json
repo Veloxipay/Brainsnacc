@@ -1,0 +1,1867 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Probability review",
+  "frames": [
+    {
+      "heading": "Outcomes, sample space and events",
+      "lines": [
+        {
+          "say": "An outcome is one possible result, like rolling a 4.",
+          "write": "outcome"
+        },
+        {
+          "say": "The sample space lists all outcomes. For one die, 1 to 6.",
+          "write": "S = {1, 2, 3, 4, 5, 6}"
+        },
+        {
+          "say": "An event is a group of outcomes, like an even number.",
+          "write": "even = {2, 4, 6}"
+        },
+        {
+          "say": "When outcomes are equally likely, probability is want over all.",
+          "write": "P = want ÷ all"
+        },
+        {
+          "say": "Every probability is between 0, impossible, and 1, certain.",
+          "write": "0 ≤ P ≤ 1"
+        }
+      ]
+    },
+    {
+      "heading": "Counting and the complement",
+      "lines": [
+        {
+          "say": "A bag has 4 red, 5 blue and 3 white marbles. That's 12.",
+          "write": "total = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "A bag of 12 marbles",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 92,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 134,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 218,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 302,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 344,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 386,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 428,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 512,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "12 marbles: 4 red, 5 blue, 3 white",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Five of the 12 are blue.",
+          "write": "P(blue) = 5/12"
+        },
+        {
+          "say": "Three are white, so P of white is a quarter.",
+          "write": "P(white) = 3/12 = 1/4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "A bag of 12 marbles",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 92,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 134,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 218,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 302,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 344,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 386,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 428,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "change": "highlight",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "change": "highlight",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 512,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "change": "highlight",
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "12 marbles: 4 red, 5 blue, 3 white",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not white is the complement. 1 minus a quarter is three quarters.",
+          "write": "P(not white) = 1 − 1/4 = 3/4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "A bag of 12 marbles",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 92,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 134,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 110,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 218,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 302,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 344,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 386,
+                "y": 110,
+                "r": 18,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 428,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "change": "remove",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "change": "remove",
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 512,
+                "y": 110,
+                "r": 18,
+                "fill": "white",
+                "change": "remove",
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "12 marbles: 4 red, 5 blue, 3 white",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not means 1 minus.",
+          "write": "P(A′) = 1 − P(A)"
+        }
+      ]
+    },
+    {
+      "heading": "Spinners: use the angle",
+      "lines": [
+        {
+          "say": "This spinner has three colours. But they aren't equally likely.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Spinner: red half, blue quarter, green quarter",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    150
+                  ],
+                  [
+                    150.0,
+                    40.0
+                  ],
+                  [
+                    107.9,
+                    48.4
+                  ],
+                  [
+                    72.2,
+                    72.2
+                  ],
+                  [
+                    48.4,
+                    107.9
+                  ],
+                  [
+                    40.0,
+                    150.0
+                  ],
+                  [
+                    48.4,
+                    192.1
+                  ],
+                  [
+                    72.2,
+                    227.8
+                  ],
+                  [
+                    107.9,
+                    251.6
+                  ],
+                  [
+                    150.0,
+                    260.0
+                  ]
+                ],
+                "fill": "red"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    150
+                  ],
+                  [
+                    150.0,
+                    260.0
+                  ],
+                  [
+                    171.5,
+                    257.9
+                  ],
+                  [
+                    192.1,
+                    251.6
+                  ],
+                  [
+                    211.1,
+                    241.5
+                  ],
+                  [
+                    227.8,
+                    227.8
+                  ],
+                  [
+                    241.5,
+                    211.1
+                  ],
+                  [
+                    251.6,
+                    192.1
+                  ],
+                  [
+                    257.9,
+                    171.5
+                  ],
+                  [
+                    260.0,
+                    150.0
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    150
+                  ],
+                  [
+                    260.0,
+                    150.0
+                  ],
+                  [
+                    257.9,
+                    128.5
+                  ],
+                  [
+                    251.6,
+                    107.9
+                  ],
+                  [
+                    241.5,
+                    88.9
+                  ],
+                  [
+                    227.8,
+                    72.2
+                  ],
+                  [
+                    211.1,
+                    58.5
+                  ],
+                  [
+                    192.1,
+                    48.4
+                  ],
+                  [
+                    171.5,
+                    42.1
+                  ],
+                  [
+                    150.0,
+                    40.0
+                  ]
+                ],
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 100,
+                "text": "red: 180°",
+                "size": 20,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 150,
+                "text": "blue: 90°",
+                "size": 20,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 200,
+                "text": "green: 90°",
+                "size": 20,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 260,
+                "text": "P(red) = 180/360 = ½",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Use the angle. Red is 180 out of 360 degrees. That's a half, not a third.",
+          "write": "P = angle ÷ 360°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Spinner: red half, blue quarter, green quarter",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    150
+                  ],
+                  [
+                    150.0,
+                    40.0
+                  ],
+                  [
+                    107.9,
+                    48.4
+                  ],
+                  [
+                    72.2,
+                    72.2
+                  ],
+                  [
+                    48.4,
+                    107.9
+                  ],
+                  [
+                    40.0,
+                    150.0
+                  ],
+                  [
+                    48.4,
+                    192.1
+                  ],
+                  [
+                    72.2,
+                    227.8
+                  ],
+                  [
+                    107.9,
+                    251.6
+                  ],
+                  [
+                    150.0,
+                    260.0
+                  ]
+                ],
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    150
+                  ],
+                  [
+                    150.0,
+                    260.0
+                  ],
+                  [
+                    171.5,
+                    257.9
+                  ],
+                  [
+                    192.1,
+                    251.6
+                  ],
+                  [
+                    211.1,
+                    241.5
+                  ],
+                  [
+                    227.8,
+                    227.8
+                  ],
+                  [
+                    241.5,
+                    211.1
+                  ],
+                  [
+                    251.6,
+                    192.1
+                  ],
+                  [
+                    257.9,
+                    171.5
+                  ],
+                  [
+                    260.0,
+                    150.0
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    150,
+                    150
+                  ],
+                  [
+                    260.0,
+                    150.0
+                  ],
+                  [
+                    257.9,
+                    128.5
+                  ],
+                  [
+                    251.6,
+                    107.9
+                  ],
+                  [
+                    241.5,
+                    88.9
+                  ],
+                  [
+                    227.8,
+                    72.2
+                  ],
+                  [
+                    211.1,
+                    58.5
+                  ],
+                  [
+                    192.1,
+                    48.4
+                  ],
+                  [
+                    171.5,
+                    42.1
+                  ],
+                  [
+                    150.0,
+                    40.0
+                  ]
+                ],
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 100,
+                "text": "red: 180°",
+                "size": 20,
+                "color": "red",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 150,
+                "text": "blue: 90°",
+                "size": 20,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 200,
+                "text": "green: 90°",
+                "size": 20,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 260,
+                "text": "P(red) = 180/360 = ½",
+                "size": 18,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Blue is 90 out of 360, which is a quarter.",
+          "write": "P(blue) = 1/4"
+        }
+      ]
+    },
+    {
+      "heading": "Two dice: draw the grid",
+      "lines": [
+        {
+          "say": "Two dice give 6 times 6, which is 36 equally likely outcomes.",
+          "write": "6 × 6 = 36"
+        },
+        {
+          "say": "Each cell is the sum of the two dice.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "6 by 6 grid of dice sums with sums of 9 or more shaded",
+            "items": [
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 30,
+                "text": "1",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 65,
+                "text": "1",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 30,
+                "text": "2",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 105,
+                "text": "2",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "3",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 145,
+                "text": "3",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 30,
+                "text": "4",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 185,
+                "text": "4",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "10"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 30,
+                "text": "5",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 225,
+                "text": "5",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 30,
+                "text": "6",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 265,
+                "text": "6",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "label": "12"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Sums of 9 or more fill 10 cells.",
+          "write": "4 + 3 + 2 + 1 = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "6 by 6 grid of dice sums with sums of 9 or more shaded",
+            "items": [
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 30,
+                "text": "1",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 65,
+                "text": "1",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 45,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 30,
+                "text": "2",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 105,
+                "text": "2",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 85,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 30,
+                "text": "3",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 145,
+                "text": "3",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 125,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "9"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 30,
+                "text": "4",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 185,
+                "text": "4",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 165,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "10"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 30,
+                "text": "5",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 225,
+                "text": "5",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 205,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 30,
+                "text": "6",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 265,
+                "text": "6",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 115,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "7"
+              },
+              {
+                "kind": "rect",
+                "x": 165,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "white",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 215,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 265,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "10"
+              },
+              {
+                "kind": "rect",
+                "x": 315,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "11"
+              },
+              {
+                "kind": "rect",
+                "x": 365,
+                "y": 245,
+                "w": 50,
+                "h": 40,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "12"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the probability is 10 over 36, which is 5 over 18.",
+          "write": "P = 10/36 = 5/18"
+        },
+        {
+          "say": "The sums aren't equally likely. Seven fills 6 cells. Two fills only 1.",
+          "write": "P(7) ≠ 1/11"
+        }
+      ]
+    },
+    {
+      "heading": "Or: don't double count",
+      "lines": [
+        {
+          "say": "Mutually exclusive events can't happen together. For those, add.",
+          "write": "P(A or B) = P(A) + P(B)"
+        },
+        {
+          "say": "Cards 1 to 20. Multiples of 3 or multiples of 5?",
+          "write": "1 to 20"
+        },
+        {
+          "say": "Six multiples of 3, four multiples of 5. But 15 is in both.",
+          "write": "6 + 4 − 1 = 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Venn diagram of multiples of 3 and 5 up to 20",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 140,
+                "r": 110,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 140,
+                "r": 110,
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 130,
+                "text": "3 6 9",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 160,
+                "text": "12 18",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 148,
+                "text": "15",
+                "size": 24,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 148,
+                "text": "5 10 20",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 30,
+                "text": "× 3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 30,
+                "text": "× 5",
+                "size": 18,
+                "color": "orange",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Count 15 once. So the answer is 9 over 20.",
+          "write": "P = 9/20"
+        }
+      ]
+    },
+    {
+      "heading": "Expected number and relative frequency",
+      "lines": [
+        {
+          "say": "Expected number is probability times the number of trials.",
+          "write": "expected = P × trials"
+        },
+        {
+          "say": "Spin 200 times. A quarter of 200 is 50 blues.",
+          "write": "1/4 × 200 = 50"
+        },
+        {
+          "say": "Blue actually came up 62 times. Relative frequency is 62 over 200.",
+          "write": "62 ÷ 200 = 0.31",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Expected 50 against actual 62",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 90,
+                "w": 120,
+                "h": 150,
+                "fill": "blue",
+                "label": "50"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 54,
+                "w": 120,
+                "h": 186,
+                "fill": "teal",
+                "change": "add",
+                "label": "62"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 240,
+                "x2": 520,
+                "y2": 240,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 270,
+                "text": "expected",
+                "size": 18,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 270,
+                "text": "actual",
+                "size": 18,
+                "color": "black",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "That's close to 0.25, but not equal. Results vary by chance.",
+          "write": "0.31 ≈ 0.25"
+        },
+        {
+          "say": "With more trials, relative frequency usually gets closer."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Want over all, when outcomes are equally likely.",
+          "write": "P = want ÷ all"
+        },
+        {
+          "say": "Not means 1 minus.",
+          "write": "P(A′) = 1 − P(A)"
+        },
+        {
+          "say": "Two dice? Draw the 6 by 6 grid. Spinner? Think degrees.",
+          "write": "36 cells,  angle ÷ 360°"
+        },
+        {
+          "say": "Expected equals P times trials.",
+          "write": "P × trials"
+        }
+      ]
+    }
+  ]
+}

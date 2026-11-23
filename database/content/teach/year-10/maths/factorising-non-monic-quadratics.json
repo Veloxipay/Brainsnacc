@@ -1,0 +1,652 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Factorising non-monic quadratics",
+  "frames": [
+    {
+      "heading": "Monic or non-monic?",
+      "lines": [
+        {
+          "say": "In a x squared plus b x plus c, a is the leading coefficient.",
+          "write": "ax² + bx + c"
+        },
+        {
+          "say": "If a is 1, it's monic. If not, it's non-monic.",
+          "write": "a ≠ 1 → non-monic"
+        },
+        {
+          "say": "In two x squared plus seven x plus 3, a is 2, b is 7, c is 3.",
+          "write": "a = 2, b = 7, c = 3"
+        },
+        {
+          "say": "Non-monic needs a new method. We call it the a c method.",
+          "write": "the ac method"
+        }
+      ]
+    },
+    {
+      "heading": "The ac method",
+      "lines": [
+        {
+          "say": "Step 1. Take out any common factor first.",
+          "write": "1. HCF first"
+        },
+        {
+          "say": "Step 2. Multiply a times c.",
+          "write": "2. a × c"
+        },
+        {
+          "say": "Step 3. Find two numbers that multiply to a c and add to b.",
+          "write": "3. × to ac,  + to b"
+        },
+        {
+          "say": "Step 4. Split the middle term into two terms.",
+          "write": "4. split bx"
+        },
+        {
+          "say": "Step 5. Group in pairs, and factorise each pair.",
+          "write": "5. group in pairs"
+        },
+        {
+          "say": "Step 6. Take out the common bracket.",
+          "write": "6. take out the bracket"
+        }
+      ]
+    },
+    {
+      "heading": "Why it works",
+      "lines": [
+        {
+          "say": "Here is two x squared plus seven x plus 3 as an area model.",
+          "write": "2x² + 7x + 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for 2x² + 7x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 40,
+                "text": "2x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 1",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "label": "2x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "label": "6x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "label": "3"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The diagonal parts, two x squared and 3, multiply to six x squared.",
+          "write": "2x² × 3 = 6x²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for 2x² + 7x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 40,
+                "text": "2x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 1",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "2x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "label": "6x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "change": "highlight",
+                "label": "3"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The strips, x and six x, also multiply to six x squared.",
+          "write": "x × 6x = 6x²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for 2x² + 7x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 40,
+                "text": "2x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 1",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "label": "2x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "6x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "label": "3"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the strips are the two numbers that multiply to a c, and add to b.",
+          "write": "6 × 1 = 6,  6 + 1 = 7"
+        }
+      ]
+    },
+    {
+      "heading": "Worked example",
+      "lines": [
+        {
+          "say": "a times c is 2 times 3, which is 6.",
+          "write": "ac = 6"
+        },
+        {
+          "say": "Six and one multiply to 6 and add to 7.",
+          "write": "6 and 1"
+        },
+        {
+          "say": "Split seven x into six x plus x.",
+          "write": "2x² + 6x + x + 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "Split the middle term",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 80,
+                "text": "2x² + 7x + 3",
+                "size": 32,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "2x² + 6x + x + 3",
+                "size": 32,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 100,
+                "x2": 280,
+                "y2": 145,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Group in pairs. Take two x from the first pair, and 1 from the second.",
+          "write": "2x(x + 3) + 1(x + 3)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Grouping the four terms in pairs",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "2x² + 6x  +  x + 3",
+                "size": 30,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 105,
+                "y": 25,
+                "w": 190,
+                "h": 50,
+                "fill": "none",
+                "change": "add",
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 325,
+                "y": 25,
+                "w": 130,
+                "h": 50,
+                "fill": "none",
+                "change": "add",
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 140,
+                "text": "2x(x + 3)",
+                "size": 28,
+                "color": "blue",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 140,
+                "text": "+ 1(x + 3)",
+                "size": 28,
+                "color": "orange",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Both pairs share x plus 3. Take it out.",
+          "write": "(x + 3)(2x + 1)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Grouping the four terms in pairs",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 60,
+                "text": "2x² + 6x  +  x + 3",
+                "size": 30,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 105,
+                "y": 25,
+                "w": 190,
+                "h": 50,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 325,
+                "y": 25,
+                "w": 130,
+                "h": 50,
+                "fill": "none",
+                "color": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 140,
+                "text": "2x(x + 3)",
+                "size": 28,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 140,
+                "text": "+ 1(x + 3)",
+                "size": 28,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 220,
+                "text": "(x + 3)(2x + 1)",
+                "size": 30,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Expand to check. You get two x squared plus seven x plus 3.",
+          "write": "2x² + x + 6x + 3 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "With negative signs",
+      "lines": [
+        {
+          "say": "Factorise six x squared minus eleven x plus 4.",
+          "write": "6x² − 11x + 4"
+        },
+        {
+          "say": "a c is 24. We need a sum of minus 11. Minus 3 and minus 8.",
+          "write": "−3 × −8 = 24,  −3 + −8 = −11"
+        },
+        {
+          "say": "Split and group.",
+          "write": "3x(2x − 1) − 4(2x − 1)"
+        },
+        {
+          "say": "Take out minus 4 from the second pair so the brackets match.",
+          "write": "same bracket: (2x − 1)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Take out −4 so the brackets match",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 50,
+                "w": 220,
+                "h": 70,
+                "fill": "blue",
+                "label": "3x(2x − 1)"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 50,
+                "w": 220,
+                "h": 70,
+                "fill": "red",
+                "label": "+4(−2x + 1)"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 170,
+                "w": 220,
+                "h": 70,
+                "fill": "green",
+                "change": "add",
+                "label": "− 4(2x − 1)"
+              },
+              {
+                "kind": "arrow",
+                "x": 410,
+                "y": 125,
+                "x2": 410,
+                "y2": 165,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 210,
+                "text": "brackets must match",
+                "size": 18,
+                "color": "purple",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The answer is two x minus 1, times three x minus 4.",
+          "write": "(2x − 1)(3x − 4)"
+        }
+      ]
+    },
+    {
+      "heading": "Common factors and special patterns",
+      "lines": [
+        {
+          "say": "HCF first. Twelve x squared plus six x minus 18 has a common 6.",
+          "write": "6(2x² + x − 3)"
+        },
+        {
+          "say": "Then factorise the bracket. Keep the 6 at the front.",
+          "write": "6(2x + 3)(x − 1)"
+        },
+        {
+          "say": "If a is negative, take out minus 1 first.",
+          "write": "−(...)"
+        },
+        {
+          "say": "Difference of two squares still works.",
+          "write": "9x² − 25 = (3x − 5)(3x + 5)"
+        },
+        {
+          "say": "So does a perfect square.",
+          "write": "4x² − 12x + 9 = (2x − 3)²"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use a times c, not just c. For three x squared plus 14 x plus 8, use 24.",
+          "write": "ac = 24, not 8"
+        },
+        {
+          "say": "If the brackets don't match after grouping, check your signs.",
+          "write": "both brackets identical"
+        },
+        {
+          "say": "Don't drop the HCF or the minus 1 from the final answer."
+        },
+        {
+          "say": "Always expand to check the middle term.",
+          "write": "(2x + 1)(x + 3) ≠ (2x + 3)(x + 1)"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "AC, split, group, pull out.",
+          "write": "AC → split → group → pull out"
+        },
+        {
+          "say": "After grouping, both brackets must be the same.",
+          "write": "same jersey test"
+        },
+        {
+          "say": "HCF first. Smaller numbers make the search easier.",
+          "write": "HCF first"
+        },
+        {
+          "say": "Expand to check. The middle term must match exactly.",
+          "write": "Expand to check ✓"
+        }
+      ]
+    }
+  ]
+}

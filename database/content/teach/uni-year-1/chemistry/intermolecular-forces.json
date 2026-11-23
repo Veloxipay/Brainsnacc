@@ -1,0 +1,133 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Intermolecular forces",
+  "frames": [
+    {
+      "heading": "Between molecules, not inside them",
+      "lines": [
+        {"say": "Bonds inside a molecule are strong. Forces between molecules are much weaker.", "write": "intra ≫ inter"},
+        {"say": "When water boils, the O–H bonds stay whole. The molecules just separate.", "write": "boiling separates molecules",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Two water molecules held by a dashed attraction that breaks when they separate", "items": [
+           {"kind": "circle", "x": 150, "y": 120, "r": 34, "fill": "red", "label": "H₂O"},
+           {"kind": "circle", "x": 260, "y": 120, "r": 34, "fill": "red", "label": "H₂O"},
+           {"kind": "line", "x": 184, "y": 120, "x2": 226, "y2": 120, "color": "purple", "dashed": true, "change": "remove"},
+           {"kind": "circle", "x": 440, "y": 80, "r": 34, "fill": "red", "label": "H₂O", "change": "add"},
+           {"kind": "arrow", "x": 300, "y": 110, "x2": 400, "y2": 85, "color": "black", "change": "add"},
+           {"kind": "text", "x": 280, "y": 210, "text": "only the attraction breaks", "size": 20, "color": "purple"}
+         ]}},
+        {"say": "Vaporising water takes 40.7 kilojoules. Breaking its O–H bonds takes about 920.", "write": "40.7 vs ~920 kJ mol⁻¹"},
+        {"say": "All these forces are electrostatic. Opposite charges attract.", "write": "δ+ attracts δ−"}
+      ]
+    },
+    {
+      "heading": "Polar molecules",
+      "lines": [
+        {"say": "A bond is polar when the two atoms differ in electronegativity.", "write": "δ+ H–Cl δ−"},
+        {"say": "A molecule is polar if its bond dipoles don't cancel.", "write": "dipoles cancel? → non-polar"},
+        {"say": "Carbon dioxide is linear. The two dipoles cancel, so it's non-polar.", "write": "CO₂: μ = 0",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Linear CO2 with opposite dipoles cancelling; bent water with dipoles adding up", "items": [
+           {"kind": "circle", "x": 60, "y": 100, "r": 24, "fill": "red", "label": "O"},
+           {"kind": "circle", "x": 140, "y": 100, "r": 24, "fill": "grey", "label": "C"},
+           {"kind": "circle", "x": 220, "y": 100, "r": 24, "fill": "red", "label": "O"},
+           {"kind": "arrow", "x": 130, "y": 60, "x2": 70, "y2": 60, "color": "purple"},
+           {"kind": "arrow", "x": 150, "y": 60, "x2": 210, "y2": 60, "color": "purple"},
+           {"kind": "text", "x": 140, "y": 170, "text": "cancel: non-polar", "size": 18},
+           {"kind": "circle", "x": 420, "y": 80, "r": 26, "fill": "red", "label": "O"},
+           {"kind": "circle", "x": 360, "y": 150, "r": 18, "fill": "white", "label": "H"},
+           {"kind": "circle", "x": 480, "y": 150, "r": 18, "fill": "white", "label": "H"},
+           {"kind": "arrow", "x": 420, "y": 190, "x2": 420, "y2": 115, "color": "red", "change": "add"},
+           {"kind": "text", "x": 420, "y": 225, "text": "add up: polar", "size": 18, "bold": true, "change": "add"}
+         ]}},
+        {"say": "Water is bent, so the dipoles add up. Its dipole moment is 1.85 debye.", "write": "H₂O: μ ≈ 1.85 D"}
+      ]
+    },
+    {
+      "heading": "The four forces",
+      "lines": [
+        {"say": "Ion–dipole forces dissolve salts. Water's oxygen end points at sodium ions.", "write": "Na⁺ ··· δ−O",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Sodium ion surrounded by water molecules with their oxygen ends pointing inwards", "items": [
+           {"kind": "circle", "x": 280, "y": 130, "r": 34, "fill": "purple", "label": "Na⁺"},
+           {"kind": "circle", "x": 280, "y": 40, "r": 24, "fill": "red", "label": "δ−", "change": "add"},
+           {"kind": "circle", "x": 280, "y": 220, "r": 24, "fill": "red", "label": "δ−", "change": "add"},
+           {"kind": "circle", "x": 180, "y": 130, "r": 24, "fill": "red", "label": "δ−", "change": "add"},
+           {"kind": "circle", "x": 380, "y": 130, "r": 24, "fill": "red", "label": "δ−", "change": "add"},
+           {"kind": "text", "x": 470, "y": 60, "text": "hydration", "size": 20, "bold": true}
+         ]}},
+        {"say": "Dipole–dipole: the plus end of one molecule attracts the minus end of the next.", "write": "ethanal 20 °C vs propane −42 °C"},
+        {"say": "Hydrogen bonding needs FON. H on fluorine, oxygen or nitrogen.", "write": "H on F, O, N ··· lone pair"},
+        {"say": "That's why water boils at 100 degrees, not around minus 80.", "write": "H₂O: 100 °C, not −80 °C"},
+        {"say": "Dispersion forces act between all particles, from instant and induced dipoles.", "write": "LDF: the everybody force"}
+      ]
+    },
+    {
+      "heading": "What makes dispersion stronger",
+      "lines": [
+        {"say": "More electrons means a cloud that's easier to distort. That's polarisability.", "write": "more e⁻ → stronger LDF"},
+        {"say": "Down the halogens, fluorine and chlorine are gases. Bromine is liquid, iodine solid.", "write": "F₂ g, Cl₂ g, Br₂ l, I₂ s"},
+        {"say": "Shape matters too. Long chains touch more than compact balls.", "write": "pentane 36 °C vs 10 °C",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Two long straight chains touching along their length versus two compact balls touching at one point", "items": [
+           {"kind": "rect", "x": 30, "y": 60, "w": 220, "h": 34, "fill": "blue", "label": "pentane"},
+           {"kind": "rect", "x": 30, "y": 100, "w": 220, "h": 34, "fill": "blue", "label": "pentane"},
+           {"kind": "line", "x": 40, "y": 97, "x2": 240, "y2": 97, "color": "red", "change": "highlight"},
+           {"kind": "circle", "x": 370, "y": 97, "r": 40, "fill": "orange"},
+           {"kind": "circle", "x": 450, "y": 97, "r": 40, "fill": "orange"},
+           {"kind": "text", "x": 140, "y": 180, "text": "big contact: 36 °C", "size": 20, "bold": true},
+           {"kind": "text", "x": 410, "y": 180, "text": "small contact: 10 °C", "size": 20}
+         ]}},
+        {"say": "For big molecules, dispersion can win. HI boils higher than the more polar HCl.", "write": "HI −35 °C > HCl −85 °C"}
+      ]
+    },
+    {
+      "heading": "Forces and properties",
+      "lines": [
+        {"say": "For similar-sized molecules, rank them like this.", "write": "ion–dip > H-bond > dip > LDF",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Bars of decreasing strength: ion-dipole, hydrogen bond, dipole-dipole, dispersion", "items": [
+           {"kind": "rect", "x": 40, "y": 30, "w": 100, "h": 170, "fill": "red", "label": "ion–dip"},
+           {"kind": "rect", "x": 165, "y": 70, "w": 100, "h": 130, "fill": "orange", "label": "H-bond"},
+           {"kind": "rect", "x": 290, "y": 110, "w": 100, "h": 90, "fill": "yellow", "label": "dipole"},
+           {"kind": "rect", "x": 415, "y": 150, "w": 100, "h": 50, "fill": "blue", "label": "LDF"},
+           {"kind": "text", "x": 280, "y": 230, "text": "strongest → weakest", "size": 18}
+         ]}},
+        {"say": "Stronger forces mean higher boiling point and enthalpy of vaporisation.", "write": "stronger → higher bp"},
+        {"say": "Also higher viscosity and surface tension.", "write": "viscosity ↑, surface tension ↑"},
+        {"say": "Vapour pressure is the odd one out. It goes down.", "write": "vapour pressure ↓"}
+      ]
+    },
+    {
+      "heading": "Like dissolves like",
+      "lines": [
+        {"say": "Dissolving breaks old attractions and makes new ones.", "write": "break + make attractions"},
+        {"say": "Polar dissolves in polar. Non-polar dissolves in non-polar.", "write": "like dissolves like"},
+        {"say": "Water doesn't repel hexane. It would just lose its own hydrogen bonds.", "write": "hexane: H-bonds lost"},
+        {"say": "Longer alcohol chains dissolve less. Hexan-1-ol is only slightly soluble.", "write": "longer chain → less soluble",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Alcohol chains growing longer while the OH group stays the same size", "items": [
+           {"kind": "rect", "x": 40, "y": 40, "w": 60, "h": 40, "fill": "grey"},
+           {"kind": "circle", "x": 125, "y": 60, "r": 22, "fill": "red", "label": "OH"},
+           {"kind": "text", "x": 300, "y": 66, "text": "methanol: miscible", "size": 20, "anchor": "start"},
+           {"kind": "rect", "x": 40, "y": 130, "w": 200, "h": 40, "fill": "grey", "change": "add"},
+           {"kind": "circle", "x": 265, "y": 150, "r": 22, "fill": "red", "label": "OH"},
+           {"kind": "text", "x": 300, "y": 156, "text": "hexan-1-ol: slightly", "size": 20, "anchor": "start", "bold": true}
+         ]}}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Boiling never breaks covalent bonds in a molecular substance.", "write": "✗ boiling breaks bonds"},
+        {"say": "Methane can't hydrogen bond. Its hydrogens are on carbon.", "write": "✗ CH₄ H-bonds"},
+        {"say": "Polar doesn't always win. Octane boils at 126 degrees from dispersion alone.", "write": "big non-polar can win"},
+        {"say": "Polar bonds don't make a polar molecule. Check the shape.", "write": "CO₂, BF₃, CCl₄: non-polar"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Name every force present, then compare and explain.", "write": "name forces, then compare"},
+        {"say": "FON for hydrogen bonding.", "write": "H-bond: FON"},
+        {"say": "Dispersion grows with electrons, size and surface contact.", "write": "e⁻, size, contact"},
+        {"say": "Say more energy is needed to overcome the intermolecular forces.", "write": "overcome IMF"}
+      ]
+    }
+  ]
+}

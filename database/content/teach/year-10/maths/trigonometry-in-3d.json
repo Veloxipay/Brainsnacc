@@ -1,0 +1,1490 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Trigonometry in 3D",
+  "frames": [
+    {
+      "heading": "Find the hidden triangle",
+      "lines": [
+        {
+          "say": "3D problems hide a right triangle inside the shape.",
+          "write": "find the triangle"
+        },
+        {
+          "say": "Trace it, then draw it flat with the right angle marked.",
+          "write": "draw it flat"
+        },
+        {
+          "say": "If a side is missing, use Pythagoras first, often on the base.",
+          "write": "Pythagoras on the base"
+        },
+        {
+          "say": "Then use SOH CAH TOA, just like before.",
+          "write": "SOH CAH TOA"
+        }
+      ]
+    },
+    {
+      "heading": "A line and a plane",
+      "lines": [
+        {
+          "say": "A box is 8 by 6 by 5 centimetres.",
+          "write": "8 × 6 × 5 box",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Box ABCDEFGH, 8 by 6 by 5 cm, with diagonal AG",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 360,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 80,
+                "y2": 270,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 120,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 120,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 50,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 50,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 66,
+                "y": 288,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 292,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 214,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 200,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 120,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 346,
+                "y": 112,
+                "text": "F",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 50,
+                "text": "G",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 40,
+                "text": "H",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 295,
+                "text": "8 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 435,
+                "y": 250,
+                "text": "6 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 200,
+                "text": "5 cm",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "We want the angle between the diagonal AG and the base.",
+          "write": "diagonal AG",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Box ABCDEFGH, 8 by 6 by 5 cm, with diagonal AG",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 360,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 80,
+                "y2": 270,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 120,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 120,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 50,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 50,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 66,
+                "y": 288,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 292,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 214,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 200,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 120,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 346,
+                "y": 112,
+                "text": "F",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 50,
+                "text": "G",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 40,
+                "text": "H",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 295,
+                "text": "8 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 435,
+                "y": 250,
+                "text": "6 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 200,
+                "text": "5 cm",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 50,
+                "color": "purple",
+                "change": "add",
+                "stroke": 4
+              }
+            ]
+          }
+        },
+        {
+          "say": "Use the shadow of AG on the base. That is the base diagonal AC.",
+          "write": "projection = AC",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Box ABCDEFGH, 8 by 6 by 5 cm, with diagonal AG",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 360,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 80,
+                "y2": 270,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 120,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 120,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 50,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 50,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 66,
+                "y": 288,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 292,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 214,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 200,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 120,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 346,
+                "y": 112,
+                "text": "F",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 50,
+                "text": "G",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 40,
+                "text": "H",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 295,
+                "text": "8 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 435,
+                "y": 250,
+                "text": "6 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 200,
+                "text": "5 cm",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 50,
+                "color": "purple",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "orange",
+                "dashed": true,
+                "change": "add",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 255,
+                "text": "θ",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Triangle ACG has a right angle at C, because CG is vertical.",
+          "write": "right angle at C",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Box ABCDEFGH, 8 by 6 by 5 cm, with diagonal AG",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    270
+                  ],
+                  [
+                    460,
+                    200
+                  ],
+                  [
+                    460,
+                    50
+                  ]
+                ],
+                "fill": "yellow"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 360,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 80,
+                "y2": 270,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 120,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 120,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 50,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 50,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 66,
+                "y": 288,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 292,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 214,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 200,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 120,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 346,
+                "y": 112,
+                "text": "F",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 50,
+                "text": "G",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 40,
+                "text": "H",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 295,
+                "text": "8 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 435,
+                "y": 250,
+                "text": "6 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 200,
+                "text": "5 cm",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 50,
+                "color": "purple",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "orange",
+                "dashed": true,
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 255,
+                "text": "θ",
+                "size": 20,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Solving the box",
+      "lines": [
+        {
+          "say": "First, AC: root of 64 plus 36 is root 100, which is 10.",
+          "write": "AC = √(8² + 6²) = 10"
+        },
+        {
+          "say": "Now draw triangle ACG flat. CG is 5.",
+          "write": "CG = 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Triangle ACG drawn flat with right angle at C",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    250
+                  ],
+                  [
+                    480,
+                    250
+                  ],
+                  [
+                    480,
+                    50
+                  ]
+                ],
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 460,
+                "y": 230,
+                "w": 20,
+                "h": 20,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "AC = 10",
+                "size": 20,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 155,
+                "text": "CG = 5",
+                "size": 20,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 240,
+                "text": "θ",
+                "size": 22,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 260,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 265,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 495,
+                "y": 50,
+                "text": "G",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Tan theta is opposite over adjacent: 5 over 10.",
+          "write": "tan θ = 5/10"
+        },
+        {
+          "say": "So theta is about 26.6 degrees.",
+          "write": "θ ≈ 26.6°"
+        }
+      ]
+    },
+    {
+      "heading": "Pyramids",
+      "lines": [
+        {
+          "say": "A square pyramid has base 10 metres and height 12 metres.",
+          "write": "base 10 m, height 12 m",
+          "diagram": "diagrams/y10/maths/trigonometry-in-3d-ex2.svg",
+          "alt": "Square pyramid with apex V above centre O"
+        },
+        {
+          "say": "For a sloping edge, use triangle VOB. OB is half a diagonal.",
+          "write": "OB = ½ × 10√2 = 5√2"
+        },
+        {
+          "say": "Tan theta is 12 over 5 root 2.",
+          "write": "tan θ = 12 ÷ 5√2"
+        },
+        {
+          "say": "So theta is about 59.5 degrees.",
+          "write": "θ ≈ 59.5°"
+        },
+        {
+          "say": "For a sloping face, use half the base side instead.",
+          "write": "face: OM = ½ side"
+        }
+      ]
+    },
+    {
+      "heading": "Two directions on the ground",
+      "lines": [
+        {
+          "say": "A 40 metre tower. A is due south, B is due east.",
+          "write": "tower 40 m",
+          "diagram": "diagrams/y10/maths/trigonometry-in-3d-ex3.svg",
+          "alt": "Tower with points A south and B east"
+        },
+        {
+          "say": "From A, the elevation is 35 degrees. TA is 40 over tan 35.",
+          "write": "TA ≈ 57.126 m"
+        },
+        {
+          "say": "From B, it is 25 degrees. TB is 40 over tan 25.",
+          "write": "TB ≈ 85.780 m"
+        },
+        {
+          "say": "South and east meet at 90 degrees. So use Pythagoras.",
+          "write": "AB = √(TA² + TB²)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Ground triangle with right angle at T",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 40,
+                "w": 20,
+                "h": 20,
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 40,
+                "x2": 80,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 40,
+                "x2": 500,
+                "y2": 40,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 260,
+                "x2": 500,
+                "y2": 40,
+                "color": "red",
+                "change": "add",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 150,
+                "text": "57.1",
+                "size": 18,
+                "color": "black",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 30,
+                "text": "85.8",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 285,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 515,
+                "y": 45,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 65,
+                "y": 35,
+                "text": "T",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 190,
+                "text": "AB ≈ 103.1 m",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "AB is about 103.1 metres.",
+          "write": "AB ≈ 103.1 m"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use the base diagonal, not an edge, for the angle with the base.",
+          "write": "✗ AB   ✓ AC",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Box ABCDEFGH, 8 by 6 by 5 cm, with diagonal AG",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 360,
+                "y2": 270,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 80,
+                "y2": 270,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 120,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 120,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 50,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 50,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 80,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 360,
+                "y": 270,
+                "x2": 360,
+                "y2": 120,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 460,
+                "y": 200,
+                "x2": 460,
+                "y2": 50,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 180,
+                "y2": 50,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 66,
+                "y": 288,
+                "text": "A",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 360,
+                "y": 292,
+                "text": "B",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 214,
+                "text": "C",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 164,
+                "y": 200,
+                "text": "D",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 64,
+                "y": 120,
+                "text": "E",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 346,
+                "y": 112,
+                "text": "F",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 476,
+                "y": 50,
+                "text": "G",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 40,
+                "text": "H",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 295,
+                "text": "8 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 435,
+                "y": 250,
+                "text": "6 cm",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 200,
+                "text": "5 cm",
+                "size": 16,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 50,
+                "color": "purple",
+                "stroke": 4
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 270,
+                "x2": 460,
+                "y2": 200,
+                "color": "orange",
+                "dashed": true,
+                "change": "add",
+                "stroke": 4
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 255,
+                "text": "θ",
+                "size": 20,
+                "color": "red",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Right angles look slanted in 3D. A vertical line meets the base at 90.",
+          "write": "vertical ⟂ base"
+        },
+        {
+          "say": "In pyramids, use half the diagonal or half the side.",
+          "write": "half, not whole"
+        },
+        {
+          "say": "Don't round early. Keep 5 root 2, or use the ANS key.",
+          "write": "keep exact values"
+        },
+        {
+          "say": "Don't add ground distances at right angles. Use Pythagoras.",
+          "write": "✗ add   ✓ Pythagoras"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Find it, flatten it, solve it.",
+          "write": "find, flatten, solve"
+        },
+        {
+          "say": "Angle with a plane uses the line's shadow on it.",
+          "write": "projection"
+        },
+        {
+          "say": "Pythagoras on the base first, then trig.",
+          "write": "base first"
+        }
+      ]
+    }
+  ]
+}

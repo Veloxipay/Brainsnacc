@@ -1,0 +1,97 @@
+{"level":"Uni Year 1","subject":"biology","title":"Ageing and cell death","frames":[
+{"heading":"Two ways for a cell to die","lines":[
+{"say":"Cells don't live forever, and that is often a good thing.","write":"Cell death"},
+{"say":"Apoptosis is programmed cell death. The cell does it itself, using ATP.","write":"Apoptosis = programmed, needs ATP"},
+{"say":"Necrosis is uncontrolled death after severe injury, like losing blood supply.","write":"Necrosis = uncontrolled, injury"},
+{"say":"Watch the apoptotic cell. It shrinks and packs itself into apoptotic bodies.","write":"Shrink and pack","draw":{"type":"shapes","width":560,"height":260,"alt":"Apoptotic cell shrinking into small apoptotic bodies","items":[
+{"kind":"circle","x":120,"y":130,"r":80,"fill":"blue","label":"cell","change":"remove"},
+{"kind":"arrow","x":220,"y":130,"x2":320,"y2":130,"color":"black"},
+{"kind":"circle","x":380,"y":100,"r":30,"fill":"blue","change":"add"},
+{"kind":"circle","x":450,"y":110,"r":26,"fill":"blue","change":"add"},
+{"kind":"circle","x":410,"y":170,"r":28,"fill":"blue","change":"add"},
+{"kind":"text","x":420,"y":240,"text":"apoptotic bodies","size":18,"anchor":"middle"}]}},
+{"say":"The necrotic cell swells, the membrane bursts, and the contents spill out.","write":"Swell and burst","draw":{"type":"shapes","width":560,"height":260,"alt":"Necrotic cell swelling and bursting, contents spilling","items":[
+{"kind":"circle","x":120,"y":130,"r":60,"fill":"orange","label":"cell"},
+{"kind":"arrow","x":200,"y":130,"x2":290,"y2":130,"color":"black"},
+{"kind":"circle","x":410,"y":130,"r":95,"fill":"orange","label":"swollen","change":"remove"},
+{"kind":"circle","x":330,"y":40,"r":10,"fill":"red","change":"add"},
+{"kind":"circle","x":515,"y":60,"r":10,"fill":"red","change":"add"},
+{"kind":"circle","x":520,"y":220,"r":10,"fill":"red","change":"add"},
+{"kind":"circle","x":320,"y":225,"r":10,"fill":"red","change":"add"},
+{"kind":"text","x":410,"y":252,"text":"contents spill → inflammation","size":16,"anchor":"middle"}]}}]},
+{"heading":"The key difference: inflammation","lines":[
+{"say":"Apoptotic cells flip phosphatidylserine to the outside of the membrane.","write":"PS flipped outside = 'eat me'"},
+{"say":"That is an eat me signal. Macrophages swallow the bodies before anything leaks.","write":"No leak → no inflammation","draw":{"type":"shapes","width":560,"height":240,"alt":"Macrophage engulfing apoptotic bodies","items":[
+{"kind":"circle","x":180,"y":120,"r":90,"fill":"purple","label":"macrophage"},
+{"kind":"circle","x":380,"y":90,"r":28,"fill":"blue","change":"remove"},
+{"kind":"circle","x":430,"y":160,"r":24,"fill":"blue","change":"remove"},
+{"kind":"arrow","x":350,"y":120,"x2":280,"y2":120,"color":"purple","change":"add"}]}},
+{"say":"In necrosis, the spilled contents trigger inflammation and damage nearby tissue.","write":"Necrosis → inflammation"},
+{"say":"Apoptosis usually takes single cells. Necrosis often takes groups of cells.","write":"single cells vs groups"},
+{"say":"A heart attack causes necrosis. Sunburnt skin cells are removed by apoptosis.","write":"heart attack = necrosis"}]},
+{"heading":"Why apoptosis matters","lines":[
+{"say":"Before birth, cells between your fingers died on cue. That's apoptosis.","write":"Development: finger webbing","draw":{"type":"shapes","width":560,"height":260,"alt":"Webbing between fingers removed","items":[
+{"kind":"rect","x":120,"y":40,"w":40,"h":160,"fill":"orange"},
+{"kind":"rect","x":220,"y":40,"w":40,"h":160,"fill":"orange"},
+{"kind":"rect","x":320,"y":40,"w":40,"h":160,"fill":"orange"},
+{"kind":"rect","x":420,"y":40,"w":40,"h":160,"fill":"orange"},
+{"kind":"rect","x":160,"y":60,"w":60,"h":140,"fill":"pink","change":"remove"},
+{"kind":"rect","x":260,"y":60,"w":60,"h":140,"fill":"pink","change":"remove"},
+{"kind":"rect","x":360,"y":60,"w":60,"h":140,"fill":"pink","change":"remove"},
+{"kind":"text","x":280,"y":240,"text":"webbing removed by apoptosis","size":18,"anchor":"middle"}]}},
+{"say":"The immune system removes T cells that would attack your own tissues.","write":"Immune: self-attacking T cells"},
+{"say":"It also balances cell division, so organs stay the right size.","write":"Tissue maintenance"},
+{"say":"And it removes cells with DNA damage that can't be repaired.","write":"Protection: damaged DNA"}]},
+{"heading":"Caspases: 8 outside, 9 inside, meet at 3","lines":[
+{"say":"Caspases are protease enzymes. They start as inactive procaspases.","write":"procaspase → caspase"},
+{"say":"Extrinsic pathway: Fas ligand binds a death receptor. That switches on caspase 8.","write":"Fas ligand → Fas → caspase-8"},
+{"say":"Intrinsic pathway: stress tips the Bcl-2 family balance towards Bax and Bak.","write":"Bax, Bak beat Bcl-2"},
+{"say":"Cytochrome c leaks out, joins Apaf-1 to make the apoptosome, and activates caspase 9.","write":"cyt c + Apaf-1 → caspase-9"},
+{"say":"Both pathways meet at executioner caspase 3. Each step amplifies the signal.","write":"8 or 9 → caspase-3","draw":{"type":"shapes","width":560,"height":300,"alt":"Extrinsic and intrinsic pathways converging on caspase-3","items":[
+{"kind":"rect","x":20,"y":20,"w":220,"h":60,"fill":"blue","label":"death receptor"},
+{"kind":"rect","x":320,"y":20,"w":220,"h":60,"fill":"orange","label":"mitochondrion: cyt c"},
+{"kind":"rect","x":40,"y":120,"w":180,"h":50,"fill":"teal","label":"caspase-8"},
+{"kind":"rect","x":340,"y":120,"w":180,"h":50,"fill":"teal","label":"caspase-9"},
+{"kind":"arrow","x":130,"y":80,"x2":130,"y2":120,"color":"black"},
+{"kind":"arrow","x":430,"y":80,"x2":430,"y2":120,"color":"black"},
+{"kind":"arrow","x":130,"y":170,"x2":250,"y2":220,"color":"black"},
+{"kind":"arrow","x":430,"y":170,"x2":310,"y2":220,"color":"black"},
+{"kind":"rect","x":190,"y":220,"w":180,"h":60,"fill":"red","label":"caspase-3","change":"highlight"}]}},
+{"say":"Caspase 3 cuts the cytoskeleton, the nuclear lamina, and DNA. There's no going back.","write":"irreversible"}]},
+{"heading":"Telomeres and the Hayflick limit","lines":[
+{"say":"Telomeres are repeats of T T A G G G at the chromosome ends.","write":"telomere = TTAGGG repeats"},
+{"say":"DNA polymerase can't fill the last gap on the lagging strand. That's the end replication problem.","write":"end-replication problem"},
+{"say":"So each division, the telomere gets a bit shorter.","write":"shorter each division","draw":{"type":"shapes","width":560,"height":260,"alt":"Telomere shortening with each division","items":[
+{"kind":"rect","x":60,"y":40,"w":300,"h":40,"fill":"blue","label":"chromosome"},
+{"kind":"rect","x":360,"y":40,"w":140,"h":40,"fill":"orange","label":"telomere"},
+{"kind":"rect","x":60,"y":120,"w":300,"h":40,"fill":"blue"},
+{"kind":"rect","x":360,"y":120,"w":90,"h":40,"fill":"orange"},
+{"kind":"rect","x":450,"y":120,"w":50,"h":40,"fill":"orange","change":"remove"},
+{"kind":"rect","x":60,"y":200,"w":300,"h":40,"fill":"blue"},
+{"kind":"rect","x":360,"y":200,"w":40,"h":40,"fill":"orange","change":"highlight"},
+{"kind":"text","x":420,"y":228,"text":"critically short","size":16}]}},
+{"say":"Critically short telomeres look like DNA damage. p53 stops the cell for good.","write":"→ p53 → senescence"},
+{"say":"Senescent cells are alive. They have just permanently stopped dividing.","write":"senescent = alive, not dividing"},
+{"say":"Telomerase adds repeats back. It's active in germ-line, stem and cancer cells.","write":"telomerase: germ, stem, cancer"}]},
+{"heading":"Ageing and cancer","lines":[
+{"say":"Ageing has several overlapping causes, not just one.","write":"Ageing: many causes"},
+{"say":"Telomere loss, free radical damage, mutation build-up, genes, and evolution all play a part.","write":"telomeres, ROS, mutations"},
+{"say":"Cancer is uncontrolled division. Think of an accelerator and brakes.","write":"Cancer = loss of control","draw":{"type":"shapes","width":560,"height":240,"alt":"Oncogene as stuck accelerator, tumour suppressor as brakes","items":[
+{"kind":"rect","x":30,"y":40,"w":230,"h":80,"fill":"green","label":"oncogene: accelerator"},
+{"kind":"rect","x":300,"y":40,"w":230,"h":80,"fill":"red","label":"tumour suppressor: brakes"},
+{"kind":"text","x":145,"y":170,"text":"1 hit: stuck on","size":20,"anchor":"middle","change":"highlight"},
+{"kind":"text","x":415,"y":170,"text":"2 hits: both copies lost","size":20,"anchor":"middle","change":"highlight"}]}},
+{"say":"A mutated proto-oncogene becomes an oncogene. One copy is enough.","write":"oncogene: gain of function"},
+{"say":"Tumour suppressors like T P 53 need both copies lost. That's the two hit hypothesis.","write":"TP53: two-hit, loss of function"},
+{"say":"Cancer cells also evade apoptosis and switch telomerase back on.","write":"evade apoptosis + immortal"}]},
+{"heading":"Watch out for these","lines":[
+{"say":"Apoptosis isn't always harmful. It's essential for development and stopping cancer.","write":"✗ apoptosis = always bad"},
+{"say":"Necrosis does not need energy. Apoptosis is the one that needs ATP.","write":"ATP → apoptosis only"},
+{"say":"Don't call senescent cells dead. They're alive but stopped dividing.","write":"✗ senescent = dead"},
+{"say":"Telomerase isn't active in all cells. Mostly germ-line, stem and cancer cells.","write":"✗ telomerase everywhere"}]},
+{"heading":"Remember","lines":[
+{"say":"Apoptosis: shrink and pack. Necrosis: swell and burst.","write":"shrink & pack vs swell & burst"},
+{"say":"Eight from outside, nine from inside, both meet at three.","write":"8 out, 9 in, meet at 3"},
+{"say":"Telomeres shorten each division until the cell becomes senescent.","write":"short telomeres → senescence"},
+{"say":"Oncogene is a stuck accelerator. Tumour suppressor is the brakes.","write":"accelerator vs brakes"}]}
+]}

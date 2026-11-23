@@ -1,0 +1,142 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "CHM1011 practice exam",
+  "frames": [
+    {
+      "heading": "How to use this practice exam",
+      "lines": [
+        {"say": "Treat this paper as a dress rehearsal for the real exam.", "write": "2 hours + 10 min reading",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Exam split: 80 minutes short answer for 40 marks, 40 minutes multiple choice for 20 marks", "items": [
+           {"kind": "rect", "x": 30, "y": 60, "w": 330, "h": 90, "fill": "blue", "label": "Short answer: 80 min"},
+           {"kind": "rect", "x": 360, "y": 60, "w": 170, "h": 90, "fill": "orange", "label": "MCQ: 40 min"},
+           {"kind": "text", "x": 195, "y": 190, "text": "40 marks", "size": 22, "bold": true},
+           {"kind": "text", "x": 445, "y": 190, "text": "20 marks", "size": 22, "bold": true},
+           {"kind": "text", "x": 280, "y": 230, "text": "total 60 marks", "size": 20, "color": "purple"}
+         ]}},
+        {"say": "Closed book, with a scientific calculator. Use the constants given in each question.", "write": "closed book + calculator"},
+        {"say": "Write your answers first. Then mark yourself against the worked solutions.", "write": "answer first, then mark"},
+        {"say": "Method marks need every step shown, with units and sensible significant figures.", "write": "show steps + units"}
+      ]
+    },
+    {
+      "heading": "Atoms and electrons",
+      "lines": [
+        {"say": "An electron in hydrogen falls from n equals 4 to n equals 2.", "write": "n = 4 → n = 2",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Energy levels n = 2, 3 and 4 with an electron dropping from 4 to 2 and giving out a photon", "items": [
+           {"kind": "line", "x": 80, "y": 60, "x2": 360, "y2": 60, "color": "black"},
+           {"kind": "line", "x": 80, "y": 110, "x2": 360, "y2": 110, "color": "black"},
+           {"kind": "line", "x": 80, "y": 230, "x2": 360, "y2": 230, "color": "black"},
+           {"kind": "text", "x": 60, "y": 66, "text": "n = 4", "size": 18, "anchor": "end"},
+           {"kind": "text", "x": 60, "y": 116, "text": "n = 3", "size": 18, "anchor": "end"},
+           {"kind": "text", "x": 60, "y": 236, "text": "n = 2", "size": 18, "anchor": "end"},
+           {"kind": "arrow", "x": 220, "y": 62, "x2": 220, "y2": 226, "color": "red", "change": "add"},
+           {"kind": "arrow", "x": 240, "y": 150, "x2": 440, "y2": 150, "color": "teal", "change": "add"},
+           {"kind": "text", "x": 450, "y": 156, "text": "486 nm", "size": 22, "bold": true, "color": "teal", "anchor": "start", "change": "add"}
+         ]}},
+        {"say": "Energy difference first, then wavelength equals h c over delta E. You get 486 nanometres.", "write": "λ = hc/ΔE = 486 nm"},
+        {"say": "Chromium is an exception. It is 3d five, 4s one.", "write": "Cr: [Ar] 3d⁵ 4s¹"},
+        {"say": "Chromium three plus loses the 4s electron first, leaving 3d three. Three unpaired.", "write": "Cr³⁺: [Ar] 3d³"},
+        {"say": "Oxygen's ionisation energy dips because its fourth 2p electron must pair up.", "write": "O < N: pairing repulsion"}
+      ]
+    },
+    {
+      "heading": "Will limestone decompose?",
+      "lines": [
+        {"say": "Use products minus reactants for both delta H and delta S.", "write": "CaCO₃ → CaO + CO₂"},
+        {"say": "Delta H is plus 178 kilojoules. Delta S is plus 159 joules per kelvin.", "write": "ΔH = +178, ΔS = +159"},
+        {"say": "Convert delta S to kilojoules, then delta G equals delta H minus T delta S.", "write": "ΔG = ΔH − TΔS"},
+        {"say": "At 298 kelvin, delta G is plus 131. Positive, so not spontaneous.", "write": "ΔG° = +131 kJ mol⁻¹",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Delta G line falling as temperature rises and crossing zero at about 1120 kelvin", "items": [
+           {"kind": "arrow", "x": 60, "y": 230, "x2": 60, "y2": 20, "color": "black"},
+           {"kind": "line", "x": 60, "y": 170, "x2": 530, "y2": 170, "color": "black"},
+           {"kind": "text", "x": 70, "y": 30, "text": "ΔG", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 525, "y": 195, "text": "T", "size": 20},
+           {"kind": "line", "x": 90, "y": 60, "x2": 500, "y2": 220, "color": "blue"},
+           {"kind": "circle", "x": 372, "y": 170, "r": 8, "fill": "red", "change": "highlight"},
+           {"kind": "text", "x": 372, "y": 145, "text": "T = ΔH/ΔS ≈ 1120 K", "size": 20, "bold": true, "color": "red", "change": "highlight"},
+           {"kind": "text", "x": 150, "y": 50, "text": "+131 at 298 K", "size": 18, "anchor": "start"}
+         ]}},
+        {"say": "It turns spontaneous above delta H over delta S, about 1120 kelvin.", "write": "T ≈ 1.12 × 10³ K"}
+      ]
+    },
+    {
+      "heading": "Titrating ethanoic acid",
+      "lines": [
+        {"say": "Before any base, use the weak acid shortcut. The pH is 2.87.", "write": "[H₃O⁺] = √(Ka c) → pH 2.87"},
+        {"say": "Check: 1.3 percent ionised. Under five percent, so the shortcut is fine.", "write": "1.3% < 5% ✓"},
+        {"say": "After 20 millilitres of base, react first, then use Henderson–Hasselbalch.", "write": "pH = pKa + log(A⁻/HA)",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Weak acid strong base titration curve with points at pH 2.87, 4.57 and 8.72", "items": [
+           {"kind": "arrow", "x": 60, "y": 250, "x2": 60, "y2": 20, "color": "black"},
+           {"kind": "arrow", "x": 60, "y": 250, "x2": 530, "y2": 250, "color": "black"},
+           {"kind": "text", "x": 70, "y": 30, "text": "pH", "size": 20, "anchor": "start"},
+           {"kind": "line", "x": 70, "y": 200, "x2": 120, "y2": 160, "color": "blue"},
+           {"kind": "line", "x": 120, "y": 160, "x2": 290, "y2": 140, "color": "blue"},
+           {"kind": "line", "x": 290, "y": 140, "x2": 320, "y2": 50, "color": "blue"},
+           {"kind": "line", "x": 320, "y": 50, "x2": 500, "y2": 40, "color": "blue"},
+           {"kind": "circle", "x": 70, "y": 200, "r": 7, "fill": "orange"},
+           {"kind": "text", "x": 90, "y": 225, "text": "2.87", "size": 18, "anchor": "start"},
+           {"kind": "circle", "x": 190, "y": 152, "r": 7, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 190, "y": 185, "text": "4.57", "size": 18, "change": "add"},
+           {"kind": "circle", "x": 305, "y": 95, "r": 7, "fill": "red", "change": "add"},
+           {"kind": "text", "x": 325, "y": 100, "text": "8.72 equivalence", "size": 18, "anchor": "start", "change": "add"}
+         ]}},
+        {"say": "That gives pH 4.57. The volumes cancel in the ratio.", "write": "pH = 4.57"},
+        {"say": "At equivalence, only ethanoate is left. It is basic, so pH is 8.72.", "write": "pH = 8.72 (above 7)"}
+      ]
+    },
+    {
+      "heading": "Kinetics and electrochemistry",
+      "lines": [
+        {"say": "First order with k of 4.0 times ten to the minus four. Half-life is ln 2 over k.", "write": "t½ = 1.7 × 10³ s"},
+        {"say": "After one hour, e to the minus 1.44 is left. That is 24 percent.", "write": "24% remains"},
+        {"say": "k triples from 25 to 35 degrees. Arrhenius gives 84 kilojoules per mole.", "write": "Eₐ = 84 kJ mol⁻¹"},
+        {"say": "In the copper silver cell, silver has the higher E nought, so it is reduced.", "write": "E°cell = 0.80 − 0.34 = +0.46 V",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Galvanic cell with copper anode on the left and silver cathode on the right, electrons flowing from copper to silver", "items": [
+           {"kind": "rect", "x": 40, "y": 110, "w": 180, "h": 120, "fill": "teal"},
+           {"kind": "rect", "x": 340, "y": 110, "w": 180, "h": 120, "fill": "grey"},
+           {"kind": "rect", "x": 110, "y": 60, "w": 40, "h": 140, "fill": "orange", "label": "Cu"},
+           {"kind": "rect", "x": 410, "y": 60, "w": 40, "h": 140, "fill": "white", "label": "Ag"},
+           {"kind": "arrow", "x": 150, "y": 40, "x2": 410, "y2": 40, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 280, "y": 30, "text": "e⁻", "size": 20, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 130, "y": 252, "text": "anode (−)", "size": 18, "bold": true, "change": "highlight"},
+           {"kind": "text", "x": 430, "y": 252, "text": "cathode (+)", "size": 18, "bold": true}
+         ]}},
+        {"say": "Copper is the anode. Delta G equals minus n F E, minus 88.8 kilojoules.", "write": "ΔG° = −nFE° = −88.8 kJ"},
+        {"say": "Nernst with Q of five thousand drops the voltage to 0.35 volts.", "write": "E = 0.35 V"},
+        {"say": "To plate one gram of silver at half an amp takes 29.8 minutes.", "write": "t = Q/I = 29.8 min"}
+      ]
+    },
+    {
+      "heading": "Shape and polarity",
+      "lines": [
+        {"say": "Chlorine trifluoride has 28 valence electrons and two lone pairs on chlorine.", "write": "ClF₃: 5 domains, 2 lone pairs"},
+        {"say": "Lone pairs sit on the equator, so the shape is T-shaped.", "write": "ClF₃: T-shaped",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "T-shaped ClF3: three fluorines in a T around chlorine with two lone pairs", "items": [
+           {"kind": "circle", "x": 200, "y": 140, "r": 32, "fill": "green", "label": "Cl"},
+           {"kind": "line", "x": 200, "y": 108, "x2": 200, "y2": 50, "color": "black"},
+           {"kind": "line", "x": 200, "y": 172, "x2": 200, "y2": 230, "color": "black"},
+           {"kind": "line", "x": 168, "y": 140, "x2": 100, "y2": 140, "color": "black"},
+           {"kind": "circle", "x": 200, "y": 35, "r": 22, "fill": "yellow", "label": "F"},
+           {"kind": "circle", "x": 200, "y": 245, "r": 22, "fill": "yellow", "label": "F"},
+           {"kind": "circle", "x": 80, "y": 140, "r": 22, "fill": "yellow", "label": "F"},
+           {"kind": "circle", "x": 270, "y": 105, "r": 14, "fill": "pink", "label": ":", "change": "highlight"},
+           {"kind": "circle", "x": 270, "y": 175, "r": 14, "fill": "pink", "label": ":", "change": "highlight"},
+           {"kind": "text", "x": 420, "y": 130, "text": "2 lone pairs", "size": 20, "color": "pink"},
+           {"kind": "text", "x": 420, "y": 165, "text": "on the equator", "size": 20, "color": "pink"}
+         ]}},
+        {"say": "Bromine pentafluoride has 42 electrons and one lone pair. Square pyramidal.", "write": "BrF₅: square pyramidal"},
+        {"say": "Both are polar. The lone pairs make the bond dipoles not cancel.", "write": "both polar"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Show every step. Method marks are where most marks come from.", "write": "show working"},
+        {"say": "Kelvin in every gas law, Arrhenius and delta G calculation.", "write": "T in K"},
+        {"say": "Match joules with joules, and kilojoules with kilojoules.", "write": "J with J, kJ with kJ"},
+        {"say": "Lost more than half the marks on a topic? Go back to that lesson.", "write": "< 50% → revise lesson"}
+      ]
+    }
+  ]
+}

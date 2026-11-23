@@ -1,0 +1,129 @@
+{
+  "level": "Year 12", "subject": "chemistry", "title": "Naming organic compounds",
+  "frames": [
+    { "heading": "A name is an address",
+      "lines": [
+        { "say": "An IUPAC name works like a street address for a molecule.", "write": "IUPAC name = address" },
+        { "say": "The stem is the street. It tells you how many carbons are in the chain.", "write": "stem → chain length",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "propan-2-ol split into number, stem and ending", "items": [
+            {"kind": "rect", "x": 40, "y": 50, "w": 200, "h": 70, "fill": "blue", "label": "propan", "change": "highlight"},
+            {"kind": "rect", "x": 250, "y": 50, "w": 120, "h": 70, "fill": "orange", "label": "-2-"},
+            {"kind": "rect", "x": 380, "y": 50, "w": 140, "h": 70, "fill": "green", "label": "ol"},
+            {"kind": "text", "x": 140, "y": 160, "text": "3 carbons", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 310, "y": 160, "text": "position", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 450, "y": 160, "text": "alcohol", "size": 18, "anchor": "middle"}]}},
+        { "say": "The number is the house number. The ending tells you what lives there.", "write": "number → position, ending → group" },
+        { "say": "Monkeys eat peeled bananas. Meth, eth, prop, but, for one to four carbons.", "write": "meth eth prop but  (1–4)" },
+        { "say": "Then pent, hex, hept, oct. Like pentagon, hexagon, heptagon, octopus.", "write": "pent hex hept oct  (5–8)" }
+      ] },
+    { "heading": "Families of compounds",
+      "lines": [
+        { "say": "A functional group gives a molecule its typical reactions.", "write": "functional group" },
+        { "say": "A homologous series shares one functional group. Each member adds one C H two.", "write": "each member + CH₂",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Alkane chain growing by one CH2 unit at a time", "items": [
+            {"kind": "rect", "x": 40, "y": 30, "w": 80, "h": 44, "fill": "grey", "label": "CH₃"},
+            {"kind": "rect", "x": 120, "y": 30, "w": 80, "h": 44, "fill": "grey", "label": "CH₃"},
+            {"kind": "text", "x": 300, "y": 60, "text": "ethane", "size": 18},
+            {"kind": "rect", "x": 40, "y": 100, "w": 80, "h": 44, "fill": "grey", "label": "CH₃"},
+            {"kind": "rect", "x": 120, "y": 100, "w": 80, "h": 44, "fill": "orange", "label": "CH₂", "change": "add"},
+            {"kind": "rect", "x": 200, "y": 100, "w": 80, "h": 44, "fill": "grey", "label": "CH₃"},
+            {"kind": "text", "x": 300, "y": 130, "text": "propane", "size": 18},
+            {"kind": "text", "x": 280, "y": 200, "text": "longer chain → higher boiling point", "size": 18, "anchor": "middle", "color": "purple"}]}},
+        { "say": "Longer chains have stronger dispersion forces, so boiling points rise.", "write": "longer → higher b.p." },
+        { "say": "Alkanes have only single bonds, so they are saturated.", "write": "alkanes CₙH₂ₙ₊₂ saturated" },
+        { "say": "Alkenes have a C double bond C, so they are unsaturated.", "write": "alkenes CₙH₂ₙ unsaturated" }
+      ] },
+    { "heading": "Naming in four moves",
+      "lines": [
+        { "say": "Name C H three, C H with a C H three branch, C H two, C H two O H.", "write": "CH₃CH(CH₃)CH₂CH₂OH" },
+        { "say": "Move one. Find the longest chain holding the O H. Four carbons, so but.", "write": "1. longest chain → but-",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "A four-carbon chain with OH on the end and a methyl branch", "items": [
+            {"kind": "circle", "x": 100, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 124, "y": 160, "x2": 176, "y2": 160},
+            {"kind": "circle", "x": 200, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 224, "y": 160, "x2": 276, "y2": 160},
+            {"kind": "circle", "x": 300, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 324, "y": 160, "x2": 376, "y2": 160},
+            {"kind": "circle", "x": 400, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 424, "y": 160, "x2": 466, "y2": 160},
+            {"kind": "circle", "x": 492, "y": 160, "r": 24, "fill": "red", "label": "OH"},
+            {"kind": "line", "x": 200, "y": 136, "x2": 200, "y2": 84},
+            {"kind": "circle", "x": 200, "y": 60, "r": 24, "fill": "orange", "label": "C"}]}},
+        { "say": "Move two. Number from the O H end, so the O H gets carbon 1.", "write": "2. number: OH on C1",
+          "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Chain numbered 1 to 4 starting next to the OH", "items": [
+            {"kind": "circle", "x": 100, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 124, "y": 160, "x2": 176, "y2": 160},
+            {"kind": "circle", "x": 200, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 224, "y": 160, "x2": 276, "y2": 160},
+            {"kind": "circle", "x": 300, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 324, "y": 160, "x2": 376, "y2": 160},
+            {"kind": "circle", "x": 400, "y": 160, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 424, "y": 160, "x2": 466, "y2": 160},
+            {"kind": "circle", "x": 492, "y": 160, "r": 24, "fill": "red", "label": "OH"},
+            {"kind": "line", "x": 200, "y": 136, "x2": 200, "y2": 84},
+            {"kind": "circle", "x": 200, "y": 60, "r": 24, "fill": "orange", "label": "C"},
+            {"kind": "text", "x": 400, "y": 215, "text": "1", "size": 22, "bold": true, "anchor": "middle", "color": "purple", "change": "add"},
+            {"kind": "text", "x": 300, "y": 215, "text": "2", "size": 22, "bold": true, "anchor": "middle", "color": "purple", "change": "add"},
+            {"kind": "text", "x": 200, "y": 215, "text": "3", "size": 22, "bold": true, "anchor": "middle", "color": "purple", "change": "add"},
+            {"kind": "text", "x": 100, "y": 215, "text": "4", "size": 22, "bold": true, "anchor": "middle", "color": "purple", "change": "add"}]}},
+        { "say": "Move three. Name the branch. A methyl on carbon 3.", "write": "3. branch: 3-methyl" },
+        { "say": "Move four. Add the ending. O H on carbon 1 is butan-1-ol.", "write": "3-methylbutan-1-ol" }
+      ] },
+    { "heading": "The endings",
+      "lines": [
+        { "say": "Alcohols end in ol. Aldehydes end in al. Ketones end in one.", "write": "-ol   -al   -one" },
+        { "say": "Acids end in oic acid. Amines end in amine. Amides end in amide.", "write": "-oic acid  -amine  -amide" },
+        { "say": "Aldehydes, acids and amides are always on carbon 1. No number needed.", "write": "end groups: no number" },
+        { "say": "Their carbon counts in the chain. C H three C H two C O O H is propanoic acid.", "write": "CH₃CH₂COOH = propanoic acid" },
+        { "say": "Halogens go at the front: chloro, bromo. Branches go in alphabetical order.", "write": "2-bromopropane" }
+      ] },
+    { "heading": "Naming esters",
+      "lines": [
+        { "say": "An ester is made from a carboxylic acid and an alcohol.", "write": "acid + alcohol → ester" },
+        { "say": "Here is C H three C O O C H two C H three. Split it at the single-bonded O.", "write": "CH₃COOCH₂CH₃",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ester split into acid part and alcohol part", "items": [
+            {"kind": "rect", "x": 40, "y": 60, "w": 240, "h": 70, "fill": "orange", "label": "CH₃CO–"},
+            {"kind": "rect", "x": 300, "y": 60, "w": 220, "h": 70, "fill": "teal", "label": "O–CH₂CH₃"},
+            {"kind": "line", "x": 290, "y": 40, "x2": 290, "y2": 150, "color": "red", "dashed": true, "change": "add"},
+            {"kind": "text", "x": 160, "y": 180, "text": "from ethanoic acid", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 410, "y": 180, "text": "from ethanol", "size": 18, "anchor": "middle"}]}},
+        { "say": "Alcohol says hi first. Ethanol gives ethyl. The acid part gives ethanoate.", "write": "ethyl ethanoate",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Name written with the alcohol part first", "items": [
+            {"kind": "rect", "x": 40, "y": 60, "w": 220, "h": 70, "fill": "teal", "label": "ethyl", "change": "highlight"},
+            {"kind": "rect", "x": 280, "y": 60, "w": 240, "h": 70, "fill": "orange", "label": "ethanoate"},
+            {"kind": "text", "x": 150, "y": 180, "text": "alcohol part: -yl", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 400, "y": 180, "text": "acid part: -oate", "size": 18, "anchor": "middle"}]}},
+        { "say": "The formula shows the acid part first. The name shows the alcohol part first.", "write": "name: alcohol first" }
+      ] },
+    { "heading": "Primary, secondary, tertiary",
+      "lines": [
+        { "say": "Count the carbon friends of the carbon holding the O H.", "write": "count C neighbours" },
+        { "say": "One carbon friend is primary, like propan-1-ol.", "write": "1° propan-1-ol",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "The OH carbon in propan-1-ol has one carbon neighbour", "items": [
+            {"kind": "circle", "x": 120, "y": 120, "r": 24, "fill": "grey", "label": "C"},
+            {"kind": "line", "x": 144, "y": 120, "x2": 196, "y2": 120},
+            {"kind": "circle", "x": 220, "y": 120, "r": 24, "fill": "grey", "label": "C", "change": "highlight"},
+            {"kind": "line", "x": 244, "y": 120, "x2": 296, "y2": 120},
+            {"kind": "circle", "x": 320, "y": 120, "r": 24, "fill": "yellow", "label": "C"},
+            {"kind": "line", "x": 344, "y": 120, "x2": 396, "y2": 120},
+            {"kind": "circle", "x": 420, "y": 120, "r": 24, "fill": "red", "label": "OH"},
+            {"kind": "text", "x": 280, "y": 185, "text": "1 carbon friend → primary", "size": 18, "anchor": "middle"}]}},
+        { "say": "Two carbon friends is secondary, like propan-2-ol.", "write": "2° propan-2-ol" },
+        { "say": "Three is tertiary, like 2-methylpropan-2-ol.", "write": "3° 2-methylpropan-2-ol" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "The longest chain might bend. Trace every path, not just the straight one.", "write": "trace every path" },
+        { "say": "If you write 1-methyl, your chain isn't the longest. 1-methylpropane is really butane.", "write": "✗ 1-methylpropane = butane" },
+        { "say": "Number from the end that gives the functional group the lowest number.", "write": "lowest number to the group" },
+        { "say": "Punctuation counts. Write propan-2-ol, with hyphens.", "write": "propan-2-ol  ✓" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Longest chain with the group, number it, add branches, add the ending.", "write": "chain, number, branches, ending" },
+        { "say": "Meth, eth, prop, but, pent, hex, hept, oct.", "write": "1 to 8 carbons" },
+        { "say": "End groups sit on carbon 1, and their carbon counts.", "write": "-al, -oic acid, -amide: C1" },
+        { "say": "Esters: alcohol part first, ending in yl. Acid part second, ending in oate.", "write": "alkyl alkanoate" }
+      ] }
+  ]
+}

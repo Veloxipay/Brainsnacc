@@ -1,0 +1,138 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "CHM1022 summary and memory tips",
+  "frames": [
+    {
+      "heading": "Structure and naming",
+      "lines": [
+        {"say": "Find the principal group, the longest chain with it, and the lowest locant.", "write": "suffix, chain, locant"},
+        {"say": "Acids Eat All Nice Apples, Kiwis And Avocados. That's the suffix priority.", "write": "acid > ester > amide > nitrile …"},
+        {"say": "Steering wheel: lowest group away, turn one, two, three. Clockwise is R.", "write": "clockwise = R",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Priorities 1, 2, 3 turning clockwise like a steering wheel", "items": [
+           {"kind": "circle", "x": 280, "y": 120, "r": 90, "fill": "none"},
+           {"kind": "circle", "x": 280, "y": 30, "r": 22, "fill": "red", "label": "1"},
+           {"kind": "circle", "x": 358, "y": 165, "r": 22, "fill": "orange", "label": "2"},
+           {"kind": "circle", "x": 202, "y": 165, "r": 22, "fill": "blue", "label": "3"},
+           {"kind": "arrow", "x": 310, "y": 40, "x2": 360, "y2": 135, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 470, "y": 130, "text": "R", "size": 36, "bold": true, "color": "purple", "change": "add"}
+         ]}},
+        {"say": "H on a wedge? Flip the answer.", "write": "wedge → reverse"},
+        {"say": "Z is ze zame zide. E puts the big groups on opposite sides.", "write": "Z same, E opposite"}
+      ]
+    },
+    {
+      "heading": "Mechanisms",
+      "lines": [
+        {"say": "Curly arrows start at electrons, never at a positive charge.", "write": "Nu → E"},
+        {"say": "SN2 is a one-step mugging from behind. The molecule flips like an umbrella.", "write": "SN2: 1°, inversion"},
+        {"say": "SN1: one waits alone. Only RX is in the rate law.", "write": "SN1: 3°, rate = k[RX]",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Substrate classes: primary leads to SN2, tertiary leads to SN1 or E1", "items": [
+           {"kind": "rect", "x": 30, "y": 40, "w": 140, "h": 60, "fill": "blue", "label": "1°"},
+           {"kind": "rect", "x": 210, "y": 40, "w": 140, "h": 60, "fill": "teal", "label": "2°"},
+           {"kind": "rect", "x": 390, "y": 40, "w": 140, "h": 60, "fill": "orange", "label": "3°"},
+           {"kind": "text", "x": 100, "y": 150, "text": "SN2", "size": 24, "bold": true},
+           {"kind": "text", "x": 280, "y": 150, "text": "SN2 / E2", "size": 22},
+           {"kind": "text", "x": 460, "y": 150, "text": "SN1 / E1 / E2", "size": 22, "bold": true, "change": "highlight"},
+           {"kind": "text", "x": 280, "y": 205, "text": "3° can't take a backside attack", "size": 18, "color": "red"}
+         ]}},
+        {"say": "Heat favours elimination, because it makes more molecules.", "write": "heat → elimination"},
+        {"say": "Markovnikov: the rich get richer. H goes where there are more H.", "write": "via the more stable C⁺"}
+      ]
+    },
+    {
+      "heading": "Synthesis and carbonyls",
+      "lines": [
+        {"say": "Work backwards from the target with disconnections.", "write": "target ⇒ starting materials"},
+        {"say": "Sodium borohydride is gentle. Lithium aluminium hydride is the sledgehammer.", "write": "NaBH₄ gentle, LiAlH₄ strong"},
+        {"say": "Grignards: methanal one, aldehyde two, ketone three.", "write": "1°, 2°, 3° alcohols"},
+        {"say": "Every step takes its tax. Six steps at 90 percent gives 53.", "write": "0.9⁶ = 53%",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Bars shrinking at each step of a synthesis as yield multiplies", "items": [
+           {"kind": "rect", "x": 30, "y": 40, "w": 60, "h": 150, "fill": "green", "label": "100"},
+           {"kind": "rect", "x": 115, "y": 55, "w": 60, "h": 135, "fill": "green", "label": "90"},
+           {"kind": "rect", "x": 200, "y": 68, "w": 60, "h": 122, "fill": "green", "label": "81"},
+           {"kind": "rect", "x": 285, "y": 81, "w": 60, "h": 109, "fill": "green", "label": "73"},
+           {"kind": "rect", "x": 370, "y": 92, "w": 60, "h": 98, "fill": "green", "label": "66"},
+           {"kind": "rect", "x": 455, "y": 110, "w": 60, "h": 80, "fill": "red", "label": "53", "change": "highlight"},
+           {"kind": "text", "x": 280, "y": 215, "text": "% left after each step", "size": 18}
+         ]}},
+        {"say": "No leaving group on the C=O? Addition. A leaving group? Substitution.", "write": "addition vs addition–elimination"},
+        {"say": "Clever Ants Eat Apples. Chloride, anhydride, ester, amide. Only roll downhill.", "write": "C > A > E > A"}
+      ]
+    },
+    {
+      "heading": "Aromatics",
+      "lines": [
+        {"say": "Four n plus two is good for you. Four n is a sin.", "write": "4n + 2: aromatic"},
+        {"say": "Make E plus, the ring attacks, then lose H plus.", "write": "E⁺ → arenium → −H⁺"},
+        {"say": "Donors go ortho and para. Pullers go meta.", "write": "donors o/p, pullers meta",
+         "draw": {"type": "shapes", "width": 560, "height": 250, "alt": "Donor group sends the next group ortho/para; puller group sends it meta", "items": [
+           {"kind": "polygon", "points": [[140,60],[200,95],[200,165],[140,200],[80,165],[80,95]], "fill": "none"},
+           {"kind": "text", "x": 140, "y": 45, "text": "donor", "size": 18, "bold": true},
+           {"kind": "circle", "x": 212, "y": 88, "r": 11, "fill": "green", "change": "add"},
+           {"kind": "circle", "x": 68, "y": 88, "r": 11, "fill": "green", "change": "add"},
+           {"kind": "circle", "x": 140, "y": 215, "r": 11, "fill": "green", "change": "add"},
+           {"kind": "polygon", "points": [[420,60],[480,95],[480,165],[420,200],[360,165],[360,95]], "fill": "none"},
+           {"kind": "text", "x": 420, "y": 45, "text": "puller", "size": 18, "bold": true},
+           {"kind": "circle", "x": 492, "y": 172, "r": 11, "fill": "orange", "change": "add"},
+           {"kind": "circle", "x": 348, "y": 172, "r": 11, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 140, "y": 245, "text": "ortho / para", "size": 18},
+           {"kind": "text", "x": 420, "y": 245, "text": "meta", "size": 18}
+         ]}},
+        {"say": "Halogens are the odd couple. They deactivate, but direct ortho para.", "write": "halogens: deactivate, o/p"},
+        {"say": "Acylation stops, alkylation flops.", "write": "acylate, don't alkylate"}
+      ]
+    },
+    {
+      "heading": "Spectroscopy",
+      "lines": [
+        {"say": "Start with the degree of unsaturation. Four with six carbons probably means benzene.", "write": "DoU = (2C + 2 + N − H − X)/2"},
+        {"say": "IR: 1700 is the carbonyl, 3300 is O–H or N–H.", "write": "C=O ~1700, O–H ~3300"},
+        {"say": "Proton NMR: how many, where, how big, how split.", "write": "signals, δ, integral, split"},
+        {"say": "Count the neighbours, add one. Ethyl is a triplet-quartet couple.", "write": "n + 1 rule",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ethyl group pattern: quartet for CH2 and triplet for CH3", "items": [
+           {"kind": "line", "x": 30, "y": 180, "x2": 530, "y2": 180, "color": "black"},
+           {"kind": "rect", "x": 120, "y": 110, "w": 8, "h": 70, "fill": "blue"},
+           {"kind": "rect", "x": 134, "y": 60, "w": 8, "h": 120, "fill": "blue"},
+           {"kind": "rect", "x": 148, "y": 60, "w": 8, "h": 120, "fill": "blue"},
+           {"kind": "rect", "x": 162, "y": 110, "w": 8, "h": 70, "fill": "blue"},
+           {"kind": "rect", "x": 380, "y": 100, "w": 8, "h": 80, "fill": "orange", "change": "add"},
+           {"kind": "rect", "x": 394, "y": 40, "w": 8, "h": 140, "fill": "orange", "change": "add"},
+           {"kind": "rect", "x": 408, "y": 100, "w": 8, "h": 80, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 145, "y": 208, "text": "CH₂: 3 neighbours → 4", "size": 18},
+           {"kind": "text", "x": 400, "y": 208, "text": "CH₃: 2 neighbours → 3", "size": 18}
+         ]}},
+        {"say": "Strategy: DoU, mass spec, IR, carbon NMR, proton NMR, then check every peak.", "write": "DoU → MS → IR → ¹³C → ¹H"}
+      ]
+    },
+    {
+      "heading": "Transition metals",
+      "lines": [
+        {"say": "4s: first in, first out. d count is group minus charge.", "write": "Co³⁺: 9 − 3 = d⁶"},
+        {"say": "In an octahedron, the d orbitals split into t two g and e g.", "write": "gap = Δₒ",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Octahedral splitting: two eg orbitals above three t2g orbitals, gap delta o", "items": [
+           {"kind": "rect", "x": 200, "y": 40, "w": 60, "h": 16, "fill": "orange"},
+           {"kind": "rect", "x": 280, "y": 40, "w": 60, "h": 16, "fill": "orange"},
+           {"kind": "text", "x": 360, "y": 55, "text": "e_g", "size": 20, "anchor": "start"},
+           {"kind": "rect", "x": 160, "y": 180, "w": 60, "h": 16, "fill": "blue"},
+           {"kind": "rect", "x": 240, "y": 180, "w": 60, "h": 16, "fill": "blue"},
+           {"kind": "rect", "x": 320, "y": 180, "w": 60, "h": 16, "fill": "blue"},
+           {"kind": "text", "x": 400, "y": 195, "text": "t₂g", "size": 20, "anchor": "start"},
+           {"kind": "arrow", "x": 120, "y": 178, "x2": 120, "y2": 58, "color": "red", "change": "highlight"},
+           {"kind": "text", "x": 100, "y": 125, "text": "Δₒ", "size": 24, "bold": true, "color": "red", "anchor": "end"}
+         ]}},
+        {"say": "I Bring Clean Fresh Old Water, No Extra Cyanide, Carbon. Weak field to strong.", "write": "I⁻ … H₂O, NH₃, en, CN⁻, CO"},
+        {"say": "Strong field, low spin, paired in. Weak field, high spin, spread out.", "write": "μ = √(n(n + 2)) μ_B"},
+        {"say": "You see what is left. A complex shows the complementary colour.", "write": "Δ = hc/λ"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Organic reactions are electron-rich atoms attacking electron-poor atoms.", "write": "Nu attacks E"},
+        {"say": "Find the nucleophile and the electrophile. The arrows follow.", "write": "find Nu, find E"},
+        {"say": "Use this sheet after the lessons, not instead of them.", "write": "lessons first"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,758 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Factorising monic quadratics",
+  "frames": [
+    {
+      "heading": "What is a monic quadratic?",
+      "lines": [
+        {
+          "say": "A quadratic is monic when the number in front of x squared is 1.",
+          "write": "x² − 4x − 21"
+        },
+        {
+          "say": "Factorising is expanding in reverse. We turn it back into two brackets.",
+          "write": "x² + bx + c = (x + p)(x + q)"
+        },
+        {
+          "say": "Expand x plus p times x plus q and look at the pattern.",
+          "write": "(x + p)(x + q) = x² + (p + q)x + pq"
+        },
+        {
+          "say": "So we need two numbers that multiply to c and add to b.",
+          "write": "× to c,  + to b"
+        }
+      ]
+    },
+    {
+      "heading": "The area model",
+      "lines": [
+        {
+          "say": "Here is x squared plus eight x plus 15 as a rectangle of tiles.",
+          "write": "x² + 8x + 15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for x² + 8x + 15",
+            "items": [
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 40,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 5",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "label": "5x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "label": "15"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The corner tile is 15. It's 3 times 5. That's the product.",
+          "write": "3 × 5 = 15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for x² + 8x + 15",
+            "items": [
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 40,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 5",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "label": "5x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "change": "highlight",
+                "label": "15"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The two strips are three x and five x. They add to eight x.",
+          "write": "3x + 5x = 8x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for x² + 8x + 15",
+            "items": [
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 40,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 5",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "5x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "label": "15"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the sides are x plus 3 and x plus 5.",
+          "write": "(x + 3)(x + 5)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Area model for x² + 8x + 15",
+            "items": [
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 40,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 40,
+                "text": "+ 5",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 115,
+                "text": "x",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 222,
+                "text": "+ 3",
+                "size": 22,
+                "color": "purple",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 55,
+                "w": 160,
+                "h": 110,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 55,
+                "w": 130,
+                "h": 110,
+                "fill": "orange",
+                "label": "5x"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 165,
+                "w": 160,
+                "h": 90,
+                "fill": "orange",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 165,
+                "w": 130,
+                "h": 90,
+                "fill": "green",
+                "label": "15"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 160,
+                "text": "(x+3)(x+5)",
+                "size": 22,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Times to the end, add to the middle.",
+          "write": "× → c,  + → b"
+        }
+      ]
+    },
+    {
+      "heading": "Finding the two numbers",
+      "lines": [
+        {
+          "say": "Factorise x squared plus eleven x plus 24.",
+          "write": "x² + 11x + 24"
+        },
+        {
+          "say": "List the factor pairs of 24.",
+          "write": "1×24, 2×12, 3×8, 4×6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Factor pairs of 24 with their sums",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "label": "1 × 24"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "label": "2 × 12"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "label": "3 × 8"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "label": "4 × 6"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 160,
+                "text": "sum 25",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 160,
+                "text": "sum 14",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 160,
+                "text": "sum 11",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 475,
+                "y": 160,
+                "text": "sum 10",
+                "size": 20,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Which pair adds to 11? Three and eight.",
+          "write": "3 + 8 = 11",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Only 3 and 8 add to 11",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "change": "remove",
+                "label": "1 × 24"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "change": "remove",
+                "label": "2 × 12"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "green",
+                "change": "highlight",
+                "label": "3 × 8"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 60,
+                "w": 110,
+                "h": 60,
+                "fill": "white",
+                "change": "remove",
+                "label": "4 × 6"
+              },
+              {
+                "kind": "text",
+                "x": 85,
+                "y": 160,
+                "text": "sum 25",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 215,
+                "y": 160,
+                "text": "sum 14",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 160,
+                "text": "sum 11",
+                "size": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 475,
+                "y": 160,
+                "text": "sum 10",
+                "size": 20,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the answer is x plus 3, times x plus 8.",
+          "write": "(x + 3)(x + 8)"
+        },
+        {
+          "say": "Check by expanding. You get back where you started.",
+          "write": "x² + 8x + 3x + 24 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Sign clues",
+      "lines": [
+        {
+          "say": "If c is positive, both numbers have the same sign as b.",
+          "write": "c > 0: same signs"
+        },
+        {
+          "say": "If c is negative, the numbers have different signs.",
+          "write": "c < 0: different signs"
+        },
+        {
+          "say": "Try x squared minus four x minus 21. c is negative, so different signs.",
+          "write": "x² − 4x − 21"
+        },
+        {
+          "say": "Three times minus 7 is minus 21. Three plus minus 7 is minus 4.",
+          "write": "3 × (−7) = −21,  3 + (−7) = −4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "The bigger number takes the sign of b",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 120,
+                "r": 60,
+                "fill": "blue",
+                "label": "+3"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 120,
+                "r": 60,
+                "fill": "red",
+                "change": "highlight",
+                "label": "−7"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "bigger one takes the sign of b",
+                "size": 20,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the answer is x plus 3, times x minus 7.",
+          "write": "(x + 3)(x − 7)"
+        }
+      ]
+    },
+    {
+      "heading": "Common factors first",
+      "lines": [
+        {
+          "say": "Always look for a highest common factor first.",
+          "write": "2x² − 16x + 30"
+        },
+        {
+          "say": "Take out 2. Now the bracket is monic.",
+          "write": "2(x² − 8x + 15)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Take out the common factor 2",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "2x² − 16x + 30",
+                "size": 32,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "2(x² − 8x + 15)",
+                "size": 32,
+                "color": "purple",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 110,
+                "x2": 280,
+                "y2": 155,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Multiply to 15, add to minus 8. Minus 3 and minus 5.",
+          "write": "2(x − 3)(x − 5)"
+        },
+        {
+          "say": "If x squared is negative, take out minus 1. Every sign inside changes.",
+          "write": "−x² + 2x + 15 = −(x² − 2x − 15)"
+        },
+        {
+          "say": "Then factorise as usual.",
+          "write": "−(x − 5)(x + 3)"
+        }
+      ]
+    },
+    {
+      "heading": "Special cases to spot",
+      "lines": [
+        {
+          "say": "Difference of two squares. x squared minus 49.",
+          "write": "x² − 49 = (x + 7)(x − 7)"
+        },
+        {
+          "say": "A perfect square. Minus 6 and minus 6 multiply to 36 and add to minus 12.",
+          "write": "x² − 12x + 36 = (x − 6)²"
+        },
+        {
+          "say": "With two letters, y rides along with each number.",
+          "write": "x² + 5xy + 6y² = (x + 2y)(x + 3y)"
+        },
+        {
+          "say": "Some don't factorise neatly, like x squared plus four x plus 1.",
+          "write": "x² + 4x + 1: no whole numbers"
+        },
+        {
+          "say": "You will learn other methods for those later."
+        }
+      ]
+    },
+    {
+      "heading": "Hidden quadratics",
+      "lines": [
+        {
+          "say": "This one is a quadratic in disguise.",
+          "write": "x⁴ − 13x² + 36"
+        },
+        {
+          "say": "Let u equal x squared. It becomes a normal quadratic.",
+          "write": "u² − 13u + 36"
+        },
+        {
+          "say": "Multiply to 36, add to minus 13. Minus 4 and minus 9.",
+          "write": "(u − 4)(u − 9)"
+        },
+        {
+          "say": "Put x squared back. Both are differences of two squares.",
+          "write": "(x² − 4)(x² − 9)"
+        },
+        {
+          "say": "So keep going. Don't stop too early.",
+          "write": "(x−2)(x+2)(x−3)(x+3)"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Times to the end, add to the middle. Check both.",
+          "write": "× to c,  + to b"
+        },
+        {
+          "say": "Take out the common factor first, including minus 1.",
+          "write": "HCF first"
+        },
+        {
+          "say": "Use the sign clues to choose your numbers.",
+          "write": "c > 0 same,  c < 0 different"
+        },
+        {
+          "say": "Expand your answer to check. It catches sign errors.",
+          "write": "Expand to check ✓"
+        }
+      ]
+    }
+  ]
+}

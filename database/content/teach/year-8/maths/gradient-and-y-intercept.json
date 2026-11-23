@@ -1,0 +1,1542 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Gradient and y-intercept",
+  "frames": [
+    {
+      "heading": "A savings jar",
+      "lines": [
+        {
+          "say": "Mia's jar starts with 5 dollars.",
+          "write": "start: $5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Savings jar: starts at $5 and grows $3 a week: 5, 8, 11, 14",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 285,
+                "text": "week 0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 285,
+                "text": "week 1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 285,
+                "text": "week 2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "week 3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "She adds 3 dollars every week.",
+          "write": "+ $3 each week",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Savings jar: starts at $5 and grows $3 a week: 5, 8, 11, 14",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 285,
+                "text": "week 0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 140,
+                "w": 70,
+                "h": 45,
+                "fill": "orange",
+                "label": "+$3",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 285,
+                "text": "week 1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 95,
+                "w": 70,
+                "h": 90,
+                "fill": "orange",
+                "label": "+$6",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 285,
+                "text": "week 2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 50,
+                "w": 70,
+                "h": 135,
+                "fill": "orange",
+                "label": "+$9",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "week 3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "After x weeks she has 3x plus 5 dollars.",
+          "write": "y = 3x + 5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Savings jar: starts at $5 and grows $3 a week: 5, 8, 11, 14",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 285,
+                "text": "week 0",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 140,
+                "w": 70,
+                "h": 45,
+                "fill": "orange",
+                "label": "+$3"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 285,
+                "text": "week 1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 95,
+                "w": 70,
+                "h": 90,
+                "fill": "orange",
+                "label": "+$6"
+              },
+              {
+                "kind": "text",
+                "x": 345,
+                "y": 285,
+                "text": "week 2",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 185,
+                "w": 70,
+                "h": 75,
+                "fill": "green",
+                "label": "$5"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 50,
+                "w": 70,
+                "h": 135,
+                "fill": "orange",
+                "label": "+$9"
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "week 3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 40,
+                "text": "y = 3x + 5",
+                "size": 24,
+                "color": "purple",
+                "anchor": "end",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The 5 is where she starts. The 3 is how fast it grows.",
+          "write": "start 5, grow 3"
+        }
+      ]
+    },
+    {
+      "heading": "The form y = mx + c",
+      "lines": [
+        {
+          "say": "Any straight line that isn't vertical can be written like this.",
+          "write": "y = mx + c"
+        },
+        {
+          "say": "m is the gradient. It's the number multiplying x.",
+          "write": "m = gradient"
+        },
+        {
+          "say": "c is the y-intercept. The line crosses the y-axis at 0 comma c.",
+          "write": "c = y-intercept, (0, c)",
+          "diagram": "diagrams/y8/maths/gradient-and-y-intercept-mc.svg",
+          "alt": "The line y = 3x − 2 crossing the y-axis at −2, with a step of 1 across and 3 up"
+        },
+        {
+          "say": "Why? Put x equals 0. Then y equals c.",
+          "write": "x = 0 → y = c"
+        }
+      ]
+    },
+    {
+      "heading": "Reading m and c",
+      "lines": [
+        {
+          "say": "y equals 3x minus 2. m is 3, and c is minus 2.",
+          "write": "y = 3x − 2: m = 3, c = −2"
+        },
+        {
+          "say": "y equals 5 minus 2x. Write the x term first.",
+          "write": "y = −2x + 5"
+        },
+        {
+          "say": "The minus sign belongs to the 2. So m is minus 2, c is 5.",
+          "write": "m = −2, c = 5"
+        },
+        {
+          "say": "y equals x means m is 1 and c is 0.",
+          "write": "y = x: m = 1, c = 0"
+        },
+        {
+          "say": "y equals 6 is flat. m is 0 and c is 6.",
+          "write": "y = 6: m = 0, c = 6"
+        }
+      ]
+    },
+    {
+      "heading": "Sketching from m and c",
+      "lines": [
+        {
+          "say": "Sketch y equals minus 2x plus 3. Start at the y-intercept, 0 comma 3.",
+          "write": "y = −2x + 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sketching y = −2x + 3: start at (0, 3), then 1 right and 2 down each time",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 183.8,
+                "x2": 460,
+                "y2": 183.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 285,
+                "x2": 220.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 173.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 82.5,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 190.0,
+                "y": 82.5,
+                "text": "(0, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "m is minus 2. Go 1 right and 2 down.",
+          "write": "1 right, 2 down",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sketching y = −2x + 3: start at (0, 3), then 1 right and 2 down each time",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 183.8,
+                "x2": 460,
+                "y2": 183.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 285,
+                "x2": 220.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 173.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 82.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 190.0,
+                "y": 82.5,
+                "text": "(0, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 82.5,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 150.0,
+                "color": "purple",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 168.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Do it again as a check. That lands on 2 comma minus 1.",
+          "write": "(2, −1)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sketching y = −2x + 3: start at (0, 3), then 1 right and 2 down each time",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 183.8,
+                "x2": 460,
+                "y2": 183.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 285,
+                "x2": 220.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 173.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 82.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 190.0,
+                "y": 82.5,
+                "text": "(0, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 82.5,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 150.0,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 168.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 150.0,
+                "x2": 340.0,
+                "y2": 150.0,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 340.0,
+                "y": 150.0,
+                "x2": 340.0,
+                "y2": 217.5,
+                "color": "purple",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 340.0,
+                "y": 217.5,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 378.0,
+                "y": 217.5,
+                "text": "(2, −1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rule the line. It slopes down, like a negative gradient should.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sketching y = −2x + 3: start at (0, 3), then 1 right and 2 down each time",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 183.8,
+                "x2": 460,
+                "y2": 183.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 285,
+                "x2": 220.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 173.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 82.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 190.0,
+                "y": 82.5,
+                "text": "(0, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 82.5,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 150.0,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 168.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 150.0,
+                "x2": 340.0,
+                "y2": 150.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 340.0,
+                "y": 150.0,
+                "x2": 340.0,
+                "y2": 217.5,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 340.0,
+                "y": 217.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 378.0,
+                "y": 217.5,
+                "text": "(2, −1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 15.0,
+                "x2": 400.0,
+                "y2": 285.0,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 40,
+                "text": "y = −2x + 3",
+                "size": 22,
+                "color": "blue",
+                "anchor": "end",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Finding the rule of a line",
+      "lines": [
+        {
+          "say": "This line crosses the y-axis at 4 and passes through 2 comma 10.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line crossing the y-axis at (0, 4) and passing through (2, 10)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 262.5,
+                "x2": 440,
+                "y2": 262.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 285,
+                "x2": 200.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 436,
+                "y": 252.5,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 210.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 200.0,
+                "y": 172.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 172.5,
+                "text": "(0, 4)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 360.0,
+                "y": 37.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 322.0,
+                "y": 37.5,
+                "text": "(2, 10)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 240.0,
+                "x2": 386.7,
+                "y2": 15.0,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It crosses at 4, so c equals 4.",
+          "write": "c = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line crossing the y-axis at (0, 4) and passing through (2, 10)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 262.5,
+                "x2": 440,
+                "y2": 262.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 285,
+                "x2": 200.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 436,
+                "y": 252.5,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 210.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 200.0,
+                "y": 172.5,
+                "r": 6,
+                "fill": "red",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 172.5,
+                "text": "(0, 4)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 360.0,
+                "y": 37.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 322.0,
+                "y": 37.5,
+                "text": "(2, 10)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 240.0,
+                "x2": 386.7,
+                "y2": 15.0,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rise is 6, run is 2. So m is 3.",
+          "write": "m = 6 ÷ 2 = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line crossing the y-axis at (0, 4) and passing through (2, 10)",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 262.5,
+                "x2": 440,
+                "y2": 262.5,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 285,
+                "x2": 200.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 436,
+                "y": 252.5,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 210.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 200.0,
+                "y": 172.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 168.0,
+                "y": 172.5,
+                "text": "(0, 4)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 360.0,
+                "y": 37.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 322.0,
+                "y": 37.5,
+                "text": "(2, 10)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 240.0,
+                "x2": 386.7,
+                "y2": 15.0,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 172.5,
+                "x2": 360.0,
+                "y2": 172.5,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 196.5,
+                "text": "run 2",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 360.0,
+                "y": 172.5,
+                "x2": 360.0,
+                "y2": 37.5,
+                "color": "purple",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 370.0,
+                "y": 105.0,
+                "text": "rise 6",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the rule is y equals 3x plus 4.",
+          "write": "y = 3x + 4"
+        },
+        {
+          "say": "No c shown? Gradient 4 through 2 comma 7. Substitute the point.",
+          "write": "7 = 4 × 2 + c"
+        },
+        {
+          "say": "7 equals 8 plus c, so c is minus 1. The rule is y equals 4x minus 1.",
+          "write": "y = 4x − 1"
+        }
+      ]
+    },
+    {
+      "heading": "Parallel lines",
+      "lines": [
+        {
+          "say": "Here is y equals 2x plus 1.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Parallel lines y = 2x + 1 and y = 2x − 3, same slope, different y-intercepts",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 110,
+                "y": 150.0,
+                "x2": 450,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 285,
+                "x2": 280.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 446,
+                "y": 140.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 290.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 110.0,
+                "y": 285.0,
+                "x2": 393.3,
+                "y2": 15.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 123.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 246.0,
+                "y": 123.0,
+                "text": "c = 1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 60,
+                "text": "y = 2x + 1",
+                "size": 20,
+                "color": "blue",
+                "anchor": "end",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add y equals 2x minus 3. Same gradient, so they never meet.",
+          "write": "same m → parallel",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Parallel lines y = 2x + 1 and y = 2x − 3, same slope, different y-intercepts",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 110,
+                "y": 150.0,
+                "x2": 450,
+                "y2": 150.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 285,
+                "x2": 280.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 446,
+                "y": 140.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 290.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 110.0,
+                "y": 285.0,
+                "x2": 393.3,
+                "y2": 15.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 123.0,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 246.0,
+                "y": 123.0,
+                "text": "c = 1",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 223.3,
+                "y": 285.0,
+                "x2": 450.0,
+                "y2": 69.0,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 231.0,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 242.0,
+                "y": 231.0,
+                "text": "c = −3",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 60,
+                "text": "y = 2x + 1",
+                "size": 20,
+                "color": "blue",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 540,
+                "y": 90,
+                "text": "y = 2x − 3",
+                "size": 20,
+                "color": "red",
+                "anchor": "end",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Only c is different. It just moves the line up or down.",
+          "write": "different c, same slope"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "In y equals 5 minus 2x, m is minus 2, not 2.",
+          "write": "✗ m = 2   ✓ m = −2"
+        },
+        {
+          "say": "In y equals 4x minus 6, the y-intercept is minus 6, not 4.",
+          "write": "✗ c = 4   ✓ c = −6"
+        },
+        {
+          "say": "In y equals 7 plus 3x, m is 3. Find the number attached to x.",
+          "write": "y = 7 + 3x → m = 3"
+        },
+        {
+          "say": "For m equals two thirds, go 3 right and 2 up. Rise over run.",
+          "write": "m = ⅔: 3 right, 2 up"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "m for move, c for cross.",
+          "write": "y = mx + c"
+        },
+        {
+          "say": "Start at c, then step with m.",
+          "write": "plot (0, c), then step",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sketching y = −2x + 3: start at (0, 3), then 1 right and 2 down each time",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 183.8,
+                "x2": 460,
+                "y2": 183.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 285,
+                "x2": 220.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 173.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 230.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 220.0,
+                "y": 82.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 190.0,
+                "y": 82.5,
+                "text": "(0, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 82.5,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 82.5,
+                "x2": 280.0,
+                "y2": 150.0,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 248.0,
+                "y": 168.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 150.0,
+                "x2": 340.0,
+                "y2": 150.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "arrow",
+                "x": 340.0,
+                "y": 150.0,
+                "x2": 340.0,
+                "y2": 217.5,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "circle",
+                "x": 340.0,
+                "y": 217.5,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 378.0,
+                "y": 217.5,
+                "text": "(2, −1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 15.0,
+                "x2": 400.0,
+                "y2": 285.0,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 40,
+                "text": "y = −2x + 3",
+                "size": 22,
+                "color": "blue",
+                "anchor": "end",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Same m, never meet. Parallel lines share a gradient.",
+          "write": "parallel → same m"
+        },
+        {
+          "say": "Check with x equals 0. You must get c.",
+          "write": "x = 0 → y = c ✓"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1223 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Gradient",
+  "frames": [
+    {
+      "heading": "What is gradient?",
+      "lines": [
+        {
+          "say": "Gradient measures how steep a line is.",
+          "write": "gradient = steepness"
+        },
+        {
+          "say": "Climb 1 metre for every 10 forward. Climb 5 for every 10 forward.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two hill slopes: one climbs 1 for every 10 forward, the other climbs 5 for every 10",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    30,
+                    250
+                  ],
+                  [
+                    250,
+                    250
+                  ],
+                  [
+                    250,
+                    228
+                  ]
+                ],
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 285,
+                "text": "up 1 for every 10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    310,
+                    250
+                  ],
+                  [
+                    530,
+                    250
+                  ],
+                  [
+                    530,
+                    140
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 285,
+                "text": "up 5 for every 10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The second one is much steeper. You'd be puffing.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two hill slopes: one climbs 1 for every 10 forward, the other climbs 5 for every 10",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    30,
+                    250
+                  ],
+                  [
+                    250,
+                    250
+                  ],
+                  [
+                    250,
+                    228
+                  ]
+                ],
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 285,
+                "text": "up 1 for every 10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    310,
+                    250
+                  ],
+                  [
+                    530,
+                    250
+                  ],
+                  [
+                    530,
+                    140
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 285,
+                "text": "up 5 for every 10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 190,
+                "text": "gentle",
+                "size": 22,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 110,
+                "text": "steep",
+                "size": 22,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Steepness compares the climb with the distance forward.",
+          "write": "climb ÷ forward"
+        }
+      ]
+    },
+    {
+      "heading": "Rise over run",
+      "lines": [
+        {
+          "say": "Pick two points on the line. Here, 2 comma 3 and 5 comma 9.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (2, 3) and (5, 9) with a run of 3 and a rise of 6",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 290.0,
+                "x2": 500,
+                "y2": 290.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 290,
+                "x2": 60.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 496,
+                "y": 280.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 70.0,
+                "y": 34,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 91.4,
+                "y": 290.0,
+                "x2": 405.7,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 185.7,
+                "y": 209.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 155.7,
+                "y": 209.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 374.3,
+                "y": 47.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 336.3,
+                "y": 47.0,
+                "text": "(5, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The run is how far across to the right. That's 3.",
+          "write": "run = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (2, 3) and (5, 9) with a run of 3 and a rise of 6",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 290.0,
+                "x2": 500,
+                "y2": 290.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 290,
+                "x2": 60.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 496,
+                "y": 280.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 70.0,
+                "y": 34,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 91.4,
+                "y": 290.0,
+                "x2": 405.7,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 185.7,
+                "y": 209.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 155.7,
+                "y": 209.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 374.3,
+                "y": 47.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 336.3,
+                "y": 47.0,
+                "text": "(5, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 185.7,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 209.0,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 233.0,
+                "text": "run = 3",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The rise is how far up. That's 6.",
+          "write": "rise = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (2, 3) and (5, 9) with a run of 3 and a rise of 6",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 290.0,
+                "x2": 500,
+                "y2": 290.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 290,
+                "x2": 60.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 496,
+                "y": 280.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 70.0,
+                "y": 34,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 91.4,
+                "y": 290.0,
+                "x2": 405.7,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 185.7,
+                "y": 209.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 155.7,
+                "y": 209.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 374.3,
+                "y": 47.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 336.3,
+                "y": 47.0,
+                "text": "(5, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 185.7,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 209.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 233.0,
+                "text": "run = 3",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 374.3,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 47.0,
+                "color": "purple",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 386.3,
+                "y": 128.0,
+                "text": "rise = 6",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Gradient is rise divided by run. 6 divided by 3 is 2.",
+          "write": "gradient = rise ÷ run = 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (2, 3) and (5, 9) with a run of 3 and a rise of 6",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 290.0,
+                "x2": 500,
+                "y2": 290.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 290,
+                "x2": 60.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 496,
+                "y": 280.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 70.0,
+                "y": 34,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 91.4,
+                "y": 290.0,
+                "x2": 405.7,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 185.7,
+                "y": 209.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 155.7,
+                "y": 209.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 374.3,
+                "y": 47.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 336.3,
+                "y": 47.0,
+                "text": "(5, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 185.7,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 209.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 233.0,
+                "text": "run = 3",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 374.3,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 47.0,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 386.3,
+                "y": 128.0,
+                "text": "rise = 6",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 50,
+                "text": "gradient = 6 ÷ 3 = 2",
+                "size": 22,
+                "color": "black",
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So it goes up 2 for every 1 across."
+        }
+      ]
+    },
+    {
+      "heading": "Up, down, flat, vertical",
+      "lines": [
+        {
+          "say": "Always read a line from left to right, like a book.",
+          "diagram": "diagrams/y8/maths/gradient-kinds.svg",
+          "alt": "Four lines: going up (positive), going down (negative), flat (zero), vertical (undefined)"
+        },
+        {
+          "say": "Goes up? Positive gradient. Goes down? Negative gradient.",
+          "write": "up +   down −"
+        },
+        {
+          "say": "A flat line has gradient zero.",
+          "write": "flat → 0"
+        },
+        {
+          "say": "A vertical line has a run of zero. You can't divide by zero.",
+          "write": "vertical → undefined"
+        },
+        {
+          "say": "Bigger size means steeper. Minus 4 is steeper than 3.",
+          "write": "−4 steeper than 3"
+        }
+      ]
+    },
+    {
+      "heading": "Gradient from two points",
+      "lines": [
+        {
+          "say": "The rise is the change in y. The run is the change in x.",
+          "write": "(y₂ − y₁) ÷ (x₂ − x₁)"
+        },
+        {
+          "say": "Try 1 comma 2 and 4 comma 11.",
+          "write": "(1, 2) and (4, 11)"
+        },
+        {
+          "say": "Rise. 11 take away 2 is 9.",
+          "write": "rise = 11 − 2 = 9"
+        },
+        {
+          "say": "Run. 4 take away 1 is 3. Same order as the top.",
+          "write": "run = 4 − 1 = 3"
+        },
+        {
+          "say": "9 divided by 3 is 3. It goes up, so positive makes sense.",
+          "write": "gradient = 3"
+        }
+      ]
+    },
+    {
+      "heading": "With negative numbers",
+      "lines": [
+        {
+          "say": "Now minus 2 comma 5, and 2 comma minus 3.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (−2, 5) and (2, −3): run 4 to the right, rise −8 going down",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 177.0,
+                "x2": 460,
+                "y2": 177.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 285,
+                "x2": 280.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 167.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 290.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 130.0,
+                "y": 15.0,
+                "x2": 430.0,
+                "y2": 285.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 160.0,
+                "y": 42.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 116.0,
+                "y": 42.0,
+                "text": "(−2, 5)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 258.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 448.0,
+                "y": 258.0,
+                "text": "(2, −3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rise. Minus 3 take away 5 is minus 8. Run. 2 take away minus 2 is 4.",
+          "write": "rise = −8,  run = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (−2, 5) and (2, −3): run 4 to the right, rise −8 going down",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 177.0,
+                "x2": 460,
+                "y2": 177.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 285,
+                "x2": 280.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 167.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 290.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 130.0,
+                "y": 15.0,
+                "x2": 430.0,
+                "y2": 285.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 160.0,
+                "y": 42.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 116.0,
+                "y": 42.0,
+                "text": "(−2, 5)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 258.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 448.0,
+                "y": 258.0,
+                "text": "(2, −3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 160.0,
+                "y": 42.0,
+                "x2": 400.0,
+                "y2": 42.0,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 32.0,
+                "text": "run = 4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 400.0,
+                "y": 42.0,
+                "x2": 400.0,
+                "y2": 258.0,
+                "color": "purple",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 410.0,
+                "y": 150.0,
+                "text": "rise = −8",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Minus 8 divided by 4 is minus 2. It goes down, so negative.",
+          "write": "gradient = −2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (−2, 5) and (2, −3): run 4 to the right, rise −8 going down",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 100,
+                "y": 177.0,
+                "x2": 460,
+                "y2": 177.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 285,
+                "x2": 280.0,
+                "y2": 15,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 456,
+                "y": 167.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 290.0,
+                "y": 29,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 130.0,
+                "y": 15.0,
+                "x2": 430.0,
+                "y2": 285.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 160.0,
+                "y": 42.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 116.0,
+                "y": 42.0,
+                "text": "(−2, 5)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 400.0,
+                "y": 258.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 448.0,
+                "y": 258.0,
+                "text": "(2, −3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 160.0,
+                "y": 42.0,
+                "x2": 400.0,
+                "y2": 42.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 32.0,
+                "text": "run = 4",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 400.0,
+                "y": 42.0,
+                "x2": 400.0,
+                "y2": 258.0,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 410.0,
+                "y": 150.0,
+                "text": "rise = −8",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 280,
+                "text": "gradient = −8 ÷ 4 = −2",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Put brackets round negatives so the signs don't slip.",
+          "write": "2 − (−2) = 4"
+        }
+      ]
+    },
+    {
+      "heading": "Fractions and rates",
+      "lines": [
+        {
+          "say": "From 0 comma 1 to 6 comma 4, the rise is 3 and the run is 6.",
+          "write": "gradient = 3/6"
+        },
+        {
+          "say": "Simplify. Three over six is one half. Up 1 for every 2 across.",
+          "write": "3/6 = ½"
+        },
+        {
+          "say": "On real graphs, gradient has units. It's a rate.",
+          "write": "gradient = rate"
+        },
+        {
+          "say": "A tank fills 30 litres in 120 seconds. That's a quarter litre per second.",
+          "write": "30 ÷ 120 = ¼ L/s"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't write run over rise. The y change goes on top.",
+          "write": "✗ 3/9   ✓ 9/3"
+        },
+        {
+          "say": "Subtract in the same order, top and bottom.",
+          "write": "same start, same order"
+        },
+        {
+          "say": "A vertical line is not zero. It is undefined.",
+          "write": "✗ vertical = 0"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Rise over run. You rise before you run.",
+          "write": "gradient = rise ÷ run",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A line through (2, 3) and (5, 9) with a run of 3 and a rise of 6",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 290.0,
+                "x2": 500,
+                "y2": 290.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 290,
+                "x2": 60.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 496,
+                "y": 280.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 70.0,
+                "y": 34,
+                "text": "y",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 91.4,
+                "y": 290.0,
+                "x2": 405.7,
+                "y2": 20.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 185.7,
+                "y": 209.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 155.7,
+                "y": 209.0,
+                "text": "(2, 3)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 374.3,
+                "y": 47.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 336.3,
+                "y": 47.0,
+                "text": "(5, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 185.7,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 209.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 233.0,
+                "text": "run = 3",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 374.3,
+                "y": 209.0,
+                "x2": 374.3,
+                "y2": 47.0,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 386.3,
+                "y": 128.0,
+                "text": "rise = 6",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 80,
+                "y": 50,
+                "text": "gradient = 6 ÷ 3 = 2",
+                "size": 22,
+                "color": "black",
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Up is positive, down is negative, flat is zero, vertical is undefined.",
+          "write": "+   −   0   undefined"
+        },
+        {
+          "say": "Sketch first, and check the sign makes sense.",
+          "write": "sense check ✓"
+        }
+      ]
+    }
+  ]
+}

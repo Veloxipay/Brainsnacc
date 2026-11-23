@@ -1,0 +1,133 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Tree diagrams",
+  "frames": [
+    {
+      "heading": "What is a tree diagram?",
+      "lines": [
+        { "say": "A tree diagram shows every path in a chance experiment with steps.", "write": "tree diagram" },
+        { "say": "Each stage is a set of branches. Write the probability on each branch.", "write": "probability on branches" },
+        { "say": "Branches from any one point must add to 1.", "write": "each fork adds to 1" },
+        { "say": "Each complete path from start to finish is one outcome." }
+      ]
+    },
+    {
+      "heading": "Tossing a coin twice",
+      "lines": [
+        {
+          "say": "First toss. Heads or tails, each a half.",
+          "write": "H ½    T ½",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "First stage branches H and T",
+            "items": [
+              { "kind": "circle", "x": 40, "y": 150, "r": 8, "fill": "black" },
+              { "kind": "line", "x": 40, "y": 150, "x2": 220, "y2": 75, "color": "black" },
+              { "kind": "line", "x": 40, "y": 150, "x2": 220, "y2": 225, "color": "black" },
+              { "kind": "circle", "x": 240, "y": 75, "r": 22, "fill": "blue", "label": "H" },
+              { "kind": "circle", "x": 240, "y": 225, "r": 22, "fill": "orange", "label": "T" },
+              { "kind": "text", "x": 120, "y": 95, "text": "½", "size": 22 },
+              { "kind": "text", "x": 120, "y": 225, "text": "½", "size": 22 }
+            ]
+          }
+        },
+        {
+          "say": "From each one, the second toss branches again.",
+          "write": "HH, HT, TH, TT",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Second stage branches added giving HH, HT, TH, TT",
+            "items": [
+              { "kind": "circle", "x": 40, "y": 150, "r": 8, "fill": "black" },
+              { "kind": "line", "x": 40, "y": 150, "x2": 220, "y2": 75, "color": "black" },
+              { "kind": "line", "x": 40, "y": 150, "x2": 220, "y2": 225, "color": "black" },
+              { "kind": "circle", "x": 240, "y": 75, "r": 22, "fill": "blue", "label": "H" },
+              { "kind": "circle", "x": 240, "y": 225, "r": 22, "fill": "orange", "label": "T" },
+              { "kind": "line", "x": 262, "y": 75, "x2": 400, "y2": 35, "color": "black", "change": "add" },
+              { "kind": "line", "x": 262, "y": 75, "x2": 400, "y2": 115, "color": "black", "change": "add" },
+              { "kind": "line", "x": 262, "y": 225, "x2": 400, "y2": 185, "color": "black", "change": "add" },
+              { "kind": "line", "x": 262, "y": 225, "x2": 400, "y2": 265, "color": "black", "change": "add" },
+              { "kind": "text", "x": 420, "y": 42, "text": "HH  ¼", "size": 20, "bold": true, "change": "add" },
+              { "kind": "text", "x": 420, "y": 122, "text": "HT  ¼", "size": 20, "bold": true, "change": "add" },
+              { "kind": "text", "x": 420, "y": 192, "text": "TH  ¼", "size": 20, "bold": true, "change": "add" },
+              { "kind": "text", "x": 420, "y": 272, "text": "TT  ¼", "size": 20, "bold": true, "change": "add" }
+            ]
+          }
+        },
+        { "say": "Multiply along a path. A half times a half is a quarter.", "write": "½ × ½ = ¼" },
+        {
+          "say": "Exactly one head is HT or TH. Add them. A quarter plus a quarter is a half.",
+          "write": "P(one head) = ¼ + ¼ = ½",
+          "diagram": "diagrams/y9/maths/tree-diagrams-ex1.svg",
+          "alt": "Coin tree with HT and TH highlighted"
+        }
+      ]
+    },
+    {
+      "heading": "Multiply along, add down",
+      "lines": [
+        { "say": "Along a path, both things happen. That's AND, so multiply.", "write": "along: × (AND)" },
+        { "say": "If an event can happen more than one way, add the paths. That's OR.", "write": "down: + (OR)" },
+        { "say": "All the final outcomes add to 1. That's a good check.", "write": "total = 1 ✓" }
+      ]
+    },
+    {
+      "heading": "Without replacement",
+      "lines": [
+        { "say": "A bag has 3 red and 2 blue counters. Take out two, without replacing.", "write": "3R, 2B" },
+        { "say": "First pick. Red is 3 out of 5. Blue is 2 out of 5.", "write": "R 3/5   B 2/5" },
+        {
+          "say": "After a red, there are 4 left. 2 red and 2 blue.",
+          "write": "after R: 2/4, 2/4",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "One red counter removed, leaving 2 red and 2 blue",
+            "items": [
+              { "kind": "circle", "x": 80, "y": 100, "r": 32, "fill": "red", "label": "R", "change": "remove" },
+              { "kind": "circle", "x": 170, "y": 100, "r": 32, "fill": "red", "label": "R" },
+              { "kind": "circle", "x": 260, "y": 100, "r": 32, "fill": "red", "label": "R" },
+              { "kind": "circle", "x": 350, "y": 100, "r": 32, "fill": "blue", "label": "B" },
+              { "kind": "circle", "x": 440, "y": 100, "r": 32, "fill": "blue", "label": "B" }
+            ]
+          }
+        },
+        { "say": "After a blue, there are 3 red and 1 blue left.", "write": "after B: 3/4, 1/4" },
+        {
+          "say": "One of each is RB or BR. 6 over 20 plus 6 over 20 is 3 over 5.",
+          "write": "6/20 + 6/20 = 12/20 = 3/5",
+          "diagram": "diagrams/y9/maths/tree-diagrams-ex2.svg",
+          "alt": "Tree for two counters without replacement: RR 6/20, RB 6/20, BR 6/20, BB 2/20"
+        }
+      ]
+    },
+    {
+      "heading": "Rain on the weekend",
+      "lines": [
+        { "say": "Rain is 0.3 on Saturday and 0.4 on Sunday. So dry is 0.7 and 0.6.", "write": "dry = 1 − rain" },
+        { "say": "Multiply along each path. Rain then dry is 0.3 times 0.6, which is 0.18.", "write": "0.12, 0.18, 0.28, 0.42" },
+        {
+          "say": "Exactly one day of rain. Add the middle two paths. 0.46.",
+          "write": "0.18 + 0.28 = 0.46",
+          "diagram": "diagrams/y9/maths/tree-diagrams-ex3.svg",
+          "alt": "Rain tree with path probabilities 0.12, 0.18, 0.28 and 0.42, middle two highlighted"
+        },
+        { "say": "At least one day is everything except dry, dry. 1 minus 0.42 is 0.58.", "write": "1 − 0.42 = 0.58" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't add along a path. Multiply.", "write": "✗ ½ + ½ along" },
+        { "say": "Without replacement, change the second stage. One less on the bottom.", "write": "5 → 4 on the bottom" },
+        { "say": "One of each can happen two ways. Add both paths.", "write": "RB or BR" },
+        { "say": "Check every fork adds to 1.", "write": "fork = 1" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Along, multiply. Down, add.", "write": "along ×, down +" },
+        { "say": "Every fork adds to 1, and every tree adds to 1.", "write": "= 1" },
+        { "say": "At least one equals 1 minus none.", "write": "P(at least 1) = 1 − P(none)" }
+      ]
+    }
+  ]
+}

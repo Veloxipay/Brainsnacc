@@ -1,0 +1,129 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Solving quadratic equations",
+  "frames": [
+    {
+      "heading": "What is a quadratic equation?",
+      "lines": [
+        { "say": "A quadratic equation has x squared as its highest power.", "write": "ax² + bx + c = 0" },
+        { "say": "A value of x that makes it true is a solution, or a root.", "write": "solution = root" },
+        { "say": "Think of a lock with two keys. Most quadratics have two answers." },
+        { "say": "Find only one, and you've done half the job." }
+      ]
+    },
+    {
+      "heading": "Type 1: x squared equals k",
+      "lines": [
+        { "say": "x squared equals 25. Which numbers square to 25?", "write": "x² = 25" },
+        {
+          "say": "5 squared is 25. And minus 5 squared is also 25.",
+          "write": "x = ±5",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Two keys: 5 and minus 5 both square to 25",
+            "items": [
+              { "kind": "circle", "x": 280, "y": 60, "r": 36, "fill": "yellow", "label": "25" },
+              { "kind": "arrow", "x": 150, "y": 170, "x2": 250, "y2": 85, "color": "blue", "change": "add" },
+              { "kind": "arrow", "x": 410, "y": 170, "x2": 310, "y2": 85, "color": "orange", "change": "add" },
+              { "kind": "text", "x": 140, "y": 200, "text": "5² = 25", "size": 24, "bold": true, "anchor": "middle", "change": "highlight" },
+              { "kind": "text", "x": 420, "y": 200, "text": "(−5)² = 25", "size": 24, "bold": true, "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "If there's a number in front, divide first. 3 x squared equals 48.", "write": "3x² = 48" },
+        { "say": "Divide by 3. x squared is 16, so x is plus or minus 4.", "write": "x² = 16,  x = ±4" },
+        { "say": "x squared equals 0 has one answer. A negative k has no answers.", "write": "x² = −4: no solution" }
+      ]
+    },
+    {
+      "heading": "Type 2: the null factor law",
+      "lines": [
+        { "say": "If two numbers multiply to give 0, at least one of them is 0.", "write": "a × b = 0 → a = 0 or b = 0" },
+        {
+          "say": "Here are two brackets multiplied to give 0.",
+          "write": "(x + 2)(x − 3) = 0",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 240, "alt": "Two brackets multiplied to give zero",
+            "items": [
+              { "kind": "rect", "x": 40, "y": 50, "w": 160, "h": 60, "fill": "blue", "label": "(x + 2)" },
+              { "kind": "text", "x": 230, "y": 90, "text": "×", "size": 30, "anchor": "middle" },
+              { "kind": "rect", "x": 260, "y": 50, "w": 160, "h": 60, "fill": "orange", "label": "(x − 3)" },
+              { "kind": "text", "x": 470, "y": 90, "text": "= 0", "size": 30, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "So x plus 2 is 0, or x minus 3 is 0.",
+          "write": "x = −2 or x = 3",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 240, "alt": "Each bracket set to zero gives x = −2 or x = 3",
+            "items": [
+              { "kind": "rect", "x": 40, "y": 50, "w": 160, "h": 60, "fill": "blue", "label": "(x + 2)" },
+              { "kind": "text", "x": 230, "y": 90, "text": "×", "size": 30, "anchor": "middle" },
+              { "kind": "rect", "x": 260, "y": 50, "w": 160, "h": 60, "fill": "orange", "label": "(x − 3)" },
+              { "kind": "text", "x": 470, "y": 90, "text": "= 0", "size": 30, "bold": true, "anchor": "middle" },
+              { "kind": "arrow", "x": 120, "y": 115, "x2": 120, "y2": 165, "color": "purple", "change": "add" },
+              { "kind": "arrow", "x": 340, "y": 115, "x2": 340, "y2": 165, "color": "purple", "change": "add" },
+              { "kind": "text", "x": 120, "y": 200, "text": "x = −2", "size": 26, "bold": true, "anchor": "middle", "change": "highlight" },
+              { "kind": "text", "x": 340, "y": 200, "text": "x = 3", "size": 26, "bold": true, "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "This only works when one side is 0.", "write": "zero first!" }
+      ]
+    },
+    {
+      "heading": "Type 3: factorise first",
+      "lines": [
+        { "say": "Solve x squared equals 2x plus 8. First, make one side 0.", "write": "x² − 2x − 8 = 0" },
+        { "say": "Two numbers that multiply to minus 8 and add to minus 2. Minus 4 and 2.", "write": "(x − 4)(x + 2) = 0" },
+        { "say": "Null factor law. x is 4 or minus 2.", "write": "x = 4 or x = −2" },
+        { "say": "Check 4. 4 squared is 16, and 2 times 4 plus 8 is 16.", "write": "16 = 16 ✓" }
+      ]
+    },
+    {
+      "heading": "No number term",
+      "lines": [
+        { "say": "x squared minus 5x equals 0. Take out the common factor x.", "write": "x(x − 5) = 0" },
+        { "say": "So x is 0, or x minus 5 is 0.", "write": "x = 0 or x = 5" },
+        { "say": "Never divide both sides by x. You would lose x equals 0.", "write": "✗ divide by x" }
+      ]
+    },
+    {
+      "heading": "Solutions on a graph",
+      "lines": [
+        { "say": "On the x-axis, y is 0. So solutions are where the graph crosses the x-axis.", "write": "x-intercepts" },
+        {
+          "say": "y equals x squared minus 9 crosses at minus 3 and 3.",
+          "write": "x² − 9 = 0 → x = ±3",
+          "diagram": "diagrams/y9/maths/solving-quadratic-equations-intercepts.svg",
+          "alt": "Parabola y = x² − 9 crossing the x-axis at −3 and 3"
+        },
+        {
+          "say": "y equals x plus 2 times x minus 3 crosses at minus 2 and 3.",
+          "write": "x = −2 or x = 3",
+          "diagram": "diagrams/y9/maths/solving-quadratic-equations-ex.svg",
+          "alt": "Parabola y = x² − x − 6 crossing the x-axis at −2 and 3"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't forget the negative answer. Square roots come in pairs.", "write": "✗ x² = 49 → x = 7" },
+        { "say": "Don't use the null factor law unless one side is 0.", "write": "✗ x(x − 5) = 14 → x = 14" },
+        { "say": "Watch the signs. x minus 4 equals 0 gives x equals 4.", "write": "(x − 4) → x = 4" },
+        { "say": "Dividing x squared equals 7x by x loses the answer 0.", "write": "x² − 7x = 0 → 0 or 7" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Zero first, then factorise.", "write": "= 0, then factorise" },
+        { "say": "Each bracket gives its number with the sign flipped.", "write": "(x + 2) → −2" },
+        { "say": "Square roots come in pairs, plus and minus.", "write": "±" },
+        { "say": "Always substitute back to check.", "write": "Check ✓" }
+      ]
+    }
+  ]
+}

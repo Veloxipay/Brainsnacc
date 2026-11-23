@@ -1,0 +1,516 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Dividing polynomials",
+  "frames": [
+    {
+      "heading": "The words",
+      "lines": [
+        {
+          "say": "Polynomials divide just like numbers. 437 divided by 12 is 36, remainder 5.",
+          "write": "437 ÷ 12 = 36 r 5"
+        },
+        {
+          "say": "The polynomial being divided is the dividend.",
+          "write": "dividend P(x)"
+        },
+        {
+          "say": "We divide by the divisor. The answer is the quotient.",
+          "write": "divisor, quotient Q(x)"
+        },
+        {
+          "say": "What is left over is the remainder.",
+          "write": "remainder R"
+        },
+        {
+          "say": "They fit together in the division statement.",
+          "write": "P(x) = (x − a)Q(x) + R"
+        }
+      ]
+    },
+    {
+      "heading": "Division undoes multiplication",
+      "lines": [
+        {
+          "say": "This rectangle has area x squared plus seven x plus twelve. One side is x plus 3.",
+          "write": "(x² + 7x + 12) ÷ (x + 3)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Area model: x squared + 7x + 12 divided by x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 125,
+                "text": "x",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 225,
+                "text": "+3",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 40,
+                "text": "x² + 7x + 12",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 60,
+                "w": 180,
+                "h": 130,
+                "fill": "blue",
+                "label": "?"
+              }
+            ]
+          }
+        },
+        {
+          "say": "x times what gives x squared? x. That makes three x below it.",
+          "write": "x × x = x²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Area model: x squared + 7x + 12 divided by x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 125,
+                "text": "x",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 225,
+                "text": "+3",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 40,
+                "text": "x² + 7x + 12",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 60,
+                "w": 180,
+                "h": 130,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 45,
+                "text": "x",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 190,
+                "w": 180,
+                "h": 70,
+                "fill": "teal",
+                "change": "add",
+                "label": "3x"
+              }
+            ]
+          }
+        },
+        {
+          "say": "We still need four x and twelve. So the other side grows by 4.",
+          "write": "other side: x + 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Area model: x squared + 7x + 12 divided by x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 125,
+                "text": "x",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 225,
+                "text": "+3",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 40,
+                "text": "x² + 7x + 12",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 60,
+                "w": 180,
+                "h": 130,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 45,
+                "text": "x",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 190,
+                "w": 180,
+                "h": 70,
+                "fill": "teal",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 60,
+                "w": 100,
+                "h": 130,
+                "fill": "orange",
+                "change": "add",
+                "label": "4x"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 190,
+                "w": 100,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add",
+                "label": "12"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 45,
+                "text": "+4",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 160,
+                "text": "x + 4",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the quotient is x plus 4, with no remainder.",
+          "write": "(x + 3)(x + 4) = x² + 7x + 12"
+        }
+      ]
+    },
+    {
+      "heading": "The long division routine",
+      "lines": [
+        {
+          "say": "Does McDonald’s Sell Burgers? Divide, multiply, subtract, bring down.",
+          "write": "D  M  S  B"
+        },
+        {
+          "say": "Divide the front term by x. Write it on top.",
+          "write": "x³ ÷ x = x²"
+        },
+        {
+          "say": "Multiply the whole divisor by that term.",
+          "write": "x²(x − 2) = x³ − 2x²"
+        },
+        {
+          "say": "Subtract. Change every sign, then add.",
+          "write": "2x² − (−2x²) = 4x²"
+        },
+        {
+          "say": "Bring down the next term, and repeat."
+        },
+        {
+          "say": "Stop when what is left has a lower power than the divisor."
+        }
+      ]
+    },
+    {
+      "heading": "A full division",
+      "lines": [
+        {
+          "say": "Divide x cubed plus two x squared take five x take six by x take 2.",
+          "write": "x³ + 2x² − 5x − 6",
+          "diagram": "diagrams/y10/maths/dividing-polynomials-long.svg",
+          "alt": "Long division of x cubed + 2x squared - 5x - 6 by x - 2"
+        },
+        {
+          "say": "x squared, then four x, then 3 go on top.",
+          "write": "Q = x² + 4x + 3"
+        },
+        {
+          "say": "The last subtraction leaves zero.",
+          "write": "R = 0"
+        },
+        {
+          "say": "A remainder of zero means x take 2 is a factor.",
+          "write": "(x − 2) is a factor"
+        }
+      ]
+    },
+    {
+      "heading": "Placeholders and remainders",
+      "lines": [
+        {
+          "say": "Divide two x cubed take three x squared plus 4 by x plus 1.",
+          "write": "2x³ − 3x² + 4"
+        },
+        {
+          "say": "There is no x term. Write zero x to save its seat.",
+          "write": "2x³ − 3x² + 0x + 4"
+        },
+        {
+          "say": "Work through the routine. The last step is 4 take 5.",
+          "write": "4 − 5 = −1",
+          "diagram": "diagrams/y10/maths/dividing-polynomials-remainder.svg",
+          "alt": "Long division of 2x cubed - 3x squared + 0x + 4 by x + 1 with remainder -1"
+        },
+        {
+          "say": "So the quotient is two x squared take five x plus 5. Remainder minus 1.",
+          "write": "(x + 1)(2x² − 5x + 5) − 1"
+        },
+        {
+          "say": "Check with x equals 0. Both sides give 4.",
+          "write": "x = 0: 4 = 5 − 1 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Fraction form",
+      "lines": [
+        {
+          "say": "Divide x cubed take four x plus 7 by x take 3.",
+          "write": "x³ + 0x² − 4x + 7"
+        },
+        {
+          "say": "The quotient is x squared plus three x plus 5. The remainder is 22.",
+          "write": "Q = x² + 3x + 5,  R = 22"
+        },
+        {
+          "say": "The remainder goes over the divisor.",
+          "write": "x² + 3x + 5 + 22/(x − 3)"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Always write zero placeholders for missing powers."
+        },
+        {
+          "say": "Subtract every term. Minus two x squared becomes plus two x squared."
+        },
+        {
+          "say": "Do not stop while there is still an x term left."
+        },
+        {
+          "say": "Write the remainder over the divisor, not on its own.",
+          "write": "✗ Q(x) + 22"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Divide, multiply, subtract, bring down.",
+          "write": "D M S B",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Area model: x squared + 7x + 12 divided by x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 125,
+                "text": "x",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 55,
+                "y": 225,
+                "text": "+3",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 40,
+                "text": "x² + 7x + 12",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 60,
+                "w": 180,
+                "h": 130,
+                "fill": "blue",
+                "label": "x²"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 45,
+                "text": "x",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 190,
+                "w": 180,
+                "h": 70,
+                "fill": "teal",
+                "label": "3x"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 60,
+                "w": 100,
+                "h": 130,
+                "fill": "orange",
+                "change": "add",
+                "label": "4x"
+              },
+              {
+                "kind": "rect",
+                "x": 260,
+                "y": 190,
+                "w": 100,
+                "h": 70,
+                "fill": "yellow",
+                "change": "add",
+                "label": "12"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 45,
+                "text": "+4",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 160,
+                "text": "x + 4",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Only look at the front term each time."
+        },
+        {
+          "say": "Zero holds the seat.",
+          "write": "0x"
+        },
+        {
+          "say": "Check. Divisor times quotient plus remainder gives the dividend.",
+          "write": "(x − a)Q(x) + R = P(x)"
+        }
+      ]
+    }
+  ]
+}

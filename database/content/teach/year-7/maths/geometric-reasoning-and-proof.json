@@ -1,0 +1,89 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Geometric reasoning and proof",
+  "frames": [
+    { "heading": "Why measuring is not enough",
+      "lines": [
+        { "say": "Measure one triangle's angles and get 180. You've checked just one triangle.", "write": "one example ≠ proof" },
+        { "say": "There are infinitely many triangles. A proof uses letters, so it covers them all.", "write": "letters cover every case" },
+        { "say": "Like a lawyer in court, every claim needs a reason. Looks like it isn't a reason.", "write": "no step without a reason" }
+      ] },
+    { "heading": "The shape of a proof",
+      "lines": [
+        { "say": "Write three headings. Given, to prove, and proof.", "write": "Given → To prove → Proof" },
+        { "say": "Each statement ends with a reason in brackets.", "write": "statement (reason)" },
+        { "say": "Reasons can be definitions, given facts, or rules already proved.", "write": "only proved facts" },
+        { "say": "Using what you're trying to prove as a reason is circular. It proves nothing.", "write": "✗ circular reasoning" }
+      ] },
+    { "heading": "Vertically opposite angles",
+      "lines": [
+        { "say": "Two lines cross. Call the angles a, b and c.", "write": "to prove: a = c",
+          "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-vo.svg", "alt": "Two crossing lines with angles a, b and c" },
+        { "say": "a plus b is 180, because they're on a straight line.", "write": "a + b = 180° (straight line)" },
+        { "say": "c plus b is also 180, on the other straight line.", "write": "c + b = 180° (straight line)" },
+        { "say": "Both a and c equal 180 minus b. So a equals c.", "write": "a = c ∎" }
+      ] },
+    { "heading": "Angles in a triangle add to 180",
+      "lines": [
+        { "say": "Here's a triangle with angles a, b and c.", "write": "triangle ABC",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Triangle ABC with angles a, b, c", "items": [
+            {"kind": "polygon", "points": [[100, 240], [460, 240], [240, 70]], "fill": "blue"},
+            {"kind": "text", "x": 240, "y": 115, "text": "a", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 145, "y": 228, "text": "b", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 405, "y": 228, "text": "c", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 240, "y": 60, "text": "A", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 85, "y": 262, "text": "B", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 475, "y": 262, "text": "C", "size": 18, "anchor": "middle"}]}},
+        { "say": "Build a bridge. Draw a line through A, parallel to B C.", "write": "DE ∥ BC (construction)",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Line DE drawn through A parallel to BC", "items": [
+            {"kind": "polygon", "points": [[100, 240], [460, 240], [240, 70]], "fill": "blue"},
+            {"kind": "line", "x": 40, "y": 70, "x2": 520, "y2": 70, "color": "red", "dashed": true, "change": "add"},
+            {"kind": "text", "x": 240, "y": 115, "text": "a", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 145, "y": 228, "text": "b", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 405, "y": 228, "text": "c", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 40, "y": 60, "text": "D", "size": 18},
+            {"kind": "text", "x": 510, "y": 60, "text": "E", "size": 18}]}},
+        { "say": "Alternate angles copy b and c up to the top line.", "write": "∠DAB = b, ∠EAC = c (alternate)",
+          "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Angles b and c copied beside a on line DE", "items": [
+            {"kind": "polygon", "points": [[100, 240], [460, 240], [240, 70]], "fill": "blue"},
+            {"kind": "line", "x": 40, "y": 70, "x2": 520, "y2": 70, "color": "red", "dashed": true},
+            {"kind": "text", "x": 240, "y": 115, "text": "a", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 145, "y": 228, "text": "b", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 405, "y": 228, "text": "c", "size": 22, "bold": true, "anchor": "middle", "color": "white"},
+            {"kind": "text", "x": 195, "y": 95, "text": "b", "size": 22, "bold": true, "anchor": "middle", "color": "orange", "change": "add"},
+            {"kind": "text", "x": 290, "y": 95, "text": "c", "size": 22, "bold": true, "anchor": "middle", "color": "orange", "change": "add"},
+            {"kind": "text", "x": 40, "y": 60, "text": "D", "size": 18},
+            {"kind": "text", "x": 510, "y": 60, "text": "E", "size": 18}]}},
+        { "say": "b, a and c sit on a straight line. So they add to 180.", "write": "a + b + c = 180° ∎" }
+      ] },
+    { "heading": "The exterior angle",
+      "lines": [
+        { "say": "Extend B C to D. Call the exterior angle d.", "write": "to prove: d = a + b",
+          "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-ex2.svg", "alt": "Triangle with exterior angle d" },
+        { "say": "c plus d is 180 on the straight line. So d is 180 minus c.", "write": "d = 180 − c" },
+        { "say": "The triangle gives a plus b plus c is 180. So a plus b is 180 minus c.", "write": "a + b = 180 − c" },
+        { "say": "Both equal 180 minus c. So d equals a plus b.", "write": "d = a + b ∎" }
+      ] },
+    { "heading": "Proving lines are parallel",
+      "lines": [
+        { "say": "The converse swaps if and then. If alternate angles are equal, lines are parallel.", "write": "converse" },
+        { "say": "Co-interior angles here are 106 and 74.", "write": "106° and 74°",
+          "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-ex4.svg", "alt": "Two lines cut by a transversal with co-interior angles 106 and 74 degrees" },
+        { "say": "106 plus 74 is 180. So A B is parallel to C D.", "write": "AB ∥ CD ∎" },
+        { "say": "Careful: the converse of a true statement is not always true.", "write": "check each converse" }
+      ] },
+    { "heading": "Counterexamples",
+      "lines": [
+        { "say": "Claim: four equal sides must make a square. Is it true?", "write": "4 equal sides → square?" },
+        { "say": "This rhombus has four equal sides, but angles of 60 and 120.", "write": "rhombus: 60°, 120°",
+          "diagram": "diagrams/y7/maths-advanced/geometric-reasoning-and-proof-rhombus.svg", "alt": "Rhombus with four equal sides and angles 60 and 120 degrees" },
+        { "say": "One counterexample makes the claim false. One bad apple.", "write": "claim is false" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "No step without a reason.", "write": "statement (reason)" },
+        { "say": "Letters for all, numbers for one.", "write": "letters prove" },
+        { "say": "Stuck? Build a bridge with a parallel line.", "write": "construction line" },
+        { "say": "The diagram is never a reason.", "write": "✗ it looks like it" }
+      ] }
+  ]
+}

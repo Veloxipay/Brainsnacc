@@ -1,0 +1,68 @@
+{"level":"Uni Year 1","subject":"biology","title":"Physiology and homeostasis","frames":[
+{"heading":"Systems and feedback","lines":[
+{"say":"Cells make tissues, tissues make organs, organs make systems. No system works alone.","write":"cell → tissue → organ → system"},
+{"say":"Nerves are fast and targeted. Hormones are slower but last longer.","write":"nervous vs endocrine"},
+{"say":"Homeostasis keeps the inside steady. A sensor, a control centre and an effector.","write":"sensor → control → effector","draw":{"type":"shapes","width":560,"height":260,"alt":"Negative feedback loop returning variable to set point","items":[
+{"kind":"rect","x":20,"y":40,"w":150,"h":60,"fill":"yellow","label":"stimulus"},
+{"kind":"rect","x":205,"y":40,"w":150,"h":60,"fill":"blue","label":"sensor"},
+{"kind":"rect","x":390,"y":40,"w":150,"h":60,"fill":"purple","label":"control centre"},
+{"kind":"rect","x":390,"y":170,"w":150,"h":60,"fill":"orange","label":"effector"},
+{"kind":"rect","x":20,"y":170,"w":150,"h":60,"fill":"green","label":"back to set point","change":"add"},
+{"kind":"arrow","x":170,"y":70,"x2":205,"y2":70,"color":"black"},
+{"kind":"arrow","x":355,"y":70,"x2":390,"y2":70,"color":"black"},
+{"kind":"arrow","x":465,"y":100,"x2":465,"y2":170,"color":"black"},
+{"kind":"arrow","x":390,"y":200,"x2":170,"y2":200,"color":"green","change":"add"}]}},
+{"say":"Negative feedback reverses the change. Most homeostasis works this way.","write":"negative feedback"},
+{"say":"Positive feedback amplifies change, like childbirth contractions or clotting.","write":"positive: childbirth, clotting"}]},
+{"heading":"Thermoregulation","lines":[
+{"say":"Heat moves by radiation, conduction, convection and evaporation.","write":"R · C · C · E"},
+{"say":"Endotherms make heat by metabolism. Ectotherms get it from the environment.","write":"endotherm vs ectotherm"},
+{"say":"At 30 degrees, the mouse uses 2 millilitres of oxygen per gram per hour.","write":"30 °C: mouse O₂ = 2.0","draw":{"type":"shapes","width":560,"height":260,"alt":"Mouse oxygen use bar at 30 degrees","items":[
+{"kind":"line","x":40,"y":230,"x2":540,"y2":230,"color":"black"},
+{"kind":"rect","x":400,"y":150,"w":90,"h":80,"fill":"blue","label":"2.0"},
+{"kind":"text","x":445,"y":252,"text":"30 °C","size":16,"anchor":"middle"}]}},
+{"say":"At 10 degrees it rises to 5. It burns more fuel to stay at 37.","write":"10 °C: 5.0 (×2.5)","draw":{"type":"shapes","width":560,"height":260,"alt":"Mouse oxygen use rises as air gets colder","items":[
+{"kind":"line","x":40,"y":230,"x2":540,"y2":230,"color":"black"},
+{"kind":"rect","x":400,"y":150,"w":90,"h":80,"fill":"blue","label":"2.0"},
+{"kind":"text","x":445,"y":252,"text":"30 °C","size":16,"anchor":"middle"},
+{"kind":"rect","x":240,"y":90,"w":90,"h":140,"fill":"blue","label":"3.5","change":"add"},
+{"kind":"text","x":285,"y":252,"text":"20 °C","size":16,"anchor":"middle"},
+{"kind":"rect","x":80,"y":30,"w":90,"h":200,"fill":"red","label":"5.0","change":"add"},
+{"kind":"text","x":125,"y":252,"text":"10 °C","size":16,"anchor":"middle"}]}},
+{"say":"Vasodilation and sweating lose heat. Vasoconstriction and shivering keep it.","write":"vasodilation vs vasoconstriction"},
+{"say":"Countercurrent exchange in limbs passes heat back to returning blood.","write":"countercurrent: keep heat"}]},
+{"heading":"Osmoregulation","lines":[
+{"say":"Water moves by osmosis towards higher solute concentration. Always ask: compared with what?","write":"hyper- vs hypoosmotic"},
+{"say":"In the sea, drink and pee a little. Marine fish excrete salt at the gills.","write":"marine: drink, little urine"},
+{"say":"In the river, drink nothing and pee a lot. Freshwater fish take up salt.","write":"freshwater: lots of dilute urine","draw":{"type":"shapes","width":560,"height":240,"alt":"Water leaves marine fish and enters freshwater fish","items":[
+{"kind":"rect","x":20,"y":30,"w":250,"h":180,"fill":"blue"},
+{"kind":"circle","x":145,"y":120,"r":50,"fill":"orange","label":"marine"},
+{"kind":"arrow","x":195,"y":120,"x2":260,"y2":120,"color":"white"},
+{"kind":"text","x":145,"y":230,"text":"water out","size":16,"anchor":"middle"},
+{"kind":"rect","x":290,"y":30,"w":250,"h":180,"fill":"teal"},
+{"kind":"circle","x":415,"y":120,"r":50,"fill":"orange","label":"fresh"},
+{"kind":"arrow","x":300,"y":120,"x2":365,"y2":120,"color":"white","change":"add"},
+{"kind":"text","x":415,"y":230,"text":"water in","size":16,"anchor":"middle","change":"add"}]}},
+{"say":"Ammonia for aquatic, urea for us, uric acid for the unwatered.","write":"NH₃ · urea · uric acid"},
+{"say":"In the kidney, ADH increases water reabsorption when blood gets too concentrated.","write":"ADH → reabsorb water"}]},
+{"heading":"Gas exchange","lines":[
+{"say":"Fick's law: rate depends on area times difference, divided by thickness.","write":"rate ∝ area × Δp ÷ thickness"},
+{"say":"Fish gills use countercurrent flow. Blood always meets water with more oxygen.","write":"countercurrent gills","draw":{"type":"shapes","width":560,"height":220,"alt":"Water and blood flowing in opposite directions across gill","items":[
+{"kind":"arrow","x":40,"y":70,"x2":520,"y2":70,"color":"blue"},
+{"kind":"text","x":40,"y":50,"text":"water →","size":16},
+{"kind":"arrow","x":520,"y":150,"x2":40,"y2":150,"color":"red","change":"add"},
+{"kind":"text","x":520,"y":190,"text":"← blood","size":16,"anchor":"end","change":"add"}]}},
+{"say":"Insects use tracheae. Air goes straight to cells, not via the blood.","write":"tracheae: direct"},
+{"say":"Birds have air sacs that give a one way flow through the lungs.","write":"bird lungs: one-way"}]},
+{"heading":"Circulation","lines":[
+{"say":"Open circulation bathes organs in haemolymph. Closed keeps blood in vessels.","write":"open vs closed"},
+{"say":"Fish have two chambers and a single circuit.","write":"fish: 2 chambers, single"},
+{"say":"Birds and mammals have four chambers and a fully separate double circulation.","write":"4 chambers, double"},
+{"say":"Blood goes through the heart twice: once to the lungs, once to the body.","write":"pulmonary + systemic"},
+{"say":"That keeps pressure high and supports high metabolic rates.","write":"high pressure"}]},
+{"heading":"Watch out, and remember","lines":[
+{"say":"Not every feedback loop is homeostatic. Positive feedback amplifies.","write":"positive ≠ homeostatic"},
+{"say":"Cold blooded is misleading. A basking lizard can be warmer than a mammal.","write":"✗ cold-blooded"},
+{"say":"Fish gills use countercurrent flow, not same direction flow.","write":"opposite directions"},
+{"say":"Fever is a raised set point, not a failure of regulation.","write":"fever = new set point"}]}
+]}

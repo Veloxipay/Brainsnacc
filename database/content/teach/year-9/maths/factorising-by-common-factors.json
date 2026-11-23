@@ -1,0 +1,539 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Factorising by common factors",
+  "frames": [
+    {
+      "heading": "The highest common factor",
+      "lines": [
+        {
+          "say": "Factorising is the reverse of expanding.",
+          "write": "expand ⇄ factorise"
+        },
+        {
+          "say": "The HCF is the biggest number and most letters dividing every term.",
+          "write": "HCF"
+        },
+        {
+          "say": "For 8a squared b and 12ab squared, the numbers give 4.",
+          "write": "HCF(8, 12) = 4"
+        },
+        {
+          "say": "Both terms have at least one a and one b. So HCF is 4ab.",
+          "write": "HCF = 4ab",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Common factor 4ab of both terms",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 220,
+                "h": 80,
+                "fill": "blue",
+                "label": "8a²b",
+                "labelSize": 26
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 220,
+                "h": 80,
+                "fill": "blue",
+                "label": "12ab²",
+                "labelSize": 26
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 215,
+                "text": "4ab",
+                "size": 44,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 125,
+                "x2": 240,
+                "y2": 165,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 410,
+                "y": 125,
+                "x2": 320,
+                "y2": 165,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Taking it out",
+      "lines": [
+        {
+          "say": "Think of 3x squared plus 12x as the area of a rectangle.",
+          "write": "3x² + 12x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle with area 3x² + 12x and side 3x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 200,
+                "h": 140,
+                "fill": "teal",
+                "label": "3x²",
+                "labelSize": 26
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 160,
+                "h": 140,
+                "fill": "yellow",
+                "label": "12x",
+                "labelSize": 26
+              }
+            ]
+          }
+        },
+        {
+          "say": "One side is the common factor, 3x.",
+          "write": "HCF = 3x",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle with area 3x² + 12x and side 3x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 200,
+                "h": 140,
+                "fill": "teal",
+                "label": "3x²",
+                "labelSize": 26
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 160,
+                "h": 140,
+                "fill": "yellow",
+                "label": "12x",
+                "labelSize": 26
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 158,
+                "text": "3x",
+                "size": 24,
+                "color": "orange",
+                "change": "add",
+                "bold": true,
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Divide each part by 3x. You get x and 4.",
+          "write": "3x² ÷ 3x = x, 12x ÷ 3x = 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle with area 3x² + 12x and side 3x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 200,
+                "h": 140,
+                "fill": "teal",
+                "label": "3x²",
+                "labelSize": 26
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 160,
+                "h": 140,
+                "fill": "yellow",
+                "label": "12x",
+                "labelSize": 26
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 158,
+                "text": "3x",
+                "size": 24,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 60,
+                "text": "x",
+                "size": 24,
+                "color": "blue",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 60,
+                "text": "4",
+                "size": 24,
+                "color": "blue",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 270,
+                "text": "3x² + 12x = 3x(x + 4)",
+                "size": 26,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So 3x squared plus 12x equals 3x, times x plus 4.",
+          "write": "3x(x + 4)"
+        },
+        {
+          "say": "Check by expanding. You should get back where you started.",
+          "write": "expand to check ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Factorise fully",
+      "lines": [
+        {
+          "say": "6x squared plus 12x equals 3x, times 2x plus 4. True, but not finished.",
+          "write": "3x(2x + 4)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Not fully factorised crossed out",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "3x(2x + 4)",
+                "size": 44,
+                "color": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "6x(x + 2)",
+                "size": 48,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "2x plus 4 still shares a 2. Take it out too.",
+          "write": "6x(x + 2)"
+        },
+        {
+          "say": "Check the bracket has nothing common left.",
+          "write": "nothing common left?"
+        },
+        {
+          "say": "8a squared b take 12ab squared. Divide by 4ab.",
+          "write": "4ab(2a − 3b)"
+        }
+      ]
+    },
+    {
+      "heading": "A negative common factor",
+      "lines": [
+        {
+          "say": "If the first term is negative, take out a negative factor.",
+          "write": "−5x² − 15x"
+        },
+        {
+          "say": "Minus 5x squared divided by minus 5x is x.",
+          "write": "−5x² ÷ −5x = x"
+        },
+        {
+          "say": "Minus 15x divided by minus 5x is plus 3. The sign flips.",
+          "write": "−15x ÷ −5x = +3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Every sign inside flips",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "−5x² − 15x",
+                "size": 44,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "−5x(x + 3)",
+                "size": 48,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 232,
+                "text": "−15x ÷ −5x = +3: signs flip",
+                "size": 22,
+                "color": "purple",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Every sign inside the bracket flips.",
+          "write": "−5x(x + 3)"
+        }
+      ]
+    },
+    {
+      "heading": "Brackets and grouping",
+      "lines": [
+        {
+          "say": "A whole bracket can be the common factor.",
+          "write": "3(y − 4) + y(y − 4)"
+        },
+        {
+          "say": "Both parts have y take 4. Take it out.",
+          "write": "(y − 4)(3 + y)"
+        },
+        {
+          "say": "Four terms? Try grouping them in pairs.",
+          "write": "(x² + 3x) + (2x + 6)"
+        },
+        {
+          "say": "Each pair gives x plus 3. Take that out.",
+          "write": "x(x + 3) + 2(x + 3)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Common bracket x + 3",
+            "items": [
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 100,
+                "text": "x",
+                "size": 36,
+                "color": "blue",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 100,
+                "text": "(x + 3)",
+                "size": 36,
+                "color": "green",
+                "change": "highlight",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 100,
+                "text": "+ 2",
+                "size": 36,
+                "color": "orange",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335,
+                "y": 100,
+                "text": "(x + 3)",
+                "size": 36,
+                "color": "green",
+                "change": "highlight",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "(x + 3)(x + 2)",
+                "size": 44,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't stop early. 2x, times 3x plus 6, isn't fully factorised.",
+          "write": "✗ 2x(3x + 6)"
+        },
+        {
+          "say": "Write the 1. 7a take 7 is 7, times a take 1.",
+          "write": "7a − 7 = 7(a − 1)"
+        },
+        {
+          "say": "Taking out a negative flips the signs. Minus 6, times x plus 4.",
+          "write": "−6x − 24 = −6(x + 4)"
+        },
+        {
+          "say": "A factor must divide every term. 10x plus 15 has no common x.",
+          "write": "10x + 15 = 5(2x + 3)"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Find the HCF of the numbers and the letters.",
+          "write": "numbers AND letters",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle with area 3x² + 12x and side 3x",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 80,
+                "w": 200,
+                "h": 140,
+                "fill": "teal",
+                "label": "3x²",
+                "labelSize": 26
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 80,
+                "w": 160,
+                "h": 140,
+                "fill": "yellow",
+                "label": "12x",
+                "labelSize": 26
+              },
+              {
+                "kind": "text",
+                "x": 100,
+                "y": 158,
+                "text": "3x",
+                "size": 24,
+                "color": "orange",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 60,
+                "text": "x",
+                "size": 24,
+                "color": "blue",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 60,
+                "text": "4",
+                "size": 24,
+                "color": "blue",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 270,
+                "text": "3x² + 12x = 3x(x + 4)",
+                "size": 26,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Divide each term by it to fill the bracket.",
+          "write": "divide each term"
+        },
+        {
+          "say": "Check nothing common is left inside.",
+          "write": "fully factorised"
+        },
+        {
+          "say": "Expand your answer to check it.",
+          "write": "Check ✓"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Percentage increase, decrease and discounts",
+  "frames": [
+    {
+      "heading": "The multiplier",
+      "lines": [
+        {
+          "say": "The original amount is always 100 percent.",
+          "write": "original = 100%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "percentage bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400.0,
+                "h": 60,
+                "fill": "blue",
+                "label": "100%"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Increase by 15 percent. Now you have 115 percent.",
+          "write": "100% + 15% = 115%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "percentage bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400.0,
+                "h": 60,
+                "fill": "blue",
+                "label": "100%"
+              },
+              {
+                "kind": "rect",
+                "x": 440.0,
+                "y": 60,
+                "w": 60.0,
+                "h": 60,
+                "fill": "orange",
+                "label": "15%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "× 1.15",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So multiply by 1.15. That one number does the whole job.",
+          "write": "× 1.15"
+        },
+        {
+          "say": "Decrease by 15 percent. You're left with 85 percent.",
+          "write": "100% − 15% = 85%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "percentage bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400.0,
+                "h": 60,
+                "fill": "blue",
+                "label": "100%"
+              },
+              {
+                "kind": "rect",
+                "x": 380.0,
+                "y": 60,
+                "w": 60.0,
+                "h": 60,
+                "fill": "red",
+                "label": "15%",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "× 0.85",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So multiply by 0.85. Bigger than 1 means up. Smaller than 1 means down.",
+          "write": "× 0.85"
+        }
+      ]
+    },
+    {
+      "heading": "Using a multiplier",
+      "lines": [
+        {
+          "say": "Increase 240 dollars by 15 percent.",
+          "write": "240 × 1.15"
+        },
+        {
+          "say": "240 times 1.15 is 276 dollars.",
+          "write": "= $276",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "percentage bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400.0,
+                "h": 60,
+                "fill": "blue",
+                "label": "$240"
+              },
+              {
+                "kind": "rect",
+                "x": 440.0,
+                "y": 60,
+                "w": 60.0,
+                "h": 60,
+                "fill": "orange",
+                "label": "15%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "$240 + $36 = $276",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. 10 percent is 24, 5 percent is 12. That's 36 more.",
+          "write": "240 + 36 = 276 ✓"
+        },
+        {
+          "say": "A 12 percent decrease is times 0.88, not times 0.12.",
+          "write": "−12% → × 0.88"
+        }
+      ]
+    },
+    {
+      "heading": "Percentage change",
+      "lines": [
+        {
+          "say": "Shoes go from 80 dollars down to 68. That's 12 dollars off.",
+          "write": "80 − 68 = 12"
+        },
+        {
+          "say": "Compare the change with the original price. 12 out of 80.",
+          "write": "12 ÷ 80 = 0.15",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "12 out of 80",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400,
+                "h": 60,
+                "fill": "blue",
+                "label": "$80 original"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 60,
+                "h": 60,
+                "fill": "red",
+                "label": "$12",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "12 ÷ 80 × 100% = 15%",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Times 100 percent. It's a 15 percent decrease.",
+          "write": "15% decrease"
+        },
+        {
+          "say": "Always divide by where you started, never the new amount.",
+          "write": "change ÷ ORIGINAL"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "After 20 percent off, a backpack costs 56 dollars. What was it before?",
+          "write": "after 20% off: $56"
+        },
+        {
+          "say": "The 56 dollars is 80 percent of the original.",
+          "write": "56 = 80% of original",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "percentage bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 320.0,
+                "h": 60,
+                "fill": "blue",
+                "label": "$56 = 80%"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Undo the multiplier. Divide 56 by 0.8. That's 70 dollars.",
+          "write": "56 ÷ 0.8 = $70",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "percentage bar",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 320.0,
+                "h": 60,
+                "fill": "blue",
+                "label": "$56"
+              },
+              {
+                "kind": "rect",
+                "x": 360.0,
+                "y": 60,
+                "w": 80.0,
+                "h": 60,
+                "fill": "orange",
+                "label": "20%",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "original = $70",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't add 20 percent of 56 back on. That gives 67.20, which is wrong.",
+          "write": "✗ $67.20"
+        }
+      ]
+    },
+    {
+      "heading": "One change after another",
+      "lines": [
+        {
+          "say": "A 200 dollar jacket. 25 percent off, then a further 10 percent off.",
+          "write": "200 × 0.75 × 0.9"
+        },
+        {
+          "say": "200 times 0.75 is 150.",
+          "write": "$150",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 160,
+            "alt": "first discount",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400,
+                "h": 60,
+                "fill": "blue",
+                "label": "$200"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "red",
+                "label": "25%",
+                "change": "remove"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then 10 percent of 150 is 15. That leaves 135.",
+          "write": "$135",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 180,
+            "alt": "second discount",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 300,
+                "h": 60,
+                "fill": "blue",
+                "label": "$150"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 60,
+                "w": 30,
+                "h": 60,
+                "fill": "red",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 150,
+                "text": "$150 − $15 = $135",
+                "size": 22,
+                "color": "purple",
+                "anchor": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The total discount is 65 out of 200. That's 32.5 percent, not 35.",
+          "write": "65 ÷ 200 = 32.5%"
+        },
+        {
+          "say": "Chains multiply. Up 10 then down 10 is times 0.99, a 1 percent drop.",
+          "write": "1.1 × 0.9 = 0.99"
+        }
+      ]
+    },
+    {
+      "heading": "GST",
+      "lines": [
+        {
+          "say": "In Australia, GST is 10 percent. Add it by multiplying by 1.1.",
+          "write": "× 1.1"
+        },
+        {
+          "say": "A 330 dollar bill includes GST. Before GST it was 330 divided by 1.1.",
+          "write": "330 ÷ 1.1 = $300",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "GST inside a price",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 400,
+                "h": 60,
+                "fill": "blue",
+                "label": "$300"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 40,
+                "h": 60,
+                "fill": "orange",
+                "label": "$30",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 180,
+                "text": "$330 = 11 parts, GST is 1 part",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The GST inside a price is the total divided by 11.",
+          "write": "330 ÷ 11 = $30"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "From 40 to 50 is up 10 out of 40. That's 25 percent, not 20.",
+          "write": "10 ÷ 40 = 25%"
+        },
+        {
+          "say": "Don't add percentages in a row. 20 off then 10 off is 28 off.",
+          "write": "0.8 × 0.9 = 0.72",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 210,
+            "alt": "successive discounts",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 70,
+                "text": "20% + 10% = 30% off",
+                "size": 30,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 160,
+                "text": "0.8 × 0.9 = 0.72 → 28% off",
+                "size": 28,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Working backwards? Divide by the multiplier.",
+          "write": "new ÷ multiplier"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Up adds to 1. Down takes from 1.",
+          "write": "+15% → 1.15, −15% → 0.85"
+        },
+        {
+          "say": "Percentage change is change over the original.",
+          "write": "change ÷ original × 100%"
+        },
+        {
+          "say": "Backwards means divide. Chains multiply.",
+          "write": "÷ back · × chain"
+        },
+        {
+          "say": "GST: times 1.1 to add it. Divide by 11 to find it.",
+          "write": "GST ÷ 11"
+        }
+      ]
+    }
+  ]
+}

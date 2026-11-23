@@ -1,0 +1,956 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Chromatography",
+  "frames": [
+    {
+      "heading": "Two phases",
+      "lines": [
+        {
+          "say": "Chromatography separates a mixture so each part can be identified.",
+          "write": "separate a mixture"
+        },
+        {
+          "say": "The stationary phase stays still, like paper or silica.",
+          "write": "stationary phase"
+        },
+        {
+          "say": "The mobile phase moves, carrying the mixture with it.",
+          "write": "mobile phase"
+        },
+        {
+          "say": "Each component keeps sticking to the stationary phase, then dissolving again.",
+          "write": "adsorb ⇄ desorb"
+        },
+        {
+          "say": "Strongly adsorbed parts move slowly. Very soluble parts move fast.",
+          "write": "strong attraction → slow"
+        }
+      ]
+    },
+    {
+      "heading": "Thin-layer chromatography",
+      "lines": [
+        {
+          "say": "Draw a pencil origin line, and spot the sample on it.",
+          "write": "pencil origin",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "TLC plate with spot",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 20,
+                "w": 200,
+                "h": 300,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 280,
+                "x2": 380,
+                "y2": 280,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 285,
+                "text": "origin",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 280,
+                "r": 10,
+                "fill": "purple"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Solvent rises by capillary action. The dye splits into two spots.",
+          "write": "two spots = mixture",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Dye separates into two spots",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 20,
+                "w": 200,
+                "h": 300,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 280,
+                "x2": 380,
+                "y2": 280,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 285,
+                "text": "origin",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 60,
+                "x2": 380,
+                "y2": 60,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 65,
+                "text": "solvent front",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 175,
+                "text": "8.0 cm",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 214,
+                "r": 10,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 115,
+                "r": 10,
+                "fill": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rf is distance moved by the spot over distance moved by the solvent.",
+          "write": "Rf = spot ÷ solvent front"
+        },
+        {
+          "say": "Spot one moved 2.4 of 8.0 centimetres. Rf is 0.30.",
+          "write": "2.4 ÷ 8.0 = 0.30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "First Rf",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 20,
+                "w": 200,
+                "h": 300,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 280,
+                "x2": 380,
+                "y2": 280,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 285,
+                "text": "origin",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 60,
+                "x2": 380,
+                "y2": 60,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 65,
+                "text": "solvent front",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 175,
+                "text": "8.0 cm",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 214,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 115,
+                "r": 10,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 220,
+                "text": "Rf 0.30",
+                "size": 18,
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 120,
+                "text": "Rf 0.75",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Spot two moved 6.0 centimetres. Rf is 0.75.",
+          "write": "6.0 ÷ 8.0 = 0.75",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 332,
+            "alt": "Second Rf",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 20,
+                "w": 200,
+                "h": 300,
+                "fill": "white",
+                "label": ""
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 280,
+                "x2": 380,
+                "y2": 280,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 285,
+                "text": "origin",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 60,
+                "x2": 380,
+                "y2": 60,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 65,
+                "text": "solvent front",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 175,
+                "text": "8.0 cm",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 214,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 115,
+                "r": 10,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 220,
+                "text": "Rf 0.30",
+                "size": 18,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 120,
+                "text": "Rf 0.75",
+                "size": 18,
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "They match dyes X and Z. TLC tells you what, not how much.",
+          "write": "qualitative"
+        }
+      ]
+    },
+    {
+      "heading": "HPLC",
+      "lines": [
+        {
+          "say": "HPLC pumps a liquid at high pressure through a packed column.",
+          "write": "high pressure"
+        },
+        {
+          "say": "Tiny particles give a huge surface area and excellent separation.",
+          "write": "great separation"
+        },
+        {
+          "say": "A detector draws a chromatogram: response against time.",
+          "write": "chromatogram",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "HPLC chromatogram",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "retention time (min)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "detector response",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 270,
+                "x2": 130,
+                "y2": 120,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 130,
+                "y": 120,
+                "x2": 150,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 355,
+                "y": 270,
+                "x2": 380,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 70,
+                "x2": 405,
+                "y2": 270,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 105,
+                "text": "P: 1.8",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 55,
+                "text": "Q: 6.5",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Retention time is from injection to the top of a peak.",
+          "write": "retention time"
+        },
+        {
+          "say": "Peak area is proportional to the amount. So HPLC is quantitative.",
+          "write": "area ∝ amount",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Peak area highlighted",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "retention time (min)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "detector response",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 270,
+                "x2": 130,
+                "y2": 120,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 130,
+                "y": 120,
+                "x2": 150,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 355,
+                "y": 270,
+                "x2": 380,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 70,
+                "x2": 405,
+                "y2": 270,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 105,
+                "text": "P: 1.8",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 55,
+                "text": "Q: 6.5",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    355,
+                    270
+                  ],
+                  [
+                    380,
+                    70
+                  ],
+                  [
+                    405,
+                    270
+                  ]
+                ],
+                "fill": "yellow",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 180,
+                "text": "area ∝ amount",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Which comes out first?",
+      "lines": [
+        {
+          "say": "Here the stationary phase is non-polar. The mobile phase is polar.",
+          "write": "non-polar column"
+        },
+        {
+          "say": "Polar P hydrogen bonds with the mobile phase. It leaves at 1.8 minutes.",
+          "write": "P: Rt = 1.8 min"
+        },
+        {
+          "say": "Hydrocarbon Q sticks to the column by dispersion forces. 6.5 minutes.",
+          "write": "Q: Rt = 6.5 min"
+        },
+        {
+          "say": "Swap the phase polarities, and the order can swap too.",
+          "write": "depends on both phases"
+        }
+      ]
+    },
+    {
+      "heading": "Using a calibration curve",
+      "lines": [
+        {
+          "say": "Run standards of known concentration. Plot peak area against concentration.",
+          "write": "standards",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Calibration line",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "caffeine (mg L⁻¹)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 20,
+                "text": "peak area",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 215,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 160,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 105,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 460,
+                "y": 50,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 480,
+                "y2": 39.0,
+                "color": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The line goes up 1500 for every 20 milligrams per litre. Gradient 75.",
+          "write": "gradient = 75"
+        },
+        {
+          "say": "The diluted drink gave 2400. Divide by 75 to get 32.",
+          "write": "2400 ÷ 75 = 32 mg L⁻¹",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Reading the unknown",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 60,
+                "y": 270,
+                "x2": 60,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "caffeine (mg L⁻¹)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 20,
+                "text": "peak area",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 215,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 160,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 360,
+                "y": 105,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 460,
+                "y": 50,
+                "r": 6,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 480,
+                "y2": 39.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 182,
+                "x2": 220,
+                "y2": 182,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 220,
+                "y": 182,
+                "x2": 220,
+                "y2": 270,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 170,
+                "text": "2400 → 32 mg L⁻¹",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It was diluted ten times, so the drink is 320 milligrams per litre.",
+          "write": "32 × 10 = 320 mg L⁻¹"
+        },
+        {
+          "say": "Stay within the standards. Do not extrapolate.",
+          "write": "don’t extrapolate"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Measure Rf from the origin line to the spot centre.",
+          "write": "from the origin"
+        },
+        {
+          "say": "Lighter molecules do not simply travel further. Attraction decides.",
+          "write": "✗ lighter = further"
+        },
+        {
+          "say": "Polar does not always come first. Check both phases.",
+          "write": "check polarity"
+        },
+        {
+          "say": "Multiply by the dilution factor at the end.",
+          "write": "× dilution factor"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Separation depends on adsorption versus solubility.",
+          "write": "adsorb vs dissolve"
+        },
+        {
+          "say": "TLC uses Rf values to identify. HPLC uses retention times.",
+          "write": "Rf vs Rt",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Chromatogram",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 530,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 50,
+                "y": 270,
+                "x2": 50,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 290,
+                "y": 300,
+                "text": "retention time (min)",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 20,
+                "text": "detector response",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 270,
+                "x2": 130,
+                "y2": 120,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 130,
+                "y": 120,
+                "x2": 150,
+                "y2": 270,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 355,
+                "y": 270,
+                "x2": 380,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 70,
+                "x2": 405,
+                "y2": 270,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 105,
+                "text": "P: 1.8",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 55,
+                "text": "Q: 6.5",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Peak area plus a calibration curve gives concentration.",
+          "write": "calibration curve"
+        },
+        {
+          "say": "Only compare results run under identical conditions.",
+          "write": "same conditions"
+        }
+      ]
+    }
+  ]
+}

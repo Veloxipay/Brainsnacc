@@ -1,0 +1,1077 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Algorithms for solving equations",
+  "frames": [
+    {
+      "heading": "Solving by undoing",
+      "lines": [
+        {
+          "say": "3x plus 5 equals 26 tells a story. Times 3, then add 5.",
+          "write": "x → × 3 → + 5 → 26"
+        },
+        {
+          "say": "Run the story backwards with inverse operations.",
+          "write": "26 → − 5 → ÷ 3 → 7",
+          "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-undo.svg",
+          "alt": "Building 3x + 5 from x and undoing from 26 to 7"
+        },
+        {
+          "say": "Last done, first undone. Take 5, then divide by 3.",
+          "write": "x = 7"
+        },
+        {
+          "say": "Try 2x take 3, all over 5, equals 7. Undo the divide first.",
+          "write": "7 × 5 = 35 → 38 → 19"
+        },
+        {
+          "say": "Undoing works only when x appears once.",
+          "write": "x appears once"
+        }
+      ]
+    },
+    {
+      "heading": "When undoing is not enough",
+      "lines": [
+        {
+          "say": "In x cubed plus x equals 50, x appears twice.",
+          "write": "x³ + x = 50"
+        },
+        {
+          "say": "There's no single chain to reverse. So we search instead.",
+          "write": "search"
+        },
+        {
+          "say": "A search needs a stopping rule, like correct to one decimal place.",
+          "write": "stopping rule: 1 dp"
+        }
+      ]
+    },
+    {
+      "heading": "Guess, check and improve",
+      "lines": [
+        {
+          "say": "Guess 3. That gives 30. Too small.",
+          "write": "x = 3 → 30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Guess, check and improve table",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 10,
+                "w": 120,
+                "h": 40,
+                "fill": "grey",
+                "label": "guess x"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 10,
+                "w": 180,
+                "h": 40,
+                "fill": "grey",
+                "label": "x³ + x"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 10,
+                "w": 200,
+                "h": 40,
+                "fill": "grey",
+                "label": "vs 50"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 58,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 58,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 58,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "change": "add",
+                "label": "too small"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Guess 4. That gives 68. Too big. So x is between 3 and 4.",
+          "write": "3 < x < 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Guess, check and improve table",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 10,
+                "w": 120,
+                "h": 40,
+                "fill": "grey",
+                "label": "guess x"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 10,
+                "w": 180,
+                "h": 40,
+                "fill": "grey",
+                "label": "x³ + x"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 10,
+                "w": 200,
+                "h": 40,
+                "fill": "grey",
+                "label": "vs 50"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 58,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 58,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 58,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "label": "too small"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 106,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 106,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "68"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 106,
+                "w": 200,
+                "h": 40,
+                "fill": "red",
+                "change": "add",
+                "label": "too big"
+              }
+            ]
+          }
+        },
+        {
+          "say": "3.5 is too small, 3.6 is too big.",
+          "write": "3.5 < x < 3.6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Guess, check and improve table",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 10,
+                "w": 120,
+                "h": 40,
+                "fill": "grey",
+                "label": "guess x"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 10,
+                "w": 180,
+                "h": 40,
+                "fill": "grey",
+                "label": "x³ + x"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 10,
+                "w": 200,
+                "h": 40,
+                "fill": "grey",
+                "label": "vs 50"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 58,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 58,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 58,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "label": "too small"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 106,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 106,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "68"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 106,
+                "w": 200,
+                "h": 40,
+                "fill": "red",
+                "label": "too big"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 154,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "3.5"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 154,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "46.375"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 154,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "label": "too small"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 202,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "3.6"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 202,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "50.256"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 202,
+                "w": 200,
+                "h": 40,
+                "fill": "red",
+                "change": "add",
+                "label": "too big"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Test the halfway value, 3.55. Too small.",
+          "write": "3.55 < x < 3.6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Guess, check and improve table",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 10,
+                "w": 120,
+                "h": 40,
+                "fill": "grey",
+                "label": "guess x"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 10,
+                "w": 180,
+                "h": 40,
+                "fill": "grey",
+                "label": "x³ + x"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 10,
+                "w": 200,
+                "h": 40,
+                "fill": "grey",
+                "label": "vs 50"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 58,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 58,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "30"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 58,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "label": "too small"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 106,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 106,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "68"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 106,
+                "w": 200,
+                "h": 40,
+                "fill": "red",
+                "label": "too big"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 154,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "3.5"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 154,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "46.375"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 154,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "label": "too small"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 202,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "label": "3.6"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 202,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "label": "50.256"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 202,
+                "w": 200,
+                "h": 40,
+                "fill": "red",
+                "label": "too big"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 250,
+                "w": 120,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "3.55"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 250,
+                "w": 180,
+                "h": 40,
+                "fill": "white",
+                "change": "add",
+                "label": "48.289"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 250,
+                "w": 200,
+                "h": 40,
+                "fill": "blue",
+                "change": "add",
+                "label": "too small"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Every number between 3.55 and 3.6 rounds to 3.6.",
+          "write": "x ≈ 3.6"
+        }
+      ]
+    },
+    {
+      "heading": "The halving method",
+      "lines": [
+        {
+          "say": "First rearrange so one side is zero. x cubed equals 20 becomes this.",
+          "write": "f(x) = x³ − 20"
+        },
+        {
+          "say": "f of 2 is minus 12. f of 3 is 7. Opposite signs!",
+          "write": "f(2) = −12, f(3) = 7",
+          "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-signchange.svg",
+          "alt": "Graph of y = x³ − 20 crossing the x-axis between 2 and 3"
+        },
+        {
+          "say": "A sign change means the graph crosses the axis between 2 and 3.",
+          "write": "sign change → root between"
+        },
+        {
+          "say": "Find the midpoint, and work out f there.",
+          "write": "m = (a + b) ÷ 2"
+        },
+        {
+          "say": "Keep the two ends whose f-values have opposite signs.",
+          "write": "keep opposite signs"
+        }
+      ]
+    },
+    {
+      "heading": "Halving in action",
+      "lines": [
+        {
+          "say": "Start with the interval 2 to 3.",
+          "write": "2 to 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Interval shrinking around the solution",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 30,
+                "x2": 520,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 22,
+                "text": "2",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 22,
+                "text": "3",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 22,
+                "text": "2.5",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 45,
+                "w": 480,
+                "h": 28,
+                "fill": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "f of 2.5 is negative, like f of 2. Replace a.",
+          "write": "2.5 to 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Interval shrinking around the solution",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 30,
+                "x2": 520,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 22,
+                "text": "2",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 22,
+                "text": "3",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 22,
+                "text": "2.5",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 45,
+                "w": 480,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 85,
+                "w": 240.0,
+                "h": 28,
+                "fill": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "f of 2.75 is positive. Replace b.",
+          "write": "2.5 to 2.75",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Interval shrinking around the solution",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 30,
+                "x2": 520,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 22,
+                "text": "2",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 22,
+                "text": "3",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 22,
+                "text": "2.5",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 45,
+                "w": 480,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 85,
+                "w": 240.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 125,
+                "w": 120.0,
+                "h": 28,
+                "fill": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Keep halving. Each round halves the width.",
+          "write": "width = 1 ÷ 2ⁿ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Interval shrinking around the solution",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 30,
+                "x2": 520,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 22,
+                "text": "2",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 22,
+                "text": "3",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 22,
+                "text": "2.5",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 45,
+                "w": 480,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 85,
+                "w": 240.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 125,
+                "w": 120.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 340.0,
+                "y": 165,
+                "w": 60.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 370.0,
+                "y": 205,
+                "w": 30.0,
+                "h": 28,
+                "fill": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "2.6875 to 2.71875. Both ends round to 2.7. Stop.",
+          "write": "x ≈ 2.7",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Interval shrinking around the solution",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 30,
+                "x2": 520,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 22,
+                "text": "2",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 22,
+                "text": "3",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 22,
+                "text": "2.5",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 45,
+                "w": 480,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 85,
+                "w": 240.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 125,
+                "w": 120.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 340.0,
+                "y": 165,
+                "w": 60.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 370.0,
+                "y": 205,
+                "w": 30.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 370.0,
+                "y": 245,
+                "w": 15.0,
+                "h": 28,
+                "fill": "green",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Undo the last operation first, not the first one.",
+          "write": "last done, first undone"
+        },
+        {
+          "say": "Keep the half with opposite signs at its ends.",
+          "write": "opposite signs"
+        },
+        {
+          "say": "Don't stop too early. Both ends must round to the same answer.",
+          "write": "both ends round the same"
+        },
+        {
+          "say": "Rearrange to equals zero before testing signs.",
+          "write": "x³ = 20 → x³ − 20 = 0"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "x appears once? Undo it, in reverse order.",
+          "write": "undo in reverse",
+          "diagram": "diagrams/y9/maths/algorithms-for-solving-equations-undo.svg",
+          "alt": "Undoing 3x + 5 = 26"
+        },
+        {
+          "say": "x appears more than once? Search with guess, check and improve.",
+          "write": "guess, check, improve"
+        },
+        {
+          "say": "Halving method: find a sign change, then halve the interval.",
+          "write": "halve the interval",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Interval shrinking around the solution",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 30,
+                "x2": 520,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 22,
+                "text": "2",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 22,
+                "text": "3",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 22,
+                "text": "2.5",
+                "size": 16,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 45,
+                "w": 480,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 85,
+                "w": 240.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 280.0,
+                "y": 125,
+                "w": 120.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 340.0,
+                "y": 165,
+                "w": 60.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 370.0,
+                "y": 205,
+                "w": 30.0,
+                "h": 28,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 370.0,
+                "y": 245,
+                "w": 15.0,
+                "h": 28,
+                "fill": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Always check by substituting your answer.",
+          "write": "Check ✓"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1179 @@
+{
+  "level": "Year 10",
+  "subject": "chemistry",
+  "title": "Rates of reaction",
+  "frames": [
+    {
+      "heading": "What is rate of reaction?",
+      "lines": [
+        {
+          "say": "Fireworks react in a flash. An iron gate takes years to rust."
+        },
+        {
+          "say": "Rate is how quickly reactants are used up or products are made.",
+          "write": "rate of reaction"
+        },
+        {
+          "say": "We slow food spoiling in the fridge. Factories speed reactions with catalysts."
+        }
+      ]
+    },
+    {
+      "heading": "Collision theory",
+      "lines": [
+        {
+          "say": "For particles to react, first they must collide.",
+          "write": "1. collide",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two particles colliding",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 150,
+                "r": 30,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 150,
+                "r": 30,
+                "fill": "blue",
+                "label": "B"
+              },
+              {
+                "kind": "arrow",
+                "x": 180,
+                "y": 150,
+                "x2": 250,
+                "y2": 150,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 380,
+                "y": 150,
+                "x2": 310,
+                "y2": 150,
+                "color": "black",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Second, they must hit with enough energy. That is the activation energy.",
+          "write": "2. energy ≥ Eₐ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Energy profile with activation energy hill",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 40,
+                "y2": 30,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 280,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 380,
+                "y2": 230,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 230,
+                "x2": 520,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 74,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 140,
+                "text": "Eₐ",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 222,
+                "text": "products",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Third, they must hit the right way round. That is orientation.",
+          "write": "3. correct orientation"
+        },
+        {
+          "say": "Hit, hard enough, right way round. Then it is a successful collision.",
+          "write": "successful collision"
+        },
+        {
+          "say": "Most collisions are not successful. Particles just bounce off."
+        },
+        {
+          "say": "Rate depends on how often they collide, and what fraction succeed."
+        }
+      ]
+    },
+    {
+      "heading": "Temperature and concentration",
+      "lines": [
+        {
+          "say": "Heat it up. Particles move faster and collide more often.",
+          "write": "higher temperature"
+        },
+        {
+          "say": "More importantly, more collisions now have at least the activation energy.",
+          "write": "more with energy ≥ Eₐ"
+        },
+        {
+          "say": "That is why food goes off more slowly in the fridge."
+        },
+        {
+          "say": "Now concentration. Here are some particles in a solution.",
+          "write": "concentration",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Particles in a box",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 220,
+                "h": 200,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 70,
+                "y": 70,
+                "r": 12,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 90,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 70,
+                "r": 12,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 160,
+                "r": 12,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 210,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 280,
+                "text": "more particles",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add more particles to the same volume. They collide more often.",
+          "write": "more collisions per second",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "More particles in the same box",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 40,
+                "w": 220,
+                "h": 200,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 70,
+                "y": 70,
+                "r": 12,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 90,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 70,
+                "r": 12,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 150,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 160,
+                "r": 12,
+                "fill": "orange"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 210,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 215,
+                "r": 12,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 230,
+                "y": 200,
+                "r": 12,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 110,
+                "r": 12,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 120,
+                "r": 12,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 120,
+                "r": 12,
+                "fill": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 180,
+                "r": 12,
+                "fill": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 280,
+                "text": "more particles",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "For gases, higher pressure does the same. Particles are squeezed together.",
+          "write": "higher pressure"
+        }
+      ]
+    },
+    {
+      "heading": "Surface area",
+      "lines": [
+        {
+          "say": "Only particles on the surface of a solid can collide.",
+          "write": "surface area",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A big lump cut into small pieces",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 80,
+                "w": 140,
+                "h": 140,
+                "fill": "grey",
+                "label": "1 lump"
+              },
+              {
+                "kind": "arrow",
+                "x": 230,
+                "y": 150,
+                "x2": 300,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 80,
+                "w": 60,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 80,
+                "w": 60,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 160,
+                "w": 60,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 160,
+                "w": 60,
+                "h": 60,
+                "fill": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 260,
+                "text": "more surface exposed",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cut it into smaller pieces. More surface is exposed.",
+          "write": "smaller pieces = faster"
+        },
+        {
+          "say": "Powdered marble fizzes faster in acid than one big chip."
+        },
+        {
+          "say": "Chopped kindling catches fire faster than a whole log."
+        }
+      ]
+    },
+    {
+      "heading": "Catalysts",
+      "lines": [
+        {
+          "say": "A catalyst speeds up a reaction and is not used up.",
+          "write": "catalyst"
+        },
+        {
+          "say": "Here is the energy hill. The reactants must climb over it.",
+          "write": "Eₐ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Energy profile with activation energy hill",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 40,
+                "y2": 30,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 280,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 380,
+                "y2": 230,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 230,
+                "x2": 520,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 74,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 140,
+                "text": "Eₐ",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 222,
+                "text": "products",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A catalyst gives a new path with a lower activation energy.",
+          "write": "lower Eₐ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Energy profile with activation energy hill and lower catalyst path",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 40,
+                "y2": 30,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 280,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 380,
+                "y2": 230,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 230,
+                "x2": 520,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 74,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 140,
+                "text": "Eₐ",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 222,
+                "text": "products",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 280,
+                "y2": 140,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 140,
+                "x2": 380,
+                "y2": 230,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 128,
+                "text": "lower Eₐ with catalyst",
+                "size": 18,
+                "color": "green",
+                "anchor": "start",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now more collisions succeed, even at the same temperature."
+        },
+        {
+          "say": "Manganese dioxide speeds up hydrogen peroxide breaking down.",
+          "write": "2H₂O₂ → 2H₂O + O₂"
+        },
+        {
+          "say": "Enzymes are biological catalysts, like amylase in saliva.",
+          "write": "enzymes"
+        }
+      ]
+    },
+    {
+      "heading": "Measuring and graphing rate",
+      "lines": [
+        {
+          "say": "Measure gas volume, mass loss, or time for a cross to disappear."
+        },
+        {
+          "say": "Average rate is change in product divided by time taken.",
+          "write": "rate = change ÷ time"
+        },
+        {
+          "say": "Thirty six millilitres in thirty seconds is one point two millilitres per second.",
+          "write": "36 ÷ 30 = 1.2 mL s⁻¹"
+        },
+        {
+          "say": "On a graph, steep means fast. Flat means the reaction has stopped.",
+          "write": "steep = fast, flat = done",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Volume of gas against time",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 285,
+                "text": "time (s)",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 140,
+                "text": "gas",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    60,
+                    250
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 140,
+                "y2": 140,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 140,
+                "y": 140,
+                "x2": 240,
+                "y2": 95,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 95,
+                "x2": 330,
+                "y2": 82,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 330,
+                "y": 82,
+                "x2": 530,
+                "y2": 82,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 120,
+                "text": "steep = fast",
+                "size": 18,
+                "color": "blue",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 70,
+                "text": "flat = finished",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now use powder instead. Steeper curve, but it ends at the same height.",
+          "write": "same amount of product",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Volume of gas against time with a faster second run",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 540,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 285,
+                "text": "time (s)",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 30,
+                "y": 140,
+                "text": "gas",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    60,
+                    250
+                  ],
+                  [
+                    60,
+                    250
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 140,
+                "y2": 140,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 140,
+                "y": 140,
+                "x2": 240,
+                "y2": 95,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 95,
+                "x2": 330,
+                "y2": 82,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 330,
+                "y": 82,
+                "x2": 530,
+                "y2": 82,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 120,
+                "text": "steep = fast",
+                "size": 18,
+                "color": "blue",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 70,
+                "text": "flat = finished",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 100,
+                "y2": 120,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 120,
+                "x2": 160,
+                "y2": 88,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 160,
+                "y": 88,
+                "x2": 530,
+                "y2": 82,
+                "color": "orange",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 200,
+                "text": "powder: steeper, same end",
+                "size": 18,
+                "color": "orange",
+                "anchor": "start",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "A catalyst does not give particles more energy. It lowers the activation energy.",
+          "write": "✗ more energy"
+        },
+        {
+          "say": "Hotter is not just more collisions. More collisions have enough energy."
+        },
+        {
+          "say": "Catalysts and powder make product faster, not more product.",
+          "write": "✗ more product"
+        },
+        {
+          "say": "A flat graph means stopped, not slowest.",
+          "write": "flat = stopped"
+        },
+        {
+          "say": "Always say per second. Rate is about time.",
+          "write": "collisions per second"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Hit, hard enough, right way round.",
+          "write": "collide, Eₐ, orientation"
+        },
+        {
+          "say": "Try Catching Some Cats. Temperature, concentration, surface area, catalyst.",
+          "write": "T, C, S, C"
+        },
+        {
+          "say": "A catalyst digs a tunnel through the energy mountain.",
+          "write": "catalyst lowers Eₐ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Energy profile with activation energy hill and lower catalyst path",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 40,
+                "y2": 30,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 200,
+                "x2": 180,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 280,
+                "y2": 70,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 380,
+                "y2": 230,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 380,
+                "y": 230,
+                "x2": 520,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 150,
+                "y": 200,
+                "x2": 150,
+                "y2": 74,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 140,
+                "text": "Eₐ",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 190,
+                "text": "reactants",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 222,
+                "text": "products",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 200,
+                "x2": 280,
+                "y2": 140,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 140,
+                "x2": 380,
+                "y2": 230,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 128,
+                "text": "lower Eₐ with catalyst",
+                "size": 18,
+                "color": "green",
+                "anchor": "start",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Steep is fast. Flat is finished.",
+          "write": "steep = fast"
+        }
+      ]
+    }
+  ]
+}

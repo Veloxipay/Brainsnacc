@@ -1,0 +1,74 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Area of composite shapes and trapeziums",
+  "frames": [
+    { "heading": "The trapezium",
+      "lines": [
+        { "say": "A trapezium has exactly one pair of parallel sides. Call them a and b.", "write": "parallel sides a and b",
+          "diagram": "diagrams/y7/maths-advanced/area-of-composite-shapes-and-trapeziums-key.svg", "alt": "Trapezium with parallel sides a and b and height h" },
+        { "say": "The height h is measured at right angles to the parallel sides.", "write": "h ⟂ parallel sides" },
+        { "say": "Add the parallel, times the tall, halve it all.", "write": "A = ½ × (a + b) × h" }
+      ] },
+    { "heading": "Why the formula works",
+      "lines": [
+        { "say": "Here is a trapezium. Top 6, bottom 10, height 5.", "write": "a = 6, b = 10, h = 5",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Trapezium with top 6 and bottom 10", "items": [
+            {"kind": "polygon", "points": [[100, 220], [300, 220], [220, 100], [100, 100]], "fill": "blue"},
+            {"kind": "text", "x": 160, "y": 90, "text": "6", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 200, "y": 250, "text": "10", "size": 20, "anchor": "middle"},
+            {"kind": "text", "x": 85, "y": 165, "text": "5", "size": 20, "anchor": "middle"}]}},
+        { "say": "Copy it and turn the copy upside down. Slide them together.", "write": "two copies",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "A second, upside-down trapezium joins to form a parallelogram", "items": [
+            {"kind": "polygon", "points": [[100, 220], [300, 220], [220, 100], [100, 100]], "fill": "blue"},
+            {"kind": "polygon", "points": [[300, 220], [220, 100], [420, 100], [420, 220]], "fill": "orange", "change": "add"},
+            {"kind": "text", "x": 260, "y": 250, "text": "base 6 + 10 = 16", "size": 20, "anchor": "middle"}]}},
+        { "say": "Together they make a shape 16 wide and 5 high. That's 80.", "write": "16 × 5 = 80" },
+        { "say": "The trapezium is half of it. So its area is 40 square centimetres.", "write": "80 ÷ 2 = 40 cm²" },
+        { "say": "Check: the average width is 8. 8 times 5 is 40.", "write": "8 × 5 = 40 ✓" }
+      ] },
+    { "heading": "Kites and rhombuses",
+      "lines": [
+        { "say": "A kite's diagonals cross at right angles.", "write": "diagonals d₁ and d₂" },
+        { "say": "Draw a box around it. The kite fills exactly half the box.", "write": "kite = ½ the box",
+          "diagram": "diagrams/y7/maths-advanced/area-of-composite-shapes-and-trapeziums-kite.svg", "alt": "Kite with diagonals 8 and 6 inside an 8 by 6 rectangle" },
+        { "say": "Diagonals 8 and 6. Half of 8 times 6 is 24.", "write": "A = ½ × 8 × 6 = 24" }
+      ] },
+    { "heading": "Composite shapes: subtract",
+      "lines": [
+        { "say": "This L-shaped floor is 14 by 10, with a 6 by 4 corner missing.", "write": "L-shape",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "14 by 10 rectangle with a 6 by 4 corner", "items": [
+            {"kind": "rect", "x": 70, "y": 40, "w": 420, "h": 240, "fill": "blue"},
+            {"kind": "rect", "x": 310, "y": 40, "w": 180, "h": 96, "fill": "grey", "label": "6 × 4"},
+            {"kind": "text", "x": 280, "y": 298, "text": "14 m", "size": 18, "anchor": "middle"},
+            {"kind": "text", "x": 40, "y": 165, "text": "10 m", "size": 18, "anchor": "middle"}]}},
+        { "say": "Big rectangle first. 14 times 10 is 140.", "write": "14 × 10 = 140" },
+        { "say": "Take away the missing corner. 6 times 4 is 24.", "write": "140 − 24 = 116 m²",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "The 6 by 4 corner is removed", "items": [
+            {"kind": "rect", "x": 70, "y": 40, "w": 420, "h": 240, "fill": "blue"},
+            {"kind": "rect", "x": 310, "y": 40, "w": 180, "h": 96, "fill": "grey", "label": "24", "change": "remove"},
+            {"kind": "text", "x": 190, "y": 170, "text": "116 m²", "size": 26, "bold": true, "color": "white", "change": "highlight"}]}},
+        { "say": "Check by adding pieces. 84 plus 32 is 116. Two ways, one answer.", "write": "84 + 32 = 116 ✓" }
+      ] },
+    { "heading": "Paths and working backwards",
+      "lines": [
+        { "say": "A pool 10 by 6 has a 2 metre path all around.", "write": "pool 10 × 6, path 2",
+          "diagram": "diagrams/y7/maths-advanced/area-of-composite-shapes-and-trapeziums-ex4.svg", "alt": "Pool with a 2 m path around it" },
+        { "say": "The path adds 2 on both ends. So the outside is 14 by 10.", "write": "14 × 10 = 140" },
+        { "say": "Take away the pool, 60. The path is 80 square metres.", "write": "140 − 60 = 80 m²" },
+        { "say": "Working backwards: a trapezium has area 63, sides 8 and 10. Find h.", "write": "½ × 18 × h = 63" },
+        { "say": "Half of 18 is 9. 9 times h is 63, so h is 7.", "write": "h = 7 m" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't forget the half in the trapezium formula.", "write": "✗ (a + b) × h" },
+        { "say": "A sloping side is never the height.", "write": "height meets at 90°" },
+        { "say": "Borders go both ways. Add the width twice.", "write": "2 m path → +4 m" },
+        { "say": "Convert units before you multiply.", "write": "1 m² = 10 000 cm²" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Trapezium: average width times height.", "write": "½ × (a + b) × h" },
+        { "say": "Kite and rhombus: diagonals times, then halve.", "write": "½ × d₁ × d₂" },
+        { "say": "Composite: add the pieces, or subtract from the big box.", "write": "add or subtract" }
+      ] }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Angles in polygons",
+  "frames": [
+    { "heading": "Polygons and their angles",
+      "lines": [
+        { "say": "A polygon with n sides has n corners and n interior angles.", "write": "n sides → n angles" },
+        { "say": "Pentagon 5, hexagon 6, octagon 8, decagon 10.", "write": "5, 6, 8, 10 sides" },
+        { "say": "A regular polygon has all sides equal and all angles equal.", "write": "regular: sides AND angles equal" }
+      ] },
+    { "heading": "Split it into triangles",
+      "lines": [
+        { "say": "Here's a pentagon. How do we find the total of its angles?", "write": "pentagon",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "A pentagon", "items": [
+            {"kind": "polygon", "points": [[280, 35], [404, 125], [356, 270], [204, 270], [156, 125]], "fill": "blue"},
+            {"kind": "text", "x": 280, "y": 25, "text": "A", "size": 18, "anchor": "middle"}]}},
+        { "say": "Draw every diagonal from one corner. The pentagon splits into 3 triangles.", "write": "5 sides → 3 triangles",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Diagonals from A split the pentagon into three triangles", "items": [
+            {"kind": "polygon", "points": [[280, 35], [404, 125], [356, 270], [204, 270], [156, 125]], "fill": "blue"},
+            {"kind": "line", "x": 280, "y": 35, "x2": 356, "y2": 270, "color": "yellow", "dashed": true, "change": "add"},
+            {"kind": "line", "x": 280, "y": 35, "x2": 204, "y2": 270, "color": "yellow", "dashed": true, "change": "add"},
+            {"kind": "text", "x": 200, "y": 190, "text": "1", "size": 24, "bold": true, "color": "white", "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 220, "text": "2", "size": 24, "bold": true, "color": "white", "anchor": "middle"},
+            {"kind": "text", "x": 360, "y": 190, "text": "3", "size": 24, "bold": true, "color": "white", "anchor": "middle"},
+            {"kind": "text", "x": 280, "y": 25, "text": "A", "size": 18, "anchor": "middle"}]}},
+        { "say": "Each triangle is 180 degrees. 3 times 180 is 540.", "write": "3 × 180 = 540°" },
+        { "say": "There are always two fewer triangles than sides.", "write": "n − 2 triangles" },
+        { "say": "So the angle sum is n minus 2, times 180.", "write": "S = (n − 2) × 180°" }
+      ] },
+    { "heading": "Finding a missing angle",
+      "lines": [
+        { "say": "A pentagon has angles 100, 115, 120, 95 and x.", "write": "100, 115, 120, 95, x",
+          "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-ex1.svg", "alt": "Pentagon with one unknown angle x" },
+        { "say": "The angle sum is 540. The known angles add to 430.", "write": "540 − 430" },
+        { "say": "So x is 110 degrees.", "write": "x = 110°" }
+      ] },
+    { "heading": "Regular polygons",
+      "lines": [
+        { "say": "All angles of a regular polygon are equal. So divide the sum by n.", "write": "each = S ÷ n" },
+        { "say": "Regular octagon. 6 times 180 is 1080. Divide by 8 to get 135.", "write": "1080 ÷ 8 = 135°",
+          "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-ex2.svg", "alt": "Regular octagon with one interior angle marked" },
+        { "say": "Only regular polygons have equal angles. Don't divide an irregular one.", "write": "regular only" }
+      ] },
+    { "heading": "Exterior angles add to 360",
+      "lines": [
+        { "say": "Extend one side. The angle outside is the exterior angle.", "write": "interior + exterior = 180°",
+          "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-ext.svg", "alt": "Regular hexagon with interior 120 degrees and exterior 60 degrees" },
+        { "say": "Walk around the park. At each corner you turn by the exterior angle.", "write": "each turn = exterior angle",
+          "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Turning arrows at each corner of a pentagon", "items": [
+            {"kind": "polygon", "points": [[280, 35], [404, 125], [356, 270], [204, 270], [156, 125]], "fill": "green"},
+            {"kind": "arrow", "x": 280, "y": 35, "x2": 330, "y2": 10, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 404, "y": 125, "x2": 450, "y2": 150, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 356, "y": 270, "x2": 350, "y2": 296, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 204, "y": 270, "x2": 150, "y2": 270, "color": "red", "change": "add"},
+            {"kind": "arrow", "x": 156, "y": 125, "x2": 140, "y2": 80, "color": "red", "change": "add"}]}},
+        { "say": "Back at the start you've turned one full turn. So they add to 360.", "write": "exterior angles: 360°" },
+        { "say": "For a regular octagon, each exterior angle is 360 over 8, which is 45.", "write": "360 ÷ 8 = 45°" },
+        { "say": "Then the interior angle is 180 minus 45, which is 135. Same answer.", "write": "180 − 45 = 135° ✓" }
+      ] },
+    { "heading": "Working backwards to n",
+      "lines": [
+        { "say": "Each interior angle is 156. How many sides?", "write": "interior = 156°",
+          "diagram": "diagrams/y7/maths-advanced/angles-in-polygons-ex3.svg", "alt": "Interior angle 156 degrees with exterior angle marked" },
+        { "say": "First find the exterior angle. 180 minus 156 is 24.", "write": "exterior = 24°" },
+        { "say": "Then 360 divided by 24 is 15. It has 15 sides.", "write": "n = 360 ÷ 24 = 15" },
+        { "say": "If 360 doesn't divide exactly, that regular polygon can't exist.", "write": "not whole → impossible" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Not n times 180. It's n minus 2, times 180.", "write": "✗ n × 180" },
+        { "say": "Don't divide 360 by the interior angle. Use the exterior angle.", "write": "✗ 360 ÷ interior" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Two fewer triangles than sides.", "write": "S = (n − 2) × 180°" },
+        { "say": "Walk the park, turn 360.", "write": "exterior sum = 360°" },
+        { "say": "Inside plus outside is 180.", "write": "int + ext = 180°" },
+        { "say": "Quick route to n: 360 divided by the exterior angle.", "write": "n = 360 ÷ exterior" }
+      ] }
+  ]
+}

@@ -1,0 +1,944 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Paths, trails and circuits",
+  "frames": [
+    {
+      "heading": "Walks, trails and paths",
+      "lines": [
+        {
+          "say": "A walk is any route along edges, written as a list of vertices.",
+          "write": "walk: A–B–D–C"
+        },
+        {
+          "say": "A trail never repeats an edge. Vertices may repeat.",
+          "write": "trail: no repeated edges"
+        },
+        {
+          "say": "A path never repeats a vertex.",
+          "write": "path: no repeated vertices",
+          "diagram": "diagrams/y10/maths/paths-trails-and-circuits-path.svg",
+          "alt": "Network with the path A–B–D–C highlighted"
+        },
+        {
+          "say": "A circuit is a trail that ends where it started.",
+          "write": "circuit: trail, back to start"
+        },
+        {
+          "say": "A cycle is a circuit with no repeated vertices, except the start.",
+          "write": "cycle"
+        },
+        {
+          "say": "A B C D B E repeats B, but no edge. So it's a trail, not a path.",
+          "write": "A–B–C–D–B–E: trail"
+        }
+      ]
+    },
+    {
+      "heading": "Eulerian trails and circuits",
+      "lines": [
+        {
+          "say": "An Eulerian trail uses every edge exactly once.",
+          "write": "Euler: every Edge once"
+        },
+        {
+          "say": "An Eulerian circuit does the same and finishes where it started."
+        },
+        {
+          "say": "Each time you pass through a vertex, you use two edges. One in, one out.",
+          "write": "in one door, out another",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "One edge in, one edge out",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 22,
+                "fill": "orange",
+                "label": "V"
+              },
+              {
+                "kind": "arrow",
+                "x": 80,
+                "y": 60,
+                "x2": 258,
+                "y2": 140,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 302,
+                "y": 160,
+                "x2": 480,
+                "y2": 240,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 70,
+                "text": "in",
+                "size": 20,
+                "color": "blue",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 200,
+                "text": "out",
+                "size": 20,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So middle vertices need even degree. Only the start and finish can be odd.",
+          "write": "middle vertices: even"
+        },
+        {
+          "say": "Zero odd vertices, a circuit. Two odd, a trail. More, fail.",
+          "write": "0 → circuit, 2 → trail, more → fail"
+        }
+      ]
+    },
+    {
+      "heading": "The bridges of Königsberg",
+      "lines": [
+        {
+          "say": "Can you cross each of these seven bridges exactly once?",
+          "diagram": "diagrams/y10/maths/paths-trails-and-circuits-bridges.svg",
+          "alt": "Königsberg bridges as a network with degrees 5, 3, 3, 3"
+        },
+        {
+          "say": "The island has degree 5. The other three land areas have degree 3.",
+          "write": "5, 3, 3, 3"
+        },
+        {
+          "say": "That's four odd vertices. So no such route exists.",
+          "write": "4 odd → no trail"
+        }
+      ]
+    },
+    {
+      "heading": "Finding an Eulerian trail",
+      "lines": [
+        {
+          "say": "Here is an envelope-shaped network.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Envelope network: square ABCD with diagonals and roof E",
+            "items": [
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 270,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 130,
+                "x2": 120,
+                "y2": 270,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 260,
+                "y2": 40,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 260,
+                "y": 40,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 40,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Count the degrees. A 3, B 3, C 4, D 4, E 2.",
+          "write": "3, 3, 4, 4, 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Envelope network: square ABCD with diagonals and roof E",
+            "items": [
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 270,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 130,
+                "x2": 120,
+                "y2": 270,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 260,
+                "y2": 40,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 260,
+                "y": 40,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 40,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              },
+              {
+                "kind": "text",
+                "x": 86,
+                "y": 278,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 434,
+                "y": 278,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 434,
+                "y": 130,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 86,
+                "y": 130,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 294,
+                "y": 40,
+                "text": "2",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Exactly two odd vertices, A and B. So there's a trail, but no circuit.",
+          "write": "2 odd → trail",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Envelope network: square ABCD with diagonals and roof E",
+            "items": [
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 270,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 130,
+                "x2": 120,
+                "y2": 270,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 260,
+                "y2": 40,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 260,
+                "y": 40,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 40,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              },
+              {
+                "kind": "text",
+                "x": 86,
+                "y": 278,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 434,
+                "y": 278,
+                "text": "3",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 434,
+                "y": 130,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 86,
+                "y": 130,
+                "text": "4",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 294,
+                "y": 40,
+                "text": "2",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Start at one odd vertex, A. Go A B C D A.",
+          "write": "A–B–C–D–A",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Envelope network: square ABCD with diagonals and roof E",
+            "items": [
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 270,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 120,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 130,
+                "x2": 120,
+                "y2": 270,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 260,
+                "y2": 40,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "line",
+                "x": 260,
+                "y": 40,
+                "x2": 120,
+                "y2": 130,
+                "color": "blue",
+                "stroke": 3
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 40,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then C E D B. You finish at the other odd vertex, B.",
+          "write": "A–B–C–D–A–C–E–D–B",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Envelope network: square ABCD with diagonals and roof E",
+            "items": [
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 270,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 120,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 130,
+                "x2": 120,
+                "y2": 270,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 270,
+                "x2": 400,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 270,
+                "x2": 120,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 400,
+                "y": 130,
+                "x2": 260,
+                "y2": 40,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "line",
+                "x": 260,
+                "y": 40,
+                "x2": 120,
+                "y2": 130,
+                "color": "red",
+                "change": "add",
+                "stroke": 5
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 270,
+                "r": 16,
+                "fill": "orange",
+                "change": "highlight",
+                "label": "B"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 130,
+                "r": 16,
+                "fill": "orange",
+                "label": "D"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 40,
+                "r": 16,
+                "fill": "orange",
+                "label": "E"
+              }
+            ]
+          }
+        },
+        {
+          "say": "8 edges, each used once. The list has 9 vertices: edges plus 1.",
+          "write": "8 edges, 9 entries ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Hamiltonian paths and cycles",
+      "lines": [
+        {
+          "say": "A Hamiltonian path visits every vertex exactly once.",
+          "write": "Hamilton: every Home once"
+        },
+        {
+          "say": "A Hamiltonian cycle does that and returns to the start."
+        },
+        {
+          "say": "There's no counting rule. You have to search."
+        },
+        {
+          "say": "A vertex of degree 2 is a signpost. Both its edges must be used.",
+          "write": "degree 2 → use both edges",
+          "diagram": "diagrams/y10/maths/paths-trails-and-circuits-hamilton.svg",
+          "alt": "Rectangle ABCD with middle vertex E and the Hamiltonian path B–A–E–C–D"
+        },
+        {
+          "say": "Here, B and D aren't joined, so there's no cycle. But B A E C D is a path.",
+          "write": "path: B–A–E–C–D"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Euler is every edge. Hamilton is every vertex.",
+          "write": "Euler: Edge,  Hamilton: Home"
+        },
+        {
+          "say": "With two odd vertices, start at one and finish at the other."
+        },
+        {
+          "say": "A loop adds 2 to the degree, not 1.",
+          "write": "loop → +2"
+        },
+        {
+          "say": "The network must be connected.",
+          "write": "connected!"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Trail: no repeated edges. Path: no repeated vertices.",
+          "write": "trail ≠ path"
+        },
+        {
+          "say": "Zero odd, circuit. Two odd, trail. More, fail.",
+          "write": "0 / 2 / more"
+        },
+        {
+          "say": "In one door, out another.",
+          "write": "middle vertices even"
+        },
+        {
+          "say": "Degree-2 vertices are signposts for Hamiltonian cycles.",
+          "write": "degree 2 = signpost"
+        }
+      ]
+    }
+  ]
+}

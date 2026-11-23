@@ -1,0 +1,770 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Molecular shape",
+  "frames": [
+    {
+      "heading": "The VSEPR idea",
+      "lines": [
+        {
+          "say": "Electron domains around a central atom push as far apart as they can.",
+          "write": "VSEPR"
+        },
+        {
+          "say": "A domain is a bond or a lone pair. A double bond counts as one.",
+          "write": "double bond = 1 domain"
+        },
+        {
+          "say": "Like balloons tied together. Two, three, four, five, six make the basic shapes.",
+          "write": "2 3 4 5 6 domains",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Domain counts with their electron domain geometries",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 10,
+                "y": 50,
+                "w": 100,
+                "h": 80,
+                "fill": "blue",
+                "label": "2: linear"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 50,
+                "w": 100,
+                "h": 80,
+                "fill": "teal",
+                "label": "3: trig planar"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 50,
+                "w": 100,
+                "h": 80,
+                "fill": "green",
+                "label": "4: tetrahedral"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 50,
+                "w": 100,
+                "h": 80,
+                "fill": "orange",
+                "label": "5: trig bipyr"
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 50,
+                "w": 100,
+                "h": 80,
+                "fill": "red",
+                "label": "6: octahedral"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 170,
+                "text": "180°",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 170,
+                "text": "120°",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "109.5°",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 170,
+                "text": "90°, 120°",
+                "size": 18
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 170,
+                "text": "90°",
+                "size": 18
+              }
+            ]
+          }
+        },
+        {
+          "say": "Method: Lewis structure, count domains, A X E label, then name the shape.",
+          "write": "Lewis → domains → AXₘEₙ → shape"
+        }
+      ]
+    },
+    {
+      "heading": "Domains versus shape",
+      "lines": [
+        {
+          "say": "Ammonia has four domains: three bonds and one lone pair.",
+          "write": "NH₃: AX₃E",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Nitrogen with three hydrogens and a lone pair on top",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 30,
+                "fill": "blue",
+                "label": "N"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 45,
+                "r": 22,
+                "fill": "pink",
+                "label": ":"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 118,
+                "x2": 280,
+                "y2": 67,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 258,
+                "y": 160,
+                "x2": 180,
+                "y2": 215,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 302,
+                "y": 160,
+                "x2": 380,
+                "y2": 215,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 222,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 240,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 222,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 60,
+                "text": "4 domains",
+                "size": 20,
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the electron domains are tetrahedral.",
+          "write": "domain geometry: tetrahedral"
+        },
+        {
+          "say": "But the shape only counts atoms. Hide the lone pair and you see a pyramid.",
+          "write": "shape: trigonal pyramidal",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Same molecule with the lone pair crossed out, leaving a trigonal pyramid of atoms",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 30,
+                "fill": "blue",
+                "label": "N"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 45,
+                "r": 22,
+                "fill": "pink",
+                "label": ":",
+                "change": "remove"
+              },
+              {
+                "kind": "line",
+                "x": 258,
+                "y": 160,
+                "x2": 180,
+                "y2": 215,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 170,
+                "x2": 280,
+                "y2": 225,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 302,
+                "y": 160,
+                "x2": 380,
+                "y2": 215,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 170,
+                "y": 222,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 240,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 222,
+                "r": 18,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 60,
+                "text": "pyramid",
+                "size": 22,
+                "bold": true,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Lone pairs are invisible but bossy. They take up more room.",
+          "write": "LP–LP > LP–BP > BP–BP"
+        },
+        {
+          "say": "Each lone pair squeezes the angle. 109.5, then 107, then 104.5.",
+          "write": "CH₄ 109.5°  NH₃ 107°  H₂O 104.5°"
+        }
+      ]
+    },
+    {
+      "heading": "Five domains: lone pairs at the waist",
+      "lines": [
+        {
+          "say": "Five domains make a trigonal bipyramid. Three equatorial, two axial.",
+          "write": "PCl₅: trigonal bipyramidal",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Trigonal bipyramid with two axial positions and three equatorial positions",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 150,
+                "r": 28,
+                "fill": "orange",
+                "label": "A"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 122,
+                "x2": 200,
+                "y2": 50,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 178,
+                "x2": 200,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 35,
+                "r": 18,
+                "fill": "blue",
+                "label": "ax"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 265,
+                "r": 18,
+                "fill": "blue",
+                "label": "ax"
+              },
+              {
+                "kind": "line",
+                "x": 175,
+                "y": 160,
+                "x2": 100,
+                "y2": 190,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 225,
+                "y": 160,
+                "x2": 300,
+                "y2": 190,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 210,
+                "y": 125,
+                "x2": 250,
+                "y2": 100,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 85,
+                "y": 195,
+                "r": 18,
+                "fill": "green",
+                "label": "eq",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 315,
+                "y": 195,
+                "r": 18,
+                "fill": "green",
+                "label": "eq",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 262,
+                "y": 92,
+                "r": 18,
+                "fill": "green",
+                "label": "eq",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 140,
+                "text": "equatorial: 120°",
+                "size": 20
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 175,
+                "text": "axial: 90°",
+                "size": 20
+              }
+            ]
+          }
+        },
+        {
+          "say": "Axial spots have three neighbours at 90 degrees. Equatorial spots have only two.",
+          "write": "lone pairs go equatorial"
+        },
+        {
+          "say": "So lone pairs live around the waist.",
+          "write": "SF₄: see-saw"
+        },
+        {
+          "say": "Add lone pairs: see-saw, then T-shaped, then linear.",
+          "write": "SF₄ → ClF₃ → XeF₂"
+        },
+        {
+          "say": "Xenon difluoride has three lone pairs on the equator, so it's exactly linear.",
+          "write": "XeF₂: linear, 180°"
+        }
+      ]
+    },
+    {
+      "heading": "Six domains: lone pairs opposite",
+      "lines": [
+        {
+          "say": "Six domains make an octahedron. All positions are the same.",
+          "write": "SF₆: octahedral, 90°"
+        },
+        {
+          "say": "One lone pair gives a square pyramid, like bromine pentafluoride.",
+          "write": "BrF₅: square pyramidal"
+        },
+        {
+          "say": "A second lone pair goes opposite the first, not next to it.",
+          "write": "XeF₄: square planar",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "XeF4: four fluorines in a square, lone pairs above and below",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 150,
+                "r": 30,
+                "fill": "purple",
+                "label": "Xe"
+              },
+              {
+                "kind": "line",
+                "x": 250,
+                "y": 150,
+                "x2": 170,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 310,
+                "y": 150,
+                "x2": 390,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 262,
+                "y": 168,
+                "x2": 220,
+                "y2": 210,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 298,
+                "y": 132,
+                "x2": 340,
+                "y2": 90,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 150,
+                "r": 20,
+                "fill": "yellow",
+                "label": "F"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 20,
+                "fill": "yellow",
+                "label": "F"
+              },
+              {
+                "kind": "circle",
+                "x": 205,
+                "y": 225,
+                "r": 20,
+                "fill": "yellow",
+                "label": "F"
+              },
+              {
+                "kind": "circle",
+                "x": 355,
+                "y": 75,
+                "r": 20,
+                "fill": "yellow",
+                "label": "F"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 50,
+                "r": 18,
+                "fill": "pink",
+                "label": ":"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 255,
+                "r": 18,
+                "fill": "pink",
+                "label": ":",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 255,
+                "text": "opposite",
+                "size": 20,
+                "bold": true,
+                "color": "pink",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "That's why XeF₄ is square planar, never see-saw.",
+          "write": "AX₄E₂ = square planar"
+        }
+      ]
+    },
+    {
+      "heading": "Shape decides polarity",
+      "lines": [
+        {
+          "say": "A polar bond has a dipole pointing towards the more electronegative atom.",
+          "write": "δ+ → δ−"
+        },
+        {
+          "say": "The molecule's dipole is the vector sum of the bond dipoles.",
+          "write": "μ = vector sum"
+        },
+        {
+          "say": "Symmetric shapes with identical outer atoms cancel. Methane is non-polar.",
+          "write": "CH₄: μ = 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "Carbon with four hydrogen atoms, dipoles cancelling",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 130,
+                "r": 28,
+                "fill": "grey",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 35,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 225,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 175,
+                "y": 130,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 385,
+                "y": 130,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 135,
+                "text": "μ = 0",
+                "size": 24,
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Swap one hydrogen for chlorine. Now the pulls don't cancel. It's polar.",
+          "write": "CH₃Cl: polar",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "One hydrogen replaced by chlorine, giving an overall dipole",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 130,
+                "r": 28,
+                "fill": "grey",
+                "label": "C"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 35,
+                "r": 22,
+                "fill": "white",
+                "label": "H",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 45,
+                "r": 24,
+                "fill": "green",
+                "label": "Cl",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 225,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 175,
+                "y": 130,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 385,
+                "y": 130,
+                "r": 22,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 135,
+                "text": "μ > 0",
+                "size": 24,
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Water at 1.85 debye and ammonia at 1.47 are polar too.",
+          "write": "H₂O 1.85 D, NH₃ 1.47 D"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Name the shape, not the domain geometry. Ammonia is trigonal pyramidal.",
+          "write": "✗ NH₃ tetrahedral shape"
+        },
+        {
+          "say": "Never put lone pairs axial in five-domain molecules.",
+          "write": "✗ axial lone pairs"
+        },
+        {
+          "say": "In AX four E two, the lone pairs go opposite. Not side by side.",
+          "write": "✗ AX₄E₂ see-saw"
+        },
+        {
+          "say": "Count lone pairs on the central atom, especially for xenon and halogens.",
+          "write": "count central lone pairs"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Lewis structure, domains, A X E label, geometry, then shape.",
+          "write": "Lewis → AXₘEₙ → shape"
+        },
+        {
+          "say": "Lone pairs are bossy. They shrink bond angles.",
+          "write": "109.5° → 107° → 104.5°"
+        },
+        {
+          "say": "Five domains, lone pairs at the waist. Six domains, lone pairs opposite.",
+          "write": "eq for 5,  trans for 6"
+        },
+        {
+          "say": "Polar bonds plus a shape that doesn't cancel makes a polar molecule.",
+          "write": "polar bonds + no cancel"
+        }
+      ]
+    }
+  ]
+}

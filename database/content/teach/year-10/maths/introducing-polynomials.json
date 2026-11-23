@@ -1,0 +1,978 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Introducing polynomials",
+  "frames": [
+    {
+      "heading": "What is a polynomial?",
+      "lines": [
+        {
+          "say": "A polynomial is a sum of terms, each a number times a power of x.",
+          "write": "a × xⁿ"
+        },
+        {
+          "say": "The powers must be whole numbers: 0, 1, 2, 3 and so on.",
+          "write": "n = 0, 1, 2, 3, …"
+        },
+        {
+          "say": "Four x cubed minus x squared plus seven x minus 2 is a polynomial.",
+          "write": "4x³ − x² + 7x − 2 ✓"
+        },
+        {
+          "say": "Two over x, root x, and 2 to the x are not polynomials.",
+          "write": "2/x,  √x,  2ˣ  ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Three expressions that are not polynomials",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 150,
+                "h": 80,
+                "fill": "white",
+                "change": "remove",
+                "label": "2/x"
+              },
+              {
+                "kind": "rect",
+                "x": 205,
+                "y": 60,
+                "w": 150,
+                "h": 80,
+                "fill": "white",
+                "change": "remove",
+                "label": "√x"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 150,
+                "h": 80,
+                "fill": "white",
+                "change": "remove",
+                "label": "2ˣ"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 180,
+                "text": "power −1",
+                "size": 18,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "power ½",
+                "size": 18,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 455,
+                "y": 180,
+                "text": "x in the power",
+                "size": 18,
+                "color": "red"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Naming the parts",
+      "lines": [
+        {
+          "say": "Write the terms in descending order, highest power first.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Parts of a polynomial",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "P(x) = 5x³ − 2x² + x − 8",
+                "size": 32,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 70,
+                "w": 70,
+                "h": 55,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 70,
+                "w": 60,
+                "h": 55,
+                "fill": "none",
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 190,
+                "text": "leading term",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 215,
+                "text": "degree 3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 190,
+                "text": "constant",
+                "size": 18,
+                "color": "green",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The degree is the highest power. Here it's 3.",
+          "write": "degree = 3",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Parts of a polynomial",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "P(x) = 5x³ − 2x² + x − 8",
+                "size": 32,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 70,
+                "w": 70,
+                "h": 55,
+                "fill": "none",
+                "change": "highlight",
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 70,
+                "w": 60,
+                "h": 55,
+                "fill": "none",
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 190,
+                "text": "leading term",
+                "size": 18,
+                "color": "blue",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 215,
+                "text": "degree 3",
+                "size": 18,
+                "color": "blue",
+                "change": "highlight",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 190,
+                "text": "constant",
+                "size": 18,
+                "color": "green",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The leading term is five x cubed. Its coefficient, 5, is the leading coefficient.",
+          "write": "leading coefficient = 5"
+        },
+        {
+          "say": "The constant term has no x. Here it's minus 8.",
+          "write": "constant = −8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Parts of a polynomial",
+            "items": [
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "P(x) = 5x³ − 2x² + x − 8",
+                "size": 32,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 70,
+                "w": 70,
+                "h": 55,
+                "fill": "none",
+                "color": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 470,
+                "y": 70,
+                "w": 60,
+                "h": 55,
+                "fill": "none",
+                "change": "highlight",
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 190,
+                "text": "leading term",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 245,
+                "y": 215,
+                "text": "degree 3",
+                "size": 18,
+                "color": "blue",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 190,
+                "text": "constant",
+                "size": 18,
+                "color": "green",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Degree 1 is linear, 2 quadratic, 3 cubic, 4 quartic.",
+          "write": "linear, quadratic, cubic, quartic"
+        },
+        {
+          "say": "In minus x to the 5 plus four x cubed, the leading coefficient is minus 1.",
+          "write": "−x⁵ + 4x³: lead coeff −1"
+        }
+      ]
+    },
+    {
+      "heading": "Function notation P(x)",
+      "lines": [
+        {
+          "say": "We name a polynomial P of x. P of 2 means replace every x with 2.",
+          "write": "P(x) = 2x³ − 3x² + x − 5"
+        },
+        {
+          "say": "Two times 8, minus three times 4, plus 2, minus 5. That's 1.",
+          "write": "P(2) = 16 − 12 + 2 − 5 = 1"
+        },
+        {
+          "say": "For P of minus 1, use brackets. Minus 1 cubed is minus 1.",
+          "write": "P(−1) = −2 − 3 − 1 − 5 = −11"
+        },
+        {
+          "say": "P of 0 is always the constant term.",
+          "write": "P(0) = constant"
+        }
+      ]
+    },
+    {
+      "heading": "Adding and multiplying",
+      "lines": [
+        {
+          "say": "To add or subtract, collect like terms with the same power.",
+          "write": "like terms: same power"
+        },
+        {
+          "say": "When subtracting a bracket, change the sign of every term inside.",
+          "write": "−(x³ + 4x² − 7) = −x³ − 4x² + 7"
+        },
+        {
+          "say": "To multiply, every term times every term.",
+          "write": "(x + 2)(x² − 3x + 4)"
+        },
+        {
+          "say": "x times each term, then 2 times each term.",
+          "write": "x³ − 3x² + 4x + 2x² − 6x + 8"
+        },
+        {
+          "say": "Collect like terms.",
+          "write": "x³ − x² − 2x + 8"
+        },
+        {
+          "say": "Degrees add when you multiply. Degree 1 times degree 2 gives degree 3.",
+          "write": "1 + 2 = 3"
+        }
+      ]
+    },
+    {
+      "heading": "A box's volume",
+      "lines": [
+        {
+          "say": "A box has height x, width x plus 1, and length x plus 3.",
+          "write": "V = x(x + 1)(x + 3)",
+          "diagram": "diagrams/y10/maths/introducing-polynomials-box.svg",
+          "alt": "Box with sides x, x + 1 and x + 3"
+        },
+        {
+          "say": "Expand two brackets first.",
+          "write": "(x + 1)(x + 3) = x² + 4x + 3"
+        },
+        {
+          "say": "Then multiply by x.",
+          "write": "V(x) = x³ + 4x² + 3x"
+        },
+        {
+          "say": "V of 2 is 8 plus 16 plus 6, which is 30 cubic centimetres.",
+          "write": "V(2) = 30 cm³"
+        }
+      ]
+    },
+    {
+      "heading": "Polynomial graphs",
+      "lines": [
+        {
+          "say": "y equals x cubed rises from bottom left to top right.",
+          "write": "y = x³",
+          "diagram": "diagrams/y10/maths/introducing-polynomials-shapes.svg",
+          "alt": "y = x³ rising and y = −x³ falling"
+        },
+        {
+          "say": "A negative leading coefficient flips it. Minus x cubed falls.",
+          "write": "y = −x³"
+        },
+        {
+          "say": "This cubic crosses the x-axis at minus 2, 1 and 3.",
+          "write": "y = x³ − 2x² − 5x + 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Cubic crossing the x-axis at −2, 1 and 3",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 161.8,
+                "x2": 500.0,
+                "y2": 161.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 248.6,
+                "y": 280.0,
+                "x2": 248.6,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 494.0,
+                "y": 183.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 262.6,
+                "y": 34.0,
+                "text": "y",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 97.7,
+                "y": 248.6,
+                "x2": 113.4,
+                "y2": 190.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 113.4,
+                "y": 190.6,
+                "x2": 129.1,
+                "y2": 145.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 129.1,
+                "y": 145.0,
+                "x2": 144.9,
+                "y2": 110.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 144.9,
+                "y": 110.8,
+                "x2": 160.6,
+                "y2": 86.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 160.6,
+                "y": 86.9,
+                "x2": 176.3,
+                "y2": 72.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 176.3,
+                "y": 72.2,
+                "x2": 192.0,
+                "y2": 65.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 192.0,
+                "y": 65.5,
+                "x2": 207.7,
+                "y2": 65.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 207.7,
+                "y": 65.7,
+                "x2": 223.4,
+                "y2": 71.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 223.4,
+                "y": 71.8,
+                "x2": 239.1,
+                "y2": 82.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 239.1,
+                "y": 82.6,
+                "x2": 254.9,
+                "y2": 97.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 254.9,
+                "y": 97.0,
+                "x2": 270.6,
+                "y2": 114.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 270.6,
+                "y": 114.0,
+                "x2": 286.3,
+                "y2": 132.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 286.3,
+                "y": 132.3,
+                "x2": 302.0,
+                "y2": 151.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 302.0,
+                "y": 151.0,
+                "x2": 317.7,
+                "y2": 168.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 317.7,
+                "y": 168.8,
+                "x2": 333.4,
+                "y2": 184.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 333.4,
+                "y": 184.7,
+                "x2": 349.1,
+                "y2": 197.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 349.1,
+                "y": 197.6,
+                "x2": 364.9,
+                "y2": 206.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 364.9,
+                "y": 206.3,
+                "x2": 380.6,
+                "y2": 209.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 380.6,
+                "y": 209.8,
+                "x2": 396.3,
+                "y2": 206.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 396.3,
+                "y": 206.9,
+                "x2": 412.0,
+                "y2": 196.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 412.0,
+                "y": 196.6,
+                "x2": 427.7,
+                "y2": 177.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 427.7,
+                "y": 177.7,
+                "x2": 443.4,
+                "y2": 149.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 443.4,
+                "y": 149.2,
+                "x2": 459.1,
+                "y2": 109.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 459.1,
+                "y": 109.8,
+                "x2": 474.9,
+                "y2": 58.6,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 122.9,
+                "y": 161.8,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 311.4,
+                "y": 161.8,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 437.1,
+                "y": 161.8,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 122.9,
+                "y": 185.8,
+                "text": "−2",
+                "size": 16,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 311.4,
+                "y": 185.8,
+                "text": "1",
+                "size": 16,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 437.1,
+                "y": 185.8,
+                "text": "3",
+                "size": 16,
+                "color": "red"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It crosses the y-axis at 6, the constant term.",
+          "write": "(0, 6)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Cubic crossing the y-axis at 6",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 60.0,
+                "y": 161.8,
+                "x2": 500.0,
+                "y2": 161.8,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 248.6,
+                "y": 280.0,
+                "x2": 248.6,
+                "y2": 20.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 494.0,
+                "y": 183.8,
+                "text": "x",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 262.6,
+                "y": 34.0,
+                "text": "y",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 97.7,
+                "y": 248.6,
+                "x2": 113.4,
+                "y2": 190.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 113.4,
+                "y": 190.6,
+                "x2": 129.1,
+                "y2": 145.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 129.1,
+                "y": 145.0,
+                "x2": 144.9,
+                "y2": 110.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 144.9,
+                "y": 110.8,
+                "x2": 160.6,
+                "y2": 86.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 160.6,
+                "y": 86.9,
+                "x2": 176.3,
+                "y2": 72.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 176.3,
+                "y": 72.2,
+                "x2": 192.0,
+                "y2": 65.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 192.0,
+                "y": 65.5,
+                "x2": 207.7,
+                "y2": 65.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 207.7,
+                "y": 65.7,
+                "x2": 223.4,
+                "y2": 71.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 223.4,
+                "y": 71.8,
+                "x2": 239.1,
+                "y2": 82.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 239.1,
+                "y": 82.6,
+                "x2": 254.9,
+                "y2": 97.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 254.9,
+                "y": 97.0,
+                "x2": 270.6,
+                "y2": 114.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 270.6,
+                "y": 114.0,
+                "x2": 286.3,
+                "y2": 132.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 286.3,
+                "y": 132.3,
+                "x2": 302.0,
+                "y2": 151.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 302.0,
+                "y": 151.0,
+                "x2": 317.7,
+                "y2": 168.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 317.7,
+                "y": 168.8,
+                "x2": 333.4,
+                "y2": 184.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 333.4,
+                "y": 184.7,
+                "x2": 349.1,
+                "y2": 197.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 349.1,
+                "y": 197.6,
+                "x2": 364.9,
+                "y2": 206.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 364.9,
+                "y": 206.3,
+                "x2": 380.6,
+                "y2": 209.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 380.6,
+                "y": 209.8,
+                "x2": 396.3,
+                "y2": 206.9,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 396.3,
+                "y": 206.9,
+                "x2": 412.0,
+                "y2": 196.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 412.0,
+                "y": 196.6,
+                "x2": 427.7,
+                "y2": 177.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 427.7,
+                "y": 177.7,
+                "x2": 443.4,
+                "y2": 149.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 443.4,
+                "y": 149.2,
+                "x2": 459.1,
+                "y2": 109.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 459.1,
+                "y": 109.8,
+                "x2": 474.9,
+                "y2": 58.6,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 248.6,
+                "y": 90.9,
+                "r": 8,
+                "fill": "green",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 284.6,
+                "y": 84.9,
+                "text": "(0, 6)",
+                "size": 16,
+                "color": "green"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A polynomial of degree n crosses the x-axis at most n times.",
+          "write": "degree n → at most n crossings"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Find the highest power, wherever it is. Five x squared minus two x to the 4 has degree 4.",
+          "write": "5x² − 2x⁴: degree 4"
+        },
+        {
+          "say": "The sign in front belongs to the coefficient."
+        },
+        {
+          "say": "Put negatives in brackets. Minus 2, all squared, is 4.",
+          "write": "(−2)² = 4,  −2² = −4"
+        },
+        {
+          "say": "Count your products. 2 terms times 3 terms gives 6.",
+          "write": "2 × 3 = 6 products"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "The engine leads the train. The leading term decides the degree.",
+          "write": "leading term → degree"
+        },
+        {
+          "say": "P of zero is the constant.",
+          "write": "P(0) = constant"
+        },
+        {
+          "say": "Times the brackets, add the powers.",
+          "write": "degrees add"
+        },
+        {
+          "say": "Check an expansion by putting x equals 1 into both.",
+          "write": "x = 1 check ✓"
+        }
+      ]
+    }
+  ]
+}

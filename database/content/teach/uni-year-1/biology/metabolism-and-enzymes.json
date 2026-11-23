@@ -1,0 +1,79 @@
+{"level":"Uni Year 1","subject":"biology","title":"Metabolism and enzymes","frames":[
+{"heading":"Metabolism and free energy","lines":[
+{"say":"Catabolism breaks molecules down and releases energy. Anabolism builds them and needs energy.","write":"catabolism vs anabolism"},
+{"say":"Gibbs free energy is the energy available to do work.","write":"ΔG = ΔH − TΔS"},
+{"say":"Ex means exit. In an exergonic reaction, free energy leaves. Delta G is negative.","write":"exergonic: ΔG < 0"},
+{"say":"En means enter. Endergonic reactions need energy in. Delta G is positive.","write":"endergonic: ΔG > 0"},
+{"say":"Spontaneous does not mean fast. Speed depends on activation energy.","write":"spontaneous ≠ fast"}]},
+{"heading":"ATP and energy coupling","lines":[
+{"say":"ATP hydrolysis releases about 30.5 kilojoules per mole.","write":"ATP → ADP + Pᵢ: −30.5 kJ/mol"},
+{"say":"Making glutamine needs plus 14.2. On its own, it won't go.","write":"glutamine: +14.2 kJ/mol"},
+{"say":"Couple them. Just add the delta G values with their signs.","write":"+14.2 + (−30.5) = −16.3","draw":{"type":"shapes","width":560,"height":260,"alt":"Energy bars: +14.2 up, -30.5 down, net -16.3","items":[
+{"kind":"line","x":20,"y":110,"x2":540,"y2":110,"color":"black","dashed":true},
+{"kind":"rect","x":60,"y":60,"w":100,"h":50,"fill":"red","label":"+14.2"},
+{"kind":"rect","x":220,"y":110,"w":100,"h":110,"fill":"blue","label":"−30.5"},
+{"kind":"rect","x":390,"y":110,"w":100,"h":60,"fill":"green","label":"−16.3","change":"add"},
+{"kind":"text","x":440,"y":200,"text":"overall: goes","size":18,"anchor":"middle","change":"highlight"}]}},
+{"say":"Usually ATP phosphorylates a reactant, making a less stable intermediate that reacts.","write":"phosphorylation"},
+{"say":"Respiration recharges ADP back to ATP. It's a rechargeable carrier, not a store.","write":"ATP = rechargeable"}]},
+{"heading":"How enzymes speed things up","lines":[
+{"say":"Enzymes lower the activation energy. They dig a tunnel through the hill.","write":"lower Eₐ","draw":{"type":"shapes","width":560,"height":280,"alt":"Energy hill lowered by enzyme, start and end levels unchanged","items":[
+{"kind":"line","x":30,"y":160,"x2":150,"y2":160,"color":"black"},
+{"kind":"line","x":150,"y":160,"x2":270,"y2":40,"color":"red"},
+{"kind":"line","x":270,"y":40,"x2":390,"y2":220,"color":"red"},
+{"kind":"line","x":390,"y":220,"x2":530,"y2":220,"color":"black"},
+{"kind":"line","x":150,"y":160,"x2":270,"y2":120,"color":"green","change":"add"},
+{"kind":"line","x":270,"y":120,"x2":390,"y2":220,"color":"green","change":"add"},
+{"kind":"text","x":270,"y":30,"text":"no enzyme","size":16,"anchor":"middle","color":"red"},
+{"kind":"text","x":270,"y":110,"text":"with enzyme","size":16,"anchor":"middle","color":"green","change":"add"},
+{"kind":"text","x":460,"y":260,"text":"ΔG unchanged","size":18,"anchor":"middle"}]}},
+{"say":"They don't move the valleys. Delta G and equilibrium stay the same.","write":"same ΔG, same equilibrium"},
+{"say":"Induced fit: the active site changes shape slightly to grip the substrate.","write":"induced fit"},
+{"say":"Cofactors are ions like magnesium. Coenzymes are organic, like NAD plus.","write":"cofactor (Mg²⁺), coenzyme (NAD⁺)"},
+{"say":"Past the optimum temperature or pH, the enzyme denatures.","write":"denature: active site lost"}]},
+{"heading":"Michaelis–Menten kinetics","lines":[
+{"say":"As substrate rises, the rate climbs, then levels off. The enzyme is saturated.","write":"saturation → Vmax"},
+{"say":"Km is the half way house: the substrate level at half Vmax.","write":"Km = [S] at ½Vmax","draw":{"type":"shapes","width":560,"height":280,"alt":"Saturation curve with Vmax and half Vmax marking Km","items":[
+{"kind":"line","x":50,"y":250,"x2":540,"y2":250,"color":"black"},
+{"kind":"line","x":50,"y":250,"x2":50,"y2":20,"color":"black"},
+{"kind":"line","x":50,"y":250,"x2":150,"y2":140,"color":"blue"},
+{"kind":"line","x":150,"y":140,"x2":280,"y2":80,"color":"blue"},
+{"kind":"line","x":280,"y":80,"x2":540,"y2":55,"color":"blue"},
+{"kind":"line","x":50,"y":40,"x2":540,"y2":40,"color":"grey","dashed":true},
+{"kind":"text","x":535,"y":32,"text":"Vmax","size":16,"anchor":"end"},
+{"kind":"line","x":50,"y":145,"x2":150,"y2":145,"color":"purple","dashed":true,"change":"add"},
+{"kind":"line","x":150,"y":145,"x2":150,"y2":250,"color":"purple","dashed":true,"change":"add"},
+{"kind":"text","x":150,"y":275,"text":"Km","size":18,"anchor":"middle","color":"purple","change":"add"}]}},
+{"say":"Low Km means high affinity. It gets half way with very little substrate.","write":"low Km = high affinity"},
+{"say":"Vmax 120, Km 4, substrate 12. 120 times 12, over 16.","write":"v₀ = 120 × 12 ÷ 16 = 90"},
+{"say":"So the rate is 90 micromoles per minute. That's 75 percent of Vmax.","write":"90 µmol/min"}]},
+{"heading":"Inhibitors","lines":[
+{"say":"Competitive inhibitors sit in the active site. They look like the substrate.","write":"competitive: active site"},
+{"say":"Flood with substrate and you still reach Vmax. But Km goes up.","write":"Vmax same, Km ↑"},
+{"say":"Non-competitive inhibitors bind elsewhere. They remove working enzyme, so Vmax drops.","write":"non-comp: Vmax ↓, Km same","draw":{"type":"shapes","width":560,"height":240,"alt":"Enzyme with substrate in active site and inhibitor at another site","items":[
+{"kind":"rect","x":160,"y":70,"w":240,"h":120,"fill":"blue","label":"enzyme"},
+{"kind":"circle","x":280,"y":60,"r":26,"fill":"yellow","label":"S"},
+{"kind":"circle","x":420,"y":180,"r":24,"fill":"red","label":"I","change":"add"},
+{"kind":"text","x":440,"y":225,"text":"other site","size":16,"anchor":"middle","change":"add"}]}},
+{"say":"Compete, Km climbs. Non-compete, the max gets beat.","write":"Compete, Km climbs"},
+{"say":"Vmax 100 stays 100, but Km goes from 2 to 6. That's competitive.","write":"Km 2.0 → 6.0: competitive"}]},
+{"heading":"Allosteric control and feedback","lines":[
+{"say":"Allosteric enzymes have separate regulatory sites, and often an S shaped curve.","write":"allosteric: sigmoidal"},
+{"say":"In feedback inhibition, the end product switches off the first enzyme.","write":"A → B → C → D","draw":{"type":"shapes","width":560,"height":220,"alt":"End product D inhibits enzyme 1","items":[
+{"kind":"circle","x":60,"y":80,"r":32,"fill":"blue","label":"A"},
+{"kind":"arrow","x":95,"y":80,"x2":185,"y2":80,"color":"black"},
+{"kind":"circle","x":220,"y":80,"r":32,"fill":"blue","label":"B"},
+{"kind":"arrow","x":255,"y":80,"x2":345,"y2":80,"color":"black"},
+{"kind":"circle","x":380,"y":80,"r":32,"fill":"blue","label":"C"},
+{"kind":"arrow","x":415,"y":80,"x2":465,"y2":80,"color":"black"},
+{"kind":"circle","x":500,"y":80,"r":32,"fill":"green","label":"D"},
+{"kind":"arrow","x":500,"y":120,"x2":140,"y2":170,"color":"red","change":"add"},
+{"kind":"text","x":140,"y":205,"text":"enzyme 1 blocked","size":18,"anchor":"middle","color":"red","change":"add"}]}},
+{"say":"It works like a thermostat. Use up D, and the pathway restarts.","write":"negative feedback"},
+{"say":"Plenty of ATP switches off phosphofructokinase. AMP switches it on.","write":"ATP ⊣ PFK, AMP → PFK"}]},
+{"heading":"Watch out, and remember","lines":[
+{"say":"Enzymes don't change delta G. They only lower activation energy.","write":"✗ enzymes change ΔG"},
+{"say":"High Km means low affinity, not high.","write":"✗ high Km = high affinity"},
+{"say":"Competitive inhibitors don't lower Vmax. They raise Km.","write":"competitive: Km ↑"},
+{"say":"For coupling, add the delta G values with their signs.","write":"add ΔG values"}]}
+]}

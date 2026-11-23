@@ -1,0 +1,820 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Pythagoras’ theorem",
+  "frames": [
+    {
+      "heading": "Small tile plus small tile",
+      "lines": [
+        {
+          "say": "Here's a right-angled triangle with sides 3, 4 and 5.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 395,
+            "alt": "A 3, 4, 5 right-angled triangle with squares of area 9, 16 and 25 on its sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    130,
+                    145
+                  ],
+                  [
+                    130,
+                    250
+                  ],
+                  [
+                    270,
+                    250
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 236,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 205,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 242,
+                "text": "4",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 195,
+                "y": 192,
+                "text": "5",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Build a square tile on each short side. Areas 9 and 16.",
+          "write": "3² = 9,  4² = 16",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 395,
+            "alt": "A 3, 4, 5 right-angled triangle with squares of area 9, 16 and 25 on its sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    130,
+                    145
+                  ],
+                  [
+                    130,
+                    250
+                  ],
+                  [
+                    270,
+                    250
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 236,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 205,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 242,
+                "text": "4",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 195,
+                "y": 192,
+                "text": "5",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 25,
+                "y": 145,
+                "w": 105,
+                "h": 105,
+                "fill": "blue",
+                "label": "9",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 250,
+                "w": 140,
+                "h": 140,
+                "fill": "orange",
+                "label": "16",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The tile on the longest side has area 25. 9 plus 16 is 25!",
+          "write": "9 + 16 = 25",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 395,
+            "alt": "A 3, 4, 5 right-angled triangle with squares of area 9, 16 and 25 on its sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    130,
+                    145
+                  ],
+                  [
+                    130,
+                    250
+                  ],
+                  [
+                    270,
+                    250
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 236,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 205,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 242,
+                "text": "4",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 195,
+                "y": 192,
+                "text": "5",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 25,
+                "y": 145,
+                "w": 105,
+                "h": 105,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 250,
+                "w": 140,
+                "h": 140,
+                "fill": "orange",
+                "label": "16"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    130,
+                    145
+                  ],
+                  [
+                    270,
+                    250
+                  ],
+                  [
+                    375,
+                    110
+                  ],
+                  [
+                    235,
+                    5
+                  ]
+                ],
+                "fill": "purple",
+                "label": "25",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 300,
+                "text": "9 + 16 = 25",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Small tile plus small tile equals big tile.",
+          "write": "small + small = big"
+        }
+      ]
+    },
+    {
+      "heading": "The hypotenuse",
+      "lines": [
+        {
+          "say": "The longest side is the hypotenuse.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right-angled triangle with shorter sides and the hypotenuse opposite the right angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    60
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    420,
+                    260
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 244,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "6",
+                "size": 22,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 290,
+                "text": "8",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 145,
+                "text": "c",
+                "size": 24,
+                "color": "red",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "It's opposite the right angle. It never touches the little square.",
+          "write": "hypotenuse = c",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right-angled triangle with shorter sides and the hypotenuse opposite the right angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    60
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    420,
+                    260
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 244,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "6",
+                "size": 22,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 290,
+                "text": "8",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 145,
+                "text": "c",
+                "size": 24,
+                "color": "red",
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 60,
+                "x2": 420,
+                "y2": 260,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The other two are the shorter sides. Call them a and b.",
+          "write": "shorter sides: a, b"
+        }
+      ]
+    },
+    {
+      "heading": "Pythagoras' theorem",
+      "lines": [
+        {
+          "say": "c squared equals a squared plus b squared.",
+          "write": "c² = a² + b²"
+        },
+        {
+          "say": "It only works in right-angled triangles. Check for the 90 degree mark.",
+          "write": "right angle only"
+        },
+        {
+          "say": "To find c: square, add, square root.",
+          "write": "square, add, √"
+        }
+      ]
+    },
+    {
+      "heading": "Finding the hypotenuse",
+      "lines": [
+        {
+          "say": "Shorter sides 6 and 8. Find c.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right-angled triangle with shorter sides and the hypotenuse opposite the right angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    60
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    420,
+                    260
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 244,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "6",
+                "size": 22,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 290,
+                "text": "8",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 145,
+                "text": "c",
+                "size": 24,
+                "color": "red",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Square them. 36 and 64.",
+          "write": "6² = 36,  8² = 64"
+        },
+        {
+          "say": "Add them. c squared is 100.",
+          "write": "c² = 100"
+        },
+        {
+          "say": "Square root. c is 10 centimetres.",
+          "write": "c = √100 = 10 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right-angled triangle with shorter sides and the hypotenuse opposite the right angle",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    120,
+                    60
+                  ],
+                  [
+                    120,
+                    260
+                  ],
+                  [
+                    420,
+                    260
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 120,
+                "y": 244,
+                "w": 16,
+                "h": 16,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 105,
+                "y": 165,
+                "text": "6",
+                "size": 22,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 290,
+                "text": "8",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 145,
+                "text": "c = 10",
+                "size": 24,
+                "color": "red",
+                "anchor": "start",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 120,
+                "y": 60,
+                "x2": 420,
+                "y2": 260,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. 10 is longer than 6 and 8, but shorter than 14.",
+          "write": "8 < 10 < 14 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Not always a whole number",
+      "lines": [
+        {
+          "say": "Sides 5 and 9. 25 plus 81 is 106.",
+          "write": "c² = 25 + 81 = 106"
+        },
+        {
+          "say": "Root 106 is an exact answer. It's a surd.",
+          "write": "c = √106 m"
+        },
+        {
+          "say": "Or round it. About 10.3 metres.",
+          "write": "√106 ≈ 10.3 m"
+        },
+        {
+          "say": "A TV is 80 by 45. The diagonal is root 8425, about 91.8.",
+          "write": "√(6400 + 2025) ≈ 91.8 cm",
+          "diagram": "diagrams/y8/maths/pythagoras-theorem-ex3.svg",
+          "alt": "A TV screen 80 cm wide and 45 cm high with its diagonal marked"
+        }
+      ]
+    },
+    {
+      "heading": "Triples and the converse",
+      "lines": [
+        {
+          "say": "Some whole numbers fit exactly. 3, 4, 5. 5, 12, 13. 8, 15, 17.",
+          "write": "3-4-5, 5-12-13, 8-15-17"
+        },
+        {
+          "say": "Multiples work too. 6, 8, 10.",
+          "write": "6-8-10"
+        },
+        {
+          "say": "Is 8, 12, 15 right-angled? 64 plus 144 is 208.",
+          "write": "8² + 12² = 208"
+        },
+        {
+          "say": "15 squared is 225. Not equal, so it's not right-angled.",
+          "write": "208 ≠ 225  ✗"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Square first, then add. Not 6 plus 8, squared.",
+          "write": "✗ (6 + 8)² = 196"
+        },
+        {
+          "say": "Root of 36 plus 64 is 10, not 14. The root doesn't split.",
+          "write": "√(36 + 64) ≠ 6 + 8"
+        },
+        {
+          "say": "Don't forget the square root at the end.",
+          "write": "c² = 100 → c = 10"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Square, add, square root.",
+          "write": "c² = a² + b²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 395,
+            "alt": "A 3, 4, 5 right-angled triangle with squares of area 9, 16 and 25 on its sides",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    130,
+                    145
+                  ],
+                  [
+                    130,
+                    250
+                  ],
+                  [
+                    270,
+                    250
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 236,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 205,
+                "text": "3",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 205,
+                "y": 242,
+                "text": "4",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 195,
+                "y": 192,
+                "text": "5",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 25,
+                "y": 145,
+                "w": 105,
+                "h": 105,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 250,
+                "w": 140,
+                "h": 140,
+                "fill": "orange",
+                "label": "16"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    130,
+                    145
+                  ],
+                  [
+                    270,
+                    250
+                  ],
+                  [
+                    375,
+                    110
+                  ],
+                  [
+                    235,
+                    5
+                  ]
+                ],
+                "fill": "purple",
+                "label": "25",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 300,
+                "text": "9 + 16 = 25",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The hypotenuse is opposite the right angle, and it's the longest.",
+          "write": "c = longest side"
+        },
+        {
+          "say": "Learn the triples. 3, 4, 5 and 5, 12, 13.",
+          "write": "3-4-5, 5-12-13"
+        }
+      ]
+    }
+  ]
+}

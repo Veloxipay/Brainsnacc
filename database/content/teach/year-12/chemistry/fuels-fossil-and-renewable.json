@@ -1,0 +1,531 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Fuels: fossil and renewable",
+  "frames": [
+    {
+      "heading": "Renewable or not?",
+      "lines": [
+        {
+          "say": "A fuel releases useful energy when it reacts, usually by burning.",
+          "write": "fuel"
+        },
+        {
+          "say": "Renewable means replaced at least as fast as we use it.",
+          "write": "renewable = rate"
+        },
+        {
+          "say": "Fossil fuels take millions of years to form. So they are non-renewable.",
+          "write": "fossil = non-renewable",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rate of formation versus use",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 220,
+                "h": 80,
+                "fill": "grey",
+                "label": "forms: millions of yrs"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 90,
+                "w": 220,
+                "h": 80,
+                "fill": "red",
+                "label": "used: ~ 200 yrs",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "used far faster than replaced",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Fossil fuels",
+      "lines": [
+        {
+          "say": "Coal formed from buried land plants. Brown coal holds lots of water.",
+          "write": "coal"
+        },
+        {
+          "say": "Crude oil is separated by fractional distillation into petrol and diesel.",
+          "write": "crude oil"
+        },
+        {
+          "say": "Natural gas is mostly methane.",
+          "write": "natural gas: CH₄"
+        },
+        {
+          "say": "They are energy-dense and easy to transport.",
+          "write": "energy-dense"
+        },
+        {
+          "say": "But burning them releases long-stored carbon as CO two.",
+          "write": "old carbon → CO₂",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Stored carbon released",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 200,
+                "w": 480,
+                "h": 70,
+                "fill": "grey",
+                "label": "underground carbon"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 195,
+                "x2": 280,
+                "y2": 80,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 55,
+                "r": 30,
+                "fill": "red",
+                "label": "CO₂",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Sulfur makes SO two and acid rain. Engines make nitrogen oxides.",
+          "write": "SO₂, NOₓ, CO, soot"
+        }
+      ]
+    },
+    {
+      "heading": "Biofuels",
+      "lines": [
+        {
+          "say": "Biofuels come from biomass, recently living material.",
+          "write": "biomass"
+        },
+        {
+          "say": "Biogas comes from anaerobic digestion of waste. It is methane and CO two.",
+          "write": "biogas"
+        },
+        {
+          "say": "Bioethanol: yeast ferments glucose, without oxygen.",
+          "write": "C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Fermentation",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "yellow",
+                "label": "Glucose"
+              },
+              {
+                "kind": "arrow",
+                "x": 175,
+                "y": 145,
+                "x2": 201,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 203,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "grey",
+                "label": "Yeast, no O₂"
+              },
+              {
+                "kind": "arrow",
+                "x": 359,
+                "y": 145,
+                "x2": 385,
+                "y2": 145,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 387,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "green",
+                "label": "2 Ethanol + 2 CO₂",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Biodiesel: triglyceride plus three methanol gives three esters and glycerol.",
+          "write": "transesterification",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Transesterification",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 245,
+                "h": 70,
+                "fill": "orange",
+                "label": "Triglyceride + 3CH₃OH"
+              },
+              {
+                "kind": "arrow",
+                "x": 267,
+                "y": 145,
+                "x2": 293,
+                "y2": 145,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 295,
+                "y": 110,
+                "w": 245,
+                "h": 70,
+                "fill": "green",
+                "label": "3 esters + glycerol",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Ethanol already contains oxygen, so it releases less energy per gram.",
+          "write": "less energy per gram"
+        }
+      ]
+    },
+    {
+      "heading": "Fermentation calculation",
+      "lines": [
+        {
+          "say": "Ferment 1.00 kilogram of glucose. That is 5.556 moles.",
+          "write": "n = 1000 ÷ 180.0 = 5.556"
+        },
+        {
+          "say": "One glucose gives two ethanol, so 11.11 moles.",
+          "write": "n(ethanol) = 11.11 mol"
+        },
+        {
+          "say": "Times 46.0 gives 511 grams of ethanol.",
+          "write": "m = 511 g"
+        },
+        {
+          "say": "The CO two is also 11.11 moles. That is 276 litres at SLC.",
+          "write": "V(CO₂) = 276 L"
+        }
+      ]
+    },
+    {
+      "heading": "Hydrogen and carbon neutrality",
+      "lines": [
+        {
+          "say": "Hydrogen reacts to give only water.",
+          "write": "2H₂ + O₂ → 2H₂O"
+        },
+        {
+          "say": "Green hydrogen is made by electrolysis using solar or wind power.",
+          "write": "green H₂"
+        },
+        {
+          "say": "Hydrogen from natural gas or coal is not renewable.",
+          "write": "✗ from fossil fuels"
+        },
+        {
+          "say": "Carbon neutral means CO two released equals CO two removed.",
+          "write": "carbon neutral",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Carbon cycle of a biofuel",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 150,
+                "r": 60,
+                "fill": "green",
+                "label": "plants"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 150,
+                "r": 60,
+                "fill": "orange",
+                "label": "burning"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 110,
+                "x2": 360,
+                "y2": 110,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 360,
+                "y": 190,
+                "x2": 200,
+                "y2": 190,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "fuel",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 225,
+                "text": "CO₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Biofuels are close, but farming and transport burn fossil fuels.",
+          "write": "not fully neutral",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Extra fossil inputs",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 150,
+                "r": 60,
+                "fill": "green",
+                "label": "plants"
+              },
+              {
+                "kind": "circle",
+                "x": 420,
+                "y": 150,
+                "r": 60,
+                "fill": "orange",
+                "label": "burning"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 110,
+                "x2": 360,
+                "y2": 110,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 360,
+                "y": 190,
+                "x2": 200,
+                "y2": 190,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "fuel",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 225,
+                "text": "CO₂",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 250,
+                "w": 160,
+                "h": 40,
+                "fill": "red",
+                "label": "+ tractor diesel",
+                "labelSize": 15,
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Comparing fuels",
+      "lines": [
+        {
+          "say": "Per 1000 kilojoules, methane releases 49.4 grams of CO two.",
+          "write": "CH₄: 49.4 g"
+        },
+        {
+          "say": "Octane releases 64.5 grams, and ethanol 64.7 grams.",
+          "write": "C₈H₁₈ 64.5 g, ethanol 64.7 g",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 307,
+            "alt": "CO2 per 1000 kJ",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 200,
+                "w": 100,
+                "h": 70,
+                "fill": "blue",
+                "label": "49.4"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 175,
+                "w": 100,
+                "h": 95,
+                "fill": "grey",
+                "label": "64.5"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 174,
+                "w": 100,
+                "h": 96,
+                "fill": "green",
+                "label": "64.7"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 295,
+                "text": "methane",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "octane",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 295,
+                "text": "ethanol",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "But ethanol’s carbon came out of the air recently.",
+          "write": "recent carbon"
+        },
+        {
+          "say": "Crop fuels raise the food versus fuel debate. Waste avoids it.",
+          "write": "food vs fuel"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Biofuels do release CO two. The carbon was just absorbed recently.",
+          "write": "✗ no CO₂"
+        },
+        {
+          "say": "Hydrogen is only renewable if made with renewable energy.",
+          "write": "say how H₂ is made"
+        },
+        {
+          "say": "Fermentation is anaerobic. Oxygen is not a reactant.",
+          "write": "no O₂"
+        },
+        {
+          "say": "Transesterification gives esters and glycerol, not fatty acids and water.",
+          "write": "esters + glycerol"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Renewable is about rate of replacement versus rate of use.",
+          "write": "rate"
+        },
+        {
+          "say": "Biogas, bioethanol and biodiesel come from biomass.",
+          "write": "three biofuels"
+        },
+        {
+          "say": "Green hydrogen comes from electrolysis with renewable power.",
+          "write": "green H₂"
+        },
+        {
+          "say": "Biofuels are nearly, not exactly, carbon neutral.",
+          "write": "nearly neutral"
+        }
+      ]
+    }
+  ]
+}

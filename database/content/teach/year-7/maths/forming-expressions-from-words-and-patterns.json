@@ -1,0 +1,81 @@
+{
+  "level": "Year 7", "subject": "maths", "title": "Forming expressions from words and patterns",
+  "frames": [
+    { "heading": "Translating words into algebra",
+      "lines": [
+        { "say": "Writing algebra from words is like translating into another language.", "write": "words → algebra" },
+        { "say": "Sum, more than, increased by: all mean add. 5 more than n is n plus 5.", "write": "n + 5" },
+        { "say": "Product, times, twice: all mean multiply. Twice n is 2n.", "write": "2n" },
+        { "say": "Less than flips the order. 7 less than 3n is 3n minus 7.", "write": "3n − 7  (not 7 − 3n)" },
+        { "say": "Shared equally by 4 means divide. n over 4.", "write": "n/4" }
+      ] },
+    { "heading": "Brackets group things",
+      "lines": [
+        { "say": "The sum of n and 5, multiplied by 4. Add first, then multiply.", "write": "4(n + 5)" },
+        { "say": "4n plus 5 means something different. If words group two things, bracket them.", "write": "✗ 4n + 5" },
+        { "say": "Three times the sum of a number and 4, minus twice the number.", "write": "3(n + 4) − 2n" },
+        { "say": "Expand and collect. 3n plus 12 minus 2n is n plus 12.", "write": "n + 12" },
+        { "say": "Check with n equals 1. 15 minus 2 is 13. And 1 plus 12 is 13.", "write": "13 = 13 ✓" }
+      ] },
+    { "heading": "Special numbers",
+      "lines": [
+        { "say": "Consecutive numbers go up by 1: n, n plus 1, n plus 2.", "write": "n, n + 1, n + 2" },
+        { "say": "An even number is 2n. An odd number is 2n plus 1.", "write": "even 2n,  odd 2n + 1" },
+        { "say": "Add three consecutive numbers. You get 3n plus 3.", "write": "n + (n + 1) + (n + 2) = 3n + 3" },
+        { "say": "That's 3 lots of n plus 1. So it's always a multiple of 3.", "write": "3(n + 1)" },
+        { "say": "Check: 6 plus 7 plus 8 is 21, which is 3 times 7.", "write": "6 + 7 + 8 = 21 ✓" }
+      ] },
+    { "heading": "Growing patterns",
+      "lines": [
+        { "say": "One square of matchsticks uses 4 sticks.", "write": "shape 1: 4 sticks",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "One square made of four matchsticks", "items": [
+            {"kind": "line", "x": 60, "y": 50, "x2": 60, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 60, "y": 50, "x2": 160, "y2": 50, "color": "orange"},
+            {"kind": "line", "x": 60, "y": 150, "x2": 160, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 160, "y": 50, "x2": 160, "y2": 150, "color": "orange"},
+            {"kind": "text", "x": 110, "y": 185, "text": "4", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "Add a second square. It only needs 3 more sticks.", "write": "shape 2: 7 sticks",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Two squares: three new sticks added", "items": [
+            {"kind": "line", "x": 60, "y": 50, "x2": 60, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 60, "y": 50, "x2": 160, "y2": 50, "color": "orange"},
+            {"kind": "line", "x": 60, "y": 150, "x2": 160, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 160, "y": 50, "x2": 160, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 160, "y": 50, "x2": 260, "y2": 50, "color": "green", "change": "add"},
+            {"kind": "line", "x": 160, "y": 150, "x2": 260, "y2": 150, "color": "green", "change": "add"},
+            {"kind": "line", "x": 260, "y": 50, "x2": 260, "y2": 150, "color": "green", "change": "add"},
+            {"kind": "text", "x": 160, "y": 185, "text": "4 + 3 = 7", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "And 3 more again. 4, 7, 10. The common difference is 3.", "write": "4, 7, 10 … +3",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Three squares: three more sticks added", "items": [
+            {"kind": "line", "x": 60, "y": 50, "x2": 60, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 60, "y": 50, "x2": 260, "y2": 50, "color": "orange"},
+            {"kind": "line", "x": 60, "y": 150, "x2": 260, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 160, "y": 50, "x2": 160, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 260, "y": 50, "x2": 260, "y2": 150, "color": "orange"},
+            {"kind": "line", "x": 260, "y": 50, "x2": 360, "y2": 50, "color": "green", "change": "add"},
+            {"kind": "line", "x": 260, "y": 150, "x2": 360, "y2": 150, "color": "green", "change": "add"},
+            {"kind": "line", "x": 360, "y": 50, "x2": 360, "y2": 150, "color": "green", "change": "add"},
+            {"kind": "text", "x": 210, "y": 185, "text": "7 + 3 = 10", "size": 22, "bold": true, "anchor": "middle"}]}},
+        { "say": "Multiply n by the difference, 3. Step back one term from 4 to get 1.", "write": "3n + 1" },
+        { "say": "Shape 50 needs 3 times 50 plus 1. That's 151 sticks.", "write": "3 × 50 + 1 = 151" },
+        { "say": "Which shape uses 100? Take 1, then divide by 3. Shape 33.", "write": "3n + 1 = 100 → n = 33" }
+      ] },
+    { "heading": "Real-life expressions",
+      "lines": [
+        { "say": "A taxi charges 4.20 to start, plus 2.10 per kilometre.", "write": "$4.20 + $2.10 per km" },
+        { "say": "For k kilometres, the cost is 4.2 plus 2.1k dollars.", "write": "cost = 4.2 + 2.1k" },
+        { "say": "For 12 kilometres: 4.2 plus 25.2 is 29.40 dollars.", "write": "$29.40" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "5, 9, 13 is not 4n plus 5. It's 4n plus 1.", "write": "✗ 4n + 5  ✓ 4n + 1" },
+        { "say": "One case working isn't enough. Check two.", "write": "check two cases" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Less than flips.", "write": "7 less than x → x − 7" },
+        { "say": "Sum of, then times, means brackets.", "write": "brackets" },
+        { "say": "Difference times n, then fix the start.", "write": "zero term trick" },
+        { "say": "Count two shapes to check any rule.", "write": "check two shapes" }
+      ] }
+  ]
+}

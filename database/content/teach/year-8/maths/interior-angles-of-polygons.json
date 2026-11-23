@@ -1,0 +1,812 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Interior angles of polygons",
+  "frames": [
+    {
+      "heading": "Angles inside a polygon",
+      "lines": [
+        {
+          "say": "Beehives use hexagons. Soccer balls use pentagons and hexagons.",
+          "write": "polygon = straight sides"
+        },
+        {
+          "say": "A polygon is a flat, closed shape with straight sides.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 6-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    379.6,
+                    77.5
+                  ],
+                  [
+                    379.6,
+                    192.5
+                  ],
+                  [
+                    280.0,
+                    250.0
+                  ],
+                  [
+                    180.4,
+                    192.5
+                  ],
+                  [
+                    180.4,
+                    77.5
+                  ]
+                ],
+                "fill": "teal"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The angles inside at each corner are the interior angles.",
+          "write": "interior angles"
+        },
+        {
+          "say": "n sides means n corners, and n interior angles.",
+          "write": "n sides → n angles"
+        },
+        {
+          "say": "Five sides, pentagon. Six, hexagon. Eight, octagon. Ten, decagon.",
+          "write": "5 pent, 6 hex, 8 oct, 10 dec"
+        }
+      ]
+    },
+    {
+      "heading": "Cut it into triangles",
+      "lines": [
+        {
+          "say": "Stand at one corner of this hexagon.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 6-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    379.6,
+                    77.5
+                  ],
+                  [
+                    379.6,
+                    192.5
+                  ],
+                  [
+                    280.0,
+                    250.0
+                  ],
+                  [
+                    180.4,
+                    192.5
+                  ],
+                  [
+                    180.4,
+                    77.5
+                  ]
+                ],
+                "fill": "teal"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw a diagonal to every corner you can reach.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 6-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    379.6,
+                    77.5
+                  ],
+                  [
+                    379.6,
+                    192.5
+                  ],
+                  [
+                    280.0,
+                    250.0
+                  ],
+                  [
+                    180.4,
+                    192.5
+                  ],
+                  [
+                    180.4,
+                    77.5
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 379.6,
+                "y2": 192.5,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 280.0,
+                "y2": 250.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 180.4,
+                "y2": 192.5,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "You can't go to the two neighbours. They're already joined by sides.",
+          "write": "skip the 2 neighbours"
+        },
+        {
+          "say": "That makes 4 triangles. 6 sides take away 2.",
+          "write": "6 − 2 = 4 triangles",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 6-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    379.6,
+                    77.5
+                  ],
+                  [
+                    379.6,
+                    192.5
+                  ],
+                  [
+                    280.0,
+                    250.0
+                  ],
+                  [
+                    180.4,
+                    192.5
+                  ],
+                  [
+                    180.4,
+                    77.5
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 379.6,
+                "y2": 192.5,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 280.0,
+                "y2": 250.0,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 180.4,
+                "y2": 192.5,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "4 triangles",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each triangle holds 180 degrees. So 4 times 180 is 720.",
+          "write": "4 × 180° = 720°"
+        }
+      ]
+    },
+    {
+      "heading": "The angle sum rule",
+      "lines": [
+        {
+          "say": "An n-sided polygon makes n minus 2 triangles.",
+          "write": "n − 2 triangles"
+        },
+        {
+          "say": "So the angle sum is n minus 2, times 180 degrees.",
+          "write": "S = (n − 2) × 180°"
+        },
+        {
+          "say": "Pentagon. 5 minus 2 is 3 triangles. 540 degrees.",
+          "write": "3 × 180° = 540°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 5-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    389.4,
+                    99.5
+                  ],
+                  [
+                    347.6,
+                    228.0
+                  ],
+                  [
+                    212.4,
+                    228.0
+                  ],
+                  [
+                    170.6,
+                    99.5
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 347.6,
+                "y2": 228.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 212.4,
+                "y2": 228.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "540°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Octagon. 8 minus 2 is 6 triangles. 1080 degrees.",
+          "write": "6 × 180° = 1080°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 8-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    361.3,
+                    53.7
+                  ],
+                  [
+                    395.0,
+                    135.0
+                  ],
+                  [
+                    361.3,
+                    216.3
+                  ],
+                  [
+                    280.0,
+                    250.0
+                  ],
+                  [
+                    198.7,
+                    216.3
+                  ],
+                  [
+                    165.0,
+                    135.0
+                  ],
+                  [
+                    198.7,
+                    53.7
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 395.0,
+                "y2": 135.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 361.3,
+                "y2": 216.3,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 280.0,
+                "y2": 250.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 198.7,
+                "y2": 216.3,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 165.0,
+                "y2": 135.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "1080°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each extra side adds one triangle, so another 180 degrees.",
+          "write": "+1 side → +180°"
+        }
+      ]
+    },
+    {
+      "heading": "Regular polygons",
+      "lines": [
+        {
+          "say": "A regular polygon has all sides and all angles equal.",
+          "write": "regular = all equal"
+        },
+        {
+          "say": "So share the angle sum equally between the corners.",
+          "write": "(n − 2) × 180° ÷ n"
+        },
+        {
+          "say": "Regular hexagon. 720 divided by 6 is 120 degrees each.",
+          "write": "720 ÷ 6 = 120°"
+        },
+        {
+          "say": "Regular dodecagon. 10 times 180 is 1800. Divide by 12: 150 each.",
+          "write": "1800 ÷ 12 = 150°"
+        }
+      ]
+    },
+    {
+      "heading": "A missing angle",
+      "lines": [
+        {
+          "say": "This pentagon has one missing angle, x.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A pentagon with angles 85°, 120°, 110°, 105° and x",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    450,
+                    140
+                  ],
+                  [
+                    390,
+                    270
+                  ],
+                  [
+                    170,
+                    270
+                  ],
+                  [
+                    110,
+                    140
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 70,
+                "text": "85°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 150,
+                "text": "120°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 250,
+                "text": "110°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 250,
+                "text": "105°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 155,
+                "y": 150,
+                "text": "x",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Pentagon sum is 540. The known angles add to 420.",
+          "write": "85 + 120 + 110 + 105 = 420"
+        },
+        {
+          "say": "Subtract. 540 take away 420 is 120. So x is 120 degrees.",
+          "write": "x = 540 − 420 = 120",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A pentagon with angles 85°, 120°, 110°, 105° and x",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    450,
+                    140
+                  ],
+                  [
+                    390,
+                    270
+                  ],
+                  [
+                    170,
+                    270
+                  ],
+                  [
+                    110,
+                    140
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 70,
+                "text": "85°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 150,
+                "text": "120°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 370,
+                "y": 250,
+                "text": "110°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 190,
+                "y": 250,
+                "text": "105°",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 155,
+                "y": 150,
+                "text": "120°",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. 420 plus 120 is 540.",
+          "write": "420 + 120 = 540 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "The angles add to 1440 degrees. How many sides?",
+          "write": "(n − 2) × 180 = 1440"
+        },
+        {
+          "say": "Divide by 180. That gives 8 triangles.",
+          "write": "n − 2 = 8"
+        },
+        {
+          "say": "Now add 2. So n is 10. It's a decagon.",
+          "write": "n = 10"
+        },
+        {
+          "say": "Divide, then add 2. Don't stop at the triangles.",
+          "write": "divide, then add 2"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Not n times 180. A square isn't 720 degrees. It's 360.",
+          "write": "✗ n × 180"
+        },
+        {
+          "say": "Not every polygon adds to 360. Only quadrilaterals do.",
+          "write": "360° = 4 sides only"
+        },
+        {
+          "say": "Only share equally if the polygon is regular.",
+          "write": "÷ n only if regular"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Sides minus 2, times 180.",
+          "write": "S = (n − 2) × 180°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A 6-sided polygon split into triangles by diagonals from one corner",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280.0,
+                    20.0
+                  ],
+                  [
+                    379.6,
+                    77.5
+                  ],
+                  [
+                    379.6,
+                    192.5
+                  ],
+                  [
+                    280.0,
+                    250.0
+                  ],
+                  [
+                    180.4,
+                    192.5
+                  ],
+                  [
+                    180.4,
+                    77.5
+                  ]
+                ],
+                "fill": "teal"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 379.6,
+                "y2": 192.5,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 280.0,
+                "y2": 250.0,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 20.0,
+                "x2": 180.4,
+                "y2": 192.5,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "720°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Fan out from one corner if you forget.",
+          "write": "fan from one corner"
+        },
+        {
+          "say": "Count up in 180s. 180, 360, 540, 720.",
+          "write": "180, 360, 540, 720 …"
+        }
+      ]
+    }
+  ]
+}

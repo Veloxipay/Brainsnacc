@@ -1,0 +1,1602 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Logic puzzles and systematic counting",
+  "frames": [
+    {
+      "heading": "Count like an odometer",
+      "lines": [
+        {
+          "say": "Random guessing misses some cases and repeats others.",
+          "write": "be systematic"
+        },
+        {
+          "say": "Make two-digit numbers from 1, 2 and 3, no repeats. Fix the first digit at 1.",
+          "write": "12, 13",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "listing two-digit numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 40,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "12",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 120,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "13",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "2 so far",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now move the first digit on to 2. Run through the rest.",
+          "write": "21, 23",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "listing two-digit numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 40,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 120,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 40,
+                "w": 110,
+                "h": 60,
+                "fill": "orange",
+                "label": "21",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 120,
+                "w": 110,
+                "h": 60,
+                "fill": "orange",
+                "label": "23",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "4 so far",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then 3. That gives six numbers, none missed.",
+          "write": "31, 32",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "listing two-digit numbers",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 40,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 120,
+                "w": 110,
+                "h": 60,
+                "fill": "blue",
+                "label": "13"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 40,
+                "w": 110,
+                "h": 60,
+                "fill": "orange",
+                "label": "21"
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 120,
+                "w": 110,
+                "h": 60,
+                "fill": "orange",
+                "label": "23"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 40,
+                "w": 110,
+                "h": 60,
+                "fill": "green",
+                "label": "31",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 120,
+                "w": 110,
+                "h": 60,
+                "fill": "green",
+                "label": "32",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "6 numbers",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Fix the first choice. Roll through the others. Then move on.",
+          "write": "fix first, roll the rest"
+        }
+      ]
+    },
+    {
+      "heading": "The multiplication principle",
+      "lines": [
+        {
+          "say": "A café has 3 drinks, 4 sandwiches and 2 desserts.",
+          "write": "3 × 4 × 2"
+        },
+        {
+          "say": "Each drink pairs with every sandwich. That's 3 times 4, which is 12.",
+          "write": "3 × 4 = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "drinks paired with sandwiches",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 50,
+                "r": 26,
+                "fill": "blue",
+                "label": "D1"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 130,
+                "r": 26,
+                "fill": "blue",
+                "label": "D2"
+              },
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 210,
+                "r": 26,
+                "fill": "blue",
+                "label": "D3"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 40,
+                "r": 22,
+                "fill": "orange",
+                "label": "S1"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 100,
+                "r": 22,
+                "fill": "orange",
+                "label": "S2"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 160,
+                "r": 22,
+                "fill": "orange",
+                "label": "S3"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 220,
+                "r": 22,
+                "fill": "orange",
+                "label": "S4"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 50,
+                "x2": 378,
+                "y2": 40,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 50,
+                "x2": 378,
+                "y2": 100,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 50,
+                "x2": 378,
+                "y2": 160,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 50,
+                "x2": 378,
+                "y2": 220,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 130,
+                "x2": 378,
+                "y2": 40,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 130,
+                "x2": 378,
+                "y2": 100,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 130,
+                "x2": 378,
+                "y2": 160,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 130,
+                "x2": 378,
+                "y2": 220,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 210,
+                "x2": 378,
+                "y2": 40,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 210,
+                "x2": 378,
+                "y2": 100,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 210,
+                "x2": 378,
+                "y2": 160,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 106,
+                "y": 210,
+                "x2": 378,
+                "y2": 220,
+                "color": "grey",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then each of those goes with 2 desserts. 12 times 2 is 24.",
+          "write": "24 meal deals"
+        },
+        {
+          "say": "And means times. Don't add the choices.",
+          "write": "AND → ×"
+        }
+      ]
+    },
+    {
+      "heading": "Restrictions go first",
+      "lines": [
+        {
+          "say": "Make even three-digit numbers from 1, 2, 3, 4. No repeats.",
+          "write": "even, no repeats"
+        },
+        {
+          "say": "The fussy spot is the last digit. It must be 2 or 4.",
+          "write": "last: 2 ways",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "three slots",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 120,
+                "h": 90,
+                "fill": "white",
+                "label": "?"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 120,
+                "h": 90,
+                "fill": "white",
+                "label": "?"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 120,
+                "h": 90,
+                "fill": "yellow",
+                "label": "2",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 190,
+                "text": "2 or 4",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then the first digit has 3 left, and the middle has 2.",
+          "write": "3 × 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 230,
+            "alt": "three slots filled",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 60,
+                "w": 120,
+                "h": 90,
+                "fill": "blue",
+                "label": "3",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 60,
+                "w": 120,
+                "h": 90,
+                "fill": "blue",
+                "label": "2",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 120,
+                "h": 90,
+                "fill": "yellow",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 200,
+                "text": "3 × 2 × 2 = 12",
+                "size": 28,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So 12 even numbers. Fill the fussy position first.",
+          "write": "= 12"
+        }
+      ]
+    },
+    {
+      "heading": "Handshakes halve",
+      "lines": [
+        {
+          "say": "Six players each play every other player once.",
+          "write": "6 players"
+        },
+        {
+          "say": "Each plays 5 others. 6 times 5 is 30.",
+          "write": "6 × 5 = 30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "six players and their games",
+            "items": [
+              {
+                "kind": "line",
+                "x": 410.0,
+                "y": 150.0,
+                "x2": 344.99972430543096,
+                "y2": 245.26292910018975,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 410.0,
+                "y": 150.0,
+                "x2": 214.99944861203124,
+                "y2": 245.2625250467715,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 410.0,
+                "y": 150.0,
+                "x2": 150.00000000350803,
+                "y2": 149.99919189487733,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 410.0,
+                "y": 150.0,
+                "x2": 215.00110278061493,
+                "y2": 54.73666685153334,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 410.0,
+                "y": 150.0,
+                "x2": 345.0013784669986,
+                "y2": 54.73787901178805,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 344.99972430543096,
+                "y": 245.26292910018975,
+                "x2": 214.99944861203124,
+                "y2": 245.2625250467715,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 344.99972430543096,
+                "y": 245.26292910018975,
+                "x2": 150.00000000350803,
+                "y2": 149.99919189487733,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 344.99972430543096,
+                "y": 245.26292910018975,
+                "x2": 215.00110278061493,
+                "y2": 54.73666685153334,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 344.99972430543096,
+                "y": 245.26292910018975,
+                "x2": 345.0013784669986,
+                "y2": 54.73787901178805,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 214.99944861203124,
+                "y": 245.2625250467715,
+                "x2": 150.00000000350803,
+                "y2": 149.99919189487733,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 214.99944861203124,
+                "y": 245.2625250467715,
+                "x2": 215.00110278061493,
+                "y2": 54.73666685153334,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 214.99944861203124,
+                "y": 245.2625250467715,
+                "x2": 345.0013784669986,
+                "y2": 54.73787901178805,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 150.00000000350803,
+                "y": 149.99919189487733,
+                "x2": 215.00110278061493,
+                "y2": 54.73666685153334,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 150.00000000350803,
+                "y": 149.99919189487733,
+                "x2": 345.0013784669986,
+                "y2": 54.73787901178805,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 215.00110278061493,
+                "y": 54.73666685153334,
+                "x2": 345.0013784669986,
+                "y2": 54.73787901178805,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 410.0,
+                "y": 150.0,
+                "r": 24,
+                "fill": "teal",
+                "label": "1"
+              },
+              {
+                "kind": "circle",
+                "x": 344.99972430543096,
+                "y": 245.26292910018975,
+                "r": 24,
+                "fill": "teal",
+                "label": "2"
+              },
+              {
+                "kind": "circle",
+                "x": 214.99944861203124,
+                "y": 245.2625250467715,
+                "r": 24,
+                "fill": "teal",
+                "label": "3"
+              },
+              {
+                "kind": "circle",
+                "x": 150.00000000350803,
+                "y": 149.99919189487733,
+                "r": 24,
+                "fill": "teal",
+                "label": "4"
+              },
+              {
+                "kind": "circle",
+                "x": 215.00110278061493,
+                "y": 54.73666685153334,
+                "r": 24,
+                "fill": "teal",
+                "label": "5"
+              },
+              {
+                "kind": "circle",
+                "x": 345.0013784669986,
+                "y": 54.73787901178805,
+                "r": 24,
+                "fill": "teal",
+                "label": "6"
+              }
+            ]
+          }
+        },
+        {
+          "say": "But Ana playing Ben is the same game as Ben playing Ana.",
+          "write": "counted twice"
+        },
+        {
+          "say": "So halve it. 30 divided by 2 is 15 games.",
+          "write": "30 ÷ 2 = 15"
+        },
+        {
+          "say": "For n people, the rule is n times n minus 1, halved.",
+          "write": "n × (n − 1) ÷ 2"
+        }
+      ]
+    },
+    {
+      "heading": "Routes on a grid",
+      "lines": [
+        {
+          "say": "You may only go right or up. How many shortest routes from A to B?",
+          "diagram": "diagrams/y7/maths-advanced/logic-puzzles-and-systematic-counting-paths.svg",
+          "alt": "2 by 2 grid with route counts 1, 1, 1, 2, 3 and 6 at B"
+        },
+        {
+          "say": "Each corner gets the number on its left plus the number below.",
+          "write": "left + below"
+        },
+        {
+          "say": "Edges have 1 route each. The middle gets 1 plus 1, which is 2.",
+          "write": "1 + 1 = 2"
+        },
+        {
+          "say": "Keep adding. B gets 3 plus 3, which is 6 routes.",
+          "write": "B: 3 + 3 = 6"
+        }
+      ]
+    },
+    {
+      "heading": "Logic grids",
+      "lines": [
+        {
+          "say": "Mia, Noah and Oli like apple, banana or cherry. Make a grid.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "logic grid",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 40,
+                "text": "Apple",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 40,
+                "text": "Banana",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "Cherry",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 95,
+                "text": "Mia",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 155,
+                "text": "Noah",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 215,
+                "text": "Oli",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Noah's fruit is yellow, so banana. Tick it, cross the rest of that row and column.",
+          "write": "Noah ✓ banana",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "logic grid",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 40,
+                "text": "Apple",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 40,
+                "text": "Banana",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "Cherry",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 95,
+                "text": "Mia",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 155,
+                "text": "Noah",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 215,
+                "text": "Oli",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 160,
+                "text": "✓",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 160,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 160,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 100,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 220,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Mia doesn't like apples. Only cherry is left for her.",
+          "write": "Mia ✓ cherry",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "logic grid",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 40,
+                "text": "Apple",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 40,
+                "text": "Banana",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "Cherry",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 95,
+                "text": "Mia",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 155,
+                "text": "Noah",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 215,
+                "text": "Oli",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 160,
+                "text": "✓",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 160,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 160,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 100,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 220,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 100,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 100,
+                "text": "✓",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 220,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So Oli gets the apple.",
+          "write": "Oli ✓ apple",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "logic grid",
+            "items": [
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 40,
+                "text": "Apple",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 40,
+                "text": "Banana",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "Cherry",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 95,
+                "text": "Mia",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 65,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 155,
+                "text": "Noah",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 125,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 90,
+                "y": 215,
+                "text": "Oli",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 185,
+                "w": 100,
+                "h": 50,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 160,
+                "text": "✓",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 160,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 160,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 100,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 220,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 100,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 100,
+                "text": "✓",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 220,
+                "text": "✗",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 220,
+                "text": "✓",
+                "size": 26,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "3 drinks and 4 sandwiches is not 7 meals. Multiply, don't add.",
+          "write": "✗ 3 + 4   ✓ 3 × 4"
+        },
+        {
+          "say": "If swapping the two people gives the same thing, divide by 2.",
+          "write": "pairs → ÷ 2"
+        },
+        {
+          "say": "Deal with the restricted position first, not last.",
+          "write": "fussy first"
+        },
+        {
+          "say": "After every tick, go back and check all the clues again.",
+          "write": "re-check clues"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "List in a fixed order, like an odometer.",
+          "write": "fixed order"
+        },
+        {
+          "say": "And means times. Fussy positions first.",
+          "write": "AND → ×"
+        },
+        {
+          "say": "Handshakes halve: n times n minus 1, over 2.",
+          "write": "n(n − 1) ÷ 2"
+        },
+        {
+          "say": "Grid routes add up from the left and below.",
+          "write": "left + below"
+        },
+        {
+          "say": "Logic puzzles: grid, ticks and crosses, one clue at a time.",
+          "write": "✓ and ✗"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Zero and negative indices",
+  "frames": [
+    {
+      "heading": "The staircase pattern",
+      "lines": [
+        {
+          "say": "2 cubed is 8. Each step down, the index drops by 1 and we divide by 2.",
+          "write": "2³ = 8, 2² = 4, 2¹ = 2",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Staircase of powers of 2 from 2 cubed down to 2 to the 1",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 40, "w": 75, "h": 50, "fill": "blue", "label": "8" },
+              { "kind": "rect", "x": 95, "y": 80, "w": 75, "h": 50, "fill": "blue", "label": "4" },
+              { "kind": "rect", "x": 170, "y": 120, "w": 75, "h": 50, "fill": "blue", "label": "2" },
+              { "kind": "text", "x": 57, "y": 30, "text": "2³", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 132, "y": 70, "text": "2²", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 207, "y": 110, "text": "2¹", "size": 20, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "Keep going. Step 0 is 1. Then a half, a quarter, an eighth.",
+          "write": "2⁰ = 1, 2⁻¹ = ½, 2⁻³ = ⅛",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 320, "alt": "Staircase continues to 2 to the 0 = 1 and negative powers giving fractions",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 40, "w": 75, "h": 50, "fill": "blue", "label": "8" },
+              { "kind": "rect", "x": 95, "y": 80, "w": 75, "h": 50, "fill": "blue", "label": "4" },
+              { "kind": "rect", "x": 170, "y": 120, "w": 75, "h": 50, "fill": "blue", "label": "2" },
+              { "kind": "rect", "x": 245, "y": 160, "w": 75, "h": 50, "fill": "yellow", "label": "1", "change": "add" },
+              { "kind": "rect", "x": 320, "y": 200, "w": 75, "h": 50, "fill": "green", "label": "1/2", "change": "add" },
+              { "kind": "rect", "x": 395, "y": 240, "w": 75, "h": 50, "fill": "green", "label": "1/4", "change": "add" },
+              { "kind": "rect", "x": 470, "y": 270, "w": 75, "h": 46, "fill": "green", "label": "1/8", "change": "add" },
+              { "kind": "text", "x": 57, "y": 30, "text": "2³", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 132, "y": 70, "text": "2²", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 207, "y": 110, "text": "2¹", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 282, "y": 150, "text": "2⁰", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 357, "y": 190, "text": "2⁻¹", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 432, "y": 230, "text": "2⁻²", "size": 20, "anchor": "middle" },
+              { "kind": "text", "x": 507, "y": 262, "text": "2⁻³", "size": 20, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "A negative step doesn't make the value negative. It's still positive." }
+      ]
+    },
+    {
+      "heading": "The zero index",
+      "lines": [
+        { "say": "x to the 5 divided by x to the 5. Subtract the indices. x to the 0.", "write": "x⁵ ÷ x⁵ = x⁰" },
+        { "say": "But anything divided by itself is 1.", "write": "x⁵ ÷ x⁵ = 1" },
+        { "say": "So any number, except 0, to the power 0 is 1.", "write": "a⁰ = 1" },
+        { "say": "6 x to the 0 is 6 times 1, which is 6.", "write": "6x⁰ = 6" },
+        { "say": "But the bracket 6x, to the 0, is 1.", "write": "(6x)⁰ = 1" }
+      ]
+    },
+    {
+      "heading": "Negative indices",
+      "lines": [
+        { "say": "x squared divided by x to the 5 is x to the minus 3.", "write": "x² ÷ x⁵ = x⁻³" },
+        {
+          "say": "Write it out. Two x's on top, five underneath.",
+          "write": "(x × x)/(x × x × x × x × x)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Two x's over five x's",
+            "items": [
+              { "kind": "text", "x": 280, "y": 80, "text": "x × x", "size": 32, "bold": true, "anchor": "middle" },
+              { "kind": "line", "x": 120, "y": 105, "x2": 440, "y2": 105, "color": "black" },
+              { "kind": "text", "x": 280, "y": 150, "text": "x × x × x × x × x", "size": 32, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "Two x's cancel. That leaves 1 over x cubed.",
+          "write": "x⁻³ = 1/x³",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Two pairs cancelled, leaving 1 over x cubed",
+            "items": [
+              { "kind": "text", "x": 280, "y": 80, "text": "x × x", "size": 32, "bold": true, "anchor": "middle", "change": "remove" },
+              { "kind": "line", "x": 120, "y": 105, "x2": 440, "y2": 105, "color": "black" },
+              { "kind": "text", "x": 200, "y": 150, "text": "x × x ×", "size": 32, "bold": true, "anchor": "middle", "change": "remove" },
+              { "kind": "text", "x": 350, "y": 150, "text": "x × x × x", "size": 32, "bold": true, "anchor": "middle", "change": "highlight" },
+              { "kind": "text", "x": 500, "y": 80, "text": "1", "size": 32, "bold": true, "color": "green", "anchor": "middle", "change": "add" }
+            ]
+          }
+        },
+        { "say": "A negative index means one over the positive power. The reciprocal.", "write": "a⁻ⁿ = 1/aⁿ" },
+        { "say": "4 to the minus 3 is 1 over 64.", "write": "4⁻³ = 1/4³ = 1/64" }
+      ]
+    },
+    {
+      "heading": "Coefficients, brackets, fractions",
+      "lines": [
+        { "say": "5 x to the minus 2. Only the x moves. The 5 stays on top.", "write": "5x⁻² = 5/x²" },
+        { "say": "The bracket 5x, to the minus 2. The whole bracket moves underneath.", "write": "(5x)⁻² = 1/(25x²)" },
+        { "say": "A negative index on a fraction flips the fraction.", "write": "(2/3)⁻² = (3/2)² = 9/4" },
+        { "say": "7 to the 0 plus 3 to the minus 2 is 1 plus a ninth.", "write": "7⁰ + 3⁻² = 1 1/9" }
+      ]
+    },
+    {
+      "heading": "Index laws still work",
+      "lines": [
+        { "say": "x cubed times x to the minus 8. Add the indices. Minus 5.", "write": "x³ × x⁻⁸ = x⁻⁵ = 1/x⁵" },
+        { "say": "3 a to the minus 2, all cubed. That's 27 a to the minus 6.", "write": "(3a⁻²)³ = 27a⁻⁶" },
+        { "say": "Times a to the 9. Minus 6 plus 9 is 3.", "write": "27a⁻⁶ × a⁹ = 27a³" },
+        { "say": "n to the minus 3 over n to the minus 4. Minus 3 minus minus 4 is 1.", "write": "n⁻³ ÷ n⁻⁴ = n" },
+        { "say": "When asked for positive indices, simplify first, then move negative powers across.", "write": "5m⁻³n = 5n/m³" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "2 to the minus 3 is an eighth, not minus 8.", "write": "✗ 2⁻³ = −8" },
+        { "say": "5 to the 0 is 1, not 0.", "write": "✗ 5⁰ = 0" },
+        { "say": "Don't move the coefficient. 5 x to the minus 2 is 5 over x squared.", "write": "✗ 5x⁻² = 1/(5x²)" },
+        { "say": "Subtracting a negative means adding.", "write": "−3 − (−4) = 1" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Negative means flip, not minus.", "write": "a⁻ⁿ = 1/aⁿ" },
+        { "say": "Zero hero. Anything except 0, to the power 0, is 1.", "write": "a⁰ = 1" },
+        { "say": "Fractions flip. Then use the positive power.", "write": "(a/b)⁻ⁿ = (b/a)ⁿ" },
+        { "say": "A positive base to any power is always positive.", "write": "check the sign" }
+      ]
+    }
+  ]
+}

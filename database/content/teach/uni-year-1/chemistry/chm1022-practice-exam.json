@@ -1,0 +1,134 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "CHM1022 practice exam",
+  "frames": [
+    {
+      "heading": "How to use this practice exam",
+      "lines": [
+        {"say": "Treat this paper as a dress rehearsal. Two hours, plus ten minutes reading.", "write": "2 h + 10 min reading",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Exam split: short answer 80 minutes for 40 marks, multiple choice 40 minutes for 20 marks", "items": [
+           {"kind": "rect", "x": 30, "y": 50, "w": 330, "h": 90, "fill": "blue", "label": "Short answer: 80 min"},
+           {"kind": "rect", "x": 360, "y": 50, "w": 170, "h": 90, "fill": "orange", "label": "MCQ: 40 min"},
+           {"kind": "text", "x": 195, "y": 180, "text": "40 marks", "size": 22, "bold": true},
+           {"kind": "text", "x": 445, "y": 180, "text": "20 marks", "size": 22, "bold": true}
+         ]}},
+        {"say": "Organic exams reward reasons. Name the mechanism and justify it from the conditions.", "write": "name it, justify it"},
+        {"say": "Describe curly arrows in words, from where to where.", "write": "arrows: from → to"},
+        {"say": "Answer first, then mark yourself. Revise any topic where you lost half.", "write": "< 50% → revise lesson"}
+      ]
+    },
+    {
+      "heading": "Naming and stereochemistry",
+      "lines": [
+        {"say": "The ketone is the principal group. Number from the end nearer the C=O.", "write": "4-methylhexan-2-one"},
+        {"say": "Rank by atomic number. OH first, then ethyl, then methyl, H last.", "write": "OH > CH₂CH₃ > CH₃ > H"},
+        {"say": "H points away and one, two, three runs clockwise. So it's R.", "write": "clockwise → R",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Stereocentre with priorities 1, 2, 3 arranged clockwise and H pointing away", "items": [
+           {"kind": "circle", "x": 280, "y": 130, "r": 26, "fill": "grey", "label": "C"},
+           {"kind": "circle", "x": 280, "y": 40, "r": 26, "fill": "red", "label": "1"},
+           {"kind": "circle", "x": 370, "y": 185, "r": 26, "fill": "orange", "label": "2"},
+           {"kind": "circle", "x": 190, "y": 185, "r": 26, "fill": "blue", "label": "3"},
+           {"kind": "arrow", "x": 315, "y": 50, "x2": 380, "y2": 145, "color": "purple", "change": "add"},
+           {"kind": "arrow", "x": 335, "y": 205, "x2": 225, "y2": 205, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 470, "y": 135, "text": "R", "size": 34, "bold": true, "color": "purple", "change": "add"},
+           {"kind": "text", "x": 90, "y": 60, "text": "H away", "size": 18}
+         ]}},
+        {"say": "Two stereocentres and no meso form, so four stereoisomers in two enantiomer pairs.", "write": "2² = 4 stereoisomers"}
+      ]
+    },
+    {
+      "heading": "Mechanisms",
+      "lines": [
+        {"say": "Primary substrate, cyanide and DMSO. That's SN2, giving pentanenitrile.", "write": "SN2: rate = k[RBr][CN⁻]"},
+        {"say": "Double the cyanide and the rate doubles.", "write": "[CN⁻] ×2 → rate ×2"},
+        {"say": "Tertiary bromide in water goes SN1. Backside attack is blocked.", "write": "SN1 → (CH₃)₃COH"},
+        {"say": "Methylpropene plus HBr. H adds to the CH two end, giving a tertiary carbocation.", "write": "3° C⁺ → (CH₃)₃CBr",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Two possible carbocations: tertiary is chosen and primary is crossed out", "items": [
+           {"kind": "rect", "x": 30, "y": 60, "w": 220, "h": 80, "fill": "green", "label": "3° C⁺ (stable)", "change": "highlight"},
+           {"kind": "rect", "x": 310, "y": 60, "w": 220, "h": 80, "fill": "grey", "label": "1° C⁺", "change": "remove"},
+           {"kind": "text", "x": 140, "y": 190, "text": "Markovnikov ✓", "size": 22, "bold": true, "color": "green"},
+           {"kind": "text", "x": 420, "y": 190, "text": "too unstable", "size": 20, "color": "red"}
+         ]}}
+      ]
+    },
+    {
+      "heading": "Planning a synthesis",
+      "lines": [
+        {"say": "Bromoethane to propanoic acid. Add one carbon with cyanide, then hydrolyse.", "write": "KCN/EtOH, then H₃O⁺",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Bromoethane to propanenitrile to propanoic acid, with step yields 75 and 90 percent", "items": [
+           {"kind": "rect", "x": 10, "y": 60, "w": 150, "h": 60, "fill": "blue", "label": "CH₃CH₂Br"},
+           {"kind": "arrow", "x": 160, "y": 90, "x2": 205, "y2": 90, "color": "black"},
+           {"kind": "rect", "x": 205, "y": 60, "w": 150, "h": 60, "fill": "orange", "label": "CH₃CH₂CN", "change": "add"},
+           {"kind": "arrow", "x": 355, "y": 90, "x2": 400, "y2": 90, "color": "black"},
+           {"kind": "rect", "x": 400, "y": 60, "w": 150, "h": 60, "fill": "green", "label": "CH₃CH₂COOH", "change": "add"},
+           {"kind": "text", "x": 182, "y": 50, "text": "75%", "size": 18},
+           {"kind": "text", "x": 378, "y": 50, "text": "90%", "size": 18},
+           {"kind": "text", "x": 280, "y": 170, "text": "0.75 × 0.90 = 67.5%", "size": 22, "bold": true, "color": "purple"}
+         ]}},
+        {"say": "Or make a Grignard, add carbon dioxide, then acid work-up.", "write": "Mg/ether, CO₂, H₃O⁺"},
+        {"say": "Yields multiply. 75 times 90 percent is 67.5 percent overall.", "write": "overall = 67.5%"},
+        {"say": "From ten grams, that's 4.59 grams of propanoic acid.", "write": "mass = 4.59 g"},
+        {"say": "For a tertiary alcohol, disconnect a C–C bond at the OH carbon.", "write": "CH₃MgBr + butanone"}
+      ]
+    },
+    {
+      "heading": "Carbonyl and aromatic",
+      "lines": [
+        {"say": "Acid chloride, then ester, then amide. Give both reasons.", "write": "RCOCl > ester > amide"},
+        {"say": "Leaving group: chloride is a weak base. Resonance: nitrogen donates most.", "write": "leaving group + resonance"},
+        {"say": "To make propylbenzene, acylate then reduce. Alkylation would rearrange.", "write": "acylium: no rearrangement"},
+        {"say": "Methyl directs ortho and para. The acyl group directs meta.", "write": "CH₃: o/p   COCH₃: meta",
+         "draw": {"type": "shapes", "width": 560, "height": 250, "alt": "Methylbenzene with ortho and para marked; phenylethanone with meta marked", "items": [
+           {"kind": "polygon", "points": [[140,60],[200,95],[200,165],[140,200],[80,165],[80,95]], "fill": "none"},
+           {"kind": "text", "x": 140, "y": 45, "text": "CH₃", "size": 18, "bold": true},
+           {"kind": "circle", "x": 212, "y": 88, "r": 11, "fill": "green", "change": "add"},
+           {"kind": "circle", "x": 68, "y": 88, "r": 11, "fill": "green", "change": "add"},
+           {"kind": "circle", "x": 140, "y": 215, "r": 11, "fill": "green", "change": "add"},
+           {"kind": "polygon", "points": [[420,60],[480,95],[480,165],[420,200],[360,165],[360,95]], "fill": "none"},
+           {"kind": "text", "x": 420, "y": 45, "text": "COCH₃", "size": 18, "bold": true},
+           {"kind": "circle", "x": 492, "y": 172, "r": 11, "fill": "orange", "change": "add"},
+           {"kind": "circle", "x": 348, "y": 172, "r": 11, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 140, "y": 245, "text": "o/p, faster", "size": 18},
+           {"kind": "text", "x": 420, "y": 245, "text": "meta, slower", "size": 18}
+         ]}},
+        {"say": "Methylbenzene reacts faster, because methyl stabilises the arenium ion.", "write": "methylbenzene faster"}
+      ]
+    },
+    {
+      "heading": "Structure and metals",
+      "lines": [
+        {"say": "C four H eight O two has one degree of unsaturation.", "write": "DoU = (8 + 2 − 8)/2 = 1"},
+        {"say": "1740 means an ester C=O. No broad O–H. 43 is CH three CO plus.", "write": "IR 1740, m/z 43"},
+        {"say": "Quartet at 4.12 and triplet at 1.26 make an ethyl on oxygen.", "write": "–O–CH₂–CH₃",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Three NMR peaks: quartet at 4.12, singlet at 2.05, triplet at 1.26", "items": [
+           {"kind": "line", "x": 30, "y": 200, "x2": 530, "y2": 200, "color": "black"},
+           {"kind": "rect", "x": 110, "y": 120, "w": 8, "h": 80, "fill": "blue"},
+           {"kind": "rect", "x": 122, "y": 80, "w": 8, "h": 120, "fill": "blue"},
+           {"kind": "rect", "x": 134, "y": 80, "w": 8, "h": 120, "fill": "blue"},
+           {"kind": "rect", "x": 146, "y": 120, "w": 8, "h": 80, "fill": "blue"},
+           {"kind": "rect", "x": 290, "y": 40, "w": 10, "h": 160, "fill": "orange", "change": "highlight"},
+           {"kind": "rect", "x": 430, "y": 110, "w": 8, "h": 90, "fill": "blue"},
+           {"kind": "rect", "x": 444, "y": 60, "w": 8, "h": 140, "fill": "blue"},
+           {"kind": "rect", "x": 458, "y": 110, "w": 8, "h": 90, "fill": "blue"},
+           {"kind": "text", "x": 132, "y": 228, "text": "4.12 q", "size": 18},
+           {"kind": "text", "x": 295, "y": 228, "text": "2.05 s", "size": 18},
+           {"kind": "text", "x": 448, "y": 228, "text": "1.26 t", "size": 18}
+         ]}},
+        {"say": "Singlet at 2.05 is CH three next to C=O. So it's ethyl ethanoate.", "write": "CH₃COOCH₂CH₃"},
+        {"say": "In hexacyanidoferrate two, iron is plus two and d six.", "write": "Fe²⁺, d⁶"},
+        {"say": "Cyanide is strong-field: low spin, zero unpaired. Water is weak-field: four unpaired.", "write": "μ = √24 = 4.90 μ_B"},
+        {"say": "Absorbing 510 nanometres gives delta o of 235 kilojoules per mole.", "write": "Δₒ = 235 kJ mol⁻¹"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Name the mechanism, then justify it from substrate and conditions.", "write": "substrate + conditions"},
+        {"say": "Show every curly arrow, from electrons to where they go.", "write": "arrows: from → to"},
+        {"say": "Count carbons in every synthesis step.", "write": "count carbons"},
+        {"say": "Mark yourself honestly, then go back to weak topics.", "write": "mark, then revise"}
+      ]
+    }
+  ]
+}

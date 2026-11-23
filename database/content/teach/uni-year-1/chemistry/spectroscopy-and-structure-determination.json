@@ -1,0 +1,132 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Spectroscopy and structure determination",
+  "frames": [
+    {
+      "heading": "Start with the formula",
+      "lines": [
+        {"say": "The degree of unsaturation counts rings plus pi bonds.", "write": "DoU = (2C + 2 + N − H − X)/2"},
+        {"say": "Ignore the oxygen, halve the gap.", "write": "O and S ignored"},
+        {"say": "For C four H eight O two: eight plus two minus eight, halved. That's one.", "write": "C₄H₈O₂: DoU = 1"},
+        {"say": "A ring or a double bond counts one. A triple bond counts two.", "write": "ring/C=C/C=O 1, C≡N 2"},
+        {"say": "Benzene counts four. DoU four with six carbons probably means benzene.", "write": "benzene = 4"}
+      ]
+    },
+    {
+      "heading": "Mass spectrometry",
+      "lines": [
+        {"say": "Electrons knock one electron out, making the molecular ion.", "write": "M → M⁺•"},
+        {"say": "The molecular ion gives the molecular mass. The tallest peak is the base peak.", "write": "M⁺• = Mᵣ,  tallest = base",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Mass spectrum with base peak at 43 and molecular ion at 88", "items": [
+           {"kind": "line", "x": 40, "y": 200, "x2": 530, "y2": 200, "color": "black"},
+           {"kind": "rect", "x": 100, "y": 150, "w": 10, "h": 50, "fill": "blue"},
+           {"kind": "rect", "x": 200, "y": 30, "w": 10, "h": 170, "fill": "orange", "change": "highlight"},
+           {"kind": "rect", "x": 320, "y": 160, "w": 10, "h": 40, "fill": "blue"},
+           {"kind": "rect", "x": 460, "y": 140, "w": 10, "h": 60, "fill": "red", "change": "highlight"},
+           {"kind": "text", "x": 205, "y": 225, "text": "43 base", "size": 18, "bold": true},
+           {"kind": "text", "x": 465, "y": 225, "text": "88 M⁺•", "size": 18, "bold": true, "color": "red"},
+           {"kind": "text", "x": 520, "y": 30, "text": "m/z →", "size": 16, "anchor": "end"}
+         ]}},
+        {"say": "Chlorine gives M and M plus two in three to one. Bromine is one to one.", "write": "Cl 3 : 1,  Br 1 : 1"},
+        {"say": "Common fragments: 15 is CH three, 43 is CH three CO, 77 is phenyl.", "write": "15, 29, 43, 77, 91"},
+        {"say": "An odd molecular mass means an odd number of nitrogens.", "write": "odd Mᵣ → odd N"}
+      ]
+    },
+    {
+      "heading": "Infrared",
+      "lines": [
+        {"say": "IR asks two big questions. Is there a sword at 1700?", "write": "C=O 1680–1750, sharp",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "IR spectrum with a broad O-H dip near 3300 and a sharp C=O dip near 1700", "items": [
+           {"kind": "line", "x": 30, "y": 40, "x2": 530, "y2": 40, "color": "black"},
+           {"kind": "polygon", "points": [[90,40],[130,150],[170,160],[210,40]], "fill": "teal", "change": "add"},
+           {"kind": "polygon", "points": [[330,40],[340,200],[350,40]], "fill": "red", "change": "add"},
+           {"kind": "text", "x": 150, "y": 195, "text": "~3300 beard", "size": 18},
+           {"kind": "text", "x": 340, "y": 225, "text": "~1700 sword", "size": 18, "bold": true},
+           {"kind": "text", "x": 470, "y": 80, "text": "fingerprint", "size": 16},
+           {"kind": "text", "x": 470, "y": 100, "text": "< 1500", "size": 16}
+         ]}},
+        {"say": "Is there a beard at 3300? That's a broad O–H.", "write": "O–H 3200–3550, broad"},
+        {"say": "A carboxylic acid has both, with a huge beard down to 2500.", "write": "acid O–H 2500–3300"},
+        {"say": "Esters sit around 1735 to 1750. Amides sit lower.", "write": "ester ~1740, amide ~1670"}
+      ]
+    },
+    {
+      "heading": "Proton NMR: four clues",
+      "lines": [
+        {"say": "Number of signals means number of different H environments.", "write": "1. how many"},
+        {"say": "Chemical shift. Electronegative neighbours push signals left, downfield.", "write": "2. where (δ)",
+         "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Chemical shift scale from 0 on the right to 12 on the left with typical environments marked", "items": [
+           {"kind": "arrow", "x": 530, "y": 100, "x2": 30, "y2": 100, "color": "black"},
+           {"kind": "text", "x": 500, "y": 80, "text": "alkyl 1", "size": 16},
+           {"kind": "text", "x": 420, "y": 130, "text": "C=O 2", "size": 16},
+           {"kind": "text", "x": 340, "y": 80, "text": "O 3.5–4", "size": 16},
+           {"kind": "text", "x": 230, "y": 130, "text": "aromatic 7", "size": 16},
+           {"kind": "text", "x": 130, "y": 80, "text": "CHO 10", "size": 16},
+           {"kind": "text", "x": 60, "y": 130, "text": "COOH 12", "size": 16},
+           {"kind": "text", "x": 280, "y": 180, "text": "← downfield (deshielded)", "size": 18, "bold": true, "color": "purple"}
+         ]}},
+        {"say": "Integration gives the ratio of hydrogens. Scale it with the formula.", "write": "3. how big (ratio)"},
+        {"say": "Splitting: count the neighbours, add one.", "write": "4. how split: n + 1"}
+      ]
+    },
+    {
+      "heading": "Splitting patterns",
+      "lines": [
+        {"say": "A CH three next to a CH two has two neighbours. So it's a triplet.", "write": "CH₃–CH₂: CH₃ = triplet",
+         "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Ethyl group: CH2 quartet and CH3 triplet", "items": [
+           {"kind": "line", "x": 30, "y": 170, "x2": 530, "y2": 170, "color": "black"},
+           {"kind": "rect", "x": 120, "y": 110, "w": 8, "h": 60, "fill": "blue"},
+           {"kind": "rect", "x": 134, "y": 60, "w": 8, "h": 110, "fill": "blue"},
+           {"kind": "rect", "x": 148, "y": 60, "w": 8, "h": 110, "fill": "blue"},
+           {"kind": "rect", "x": 162, "y": 110, "w": 8, "h": 60, "fill": "blue"},
+           {"kind": "rect", "x": 380, "y": 100, "w": 8, "h": 70, "fill": "orange", "change": "add"},
+           {"kind": "rect", "x": 394, "y": 40, "w": 8, "h": 130, "fill": "orange", "change": "add"},
+           {"kind": "rect", "x": 408, "y": 100, "w": 8, "h": 70, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 145, "y": 200, "text": "CH₂ quartet (2H)", "size": 18},
+           {"kind": "text", "x": 400, "y": 200, "text": "CH₃ triplet (3H)", "size": 18, "bold": true}
+         ]}},
+        {"say": "The CH two has three neighbours, so it's a quartet. Ethyl is triplet plus quartet.", "write": "ethyl: t (3H) + q (2H)"},
+        {"say": "Isopropyl gives a doublet of six and a septet of one.", "write": "isopropyl: d (6H) + sept (1H)"},
+        {"say": "A CH three by C=O with no H neighbours is a singlet.", "write": "CH₃–C=O: singlet"},
+        {"say": "O–H usually shows as a broad singlet.", "write": "O–H: broad singlet"}
+      ]
+    },
+    {
+      "heading": "Carbon-13 and the strategy",
+      "lines": [
+        {"say": "Carbon NMR gives one line per carbon environment.", "write": "¹³C: 1 line per C type"},
+        {"say": "Alkyl 10 to 40. C–O 50 to 90. Esters and acids 160 to 185.", "write": "C=O ester 160–185"},
+        {"say": "Aldehyde and ketone C=O sit highest, 190 to 220.", "write": "C=O ketone 190–220"},
+        {"say": "Strategy: DoU, mass spec, IR, carbon NMR, proton NMR, then check.", "write": "DoU → MS → IR → ¹³C → ¹H",
+         "draw": {"type": "shapes", "width": 560, "height": 160, "alt": "Six-step strategy chain ending in check", "items": [
+           {"kind": "rect", "x": 5, "y": 50, "w": 80, "h": 50, "fill": "blue", "label": "DoU"},
+           {"kind": "rect", "x": 97, "y": 50, "w": 80, "h": 50, "fill": "teal", "label": "MS"},
+           {"kind": "rect", "x": 189, "y": 50, "w": 80, "h": 50, "fill": "green", "label": "IR"},
+           {"kind": "rect", "x": 281, "y": 50, "w": 80, "h": 50, "fill": "orange", "label": "¹³C"},
+           {"kind": "rect", "x": 373, "y": 50, "w": 80, "h": 50, "fill": "red", "label": "¹H"},
+           {"kind": "rect", "x": 465, "y": 50, "w": 90, "h": 50, "fill": "purple", "label": "check", "change": "highlight"}
+         ]}},
+        {"say": "Ethyl ethanoate fits: ester at 1740, singlet at 2.05, ethyl on oxygen.", "write": "CH₃COOCH₂CH₃"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't count oxygen in the DoU. Do subtract halogens.", "write": "✗ count O"},
+        {"say": "Count H on the neighbouring carbons, not in the group itself.", "write": "neighbours, not own H"},
+        {"say": "Integrations are ratios. One to 1.5 could mean two to three.", "write": "1 : 1.5 = 2H : 3H"},
+        {"say": "Symmetry cuts signals. Propanone has one proton signal.", "write": "propanone: one ¹H signal"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Ignore the oxygen, halve the gap.", "write": "DoU first"},
+        {"say": "Sword at 1700, beard at 3300.", "write": "C=O and O–H"},
+        {"say": "How many, where, how big, how split.", "write": "4 NMR clues"},
+        {"say": "Check every piece of data against your final structure.", "write": "check every peak"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,949 @@
+{
+  "level": "Year 7",
+  "subject": "selective",
+  "title": "Data, chance and logic problems",
+  "frames": [
+    {
+      "heading": "Read, organise, calculate",
+      "lines": [
+        {
+          "say": "These questions reward careful reading more than heavy calculation.",
+          "write": "read → organise → calculate"
+        },
+        {
+          "say": "Most mistakes come from the wrong bar, counting twice, or the wrong question."
+        },
+        {
+          "say": "Mean is the total divided by how many values.",
+          "write": "mean = total ÷ count"
+        },
+        {
+          "say": "Median is the middle value, once the data is in order.",
+          "write": "3, 4, 6, 8, 10 → median 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "Ordered data with the middle value highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 60,
+                "w": 90,
+                "h": 70,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 134,
+                "y": 60,
+                "w": 90,
+                "h": 70,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 238,
+                "y": 60,
+                "w": 90,
+                "h": 70,
+                "fill": "orange",
+                "label": "6",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 342,
+                "y": 60,
+                "w": 90,
+                "h": 70,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "rect",
+                "x": 446,
+                "y": 60,
+                "w": 90,
+                "h": 70,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 190,
+                "text": "middle of the road",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Mode is the most common value. Range is largest minus smallest.",
+          "write": "range = largest − smallest"
+        }
+      ]
+    },
+    {
+      "heading": "Reading a column graph",
+      "lines": [
+        {
+          "say": "Four students read books this term. Read each bar from the scale.",
+          "write": "Amy 6, Raj 4, Tess 9, Leo 5",
+          "diagram": "diagrams/y7/selective/data-chance-and-logic-problems-books.svg",
+          "alt": "Column graph: Amy 6, Raj 4, Tess 9, Leo 5"
+        },
+        {
+          "say": "Add them up. Six plus four plus nine plus five is twenty four.",
+          "write": "6 + 4 + 9 + 5 = 24"
+        },
+        {
+          "say": "Share twenty four between four students. The mean is six books.",
+          "write": "24 ÷ 4 = 6"
+        },
+        {
+          "say": "The range is the tallest minus the shortest. Nine minus four is five.",
+          "write": "range = 9 − 4 = 5"
+        },
+        {
+          "say": "Not nine. Nine is just the tallest bar."
+        }
+      ]
+    },
+    {
+      "heading": "Venn diagrams: middle first",
+      "lines": [
+        {
+          "say": "Forty people. Twenty two own a cat, fifteen a dog, six own both.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram of cat and dog owners filled from the middle",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 10,
+                "y": 10,
+                "w": 540,
+                "h": 280,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 40,
+                "text": "40 people",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 70,
+                "text": "Cat 22",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 70,
+                "text": "Dog 15",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Start in the middle. Six goes in the overlap.",
+          "write": "both = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram of cat and dog owners filled from the middle",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 10,
+                "y": 10,
+                "w": 540,
+                "h": 280,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 40,
+                "text": "40 people",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 70,
+                "text": "Cat 22",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 70,
+                "text": "Dog 15",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 28,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Only cat is twenty two take six, sixteen. Only dog is fifteen take six, nine.",
+          "write": "22 − 6 = 16,  15 − 6 = 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram of cat and dog owners filled from the middle",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 10,
+                "y": 10,
+                "w": 540,
+                "h": 280,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 40,
+                "text": "40 people",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 70,
+                "text": "Cat 22",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 70,
+                "text": "Dog 15",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 28,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "16",
+                "size": 28,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "9",
+                "size": 28,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "At least one pet is thirty one. So nine own neither.",
+          "write": "40 − 31 = 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Venn diagram of cat and dog owners filled from the middle",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 10,
+                "y": 10,
+                "w": 540,
+                "h": 280,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 40,
+                "text": "40 people",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 160,
+                "r": 110,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 70,
+                "text": "Cat 22",
+                "size": 18,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 70,
+                "text": "Dog 15",
+                "size": 18,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 168,
+                "text": "6",
+                "size": 28,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 168,
+                "text": "16",
+                "size": 28,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 390,
+                "y": 168,
+                "text": "9",
+                "size": 28,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 270,
+                "text": "9",
+                "size": 28,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Forty minus twenty two minus fifteen gives three. That counts the six twice.",
+          "write": "✗ 40 − 22 − 15 = 3"
+        }
+      ]
+    },
+    {
+      "heading": "Probability",
+      "lines": [
+        {
+          "say": "Probability is favourable outcomes over total equally likely outcomes.",
+          "write": "P = favourable ÷ total"
+        },
+        {
+          "say": "A bag has four red, six green and two yellow counters. Twelve in all.",
+          "write": "4 + 6 + 2 = 12",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "Twelve counters: 4 red, 6 green, 2 yellow",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 92,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 134,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 218,
+                "y": 100,
+                "r": 18,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 100,
+                "r": 18,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 302,
+                "y": 100,
+                "r": 18,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 344,
+                "y": 100,
+                "r": 18,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 386,
+                "y": 100,
+                "r": 18,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 428,
+                "y": 100,
+                "r": 18,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 100,
+                "r": 18,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 512,
+                "y": 100,
+                "r": 18,
+                "fill": "yellow"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Not green? Take away the six green ones. Six counters are left.",
+          "write": "not green = 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 200,
+            "alt": "The green counters crossed out, 6 left",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 92,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 134,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 100,
+                "r": 18,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 218,
+                "y": 100,
+                "r": 18,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 100,
+                "r": 18,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 302,
+                "y": 100,
+                "r": 18,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 344,
+                "y": 100,
+                "r": 18,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 386,
+                "y": 100,
+                "r": 18,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 428,
+                "y": 100,
+                "r": 18,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 100,
+                "r": 18,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 512,
+                "y": 100,
+                "r": 18,
+                "fill": "yellow"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 170,
+                "text": "6/12 = 1/2",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the probability is six twelfths, which is one half.",
+          "write": "6/12 = 1/2"
+        },
+        {
+          "say": "Two dice give six times six, thirty six outcomes. Picture the grid.",
+          "write": "6 × 6 = 36"
+        },
+        {
+          "say": "Without replacing, the bag shrinks. The second fraction has one fewer in total.",
+          "write": "bag shrinks"
+        }
+      ]
+    },
+    {
+      "heading": "Logic: draw it",
+      "lines": [
+        {
+          "say": "Mo finished before Kai. Draw a line from first to last.",
+          "write": "Mo before Kai",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 160,
+            "alt": "Race finishers placed in order on a line",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 80,
+                "x2": 520,
+                "y2": 80,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 120,
+                "text": "first",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 120,
+                "text": "last",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Mo"
+              },
+              {
+                "kind": "circle",
+                "x": 215,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Kai"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Jo finished after Kai, but before Lu. Add them in.",
+          "write": "Mo, Kai, Jo, Lu",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 160,
+            "alt": "Race finishers placed in order on a line",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 80,
+                "x2": 520,
+                "y2": 80,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 120,
+                "text": "first",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 120,
+                "text": "last",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Mo"
+              },
+              {
+                "kind": "circle",
+                "x": 215,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Kai"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Jo",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 465,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Lu",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Lu is at the end of the line. So Lu came last.",
+          "write": "Last: Lu",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 160,
+            "alt": "Race finishers placed in order on a line",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 80,
+                "x2": 520,
+                "y2": 80,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 120,
+                "text": "first",
+                "size": 16,
+                "color": "grey",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 520,
+                "y": 120,
+                "text": "last",
+                "size": 16,
+                "color": "grey",
+                "anchor": "end"
+              },
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Mo"
+              },
+              {
+                "kind": "circle",
+                "x": 215,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Kai"
+              },
+              {
+                "kind": "circle",
+                "x": 340,
+                "y": 80,
+                "r": 32,
+                "fill": "blue",
+                "label": "Jo"
+              },
+              {
+                "kind": "circle",
+                "x": 465,
+                "y": 80,
+                "r": 32,
+                "fill": "orange",
+                "label": "Lu",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "For matching clues, use a small grid with ticks and crosses.",
+          "write": "✓ / ✗ grid"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Put the data in order before you find the median.",
+          "write": "order first"
+        },
+        {
+          "say": "Do not just add overlapping groups. You count the middle twice."
+        },
+        {
+          "say": "Totals on two dice are not equally likely. Count each pair.",
+          "write": "3 then 5 ≠ 5 then 3"
+        },
+        {
+          "say": "A day with zero millimetres of rain still counts in the mean.",
+          "write": "0 still counts"
+        },
+        {
+          "say": "Re-read the last line. Answer for the right person or group."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Mean means share it out.",
+          "write": "mean = share it out"
+        },
+        {
+          "say": "Median is in the middle of the road.",
+          "write": "median = middle"
+        },
+        {
+          "say": "Venn. Start in the middle.",
+          "write": "Venn: middle first"
+        },
+        {
+          "say": "Without replacing, the bag shrinks.",
+          "write": "bag shrinks"
+        }
+      ]
+    }
+  ]
+}

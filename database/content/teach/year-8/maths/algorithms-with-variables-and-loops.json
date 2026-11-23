@@ -1,0 +1,868 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Algorithms with variables and loops",
+  "frames": [
+    {
+      "heading": "What is a variable?",
+      "lines": [
+        {
+          "say": "A variable is a named place that stores one value.",
+          "write": "variable: x, total, count"
+        },
+        {
+          "say": "Think of a scoreboard. Rub out the old number, write the new one.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Variable x holds 5",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 60,
+                "w": 200,
+                "h": 140,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 45,
+                "text": "x",
+                "size": 24,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "5",
+                "size": 48,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Giving it a value is called assignment. Set x to 5.",
+          "write": "Set x to 5"
+        },
+        {
+          "say": "Set x to x plus 4. Use the current x, then store the answer.",
+          "write": "Set x to x + 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "x changes from 5 to 9",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 60,
+                "w": 200,
+                "h": 140,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 45,
+                "text": "x",
+                "size": 24,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "5",
+                "size": 48,
+                "color": "grey",
+                "anchor": "middle",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "9",
+                "size": 48,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "It's not an equation to solve. New x equals old x plus 4.",
+          "write": "new = old + change"
+        }
+      ]
+    },
+    {
+      "heading": "Order matters",
+      "lines": [
+        {
+          "say": "Set x to 5, then x plus 4, then 3 times x.",
+          "write": "x = 5 → 9 → 27"
+        },
+        {
+          "say": "Each step uses the newest value. 3 times 9 is 27, not 15.",
+          "write": "3 × 9 = 27",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "x goes 5, 9, 27",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 130,
+                "r": 50,
+                "fill": "grey",
+                "change": "remove",
+                "label": "5"
+              },
+              {
+                "kind": "arrow",
+                "x": 145,
+                "y": 130,
+                "x2": 215,
+                "y2": 130,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 270,
+                "y": 130,
+                "r": 50,
+                "fill": "grey",
+                "change": "remove",
+                "label": "9"
+              },
+              {
+                "kind": "arrow",
+                "x": 325,
+                "y": 130,
+                "x2": 395,
+                "y2": 130,
+                "color": "purple"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 130,
+                "r": 50,
+                "fill": "blue",
+                "change": "add",
+                "label": "27"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then set y to x minus 7. y is 20.",
+          "write": "y = 27 − 7 = 20"
+        },
+        {
+          "say": "Swapping a and b? Set a to b first, and a's old value is lost.",
+          "write": "✗ a = b, b = a"
+        },
+        {
+          "say": "Copy a into a spare variable t first. Then swap safely.",
+          "write": "t = a, a = b, b = t",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Swap using spare variable t",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 120,
+                "h": 80,
+                "fill": "orange",
+                "label": "a = 10"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 80,
+                "w": 120,
+                "h": 80,
+                "fill": "teal",
+                "change": "add",
+                "label": "t = 4"
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 80,
+                "w": 120,
+                "h": 80,
+                "fill": "blue",
+                "change": "add",
+                "label": "b = 4"
+              },
+              {
+                "kind": "arrow",
+                "x": 160,
+                "y": 200,
+                "x2": 400,
+                "y2": 200,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 250,
+                "text": "a and b swapped",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Accumulators",
+      "lines": [
+        {
+          "say": "An accumulator builds an answer bit by bit inside a loop.",
+          "write": "accumulator"
+        },
+        {
+          "say": "Totals start at 0. Products start at 1.",
+          "write": "total = 0, product = 1"
+        },
+        {
+          "say": "Set p to 1. For i from 1 to 5, set p to p times i.",
+          "write": "p = p × i",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Trace table start",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 10,
+                "w": 140,
+                "h": 36,
+                "fill": "grey",
+                "label": "i"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 10,
+                "w": 140,
+                "h": 36,
+                "fill": "grey",
+                "label": "p"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 50,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 50,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 90,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 90,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each row multiplies the p above by the new i. 2, then 6, then 24.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Trace table grows",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 10,
+                "w": 140,
+                "h": 36,
+                "fill": "grey",
+                "label": "i"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 10,
+                "w": 140,
+                "h": 36,
+                "fill": "grey",
+                "label": "p"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 50,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 50,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 90,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 90,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 130,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 130,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 170,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 170,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 210,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 210,
+                "w": 140,
+                "h": 36,
+                "fill": "yellow",
+                "change": "add",
+                "label": "24"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then 24 times 5 is 120. The output is 120.",
+          "write": "p = 120",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Trace table finished",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 10,
+                "w": 140,
+                "h": 36,
+                "fill": "grey",
+                "label": "i"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 10,
+                "w": 140,
+                "h": 36,
+                "fill": "grey",
+                "label": "p"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 50,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 50,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 90,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 90,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 130,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 130,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 170,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 170,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "6"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 210,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 210,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "24"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 250,
+                "w": 140,
+                "h": 36,
+                "fill": "white",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 250,
+                "w": 140,
+                "h": 36,
+                "fill": "yellow",
+                "change": "add",
+                "label": "120"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Start p at 0, and every answer becomes 0.",
+          "write": "✗ p = 0"
+        }
+      ]
+    },
+    {
+      "heading": "Counted loops",
+      "lines": [
+        {
+          "say": "For i from 1 to 5, i takes the values 1, 2, 3, 4, 5.",
+          "write": "i = 1, 2, 3, 4, 5"
+        },
+        {
+          "say": "The number of runs is last minus first plus 1.",
+          "write": "last − first + 1"
+        },
+        {
+          "say": "For i from 3 to 10 runs 8 times, not 7.",
+          "write": "10 − 3 + 1 = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Eight values from 3 to 10",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 45,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "circle",
+                "x": 112,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "circle",
+                "x": 179,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "circle",
+                "x": 246,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "6"
+              },
+              {
+                "kind": "circle",
+                "x": 313,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "circle",
+                "x": 447,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "label": "9"
+              },
+              {
+                "kind": "circle",
+                "x": 514,
+                "y": 130,
+                "r": 28,
+                "fill": "blue",
+                "change": "add",
+                "label": "10"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "8 runs",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "While or repeat until?",
+      "lines": [
+        {
+          "say": "Both are conditional loops. They check at different moments.",
+          "diagram": "diagrams/y8/maths/algorithms-with-variables-and-loops-while-until.svg",
+          "alt": "While loop asks first; repeat-until does the steps first"
+        },
+        {
+          "say": "A while loop checks before each run. It might run zero times.",
+          "write": "while: check FIRST"
+        },
+        {
+          "say": "Repeat until checks after each run. It always runs at least once.",
+          "write": "until: check LAST"
+        },
+        {
+          "say": "While looks before it leaps. Until leaps before it looks.",
+          "write": "look → leap  /  leap → look"
+        }
+      ]
+    },
+    {
+      "heading": "The water tank",
+      "lines": [
+        {
+          "say": "A tank holds 1200 litres. Each day, 85 litres are used.",
+          "write": "while water ≥ 300",
+          "diagram": "diagrams/y8/maths/algorithms-with-variables-and-loops-tank.svg",
+          "alt": "Flowchart for the water tank loop"
+        },
+        {
+          "say": "After 10 days, water is 350. Still at least 300, so run again.",
+          "write": "10 days: 1200 − 850 = 350",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Water level falls",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 40,
+                "w": 160,
+                "h": 240,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 150,
+                "w": 160,
+                "h": 130,
+                "fill": "blue",
+                "label": "350"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 180,
+                "x2": 380,
+                "y2": 180,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 186,
+                "text": "300 line",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Day 11: 350 minus 85 is 265. Below 300, so stop.",
+          "write": "11 days, 265 L",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Water drops below 300",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 40,
+                "w": 160,
+                "h": 240,
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 150,
+                "w": 160,
+                "h": 130,
+                "fill": "blue",
+                "change": "remove",
+                "label": "350"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 182,
+                "w": 160,
+                "h": 98,
+                "fill": "teal",
+                "change": "add",
+                "label": "265"
+              },
+              {
+                "kind": "line",
+                "x": 180,
+                "y": 180,
+                "x2": 380,
+                "y2": 180,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 186,
+                "text": "300 line",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check: 11 times 85 is 935. 1200 minus 935 is 265.",
+          "write": "✓"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Always work from the row above in a trace table.",
+          "write": "use the newest value"
+        },
+        {
+          "say": "Leave out the spare c in Fibonacci, and b just doubles.",
+          "write": "1, 1, 2, 3, 5, 8, 13"
+        },
+        {
+          "say": "Underline while or until, and picture its flowchart first.",
+          "write": "while ≠ until"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "New equals old plus change.",
+          "write": "new = old + change"
+        },
+        {
+          "say": "Totals start at 0. Products start at 1.",
+          "write": "0 and 1"
+        },
+        {
+          "say": "A counted loop runs last minus first plus 1 times.",
+          "write": "b − a + 1"
+        },
+        {
+          "say": "While checks first. Until checks last.",
+          "write": "while first, until last"
+        }
+      ]
+    }
+  ]
+}

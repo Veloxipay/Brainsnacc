@@ -1,0 +1,743 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "Genetic engineering",
+  "frames": [
+    {
+      "heading": "What is genetic engineering?",
+      "lines": [
+        {
+          "say": "Genetic engineering directly changes an organism's DNA in a lab.",
+          "write": "changing DNA directly"
+        },
+        {
+          "say": "Usually we add a gene from another organism.",
+          "write": "add a gene from another species",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "gene moved from human cell into bacterium",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 110,
+                "y": 140,
+                "r": 80,
+                "fill": "pink",
+                "label": "human cell"
+              },
+              {
+                "kind": "rect",
+                "x": 80,
+                "y": 190,
+                "w": 60,
+                "h": 24,
+                "fill": "yellow",
+                "label": "gene",
+                "change": "highlight"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 140,
+                "x2": 330,
+                "y2": 140,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    350,
+                    100
+                  ],
+                  [
+                    530,
+                    100
+                  ],
+                  [
+                    530,
+                    180
+                  ],
+                  [
+                    350,
+                    180
+                  ]
+                ],
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 130,
+                "text": "bacterium",
+                "size": 18,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 145,
+                "w": 60,
+                "h": 24,
+                "fill": "yellow",
+                "label": "gene",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "all life reads the same DNA code",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "It works because all life uses the same DNA code: A, T, C and G.",
+          "write": "same code: A T C G"
+        },
+        {
+          "say": "So a bacterium can read a human gene and make the human protein.",
+          "write": "human gene → human protein"
+        },
+        {
+          "say": "An organism with DNA from another species is called transgenic.",
+          "write": "transgenic organism = GMO"
+        }
+      ]
+    },
+    {
+      "heading": "Scissors and glue",
+      "lines": [
+        {
+          "say": "Restriction enzymes are the scissors. They cut at one specific sequence.",
+          "write": "restriction enzyme = scissors",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "DNA strand cut at a recognition site",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 100,
+                "w": 480,
+                "h": 40,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 100,
+                "w": 80,
+                "h": 40,
+                "fill": "yellow",
+                "label": "site",
+                "change": "highlight"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 80,
+                "x2": 280,
+                "y2": 160,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "cut only at the recognition site",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Many cut in a staggered way, leaving short sticky ends.",
+          "write": "sticky ends"
+        },
+        {
+          "say": "Use the same enzyme on both pieces, so the sticky ends match.",
+          "write": "same enzyme → matching ends",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "matching sticky ends pairing",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    100
+                  ],
+                  [
+                    240,
+                    100
+                  ],
+                  [
+                    240,
+                    120
+                  ],
+                  [
+                    270,
+                    120
+                  ],
+                  [
+                    270,
+                    140
+                  ],
+                  [
+                    40,
+                    140
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    520,
+                    100
+                  ],
+                  [
+                    520,
+                    140
+                  ],
+                  [
+                    290,
+                    140
+                  ],
+                  [
+                    290,
+                    120
+                  ],
+                  [
+                    300,
+                    120
+                  ]
+                ],
+                "fill": "teal",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 255,
+                "y": 90,
+                "text": "AATT",
+                "size": 16,
+                "color": "blue",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 285,
+                "y": 170,
+                "text": "TTAA",
+                "size": 16,
+                "color": "teal",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "A pairs with T, C pairs with G",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "DNA ligase is the glue. It seals the backbone for good.",
+          "write": "DNA ligase = glue"
+        }
+      ]
+    },
+    {
+      "heading": "Plasmids carry the gene",
+      "lines": [
+        {
+          "say": "A vector carries a gene into a cell.",
+          "write": "vector = gene carrier"
+        },
+        {
+          "say": "A common vector is a plasmid, a small circle of bacterial DNA.",
+          "write": "plasmid = small DNA circle",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "bacterium with main DNA and a small plasmid",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 50,
+                "w": 440,
+                "h": 200,
+                "fill": "green"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    140,
+                    110
+                  ],
+                  [
+                    260,
+                    90
+                  ],
+                  [
+                    300,
+                    160
+                  ],
+                  [
+                    180,
+                    190
+                  ]
+                ],
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 200,
+                "y": 230,
+                "text": "main DNA",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 150,
+                "r": 40,
+                "fill": "none",
+                "label": "plasmid",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Bacteria copy their plasmids when they divide, so the gene gets copied too.",
+          "write": "copied when bacteria divide"
+        },
+        {
+          "say": "Careful. A disease vector, like a mosquito, is a different meaning.",
+          "write": "vector ≠ mosquito here"
+        }
+      ]
+    },
+    {
+      "heading": "Making human insulin",
+      "lines": [
+        {
+          "say": "Step 1. Find the human insulin gene.",
+          "write": "1. find the gene"
+        },
+        {
+          "say": "Step 2. Cut out the gene and open a plasmid with the same enzyme.",
+          "write": "2. same enzyme cuts both",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "gene cut out and plasmid opened",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 160,
+                "y": 140,
+                "r": 70,
+                "fill": "none",
+                "label": "plasmid"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 62,
+                "w": 40,
+                "h": 16,
+                "fill": "white",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 120,
+                "w": 120,
+                "h": 40,
+                "fill": "yellow",
+                "label": "insulin gene",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "same restriction enzyme",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Step 3. Mix them. Sticky ends pair, and ligase seals them.",
+          "write": "3. ligase → recombinant plasmid",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "recombinant plasmid with insulin gene",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 140,
+                "r": 80,
+                "fill": "none"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 52,
+                "w": 80,
+                "h": 30,
+                "fill": "yellow",
+                "label": "insulin",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 148,
+                "text": "recombinant",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "gene sealed in by ligase",
+                "size": 20,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Step 4. Put plasmids into bacteria. A marker gene shows which took them up.",
+          "write": "4. marker gene finds them"
+        },
+        {
+          "say": "Step 5. Grow the bacteria in big tanks and purify the insulin.",
+          "write": "5. grow, then purify"
+        },
+        {
+          "say": "This insulin is identical to human insulin.",
+          "write": "same as human insulin"
+        }
+      ]
+    },
+    {
+      "heading": "GM crops",
+      "lines": [
+        {
+          "say": "Genes can be added to plants too.",
+          "write": "GM crops"
+        },
+        {
+          "say": "Bt cotton makes a protein toxic to certain insect pests.",
+          "write": "insect resistance: Bt"
+        },
+        {
+          "say": "Herbicide tolerant crops survive weedkiller, so farmers can spray the weeds.",
+          "write": "herbicide tolerance"
+        },
+        {
+          "say": "Golden Rice makes beta carotene, which the body turns into vitamin A.",
+          "write": "Golden Rice → vitamin A"
+        },
+        {
+          "say": "Over time, pests resistant to Bt can survive and breed.",
+          "write": "resistance = natural selection",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "pest population becoming resistant",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 80,
+                "y": 120,
+                "r": 22,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 120,
+                "r": 22,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 120,
+                "r": 22,
+                "fill": "green",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 120,
+                "r": 22,
+                "fill": "red"
+              },
+              {
+                "kind": "arrow",
+                "x": 300,
+                "y": 120,
+                "x2": 360,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 120,
+                "r": 22,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 460,
+                "y": 120,
+                "r": 22,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 520,
+                "y": 120,
+                "r": 22,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 190,
+                "text": "Bt kills most pests",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 190,
+                "text": "resistant ones breed",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 260,
+                "text": "refuges of non-Bt crops slow this",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Benefits and risks",
+      "lines": [
+        {
+          "say": "Benefits: lots of safe medicine, and crops needing fewer sprays.",
+          "write": "+ insulin, fewer sprays",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "benefits and risks balanced",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 50,
+                "w": 240,
+                "h": 180,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 90,
+                "text": "Benefits",
+                "size": 22,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 140,
+                "text": "medicines",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 180,
+                "text": "better crops",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 50,
+                "w": 240,
+                "h": 180,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 90,
+                "text": "Risks",
+                "size": 22,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 140,
+                "text": "gene spread",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 180,
+                "text": "resistance",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Risks: genes spreading to wild relatives, and pests evolving resistance.",
+          "write": "− gene spread, resistance"
+        },
+        {
+          "say": "Some people have ethical worries, or object to seed patents.",
+          "write": "ethics and patents"
+        },
+        {
+          "say": "In Australia, F SANZ checks GM foods for safety, and they must be labelled.",
+          "write": "FSANZ: assess + label"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Restriction enzymes do not cut at random. Only at their site.",
+          "write": "✗ cut at random"
+        },
+        {
+          "say": "Different enzymes give sticky ends that do not match.",
+          "write": "✗ two different enzymes"
+        },
+        {
+          "say": "Don't forget ligase. Sticky ends only stick weakly on their own.",
+          "write": "✗ forgetting ligase"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Cut, paste, deliver.",
+          "write": "cut, paste, deliver"
+        },
+        {
+          "say": "Restriction enzyme cuts. Ligase seals. Plasmid delivers.",
+          "write": "scissors, glue, van"
+        },
+        {
+          "say": "Same enzyme on both pieces, so the ends fit.",
+          "write": "same enzyme, matching ends"
+        },
+        {
+          "say": "One code for all life, so bacteria make real human insulin.",
+          "write": "one DNA code for all life"
+        }
+      ]
+    }
+  ]
+}

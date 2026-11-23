@@ -1,0 +1,1022 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Iteration and approximation with algorithms",
+  "frames": [
+    {
+      "heading": "Iteration: feed it back in",
+      "lines": [
+        {
+          "say": "To iterate means to repeat a rule, feeding each output back in.",
+          "write": "output → next input"
+        },
+        {
+          "say": "A recurrence rule tells you how to get the next term from this one.",
+          "write": "uₙ₊₁ = 1.1uₙ − 50"
+        },
+        {
+          "say": "You also need a starting value, u nought.",
+          "write": "u₀ = 1000"
+        },
+        {
+          "say": "A lake has 1000 fish. It grows 10 percent, then 50 are caught.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Fish population each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 160,
+                "w": 80,
+                "h": 100,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 150,
+                "text": "1000",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 284,
+                "text": "u₀",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "1.1 times 1000, minus 50, is 1050.",
+          "write": "u₁ = 1050",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Fish population each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 160,
+                "w": 80,
+                "h": 100,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 150,
+                "text": "1000",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 284,
+                "text": "u₀",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 135,
+                "w": 80,
+                "h": 125,
+                "fill": "teal",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 125,
+                "text": "1050",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 284,
+                "text": "u₁",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Feed it back in. 1.1 times 1050, minus 50, is 1105.",
+          "write": "u₂ = 1105",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Fish population each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 160,
+                "w": 80,
+                "h": 100,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 150,
+                "text": "1000",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 284,
+                "text": "u₀",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 135,
+                "w": 80,
+                "h": 125,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 125,
+                "text": "1050",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 284,
+                "text": "u₁",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 108,
+                "w": 80,
+                "h": 152,
+                "fill": "teal",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 98,
+                "text": "1105",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 284,
+                "text": "u₂",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Again. u three is 1165.5, so about 1166 fish.",
+          "write": "u₃ = 1165.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Fish population each year",
+            "items": [
+              {
+                "kind": "line",
+                "x": 40,
+                "y": 260,
+                "x2": 540,
+                "y2": 260,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 160,
+                "w": 80,
+                "h": 100,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 150,
+                "text": "1000",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 284,
+                "text": "u₀",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 135,
+                "w": 80,
+                "h": 125,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 125,
+                "text": "1050",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 230,
+                "y": 284,
+                "text": "u₁",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 108,
+                "w": 80,
+                "h": 152,
+                "fill": "teal"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 98,
+                "text": "1105",
+                "size": 18,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 284,
+                "text": "u₂",
+                "size": 18,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 77,
+                "w": 80,
+                "h": 183,
+                "fill": "teal",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 67,
+                "text": "1165.5",
+                "size": 18,
+                "color": "black",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 284,
+                "text": "u₃",
+                "size": 18,
+                "color": "grey"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Steady state",
+      "lines": [
+        {
+          "say": "Some rules settle at a steady value, called a steady state.",
+          "write": "uₙ₊₁ = 0.5uₙ + 40"
+        },
+        {
+          "say": "Replace both terms with L and solve.",
+          "write": "L = 0.5L + 40"
+        },
+        {
+          "say": "Half of L is 40, so L is 80.",
+          "write": "L = 80"
+        },
+        {
+          "say": "This works when a is between 0 and 1.",
+          "write": "L = b ÷ (1 − a)"
+        }
+      ]
+    },
+    {
+      "heading": "The Babylonian method",
+      "lines": [
+        {
+          "say": "To find root N, start with a guess and repeat this rule.",
+          "write": "new x = (x + N ÷ x) ÷ 2"
+        },
+        {
+          "say": "Find root 10. Start with x equals 2. That's a 2 by 5 rectangle.",
+          "write": "x₀ = 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle of area 10 getting more square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 25,
+                "w": 100,
+                "h": 250,
+                "fill": "orange",
+                "label": "2 × 5"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "area = 10",
+                "size": 18,
+                "color": "grey",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Average 2 and 5. The new x is 3.5.",
+          "write": "x₁ = (2 + 5) ÷ 2 = 3.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle of area 10 getting more square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 193,
+                "y": 79,
+                "w": 175,
+                "h": 142,
+                "fill": "orange",
+                "change": "add",
+                "label": "3.5 × 2.857"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "area = 10",
+                "size": 18,
+                "color": "grey",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Again. The new x is about 3.1786. Nearly square.",
+          "write": "x₂ ≈ 3.1786",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle of area 10 getting more square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 201,
+                "y": 72,
+                "w": 158,
+                "h": 157,
+                "fill": "orange",
+                "change": "add",
+                "label": "3.179 × 3.146"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "area = 10",
+                "size": 18,
+                "color": "grey",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each step makes the rectangle more square. Its side heads to root 10.",
+          "write": "√10 ≈ 3.1623"
+        },
+        {
+          "say": "If x is too small, N over x is too big. Their average is closer."
+        }
+      ]
+    },
+    {
+      "heading": "Solving equations by iteration",
+      "lines": [
+        {
+          "say": "To solve x squared minus x minus 3 equals 0, rearrange it.",
+          "write": "x² − x − 3 = 0"
+        },
+        {
+          "say": "Make it x equals root of x plus 3.",
+          "write": "x = √(x + 3)"
+        },
+        {
+          "say": "Start at 0. Go up to the curve, then across to the line y equals x.",
+          "write": "x₀ = 0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Staircase iteration towards the crossing of y = √(x + 3) and y = x",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 480.0,
+                "y2": 270.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 80.0,
+                "y2": 10.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 474.0,
+                "y": 292.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 94.0,
+                "y": 24.0,
+                "text": "y",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 480.0,
+                "y2": 10.0,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 157.4,
+                "x2": 120.0,
+                "y2": 150.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 150.1,
+                "x2": 160.0,
+                "y2": 143.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 143.3,
+                "x2": 200.0,
+                "y2": 136.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 200.0,
+                "y": 136.8,
+                "x2": 240.0,
+                "y2": 130.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 240.0,
+                "y": 130.6,
+                "x2": 280.0,
+                "y2": 124.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 124.7,
+                "x2": 320.0,
+                "y2": 119.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 320.0,
+                "y": 119.0,
+                "x2": 360.0,
+                "y2": 113.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 360.0,
+                "y": 113.5,
+                "x2": 400.0,
+                "y2": 108.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 400.0,
+                "y": 108.2,
+                "x2": 440.0,
+                "y2": 103.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 440.0,
+                "y": 103.0,
+                "x2": 480.0,
+                "y2": 98.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 450.0,
+                "y": 34.0,
+                "text": "y = x",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 440.0,
+                "y": 87.0,
+                "text": "y = √(x + 3)",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 80.0,
+                "y2": 157.4,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 157.4,
+                "x2": 253.2,
+                "y2": 157.4,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Repeat. The steps shrink towards the crossing point.",
+          "write": "x₁, x₂, x₃ …",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Staircase iteration towards the crossing of y = √(x + 3) and y = x",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 480.0,
+                "y2": 270.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 80.0,
+                "y2": 10.0,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 474.0,
+                "y": 292.0,
+                "text": "x",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 94.0,
+                "y": 24.0,
+                "text": "y",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 480.0,
+                "y2": 10.0,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 157.4,
+                "x2": 120.0,
+                "y2": 150.1,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 120.0,
+                "y": 150.1,
+                "x2": 160.0,
+                "y2": 143.3,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 160.0,
+                "y": 143.3,
+                "x2": 200.0,
+                "y2": 136.8,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 200.0,
+                "y": 136.8,
+                "x2": 240.0,
+                "y2": 130.6,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 240.0,
+                "y": 130.6,
+                "x2": 280.0,
+                "y2": 124.7,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 280.0,
+                "y": 124.7,
+                "x2": 320.0,
+                "y2": 119.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 320.0,
+                "y": 119.0,
+                "x2": 360.0,
+                "y2": 113.5,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 360.0,
+                "y": 113.5,
+                "x2": 400.0,
+                "y2": 108.2,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 400.0,
+                "y": 108.2,
+                "x2": 440.0,
+                "y2": 103.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 440.0,
+                "y": 103.0,
+                "x2": 480.0,
+                "y2": 98.0,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 450.0,
+                "y": 34.0,
+                "text": "y = x",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 440.0,
+                "y": 87.0,
+                "text": "y = √(x + 3)",
+                "size": 16,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 80.0,
+                "y2": 157.4,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 157.4,
+                "x2": 253.2,
+                "y2": 157.4,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 253.2,
+                "y": 157.4,
+                "x2": 253.2,
+                "y2": 128.6,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 253.2,
+                "y": 128.6,
+                "x2": 297.5,
+                "y2": 128.6,
+                "color": "green"
+              },
+              {
+                "kind": "line",
+                "x": 297.5,
+                "y": 128.6,
+                "x2": 297.5,
+                "y2": 122.1,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 297.5,
+                "y": 122.1,
+                "x2": 307.5,
+                "y2": 122.1,
+                "color": "green",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "From x nought equals 2, x three and x four both round to 2.30.",
+          "write": "x ≈ 2.30"
+        },
+        {
+          "say": "That crossing is a fixed point. It solves the equation.",
+          "write": "L = g(L)"
+        }
+      ]
+    },
+    {
+      "heading": "Converge or diverge?",
+      "lines": [
+        {
+          "say": "When the values settle down, the iteration converges.",
+          "write": "converges ✓"
+        },
+        {
+          "say": "Try x equals x squared minus 3, starting at 2.",
+          "write": "xₙ₊₁ = xₙ² − 3"
+        },
+        {
+          "say": "You get 1, then minus 2, then 1, then minus 2, forever.",
+          "write": "2 → 1 → −2 → 1 → −2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 260,
+            "alt": "The values bounce between 1 and −2",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 120,
+                "r": 40,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "circle",
+                "x": 240,
+                "y": 120,
+                "r": 40,
+                "fill": "orange",
+                "change": "add",
+                "label": "1"
+              },
+              {
+                "kind": "circle",
+                "x": 380,
+                "y": 120,
+                "r": 40,
+                "fill": "red",
+                "change": "add",
+                "label": "−2"
+              },
+              {
+                "kind": "arrow",
+                "x": 280,
+                "y": 90,
+                "x2": 340,
+                "y2": 90,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 340,
+                "y": 160,
+                "x2": 280,
+                "y2": 160,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 310,
+                "y": 230,
+                "text": "bounces forever",
+                "size": 20,
+                "color": "red",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "That diverges. Try a different rearrangement or starting value.",
+          "write": "diverges ✗"
+        }
+      ]
+    },
+    {
+      "heading": "Stopping rules",
+      "lines": [
+        {
+          "say": "Iteration never gets the exact answer. So you need a stopping rule.",
+          "write": "stopping rule"
+        },
+        {
+          "say": "Stop when two iterates in a row round to the same value.",
+          "write": "two in a row agree → stop",
+          "diagram": "diagrams/y10/maths/iteration-and-approximation-with-algorithms-flowchart.svg",
+          "alt": "Flowchart for a stopping rule"
+        },
+        {
+          "say": "The halving method is slow. Each step halves the interval.",
+          "write": "width = 1 ÷ 2ⁿ"
+        },
+        {
+          "say": "To get below 0.01, you need 7 halvings. Two to the 7 is 128.",
+          "write": "2⁷ = 128 > 100"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "x nought is the start. x one comes from one use of the rule.",
+          "write": "label x₀, x₁, x₂ …"
+        },
+        {
+          "say": "Multiply first, then subtract.",
+          "write": "1.1 × (1050) − 50"
+        },
+        {
+          "say": "Don't stop too early. Two in a row must agree."
+        },
+        {
+          "say": "Keep extra decimal places, or use the ANS key.",
+          "write": "use ANS"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Feed it back in.",
+          "write": "output → input"
+        },
+        {
+          "say": "Babylonian: average the guess and N over the guess.",
+          "write": "(x + N ÷ x) ÷ 2"
+        },
+        {
+          "say": "For a steady state, replace both terms with L.",
+          "write": "L = aL + b"
+        },
+        {
+          "say": "Stop when two in a row round the same.",
+          "write": "two in a row ✓"
+        }
+      ]
+    }
+  ]
+}

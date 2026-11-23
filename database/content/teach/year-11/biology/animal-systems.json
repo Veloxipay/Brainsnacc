@@ -1,0 +1,125 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Animal systems",
+  "frames": [
+    { "heading": "Cells specialise",
+      "lines": [
+        { "say": "Every cell in your body carries the same DNA.", "write": "same DNA in every cell" },
+        { "say": "But each cell switches on only some of its genes. That is specialisation.", "write": "cell specialisation" },
+        { "say": "Gut lining cells grow microvilli, tiny folds that add surface area.", "write": "microvilli → more surface area",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "A gut cell gains microvilli on its top surface", "items": [
+            { "kind": "rect", "x": 180, "y": 90, "w": 200, "h": 140, "fill": "pink", "label": "gut cell" },
+            { "kind": "rect", "x": 188, "y": 50, "w": 16, "h": 40, "fill": "orange", "change": "add" },
+            { "kind": "rect", "x": 220, "y": 50, "w": 16, "h": 40, "fill": "orange", "change": "add" },
+            { "kind": "rect", "x": 252, "y": 50, "w": 16, "h": 40, "fill": "orange", "change": "add" },
+            { "kind": "rect", "x": 284, "y": 50, "w": 16, "h": 40, "fill": "orange", "change": "add" },
+            { "kind": "rect", "x": 316, "y": 50, "w": 16, "h": 40, "fill": "orange", "change": "add" },
+            { "kind": "rect", "x": 348, "y": 50, "w": 16, "h": 40, "fill": "orange", "change": "add" },
+            { "kind": "text", "x": 400, "y": 70, "text": "microvilli", "size": 20, "bold": true, "color": "orange" }
+          ] } },
+        { "say": "They also have lots of mitochondria, for the ATP that active transport needs.", "write": "many mitochondria → ATP" }
+      ] },
+    { "heading": "Levels of organisation",
+      "lines": [
+        { "say": "Similar cells working together make a tissue.", "write": "cells → tissues",
+          "draw": { "type": "shapes", "width": 560, "height": 200, "alt": "Hierarchy from cell to organism, building up", "items": [
+            { "kind": "rect", "x": 10, "y": 70, "w": 90, "h": 60, "fill": "blue", "label": "cell" },
+            { "kind": "arrow", "x": 100, "y": 100, "x2": 120, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 120, "y": 70, "w": 90, "h": 60, "fill": "teal", "label": "tissue", "change": "add" }
+          ] } },
+        { "say": "Two or more tissues working together make an organ, like the stomach.", "write": "tissues → organ",
+          "draw": { "type": "shapes", "width": 560, "height": 200, "alt": "Hierarchy from cell to organism, building up", "items": [
+            { "kind": "rect", "x": 10, "y": 70, "w": 90, "h": 60, "fill": "blue", "label": "cell" },
+            { "kind": "arrow", "x": 100, "y": 100, "x2": 120, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 120, "y": 70, "w": 90, "h": 60, "fill": "teal", "label": "tissue" },
+            { "kind": "arrow", "x": 210, "y": 100, "x2": 230, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 230, "y": 70, "w": 90, "h": 60, "fill": "green", "label": "organ", "change": "add" }
+          ] } },
+        { "say": "Organs working together make a system. Systems make the organism.", "write": "→ organ system → organism",
+          "draw": { "type": "shapes", "width": 560, "height": 200, "alt": "Hierarchy from cell to organism, building up", "items": [
+            { "kind": "rect", "x": 10, "y": 70, "w": 90, "h": 60, "fill": "blue", "label": "cell" },
+            { "kind": "arrow", "x": 100, "y": 100, "x2": 120, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 120, "y": 70, "w": 90, "h": 60, "fill": "teal", "label": "tissue" },
+            { "kind": "arrow", "x": 210, "y": 100, "x2": 230, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 230, "y": 70, "w": 90, "h": 60, "fill": "green", "label": "organ" },
+            { "kind": "arrow", "x": 320, "y": 100, "x2": 340, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 340, "y": 70, "w": 90, "h": 60, "fill": "orange", "label": "system", "change": "add" },
+            { "kind": "arrow", "x": 430, "y": 100, "x2": 450, "y2": 100, "color": "black" },
+            { "kind": "rect", "x": 450, "y": 70, "w": 100, "h": 60, "fill": "purple", "label": "organism", "change": "add" }
+          ] } },
+        { "say": "Four tissue types: epithelial, connective, nervous and muscle. Every Cat Needs Milk.", "write": "Every Cat Needs Milk" }
+      ] },
+    { "heading": "The digestive system",
+      "lines": [
+        { "say": "Mechanical digestion breaks food into pieces. Chemical digestion uses enzymes.", "write": "mechanical vs chemical" },
+        { "say": "Amylase in saliva starts on starch. Pepsin in the acid stomach starts on protein.", "write": "amylase: starch · pepsin: protein" },
+        { "say": "Bile from the liver emulsifies fat into tiny droplets. It is not an enzyme.", "write": "bile emulsifies",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "A big fat droplet is broken into many small droplets by bile", "items": [
+            { "kind": "circle", "x": 130, "y": 120, "r": 80, "fill": "yellow", "label": "fat", "change": "remove" },
+            { "kind": "arrow", "x": 230, "y": 120, "x2": 310, "y2": 120, "color": "green" },
+            { "kind": "text", "x": 270, "y": 100, "text": "bile", "size": 18, "anchor": "middle" },
+            { "kind": "circle", "x": 360, "y": 80, "r": 20, "fill": "yellow", "change": "add" },
+            { "kind": "circle", "x": 420, "y": 70, "r": 20, "fill": "yellow", "change": "add" },
+            { "kind": "circle", "x": 480, "y": 90, "r": 20, "fill": "yellow", "change": "add" },
+            { "kind": "circle", "x": 370, "y": 150, "r": 20, "fill": "yellow", "change": "add" },
+            { "kind": "circle", "x": 430, "y": 140, "r": 20, "fill": "yellow", "change": "add" },
+            { "kind": "circle", "x": 490, "y": 160, "r": 20, "fill": "yellow", "change": "add" },
+            { "kind": "text", "x": 420, "y": 220, "text": "more surface for lipase", "size": 18, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "Bile breaks, lipase takes. Lipase is the enzyme that digests the fat.", "write": "bile breaks, lipase takes" },
+        { "say": "Villi and microvilli give the small intestine a huge surface for absorption.", "write": "villi → absorption" }
+      ] },
+    { "heading": "The endocrine system",
+      "lines": [
+        { "say": "Glands release hormones, chemical messengers, straight into the blood.", "write": "gland → hormone → blood" },
+        { "say": "The hormone reaches every cell, but only target cells respond.", "write": "only target cells respond",
+          "draw": { "type": "shapes", "width": 560, "height": 240, "alt": "Hormone reaches three cells; only the one with a matching receptor responds", "items": [
+            { "kind": "circle", "x": 120, "y": 120, "r": 50, "fill": "grey", "label": "no receptor" },
+            { "kind": "circle", "x": 280, "y": 120, "r": 50, "fill": "green", "label": "target cell", "change": "highlight" },
+            { "kind": "circle", "x": 440, "y": 120, "r": 50, "fill": "grey", "label": "no receptor" },
+            { "kind": "rect", "x": 268, "y": 60, "w": 24, "h": 14, "fill": "orange" },
+            { "kind": "text", "x": 280, "y": 210, "text": "matching receptor → response", "size": 18, "anchor": "middle", "color": "purple" }
+          ] } },
+        { "say": "That is because only target cells have the matching receptor protein.", "write": "hormone + receptor" },
+        { "say": "Hormones are slower to start than nerves, but their effects last longer.", "write": "slower, longer lasting" }
+      ] },
+    { "heading": "The kidneys and nephrons",
+      "lines": [
+        { "say": "Excretion removes wastes the body made, like urea.", "write": "excretion: urea" },
+        { "say": "Urea is made in the liver by deamination, then carried to the kidneys.", "write": "liver makes, kidney takes" },
+        { "say": "Filter: blood pressure pushes small molecules into Bowman's capsule. Cells and proteins stay.", "write": "1 Filtration (glomerulus)",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Glomerulus filters small molecules into Bowman's capsule while cells and proteins stay in the blood", "items": [
+            { "kind": "rect", "x": 40, "y": 40, "w": 200, "h": 180, "fill": "red", "label": "blood" },
+            { "kind": "rect", "x": 320, "y": 40, "w": 200, "h": 180, "fill": "yellow", "label": "filtrate" },
+            { "kind": "circle", "x": 90, "y": 80, "r": 18, "fill": "white", "label": "cell" },
+            { "kind": "circle", "x": 190, "y": 180, "r": 18, "fill": "white", "label": "prot" },
+            { "kind": "arrow", "x": 230, "y": 90, "x2": 330, "y2": 90, "color": "black", "change": "add" },
+            { "kind": "arrow", "x": 230, "y": 130, "x2": 330, "y2": 130, "color": "black", "change": "add" },
+            { "kind": "arrow", "x": 230, "y": 170, "x2": 330, "y2": 170, "color": "black", "change": "add" },
+            { "kind": "text", "x": 280, "y": 250, "text": "water, glucose, salts, urea pass", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Fetch back: all glucose and amino acids, and most water and salt, return to the blood.", "write": "2 Selective reabsorption" },
+        { "say": "Flush out: some ions and drugs are secreted into the tubule.", "write": "3 Secretion" }
+      ] },
+    { "heading": "Systems work together",
+      "lines": [
+        { "say": "The blood links every system.", "write": "circulatory system links all" },
+        { "say": "Amino acids absorbed by the gut become urea in the liver, removed by the kidneys.", "write": "gut → liver → kidney" },
+        { "say": "The pancreas is in two systems: enzymes for digestion, insulin and glucagon for blood.", "write": "pancreas: 2 systems" },
+        { "say": "ADH, a hormone, controls how much water the kidneys keep.", "write": "ADH → kidney water" }
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "Bile does not digest fat. It only emulsifies it.", "write": "✗ bile digests fat" },
+        { "say": "Removing faeces is egestion, not excretion. Faeces were never part of body cells.", "write": "faeces = egestion" },
+        { "say": "Urea is made in the liver, not the kidneys.", "write": "✗ kidneys make urea" },
+        { "say": "Villi are many-celled projections. Microvilli are folds on one cell.", "write": "villi ≠ microvilli" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Structure matches function. Name the feature and explain the link.", "write": "feature + link" },
+        { "say": "Cells, tissues, organs, systems, organism.", "write": "cell → tissue → organ → system" },
+        { "say": "Nephron in three verbs: filter, fetch back, flush out.", "write": "filter, fetch back, flush out" },
+        { "say": "Hormones act only on target cells with matching receptors.", "write": "receptor = response" }
+      ] }
+  ]
+}

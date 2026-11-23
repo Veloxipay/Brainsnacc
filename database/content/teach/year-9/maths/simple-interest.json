@@ -1,0 +1,154 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Simple interest",
+  "frames": [
+    {
+      "heading": "What is interest?",
+      "lines": [
+        { "say": "When you put money in a bank, the bank pays you interest.", "write": "interest = rent for your money" },
+        { "say": "When you borrow money, you pay interest to the lender." },
+        { "say": "With simple interest, you earn the same amount every single year.", "write": "same interest every year" },
+        {
+          "say": "Here is 2000 dollars at 5 percent. Each year it grows by 100 dollars.",
+          "diagram": "diagrams/y9/maths/simple-interest-growth.svg",
+          "alt": "Column graph of $2000 at 5% p.a. simple interest growing by $100 each year to $2500"
+        },
+        { "say": "Equal steps every year. That makes a straight-line pattern." }
+      ]
+    },
+    {
+      "heading": "The words and the formula",
+      "lines": [
+        { "say": "P is the principal. That's the money you start with.", "write": "P = principal" },
+        { "say": "r is the rate per year, written as a decimal. 5 percent is 0.05.", "write": "r = rate p.a.   5% = 0.05" },
+        { "say": "t is the time, and it must be in years.", "write": "t = time in years" },
+        { "say": "Multiply them together to get the interest, I.", "write": "I = P × r × t" },
+        { "say": "The total amount is the principal plus the interest.", "write": "A = P + I" }
+      ]
+    },
+    {
+      "heading": "Example: $2000 at 5% for 5 years",
+      "lines": [
+        {
+          "say": "Start with 2000 dollars. One year's interest is 2000 times 0.05.",
+          "write": "2000 × 0.05 = $100 per year",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Principal bar of $2000",
+            "items": [
+              { "kind": "rect", "x": 30, "y": 80, "w": 300, "h": 80, "fill": "blue", "label": "P = $2000" },
+              { "kind": "text", "x": 30, "y": 240, "text": "Start: $2000", "size": 22, "bold": true }
+            ]
+          }
+        },
+        {
+          "say": "Each year adds the same 100 dollars. Five years, five blocks.",
+          "write": "I = 2000 × 0.05 × 5 = $500",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Five equal $100 interest blocks added to the $2000 principal",
+            "items": [
+              { "kind": "rect", "x": 30, "y": 80, "w": 300, "h": 80, "fill": "blue", "label": "P = $2000" },
+              { "kind": "rect", "x": 330, "y": 80, "w": 40, "h": 80, "fill": "green", "label": "100", "change": "add" },
+              { "kind": "rect", "x": 370, "y": 80, "w": 40, "h": 80, "fill": "green", "label": "100", "change": "add" },
+              { "kind": "rect", "x": 410, "y": 80, "w": 40, "h": 80, "fill": "green", "label": "100", "change": "add" },
+              { "kind": "rect", "x": 450, "y": 80, "w": 40, "h": 80, "fill": "green", "label": "100", "change": "add" },
+              { "kind": "rect", "x": 490, "y": 80, "w": 40, "h": 80, "fill": "green", "label": "100", "change": "add" },
+              { "kind": "text", "x": 430, "y": 200, "text": "I = $500", "size": 22, "bold": true, "color": "green", "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "Add the interest to the principal to get the total.",
+          "write": "A = 2000 + 500 = $2500",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Principal plus interest gives total $2500",
+            "items": [
+              { "kind": "rect", "x": 30, "y": 80, "w": 300, "h": 80, "fill": "blue", "label": "P = $2000" },
+              { "kind": "rect", "x": 330, "y": 80, "w": 200, "h": 80, "fill": "green", "label": "I = $500" },
+              { "kind": "text", "x": 280, "y": 240, "text": "A = $2500", "size": 26, "bold": true, "color": "purple", "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Check with the graph. 100 dollars a year for 5 years is 500 dollars." }
+      ]
+    },
+    {
+      "heading": "Time in months",
+      "lines": [
+        { "say": "Find the interest on 3600 dollars at 4.5 percent for 8 months.", "write": "P = 3600, r = 0.045" },
+        {
+          "say": "The rate is per year, so change 8 months into years. Divide by 12.",
+          "write": "t = 8 ÷ 12 = 2/3",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "A year split into 12 months with 8 shaded",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 60, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 100, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 140, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 180, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 220, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 260, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 300, "y": 60, "w": 40, "h": 60, "fill": "orange", "change": "highlight" },
+              { "kind": "rect", "x": 340, "y": 60, "w": 40, "h": 60, "fill": "white" },
+              { "kind": "rect", "x": 380, "y": 60, "w": 40, "h": 60, "fill": "white" },
+              { "kind": "rect", "x": 420, "y": 60, "w": 40, "h": 60, "fill": "white" },
+              { "kind": "rect", "x": 460, "y": 60, "w": 40, "h": 60, "fill": "white" },
+              { "kind": "text", "x": 260, "y": 170, "text": "8 of 12 months = 2/3 of a year", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Now multiply. 3600 times 0.045 times two thirds.", "write": "I = 3600 × 0.045 × 2/3" },
+        { "say": "The interest is 108 dollars.", "write": "I = $108" }
+      ]
+    },
+    {
+      "heading": "Rearranging the formula",
+      "lines": [
+        { "say": "If you know three of the letters, you can find the fourth.", "write": "I = Prt" },
+        { "say": "To find the rate, divide the interest by P times t.", "write": "r = I ÷ (P × t)" },
+        { "say": "5000 dollars earns 900 dollars in 3 years. What's the rate?", "write": "r = 900 ÷ (5000 × 3)" },
+        { "say": "900 over 15 thousand is 0.06. Times 100 gives 6 percent.", "write": "r = 0.06 = 6% p.a." },
+        { "say": "To find the time, divide the interest by P times r.", "write": "t = I ÷ (P × r)" },
+        { "say": "1200 dollars at 3.5 percent earns 42 dollars a year. 210 over 42 is 5 years.", "write": "t = 210 ÷ 42 = 5 years" }
+      ]
+    },
+    {
+      "heading": "Loan repayments",
+      "lines": [
+        { "say": "Liam borrows 8000 dollars at 7.2 percent for 4 years.", "write": "I = 8000 × 0.072 × 4 = $2304" },
+        {
+          "say": "He must repay the principal and the interest.",
+          "write": "8000 + 2304 = $10 304",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 240, "alt": "Loan principal bar with interest added",
+            "items": [
+              { "kind": "rect", "x": 30, "y": 70, "w": 360, "h": 70, "fill": "blue", "label": "$8000" },
+              { "kind": "rect", "x": 390, "y": 70, "w": 104, "h": 70, "fill": "red", "label": "$2304", "change": "add" },
+              { "kind": "text", "x": 262, "y": 200, "text": "Total to repay: $10 304", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Four years is 48 months. Share the total over 48 payments.", "write": "10 304 ÷ 48 ≈ $214.67" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Use the decimal, not the percentage. 5 percent is 0.05, not 5.", "write": "✗ 2000 × 5 × 5" },
+        { "say": "Change months to years. 8 months is 8 over 12, not 8.", "write": "✗ t = 8" },
+        { "say": "Read the question. Interest is I. The amount in the account is A.", "write": "I or A = P + I ?" },
+        { "say": "To find r, divide I by P times t. Don't multiply.", "write": "r = I ÷ (Pt)" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "I equals P r t. I Pay Rent Today.", "write": "I = Prt" },
+        { "say": "Rate is per year, so time is in years.", "write": "months ÷ 12" },
+        { "say": "The amount is the principal plus the interest.", "write": "A = P + I" },
+        { "say": "Check backwards by putting your answer into I equals P r t.", "write": "Check ✓" }
+      ]
+    }
+  ]
+}

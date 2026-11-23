@@ -1,0 +1,93 @@
+{
+  "level": "Year 11", "subject": "biology", "title": "Interdependence in ecosystems",
+  "frames": [
+    { "heading": "Ecosystems and food webs",
+      "lines": [
+        { "say": "An ecosystem is a community of organisms plus its non-living surroundings.", "write": "biotic + abiotic" },
+        { "say": "A population is one species. A community is all the populations in an area.", "write": "population · community" },
+        { "say": "Interdependence means a change to one population affects others.", "write": "interdependence" },
+        { "say": "Food web arrows point from the eaten to the eater. Arrows point to the mouth.", "write": "arrow → the eater",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Simple food web: grass to rabbit and kangaroo, rabbit to fox, kangaroo to dingo", "items": [
+            { "kind": "rect", "x": 220, "y": 220, "w": 120, "h": 45, "fill": "green", "label": "grass" },
+            { "kind": "rect", "x": 80, "y": 120, "w": 120, "h": 45, "fill": "yellow", "label": "rabbit" },
+            { "kind": "rect", "x": 360, "y": 120, "w": 120, "h": 45, "fill": "yellow", "label": "kangaroo" },
+            { "kind": "rect", "x": 80, "y": 20, "w": 120, "h": 45, "fill": "orange", "label": "fox" },
+            { "kind": "rect", "x": 360, "y": 20, "w": 120, "h": 45, "fill": "orange", "label": "dingo" },
+            { "kind": "arrow", "x": 250, "y": 220, "x2": 160, "y2": 168, "color": "black", "change": "add" },
+            { "kind": "arrow", "x": 310, "y": 220, "x2": 400, "y2": 168, "color": "black", "change": "add" },
+            { "kind": "arrow", "x": 140, "y": 120, "x2": 140, "y2": 68, "color": "black", "change": "add" },
+            { "kind": "arrow", "x": 420, "y": 120, "x2": 420, "y2": 68, "color": "black", "change": "add" }
+          ] } }
+      ] },
+    { "heading": "Predator and prey",
+      "lines": [
+        { "say": "Plenty of prey means more predators survive and breed.", "write": "prey ↑ → predators ↑" },
+        { "say": "More predators eat more prey, so prey numbers fall. Then predators fall.", "write": "prey ↓ → predators ↓" },
+        { "say": "Rabbits peak in year 2 at about 900. Foxes peak a year later, at about 60.", "write": "predators peak after prey",
+          "draw": { "type": "shapes", "width": 560, "height": 280, "alt": "Rabbit curve peaks at year 2; fox curve peaks one year later at year 3", "items": [
+            { "kind": "line", "x": 50, "y": 240, "x2": 530, "y2": 240, "color": "black" },
+            { "kind": "line", "x": 50, "y": 240, "x2": 50, "y2": 20, "color": "black" },
+            { "kind": "line", "x": 60, "y": 180, "x2": 170, "y2": 40, "color": "blue" },
+            { "kind": "line", "x": 170, "y": 40, "x2": 380, "y2": 200, "color": "blue" },
+            { "kind": "line", "x": 380, "y": 200, "x2": 520, "y2": 120, "color": "blue" },
+            { "kind": "line", "x": 60, "y": 220, "x2": 270, "y2": 130, "color": "red", "change": "add" },
+            { "kind": "line", "x": 270, "y": 130, "x2": 480, "y2": 225, "color": "red", "change": "add" },
+            { "kind": "text", "x": 170, "y": 30, "text": "rabbits (yr 2)", "size": 16, "color": "blue", "anchor": "middle" },
+            { "kind": "text", "x": 300, "y": 120, "text": "foxes (yr 3)", "size": 16, "color": "red", "change": "add" },
+            { "kind": "text", "x": 290, "y": 268, "text": "years", "size": 16, "anchor": "middle" }
+          ] } },
+        { "say": "The lag happens because extra food takes time to become extra offspring.", "write": "lag = time to breed" },
+        { "say": "Predation is also natural selection. Faster, better-hidden prey survive.", "write": "predation selects" }
+      ] },
+    { "heading": "Symbiosis by score",
+      "lines": [
+        { "say": "Symbiosis is a close, long-term relationship between two different species.", "write": "symbiosis" },
+        { "say": "Mutualism is plus, plus. Coral shelters zooxanthellae, and the algae feed the coral.", "write": "mutualism +/+" },
+        { "say": "In hot water, corals expel their algae. That's coral bleaching.", "write": "bleaching: mutualism breaks",
+          "draw": { "type": "shapes", "width": 560, "height": 220, "alt": "Coral with algae inside; the algae are expelled and the coral turns white", "items": [
+            { "kind": "rect", "x": 180, "y": 60, "w": 200, "h": 120, "fill": "white", "label": "coral" },
+            { "kind": "circle", "x": 220, "y": 90, "r": 12, "fill": "orange", "change": "remove" },
+            { "kind": "circle", "x": 280, "y": 150, "r": 12, "fill": "orange", "change": "remove" },
+            { "kind": "circle", "x": 340, "y": 95, "r": 12, "fill": "orange", "change": "remove" },
+            { "kind": "text", "x": 280, "y": 210, "text": "hot water: algae expelled", "size": 18, "anchor": "middle", "color": "red" }
+          ] } },
+        { "say": "Commensalism is plus, zero. An orchid on a tree branch gets light. The tree doesn't care.", "write": "commensalism +/0" },
+        { "say": "Parasitism is plus, minus. Mistletoe takes water from a eucalypt.", "write": "parasitism +/−" }
+      ] },
+    { "heading": "Competition",
+      "lines": [
+        { "say": "Competition is for a limited resource. Both lose. It's lose–lose.", "write": "competition: −/−" },
+        { "say": "Intra means within one species. Inter means between species.", "write": "intra = within · inter = between" },
+        { "say": "Two species can't share exactly the same niche forever. One gets pushed out.", "write": "competitive exclusion" },
+        { "say": "Species avoid that by feeding at different heights or times. Resource partitioning.", "write": "resource partitioning" }
+      ] },
+    { "heading": "Keystone species",
+      "lines": [
+        { "say": "A keystone species has a bigger effect than its numbers suggest.", "write": "keystone species" },
+        { "say": "Pull out the keystone and the arch collapses.", "write": "keystone of an arch",
+          "draw": { "type": "shapes", "width": 560, "height": 260, "alt": "Stone arch with the keystone at the top removed", "items": [
+            { "kind": "rect", "x": 120, "y": 140, "w": 60, "h": 100, "fill": "grey" },
+            { "kind": "rect", "x": 380, "y": 140, "w": 60, "h": 100, "fill": "grey" },
+            { "kind": "rect", "x": 150, "y": 70, "w": 90, "h": 60, "fill": "grey" },
+            { "kind": "rect", "x": 320, "y": 70, "w": 90, "h": 60, "fill": "grey" },
+            { "kind": "polygon", "points": [[245, 40], [315, 40], [300, 110], [260, 110]], "fill": "orange", "change": "remove" },
+            { "kind": "text", "x": 280, "y": 30, "text": "keystone", "size": 18, "anchor": "middle" }
+          ] } },
+        { "say": "Remove dingoes, and kangaroos, foxes and cats may increase.", "write": "dingo removed → cascade" },
+        { "say": "Bilbies and bettongs dig the soil. They're ecosystem engineers.", "write": "ecosystem engineers" }
+      ] },
+    { "heading": "Losing a species",
+      "lines": [
+        { "say": "A chain of effects through feeding levels is a trophic cascade.", "write": "trophic cascade" },
+        { "say": "Remove a predator, prey boom, overgraze, then crash.", "write": "predator → prey ↑ → plants ↓" },
+        { "say": "High biodiversity means more links, so ecosystems may cope better.", "write": "biodiversity buffers" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "State the effect on each species: plus, minus or zero.", "write": "+ / − / 0" },
+        { "say": "Parasites usually harm their host without killing it quickly.", "write": "parasite ≠ killer" },
+        { "say": "Explain the predator lag with food supply and reproduction.", "write": "food → breeding → lag" },
+        { "say": "Predict at least two linked steps when a species is removed.", "write": "two linked steps" }
+      ] }
+  ]
+}

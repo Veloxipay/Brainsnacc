@@ -1,0 +1,415 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Pronumerals on both sides",
+  "frames": [
+    {
+      "heading": "Unknowns on both sides",
+      "lines": [
+        {
+          "say": "Gym A charges 60 dollars to join, plus 5 a visit.",
+          "write": "60 + 5v"
+        },
+        {
+          "say": "Gym B has no joining fee, but charges 15 a visit.",
+          "write": "15v"
+        },
+        {
+          "say": "When do they cost the same? Now v is on both sides.",
+          "write": "60 + 5v = 15v"
+        },
+        {
+          "say": "The plan: collect the pronumerals on one side first.",
+          "write": "letters to one side"
+        }
+      ]
+    },
+    {
+      "heading": "Bags of marbles",
+      "lines": [
+        {
+          "say": "5 bags and 3 marbles balance 2 bags and 18 marbles.",
+          "write": "5x + 3 = 2x + 18",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 5,
+              "cubes": 3
+            },
+            "right": {
+              "bags": 2,
+              "cubes": 18
+            }
+          }
+        },
+        {
+          "say": "Take 2 bags off each side. It still balances.",
+          "write": "− 2x from both sides",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Two bags crossed off each side of the balance",
+            "items": [
+              {
+                "kind": "line",
+                "x": 20,
+                "y": 170,
+                "x2": 260,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 170,
+                "x2": 540,
+                "y2": 170,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "− 2x from both sides",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 110,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 210,
+                "text": "5x + 3 − 2x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 350,
+                "y": 120,
+                "w": 34,
+                "h": 44,
+                "fill": "yellow",
+                "label": "x",
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 210,
+                "text": "2x + 18 − 2x",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 150,
+                "text": "+3",
+                "size": 20,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 150,
+                "text": "+18",
+                "size": 20,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now 3 bags and 3 marbles balance 18 marbles.",
+          "write": "3x + 3 = 18",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3,
+              "cubes": 3
+            },
+            "right": {
+              "cubes": 18
+            }
+          }
+        },
+        {
+          "say": "Take 3 marbles off both sides. Still level.",
+          "write": "3x + 3 − 3 = 18 − 3",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3,
+              "cubes": 3
+            },
+            "right": {
+              "cubes": 18
+            },
+            "remove": 3,
+            "labels": [
+              "3x + 3 − 3",
+              "18 − 3"
+            ]
+          }
+        },
+        {
+          "say": "3 bags balance 15. Share them out. Each bag holds 5.",
+          "write": "3x = 15",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3
+            },
+            "right": {
+              "cubes": 15
+            },
+            "share": true
+          }
+        },
+        {
+          "say": "So x equals 5.",
+          "write": "x = 5"
+        }
+      ]
+    },
+    {
+      "heading": "Setting it out",
+      "lines": [
+        {
+          "say": "Solve 7x minus 4 equals 3x plus 16.",
+          "write": "7x − 4 = 3x + 16"
+        },
+        {
+          "say": "Subtract 3x from both sides.",
+          "write": "4x − 4 = 16"
+        },
+        {
+          "say": "Add 4 to both sides.",
+          "write": "4x = 20"
+        },
+        {
+          "say": "Divide both sides by 4. x equals 5.",
+          "write": "x = 5"
+        },
+        {
+          "say": "Check each side separately. Both give 31.",
+          "write": "31 = 31 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Remove the smaller x-term",
+      "lines": [
+        {
+          "say": "2x plus 9 equals 5x minus 6.",
+          "write": "2x + 9 = 5x − 6"
+        },
+        {
+          "say": "Take away the smaller one, 2x. That keeps things positive.",
+          "write": "9 = 3x − 6"
+        },
+        {
+          "say": "Add 6, then divide by 3. 5 equals x.",
+          "write": "15 = 3x  →  5 = x"
+        },
+        {
+          "say": "x on the right is all right. 5 equals x means x equals 5.",
+          "write": "x = 5"
+        }
+      ]
+    },
+    {
+      "heading": "Negative x-terms",
+      "lines": [
+        {
+          "say": "3 minus 2x equals x plus 15.",
+          "write": "3 − 2x = x + 15"
+        },
+        {
+          "say": "To get rid of minus 2x, add 2x to both sides.",
+          "write": "3 = 3x + 15"
+        },
+        {
+          "say": "Subtract 15 from both sides. Minus 12 equals 3x.",
+          "write": "−12 = 3x"
+        },
+        {
+          "say": "Divide by 3. x equals minus 4.",
+          "write": "x = −4",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3
+            },
+            "right": {
+              "cubes": -12
+            },
+            "share": true
+          }
+        },
+        {
+          "say": "Check. Both sides give 11.",
+          "write": "3 + 8 = 11,  −4 + 15 = 11 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Brackets and word problems",
+      "lines": [
+        {
+          "say": "4 times x minus 1 equals 2 times x plus 5. Expand first.",
+          "write": "4x − 4 = 2x + 10"
+        },
+        {
+          "say": "Subtract 2x, add 4, divide by 2. x equals 7.",
+          "write": "x = 7"
+        },
+        {
+          "say": "Back to the gyms. Subtract 5v from both sides.",
+          "write": "60 = 10v"
+        },
+        {
+          "say": "So v is 6. Both gyms cost 90 dollars after 6 visits.",
+          "write": "v = 6, $90 each"
+        },
+        {
+          "say": "Sometimes the x-terms cancel. 4 equals 9 means no solution.",
+          "write": "4 = 9 → no solution"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't just move a term across. Subtract it from both sides.",
+          "write": "✗ 10x − 4 = 16"
+        },
+        {
+          "say": "Take from one side, take from the other.",
+          "write": "same to BOTH sides",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3,
+              "cubes": 3
+            },
+            "right": {
+              "cubes": 18
+            },
+            "remove": 3,
+            "removeFrom": "left",
+            "tip": "right",
+            "labels": [
+              "3x + 3 − 3",
+              "18"
+            ]
+          }
+        },
+        {
+          "say": "3x equals 15 means 15 divided by 3. Not one fifth.",
+          "write": "✗ x = 1/5"
+        },
+        {
+          "say": "Expand all brackets before collecting.",
+          "write": "expand first"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Letters to one side, numbers to the other.",
+          "write": "letters | numbers"
+        },
+        {
+          "say": "Subtract the smaller x-term from both sides.",
+          "write": "remove smaller x-term"
+        },
+        {
+          "say": "Check both sides separately. They must match.",
+          "write": "LHS = RHS ✓",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 3
+            },
+            "right": {
+              "cubes": 15
+            },
+            "share": true
+          }
+        }
+      ]
+    }
+  ]
+}

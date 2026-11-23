@@ -1,0 +1,130 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Year 9 Maths challenge",
+  "frames": [
+    {
+      "heading": "How this challenge works",
+      "lines": [
+        { "say": "This challenge mixes the whole year. Any question could come from any topic.", "write": "mixed whole-year test" },
+        { "say": "You have 55 minutes. Short answers first, then 20 multiple choice.", "write": "55 minutes" },
+        { "say": "Calculator allowed. Check it's in degree mode. Sine 30 should give 0.5.", "write": "sin 30° = 0.5 ✓" },
+        {
+          "say": "Score 80 percent or more and you're ready for next year.",
+          "write": "80%+ ready",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Scoring bands: under 60%, 60 to 79%, 80% or more",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 300, "h": 60, "fill": "red", "label": "under 60%: revise" },
+              { "kind": "rect", "x": 320, "y": 60, "w": 100, "h": 60, "fill": "yellow", "label": "60–79%" },
+              { "kind": "rect", "x": 420, "y": 60, "w": 120, "h": 60, "fill": "green", "label": "80%+", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Mark each correct step, not just the final answer. That's how teachers mark." }
+      ]
+    },
+    {
+      "heading": "Indices: one over, not minus",
+      "lines": [
+        { "say": "A negative index means one over. It never makes a number negative.", "write": "2⁻³ = 1/8" },
+        {
+          "say": "y to the minus 1 moves under the fraction line and becomes y.",
+          "write": "3x²y⁻¹ = 3x²/y",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "y to the minus 1 moves from the top to the bottom of the fraction",
+            "items": [
+              { "kind": "text", "x": 200, "y": 80, "text": "3x²", "size": 36, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 300, "y": 80, "text": "y⁻¹", "size": 36, "bold": true, "color": "red", "anchor": "middle", "change": "remove" },
+              { "kind": "line", "x": 140, "y": 110, "x2": 360, "y2": 110, "color": "black" },
+              { "kind": "text", "x": 250, "y": 165, "text": "y", "size": 36, "bold": true, "color": "green", "anchor": "middle", "change": "add" }
+            ]
+          }
+        },
+        { "say": "Times means add the indices. Divide means subtract. Bracket means multiply.", "write": "× add, ÷ subtract, () multiply" },
+        { "say": "Careful subtracting a negative. Minus 3 minus minus 2 is minus 1.", "write": "y⁻³ ÷ y⁻² = y⁻¹" }
+      ]
+    },
+    {
+      "heading": "Pythagoras and trig",
+      "lines": [
+        {
+          "say": "Pythagoras only works in right-angled triangles. c is the longest side.",
+          "write": "c² = a² + b²",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 280, "alt": "Right-angled triangle with hypotenuse c highlighted",
+            "items": [
+              { "kind": "polygon", "points": [[120,240],[420,240],[120,60]], "fill": "none" },
+              { "kind": "rect", "x": 120, "y": 220, "w": 20, "h": 20, "fill": "none" },
+              { "kind": "line", "x": 420, "y": 240, "x2": 120, "y2": 60, "color": "purple", "change": "highlight" },
+              { "kind": "text", "x": 290, "y": 135, "text": "c", "size": 26, "bold": true, "color": "purple" },
+              { "kind": "text", "x": 100, "y": 155, "text": "a", "size": 24, "anchor": "end" },
+              { "kind": "text", "x": 270, "y": 270, "text": "b", "size": 24, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Finding a shorter side? Subtract the squares.", "write": "a² = c² − b²" },
+        { "say": "For trig, label opposite, adjacent and hypotenuse from the angle first.", "write": "O, A, H from θ" },
+        { "say": "Opposite and hypotenuse means SOH. Use sine.", "write": "O = H × sin θ" }
+      ]
+    },
+    {
+      "heading": "Expanding two brackets",
+      "lines": [
+        { "say": "Every term in the first bracket meets every term in the second.", "write": "(a + b)(c + d)" },
+        {
+          "say": "That's four multiplications for two pairs of brackets.",
+          "write": "ac + ad + bc + bd",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 240, "alt": "Four arrows joining each term in the first bracket to each in the second",
+            "items": [
+              { "kind": "text", "x": 120, "y": 160, "text": "(a", "size": 36, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 200, "y": 160, "text": "+ b)", "size": 36, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 320, "y": 160, "text": "(c", "size": 36, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 410, "y": 160, "text": "+ d)", "size": 36, "bold": true, "anchor": "middle" },
+              { "kind": "arrow", "x": 125, "y": 120, "x2": 320, "y2": 120, "color": "blue", "change": "add" },
+              { "kind": "arrow", "x": 125, "y": 110, "x2": 420, "y2": 110, "color": "blue", "change": "add" },
+              { "kind": "arrow", "x": 215, "y": 190, "x2": 320, "y2": 190, "color": "orange", "change": "add" },
+              { "kind": "arrow", "x": 215, "y": 200, "x2": 420, "y2": 200, "color": "orange", "change": "add" }
+            ]
+          }
+        },
+        { "say": "Then collect like terms. Watch the signs on negative terms.", "write": "collect like terms" }
+      ]
+    },
+    {
+      "heading": "Two points on a line",
+      "lines": [
+        { "say": "Gradient is the change in y over the change in x.", "write": "m = (y₂ − y₁)/(x₂ − x₁)" },
+        { "say": "Find m, then put one point in to find c. Check with the other point.", "write": "y = mx + c" },
+        { "say": "Midpoint. Average the x values and average the y values.", "write": "((x₁+x₂)/2, (y₁+y₂)/2)" },
+        {
+          "say": "Length. Use Pythagoras on the run and the rise.",
+          "write": "d = √(run² + rise²)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 280, "alt": "Two points joined, with run and rise forming a right-angled triangle",
+            "items": [
+              { "kind": "circle", "x": 100, "y": 230, "r": 8, "fill": "blue" },
+              { "kind": "circle", "x": 420, "y": 50, "r": 8, "fill": "blue" },
+              { "kind": "line", "x": 100, "y": 230, "x2": 420, "y2": 50, "color": "purple" },
+              { "kind": "line", "x": 100, "y": 230, "x2": 420, "y2": 230, "color": "orange", "dashed": true, "change": "add" },
+              { "kind": "line", "x": 420, "y": 230, "x2": 420, "y2": 50, "color": "green", "dashed": true, "change": "add" },
+              { "kind": "text", "x": 260, "y": 262, "text": "run", "size": 20, "bold": true, "color": "orange", "anchor": "middle" },
+              { "kind": "text", "x": 435, "y": 145, "text": "rise", "size": 20, "bold": true, "color": "green" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Negative index means one over.", "write": "a⁻ⁿ = 1/aⁿ" },
+        { "say": "Pythagoras, c is always the longest side.", "write": "c = hypotenuse" },
+        { "say": "SOH CAH TOA, in degree mode.", "write": "SOH CAH TOA" },
+        { "say": "Every term meets every term.", "write": "4 multiplications" },
+        { "say": "Got one wrong? Write your steps. Then go back to that lesson.", "write": "find the step" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,442 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Congruence tests for triangles",
+  "frames": [
+    {
+      "heading": "Three facts are enough",
+      "lines": [
+        {
+          "say": "A triangle has six facts: three sides and three angles.",
+          "write": "3 sides + 3 angles"
+        },
+        {
+          "say": "Three well-chosen facts prove two triangles congruent.",
+          "write": "4 tests"
+        },
+        {
+          "say": "Join sticks of 3, 4 and 5 centimetres. Everyone makes the same triangle.",
+          "write": "3, 4, 5 → one triangle",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A triangle of sticks is rigid; a quadrilateral squashes",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    240
+                  ],
+                  [
+                    240,
+                    240
+                  ],
+                  [
+                    40,
+                    90
+                  ]
+                ],
+                "fill": "teal",
+                "label": "3, 4, 5"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    300,
+                    240
+                  ],
+                  [
+                    480,
+                    240
+                  ],
+                  [
+                    480,
+                    100
+                  ],
+                  [
+                    300,
+                    100
+                  ]
+                ],
+                "fill": "orange",
+                "change": "remove"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    300,
+                    240
+                  ],
+                  [
+                    480,
+                    240
+                  ],
+                  [
+                    540,
+                    120
+                  ],
+                  [
+                    360,
+                    120
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Four sticks can squash into many shapes. Three sides lock a triangle.",
+          "write": "triangles are rigid"
+        }
+      ]
+    },
+    {
+      "heading": "SSS and SAS",
+      "lines": [
+        {
+          "say": "SSS. Three pairs of equal sides.",
+          "write": "SSS: side, side, side",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "The four tests",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "change": "highlight",
+                "label": "SSS"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SAS"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "AAS"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 160,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "RHS"
+              }
+            ]
+          }
+        },
+        {
+          "say": "SAS. Two sides and the angle between them.",
+          "write": "SAS: included angle",
+          "diagram": "diagrams/y8/maths/congruence-tests-for-triangles-sas.svg",
+          "alt": "AB = PQ = 6 cm, BC = QR = 8 cm, 50° angle between"
+        },
+        {
+          "say": "AB and BC meet at B. So the 50 degree angle is included.",
+          "write": "∠B between AB and BC ✓"
+        },
+        {
+          "say": "So triangle ABC is congruent to PQR, by SAS.",
+          "write": "△ABC ≅ △PQR (SAS)"
+        },
+        {
+          "say": "The A in SAS sits in the middle, just like the angle.",
+          "write": "S A S"
+        }
+      ]
+    },
+    {
+      "heading": "AAS and RHS",
+      "lines": [
+        {
+          "say": "AAS. Two angles and a side in a matching position.",
+          "write": "AAS (or ASA)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "The four tests",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SSS"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SAS"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "change": "highlight",
+                "label": "AAS"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 160,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "RHS"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Two equal angles mean the third angle is equal too.",
+          "write": "180° − 35° − 22° = 123°"
+        },
+        {
+          "say": "RHS. A right angle, the hypotenuse, and one other side.",
+          "write": "RHS",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "The four tests",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SSS"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SAS"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "AAS"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 160,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "change": "highlight",
+                "label": "RHS"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Hypotenuse 13 and a side of 5. Pythagoras gives 12.",
+          "write": "√(13² − 5²) = 12"
+        },
+        {
+          "say": "So a 13, 12 right triangle matches it. Congruent by RHS.",
+          "write": "≅ (RHS)"
+        }
+      ]
+    },
+    {
+      "heading": "Facts that are not enough",
+      "lines": [
+        {
+          "say": "Three equal angles? A small and a large equilateral triangle.",
+          "diagram": "diagrams/y8/maths/congruence-tests-for-triangles-aaa.svg",
+          "alt": "Small and large equilateral triangles, all angles 60°"
+        },
+        {
+          "say": "AAA only shows the shape, not the size.",
+          "write": "✗ AAA"
+        },
+        {
+          "say": "SSA can make two different triangles. Never spell SSA!",
+          "write": "✗ SSA",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Valid and invalid tests",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SSS"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "SAS"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 40,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "AAS"
+              },
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 160,
+                "w": 160,
+                "h": 90,
+                "fill": "green",
+                "label": "RHS"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 160,
+                "h": 90,
+                "fill": "red",
+                "change": "remove",
+                "label": "AAA"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 160,
+                "w": 160,
+                "h": 90,
+                "fill": "red",
+                "change": "remove",
+                "label": "SSA"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Every real test has at least one S. You always need a side.",
+          "write": "always a side"
+        }
+      ]
+    },
+    {
+      "heading": "Using congruence",
+      "lines": [
+        {
+          "say": "AB equals AC. M is the midpoint of BC. Angle B is 66.",
+          "diagram": "diagrams/y8/maths/congruence-tests-for-triangles-ex3.svg",
+          "alt": "Isosceles triangle with midpoint M and line AM"
+        },
+        {
+          "say": "AB equals AC, BM equals CM, and AM is shared.",
+          "write": "AM common"
+        },
+        {
+          "say": "Three sides, so the two halves are congruent by SSS.",
+          "write": "△ABM ≅ △ACM (SSS)"
+        },
+        {
+          "say": "The angles at M are equal and on a straight line. Each is 90.",
+          "write": "∠AMB = 90°"
+        },
+        {
+          "say": "So angle BAM is 180 minus 66 minus 90. That's 24.",
+          "write": "∠BAM = 24°"
+        }
+      ]
+    },
+    {
+      "heading": "Writing a proof",
+      "lines": [
+        {
+          "say": "List each matching fact with its reason.",
+          "write": "AB = DE (given)"
+        },
+        {
+          "say": "Name the test.",
+          "write": "(SAS)"
+        },
+        {
+          "say": "Write the statement with matching vertices in the same order.",
+          "write": "△ABC ≅ △DEF"
+        },
+        {
+          "say": "Hunt for freebies. Shared sides, opposite angles, and the third angle.",
+          "write": "common • vert. opp. • 180°"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "The four tests are SSS, SAS, AAS and RHS.",
+          "write": "SSS SAS AAS RHS"
+        },
+        {
+          "say": "AAA and SSA don't prove congruence.",
+          "write": "✗ AAA ✗ SSA"
+        },
+        {
+          "say": "In SAS the angle is between the two sides.",
+          "write": "included angle"
+        },
+        {
+          "say": "Congruent triangles have all matching parts equal.",
+          "write": "then all parts equal"
+        }
+      ]
+    }
+  ]
+}

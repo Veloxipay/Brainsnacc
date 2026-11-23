@@ -1,0 +1,720 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Finding angles with trigonometry",
+  "frames": [
+    {
+      "heading": "Inverse trig functions",
+      "lines": [
+        {
+          "say": "Last time we found sides. Now we find angles.",
+          "write": "find the angle θ"
+        },
+        {
+          "say": "Inverse sine answers: which angle has this sine?",
+          "write": "sin⁻¹(0.5) = 30°"
+        },
+        {
+          "say": "Because sine of 30 degrees is 0.5.",
+          "write": "sin 30° = 0.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 240,
+            "alt": "Sine and inverse sine undo each other",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 90,
+                "w": 160,
+                "h": 80,
+                "fill": "blue",
+                "label": "30°",
+                "labelSize": 28
+              },
+              {
+                "kind": "arrow",
+                "x": 210,
+                "y": 110,
+                "x2": 350,
+                "y2": 110,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 95,
+                "text": "sin",
+                "size": 20,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 90,
+                "w": 160,
+                "h": 80,
+                "fill": "orange",
+                "label": "0.5",
+                "labelSize": 28
+              },
+              {
+                "kind": "arrow",
+                "x": 350,
+                "y": 160,
+                "x2": 210,
+                "y2": 160,
+                "color": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 195,
+                "text": "sin⁻¹",
+                "size": 22,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Press shift, then sin. The minus 1 is not a power.",
+          "write": "SHIFT sin = sin⁻¹"
+        },
+        {
+          "say": "Cos inverse and tan inverse work the same way.",
+          "write": "cos⁻¹   tan⁻¹"
+        }
+      ]
+    },
+    {
+      "heading": "Four steps",
+      "lines": [
+        {
+          "say": "Opposite is 5, hypotenuse is 8. Find theta.",
+          "write": "O = 5, H = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "Right triangle with opposite 5 and hypotenuse 8",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    460,
+                    260
+                  ],
+                  [
+                    460,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none",
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 245,
+                "text": "θ",
+                "size": 26,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 170,
+                "text": "5",
+                "size": 24,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 145,
+                "text": "8",
+                "size": 24,
+                "color": "black",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Step one. Label the two known sides from theta.",
+          "write": "1. label",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "Right triangle with opposite 5 and hypotenuse 8",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    460,
+                    260
+                  ],
+                  [
+                    460,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none",
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 245,
+                "text": "θ",
+                "size": 26,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 170,
+                "text": "5",
+                "size": 24,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 145,
+                "text": "8",
+                "size": 24,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 200,
+                "text": "O",
+                "size": 20,
+                "color": "purple",
+                "change": "add",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 175,
+                "text": "H",
+                "size": 20,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Step two. O and H means SOH. Write it as a fraction.",
+          "write": "2. sin θ = 5/8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "Right triangle with opposite 5 and hypotenuse 8",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    460,
+                    260
+                  ],
+                  [
+                    460,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none",
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 245,
+                "text": "θ",
+                "size": 26,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 170,
+                "text": "5",
+                "size": 24,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 145,
+                "text": "8",
+                "size": 24,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 200,
+                "text": "O",
+                "size": 20,
+                "color": "purple",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 175,
+                "text": "H",
+                "size": 20,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "sin θ = 5/8",
+                "size": 26,
+                "color": "green",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Step three. Use the inverse. Theta is about 38.7 degrees.",
+          "write": "θ ≈ 38.7°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "Right triangle with opposite 5 and hypotenuse 8",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    460,
+                    260
+                  ],
+                  [
+                    460,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none",
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 245,
+                "text": "θ",
+                "size": 26,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 170,
+                "text": "5",
+                "size": 24,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 145,
+                "text": "8",
+                "size": 24,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 200,
+                "text": "O",
+                "size": 20,
+                "color": "purple",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 175,
+                "text": "H",
+                "size": 20,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "sin θ = 5/8",
+                "size": 26,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 340,
+                "text": "θ = sin⁻¹(5/8) ≈ 38.7°",
+                "size": 26,
+                "color": "green",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check. Sine of 38.7 is about 0.625.",
+          "write": "sin 38.7° ≈ 0.625 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Tan and cos",
+      "lines": [
+        {
+          "say": "Opposite 9, adjacent 4. That's TOA.",
+          "write": "tan θ = 9/4 = 2.25",
+          "diagram": "diagrams/y9/maths/finding-angles-with-trigonometry-ex2.svg",
+          "alt": "Right triangle with opposite 9 m and adjacent 4 m"
+        },
+        {
+          "say": "Tan inverse of 2.25 is about 66 degrees.",
+          "write": "θ ≈ 66.0°"
+        },
+        {
+          "say": "Opposite is longer than adjacent, so more than 45 makes sense.",
+          "write": "O > A → θ > 45°"
+        },
+        {
+          "say": "Adjacent 11, hypotenuse 14. That's CAH.",
+          "write": "cos θ = 11/14",
+          "diagram": "diagrams/y9/maths/finding-angles-with-trigonometry-ex3.svg",
+          "alt": "Right triangle with adjacent 11 cm and hypotenuse 14 cm"
+        },
+        {
+          "say": "Cos inverse of 11 over 14 is about 38.2 degrees.",
+          "write": "θ ≈ 38.2°"
+        }
+      ]
+    },
+    {
+      "heading": "The other angle",
+      "lines": [
+        {
+          "say": "A ramp rises 1.2 metres over 9 metres.",
+          "write": "tan θ = 1.2/9",
+          "diagram": "diagrams/y9/maths/finding-angles-with-trigonometry-ex4.svg",
+          "alt": "Ramp with rise 1.2 m over 9 m"
+        },
+        {
+          "say": "Tan inverse gives about 7.6 degrees with the ground.",
+          "write": "θ ≈ 7.6°"
+        },
+        {
+          "say": "The two acute angles add to 90. So the top angle is about 82.4.",
+          "write": "90° − 7.6° ≈ 82.4°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "The two acute angles add to 90 degrees",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    40,
+                    250
+                  ],
+                  [
+                    520,
+                    250
+                  ],
+                  [
+                    520,
+                    190
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 240,
+                "text": "7.6°",
+                "size": 20,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 215,
+                "text": "82.4°",
+                "size": 20,
+                "color": "green",
+                "change": "add",
+                "bold": true,
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 140,
+                "text": "7.6° + 82.4° = 90°",
+                "size": 26,
+                "color": "purple",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "A quick check",
+      "lines": [
+        {
+          "say": "Sine and cos values must be between 0 and 1.",
+          "write": "0 ≤ sin, cos ≤ 1"
+        },
+        {
+          "say": "A fraction bigger than 1? The hypotenuse is on top, or you picked the wrong side.",
+          "write": "sin θ = 8/5 ✗"
+        },
+        {
+          "say": "The calculator will show an error.",
+          "write": "Math ERROR"
+        },
+        {
+          "say": "Tan can be bigger than 1. That's fine.",
+          "write": "tan can be > 1"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use sin inverse, not sin, when you want an angle.",
+          "write": "SHIFT for angles"
+        },
+        {
+          "say": "Label O, A and H from theta before you pick a ratio.",
+          "write": "label first"
+        },
+        {
+          "say": "SOH CAH TOA. The first letter goes on top.",
+          "write": "tan θ = O/A, not A/O"
+        },
+        {
+          "say": "Check your calculator is in degrees. Look for D or DEG.",
+          "write": "DEG mode"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Label, choose, write, inverse.",
+          "write": "label → choose → write → inverse",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 360,
+            "alt": "Right triangle with opposite 5 and hypotenuse 8",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    80,
+                    260
+                  ],
+                  [
+                    460,
+                    260
+                  ],
+                  [
+                    460,
+                    60
+                  ]
+                ],
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 240,
+                "w": 20,
+                "h": 20,
+                "fill": "none",
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 245,
+                "text": "θ",
+                "size": 26,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 170,
+                "text": "5",
+                "size": 24,
+                "color": "black",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 145,
+                "text": "8",
+                "size": 24,
+                "color": "black",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 480,
+                "y": 200,
+                "text": "O",
+                "size": 20,
+                "color": "purple",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 225,
+                "y": 175,
+                "text": "H",
+                "size": 20,
+                "color": "purple"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "sin θ = 5/8",
+                "size": 26,
+                "color": "green",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 340,
+                "text": "θ = sin⁻¹(5/8) ≈ 38.7°",
+                "size": 26,
+                "color": "green",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Inverse trig turns a ratio back into an angle.",
+          "write": "sin⁻¹ cos⁻¹ tan⁻¹"
+        },
+        {
+          "say": "The two acute angles add to 90 degrees.",
+          "write": "acute angles sum to 90°"
+        },
+        {
+          "say": "Round as asked, usually one decimal place.",
+          "write": "1 dp"
+        }
+      ]
+    }
+  ]
+}

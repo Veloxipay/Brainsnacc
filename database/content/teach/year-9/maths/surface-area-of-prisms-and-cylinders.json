@@ -1,0 +1,130 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Surface area of prisms and cylinders",
+  "frames": [
+    {
+      "heading": "What is surface area?",
+      "lines": [
+        { "say": "Surface area is the total area of all the outside faces of a solid.", "write": "SA = total area of faces" },
+        { "say": "Think of wrapping a present. You cover every face." },
+        {
+          "say": "Unfold the solid flat and you get a net. It shows every face.",
+          "write": "net",
+          "diagram": "diagrams/y9/maths/surface-area-of-prisms-and-cylinders-net.svg",
+          "alt": "Net of a rectangular prism with base, front, back, top and two sides"
+        },
+        { "say": "Surface area is in square units, like centimetres squared.", "write": "cm²" }
+      ]
+    },
+    {
+      "heading": "Rectangular prisms",
+      "lines": [
+        { "say": "A box 8 by 5 by 3 centimetres has three pairs of matching faces.", "write": "SA = 2(lw + lh + wh)" },
+        {
+          "say": "Top and bottom are 8 by 5. That's 2 times 40, which is 80.",
+          "write": "2 × 8 × 5 = 80",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Three pairs of faces: 8 by 5, 8 by 3 and 5 by 3",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 40, "w": 160, "h": 100, "fill": "blue", "label": "8 × 5", "change": "highlight" },
+              { "kind": "rect", "x": 20, "y": 160, "w": 160, "h": 100, "fill": "blue", "label": "8 × 5", "change": "highlight" },
+              { "kind": "rect", "x": 200, "y": 60, "w": 160, "h": 60, "fill": "orange", "label": "8 × 3" },
+              { "kind": "rect", "x": 200, "y": 180, "w": 160, "h": 60, "fill": "orange", "label": "8 × 3" },
+              { "kind": "rect", "x": 380, "y": 40, "w": 100, "h": 60, "fill": "green", "label": "5 × 3" },
+              { "kind": "rect", "x": 380, "y": 180, "w": 100, "h": 60, "fill": "green", "label": "5 × 3" }
+            ]
+          }
+        },
+        { "say": "Front and back are 8 by 3, so 48. The two ends are 5 by 3, so 30.", "write": "48 + 30" },
+        { "say": "Add all six faces. 80 plus 48 plus 30 is 158.", "write": "SA = 158 cm²" }
+      ]
+    },
+    {
+      "heading": "Any prism",
+      "lines": [
+        { "say": "A prism has two identical ends, and rectangles wrap around the sides.", "write": "two ends + the band" },
+        { "say": "The band's length is the perimeter of the end.", "write": "SA = 2 × end + perimeter × length" },
+        {
+          "say": "This triangular prism has a right-angled triangle end. 6, 8 and 10 centimetres.",
+          "diagram": "diagrams/y9/maths/surface-area-of-prisms-and-cylinders-ex2.svg",
+          "alt": "Triangular prism with end sides 6 cm, 8 cm and 10 cm and length 12 cm"
+        },
+        { "say": "Each triangle is a half times 6 times 8, which is 24. Two ends make 48.", "write": "2 × ½ × 6 × 8 = 48" },
+        { "say": "The perimeter is 24. Times the length 12 gives 288.", "write": "24 × 12 = 288" },
+        { "say": "So the surface area is 336 square centimetres.", "write": "SA = 336 cm²" }
+      ]
+    },
+    {
+      "heading": "Cylinders",
+      "lines": [
+        {
+          "say": "A cylinder is like two coins and a label.",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Two circles and a rectangle",
+            "items": [
+              { "kind": "circle", "x": 80, "y": 80, "r": 50, "fill": "blue", "label": "πr²" },
+              { "kind": "circle", "x": 80, "y": 220, "r": 50, "fill": "blue", "label": "πr²" },
+              { "kind": "rect", "x": 170, "y": 100, "w": 360, "h": 100, "fill": "orange", "label": "label" }
+            ]
+          }
+        },
+        {
+          "say": "The label wraps around the circle, so its length is the circumference, 2 pi r.",
+          "write": "label = 2πr × h",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "The label's length is marked 2πr and its height h",
+            "items": [
+              { "kind": "circle", "x": 80, "y": 80, "r": 50, "fill": "blue", "label": "πr²" },
+              { "kind": "circle", "x": 80, "y": 220, "r": 50, "fill": "blue", "label": "πr²" },
+              { "kind": "rect", "x": 170, "y": 100, "w": 360, "h": 100, "fill": "orange", "label": "2πrh", "change": "highlight" },
+              { "kind": "text", "x": 350, "y": 85, "text": "2πr", "size": 22, "bold": true, "anchor": "middle", "change": "add" },
+              { "kind": "text", "x": 545, "y": 158, "text": "h", "size": 22, "bold": true, "anchor": "end", "change": "add" }
+            ]
+          }
+        },
+        { "say": "So a closed cylinder is two circles plus the curved surface.", "write": "SA = 2πr² + 2πrh" },
+        { "say": "Radius 4, height 10. 32 pi plus 80 pi is 112 pi.", "write": "112π ≈ 351.9 cm²" }
+      ]
+    },
+    {
+      "heading": "Open cylinders",
+      "lines": [
+        { "say": "A tank with no lid has only one circle.", "write": "SA = πr² + 2πrh" },
+        {
+          "say": "Radius 0.5 metres, height 1.2 metres. Leave out the top circle.",
+          "write": "no lid!",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "The lid circle is crossed out",
+            "items": [
+              { "kind": "circle", "x": 80, "y": 80, "r": 50, "fill": "blue", "label": "lid", "change": "remove" },
+              { "kind": "circle", "x": 80, "y": 220, "r": 50, "fill": "blue", "label": "base" },
+              { "kind": "rect", "x": 170, "y": 100, "w": 360, "h": 100, "fill": "orange", "label": "2πrh" }
+            ]
+          }
+        },
+        { "say": "The base is 0.25 pi. The curved part is 1.2 pi.", "write": "0.25π + 1.2π = 1.45π" },
+        { "say": "That's about 4.56 square metres of metal.", "write": "≈ 4.56 m²" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "A closed prism has two ends. Count both.", "write": "2 × end" },
+        { "say": "Check for open, no lid, or open-topped.", "write": "lid or no lid?" },
+        { "say": "Use the radius, not the diameter. Halve the diameter first.", "write": "r = d ÷ 2" },
+        { "say": "Triangles need the half. A half times base times height.", "write": "½bh" },
+        { "say": "Surface area is squared units. Volume is cubed.", "write": "cm² not cm³" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Unfold it flat. Surface area is the area of the net.", "write": "area of the net" },
+        { "say": "Two ends, then wrap the band.", "write": "2 × end + P × length" },
+        { "say": "Cylinder. Two coins and a label.", "write": "2πr² + 2πrh" },
+        { "say": "Check the lid before you finish.", "write": "open or closed?" }
+      ]
+    }
+  ]
+}

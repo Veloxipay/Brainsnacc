@@ -1,0 +1,595 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Angles of elevation and depression",
+  "frames": [
+    {
+      "heading": "Looking up: elevation",
+      "lines": [
+        {
+          "say": "The line of sight goes from your eye to the object.",
+          "write": "line of sight"
+        },
+        {
+          "say": "Look up at a tree. The angle from the horizontal is the angle of elevation.",
+          "write": "angle of elevation",
+          "diagram": "diagrams/y10/maths/angles-of-elevation-and-depression-ex1.svg",
+          "alt": "Observer 30 m from a tree, angle of elevation 38 degrees"
+        },
+        {
+          "say": "Always measure it from the horizontal.",
+          "write": "from the horizontal"
+        },
+        {
+          "say": "Eyes up, elevation. Eyes down, depression."
+        }
+      ]
+    },
+    {
+      "heading": "Finding the tree’s height",
+      "lines": [
+        {
+          "say": "Kai stands 30 metres from the tree. The angle is 38 degrees.",
+          "write": "30 m, 38°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right triangle: 30 m adjacent, height h opposite, angle 38 degrees",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 420,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 250,
+                "x2": 420,
+                "y2": 60,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 280,
+                "text": "30 m (adjacent)",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 150,
+                "text": "h",
+                "size": 24,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 420,
+                "y2": 60,
+                "color": "purple",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 235,
+                "text": "38°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The height is opposite the angle. Thirty metres is adjacent.",
+          "write": "O and A → tan",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Right triangle: 30 m adjacent, height h opposite, angle 38 degrees",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 420,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 420,
+                "y": 250,
+                "x2": 420,
+                "y2": 60,
+                "color": "green"
+              },
+              {
+                "kind": "text",
+                "x": 240,
+                "y": 280,
+                "text": "30 m (adjacent)",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 150,
+                "text": "h",
+                "size": 24,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 250,
+                "x2": 420,
+                "y2": 60,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 235,
+                "text": "38°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 400,
+                "y": 230,
+                "w": 20,
+                "h": 20,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 110,
+                "text": "opposite",
+                "size": 18,
+                "color": "green",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Opposite over adjacent is tan.",
+          "write": "tan 38° = h/30"
+        },
+        {
+          "say": "Multiply both sides by 30.",
+          "write": "h = 30 × tan 38°"
+        },
+        {
+          "say": "So the tree is about 23.4 metres tall.",
+          "write": "h ≈ 23.4 m"
+        }
+      ]
+    },
+    {
+      "heading": "Looking down: depression",
+      "lines": [
+        {
+          "say": "From a 45 metre cliff, look down at a boat. The angle is 24 degrees.",
+          "write": "angle of depression",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Cliff with angle of depression 24 degrees at the top and equal angle at the boat",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 80,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 260,
+                "x2": 500,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 500,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 480,
+                "y2": 260,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "24°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 160,
+                "text": "45",
+                "size": 20,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 250,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 290,
+                "text": "d",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Measure it at the top, from the horizontal, not the cliff."
+        },
+        {
+          "say": "The horizontal and the ground are parallel. That makes a Z shape.",
+          "write": "alternate angles",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Cliff with angle of depression 24 degrees at the top and equal angle at the boat",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 80,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 260,
+                "x2": 500,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 500,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 480,
+                "y2": 260,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "24°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 160,
+                "text": "45",
+                "size": 20,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 250,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 290,
+                "text": "d",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 245,
+                "text": "24°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "Z shape: alternate angles",
+                "size": 18,
+                "color": "red",
+                "anchor": "end",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the angle at the boat is also 24 degrees. Now it is inside the triangle.",
+          "write": "elevation = depression"
+        },
+        {
+          "say": "Forty five is opposite. d is adjacent.",
+          "write": "tan 24° = 45/d"
+        },
+        {
+          "say": "d is on the bottom, so divide. About 101.1 metres.",
+          "write": "d = 45 ÷ tan 24° ≈ 101.1 m"
+        }
+      ]
+    },
+    {
+      "heading": "Start at the eyes",
+      "lines": [
+        {
+          "say": "Mia’s eyes are 1.6 metres up. She is 25 metres from a building.",
+          "diagram": "diagrams/y10/maths/angles-of-elevation-and-depression-ex3.svg",
+          "alt": "Mia 25 m from a building, eyes 1.6 m up, angle 52 degrees"
+        },
+        {
+          "say": "The triangle starts at her eyes. Find the part above eye level.",
+          "write": "x = 25 × tan 52° ≈ 32.0"
+        },
+        {
+          "say": "Then add her eye height.",
+          "write": "32.0 + 1.6 ≈ 33.6 m"
+        },
+        {
+          "say": "Ask yourself, where does my triangle start?"
+        }
+      ]
+    },
+    {
+      "heading": "Two angles, one height",
+      "lines": [
+        {
+          "say": "From A the angle is 40 degrees. From C, 30 metres back, it is 28.",
+          "diagram": "diagrams/y10/maths/angles-of-elevation-and-depression-ex4.svg",
+          "alt": "Tower seen from A at 40 degrees and from C 30 m further back at 28 degrees"
+        },
+        {
+          "say": "Two triangles share the height h.",
+          "write": "shared height h"
+        },
+        {
+          "say": "Write each distance as h divided by tan of the angle.",
+          "write": "h/tan 28° − h/tan 40° = 30"
+        },
+        {
+          "say": "Factorise out h and divide. The tower is about 43.5 metres.",
+          "write": "h ≈ 43.5 m"
+        },
+        {
+          "say": "Keep full values in your calculator. Do not round early."
+        },
+        {
+          "say": "Smaller angle means you are further away."
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Depression is measured from the horizontal, not the vertical cliff.",
+          "write": "✗ from the vertical"
+        },
+        {
+          "say": "Move the depression angle down to the object with alternate angles."
+        },
+        {
+          "say": "Do not forget eye height, or the building you stand on."
+        },
+        {
+          "say": "Only horizontal and vertical distances? Use tan.",
+          "write": "tan = O/A"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Elevation is eyes up. Depression is eyes down. Both from the horizon.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Cliff with angle of depression 24 degrees at the top and equal angle at the boat",
+            "items": [
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 80,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 260,
+                "x2": 500,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 500,
+                "y2": 60,
+                "color": "grey",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 60,
+                "x2": 480,
+                "y2": 260,
+                "color": "purple",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 170,
+                "y": 85,
+                "text": "24°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 160,
+                "text": "45",
+                "size": 20,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 480,
+                "y": 250,
+                "r": 10,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 290,
+                "text": "d",
+                "size": 22,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 245,
+                "text": "24°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 40,
+                "text": "Z shape: alternate angles",
+                "size": 18,
+                "color": "red",
+                "anchor": "end",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw a Z for depression. The angles inside are equal.",
+          "write": "Z: equal angles"
+        },
+        {
+          "say": "Use SOH CAH TOA in the right triangle.",
+          "write": "SOH CAH TOA"
+        },
+        {
+          "say": "Add any extra height at the end.",
+          "write": "+ eye height"
+        }
+      ]
+    }
+  ]
+}

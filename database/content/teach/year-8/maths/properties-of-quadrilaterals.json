@@ -1,0 +1,1456 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Properties of quadrilaterals",
+  "frames": [
+    {
+      "heading": "A family of shapes",
+      "lines": [
+        {
+          "say": "Think of the special quadrilaterals as a family. The parallelogram is the parent.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Family tree: parallelogram, then rectangle and rhombus, then square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 20,
+                "w": 180,
+                "h": 50,
+                "fill": "blue",
+                "label": "parallelogram"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The rectangle adds right angles. The rhombus adds equal sides.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Family tree: parallelogram, then rectangle and rhombus, then square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 20,
+                "w": 180,
+                "h": 50,
+                "fill": "blue",
+                "label": "parallelogram"
+              },
+              {
+                "kind": "arrow",
+                "x": 240,
+                "y": 72,
+                "x2": 140,
+                "y2": 128,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 130,
+                "w": 180,
+                "h": 50,
+                "fill": "green",
+                "label": "rectangle",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 200,
+                "text": "+ all angles 90°",
+                "size": 16,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 320,
+                "y": 72,
+                "x2": 420,
+                "y2": 128,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 130,
+                "w": 180,
+                "h": 50,
+                "fill": "orange",
+                "label": "rhombus",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 200,
+                "text": "+ all sides equal",
+                "size": 16,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The square inherits from both. It has every property.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Family tree: parallelogram, then rectangle and rhombus, then square",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 20,
+                "w": 180,
+                "h": 50,
+                "fill": "blue",
+                "label": "parallelogram"
+              },
+              {
+                "kind": "arrow",
+                "x": 240,
+                "y": 72,
+                "x2": 140,
+                "y2": 128,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 130,
+                "w": 180,
+                "h": 50,
+                "fill": "green",
+                "label": "rectangle"
+              },
+              {
+                "kind": "text",
+                "x": 130,
+                "y": 200,
+                "text": "+ all angles 90°",
+                "size": 16,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 320,
+                "y": 72,
+                "x2": 420,
+                "y2": 128,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 130,
+                "w": 180,
+                "h": 50,
+                "fill": "orange",
+                "label": "rhombus"
+              },
+              {
+                "kind": "text",
+                "x": 430,
+                "y": 200,
+                "text": "+ all sides equal",
+                "size": 16,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 130,
+                "y": 210,
+                "x2": 250,
+                "y2": 245,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 430,
+                "y": 210,
+                "x2": 310,
+                "y2": 245,
+                "color": "grey",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 245,
+                "w": 180,
+                "h": 50,
+                "fill": "purple",
+                "label": "square",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The kite and the trapezium are cousins, with their own properties.",
+          "write": "kite, trapezium = cousins"
+        }
+      ]
+    },
+    {
+      "heading": "Diagonal properties",
+      "lines": [
+        {
+          "say": "A diagonal joins two opposite corners. Bisect means cut in half.",
+          "write": "bisect = cut in half"
+        },
+        {
+          "say": "Parallelogram diagonals bisect each other.",
+          "write": "parallelogram: bisect"
+        },
+        {
+          "say": "Rectangle diagonals also have equal length.",
+          "write": "rectangle: + equal"
+        },
+        {
+          "say": "Rhombus diagonals cross at 90 degrees, and halve the corner angles.",
+          "write": "rhombus: + 90°, halve corners"
+        },
+        {
+          "say": "A square has all of these. A kite's diagonals cross at 90 too.",
+          "write": "square: all of them"
+        }
+      ]
+    },
+    {
+      "heading": "Rectangle: isosceles triangles",
+      "lines": [
+        {
+          "say": "Rectangle ABCD. Angle OAB is 35 degrees. Find angle AOB.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle ABCD with diagonals meeting at O; angle OAB = 35°, angle AOB unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    110,
+                    30
+                  ],
+                  [
+                    450,
+                    30
+                  ],
+                  [
+                    450,
+                    268
+                  ],
+                  [
+                    110,
+                    268
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 450,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 110,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 30,
+                "text": "A",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 30,
+                "text": "B",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "C",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 285,
+                "text": "D",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 185,
+                "text": "O",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "?",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Equal diagonals, cut in half. So OA equals OB. Isosceles!",
+          "write": "OA = OB → ∠OBA = 35°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle ABCD with diagonals meeting at O; angle OAB = 35°, angle AOB unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    110,
+                    30
+                  ],
+                  [
+                    450,
+                    30
+                  ],
+                  [
+                    450,
+                    268
+                  ],
+                  [
+                    110,
+                    268
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 450,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 110,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 30,
+                "text": "A",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 30,
+                "text": "B",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "C",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 285,
+                "text": "D",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 185,
+                "text": "O",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 280,
+                "y2": 149,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 280,
+                "y2": 149,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 395,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 225,
+                "text": "OA = OB",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "?",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "180 take away 35 and 35 is 110 degrees.",
+          "write": "∠AOB = 180 − 70 = 110°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle ABCD with diagonals meeting at O; angle OAB = 35°, angle AOB unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    110,
+                    30
+                  ],
+                  [
+                    450,
+                    30
+                  ],
+                  [
+                    450,
+                    268
+                  ],
+                  [
+                    110,
+                    268
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 450,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 110,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 30,
+                "text": "A",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 30,
+                "text": "B",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "C",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 285,
+                "text": "D",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 185,
+                "text": "O",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 280,
+                "y2": 149,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 280,
+                "y2": 149,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 395,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 225,
+                "text": "OA = OB",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "110°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Rhombus: right angles",
+      "lines": [
+        {
+          "say": "Rhombus PQRS. Angle PQR is 130. Find angle QPO.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Rhombus PQRS, diagonals cross at 90° at O; angle PQR is 130°, angle QPO unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    109,
+                    150
+                  ],
+                  [
+                    280,
+                    70
+                  ],
+                  [
+                    451,
+                    150
+                  ],
+                  [
+                    280,
+                    230
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 109,
+                "y": 150,
+                "x2": 451,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 156,
+                "text": "P",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 55,
+                "text": "Q",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 156,
+                "text": "R",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "S",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 136,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 30,
+                "text": "∠PQR = 130°",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 142,
+                "text": "?",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The diagonal halves the corner. 130 divided by 2 is 65.",
+          "write": "∠PQO = 65°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Rhombus PQRS, diagonals cross at 90° at O; angle PQR is 130°, angle QPO unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    109,
+                    150
+                  ],
+                  [
+                    280,
+                    70
+                  ],
+                  [
+                    451,
+                    150
+                  ],
+                  [
+                    280,
+                    230
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 109,
+                "y": 150,
+                "x2": 451,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 156,
+                "text": "P",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 55,
+                "text": "Q",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 156,
+                "text": "R",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "S",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 136,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 30,
+                "text": "∠PQR = 130°",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 258,
+                "y": 108,
+                "text": "65°",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 302,
+                "y": 108,
+                "text": "65°",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 142,
+                "text": "?",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The diagonals cross at 90. So 180 minus 90 minus 65 is 25.",
+          "write": "∠QPO = 25°",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Rhombus PQRS, diagonals cross at 90° at O; angle PQR is 130°, angle QPO unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    109,
+                    150
+                  ],
+                  [
+                    280,
+                    70
+                  ],
+                  [
+                    451,
+                    150
+                  ],
+                  [
+                    280,
+                    230
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 109,
+                "y": 150,
+                "x2": 451,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 156,
+                "text": "P",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 55,
+                "text": "Q",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 156,
+                "text": "R",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "S",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 136,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 30,
+                "text": "∠PQR = 130°",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 258,
+                "y": 108,
+                "text": "65°",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 302,
+                "y": 108,
+                "text": "65°",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 142,
+                "text": "25°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Halve the corner angle, not the 90 in the middle.",
+          "write": "middle is always 90°"
+        }
+      ]
+    },
+    {
+      "heading": "Kites and trapeziums",
+      "lines": [
+        {
+          "say": "A kite has 70 and 50, and two equal angles. All four make 360.",
+          "write": "360 − 70 − 50 = 240"
+        },
+        {
+          "say": "Share 240 between the equal pair. Each is 120.",
+          "write": "240 ÷ 2 = 120°"
+        },
+        {
+          "say": "In a trapezium, angles along a slanted side add to 180.",
+          "write": "co-interior: 180°"
+        },
+        {
+          "say": "An isosceles trapezium has equal base angles and equal diagonals.",
+          "write": "isosceles trapezium"
+        }
+      ]
+    },
+    {
+      "heading": "Is it a parallelogram?",
+      "lines": [
+        {
+          "say": "Opposite sides parallel? Or opposite sides equal? Parallelogram.",
+          "write": "opp. sides ∥ or ="
+        },
+        {
+          "say": "Opposite angles equal? Or diagonals bisect each other? Parallelogram.",
+          "write": "opp. angles = or bisect"
+        },
+        {
+          "say": "One pair of sides both equal and parallel also works.",
+          "write": "1 pair = and ∥"
+        },
+        {
+          "say": "Equal diagonals alone prove nothing. An isosceles trapezium has them.",
+          "write": "✗ equal diagonals alone"
+        }
+      ]
+    },
+    {
+      "heading": "An algebra example",
+      "lines": [
+        {
+          "say": "Opposite angles: 3x plus 10, and 5x minus 30. They're equal.",
+          "write": "3x + 10 = 5x − 30"
+        },
+        {
+          "say": "Solve it. x equals 20, so angle A is 70 degrees.",
+          "write": "x = 20, ∠A = 70°"
+        },
+        {
+          "say": "Angle B is next to A. They add to 180, so B is 110.",
+          "write": "∠B = 180 − 70 = 110°"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        {
+          "say": "Don't assume from the look of a shape. Use what you're told.",
+          "write": "no assuming"
+        },
+        {
+          "say": "Rhombus means a right-angle cross.",
+          "write": "rhombus: 90° cross",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Rhombus PQRS, diagonals cross at 90° at O; angle PQR is 130°, angle QPO unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    109,
+                    150
+                  ],
+                  [
+                    280,
+                    70
+                  ],
+                  [
+                    451,
+                    150
+                  ],
+                  [
+                    280,
+                    230
+                  ]
+                ],
+                "fill": "orange"
+              },
+              {
+                "kind": "line",
+                "x": 109,
+                "y": 150,
+                "x2": 451,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 280,
+                "y": 70,
+                "x2": 280,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 92,
+                "y": 156,
+                "text": "P",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 55,
+                "text": "Q",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 156,
+                "text": "R",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 255,
+                "text": "S",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 136,
+                "w": 14,
+                "h": 14,
+                "fill": "white"
+              },
+              {
+                "kind": "text",
+                "x": 330,
+                "y": 30,
+                "text": "∠PQR = 130°",
+                "size": 20,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 258,
+                "y": 108,
+                "text": "65°",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 302,
+                "y": 108,
+                "text": "65°",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 142,
+                "text": "25°",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rectangle means equal diagonals, so isosceles triangles.",
+          "write": "rectangle: isosceles",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Rectangle ABCD with diagonals meeting at O; angle OAB = 35°, angle AOB unknown",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    110,
+                    30
+                  ],
+                  [
+                    450,
+                    30
+                  ],
+                  [
+                    450,
+                    268
+                  ],
+                  [
+                    110,
+                    268
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 450,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 110,
+                "y2": 268,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 30,
+                "text": "A",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 30,
+                "text": "B",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 465,
+                "y": 285,
+                "text": "C",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 95,
+                "y": 285,
+                "text": "D",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 185,
+                "text": "O",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 165,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 110,
+                "y": 30,
+                "x2": 280,
+                "y2": 149,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 450,
+                "y": 30,
+                "x2": 280,
+                "y2": 149,
+                "color": "red"
+              },
+              {
+                "kind": "text",
+                "x": 395,
+                "y": 62,
+                "text": "35°",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 225,
+                "text": "OA = OB",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 110,
+                "text": "110°",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check your four angles add to 360.",
+          "write": "sum = 360° ✓"
+        }
+      ]
+    }
+  ]
+}

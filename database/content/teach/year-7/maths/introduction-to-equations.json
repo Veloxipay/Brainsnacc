@@ -1,0 +1,286 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Introduction to equations",
+  "frames": [
+    {
+      "heading": "Expressions and equations",
+      "lines": [
+        {
+          "say": "An expression has no equals sign. Like 2x plus 5.",
+          "write": "expression: 2x + 5"
+        },
+        {
+          "say": "An equation joins two sides with an equals sign.",
+          "write": "equation: 2x + 5 = 21"
+        },
+        {
+          "say": "It claims both sides have the same value.",
+          "write": "LHS = RHS"
+        },
+        {
+          "say": "The left side is the LHS. The right side is the RHS.",
+          "write": "LHS | RHS"
+        },
+        {
+          "say": "The letter is the unknown, also called a pronumeral.",
+          "write": "x = unknown"
+        }
+      ]
+    },
+    {
+      "heading": "Think of a balance",
+      "lines": [
+        {
+          "say": "Picture the equals sign as the middle of a scale.",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 1,
+              "cubes": 4
+            },
+            "right": {
+              "cubes": 10
+            }
+          }
+        },
+        {
+          "say": "A bag and 4 cubes balance 10 cubes.",
+          "write": "x + 4 = 10"
+        },
+        {
+          "say": "Take away the 4 cubes from both sides. It stays level.",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 1,
+              "cubes": 4
+            },
+            "right": {
+              "cubes": 10
+            },
+            "remove": 4,
+            "labels": [
+              "x + 4 − 4",
+              "10 − 4"
+            ]
+          }
+        },
+        {
+          "say": "The bag weighs the same as 6 cubes.",
+          "write": "x = 6",
+          "draw": {
+            "type": "balance",
+            "left": {
+              "bags": 1
+            },
+            "right": {
+              "cubes": 6
+            }
+          }
+        },
+        {
+          "say": "A solution is the value that keeps the scale level.",
+          "write": "solution: x = 6"
+        }
+      ]
+    },
+    {
+      "heading": "Checking a solution",
+      "lines": [
+        {
+          "say": "Is x equals 6 a solution of 4x minus 5 equals 19?",
+          "write": "4x − 5 = 19,  x = 6?"
+        },
+        {
+          "say": "Substitute 6 into the left side.",
+          "write": "4 × 6 − 5"
+        },
+        {
+          "say": "Multiply first. Twenty-four minus 5 is 19.",
+          "write": "24 − 5 = 19"
+        },
+        {
+          "say": "The left side equals the right side. So yes, it is a solution.",
+          "write": "LHS = RHS ✓"
+        },
+        {
+          "say": "Try x equals 3. Four times 3 minus 5 is 7. Not 19.",
+          "write": "4 × 3 − 5 = 7 ✗"
+        }
+      ]
+    },
+    {
+      "heading": "Solving by inspection",
+      "lines": [
+        {
+          "say": "Ask the question in words. What plus 13 makes 30?",
+          "write": "m + 13 = 30"
+        },
+        {
+          "say": "Work out 30 minus 13. That is 17.",
+          "write": "m = 17",
+          "draw": {
+            "type": "numberline",
+            "from": 0,
+            "to": 32,
+            "start": 13,
+            "jump": 17
+          }
+        },
+        {
+          "say": "Check: 17 plus 13 is 30.",
+          "write": "17 + 13 = 30 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Guess, check and improve",
+      "lines": [
+        {
+          "say": "Solve 7k plus 9 equals 72. Make a guess.",
+          "write": "7k + 9 = 72"
+        },
+        {
+          "say": "Try 5. We get 44. Too small, so go up.",
+          "write": "k = 5 → 44  too small",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "44 is shorter than the target 72",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 50,
+                "w": 432,
+                "h": 50,
+                "fill": "grey",
+                "label": "target 72"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 130,
+                "w": 264,
+                "h": 50,
+                "fill": "orange",
+                "change": "add",
+                "label": "k = 5 gives 44"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Try 10. We get 79. A little too big.",
+          "write": "k = 10 → 79  too big",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 220,
+            "alt": "79 is longer than the target 72",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 50,
+                "w": 432,
+                "h": 50,
+                "fill": "grey",
+                "label": "target 72"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 130,
+                "w": 474,
+                "h": 50,
+                "fill": "red",
+                "change": "add",
+                "label": "k = 10 gives 79"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Try 9. Sixty-three plus 9 is exactly 72.",
+          "write": "k = 9 → 72 ✓"
+        },
+        {
+          "say": "Too big? Go down. Too small? Go up."
+        }
+      ]
+    },
+    {
+      "heading": "Words into equations",
+      "lines": [
+        {
+          "say": "I think of a number, multiply by 3, and add 8. I get 29."
+        },
+        {
+          "say": "Let n be the number.",
+          "write": "a number → n"
+        },
+        {
+          "say": "Multiply by 3 gives 3n. Add 8 gives 3n plus 8.",
+          "write": "3n + 8"
+        },
+        {
+          "say": "The answer is 29. So our equation is this.",
+          "write": "3n + 8 = 29"
+        },
+        {
+          "say": "Try 7. Twenty-one plus 8 is 29. The number is 7.",
+          "write": "n = 7"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "No equals sign means it is an expression, not an equation.",
+          "write": "no =, no equation"
+        },
+        {
+          "say": "3n means 3 times n, not 3 plus n.",
+          "write": "3n = 3 × n"
+        },
+        {
+          "say": "When checking, multiply before you subtract.",
+          "write": "× before −"
+        },
+        {
+          "say": "Close is not good enough. Both sides must be exactly equal."
+        },
+        {
+          "say": "In x plus 9 equals 13, the answer is not 13. It is 4.",
+          "write": "x + 9 = 13 → x = 4"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "An equation says two sides are equal.",
+          "write": "LHS = RHS"
+        },
+        {
+          "say": "A solution keeps the scale level.",
+          "diagram": "diagrams/y7/maths/introduction-to-equations-scale.svg",
+          "alt": "A level balance scale showing x + 4 = 10"
+        },
+        {
+          "say": "Check by substituting. Work out both sides.",
+          "write": "substitute and compare"
+        },
+        {
+          "say": "Letter next to number? Multiply, don't add.",
+          "write": "5k = 5 × k"
+        }
+      ]
+    }
+  ]
+}

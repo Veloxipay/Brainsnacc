@@ -1,0 +1,716 @@
+{
+  "level": "Year 7",
+  "subject": "maths",
+  "title": "Algorithms and flowcharts",
+  "frames": [
+    {
+      "heading": "What is an algorithm?",
+      "lines": [
+        {
+          "say": "An algorithm is a list of clear steps, done in order.",
+          "write": "algorithm"
+        },
+        {
+          "say": "A recipe is one. Ingredients in, steps, pancakes out.",
+          "write": "input → process → output"
+        },
+        {
+          "say": "Swap two steps, and you get a very different result.",
+          "write": "order matters"
+        },
+        {
+          "say": "Each step has one meaning. It always finishes. Same input, same output.",
+          "write": "clear · ordered · finishes"
+        }
+      ]
+    },
+    {
+      "heading": "Running an algorithm",
+      "lines": [
+        {
+          "say": "Multiply by 4, then take 5. Input 6.",
+          "write": "6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 190,
+            "alt": "machine",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "in"
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 90,
+                "x2": 160,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "× 4"
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 90,
+                "x2": 300,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "− 5"
+              },
+              {
+                "kind": "arrow",
+                "x": 400,
+                "y": 90,
+                "x2": 440,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "out"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 160,
+                "text": "6",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "6 times 4 is 24. Then 24 take 5 is 19.",
+          "write": "6 × 4 = 24, 24 − 5 = 19",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 190,
+            "alt": "machine run",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "in"
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 90,
+                "x2": 160,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "× 4"
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 90,
+                "x2": 300,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "− 5"
+              },
+              {
+                "kind": "arrow",
+                "x": 400,
+                "y": 90,
+                "x2": 440,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "out"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 160,
+                "text": "6",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 160,
+                "text": "24",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 160,
+                "text": "19",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The output is 19. Do each step completely, one at a time.",
+          "write": "output 19"
+        }
+      ]
+    },
+    {
+      "heading": "Flowchart shapes",
+      "lines": [
+        {
+          "say": "A flowchart draws an algorithm. Each shape has a job.",
+          "diagram": "diagrams/y7/maths/algorithms-and-flowcharts-shapes.svg",
+          "alt": "Oval, parallelogram, rectangle and diamond flowchart shapes"
+        },
+        {
+          "say": "Ovals open and close: Start and End.",
+          "write": "oval = Start / End"
+        },
+        {
+          "say": "A parallelogram brings a number in or out.",
+          "write": "parallelogram = input / output"
+        },
+        {
+          "say": "A rectangle is an action, like add 7.",
+          "write": "rectangle = process"
+        },
+        {
+          "say": "Diamonds decide. They ask a yes or no question.",
+          "write": "diamond = decision"
+        }
+      ]
+    },
+    {
+      "heading": "A trace table",
+      "lines": [
+        {
+          "say": "Input x, add 7, multiply by 2. Try x equals 12.",
+          "write": "x = 12",
+          "diagram": "diagrams/y7/maths/algorithms-and-flowcharts-ex2.svg",
+          "alt": "Flowchart: Input x, Add 7, Multiply by 2, Output"
+        },
+        {
+          "say": "Write the value after each step, so you never lose your place.",
+          "write": "trace table",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "trace table",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 30,
+                "w": 180,
+                "h": 50,
+                "fill": "grey",
+                "label": "Step"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 30,
+                "w": 180,
+                "h": 50,
+                "fill": "grey",
+                "label": "Value"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 80,
+                "w": 180,
+                "h": 50,
+                "fill": "white",
+                "label": "Input"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 80,
+                "w": 180,
+                "h": 50,
+                "fill": "white",
+                "label": "12"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 130,
+                "w": 180,
+                "h": 50,
+                "fill": "white",
+                "label": "Add 7"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 130,
+                "w": 180,
+                "h": 50,
+                "fill": "yellow",
+                "label": "19",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 180,
+                "w": 180,
+                "h": 50,
+                "fill": "white",
+                "label": "× 2"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 180,
+                "w": 180,
+                "h": 50,
+                "fill": "yellow",
+                "label": "38",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "12 plus 7 is 19. 19 times 2 is 38.",
+          "write": "output 38"
+        },
+        {
+          "say": "Not 12 plus 7 times 2. The flowchart makes you add first.",
+          "write": "✗ 12 + 7 × 2 = 26"
+        }
+      ]
+    },
+    {
+      "heading": "Decisions",
+      "lines": [
+        {
+          "say": "Is n even? Yes, divide by 2. No, times 3 and add 1.",
+          "write": "Is n even?",
+          "diagram": "diagrams/y7/maths/algorithms-and-flowcharts-ex4.svg",
+          "alt": "Flowchart with a decision: is n even?"
+        },
+        {
+          "say": "n equals 10. It's even, so follow Yes. 10 divided by 2 is 5.",
+          "write": "10 → 5"
+        },
+        {
+          "say": "n equals 7. It's odd, so follow No. 7 times 3, plus 1, is 22.",
+          "write": "7 → 22"
+        },
+        {
+          "say": "Each input goes down only one branch.",
+          "write": "one branch only"
+        }
+      ]
+    },
+    {
+      "heading": "Running it backwards",
+      "lines": [
+        {
+          "say": "Times 4, then take 6. The output is 30. What was the input?",
+          "write": "output 30",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 190,
+            "alt": "number machine",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "in"
+              },
+              {
+                "kind": "arrow",
+                "x": 120,
+                "y": 90,
+                "x2": 160,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "× 4"
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 90,
+                "x2": 300,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "− 6"
+              },
+              {
+                "kind": "arrow",
+                "x": 400,
+                "y": 90,
+                "x2": 440,
+                "y2": 90,
+                "color": "purple"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "out"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 160,
+                "text": "30",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Undo the last step first. Take 6 is undone by adding 6. 36.",
+          "write": "30 + 6 = 36",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 190,
+            "alt": "number machine",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "in"
+              },
+              {
+                "kind": "arrow",
+                "x": 160,
+                "y": 90,
+                "x2": 120,
+                "y2": 90,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "÷ 4"
+              },
+              {
+                "kind": "arrow",
+                "x": 300,
+                "y": 90,
+                "x2": 260,
+                "y2": 90,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "+ 6"
+              },
+              {
+                "kind": "arrow",
+                "x": 440,
+                "y": 90,
+                "x2": 400,
+                "y2": 90,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "out"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 160,
+                "text": "36",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 160,
+                "text": "30",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Times 4 is undone by dividing by 4. The input was 9.",
+          "write": "36 ÷ 4 = 9",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 190,
+            "alt": "number machine",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "in"
+              },
+              {
+                "kind": "arrow",
+                "x": 160,
+                "y": 90,
+                "x2": 120,
+                "y2": 90,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 160,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "÷ 4"
+              },
+              {
+                "kind": "arrow",
+                "x": 300,
+                "y": 90,
+                "x2": 260,
+                "y2": 90,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "blue",
+                "label": "+ 6"
+              },
+              {
+                "kind": "arrow",
+                "x": 440,
+                "y": 90,
+                "x2": 400,
+                "y2": 90,
+                "color": "red",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 60,
+                "w": 100,
+                "h": 60,
+                "fill": "yellow",
+                "label": "out"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 160,
+                "text": "9",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 160,
+                "text": "36",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 160,
+                "text": "30",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check forwards: 9 times 4 is 36, take 6 is 30.",
+          "write": "9 × 4 − 6 = 30 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "The algorithm's order beats BIDMAS. Follow the steps one by one.",
+          "write": "steps beat BIDMAS"
+        },
+        {
+          "say": "Answer the question, then follow only that arrow.",
+          "write": "not both branches"
+        },
+        {
+          "say": "Reversing? Undo the last step first. Shoes before socks.",
+          "write": "last step first"
+        },
+        {
+          "say": "Tick off each step in a trace table so you don't stop early.",
+          "write": "tick each step"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Input, process, output.",
+          "write": "IPO"
+        },
+        {
+          "say": "Diamonds decide. Ovals open and close.",
+          "write": "◇ decide, ⬭ start/end"
+        },
+        {
+          "say": "To reverse, do the opposite steps in reverse order.",
+          "write": "reverse + opposite"
+        },
+        {
+          "say": "Then run your answer forwards to check.",
+          "write": "check forwards ✓"
+        }
+      ]
+    }
+  ]
+}

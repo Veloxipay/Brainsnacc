@@ -1,0 +1,892 @@
+{
+  "level": "Year 12",
+  "subject": "biology",
+  "title": "The innate immune response",
+  "frames": [
+    {
+      "heading": "The second line of defence",
+      "lines": [
+        {
+          "say": "If pathogens get past the skin, the second line takes over.",
+          "write": "2nd line = innate"
+        },
+        {
+          "say": "It is non-specific. The same response for any pathogen.",
+          "write": "non-specific"
+        },
+        {
+          "say": "It is rapid, starting within minutes to hours.",
+          "write": "rapid"
+        },
+        {
+          "say": "It has no memory. It does not get stronger next time.",
+          "write": "no memory"
+        },
+        {
+          "say": "Cells signal each other with cytokines, small signalling proteins.",
+          "write": "cytokines"
+        }
+      ]
+    },
+    {
+      "heading": "Inflammation, step by step",
+      "lines": [
+        {
+          "say": "A cut lets bacteria in. The signs are redness, heat, swelling and pain.",
+          "write": "red, hot, swollen, painful",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Blood vessel near a mast cell",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 520,
+                "h": 40,
+                "fill": "red",
+                "label": "blood vessel"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 240,
+                "r": 22,
+                "fill": "orange",
+                "label": "mast"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 290,
+                "text": "mast cell",
+                "size": 16,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Mast cells release histamine. Arterioles widen, so more blood flows in.",
+          "write": "vasodilation",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Vessel widens after histamine",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 95,
+                "w": 520,
+                "h": 70,
+                "fill": "red",
+                "label": "blood vessel",
+                "change": "highlight"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 240,
+                "r": 22,
+                "fill": "orange",
+                "label": "mast"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 290,
+                "text": "mast cell",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "histamine → wider, leakier",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Capillaries get leaky. Fluid and proteins move out, causing swelling.",
+          "write": "leaky capillaries",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Fluid leaks out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 95,
+                "w": 520,
+                "h": 70,
+                "fill": "red",
+                "label": "blood vessel"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 240,
+                "r": 22,
+                "fill": "orange",
+                "label": "mast"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 290,
+                "text": "mast cell",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "histamine → wider, leakier",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 170,
+                "x2": 260,
+                "y2": 250,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 340,
+                "y": 170,
+                "x2": 340,
+                "y2": 250,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 280,
+                "text": "fluid + proteins out",
+                "size": 18,
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Chemokines attract immune cells. Moving towards a signal is chemotaxis.",
+          "write": "chemotaxis",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Neutrophil moves to the site",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 95,
+                "w": 520,
+                "h": 70,
+                "fill": "red",
+                "label": "blood vessel"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 240,
+                "r": 22,
+                "fill": "orange",
+                "label": "mast"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 290,
+                "text": "mast cell",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "histamine → wider, leakier",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 170,
+                "x2": 260,
+                "y2": 250,
+                "color": "blue"
+              },
+              {
+                "kind": "arrow",
+                "x": 340,
+                "y": 170,
+                "x2": 340,
+                "y2": 250,
+                "color": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 280,
+                "text": "fluid + proteins out",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 460,
+                "y": 250,
+                "r": 20,
+                "fill": "purple",
+                "label": "N",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 460,
+                "y": 170,
+                "x2": 460,
+                "y2": 225,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 460,
+                "y": 290,
+                "text": "neutrophil",
+                "size": 16,
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Neutrophils arrive first. Dead neutrophils, bacteria and fluid make pus.",
+          "write": "pus"
+        }
+      ]
+    },
+    {
+      "heading": "Phagocytosis",
+      "lines": [
+        {
+          "say": "A phagocyte binds to the pathogen using surface receptors.",
+          "write": "1. bind",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Phagocyte meets bacterium",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 150,
+                "r": 90,
+                "fill": "blue",
+                "label": "phagocyte"
+              },
+              {
+                "kind": "circle",
+                "x": 390,
+                "y": 150,
+                "r": 25,
+                "fill": "red",
+                "label": "bacterium"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Its membrane wraps around, making a vesicle called a phagosome.",
+          "write": "2. phagosome",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Bacterium engulfed in phagosome",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 150,
+                "r": 100,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 150,
+                "r": 35,
+                "fill": "grey",
+                "label": ""
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 150,
+                "r": 20,
+                "fill": "red",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 290,
+                "text": "phagosome",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A lysosome fuses with it, and enzymes break the pathogen down.",
+          "write": "3. lysosome digests",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Lysosome digests bacterium",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 150,
+                "r": 100,
+                "fill": "blue",
+                "label": ""
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 150,
+                "r": 35,
+                "fill": "grey",
+                "label": ""
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 150,
+                "r": 20,
+                "fill": "red",
+                "label": "",
+                "change": "remove"
+              },
+              {
+                "kind": "circle",
+                "x": 330,
+                "y": 100,
+                "r": 22,
+                "fill": "green",
+                "label": "lys",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 250,
+                "y": 290,
+                "text": "lysosome enzymes digest it",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Waste leaves the cell by exocytosis.",
+          "write": "4. exocytosis"
+        }
+      ]
+    },
+    {
+      "heading": "The innate immune cells",
+      "lines": [
+        {
+          "say": "Neutrophils are the most common white cell, and first to arrive.",
+          "write": "neutrophil"
+        },
+        {
+          "say": "Macrophages come from monocytes, release cytokines, and present antigen on MHC two.",
+          "write": "macrophage"
+        },
+        {
+          "say": "Dendritic cells carry antigen to lymph nodes. They link innate and adaptive.",
+          "write": "dendritic cell"
+        },
+        {
+          "say": "Eosinophils release toxic granules onto worms, which are too big to engulf.",
+          "write": "eosinophil"
+        },
+        {
+          "say": "Natural killer cells kill cells showing reduced MHC one.",
+          "write": "NK cell",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "NK cells target low MHC I",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 150,
+                "r": 70,
+                "fill": "blue",
+                "label": "healthy"
+              },
+              {
+                "kind": "text",
+                "x": 150,
+                "y": 250,
+                "text": "normal MHC I: safe",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 70,
+                "fill": "red",
+                "label": "infected"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 250,
+                "text": "low MHC I: killed",
+                "size": 18,
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "They release perforin to make pores, and granzymes to trigger apoptosis.",
+          "write": "perforin + granzymes"
+        }
+      ]
+    },
+    {
+      "heading": "Complement and interferons",
+      "lines": [
+        {
+          "say": "Complement proteins are made by the liver and circulate inactive.",
+          "write": "complement"
+        },
+        {
+          "say": "Once activated, they do three jobs.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Three complement effects",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "blue",
+                "label": "Opsonisation"
+              },
+              {
+                "kind": "arrow",
+                "x": 175,
+                "y": 145,
+                "x2": 201,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 203,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "orange",
+                "label": "Chemotaxis"
+              },
+              {
+                "kind": "arrow",
+                "x": 359,
+                "y": 145,
+                "x2": 385,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 387,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "green",
+                "label": "Lysis"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Opsonisation coats the pathogen so phagocytes grab it more easily.",
+          "write": "opsonisation",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Opsonisation highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "blue",
+                "label": "Opsonisation",
+                "change": "highlight"
+              },
+              {
+                "kind": "arrow",
+                "x": 175,
+                "y": 145,
+                "x2": 201,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 203,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "orange",
+                "label": "Chemotaxis"
+              },
+              {
+                "kind": "arrow",
+                "x": 359,
+                "y": 145,
+                "x2": 385,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 387,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "green",
+                "label": "Lysis"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Lysis: a membrane attack complex punches a pore, and the cell bursts.",
+          "write": "membrane attack complex",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Lysis highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "blue",
+                "label": "Opsonisation"
+              },
+              {
+                "kind": "arrow",
+                "x": 175,
+                "y": 145,
+                "x2": 201,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 203,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "orange",
+                "label": "Chemotaxis"
+              },
+              {
+                "kind": "arrow",
+                "x": 359,
+                "y": 145,
+                "x2": 385,
+                "y2": 145,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 387,
+                "y": 110,
+                "w": 153,
+                "h": 70,
+                "fill": "green",
+                "label": "Lysis",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Interferons come from virus-infected cells. They warn neighbouring cells.",
+          "write": "interferons"
+        },
+        {
+          "say": "Neighbours make proteins that block viral replication.",
+          "write": "antiviral state"
+        }
+      ]
+    },
+    {
+      "heading": "Fever and the lymphatic system",
+      "lines": [
+        {
+          "say": "Cytokines called pyrogens reset the hypothalamus to a higher set point.",
+          "write": "pyrogens → hypothalamus"
+        },
+        {
+          "say": "Moderate fever slows many pathogens. Very high fever denatures enzymes.",
+          "write": "fever"
+        },
+        {
+          "say": "The lymphatic system returns excess tissue fluid, called lymph, to the blood.",
+          "write": "lymph"
+        },
+        {
+          "say": "Primary organs make lymphocytes: bone marrow and thymus.",
+          "write": "primary: marrow, thymus",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Primary versus secondary lymphoid organs",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 40,
+                "w": 230,
+                "h": 60,
+                "fill": "blue",
+                "label": "Bone marrow"
+              },
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 120,
+                "w": 230,
+                "h": 60,
+                "fill": "blue",
+                "label": "Thymus"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 40,
+                "w": 230,
+                "h": 60,
+                "fill": "green",
+                "label": "Lymph nodes"
+              },
+              {
+                "kind": "rect",
+                "x": 300,
+                "y": 120,
+                "w": 230,
+                "h": 60,
+                "fill": "green",
+                "label": "Spleen"
+              },
+              {
+                "kind": "text",
+                "x": 145,
+                "y": 220,
+                "text": "made and mature",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 415,
+                "y": 220,
+                "text": "activated",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Secondary organs, like lymph nodes, are where lymphocytes meet antigen.",
+          "write": "secondary: nodes, spleen"
+        },
+        {
+          "say": "Nodes swell in infection because lymphocytes are multiplying there.",
+          "write": "swollen glands"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Histamine causes vasodilation, not vasoconstriction.",
+          "write": "✗ vasoconstriction"
+        },
+        {
+          "say": "NK cells are lymphocytes, but they are innate. No memory.",
+          "write": "NK = innate"
+        },
+        {
+          "say": "Interferons do not kill viruses. They warn nearby cells.",
+          "write": "✗ interferon kills virus"
+        },
+        {
+          "say": "Eosinophils do not engulf worms. They release granules onto them.",
+          "write": "✗ eosinophils engulf"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Innate means rapid, non-specific, no memory.",
+          "write": "rapid, non-specific"
+        },
+        {
+          "say": "Histamine: vasodilation and leaky capillaries.",
+          "write": "histamine",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 302,
+            "alt": "Inflammation",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 95,
+                "w": 520,
+                "h": 70,
+                "fill": "red",
+                "label": "blood vessel"
+              },
+              {
+                "kind": "circle",
+                "x": 120,
+                "y": 240,
+                "r": 22,
+                "fill": "orange",
+                "label": "mast"
+              },
+              {
+                "kind": "text",
+                "x": 120,
+                "y": 290,
+                "text": "mast cell",
+                "size": 16,
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 40,
+                "text": "histamine → wider, leakier",
+                "size": 20,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 170,
+                "x2": 260,
+                "y2": 250,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 340,
+                "y": 170,
+                "x2": 340,
+                "y2": 250,
+                "color": "blue",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 280,
+                "text": "fluid + proteins out",
+                "size": 18,
+                "anchor": "middle",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Complement: opsonisation, chemotaxis, lysis. Interferons protect neighbours.",
+          "write": "complement + interferons"
+        },
+        {
+          "say": "Fever resets the hypothalamus. Lymph nodes bring antigen and lymphocytes together.",
+          "write": "fever + lymph nodes"
+        }
+      ]
+    }
+  ]
+}

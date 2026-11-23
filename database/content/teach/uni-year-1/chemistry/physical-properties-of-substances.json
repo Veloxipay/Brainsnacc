@@ -1,0 +1,151 @@
+{
+  "level": "Uni Year 1",
+  "subject": "chemistry",
+  "title": "Physical properties of substances",
+  "frames": [
+    {
+      "heading": "Phase changes and energy",
+      "lines": [
+        {"say": "Melting, vaporising and subliming separate particles. They are endothermic.", "write": "fusion, vap, sub: ΔH > 0"},
+        {"say": "Freezing, condensing and deposition release the same amount of energy.", "write": "reverse: ΔH < 0"},
+        {"say": "For water, fusion is 6.01 kilojoules per mole. Vaporisation is 40.7.", "write": "ΔH_fus 6.01, ΔH_vap 40.7"},
+        {"say": "Vaporising separates molecules completely, so it costs much more.", "write": "ΔH_sub = ΔH_fus + ΔH_vap"}
+      ]
+    },
+    {
+      "heading": "Heating curves",
+      "lines": [
+        {"say": "Heat ice at a steady rate and plot the temperature.", "write": "T vs heat added",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Heating curve for water with sloping sections and two flat plateaus", "items": [
+           {"kind": "arrow", "x": 50, "y": 260, "x2": 50, "y2": 20, "color": "black"},
+           {"kind": "arrow", "x": 50, "y": 260, "x2": 540, "y2": 260, "color": "black"},
+           {"kind": "text", "x": 60, "y": 30, "text": "T", "size": 20, "anchor": "start"},
+           {"kind": "line", "x": 60, "y": 240, "x2": 100, "y2": 200, "color": "blue"},
+           {"kind": "line", "x": 100, "y": 200, "x2": 160, "y2": 200, "color": "blue"},
+           {"kind": "line", "x": 160, "y": 200, "x2": 240, "y2": 100, "color": "blue"},
+           {"kind": "line", "x": 240, "y": 100, "x2": 460, "y2": 100, "color": "blue"},
+           {"kind": "line", "x": 460, "y": 100, "x2": 520, "y2": 50, "color": "blue"},
+           {"kind": "text", "x": 130, "y": 190, "text": "0 °C", "size": 16},
+           {"kind": "text", "x": 350, "y": 90, "text": "100 °C", "size": 16}
+         ]}},
+        {"say": "Sloping parts are one phase warming up. Use m c delta T.", "write": "slope: q = mcΔT"},
+        {"say": "Flat parts are phase changes. The temperature stays put. Use n delta H.", "write": "flat: q = nΔH",
+         "draw": {"type": "shapes", "width": 560, "height": 280, "alt": "Same heating curve with the plateaus highlighted; boiling plateau is longer", "items": [
+           {"kind": "arrow", "x": 50, "y": 260, "x2": 50, "y2": 20, "color": "black"},
+           {"kind": "arrow", "x": 50, "y": 260, "x2": 540, "y2": 260, "color": "black"},
+           {"kind": "text", "x": 60, "y": 30, "text": "T", "size": 20, "anchor": "start"},
+           {"kind": "line", "x": 60, "y": 240, "x2": 100, "y2": 200, "color": "blue"},
+           {"kind": "line", "x": 100, "y": 200, "x2": 160, "y2": 200, "color": "red", "change": "highlight"},
+           {"kind": "line", "x": 160, "y": 200, "x2": 240, "y2": 100, "color": "blue"},
+           {"kind": "line", "x": 240, "y": 100, "x2": 460, "y2": 100, "color": "red", "change": "highlight"},
+           {"kind": "line", "x": 460, "y": 100, "x2": 520, "y2": 50, "color": "blue"},
+           {"kind": "text", "x": 130, "y": 225, "text": "melting", "size": 16, "color": "red"},
+           {"kind": "text", "x": 350, "y": 130, "text": "boiling: much longer", "size": 18, "bold": true, "color": "red"}
+         ]}},
+        {"say": "The boiling plateau is longer, because delta H vap is bigger.", "write": "40.7 ≫ 6.01"}
+      ]
+    },
+    {
+      "heading": "Vapour pressure and boiling",
+      "lines": [
+        {"say": "In a closed container, evaporation and condensation reach a balance.", "write": "dynamic equilibrium"},
+        {"say": "The pressure of that vapour is the vapour pressure.", "write": "depends on substance + T only"},
+        {"say": "It doesn't depend on how much liquid there is.", "write": "✗ more liquid → more VP"},
+        {"say": "A liquid boils when its vapour pressure equals the outside pressure.", "write": "boils: VP = P_ext"},
+        {"say": "On a mountain, it boils lower. In a pressure cooker, about 120 degrees.", "write": "lower P → lower bp"},
+        {"say": "Clausius–Clapeyron: plot ln P against one over T. The gradient is minus delta H vap over R.", "write": "gradient = −ΔH_vap/R"}
+      ]
+    },
+    {
+      "heading": "Phase diagrams",
+      "lines": [
+        {"say": "A phase diagram shows which phase is stable at each pressure and temperature.", "write": "P vs T",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Phase diagram with solid, liquid and gas regions, triple point and critical point", "items": [
+           {"kind": "arrow", "x": 50, "y": 280, "x2": 50, "y2": 20, "color": "black"},
+           {"kind": "arrow", "x": 50, "y": 280, "x2": 540, "y2": 280, "color": "black"},
+           {"kind": "text", "x": 60, "y": 30, "text": "P", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 530, "y": 270, "text": "T", "size": 20},
+           {"kind": "line", "x": 70, "y": 270, "x2": 200, "y2": 190, "color": "blue"},
+           {"kind": "line", "x": 200, "y": 190, "x2": 230, "y2": 30, "color": "blue"},
+           {"kind": "line", "x": 200, "y": 190, "x2": 440, "y2": 80, "color": "blue"},
+           {"kind": "circle", "x": 200, "y": 190, "r": 8, "fill": "red", "change": "highlight"},
+           {"kind": "circle", "x": 440, "y": 80, "r": 8, "fill": "purple", "change": "highlight"},
+           {"kind": "text", "x": 120, "y": 120, "text": "solid", "size": 20, "bold": true},
+           {"kind": "text", "x": 310, "y": 70, "text": "liquid", "size": 20, "bold": true},
+           {"kind": "text", "x": 360, "y": 230, "text": "gas", "size": 20, "bold": true},
+           {"kind": "text", "x": 215, "y": 215, "text": "triple point", "size": 16, "anchor": "start", "color": "red"},
+           {"kind": "text", "x": 450, "y": 70, "text": "critical", "size": 16, "anchor": "start", "color": "purple"}
+         ]}},
+        {"say": "Lines show where two phases coexist. The triple point has all three.", "write": "triple point: S + L + G"},
+        {"say": "Past the critical point, you get a supercritical fluid.", "write": "above T_c: supercritical"},
+        {"say": "Water's solid–liquid line slopes backwards, because ice is less dense.", "write": "water: line slopes back",
+         "draw": {"type": "shapes", "width": 560, "height": 300, "alt": "Water's phase diagram: the solid-liquid line now tilts backwards", "items": [
+           {"kind": "arrow", "x": 50, "y": 280, "x2": 50, "y2": 20, "color": "black"},
+           {"kind": "arrow", "x": 50, "y": 280, "x2": 540, "y2": 280, "color": "black"},
+           {"kind": "text", "x": 60, "y": 30, "text": "P", "size": 20, "anchor": "start"},
+           {"kind": "text", "x": 530, "y": 270, "text": "T", "size": 20},
+           {"kind": "line", "x": 70, "y": 270, "x2": 200, "y2": 190, "color": "blue"},
+           {"kind": "line", "x": 200, "y": 190, "x2": 230, "y2": 30, "color": "grey", "dashed": true, "change": "remove"},
+           {"kind": "line", "x": 200, "y": 190, "x2": 175, "y2": 30, "color": "red", "change": "add"},
+           {"kind": "line", "x": 200, "y": 190, "x2": 440, "y2": 80, "color": "blue"},
+           {"kind": "text", "x": 110, "y": 120, "text": "ice", "size": 20, "bold": true},
+           {"kind": "text", "x": 310, "y": 70, "text": "water", "size": 20, "bold": true},
+           {"kind": "text", "x": 360, "y": 230, "text": "steam", "size": 20, "bold": true}
+         ]}},
+        {"say": "Carbon dioxide's triple point is above one atmosphere. Dry ice sublimes at minus 78.", "write": "CO₂: 518 kPa, −57 °C"}
+      ]
+    },
+    {
+      "heading": "Four kinds of solid",
+      "lines": [
+        {"say": "Ask what particles there are, and what holds them together.", "write": "particles + forces",
+         "draw": {"type": "shapes", "width": 560, "height": 240, "alt": "Four solid types: molecular, ionic, covalent network, metallic", "items": [
+           {"kind": "rect", "x": 20, "y": 30, "w": 255, "h": 85, "fill": "blue", "label": "Molecular: IMF, soft"},
+           {"kind": "rect", "x": 285, "y": 30, "w": 255, "h": 85, "fill": "orange", "label": "Ionic: hard, brittle"},
+           {"kind": "rect", "x": 20, "y": 125, "w": 255, "h": 85, "fill": "grey", "label": "Network: very high m.p."},
+           {"kind": "rect", "x": 285, "y": 125, "w": 255, "h": 85, "fill": "yellow", "label": "Metallic: malleable"}
+         ]}},
+        {"say": "Ionic solids are brittle. Shift a layer and like charges meet and repel.", "write": "ionic: like charges repel"},
+        {"say": "Higher charges, smaller ions, higher melting point. Magnesium oxide melts at about 2850.", "write": "MgO 2850 °C, NaCl 801 °C"},
+        {"say": "Network solids need covalent bonds broken. Graphite is the odd one out. It conducts.", "write": "graphite conducts"},
+        {"say": "Metals bend because the electron sea bonds in every direction.", "write": "metals: layers slide"}
+      ]
+    },
+    {
+      "heading": "Counting atoms in unit cells",
+      "lines": [
+        {"say": "Corners count one eighth. Faces count one half. The centre counts whole.", "write": "corner ⅛, face ½, centre 1"},
+        {"say": "Face-centred cubic: eight corners and six faces. That's four atoms.", "write": "fcc: 8×⅛ + 6×½ = 4",
+         "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Face of a cubic cell: corner atoms shared and a face-centre atom", "items": [
+           {"kind": "rect", "x": 180, "y": 40, "w": 200, "h": 200, "fill": "none"},
+           {"kind": "circle", "x": 180, "y": 40, "r": 18, "fill": "blue"},
+           {"kind": "circle", "x": 380, "y": 40, "r": 18, "fill": "blue"},
+           {"kind": "circle", "x": 180, "y": 240, "r": 18, "fill": "blue"},
+           {"kind": "circle", "x": 380, "y": 240, "r": 18, "fill": "blue"},
+           {"kind": "circle", "x": 280, "y": 140, "r": 22, "fill": "orange", "change": "add"},
+           {"kind": "text", "x": 70, "y": 46, "text": "corner ⅛", "size": 18},
+           {"kind": "text", "x": 470, "y": 146, "text": "face ½", "size": 18, "color": "orange", "bold": true, "change": "add"}
+         ]}},
+        {"say": "Body-centred cubic has two. Simple cubic has one.", "write": "bcc 2, simple 1"}
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {"say": "Don't use m c delta T on a plateau. Delta T is zero there.", "write": "plateau: q = nΔH"},
+        {"say": "In Clausius–Clapeyron, use kelvin and joules per mole.", "write": "T in K, J mol⁻¹"},
+        {"say": "Network solids melt by breaking covalent bonds, not intermolecular forces.", "write": "network: bonds break"},
+        {"say": "Solid ionic compounds don't conduct. Only molten or dissolved ones do.", "write": "ionic: molten or (aq) only"}
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {"say": "Slope means warming. Flat means changing phase.", "write": "slope = warming, flat = changing"},
+        {"say": "Boiling is a pressure contest.", "write": "VP = P_ext"},
+        {"say": "Water's rebel line slopes backwards, because ice floats.", "write": "ice floats"},
+        {"say": "Simple one, body two, face four.", "write": "SC 1, BCC 2, FCC 4"}
+      ]
+    }
+  ]
+}

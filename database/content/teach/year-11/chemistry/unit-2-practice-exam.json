@@ -1,0 +1,90 @@
+{
+  "level": "Year 11", "subject": "chemistry", "title": "Unit 2 practice exam",
+  "frames": [
+    { "heading": "How to do this exam",
+      "lines": [
+        { "say": "You have 80 minutes. About 50 on short answers, 30 on multiple choice.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "80 minutes split into 50 and 30", "items": [
+            {"kind": "rect", "x": 30, "y": 60, "w": 312, "h": 70, "fill": "blue", "label": "short answer: 50 min"},
+            {"kind": "rect", "x": 342, "y": 60, "w": 188, "h": 70, "fill": "orange", "label": "MC: 30 min"},
+            {"kind": "text", "x": 280, "y": 170, "text": "80 minutes, 60 marks", "size": 22, "anchor": "middle", "bold": true}
+          ]}},
+        { "say": "Work alone with no notes. A calculator and the data book are fine.", "write": "calculator + data book" },
+        { "say": "Show formulas, units and significant figures. That's where marks are won.", "write": "formula, units, sig figs" },
+        { "say": "Mark it, then revise the lessons where you lost marks.", "write": "mark it, then revise" }
+      ] },
+    { "heading": "Heating and boiling water",
+      "lines": [
+        { "say": "Heating water uses q equals m c delta T. The answer is in joules.", "write": "q = m × c × ΔT" },
+        { "say": "500 grams from 15 to 100 degrees. That's 177.65 kilojoules.", "write": "500 × 4.18 × 85.0 = 177 650 J" },
+        { "say": "Boiling uses moles instead. Then add the two parts together.", "write": "q = n × ΔH (kJ)",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Two energy steps added: heating then boiling", "items": [
+            {"kind": "rect", "x": 30, "y": 60, "w": 220, "h": 70, "fill": "orange", "label": "heat: 177.65 kJ"},
+            {"kind": "text", "x": 275, "y": 105, "text": "+", "size": 32, "anchor": "middle"},
+            {"kind": "rect", "x": 300, "y": 60, "w": 230, "h": 70, "fill": "red", "label": "boil: 113.06 kJ", "change": "add"},
+            {"kind": "text", "x": 280, "y": 180, "text": "total ≈ 291 kJ", "size": 24, "anchor": "middle", "bold": true, "change": "highlight"}
+          ]}},
+        { "say": "Explain water's high heat capacity with hydrogen bonds, every time.", "write": "start with hydrogen bonds" }
+      ] },
+    { "heading": "Gravimetric analysis",
+      "lines": [
+        { "say": "Add excess silver nitrate so all the chloride precipitates.", "write": "Ag⁺(aq) + Cl⁻(aq) → AgCl(s)" },
+        { "say": "Find moles of silver chloride. 0.287 grams over 143.4.", "write": "n = 0.287 ÷ 143.4 = 2.00 × 10⁻³" },
+        { "say": "One to one ratio, so divide by 0.0500 litres. That's 0.0400 molar.", "write": "c(Cl⁻) = 0.0400 mol L⁻¹" },
+        { "say": "Forget to wash it? Impurities add mass, so the answer is too high.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Unwashed precipitate weighs more", "items": [
+            {"kind": "rect", "x": 60, "y": 110, "w": 180, "h": 60, "fill": "white", "label": "AgCl"},
+            {"kind": "text", "x": 150, "y": 200, "text": "washed", "size": 18, "anchor": "middle"},
+            {"kind": "rect", "x": 320, "y": 110, "w": 180, "h": 60, "fill": "white", "label": "AgCl"},
+            {"kind": "rect", "x": 320, "y": 70, "w": 180, "h": 40, "fill": "grey", "label": "impurities", "change": "add"},
+            {"kind": "text", "x": 410, "y": 200, "text": "too heavy → too high", "size": 18, "anchor": "middle", "change": "add"}
+          ]}}
+      ] },
+    { "heading": "pH questions",
+      "lines": [
+        { "say": "Nitric acid is strong, so hydronium equals 0.020. pH is 1.70.", "write": "pH = −log(0.020) = 1.70" },
+        { "say": "Dilute it 100 times. The pH goes up by two units.", "write": "1.70 → 3.70",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "pH rises by two after a hundredfold dilution", "items": [
+            {"kind": "rect", "x": 40, "y": 60, "w": 160, "h": 60, "fill": "red", "label": "pH 1.70"},
+            {"kind": "arrow", "x": 210, "y": 90, "x2": 350, "y2": 90, "color": "black", "change": "add"},
+            {"kind": "text", "x": 280, "y": 150, "text": "÷ 100", "size": 22, "anchor": "middle", "change": "add"},
+            {"kind": "rect", "x": 360, "y": 60, "w": 160, "h": 60, "fill": "orange", "label": "pH 3.70", "change": "add"}
+          ]}},
+        { "say": "For sodium hydroxide, use Kw to get hydronium first. pH is 12.40.", "write": "[H₃O⁺] = 4.00 × 10⁻¹³" }
+      ] },
+    { "heading": "Redox half-equations",
+      "lines": [
+        { "say": "Permanganate goes to manganese two plus. Use KOHES to balance it.", "write": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O" },
+        { "say": "Iron two plus loses one electron. So multiply it by five.", "write": "5Fe²⁺ → 5Fe³⁺ + 5e⁻",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Five electrons lost match five electrons gained", "items": [
+            {"kind": "rect", "x": 30, "y": 60, "w": 220, "h": 60, "fill": "blue", "label": "gained: 5e⁻"},
+            {"kind": "rect", "x": 310, "y": 60, "w": 220, "h": 60, "fill": "orange", "label": "lost: 1e⁻", "change": "remove"},
+            {"kind": "rect", "x": 310, "y": 130, "w": 220, "h": 50, "fill": "orange", "label": "× 5 → lost: 5e⁻", "change": "add"}
+          ]}},
+        { "say": "Check the charge. Plus 17 on both sides.", "write": "+17 = +17 ✓" },
+        { "say": "Zinc is more reactive, so it's oxidised instead of the steel.", "write": "zinc is sacrificial" }
+      ] },
+    { "heading": "Titration and colorimetry",
+      "lines": [
+        { "say": "Find the concordant titres. 21.65, 21.60 and 21.70. Average 21.65.",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "Titres with the rough and outlier crossed out", "items": [
+            {"kind": "rect", "x": 10, "y": 60, "w": 100, "h": 50, "fill": "grey", "label": "22.30", "change": "remove"},
+            {"kind": "rect", "x": 120, "y": 60, "w": 100, "h": 50, "fill": "green", "label": "21.65"},
+            {"kind": "rect", "x": 230, "y": 60, "w": 100, "h": 50, "fill": "green", "label": "21.60"},
+            {"kind": "rect", "x": 340, "y": 60, "w": 100, "h": 50, "fill": "green", "label": "21.70"},
+            {"kind": "rect", "x": 450, "y": 60, "w": 100, "h": 50, "fill": "grey", "label": "21.95", "change": "remove"},
+            {"kind": "text", "x": 280, "y": 160, "text": "average = 21.65 mL", "size": 22, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "Carbonate to acid is one to two. The acid comes out at 0.09238 molar.", "write": "c(HCl) = 0.09238 mol L⁻¹" },
+        { "say": "In colorimetry, read 50 milligrams per litre, then times the dilution factor of 5.", "write": "50 × 5.0 = 250 mg L⁻¹" },
+        { "say": "A scratched cuvette shifts every reading. That's systematic, so accuracy drops.", "write": "systematic: accuracy ↓" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Write the formula, then substitute, then the answer with units.", "write": "formula → numbers → units" },
+        { "say": "Moles are the bridge in almost every question.", "write": "go through moles" },
+        { "say": "Round only at the end, to the right significant figures.", "write": "round at the end" },
+        { "say": "Read every multiple choice explanation, even when you got it right.", "write": "learn from every answer" }
+      ] }
+  ]
+}

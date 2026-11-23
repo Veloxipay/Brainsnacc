@@ -1,0 +1,135 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Solving problems with similar triangles",
+  "frames": [
+    {
+      "heading": "Measuring what you can't reach",
+      "lines": [
+        { "say": "You can't hold a tape measure to the top of a tree." },
+        { "say": "But you can measure a stick, a shadow and distances on the ground." },
+        { "say": "The small triangle is the model. The big triangle is the real thing.", "write": "small = model, big = real" },
+        { "say": "Similar triangles turn easy measurements into hard ones.", "write": "similar triangles" }
+      ]
+    },
+    {
+      "heading": "The method",
+      "lines": [
+        { "say": "Draw a diagram and find the two triangles.", "write": "1. Draw" },
+        { "say": "Prove they're similar. Usually AAA, with right angles or shared angles.", "write": "2. Prove (AAA)" },
+        { "say": "Match the sides. Redraw the triangles the same way round.", "write": "3. Match" },
+        { "say": "Set up a proportion. Unknown over known equals matching over matching.", "write": "4. Set up" },
+        { "say": "Solve, and check the answer makes sense.", "write": "5. Solve & Check" }
+      ]
+    },
+    {
+      "heading": "Shadows",
+      "lines": [
+        {
+          "say": "A person 1.6 metres tall casts a 2 metre shadow.",
+          "write": "1.6 ÷ 2 = 0.8",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Small triangle: person 1.6 m tall with a 2 m shadow",
+            "items": [
+              { "kind": "line", "x": 20, "y": 260, "x2": 540, "y2": 260, "color": "black" },
+              { "kind": "polygon", "points": [[60,260],[60,180],[160,260]], "fill": "blue" },
+              { "kind": "text", "x": 40, "y": 225, "text": "1.6", "size": 18, "anchor": "end" },
+              { "kind": "text", "x": 110, "y": 285, "text": "2 m", "size": 18, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "At the same moment, a tree casts a 15 metre shadow. The sun's angle is the same.",
+          "write": "same sun, same angle",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 300, "alt": "Large similar triangle added: tree of height h with a 15 m shadow",
+            "items": [
+              { "kind": "line", "x": 20, "y": 260, "x2": 540, "y2": 260, "color": "black" },
+              { "kind": "polygon", "points": [[60,260],[60,180],[160,260]], "fill": "blue" },
+              { "kind": "text", "x": 40, "y": 225, "text": "1.6", "size": 18, "anchor": "end" },
+              { "kind": "text", "x": 110, "y": 285, "text": "2 m", "size": 18, "anchor": "middle" },
+              { "kind": "polygon", "points": [[230,260],[230,40],[505,260]], "fill": "green", "change": "add" },
+              { "kind": "text", "x": 215, "y": 150, "text": "h", "size": 22, "bold": true, "anchor": "end" },
+              { "kind": "text", "x": 367, "y": 285, "text": "15 m", "size": 18, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "Height over shadow is the same for both. h over 15 equals 1.6 over 2.", "write": "h ÷ 15 = 1.6 ÷ 2" },
+        {
+          "say": "So h is 15 times 0.8. The tree is 12 metres tall.",
+          "write": "h = 15 × 0.8 = 12 m",
+          "diagram": "diagrams/y9/maths/solving-problems-with-similar-triangles-shadow.svg",
+          "alt": "Person 1.6 m tall with a 2 m shadow and a tree of height h with a 15 m shadow"
+        }
+      ]
+    },
+    {
+      "heading": "A ramp",
+      "lines": [
+        {
+          "say": "A post 0.6 metres tall stands 2 metres from the start of a ramp.",
+          "write": "AB = 2, BC = 0.6, AD = 7",
+          "diagram": "diagrams/y9/maths/solving-problems-with-similar-triangles-ex2.svg",
+          "alt": "Ramp from A to E above D; vertical post BC 0.6 m at 2 m from A; AD = 7 m"
+        },
+        { "say": "The small and big triangles share angle A, and both have a right angle.", "write": "△ABC ||| △ADE" },
+        { "say": "Match. 2 goes with 7, and 0.6 goes with h.", "write": "h ÷ 0.6 = 7 ÷ 2" },
+        { "say": "7 over 2 is 3.5. So h is 0.6 times 3.5, which is 2.1 metres.", "write": "h = 2.1 m" }
+      ]
+    },
+    {
+      "heading": "Across a river",
+      "lines": [
+        {
+          "say": "Two right-angled triangles meet at O. The angles at O are vertically opposite.",
+          "write": "△TPO ||| △SQO",
+          "diagram": "diagrams/y9/maths/solving-problems-with-similar-triangles-ex3.svg",
+          "alt": "River set-up with PO = 24 m, OQ = 8 m, QS = 6 m and width PT = w"
+        },
+        { "say": "PT matches QS, and PO matches QO.", "write": "w ÷ 6 = 24 ÷ 8" },
+        { "say": "24 over 8 is 3. So w is 6 times 3, which is 18 metres.", "write": "w = 18 m" }
+      ]
+    },
+    {
+      "heading": "Mirrors and lamp posts",
+      "lines": [
+        {
+          "say": "Light leaves a mirror at the same angle it hits it. So these triangles are similar.",
+          "write": "equal angles at mirror",
+          "diagram": "diagrams/y9/maths/solving-problems-with-similar-triangles-ex4.svg",
+          "alt": "Eye 1.5 m above ground, 2 m from mirror; flagpole h, 12 m from mirror"
+        },
+        { "say": "Eye height 1.5 matches h. 2 metres matches 12 metres.", "write": "h = 1.5 × 12 ÷ 2" },
+        { "say": "So the flagpole is 9 metres tall.", "write": "h = 9 m" },
+        { "say": "With lamp posts, the big triangle's base runs from the post to the shadow's tip.", "write": "lamp post = whole base" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't add the difference. Use a ratio. Multiply by the scale factor.",
+          "write": "✗ add 15 m",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Adding the difference crossed out; multiplying by the scale factor highlighted",
+            "items": [
+              { "kind": "text", "x": 280, "y": 70, "text": "shadow 3 → 18: tree + 15?", "size": 24, "bold": true, "color": "red", "anchor": "middle", "change": "remove" },
+              { "kind": "text", "x": 280, "y": 150, "text": "18 ÷ 3 = 6, so tree × 6", "size": 24, "bold": true, "color": "green", "anchor": "middle", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Heights match heights. Shadows match shadows.", "write": "height ↔ height" },
+        { "say": "Use the whole base, not just part of it.", "write": "whole side" },
+        { "say": "Put both triangles into the same units first.", "write": "same units" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Draw, Prove, Match, Set up, Check.", "write": "D-P-M-S-C" },
+        { "say": "Same moment, same sun, similar triangles.", "write": "same sun → similar" },
+        { "say": "Sense check. A tree should be taller than a person.", "write": "sense check ✓" }
+      ]
+    }
+  ]
+}

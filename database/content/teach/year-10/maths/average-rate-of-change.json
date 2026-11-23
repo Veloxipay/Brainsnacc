@@ -1,0 +1,1014 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Average rate of change",
+  "frames": [
+    {
+      "heading": "What is a rate of change?",
+      "lines": [
+        {
+          "say": "A rate compares how much one thing changes with another.",
+          "write": "rate of change"
+        },
+        {
+          "say": "The units say per. Metres per second, litres per minute.",
+          "write": "m/s,  L/min,  $ per item"
+        },
+        {
+          "say": "On a straight line, the rate is the gradient. Same everywhere.",
+          "write": "rate = gradient"
+        },
+        {
+          "say": "On a curve, the steepness keeps changing."
+        }
+      ]
+    },
+    {
+      "heading": "Average rate on a curve",
+      "lines": [
+        {
+          "say": "Here is y equals x squared. Pick two points on it.",
+          "write": "y = x²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Curve y = x squared with chord from (1, 1) to (3, 9)",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 290,
+                "x2": 80,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 106.0,
+                "y2": 269.04,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 106.0,
+                "y": 269.04,
+                "x2": 132.0,
+                "y2": 266.16,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 132.0,
+                "y": 266.16,
+                "x2": 158.0,
+                "y2": 261.36,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 158.0,
+                "y": 261.36,
+                "x2": 184.0,
+                "y2": 254.64,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 184.0,
+                "y": 254.64,
+                "x2": 210.0,
+                "y2": 246.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 210.0,
+                "y": 246.0,
+                "x2": 236.00000000000003,
+                "y2": 235.44,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 236.00000000000003,
+                "y": 235.44,
+                "x2": 262.0,
+                "y2": 222.95999999999998,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 262.0,
+                "y": 222.95999999999998,
+                "x2": 288.0,
+                "y2": 208.56,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 288.0,
+                "y": 208.56,
+                "x2": 314.0,
+                "y2": 192.24,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 314.0,
+                "y": 192.24,
+                "x2": 340.0,
+                "y2": 174.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 340.0,
+                "y": 174.0,
+                "x2": 366.0,
+                "y2": 153.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366.0,
+                "y": 153.83999999999997,
+                "x2": 392.00000000000006,
+                "y2": 131.75999999999996,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 392.00000000000006,
+                "y": 131.75999999999996,
+                "x2": 418.0,
+                "y2": 107.75999999999999,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 418.0,
+                "y": 107.75999999999999,
+                "x2": 444.00000000000006,
+                "y2": 81.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 444.00000000000006,
+                "y": 81.83999999999997,
+                "x2": 470.0,
+                "y2": 54.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 470.0,
+                "y": 54.0,
+                "x2": 496.0,
+                "y2": 24.239999999999952,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 246,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 54,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 274,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 458,
+                "y": 59,
+                "text": "(3, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Join them with a straight line. That is a chord.",
+          "write": "chord (secant)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Curve y = x squared with chord from (1, 1) to (3, 9)",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 290,
+                "x2": 80,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 106.0,
+                "y2": 269.04,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 106.0,
+                "y": 269.04,
+                "x2": 132.0,
+                "y2": 266.16,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 132.0,
+                "y": 266.16,
+                "x2": 158.0,
+                "y2": 261.36,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 158.0,
+                "y": 261.36,
+                "x2": 184.0,
+                "y2": 254.64,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 184.0,
+                "y": 254.64,
+                "x2": 210.0,
+                "y2": 246.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 210.0,
+                "y": 246.0,
+                "x2": 236.00000000000003,
+                "y2": 235.44,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 236.00000000000003,
+                "y": 235.44,
+                "x2": 262.0,
+                "y2": 222.95999999999998,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 262.0,
+                "y": 222.95999999999998,
+                "x2": 288.0,
+                "y2": 208.56,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 288.0,
+                "y": 208.56,
+                "x2": 314.0,
+                "y2": 192.24,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 314.0,
+                "y": 192.24,
+                "x2": 340.0,
+                "y2": 174.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 340.0,
+                "y": 174.0,
+                "x2": 366.0,
+                "y2": 153.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366.0,
+                "y": 153.83999999999997,
+                "x2": 392.00000000000006,
+                "y2": 131.75999999999996,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 392.00000000000006,
+                "y": 131.75999999999996,
+                "x2": 418.0,
+                "y2": 107.75999999999999,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 418.0,
+                "y": 107.75999999999999,
+                "x2": 444.00000000000006,
+                "y2": 81.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 444.00000000000006,
+                "y": 81.83999999999997,
+                "x2": 470.0,
+                "y2": 54.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 470.0,
+                "y": 54.0,
+                "x2": 496.0,
+                "y2": 24.239999999999952,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 246,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 54,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 274,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 458,
+                "y": 59,
+                "text": "(3, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 210,
+                "y": 246,
+                "x2": 470,
+                "y2": 54,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The rise is nine take one, which is 8. The run is 2.",
+          "write": "rise 8, run 2",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Curve y = x squared with chord from (1, 1) to (3, 9)",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 290,
+                "x2": 80,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 106.0,
+                "y2": 269.04,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 106.0,
+                "y": 269.04,
+                "x2": 132.0,
+                "y2": 266.16,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 132.0,
+                "y": 266.16,
+                "x2": 158.0,
+                "y2": 261.36,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 158.0,
+                "y": 261.36,
+                "x2": 184.0,
+                "y2": 254.64,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 184.0,
+                "y": 254.64,
+                "x2": 210.0,
+                "y2": 246.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 210.0,
+                "y": 246.0,
+                "x2": 236.00000000000003,
+                "y2": 235.44,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 236.00000000000003,
+                "y": 235.44,
+                "x2": 262.0,
+                "y2": 222.95999999999998,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 262.0,
+                "y": 222.95999999999998,
+                "x2": 288.0,
+                "y2": 208.56,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 288.0,
+                "y": 208.56,
+                "x2": 314.0,
+                "y2": 192.24,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 314.0,
+                "y": 192.24,
+                "x2": 340.0,
+                "y2": 174.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 340.0,
+                "y": 174.0,
+                "x2": 366.0,
+                "y2": 153.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366.0,
+                "y": 153.83999999999997,
+                "x2": 392.00000000000006,
+                "y2": 131.75999999999996,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 392.00000000000006,
+                "y": 131.75999999999996,
+                "x2": 418.0,
+                "y2": 107.75999999999999,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 418.0,
+                "y": 107.75999999999999,
+                "x2": 444.00000000000006,
+                "y2": 81.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 444.00000000000006,
+                "y": 81.83999999999997,
+                "x2": 470.0,
+                "y2": 54.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 470.0,
+                "y": 54.0,
+                "x2": 496.0,
+                "y2": 24.239999999999952,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 246,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 54,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 274,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 458,
+                "y": 59,
+                "text": "(3, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 210,
+                "y": 246,
+                "x2": 470,
+                "y2": 54,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 210,
+                "y": 246,
+                "x2": 470,
+                "y2": 246,
+                "color": "purple",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 470,
+                "y": 246,
+                "x2": 470,
+                "y2": 54,
+                "color": "purple",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 268,
+                "text": "run 2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 482,
+                "y": 150,
+                "text": "rise 8",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rise over run. Eight divided by two is 4.",
+          "write": "8 ÷ 2 = 4"
+        },
+        {
+          "say": "So the average rate of change is the gradient of the chord.",
+          "write": "(y₂ − y₁) ÷ (x₂ − x₁)"
+        }
+      ]
+    },
+    {
+      "heading": "Draining a tank",
+      "lines": [
+        {
+          "say": "A tank drains. Here is the volume over time.",
+          "diagram": "diagrams/y10/maths/average-rate-of-change-tank.svg",
+          "alt": "Tank volume falling from 200 L at 0 min to 140 L at 15 min with a chord from 0 to 10 minutes"
+        },
+        {
+          "say": "From 0 to 10 minutes, it drops 50 litres.",
+          "write": "(150 − 200) ÷ (10 − 0)"
+        },
+        {
+          "say": "Fifty divided by ten. Minus 5 litres per minute.",
+          "write": "−5 L/min"
+        },
+        {
+          "say": "From 10 to 15 minutes, it is minus 2 litres per minute.",
+          "write": "−10 ÷ 5 = −2 L/min"
+        },
+        {
+          "say": "The draining is slowing down."
+        },
+        {
+          "say": "Check. Minus five times ten is minus fifty. It works.",
+          "write": "−5 × 10 = −50 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "What the sign means",
+      "lines": [
+        {
+          "say": "Positive means it went up overall. Negative means it went down.",
+          "write": "+ up,  − down"
+        },
+        {
+          "say": "A ball’s height is twenty t take five t squared.",
+          "write": "h = 20t − 5t²"
+        },
+        {
+          "say": "First second: zero to fifteen metres. Fifteen metres per second.",
+          "write": "15 m/s"
+        },
+        {
+          "say": "From 1 to 3 seconds, it starts and ends at 15 metres.",
+          "write": "(15 − 15) ÷ 2 = 0"
+        },
+        {
+          "say": "So the average is zero. But the ball went up and came back down.",
+          "write": "zero ≠ stopped"
+        }
+      ]
+    },
+    {
+      "heading": "From average to instant",
+      "lines": [
+        {
+          "say": "Make the interval shorter and shorter, starting at x equals 2.",
+          "write": "x = 2"
+        },
+        {
+          "say": "Two to three gives 5. Two to 2.1 gives 4.1.",
+          "write": "5,  4.1,  4.01 …"
+        },
+        {
+          "say": "The answers close in on 4.",
+          "write": "→ 4"
+        },
+        {
+          "say": "The chord becomes the tangent. Its gradient is the instant rate.",
+          "write": "instant = tangent",
+          "diagram": "diagrams/y10/maths/average-rate-of-change-tangent.svg",
+          "alt": "Chord from (2, 4) to (3, 9) and tangent at (2, 4)"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Subtract in the same order, top and bottom. End minus start.",
+          "write": "end − start"
+        },
+        {
+          "say": "Always divide by the run. Change in y alone is not a rate."
+        },
+        {
+          "say": "It is y over x. Do not flip it.",
+          "write": "rise ÷ run"
+        },
+        {
+          "say": "Two hours thirty minutes is 2.5 hours, not 2.3.",
+          "write": "2 h 30 min = 2.5 h"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Rise over run, end minus start.",
+          "write": "rise ÷ run",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Curve y = x squared with chord from (1, 1) to (3, 9)",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 270,
+                "x2": 520,
+                "y2": 270,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80,
+                "y": 290,
+                "x2": 80,
+                "y2": 20,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 80.0,
+                "y": 270.0,
+                "x2": 106.0,
+                "y2": 269.04,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 106.0,
+                "y": 269.04,
+                "x2": 132.0,
+                "y2": 266.16,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 132.0,
+                "y": 266.16,
+                "x2": 158.0,
+                "y2": 261.36,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 158.0,
+                "y": 261.36,
+                "x2": 184.0,
+                "y2": 254.64,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 184.0,
+                "y": 254.64,
+                "x2": 210.0,
+                "y2": 246.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 210.0,
+                "y": 246.0,
+                "x2": 236.00000000000003,
+                "y2": 235.44,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 236.00000000000003,
+                "y": 235.44,
+                "x2": 262.0,
+                "y2": 222.95999999999998,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 262.0,
+                "y": 222.95999999999998,
+                "x2": 288.0,
+                "y2": 208.56,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 288.0,
+                "y": 208.56,
+                "x2": 314.0,
+                "y2": 192.24,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 314.0,
+                "y": 192.24,
+                "x2": 340.0,
+                "y2": 174.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 340.0,
+                "y": 174.0,
+                "x2": 366.0,
+                "y2": 153.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 366.0,
+                "y": 153.83999999999997,
+                "x2": 392.00000000000006,
+                "y2": 131.75999999999996,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 392.00000000000006,
+                "y": 131.75999999999996,
+                "x2": 418.0,
+                "y2": 107.75999999999999,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 418.0,
+                "y": 107.75999999999999,
+                "x2": 444.00000000000006,
+                "y2": 81.83999999999997,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 444.00000000000006,
+                "y": 81.83999999999997,
+                "x2": 470.0,
+                "y2": 54.0,
+                "color": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 470.0,
+                "y": 54.0,
+                "x2": 496.0,
+                "y2": 24.239999999999952,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 246,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 54,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 220,
+                "y": 274,
+                "text": "(1, 1)",
+                "size": 16,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 458,
+                "y": 59,
+                "text": "(3, 9)",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 210,
+                "y": 246,
+                "x2": 470,
+                "y2": 54,
+                "color": "red"
+              },
+              {
+                "kind": "line",
+                "x": 210,
+                "y": 246,
+                "x2": 470,
+                "y2": 246,
+                "color": "purple",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "line",
+                "x": 470,
+                "y": 246,
+                "x2": 470,
+                "y2": 54,
+                "color": "purple",
+                "change": "add",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 340,
+                "y": 268,
+                "text": "run 2",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 482,
+                "y": 150,
+                "text": "rise 8",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Average is a chord. Instant is a tangent.",
+          "write": "chord vs tangent"
+        },
+        {
+          "say": "Only the endpoints count for an average."
+        },
+        {
+          "say": "Check. Rate times run gives back the rise.",
+          "write": "rate × run = rise"
+        }
+      ]
+    }
+  ]
+}

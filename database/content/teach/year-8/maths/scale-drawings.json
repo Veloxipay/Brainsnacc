@@ -1,0 +1,807 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Scale drawings",
+  "frames": [
+    {
+      "heading": "Same shape, different size",
+      "lines": [
+        {
+          "say": "A scale drawing shows a real object at a different size.",
+          "write": "same shape, new size"
+        },
+        {
+          "say": "A toy car labelled 1 to 64. Its wheel is 1 centimetre.",
+          "write": "1 : 64",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "A 1 : 64 toy car and the real car: every length is 64 times bigger",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 140,
+                "w": 64,
+                "h": 30,
+                "fill": "orange",
+                "label": "toy"
+              },
+              {
+                "kind": "circle",
+                "x": 55,
+                "y": 175,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 175,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 72,
+                "y": 210,
+                "text": "1 cm wheel",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the real wheel is 64 centimetres. Every length is 64 times bigger.",
+          "write": "1 cm → 64 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "A 1 : 64 toy car and the real car: every length is 64 times bigger",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 140,
+                "w": 64,
+                "h": 30,
+                "fill": "orange",
+                "label": "toy"
+              },
+              {
+                "kind": "circle",
+                "x": 55,
+                "y": 175,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 90,
+                "y": 175,
+                "r": 6,
+                "fill": "black"
+              },
+              {
+                "kind": "text",
+                "x": 72,
+                "y": 210,
+                "text": "1 cm wheel",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "rect",
+                "x": 180,
+                "y": 80,
+                "w": 340,
+                "h": 100,
+                "fill": "orange",
+                "label": "real car",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 230,
+                "y": 190,
+                "r": 26,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 470,
+                "y": 190,
+                "r": 26,
+                "fill": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 250,
+                "text": "64 cm wheel",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 40,
+                "text": "every length × 64",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "What a scale means",
+      "lines": [
+        {
+          "say": "A scale is drawing length to real length, in the same unit.",
+          "write": "drawing : real"
+        },
+        {
+          "say": "1 to 50 thousand means 1 centimetre on the map is 50 thousand in real life.",
+          "write": "1 cm → 50 000 cm"
+        },
+        {
+          "say": "The second number is the scale factor.",
+          "write": "scale factor = 50 000"
+        }
+      ]
+    },
+    {
+      "heading": "Drawing to real: multiply",
+      "lines": [
+        {
+          "say": "Two towns are 6 centimetres apart on this map.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Map: Town A and Town B 6 cm apart, scale 1 : 50 000",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 230,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 110,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 185,
+                "text": "Town A",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 185,
+                "text": "Town B",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 122,
+                "y": 150,
+                "x2": 398,
+                "y2": 150,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 135,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 40,
+                "w": 170,
+                "h": 40,
+                "fill": "white",
+                "label": "Scale 1 : 50 000"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Multiply by 50 thousand. That's 300 thousand centimetres.",
+          "write": "6 × 50 000 = 300 000 cm",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Map: Town A and Town B 6 cm apart, scale 1 : 50 000",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 230,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 110,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 185,
+                "text": "Town A",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 185,
+                "text": "Town B",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 122,
+                "y": 150,
+                "x2": 398,
+                "y2": 150,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 135,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 40,
+                "w": 170,
+                "h": 40,
+                "fill": "white",
+                "label": "Scale 1 : 50 000"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 225,
+                "text": "6 × 50 000 = 300 000 cm",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "1 kilometre is 100 thousand centimetres. So it's 3 kilometres.",
+          "write": "300 000 ÷ 100 000 = 3 km",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Map: Town A and Town B 6 cm apart, scale 1 : 50 000",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 230,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 110,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 185,
+                "text": "Town A",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 185,
+                "text": "Town B",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 122,
+                "y": 150,
+                "x2": 398,
+                "y2": 150,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 135,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 40,
+                "w": 170,
+                "h": 40,
+                "fill": "white",
+                "label": "Scale 1 : 50 000"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 225,
+                "text": "6 × 50 000 = 300 000 cm",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 60,
+                "text": "= 3 km",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "km to cm has five zeros. Go km to m to cm.",
+          "write": "1 km = 100 000 cm"
+        }
+      ]
+    },
+    {
+      "heading": "Real to drawing: divide",
+      "lines": [
+        {
+          "say": "A house plan is 1 to 200. A real wall is 7 metres.",
+          "write": "1 : 200,  7 m"
+        },
+        {
+          "say": "Change to centimetres first. 7 metres is 700 centimetres.",
+          "write": "7 m = 700 cm"
+        },
+        {
+          "say": "Divide by 200. The wall is 3.5 centimetres on the plan.",
+          "write": "700 ÷ 200 = 3.5 cm"
+        },
+        {
+          "say": "Ask: should the answer be bigger or smaller?",
+          "write": "bigger or smaller?"
+        }
+      ]
+    },
+    {
+      "heading": "Finding the scale",
+      "lines": [
+        {
+          "say": "A drawing of a car is 6 centimetres. The real car is 2.4 metres.",
+          "write": "6 cm : 2.4 m"
+        },
+        {
+          "say": "Same unit first. 2.4 metres is 240 centimetres.",
+          "write": "6 : 240"
+        },
+        {
+          "say": "Divide both by 6. The scale is 1 to 40.",
+          "write": "= 1 : 40"
+        },
+        {
+          "say": "First number bigger? It's an enlargement. An ant at 20 to 1.",
+          "write": "20 : 1 → enlargement"
+        },
+        {
+          "say": "A 4 centimetre poster ant is 4 over 20. That's 2 millimetres.",
+          "write": "4 ÷ 20 = 0.2 cm = 2 mm"
+        }
+      ]
+    },
+    {
+      "heading": "Scale and area",
+      "lines": [
+        {
+          "say": "A garden plan is 12 by 8 centimetres, at 1 to 500.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Garden plan 12 cm by 8 cm at scale 1 : 500; real 60 m by 40 m, area 2400 m²",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 50,
+                "w": 240,
+                "h": 160,
+                "fill": "green",
+                "label": "Garden"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 235,
+                "text": "12 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 135,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Scale each length first. 60 metres and 40 metres.",
+          "write": "12 × 500 = 6000 cm = 60 m",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Garden plan 12 cm by 8 cm at scale 1 : 500; real 60 m by 40 m, area 2400 m²",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 50,
+                "w": 240,
+                "h": 160,
+                "fill": "green",
+                "label": "Garden"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 235,
+                "text": "12 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 135,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 260,
+                "text": "× 500 = 60 m",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 160,
+                "text": "× 500 = 40 m",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Then multiply. The real area is 2400 square metres.",
+          "write": "60 × 40 = 2400 m²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Garden plan 12 cm by 8 cm at scale 1 : 500; real 60 m by 40 m, area 2400 m²",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 50,
+                "w": 240,
+                "h": 160,
+                "fill": "green",
+                "label": "Garden"
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 235,
+                "text": "12 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 135,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 180,
+                "y": 260,
+                "text": "× 500 = 60 m",
+                "size": 18,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 320,
+                "y": 160,
+                "text": "× 500 = 40 m",
+                "size": 18,
+                "color": "purple",
+                "anchor": "start",
+                "bold": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 440,
+                "y": 60,
+                "text": "60 × 40 = 2400 m²",
+                "size": 20,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Don't scale the area by 500. Lengths first, then area.",
+          "write": "lengths, then area"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out and remember",
+      "lines": [
+        {
+          "say": "Mixing units. 6 centimetres to 2.4 metres is not 6 to 2.4.",
+          "write": "✗ 6 : 2.4"
+        },
+        {
+          "say": "Drawing first, always. Drawing to real.",
+          "write": "drawing : real",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Map: Town A and Town B 6 cm apart, scale 1 : 50 000",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 20,
+                "w": 520,
+                "h": 230,
+                "fill": "green"
+              },
+              {
+                "kind": "circle",
+                "x": 110,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 185,
+                "text": "Town A",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 150,
+                "r": 12,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 410,
+                "y": 185,
+                "text": "Town B",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 122,
+                "y": 150,
+                "x2": 398,
+                "y2": 150,
+                "color": "black",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 135,
+                "text": "6 cm",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 40,
+                "w": 170,
+                "h": 40,
+                "fill": "white",
+                "label": "Scale 1 : 50 000"
+              },
+              {
+                "kind": "text",
+                "x": 260,
+                "y": 225,
+                "text": "6 × 50 000 = 300 000 cm",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 60,
+                "text": "= 3 km",
+                "size": 26,
+                "color": "red",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Drawing to real, multiply. Real to drawing, divide.",
+          "write": "D → R ×,  R → D ÷"
+        },
+        {
+          "say": "A real car a few metres long, not 40 kilometres. Sense check!",
+          "write": "sense check ✓"
+        }
+      ]
+    }
+  ]
+}

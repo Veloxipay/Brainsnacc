@@ -1,0 +1,522 @@
+{
+  "level": "Year 8",
+  "subject": "maths",
+  "title": "Area of composite shapes",
+  "frames": [
+    {
+      "heading": "What is a composite shape?",
+      "lines": [
+        {
+          "say": "Real shapes are rarely one neat rectangle.",
+          "write": "composite = simple shapes joined"
+        },
+        {
+          "say": "An L-shaped backyard. A wall with a pointed gable and a door.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "L-shaped room",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 30,
+                "w": 180,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 120,
+                "w": 120,
+                "h": 150,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "10 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 155,
+                "text": "8 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "We break it into shapes we already know.",
+          "write": "break it up"
+        },
+        {
+          "say": "First, three new formulas: trapezium, rhombus and kite."
+        }
+      ]
+    },
+    {
+      "heading": "Trapezium",
+      "lines": [
+        {
+          "say": "A trapezium has exactly one pair of parallel sides, a and b.",
+          "diagram": "diagrams/y8/maths/area-of-composite-shapes-trapezium.svg",
+          "alt": "Trapezium with parallel sides a and b and height h"
+        },
+        {
+          "say": "Area is a half times a plus b, times the height.",
+          "write": "A = ½ × (a + b) × h"
+        },
+        {
+          "say": "Two copies make a parallelogram. One trapezium is half of it.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Two trapeziums make a parallelogram",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    60,
+                    220
+                  ],
+                  [
+                    300,
+                    220
+                  ],
+                  [
+                    240,
+                    100
+                  ],
+                  [
+                    120,
+                    100
+                  ]
+                ],
+                "fill": "blue",
+                "label": "trapezium"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    240,
+                    100
+                  ],
+                  [
+                    300,
+                    220
+                  ],
+                  [
+                    480,
+                    220
+                  ],
+                  [
+                    420,
+                    100
+                  ]
+                ],
+                "fill": "orange",
+                "change": "add",
+                "label": "copy"
+              },
+              {
+                "kind": "text",
+                "x": 270,
+                "y": 270,
+                "text": "base = a + b",
+                "size": 22,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Parallel sides 6 and 10, height 4. Add the parallel sides first.",
+          "write": "6 + 10 = 16",
+          "diagram": "diagrams/y8/maths/area-of-composite-shapes-ex1.svg",
+          "alt": "Trapezium with sides 6 cm and 10 cm, height 4 cm"
+        },
+        {
+          "say": "Half of 16 is 8. 8 times 4 is 32 square centimetres.",
+          "write": "A = ½ × 16 × 4 = 32 cm²"
+        },
+        {
+          "say": "Only the parallel sides go in the brackets, not all four.",
+          "write": "✗ all four sides"
+        }
+      ]
+    },
+    {
+      "heading": "Rhombus and kite",
+      "lines": [
+        {
+          "say": "In a rhombus or kite, the diagonals cross at right angles.",
+          "write": "diagonals x and y"
+        },
+        {
+          "say": "The kite fits in a rectangle x by y, and fills half of it.",
+          "write": "A = ½ × x × y",
+          "diagram": "diagrams/y8/maths/area-of-composite-shapes-kite.svg",
+          "alt": "Kite inside an x by y rectangle"
+        },
+        {
+          "say": "Diagonals 12 and 8. The box is 96.",
+          "write": "12 × 8 = 96",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Kite in a box",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 170,
+                "y": 30,
+                "w": 220,
+                "h": 240,
+                "fill": "none"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    280,
+                    30
+                  ],
+                  [
+                    390,
+                    110
+                  ],
+                  [
+                    280,
+                    270
+                  ],
+                  [
+                    170,
+                    110
+                  ]
+                ],
+                "fill": "green",
+                "change": "highlight",
+                "label": "48"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 160,
+                "text": "12 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "8 cm",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The kite is half the box. 48 square centimetres.",
+          "write": "A = 48 cm²"
+        }
+      ]
+    },
+    {
+      "heading": "Subtract the gap",
+      "lines": [
+        {
+          "say": "An L-shaped room fits in a 10 by 8 rectangle.",
+          "write": "10 × 8 = 80 m²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "L-shaped room",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 30,
+                "w": 180,
+                "h": 240,
+                "fill": "blue"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 120,
+                "w": 120,
+                "h": 150,
+                "fill": "blue"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 22,
+                "text": "10 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 155,
+                "text": "8 m",
+                "size": 18,
+                "color": "black",
+                "anchor": "end"
+              }
+            ]
+          }
+        },
+        {
+          "say": "A 4 by 3 corner is missing. Take it away.",
+          "write": "4 × 3 = 12 m²",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "L-shaped room",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 30,
+                "w": 300,
+                "h": 240,
+                "fill": "blue",
+                "label": "80 m²"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 30,
+                "w": 120,
+                "h": 90,
+                "fill": "red",
+                "change": "remove",
+                "label": "4 × 3 = 12"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "80 − 12 = 68 m²",
+                "size": 22,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "80 minus 12 is 68 square metres.",
+          "write": "80 − 12 = 68 m²"
+        },
+        {
+          "say": "Or split it and add. 48 plus 20 is also 68.",
+          "write": "48 + 20 = 68 m² ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "L-shaped room",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 30,
+                "w": 180,
+                "h": 240,
+                "fill": "teal",
+                "change": "add",
+                "label": "6 × 8 = 48"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 120,
+                "w": 120,
+                "h": 150,
+                "fill": "orange",
+                "change": "add",
+                "label": "4 × 5 = 20"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "48 + 20 = 68 m²",
+                "size": 22,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Add the bits or subtract the gaps. Pick fewer, simpler pieces.",
+          "write": "add bits / subtract gaps"
+        }
+      ]
+    },
+    {
+      "heading": "A shed wall",
+      "lines": [
+        {
+          "say": "A 9 by 3 wall with a triangular gable on top.",
+          "diagram": "diagrams/y8/maths/area-of-composite-shapes-ex4.svg",
+          "alt": "Shed wall with gable, door and window"
+        },
+        {
+          "say": "Rectangle: 9 times 3 is 27. Triangle: half of 9 times 2 is 9.",
+          "write": "27 + 9 = 36 m²"
+        },
+        {
+          "say": "The door and window aren't painted. Subtract them.",
+          "write": "− 2 − 1.8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Wall minus door and window",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 100,
+                "y": 120,
+                "w": 360,
+                "h": 150,
+                "fill": "yellow"
+              },
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    100,
+                    120
+                  ],
+                  [
+                    460,
+                    120
+                  ],
+                  [
+                    280,
+                    40
+                  ]
+                ],
+                "fill": "yellow"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 190,
+                "w": 50,
+                "h": 80,
+                "fill": "red",
+                "change": "remove",
+                "label": "door"
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 160,
+                "w": 80,
+                "h": 50,
+                "fill": "red",
+                "change": "remove",
+                "label": "window"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 295,
+                "text": "36 − 2 − 1.8 = 32.2 m²",
+                "size": 22,
+                "color": "green",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So 32.2 square metres need painting.",
+          "write": "32.2 m²"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't forget the half in the trapezium or kite formula.",
+          "write": "½ !"
+        },
+        {
+          "say": "Use the perpendicular height, not a sloping side.",
+          "write": "height ⟂ base"
+        },
+        {
+          "say": "Don't count a piece twice. Label each piece's lengths.",
+          "write": "sketch and label"
+        },
+        {
+          "say": "Is that part really there? If not, subtract it.",
+          "write": "holes: subtract"
+        },
+        {
+          "say": "Same units before you multiply. Answers in square units.",
+          "write": "cm², m²"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Trapezium: average the parallel sides, times the height.",
+          "write": "½ (a + b) h"
+        },
+        {
+          "say": "Kite or rhombus: half the diagonals multiplied.",
+          "write": "½ x y"
+        },
+        {
+          "say": "Add the bits or subtract the gaps.",
+          "write": "composite"
+        },
+        {
+          "say": "Find missing lengths first, then calculate.",
+          "write": "label first"
+        }
+      ]
+    }
+  ]
+}

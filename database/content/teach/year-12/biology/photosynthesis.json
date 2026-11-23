@@ -1,0 +1,121 @@
+{
+  "level": "Year 12", "subject": "biology", "title": "Photosynthesis",
+  "frames": [
+    { "heading": "The overall equation",
+      "lines": [
+        { "say": "Photosynthesis stores light energy as chemical energy in glucose.", "write": "light → chemical energy" },
+        { "say": "Here's the summary equation. Twelve waters go in, six come back out.", "write": "6CO₂ + 12H₂O → C₆H₁₂O₆ + 6O₂ + 6H₂O" },
+        { "say": "All the oxygen released comes from splitting water, not carbon dioxide.", "write": "O₂ comes from H₂O" },
+        { "say": "It really runs as two linked stages, each with many enzyme steps.", "write": "two stages" }
+      ] },
+    { "heading": "Inside the chloroplast",
+      "lines": [
+        { "say": "Photosynthesis happens in chloroplasts, mostly in leaf mesophyll cells.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Chloroplast with grana stacks and stroma", "items": [
+            {"kind": "rect", "x": 30, "y": 30, "w": 500, "h": 200, "fill": "green"},
+            {"kind": "rect", "x": 45, "y": 45, "w": 470, "h": 170, "fill": "teal"},
+            {"kind": "rect", "x": 100, "y": 90, "w": 70, "h": 14, "fill": "green"},
+            {"kind": "rect", "x": 100, "y": 108, "w": 70, "h": 14, "fill": "green"},
+            {"kind": "rect", "x": 100, "y": 126, "w": 70, "h": 14, "fill": "green"},
+            {"kind": "rect", "x": 300, "y": 120, "w": 70, "h": 14, "fill": "green"},
+            {"kind": "rect", "x": 300, "y": 138, "w": 70, "h": 14, "fill": "green"},
+            {"kind": "rect", "x": 300, "y": 156, "w": 70, "h": 14, "fill": "green"},
+            {"kind": "text", "x": 280, "y": 255, "text": "double membrane", "size": 18, "anchor": "middle"}
+          ]}},
+        { "say": "The stacks are grana, made of thylakoids. They hold the chlorophyll.", "write": "thylakoids → grana",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Grana and stroma labelled", "items": [
+            {"kind": "rect", "x": 30, "y": 30, "w": 500, "h": 200, "fill": "green"},
+            {"kind": "rect", "x": 45, "y": 45, "w": 470, "h": 170, "fill": "teal"},
+            {"kind": "rect", "x": 100, "y": 90, "w": 70, "h": 14, "fill": "green", "change": "highlight"},
+            {"kind": "rect", "x": 100, "y": 108, "w": 70, "h": 14, "fill": "green", "change": "highlight"},
+            {"kind": "rect", "x": 100, "y": 126, "w": 70, "h": 14, "fill": "green", "change": "highlight"},
+            {"kind": "rect", "x": 300, "y": 120, "w": 70, "h": 14, "fill": "green", "change": "highlight"},
+            {"kind": "rect", "x": 300, "y": 138, "w": 70, "h": 14, "fill": "green", "change": "highlight"},
+            {"kind": "rect", "x": 300, "y": 156, "w": 70, "h": 14, "fill": "green", "change": "highlight"},
+            {"kind": "text", "x": 135, "y": 75, "text": "granum", "size": 18, "anchor": "middle", "change": "add"},
+            {"kind": "text", "x": 440, "y": 80, "text": "stroma", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "The fluid around them is the stroma. It holds the Calvin cycle enzymes.", "write": "stroma: Calvin cycle" }
+      ] },
+    { "heading": "Stage 1: light-dependent",
+      "lines": [
+        { "say": "On the thylakoid membranes, chlorophyll absorbs light. Electrons get excited.", "write": "light-dependent: thylakoids" },
+        { "say": "Water is split to replace those electrons. Oxygen is released.", "write": "H₂O → O₂ + H⁺ + e⁻" },
+        { "say": "The energy loads ATP and NADPH.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "Inputs and outputs of the light-dependent stage", "items": [
+            {"kind": "rect", "x": 190, "y": 70, "w": 180, "h": 80, "fill": "green", "label": "light-dependent"},
+            {"kind": "text", "x": 20, "y": 80, "text": "light", "size": 18},
+            {"kind": "text", "x": 20, "y": 115, "text": "H₂O", "size": 18},
+            {"kind": "text", "x": 20, "y": 150, "text": "ADP, NADP⁺", "size": 18},
+            {"kind": "arrow", "x": 120, "y": 110, "x2": 185, "y2": 110, "color": "black"},
+            {"kind": "arrow", "x": 375, "y": 110, "x2": 430, "y2": 110, "color": "black", "change": "add"},
+            {"kind": "text", "x": 440, "y": 80, "text": "O₂", "size": 18, "change": "add"},
+            {"kind": "text", "x": 440, "y": 115, "text": "ATP", "size": 18, "change": "add"},
+            {"kind": "text", "x": 440, "y": 150, "text": "NADPH", "size": 18, "change": "add"}
+          ]}},
+        { "say": "Oxygen leaves the leaf through the stomata.", "write": "O₂ out via stomata" }
+      ] },
+    { "heading": "Stage 2: the Calvin cycle",
+      "lines": [
+        { "say": "In the stroma, Rubisco attaches carbon dioxide to a five-carbon molecule, RuBP.", "write": "1. fixation: CO₂ + RuBP" },
+        { "say": "ATP and NADPH turn the products into a three-carbon sugar.", "write": "2. reduction: ATP, NADPH" },
+        { "say": "Most of that sugar is rebuilt into RuBP, so the cycle keeps turning.",
+          "draw": {"type": "shapes", "width": 560, "height": 260, "alt": "Calvin cycle with three steps", "items": [
+            {"kind": "circle", "x": 280, "y": 130, "r": 90, "fill": "orange", "label": "Calvin cycle"},
+            {"kind": "text", "x": 120, "y": 40, "text": "CO₂ in", "size": 20},
+            {"kind": "arrow", "x": 160, "y": 50, "x2": 215, "y2": 70, "color": "black"},
+            {"kind": "text", "x": 400, "y": 240, "text": "3. regenerate RuBP", "size": 18, "change": "add"},
+            {"kind": "arrow", "x": 365, "y": 110, "x2": 470, "y2": 80, "color": "green", "change": "add"},
+            {"kind": "text", "x": 470, "y": 70, "text": "glucose", "size": 20, "change": "add"}
+          ]}},
+        { "say": "Six turns fix six carbon dioxides. That makes one glucose.", "write": "6 turns → 1 glucose" },
+        { "say": "The empty ADP and NADP plus go back to the thylakoids.", "write": "ADP, NADP⁺ → thylakoids" }
+      ] },
+    { "heading": "Rubisco's weakness",
+      "lines": [
+        { "say": "Rubisco can bind oxygen as well as carbon dioxide.", "write": "Rubisco binds O₂ too" },
+        { "say": "That's photorespiration. It wastes energy, loses fixed carbon, makes no glucose.", "write": "photorespiration: wasteful" },
+        { "say": "On hot, dry days, stomata close. Carbon dioxide drops and oxygen builds up.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "In a closed leaf CO2 falls and O2 rises", "items": [
+            {"kind": "rect", "x": 60, "y": 60, "w": 160, "h": 60, "fill": "grey", "label": "CO₂", "change": "remove"},
+            {"kind": "rect", "x": 60, "y": 130, "w": 60, "h": 50, "fill": "grey", "label": "CO₂", "change": "add"},
+            {"kind": "rect", "x": 320, "y": 130, "w": 60, "h": 50, "fill": "red", "label": "O₂", "change": "remove"},
+            {"kind": "rect", "x": 320, "y": 60, "w": 200, "h": 60, "fill": "red", "label": "O₂ builds up", "change": "add"},
+            {"kind": "text", "x": 280, "y": 210, "text": "stomata closed", "size": 20, "anchor": "middle"}
+          ]}},
+        { "say": "So photorespiration goes up. Heat also makes Rubisco grab oxygen more.", "write": "hot + dry → more photoresp." }
+      ] },
+    { "heading": "C3, C4 and CAM plants",
+      "lines": [
+        { "say": "C3 plants like wheat and rice fix carbon dioxide straight with Rubisco.", "write": "C3: cool, moist" },
+        { "say": "C4 plants like maize separate the steps in space.",
+          "draw": {"type": "shapes", "width": 560, "height": 220, "alt": "C4: mesophyll fixes CO2, bundle sheath concentrates it for Rubisco", "items": [
+            {"kind": "rect", "x": 20, "y": 60, "w": 220, "h": 90, "fill": "green", "label": "mesophyll: PEP carboxylase"},
+            {"kind": "arrow", "x": 245, "y": 105, "x2": 315, "y2": 105, "color": "black", "change": "add"},
+            {"kind": "text", "x": 280, "y": 90, "text": "4C", "size": 18, "anchor": "middle", "change": "add"},
+            {"kind": "rect", "x": 320, "y": 60, "w": 220, "h": 90, "fill": "teal", "label": "bundle sheath: Rubisco", "change": "highlight"},
+            {"kind": "text", "x": 430, "y": 190, "text": "lots of CO₂ here", "size": 18, "anchor": "middle", "change": "add"}
+          ]}},
+        { "say": "The four-carbon compound releases carbon dioxide right around Rubisco.", "write": "C4: spatial separation" },
+        { "say": "CAM plants like cacti separate the steps in time. Stomata open at night.", "write": "CAM: night vs day",
+          "draw": {"type": "shapes", "width": 560, "height": 200, "alt": "CAM: night stores acids, day releases CO2", "items": [
+            {"kind": "rect", "x": 30, "y": 50, "w": 230, "h": 90, "fill": "purple", "label": "night: open, store acids"},
+            {"kind": "rect", "x": 300, "y": 50, "w": 230, "h": 90, "fill": "yellow", "label": "day: closed, Calvin", "change": "add"},
+            {"kind": "arrow", "x": 262, "y": 95, "x2": 298, "y2": 95, "color": "black", "change": "add"}
+          ]}}
+      ] },
+    { "heading": "Watch out for these",
+      "lines": [
+        { "say": "The Calvin cycle isn't a dark reaction. It needs ATP and NADPH made in light.", "write": "not 'dark reactions'" },
+        { "say": "Photosynthesis uses NADPH, not NADH.", "write": "NADPH" },
+        { "say": "C4 plants still use Rubisco. They just concentrate carbon dioxide around it.", "write": "C4 still uses Rubisco" }
+      ] },
+    { "heading": "Remember",
+      "lines": [
+        { "say": "Light-dependent on the thylakoids. Calvin cycle in the stroma.", "write": "thylakoids, then stroma" },
+        { "say": "Oxygen comes from water.", "write": "O₂ from H₂O" },
+        { "say": "Rubisco binding oxygen causes photorespiration.", "write": "Rubisco + O₂ = waste" },
+        { "say": "C4 splits by space. CAM splits by time.", "write": "C4 space, CAM time" }
+      ] }
+  ]
+}

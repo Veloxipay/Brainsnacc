@@ -1,0 +1,1188 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Counting techniques",
+  "frames": [
+    {
+      "heading": "The multiplication principle",
+      "lines": [
+        {
+          "say": "A 4 digit PIN has 10 000 options. Too many to list."
+        },
+        {
+          "say": "Three mains, and then two drinks. Each main branches into two.",
+          "write": "3 × 2 = 6",
+          "diagram": "diagrams/y10/maths/counting-techniques-menu.svg",
+          "alt": "Tree of 3 mains each branching into 2 drinks, 6 meals"
+        },
+        {
+          "say": "So there are 6 meal deals."
+        },
+        {
+          "say": "Add four desserts. Six times four is 24.",
+          "write": "6 × 4 = 24"
+        },
+        {
+          "say": "And then means times. Three shirts and four pants make 12, not 7.",
+          "write": "and then → ×"
+        }
+      ]
+    },
+    {
+      "heading": "Boxes and factorials",
+      "lines": [
+        {
+          "say": "Arrange 5 books on a shelf. Draw a box for each spot.",
+          "write": "5 spots",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boxes for each position with the number of choices",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 210,
+                "text": "1st",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 122,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 210,
+                "text": "2nd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 227,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "3rd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 332,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 345,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 385,
+                "y": 210,
+                "text": "4th",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 437,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "none"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 210,
+                "text": "5th",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "5 choices for the first. Then one fewer each time.",
+          "write": "5 × 4 × 3 × 2 × 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boxes for each position with the number of choices",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 210,
+                "text": "1st",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 122,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 210,
+                "text": "2nd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 227,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "3rd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 332,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 345,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 385,
+                "y": 210,
+                "text": "4th",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 437,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "change": "add",
+                "label": "1"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 210,
+                "text": "5th",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "That is 5 factorial. It equals 120.",
+          "write": "5! = 120",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boxes for each position with the number of choices",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "5"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 210,
+                "text": "1st",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 122,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 135,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "4"
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 210,
+                "text": "2nd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 227,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "3"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "3rd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 332,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 345,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "2"
+              },
+              {
+                "kind": "text",
+                "x": 385,
+                "y": 210,
+                "text": "4th",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 437,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 450,
+                "y": 90,
+                "w": 80,
+                "h": 90,
+                "fill": "blue",
+                "label": "1"
+              },
+              {
+                "kind": "text",
+                "x": 490,
+                "y": 210,
+                "text": "5th",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 265,
+                "text": "5! = 120",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "n factorial counts arrangements of n different items.",
+          "write": "n! = n × (n − 1) × … × 1"
+        },
+        {
+          "say": "Zero factorial is defined as 1. Ten factorial is over 3 million.",
+          "write": "0! = 1"
+        }
+      ]
+    },
+    {
+      "heading": "Arrangements",
+      "lines": [
+        {
+          "say": "Eight members elect a president, vice and secretary.",
+          "write": "3 roles from 8"
+        },
+        {
+          "say": "Eight choices, then seven, then six. No one holds two roles.",
+          "write": "8 × 7 × 6",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boxes for each position with the number of choices",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 90,
+                "y": 90,
+                "w": 100,
+                "h": 90,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 210,
+                "text": "President",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 90,
+                "w": 100,
+                "h": 90,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "Vice",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 370,
+                "y": 90,
+                "w": 100,
+                "h": 90,
+                "fill": "blue",
+                "label": "6"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 210,
+                "text": "Secretary",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "That is 336 ways. Order matters, because the roles differ.",
+          "write": "336"
+        },
+        {
+          "say": "Fill restricted boxes first, then the rest."
+        }
+      ]
+    },
+    {
+      "heading": "When order does not matter",
+      "lines": [
+        {
+          "say": "Choose 2 of 5 students to carry a banner.",
+          "write": "pairs from 5"
+        },
+        {
+          "say": "Ordered, that is five times four. Twenty.",
+          "write": "5 × 4 = 20",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Ordered pairs from 5 students, with repeats crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AB"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AC"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AD"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AE"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BA"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BC"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BD"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BE"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "CA"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "CB"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "CD"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "CE"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "DA"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "DB"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "DC"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "DE"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "EA"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "EB"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "EC"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "ED"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 265,
+                "text": "20 ordered",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "But A then B is the same pair as B then A. Each is counted twice.",
+          "write": "AB = BA",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Ordered pairs from 5 students, with repeats crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AB"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AC"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AD"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "AE"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 30,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "BA"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BC"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BD"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "BE"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "CA"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 85,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "CB"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "CD"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "CE"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "DA"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "DB"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 140,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "DC"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "teal",
+                "label": "DE"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "EA"
+              },
+              {
+                "kind": "rect",
+                "x": 240,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "EB"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "EC"
+              },
+              {
+                "kind": "rect",
+                "x": 440,
+                "y": 195,
+                "w": 80,
+                "h": 40,
+                "fill": "grey",
+                "change": "remove",
+                "label": "ED"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 265,
+                "text": "20 ÷ 2 = 10 pairs",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So divide by 2. Ten pairs.",
+          "write": "20 ÷ 2 = 10"
+        },
+        {
+          "say": "Does swapping change it? If not, divide out the repeats.",
+          "write": "C(5, 2) = 10"
+        }
+      ]
+    },
+    {
+      "heading": "Counting and probability",
+      "lines": [
+        {
+          "say": "Probability is ways it happens divided by total ways.",
+          "write": "P = ways ÷ total"
+        },
+        {
+          "say": "PINs with repeats allowed. Ten times ten times ten times ten.",
+          "write": "10⁴ = 10 000"
+        },
+        {
+          "say": "No repeats. Count down. Ten, nine, eight, seven.",
+          "write": "10 × 9 × 8 × 7 = 5040"
+        },
+        {
+          "say": "So the probability of no repeats is 0.504.",
+          "write": "5040 ÷ 10 000 = 0.504"
+        },
+        {
+          "say": "Count the top and bottom the same way."
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Multiply, do not add.",
+          "write": "✗ 3 + 4"
+        },
+        {
+          "say": "Check if repeats are allowed."
+        },
+        {
+          "say": "Ask if order matters."
+        },
+        {
+          "say": "Fill restricted boxes first."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "And then means times.",
+          "write": "and then → ×",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boxes for each position with the number of choices",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 90,
+                "y": 90,
+                "w": 100,
+                "h": 90,
+                "fill": "blue",
+                "label": "8"
+              },
+              {
+                "kind": "text",
+                "x": 140,
+                "y": 210,
+                "text": "1st",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 210,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 230,
+                "y": 90,
+                "w": 100,
+                "h": 90,
+                "fill": "blue",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "2nd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 350,
+                "y": 145,
+                "text": "×",
+                "size": 26,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 370,
+                "y": 90,
+                "w": 100,
+                "h": 90,
+                "fill": "blue",
+                "label": "6"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 210,
+                "text": "3rd",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 265,
+                "text": "8 × 7 × 6 = 336",
+                "size": 26,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "No repeats? Count down."
+        },
+        {
+          "say": "n items arrange in n factorial ways.",
+          "write": "n!"
+        },
+        {
+          "say": "If swapping changes nothing, divide by the orders."
+        }
+      ]
+    }
+  ]
+}

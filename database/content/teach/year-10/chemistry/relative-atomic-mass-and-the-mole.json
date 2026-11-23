@@ -1,0 +1,906 @@
+{
+  "level": "Year 10",
+  "subject": "chemistry",
+  "title": "Relative atomic mass and the mole",
+  "frames": [
+    {
+      "heading": "A relative scale",
+      "lines": [
+        {
+          "say": "Atoms are far too small to weigh or count one at a time."
+        },
+        {
+          "say": "One carbon atom is about two times ten to the minus twenty three grams.",
+          "write": "2 × 10⁻²³ g"
+        },
+        {
+          "say": "So we compare atoms to a standard instead. Carbon twelve is exactly 12.",
+          "write": "carbon-12 = 12 exactly"
+        },
+        {
+          "say": "On this scale, hydrogen one is about 1 and magnesium twenty four about 24."
+        },
+        {
+          "say": "It is a comparison, so relative masses have no units.",
+          "write": "no units"
+        }
+      ]
+    },
+    {
+      "heading": "Relative atomic mass",
+      "lines": [
+        {
+          "say": "Most elements are a mix of isotopes. Same protons, different neutrons.",
+          "write": "isotopes"
+        },
+        {
+          "say": "Natural boron is 19.9 percent boron ten and 80.1 percent boron eleven.",
+          "write": "B-10: 19.9%, B-11: 80.1%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boron atoms: mostly boron-11, average 10.8 sits near 11",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 90,
+                "r": 18,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 90,
+                "r": 18,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 300,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 150,
+                "text": "boron-10: 19.9%",
+                "size": 18,
+                "color": "blue",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 150,
+                "text": "boron-11: 80.1%",
+                "size": 18,
+                "color": "orange",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 230,
+                "x2": 500,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 265,
+                "text": "10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "11",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Relative atomic mass is the weighted average of these masses.",
+          "write": "Ar = weighted average"
+        },
+        {
+          "say": "Multiply each mass by its abundance, add them, divide by 100.",
+          "write": "(10×19.9 + 11×80.1) ÷ 100"
+        },
+        {
+          "say": "That gives 10.8. It sits close to 11, the common isotope.",
+          "write": "Ar(B) = 10.8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boron atoms: mostly boron-11, average 10.8 sits near 11",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 90,
+                "r": 18,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 90,
+                "r": 18,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 300,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 150,
+                "text": "boron-10: 19.9%",
+                "size": 18,
+                "color": "blue",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 150,
+                "text": "boron-11: 80.1%",
+                "size": 18,
+                "color": "orange",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 230,
+                "x2": 500,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 265,
+                "text": "10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "11",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 412,
+                "y": 190,
+                "x2": 412,
+                "y2": 226,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 412,
+                "y": 180,
+                "text": "Ar = 10.8",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "No single boron atom has mass 10.8. It is an average."
+        }
+      ]
+    },
+    {
+      "heading": "Adding up masses",
+      "lines": [
+        {
+          "say": "For a molecule, add up the relative atomic masses of all its atoms.",
+          "write": "Mr = sum of Ar"
+        },
+        {
+          "say": "Water has two hydrogens and one oxygen.",
+          "write": "H₂O",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A water molecule: one oxygen and two hydrogens",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 120,
+                "r": 50,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 190,
+                "r": 30,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 190,
+                "r": 30,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 150,
+                "x2": 212,
+                "y2": 172,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 320,
+                "y": 150,
+                "x2": 348,
+                "y2": 172,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "2 × 1.0 + 16.0 = 18.0",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Two times one, plus sixteen, gives eighteen.",
+          "write": "Mr(H₂O) = 18.0",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A water molecule: one oxygen and two hydrogens",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 120,
+                "r": 50,
+                "fill": "red",
+                "label": "O"
+              },
+              {
+                "kind": "circle",
+                "x": 190,
+                "y": 190,
+                "r": 30,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "circle",
+                "x": 370,
+                "y": 190,
+                "r": 30,
+                "fill": "white",
+                "label": "H"
+              },
+              {
+                "kind": "line",
+                "x": 240,
+                "y": 150,
+                "x2": 212,
+                "y2": 172,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 320,
+                "y": 150,
+                "x2": 348,
+                "y2": 172,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 270,
+                "text": "2 × 1.0 + 16.0 = 18.0",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "For ionic compounds like sodium chloride, it is called formula mass.",
+          "write": "NaCl: 23.0 + 35.5 = 58.5"
+        },
+        {
+          "say": "Brackets multiply everything inside. Calcium hydroxide has two O and two H.",
+          "write": "Ca(OH)₂ = 40.1 + 32.0 + 2.0"
+        },
+        {
+          "say": "So its molar mass is 74.1 grams per mole.",
+          "write": "74.1 g mol⁻¹"
+        }
+      ]
+    },
+    {
+      "heading": "The mole",
+      "lines": [
+        {
+          "say": "We count eggs in dozens. Chemists count particles in moles.",
+          "write": "1 mol = 6.02 × 10²³"
+        },
+        {
+          "say": "One mole is six point oh two times ten to the twenty three particles.",
+          "write": "Avogadro constant Nₐ",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "A dozen versus a mole",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 100,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 100,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 100,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 100,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 100,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 100,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 60,
+                "y": 140,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 140,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 140,
+                "y": 140,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 180,
+                "y": 140,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 220,
+                "y": 140,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "circle",
+                "x": 260,
+                "y": 140,
+                "r": 14,
+                "fill": "yellow"
+              },
+              {
+                "kind": "text",
+                "x": 160,
+                "y": 220,
+                "text": "1 dozen = 12",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 330,
+                "y": 70,
+                "w": 180,
+                "h": 110,
+                "fill": "teal",
+                "change": "add",
+                "label": "6.02 × 10²³"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 220,
+                "text": "1 mole",
+                "size": 20,
+                "color": "teal",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A mole of water is only about one tablespoon. Eighteen grams.",
+          "write": "1 mol H₂O ≈ 18 g"
+        },
+        {
+          "say": "Always say which particle. One mole of O two is two moles of atoms.",
+          "write": "1 mol O₂ → 2 mol O atoms"
+        },
+        {
+          "say": "Methane has four hydrogens, so one mole has four times Avogadro hydrogen atoms.",
+          "write": "4 × 6.02 × 10²³ = 2.41 × 10²⁴"
+        }
+      ]
+    },
+    {
+      "heading": "Molar mass: the bridge",
+      "lines": [
+        {
+          "say": "One mole of carbon twelve weighs exactly 12 grams.",
+          "write": "1 mol C-12 = 12 g"
+        },
+        {
+          "say": "So one mole of anything weighs its relative mass in grams.",
+          "write": "molar mass M",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Bridge from grams to particles",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 110,
+                "w": 150,
+                "h": 80,
+                "fill": "orange",
+                "label": "grams"
+              },
+              {
+                "kind": "arrow",
+                "x": 200,
+                "y": 150,
+                "x2": 350,
+                "y2": 150,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 360,
+                "y": 110,
+                "w": 160,
+                "h": 80,
+                "fill": "blue",
+                "label": "particles"
+              },
+              {
+                "kind": "text",
+                "x": 275,
+                "y": 130,
+                "text": "mole",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Molar mass has units, grams per mole.",
+          "write": "g mol⁻¹"
+        },
+        {
+          "say": "Oxygen gas is 32. Carbon dioxide is 44 grams per mole.",
+          "write": "O₂ = 32.0, CO₂ = 44.0"
+        },
+        {
+          "say": "On the periodic table, use the number with the decimal, not the atomic number.",
+          "write": "Na = 23.0, Cl = 35.5"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "No chlorine atom weighs 35.5. Real atoms are 35 or 37.",
+          "write": "Cl: 35 or 37, average 35.5"
+        },
+        {
+          "say": "Do not forget the brackets. The number outside multiplies everything inside.",
+          "write": "Mg(NO₃)₂"
+        },
+        {
+          "say": "Use relative atomic mass, not the atomic number.",
+          "write": "✗ atomic number"
+        },
+        {
+          "say": "Relative masses have no units. Molar mass has grams per mole."
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Relative atomic mass is a weighted average of isotopes.",
+          "write": "Ar = weighted average",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Boron atoms: mostly boron-11, average 10.8 sits near 11",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 50,
+                "y": 90,
+                "r": 18,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 90,
+                "r": 18,
+                "fill": "blue",
+                "label": "10"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 250,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 300,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 350,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 400,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 450,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "circle",
+                "x": 500,
+                "y": 90,
+                "r": 18,
+                "fill": "orange",
+                "label": "11"
+              },
+              {
+                "kind": "text",
+                "x": 70,
+                "y": 150,
+                "text": "boron-10: 19.9%",
+                "size": 18,
+                "color": "blue",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 150,
+                "text": "boron-11: 80.1%",
+                "size": 18,
+                "color": "orange",
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 230,
+                "x2": 500,
+                "y2": 230,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 60,
+                "y": 265,
+                "text": "10",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 500,
+                "y": 265,
+                "text": "11",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "arrow",
+                "x": 412,
+                "y": 190,
+                "x2": 412,
+                "y2": 226,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 412,
+                "y": 180,
+                "text": "Ar = 10.8",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "A mole is a chemist’s dozen. Six point oh two times ten to the twenty three.",
+          "write": "6.02 × 10²³"
+        },
+        {
+          "say": "One mole weighs its relative mass in grams.",
+          "write": "C = 12.0 → 12.0 g"
+        },
+        {
+          "say": "Always name the particle you are counting.",
+          "write": "molecules or atoms?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{"level":"Uni Year 1","subject":"biology","title":"Mendelian genetics","frames":[
+{"heading":"Genes, alleles and segregation","lines":[
+{"say":"A gene sits at a locus on a chromosome. Its different versions are alleles.","write":"gene · locus · allele"},
+{"say":"Two the same is homozygous. Two different is heterozygous.","write":"RR, rr homo · Rr hetero"},
+{"say":"Law of segregation: the two alleles separate, so each gamete gets one.","write":"segregation: one allele per gamete"},
+{"say":"Cross Rr with Rr. Build the Punnett square.","write":"Rr × Rr","draw":{"type":"shapes","width":560,"height":280,"alt":"Punnett square Rr by Rr","items":[
+{"kind":"text","x":230,"y":40,"text":"R","size":24,"anchor":"middle","bold":true},
+{"kind":"text","x":350,"y":40,"text":"r","size":24,"anchor":"middle","bold":true},
+{"kind":"text","x":150,"y":110,"text":"R","size":24,"anchor":"middle","bold":true},
+{"kind":"text","x":150,"y":210,"text":"r","size":24,"anchor":"middle","bold":true},
+{"kind":"rect","x":170,"y":60,"w":120,"h":90,"fill":"blue","label":"RR"},
+{"kind":"rect","x":290,"y":60,"w":120,"h":90,"fill":"blue","label":"Rr"},
+{"kind":"rect","x":170,"y":150,"w":120,"h":90,"fill":"blue","label":"Rr"},
+{"kind":"rect","x":290,"y":150,"w":120,"h":90,"fill":"orange","label":"rr","change":"highlight"}]}},
+{"say":"Three round to one wrinkled. Genotypes are 1 to 2 to 1.","write":"3 : 1 (1 RR : 2 Rr : 1 rr)"},
+{"say":"A test cross with rr gives 1 to 1 if the parent was heterozygous.","write":"test cross Rr × rr → 1 : 1"}]},
+{"heading":"Dihybrids: shuffle the deck","lines":[
+{"say":"Independent assortment: different genes are dealt out independently.","write":"independent assortment"},
+{"say":"Each homologous pair lines up at random at metaphase one.","write":"random at metaphase I"},
+{"say":"9 to 3 to 3 to 1 is just 3 to 1 times 3 to 1.","write":"(3 : 1) × (3 : 1) = 9 : 3 : 3 : 1","draw":{"type":"shapes","width":560,"height":200,"alt":"Bars for 9, 3, 3, 1 out of 16","items":[
+{"kind":"rect","x":20,"y":60,"w":270,"h":70,"fill":"yellow","label":"9 R_Y_"},
+{"kind":"rect","x":290,"y":60,"w":90,"h":70,"fill":"green","label":"3"},
+{"kind":"rect","x":380,"y":60,"w":90,"h":70,"fill":"orange","label":"3"},
+{"kind":"rect","x":470,"y":60,"w":30,"h":70,"fill":"purple","label":"1","change":"highlight"},
+{"kind":"text","x":260,"y":175,"text":"total 16","size":20,"anchor":"middle"}]}},
+{"say":"And means multiply. rryy is a quarter times a quarter, one sixteenth.","write":"P(rryy) = ¼ × ¼ = 1/16"},
+{"say":"Or means add. Rr or rr is a half plus a quarter.","write":"½ + ¼ = ¾"}]},
+{"heading":"The chi-square test","lines":[
+{"say":"Real results never match exactly. Chi square asks if the gap is just chance.","write":"χ² = Σ (O − E)² ÷ E"},
+{"say":"The null hypothesis: any difference is due to chance.","write":"H₀: difference by chance"},
+{"say":"556 seeds, expecting 9 to 3 to 3 to 1. Round yellow should be 312.75.","write":"E = 556 × 9/16 = 312.75"},
+{"say":"Add up all four classes. Chi square is 0.47.","write":"χ² = 0.47"},
+{"say":"Degrees of freedom is classes minus one, so 3. Critical value 7.81.","write":"df = 3 → 7.81","draw":{"type":"shapes","width":560,"height":200,"alt":"Chi-square 0.47 well below critical value 7.81","items":[
+{"kind":"line","x":30,"y":100,"x2":530,"y2":100,"color":"black"},
+{"kind":"line","x":400,"y":70,"x2":400,"y2":130,"color":"red"},
+{"kind":"text","x":400,"y":60,"text":"7.81","size":20,"anchor":"middle","color":"red"},
+{"kind":"circle","x":60,"y":100,"r":12,"fill":"green","change":"add"},
+{"kind":"text","x":60,"y":150,"text":"0.47","size":20,"anchor":"middle","change":"add"},
+{"kind":"text","x":200,"y":185,"text":"below: fail to reject H₀","size":18,"anchor":"middle","change":"highlight"}]}},
+{"say":"Small chi square, fits. Big chi square, quits.","write":"small fits, big quits"}]},
+{"heading":"Linkage and map units","lines":[
+{"say":"Genes on the same chromosome are linked. They tend to travel together.","write":"linked genes"},
+{"say":"Only crossing over between them makes recombinant gametes.","write":"crossing over → recombinants"},
+{"say":"Test cross flies: 410, 420, 85 and 85. The big two are the parents.","write":"410, 420 parental","draw":{"type":"shapes","width":560,"height":240,"alt":"Two large parental bars and two small recombinant bars","items":[
+{"kind":"rect","x":40,"y":32,"w":100,"h":164,"fill":"blue","label":"410"},
+{"kind":"rect","x":160,"y":28,"w":100,"h":168,"fill":"blue","label":"420"},
+{"kind":"rect","x":300,"y":162,"w":100,"h":34,"fill":"orange","label":"85","change":"highlight"},
+{"kind":"rect","x":420,"y":162,"w":100,"h":34,"fill":"orange","label":"85","change":"highlight"},
+{"kind":"text","x":150,"y":225,"text":"parental","size":18,"anchor":"middle"},
+{"kind":"text","x":410,"y":225,"text":"recombinant","size":18,"anchor":"middle"}]}},
+{"say":"Recombinants 85 plus 85, over 1000. That's 17 percent.","write":"RF = 170 ÷ 1000 = 17%"},
+{"say":"One percent is one map unit. So the genes are 17 map units apart.","write":"17 cM"},
+{"say":"R F can never pass 50 percent.","write":"RF ≤ 50%"}]},
+{"heading":"Sex linkage and epistasis","lines":[
+{"say":"Males have one X. So one recessive allele on it shows up.","write":"males hemizygous"},
+{"say":"Mum to son, never dad to son. Fathers pass Y to their sons.","write":"X-linked: Mum → son"},
+{"say":"Carrier mum, normal dad. A colour blind son is a half times a half.","write":"½ × ½ = ¼","draw":{"type":"shapes","width":560,"height":260,"alt":"Carrier mother cross: four children, one colour-blind son","items":[
+{"kind":"rect","x":40,"y":40,"w":110,"h":80,"fill":"pink","label":"XᴮXᴮ"},
+{"kind":"rect","x":160,"y":40,"w":110,"h":80,"fill":"pink","label":"XᴮXᵇ"},
+{"kind":"rect","x":280,"y":40,"w":110,"h":80,"fill":"blue","label":"XᴮY"},
+{"kind":"rect","x":400,"y":40,"w":110,"h":80,"fill":"red","label":"XᵇY","change":"highlight"},
+{"kind":"text","x":455,"y":160,"text":"colour-blind son: 1 in 4","size":18,"anchor":"middle"}]}},
+{"say":"Epistasis: one gene masks another. Labradors with e e are yellow whatever B is.","write":"ee → yellow"},
+{"say":"That gives 9 to 3 to 4. Still adds to 16, so think epistasis.","write":"9 : 3 : 4"}]},
+{"heading":"Watch out, and remember","lines":[
+{"say":"Use raw counts in chi square, never percentages.","write":"counts, not %"},
+{"say":"A small chi square doesn't prove anything. It's just consistent with H nought.","write":"✗ 'proves'"},
+{"say":"Degrees of freedom is classes minus one.","write":"df = classes − 1"},
+{"say":"In linked crosses, the largest classes are parental, not recombinant.","write":"big two = parents"}]}
+]}

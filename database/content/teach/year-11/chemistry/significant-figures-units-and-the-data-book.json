@@ -1,0 +1,626 @@
+{
+  "level": "Year 11",
+  "subject": "chemistry",
+  "title": "Significant figures, units and the data book",
+  "frames": [
+    {
+      "heading": "What significant figures mean",
+      "lines": [
+        {
+          "say": "A balance reads 12.37 grams. Every digit carries meaning.",
+          "write": "12.37 g"
+        },
+        {
+          "say": "The 1, 2 and 3 are certain. The 7 is the best estimate.",
+          "write": "certain + 1 uncertain"
+        },
+        {
+          "say": "So this value has 4 significant figures.",
+          "write": "4 sig figs",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "12.37 has 4 sig figs",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "1"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "2"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "none",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "3"
+              },
+              {
+                "kind": "rect",
+                "x": 370,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "7"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "4 sig figs",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Writing 12.370000 would claim a precision the balance does not have.",
+          "write": "✗ 12.370000 g"
+        }
+      ]
+    },
+    {
+      "heading": "Counting the zeros",
+      "lines": [
+        {
+          "say": "All non-zero digits count. Sandwiched zeros count too.",
+          "write": "4.007 → 4 sig figs"
+        },
+        {
+          "say": "Look at 0.00450. Leading zeros are just empty seats.",
+          "write": "0.00450",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "0.00450 digits",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 370,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0"
+              }
+            ]
+          }
+        },
+        {
+          "say": "They never count. Cross them out.",
+          "write": "leading zeros: ✗",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Leading zeros crossed out",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": ".",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0",
+                "change": "remove"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "4"
+              },
+              {
+                "kind": "rect",
+                "x": 370,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "5"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "grey",
+                "label": "0"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The 4, 5, and the trailing zero after the point all count. 3 sig figs.",
+          "write": "0.00450 → 3 sig figs",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "3 significant digits",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 70,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 130,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "white",
+                "label": "."
+              },
+              {
+                "kind": "rect",
+                "x": 190,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 250,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "white",
+                "label": "0"
+              },
+              {
+                "kind": "rect",
+                "x": 310,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "4",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 370,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "5",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 430,
+                "y": 90,
+                "w": 54,
+                "h": 80,
+                "fill": "green",
+                "label": "0",
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "3 sig figs",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Three thousand four hundred is ambiguous. Scientific notation fixes it.",
+          "write": "3.40 × 10³ → 3 sig figs"
+        },
+        {
+          "say": "Exact numbers, like 5 test tubes, never limit your answer.",
+          "write": "exact numbers: unlimited"
+        }
+      ]
+    },
+    {
+      "heading": "The two rules",
+      "lines": [
+        {
+          "say": "Times and divide: count the digits.",
+          "write": "× ÷ → fewest sig figs"
+        },
+        {
+          "say": "2.5 times 3.142 is 7.855. Round to 2 sig figs: 7.9.",
+          "write": "2.5 × 3.142 = 7.9"
+        },
+        {
+          "say": "Add and subtract: count the decimal places.",
+          "write": "+ − → fewest decimal places"
+        },
+        {
+          "say": "105.2 plus 0.346 is 105.546. Round to one decimal place.",
+          "write": "105.2 + 0.346 = 105.5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Decimal places",
+            "items": [
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 80,
+                "text": "105.2",
+                "size": 30,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 130,
+                "text": "+   0.346",
+                "size": 30,
+                "color": "black",
+                "anchor": "end",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 150,
+                "x2": 420,
+                "y2": 150,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 200,
+                "text": "105.546",
+                "size": 30,
+                "color": "black",
+                "anchor": "end",
+                "bold": true,
+                "change": "remove"
+              },
+              {
+                "kind": "text",
+                "x": 400,
+                "y": 260,
+                "text": "105.5",
+                "size": 30,
+                "color": "purple",
+                "anchor": "end",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Round only once, at the very end.",
+          "write": "round once, at the end"
+        }
+      ]
+    },
+    {
+      "heading": "Units and prefixes",
+      "lines": [
+        {
+          "say": "A prefix multiplies a unit by a power of ten.",
+          "write": "prefix = power of ten"
+        },
+        {
+          "say": "Kilo is 10 to the 3. Milli is 10 to the minus 3.",
+          "write": "k 10³   m 10⁻³   μ 10⁻⁶"
+        },
+        {
+          "say": "One litre is 1000 millilitres. So 250 millilitres is 0.250 litres.",
+          "write": "250 mL = 0.250 L",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "mL to L",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 100,
+                "w": 180,
+                "h": 80,
+                "fill": "blue",
+                "label": "250 mL"
+              },
+              {
+                "kind": "arrow",
+                "x": 230,
+                "y": 140,
+                "x2": 330,
+                "y2": 140,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 100,
+                "w": 180,
+                "h": 80,
+                "fill": "teal",
+                "label": "0.250 L",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 120,
+                "text": "÷ 1000",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Small to big, the number gets big. Big to small, it shrinks.",
+          "write": "L → mL: × 1000"
+        },
+        {
+          "say": "Kelvin is degrees Celsius plus 273.",
+          "write": "T(K) = T(°C) + 273"
+        },
+        {
+          "say": "One atmosphere is 101.325 kilopascals.",
+          "write": "1 atm = 101.325 kPa"
+        }
+      ]
+    },
+    {
+      "heading": "A full calculation",
+      "lines": [
+        {
+          "say": "Dissolve 5.00 grams of salt to make 250.0 millilitres of solution.",
+          "write": "5.00 g NaCl in 250.0 mL"
+        },
+        {
+          "say": "Use data book values. Sodium chloride is 58.5.",
+          "write": "M = 23.0 + 35.5 = 58.5"
+        },
+        {
+          "say": "n equals 5.00 over 58.5. Keep every digit.",
+          "write": "n = 0.085470… mol"
+        },
+        {
+          "say": "Convert the volume first. 250.0 millilitres is 0.2500 litres.",
+          "write": "V = 0.2500 L"
+        },
+        {
+          "say": "c equals n over V. That gives 0.342 moles per litre, 3 sig figs.",
+          "write": "c = 0.342 mol L⁻¹",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Sig figs in the data",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 90,
+                "w": 160,
+                "h": 70,
+                "fill": "blue",
+                "label": "5.00 (3)"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 90,
+                "w": 160,
+                "h": 70,
+                "fill": "blue",
+                "label": "58.5 (3)"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 90,
+                "w": 160,
+                "h": 70,
+                "fill": "teal",
+                "label": "0.2500 (4)"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 230,
+                "text": "answer: 3 sig figs",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Rounding n early to 0.09 gives 0.36. That is about 5 percent too high.",
+          "write": "✗ 0.36 if rounded early"
+        }
+      ]
+    },
+    {
+      "heading": "The data book",
+      "lines": [
+        {
+          "say": "The data book is provided in every test and the exam.",
+          "write": "data book"
+        },
+        {
+          "say": "It has relative atomic masses, constants, and key formulas.",
+          "write": "Nₐ = 6.02 × 10²³ mol⁻¹"
+        },
+        {
+          "say": "Always use its values, like sodium 23.0 and chlorine 35.5.",
+          "write": "Na 23.0   Cl 35.5"
+        },
+        {
+          "say": "Learn its layout early, so you find things in seconds.",
+          "write": "know the layout"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Times and divide, count digits. Add and subtract, count decimals.",
+          "write": "digits vs decimals"
+        },
+        {
+          "say": "Leading zeros never count. Sandwich zeros always count.",
+          "write": "0.0052 → 2 sig figs"
+        },
+        {
+          "say": "Did you turn millilitres into litres?",
+          "write": "mL → L?"
+        },
+        {
+          "say": "Keep every digit until the last line, then round once.",
+          "write": "round once"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{"level":"Uni Year 1","subject":"biology","title":"Immunology basics","frames":[
+{"heading":"Self, non-self and antigens","lines":[
+{"say":"The immune system must tell self from non-self.","write":"self vs non-self"},
+{"say":"An antigen is a molecule the adaptive system recognises, like a surface protein.","write":"antigen"},
+{"say":"The small part a receptor actually binds is the epitope.","write":"epitope = binding spot"},
+{"say":"Innate is the security guard. Adaptive is the detective with a filing cabinet.","write":"guard vs detective"}]},
+{"heading":"Innate immunity","lines":[
+{"say":"Innate immunity is fast, general, and doesn't improve with repeat exposure.","write":"innate: minutes, no memory"},
+{"say":"Toll like receptors spot molecules common to microbes, like lipopolysaccharide.","write":"pattern recognition: TLRs"},
+{"say":"Neutrophils arrive first. Macrophages engulf pathogens by phagocytosis.","write":"phagocytosis","draw":{"type":"shapes","width":560,"height":240,"alt":"Phagocyte engulfing bacterium into a vesicle that fuses with a lysosome","items":[
+{"kind":"circle","x":240,"y":120,"r":100,"fill":"purple"},
+{"kind":"rect","x":400,"y":100,"w":60,"h":30,"fill":"teal","label":"bacterium","change":"remove"},
+{"kind":"circle","x":270,"y":110,"r":30,"fill":"teal","change":"add"},
+{"kind":"circle","x":200,"y":150,"r":18,"fill":"red","label":"lys","change":"add"},
+{"kind":"arrow","x":390,"y":115,"x2":310,"y2":115,"color":"black"}]}},
+{"say":"NK cells kill cells with too little MHC class one. Interferons warn neighbour cells.","write":"NK cells · interferons"},
+{"say":"Inflammation: histamine widens and leaks vessels. Redness, heat, swelling, pain.","write":"histamine → inflammation"}]},
+{"heading":"Adaptive immunity and clonal selection","lines":[
+{"say":"B cells mature in bone marrow. T cells mature in the thymus.","write":"B: marrow · T: thymus"},
+{"say":"Each lymphocyte has one receptor type, made by random gene shuffling.","write":"receptors exist before infection"},
+{"say":"An antigen selects the one matching cell. It's a shop picking from stock.","write":"clonal selection","draw":{"type":"shapes","width":560,"height":240,"alt":"Many different lymphocytes; antigen selects one","items":[
+{"kind":"circle","x":60,"y":60,"r":28,"fill":"blue","label":"1"},
+{"kind":"circle","x":150,"y":60,"r":28,"fill":"teal","label":"2"},
+{"kind":"circle","x":240,"y":60,"r":28,"fill":"orange","label":"3","change":"highlight"},
+{"kind":"circle","x":330,"y":60,"r":28,"fill":"green","label":"4"},
+{"kind":"circle","x":420,"y":60,"r":28,"fill":"pink","label":"5"},
+{"kind":"text","x":240,"y":120,"text":"antigen fits cell 3","size":18,"anchor":"middle"}]}},
+{"say":"That cell divides into a clone of effector cells and memory cells.","write":"→ effector + memory","draw":{"type":"shapes","width":560,"height":240,"alt":"Selected cell divides into many copies","items":[
+{"kind":"circle","x":80,"y":120,"r":28,"fill":"orange","label":"3"},
+{"kind":"arrow","x":115,"y":120,"x2":190,"y2":120,"color":"black"},
+{"kind":"circle","x":240,"y":60,"r":24,"fill":"orange","change":"add"},
+{"kind":"circle","x":300,"y":60,"r":24,"fill":"orange","change":"add"},
+{"kind":"circle","x":360,"y":60,"r":24,"fill":"orange","change":"add"},
+{"kind":"circle","x":240,"y":130,"r":24,"fill":"orange","change":"add"},
+{"kind":"circle","x":300,"y":130,"r":24,"fill":"orange","change":"add"},
+{"kind":"circle","x":360,"y":130,"r":24,"fill":"orange","change":"add"},
+{"kind":"circle","x":460,"y":95,"r":24,"fill":"yellow","label":"M","change":"add"},
+{"kind":"text","x":300,"y":200,"text":"effector clone","size":16,"anchor":"middle"},
+{"kind":"text","x":460,"y":150,"text":"memory","size":16,"anchor":"middle"}]}},
+{"say":"Cells that react to self are removed, giving self tolerance.","write":"self-tolerance"}]},
+{"heading":"MHC: the rule of 8","lines":[
+{"say":"T cells can't see free antigen. It must be shown on MHC.","write":"antigen presentation"},
+{"say":"MHC class one is on almost all nucleated cells. It shows what's made inside.","write":"MHC I: all nucleated cells"},
+{"say":"MHC class two is on antigen presenting cells, like dendritic cells.","write":"MHC II: APCs"},
+{"say":"Class times CD number is always 8. One times 8, two times 4.","write":"I × CD8 · II × CD4","draw":{"type":"shapes","width":560,"height":220,"alt":"CD8 cytotoxic T cell reads MHC I; CD4 helper T cell reads MHC II","items":[
+{"kind":"rect","x":30,"y":40,"w":200,"h":60,"fill":"red","label":"CD8 cytotoxic"},
+{"kind":"rect","x":30,"y":120,"w":200,"h":60,"fill":"green","label":"MHC I"},
+{"kind":"rect","x":330,"y":40,"w":200,"h":60,"fill":"blue","label":"CD4 helper"},
+{"kind":"rect","x":330,"y":120,"w":200,"h":60,"fill":"orange","label":"MHC II"},
+{"kind":"text","x":280,"y":210,"text":"1 × 8 = 8      2 × 4 = 8","size":20,"anchor":"middle","bold":true,"change":"highlight"}]}}]},
+{"heading":"Helpers, killers and B cells","lines":[
+{"say":"Helper T cells release cytokines that activate both B cells and cytotoxic T cells.","write":"helper T → cytokines"},
+{"say":"Cytotoxic T cells kill infected cells using perforin and trigger apoptosis.","write":"cell-mediated: perforin"},
+{"say":"B cells, with T cell help, become plasma cells that pour out antibodies.","write":"humoral: plasma cells"},
+{"say":"HIV destroys helper T cells, so both arms fail.","write":"HIV → CD4⁺ loss"}]},
+{"heading":"Antibodies: NOAC","lines":[
+{"say":"An antibody is a Y: two heavy chains, two light chains, and two binding sites.","write":"2 heavy + 2 light","draw":{"type":"shapes","width":560,"height":260,"alt":"Y-shaped antibody with variable tips and constant stem","items":[
+{"kind":"line","x":280,"y":240,"x2":280,"y2":140,"color":"blue"},
+{"kind":"line","x":280,"y":140,"x2":200,"y2":50,"color":"blue"},
+{"kind":"line","x":280,"y":140,"x2":360,"y2":50,"color":"blue"},
+{"kind":"circle","x":200,"y":50,"r":18,"fill":"orange","change":"highlight"},
+{"kind":"circle","x":360,"y":50,"r":18,"fill":"orange","change":"highlight"},
+{"kind":"text","x":440,"y":55,"text":"variable: binds epitope","size":16},
+{"kind":"text","x":300,"y":220,"text":"constant","size":16}]}},
+{"say":"Antibodies don't kill directly. Remember NOAC.","write":"N · O · A · C"},
+{"say":"Neutralisation, opsonisation, agglutination and complement activation.","write":"block · tag · clump · lyse"},
+{"say":"IgM makes the first move. IgG crosses the placenta. IgA is in saliva. IgE, eek, allergy.","write":"M · G · A · E"}]},
+{"heading":"Memory and vaccines","lines":[
+{"say":"Primary response: a lag of days, then a small peak around 20 units.","write":"primary: slow, small"},
+{"say":"Second dose of X: anti X jumps to 450. Memory cells were ready.","write":"secondary: 450 vs 20","draw":{"type":"shapes","width":560,"height":260,"alt":"Small primary peak then much larger secondary peak","items":[
+{"kind":"line","x":40,"y":230,"x2":540,"y2":230,"color":"black"},
+{"kind":"line","x":40,"y":230,"x2":40,"y2":20,"color":"black"},
+{"kind":"polygon","points":[[60,230],[130,200],[200,230]],"fill":"blue"},
+{"kind":"text","x":130,"y":190,"text":"20","size":16,"anchor":"middle"},
+{"kind":"polygon","points":[[300,230],[360,40],[460,230]],"fill":"orange","change":"add"},
+{"kind":"text","x":360,"y":30,"text":"450","size":18,"anchor":"middle","change":"add"}]}},
+{"say":"Antigen Y gave only a small primary response. Memory is specific.","write":"memory is specific"},
+{"say":"Active immunity: you make it, and it lasts. Passive: you're lent it, and it fades.","write":"active vs passive"},
+{"say":"Vaccines trigger a primary response and memory cells, without causing disease.","write":"vaccine → memory cells"}]}
+]}

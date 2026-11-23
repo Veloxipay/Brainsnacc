@@ -1,0 +1,896 @@
+{
+  "level": "Year 12",
+  "subject": "biology",
+  "title": "Phylogenetic trees",
+  "frames": [
+    {
+      "heading": "What is a phylogenetic tree?",
+      "lines": [
+        {
+          "say": "A phylogenetic tree shows how species are related through shared ancestors.",
+          "write": "phylogenetic tree"
+        },
+        {
+          "say": "We build trees from body structures and from DNA and protein sequences.",
+          "write": "structure + molecules"
+        },
+        {
+          "say": "Let us start with the evidence from body form."
+        }
+      ]
+    },
+    {
+      "heading": "Evidence from body form",
+      "lines": [
+        {
+          "say": "Homologous structures share the same basic structure, from a common ancestor.",
+          "write": "homologous = same structure",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Forelimbs of four mammals",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 120,
+                "h": 50,
+                "fill": "blue",
+                "label": "Human"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 120,
+                "h": 50,
+                "fill": "teal",
+                "label": "Whale"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 40,
+                "w": 120,
+                "h": 50,
+                "fill": "purple",
+                "label": "Bat"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 40,
+                "w": 130,
+                "h": 50,
+                "fill": "orange",
+                "label": "Cat"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 150,
+                "text": "1 bone → 2 bones → wrist → digits",
+                "size": 22,
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "same structure, different jobs",
+                "size": 20,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Human, whale, bat and cat forelimbs share one pattern of bones.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Shared bone pattern highlighted",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 20,
+                "y": 40,
+                "w": 120,
+                "h": 50,
+                "fill": "blue",
+                "label": "Human"
+              },
+              {
+                "kind": "rect",
+                "x": 150,
+                "y": 40,
+                "w": 120,
+                "h": 50,
+                "fill": "teal",
+                "label": "Whale"
+              },
+              {
+                "kind": "rect",
+                "x": 280,
+                "y": 40,
+                "w": 120,
+                "h": 50,
+                "fill": "purple",
+                "label": "Bat"
+              },
+              {
+                "kind": "rect",
+                "x": 410,
+                "y": 40,
+                "w": 130,
+                "h": 50,
+                "fill": "orange",
+                "label": "Cat"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 150,
+                "text": "1 bone → 2 bones → wrist → digits",
+                "size": 22,
+                "anchor": "middle",
+                "bold": true,
+                "change": "highlight"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 210,
+                "text": "same structure, different jobs",
+                "size": 20,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Related species became different to suit different places. That is divergent evolution.",
+          "write": "divergent evolution"
+        },
+        {
+          "say": "Analogous structures do the same job but are built differently.",
+          "write": "analogous = same function"
+        },
+        {
+          "say": "Bird and insect wings both fly, but evolved separately. That is convergent evolution.",
+          "write": "convergent evolution"
+        },
+        {
+          "say": "Vestigial structures are reduced leftovers, like a whale pelvis or our tailbone.",
+          "write": "vestigial structures"
+        }
+      ]
+    },
+    {
+      "heading": "Evidence from molecules",
+      "lines": [
+        {
+          "say": "All life uses DNA, the same four bases and almost the same code.",
+          "write": "one common origin"
+        },
+        {
+          "say": "We line up DNA or protein sequences, like cytochrome c, and count differences.",
+          "write": "count differences"
+        },
+        {
+          "say": "Fewer differences means a more recent common ancestor.",
+          "write": "fewer diffs = closer"
+        },
+        {
+          "say": "Mutations build up at a roughly steady rate. That is the molecular clock.",
+          "write": "molecular clock"
+        },
+        {
+          "say": "Calibrate it with dated fossils, and it estimates when lineages split.",
+          "write": "fossils calibrate"
+        },
+        {
+          "say": "DNA shows more differences than protein, because the code is degenerate.",
+          "write": "silent mutations"
+        }
+      ]
+    },
+    {
+      "heading": "Reading a tree",
+      "lines": [
+        {
+          "say": "Here is a tree. The tips are the species we compare.",
+          "write": "tips = species",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "Tree of P Q R S",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 300,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 400,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 256,
+                "text": "R",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 200,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 400,
+                "y2": 310,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 316,
+                "text": "S",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each branching point is a node, the most recent common ancestor.",
+          "write": "node = common ancestor",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 328,
+            "alt": "Node of P and Q highlighted",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 300,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 400,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 256,
+                "text": "R",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 200,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 400,
+                "y2": 310,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 316,
+                "text": "S",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 300,
+                "y": 120,
+                "r": 10,
+                "fill": "yellow",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The base is the root, the ancestor of everything shown.",
+          "write": "root",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 328,
+            "alt": "Root highlighted",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 300,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 400,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 256,
+                "text": "R",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 200,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 400,
+                "y2": 310,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 316,
+                "text": "S",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 100,
+                "y": 240,
+                "r": 10,
+                "fill": "yellow",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Closer relatives share a node nearer the tips. Ignore how close the names sit.",
+          "write": "judge by shared node"
+        },
+        {
+          "say": "A clade is an ancestor and all its descendants. Cut one branch, it falls off.",
+          "write": "clade = ancestor + ALL"
+        }
+      ]
+    },
+    {
+      "heading": "Building a tree from DNA",
+      "lines": [
+        {
+          "say": "Four species, P, Q, R and S. We count differences in each pair.",
+          "write": "distance matrix"
+        },
+        {
+          "say": "P and Q differ by just one base. Join them first.",
+          "write": "P–Q = 1",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "P and Q joined",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "R differs from Q by 3 and P by 4. Join R next.",
+          "write": "R: 3 and 4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "R added",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 300,
+                "y2": 120,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 400,
+                "y2": 250,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 256,
+                "text": "R",
+                "size": 24,
+                "anchor": "start",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "S differs most, by 7 and 8. It joins at the root.",
+          "write": "S: 7 and 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 340,
+            "alt": "S added at root",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 300,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 400,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 256,
+                "text": "R",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 200,
+                "y2": 180,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 400,
+                "y2": 310,
+                "color": "black",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 316,
+                "text": "S",
+                "size": 24,
+                "anchor": "start",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "In brackets, that tree is P Q, then R, then S.",
+          "write": "(((P, Q), R), S)"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Analogous structures do not show close relationship. Only homologous ones do.",
+          "write": "✗ analogous = related"
+        },
+        {
+          "say": "Do not read relatedness from the order of the tips.",
+          "write": "✗ tip order"
+        },
+        {
+          "say": "Humans did not evolve from chimps. Both come from a shared ancestor.",
+          "write": "✗ from chimps"
+        },
+        {
+          "say": "A group missing some descendants is not a clade.",
+          "write": "clade needs ALL"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Homologous shows ancestry. Analogous shows convergence. Vestigial shows past use.",
+          "write": "homologous / analogous"
+        },
+        {
+          "say": "Fewer sequence differences, closer relatives.",
+          "write": "fewer diffs = closer"
+        },
+        {
+          "say": "Nodes are common ancestors. Judge by the most recent shared node.",
+          "write": "node = ancestor",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 328,
+            "alt": "Tree with node highlighted",
+            "items": [
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 60,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 300,
+                "y": 120,
+                "x2": 400,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 66,
+                "text": "P",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 186,
+                "text": "Q",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 300,
+                "y2": 120,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 200,
+                "y": 180,
+                "x2": 400,
+                "y2": 250,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 256,
+                "text": "R",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 200,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 100,
+                "y": 240,
+                "x2": 400,
+                "y2": 310,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 420,
+                "y": 316,
+                "text": "S",
+                "size": 24,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "circle",
+                "x": 200,
+                "y": 180,
+                "r": 10,
+                "fill": "yellow",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Join the closest pair first, then add the rest.",
+          "write": "closest pair first"
+        }
+      ]
+    }
+  ]
+}

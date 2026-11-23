@@ -1,0 +1,937 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Midpoint and distance",
+  "frames": [
+    {
+      "heading": "Meeting halfway",
+      "lines": [
+        {
+          "say": "You and a friend meet exactly halfway along a straight street.",
+          "write": "midpoint"
+        },
+        {
+          "say": "Halfway is the average of your two positions.",
+          "write": "average"
+        },
+        {
+          "say": "A bird flies straight between your houses. That's the distance.",
+          "write": "distance = straight line"
+        }
+      ]
+    },
+    {
+      "heading": "The midpoint",
+      "lines": [
+        {
+          "say": "Here's a segment from (−3, 1) to (5, 5).",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Segment from (−3, 1) to (5, 5) with its midpoint",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 232.0,
+                "y": 280,
+                "x2": 232.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 240.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 88.0,
+                "y": 236.7,
+                "x2": 472.0,
+                "y2": 63.3,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 88.0,
+                "y": 236.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 472.0,
+                "y": 63.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 96.0,
+                "y": 258.7,
+                "text": "(−3, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 410.0,
+                "y": 67.3,
+                "text": "(5, 5)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Average the x values: minus 3 plus 5, over 2, is 1.",
+          "write": "(−3 + 5) ÷ 2 = 1"
+        },
+        {
+          "say": "Average the y values: 1 plus 5, over 2, is 3.",
+          "write": "(1 + 5) ÷ 2 = 3"
+        },
+        {
+          "say": "So the midpoint is (1, 3).",
+          "write": "M = (1, 3)",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Segment from (−3, 1) to (5, 5) with its midpoint",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 232.0,
+                "y": 280,
+                "x2": 232.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 240.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 88.0,
+                "y": 236.7,
+                "x2": 472.0,
+                "y2": 63.3,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 88.0,
+                "y": 236.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 472.0,
+                "y": 63.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 96.0,
+                "y": 258.7,
+                "text": "(−3, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 410.0,
+                "y": 67.3,
+                "text": "(5, 5)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "green",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 288.0,
+                "y": 174.0,
+                "text": "M(1, 3)",
+                "size": 18,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Check: each half is 4 across and 2 up.",
+          "write": "+4, +2 and +4, +2 ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Distance comes from Pythagoras",
+      "lines": [
+        {
+          "say": "Find the distance from (1, 1) to (7, 9).",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Segment from (1, 1) to (7, 9) as the hypotenuse of a right triangle",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 40.0,
+                "y": 280,
+                "x2": 40.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 48.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 46.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100.0,
+                "y": 254.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 460.0,
+                "y": 46.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 276.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 400.0,
+                "y": 52.0,
+                "text": "(7, 9)",
+                "size": 16,
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Draw a right triangle underneath. The sides are 6 across and 8 up.",
+          "write": "Δx = 6,  Δy = 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Segment from (1, 1) to (7, 9) as the hypotenuse of a right triangle",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 40.0,
+                "y": 280,
+                "x2": 40.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 48.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 46.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100.0,
+                "y": 254.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 460.0,
+                "y": 46.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 276.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 400.0,
+                "y": 52.0,
+                "text": "(7, 9)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 254.0,
+                "color": "green",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 276.0,
+                "text": "6",
+                "size": 18,
+                "change": "add",
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 460.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 46.0,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 468.0,
+                "y": 142.0,
+                "text": "8",
+                "size": 18,
+                "change": "add",
+                "anchor": "start"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The segment is the hypotenuse. 36 plus 64 is 100.",
+          "write": "d² = 6² + 8² = 100"
+        },
+        {
+          "say": "Square root: the distance is 10 units.",
+          "write": "d = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Segment from (1, 1) to (7, 9) as the hypotenuse of a right triangle",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 280.0,
+                "x2": 520,
+                "y2": 280.0,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 40.0,
+                "y": 280,
+                "x2": 40.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 286.0,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 48.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 46.0,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100.0,
+                "y": 254.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 460.0,
+                "y": 46.0,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 276.0,
+                "text": "(1, 1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 400.0,
+                "y": 52.0,
+                "text": "(7, 9)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 254.0,
+                "color": "green",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 276.0,
+                "text": "6",
+                "size": 18,
+                "anchor": "middle"
+              },
+              {
+                "kind": "line",
+                "x": 460.0,
+                "y": 254.0,
+                "x2": 460.0,
+                "y2": 46.0,
+                "color": "orange",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 468.0,
+                "y": 142.0,
+                "text": "8",
+                "size": 18,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 270.0,
+                "y": 140.0,
+                "text": "d = √100 = 10",
+                "size": 20,
+                "change": "add",
+                "anchor": "end",
+                "bold": true,
+                "color": "purple"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "The distance formula",
+      "lines": [
+        {
+          "say": "Square the change in x, square the change in y, add, then square root.",
+          "write": "d = √((x₂−x₁)² + (y₂−y₁)²)"
+        },
+        {
+          "say": "From (−2, 3) to (4, −1): the changes are 6 and minus 4.",
+          "write": "4 − (−2) = 6,  −1 − 3 = −4",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Segment from (−2, 3) to (4, −1) with its right triangle",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 193.3,
+                "x2": 520,
+                "y2": 193.3,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 220.0,
+                "y": 280,
+                "x2": 220.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 199.3,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 228.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 63.3,
+                "x2": 460.0,
+                "y2": 236.7,
+                "color": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 100.0,
+                "y": 63.3,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "circle",
+                "x": 460.0,
+                "y": 236.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 108.0,
+                "y": 55.3,
+                "text": "(−2, 3)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 452.0,
+                "y": 258.7,
+                "text": "(4, −1)",
+                "size": 16,
+                "anchor": "end"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 63.3,
+                "x2": 100.0,
+                "y2": 236.7,
+                "color": "orange",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "line",
+                "x": 100.0,
+                "y": 236.7,
+                "x2": 460.0,
+                "y2": 236.7,
+                "color": "green",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 90.0,
+                "y": 142.0,
+                "text": "4",
+                "size": 18,
+                "change": "add",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 280.0,
+                "y": 258.7,
+                "text": "6",
+                "size": 18,
+                "change": "add",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "36 plus 16 is 52. Squaring makes negatives positive.",
+          "write": "d² = 36 + 16 = 52"
+        },
+        {
+          "say": "Root 52 is about 7.21 units.",
+          "write": "d = √52 ≈ 7.21"
+        }
+      ]
+    },
+    {
+      "heading": "Working backwards",
+      "lines": [
+        {
+          "say": "The midpoint of AB is (2, −1), and A is (−3, 4). Find B.",
+          "write": "A(−3, 4), M(2, −1)"
+        },
+        {
+          "say": "From A to M, x goes up 5 and y goes down 5.",
+          "write": "+5,  −5",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "From A to M, then the same step again to B",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 128.3,
+                "x2": 520,
+                "y2": 128.3,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 134.3,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 80.0,
+                "y": 41.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 88.0,
+                "y": 33.7,
+                "text": "A(−3, 4)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 288.0,
+                "y": 142.0,
+                "text": "M(2, −1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "arrow",
+                "x": 80.0,
+                "y": 41.7,
+                "x2": 280.0,
+                "y2": 150.0,
+                "color": "purple",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Take the same step again from M.",
+          "write": "B = (2 + 5, −1 − 5)"
+        },
+        {
+          "say": "So B is (7, −6). Check: the average gives (2, −1).",
+          "write": "B = (7, −6) ✓",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "From A to M, then the same step again to B",
+            "items": [
+              {
+                "kind": "arrow",
+                "x": 40,
+                "y": 128.3,
+                "x2": 520,
+                "y2": 128.3,
+                "color": "grey"
+              },
+              {
+                "kind": "arrow",
+                "x": 200.0,
+                "y": 280,
+                "x2": 200.0,
+                "y2": 20,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 524,
+                "y": 134.3,
+                "text": "x",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "text",
+                "x": 208.0,
+                "y": 32,
+                "text": "y",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 80.0,
+                "y": 41.7,
+                "r": 6,
+                "fill": "red"
+              },
+              {
+                "kind": "text",
+                "x": 88.0,
+                "y": 33.7,
+                "text": "A(−3, 4)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "circle",
+                "x": 280.0,
+                "y": 150.0,
+                "r": 6,
+                "fill": "green"
+              },
+              {
+                "kind": "text",
+                "x": 288.0,
+                "y": 142.0,
+                "text": "M(2, −1)",
+                "size": 16,
+                "anchor": "start"
+              },
+              {
+                "kind": "arrow",
+                "x": 80.0,
+                "y": 41.7,
+                "x2": 280.0,
+                "y2": 150.0,
+                "color": "purple"
+              },
+              {
+                "kind": "arrow",
+                "x": 280.0,
+                "y": 150.0,
+                "x2": 480.0,
+                "y2": 258.3,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 480.0,
+                "y": 258.3,
+                "r": 6,
+                "fill": "red",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 466.0,
+                "y": 262.3,
+                "text": "B(7, −6)",
+                "size": 16,
+                "change": "add",
+                "anchor": "end"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "For the midpoint, add then halve. Don't subtract.",
+          "write": "add, ÷ 2"
+        },
+        {
+          "say": "Don't forget the square root. 100 is d squared, not d.",
+          "write": "✗ d = 100"
+        },
+        {
+          "say": "Don't just add the sides. 6 plus 8 is the street route, not the straight line.",
+          "write": "✗ 6 + 8 = 14"
+        },
+        {
+          "say": "Bracket negatives. 4 minus minus 2 is 6, not 2.",
+          "write": "4 − (−2) = 6"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "The midpoint is the average of the coordinates.",
+          "write": "M = (avg x, avg y)"
+        },
+        {
+          "say": "Distance: square, add, square root. It's Pythagoras.",
+          "write": "√(Δx² + Δy²)"
+        },
+        {
+          "say": "For a missing endpoint, repeat the step from the end to the midpoint.",
+          "write": "repeat the step"
+        }
+      ]
+    }
+  ]
+}

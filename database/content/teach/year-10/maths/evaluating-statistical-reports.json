@@ -1,0 +1,573 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Evaluating statistical reports",
+  "frames": [
+    {
+      "heading": "Check the data collection",
+      "lines": [
+        {
+          "say": "News stories and ads quote statistics every day. Some mislead."
+        },
+        {
+          "say": "Ask four questions. Who? How many? How chosen? What asked?",
+          "write": "who, how many, how chosen, what?"
+        },
+        {
+          "say": "Who collected the data, and who paid for it?"
+        },
+        {
+          "say": "A small or self-selected sample cannot speak for everyone."
+        }
+      ]
+    },
+    {
+      "heading": "Check the graphs",
+      "lines": [
+        {
+          "say": "Here is an election ad. Party A looks three times as tall.",
+          "write": "A 52%, B 48%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Column graph of votes with a truncated axis from 46",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 95.0,
+                "w": 110,
+                "h": 165.0,
+                "fill": "blue",
+                "label": "A 52%"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 205.0,
+                "w": 110,
+                "h": 55.0,
+                "fill": "orange",
+                "label": "B 48%"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 260,
+                "text": "46",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 40,
+                "text": "54",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 30,
+                "text": "axis starts at 46",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "But the axis starts at 46. Zig-zag means zoom.",
+          "write": "truncated axis"
+        },
+        {
+          "say": "Start the axis at zero. The bars are almost equal.",
+          "write": "fair graph",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Column graph of votes with a fair axis from 0",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 52,
+                "w": 110,
+                "h": 208,
+                "fill": "blue",
+                "change": "add",
+                "label": "A 52%"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 68,
+                "w": 110,
+                "h": 192,
+                "fill": "orange",
+                "change": "add",
+                "label": "B 48%"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 260,
+                "text": "0",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 30,
+                "text": "starts at 0: almost equal",
+                "size": 18,
+                "color": "green",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Fifty two compared with 48 is only about 8 percent more.",
+          "write": "4 ÷ 48 ≈ 8.3%"
+        },
+        {
+          "say": "Also check for uneven scales and cherry picked time periods."
+        }
+      ]
+    },
+    {
+      "heading": "Pictograms that grow both ways",
+      "lines": [
+        {
+          "say": "A car picture is made 1.5 times taller and 1.5 times wider.",
+          "diagram": "diagrams/y10/maths/evaluating-statistical-reports-pict.svg",
+          "alt": "Small square for 100 cars and a square 1.5 times as wide and tall for 150 cars"
+        },
+        {
+          "say": "Its area is 1.5 squared. That is 2.25 times as big.",
+          "write": "1.5² = 2.25"
+        },
+        {
+          "say": "But the value only grew 1.5 times."
+        },
+        {
+          "say": "Grow a picture both ways, square the size."
+        }
+      ]
+    },
+    {
+      "heading": "Check the average",
+      "lines": [
+        {
+          "say": "A company says its average salary is over 100 000 dollars.",
+          "write": "\"average > $100 000\"",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Nine salaries with one huge outlier",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "55"
+              },
+              {
+                "kind": "rect",
+                "x": 88,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "58"
+              },
+              {
+                "kind": "rect",
+                "x": 146,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 204,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 262,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "62"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "65"
+              },
+              {
+                "kind": "rect",
+                "x": 378,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "68"
+              },
+              {
+                "kind": "rect",
+                "x": 436,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "70"
+              },
+              {
+                "kind": "rect",
+                "x": 494,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "red",
+                "label": "450"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "mean ≈ 105 thousand",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "salaries ($ thousands)",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The mean is about 105 thousand. Technically true.",
+          "write": "948 ÷ 9 ≈ 105.3"
+        },
+        {
+          "say": "But the median is 62 thousand. One huge salary drags the mean up.",
+          "write": "median = 62",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 280,
+            "alt": "Nine salaries with one huge outlier",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 30,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "55"
+              },
+              {
+                "kind": "rect",
+                "x": 88,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "58"
+              },
+              {
+                "kind": "rect",
+                "x": 146,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 204,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "60"
+              },
+              {
+                "kind": "rect",
+                "x": 262,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "change": "highlight",
+                "label": "62"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "65"
+              },
+              {
+                "kind": "rect",
+                "x": 378,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "68"
+              },
+              {
+                "kind": "rect",
+                "x": 436,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "blue",
+                "label": "70"
+              },
+              {
+                "kind": "rect",
+                "x": 494,
+                "y": 120,
+                "w": 50,
+                "h": 50,
+                "fill": "red",
+                "label": "450"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 240,
+                "text": "median = 62 thousand",
+                "size": 24,
+                "color": "purple",
+                "anchor": "middle",
+                "change": "add",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 90,
+                "text": "salaries ($ thousands)",
+                "size": 18,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "For incomes and house prices, the median is often fairer."
+        }
+      ]
+    },
+    {
+      "heading": "Check the percentages",
+      "lines": [
+        {
+          "say": "Crime up 50 percent could mean 2 crimes became 3.",
+          "write": "percent of what?"
+        },
+        {
+          "say": "Unemployment goes from 4 to 5 percent.",
+          "write": "4% → 5%"
+        },
+        {
+          "say": "That is up 1 percentage point.",
+          "write": "+1 percentage point"
+        },
+        {
+          "say": "It is also a 25 percent increase. One divided by four.",
+          "write": "1 ÷ 4 = 25%"
+        },
+        {
+          "say": "Risk doubles might mean 1 in 100 000 becoming 2 in 100 000."
+        }
+      ]
+    },
+    {
+      "heading": "Check the conclusion",
+      "lines": [
+        {
+          "say": "Does the conclusion go further than the data?"
+        },
+        {
+          "say": "Correlation is not causation. Look for a lurking variable."
+        },
+        {
+          "say": "Results from one group may not apply to everyone."
+        },
+        {
+          "say": "Predictions far beyond the data are extrapolation.",
+          "write": "extrapolation"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Who, how many, how chosen, what asked?"
+        },
+        {
+          "say": "Zig-zag means zoom. Read the axis, not the bar height.",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 290,
+            "alt": "Column graph of votes with a truncated axis from 46",
+            "items": [
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 520,
+                "y2": 260,
+                "color": "black"
+              },
+              {
+                "kind": "line",
+                "x": 60,
+                "y": 260,
+                "x2": 60,
+                "y2": 30,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 95.0,
+                "w": 110,
+                "h": 165.0,
+                "fill": "blue",
+                "label": "A 52%"
+              },
+              {
+                "kind": "rect",
+                "x": 320,
+                "y": 205.0,
+                "w": 110,
+                "h": 55.0,
+                "fill": "orange",
+                "label": "B 48%"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 260,
+                "text": "46",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 40,
+                "text": "54",
+                "size": 16,
+                "color": "black",
+                "anchor": "end"
+              },
+              {
+                "kind": "text",
+                "x": 300,
+                "y": 30,
+                "text": "axis starts at 46",
+                "size": 18,
+                "color": "red",
+                "anchor": "middle",
+                "change": "highlight",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Ask which average. The median resists outliers."
+        },
+        {
+          "say": "Percent of what? Points or per cent?",
+          "write": "4% → 5%: +1 point, +25%"
+        }
+      ]
+    }
+  ]
+}

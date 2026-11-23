@@ -1,0 +1,1080 @@
+{
+  "level": "Year 10",
+  "subject": "biology",
+  "title": "Inheritance and Punnett squares",
+  "frames": [
+    {
+      "heading": "Genotype and phenotype",
+      "lines": [
+        {
+          "say": "For each gene, you carry two alleles, one from each parent.",
+          "write": "2 alleles: one from each"
+        },
+        {
+          "say": "The pair of letters is your genotype, like big T little t.",
+          "write": "genotype = letters, e.g. Tt"
+        },
+        {
+          "say": "What actually shows, like tall, is your phenotype.",
+          "write": "phenotype = what shows"
+        },
+        {
+          "say": "The environment can also have an effect, like diet on height.",
+          "write": "environment matters too"
+        }
+      ]
+    },
+    {
+      "heading": "Dominant and recessive",
+      "lines": [
+        {
+          "say": "A dominant allele shows with just one copy. Write it as a capital.",
+          "write": "dominant: T"
+        },
+        {
+          "say": "A recessive allele only shows with two copies. Write it lower case.",
+          "write": "recessive: t"
+        },
+        {
+          "say": "Use the same letter for both. T and little t, not T and s.",
+          "write": "same letter"
+        },
+        {
+          "say": "Homozygous means the same: big T big T, or little t little t.",
+          "write": "homozygous: TT or tt",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "genotypes and phenotypes",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 60,
+                "w": 140,
+                "h": 80,
+                "fill": "green",
+                "label": "TT"
+              },
+              {
+                "kind": "rect",
+                "x": 210,
+                "y": 60,
+                "w": 140,
+                "h": 80,
+                "fill": "yellow",
+                "label": "Tt",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 380,
+                "y": 60,
+                "w": 140,
+                "h": 80,
+                "fill": "blue",
+                "label": "tt"
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 180,
+                "text": "tall",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 180,
+                "text": "tall",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 180,
+                "text": "short",
+                "size": 20,
+                "color": "black",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 110,
+                "y": 215,
+                "text": "homozygous",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 215,
+                "text": "heterozygous",
+                "size": 16,
+                "color": "orange",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 450,
+                "y": 215,
+                "text": "homozygous",
+                "size": 16,
+                "color": "black",
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Heterozygous means different, big T little t. It is still tall.",
+          "write": "heterozygous: Tt"
+        },
+        {
+          "say": "Dominant does not mean common or better.",
+          "write": "dominant ≠ common"
+        }
+      ]
+    },
+    {
+      "heading": "Building a Punnett square",
+      "lines": [
+        {
+          "say": "Each gamete gets only one allele. That is the law of segregation.",
+          "write": "one allele per gamete",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 270,
+            "alt": "Tt parent makes T or t gametes",
+            "items": [
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 70,
+                "r": 40,
+                "fill": "purple",
+                "label": "Tt"
+              },
+              {
+                "kind": "arrow",
+                "x": 260,
+                "y": 110,
+                "x2": 170,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "arrow",
+                "x": 300,
+                "y": 110,
+                "x2": 390,
+                "y2": 180,
+                "color": "black"
+              },
+              {
+                "kind": "circle",
+                "x": 150,
+                "y": 220,
+                "r": 35,
+                "fill": "blue",
+                "label": "T",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 410,
+                "y": 220,
+                "r": 35,
+                "fill": "blue",
+                "label": "t",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "Cross two big T little t plants. Gametes go across the top and down the side.",
+          "write": "Tt × Tt",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "T",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "t",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "T",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "t",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              }
+            ]
+          }
+        },
+        {
+          "say": "Fill each box from its row and its column.",
+          "write": "combine row + column",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "T",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "t",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "T",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "t",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "TT",
+                "change": "add",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              }
+            ]
+          }
+        },
+        {
+          "say": "Big T with big T gives big T big T. Keep going.",
+          "write": "TT, Tt",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "T",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "t",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "T",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "t",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "TT",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Tt",
+                "change": "add",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "labelSize": 24
+              }
+            ]
+          }
+        },
+        {
+          "say": "Now all four boxes are filled.",
+          "write": "TT  Tt  Tt  tt",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "T",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "t",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "T",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "t",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "TT",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Tt",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Tt",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "tt",
+                "change": "add",
+                "labelSize": 24
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Reading the ratio",
+      "lines": [
+        {
+          "say": "Genotypes: one big T big T, two big T little t, one little t little t.",
+          "write": "1 TT : 2 Tt : 1 tt"
+        },
+        {
+          "say": "Three boxes have a big T, so they are tall.",
+          "write": "3 tall",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "T",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "t",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "T",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "t",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "TT",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Tt",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "Tt",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "tt",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "3 tall : 1 short",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Only little t little t is short. That is one in four.",
+          "write": "1 short = 1/4 = 25%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "T",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "t",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "T",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "t",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "TT",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Tt",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Tt",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "tt",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "short: 1/4 = 25%",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "So two brown-eyed carriers can have a blue-eyed child.",
+          "write": "Bb × Bb → bb possible"
+        },
+        {
+          "say": "Each child is a fresh coin toss. Still 25 percent every time.",
+          "write": "each child: 25%"
+        }
+      ]
+    },
+    {
+      "heading": "The 1 : 1 cross and test cross",
+      "lines": [
+        {
+          "say": "Black fur, big B, is dominant. Cross big B little b with little b little b.",
+          "write": "Bb × bb"
+        },
+        {
+          "say": "Half the boxes are little b little b. So half are white.",
+          "write": "1 black : 1 white",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "B",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "b",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "b",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "b",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Bb",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "bb",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "Bb",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "bb",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "1/2 white",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Is a black animal big B big B, or big B little b? Do a test cross.",
+          "write": "test cross: × bb"
+        },
+        {
+          "say": "Any white baby means the black parent must be big B little b.",
+          "write": "white baby → parent Bb"
+        }
+      ]
+    },
+    {
+      "heading": "Sex-linked traits",
+      "lines": [
+        {
+          "say": "Some genes are on the X chromosome, but not the Y.",
+          "write": "X-linked"
+        },
+        {
+          "say": "For colour blindness, X big B is normal and X little b is colour blind.",
+          "write": "Xᴮ normal, Xᵇ colour blind"
+        },
+        {
+          "say": "Males have only one X. One recessive allele is enough to show.",
+          "write": "males: only one X"
+        },
+        {
+          "say": "Carrier mum times normal dad. Half the sons are colour blind.",
+          "write": "½ of sons colour blind",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 310,
+            "alt": "Punnett square",
+            "items": [
+              {
+                "kind": "text",
+                "x": 245.0,
+                "y": 55,
+                "text": "Xᴮ",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 335.0,
+                "y": 55,
+                "text": "Y",
+                "size": 24,
+                "color": "blue",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 123.0,
+                "text": "Xᴮ",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 175,
+                "y": 213.0,
+                "text": "Xᵇ",
+                "size": 24,
+                "color": "pink",
+                "anchor": "middle",
+                "bold": true
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "XᴮXᴮ",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 70,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "XᴮY",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "white",
+                "label": "XᴮXᵇ",
+                "labelSize": 24
+              },
+              {
+                "kind": "rect",
+                "x": 290,
+                "y": 160,
+                "w": 90,
+                "h": 90,
+                "fill": "yellow",
+                "label": "XᵇY",
+                "change": "highlight",
+                "labelSize": 24
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 290,
+                "text": "any child: 1/4 colour blind",
+                "size": 20,
+                "color": "purple",
+                "anchor": "middle",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "No daughters are colour blind, but half are carriers.",
+          "write": "daughters: ½ carriers"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "A three to one ratio is not a guarantee for four children.",
+          "write": "ratio ≠ guarantee"
+        },
+        {
+          "say": "Never put two alleles in one gamete.",
+          "write": "✗ Tt in one gamete"
+        },
+        {
+          "say": "In sex-linked crosses, write the Y on its own. It has no allele.",
+          "write": "Y has no allele"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Big T little t times big T little t gives three to one.",
+          "write": "Aa × Aa → 3 : 1"
+        },
+        {
+          "say": "Big A little a times little a little a gives one to one.",
+          "write": "Aa × aa → 1 : 1"
+        },
+        {
+          "say": "Big A big A times little a little a gives all dominant.",
+          "write": "AA × aa → all dominant"
+        },
+        {
+          "say": "Boys have no backup X.",
+          "write": "males: one X"
+        }
+      ]
+    }
+  ]
+}

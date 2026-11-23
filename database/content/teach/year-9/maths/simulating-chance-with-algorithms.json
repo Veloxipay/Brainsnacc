@@ -1,0 +1,145 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Simulating chance with algorithms",
+  "frames": [
+    {
+      "heading": "What is a simulation?",
+      "lines": [
+        { "say": "A simulation uses random numbers to act out a chance experiment.", "write": "simulation" },
+        { "say": "Each run of the experiment is called a trial.", "write": "1 run = 1 trial" },
+        { "say": "Like a flight simulator, we can fly it thousands of times and count the results." },
+        { "say": "RandInt 1 to 6 gives a whole number from 1 to 6. That's a fair die.", "write": "RandInt(1, 6)" },
+        { "say": "Random digits 0 to 9 each have a probability of one tenth.", "write": "digits 0–9: each 1/10" }
+      ]
+    },
+    {
+      "heading": "Matching numbers to outcomes",
+      "lines": [
+        {
+          "say": "For a probability of 0.3, use random digits. Let 0, 1 and 2 mean yes.",
+          "write": "3 out of 10 = 0.3",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Ten digit boxes with 0, 1 and 2 highlighted as yes",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "0", "change": "highlight" },
+              { "kind": "rect", "x": 72, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "1", "change": "highlight" },
+              { "kind": "rect", "x": 124, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "2", "change": "highlight" },
+              { "kind": "rect", "x": 176, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "3" },
+              { "kind": "rect", "x": 228, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "4" },
+              { "kind": "rect", "x": 280, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "5" },
+              { "kind": "rect", "x": 332, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "6" },
+              { "kind": "rect", "x": 384, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "7" },
+              { "kind": "rect", "x": 436, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "8" },
+              { "kind": "rect", "x": 488, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "9" },
+              { "kind": "text", "x": 97, "y": 160, "text": "yes", "size": 22, "bold": true, "color": "green", "anchor": "middle" },
+              { "kind": "text", "x": 357, "y": 160, "text": "no", "size": 22, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        { "say": "For a probability of a quarter, use RandInt 1 to 4. Let 1 mean yes.", "write": "RandInt(1, 4): 1 = yes" },
+        { "say": "For 0.35, use 00 to 99. Let 00 to 34 mean yes. That's 35 numbers.", "write": "00–34 → 35/100 = 0.35" },
+        { "say": "Always check. Yes numbers divided by all numbers must equal the probability.", "write": "yes ÷ all = P" }
+      ]
+    },
+    {
+      "heading": "Count, loop, test, output",
+      "lines": [
+        {
+          "say": "Every simulation has the same shape. Here's one that counts sixes.",
+          "diagram": "diagrams/y9/maths/simulating-chance-with-algorithms-flowchart.svg",
+          "alt": "Flowchart: set count to 0, roll RandInt(1, 6), add 1 to count if it is 6, repeat 1000 times, output count ÷ 1000"
+        },
+        { "say": "Set the counter to 0 before the loop starts.", "write": "count = 0" },
+        { "say": "Roll the die. If it's a 6, add 1 to the count.", "write": "if 6: count + 1" },
+        { "say": "Repeat 1000 times. Then output the count over 1000.", "write": "output count ÷ 1000" },
+        { "say": "That's the relative frequency. It estimates the probability.", "write": "relative frequency" }
+      ]
+    },
+    {
+      "heading": "Example: free throws",
+      "lines": [
+        { "say": "A player scores 70 percent of free throws. Use 0 to 6 for score.", "write": "0–6 score, 7–9 miss" },
+        {
+          "say": "Here are 10 random digits. Mark each one.",
+          "write": "3 8 0 5 9 1 6 2 7 4",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Ten random digits",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "3" },
+              { "kind": "rect", "x": 72, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "8" },
+              { "kind": "rect", "x": 124, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "0" },
+              { "kind": "rect", "x": 176, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "5" },
+              { "kind": "rect", "x": 228, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "9" },
+              { "kind": "rect", "x": 280, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "1" },
+              { "kind": "rect", "x": 332, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "6" },
+              { "kind": "rect", "x": 384, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "2" },
+              { "kind": "rect", "x": 436, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "7" },
+              { "kind": "rect", "x": 488, "y": 60, "w": 50, "h": 60, "fill": "white", "label": "4" }
+            ]
+          }
+        },
+        {
+          "say": "8, 9 and 7 are misses. The other 7 digits are scores.",
+          "write": "7 scores",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 200, "alt": "Scores shaded green, misses crossed out",
+            "items": [
+              { "kind": "rect", "x": 20, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "3", "change": "highlight" },
+              { "kind": "rect", "x": 72, "y": 60, "w": 50, "h": 60, "fill": "red", "label": "8", "change": "remove" },
+              { "kind": "rect", "x": 124, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "0", "change": "highlight" },
+              { "kind": "rect", "x": 176, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "5", "change": "highlight" },
+              { "kind": "rect", "x": 228, "y": 60, "w": 50, "h": 60, "fill": "red", "label": "9", "change": "remove" },
+              { "kind": "rect", "x": 280, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "1", "change": "highlight" },
+              { "kind": "rect", "x": 332, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "6", "change": "highlight" },
+              { "kind": "rect", "x": 384, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "2", "change": "highlight" },
+              { "kind": "rect", "x": 436, "y": 60, "w": 50, "h": 60, "fill": "red", "label": "7", "change": "remove" },
+              { "kind": "rect", "x": 488, "y": 60, "w": 50, "h": 60, "fill": "green", "label": "4", "change": "highlight" }
+            ]
+          }
+        },
+        { "say": "Relative frequency is 7 over 10, which is 0.7.", "write": "7 ÷ 10 = 0.7" }
+      ]
+    },
+    {
+      "heading": "More trials, better estimates",
+      "lines": [
+        { "say": "Two dice, 8 trials. A sum of at least 10 came up 3 times.", "write": "3 ÷ 8 = 0.375" },
+        { "say": "But the true probability is 6 over 36, about 0.167.", "write": "P = 6/36 ≈ 0.167" },
+        {
+          "say": "With few trials, the estimate jumps around. With many, it settles near the truth.",
+          "diagram": "diagrams/y9/maths/simulating-chance-with-algorithms-longrun.svg",
+          "alt": "Relative frequency of a six over 1000 rolls settling near 1/6"
+        },
+        { "say": "So real simulations use thousands of trials." }
+      ]
+    },
+    {
+      "heading": "Expected count",
+      "lines": [
+        { "say": "Expected count is the number of trials times the probability.", "write": "expected = trials × P" },
+        { "say": "1000 rolls with a one in six chance gives about 167 sixes.", "write": "1000 × 1/6 ≈ 167" },
+        { "say": "Rain chance 0.35 over 400 days. We expect 140 rainy days.", "write": "400 × 0.35 = 140" },
+        { "say": "A real run might give 133 or 147. Close, but rarely exact." }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "00 to 35 is 36 numbers, not 35. Count last minus first plus 1.", "write": "✗ 00–35 for 0.35" },
+        { "say": "Divide by the number of trials, not by 100.", "write": "count ÷ trials" },
+        { "say": "Set the counter to 0 before the loop, not inside it.", "write": "count = 0 first" },
+        { "say": "Don't trust a few trials. Eight trials can be way off." }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Yes numbers divided by all numbers equals the probability.", "write": "yes ÷ all = P" },
+        { "say": "Count, loop, test, output.", "write": "count, loop, test, output" },
+        { "say": "More trials give a steadier estimate.", "write": "more trials ✓" },
+        { "say": "Expected count is trials times probability.", "write": "trials × P" }
+      ]
+    }
+  ]
+}

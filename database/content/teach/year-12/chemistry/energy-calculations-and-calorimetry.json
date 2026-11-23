@@ -1,0 +1,482 @@
+{
+  "level": "Year 12",
+  "subject": "chemistry",
+  "title": "Energy calculations and calorimetry",
+  "frames": [
+    {
+      "heading": "Heating water: q = mcΔT",
+      "lines": [
+        {
+          "say": "The energy to heat water is q equals m c delta T.",
+          "write": "q = mcΔT"
+        },
+        {
+          "say": "m is the mass of the water, not the fuel. One mL is one gram.",
+          "write": "m = mass of WATER"
+        },
+        {
+          "say": "c for water is 4.18 joules per gram per degree.",
+          "write": "c = 4.18 J g⁻¹ °C⁻¹"
+        },
+        {
+          "say": "The answer is in joules. Divide by 1000 for kilojoules.",
+          "write": "J ÷ 1000 = kJ"
+        }
+      ]
+    },
+    {
+      "heading": "A spirit burner experiment",
+      "lines": [
+        {
+          "say": "Burn 1.50 grams of ethanol under 200 mL of water at 18 degrees.",
+          "write": "1.50 g ethanol, 200 g water",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Water at 18 degrees",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    180,
+                    60
+                  ],
+                  [
+                    380,
+                    60
+                  ],
+                  [
+                    350,
+                    280
+                  ],
+                  [
+                    210,
+                    280
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 150,
+                "fill": "blue",
+                "label": "water"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 40,
+                "w": 20,
+                "h": 240,
+                "fill": "red",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 60,
+                "text": "18.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "The water heats to 43 degrees. That is a rise of 25.",
+          "write": "ΔT = 25.0 °C",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Water rises to 43 degrees",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    180,
+                    60
+                  ],
+                  [
+                    380,
+                    60
+                  ],
+                  [
+                    350,
+                    280
+                  ],
+                  [
+                    210,
+                    280
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 150,
+                "fill": "blue",
+                "label": "water"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 40,
+                "w": 20,
+                "h": 240,
+                "fill": "red",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 60,
+                "text": "18.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 140,
+                "text": "43.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So q is 200 times 4.18 times 25, which is 20.9 kilojoules.",
+          "write": "q = 20 900 J = 20.9 kJ"
+        },
+        {
+          "say": "Total available is 1.50 times 29.6, which is 44.4 kilojoules.",
+          "write": "1.50 × 29.6 = 44.4 kJ"
+        },
+        {
+          "say": "Efficiency is 20.9 over 44.4, about 47 percent. Heat escapes.",
+          "write": "efficiency = 47.1%",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Useful versus lost energy",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 80,
+                "w": 480,
+                "h": 60,
+                "fill": "grey",
+                "label": "44.4 kJ released"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 170,
+                "w": 226,
+                "h": 60,
+                "fill": "green",
+                "label": "20.9 kJ to water",
+                "change": "highlight"
+              },
+              {
+                "kind": "rect",
+                "x": 266,
+                "y": 170,
+                "w": 254,
+                "h": 60,
+                "fill": "red",
+                "label": "lost to air",
+                "change": "add"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Energy from fuels and gases",
+      "lines": [
+        {
+          "say": "Energy equals moles times the heat of combustion in kilojoules per mole.",
+          "write": "E = n × ΔH_c"
+        },
+        {
+          "say": "At SLC, one mole of gas takes up 24.8 litres.",
+          "write": "n = V ÷ 24.8"
+        },
+        {
+          "say": "Five litres of methane is 0.2016 moles. Times 890 is 179 kilojoules.",
+          "write": "0.2016 × 890 = 179 kJ"
+        },
+        {
+          "say": "At other conditions, use P V equals n R T.",
+          "write": "PV = nRT"
+        },
+        {
+          "say": "Temperature must be in kelvin. Add 273 to Celsius.",
+          "write": "K = °C + 273"
+        }
+      ]
+    },
+    {
+      "heading": "Calibrating a calorimeter",
+      "lines": [
+        {
+          "say": "A calorimeter is an insulated container. We measure a temperature change.",
+          "write": "calorimeter"
+        },
+        {
+          "say": "A bomb calorimeter burns fuel in pure oxygen inside sealed steel.",
+          "write": "bomb calorimeter",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 312,
+            "alt": "Bomb calorimeter",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 140,
+                "y": 40,
+                "w": 280,
+                "h": 240,
+                "fill": "blue",
+                "label": "water"
+              },
+              {
+                "kind": "rect",
+                "x": 220,
+                "y": 110,
+                "w": 120,
+                "h": 110,
+                "fill": "grey",
+                "label": "bomb"
+              },
+              {
+                "kind": "circle",
+                "x": 280,
+                "y": 165,
+                "r": 20,
+                "fill": "orange",
+                "label": "",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 300,
+                "text": "sealed, insulated",
+                "size": 18,
+                "anchor": "middle"
+              }
+            ]
+          }
+        },
+        {
+          "say": "First, add known electrical energy: E equals V I t.",
+          "write": "E = VIt"
+        },
+        {
+          "say": "5.20 volts times 2.40 amps times 180 seconds is 2246 joules.",
+          "write": "E = 2246 J"
+        },
+        {
+          "say": "The temperature rose 1.85 degrees. So the calibration factor is 1214.",
+          "write": "CF = 2246 ÷ 1.85 = 1214 J °C⁻¹"
+        },
+        {
+          "say": "Burning methanol raised it 7.85 degrees. Energy is 9.53 kilojoules.",
+          "write": "E = 1214 × 7.85 = 9.53 kJ"
+        },
+        {
+          "say": "Per mole that is 726 kilojoules, matching the data book.",
+          "write": "726 kJ mol⁻¹ ✓"
+        }
+      ]
+    },
+    {
+      "heading": "Energy to mass of product",
+      "lines": [
+        {
+          "say": "How much CO two is made when octane supplies 10 000 kilojoules?",
+          "write": "E = 10 000 kJ"
+        },
+        {
+          "say": "Moles of octane: 10 000 divided by 5460 is 1.832.",
+          "write": "n(C₈H₁₈) = 1.832 mol"
+        },
+        {
+          "say": "The ratio of octane to CO two is one to eight.",
+          "write": "1 : 8",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Mole ratio octane to carbon dioxide",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 60,
+                "y": 100,
+                "w": 160,
+                "h": 80,
+                "fill": "orange",
+                "label": "1 C₈H₁₈"
+              },
+              {
+                "kind": "arrow",
+                "x": 230,
+                "y": 140,
+                "x2": 330,
+                "y2": 140,
+                "color": "black"
+              },
+              {
+                "kind": "rect",
+                "x": 340,
+                "y": 100,
+                "w": 160,
+                "h": 80,
+                "fill": "grey",
+                "label": "8 CO₂",
+                "change": "highlight"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So 14.65 moles of CO two, times 44, is 645 grams.",
+          "write": "m(CO₂) = 645 g"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Use the mass of water, not the mass of fuel.",
+          "write": "m = water"
+        },
+        {
+          "say": "Joules from q equals m c delta T. Kilojoules from the data book.",
+          "write": "J vs kJ"
+        },
+        {
+          "say": "Time in E equals V I t must be in seconds.",
+          "write": "t in seconds"
+        },
+        {
+          "say": "Keep the same water volume after calibration.",
+          "write": "same volume"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "q equals m c delta T, using the mass of water.",
+          "write": "q = mcΔT",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Heating water",
+            "items": [
+              {
+                "kind": "polygon",
+                "points": [
+                  [
+                    180,
+                    60
+                  ],
+                  [
+                    380,
+                    60
+                  ],
+                  [
+                    350,
+                    280
+                  ],
+                  [
+                    210,
+                    280
+                  ]
+                ],
+                "fill": "white"
+              },
+              {
+                "kind": "rect",
+                "x": 200,
+                "y": 120,
+                "w": 160,
+                "h": 150,
+                "fill": "blue",
+                "label": "water"
+              },
+              {
+                "kind": "rect",
+                "x": 420,
+                "y": 40,
+                "w": 20,
+                "h": 240,
+                "fill": "red",
+                "label": ""
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 60,
+                "text": "18.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 470,
+                "y": 140,
+                "text": "43.0 °C",
+                "size": 20,
+                "anchor": "start",
+                "bold": true,
+                "color": "red",
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "n equals V over 24.8 at SLC. Otherwise P V equals n R T.",
+          "write": "n = V ÷ 24.8"
+        },
+        {
+          "say": "Calibrate with E equals V I t, then CF equals E over delta T.",
+          "write": "CF = E ÷ ΔT"
+        },
+        {
+          "say": "Efficiency is useful energy over total energy, times 100.",
+          "write": "% eff = useful ÷ total × 100"
+        }
+      ]
+    }
+  ]
+}

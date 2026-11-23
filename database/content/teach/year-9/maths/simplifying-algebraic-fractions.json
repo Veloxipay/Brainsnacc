@@ -1,0 +1,150 @@
+{
+  "level": "Year 9",
+  "subject": "maths",
+  "title": "Simplifying algebraic fractions",
+  "frames": [
+    {
+      "heading": "What is an algebraic fraction?",
+      "lines": [
+        { "say": "An algebraic fraction is a fraction with letters in it.", "write": "(x² − 9)/(x + 3)" },
+        { "say": "The brackets show everything on the top and everything on the bottom." },
+        { "say": "To simplify, we factorise the top and bottom, then cancel what they share.", "write": "factorise, then cancel" },
+        { "say": "Cancelling means dividing the top and bottom by the same factor." }
+      ]
+    },
+    {
+      "heading": "Cancel factors, never terms",
+      "lines": [
+        {
+          "say": "Six x over three x. The 3 and the x multiply the whole top and bottom.",
+          "write": "6x/(3x)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "6x over 3x written as 2 times 3 times x over 3 times x",
+            "items": [
+              { "kind": "text", "x": 280, "y": 80, "text": "2 × 3 × x", "size": 32, "bold": true, "anchor": "middle" },
+              { "kind": "line", "x": 160, "y": 105, "x2": 400, "y2": 105, "color": "black" },
+              { "kind": "text", "x": 280, "y": 150, "text": "3 × x", "size": 32, "bold": true, "anchor": "middle" }
+            ]
+          }
+        },
+        {
+          "say": "So the 3 and the x cancel. We are left with 2.",
+          "write": "6x/(3x) = 2 ✓",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "The common 3 and x are crossed out, leaving 2",
+            "items": [
+              { "kind": "text", "x": 200, "y": 80, "text": "2", "size": 32, "bold": true, "anchor": "middle", "change": "highlight" },
+              { "kind": "text", "x": 290, "y": 80, "text": "× 3 × x", "size": 32, "bold": true, "anchor": "middle", "change": "remove" },
+              { "kind": "line", "x": 160, "y": 105, "x2": 400, "y2": 105, "color": "black" },
+              { "kind": "text", "x": 280, "y": 150, "text": "3 × x", "size": 32, "bold": true, "anchor": "middle", "change": "remove" }
+            ]
+          }
+        },
+        {
+          "say": "But x plus 3 over 3 is not x plus 1. That 3 is added, not multiplied.",
+          "write": "✗ (x + 3)/3 = x + 1"
+        },
+        { "say": "You can't cancel through a plus sign. Factorise first, then cancel.", "write": "factorise FIRST" }
+      ]
+    },
+    {
+      "heading": "Numbers and letters",
+      "lines": [
+        { "say": "Simplify twelve x squared over eight x.", "write": "12x²/(8x)" },
+        { "say": "Cancel the numbers. 12 over 8 is 3 over 2.", "write": "12/8 = 3/2" },
+        { "say": "Cancel the letters. x squared over x leaves one x.", "write": "x²/x = x" },
+        { "say": "So the answer is three x over two.", "write": "= 3x/2" },
+        { "say": "Now 5x plus 15, over 10. Factorise the top to 5 times x plus 3.", "write": "5(x + 3)/10" },
+        { "say": "Now the 5 is a factor. 5 over 10 is a half.", "write": "= (x + 3)/2" }
+      ]
+    },
+    {
+      "heading": "Whole brackets cancel",
+      "lines": [
+        {
+          "say": "x squared minus 9 is a difference of two squares.",
+          "write": "x² − 9 = (x + 3)(x − 3)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "(x + 3)(x − 3) over (x + 3)",
+            "items": [
+              { "kind": "rect", "x": 140, "y": 40, "w": 130, "h": 56, "fill": "blue", "label": "(x + 3)" },
+              { "kind": "rect", "x": 290, "y": 40, "w": 130, "h": 56, "fill": "orange", "label": "(x − 3)" },
+              { "kind": "line", "x": 120, "y": 110, "x2": 440, "y2": 110, "color": "black" },
+              { "kind": "rect", "x": 215, "y": 124, "w": 130, "h": 56, "fill": "blue", "label": "(x + 3)" }
+            ]
+          }
+        },
+        {
+          "say": "The bracket x plus 3 is on top and bottom. Cancel the whole bracket.",
+          "write": "(x² − 9)/(x + 3) = x − 3",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "The common bracket (x + 3) is crossed out, leaving x − 3",
+            "items": [
+              { "kind": "rect", "x": 140, "y": 40, "w": 130, "h": 56, "fill": "blue", "label": "(x + 3)", "change": "remove" },
+              { "kind": "rect", "x": 290, "y": 40, "w": 130, "h": 56, "fill": "orange", "label": "(x − 3)", "change": "highlight" },
+              { "kind": "line", "x": 120, "y": 110, "x2": 440, "y2": 110, "color": "black" },
+              { "kind": "rect", "x": 215, "y": 124, "w": 130, "h": 56, "fill": "blue", "label": "(x + 3)", "change": "remove" }
+            ]
+          }
+        },
+        { "say": "Harder one. Factorise the top and the bottom.", "write": "(x² + 5x + 6)/(x² − 4)" },
+        { "say": "The top is x plus 2 times x plus 3. The bottom is x plus 2 times x minus 2.", "write": "(x + 2)(x + 3)/((x + 2)(x − 2))" },
+        { "say": "Cancel x plus 2. We get x plus 3 over x minus 2.", "write": "= (x + 3)/(x − 2)" }
+      ]
+    },
+    {
+      "heading": "Opposites and undefined values",
+      "lines": [
+        { "say": "x minus 3 and 3 minus x are opposites.", "write": "3 − x = −(x − 3)" },
+        { "say": "So x minus 3 over 3 minus x is minus 1, not 1.", "write": "(x − 3)/(3 − x) = −1" },
+        { "say": "You can't divide by zero. So check the original bottom.", "write": "denominator ≠ 0" },
+        { "say": "For x squared minus 9 over x plus 3, x can't be minus 3.", "write": "x ≠ −3" }
+      ]
+    },
+    {
+      "heading": "Multiplying and dividing",
+      "lines": [
+        { "say": "To multiply, factorise everything first.", "write": "2(x+2)/(x−1) × (x+1)(x−1)/4(x+2)" },
+        {
+          "say": "A factor on any top cancels with the same factor on any bottom.",
+          "write": "cancel (x + 2) and (x − 1)",
+          "draw": {
+            "type": "shapes", "width": 560, "height": 220, "alt": "Two fractions multiplied with common brackets crossed out",
+            "items": [
+              { "kind": "text", "x": 60, "y": 80, "text": "2", "size": 28, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 120, "y": 80, "text": "(x+2)", "size": 26, "anchor": "middle", "change": "remove" },
+              { "kind": "line", "x": 30, "y": 100, "x2": 170, "y2": 100, "color": "black" },
+              { "kind": "text", "x": 100, "y": 140, "text": "(x−1)", "size": 26, "anchor": "middle", "change": "remove" },
+              { "kind": "text", "x": 210, "y": 110, "text": "×", "size": 30, "anchor": "middle" },
+              { "kind": "text", "x": 300, "y": 80, "text": "(x+1)", "size": 26, "anchor": "middle", "change": "highlight" },
+              { "kind": "text", "x": 400, "y": 80, "text": "(x−1)", "size": 26, "anchor": "middle", "change": "remove" },
+              { "kind": "line", "x": 250, "y": 100, "x2": 460, "y2": 100, "color": "black" },
+              { "kind": "text", "x": 310, "y": 140, "text": "4", "size": 28, "bold": true, "anchor": "middle" },
+              { "kind": "text", "x": 380, "y": 140, "text": "(x+2)", "size": 26, "anchor": "middle", "change": "remove" }
+            ]
+          }
+        },
+        { "say": "Then 2 over 4 is a half. The answer is x plus 1 over 2.", "write": "= (x + 1)/2" },
+        { "say": "To divide, keep the first, change divide to times, flip the second.", "write": "keep, change, flip" }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        { "say": "Don't cancel terms. x plus 6 over 6 is not x plus 1.", "write": "✗ (x + 6)/6 = x + 1" },
+        { "say": "x squared minus 4 over x minus 2 is x plus 2. Factorise first.", "write": "(x+2)(x−2)/(x−2) = x + 2" },
+        { "say": "Something cancels to 1, not 0. x over x is 1.", "write": "x/x = 1" },
+        { "say": "Test your answer with an easy value, like x equals 2.", "write": "test x = 2 ✓" }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        { "say": "Factorise first, cancel second.", "write": "factorise → cancel" },
+        { "say": "Only cancel factors, never terms joined by plus or minus.", "write": "factors only" },
+        { "say": "Opposite brackets cancel to minus 1.", "write": "(b − a) = −(a − b)" },
+        { "say": "To divide, flip the second fraction and multiply.", "write": "keep, change, flip" }
+      ]
+    }
+  ]
+}

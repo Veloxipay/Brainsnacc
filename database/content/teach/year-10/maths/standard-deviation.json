@@ -1,0 +1,821 @@
+{
+  "level": "Year 10",
+  "subject": "maths",
+  "title": "Standard deviation",
+  "frames": [
+    {
+      "heading": "Measuring spread",
+      "lines": [
+        {
+          "say": "Two players both average 15 points. One is steady, one swings wildly.",
+          "write": "same mean, different spread"
+        },
+        {
+          "say": "The standard deviation measures how spread out data is around the mean.",
+          "write": "σ, sigma"
+        },
+        {
+          "say": "Like darts: how far they typically land from the bullseye.",
+          "write": "small σ = bunched"
+        },
+        {
+          "say": "Small means consistent. Large means spread out. All the same means 0.",
+          "write": "σ = 0 if all equal"
+        }
+      ]
+    },
+    {
+      "heading": "Deviations from the mean",
+      "lines": [
+        {
+          "say": "Goals in five games: 6, 8, 9, 11 and 16.",
+          "write": "6, 8, 9, 11, 16",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Dot plot of 6, 8, 9, 11, 16 with the mean 10",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 200,
+                "x2": 530,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 225,
+                "text": "4",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 108,
+                "y": 225,
+                "text": "6",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 176,
+                "y": 225,
+                "text": "8",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 225,
+                "text": "10",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 312,
+                "y": 225,
+                "text": "12",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 225,
+                "text": "14",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 225,
+                "text": "16",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 516,
+                "y": 225,
+                "text": "18",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 108,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 278,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 448,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              }
+            ]
+          }
+        },
+        {
+          "say": "The mean is 50 divided by 5, which is 10.",
+          "write": "x̄ = 50 ÷ 5 = 10",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Dot plot of 6, 8, 9, 11, 16 with the mean 10",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 200,
+                "x2": 530,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 225,
+                "text": "4",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 108,
+                "y": 225,
+                "text": "6",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 176,
+                "y": 225,
+                "text": "8",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 225,
+                "text": "10",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 312,
+                "y": 225,
+                "text": "12",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 225,
+                "text": "14",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 225,
+                "text": "16",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 516,
+                "y": 225,
+                "text": "18",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 108,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 278,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 448,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 244,
+                "y": 80,
+                "x2": 244,
+                "y2": 205,
+                "color": "red",
+                "dashed": true,
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 70,
+                "text": "mean 10",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              }
+            ]
+          }
+        },
+        {
+          "say": "Each deviation is the value minus the mean.",
+          "write": "x − x̄",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Dot plot of 6, 8, 9, 11, 16 with the mean 10",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 200,
+                "x2": 530,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 225,
+                "text": "4",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 108,
+                "y": 225,
+                "text": "6",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 176,
+                "y": 225,
+                "text": "8",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 225,
+                "text": "10",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 312,
+                "y": 225,
+                "text": "12",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 225,
+                "text": "14",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 225,
+                "text": "16",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 516,
+                "y": 225,
+                "text": "18",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "circle",
+                "x": 108,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 278,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 448,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 244,
+                "y": 80,
+                "x2": 244,
+                "y2": 205,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 70,
+                "text": "mean 10",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "arrow",
+                "x": 244,
+                "y": 105,
+                "x2": 108,
+                "y2": 105,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 244,
+                "y": 125,
+                "x2": 176,
+                "y2": 125,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 244,
+                "y": 145,
+                "x2": 210,
+                "y2": 145,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 244,
+                "y": 145,
+                "x2": 278,
+                "y2": 145,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "arrow",
+                "x": 244,
+                "y": 115,
+                "x2": 448,
+                "y2": 115,
+                "color": "purple",
+                "change": "add"
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "−4, −2, −1, +1, +6",
+                "size": 22,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "They add to 0. So we square them first.",
+          "write": "sum of deviations = 0"
+        }
+      ]
+    },
+    {
+      "heading": "The formula",
+      "lines": [
+        {
+          "say": "Square each deviation: 16, 4, 1, 1 and 36. They add to 58.",
+          "write": "16 + 4 + 1 + 1 + 36 = 58"
+        },
+        {
+          "say": "Divide by n, which is 5. That gives the variance, 11.6.",
+          "write": "variance = 58 ÷ 5 = 11.6"
+        },
+        {
+          "say": "Take the square root. Sigma is about 3.41 goals.",
+          "write": "σ = √11.6 ≈ 3.41"
+        },
+        {
+          "say": "The band shows one standard deviation either side of the mean.",
+          "write": "10 − 3.41 to 10 + 3.41",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 300,
+            "alt": "Dot plot of 6, 8, 9, 11, 16 with the mean 10",
+            "items": [
+              {
+                "kind": "line",
+                "x": 30,
+                "y": 200,
+                "x2": 530,
+                "y2": 200,
+                "color": "black"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 225,
+                "text": "4",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 108,
+                "y": 225,
+                "text": "6",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 176,
+                "y": 225,
+                "text": "8",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 225,
+                "text": "10",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 312,
+                "y": 225,
+                "text": "12",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 380,
+                "y": 225,
+                "text": "14",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 448,
+                "y": 225,
+                "text": "16",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "text",
+                "x": 516,
+                "y": 225,
+                "text": "18",
+                "size": 16,
+                "color": "grey"
+              },
+              {
+                "kind": "rect",
+                "x": 128.06,
+                "y": 110,
+                "w": 232,
+                "h": 90,
+                "fill": "yellow",
+                "change": "add"
+              },
+              {
+                "kind": "circle",
+                "x": 108,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 176,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 210,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 278,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "circle",
+                "x": 448,
+                "y": 180,
+                "r": 12,
+                "fill": "blue"
+              },
+              {
+                "kind": "line",
+                "x": 244,
+                "y": 80,
+                "x2": 244,
+                "y2": 205,
+                "color": "red",
+                "dashed": true
+              },
+              {
+                "kind": "text",
+                "x": 244,
+                "y": 70,
+                "text": "mean 10",
+                "size": 18,
+                "color": "red",
+                "bold": true
+              },
+              {
+                "kind": "text",
+                "x": 280,
+                "y": 280,
+                "text": "10 ± 3.41",
+                "size": 22,
+                "color": "purple",
+                "bold": true,
+                "change": "add"
+              }
+            ]
+          }
+        },
+        {
+          "say": "So the formula is: root of the sum of squared deviations, over n.",
+          "write": "σ = √( Σ(x − x̄)² ÷ n )"
+        }
+      ]
+    },
+    {
+      "heading": "The five steps",
+      "lines": [
+        {
+          "say": "Find the mean.",
+          "write": "1. mean"
+        },
+        {
+          "say": "Subtract the mean from each value.",
+          "write": "2. deviations"
+        },
+        {
+          "say": "Square each deviation.",
+          "write": "3. square"
+        },
+        {
+          "say": "Add them and divide by n.",
+          "write": "4. add, ÷ n"
+        },
+        {
+          "say": "Take the square root.",
+          "write": "5. √"
+        }
+      ]
+    },
+    {
+      "heading": "Which is more consistent?",
+      "lines": [
+        {
+          "say": "Set A and Set B both have mean 6.",
+          "write": "mean = 6",
+          "diagram": "diagrams/y10/maths/standard-deviation-ex2.svg",
+          "alt": "Dot plots of Set A and Set B"
+        },
+        {
+          "say": "Set A: squares add to 4. Sigma is root 0.5, about 0.71.",
+          "write": "σA = √(4 ÷ 8) ≈ 0.71"
+        },
+        {
+          "say": "Set B: squares add to 52. Sigma is root 6.5, about 2.55.",
+          "write": "σB = √(52 ÷ 8) ≈ 2.55"
+        },
+        {
+          "say": "Set A has the smaller sigma, so it is more consistent.",
+          "write": "Set A more consistent",
+          "draw": {
+            "type": "shapes",
+            "width": 560,
+            "height": 250,
+            "alt": "Bars comparing standard deviations 0.71 and 2.55",
+            "items": [
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 70,
+                "w": 106,
+                "h": 50,
+                "fill": "green",
+                "change": "highlight",
+                "label": "0.71"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 55,
+                "text": "Set A",
+                "size": 18,
+                "color": "green",
+                "bold": true,
+                "anchor": "start"
+              },
+              {
+                "kind": "rect",
+                "x": 40,
+                "y": 170,
+                "w": 382,
+                "h": 50,
+                "fill": "orange",
+                "label": "2.55"
+              },
+              {
+                "kind": "text",
+                "x": 40,
+                "y": 155,
+                "text": "Set B",
+                "size": 18,
+                "color": "orange",
+                "bold": true,
+                "anchor": "start"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "heading": "Calculators and changes",
+      "lines": [
+        {
+          "say": "Calculators show two values. Sigma x divides by n. Use that one here.",
+          "write": "σx (÷ n), not sx (÷ n − 1)"
+        },
+        {
+          "say": "With a frequency table, multiply each squared deviation by its frequency.",
+          "write": "f × (x − x̄)²"
+        },
+        {
+          "say": "Add 5 to every value. The mean moves, but the spread does not.",
+          "write": "+ 5: σ unchanged"
+        },
+        {
+          "say": "Multiply every value by k, and sigma is multiplied by k.",
+          "write": "× k: σ × k"
+        },
+        {
+          "say": "For bell-shaped data: 68, 95 and 99.7 percent within 1, 2, 3 sigma.",
+          "write": "68–95–99.7"
+        }
+      ]
+    },
+    {
+      "heading": "Watch out for these",
+      "lines": [
+        {
+          "say": "Don't forget the square root. 11.6 is the variance, not sigma.",
+          "write": "✗ 11.6   ✓ 3.41"
+        },
+        {
+          "say": "Don't divide by n minus 1 when you want sigma.",
+          "write": "÷ n"
+        },
+        {
+          "say": "Square the deviations. Plain deviations always add to 0.",
+          "write": "square first"
+        },
+        {
+          "say": "Don't ignore frequencies. n is the total frequency.",
+          "write": "n = Σf"
+        }
+      ]
+    },
+    {
+      "heading": "Remember",
+      "lines": [
+        {
+          "say": "Mean, deviations, square, average, square root.",
+          "write": "mean, dev, square, avg, √"
+        },
+        {
+          "say": "Smaller standard deviation means more consistent data.",
+          "write": "small σ = consistent"
+        },
+        {
+          "say": "Adding a constant leaves sigma unchanged.",
+          "write": "+ c: same σ"
+        }
+      ]
+    }
+  ]
+}
