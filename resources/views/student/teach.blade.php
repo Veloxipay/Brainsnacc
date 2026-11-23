@@ -43,7 +43,7 @@
                     @if ($homework->note)<div class="small">“{{ $homework->note }}”</div>@endif
                 </div>
             @endif
-            @if ($lesson->video)
+            @if ($lesson->video && ! $script)
                 <section class="tstep" data-kind="read" data-path="topic" hidden>
                     <h2>Watch first</h2>
                     <figure class="lesson-video">
@@ -69,11 +69,13 @@
                                 </div>
                             @endforeach
                         </div>
-                        <div class="row" style="gap:10px;flex-wrap:wrap">
-                            <button type="button" class="btn" data-next-line>Start</button>
+                        <div class="row player" style="gap:10px;flex-wrap:wrap;align-items:center">
+                            <button type="button" class="btn" data-play>▶ Play</button>
                             <button type="button" class="btn secondary" data-say-again hidden>Say it again</button>
+                            <button type="button" data-next-line hidden></button>
+                            <span class="player-bar" aria-hidden="true"><span data-bar></span></span>
                         </div>
-                        <p class="small muted" style="margin:0" data-line-tip>Write what goes on the board in your book.</p>
+                        <p class="small muted" style="margin:0" data-line-tip>Press Play. It writes and talks you through it. Pause any time to copy it into your book.</p>
                     </section>
                 @endforeach
             @else
@@ -225,9 +227,9 @@
                 var input = s.querySelector('[data-said]');
                 if (input && window.innerWidth > 760) input.focus({ preventScroll: true });
             }
-            if (s.dataset.kind === 'learn' && s.dataset.started !== '1') say(s.querySelector('.t-prompt').textContent);
-            // The topic starts writing straight away when you arrive at it.
-            if (s.querySelector('.board-topic') && s.dataset.started !== '1') { var b0 = s.querySelector('[data-next-line]'); setTimeout(function () { if (!s.hidden && s.dataset.started !== '1') b0.click(); }, 900); }
+            if (s.dataset.kind === 'learn' && s.dataset.started !== '1' && !s.querySelector('.board-topic')) say(s.querySelector('.t-prompt').textContent);
+            // The topic plays like a video: carry on playing into the next screen of the topic.
+            if (s.querySelector('.board-topic')) { if (playing) { clearTimeout(timer); timer = setTimeout(step, 700); } else { updatePlay(); } }
             if (s.dataset.kind === 'info') say(s.querySelector('h2').textContent + '. ' + s.querySelector('p').textContent);
             if (s.dataset.kind === 'end') finish(s);
             var hw = root.querySelector('.homework-note'); if (hw) hw.hidden = current !== 0;
@@ -235,29 +237,42 @@
             save();
         }
         prev.addEventListener('click', function () { show(current - 1); });
-        next.addEventListener('click', function () { if (canLeave(steps[current])) show(current + 1); });
+        next.addEventListener('click', function () { if (canLeave(steps[current])) { if (typeof stop === 'function' && !isTopic(steps[current + 1])) stop(); show(current + 1); } });
 
         /* ---- watch and write: one line at a time ---- */
         steps.filter(function (s) { return s.dataset.kind === 'learn'; }).forEach(function (s) {
             var lines = Array.prototype.slice.call(s.querySelectorAll('[data-line]'));
             var btn = s.querySelector('[data-next-line]'), again = s.querySelector('[data-say-again]');
             var shown = 0;
-            btn.addEventListener('click', function () {
+            var topic = !!s.querySelector('.board-topic'), bar = s.querySelector('[data-bar]');
+            // Show the next line; returns it, or null when the board is full.
+            s._reveal = function () {
                 s.dataset.started = '1';
-                if (shown >= lines.length) return;
+                if (shown >= lines.length) return null;
                 var line = lines[shown++];
                 line.hidden = false;
                 line.classList.add('writing');
-                say(line.dataset.say || line.querySelector('.ink').textContent);
                 again.hidden = false;
+                if (bar) bar.style.width = (shown / lines.length * 100) + '%';
                 if (shown === lines.length) {
-                    btn.textContent = s.querySelector('.board-topic') ? 'Got it ✓' : 'I’ve written it all ✓';
-                    btn.disabled = true;
                     s.dataset.written = '1';
-                    next.disabled = false;
-                    s.querySelector('[data-line-tip]').textContent = s.querySelector('.board-topic') ? 'Press Next when you’re ready.' : 'Check your book matches the board, then press Next.';
+                    if (!steps[current] || steps[current] === s) next.disabled = false;
+                }
+                return line;
+            };
+            s._lines = lines;
+            s._replay = function () { shown = 0; if (bar) bar.style.width = '0%'; };
+            btn.addEventListener('click', function () {
+                if (shown >= lines.length) return;
+                var line = s._reveal();
+                say(line.dataset.say || line.querySelector('.ink').textContent);
+                if (topic) return;
+                if (shown === lines.length) {
+                    btn.textContent = 'I’ve written it all ✓';
+                    btn.disabled = true;
+                    s.querySelector('[data-line-tip]').textContent = 'Check your book matches the board, then press Next.';
                 } else {
-                    btn.textContent = s.querySelector('.board-topic') ? 'Next' : 'I’ve written it. Next step';
+                    btn.textContent = 'I’ve written it. Next step';
                 }
             });
             again.addEventListener('click', function () {
@@ -265,6 +280,63 @@
                 say(last.dataset.say || last.querySelector('.ink').textContent);
             });
         });
+
+        /* ---- the topic plays like a video: write a line, say it, give time to copy it, next line ---- */
+        var playing = false, timer = null;
+        function isTopic(s) { return s && !!s.querySelector('.board-topic'); }
+        function sayThen(text, done) {
+            var finished = false;
+            function fin() { if (finished) return; finished = true; clearTimeout(timer); if (playing) done(); }
+            if (!synth || !voiceBox.checked || !text) { timer = setTimeout(fin, 1400 + String(text).length * 55); return; }
+            synth.cancel();
+            var u = new SpeechSynthesisUtterance(sayable(text));
+            if (voice) u.voice = voice;
+            u.lang = voice ? voice.lang : 'en-AU';
+            u.rate = 0.95;
+            u.onend = fin; u.onerror = fin;
+            timer = setTimeout(fin, 3000 + String(text).length * 110); // in case the browser never says it's finished
+            synth.speak(u);
+        }
+        function step() {
+            if (!playing) return;
+            var s = steps[current];
+            if (!isTopic(s)) { stop(); return; }
+            var line = s._reveal();
+            if (line) {
+                var ink = line.querySelector('.ink');
+                sayThen(line.dataset.say || (ink ? ink.textContent : ''), function () {
+                    // Time to copy what was written into their book.
+                    timer = setTimeout(step, ink ? 1200 + ink.textContent.length * 70 : 600);
+                });
+            } else if (isTopic(steps[current + 1])) {
+                timer = setTimeout(function () { if (playing) show(current + 1); }, 900);
+            } else {
+                stop();
+                next.disabled = false;
+                s.querySelector('[data-line-tip]').textContent = 'That’s the topic. Press Next to try it yourself.';
+            }
+        }
+        function updatePlay() {
+            root.querySelectorAll('[data-play]').forEach(function (b) {
+                var st = b.closest('.tstep');
+                var full = st.dataset.written === '1';
+                b.textContent = playing ? '❚❚ Pause' : (full ? '↺ Play again' : (st.dataset.started === '1' ? '▶ Carry on' : '▶ Play'));
+            });
+        }
+        function stop() { playing = false; clearTimeout(timer); if (synth) synth.cancel(); updatePlay(); }
+        root.querySelectorAll('[data-play]').forEach(function (b) {
+            b.addEventListener('click', function () {
+                if (playing) { stop(); return; }
+                var s = b.closest('.tstep');
+                if (s.dataset.written === '1') {
+                    // Play this screen again from the top.
+                    s._lines.forEach(function (l) { l.hidden = true; l.classList.remove('writing'); });
+                    s._replay();
+                }
+                playing = true; updatePlay(); step();
+            });
+        });
+        prev.addEventListener('click', stop);
 
         /* ---- "What answer did you get?" ---- */
         steps.filter(function (s) { return s.dataset.kind === 'q'; }).forEach(function (s) {
