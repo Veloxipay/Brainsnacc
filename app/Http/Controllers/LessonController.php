@@ -9,6 +9,7 @@ use App\Models\QuestionAttempt;
 use App\Models\StepCheck;
 use App\Support\QuestionHelp;
 use App\Support\Teach;
+use App\Support\TeachScript;
 use App\Support\StepCoach;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -41,6 +42,7 @@ class LessonController extends Controller
             'lesson' => $lesson,
             'subject' => $lesson->module->unit->subject,
             'plan' => $plan,
+            'script' => TeachScript::for($lesson),
             'nextLesson' => $index !== false ? $siblings->get($index + 1) : null,
             'homework' => Homework::where('student_id', $request->user()->id)->where('lesson_id', $lesson->id)->open()->with('setter')->first(),
         ]);

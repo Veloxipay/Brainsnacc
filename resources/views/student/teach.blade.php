@@ -25,7 +25,7 @@
             </div>
         </header>
         <ol class="teach-path" aria-label="Where you are">
-            @if ($lesson->video || $slides)<li data-path="topic">The topic</li>@endif
+            @if ($lesson->video || $slides || $script)<li data-path="topic">The topic</li>@endif
             @foreach ($plan['stages'] as $i => $stage)
                 <li data-path="stage{{ $i }}">{{ $i + 1 }}. {{ $stage['title'] }}</li>
             @endforeach
@@ -51,12 +51,38 @@
                     </figure>
                 </section>
             @endif
-            @foreach ($slides as $slide)
-                <section class="tstep lesson-body" data-kind="read" data-path="topic" hidden>
-                    <h2>{{ $slide['section'] }}</h2>
-                    {!! $slide['html'] !!}
-                </section>
-            @endforeach
+            @if ($script)
+                {{-- The topic at the board: one short sentence at a time, with what to write and a picture where it helps --}}
+                @foreach ($script as $f => $frame)
+                    <section class="tstep" data-kind="learn" data-path="topic" hidden>
+                        <p class="pill" style="align-self:flex-start">The topic · {{ $f + 1 }} of {{ count($script) }}</p>
+                        <h2 class="t-prompt">{{ $frame['heading'] }}</h2>
+                        <div class="board board-topic" aria-live="polite">
+                            @foreach ($frame['lines'] as $line)
+                                <div class="board-line topic-line" data-line data-say="{{ $line['say'] ?? $line['write'] }}" hidden>
+                                    @if ($line['write'])<span class="ink">{{ $line['write'] }}</span>@endif
+                                    @if ($line['diagram'])
+                                        <figure class="board-pic"><img src="{{ asset($line['diagram']) }}" alt="{{ $line['alt'] ?: 'Diagram' }}"></figure>
+                                    @endif
+                                    @if ($line['say'])<span class="say">{{ $line['say'] }}</span>@endif
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="row" style="gap:10px;flex-wrap:wrap">
+                            <button type="button" class="btn" data-next-line>Start</button>
+                            <button type="button" class="btn secondary" data-say-again hidden>Say it again</button>
+                        </div>
+                        <p class="small muted" style="margin:0" data-line-tip>Write what goes on the board in your book.</p>
+                    </section>
+                @endforeach
+            @else
+                @foreach ($slides as $slide)
+                    <section class="tstep lesson-body" data-kind="read" data-path="topic" hidden>
+                        <h2>{{ $slide['section'] }}</h2>
+                        {!! $slide['html'] !!}
+                    </section>
+                @endforeach
+            @endif
 
             {{-- 1–3: watch and write, then your turn --}}
             @foreach ($plan['stages'] as $i => $stage)
@@ -199,6 +225,8 @@
                 if (input && window.innerWidth > 760) input.focus({ preventScroll: true });
             }
             if (s.dataset.kind === 'learn' && s.dataset.started !== '1') say(s.querySelector('.t-prompt').textContent);
+            // The topic starts writing straight away when you arrive at it.
+            if (s.querySelector('.board-topic') && s.dataset.started !== '1') { var b0 = s.querySelector('[data-next-line]'); setTimeout(function () { if (!s.hidden && s.dataset.started !== '1') b0.click(); }, 900); }
             if (s.dataset.kind === 'info') say(s.querySelector('h2').textContent + '. ' + s.querySelector('p').textContent);
             if (s.dataset.kind === 'end') finish(s);
             var hw = root.querySelector('.homework-note'); if (hw) hw.hidden = current !== 0;
@@ -219,21 +247,21 @@
                 var line = lines[shown++];
                 line.hidden = false;
                 line.classList.add('writing');
-                say(line.querySelector('.ink').textContent);
+                say(line.dataset.say || line.querySelector('.ink').textContent);
                 again.hidden = false;
                 if (shown === lines.length) {
-                    btn.textContent = 'I’ve written it all ✓';
+                    btn.textContent = s.querySelector('.board-topic') ? 'Got it ✓' : 'I’ve written it all ✓';
                     btn.disabled = true;
                     s.dataset.written = '1';
                     next.disabled = false;
-                    s.querySelector('[data-line-tip]').textContent = 'Check your book matches the board, then press Next.';
+                    s.querySelector('[data-line-tip]').textContent = s.querySelector('.board-topic') ? 'Press Next when you’re ready.' : 'Check your book matches the board, then press Next.';
                 } else {
-                    btn.textContent = 'I’ve written it. Next step';
+                    btn.textContent = s.querySelector('.board-topic') ? 'Next' : 'I’ve written it. Next step';
                 }
             });
             again.addEventListener('click', function () {
                 var last = lines[Math.max(0, shown - 1)];
-                say(last.querySelector('.ink').textContent);
+                say(last.dataset.say || last.querySelector('.ink').textContent);
             });
         });
 

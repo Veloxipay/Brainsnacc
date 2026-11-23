@@ -446,3 +446,11 @@ tr[hidden] { display: none; }
   .board .ink { font-size: 24px; }
 }
 .t-choices[hidden], .t-feedback[hidden], .teach [hidden] { display: none; }
+/* The topic at the board: chalk line, then the teacher's short sentence under it */
+.topic-line { flex-direction: column; gap: 2px; padding: 6px 0; border-bottom: 1px dashed rgba(244, 241, 230, .15); }
+.topic-line:last-child { border-bottom: 0; }
+.topic-line .say { font-family: Inter, sans-serif; font-size: 15px; color: #CFE3D6; line-height: 1.45; }
+.topic-line:not(:has(.ink)) .say { font-size: 17px; color: #F4F1E6; }
+.board-pic { margin: 6px 0; background: #fff; border-radius: 10px; padding: 8px; max-width: 520px; }
+.board-pic img { display: block; width: 100%; height: auto; }
+.board-line { flex-wrap: wrap; }
