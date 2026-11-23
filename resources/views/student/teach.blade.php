@@ -61,6 +61,7 @@
                             @foreach ($frame['lines'] as $line)
                                 <div class="board-line topic-line" data-line data-say="{{ $line['say'] ?? $line['write'] }}" hidden>
                                     @if ($line['write'])<span class="ink">{{ $line['write'] }}</span>@endif
+                                    @if ($line['draw'])<div class="board-draw">{!! $line['draw'] !!}</div>@endif
                                     @if ($line['diagram'])
                                         <figure class="board-pic"><img src="{{ asset($line['diagram']) }}" alt="{{ $line['alt'] ?: 'Diagram' }}"></figure>
                                     @endif

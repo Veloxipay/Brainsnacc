@@ -10,7 +10,8 @@ use Illuminate\Support\Str;
  * and pictures, one step at a time. Read straight from database/content/teach/<level>/<subject>/<lesson>.json,
  * kept apart from the lesson files so adding one never reloads (and resets) a lesson's questions.
  *
- * File: {"title": "...", "frames": [{"heading": "...", "lines": [{"say": "...", "write": "...", "diagram": "diagrams/....svg", "alt": "..."}]}]}
+ * File: {"title": "...", "frames": [{"heading": "...", "lines": [{"say": "...", "write": "...", "diagram": "diagrams/....svg", "alt": "...", "draw": {...}}]}]}
+ * "draw" is a drawing that changes with the step (see Drawings), e.g. cubes taken off both sides of a balance.
  */
 class TeachScript
 {
@@ -40,10 +41,11 @@ class TeachScript
                 $diagram = isset($line['diagram']) && preg_match('#^/?diagrams/[a-z0-9/_-]+\.svg$#', (string) $line['diagram']) ? ltrim($line['diagram'], '/') : null;
                 $say = isset($line['say']) ? trim((string) $line['say']) : null;
                 $write = isset($line['write']) ? trim((string) $line['write']) : null;
-                if (! $say && ! $write && ! $diagram) {
+                $draw = isset($line['draw']) && is_array($line['draw']) ? Drawings::render($line['draw']) : null;
+                if (! $say && ! $write && ! $diagram && ! $draw) {
                     continue;
                 }
-                $lines[] = ['say' => $say ?: null, 'write' => $write ?: null, 'diagram' => $diagram, 'alt' => isset($line['alt']) ? (string) $line['alt'] : null];
+                $lines[] = ['say' => $say ?: null, 'write' => $write ?: null, 'diagram' => $diagram, 'alt' => isset($line['alt']) ? (string) $line['alt'] : null, 'draw' => $draw];
             }
             if ($lines) {
                 $frames[] = ['heading' => trim((string) ($frame['heading'] ?? '')), 'lines' => $lines];
