@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Homework;
 use App\Models\Lesson;
 use App\Models\QuestionAttempt;
 use App\Models\TestAttempt;
@@ -56,6 +57,7 @@ class TestController extends Controller
             'seconds' => $started > 0 && $started <= now()->timestamp ? min(86400, now()->timestamp - $started) : null,
         ]);
         $user->completedLessons()->syncWithoutDetaching([$lesson->id => ['completed_at' => now()]]);
+        Homework::handIn($user, $lesson);
 
         return redirect()->route('tests.result', [$lesson, $attempt]);
     }

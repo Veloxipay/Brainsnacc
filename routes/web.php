@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\QuestionController as AdminQuestionController;
 use App\Http\Controllers\Admin\StructureController;
 use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\AskTutorController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\PasswordResetController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -14,6 +15,7 @@ use App\Http\Controllers\LessonController;
 use App\Http\Controllers\MockExamController;
 use App\Http\Controllers\ParentController;
 use App\Http\Controllers\PastPaperController;
+use App\Http\Controllers\TeachingController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\TutorController;
 use Illuminate\Support\Facades\Route;
@@ -69,6 +71,8 @@ Route::middleware('auth')->group(function () {
             Route::get('/photo', [TutorController::class, 'photo'])->name('photo');
             Route::post('/photo', [TutorController::class, 'readPhoto'])->middleware('throttle:10,1')->name('photo.read');
         });
+        // "Ask my tutor": flag a question to go through next session
+        Route::post('/ask-tutor', [AskTutorController::class, 'store'])->middleware('throttle:20,1')->name('ask-tutor');
         Route::get('/past-papers', [PastPaperController::class, 'index'])->name('past-papers');
         Route::post('/past-papers', [PastPaperController::class, 'update'])->name('past-papers.update');
         Route::get('/practice-exams/{slug}', [MockExamController::class, 'show'])->name('mock-exams.show');
@@ -86,6 +90,12 @@ Route::middleware('auth')->group(function () {
         Route::get('/family/students/{student}', [ParentController::class, 'show'])->name('family.students.show');
         Route::put('/family/students/{student}', [ParentController::class, 'update'])->name('family.students.update');
         Route::delete('/family/students/{student}', [ParentController::class, 'destroy'])->name('family.students.destroy');
+        // Teaching: homework, session notes, the student's questions
+        Route::post('/family/students/{student}/homework', [TeachingController::class, 'storeHomework'])->name('family.homework.store');
+        Route::delete('/family/homework/{homework}', [TeachingController::class, 'destroyHomework'])->name('family.homework.destroy');
+        Route::post('/family/students/{student}/notes', [TeachingController::class, 'storeNote'])->name('family.notes.store');
+        Route::delete('/family/notes/{note}', [TeachingController::class, 'destroyNote'])->name('family.notes.destroy');
+        Route::post('/family/questions/{helpRequest}/resolve', [TeachingController::class, 'resolveHelp'])->name('family.help.resolve');
     });
 
     // Admin area

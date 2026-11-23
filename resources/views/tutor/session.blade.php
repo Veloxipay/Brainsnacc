@@ -129,6 +129,23 @@
                 </form>
             @endunless
             <p class="small muted" style="margin:0">Using help is fine — it's recorded as "with help", and you'll get a fresh one to do on your own after.</p>
+            @if (\App\Models\HelpRequest::canAsk(auth()->user()))
+                @if (\App\Models\HelpRequest::where('tutor_session_id', $s->id)->open()->exists())
+                    <div class="small asked">✓ Sent to your tutor. You’ll go through this one together next session.</div>
+                @else
+                    <details class="ask-tutor">
+                        <summary class="small">Ask my real tutor about this one</summary>
+                        <form method="POST" action="{{ route('ask-tutor') }}" class="steps-form">
+                            @csrf
+                            <input type="hidden" name="tutor_session_id" value="{{ $s->id }}">
+                            <input type="hidden" name="back" value="{{ route('tutor.show', $s, false) }}">
+                            <label for="ask-real" style="margin:0">What would you like to go through? <span class="muted small">(optional)</span></label>
+                            <textarea id="ask-real" name="message" rows="2" maxlength="1000"></textarea>
+                            <div><button class="btn secondary small" type="submit">Send to my tutor</button></div>
+                        </form>
+                    </details>
+                @endif
+            @endif
         </section>
     @endif
 @endsection

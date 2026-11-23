@@ -9,6 +9,53 @@
         </div>
     </header>
 
+    @if ($homework->isNotEmpty())
+        <section class="card homework-card" aria-labelledby="hw-h">
+            <h2 id="hw-h">Homework from your tutor</h2>
+            <ul class="hw-list">
+                @foreach ($homework as $h)
+                    <li class="{{ $h->isDone() ? 'done' : ($h->isOverdue() ? 'overdue' : '') }}">
+                        <div style="flex:1 1 220px">
+                            @if ($h->isDone())
+                                <span>✓ {{ $h->lesson->title }}</span>
+                            @else
+                                <a href="{{ $h->lesson->isTest() ? route('tests.show', $h->lesson) : route('lessons.show', $h->lesson) }}" style="font-weight:600">{{ $h->lesson->isTest() ? 'Test: ' : '' }}{{ $h->lesson->title }} →</a>
+                            @endif
+                            @if ($h->note && ! $h->isDone())<div class="small muted">“{{ $h->note }}”{{ $h->setter ? ' — '.$h->setter->name : '' }}</div>@endif
+                        </div>
+                        <span class="small">
+                            @if ($h->isDone())
+                                <span class="good">Handed in</span>
+                            @elseif ($h->isOverdue())
+                                <span class="bad">Overdue · was due {{ $h->due_on->format('D j M') }}</span>
+                            @elseif ($h->due_on)
+                                Due {{ $h->due_on->isToday() ? 'today' : ($h->due_on->isTomorrow() ? 'tomorrow' : $h->due_on->format('D j M')) }}
+                            @else
+                                <span class="muted">No due date</span>
+                            @endif
+                        </span>
+                    </li>
+                @endforeach
+            </ul>
+        </section>
+    @endif
+
+    @if ($asked->isNotEmpty())
+        <section class="card" aria-labelledby="asked-h">
+            <h2 id="asked-h" style="font-size:18px">Questions for your tutor</h2>
+            <p class="small muted" style="margin:0">You’ll go through these together next session.</p>
+            @foreach ($asked as $a)
+                <div class="small">
+                    @if ($a->question)
+                        <a href="{{ route('lessons.show', $a->question->lesson_id) }}#q{{ $a->question_id }}">{{ $a->question->lesson?->title }}: {{ \Illuminate\Support\Str::limit($a->question->prompt, 70) }}</a>
+                    @elseif ($a->tutorSession)
+                        <a href="{{ route('tutor.show', $a->tutorSession) }}">Maths tutor: {{ $a->tutorSession->question }}</a>
+                    @endif
+                </div>
+            @endforeach
+        </section>
+    @endif
+
     <a class="card tutor-continue" href="{{ route('tutor.home') }}" style="flex-direction:row;flex-wrap:wrap;align-items:center;gap:16px">
         <span style="flex:1 1 260px"><strong>Stuck on maths homework?</strong><br><span class="small muted">Type the equation, work it line by line, and I'll show you exactly where it goes wrong.</span></span>
         <span class="btn secondary">Open the Maths tutor</span>

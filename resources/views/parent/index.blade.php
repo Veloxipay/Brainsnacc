@@ -23,6 +23,7 @@
                     <thead>
                         <tr>
                             <th scope="col">Student</th>
+                            <th scope="col">Needs attention</th>
                             <th scope="col">Course progress</th>
                             <th scope="col">This week</th>
                             <th scope="col">Average score</th>
@@ -37,6 +38,13 @@
                                 <td>
                                     <a href="{{ route('family.students.show', $s) }}" style="font-weight:600">{{ $s->name }}</a>
                                     <div class="small muted">{{ $s->level?->short_name ?? 'No year set' }}</div>
+                                </td>
+                                <td class="small" style="min-width:150px">
+                                    @forelse ($row['attention']['reasons'] as $reason)
+                                        <div class="attn">{{ $reason }}</div>
+                                    @empty
+                                        <span class="good">All good</span>
+                                    @endforelse
                                 </td>
                                 <td style="min-width:170px">
                                     <div class="small">{{ $row['lessonsDone'] }} of {{ $row['lessonsTotal'] }} lessons · {{ $row['percent'] }}%</div>
@@ -64,6 +72,6 @@
                 </table>
             </div>
         </section>
-        <p class="muted small" style="margin:0">Click a name to see full progress, change their year level or reset their password.</p>
+        <p class="muted small" style="margin:0">Students who need help are listed first. Click a name to set homework, write session notes, go through their questions, or change their account.</p>
     @endif
 @endsection

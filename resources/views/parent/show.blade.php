@@ -15,6 +15,161 @@
         </div>
     </header>
 
+    {{-- Before the session: what happened since the last one --}}
+    @php($sum = $summary)
+    <section class="card" aria-labelledby="since-h">
+        <h2 id="since-h" style="margin:0;font-size:20px">{{ $sum['lastNote'] ? 'Since the last session ('.$sum['lastNote']->taught_on->format('D j M').')' : 'The last 7 days' }}</h2>
+        <div class="since-grid">
+            <div><strong>{{ $sum['lessons']->count() }}</strong><span class="small muted">{{ \Illuminate\Support\Str::plural('lesson', $sum['lessons']->count()) }} finished</span></div>
+            <div><strong>{{ $sum['answered'] }}</strong><span class="small muted">questions answered{{ $sum['accuracy'] !== null ? ' · '.$sum['accuracy'].'% right' : '' }}</span></div>
+            <div><strong>{{ $sum['homeworkDone'] }}</strong><span class="small muted">homework handed in</span></div>
+            <div><strong class="{{ $sum['homeworkOverdue'] ? 'bad' : '' }}">{{ $sum['homeworkOverdue'] }}</strong><span class="small muted">homework overdue</span></div>
+            <div><strong class="{{ $sum['openQuestions'] ? 'bad' : '' }}">{{ $sum['openQuestions'] }}</strong><span class="small muted">questions to go through</span></div>
+        </div>
+        @if ($sum['lessons']->isNotEmpty())
+            <div class="small"><span class="muted">Finished:</span> {{ $sum['lessons']->pluck('title')->join(', ') }}</div>
+        @endif
+        @foreach ($sum['tests'] as $t)
+            <div class="small"><span class="muted">Test:</span> {{ $t->lesson?->title }} — <span class="score-pill {{ $t->percent() >= 75 ? 'good' : ($t->percent() >= 60 ? 'ok' : 'low') }}">{{ $t->score }}/{{ $t->total }}</span></div>
+        @endforeach
+    </section>
+
+    {{-- "Ask my tutor" --}}
+    <section class="card" id="questions" aria-labelledby="q-h">
+        <h2 id="q-h" style="margin:0;font-size:20px">Questions to go through</h2>
+        @forelse ($questions as $row)
+            @php($r = $row['request'])
+            <div class="ask-item">
+                <div class="small muted">Asked {{ $r->created_at->diffForHumans() }}</div>
+                @if ($r->message)<div class="tutor-says">“{{ $r->message }}”</div>@endif
+                @if ($r->question)
+                    @php($q = $r->question)
+                    <div><strong>{{ $q->lesson?->title }}</strong></div>
+                    <p style="margin:0;font-weight:600">{{ $q->prompt }}</p>
+                    <ul class="small opt-list">
+                        @foreach ($q->options ?? [] as $letter => $text)
+                            <li class="{{ $letter === $q->answer ? 'good' : ($row['last'] && $row['last']->answer === $letter ? 'bad' : '') }}">
+                                <strong>{{ $letter }}</strong> {{ $text }}
+                                @if ($letter === $q->answer) · correct answer @endif
+                                @if ($row['last'] && $row['last']->answer === $letter) · {{ $student->name }}’s last answer @endif
+                            </li>
+                        @endforeach
+                    </ul>
+                    @if (! empty($q->steps))
+                        <details class="small"><summary>Worked steps</summary><ol class="steps-list">@foreach ($q->steps as $step)<li>{{ $step }}</li>@endforeach</ol></details>
+                    @endif
+                @elseif ($r->tutorSession)
+                    @include('parent._working', ['session' => $r->tutorSession])
+                @endif
+                <form method="POST" action="{{ route('family.help.resolve', $r) }}">
+                    @csrf
+                    <button class="btn secondary small" type="submit">Gone through it ✓</button>
+                </form>
+            </div>
+        @empty
+            <p class="muted small" style="margin:0">Nothing yet. When {{ $student->name }} taps “Ask my tutor” on a question, it shows up here.</p>
+        @endforelse
+    </section>
+
+    {{-- Homework --}}
+    <section class="card" id="homework" aria-labelledby="hw-h">
+        <h2 id="hw-h" style="margin:0;font-size:20px">Homework</h2>
+        @if ($homework->isNotEmpty())
+            <ul class="hw-list">
+                @foreach ($homework as $h)
+                    <li class="{{ $h->isDone() ? 'done' : ($h->isOverdue() ? 'overdue' : '') }}">
+                        <div style="flex:1 1 220px">
+                            <strong>{{ $h->lesson?->isTest() ? 'Test: ' : '' }}{{ $h->lesson?->title }}</strong>
+                            <div class="small muted">Set {{ $h->created_at->format('j M') }}{{ $h->setter ? ' by '.$h->setter->name : '' }}{{ $h->note ? ' · “'.$h->note.'”' : '' }}</div>
+                        </div>
+                        <span class="small">
+                            @if ($h->isDone())
+                                <span class="good">Handed in {{ $h->completed_at->format('D j M') }}</span>
+                            @elseif ($h->isOverdue())
+                                <span class="bad">Overdue (due {{ $h->due_on->format('D j M') }})</span>
+                            @elseif ($h->due_on)
+                                Due {{ $h->due_on->format('D j M') }}
+                            @else
+                                <span class="muted">No due date</span>
+                            @endif
+                        </span>
+                        @unless ($h->isDone())
+                            <form method="POST" action="{{ route('family.homework.destroy', $h) }}" onsubmit="return confirm('Remove this homework?')">
+                                @csrf @method('DELETE')
+                                <button class="linklike small" type="submit">Remove</button>
+                            </form>
+                        @endunless
+                    </li>
+                @endforeach
+            </ul>
+        @endif
+        @if ($homeworkChoices->isEmpty())
+            <p class="muted small" style="margin:0">There are no published lessons at {{ $student->name }}’s year level yet.</p>
+        @else
+            <form method="POST" action="{{ route('family.homework.store', $student) }}" class="teach-form">
+                @csrf
+                <label>Lesson or chapter test
+                    <select name="lesson_id" required>
+                        <option value="">Choose…</option>
+                        @foreach ($homeworkChoices as $subjectName => $lessons)
+                            <optgroup label="{{ $subjectName }}">
+                                @foreach ($lessons as $l)
+                                    <option value="{{ $l->id }}" @selected(old('lesson_id') == $l->id)>{{ $l->module->unit->code }} · {{ $l->isTest() ? 'Test: ' : '' }}{{ $l->title }}</option>
+                                @endforeach
+                            </optgroup>
+                        @endforeach
+                    </select>
+                </label>
+                <label>Due date <span class="small muted">(optional)</span> <input type="date" name="due_on" value="{{ old('due_on') }}" min="{{ now()->toDateString() }}"></label>
+                <label class="wide">Note for {{ $student->name }} <span class="small muted">(optional)</span> <input name="note" maxlength="1000" value="{{ old('note') }}" placeholder="e.g. Do the hard questions too"></label>
+                <div><button class="btn" type="submit">Set homework</button></div>
+            </form>
+        @endif
+    </section>
+
+    {{-- Session notes --}}
+    <section class="card" id="notes" aria-labelledby="notes-h">
+        <h2 id="notes-h" style="margin:0;font-size:20px">Session notes</h2>
+        <form method="POST" action="{{ route('family.notes.store', $student) }}" class="teach-form">
+            @csrf
+            <label>Session date <input type="date" name="taught_on" value="{{ old('taught_on', now()->toDateString()) }}" max="{{ now()->toDateString() }}" required></label>
+            <label class="wide">What you covered, and what to work on next
+                <textarea name="body" rows="3" maxlength="3000" required placeholder="e.g. Solving two-step equations. Good with whole numbers, struggles with negatives. Revise 3B before next week.">{{ old('body') }}</textarea>
+            </label>
+            <div><button class="btn" type="submit">Save note</button></div>
+        </form>
+        <p class="small muted" style="margin:0">Everyone who looks after {{ $student->name }} (parents and tutors) can read these notes.</p>
+        @foreach ($notes as $n)
+            <article class="note">
+                <div class="row between small">
+                    <strong>{{ $n->taught_on->format('l j M Y') }}</strong>
+                    <span class="muted">{{ $n->author?->name ?? 'Former tutor' }}</span>
+                </div>
+                <div style="white-space:pre-line">{{ $n->body }}</div>
+                @if (auth()->user()->isAdmin() || $n->author_id === auth()->id())
+                    <form method="POST" action="{{ route('family.notes.destroy', $n) }}" onsubmit="return confirm('Delete this note?')">
+                        @csrf @method('DELETE')
+                        <button class="linklike small" type="submit">Delete</button>
+                    </form>
+                @endif
+            </article>
+        @endforeach
+    </section>
+
+    {{-- The student's own working in the Maths tutor --}}
+    @if ($tutorSessions->isNotEmpty())
+        <section class="card" aria-labelledby="work-h">
+            <h2 id="work-h" style="margin:0;font-size:20px">Recent working in the Maths tutor</h2>
+            <p class="small muted" style="margin:0">Every line {{ $student->name }} typed. Wrong lines are in red, with what the tutor found.</p>
+            @foreach ($tutorSessions as $ts)
+                <details class="working-item" @if ($loop->first) open @endif>
+                    <summary><strong>{{ $ts->question }}</strong> <span class="small muted">· {{ $ts->created_at->diffForHumans() }} · {{ $ts->status === 'solved' ? ($ts->help_used ? 'solved with help' : 'solved on their own') : ($ts->status === 'left' ? 'left unfinished' : 'still working') }}</span></summary>
+                    @include('parent._working', ['session' => $ts])
+                </details>
+            @endforeach
+        </section>
+    @endif
+
     <div class="grid-2">
         @foreach ($subjects as $row)
             @php($pct = $row['total'] ? (int) round($row['done'] / $row['total'] * 100) : 0)

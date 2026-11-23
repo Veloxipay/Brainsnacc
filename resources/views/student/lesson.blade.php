@@ -55,18 +55,21 @@
             <section class="slide" data-title="Finish">
                 <h2>{{ $completed ? 'Lesson done ✓' : 'Nearly there!' }}</h2>
                 <p class="muted" style="margin:0">About {{ $lesson->minutes }} minutes · {{ $questions->count() }} practice questions</p>
-                @if ($completed)
-                    <p class="good" style="margin:0">You’ve finished this lesson.</p>
-                @elseif ($lesson->isPublished())
+                @if ($homework)
+                    <div class="homework-note" role="note">
+                        <strong>This is homework{{ $homework->setter ? ' from '.$homework->setter->name : '' }}</strong>{{ $homework->due_on ? ' · due '.$homework->due_on->format('l j M') : '' }}
+                        @if ($homework->note)<div class="small">“{{ $homework->note }}”</div>@endif
+                    </div>
+                @endif
+                @if ($lesson->isPublished() && ($homework || ! $completed))
+                    @if ($completed)<p class="good" style="margin:0">You finished this lesson before. Go through it again, then hand it in.</p>@endif
                     <form method="POST" action="{{ route('lessons.complete', $lesson) }}">
                         @csrf
-                        <button class="btn" type="submit">Mark lesson as done</button>
+                        <button class="btn" type="submit">{{ $homework ? 'Hand in homework' : 'Mark lesson as done' }}</button>
                     </form>
+                @elseif ($completed)
+                    <p class="good" style="margin:0">You’ve finished this lesson.</p>
                 @endif
-                <div class="card" style="background:var(--ground)">
-                    <strong>Ask the tutor</strong>
-                    <span class="muted small">The AI tutor is coming in the next stage. It will give hints first, then full explanations once you’ve tried.</span>
-                </div>
                 <div class="row between">
                     @if ($previous)<a href="{{ route('lessons.show', $previous) }}" style="font-weight:600">← {{ $previous->title }}</a>@else<span></span>@endif
                     @if ($nextLesson)<a class="btn" href="{{ route('lessons.show', $nextLesson) }}">Next lesson: {{ $nextLesson->title }} →</a>@endif

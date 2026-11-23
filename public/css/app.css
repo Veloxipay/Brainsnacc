@@ -378,3 +378,29 @@ tr[hidden] { display: none; }
 .exam-timer { position: sticky; top: 8px; z-index: 5; align-self: flex-end; background: #0F8A7E; color: #fff; font-weight: 700; padding: 8px 16px; border-radius: 999px; font-variant-numeric: tabular-nums; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
 .exam-timer.low { background: #B42318; }
 .passages { max-height: 70vh; overflow: auto; }
+
+/* Teaching: homework, session notes, "Ask my tutor", tutor's student page */
+.hw-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.hw-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.hw-list li:first-child { border-top: 0; padding-top: 0; }
+.hw-list li.done { color: var(--muted); }
+.hw-list li.overdue { background: var(--bad-tint); margin: 0 -12px; padding: 12px; border-radius: 10px; border-top: 0; }
+.homework-card { border-left: 4px solid var(--brand-orange); }
+.homework-note { background: var(--bio-tint); border-radius: 12px; padding: 12px 16px; }
+.ask-tutor summary { cursor: pointer; color: var(--chem); font-weight: 600; min-height: 32px; display: flex; align-items: center; }
+.ask-tutor[open] summary { margin-bottom: 8px; }
+.asked { color: var(--good); font-weight: 600; }
+.attn { color: var(--bad); font-weight: 600; }
+.since-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
+.since-grid > div { background: var(--ground); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; }
+.since-grid strong { font-family: 'Space Grotesk', Inter, sans-serif; font-size: 26px; line-height: 1.1; }
+.ask-item { border-top: 1px solid var(--line); padding-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+.ask-item:first-of-type { border-top: 0; padding-top: 0; }
+.opt-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.teach-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; align-items: end; }
+.teach-form .wide { grid-column: 1 / -1; }
+.teach-form > div { grid-column: 1 / -1; }
+.note { border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-direction: column; gap: 6px; }
+.working-item summary { cursor: pointer; min-height: 40px; }
+.working-lines { margin: 8px 0 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.working-lines code { font-size: 15px; }

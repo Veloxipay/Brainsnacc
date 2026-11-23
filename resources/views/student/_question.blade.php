@@ -123,4 +123,22 @@
             <div><button class="btn secondary" type="submit">Check my steps</button></div>
         </form>
     @endif
+
+    @if (\App\Models\HelpRequest::canAsk(auth()->user()))
+        @if (in_array($question->id, \App\Models\HelpRequest::openQuestionIds(auth()->user()), true))
+            <div class="small asked">✓ Sent to your tutor. You’ll go through this one together next session.</div>
+        @else
+            <details class="ask-tutor">
+                <summary class="small">Ask my tutor about this</summary>
+                <form method="POST" action="{{ route('ask-tutor') }}" class="steps-form">
+                    @csrf
+                    <input type="hidden" name="question_id" value="{{ $question->id }}">
+                    <input type="hidden" name="back" value="{{ request()->getRequestUri() }}#q{{ $question->id }}">
+                    <label for="ask{{ $question->id }}" style="margin:0">What would you like to go through? <span class="muted small">(optional)</span></label>
+                    <textarea id="ask{{ $question->id }}" name="message" rows="2" maxlength="1000" placeholder="e.g. I don't get why you divide by 3 here"></textarea>
+                    <div><button class="btn secondary small" type="submit">Send to my tutor</button></div>
+                </form>
+            </details>
+        @endif
+    @endif
 </section>

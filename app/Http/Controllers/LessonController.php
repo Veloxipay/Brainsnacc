@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Homework;
 use App\Models\Lesson;
 use App\Models\Question;
 use App\Models\QuestionAttempt;
@@ -36,6 +37,7 @@ class LessonController extends Controller
             'position' => $index !== false ? $index + 1 : null,
             'count' => $siblings->count(),
             'completed' => $request->user()->completedLessons()->where('lessons.id', $lesson->id)->exists(),
+            'homework' => Homework::where('student_id', $request->user()->id)->where('lesson_id', $lesson->id)->open()->with('setter')->first(),
         ]);
     }
 
@@ -46,8 +48,9 @@ class LessonController extends Controller
         $request->user()->completedLessons()->syncWithoutDetaching([
             $lesson->id => ['completed_at' => now()],
         ]);
+        $handedIn = Homework::handIn($request->user(), $lesson);
 
-        return back()->with('status', 'Lesson marked as done.');
+        return back()->with('status', $handedIn ? 'Homework handed in. Well done!' : 'Lesson marked as done.');
     }
 
     public function answer(Request $request, Question $question): RedirectResponse

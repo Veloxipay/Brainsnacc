@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HelpRequest;
+use App\Models\Homework;
 use App\Models\Level;
 use App\Models\QuestionAttempt;
 use App\Models\Subject;
@@ -84,6 +86,12 @@ class DashboardController extends Controller
             'weak' => Progress::weakLessons($student),
             'mistakes' => $mistakes,
             'mistakeLessons' => $mistakeLessons,
+            // Homework: everything still open, plus what was handed in during the last week.
+            'homework' => Homework::where('student_id', $student->id)
+                ->where(fn ($q) => $q->whereNull('completed_at')->orWhere('completed_at', '>=', now()->subDays(7)))
+                ->with(['lesson', 'setter'])->get()
+                ->sortBy(fn ($h) => [$h->isDone() ? 1 : 0, $h->due_on?->timestamp ?? PHP_INT_MAX, $h->id])->values(),
+            'asked' => HelpRequest::where('student_id', $student->id)->open()->with(['question.lesson', 'tutorSession'])->latest('id')->get(),
         ]);
     }
 }

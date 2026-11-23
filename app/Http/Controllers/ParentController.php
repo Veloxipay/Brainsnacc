@@ -2,16 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HelpRequest;
+use App\Models\Homework;
+use App\Models\Lesson;
 use App\Models\Level;
+use App\Models\SessionNote;
+use App\Models\TutorSession;
 use App\Models\MockExamAttempt;
 use App\Models\QuestionAttempt;
 use App\Models\Subject;
 use App\Models\User;
 use App\Support\MockExams;
 use App\Support\Progress;
+use App\Support\Teaching;
+use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
 use Illuminate\View\View;
@@ -47,24 +55,62 @@ class ParentController extends Controller
     {
         $since = now()->startOfWeek(CarbonInterface::MONDAY);
         $subjects = Subject::orderBy('name')->get();
+        $students = $this->students($request->user());
+        $ids = $students->pluck('id')->all();
 
-        $rows = $this->students($request->user())->map(function (User $s) use ($since, $subjects) {
-            $done = Progress::completedIds($s);
-            $total = $subjects->sum(fn ($sub) => Progress::lessonsFor($sub, $s->level)->count());
-            $last = QuestionAttempt::where('user_id', $s->id)->latest('id')->first()?->created_at;
+        // A handful of grouped queries for the whole list, so the page stays quick with many students.
+        $doneAll = DB::table('lesson_progress')->whereIn('user_id', $ids)
+            ->selectRaw('user_id, count(*) as n')->groupBy('user_id')->pluck('n', 'user_id');
+        $doneWeek = DB::table('lesson_progress')->whereIn('user_id', $ids)->where('completed_at', '>=', $since)
+            ->selectRaw('user_id, count(*) as n')->groupBy('user_id')->pluck('n', 'user_id');
+        $answers = QuestionAttempt::whereIn('user_id', $ids)
+            ->selectRaw('user_id, count(*) as total, sum(case when is_correct then 1 else 0 end) as right_answers, sum(case when created_at >= ? then 1 else 0 end) as week, max(created_at) as last_at', [$since])
+            ->groupBy('user_id')->get()->keyBy('user_id');
+        $weakRows = DB::table('question_attempts')->join('questions', 'questions.id', '=', 'question_attempts.question_id')
+            ->whereIn('question_attempts.user_id', $ids)
+            ->selectRaw('question_attempts.user_id as user_id, questions.lesson_id as lesson_id, count(*) as total, sum(case when question_attempts.is_correct then 1 else 0 end) as right_answers')
+            ->groupBy('question_attempts.user_id', 'questions.lesson_id')
+            ->havingRaw('count(*) >= 3')->get()
+            ->each(function ($r) {
+                $r->score = (int) round($r->right_answers / $r->total * 100);
+            })
+            ->filter(fn ($r) => $r->score < 60);
+        $weakLessons = Lesson::whereIn('id', $weakRows->pluck('lesson_id')->unique())->get()->keyBy('id');
+        $totals = [];
+
+        $stats = [];
+        foreach ($students as $s) {
+            $a = $answers[$s->id] ?? null;
+            $stats[$s->id] = [
+                'accuracy' => $a && $a->total ? (int) round($a->right_answers / $a->total * 100) : null,
+                'lastActive' => $a?->last_at ? Carbon::parse($a->last_at) : null,
+            ];
+        }
+        $attention = Teaching::attention($students, $stats);
+
+        $rows = $students->map(function (User $s) use ($subjects, $doneAll, $doneWeek, $answers, $weakRows, $weakLessons, &$totals, $stats, $attention) {
+            $levelKey = $s->level_id ?? 0;
+            $totals[$levelKey] ??= $subjects->sum(fn ($sub) => Progress::lessonsFor($sub, $s->level)->count());
+            $total = $totals[$levelKey];
+            $done = (int) ($doneAll[$s->id] ?? 0);
 
             return [
                 'student' => $s,
-                'lessonsDone' => $done->count(),
+                'lessonsDone' => $done,
                 'lessonsTotal' => $total,
-                'percent' => $total ? (int) round(min($done->count(), $total) / $total * 100) : 0,
-                'lessonsThisWeek' => $s->completedLessons()->wherePivot('completed_at', '>=', $since)->count(),
-                'questionsThisWeek' => QuestionAttempt::where('user_id', $s->id)->where('created_at', '>=', $since)->count(),
-                'accuracy' => Progress::accuracy($s),
-                'lastActive' => $last,
-                'weak' => Progress::weakLessons($s, 2),
+                'percent' => $total ? (int) round(min($done, $total) / $total * 100) : 0,
+                'lessonsThisWeek' => (int) ($doneWeek[$s->id] ?? 0),
+                'questionsThisWeek' => (int) ($answers[$s->id]->week ?? 0),
+                'accuracy' => $stats[$s->id]['accuracy'],
+                'lastActive' => $stats[$s->id]['lastActive'],
+                'weak' => $weakRows->where('user_id', $s->id)->sortBy('score')->take(2)
+                    ->map(fn ($r) => ['lesson' => $weakLessons[$r->lesson_id] ?? null, 'score' => $r->score])
+                    ->filter(fn ($w) => $w['lesson'])->values(),
+                'attention' => $attention[$s->id] ?? ['score' => 0, 'reasons' => []],
             ];
-        });
+        })
+            // Students who need help first, then by name.
+            ->sortBy(fn ($r) => [-$r['attention']['score'], $r['student']->name])->values();
 
         return view('parent.index', ['rows' => $rows, 'since' => $since, 'me' => $request->user()]);
     }
@@ -127,7 +173,30 @@ class ParentController extends Controller
             'days' => $days,
             'exams' => $exams,
             'levels' => Level::orderBy('sort')->get(),
+            // Teaching
+            'summary' => Teaching::sinceLastSession($student),
+            'homework' => Homework::where('student_id', $student->id)->with(['lesson', 'setter'])
+                ->orderByRaw('completed_at is not null')->latest('id')->limit(30)->get(),
+            'homeworkChoices' => $subjects->mapWithKeys(fn ($row) => [
+                $row['subject']->name => Progress::lessonsFor($row['subject'], $student->level),
+            ])->filter(fn ($lessons) => $lessons->isNotEmpty()),
+            'notes' => SessionNote::where('student_id', $student->id)->with('author')
+                ->orderByDesc('taught_on')->orderByDesc('id')->limit(20)->get(),
+            'questions' => $this->openQuestions($student),
+            'tutorSessions' => TutorSession::where('user_id', $student->id)->with('lines')->latest('id')->limit(5)->get(),
         ]);
+    }
+
+    /** The student's "Ask my tutor" questions, with the answer they last gave. */
+    private function openQuestions(User $student)
+    {
+        $requests = HelpRequest::where('student_id', $student->id)->open()
+            ->with(['question.lesson', 'tutorSession.lines'])->oldest('id')->get();
+        $lastAnswers = QuestionAttempt::where('user_id', $student->id)
+            ->whereIn('question_id', $requests->pluck('question_id')->filter())
+            ->orderBy('id')->get()->keyBy('question_id');
+
+        return $requests->map(fn (HelpRequest $r) => ['request' => $r, 'last' => $r->question_id ? ($lastAnswers[$r->question_id] ?? null) : null]);
     }
 
     public function update(Request $request, User $student): RedirectResponse
