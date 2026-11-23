@@ -21,6 +21,9 @@
     <div class="deck" data-deck data-lesson="{{ $lesson->id }}" style="--accent: {{ $subject->color }}">
         <header class="deck-top">
             <h1 class="deck-title">{{ $lesson->title }}</h1>
+            @if ($questions->count() >= 2)
+                <a class="btn secondary small" href="{{ route('teach.show', $lesson) }}">Teach me step by step</a>
+            @endif
             <label class="deck-jump">
                 <span class="sr-only">Jump to</span>
                 <select data-deck-menu aria-label="Jump to a part of the lesson"></select>

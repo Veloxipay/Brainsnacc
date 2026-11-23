@@ -404,3 +404,45 @@ tr[hidden] { display: none; }
 .working-item summary { cursor: pointer; min-height: 40px; }
 .working-lines { margin: 8px 0 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
 .working-lines code { font-size: 15px; }
+
+/* Teach me: watch and write, your turn, more steps, mix, quick test */
+.teach { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: flex; flex-direction: column; overflow: hidden; }
+.teach-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 28px 12px; }
+.teach-tools .toggle { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; min-height: 44px; }
+.teach-path { list-style: none; margin: 0; padding: 0 28px 14px; display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line); }
+.teach-path li { font-size: 13px; padding: 6px 12px; border-radius: 999px; background: var(--ground); color: var(--muted); }
+.teach-path li.on { background: var(--accent, var(--chem)); color: #fff; font-weight: 600; }
+.teach-stage { padding: 24px 28px; outline: none; }
+.tstep { display: flex; flex-direction: column; gap: 14px; }
+.tstep[hidden] { display: none; }
+.t-prompt { margin: 0; font-size: 19px; font-weight: 600; }
+.board { background: #1F3B2F; color: #F4F1E6; border-radius: 14px; padding: 18px 22px; display: flex; flex-direction: column; gap: 6px; min-height: 120px; margin: 0; box-shadow: inset 0 0 0 6px #6B4A2E; }
+.board-line { display: flex; gap: 14px; align-items: baseline; }
+.board-line[hidden] { display: none; }
+.board-n { font-size: 14px; opacity: .6; min-width: 18px; }
+.board .ink, .ink { font-family: Caveat, 'Comic Sans MS', cursive; font-size: 28px; line-height: 1.25; }
+.board-answer .ink { color: #FFD66B; }
+.board-line.writing .ink { animation: write-in 1.1s steps(28, end) both; display: inline-block; }
+@keyframes write-in { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@media (prefers-reduced-motion: reduce) { .board-line.writing .ink { animation: none; } }
+.board-small { padding: 12px 16px 12px 36px; min-height: 0; }
+.board-small .ink { font-size: 24px; }
+.t-answer input { font-size: 20px; }
+.t-choices { display: flex; flex-direction: column; gap: 8px; }
+.t-choices .option { text-align: left; font: inherit; }
+.t-feedback { border-radius: 12px; padding: 12px 16px; background: var(--ground); display: flex; flex-direction: column; gap: 8px; }
+.t-feedback.right { background: var(--good-tint); }
+.t-feedback.wrong { background: var(--bad-tint); }
+[data-mic].listening { border-color: var(--bad); color: var(--bad); }
+.t-score { font-family: 'Space Grotesk', Inter, sans-serif; font-size: 24px; font-weight: 600; margin: 0; }
+.t-review { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.pad-wrap { padding: 0 28px 16px; }
+.pad-wrap summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+.pad { width: 100%; height: 260px; border: 1px dashed var(--line-strong); border-radius: 12px; background: #fff; touch-action: none; display: block; margin-bottom: 8px; }
+.teach-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 28px; border-top: 1px solid var(--line); }
+@media (max-width: 760px) {
+  .teach-top, .teach-stage, .teach-bar, .pad-wrap { padding-left: 16px; padding-right: 16px; }
+  .teach-path { padding: 0 16px 12px; }
+  .board .ink { font-size: 24px; }
+}
+.t-choices[hidden], .t-feedback[hidden], .teach [hidden] { display: none; }

@@ -71,7 +71,12 @@
                 <h2 id="next-h" style="font-family:'Space Grotesk',sans-serif;font-size:24px">Up next: {{ $next->title }}</h2>
                 <p class="muted" style="margin:0">{{ $next->summary }} About {{ $next->minutes }} minutes.</p>
             </div>
-            <a class="btn" href="{{ route('lessons.show', $next) }}">Start lesson</a>
+            <div class="row" style="gap:10px;flex-wrap:wrap">
+                <a class="btn" href="{{ route('lessons.show', $next) }}">Start lesson</a>
+                @unless ($next->isTest())
+                    <a class="btn secondary" href="{{ route('teach.show', $next) }}">Teach me step by step</a>
+                @endunless
+            </div>
         </section>
     @else
         <section class="card">

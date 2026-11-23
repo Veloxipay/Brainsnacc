@@ -87,4 +87,16 @@ class TeachingTest extends TestCase
         $alone = User::factory()->create(['role' => User::ROLE_STUDENT, 'level_id' => $this->student->level_id]);
         $this->actingAs($alone)->get(route('lessons.show', $this->lesson))->assertDontSee('Ask my tutor about this');
     }
+
+    public function test_teach_me_runs_and_checks_spoken_answers(): void
+    {
+        $q = $this->lesson->questions()->first();
+        $this->actingAs($this->student)->get(route('teach.show', $this->lesson))->assertOk()
+            ->assertSee('Watch me do one')->assertSee('Quick test');
+        $this->postJson(route('teach.check', $q), ['said' => 'I got four', 'mode' => 'try'])
+            ->assertOk()->assertJson(['result' => 'correct', 'answer' => '4']);
+        $this->postJson(route('teach.check', $q), ['said' => 'banana', 'mode' => 'try'])->assertJson(['result' => 'unmatched']);
+        $this->postJson(route('teach.check', $q), ['letter' => 'A', 'mode' => 'test'])->assertJson(['result' => 'wrong', 'given' => '3']);
+        $this->assertSame(2, \App\Models\QuestionAttempt::where('user_id', $this->student->id)->count());
+    }
 }

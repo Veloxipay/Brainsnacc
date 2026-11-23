@@ -15,6 +15,7 @@ use App\Http\Controllers\LessonController;
 use App\Http\Controllers\MockExamController;
 use App\Http\Controllers\ParentController;
 use App\Http\Controllers\PastPaperController;
+use App\Http\Controllers\TeachController;
 use App\Http\Controllers\TeachingController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\TutorController;
@@ -71,6 +72,9 @@ Route::middleware('auth')->group(function () {
             Route::get('/photo', [TutorController::class, 'photo'])->name('photo');
             Route::post('/photo', [TutorController::class, 'readPhoto'])->middleware('throttle:10,1')->name('photo.read');
         });
+        // "Teach me": worked example, your turn, more steps, mixed, quick test
+        Route::get('/lessons/{lesson}/teach', [TeachController::class, 'show'])->name('teach.show');
+        Route::post('/teach/check/{question}', [TeachController::class, 'check'])->middleware('throttle:60,1')->name('teach.check');
         // "Ask my tutor": flag a question to go through next session
         Route::post('/ask-tutor', [AskTutorController::class, 'store'])->middleware('throttle:20,1')->name('ask-tutor');
         Route::get('/past-papers', [PastPaperController::class, 'index'])->name('past-papers');
