@@ -41,7 +41,7 @@ class MathsQuestionsTest extends TestCase
         $this->assertSame('easy', $lesson->questions->sortBy('sort')->first()->difficulty);
         $this->assertSame('challenge', $lesson->questions->sortBy('sort')->last()->difficulty);
 
-        $this->actingAs($this->year8())->get(route('lessons.show', $lesson))
+        $this->actingAs($this->year8())->get(route('lessons.practice', $lesson))
             ->assertOk()->assertSee('Easy')->assertSee('Challenge');
     }
 
@@ -54,14 +54,14 @@ class MathsQuestionsTest extends TestCase
 
         $this->actingAs($student)->post(route('questions.answer', $q), ['answer' => $wrong])
             ->assertRedirect();
-        $this->get(route('lessons.show', $lesson))->assertSee('What steps did you follow?');
+        $this->get(route('lessons.practice', $lesson))->assertSee('What steps did you follow?');
 
         $this->post(route('questions.steps', $q), ['answer' => $wrong, 'steps' => "360 / 9 = 40\n4 x 40 = 160"])
             ->assertRedirect();
         $check = StepCheck::firstOrFail();
         $this->assertSame('guide', $check->source);
         $this->assertStringContainsString('smaller share', $check->feedback);
-        $this->get(route('lessons.show', $lesson))->assertSee('smaller share');
+        $this->get(route('lessons.practice', $lesson))->assertSee('smaller share');
     }
 
     public function test_steps_cannot_be_checked_for_the_right_answer(): void
@@ -80,7 +80,7 @@ class MathsQuestionsTest extends TestCase
         foreach (range(1, 4) as $i) {
             $this->post(route('questions.hint', $q))->assertRedirect();
         }
-        $page = $this->get(route('lessons.show', $lesson))->assertSee($q->steps[0])->assertSee($q->steps[1]);
+        $page = $this->get(route('lessons.practice', $lesson))->assertSee($q->steps[0])->assertSee($q->steps[1]);
         $page->assertDontSee($q->steps[2]);
         $page->assertSee('the last step is yours');
 
@@ -97,7 +97,7 @@ class MathsQuestionsTest extends TestCase
         $lesson = Lesson::where('title', 'Year 8 Maths challenge')->firstOrFail();
         $q = $lesson->questions->first();
         $this->actingAs($student)->post(route('questions.explain', $q));
-        $this->get(route('lessons.show', $lesson))->assertSee('What this question is asking');
+        $this->get(route('lessons.practice', $lesson))->assertSee('What this question is asking');
         $this->post(route('questions.answer', $q), ['answer' => $q->answer]);
         $this->assertSame(1, \App\Models\QuestionAttempt::latest('id')->value('help_used'));
     }
@@ -106,7 +106,7 @@ class MathsQuestionsTest extends TestCase
     {
         $y7 = User::factory()->create(['role' => User::ROLE_STUDENT, 'level_id' => Level::where('short_name', 'Year 7')->value('id')]);
         $lesson = Lesson::where('title', 'Year 7 Maths challenge')->firstOrFail();
-        $this->actingAs($y7)->get(route('lessons.show', $lesson))->assertSee('Work it out line by line');
+        $this->actingAs($y7)->get(route('lessons.practice', $lesson))->assertSee('Work it out line by line');
         $q = $lesson->questions->first(fn ($q) => str_contains($q->prompt, 'x/3'));
         $this->assertSame('x/3 − 2 = 5', \App\Support\QuestionHelp::tutorEquation($q));
     }
@@ -148,7 +148,7 @@ class MathsQuestionsTest extends TestCase
         $q = $lesson->questions->first();
         $q->update(['diagram' => 'diagrams/test/angle.svg', 'diagram_alt' => 'An angle of 65 degrees marked x']);
 
-        $this->actingAs($this->year8())->get(route('lessons.show', $lesson))
+        $this->actingAs($this->year8())->get(route('lessons.practice', $lesson))
             ->assertOk()->assertSee('diagrams/test/angle.svg', false)->assertSee('An angle of 65 degrees marked x');
     }
 }

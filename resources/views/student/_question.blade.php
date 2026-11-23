@@ -61,7 +61,7 @@
     @if ($mine && ! empty($mine['suggest']))
         <div class="level-suggest" role="status">
             {{ $mine['suggest']['text'] }}
-            <a href="{{ route('lessons.show', $question->lesson_id) }}#q{{ $mine['suggest']['target'] }}">Go to it →</a>
+            <a href="{{ route('lessons.practice', $question->lesson_id) }}#q{{ $mine['suggest']['target'] }}">Go to it →</a>
         </div>
     @endif
 

@@ -21,9 +21,6 @@
     <div class="deck" data-deck data-lesson="{{ $lesson->id }}" style="--accent: {{ $subject->color }}">
         <header class="deck-top">
             <h1 class="deck-title">{{ $lesson->title }}</h1>
-            @if ($questions->count() >= 2)
-                <a class="btn secondary small" href="{{ route('teach.show', $lesson) }}">Teach me step by step</a>
-            @endif
             <label class="deck-jump">
                 <span class="sr-only">Jump to</span>
                 <select data-deck-menu aria-label="Jump to a part of the lesson"></select>
@@ -64,7 +61,10 @@
                         @if ($homework->note)<div class="small">“{{ $homework->note }}”</div>@endif
                     </div>
                 @endif
-                @if ($lesson->isPublished() && ($homework || ! $completed))
+                @if ($stepByStep)
+                    <p class="muted" style="margin:0">Fixed your mistakes? Go back to the lesson to finish it step by step.</p>
+                    <div><a class="btn" href="{{ route('lessons.show', $lesson) }}">Back to the lesson</a></div>
+                @elseif ($lesson->isPublished() && ($homework || ! $completed))
                     @if ($completed)<p class="good" style="margin:0">You finished this lesson before. Go through it again, then hand it in.</p>@endif
                     <form method="POST" action="{{ route('lessons.complete', $lesson) }}">
                         @csrf

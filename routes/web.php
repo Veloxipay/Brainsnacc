@@ -45,6 +45,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'student'])->name('dashboard');
         Route::get('/course/{subject}', [CourseController::class, 'show'])->name('course');
         Route::get('/lessons/{lesson}', [LessonController::class, 'show'])->name('lessons.show');
+        Route::get('/lessons/{lesson}/practice', [LessonController::class, 'practice'])->name('lessons.practice');
         Route::post('/lessons/{lesson}/complete', [LessonController::class, 'complete'])->name('lessons.complete');
         Route::post('/questions/{question}/answer', [LessonController::class, 'answer'])->name('questions.answer');
         Route::post('/questions/{question}/hint', [LessonController::class, 'hint'])->middleware('throttle:60,1')->name('questions.hint');
@@ -72,8 +73,8 @@ Route::middleware('auth')->group(function () {
             Route::get('/photo', [TutorController::class, 'photo'])->name('photo');
             Route::post('/photo', [TutorController::class, 'readPhoto'])->middleware('throttle:10,1')->name('photo.read');
         });
-        // "Teach me": worked example, your turn, more steps, mixed, quick test
-        Route::get('/lessons/{lesson}/teach', [TeachController::class, 'show'])->name('teach.show');
+        // Step-by-step lessons check "What answer did you get?" here
+        Route::redirect('/lessons/{lesson}/teach', '/lessons/{lesson}');
         Route::post('/teach/check/{question}', [TeachController::class, 'check'])->middleware('throttle:60,1')->name('teach.check');
         // "Ask my tutor": flag a question to go through next session
         Route::post('/ask-tutor', [AskTutorController::class, 'store'])->middleware('throttle:20,1')->name('ask-tutor');

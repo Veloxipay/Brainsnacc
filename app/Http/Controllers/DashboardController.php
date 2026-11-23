@@ -71,7 +71,7 @@ class DashboardController extends Controller
                     'count' => $rows->count(),
                     'url' => $first['wrong'] >= 2
                         ? route('questions.help', $first['question'])
-                        : route('lessons.show', $first['question']->lesson_id).'#q'.$first['question']->id,
+                        : route('lessons.practice', $first['question']->lesson_id).'#q'.$first['question']->id,
                     'needsHelp' => $first['wrong'] >= 2,
                 ];
             })

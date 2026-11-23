@@ -1,19 +1,23 @@
 @extends('layouts.app')
-@section('title', 'Teach me: '.$lesson->title)
+@section('title', $lesson->title)
 
 @section('content')
     @php($unit = $lesson->module->unit)
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 
+    @php($slides = $lesson->slides())
     <div class="row small muted">
-        <a href="{{ route('lessons.show', $lesson) }}" style="font-weight:600">← Back to the lesson</a>
-        <span>{{ $subject->name }} · {{ $unit->level->short_name }} · {{ $unit->code }}</span>
+        <a href="{{ route('course', [$subject, 'level' => $unit->level_id]) }}" style="font-weight:600">← Course map</a>
+        <span>{{ $subject->name }} · {{ $unit->level->short_name }} · {{ $unit->code }} · {{ $lesson->module->title }}</span>
     </div>
+    @unless ($lesson->isPublished())
+        <div class="errors">Draft — students can’t see this lesson yet.</div>
+    @endunless
 
-    <div class="teach" data-teach data-csrf="{{ csrf_token() }}" style="--accent: {{ $subject->color }}">
+    <div class="teach" data-teach data-csrf="{{ csrf_token() }}" data-lesson="{{ $lesson->id }}" style="--accent: {{ $subject->color }}">
         <header class="teach-top">
             <div>
-                <p class="small muted" style="margin:0">Teach me step by step</p>
+                <p class="small muted" style="margin:0">Step by step</p>
                 <h1 class="deck-title">{{ $lesson->title }}</h1>
             </div>
             <div class="teach-tools">
@@ -21,6 +25,7 @@
             </div>
         </header>
         <ol class="teach-path" aria-label="Where you are">
+            @if ($lesson->video || $slides)<li data-path="topic">The topic</li>@endif
             @foreach ($plan['stages'] as $i => $stage)
                 <li data-path="stage{{ $i }}">{{ $i + 1 }}. {{ $stage['title'] }}</li>
             @endforeach
@@ -28,9 +33,31 @@
             @if ($plan['test']->isNotEmpty())<li data-path="test">Quick test</li>@endif
         </ol>
 
-        <noscript><p class="errors">“Teach me” needs JavaScript turned on. You can still use the normal lesson.</p></noscript>
+        <noscript><p class="errors">This lesson needs JavaScript turned on in your browser.</p></noscript>
 
         <div class="teach-stage" data-stage tabindex="-1">
+            {{-- 0: the topic — video and the lesson, read first --}}
+            @if ($homework)
+                <div class="homework-note" role="note" style="margin-bottom:16px">
+                    <strong>This is homework{{ $homework->setter ? ' from '.$homework->setter->name : '' }}</strong>{{ $homework->due_on ? ' · due '.$homework->due_on->format('l j M') : '' }}
+                    @if ($homework->note)<div class="small">“{{ $homework->note }}”</div>@endif
+                </div>
+            @endif
+            @if ($lesson->video)
+                <section class="tstep" data-kind="read" data-path="topic" hidden>
+                    <h2>Watch first</h2>
+                    <figure class="lesson-video">
+                        <video controls preload="metadata" playsinline src="{{ asset($lesson->video) }}"></video>
+                    </figure>
+                </section>
+            @endif
+            @foreach ($slides as $slide)
+                <section class="tstep lesson-body" data-kind="read" data-path="topic" hidden>
+                    <h2>{{ $slide['section'] }}</h2>
+                    {!! $slide['html'] !!}
+                </section>
+            @endforeach
+
             {{-- 1–3: watch and write, then your turn --}}
             @foreach ($plan['stages'] as $i => $stage)
                 @php($ex = $stage['example'])
@@ -84,12 +111,12 @@
                 <p class="t-score" data-score></p>
                 <ul class="t-review" data-review></ul>
                 @if ($lesson->isPublished())
-                    <form method="POST" action="{{ route('lessons.complete', $lesson) }}">
+                    <form method="POST" action="{{ route('lessons.complete', $lesson) }}" data-finish>
                         @csrf
-                        <button class="btn" type="submit">{{ $homework ? 'Hand in homework' : 'Mark lesson as done' }}</button>
+                        <button class="btn" type="submit">{{ $homework ? 'Hand in homework' : 'Finish the lesson' }}</button>
                     </form>
                 @endif
-                <a href="{{ route('lessons.show', $lesson) }}">Back to the lesson →</a>
+                @if ($nextLesson)<a href="{{ route('lessons.show', $nextLesson) }}">Next lesson: {{ $nextLesson->title }} →</a>@endif
             </section>
         </div>
 
@@ -115,6 +142,8 @@
         var voiceBox = root.querySelector('[data-voice]');
         var csrf = root.dataset.csrf;
         var current = 0, results = [];
+        var saveKey = 'brainsnacc-steps-' + root.dataset.lesson;
+        function save() { try { localStorage.setItem(saveKey, JSON.stringify({ at: current, results: results })); } catch (e) {} }
 
         /* ---- voice out: the browser's own voice, Australian if there is one ---- */
         var synth = window.speechSynthesis, voice = null;
@@ -172,6 +201,9 @@
             if (s.dataset.kind === 'learn' && s.dataset.started !== '1') say(s.querySelector('.t-prompt').textContent);
             if (s.dataset.kind === 'info') say(s.querySelector('h2').textContent + '. ' + s.querySelector('p').textContent);
             if (s.dataset.kind === 'end') finish(s);
+            var hw = root.querySelector('.homework-note'); if (hw) hw.hidden = current !== 0;
+            root.querySelectorAll('video').forEach(function (v) { if (!s.contains(v)) v.pause(); });
+            save();
         }
         prev.addEventListener('click', function () { show(current - 1); });
         next.addEventListener('click', function () { if (canLeave(steps[current])) show(current + 1); });
@@ -236,7 +268,9 @@
                 next.disabled = false;
                 form.querySelectorAll('input,button').forEach(function (el) { el.disabled = true; });
                 choices.querySelectorAll('button').forEach(function (el) { el.disabled = true; });
-                results.push({ prompt: s.querySelector('.t-prompt').textContent, mode: mode, right: res.result === 'correct', given: res.given, answer: res.answer });
+                results = results.filter(function (r) { return r.id !== s.dataset.check + mode; });
+                results.push({ id: s.dataset.check + mode, prompt: s.querySelector('.t-prompt').textContent, mode: mode, right: res.result === 'correct', given: res.given, answer: res.answer });
+                save();
                 fb.innerHTML = '';
                 if (mode === 'test') {
                     fb.className = 't-feedback';
@@ -333,7 +367,25 @@
             root.querySelector('[data-pad-clear]').addEventListener('click', function () { ctx.clearRect(0, 0, pad.width, pad.height); });
         }
 
-        show(0);
+        var form = root.querySelector('[data-finish]');
+        if (form) form.addEventListener('submit', function () { try { localStorage.removeItem(saveKey); } catch (e) {} });
+
+        // Pick up where they left off: everything before that point counts as done.
+        var start = 0;
+        try {
+            var saved = JSON.parse(localStorage.getItem(saveKey) || 'null');
+            if (saved && saved.at > 0 && saved.at < steps.length) {
+                start = saved.at;
+                results = saved.results || [];
+                steps.slice(0, start).forEach(function (s) {
+                    s.dataset.written = '1'; s.dataset.done = '1'; s.dataset.started = '1';
+                    s.querySelectorAll('[data-line]').forEach(function (l) { l.hidden = false; });
+                    var b = s.querySelector('[data-next-line]'); if (b) { b.textContent = 'I’ve written it all ✓'; b.disabled = true; }
+                    s.querySelectorAll('[data-answer] input, [data-answer] button, [data-choices] button').forEach(function (el) { el.disabled = true; });
+                });
+            }
+        } catch (e) {}
+        show(start);
     })();
     </script>
 @endsection

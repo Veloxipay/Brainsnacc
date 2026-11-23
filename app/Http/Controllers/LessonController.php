@@ -8,6 +8,7 @@ use App\Models\Question;
 use App\Models\QuestionAttempt;
 use App\Models\StepCheck;
 use App\Support\QuestionHelp;
+use App\Support\Teach;
 use App\Support\StepCoach;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -16,7 +17,37 @@ use Illuminate\View\View;
 
 class LessonController extends Controller
 {
+    /**
+     * Every lesson is taught step by step (see App\Support\Teach): read or watch the topic, a worked example
+     * written one step at a time, your turn, more steps, a mix, then a short test.
+     * Lessons with fewer than two practice questions use the plain lesson page.
+     */
     public function show(Request $request, Lesson $lesson): View|RedirectResponse
+    {
+        if ($lesson->isTest()) {
+            return redirect()->route('tests.show', $lesson);
+        }
+        abort_unless($lesson->isPublished() || $request->user()->isAdmin(), 404);
+        $lesson->load(['module.unit.subject', 'module.unit.level', 'questions']);
+
+        $plan = $lesson->questions->count() >= 2 ? Teach::plan($lesson) : null;
+        if (! $plan || empty($plan['stages'])) {
+            return $this->practice($request, $lesson);
+        }
+        $siblings = $lesson->module->lessons()->published()->get();
+        $index = $siblings->search(fn ($l) => $l->id === $lesson->id);
+
+        return view('student.teach', [
+            'lesson' => $lesson,
+            'subject' => $lesson->module->unit->subject,
+            'plan' => $plan,
+            'nextLesson' => $index !== false ? $siblings->get($index + 1) : null,
+            'homework' => Homework::where('student_id', $request->user()->id)->where('lesson_id', $lesson->id)->open()->with('setter')->first(),
+        ]);
+    }
+
+    /** The lesson's practice questions as cards, with hints and step checks. The mistakes list sends students here. */
+    public function practice(Request $request, Lesson $lesson): View|RedirectResponse
     {
         if ($lesson->isTest()) {
             return redirect()->route('tests.show', $lesson);
@@ -37,6 +68,8 @@ class LessonController extends Controller
             'position' => $index !== false ? $index + 1 : null,
             'count' => $siblings->count(),
             'completed' => $request->user()->completedLessons()->where('lessons.id', $lesson->id)->exists(),
+            // Lessons taught step by step are finished at the end of that, not here.
+            'stepByStep' => $lesson->questions->count() >= 2 && ! empty(Teach::plan($lesson)['stages']),
             'homework' => Homework::where('student_id', $request->user()->id)->where('lesson_id', $lesson->id)->open()->with('setter')->first(),
         ]);
     }
@@ -109,7 +142,7 @@ class LessonController extends Controller
         }
 
         return redirect()
-            ->to(route('lessons.show', $question->lesson_id).'#q'.$question->id)
+            ->to(route('lessons.practice', $question->lesson_id).'#q'.$question->id)
             ->with('result', $result);
     }
 
@@ -135,7 +168,7 @@ class LessonController extends Controller
     {
         $help = $request->integer('help');
 
-        return redirect()->to(($help ? route('questions.help', $help) : route('lessons.show', $question->lesson_id)).'#q'.$question->id);
+        return redirect()->to(($help ? route('questions.help', $help) : route('lessons.practice', $question->lesson_id)).'#q'.$question->id);
     }
 
     /**
@@ -212,7 +245,7 @@ class LessonController extends Controller
 
         $to = ! empty($data['help'])
             ? route('questions.help', $data['help']).'#q'.$question->id
-            : route('lessons.show', $question->lesson_id).'#q'.$question->id;
+            : route('lessons.practice', $question->lesson_id).'#q'.$question->id;
 
         return redirect()->to($to)->with($flash);
     }

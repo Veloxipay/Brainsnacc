@@ -47,7 +47,7 @@
             @foreach ($asked as $a)
                 <div class="small">
                     @if ($a->question)
-                        <a href="{{ route('lessons.show', $a->question->lesson_id) }}#q{{ $a->question_id }}">{{ $a->question->lesson?->title }}: {{ \Illuminate\Support\Str::limit($a->question->prompt, 70) }}</a>
+                        <a href="{{ route('lessons.practice', $a->question->lesson_id) }}#q{{ $a->question_id }}">{{ $a->question->lesson?->title }}: {{ \Illuminate\Support\Str::limit($a->question->prompt, 70) }}</a>
                     @elseif ($a->tutorSession)
                         <a href="{{ route('tutor.show', $a->tutorSession) }}">Maths tutor: {{ $a->tutorSession->question }}</a>
                     @endif
@@ -71,12 +71,7 @@
                 <h2 id="next-h" style="font-family:'Space Grotesk',sans-serif;font-size:24px">Up next: {{ $next->title }}</h2>
                 <p class="muted" style="margin:0">{{ $next->summary }} About {{ $next->minutes }} minutes.</p>
             </div>
-            <div class="row" style="gap:10px;flex-wrap:wrap">
-                <a class="btn" href="{{ route('lessons.show', $next) }}">Start lesson</a>
-                @unless ($next->isTest())
-                    <a class="btn secondary" href="{{ route('teach.show', $next) }}">Teach me step by step</a>
-                @endunless
-            </div>
+            <a class="btn" href="{{ route('lessons.show', $next) }}">Start lesson</a>
         </section>
     @else
         <section class="card">

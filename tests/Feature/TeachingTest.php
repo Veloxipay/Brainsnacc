@@ -71,7 +71,7 @@ class TeachingTest extends TestCase
     public function test_student_can_ask_their_tutor_and_tutor_resolves_it(): void
     {
         $q = $this->lesson->questions()->first();
-        $this->actingAs($this->student)->get(route('lessons.show', $this->lesson))->assertSee('Ask my tutor about this');
+        $this->actingAs($this->student)->get(route('lessons.practice', $this->lesson))->assertSee('Ask my tutor about this');
         $this->post(route('ask-tutor'), ['question_id' => $q->id, 'message' => 'Why B?'])->assertRedirect();
         $this->post(route('ask-tutor'), ['question_id' => $q->id, 'message' => 'Why B really?']);
         $this->assertSame(1, HelpRequest::count());
@@ -85,14 +85,19 @@ class TeachingTest extends TestCase
     public function test_student_without_a_tutor_does_not_see_ask_button(): void
     {
         $alone = User::factory()->create(['role' => User::ROLE_STUDENT, 'level_id' => $this->student->level_id]);
-        $this->actingAs($alone)->get(route('lessons.show', $this->lesson))->assertDontSee('Ask my tutor about this');
+        $this->actingAs($alone)->get(route('lessons.practice', $this->lesson))->assertDontSee('Ask my tutor about this');
     }
 
     public function test_teach_me_runs_and_checks_spoken_answers(): void
     {
+        $this->lesson->questions()->create([
+            'type' => 'mcq', 'difficulty' => 'easy', 'prompt' => 'What is 3 + 3?',
+            'options' => ['A' => '5', 'B' => '6'], 'answer' => 'B', 'explanation' => 'Count.', 'steps' => ['Add'], 'sort' => 2,
+        ]);
         $q = $this->lesson->questions()->first();
-        $this->actingAs($this->student)->get(route('teach.show', $this->lesson))->assertOk()
-            ->assertSee('Watch me do one')->assertSee('Quick test');
+        // Every lesson with practice questions is taught step by step, with no separate button.
+        $this->actingAs($this->student)->get(route('lessons.show', $this->lesson))->assertOk()
+            ->assertSee('Watch me do one')->assertSee('What answer did you get?')->assertDontSee('Teach me step by step');
         $this->postJson(route('teach.check', $q), ['said' => 'I got four', 'mode' => 'try'])
             ->assertOk()->assertJson(['result' => 'correct', 'answer' => '4']);
         $this->postJson(route('teach.check', $q), ['said' => 'banana', 'mode' => 'try'])->assertJson(['result' => 'unmatched']);
